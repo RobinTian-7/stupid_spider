@@ -4,13 +4,28 @@ CSRankings AI Advisor Finder
 
 从 CSRankings 获取目标学校 AI 方向教授列表，爬取主页及 PDF 简历，评分排序。
 
-评分规则:
-  主页明确表示招收本科实习生   +10
-  教授本人有南京大学背景       +8
-  学生中有南京大学背景         +5
-  是 Assistant Professor      +5
-  有泛 opening 信息           +3
-  资深教授（Full/Chair/Dean） -3  （明确招本科实习则不扣）
+评分规则（AI/CS 方向专项）:
+  招生意向:
+    主页明确表示招收本科实习生   +10
+    有结构化申请表单 (Google Form) +4
+    有泛 opening 信息             +3
+  NJU 关联:
+    教授本人有南京大学背景         +8
+    学生中有南京大学背景           +5
+  职称与机会:
+    是 Assistant Professor        +5
+    新晋 AP (≤3 年入职)           +3  （额外加分）
+  经费与算力:
+    获得国家级重大基金 (NSF CAREER/ERC/Sloan 等) +4
+    获得工业界专项资助 (Google/Amazon/Meta/Nvidia 等) +3
+    主页展示 GPU 集群配置          +2
+  研究热度:
+    研究紧跟前沿 (LLM/多模态/AI4Science 等) +3
+  减分项:
+    与大厂双重挂靠 (难以回复)      -5
+    明确声明不回邮件               -6
+    IEEE/ACM/AAAI Fellow          -2  （额外惩罚，代表"功成名就"）
+    资深教授 (Full/Chair/Dean)    -3  （明确招本科实习则不扣）
 
 用法:
   python finder.py                              # 交互选方向 → 爬取 → 评分
@@ -164,7 +179,6 @@ SENIOR_PATTERNS = [
     r"\bDean\b", r"\bAssociate\s+Dean\b",
     r"Department\s+(Head|Chair)", r"Director",
     r"讲座教授", r"(副)?院长", r"系主任",
-    r"IEEE\s+Fellow",
 ]
 SUBPAGE_LINK_PATTERNS = [
     r"\bjoin\b", r"opening", r"position", r"prospective",
@@ -175,6 +189,115 @@ SUBPAGE_LINK_PATTERNS = [
 ]
 CV_PDF_PATTERNS = [
     r"\bcv\b", r"resume", r"curriculum[\s\-]*vitae?", r"简历", r"bio\.pdf",
+]
+
+# ── AI/CS 专项评分模式 ──────────────────────────────────────
+
+# 大厂双重挂靠（减分）：既是教授又是 Google/Meta/OpenAI 等在职研究员
+INDUSTRY_AFFILIATION_PATTERNS = [
+    r"Google\s+(Brain|DeepMind|Research)",
+    r"Meta\s+(FAIR|AI\s+Research|Research)",
+    r"\bOpenAI\b",
+    r"Microsoft\s+(Research|MSR)\b",
+    r"\bDeepMind\b",
+    r"(Research\s+)?(Scientist|Director|Principal\s+Researcher)\s+at\s+"
+    r"(Google|Meta|OpenAI|Microsoft|Apple|Amazon|ByteDance|Baidu|Tencent)",
+    r"(Staff|Senior|Principal)\s+Research\s+Scientist\s+at",
+]
+
+# 国家级重大科研基金（加分）
+MAJOR_GRANT_PATTERNS = [
+    r"NSF\s+CAREER(\s+Award)?",
+    r"\bCAREER\s+Award\b",
+    r"ERC\s+(Starting|Consolidator|Advanced)\s+Grant",
+    r"Sloan\s+(Research\s+)?Fellowship",
+    r"ONR\s+Young\s+Investigator",
+    r"DARPA\s+(Young\s+Faculty|Director.?s?\s+Fellowship)",
+    r"ARO\s+Young\s+Investigator",
+    r"Packard\s+Fellowship",
+    r"Simons\s+(Investigator|Fellowship)",
+]
+
+# 工业界专项资助（加分）
+INDUSTRY_FUNDING_PATTERNS = [
+    r"Google\s+Research\s+(Award|Grant|Faculty\s+Award)",
+    r"Amazon\s+Research\s+(Award|Grant|Faculty\s+Award)",
+    r"Meta\s+Research\s+(Award|Grant)",
+    r"Microsoft\s+Research\s+(Award|Grant)",
+    r"Nvidia\s+(Academic|Research|Hardware|Faculty)\s+(Grant|Award|Program|Fellowship)",
+    r"Adobe\s+Research\s+(Grant|Award)",
+    r"Qualcomm\s+(Innovation\s+)?Fellowship",
+    r"Samsung\s+Research\s+(Award|Grant)",
+]
+
+# GPU 集群 / 算力资源（加分）
+GPU_CLUSTER_PATTERNS = [
+    r"\b(A100|H100|H200|B200|V100)\b",
+    r"GPU\s+(cluster|server|node|farm)",
+    r"\d+\s*[×x]\s*(A100|H100|H200|V100)",
+    r"(compute|computing)\s+cluster",
+    r"(NVIDIA|CUDA)\s+(compute|resource|cluster)",
+    r"\d+\s*GPUs?\b",
+]
+
+# 前沿研究方向（加分）
+HOT_TOPIC_PATTERNS = [
+    r"large\s+language\s+model",
+    r"\bLLMs?\b",
+    r"foundation\s+model",
+    r"multi[\s\-]?modal",
+    r"AI\s+for\s+(science|health|biology|medicine|drug\s+discovery|climate)",
+    r"diffusion\s+model",
+    r"generative\s+(AI|model)",
+    r"vision[\s\-]language\s+model",
+    r"\bRLHF\b",
+    r"reinforcement\s+learning\s+from\s+human\s+feedback",
+    r"AI\s+agents?\b",
+    r"reasoning\s+(in\s+)?(LLM|model|AI)",
+    r"in[\s\-]?context\s+learning",
+    r"(instruction|alignment)\s+(tuning|training|following)",
+]
+
+# 明确声明不回邮件（减分）
+NO_EMAIL_PATTERNS = [
+    r"cannot\s+reply\s+to\s+(all\s+)?prospective\s+student",
+    r"do\s+not\s+(email|contact)\s+me\s+(if|about|regarding|for)",
+    r"not\s+able\s+to\s+respond\s+to\s+(all\s+)?email",
+    r"please\s+do\s+not\s+(email|send)",
+    r"I\s+(cannot|can'?t)\s+respond\s+to\s+(all\s+)?inquir",
+    r"not\s+accepting\s+(any\s+)?(more\s+)?(student|intern|applicant)",
+    r"not\s+taking\s+(any\s+)?(more\s+)?(student|intern)",
+    r"mention\s+my\s+name\s+in\s+your\s+application",
+]
+
+# 结构化申请表单（加分）
+FORM_RECRUITMENT_PATTERNS = [
+    r"forms\.google\.com",
+    r"google\.com/forms",
+    r"fill\s+(out|in)\s+(this\s+)?(form|survey)",
+    r"interest\s+form",
+    r"typeform\.com",
+    r"airtable\.com",
+]
+
+# 新晋 AP（近 ≤3 年入职，加分）—— 当前年份 2026
+_NEW_AP_YEAR_PAT = r"20(2[3-9]|3\d)"
+NEW_AP_PATTERNS = [
+    rf"(joined|joining|started|starting|will\s+join|beginning)\s+.{{0,40}}{_NEW_AP_YEAR_PAT}",
+    rf"{_NEW_AP_YEAR_PAT}.{{0,30}}(assistant\s+professor|join|start\s+at|faculty)",
+    r"new\s+faculty\s+(member|hire|position)",
+    r"recently\s+joined",
+    r"incoming\s+(assistant\s+)?faculty",
+    r"I\s+(am|will\s+be)\s+(joining|starting)\s+as\s+(an?\s+)?[Aa]ssistant\s+[Pp]rofessor",
+]
+
+# IEEE/ACM/AAAI Fellow（额外减分，代表"功成名就"）
+FELLOW_PATTERNS = [
+    r"\bIEEE\s+Fellow\b",
+    r"\bACM\s+Fellow\b",
+    r"\bAAAI\s+Fellow\b",
+    r"\bNAS\s+(Member|Fellow)\b",
+    r"\bNAE\s+(Member|Fellow)\b",
 ]
 
 CSRANKINGS_CSV_URL = "https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/csrankings.csv"
@@ -201,12 +324,28 @@ class Professor:
     school_abbr: str = ""
     areas: list = field(default_factory=list)
     score: int = 0
+    # 招生信号
     has_undergrad_intern: bool = False
     has_general_opening: bool = False
+    has_form_recruitment: bool = False
+    # NJU 关联
     has_nju_background: bool = False
     has_nju_students: bool = False
+    # 职称
     is_ap: bool = False
+    is_new_ap: bool = False
     is_senior: bool = False
+    is_fellow: bool = False
+    # 资源与经费
+    has_major_grant: bool = False
+    has_industry_funding: bool = False
+    has_gpu_cluster: bool = False
+    # 研究热度
+    is_hot_topic: bool = False
+    # 风险标记
+    has_industry_affiliation: bool = False
+    has_no_email_policy: bool = False
+    # 爬取元数据
     cv_found: bool = False
     keywords_matched: bool = False
     pages_scraped: int = 0
@@ -217,6 +356,31 @@ class Professor:
     @property
     def display_name(self):
         return clean_name(self.name)
+
+    def reset_analysis(self):
+        """重置分析结果，用于 Playwright 重试前清空状态，防止分数累加。"""
+        self.score = 0
+        self.has_undergrad_intern = False
+        self.has_general_opening = False
+        self.has_form_recruitment = False
+        self.has_nju_background = False
+        self.has_nju_students = False
+        self.is_ap = False
+        self.is_new_ap = False
+        self.is_senior = False
+        self.is_fellow = False
+        self.has_major_grant = False
+        self.has_industry_funding = False
+        self.has_gpu_cluster = False
+        self.is_hot_topic = False
+        self.has_industry_affiliation = False
+        self.has_no_email_policy = False
+        self.cv_found = False
+        self.keywords_matched = False
+        self.pages_scraped = 0
+        self.intern_evidence = []
+        self.nju_evidence = []
+        self.error = ""
 
 
 # ============================================================
@@ -297,11 +461,22 @@ class IncrementalCSV:
     """每分析完一位教授立即写入 CSV，中断时不丢失已有结果。"""
 
     HEADER = [
-        "分数", "学校", "姓名", "院校全称", "研究方向", "主页",
-        "Google Scholar",
-        "明确招本科实习", "有opening",
-        "教授NJU背景", "学生NJU背景", "是否AP", "资深教授", "找到CV",
-        "关键词匹配", "爬取页数", "招生证据", "NJU证据", "错误",
+        "分数", "学校", "姓名", "院校全称", "研究方向", "主页", "Google Scholar",
+        # 招生信号
+        "明确招本科实习", "有申请表单", "有opening",
+        # NJU
+        "教授NJU背景", "学生NJU背景",
+        # 职称
+        "是否AP", "新晋AP(≤3年)", "资深教授", "是否Fellow",
+        # 资源
+        "国家级基金", "工业界资助", "有GPU集群",
+        # 研究热度
+        "前沿方向(LLM等)",
+        # 风险
+        "大厂双重挂靠", "明确不回邮件",
+        # 元数据
+        "找到CV", "关键词匹配", "爬取页数",
+        "招生证据", "NJU证据", "错误",
     ]
 
     def __init__(self, filepath):
@@ -320,8 +495,19 @@ class IncrementalCSV:
         row = [
             p.score, p.school_abbr, p.display_name, p.affiliation,
             ", ".join(p.areas), p.homepage, scholar,
-            p.has_undergrad_intern, p.has_general_opening,
-            p.has_nju_background, p.has_nju_students, p.is_ap, p.is_senior,
+            # 招生信号
+            p.has_undergrad_intern, p.has_form_recruitment, p.has_general_opening,
+            # NJU
+            p.has_nju_background, p.has_nju_students,
+            # 职称
+            p.is_ap, p.is_new_ap, p.is_senior, p.is_fellow,
+            # 资源
+            p.has_major_grant, p.has_industry_funding, p.has_gpu_cluster,
+            # 热度
+            p.is_hot_topic,
+            # 风险
+            p.has_industry_affiliation, p.has_no_email_policy,
+            # 元数据
             p.cv_found, p.keywords_matched, p.pages_scraped,
             " | ".join(p.intern_evidence[:2]),
             " | ".join(p.nju_evidence[:2]),
@@ -584,6 +770,19 @@ def find_cv_pdf_urls(soup, base_url, limit=3):
     return urls
 
 
+def find_form_urls(soup):
+    """检测页面链接中是否存在结构化申请表单。"""
+    if soup is None:
+        return False
+    for a in soup.find_all("a", href=True):
+        if re.search(
+            r"forms\.google\.com|google\.com/forms|typeform\.com|airtable\.com",
+            a["href"], re.I,
+        ):
+            return True
+    return False
+
+
 # ============================================================
 # Playwright fallback（可选，用于 JS 渲染页面）
 # ============================================================
@@ -615,7 +814,6 @@ def playwright_retry_failures(failed_profs, cache):
         html = fetch_html_playwright(prof.homepage)
         if html:
             cache.set_page(prof.homepage, html)
-            prof.error = ""
             retried.append(prof)
             logging.info(f"  Playwright 成功: {prof.display_name}")
         time.sleep(0.5)
@@ -747,7 +945,6 @@ def analyze_professor(prof, cache, keywords=None):
             all_text += " " + pdf_text
             prof.cv_found = True
             pages += 1
-            # 在 CV 的 Education 段落中精准检测 NJU
             if parse_education_from_text(pdf_text):
                 prof.has_nju_background = True
 
@@ -758,42 +955,89 @@ def analyze_professor(prof, cache, keywords=None):
         kw_pattern = "|".join(re.escape(k) for k in keywords)
         prof.keywords_matched = bool(re.search(kw_pattern, all_text, re.IGNORECASE))
 
-    # --- 本科实习 ---
+    # ── 招生信号 ────────────────────────────────────────────
     prof.has_undergrad_intern = check_patterns(all_text, UNDERGRAD_INTERN_PATTERNS)
     if not prof.has_undergrad_intern:
         prof.has_general_opening = check_patterns(all_text, GENERAL_OPENING_PATTERNS)
+    # 结构化表单：文本匹配 + href 检测双保险
+    prof.has_form_recruitment = (
+        check_patterns(all_text, FORM_RECRUITMENT_PATTERNS)
+        or find_form_urls(main_soup)
+    )
+    # 明确不回邮件
+    prof.has_no_email_policy = check_patterns(all_text, NO_EMAIL_PATTERNS)
 
-    # --- NJU（主页补充，CV 中已检测的不覆盖） ---
+    # ── NJU（主页补充，CV 中已检测的不覆盖） ────────────────
     bio, stu = analyze_nju_context(all_text, main_soup)
     if bio:
         prof.has_nju_background = True
     if stu:
         prof.has_nju_students = True
 
-    # --- 职级 ---
+    # ── 职称 ─────────────────────────────────────────────────
     prof.is_ap = check_patterns(all_text, AP_PATTERNS)
     prof.is_senior = check_patterns(all_text, SENIOR_PATTERNS)
+    prof.is_fellow = check_patterns(all_text, FELLOW_PATTERNS)
+    if prof.is_ap:
+        prof.is_new_ap = check_patterns(all_text, NEW_AP_PATTERNS)
 
-    # --- 证据 ---
+    # ── 资源与经费 ───────────────────────────────────────────
+    prof.has_major_grant = check_patterns(all_text, MAJOR_GRANT_PATTERNS)
+    prof.has_industry_funding = check_patterns(all_text, INDUSTRY_FUNDING_PATTERNS)
+    prof.has_gpu_cluster = check_patterns(all_text, GPU_CLUSTER_PATTERNS)
+
+    # ── 研究热度 & 大厂挂靠 ──────────────────────────────────
+    prof.is_hot_topic = check_patterns(all_text, HOT_TOPIC_PATTERNS)
+    prof.has_industry_affiliation = check_patterns(all_text, INDUSTRY_AFFILIATION_PATTERNS)
+
+    # ── 证据片段 ─────────────────────────────────────────────
     prof.intern_evidence = extract_snippets(
         all_text, UNDERGRAD_INTERN_PATTERNS + GENERAL_OPENING_PATTERNS,
     )
     prof.nju_evidence = extract_snippets(all_text, NJU_PATTERNS)
 
-    # --- 评分 ---
+    # ── 评分 ─────────────────────────────────────────────────
+    # 招生意向（最高权重）
     if prof.has_undergrad_intern:
         prof.score += 10
+    if prof.has_form_recruitment:
+        prof.score += 4
     if prof.has_general_opening:
         prof.score += 3
+
+    # NJU 关联
     if prof.has_nju_background:
         prof.score += 8
     if prof.has_nju_students:
         prof.score += 5
+
+    # 职称
     if prof.is_ap:
         prof.score += 5
-    # 资深教授降权，除非明确招本科实习
+    if prof.is_new_ap:
+        prof.score += 3   # 新晋 AP 额外加分
+
+    # 资源与经费
+    if prof.has_major_grant:
+        prof.score += 4
+    if prof.has_industry_funding:
+        prof.score += 3
+    if prof.has_gpu_cluster:
+        prof.score += 2
+
+    # 研究热度
+    if prof.is_hot_topic:
+        prof.score += 3
+
+    # 减分项
     if prof.is_senior and not prof.has_undergrad_intern:
         prof.score -= 3
+    if prof.is_fellow:
+        prof.score -= 2
+    if prof.has_industry_affiliation:
+        prof.score -= 5
+    if prof.has_no_email_policy:
+        prof.score -= 6
 
     return prof
 
@@ -806,25 +1050,73 @@ def print_results(results):
     results.sort(key=lambda p: (-p.score, p.school_abbr, p.name))
 
     print()
-    print("=" * 140)
+    print("=" * 170)
     print(
         f"{'分数':>4} | {'学校':8} | {'姓名':25} | {'方向':18} | "
-        f"{'职级':6} | {'本科实习':8} | {'NJU':8} | {'CV':2} | 主页"
+        f"{'职称':10} | {'招生':10} | {'NJU':8} | "
+        f"{'资源':12} | {'热度':4} | {'风险':12} | 主页"
     )
-    print("-" * 140)
+    print("-" * 170)
 
     for p in results:
         if p.score <= 0:
             continue
-        intern_f = "明确招" if p.has_undergrad_intern else ("有opening" if p.has_general_opening else "")
-        nju_f = "本人NJU" if p.has_nju_background else ("学生NJU" if p.has_nju_students else "")
-        rank = "AP" if p.is_ap and not p.is_senior else ("资深" if p.is_senior else "")
-        cv_f = "是" if p.cv_found else ""
+
+        # 职称
+        rank_parts = []
+        if p.is_new_ap:
+            rank_parts.append("新AP")
+        elif p.is_ap:
+            rank_parts.append("AP")
+        if p.is_fellow:
+            rank_parts.append("Fellow")
+        elif p.is_senior:
+            rank_parts.append("资深")
+        rank = "/".join(rank_parts) if rank_parts else ""
+
+        # 招生
+        if p.has_undergrad_intern:
+            intern_f = "明确招实习"
+        elif p.has_form_recruitment:
+            intern_f = "有表单"
+        elif p.has_general_opening:
+            intern_f = "有opening"
+        else:
+            intern_f = ""
+
+        # NJU
+        nju_parts = []
+        if p.has_nju_background:
+            nju_parts.append("本人")
+        if p.has_nju_students:
+            nju_parts.append("学生")
+        nju_f = "+".join(nju_parts) if nju_parts else ""
+
+        # 资源
+        res_parts = []
+        if p.has_major_grant:
+            res_parts.append("国家奖")
+        if p.has_industry_funding:
+            res_parts.append("工业资助")
+        if p.has_gpu_cluster:
+            res_parts.append("GPU")
+        res_f = "/".join(res_parts) if res_parts else ""
+
+        # 风险
+        risk_parts = []
+        if p.has_industry_affiliation:
+            risk_parts.append("大厂挂靠")
+        if p.has_no_email_policy:
+            risk_parts.append("不回邮件")
+        risk_f = "/".join(risk_parts) if risk_parts else ""
+
         areas_s = ",".join(p.areas[:3]) + ("..." if len(p.areas) > 3 else "")
+        hot_f = "热" if p.is_hot_topic else ""
+
         print(
             f"{p.score:4d} | {p.school_abbr:8s} | {p.display_name:25s} | "
-            f"{areas_s:18s} | {rank:6s} | {intern_f:8s} | {nju_f:8s} | "
-            f"{cv_f:2s} | {p.homepage}"
+            f"{areas_s:18s} | {rank:10s} | {intern_f:10s} | {nju_f:8s} | "
+            f"{res_f:12s} | {hot_f:4s} | {risk_f:12s} | {p.homepage}"
         )
 
     total = len(results)
@@ -832,12 +1124,17 @@ def print_results(results):
     print()
     print(
         f"共 {total} 位 | 得分>0: {scored} | "
-        f"招本科实习: {sum(1 for p in results if p.has_undergrad_intern)} | "
+        f"招实习: {sum(1 for p in results if p.has_undergrad_intern)} | "
+        f"有表单: {sum(1 for p in results if p.has_form_recruitment)} | "
         f"有opening: {sum(1 for p in results if p.has_general_opening)} | "
         f"NJU关联: {sum(1 for p in results if p.has_nju_background or p.has_nju_students)} | "
-        f"AP: {sum(1 for p in results if p.is_ap and not p.is_senior)} | "
-        f"资深: {sum(1 for p in results if p.is_senior)} | "
-        f"找到CV: {sum(1 for p in results if p.cv_found)} | "
+        f"新AP: {sum(1 for p in results if p.is_new_ap)} | "
+        f"AP: {sum(1 for p in results if p.is_ap and not p.is_new_ap)} | "
+        f"国家奖: {sum(1 for p in results if p.has_major_grant)} | "
+        f"工业资助: {sum(1 for p in results if p.has_industry_funding)} | "
+        f"热门方向: {sum(1 for p in results if p.is_hot_topic)} | "
+        f"大厂挂靠: {sum(1 for p in results if p.has_industry_affiliation)} | "
+        f"不回邮件: {sum(1 for p in results if p.has_no_email_policy)} | "
         f"失败: {sum(1 for p in results if p.error)} | "
         f"共爬 {sum(p.pages_scraped for p in results)} 页"
     )
@@ -960,18 +1257,18 @@ def main():
 
     csv_writer.close()
 
-    # --- Playwright 重试 ---
+    # --- Playwright 重试（修复：重置状态 + 异常捕获）---
     if HAS_PLAYWRIGHT and failed and not interrupted:
         retried = playwright_retry_failures(failed, cache)
         if retried:
-            # 重新分析 Playwright 成功的教授
+            logging.info(f"对 {len(retried)} 位 Playwright 成功的教授重新分析...")
             for prof in retried:
-                analyze_professor(prof, cache, args.keywords)
-                # 更新 results 中对应项
-                for i, r in enumerate(results):
-                    if r.name == prof.name and r.school_abbr == prof.school_abbr:
-                        results[i] = prof
-                        break
+                prof.reset_analysis()   # 清空旧状态，防止分数累加
+                try:
+                    analyze_professor(prof, cache, args.keywords)
+                except Exception as e:
+                    prof.error = f"retry: {e}"
+                    logging.warning(f"  重试分析失败 {prof.display_name}: {e}")
 
     # --- 关键词过滤 ---
     if args.keywords:
