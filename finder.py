@@ -56,7 +56,10 @@ from dataclasses import dataclass, field
 from urllib.parse import urljoin, urlparse
 
 import requests
+import urllib3
 from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
@@ -525,18 +528,37 @@ class IncrementalCSV:
 # HTTP 请求（带重试）
 # ============================================================
 
-def request_with_retry(session, url, timeout=12, max_retries=1):
-    """GET 请求，失败自动重试 1 次（间隔 2 秒）。"""
+# 线程本地 Session，每个线程复用同一个带连接池的 Session
+_thread_local = threading.local()
+
+
+def _get_session():
+    if not hasattr(_thread_local, "session"):
+        s = requests.Session()
+        s.headers.update(HEADERS)
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=1,
+            pool_maxsize=8,
+            max_retries=0,
+        )
+        s.mount("http://", adapter)
+        s.mount("https://", adapter)
+        _thread_local.session = s
+    return _thread_local.session
+
+
+def request_with_retry(session, url, timeout=8, max_retries=1):
+    """GET 请求，失败自动重试 1 次（间隔 0.5 秒）。"""
     last_err = None
     for attempt in range(max_retries + 1):
         try:
-            resp = session.get(url, timeout=timeout, allow_redirects=True)
+            resp = session.get(url, timeout=timeout, allow_redirects=True, verify=False)
             resp.raise_for_status()
             return resp
         except Exception as e:
             last_err = e
             if attempt < max_retries:
-                time.sleep(2)
+                time.sleep(0.5)
     raise last_err
 
 
@@ -694,7 +716,7 @@ def parse_html(html):
     return soup.get_text(separator=" ", strip=True), soup
 
 
-def extract_pdf_text(pdf_bytes, max_pages=20):
+def extract_pdf_text(pdf_bytes, max_pages=10):
     if not HAS_PYMUPDF:
         return ""
     try:
@@ -724,7 +746,7 @@ def fetch_pdf_text(url, session, cache, max_size=10 * 1024 * 1024):
         return ""
 
 
-def find_subpage_urls(soup, base_url, limit=8):
+def find_subpage_urls(soup, base_url, limit=6):
     if soup is None:
         return []
     urls, seen = [], set()
@@ -903,8 +925,7 @@ def analyze_professor(prof, cache, keywords=None):
         prof.error = "无主页"
         return prof
 
-    session = requests.Session()
-    session.headers.update(HEADERS)
+    session = _get_session()   # 复用线程本地 Session
 
     # --- 主页 ---
     main_html, _ = fetch_html(prof.homepage, session, cache)
@@ -925,18 +946,17 @@ def analyze_professor(prof, cache, keywords=None):
     all_cv_pdfs = find_cv_pdf_urls(main_soup, prof.homepage)
 
     for sub_url in subpage_urls:
-        sub_html, sub_cached = fetch_html(sub_url, session, cache, timeout=8)
+        sub_html, _ = fetch_html(sub_url, session, cache, timeout=6)
         if sub_html:
             sub_text, sub_soup = parse_html(sub_html)
             all_text += " " + sub_text
             pages += 1
             all_cv_pdfs.extend(find_cv_pdf_urls(sub_soup, sub_url))
-        if not sub_cached:
-            time.sleep(0.15)
+        # 不再 sleep —— 线程数本身已控制并发量
 
     # --- PDF 简历 ---
     seen_pdfs = set()
-    for pdf_url in all_cv_pdfs[:5]:
+    for pdf_url in all_cv_pdfs[:3]:
         if pdf_url in seen_pdfs:
             continue
         seen_pdfs.add(pdf_url)
@@ -1147,7 +1167,7 @@ def print_results(results):
 def main():
     parser = argparse.ArgumentParser(description="CSRankings AI 导师筛选工具")
     parser.add_argument("--dry-run", action="store_true", help="仅列出教授不爬取")
-    parser.add_argument("--threads", type=int, default=8, help="并发线程数")
+    parser.add_argument("--threads", type=int, default=32, help="并发线程数（默认32，I/O密集可调高至64）")
     parser.add_argument("--output", default="advisor_results.csv", help="输出 CSV")
     parser.add_argument("--schools", nargs="*", default=["hk", "sg", "ca", "us"],
                         choices=["hk", "sg", "ca", "us"])
@@ -1243,7 +1263,7 @@ def main():
             if interrupted:
                 break
             try:
-                prof = future.result(timeout=60)
+                prof = future.result(timeout=30)
             except Exception as e:
                 prof = futures[future]
                 prof.error = str(e)
@@ -1252,7 +1272,7 @@ def main():
             if prof.error:
                 failed.append(prof)
             done += 1
-            if done % 20 == 0 or done == total:
+            if done % 10 == 0 or done == total:
                 logging.info(f"进度: {done}/{total}")
 
     csv_writer.close()
