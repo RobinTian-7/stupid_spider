@@ -1,0 +1,2396 @@
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Weiyang Liu</title>
+  <link rel="shortcut icon" href="./logo.jpg">
+  <link rel="stylesheet" href="./files/csshake.min.css">
+  <meta content="Weiyang Liu" name="keywords" />
+  <style media="screen" type="text/css">
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0pt none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0pt;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: 0pt;
+  padding: 0pt;
+  vertical-align: baseline;
+}
+
+a {
+  color: #01649b;/*#01579B;*/
+  text-decoration:none;
+}
+
+a:focus, a:hover {
+  color: #f09228; /*#f09228;*/
+  text-decoration: underline;
+}
+
+a.paper {
+  font-weight: bold;
+}
+
+#changeText {
+    cursor: pointer;
+}
+
+b.paper {
+  font-weight: bold;
+}
+
+* {
+  margin: 0pt;
+  padding: 0pt;
+}
+
+body {
+  position: relative;
+  margin: 2em auto 2em auto;
+  width: 830px;
+  font-family: Open Sans Light, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #F4F6F6;
+}
+
+h2 {
+  font-family: Open Sans Light, Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Open Sans Light, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+strong {
+  /* font-family: Open Sans Light, Helvetica, sans-serif;
+  font-size: 13px;*/
+  font-weight: bold;
+}
+
+ul { 
+  list-style: disc;
+}
+
+img {
+  border: none;
+}
+
+li {
+  padding-bottom: 0.5em;
+  margin-left: 1.4em;
+}
+
+
+alert {
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 13px;*/
+  color: #FF0000;
+}
+
+em, i {
+  font-style:italic;
+}
+
+div.section {
+  clear: both;
+  margin-bottom: 1.2em;
+  background: #F4F6F6;
+}
+
+div.spanner {
+  clear: both;
+}
+
+div.paper {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.8em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.55em .8em 0.6em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 140%;
+  /* box-shadow: 0px 0px 3px #DFDFDF; */
+}
+div.paper2 {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.7em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.55em .8em 0.6em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 140%;
+}
+
+div.paper:hover {
+    background: #FFFDEE;
+    /* background-color: #242d36 ; */
+}
+
+div.paper2:hover {
+    background: #FFFDEE;
+    /* background-color: #242d36 ; */
+}
+div.bio {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.7em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.55em .8em 0.6em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 135%;
+  /* box-shadow: 0px 0px 3px #DFDFDF; */
+}
+
+div.res {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.65em .8em 0.15em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 130%;
+}
+
+div.award {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.65em .8em 0.15em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 130%;
+}
+
+div.paper div {
+  padding-left: 230px;
+}
+
+img.paper {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 200px;
+}
+
+span.blurb {
+  font-style:italic;
+  display:block;
+  margin-top:0.75em;
+  margin-bottom:0.5em;
+}
+
+pre, code {
+  font-family: Open Sans Light, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 1em 0;
+  padding: 0;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+    .bot {
+  font-size: 14%;
+}
+
+   .ptypej {
+    display: inline;
+    padding: .0em .2em .05em;
+    font-size: 85%;
+    font-weight: bold;
+    line-height: 1;
+  background-color: #5cb85c;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+  margin-right: 6px;
+}
+   .ptypec {
+    display: inline;
+    padding: .0em .2em .05em;
+    font-size: 85%;
+    font-weight: bold;
+    line-height: 1;
+  background-color: #428bca;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+  margin-right: 6px;
+}
+   .ptypep {
+    display: inline;
+    padding: .0em .2em .05em;
+    font-size: 85%;
+    font-weight: bold;
+    line-height: 1;
+  background-color: #6B6B6B;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+  margin-right: 6px;
+}
+/* navigation */
+#nav {
+  /* font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',*/
+       /* Corbel, Arial, Helvetica, sans-serif; */
+  font-family: Georgia, Helvetica, sans-serif;
+  position: fixed;
+  top: 50px;
+  /* left: 860px; */
+  margin-left: 830px;     /*1060*/
+  width: 93px;
+  font-size: 14px;
+}
+
+#nav li2 {
+    margin-bottom: 1px;
+}
+ol {
+  list-style: none;
+}
+#nav a {
+    display: block;
+    padding: 6px 9px 7px;
+    color: #fff;
+    background-color: #455A64;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    color: #ffde00;
+    /* background-color: #242d36 ; */
+}
+
+</style>
+
+<script type="text/javascript" async="" src="./files/ga.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7953909-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript" src="./files/hidebib.js"></script>
+<script src="./files/main.js"></script>
+<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>-->
+</head>
+
+
+
+<body>
+<ol id="nav">
+    <li><a href="https://wyliu.com/" title="Home">Home</a></li>
+    <li><a href="#mentoring" title="mentoring">Students</a></li>
+    <li><a href="#pub" title="Papers">Papers</a></li>
+    <!--<li><a href="index.html"  title="Selected" id="select1" onclick="showPubs(1); return false;">Selected</a></li>-->
+    <!--<li><a href="#award" title="Awards">Awards</a></li>-->
+    <li><a href="mailto:wyliu@cse.cuhk.edu.hk" title="Contact">Contact</a></li>
+</ol>
+<a name="home"></a>
+<div style="margin-bottom: 1em; border-top-right-radius:10px; border-top-left-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; border: 0px solid #ddd; background-color: #fff; padding: 1em; height: 170px; /* box-shadow: 0px 0px 3px #DFDFDF; */">
+<div style="margin: 0px auto; width: 100%;">
+  <img title="" style="float: left; padding-left: 1em; padding-top: 0em; height: 170px;" src="lwy3.jpg" />
+  <div style="padding-left: 18.5em; padding-top: 0em; vertical-align: top; height: 0px; width: 100%;">
+    <p>&nbsp;</p>
+    <p style="margin-top:7px; margin-bottom:10px"><span style="line-height: 80%; font-size: 18pt;">Weiyang Liu</span></p>
+    <p>&nbsp;</p>
+    <p><a href="https://scholar.google.com/citations?user=DMjROf0AAAAJ&hl=en">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/wy1iu">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/Besteuler">Twitter</a></p>
+    <p>&nbsp;</p>
+    <p style="margin-top:5px; margin-bottom:5px">The Chinese University of Hong Kong</p>
+    <p>Max Planck Institute for Intelligent Systems</p>
+</div>
+<img title="" style="float: left; padding-left: 27.5em; padding-top: 3.5em; height: 58px;" src="spherelab_logo.svg" />
+</div>
+</div>
+
+<div style="clear: both;" >
+
+<div class="section">
+<h2>About Me</h2>
+<div class="bio" id="biosection_pre">
+  <p style="margin-top:3px; margin-bottom:3px">I am an assistant professor in <a href="https://www.cse.cuhk.edu.hk/">Computer Science and Engineering</a> at <a href="https://www.cuhk.edu.hk/">The Chinese University of Hong Kong</a>, heading the Scalable Principles for Learning and Reasoning Lab (<a href="https://spherelab.ai">SphereLab</a>). I am also affiliated as a researcher with <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a>. Previously, I did my postdoc at <a href="https://is.mpg.de/">Max Planck Institute for Intelligent Systems</a> with <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a>. I have received a Ph.D. in <a href="https://mlg.eng.cam.ac.uk/">Machine Learning</a> from <a href="https://www.cam.ac.uk/">University of Cambridge</a>, and a Ph.D. in <a href="https://cse.gatech.edu/">Computer Science</a> from <a href="https://www.gatech.edu/">Georgia Tech</a>. My advisors were <a href="https://mlg.eng.cam.ac.uk/adrian/">Adrian Weller</a>, <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a> and <a href="https://dasongle.github.io/">Le Song</a>. I have also spent wonderful time at <a href="https://ai.google/research/teams/brain/">Google</a> and <a href="https://www.nvidia.com/en-us/research/">Nvidia</a>.</p>
+</div>
+  <div class="bio" id="biosection">
+  <p style="margin-top:3px; margin-bottom:9px">I work primarily on <em>principled modeling of inductive bias</em> in learning algorithms. My research seeks to understand how inductive bias affects generalization, and to develop &quot;<em>light-yet-sweet</em>&quot; learning algorithms: (i) <em>light</em>: conceptually simple in methodology and easy to implement in practice, (ii) <em>sweet</em>: having clear intuitions and non-trivial theoretical guarantees. </p>
+  <p style="margin-bottom:12px">
+  Over the years, I always find myself fascinated by geometric invariance, symmetry, structures and how they can benefit generalization as guiding principles. Recently, I start rethinking inductive bias for foundation models, and develop a deep interest in large language models and generative modeling across visual, textual, and physical domains. My current research focuses on</p>
+
+    <ul style="list-style-type: disc;margin-top: 12px; disc;margin-bottom: 5px;">
+      <li>
+        developing <em>principled and scalable algorithms</em> for training and adapting foundation models,</br>
+        - as in <a href="https://opt-training.github.io/">OPT</a>, <a href="https://oft.wyliu.com/">OFT</a>(<a href="https://oft.wyliu.com/">v1</a>,<a href="https://spherelab.ai/oftv2/">v2</a>), <a href="https://boft.wyliu.com/">BOFT</a>, <a href="https://spherelab.ai/poet/">POET</a>, <a href="https://spherelab.ai/poetx/">POET-X</a>, <a href="https://arxiv.org/abs/2406.04344">VML</a>;
+      </li>
+      <li>
+        exploring <em>scalable verification</em> for large language models and how this can elicit generalizable reasoning,</br>
+        - as in <a href="https://meta-math.github.io/">MetaMath</a>, <a href="https://sgp-bench.github.io/">SGP-Bench</a>, <a href="https://besiegefield.github.io/">BesiegeField</a>.
+      </li>
+    </ul>
+
+  <p style="margin-bottom:3px">I always believe in two principles in my research: (i) insight must precede application, and (ii) everything should be made as <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">simple</a> as possible, but not simpler. I try to follow <a shape="rect" href="javascript:togglebib(&#39;biosection&#39;)" class="togglebib">certain research values</a>.</p>
+
+      <pre xml:space="preserve" style="display: none;">    - Focus on creating novel ideas, not publishing papers
+    - Follow <a href="https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf">curiosity and passion</a>, not trends
+    - Ideas are not owned, but come with debts to those who came before
+    - Ideas become stronger when shared, discussed and criticized
+    - Life is surprisingly short, so solve problems that interest and excite you most
+    - <a href="https://www.youtube.com/watch?v=7H2YvxefFro">It is good to be quick, but it is more important to be deep</a>
+    - <a href="https://youtu.be/0B9hhOTYa_I">Think like an amateur, do as an expert</a>
+    - <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">This is not only about how to do research, but also how to live your life</a></pre>
+</div>
+</div>
+</div>
+
+<!--s
+<div style="clear: both;" >
+<div class="section">
+<h2>News</h2>
+<div class="bio" id="mentor">
+<div style="height: 38px; overflow: auto">
+          <b>2024-05-08</b>: We will be organizing the workshop on
+          <a href="https://human-foundation.github.io/workshop-eccv-2024/"
+            >Foundation Models for 3D Humans</a>!<br />
+          <b>2024-04-12</b>: <a href="http://boft.wyliu.com/">BOFT (ICLR'24)</a> has
+          been integrated into <a href="https://huggingface.co/docs/peft/main/en/conceptual_guides/oft">HuggingFace Peft</a>.
+          <br />
+        </div>
+</div>
+</div>
+</div>
+
+
+<div style="clear: both;" >
+<div class="section">
+  <h2>Resaerch</h2>
+  <div class="bio" id="research">
+
+    <p>
+      More specifically, I am currently focusing on the multiple facets of generalization and how inductive bias could help, including
+    </p>
+
+    <ul style="list-style-type: disc;margin-top: 9px; margin-bottom: -5px;">
+      <li>
+        fundamental understanding of generalization in neural networks;
+      </li>
+      <li>
+        principled efficient algorithms for the <em>finetuning</em>, <em>pretraining</em> and <em>alignment</em> of foundation models;
+      </li>
+      <li>
+        langage models for challenging downstream tasks (cross-modal reasoning, symbolic reasoning, math).
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+-->
+
+<a name="mentoring"></a>
+
+<div style="clear: both;" >
+<div class="section">
+<h2>Students</h2>
+<div class="bio" id="ads">
+  <p style="margin-top:3px; margin-bottom:3px">I take great pleasure to work with a group of highly motivated students. Interested in joining? Make sure to read <a shape="rect" href="javascript:togglebib(&#39;ads&#39;)" class="togglebib">this</a> first.</p>
+  <pre xml:space="preserve" style="display: none;"> &nbsp;&nbsp;&nbsp; - Thanks for your interest in joining us! See our group's <a href="https://docs.google.com/document/d/1ln-BCYiYLRLILlmOCd7hzvW1ByF7pYK2FyB54VJRWCM/edit?usp=sharing">recent focus</a>.
+  &nbsp;&nbsp; - I am always looking for motivated Postdoc, PhD students and visitors/interns. 
+  &nbsp;&nbsp; - Due to the high volume of emails, I apologize if I haven't responded to your email.
+  &nbsp;&nbsp; - Solid math/engineering and good communication skills are necessary.
+  &nbsp;&nbsp; - NO need to email me. Fill out <a href="https://forms.gle/YdBwtA1zRQemMZzs8">this form</a> and directly apply <a href="https://www.cse.cuhk.edu.hk/admission/mphil-phd/">here</a> (and mention my name).</pre>
+</div>
+<div class="bio" id="mentor">
+  <p style="margin-top:3px">
+  <b>PhD students</b></p>
+  <p style="margin-top:5px">
+  <div style="display: grid; grid-template-columns: repeat(2, 265px); grid-gap: 1px;">
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/zeju-qiu-729b8018a/?originalSubdomain=de">Zeju Qiu</a> (with <a href="https://is.mpg.de/~bs">Bernhard Schölkopf</a>)</p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://jc-chen1.github.io/">Jiacheng Chen</a> (with <a href="https://ych133.github.io/">Yu Cheng</a>)</p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://www.linkedin.com/in/yamei-chen-ab924b14a/">Yamei Chen</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="TBA">He Guo</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://huangyangyi.github.io/">Yangyi Huang</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://scholar.google.com/citations?user=CDyo3XgAAAAJ&hl=en">Siyuan Ma</a> (with <a href="https://en.westlake.edu.cn/faculty/yandong-wen.html">Yandong Wen</a>)</p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://scholar.google.com/citations?user=dX-aOIwAAAAJ&hl=en">Kexuan Shi</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://zhouliang-yu.github.io/">Zhouliang Yu</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://haoquanzhang.github.io/">Haoquan Zhang</a></p></div>
+  </div>
+  </p>
+  <p style="margin-top:9px">
+  <b>Visiting students / Interns</b></p>
+  <p style="margin-top:5px">
+  <div style="display: grid; grid-template-columns: repeat(2, 265px); grid-gap: 1px;">
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://timx.me/">Tim Z. Xiao</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://thea-hsu.github.io/">Xinyue Xu</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://brandon-liu-jx.github.io/">Jinxiu Liu</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://yinleung.com/">Xianliang Li</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://lhxcs.github.io/">Hanxuan Li</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://sihany077.github.io/">Sihan Yang</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="https://scholar.google.com/citations?user=tMihzcoAAAAJ&hl=zh-CN">Jiale Kang</a></p></div>
+    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;- <a href="http://lijunc04.github.io/">Lijun Cai</a></p></div>
+  </div>
+  </p>
+  <p style="margin-top:8px; margin-bottom:2px"><a shape="rect" href="javascript:togglebib(&#39;mentor&#39;)" class="togglebib"><b>Alumni</b></a></p>
+  <pre xml:space="preserve" style="display: none;"> &nbsp;&nbsp;&nbsp; - <a href="https://www.linkedin.com/in/yamei-chen-ab924b14a/">Yamei Chen</a> (2024): research intern
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - M.S. student at Technical University of Munich
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Next: Ph.D. student in my group
+  &nbsp;&nbsp; - <a href="https://ggghsl.github.io/">Gege Gao</a> (2023 - 2024): research intern
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ph.D. student at University of Tübingen
+  &nbsp;&nbsp; - <a href="https://www.linkedin.com/in/zeju-qiu-729b8018a/?originalSubdomain=de">Zeju Qiu</a> (2022 - 2024): master thesis student
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - M.S. at Technical University of Munich
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Next: Ph.D. student in my group
+  &nbsp;&nbsp; - <a href="https://yulonghui.github.io/">Longhui Yu</a> (2022 - 2024): research intern
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - M.S. at Peking University, Ph.D. offers from Caltech, University of Toronto
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Next: Researcher at Kimi AI
+  &nbsp;&nbsp; - <a href="https://itszhen.com/">Zhen Liu</a> (2017 - 2019, 2022 - 2024): research intern
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - M.S. at Georgia Tech → Ph.D. at Mila & University of Montreal
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Next: Assistant Professor at The Chinese University of Hong Kong, Shenzhen</pre>
+</div>
+</div>
+</div>
+
+
+
+
+<div style="clear: both;" >
+<div class="section">
+<h2>Recent Highlight</h2>
+
+<div class="paper" id="qiu2026poetx_HL">
+      <p><a href='https://arxiv.org/pdf/2603.05500'><b>POET-X: Memory-efficient LLM Training by Scaling Orthogonal Transformation</b></a><br />
+        Zeju Qiu, Lixin Liu, Adrian Weller, Han Shi, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">Preprint 2026</font></em><br />
+      <a href='https://arxiv.org/abs/2603.05500'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/poet'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/poetx/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2026poetx_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{qiu2026poetx,
+      title={POET-X: Memory-efficient LLM Training by Scaling Orthogonal Transformation},
+      author={Qiu, Zeju and Liu, Lixin and Weller, Adrian and Shi, Han and Liu, Weiyang}
+      journal={arXiv preprint arXiv:2603.05500},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="yang2026orthomerge_HL">
+      <p><a href='https://arxiv.org/pdf/2602.05943'><b>Orthogonal Model Merging</b></a><br />
+        Sihan Yang, Kexuan Shi, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">Preprint 2026</font></em><br />
+      <a href='https://arxiv.org/abs/2602.05943'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/OrthoMerge'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/OrthoMerge/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;yang2026orthomerge_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{yang2026orthomerge,
+      title={Orthogonal Model Merging},
+      author={Yang, Sihan and Shi, Kexuan and Liu, Weiyang}
+      journal={arXiv preprint arXiv:2602.05943},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="liu2026diagdistill_HL">
+      <p><a href='TBA'><b>Streaming Autoregressive Video Generation via Diagonal Distillation</b></a><br />
+        Jinxiu Liu<a href=#star title="Equal contribution">*</a>, Xuanming Liu<a href=#star title="Equal contribution">*</a>, Kangfu Mei, Yandong Wen, Ming-Hsuan Yang, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">ICLR 2026</font></em><br />
+      <a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/diagdistill'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/diagdistill/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2026diagdistill_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2026diagdistill,
+      title={Streaming Autoregressive Video Generation via Diagonal Distillation},
+      author={Liu, Jinxiu and Liu, Xuanming and Mei, Kangfu and Wen, Yandong and Yang, Ming-Hsuan and Liu, Weiyang},
+      booktitle={ICLR},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="shi2025fda_HL">
+      <p><a href='https://arxiv.org/pdf/2510.21223'><b>Model Merging with Functional Dual Anchors</b></a><br />
+        Kexuan Shi, Yandong Wen, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">Preprint 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2510.21223'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/fda'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/fda/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;shi2025fda_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{shi2025fda,
+      title={Model Merging with Functional Dual Anchors},
+      author={Shi, Kexuan and Wen, Yandong and Liu, Weiyang},
+      journal={arXiv preprint arXiv:2510.21223},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="zhang2025besiegefield_HL">
+      <p><a href='https://arxiv.org/pdf/2510.14980'><b>Agentic Design of Compositional Machines</b></a><br />
+        Wenqian Zhang, <u>Weiyang Liu</u>, Zhen Liu<br />
+      <em><font color="#B71C1C">Preprint 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2510.14980'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Godheritage/BesiegeField'>code</a>&nbsp;|&nbsp;<a href='https://besiegefield.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;zhang2025besiegefield_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{besiegefield2025,
+      title={Agentic Design of Compositional Machines},
+      author={Zhang, Wenqian and Liu, Weiyang and Liu, Zhen},
+      journal={arXiv preprint arXiv:2510.14980},
+      year={2025}}</pre>
+    </div>
+
+</div>
+</div>
+
+
+
+<a name="pub"></a>
+<div style="clear: both;">
+<div class="section">
+<div style="clear: both;">
+  <div class="section">
+    <h2 id="confpapers2">Publication</h2>
+    <!--<a href="index.html" id="select1" onclick="showPubs(1); return false;" title="Papers"></a><a href="index.html" id="select2" onclick="showPubs(2); return false;" ></a>-->
+
+<div class="bio" id="options">
+      <p>Show <a href="" id="select1" onclick="showPubs(1); return false;">selected</a> / <a href="" id="select0" onclick="showPubs(0); return false;">all by date</a> / <a href="" id="select2" onclick="showPubs(2); return false;">all by topic</a><!--<: <span class="tag"><a href="#spherelearn" onclick="showPubs(2)">Principled Inductive Bias Modeling</a></span>, <span class="tag"><a href="#teaching" onclick="showPubs(2)">Data-centric Learning</a></span>, <span class="tag"><a href="#3dmodel" onclick="showPubs(2)">Generative Modeling</a></span>--></p>
+    </div>
+
+  <div id="pubs"></div>
+
+  <script id="pubs_by_date" language="text">
+
+<div class="paper" id="zhang2026chips">
+      <p><a href='https://arxiv.org/pdf/2511.18519'><b>CHIPS: Efficient CLIP Adaptation via Curvature-aware Hybrid Influence-based Data Selection</b></a><br />
+        Xinlin Zhuang, Yichen Li, Xiwei Liu, Haolin Yang, Yifan Lu, Ziyun Zou, Yulong Li, Huifa Li, Dongliang Chen, Qinglei Wang, <u>Weiyang Liu</u>, Ying Qian, Jiangming Shi, Imran Razzak<br />
+      <em><font color="#B71C1C">CVPR 2026</font></em><br />
+      <a href='https://arxiv.org/abs/2511.18519'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='TBA'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;zhang2026chips&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{zhang2026chips,
+      title={CHIPS: Efficient CLIP Adaptation via Curvature-aware Hybrid Influence-based Data Selection},
+      author={Zhuang, Xinlin and Li, Yichen and Liu, Xiwei and Yang, Haolin and Lu, Yifan and Zou, Ziyun 
+        and Li, Yulong and Li, Huifa and Chen, Dongliang and Wang, Qinglei 
+        and Liu, Weiyang and Qian, Ying and Shi, Jiangming and Razzak, Imran},
+      booktitle={CVPR},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="liu2026diagdistill">
+      <p><a href='TBA'><b>Streaming Autoregressive Video Generation via Diagonal Distillation</b></a><br />
+        Jinxiu Liu<a href=#star title="Equal contribution">*</a>, Xuanming Liu<a href=#star title="Equal contribution">*</a>, Kangfu Mei, Yandong Wen, Ming-Hsuan Yang, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">ICLR 2026</font></em><br />
+      <a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/diagdistill'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/diagdistill/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2026diagdistill&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2026diagdistill,
+      title={Streaming Autoregressive Video Generation via Diagonal Distillation},
+      author={Liu, Jinxiu and Liu, Xuanming and Mei, Kangfu and Wen, Yandong and Yang, Ming-Hsuan and Liu, Weiyang},
+      booktitle={ICLR},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="ni2026RigidSSL">
+      <p><a href='https://arxiv.org/pdf/2603.02406'><b>Rigidity-Aware Geometric Pretraining for Protein Design and Conformational Ensembles</b></a><br />
+        Zhanghan Ni, Yanjing Li, Zeju Qiu, Bernhard Schölkopf, Hongyu Guo, <u>Weiyang Liu</u>, Shengchao Liu<br />
+      <em><font color="#B71C1C">ICLR 2026</font></em><br />
+      <a href='https://arxiv.org/abs/2603.02406'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ZhanghanNi/RigidSSL'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;ni2026RigidSSL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{ni2026RigidSSL,
+      title={RigidSSL: Rigidity-based Geometric Pretraining for Protein Generation},
+      author={Ni, Zhanghan and Li, Yanjing and Qiu, Zeju and Schölkopf, Bernhard 
+        and Guo, Hongyu and Liu, Weiyang and Liu, Shengchao},
+      booktitle={ICLR},
+      year={2026}}</pre>
+    </div>
+
+<div class="paper" id="qiu2025poet">
+      <p><a href='papers/poet_v3.pdf'><b>Reparameterized LLM Training via Orthogonal Equivalence Transformation</b></a><br />
+        Zeju Qiu, Simon Buchholz, Tim Z. Xiao, Maximilian Dax, Bernhard Schölkopf, <u>Weiyang Liu</u><a href=#star title="Project lead & Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">NeurIPS 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2506.08001'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/poet'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/poet/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025poet&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025poet,
+      title={Reparameterized LLM Training via Orthogonal Equivalence Transformation},
+      author={Qiu, Zeju and Buchholz, Simon and Xiao, Tim Z. 
+        and Dax, Maximilian and Sch\"olkopf, Bernhard and Liu, Weiyang},
+      booktitle={NeurIPS},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="liu2025vggflow">
+      <p><a href='https://arxiv.org/pdf/2512.05116'><b>Value Gradient Guidance for Flow Matching Alignment</b></a><br />
+        Zhen Liu, Tim Z. Xiao, Carles Domingo-Enrich, <u>Weiyang Liu</u>, Dinghuai Zhang<br />
+      <em><font color="#B71C1C">NeurIPS 2025</font></em><br />
+      <em><font color="Gray">NeurIPS 2025 Workshop on Structured Probabilistic Inference & Generative Modeling</font></em><br />
+      <a href='https://arxiv.org/abs/2512.05116'>arXiv</a>&nbsp;|&nbsp;<a href='https://vggflow.github.io/'>code</a>&nbsp;|&nbsp;<a href='https://vggflow.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2025vggflow&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2025vggflow,
+      title={Value Gradient Guidance for Flow Matching Alignment},
+      author={Liu, Zhen and Xiao, Tim Z. and Domingo-Enrich, Carles and Liu, Weiyang and Zhang, Dinghuai},
+      booktitle={NeurIPS},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="yao2025speculative">
+      <p><a href='papers/TBA.pdf'><b>Speculative Jacobi-Denoising Decoding for Accelerating Autoregressive Text-to-image Generation</b></a><br />
+        Yao Teng, Fu-Yun Wang, Xian Liu, Zhekai Chen, Han Shi, Yu Wang, Zhenguo Li, <u>Weiyang Liu</u>, Difan Zou, Xihui Liu<br />
+      <em><font color="#B71C1C">NeurIPS 2025</font></em><br />
+      <a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='TBA'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;yao2025speculative&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{yao2025speculative,
+      title={Speculative Jacobi-Denoising Decoding for Accelerating Autoregressive Text-to-image Generation},
+      author={Yao, Teng and Wang, Fu-Yun and Liu, Xian and Chen, Zhekai and Shi, Han 
+        and Wang, Yu and Li, Zhenguo and Liu, Weiyang and Zou, Difan and Liu, Xihui},
+      booktitle={NeurIPS},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="chen2025sgpgen">
+      <p><a href='https://arxiv.org/pdf/2509.05208'><b>Symbolic Graphics Programming with Large Language Models</b></a><br />
+        Yamei Chen<a href=#star title="Equal contribution">*</a>, Haoquan Zhang<a href=#star title="Equal contribution">*</a>, Yangyi Huang, Zeju Qiu, Kaipeng Zhang, Yandong Wen, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">Preprint 2025</font></em><br />
+      <em><font color="Gray">NeurIPS 2025 Workshop on Multimodal Algorithmic Reasoning</font></em><br />
+      <a href='https://arxiv.org/abs/2509.05208'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/SGP-RL'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/SGP-Gen/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;chen2025sgpgen&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{chen2025symbolic,
+      title={Symbolic Graphics Programming with Large Language Models},
+      author={Chen, Yamei and Zhang, Haoquan and Huang, Yangyi and Qiu, Zeju 
+        and Zhang, Kaipeng and Wen, Yandong and Liu, Weiyang},
+      journal={arXiv preprint arXiv:2509.05208},
+      year={2025}}</pre>
+    </div>
+
+
+<div class="paper" id="qiu2025oftv2">
+      <p><a href='papers/oftv2.pdf'><b>Orthogonal Finetuning Made Scalable</b></a><br />
+        Zeju Qiu<a href=#star title="Equal contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal contribution & Project lead">*</a>, Adrian Weller, Bernhard Schölkopf<br />
+      <em><font color="#B71C1C">EMNLP 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2506.19847'>arXiv</a>&nbsp;|&nbsp;<a href='https://huggingface.co/docs/peft/main/en/package_reference/oft'>code</a>&nbsp;|&nbsp;<a href='https://drive.google.com/drive/folders/1kB3x9KlmklRSeLu74VdH5MEaywvCMVdx'>colab</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/oftv2/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025oftv2&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025oftv2,
+      title={Orthogonal Finetuning Made Scalable},
+      author={Qiu, Zeju and Liu, Weiyang and Weller, Adrian and Sch\"olkopf, Bernhard},
+      booktitle={EMNLP},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="liu2025nucleusdiff">
+      <p><a href='https://arxiv.org/pdf/2409.10584'><b>Manifold-Constrained Nucleus-Level Denoising Diffusion Model for Structure-Based Drug Design</b></a><br />
+        Shengchao Liu, Divin Yan, Weitao Du, <u>Weiyang Liu</u>, Zhuoxinran Li, Hongyu Guo, Christian Borgs, Jennifer Chayes, Anima Anandkumar<br />
+      <em><font color="#B71C1C">Proceedings of the National Academy of Sciences 2025</font></em><br />
+      <em><font color="Gray">ICML 2024 workshop on Geometry-grounded Representation Learning and Generative Modeling</font></em><br />
+      <a href='https://arxiv.org/abs/2409.10584'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/yanliang3612/NucleusDiff'>code</a>&nbsp;|&nbsp;<a href='https://yanliang3612.github.io/NucleusDiff/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2025nucleusdiff&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{liu2025nucleusdiff,
+      title={Manifold-Constrained Nucleus-Level Denoising Diffusion Model for Structure-Based Drug Design},
+      author={Liu, Shengchao and Yan, Divin and Du, Weitao and Liu, Weiyang and Li, Zhuoxinran
+        and Guo, Hongyu and Borgs, Christian and Chayes, Jennifer and Anandkumar, Anima},
+      journal={Proceedings of the National Academy of Sciences},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="xiao2025large">
+      <p><a href='papers/Xiao2025LLM.pdf'><b>Large Language Models Are Zero-Shot Problem Solvers—Just Like Modern Computers</b></a><br />
+        Tim Z. Xiao, <u>Weiyang Liu</u>, Robert Bamler<br />
+      <em><font color="#B71C1C">Harvard Data Science Review 2025</font></em><br />
+      <a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://hdsr.mitpress.mit.edu/pub/42vjucmq/release/2'>html</a>&nbsp;|&nbsp;<a href='https://youtu.be/ySHuahiazD4?si=9tbQ0pu7Q4eagP6U'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;xiao2025large&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{xiao2025large,
+      title = {Large Language Models Are Zero-Shot Problem Solvers—Just Like Modern Computers},
+      author = {Xiao, Tim Z. and Liu, Weiyang and Bamler, Robert},
+      journal = {Harvard Data Science Review},
+      year = {2025}}</pre>
+    </div>
+
+<div class="paper" id="yu2025formalmath">
+      <p><a href='https://arxiv.org/pdf/2505.02735'><b>FormalMATH: Benchmarking Formal Mathematical Reasoning of Large Language Models</b></a><br />
+        Zhouliang Yu, Ruotian Peng, Keyi Ding, Yizhe Li, Zhongyuan Peng, Minghao Liu, Yifan Zhang, Zheng Yuan, Huajian Xin, Wenhao Huang, Yandong Wen, Ge Zhang, <u>Weiyang Liu</u><br />
+      <em><font color="#B71C1C">Preprint 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2505.02735'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/FormalMATH-Bench'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/FormalMATH/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/SphereLab'>dataset</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;yu2025formalmath&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{yu2025formalmath,
+      title={FormalMATH: Benchmarking Formal Mathematical Reasoning of Large Language Models},
+      author={Yu, Zhouliang and Peng, Ruotian and Ding, Keyi and Li, Yizhe and Peng, Zhongyuan and Liu, Minghao 
+        and Zhang, Yifan and Zheng, Yuan and Xin, Huajian and Huang, Wenhao and Wen, Yandong and Liu, Weiyang},
+      journal={arXiv preprint arXiv:2505.02735},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="chen2024sepllm">
+      <p><a href='https://arxiv.org/pdf/2412.12094'><b>SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator</b></a><br />
+        Guoxuan Chen, Han Shi, Jiawei Li, Yihang Gao, Xiaozhe Ren, Yimeng Chen, Xin Jiang, Zhenguo Li, <u>Weiyang Liu</u>, Chao Huang</p>
+      <p><em><font color="#B71C1C">ICML 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2412.12094'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/HKUDS/SepLLM'>code</a>&nbsp;|&nbsp;<a href='https://sepllm.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;chen2024sepllm&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{chen2024sepllm,
+      title={Sepllm: Accelerate large language models by compressing one segment into one separator},
+      author={Chen, Guoxuan and Shi, Han and Li, Jiawei and Gao, Yihang and Ren, Xiaozhe 
+        and Chen, Yimeng and Jiang, Xin and Li, Zhenguo and Liu, Weiyang and Huang, Chao},
+      booktitle={ICML},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="yu2025generating">
+      <p><a href='https://arxiv.org/pdf/2502.04728'><b>Generating Symbolic World Models via Test-time Scaling of Large Language Models</b></a><br />
+        Zhouliang Yu, Yuhuan Yuan, Tim Z. Xiao, Frank Xia, Jie Fu, Ge Zhang, Ge Lin, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">TMLR 2025</font></em><br />
+      <em><font color="Gray">ICLR 2025 workshop on World Models</font></em><br />
+      <a href='https://arxiv.org/abs/2502.04728'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/VMLPDDL/VML_PDDL/tree/main'>code</a>&nbsp;|&nbsp;<a href='https://vmlpddl.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=zVo6PfBa0K'>openreview</a>&nbsp;|&nbsp;<a href='https://huggingface.co/datasets/LLM4SymbolWorldModel/ipc_bench'>dataset</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;yu2025generating&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{yu2025generating,
+      title={Generating Symbolic World Models via Test-time Scaling of Large Language Models},
+      author={Yu, Zhouliang and Yuan, Yuhuan and Xiao, Tim Z and Xia, Fuxiang Frank 
+        and Fu, Jie and Zhang, Ge and Lin, Ge and Liu, Weiyang},
+      journal={Transactions on Machine Learning Research},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="ye2025vera">
+      <p><a href='https://arxiv.org/pdf/2412.01095'><b>VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models</b></a><br />
+        Muchao Ye, <u>Weiyang Liu</u>, Pan He</p>
+      <p><em><font color="#B71C1C">CVPR 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2412.01095'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/vera-framework/VERA'>code</a>&nbsp;|&nbsp;<a href='https://vera-framework.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;ye2025vera&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{ye2025vera,
+      title={VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models},
+      author={Ye, Muchao and Liu, Weiyang and He, Pan},
+      journal={arXiv preprint arXiv:2412.01095},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="lin2024chathuman">
+      <p><a href='https://chathuman.github.io/static/ChatHuman.pdf'><b>ChatHuman: Chatting about 3D Humans with Tools</b></a><br />
+        Jing Lin<a href=#star title="Equal Contribution">*</a>, Yao Feng<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u>, Michael J. Black</p>
+      <p><em><font color="#B71C1C">CVPR 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2405.04533'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/linjing7/ChatHuman'>code</a>&nbsp;|&nbsp;<a href='https://chathuman.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;lin2024chathuman&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{lin2024chathuman,
+      author={Lin, Jing and Feng, Yao and Liu, Weiyang and  Black, Michael J},
+      title={{ChatHuman}: Language-driven {3D} Human Understanding with Retrieval-Augmented Tool Reasoning},
+      journal={arXiv preprint arXiv:2405.04533},
+      year = {2024}}</pre>
+    </div>
+
+<div class="paper" id="zhang2025ood">
+      <p><a href='https://arxiv.org/pdf/2404.08679'><b>Your Finetuned Large Language Model is Already a Powerful Out-of-distribution Detector</b></a><br />
+        Andi Zhang, Tim Z. Xiao, <u>Weiyang Liu</u>, Robert Bamler, Damon Wischik</p>
+      <p><em><font color="#B71C1C">AISTATS 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2404.08679'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/andiac/LLMOODratio'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;zhang2025ood&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{zhang2025ood,
+      title={Your Finetuned Large Language Model is Already a Powerful Out-of-distribution Detector},
+      author={Zhang, Andi and Xiao, Tim Z and Liu, Weiyang and Bamler, Robert and Wischik, Damon},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="liu2025nablagfn">
+      <p><a href='https://arxiv.org/pdf/2412.07775'><b>Efficient Diversity-Preserving Diffusion Alignment via Gradient-Informed GFlowNets</b></a><br />
+        Zhen Liu, Tim Z. Xiao<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yoshua Bengio, Dinghuai Zhang</p>
+      <p><em><font color="#B71C1C">ICLR 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2412.07775'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/nabla-gfn'>code</a>&nbsp;|&nbsp;<a href='https://nabla-gfn.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2025nablagfn_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2025nablagfn,
+      title={Efficient Diversity-Preserving Diffusion Alignment via Gradient-Informed GFlowNets},
+      author={Liu, Zhen and Xiao, Tim Z and and Liu, Weiyang and Bengio, Yoshua and Zhang, Dinghuai},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="qiu2025sgpbench">
+      <p><a href='https://arxiv.org/pdf/2408.08313'><b>Can Large Language Models Understand Symbolic Graphics Programs?</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Project lead and Equal Contribution">*</a>, Haiwen Feng<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">**</a>, Tim Z. Xiao<a href=#star title="Equal Contribution">**</a>, Katherine M. Collins<a href=#star title="Equal Contribution">**</a>, Joshua B. Tenenbaum, Adrian Weller, Michael J. Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2025</font>&nbsp;&nbsp;&nbsp;<font color="#239B56">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2408.08313'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/sgp-bench/sgp-bench'>code</a>&nbsp;|&nbsp;<a href='https://sgp-bench.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Yk87CwhBDx'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025sgpbench&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025sgpbench,
+      title={Can Large Language Models Understand Symbolic Graphics Programs?},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Liu, Zhen and Xiao, Tim Z and Collins, Katherine M 
+        and Tenenbaum, Joshua B and Weller, Adrian and Black, Michael J and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="xiao2024vml">
+      <p><a href='https://arxiv.org/pdf/2406.04344'><b>Verbalized Machine Learning: Revisiting Machine Learning with Language Models</b></a><br />
+        Tim Z. Xiao, Robert Bamler, Bernhard Schölkopf, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">TMLR 2025</font></em><br />
+      <em><font color="Gray">ICML 2024 workshop on In-context Learning</font></em><br />
+      <em><font color="Gray">ICML 2024 workshop on LLMs and Cognition</font></em><br />
+      <a href='https://arxiv.org/abs/2406.04344'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/timxzz/VML_Examples'>code</a>&nbsp;|&nbsp;<a href='https://colab.research.google.com/drive/1QFCt_DFM65szsWUSEPRnuEoLwzjDxUth?usp=sharing'>colab</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=k3Ab6RuJE9'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/LCl_np5oPWA'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;xiao2024vml&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{xiao2025verbalized,
+      title={Verbalized Machine Learning: Revisiting Machine Learning with Language Models},
+      author={Xiao, Tim Z and Bamler, Robert and Sch{\"o}lkopf, Bernhard and Liu, Weiyang},
+      journal={Transactions on Machine Learning Research},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="sucholutsky2024repteaching">
+      <p><a href='https://arxiv.org/pdf/2406.04302'><b>Representational Alignment Supports Effective Machine Teaching</b></a><br />
+        Ilia Sucholutsky, Katherine M. Collins, Maya Malaviya, Nori Jacoby, <u>Weiyang Liu</u>, Theodore R. Sumers, Michalis Korakakis, Umang Bhatt, Mark Ho, Joshua B. Tenenbaum, Bradley C. Love, Zachary A. Pardos, Adrian Weller, Thomas L. Griffiths</p>
+      <p><em><font color="#B71C1C">Preprint 2025</font></em></p>
+      <p><em><font color="Gray">AAAI 2025 workshop on Innovation and Responsibility for AI-Supported Education</font></em></p>
+      <p><em><font color="Gray">ICLR 2025 workshop on Bidirectional Human-AI Alignment</font></em></p>
+      <p><a href='https://arxiv.org/abs/2406.04302'>arXiv</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;sucholutsky2024repteaching&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{sucholutsky2024representational,
+      title={Representational Alignment Supports Effective Machine Teaching},
+      author={Ilia Sucholutsky and Katherine M. Collins and Maya Malaviya and Nori Jacoby and Weiyang Liu
+       and Theodore R. Sumers and Michalis Korakakis and Umang Bhatt and Mark Ho and Joshua B. Tenenbaum
+        and Brad Love and Zachary A. Pardos and Adrian Weller and Thomas L. Griffiths},
+      journal={arXiv preprint arXiv:2406.04302},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="kulits2024igllm">
+      <p><a href='https://arxiv.org/abs/2404.15228'><b>Re-Thinking Inverse Graphics with Large Language Models</b></a><br />
+        Peter Kulits<a href=#star title="Equal Contribution">*</a>, Haiwen Feng<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u>, Victoria Abrevaya, Michael J. Black</p>
+      <p><em><font color="#B71C1C">TMLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56"><a href='https://blog.iclr.cc/2024/08/22/iclr2025-tmlr-partnership/' style="color:#239B56;">Selected for presentation at ICLR 2025</a></font></em></p>
+      <p><a href='https://arxiv.org/abs/2404.15228'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/kulits/IG-LLM'>code</a>&nbsp;|&nbsp;<a href='https://ig-llm.is.tue.mpg.de/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;kulits2024igllm&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{kulits2024igllm,
+      title={Re-Thinking Inverse Graphics With Large Language Models},
+      author={Kulits, Peter and Feng, Haiwen and Liu, Weiyang and Abrevaya, Victoria and Black, Michael J},
+      journal={Transactions on Machine Learning Research},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="su2024defense">
+      <p><a href='https://aclanthology.org/2024.findings-emnlp.284.pdf'><b>In Defense of Structural Sparse Adapters for Concurrent LLM Serving</b></a><br />
+        Junda Su, Zirui Liu, Zeju Qiu, <u>Weiyang Liu</u>, Zhaozhuo Xu</p>
+      <p><em><font color="#B71C1C">Findings of EMNLP 2024</font></em></p>
+      <p><em><font color="Gray">ICML 2024 workshop on Efficient Systems for Foundation Models</font></em></p>
+      <p><a href='https://aclanthology.org/2024.findings-emnlp.284/'>paper</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;su2024defense&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{su2024defense,
+      title={In defense of structural sparse adapters for concurrent llm serving},
+      author={Su, Junda and Liu, Zirui and Qiu, Zeju and Liu, Weiyang and Xu, Zhaozhuo},
+      booktitle={Findings of EMNLP 2024},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="sun2024easy">
+      <p><a href='https://arxiv.org/pdf/2403.09472.pdf'><b>Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision</b></a><br />
+        Zhiqing Sun<a href=#star title="Equal Contribution">*</a>, Longhui Yu<a href=#star title="Equal Contribution">*</a>, Yikang Shen, <u>Weiyang Liu</u>, Yiming Yang, Sean Welleck, Chuang Gan</p>
+      <p><em><font color="#B71C1C">NeurIPS 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2403.09472'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Edward-Sun/easy-to-hard'>code</a>&nbsp;|&nbsp;<a href='https://github.com/Edward-Sun/easy-to-hard'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;sun2024easy&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{sun2024easy,
+      title={Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision},
+      author={Sun, Zhiqing and Yu, Longhui and Shen, Yikang and Liu, Weiyang and Yang, Yiming and Welleck, Sean and Gan, Chuang},
+      booktitle={NeurIPS},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Gao2023GraphDreamer">
+      <p><a href='papers/GraphDreamer_v2.pdf'><b>GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs</b></a><br />
+        Gege Gao, <u>Weiyang Liu</u><a href=#star title="Directional Lead">*</a>, Anpei Chen, Andreas Geiger, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">CVPR 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2312.00093'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/GGGHSL/GraphDreamer'>code</a>&nbsp;|&nbsp;<a href='https://graphdreamer.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Gao2023GraphDreamer&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{gao2024graphdreamer,
+      author = {Gao, Gege and Liu, Weiyang and Chen, Anpei and Geiger, Andreas and Sch{\"o}lkopf, Bernhard},
+      title = {GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs},
+      booktitle = {CVPR},
+      year = {2024}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023BOFT">
+      <p><a href='papers/BOFT_v3.pdf'><b>Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Zeju Qiu<a href=#star title="Equal Contribution">*</a>, Yao Feng<a href=#star title="Equal Contribution">**</a>, Yuliang Xiu<a href=#star title="Equal Contribution">**</a>, Yuxuan Xue<a href=#star title="Equal Contribution">**</a>, Longhui Yu<a href=#star title="Equal Contribution">**</a>, Haiwen Feng, Zhen Liu, Juyeon Heo, Songyou Peng, Yandong Wen, Michael J. Black, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2311.06243'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/butterfly-oft'>code</a>&nbsp;|&nbsp;<a href='https://boft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/docs/peft/main/en/conceptual_guides/oft'>huggingface</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=7NzgkEdGyr'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/PxnQgIbMu9o'>talk</a>&nbsp;|&nbsp;<a href='papers/BOFT_slides_v2.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023BOFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2024boft,
+      author = {Liu, Weiyang and Qiu, Zeju and Feng, Yao and Xiu, Yuliang and Xue, Yuxuan and Yu, Longhui and Feng, Haiwen and Liu, Zhen 
+        and Heo, Juyeon and Peng, Songyou and Wen, Yandong and Black, Michael J. and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      title = {Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization},
+      booktitle = {ICLR},
+      year = {2024}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023gshell">
+      <p><a href='papers/gshell_v2.pdf'><b>Ghost on the Shell: An Expressive Representation of General 3D Shapes</b></a><br />
+        Zhen Liu, Yao Feng<a href=#star title="Equal Contribution">*</a>, Yuliang Xiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Liam Paull, Michael J. Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2310.15168'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/GShell/'>code</a>&nbsp;|&nbsp;<a href='https://gshell3d.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Ad87VjRqUw'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023gshell&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2024gshell,
+      title={Ghost on the Shell: An Expressive Representation of General 3D Shapes},
+      author={Liu, Zhen and Feng, Yao and Xiu, Yuliang and Liu, Weiyang 
+        and Paull, Liam and Black, Michael J and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICLR},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Yu2023MetaMath">
+      <p><a href='papers/MetaMath_ICLR.pdf'><b>MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models</b></a><br />
+        Longhui Yu, Weisen Jiang, Han Shi, J. Yu, Z. Liu, Yu Zhang, James Kwok, Zhenguo Li, Adrian Weller, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <p><em><font color="#B71C1C">ICLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2309.12284'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/meta-math/MetaMath'>code</a>&nbsp;|&nbsp;<a href='https://meta-math.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/meta-math'>huggingface</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=N8N0hgNDRt'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Yu2023MetaMath&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Yu2024MetaMath,
+      title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+      author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying 
+        and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+      booktitle={ICLR},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="xiao2023compact">
+      <p><a href='https://arxiv.org/pdf/2401.00611.pdf'><b>A Compact Representation for Bayesian Neural Networks By Removing Permutation Symmetry</b></a><br />
+        Tim Z. Xiao, <u>Weiyang Liu</u>, Robert Bamler</p>
+      <p><em><font color="#B71C1C">Preprint 2024</font></em></p>
+      <p><em><font color="Gray">NeurIPS 2023 Workshop on Unifying Representations in Neural Models</font></em></p>
+      <p><a href='https://arxiv.org/abs/2401.00611'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='TBA'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;xiao2023compact&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{xiao2023compact,
+      title={A Compact Representation for Bayesian Neural Networks By Removing Permutation Symmetry},
+      author={Xiao, Tim Z and Liu, Weiyang and Bamler, Robert},
+      journal={arXiv preprint arXiv:2401.00611},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Qiu2023OFT">
+      <p><a href='papers/OFT_v3.pdf'><b>Controlling Text-to-Image Diffusion by Orthogonal Finetuning</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Haiwen Feng, Yuxuan Xue, Yao Feng, Zhen Liu, Dan Zhang, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">NeurIPS 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2306.07280'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Zeju1997/oft'>code</a>&nbsp;|&nbsp;<a href='https://oft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Qiu2023OFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Qiu2023OFT,
+      title={Controlling Text-to-Image Diffusion by Orthogonal Finetuning},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Xue, Yuxuan and Feng, Yao 
+        and Liu, Zhen and Zhang, Dan and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      booktitle={NeurIPS},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2023MINT">
+      <p><a href='papers/MINT_v1.pdf'><b>Nonparametric Teaching for Multiple Learners</b></a><br />
+        Chen Zhang, Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang, James Kwok</p>
+      <p><em><font color="#B71C1C">NeurIPS 2023</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chen2hang/MINT_NonparametricTeaching'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023MINT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2023MINT,
+      title={Nonparametric Teaching for Multiple Learners},
+      author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+      booktitle={NeurIPS},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Feng2023DELTA">
+      <p><a href='https://arxiv.org/pdf/2309.06441.pdf'><b>Learning Disentangled Avatars with Hybrid 3D Representations</b></a><br />
+        Yao Feng, <u>Weiyang Liu</u>, Timo Bolkart, Jinlong Yang, Marc Pollefeys, Michael J. Black</p>
+      <p><em><font color="#B71C1C">Preprint 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2309.06441'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/yfeng95/DELTA'>code</a>&nbsp;|&nbsp;<a href='https://yfeng95.github.io/delta/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Feng2023DELTA&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Feng2023DELTA,
+    author = {Feng, Yao and Liu, Weiyang and Bolkart, Timo and Yang, Jinlong and Pollefeys, Marc and Black, Michael J.},
+    title = {Learning Disentangled Avatars with Hybrid 3D Representations},
+    journal={arXiv preprint arXiv:2309.06441},
+    year = {2023}}</pre>
+   </div>
+
+<div class="paper" id="Wen2023SimPLE">
+      <p><a href='papers/SimPLE_v1.pdf'><b>Pairwise Similarity Learning is SimPLE</b></a><br />
+        Yandong Wen<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yao Feng, Bhiksha Raj, Rita Singh, Adrian Weller, Michael J. Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICCV 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2310.09449'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere'>code</a>&nbsp;|&nbsp;<a href='https://simple.is.tue.mpg.de/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2023SimPLE&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2023SimPLE,
+      title={Pairwise Similarity Learning is SimPLE},
+      author={Wen, Yandong and Liu, Weiyang and Feng, Yao and Raj, Bhiksha and Singh, Rita
+        and Weller, Adrian and Black, Michael and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICCV},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Huang2023ELICIT">
+      <p><a href='papers/ELICIT_v3.pdf'><b>One-shot Implicit Animatable Avatars with Model-based Priors</b></a><br />
+        Yangyi Huang, Hongwei Yi, <u>Weiyang Liu</u>, Haofan Wang, Boxi Wu, Wenxiao Wang, Binbin Lin, Debing Zhang, Deng Cai</p>
+      <p><em><font color="#B71C1C">ICCV 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2212.02469v2'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/huangyangyi/ELICIT'>code</a>&nbsp;|&nbsp;<a href='https://elicit3d.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Huang2023ELICIT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Huang2023ELICIT,
+      title={One-shot Implicit Animatable Avatars with Model-based Priors},
+      author={Huang, Yangyi and Yi, Hongwei and Liu, Weiyang and Wang, Haofan
+        and Wu, Boxi and Wang, Wenxiao and Lin, Binbin and Zhang, Debing and Cai, Deng},
+      booktitle={ICCV},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2023IGSD">
+      <p><a href='https://arxiv.org/pdf/2010.12609.pdf'><b>Iterative Graph Self-Distillation</b></a><br />
+        Hanlin Zhang, Shuai Lin, <u>Weiyang Liu</u>, Pan Zhou, Jian Tang, Xiaodan Liang, Eric Xing</p>
+      <p><em><font color="#B71C1C">TKDE 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2010.12609'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/hlzhang109/IGSD'>code</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/abstract/document/10216383'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023IGSD&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Zhang2023IGSD,
+      title={Iterative graph self-distillation},
+      author={Zhang, Hanlin and Lin, Shuai and Liu, Weiyang and Zhou, Pan and Tang, Jian and Liang, Xiaodan and Xing, Eric P},
+      journal={IEEE Transactions on Knowledge and Data Engineering},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Heo2023BlochNet">
+      <p><a href='papers/BlochNet_v1.pdf'><b>Physics-based Decoding Improves Magnetic Resonance Fingerprinting</b></a><br />
+        Juyeon Heo, Pingfan Song, <u>Weiyang Liu</u>, Adrian Weller</p>
+      <p><em><font color="#B71C1C">MICCAI 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='papers/BlochNet_supp.pdf'>appendix</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Heo2023BlochNet&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Heo2023BlochNet,
+      title={Regularized Magnetic Resonance Fingerprinting with Bloch Equations},
+      author={Heo, Juyeon and Song, Pingfan and Liu, Weiyang and Weller, Adrian},
+      booktitle={MICCAI},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Cao2023MHEAL">
+      <p><a href='papers/MHEAL_TPAMI.pdf'><b>Data-Efficient Learning via Minimizing Hyperspherical Energy</b></a><br />
+        Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang</p>
+      <p><em><font color="#B71C1C">TPAMI 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2206.15204'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/abstract/document/10168255'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Cao2023MHEAL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Cao2022MHEAL,
+      title={Data-Efficient Learning via Minimizing Hyperspherical Energy},
+      author={Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor W},
+      journal={arXiv preprint arXiv:2206.15204},
+      year={2022}}</pre>
+    </div>
+
+<div class="paper" id="Collins2023HILLM">
+      <p><a href='https://arxiv.org/abs/2211.01202'><b>Human-in-the-Loop Mixup</b></a><br />
+        Katherine M. Collins, Umang Bhatt, <u>Weiyang Liu</u>, Vihari Piratla, Ilia Sucholutsky, Bradley Love, Adrian Weller</p>
+      <p><em><font color="#B71C1C">UAI 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral&nbsp;&&nbsp;<a href='papers/hcomp-2022-Certificate-BestPoster.pdf' style="color:#239B56;">Best HCOMP Poster Award</a></font></em></p>
+      <p><a href='https://arxiv.org/abs/2211.01202'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/cambridge-mlg/hill-mixup'>code</a>&nbsp;|&nbsp;<a href='https://sites.google.com/view/hill-mixup?usp=sharing'>project</a>&nbsp;|&nbsp;<a href='https://www.youtube.com/watch?v=rMIqSeGXPTI'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Collins2023HILLM&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Collins2023HILLM,
+      title={Human-in-the-Loop Mixup},
+      author={Collins, Katherine M and Bhatt, Umang and Liu, Weiyang and Piratla, Vihari 
+        and Sucholutsky, Ilia and Love, Bradley and Weller, Adrian},
+      booktitle={UAI},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2023NIMT">
+      <p><a href='papers/NIMT2023_v1.pdf'><b>Nonparametric Iterative Machine Teaching</b></a><br />
+        Chen Zhang, Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang, James Kwok</p>
+      <p><em><font color="#B71C1C">ICML 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2306.03007'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chen2hang/NonparametricTeaching'>code</a>&nbsp;|&nbsp;<a href='papers/NIMT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023NIMT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2023NIMT,
+      title={Nonparametric Iterative Machine Teaching},
+      author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+      booktitle = {ICML},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023HUG">
+      <p><a href='papers/HUG_v2.pdf'><b>Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Longhui Yu<a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2303.06484'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=inU2quhGdNU'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/HQvjVddUfOE'>talk</a>&nbsp;|&nbsp;<a href='papers/HUG_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023HUG&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023HUG,
+      title={Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap},
+      author={Liu, Weiyang and Yu, Longhui and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+
+<div class="paper" id="Liu2023MeshDiffusion">
+      <p><a href='papers/MeshDiffusion_v2.pdf'><b>MeshDiffusion: Score-based Generative 3D Mesh Modeling</b></a><br />
+        Zhen Liu, Yao Feng, Michael J. Black, Derek Nowrouzezahrai, Liam Paull, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <em><font color="#B71C1C">ICLR 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Notable Top-25%</font></em><br />
+      <em><font color="Gray">ICCV 2023 workshop on AI for 3D Content Creation</font></em><br />
+      <p><a href='https://arxiv.org/abs/2303.08133'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/MeshDiffusion/'>code</a>&nbsp;|&nbsp;<a href='https://meshdiffusion.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=0cpM2ApF9p6'>openreview</a>&nbsp;|&nbsp;<a href='https://iclr.cc/virtual/2023/poster/11403'>talk</a>&nbsp;|&nbsp;<a href='papers/MeshDiffusion_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023MeshDiffusion&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023MeshDiffusion,
+      title={MeshDiffusion: Score-based Generative 3D Mesh Modeling},
+      author={Liu, Zhen and Feng, Yao and Black, Michael J. and Nowrouzezahrai, Derek 
+        and Paull, Liam and Liu, Weiyang},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Qiu2022DHT">
+      <p><a href='papers/DHT_v2.pdf'><b>Iterative Teaching by Data Hallucination</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Corresponding Author">*</a>, Tim Z. Xiao, Zhen Liu, Umang Bhatt, Yucen Luo, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">AISTATS 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2210.17467'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Zeju1997/data_halucination_teaching'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/JXv57UKt0DQ'>talk</a>&nbsp;|&nbsp;<a href='papers/DHT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Qiu2022DHT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Qiu2023DHT,
+      title={Iterative Teaching by Data Hallucination},
+      author={Qiu, Zeju and Liu, Weiyang and Xiao, Tim Z and Liu, Zhen 
+        and Bhatt, Umang and Luo, Yucen and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      booktitle = {AISTATS},
+      year={2023}}</pre>
+    </div>
+
+
+<div class="paper" id="Yu2022MOCA">
+      <p><a href='papers/moca_v2.pdf'><b>Continual Learning by Modeling Intra-Class Variation</b></a><br />
+        Longhui Yu, Tianyang Hu, Lanqing Hong, Zhen Liu, Adrian Weller, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <p><em><font color="#B71C1C">TMLR 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2210.05398'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/yulonghui/MOCA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=iDxfGaMYVr'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Yu2022MOCA&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Yu2022MOCA,
+      title={Continual Learning by Modeling Intra-Class Variation},
+      author={Yu, Longhui and Hu, Tianyang and Hong, Lanqing and Liu, Zhen and Weller, Adrian and Liu, Weiayng},
+      journal = {arXiv preprint arXiv:2210.05398},
+      year={2022}}</pre>
+    </div>
+
+<div class="paper" id="Liu2022SCR">
+      <p><a href='papers/SCR_v1.pdf'><b>Structural Causal 3D Reconstruction</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Liam Paull, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ECCV 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2207.10156'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/SCR-3D'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/mY6I55q4D-o'>talk</a>&nbsp;|&nbsp;<a href='https://wyliu.com/papers/SCR_poster.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2022SCR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2022SCR,
+      title={Structural Causal 3D Reconstruction},
+      author={Liu, Weiyang and Liu, Zhen and Paull, Liam and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      booktitle = {ECCV},
+      year={2022}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2022DDG">
+      <p><a href='papers/DDG_CVPR22.pdf'><b>Towards Principled Disentanglement for Domain Generalization</b></a><br />
+        Hanlin Zhang<a href=#star title="Equal Contribution">*</a>, Yi-Fan Zhang<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u>, Adrian Weller, Bernhard Schölkopf, Eric Xing</p>
+      <p><em><font color="#B71C1C">CVPR 2022</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2111.13839'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/hlzhang109/DDG'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/SLjORQe8jJ0'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2022DDG&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2022DDG,
+      title={Towards Principled Disentanglement for Domain Generalization},
+      author={Zhang, Hanlin and Zhang, Yi-Fan and Liu, Weiyang and Weller, Adrian and Sch{\"o}lkopf, Bernhard and Xing, Eric P},
+      booktitle = {CVPR},
+      year={2022}}</pre>
+    </div>
+
+<div class="paper" id="Liu2021SphereFaceR">
+      <p><a href='papers/spherefacer_v3_TPAMI.pdf'><b>SphereFace Revived: Unifying Hyperspherical Face Recognition</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yandong Wen<a href=#star title="Equal Contribution">*</a>, Bhiksha Raj, Rita Singh, Adrian Weller</p>
+      <p><em><font color="#B71C1C">TPAMI 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2109.05565'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere/tree/OpenSphere_v0'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>opensphere</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/document/9736575'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereFaceR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{liu2023spherefacer,
+      title={SphereFace Revived: Unifying Hyperspherical Face Recognition},
+      author={Liu, Weiyang and Wen, Yandong and Raj, Bhiksha and Singh, Rita and Weller, Adrian},
+      journal={IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+      volume={45},
+      number={02},
+      pages={2458--2474},
+      year={2023}}</pre>
+    </div>
+
+  <div class="paper" id="Wen2021SphereFace2">
+      <p><a href='papers/sphereface2_ICLR22.pdf'><b>SphereFace2: Binary Classification is All You Need for Deep Face Recognition</b></a><br />
+        Yandong Wen<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICLR 2022</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2108.01513'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=l3SDgUh7qZO'>openreview</a>&nbsp;|&nbsp;<a href='papers/sphereface2_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2021SphereFace2&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2021SphereFace2,
+      title={SphereFace2: Binary Classification is All You Need for Deep Face Recognition},
+      author={Wen, Yandong and Liu, Weiyang and Weller, Adrian and Raj, Bhiksha and Singh, Rita},
+      booktitle = {ICLR},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021GraphMVP">
+      <p><a href='papers/GraphMVP.pdf'><b>Pre-training Molecular Graph Representation with 3D Geometry</b></a><br />
+        Shengchao Liu, Hanchen Wang, <u>Weiyang Liu</u>, Joan Lasenby, Hongyu Guo, Jian Tang</p>
+      <p><em><font color="#B71C1C">ICLR 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.07728'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chao1224/GraphMVP'>code</a>&nbsp;|&nbsp;<a href='https://chao1224.github.io/GraphMVP'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=xQUe1pOKPam'>openreview</a>&nbsp;|&nbsp;<a href='https://drive.google.com/file/d/1-meh7rEGkngtmgNmEFo5TqfXJQXSZxz6/view'>talk</a>&nbsp;|&nbsp;<a href='papers/GraphMVP_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021GraphMVP&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021GraphMVP,
+      title={Pre-training Molecular Graph Representation with 3D Geometry},
+      author={Liu, Shengchao and Wang, Hanchen and Liu, Weiyang and Lasenby, Joan and Guo, Hongyu and Tang, Jian},
+      booktitle={ICLR},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Cao2021LLL">
+      <p><a href='papers/LLL_AISTATS22_v2.pdf'><b>Provable Lifelong Learning of Representations</b></a><br />
+        Xinyuan Cao<a href=#star title="Alphabetical Order">*</a>, <u>Weiyang Liu</u><a href=#star title="Alphabetical Order">*</a>, Santosh S. Vempala<a href=#star title="Alphabetical Order">*</a></p>
+      <p><em><font color="#B71C1C">AISTATS 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.14098'>arXiv</a>&nbsp;|&nbsp;<a href='https://youtu.be/LXLeMXuWOus'>talk</a>&nbsp;|&nbsp;<a href='papers/LLL_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Cao2021LLL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Cao2021LLL,
+      title={Provable Lifelong Learning of Representations},
+      author={Cao, Xinyuan and Liu, Weiyang and Vempala, Santosh S},
+      booktitle = {AISTATS},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021LAST">
+      <p><a href='papers/LAST_v5.pdf'><b>Iterative Teaching by Label Synthesis</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Hanchen Wang<a href=#star title="Equal Contribution">*</a>, Liam Paull, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">NeurIPS 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.14432'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=9rphbXqgmqM'>openreview</a>&nbsp;|&nbsp;<a href='https://nips.cc/virtual/2021/poster/26847'>talk</a>&nbsp;|&nbsp;<a href='papers/LAST_slides.pdf'>slides</a>&nbsp;|&nbsp;<a href='https://youtu.be/8EBJtOX42us'>video</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021LAST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021LAST,
+      title={Iterative Teaching by Label Synthesis},
+      author={Liu, Weiyang and Liu, Zhen and Wang, Hanchen and Paull, Liam and Sch{\"o}lkopf, Bernhard and Weller, Adrian},
+      booktitle = {NeurIPS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Xu2021LST">
+      <p><a href='papers/LST.pdf'><b>Locality Sensitive Teaching</b></a><br />
+        Zhaozhuo Xu, Beidi Chen, Chaojian Li, <u>Weiyang Liu</u>, Le Song, Yingyan Lin, Anshumali Shrivastava</p>
+      <p><em><font color="#B71C1C">NeurIPS 2021</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Ottovonxu/LST'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Rav_oC35ToB'>openreview</a>&nbsp;|&nbsp;<a href='https://www.youtube.com/watch?v=Cpf8V9_tnf8'>talk</a>&nbsp;|&nbsp;<a href='papers/LST_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Xu2021LST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Xu2021LST,
+      title={Locality Sensitive Teaching},
+      author={Xu, Zhaozhuo and Chen, Beidi and Li, Chaojian and Liu, Weiyang 
+        and Song, Le and Lin, Yingyan and Shrivastava, Anshumali},
+      booktitle = {NeurIPS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="UCADI2021NMI">
+      <p><a href='https://www.nature.com/articles/s42256-021-00421-z.pdf'><b>Advancing COVID-19 Diagnosis with Privacy-Preserving Collaboration in Artificial Intelligence</b></a><br />
+        Xiang Bai, Hanchen Wang, ..., <u>Weiyang Liu</u>, ..., Carola Schönlieb, Tian Xia</p>
+      <p><em><font color="#B71C1C">Nature Machine Intelligence 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2111.09461'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/HUST-EIC-AI-LAB/UCADI'>code</a>&nbsp;|&nbsp;<a href='http://www.covid-ct-ai.team/'>project</a>&nbsp;|&nbsp;<a href='http://bit.ly/3dUp0oL'>news</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;UCADI2021NMI&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{UCADI2021NMI,
+      title={Advancing COVID-19 diagnosis with privacy-preserving collaboration in artificial intelligence},
+      author={Bai, Xiang and Wang, Hanchen and Ma, Liya and Xu, Yongchao and Gan, Jiefeng and Fan, Ziwei and Yang, Fan and Ma, Ke and Yang, Jiehua and Bai, Song and others},
+      journal={Nature Machine Intelligence},
+      volume={3},
+      number={12},
+      pages={1081--1089},
+      year={2021},
+      publisher={Nature Publishing Group}}</pre>
+    </div>
+
+  <div class="paper" id="Wen2021CEST">
+      <p><a href='papers/CEST_iccv2021.pdf'><b>Self-Supervised 3D Face Reconstruction via Conditional Estimation</b></a><br />
+        Yandong Wen, <u>Weiyang Liu</u>, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICCV 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.04800'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/CEST'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/Rw0wzEdu3Yc'>talk</a>&nbsp;|&nbsp;<a href='papers/CEST_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2021CEST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2021CEST,
+      title={Self-Supervised 3D Face Reconstruction via Conditional Estimation},
+      author={Wen, Yandong and Liu, Weiyang and Raj, Bhiksha and Singh, Rita},
+      booktitle={ICCV},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021SphereUni">
+      <p><a href='papers/LiuAISTATS2021.pdf'><b>Learning with Hyperspherical Uniformity</b></a><br />
+        <u>Weiyang Liu</u>, Rongmei Lin, Zhen Liu, Li Xiong, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">AISTATS 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2103.01649'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/Sphere-Uniformity'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/YN8tVQb-HyE'>talk</a>&nbsp;|&nbsp;<a href='papers/SphereUni_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereUni&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021SphereUni,
+      title={Learning with Hyperspherical Uniformity},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Xiong, Li and Sch{\"o}lkopf, Bernhard and Weller, Adrian},
+      booktitle={AISTATS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2020OPT">
+      <p><a href='papers/LiuOPT2021_v6.pdf'><b>Orthogonal Over-Parameterized Training</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu, James Rehg, Liam Paull, Li Xiong, Le Song, Adrian Weller</p>
+      <p><em><font color="#B71C1C">CVPR 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2004.04690'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/OPT'>code</a>&nbsp;|&nbsp;<a href='https://opt-training.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/Oy8c1t1nonU'>talk</a>&nbsp;|&nbsp;<a href='papers/OPT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2020OPT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021OPT,
+      title={Orthogonal Over-Parameterized Training},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Rehg, James M. and Paull, Liam 
+       and Xiong, Li and Song, Le and Weller, Adrian},
+      booktitle={CVPR},
+      year={2021}}</pre>
+    </div>
+
+    <div class="paper" id="Chen20AVH">
+      <p><a href='papers/LiuICML20.pdf'><b>Angular Visual Hardness</b></a><br />
+        Beidi Chen, <u>Weiyang Liu</u>, Zhiding Yu, Jan Kautz, Anshumali Shrivastava, Animesh Garg, Animashree Anandkumar</p>
+      <p><em><font color="#B71C1C">ICML 2020</font></em></p>
+      <p><a href='https://arxiv.org/abs/1912.02279'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/keroro824/AVH'>code</a>&nbsp;|&nbsp;<a href='https://sites.google.com/nvidia.com/avh'>project</a>&nbsp;|&nbsp;<a href='https://icml.cc/virtual/2020/poster/6648'>talk</a>&nbsp;|&nbsp;<a href='https://t.co/hr5UzN7J6o?amp=1'>long talk</a>&nbsp;|&nbsp;<a href='papers/AVH_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Chen20AVH&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Chen20AVH,
+      title={Angular Visual Hardness},
+      author={Chen, Beidi and Liu, Weiyang and Garg, Animesh and Yu, Zhiding 
+       and Shrivastava, Anshumali and Anandkumar, Animashree},
+      booktitle={ICML},
+      year={2020}}</pre>
+    </div>
+
+    <div class="paper" id="LiuCVPR20">
+      <p><a href='papers/LiuCVPR20.pdf'><b>Regularizing Neural Networks via Minimizing Hyperspherical Energy</b></a><br />
+        Rongmei Lin, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a>, Zhen Liu, Chen Feng, Zhiding Yu, James Rehg, Li Xiong, Le Song</p>
+      <p><em><font color="#B71C1C">CVPR 2020</font></em></p>
+      <p><a href='https://arxiv.org/abs/1906.04892'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/rmlin/CoMHE'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/vXxt_ggWW8s'>talk</a>&nbsp;|&nbsp;<a href='papers/CoMHE_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR20&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Lin20CoMHE,
+      title={Regularizing Neural Networks via Minimizing Hyperspherical Energy},
+      author={Lin, Rongmei and Liu, Weiyang and Liu, Zhen and Feng, Chen and Yu, Zhiding 
+       and Rehg, James M. and Xiong, Li and Song, Le},
+      booktitle={CVPR},
+      year={2020}}</pre>
+    </div>
+
+    <div class="paper" id="LiuNIPS19">
+      <p><a href='papers/LiuNSL2019.pdf'><b>Neural Similarity Learning</b></a><br />
+        <u>Weiyang Liu</u>, Zhen Liu, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1910.13003'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/NSL'>code</a>&nbsp;|&nbsp;<a href='papers/LiuNSL2019_slides.pdf'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNSL2019_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuNIPS19&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{LiuNIPS19,
+      title={Neural Similarity Learning},
+      author={Liu, Weiyang and Liu, Zhen and Rehg, James and Song, Le},
+      booktitle={NeurIPS},
+      year={2019}}</pre>
+    </div>
+    <div class="paper" id="ShawNIPS19">
+      <p><a href='papers/ShawNIPS2019_BASE.pdf'><b>Meta Architecture Search</b></a><br />
+        Albert Shaw, Wei Wei, <u>Weiyang Liu</u>, Le Song, Bo Dai</p>
+      <p><em><font color="#B71C1C">NeurIPS 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1812.09584'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ashaw596/meta_architecture_search'>code</a>&nbsp;|&nbsp;<a href='papers/ShawNIPS2019_BASE_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;ShawNIPS19&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{ShawNIPS19,
+      title={Meta Architecture Search},
+      author={Shaw, Albert and Wei, Wei and Liu, Weiyang and Song, Le and Dai, Bo},
+      booktitle={NeurIPS},
+      year={2019}}</pre>
+    </div>
+    <div class="paper" id="Wen2018DIM">
+      <p><a href='papers/LiuICLR19.pdf'><b>Disjoint Mapping Network for Cross-modal Matching of Voices and Faces</b></a><br />
+        Yandong Wen, Mahmoud Alismail, <u>Weiyang Liu</u>, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICLR 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1807.04836'>arXiv</a>&nbsp;|&nbsp;<a href='https://drive.google.com/file/d/1PRBevtrWWLqKb4kd3Bpv2rTaudkBFnSO/view?usp=sharing'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=B1exrnCcF7'>openreview</a>&nbsp;|&nbsp;<a href='papers/WenICLR19-poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2018DIM&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2019DIM,
+      title={Disjoint Mapping Network for Cross-modal Matching of Voices and Faces},
+      author={Wen, Yandong and Alismail, Mahmoud and Liu, Weiyang and Raj, Bhiksha and Singh, Rita},
+      booktitle={ICLR},
+      year={2019}}</pre>
+    </div>
+    <div class="paper2" id="LiuMHE18">
+      <p><a href='papers/LiuNIPS18_MHE.pdf'><b>Learning towards Minimum Hyperspherical Energy</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Lixin Liu<a href=#star title="Equal Contribution">*</a>, Zhiding Yu, Bo Dai, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2018</font></em></p>
+      <p><a href='https://arxiv.org/abs/1805.09298'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>project</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface-plus'>sphereface+</a>&nbsp;|&nbsp;<a href='https://youtu.be/F8awjKMr6bY'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS18_MHE_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuMHE18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{LiuNIPS18,
+      title={Learning towards Minimum Hyperspherical Energy},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Liu, Lixin and Yu, Zhiding and Dai, Bo and Song, Le},
+      booktitle={NeurIPS},
+      year={2018}}</pre>
+    </div>
+    <div class="paper" id="DaiNIPS18">
+      <p><a href='papers/LiuNIPS18_CVB.pdf'><b>Coupled Variational Bayes via Optimization Embedding</b></a><br />
+        Bo Dai, Hanjun Dai, Niao He, <u>Weiyang Liu</u>, Zhen Liu, Jianshu Chen, Lin Xiao, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2018</em></font></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Hanjun-Dai/cvb'>code</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS18_CVB_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;DaiNIPS18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{DaiNIPS18,
+      title={Coupled Variational Bayes via Optimization Embedding},
+      author={Dai, Bo and Dai, Hanjun and He, Niao and Liu, Weiyang 
+       and Liu, Zhen and Chen, Jianshu and Xiao, Lin and Song, Le},
+      booktitle={NeurIPS},
+      year={2018}}</pre>
+    </div>
+
+    <div class="paper" id="YuECCV18">
+      <p><a href='papers/LiuECCV18.pdf'><b>Simultaneous Edge Alignment and Learning</b></a><br />
+        Zhiding Yu, <u>Weiyang Liu</u>, Yang Zou, Chen Feng, Srikumar Ramalingam, Vijaya Kumar, Jan Kautz</p>
+      <p><em><font color="#B71C1C">ECCV 2018</em></font></p>
+      <p><a href='https://arxiv.org/abs/1808.01992'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Chrisding/seal'>code</a>&nbsp;|&nbsp;<a href='https://github.com/Chrisding/seal'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/gpy20uGnlY4'>demo</a>&nbsp;|&nbsp;<a href='papers/ECCV18_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;YuECCV18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{YuECCV18,
+      title={Simultaneous Edge Alignment and Learning},
+      author={Yu, Zhiding and Liu, Weiyang and Zou, Yang and Feng, Chen
+       and Ramalingam, Srikumar and Kumar, Vijaya and Kautz, Jan},
+      journal={arXiv preprint arXiv:1807.04836},
+      year={2018}}</pre>
+    </div>
+    <div class="paper" id="LiuICML18">
+      <p><a href='papers/LiuICML18.pdf'><b>Towards Black-box Iterative Machine Teaching</b></a><br />
+        <u>Weiyang Liu</u>, Bo Dai, Xingguo Li, Zhen Liu, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">ICML 2018</font></em>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p><a href='https://arxiv.org/abs/1710.07742'>arXiv</a>&nbsp;|&nbsp;<a href='https://youtu.be/2GthJrWWbcI'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML18_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuICML18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2018ICML,
+      author={Liu, Weiyang and Dai, Bo and Li, Xingguo and Rehg, James M and Song, Le},
+      title = {Towards Black-box Iterative Machine Teaching},
+      booktitle = {ICML},
+      year = {2018}}</pre>
+    </div>
+    <div class="paper2" id="LiuCVPR18">
+      <p><a href='papers/LiuCVPR18_DCNets.pdf'><b>Decoupled Networks</b></a><br />
+      <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Zhiding Yu, Bo Dai, Rongmei Lin, Yisen Wang, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">CVPR 2018</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1804.08071'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/DCNets'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/ZnYb0UBIPj0'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuCVPR2018_DCNets_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2018DCNets,
+      author = {Liu, Weiyang and Liu, Zhen and Yu, Zhiding and Dai, Bo and Lin, Rongmei
+       and Wang, Yisen and Rehg, James M. and Song, Le},
+      title = {Decoupled Networks},
+      booktitle = {CVPR},
+      year = {2018}}</pre>
+    </div>
+    <div class="paper" id="Wang2018CVPR">
+      <p><a href='papers/LiuCVPR18_ONL.pdf'><b>Iterative Learning with Open-set Noisy Labels</b></a><br />
+      Yisen Wang, <u>Weiyang Liu</u>, Xingjun Ma, James Bailey, Hongyuan Zha, Le Song, Shu-Tao Xia</p>
+      <p><em><font color="#B71C1C">CVPR 2018</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1804.00092'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/YisenWang/ONL'>code</a>&nbsp;|&nbsp;<a href='papers/CVPR2018_ONL_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wang2018CVPR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wang2018ONL,
+      author={Wang, Yisen and Liu, Weiyang and Ma, Xingjun and Bailey, James
+       and Zha, Hongyuan and Song, Le and Xia, Shu-Tao},
+      title={Iterative Learning with Open-set Noisy Labels},
+      booktitle = {CVPR},
+      year = {2018}}</pre>
+    </div>
+    <div class="paper" id="WangICLRW8">
+      <p><a href='https://arxiv.org/pdf/1801.05599.pdf'><b>Additive Margin Softmax for Face Verification</b></a><br />
+      Feng Wang, <u>Weiyang Liu</u>, Haijun Liu, Jian Cheng</p>
+      <p><em><font color="#B71C1C">ICLR 2018</font>&nbsp;&nbsp;&nbsp;<font color="Gray">Workshop</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">IEEE Signal Processing Society Best Paper Award</font></em></p>
+      <p><a href='https://arxiv.org/abs/1801.05599'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/happynear/AMSoftmax'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=BJ2r2p6IM'>openreview</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/document/8331118'>journal</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;WangICLRW8&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Wang2018ICLRW,
+      title = {Additive Margin Softmax for Face Verification},
+      author = {Wang, Feng and Liu, Weiyang and Liu, Haijun and Cheng, Jian},
+      journal = {arXiv preprint arXiv:1801.05599},
+      year = {2018}}</pre>
+    </div>
+    <div class="paper2" id="LiuNIPS17">
+      <p><a href='papers/LiuNIPS17.pdf'><b>Deep Hyperspherical Learning</b></a><br />
+      <u>Weiyang Liu</u>, Yan-Ming Zhang, Xingguo Li, Zhiding Yu, Bo Dai, Tuo Zhao, Le Song</p>
+      <p><em><font color="#B71C1C">NIPS 2017</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1711.03189'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/4WGw3SlOUnE'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuNIPS17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017NIPS,
+      title={Deep Hyperspherical Learning},
+      author={Liu, Weiyang and Zhang, Yan-Ming and Li, Xingguo and Yu, Zhiding and Dai, Bo and Zhao, Tuo and Song, Le},
+      booktitle={NIPS},
+      year={2017}}</pre>
+    </div>
+    <div class="paper2" id="LiuICML17">
+      <p><a href='papers/LiuICML17.pdf'><b>Iterative Machine Teaching</b></a><br />
+      <u>Weiyang Liu</u>, Bo Dai, Ahmad Humayun, Charlene Tay, Yu Chen, Linda Smith, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">ICML 2017</font></em></p>
+      <p><a href='https://arxiv.org/abs/1705.10470'>arXiv</a>&nbsp;|&nbsp;<a href='papers/Iterative_Machine_Teaching_Matlab_Demo.zip'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/ZZFRZGkK06A'>demo</a>&nbsp;|&nbsp;<a href='https://vimeo.com/237275046'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuICML17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017ICML,
+      title={Iterative Machine Teaching},
+      author={Liu, Weiyang and Dai, Bo and Humayun, Ahmad and Tay, Charlene and Yu, Chen
+       and Smith, Linda B and Rehg, James M and Song, Le},
+      booktitle={ICML},
+      year={2017}}</pre>
+      </div>
+    <div class="paper2" id="LiuCVPR17">
+      <p><a href='papers/LiuCVPR17v3.pdf'><b>SphereFace: Deep Hypersphere Embedding for Face Recognition</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, Le Song<br />
+      <em><font color="#B71C1C">CVPR 2017</font>&nbsp;&nbsp;&nbsp;<a href='https://www.paperdigest.org/2021/02/most-influential-cvpr-papers/' style="color:#239B56;">Paper Digest Most Influential Paper</a></em></p>
+      <p><a href='https://arxiv.org/abs/1704.08063'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/P6jEzzwoYWs'>demo</a>&nbsp;|&nbsp;<a href='papers/LiuCVPR17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2017CVPR,
+      title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
+      author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
+      booktitle = {CVPR},
+      year = {2017}}</pre>
+    </div>
+    <div class="paper2" id="Liu2016ICML">
+      <p><a href='papers/LiuICML16.pdf'><b>Large-Margin Softmax Loss for Convolutional Neural Networks</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Meng Yang<br />
+      <em><font color="#B71C1C">ICML 2016</font></em></p>
+      <p><a href='https://arxiv.org/abs/1612.02295'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>project</a>&nbsp;|&nbsp;<a href='https://www.iqiyi.com/w_19rsugytn5.html#vfrm=8-8-0-1'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML16_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2016ICML&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2016ICML,
+      title={Large-Margin Softmax Loss for Convolutional Neural Networks},
+      author={Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
+      booktitle={ICML},
+      year={2016}}</pre>
+    </div>
+
+  </script>
+
+    <script id="pubs_by_selected" language="text">
+
+<div class="paper" id="qiu2025poet">
+      <p><a href='papers/poet_v3.pdf'><b>Reparameterized LLM Training via Orthogonal Equivalence Transformation</b></a><br />
+        Zeju Qiu, Simon Buchholz, Tim Z. Xiao, Maximilian Dax, Bernhard Schölkopf, <u>Weiyang Liu</u><a href=#star title="Project lead & Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">NeurIPS 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2506.08001'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Sphere-AI-Lab/poet'>code</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/poet/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025poet&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025poet,
+      title={Reparameterized LLM Training via Orthogonal Equivalence Transformation},
+      author={Qiu, Zeju and Buchholz, Simon and Xiao, Tim Z. 
+        and Dax, Maximilian and Sch\"olkopf, Bernhard and Liu, Weiyang},
+      booktitle={NeurIPS},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="qiu2025oftv2">
+      <p><a href='papers/oftv2.pdf'><b>Orthogonal Finetuning Made Scalable</b></a><br />
+        Zeju Qiu<a href=#star title="Equal contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal contribution & Project lead">*</a>, Adrian Weller, Bernhard Schölkopf<br />
+      <em><font color="#B71C1C">EMNLP 2025</font></em><br />
+      <a href='https://arxiv.org/abs/2506.19847'>arXiv</a>&nbsp;|&nbsp;<a href='https://huggingface.co/docs/peft/main/en/package_reference/oft'>code</a>&nbsp;|&nbsp;<a href='https://drive.google.com/drive/folders/1kB3x9KlmklRSeLu74VdH5MEaywvCMVdx'>colab</a>&nbsp;|&nbsp;<a href='https://spherelab.ai/oftv2/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025oftv2&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025oftv2,
+      title={Orthogonal Finetuning Made Scalable},
+      author={Qiu, Zeju and Liu, Weiyang and Weller, Adrian and Sch\"olkopf, Bernhard},
+      booktitle={EMNLP},
+      year={2025}}</pre>
+    </div>
+
+    <div class="paper" id="xiao2024vml">
+      <p><a href='https://arxiv.org/pdf/2406.04344'><b>Verbalized Machine Learning: Revisiting Machine Learning with Language Models</b></a><br />
+        Tim Z. Xiao, Robert Bamler, Bernhard Schölkopf, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">TMLR 2025</font></em><br />
+      <em><font color="Gray">ICML 2024 workshop on In-context Learning</font></em><br />
+      <em><font color="Gray">ICML 2024 workshop on LLMs and Cognition</font></em><br />
+      <a href='https://arxiv.org/abs/2406.04344'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/timxzz/VML_Examples'>code</a>&nbsp;|&nbsp;<a href='https://colab.research.google.com/drive/1QFCt_DFM65szsWUSEPRnuEoLwzjDxUth?usp=sharing'>colab</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=k3Ab6RuJE9'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/LCl_np5oPWA'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;xiao2024vml&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{xiao2025verbalized,
+      title={Verbalized Machine Learning: Revisiting Machine Learning with Language Models},
+      author={Xiao, Tim Z and Bamler, Robert and Sch{\"o}lkopf, Bernhard and Liu, Weiyang},
+      journal={Transactions on Machine Learning Research},
+      year={2025}}</pre>
+    </div>
+
+    <div class="paper" id="qiu2025sgpbench">
+      <p><a href='https://arxiv.org/pdf/2408.08313'><b>Can Large Language Models Understand Symbolic Graphics Programs?</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Project lead and Equal Contribution">*</a>, Haiwen Feng<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">**</a>, Tim Z. Xiao<a href=#star title="Equal Contribution">**</a>, Katherine M. Collins<a href=#star title="Equal Contribution">**</a>, Joshua B. Tenenbaum, Adrian Weller, Michael J. Black, Bernhard Schölkopf<br />
+      <em><font color="#B71C1C">ICLR 2025</font>&nbsp;&nbsp;&nbsp;<font color="#239B56">Spotlight</font></em><br />
+      <a href='https://arxiv.org/abs/2408.08313'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/sgp-bench/sgp-bench'>code</a>&nbsp;|&nbsp;<a href='https://sgp-bench.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Yk87CwhBDx'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025sgpbench&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025sgpbench,
+      title={Can Large Language Models Understand Symbolic Graphics Programs?},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Liu, Zhen and Xiao, Tim Z and Collins, Katherine M 
+        and Tenenbaum, Joshua B and Weller, Adrian and Black, Michael J and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+    <div class="paper" id="Liu2023BOFT">
+      <p><a href='papers/BOFT_v3.pdf'><b>Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Zeju Qiu<a href=#star title="Equal Contribution">*</a>, Yao Feng<a href=#star title="Equal Contribution">**</a>, Yuliang Xiu<a href=#star title="Equal Contribution">**</a>, Yuxuan Xue<a href=#star title="Equal Contribution">**</a>, Longhui Yu<a href=#star title="Equal Contribution">**</a>, Haiwen Feng, Zhen Liu, Juyeon Heo, Songyou Peng, Yandong Wen, Michael J. Black, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2311.06243'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/butterfly-oft'>code</a>&nbsp;|&nbsp;<a href='https://boft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/docs/peft/main/en/conceptual_guides/oft'>huggingface</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=7NzgkEdGyr'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/PxnQgIbMu9o'>talk</a>&nbsp;|&nbsp;<a href='papers/BOFT_slides_v2.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023BOFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2024boft,
+      author = {Liu, Weiyang and Qiu, Zeju and Feng, Yao and Xiu, Yuliang and Xue, Yuxuan and Yu, Longhui and Feng, Haiwen and Liu, Zhen 
+        and Heo, Juyeon and Peng, Songyou and Wen, Yandong and Black, Michael J. and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      title = {Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization},
+      booktitle = {ICLR},
+      year = {2024}}</pre>
+    </div>
+
+    <div class="paper" id="Yu2023MetaMath">
+      <p><a href='papers/MetaMath_ICLR.pdf'><b>MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models</b></a><br />
+        Longhui Yu, Weisen Jiang, Han Shi, J. Yu, Z. Liu, Yu Zhang, James Kwok, Zhenguo Li, Adrian Weller, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <p><em><font color="#B71C1C">ICLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2309.12284'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/meta-math/MetaMath'>code</a>&nbsp;|&nbsp;<a href='https://meta-math.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/meta-math'>huggingface</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=N8N0hgNDRt'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Yu2023MetaMath&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Yu2024MetaMath,
+      title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+      author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying 
+        and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+      booktitle={ICLR},
+      year={2024}}</pre>
+    </div>
+
+    <div class="paper" id="Qiu2023OFT">
+      <p><a href='papers/OFT_v3.pdf'><b>Controlling Text-to-Image Diffusion by Orthogonal Finetuning</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Haiwen Feng, Yuxuan Xue, Yao Feng, Zhen Liu, Dan Zhang, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">NeurIPS 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2306.07280'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Zeju1997/oft'>code</a>&nbsp;|&nbsp;<a href='https://oft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Qiu2023OFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Qiu2023OFT,
+      title={Controlling Text-to-Image Diffusion by Orthogonal Finetuning},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Xue, Yuxuan and Feng, Yao 
+        and Liu, Zhen and Zhang, Dan and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle={NeurIPS},
+      year={2023}}</pre>
+    </div>
+
+    <div class="paper" id="Liu2023HUG">
+      <p><a href='papers/HUG_v2.pdf'><b>Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Longhui Yu<a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2303.06484'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=inU2quhGdNU'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/HQvjVddUfOE'>talk</a>&nbsp;|&nbsp;<a href='papers/HUG_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023HUG&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023HUG,
+      title={Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap},
+      author={Liu, Weiyang and Yu, Longhui and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+    <div class="paper" id="Liu2023MeshDiffusion">
+      <p><a href='papers/MeshDiffusion_v2.pdf'><b>MeshDiffusion: Score-based Generative 3D Mesh Modeling</b></a><br />
+        Zhen Liu, Yao Feng, Michael J. Black, Derek Nowrouzezahrai, Liam Paull, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <em><font color="#B71C1C">ICLR 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Notable Top-25%</font></em><br />
+      <em><font color="Gray">ICCV 2023 workshop on AI for 3D Content Creation</font></em><br />
+      <p><a href='https://arxiv.org/abs/2303.08133'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/MeshDiffusion/'>code</a>&nbsp;|&nbsp;<a href='https://meshdiffusion.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=0cpM2ApF9p6'>openreview</a>&nbsp;|&nbsp;<a href='https://iclr.cc/virtual/2023/poster/11403'>talk</a>&nbsp;|&nbsp;<a href='papers/MeshDiffusion_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023MeshDiffusion&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023MeshDiffusion,
+      title={MeshDiffusion: Score-based Generative 3D Mesh Modeling},
+      author={Liu, Zhen and Feng, Yao and Black, Michael J. and Nowrouzezahrai, Derek 
+        and Paull, Liam and Liu, Weiyang},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+    <div class="paper" id="Liu2022SCR">
+      <p><a href='papers/SCR_v1.pdf'><b>Structural Causal 3D Reconstruction</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Liam Paull, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ECCV 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2207.10156'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/SCR-3D'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/mY6I55q4D-o'>talk</a>&nbsp;|&nbsp;<a href='https://wyliu.com/papers/SCR_poster.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2022SCR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2022SCR,
+      title={Structural Causal 3D Reconstruction},
+      author={Liu, Weiyang and Liu, Zhen and Paull, Liam and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle = {ECCV},
+      year={2022}}</pre>
+    </div>
+
+
+<div class="paper" id="Liu2021SphereFaceR">
+      <p><a href='papers/spherefacer_v3_TPAMI.pdf'><b>SphereFace Revived: Unifying Hyperspherical Face Recognition</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yandong Wen<a href=#star title="Equal Contribution">*</a>, Bhiksha Raj, Rita Singh, Adrian Weller</p>
+      <p><em><font color="#B71C1C">TPAMI 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2109.05565'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere/tree/OpenSphere_v0'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>opensphere</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/document/9736575'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereFaceR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{liu2023spherefacer,
+      title={SphereFace Revived: Unifying Hyperspherical Face Recognition},
+      author={Liu, Weiyang and Wen, Yandong and Raj, Bhiksha and Singh, Rita and Weller, Adrian},
+      journal={IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+      volume={45},
+      number={02},
+      pages={2458--2474},
+      year={2023}}</pre>
+    </div>
+
+    <div class="paper" id="Wen2021SphereFace2">
+      <p><a href='papers/sphereface2_ICLR22.pdf'><b>SphereFace2: Binary Classification is All You Need for Deep Face Recognition</b></a><br />
+        Yandong Wen<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICLR 2022</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2108.01513'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=l3SDgUh7qZO'>openreview</a>&nbsp;|&nbsp;<a href='papers/sphereface2_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2021SphereFace2&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2021SphereFace2,
+      title={SphereFace2: Binary Classification is All You Need for Deep Face Recognition},
+      author={Wen, Yandong and Liu, Weiyang and Weller, Adrian and Raj, Bhiksha and Singh, Rita},
+      booktitle = {ICLR},
+      year={2022}}</pre>
+    </div>
+
+
+      <div class="paper" id="Liu2021LAST">
+      <p><a href='papers/LAST_v5.pdf'><b>Iterative Teaching by Label Synthesis</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Hanchen Wang<a href=#star title="Equal Contribution">*</a>, Liam Paull, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">NeurIPS 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.14432'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=9rphbXqgmqM'>openreview</a>&nbsp;|&nbsp;<a href='https://nips.cc/virtual/2021/poster/26847'>talk</a>&nbsp;|&nbsp;<a href='papers/LAST_slides.pdf'>slides</a>&nbsp;|&nbsp;<a href='https://youtu.be/8EBJtOX42us'>video</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021LAST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021LAST,
+      title={Iterative Teaching by Label Synthesis},
+      author={Liu, Weiyang and Liu, Zhen and Wang, Hanchen and Paull, Liam and Schölkopf, Bernhard and Weller, Adrian},
+      booktitle = {NeurIPS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021SphereUni">
+      <p><a href='papers/LiuAISTATS2021.pdf'><b>Learning with Hyperspherical Uniformity</b></a><br />
+        <u>Weiyang Liu</u>, Rongmei Lin, Zhen Liu, Li Xiong, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">AISTATS 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2103.01649'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/Sphere-Uniformity'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/YN8tVQb-HyE'>talk</a>&nbsp;|&nbsp;<a href='papers/SphereUni_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereUni&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021SphereUni,
+      title={Learning with Hyperspherical Uniformity},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Xiong, Li and Schölkopf, Bernhard and Weller, Adrian},
+      booktitle={AISTATS},
+      year={2021}}</pre>
+    </div>
+
+      <div class="paper" id="Liu2020OPT">
+      <p><a href='papers/LiuOPT2021_v6.pdf'><b>Orthogonal Over-Parameterized Training</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu, James Rehg, Liam Paull, Li Xiong, Le Song, Adrian Weller</p>
+      <p><em><font color="#B71C1C">CVPR 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2004.04690'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/OPT'>code</a>&nbsp;|&nbsp;<a href='https://opt-training.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/Oy8c1t1nonU'>talk</a>&nbsp;|&nbsp;<a href='papers/OPT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2020OPT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021OPT,
+      title={Orthogonal Over-Parameterized Training},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Rehg, James M. and Paull, Liam 
+       and Xiong, Li and Song, Le and Weller, Adrian},
+      booktitle={CVPR},
+      year={2021}}</pre>
+    </div>
+
+      <div class="paper2" id="LiuMHE18">
+      <p><a href='papers/LiuNIPS18_MHE.pdf'><b>Learning towards Minimum Hyperspherical Energy</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Lixin Liu<a href=#star title="Equal Contribution">*</a>, Zhiding Yu, Bo Dai, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2018</font></em></p>
+      <p><a href='https://arxiv.org/abs/1805.09298'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>project</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface-plus'>sphereface+</a>&nbsp;|&nbsp;<a href='https://youtu.be/F8awjKMr6bY'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS18_MHE_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuMHE18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{LiuNIPS18,
+      title={Learning towards Minimum Hyperspherical Energy},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Liu, Lixin and Yu, Zhiding and Dai, Bo and Song, Le},
+      booktitle={NeurIPS},
+      year={2018}}</pre>
+    </div>
+      <div class="paper2" id="LiuNIPS17">
+      <p><a href='papers/LiuNIPS17.pdf'><b>Deep Hyperspherical Learning</b></a><br />
+      <u>Weiyang Liu</u>, Yan-Ming Zhang, Xingguo Li, Zhiding Yu, Bo Dai, Tuo Zhao, Le Song</p>
+      <p><em><font color="#B71C1C">NIPS 2017</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1711.03189'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/4WGw3SlOUnE'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuNIPS17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017NIPS,
+      title={Deep Hyperspherical Learning},
+      author={Liu, Weiyang and Zhang, Yan-Ming and Li, Xingguo and Yu, Zhiding and Dai, Bo and Zhao, Tuo and Song, Le},
+      booktitle={NIPS},
+      year={2017}}</pre>
+    </div>
+    <div class="paper2" id="LiuICML17">
+      <p><a href='papers/LiuICML17.pdf'><b>Iterative Machine Teaching</b></a><br />
+      <u>Weiyang Liu</u>, Bo Dai, Ahmad Humayun, Charlene Tay, Yu Chen, Linda Smith, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">ICML 2017</font></em></p>
+      <p><a href='https://arxiv.org/abs/1705.10470'>arXiv</a>&nbsp;|&nbsp;<a href='papers/Iterative_Machine_Teaching_Matlab_Demo.zip'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/ZZFRZGkK06A'>demo</a>&nbsp;|&nbsp;<a href='https://vimeo.com/237275046'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuICML17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017ICML,
+      title={Iterative Machine Teaching},
+      author={Liu, Weiyang and Dai, Bo and Humayun, Ahmad and Tay, Charlene and Yu, Chen
+       and Smith, Linda B and Rehg, James M and Song, Le},
+      booktitle={ICML},
+      year={2017}}</pre>
+      </div>
+    <div class="paper2" id="LiuCVPR17">
+      <p><a href='papers/LiuCVPR17v3.pdf'><b>SphereFace: Deep Hypersphere Embedding for Face Recognition</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, Le Song<br />
+      <em><font color="#B71C1C">CVPR 2017</font>&nbsp;&nbsp;&nbsp;<a href='https://www.paperdigest.org/2021/02/most-influential-cvpr-papers/' style="color:#239B56;">Paper Digest Most Influential Paper</a></em></p>
+      <p><a href='https://arxiv.org/abs/1704.08063'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/P6jEzzwoYWs'>demo</a>&nbsp;|&nbsp;<a href='papers/LiuCVPR17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2017CVPR,
+      title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
+      author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
+      booktitle = {CVPR},
+      year = {2017}}</pre>
+    </div>
+    <div class="paper2" id="Liu2016ICML">
+      <p><a href='papers/LiuICML16.pdf'><b>Large-Margin Softmax Loss for Convolutional Neural Networks</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Meng Yang<br />
+      <em><font color="#B71C1C">ICML 2016</font></em></p>
+      <p><a href='https://arxiv.org/abs/1612.02295'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>project</a>&nbsp;|&nbsp;<a href='https://www.iqiyi.com/w_19rsugytn5.html#vfrm=8-8-0-1'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML16_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2016ICML&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2016ICML,
+      title={Large-Margin Softmax Loss for Convolutional Neural Networks},
+      author={Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
+      booktitle={ICML},
+      year={2016}}</pre>
+    </div>
+
+  </script>
+
+
+  <script id="pubs_by_topic" language="text">
+    
+    <a name="spherelearn"></a>
+    <h3>Value-guided Inductive Bias Modeling</h3>
+
+<div class="paper" id="Liu2023BOFT">
+      <p><a href='papers/BOFT_v3.pdf'><b>Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Zeju Qiu<a href=#star title="Equal Contribution">*</a>, Yao Feng<a href=#star title="Equal Contribution">**</a>, Yuliang Xiu<a href=#star title="Equal Contribution">**</a>, Yuxuan Xue<a href=#star title="Equal Contribution">**</a>, Longhui Yu<a href=#star title="Equal Contribution">**</a>, Haiwen Feng, Zhen Liu, Juyeon Heo, Songyou Peng, Yandong Wen, Michael J. Black, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2311.06243'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/butterfly-oft'>code</a>&nbsp;|&nbsp;<a href='https://boft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/docs/peft/main/en/conceptual_guides/oft'>huggingface</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=7NzgkEdGyr'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/PxnQgIbMu9o'>talk</a>&nbsp;|&nbsp;<a href='papers/BOFT_slides_v2.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023BOFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2024boft,
+      author = {Liu, Weiyang and Qiu, Zeju and Feng, Yao and Xiu, Yuliang and Xue, Yuxuan and Yu, Longhui and Feng, Haiwen and Liu, Zhen 
+        and Heo, Juyeon and Peng, Songyou and Wen, Yandong and Black, Michael J. and Weller, Adrian and Sch{\"o}lkopf, Bernhard},
+      title = {Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization},
+      booktitle = {ICLR},
+      year = {2024}}</pre>
+    </div>
+
+<div class="paper" id="Qiu2023OFT">
+      <p><a href='papers/OFT_v3.pdf'><b>Controlling Text-to-Image Diffusion by Orthogonal Finetuning</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Project Lead">*</a>, Haiwen Feng, Yuxuan Xue, Yao Feng, Zhen Liu, Dan Zhang, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">NeurIPS 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2306.07280'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Zeju1997/oft'>code</a>&nbsp;|&nbsp;<a href='https://oft.wyliu.com/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Qiu2023OFT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Qiu2023OFT,
+      title={Controlling Text-to-Image Diffusion by Orthogonal Finetuning},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Xue, Yuxuan and Feng, Yao 
+        and Liu, Zhen and Zhang, Dan and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle={NeurIPS},
+      year={2023}}</pre>
+    </div>
+    
+<div class="paper" id="Wen2023SimPLE">
+      <p><a href='papers/SimPLE_v1.pdf'><b>Pairwise Similarity Learning is SimPLE</b></a><br />
+        Yandong Wen<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yao Feng, Bhiksha Raj, Rita Singh, Adrian Weller, Michael Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICCV 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2310.09449'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2023SimPLE&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2023SimPLE,
+      title={Pairwise Similarity Learning is SimPLE},
+      author={Wen, Yandong and Liu, Weiyang and Feng, Yao and Raj, Bhiksha and Singh, Rita
+        and Weller, Adrian and Black, Michael and Schölkopf, Bernhard},
+      booktitle={ICCV},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Cao2023MHEAL">
+      <p><a href='papers/MHEAL_TPAMI.pdf'><b>Data-Efficient Learning via Minimizing Hyperspherical Energy</b></a><br />
+        Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang</p>
+      <p><em><font color="#B71C1C">TPAMI 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2206.15204'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/abstract/document/10168255'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Cao2023MHEAL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Cao2022MHEAL,
+      title={Data-Efficient Learning via Minimizing Hyperspherical Energy},
+      author={Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor W},
+      journal={arXiv preprint arXiv:2206.15204},
+      year={2022}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023HUG">
+      <p><a href='papers/HUG_v2.pdf'><b>Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Longhui Yu<a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2303.06484'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=inU2quhGdNU'>openreview</a>&nbsp;|&nbsp;<a href='https://youtu.be/HQvjVddUfOE'>talk</a>&nbsp;|&nbsp;<a href='papers/HUG_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023HUG&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023HUG,
+      title={Generalizing and Decoupling Neural Collapse via Hyperspherical Uniformity Gap},
+      author={Liu, Weiyang and Yu, Longhui and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Liu2021SphereFaceR">
+      <p><a href='papers/spherefacer_v3_TPAMI.pdf'><b>SphereFace Revived: Unifying Hyperspherical Face Recognition</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yandong Wen<a href=#star title="Equal Contribution">*</a>, Bhiksha Raj, Rita Singh, Adrian Weller</p>
+      <p><em><font color="#B71C1C">TPAMI 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2109.05565'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere/tree/OpenSphere_v0'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>opensphere</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/document/9736575'>IEEE Xplore</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereFaceR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{liu2023spherefacer,
+      title={SphereFace Revived: Unifying Hyperspherical Face Recognition},
+      author={Liu, Weiyang and Wen, Yandong and Raj, Bhiksha and Singh, Rita and Weller, Adrian},
+      journal={IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+      volume={45},
+      number={02},
+      pages={2458--2474},
+      year={2023}}</pre>
+    </div>
+
+  <div class="paper" id="Wen2021SphereFace2">
+      <p><a href='papers/sphereface2_ICLR22.pdf'><b>SphereFace2: Binary Classification is All You Need for Deep Face Recognition</b></a><br />
+        Yandong Wen<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Adrian Weller, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICLR 2022</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2108.01513'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/opensphere'>code</a>&nbsp;|&nbsp;<a href='https://opensphere.world/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=l3SDgUh7qZO'>openreview</a>&nbsp;|&nbsp;<a href='papers/sphereface2_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2021SphereFace2&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2021SphereFace2,
+      title={SphereFace2: Binary Classification is All You Need for Deep Face Recognition},
+      author={Wen, Yandong and Liu, Weiyang and Weller, Adrian and Raj, Bhiksha and Singh, Rita},
+      booktitle = {ICLR},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021SphereUni">
+      <p><a href='papers/LiuAISTATS2021.pdf'><b>Learning with Hyperspherical Uniformity</b></a><br />
+        <u>Weiyang Liu</u>, Rongmei Lin, Zhen Liu, Li Xiong, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">AISTATS 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2103.01649'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/Sphere-Uniformity'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/YN8tVQb-HyE'>talk</a>&nbsp;|&nbsp;<a href='papers/SphereUni_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021SphereUni&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021SphereUni,
+      title={Learning with Hyperspherical Uniformity},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Xiong, Li and Schölkopf, Bernhard and Weller, Adrian},
+      booktitle={AISTATS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2020OPT">
+      <p><a href='papers/LiuOPT2021_v6.pdf'><b>Orthogonal Over-Parameterized Training</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu, James Rehg, Liam Paull, Li Xiong, Le Song, Adrian Weller</p>
+      <p><em><font color="#B71C1C">CVPR 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2004.04690'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/OPT'>code</a>&nbsp;|&nbsp;<a href='https://opt-training.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/Oy8c1t1nonU'>talk</a>&nbsp;|&nbsp;<a href='papers/OPT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2020OPT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021OPT,
+      title={Orthogonal Over-Parameterized Training},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Rehg, James M. and Paull, Liam 
+       and Xiong, Li and Song, Le and Weller, Adrian},
+      booktitle={CVPR},
+      year={2021}}</pre>
+    </div>
+
+    <div class="paper" id="Chen20AVH">
+      <p><a href='papers/LiuICML20.pdf'><b>Angular Visual Hardness</b></a><br />
+        Beidi Chen, <u>Weiyang Liu</u>, Zhiding Yu, Jan Kautz, Anshumali Shrivastava, Animesh Garg, Animashree Anandkumar</p>
+      <p><em><font color="#B71C1C">ICML 2020</font></em></p>
+      <p><a href='https://arxiv.org/abs/1912.02279'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/keroro824/AVH'>code</a>&nbsp;|&nbsp;<a href='https://sites.google.com/nvidia.com/avh'>project</a>&nbsp;|&nbsp;<a href='https://icml.cc/virtual/2020/poster/6648'>talk</a>&nbsp;|&nbsp;<a href='https://t.co/hr5UzN7J6o?amp=1'>long talk</a>&nbsp;|&nbsp;<a href='papers/AVH_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Chen20AVH&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Chen20AVH,
+      title={Angular Visual Hardness},
+      author={Chen, Beidi and Liu, Weiyang and Garg, Animesh and Yu, Zhiding 
+       and Shrivastava, Anshumali and Anandkumar, Animashree},
+      booktitle={ICML},
+      year={2020}}</pre>
+    </div>
+
+    <div class="paper" id="LiuCVPR20">
+      <p><a href='papers/LiuCVPR20.pdf'><b>Regularizing Neural Networks via Minimizing Hyperspherical Energy</b></a><br />
+        Rongmei Lin, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a>, Zhen Liu, Chen Feng, Zhiding Yu, James Rehg, Li Xiong, Le Song</p>
+      <p><em><font color="#B71C1C">CVPR 2020</font></em></p>
+      <p><a href='https://arxiv.org/abs/1906.04892'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/rmlin/CoMHE'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/vXxt_ggWW8s'>talk</a>&nbsp;|&nbsp;<a href='papers/CoMHE_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR20&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Lin20CoMHE,
+      title={Regularizing Neural Networks via Minimizing Hyperspherical Energy},
+      author={Lin, Rongmei and Liu, Weiyang and Liu, Zhen and Feng, Chen and Yu, Zhiding 
+       and Rehg, James M. and Xiong, Li and Song, Le},
+      booktitle={CVPR},
+      year={2020}}</pre>
+    </div>
+
+    <div class="paper" id="LiuNIPS19">
+      <p><a href='papers/LiuNSL2019.pdf'><b>Neural Similarity Learning</b></a><br />
+        <u>Weiyang Liu</u>, Zhen Liu, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1910.13003'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/NSL'>code</a>&nbsp;|&nbsp;<a href='papers/LiuNSL2019_slides.pdf'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNSL2019_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuNIPS19&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{LiuNIPS19,
+      title={Neural Similarity Learning},
+      author={Liu, Weiyang and Liu, Zhen and Rehg, James and Song, Le},
+      booktitle={NeurIPS},
+      year={2019}}</pre>
+    </div>
+
+    <div class="paper2" id="LiuMHE18">
+      <p><a href='papers/LiuNIPS18_MHE.pdf'><b>Learning towards Minimum Hyperspherical Energy</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Rongmei Lin<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Lixin Liu<a href=#star title="Equal Contribution">*</a>, Zhiding Yu, Bo Dai, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2018</font></em></p>
+      <p><a href='https://arxiv.org/abs/1805.09298'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/MHE'>project</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface-plus'>sphereface+</a>&nbsp;|&nbsp;<a href='https://youtu.be/F8awjKMr6bY'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS18_MHE_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuMHE18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{LiuNIPS18,
+      title={Learning towards Minimum Hyperspherical Energy},
+      author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Liu, Lixin and Yu, Zhiding and Dai, Bo and Song, Le},
+      booktitle={NeurIPS},
+      year={2018}}</pre>
+    </div>
+
+    <div class="paper2" id="LiuCVPR18">
+      <p><a href='papers/LiuCVPR18_DCNets.pdf'><b>Decoupled Networks</b></a><br />
+      <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Zhiding Yu, Bo Dai, Rongmei Lin, Yisen Wang, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">CVPR 2018</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1804.08071'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/DCNets'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/ZnYb0UBIPj0'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuCVPR2018_DCNets_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2018DCNets,
+      author = {Liu, Weiyang and Liu, Zhen and Yu, Zhiding and Dai, Bo and Lin, Rongmei
+       and Wang, Yisen and Rehg, James M. and Song, Le},
+      title = {Decoupled Networks},
+      booktitle = {CVPR},
+      year = {2018}}</pre>
+    </div>
+
+    <div class="paper" id="WangICLRW8">
+      <p><a href='https://arxiv.org/pdf/1801.05599.pdf'><b>Additive Margin Softmax for Face Verification</b></a><br />
+      Feng Wang, <u>Weiyang Liu</u>, Haijun Liu, Jian Cheng</p>
+      <p><em><font color="#B71C1C">ICLR 2018</font>&nbsp;&nbsp;&nbsp;<font color="Gray">Workshop</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">IEEE Signal Processing Society Best Paper Award</font></em></p>
+      <p><a href='https://arxiv.org/abs/1801.05599'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/happynear/AMSoftmax'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=BJ2r2p6IM'>openreview</a>&nbsp;|&nbsp;<a href='https://ieeexplore.ieee.org/document/8331118'>journal</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;WangICLRW8&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Wang2018ICLRW,
+      title = {Additive Margin Softmax for Face Verification},
+      author = {Wang, Feng and Liu, Weiyang and Liu, Haijun and Cheng, Jian},
+      journal = {arXiv preprint arXiv:1801.05599},
+      year = {2018}}</pre>
+    </div>
+
+    <div class="paper2" id="LiuNIPS17">
+      <p><a href='papers/LiuNIPS17.pdf'><b>Deep Hyperspherical Learning</b></a><br />
+      <u>Weiyang Liu</u>, Yan-Ming Zhang, Xingguo Li, Zhiding Yu, Bo Dai, Tuo Zhao, Le Song</p>
+      <p><em><font color="#B71C1C">NIPS 2017</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1711.03189'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/SphereNet'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/4WGw3SlOUnE'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuNIPS17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017NIPS,
+      title={Deep Hyperspherical Learning},
+      author={Liu, Weiyang and Zhang, Yan-Ming and Li, Xingguo and Yu, Zhiding and Dai, Bo and Zhao, Tuo and Song, Le},
+      booktitle={NIPS},
+      year={2017}}</pre>
+    </div>
+
+    <div class="paper2" id="LiuCVPR17">
+      <p><a href='papers/LiuCVPR17v3.pdf'><b>SphereFace: Deep Hypersphere Embedding for Face Recognition</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, Le Song<br />
+      <em><font color="#B71C1C">CVPR 2017</font>&nbsp;&nbsp;&nbsp;<a href='https://www.paperdigest.org/2021/02/most-influential-cvpr-papers/' style="color:#239B56;">Paper Digest Most Influential Paper</a></em></p>
+      <p><a href='https://arxiv.org/abs/1704.08063'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/sphereface'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/P6jEzzwoYWs'>demo</a>&nbsp;|&nbsp;<a href='papers/LiuCVPR17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuCVPR17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2017CVPR,
+      title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
+      author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
+      booktitle = {CVPR},
+      year = {2017}}</pre>
+    </div>
+
+    <div class="paper2" id="Liu2016ICML">
+      <p><a href='papers/LiuICML16.pdf'><b>Large-Margin Softmax Loss for Convolutional Neural Networks</b></a><br />
+        <u>Weiyang Liu</u>, Yandong Wen, Zhiding Yu, Meng Yang<br />
+      <em><font color="#B71C1C">ICML 2016</font></em></p>
+      <p><a href='https://arxiv.org/abs/1612.02295'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>code</a>&nbsp;|&nbsp;<a href='https://github.com/wy1iu/LargeMargin_Softmax_Loss'>project</a>&nbsp;|&nbsp;<a href='https://www.iqiyi.com/w_19rsugytn5.html#vfrm=8-8-0-1'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML16_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2016ICML&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2016ICML,
+      title={Large-Margin Softmax Loss for Convolutional Neural Networks},
+      author={Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
+      booktitle={ICML},
+      year={2016}}</pre>
+    </div>
+  
+    <a name="teaching"></a>
+    <h3>Data-centric Inductive Bias Modeling</h3>
+
+<div class="paper" id="yu2025generating">
+      <p><a href='https://arxiv.org/pdf/2502.04728'><b>Generating Symbolic World Models via Test-time Scaling of Large Language Models</b></a><br />
+        Zhouliang Yu, Yuhuan Yuan, Tim Z. Xiao, Frank Xia, Jie Fu, Ge Zhang, Ge Lin, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a><br />
+      <em><font color="#B71C1C">TMLR 2025</font></em><br />
+      <em><font color="Gray">ICLR 2025 workshop on World Models</font></em><br />
+      <a href='https://arxiv.org/abs/2502.04728'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/VMLPDDL/VML_PDDL/tree/main'>code</a>&nbsp;|&nbsp;<a href='https://vmlpddl.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=zVo6PfBa0K'>openreview</a>&nbsp;|&nbsp;<a href='https://huggingface.co/datasets/LLM4SymbolWorldModel/ipc_bench'>dataset</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;yu2025generating&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{yu2025generating,
+      title={Generating Symbolic World Models via Test-time Scaling of Large Language Models},
+      author={Yu, Zhouliang and Yuan, Yuhuan and Xiao, Tim Z and Xia, Fuxiang Frank 
+        and Fu, Jie and Zhang, Ge and Lin, Ge and Liu, Weiyang},
+      journal={Transactions on Machine Learning Research},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="sun2024easy">
+      <p><a href='https://arxiv.org/pdf/2403.09472.pdf'><b>Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision</b></a><br />
+        Zhiqing Sun<a href=#star title="Equal Contribution">*</a>, Longhui Yu<a href=#star title="Equal Contribution">*</a>, Yikang Shen, <u>Weiyang Liu</u>, Yiming Yang, Sean Welleck, Chuang Gan</p>
+      <p><em><font color="#B71C1C">NeurIPS 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2403.09472'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Edward-Sun/easy-to-hard'>code</a>&nbsp;|&nbsp;<a href='https://github.com/Edward-Sun/easy-to-hard'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;sun2024easy&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{sun2024easy,
+      title={Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision},
+      author={Sun, Zhiqing and Yu, Longhui and Shen, Yikang and Liu, Weiyang and Yang, Yiming and Welleck, Sean and Gan, Chuang},
+      booktitle={NeurIPS},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Yu2023MetaMath">
+      <p><a href='papers/MetaMath_ICLR.pdf'><b>MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models</b></a><br />
+        Longhui Yu, Weisen Jiang, Han Shi, J. Yu, Z. Liu, Yu Zhang, James Kwok, Zhenguo Li, Adrian Weller, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <p><em><font color="#B71C1C">ICLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2309.12284'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/meta-math/MetaMath'>code</a>&nbsp;|&nbsp;<a href='https://meta-math.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://huggingface.co/meta-math'>huggingface</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Yu2023MetaMath&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Yu2024MetaMath,
+      title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+      author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying 
+        and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+      booktitle={ICLR},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2023MINT">
+      <p><a href='papers/MINT_v1.pdf'><b>Nonparametric Teaching for Multiple Learners</b></a><br />
+        Chen Zhang, Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang, James Kwok</p>
+      <p><em><font color="#B71C1C">NeurIPS 2023</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chen2hang/MINT_NonparametricTeaching'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023MINT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2023MINT,
+      title={Nonparametric Teaching for Multiple Learners},
+      author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+      booktitle={NeurIPS},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Collins2023HILLM">
+      <p><a href='https://arxiv.org/abs/2211.01202'><b>Human-in-the-Loop Mixup</b></a><br />
+        Katherine M. Collins, Umang Bhatt, <u>Weiyang Liu</u>, Vihari Piratla, Ilia Sucholutsky, Bradley Love, Adrian Weller</p>
+      <p><em><font color="#B71C1C">UAI 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral&nbsp;&&nbsp;<a href='papers/hcomp-2022-Certificate-BestPoster.pdf' style="color:#239B56;">Best HCOMP Poster Award</a></font></em></p>
+      <p><a href='https://arxiv.org/abs/2211.01202'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/cambridge-mlg/hill-mixup'>code</a>&nbsp;|&nbsp;<a href='https://sites.google.com/view/hill-mixup?usp=sharing'>project</a>&nbsp;|&nbsp;<a href='https://www.youtube.com/watch?v=rMIqSeGXPTI'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Collins2023HILLM&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Collins2023HILLM,
+      title={Human-in-the-Loop Mixup},
+      author={Collins, Katherine M and Bhatt, Umang and Liu, Weiyang and Piratla, Vihari 
+        and Sucholutsky, Ilia and Love, Bradley and Weller, Adrian},
+      booktitle={UAI},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Zhang2023NIMT">
+      <p><a href='papers/NIMT2023_v1.pdf'><b>Nonparametric Iterative Machine Teaching</b></a><br />
+        Chen Zhang, Xiaofeng Cao, <u>Weiyang Liu</u>, Ivor Tsang, James Kwok</p>
+      <p><em><font color="#B71C1C">ICML 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2306.03007'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chen2hang/NonparametricTeaching'>code</a>&nbsp;|&nbsp;<a href='papers/NIMT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023NIMT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2023NIMT,
+      title={Nonparametric Iterative Machine Teaching},
+      author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+      booktitle = {ICML},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Qiu2022DHT">
+      <p><a href='papers/DHT_v2.pdf'><b>Iterative Teaching by Data Hallucination</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution & Corresponding Author">*</a>, Tim Z. Xiao, Zhen Liu, Umang Bhatt, Yucen Luo, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">AISTATS 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2210.17467'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Zeju1997/data_halucination_teaching'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/JXv57UKt0DQ'>talk</a>&nbsp;|&nbsp;<a href='papers/DHT_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Qiu2022DHT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Qiu2023DHT,
+      title={Iterative Teaching by Data Hallucination},
+      author={Qiu, Zeju and Liu, Weiyang and Xiao, Tim Z and Liu, Zhen 
+        and Bhatt, Umang and Luo, Yucen and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle = {AISTATS},
+      year={2023}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021LAST">
+      <p><a href='papers/LAST_v5.pdf'><b>Iterative Teaching by Label Synthesis</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Hanchen Wang<a href=#star title="Equal Contribution">*</a>, Liam Paull, Bernhard Schölkopf, Adrian Weller</p>
+      <p><em><font color="#B71C1C">NeurIPS 2021</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.14432'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=9rphbXqgmqM'>openreview</a>&nbsp;|&nbsp;<a href='https://nips.cc/virtual/2021/poster/26847'>talk</a>&nbsp;|&nbsp;<a href='papers/LAST_slides.pdf'>slides</a>&nbsp;|&nbsp;<a href='https://youtu.be/8EBJtOX42us'>video</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021LAST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021LAST,
+      title={Iterative Teaching by Label Synthesis},
+      author={Liu, Weiyang and Liu, Zhen and Wang, Hanchen and Paull, Liam and Schölkopf, Bernhard and Weller, Adrian},
+      booktitle = {NeurIPS},
+      year={2021}}</pre>
+    </div>
+
+  <div class="paper" id="Xu2021LST">
+      <p><a href='papers/LST.pdf'><b>Locality Sensitive Teaching</b></a><br />
+        Zhaozhuo Xu, Beidi Chen, Chaojian Li, <u>Weiyang Liu</u>, Le Song, Yingyan Lin, Anshumali Shrivastava</p>
+      <p><em><font color="#B71C1C">NeurIPS 2021</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Ottovonxu/LST'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Rav_oC35ToB'>openreview</a>&nbsp;|&nbsp;<a href='https://www.youtube.com/watch?v=Cpf8V9_tnf8'>talk</a>&nbsp;|&nbsp;<a href='papers/LST_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Xu2021LST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Xu2021LST,
+      title={Locality Sensitive Teaching},
+      author={Xu, Zhaozhuo and Chen, Beidi and Li, Chaojian and Liu, Weiyang 
+        and Song, Le and Lin, Yingyan and Shrivastava, Anshumali},
+      booktitle = {NeurIPS},
+      year={2021}}</pre>
+    </div>
+
+    <div class="paper" id="LiuICML18">
+      <p><a href='papers/LiuICML18.pdf'><b>Towards Black-box Iterative Machine Teaching</b></a><br />
+        <u>Weiyang Liu</u>, Bo Dai, Xingguo Li, Zhen Liu, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">ICML 2018</font></em>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p><a href='https://arxiv.org/abs/1710.07742'>arXiv</a>&nbsp;|&nbsp;<a href='https://youtu.be/2GthJrWWbcI'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML18_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuICML18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2018ICML,
+      author={Liu, Weiyang and Dai, Bo and Li, Xingguo and Rehg, James M and Song, Le},
+      title = {Towards Black-box Iterative Machine Teaching},
+      booktitle = {ICML},
+      year = {2018}}</pre>
+    </div>
+
+    <div class="paper2" id="LiuICML17">
+      <p><a href='papers/LiuICML17.pdf'><b>Iterative Machine Teaching</b></a><br />
+      <u>Weiyang Liu</u>, Bo Dai, Ahmad Humayun, Charlene Tay, Yu Chen, Linda Smith, James Rehg, Le Song</p>
+      <p><em><font color="#B71C1C">ICML 2017</font></em></p>
+      <p><a href='https://arxiv.org/abs/1705.10470'>arXiv</a>&nbsp;|&nbsp;<a href='papers/Iterative_Machine_Teaching_Matlab_Demo.zip'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/ZZFRZGkK06A'>demo</a>&nbsp;|&nbsp;<a href='https://vimeo.com/237275046'>talk</a>&nbsp;|&nbsp;<a href='papers/LiuICML17_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;LiuICML17&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @inproceedings{Liu2017ICML,
+      title={Iterative Machine Teaching},
+      author={Liu, Weiyang and Dai, Bo and Humayun, Ahmad and Tay, Charlene and Yu, Chen
+       and Smith, Linda B and Rehg, James M and Song, Le},
+      booktitle={ICML},
+      year={2017}}</pre>
+      </div>
+
+    <a name="3dmodel"></a>
+    <h3>Generative Modeling</h3>
+
+<div class="paper" id="liu2025nablagfn">
+      <p><a href='https://arxiv.org/pdf/2412.07775'><b>Efficient Diversity-Preserving Diffusion Alignment via Gradient-Informed GFlowNets</b></a><br />
+        Zhen Liu, Tim Z. Xiao<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Yoshua Bengio, Dinghuai Zhang</p>
+      <p><em><font color="#B71C1C">ICLR 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2412.07775'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/nabla-gfn'>code</a>&nbsp;|&nbsp;<a href='https://nabla-gfn.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;liu2025nablagfn_HL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{liu2025nablagfn,
+      title={Efficient Diversity-Preserving Diffusion Alignment via Gradient-Informed GFlowNets},
+      author={Liu, Zhen and Xiao, Tim Z and and Liu, Weiyang and Bengio, Yoshua and Zhang, Dinghuai},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="qiu2025sgpbench">
+      <p><a href='https://arxiv.org/pdf/2408.08313'><b>Can Large Language Models Understand Symbolic Graphics Programs?</b></a><br />
+        Zeju Qiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Project lead and Equal Contribution">*</a>, Haiwen Feng<a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">**</a>, Tim Z. Xiao<a href=#star title="Equal Contribution">**</a>, Katherine M. Collins<a href=#star title="Equal Contribution">**</a>, Joshua B. Tenenbaum, Adrian Weller, Michael J. Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2025</font>&nbsp;&nbsp;&nbsp;<font color="#239B56">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/2408.08313'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/sgp-bench/sgp-bench'>code</a>&nbsp;|&nbsp;<a href='https://sgp-bench.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=Yk87CwhBDx'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;qiu2025sgpbench&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{qiu2025sgpbench,
+      title={Can Large Language Models Understand Symbolic Graphics Programs?},
+      author={Qiu, Zeju and Liu, Weiyang and Feng, Haiwen and Liu, Zhen and Xiao, Tim Z and Collins, Katherine M 
+        and Tenenbaum, Joshua B and Weller, Adrian and Black, Michael J and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+
+<div class="paper" id="kulits2024igllm">
+      <p><a href='https://arxiv.org/abs/2404.15228'><b>Re-Thinking Inverse Graphics with Large Language Models</b></a><br />
+        Peter Kulits<a href=#star title="Equal Contribution">*</a>, Haiwen Feng<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u>, Victoria Abrevaya, Michael J. Black</p>
+      <p><em><font color="#B71C1C">TMLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56"><a href='https://blog.iclr.cc/2024/08/22/iclr2025-tmlr-partnership/' style="color:#239B56;">Selected for presentation at ICLR 2025</a></font></em></p>
+      <p><a href='https://arxiv.org/abs/2404.15228'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/kulits/IG-LLM'>code</a>&nbsp;|&nbsp;<a href='https://ig-llm.is.tue.mpg.de/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;kulits2024igllm&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{kulits2024igllm,
+      title={Re-Thinking Inverse Graphics With Large Language Models},
+      author={Kulits, Peter and Feng, Haiwen and Liu, Weiyang and Abrevaya, Victoria and Black, Michael J},
+      journal={Transactions on Machine Learning Research},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Gao2023GraphDreamer">
+      <p><a href='papers/GraphDreamer_v2.pdf'><b>GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs</b></a><br />
+        Gege Gao, <u>Weiyang Liu</u><a href=#star title="Directional Lead">*</a>, Anpei Chen, Andreas Geiger, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">CVPR 2024</font></em></p>
+      <p><a href='https://arxiv.org/abs/2312.00093'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/GGGHSL/GraphDreamer'>code</a>&nbsp;|&nbsp;<a href='https://graphdreamer.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Gao2023GraphDreamer&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{gao2024graphdreamer,
+      author = {Gao, Gege and Liu, Weiyang and Chen, Anpei and Geiger, Andreas and Sch{\"o}lkopf, Bernhard},
+      title = {GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs},
+      booktitle = {CVPR},
+      year = {2024}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023gshell">
+      <p><a href='papers/gshell_v2.pdf'><b>Ghost on the Shell: An Expressive Representation of General 3D Shapes</b></a><br />
+        Zhen Liu, Yao Feng<a href=#star title="Equal Contribution">*</a>, Yuliang Xiu<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Liam Paull, Michael J. Black, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ICLR 2024</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2310.15168'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/GShell/'>code</a>&nbsp;|&nbsp;<a href='https://gshell3d.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023gshell&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2024gshell,
+      title={Ghost on the Shell: An Expressive Representation of General 3D Shapes},
+      author={Liu, Zhen and Feng, Yao and Xiu, Yuliang and Liu, Weiyang 
+        and Paull, Liam and Black, Michael J and Sch{\"o}lkopf, Bernhard},
+      booktitle={ICLR},
+      year={2024}}</pre>
+    </div>
+
+<div class="paper" id="Feng2023DELTA">
+      <p><a href='https://arxiv.org/pdf/2309.06441.pdf'><b>Learning Disentangled Avatars with Hybrid 3D Representations</b></a><br />
+        Yao Feng, <u>Weiyang Liu</u>, Timo Bolkart, Jinlong Yang, Marc Pollefeys, Michael J. Black</p>
+      <p><em><font color="#B71C1C">Preprint 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2309.06441'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/yfeng95/DELTA'>code</a>&nbsp;|&nbsp;<a href='https://yfeng95.github.io/delta/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Feng2023DELTA&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Feng2023DELTA,
+    author = {Feng, Yao and Liu, Weiyang and Bolkart, Timo and Yang, Jinlong and Pollefeys, Marc and Black, Michael J.},
+    title = {Learning Disentangled Avatars with Hybrid 3D Representations},
+    journal={arXiv preprint arXiv:2309.06441},
+    year = {2023}}</pre>
+   </div>
+
+    
+<div class="paper" id="Huang2023ELICIT">
+      <p><a href='papers/ELICIT_v3.pdf'><b>One-shot Implicit Animatable Avatars with Model-based Priors</b></a><br />
+        Yangyi Huang, Hongwei Yi, <u>Weiyang Liu</u>, Haofan Wang, Boxi Wu, Wenxiao Wang, Binbin Lin, Debing Zhang, Deng Cai</p>
+      <p><em><font color="#B71C1C">ICCV 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2212.02469v2'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/huangyangyi/ELICIT'>code</a>&nbsp;|&nbsp;<a href='https://elicit3d.github.io/'>project</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Huang2023ELICIT&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Huang2023ELICIT,
+      title={One-shot Implicit Animatable Avatars with Model-based Priors},
+      author={Huang, Yangyi and Yi, Hongwei and Liu, Weiyang and Wang, Haofan
+        and Wu, Boxi and Wang, Wenxiao and Lin, Binbin and Zhang, Debing and Cai, Deng},
+      booktitle={ICCV},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Liu2023MeshDiffusion">
+      <p><a href='papers/MeshDiffusion_v2.pdf'><b>MeshDiffusion: Score-based Generative 3D Mesh Modeling</b></a><br />
+        Zhen Liu, Yao Feng, Michael Black, Derek Nowrouzezahrai, Liam Paull, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <em><font color="#B71C1C">ICLR 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Notable Top-25%</font></em><br />
+      <em><font color="Gray">ICCV 2023 workshop on AI for 3D Content Creation</font></em><br />
+      <p><a href='https://arxiv.org/abs/2303.08133'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/MeshDiffusion/'>code</a>&nbsp;|&nbsp;<a href='https://meshdiffusion.github.io/'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=0cpM2ApF9p6'>openreview</a>&nbsp;|&nbsp;<a href='https://iclr.cc/virtual/2023/poster/11403'>talk</a>&nbsp;|&nbsp;<a href='papers/MeshDiffusion_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2023MeshDiffusion&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2023MeshDiffusion,
+      title={MeshDiffusion: Score-based Generative 3D Mesh Modeling},
+      author={Liu, Zhen and Feng, Yao and Black, Michael J. and Nowrouzezahrai, Derek 
+        and Paull, Liam and Liu, Weiyang},
+      booktitle = {ICLR},
+      year={2023}}</pre>
+    </div>
+
+<div class="paper" id="Liu2022SCR">
+      <p><a href='papers/SCR_v1.pdf'><b>Structural Causal 3D Reconstruction</b></a><br />
+        <u>Weiyang Liu</u><a href=#star title="Equal Contribution">*</a>, Zhen Liu<a href=#star title="Equal Contribution">*</a>, Liam Paull, Adrian Weller, Bernhard Schölkopf</p>
+      <p><em><font color="#B71C1C">ECCV 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2207.10156'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/lzzcd001/SCR-3D'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/mY6I55q4D-o'>talk</a>&nbsp;|&nbsp;<a href='https://wyliu.com/papers/SCR_poster.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2022SCR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2022SCR,
+      title={Structural Causal 3D Reconstruction},
+      author={Liu, Weiyang and Liu, Zhen and Paull, Liam and Weller, Adrian and Schölkopf, Bernhard},
+      booktitle = {ECCV},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Wen2021CEST">
+      <p><a href='papers/CEST_iccv2021.pdf'><b>Self-Supervised 3D Face Reconstruction via Conditional Estimation</b></a><br />
+        Yandong Wen, <u>Weiyang Liu</u>, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICCV 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.04800'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ydwen/CEST'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/Rw0wzEdu3Yc'>talk</a>&nbsp;|&nbsp;<a href='papers/CEST_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2021CEST&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2021CEST,
+      title={Self-Supervised 3D Face Reconstruction via Conditional Estimation},
+      author={Wen, Yandong and Liu, Weiyang and Raj, Bhiksha and Singh, Rita},
+      booktitle={ICCV},
+      year={2021}}</pre>
+    </div>
+
+  <h3>Continual Learning</h3>
+
+  <div class="paper" id="Yu2022MOCA">
+      <p><a href='papers/moca_v2.pdf'><b>Continual Learning by Modeling Intra-Class Variation</b></a><br />
+        Longhui Yu, Tianyang Hu, Lanqing Hong, Zhen Liu, Adrian Weller, <u>Weiyang Liu</u><a href=#star title="Corresponding Author">*</a></p>
+      <p><em><font color="#B71C1C">TMLR 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2210.05398'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/yulonghui/MOCA'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=iDxfGaMYVr'>openreview</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Yu2022MOCA&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Yu2022MOCA,
+      title={Continual Learning by Modeling Intra-Class Variation},
+      author={Yu, Longhui and Hu, Tianyang and Hong, Lanqing and Liu, Zhen and Weller, Adrian and Liu, Weiayng},
+      journal = {arXiv preprint arXiv:2210.05398},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="Cao2021LLL">
+      <p><a href='papers/LLL_AISTATS22_v2.pdf'><b>Provable Lifelong Learning of Representations</b></a><br />
+        Xinyuan Cao<a href=#star title="Alphabetical Order">*</a>, <u>Weiyang Liu</u><a href=#star title="Alphabetical Order">*</a>, Santosh S. Vempala<a href=#star title="Alphabetical Order">*</a></p>
+      <p><em><font color="#B71C1C">AISTATS 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.14098'>arXiv</a>&nbsp;|&nbsp;<a href='https://youtu.be/LXLeMXuWOus'>talk</a>&nbsp;|&nbsp;<a href='papers/LLL_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Cao2021LLL&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Cao2021LLL,
+      title={Provable Lifelong Learning of Representations},
+      author={Cao, Xinyuan and Liu, Weiyang and Vempala, Santosh S},
+      booktitle = {AISTATS},
+      year={2022}}</pre>
+  </div>
+  
+
+  <h3>Robust Learning</h3>
+
+    <div class="paper" id="zhang2025ood">
+      <p><a href='https://arxiv.org/pdf/2404.08679'><b>Your Finetuned Large Language Model is Already a Powerful Out-of-distribution Detector</b></a><br />
+        Andi Zhang, Tim Z. Xiao, <u>Weiyang Liu</u>, Robert Bamler, Damon Wischik</p>
+      <p><em><font color="#B71C1C">AISTATS 2025</font></em></p>
+      <p><a href='https://arxiv.org/abs/2404.08679'>arXiv</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;zhang2025ood&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{zhang2025ood,
+      title={Your Finetuned Large Language Model is Already a Powerful Out-of-distribution Detector},
+      author={Zhang, Andi and Xiao, Tim Z and Liu, Weiyang and Bamler, Robert and Wischik, Damon},
+      booktitle={ICLR},
+      year={2025}}</pre>
+    </div>
+  
+    <div class="paper" id="Zhang2022DDG">
+      <p><a href='papers/DDG_CVPR22.pdf'><b>Towards Principled Disentanglement for Domain Generalization</b></a><br />
+        Hanlin Zhang<a href=#star title="Equal Contribution">*</a>, Yi-Fan Zhang<a href=#star title="Equal Contribution">*</a>, <u>Weiyang Liu</u>, Adrian Weller, Bernhard Schölkopf, Eric Xing</p>
+      <p><em><font color="#B71C1C">CVPR 2022</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='https://arxiv.org/abs/2111.13839'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/hlzhang109/DDG'>code</a>&nbsp;|&nbsp;<a href='https://youtu.be/SLjORQe8jJ0'>talk</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2022DDG&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Zhang2022DDG,
+      title={Towards Principled Disentanglement for Domain Generalization},
+      author={Zhang, Hanlin and Zhang, Yi-Fan and Liu, Weiyang and Weller, Adrian and Sch{\"o}lkopf, Bernhard and Xing, Eric P},
+      booktitle = {CVPR},
+      year={2022}}</pre>
+    </div>
+
+    <div class="paper" id="YuECCV18">
+      <p><a href='papers/LiuECCV18.pdf'><b>Simultaneous Edge Alignment and Learning</b></a><br />
+        Zhiding Yu, <u>Weiyang Liu</u>, Yang Zou, Chen Feng, Srikumar Ramalingam, Vijaya Kumar, Jan Kautz</p>
+      <p><em><font color="#B71C1C">ECCV 2018</em></font></p>
+      <p><a href='https://arxiv.org/abs/1808.01992'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Chrisding/seal'>code</a>&nbsp;|&nbsp;<a href='https://github.com/Chrisding/seal'>project</a>&nbsp;|&nbsp;<a href='https://youtu.be/gpy20uGnlY4'>demo</a>&nbsp;|&nbsp;<a href='papers/ECCV18_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;YuECCV18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{YuECCV18,
+      title={Simultaneous Edge Alignment and Learning},
+      author={Yu, Zhiding and Liu, Weiyang and Zou, Yang and Feng, Chen
+       and Ramalingam, Srikumar and Kumar, Vijaya and Kautz, Jan},
+      journal={arXiv preprint arXiv:1807.04836},
+      year={2018}}</pre>
+    </div>
+
+  <div class="paper" id="Wang2018CVPR">
+      <p><a href='papers/LiuCVPR18_ONL.pdf'><b>Iterative Learning with Open-set Noisy Labels</b></a><br />
+      Yisen Wang, <u>Weiyang Liu</u>, Xingjun Ma, James Bailey, Hongyuan Zha, Le Song, Shu-Tao Xia</p>
+      <p><em><font color="#B71C1C">CVPR 2018</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Spotlight</font></em></p>
+      <p><a href='https://arxiv.org/abs/1804.00092'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/YisenWang/ONL'>code</a>&nbsp;|&nbsp;<a href='papers/CVPR2018_ONL_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wang2018CVPR&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wang2018ONL,
+      author={Wang, Yisen and Liu, Weiyang and Ma, Xingjun and Bailey, James
+       and Zha, Hongyuan and Song, Le and Xia, Shu-Tao},
+      title={Iterative Learning with Open-set Noisy Labels},
+      booktitle = {CVPR},
+      year = {2018}}</pre>
+    </div>
+
+  <a name="others"></a>
+  <h3>Others (Graph, Multi-modality, Meta-Learning, AI for Science and Healthcare)</h3>
+
+  <div class="paper" id="Zhang2023IGSD">
+      <p><a href='https://arxiv.org/pdf/2010.12609.pdf'><b>Iterative Graph Self-Distillation</b></a><br />
+        Hanlin Zhang, Shuai Lin, <u>Weiyang Liu</u>, Pan Zhou, Jian Tang, Xiaodan Liang, Eric Xing</p>
+      <p><em><font color="#B71C1C">TKDE 2023</font></em></p>
+      <p><a href='https://arxiv.org/abs/2010.12609'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/hlzhang109/IGSD'>code</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Zhang2023IGSD&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{Zhang2023IGSD,
+      title={Iterative graph self-distillation},
+      author={Zhang, Hanlin and Lin, Shuai and Liu, Weiyang and Zhou, Pan and Tang, Jian and Liang, Xiaodan and Xing, Eric P},
+      journal={IEEE Transactions on Knowledge and Data Engineering},
+      year={2023}}</pre>
+    </div>
+
+  <div class="paper" id="Heo2023BlochNet">
+      <p><a href='papers/BlochNet_v1.pdf'><b>Physics-based Decoding Improves Magnetic Resonance Fingerprinting</b></a><br />
+        Juyeon Heo, Pingfan Song, <u>Weiyang Liu</u>, Adrian Weller</p>
+      <p><em><font color="#B71C1C">MICCAI 2023</font>&nbsp;&nbsp;&nbsp;<font color="#239B56 ">Oral</font></em></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='TBA'>code</a>&nbsp;|&nbsp;<a href='papers/BlochNet_supp.pdf'>appendix</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Heo2023BlochNet&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Heo2023BlochNet,
+      title={Regularized Magnetic Resonance Fingerprinting with Bloch Equations},
+      author={Heo, Juyeon and Song, Pingfan and Liu, Weiyang and Weller, Adrian},
+      booktitle={MICCAI},
+      year={2023}}</pre>
+    </div>
+
+  <div class="paper" id="Liu2021GraphMVP">
+      <p><a href='papers/GraphMVP.pdf'><b>Pre-training Molecular Graph Representation with 3D Geometry</b></a><br />
+        Shengchao Liu, Hanchen Wang, <u>Weiyang Liu</u>, Joan Lasenby, Hongyu Guo, Jian Tang</p>
+      <p><em><font color="#B71C1C">ICLR 2022</font></em></p>
+      <p><a href='https://arxiv.org/abs/2110.07728'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/chao1224/GraphMVP'>code</a>&nbsp;|&nbsp;<a href='https://chao1224.github.io/GraphMVP'>project</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=xQUe1pOKPam'>openreview</a>&nbsp;|&nbsp;<a href='https://drive.google.com/file/d/1-meh7rEGkngtmgNmEFo5TqfXJQXSZxz6/view'>talk</a>&nbsp;|&nbsp;<a href='papers/GraphMVP_slides.pdf'>slides</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Liu2021GraphMVP&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Liu2021GraphMVP,
+      title={Pre-training Molecular Graph Representation with 3D Geometry},
+      author={Liu, Shengchao and Wang, Hanchen and Liu, Weiyang and Lasenby, Joan and Guo, Hongyu and Tang, Jian},
+      booktitle={ICLR},
+      year={2022}}</pre>
+    </div>
+
+  <div class="paper" id="UCADI2021NMI">
+      <p><a href='https://www.nature.com/articles/s42256-021-00421-z.pdf'><b>Advancing COVID-19 Diagnosis with Privacy-Preserving Collaboration in Artificial Intelligence</b></a><br />
+        Xiang Bai, Hanchen Wang, ..., <u>Weiyang Liu</u>, ..., Carola Schönlieb, Tian Xia</p>
+      <p><em><font color="#B71C1C">Nature Machine Intelligence 2021</font></em></p>
+      <p><a href='https://arxiv.org/abs/2111.09461'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/HUST-EIC-AI-LAB/UCADI'>code</a>&nbsp;|&nbsp;<a href='http://www.covid-ct-ai.team/'>project</a>&nbsp;|&nbsp;<a href='http://bit.ly/3dUp0oL'>news</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;UCADI2021NMI&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @article{UCADI2021NMI,
+      title={Advancing COVID-19 diagnosis with privacy-preserving collaboration in artificial intelligence},
+      author={Bai, Xiang and Wang, Hanchen and Ma, Liya and Xu, Yongchao and Gan, Jiefeng and Fan, Ziwei and Yang, Fan and Ma, Ke and Yang, Jiehua and Bai, Song and others},
+      journal={Nature Machine Intelligence},
+      volume={3},
+      number={12},
+      pages={1081--1089},
+      year={2021},
+      publisher={Nature Publishing Group}}</pre>
+    </div>
+  
+    <div class="paper" id="ShawNIPS19">
+      <p><a href='papers/ShawNIPS2019_BASE.pdf'><b>Meta Architecture Search</b></a><br />
+        Albert Shaw, Wei Wei, <u>Weiyang Liu</u>, Le Song, Bo Dai</p>
+      <p><em><font color="#B71C1C">NeurIPS 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1812.09584'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/ashaw596/meta_architecture_search'>code</a>&nbsp;|&nbsp;<a href='papers/ShawNIPS2019_BASE_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;ShawNIPS19&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{ShawNIPS19,
+      title={Meta Architecture Search},
+      author={Shaw, Albert and Wei, Wei and Liu, Weiyang and Song, Le and Dai, Bo},
+      booktitle={NeurIPS},
+      year={2019}}</pre>
+    </div>
+
+    <div class="paper" id="Wen2018DIM">
+      <p><a href='papers/LiuICLR19.pdf'><b>Disjoint Mapping Network for Cross-modal Matching of Voices and Faces</b></a><br />
+        Yandong Wen, Mahmoud Alismail, <u>Weiyang Liu</u>, Bhiksha Raj, Rita Singh</p>
+      <p><em><font color="#B71C1C">ICLR 2019</font></em></p>
+      <p><a href='https://arxiv.org/abs/1807.04836'>arXiv</a>&nbsp;|&nbsp;<a href='https://drive.google.com/file/d/1PRBevtrWWLqKb4kd3Bpv2rTaudkBFnSO/view?usp=sharing'>code</a>&nbsp;|&nbsp;<a href='https://openreview.net/forum?id=B1exrnCcF7'>openreview</a>&nbsp;|&nbsp;<a href='papers/WenICLR19-poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;Wen2018DIM&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{Wen2019DIM,
+      title={Disjoint Mapping Network for Cross-modal Matching of Voices and Faces},
+      author={Wen, Yandong and Alismail, Mahmoud and Liu, Weiyang and Raj, Bhiksha and Singh, Rita},
+      booktitle={ICLR},
+      year={2019}}</pre>
+    </div>
+
+    <div class="paper" id="DaiNIPS18">
+      <p><a href='papers/LiuNIPS18_CVB.pdf'><b>Coupled Variational Bayes via Optimization Embedding</b></a><br />
+        Bo Dai, Hanjun Dai, Niao He, <u>Weiyang Liu</u>, Zhen Liu, Jianshu Chen, Lin Xiao, Le Song</p>
+      <p><em><font color="#B71C1C">NeurIPS 2018</em></font></p>
+      <p><a href='TBA'>arXiv</a>&nbsp;|&nbsp;<a href='https://github.com/Hanjun-Dai/cvb'>code</a>&nbsp;|&nbsp;<a href='papers/LiuNIPS18_CVB_poster.pdf'>poster</a>&nbsp;|&nbsp;<a shape="rect" href="javascript:togglebib(&#39;DaiNIPS18&#39;)" class="togglebib">bib</a></p>
+      <pre xml:space="preserve" style="display: none;">  @InProceedings{DaiNIPS18,
+      title={Coupled Variational Bayes via Optimization Embedding},
+      author={Dai, Bo and Dai, Hanjun and He, Niao and Liu, Weiyang 
+       and Liu, Zhen and Chen, Jianshu and Xiao, Lin and Song, Le},
+      booktitle={NeurIPS},
+      year={2018}}</pre>
+    </div>
+
+  </script>
+
+</div>
+</div>
+</div>
+<script>showPubs(1);</script>
+
+<div align="center">This site has been visisted <a href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?kendy1992" width="56" height="10" border="0" alt="Free Web Counter"></a> times in total.</div>
+<!--<div align="center">This site has been visisted<a href="http://www.amazingcounters.com"> <img src="http://cc.amazingcounters.com/counter.php?i=3196355&c=9589378" alt="AmazingCounters.com" width="64" height="13" border="0"></a> times in total.</div>-->
+<!--<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=UBBK&d=QYI6-YIhAQ_rq3wdlC6X_L_DZEwv1gip6P_62-gTJUs"></script>-->
+
+</body>
+</html>

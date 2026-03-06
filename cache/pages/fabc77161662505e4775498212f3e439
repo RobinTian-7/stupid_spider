@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shuai Wang - Associate Professor at HKUST">
+    <title>Shuai Wang | HKUST</title>
+    <style>
+        /* --- æ ¸å¿æ ·å¼éç½® --- */
+        :root {
+            --primary-color: #003366; /* ç§å¤§è */
+            --accent-color: #d9534f;   /* å¼ºè°è² */
+            --text-color: #333;
+            --light-text: #666;
+            --bg-color: #fff;
+            --link-color: #0056b3;
+            --section-spacing: 50px;
+            --item-spacing: 15px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        a { color: var(--link-color); text-decoration: none; transition: color 0.2s; }
+        a:hover { text-decoration: underline; color: #003d80; }
+
+        /* --- å¤´é¨åºå --- */
+        header {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-photo img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .profile-info { flex: 1; }
+        .profile-info h1 { margin: 0 0 10px 0; font-size: 2.5rem; color: var(--primary-color); letter-spacing: -0.5px; }
+        .profile-info h2 { font-size: 1.3rem; font-weight: 400; color: #555; margin: 0 0 20px 0; }
+        .contact-details { font-size: 1rem; color: var(--light-text); line-height: 1.8; }
+        .contact-details strong { color: #333; }
+
+        /* --- éç¨ç« èæ ·å¼ --- */
+        section { margin-bottom: var(--section-spacing); }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 12px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #444;
+            font-weight: 600;
+        }
+
+        p { margin-bottom: 15px; text-align: justify; }
+
+        /* --- åè¡¨æ ·å¼ä¼å --- */
+        ul { padding-left: 18px; margin-top: 0; }
+        li { margin-bottom: 8px; }
+
+        /* --- è®ºæåè¡¨ä¸ç¨æ ·å¼ --- */
+        .pub-list { list-style: none; padding-left: 0; }
+        .pub-list li { margin-bottom: 25px; line-height: 1.5; }
+        
+        .pub-title {
+            display: block;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #222;
+            margin-bottom: 4px;
+        }
+        
+        .pub-authors {
+            display: block;
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+        
+        .pub-venue {
+            display: inline-block;
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            background-color: #f0f4f8;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* --- å¥é¡¹ä¸å¤æ³¨æ ·å¼ --- */
+        .award-text, .note-text {
+            display: block;
+            font-size: 0.9rem;
+            margin-top: 3px;
+        }
+        .award-text { color: var(--accent-color); font-weight: 500; }
+        .note-text { color: var(--light-text); font-style: italic; }
+        
+        /* --- æ ¡åå»åæ ·å¼ --- */
+        .alumni-dest { color: #0056b3; font-weight: 500; }
+        .alumni-thesis { font-style: italic; color: #666; display: block; margin-top: 2px; }
+
+        /* --- ç§»å¨ç«¯éé --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column-reverse; align-items: center; text-align: center; gap: 30px; }
+            .profile-photo img { width: 180px; height: 180px; }
+            .container { padding: 30px 20px; }
+        }
+
+	/* --- æ°å¢å¸å±æ ·å¼ --- */
+
+/* 1. å¸å±å®¹å¨ï¼å¯ç¨ Flex å¸å±ï¼è®©å¯¼èªååå®¹å¹¶æ */
+.layout-wrapper {
+    display: flex;
+    gap: 40px; /* å·¦å³æ ä¹é´çé´è· */
+    align-items: flex-start; /* é¡¶é¨å¯¹é½ */
+    position: relative;
+}
+
+/* 2. å·¦ä¾§æ¬æµ®å¯¼èªæ  */
+.sidebar-nav {
+    width: 180px; /* å¯¼èªæ å®½åº¦ */
+    flex-shrink: 0; /* é²æ­¢è¢«æ¤å */
+    position: sticky; /* å³é®ï¼å®ç°æ¬æµ®ææ */
+    top: 40px; /* è·ç¦»æµè§å¨é¡¶é¨çè·ç¦» */
+    padding-right: 20px;
+    border-right: 1px solid #eee; /* å³ä¾§åå²çº¿ */
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 8px 0;
+    color: #666;
+    font-weight: 500;
+    border-left: 3px solid transparent; /* å·¦ä¾§æç¤ºæ¡ */
+    padding-left: 15px;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+}
+
+.sidebar-nav a:hover {
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+    background-color: #f9f9f9;
+    text-decoration: none;
+}
+
+/* 3. å³ä¾§ä¸»è¦åå®¹åº */
+.main-content {
+    flex-grow: 1; /* å æ®å©ä½å®½åº¦ */
+    min-width: 0; /* é²æ­¢åå®¹æº¢åº */
+}
+
+/* 4. éå¯¹ Section çå¾®è° */
+/* ä¸ºäºé²æ­¢ç¹å»å¯¼èªåï¼æ é¢è¢«æµè§å¨é¡¶é¨é®æ¡ï¼å ä¸ä¸ªæ»å¨åç§»é */
+section {
+    scroll-margin-top: 60px;
+}
+
+/* --- ç§»å¨ç«¯éé --- */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        display: block; /* ææºä¸åæ¶å¹¶æï¼æ¹ä¸ºä¸ä¸å å  */
+    }
+    .sidebar-nav {
+        display: none; /* ææºä¸éèä¾§è¾¹æ ï¼é¿åå ç©ºé´ */
+        /* æèæ¹ææ¨ªåæ»å¨çé¡¶é¨å¯¼èªï¼çä½ åå¥½ */
+    }
+}
+
+/* --- é¢å¤ç¾åï¼å¢éæåå¡çå (å¯é) --- */
+/* å¦æä½ æ³è®© Team åè¡¨åæå¡çï¼ç»é£ä¸ª ul å ä¸ª class="grid-list" */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.grid-list li {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 0; /* è¦çåææ ·å¼ */
+}
+	.marker-highlight {
+    background: linear-gradient(120deg, #fff0c5 0%, #fff0c5 100%); /* è§åé»èæ¯ */
+    background-repeat: no-repeat;
+    background-size: 100% 40%; /* åªé«äº®ä¸åé¨åï¼æ´æè®¾è®¡æ */
+    background-position: 0 85%;
+    font-weight: bold;
+    color: #000; /* æå­ä¿æçº¯é»ï¼å¯¹æ¯åº¦æé« */
+    padding: 0 4px;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="profile-info">
+            <h1>Shuai Wang</h1>
+            <h2>Associate Professor</h2>
+            <div class="contact-details">
+                Department of Computer Science and Engineering<br>
+                Hong Kong University of Science and Technology<br>
+                <br>
+                <strong>Office:</strong> 3516<br>
+                <strong>E-mail:</strong> shuaiw [at] cse.ust.hk
+            </div>
+        </div>
+        <div class="profile-photo">
+            <img src="profile.jpg" alt="Shuai Wang">
+        </div>
+    </header>
+
+    <div class="layout-wrapper">
+	    <aside class="sidebar-nav">
+            <nav>
+                <a href="#bio">Biography</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#team">Team</a>
+                <a href="#alumni">Alumni</a>
+                <a href="#service">Service</a>
+                <a href="#publications">Publications</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+    <section id="bio">
+        <h3>Biography</h3>
+        <p>
+            I am an associate professor with substantiation (tenure) at CSE, HKUST. I am currently serving the PG coordinator role at CSE. Prior to that, I was an assistant professor at CSE, HKUST (2019-2024), and was a postdoctoral scholar in the <a href="https://ast.ethz.ch/" target="_blank">AST lab</a> at ETH Zurich (2018-2019). I received the Ph.D. degree from Penn State University, and the B.S. degree from Peking University.
+        </p>
+        <p>
+	<!--My research covers <strong>Computer Security and Privacy</strong> as well as <strong>Software Engineering</strong>.-->
+	My core research pillars are <span class="marker-highlight">AI Security</span>,
+   <span class="marker-highlight">Software Security</span>, and
+   <span class="marker-highlight">Data Privacy</span>. My research tackles critical trustworthiness challenges at the intersection of these fields. Recently, my group investigates the trustworthiness of AI systems, aiming to mitigate security risks across the computation stackâfrom model algorithms to underlying systems. We also focus on safeguarding the privacy of real-world computing infrastructures, leveraging advanced privacy-enhancing technologies to defend against emerging threats.
+        </p>
+        <p>
+	I am the recipient of several research scholar awards from <a href="https://research.google/outreach/research-scholar-program/recipients/" target="_blank">Google</a>, Alibaba DAMO Academy, CCF-Tencent Rhino-Bird x 2, and a HK-UGC Early Career Award. Our research has received IEEE Security & Privacy 2025 Distinguished Paper Award (on <strong style="color: #d9534f;">AI security</strong>), ACM SIGSOFT Distinguished Paper Award (on <strong style="color: #d9534f;">Software security</strong>), 2025 Hong Kong ICT FinTech Award (on <strong style="color: #d9534f;">data privacy</strong>), and 2025 Hong Kong Tech Fest Cybersecurity Project of the Year Award (on <strong style="color: #d9534f;">data privacy</strong>). Being the PI/PC, I have secured funding from Collaborative Research Fund (UGC, HK), Research Impact Fund (UGC, HK), Innovation and Technology Fund (HK), NSFC-RGC joint research fund (UGC, HK), GRF/ECS (UGC, HK), and industries. Recently, I delivered keynotes and invited seminars at the Hong Kong CS (CyberSecurity) Summit and the Hong Kong Police Forceâs "Cyber Friday" series and "Cyber Command Course" series.
+        </p>
+
+	<p>Besides, I am a humble endurance sports enthusiast (ð ð´ ð). I am a believer in the philosophy of "train your brain before training your body" â using a scientific and strategic mind to push physical limits. You may also be interested to read the inspiring <a href="https://www.comp.nus.edu.sg/~liangzk/hobby/">article</a> by Prof. Zhenkai Liang.
+	</p>
+
+	<div style="background-color: #f0f7ff; border-left: 5px solid #007bff; padding: 15px; margin: 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+  <p style="margin: 0;">
+    Our PLDI 2025 paper <a href="pldi-25.pdf">"<strong>Divergence-Aware Testing of Graphics Shader Compiler Back-Ends</strong>"</a>
+    has been selected by the <strong><a href="https://plr.csail.mit.edu/">MIT Programming Languages Review (PLR) 2026</a></strong>
+    as one of the few impactful papers (typically 8-9 annually) "likely to have a long-term impact in the field."
+    The committee recognized our work for addressing critical reliability issues in compiler back-ends for specialized hardware accelerators. 
+  </p>
+</div>
+
+	<!--<div style="background: #fff5f5; border-left: 4px solid #d9534f; padding: 15px; margin-top: 20px; border-radius: 4px; color: #333;">
+    <strong style="color: #d9534f; font-size: 1.1em;">ð¢ Openings:</strong>
+    I am actively looking for <strong>PhD students</strong> and <strong>Postdocs</strong> with a focus on AI security, software security, or data privacy.
+    If you are interested, please <a href="mailto:shuaiw@cse.ust.hk" style="text-decoration: underline; font-weight: bold;">contact me</a> directly with your CV.
+	</div> -->
+
+    </section>
+
+
+    <section id="teaching">
+        <h3>Teaching</h3>
+        <ul>
+            <li><a href="https://home.cse.ust.hk/~shuaiw/Password_Only/ARIN5303/" target="_blank">ARIN5303: Artificial Intelligence in Cybersecurity (Spring 2026)</a></li>
+	    <li><a href="https://course.cse.ust.hk/comp2011/">COMP2011: Programming with C++ (Spring 2026)</a></li>
+            <li>CSIT5730: Principles of Cybersecurity (Fall 2025)</li>
+            <li>COMP1021: Introduction of Computer Science (Summer 2025)</li>
+            <li>COMP4634: Cybersecurity (Spring 2025)</li>
+            <li>CSIT5730: Principles of Cybersecurity (Fall 2024)</li>
+            <li>COMP2011: Programming with C++ (Fall 2024)</li>
+            <li>COMP3632: Principles of Cybersecurity (Spring 2024)</li>
+            <li>COMP3632: Principles of Cybersecurity (Fall 2023)</li>
+            <li>COMP3632: Principles of Cybersecurity (Spring 2023)</li>
+            <li>COMP4971A: Independent Work on <em>Systems Security</em> (Spring 2023)</li>
+            <li>COMP4971B: Independent Work on <em>Systems Security</em> (Spring 2023)</li>
+            <li>COMP3632: Principles of Cybersecurity (Fall 2022)</li>
+            <li>COMP3632: Principles of Cybersecurity (Spring 2022)</li>
+            <li>COMP3632: Principles of Cybersecurity (Fall 2021)</li>
+            <li>COMP3632: Principles of Cybersecurity (Spring 2021)</li>
+            <li>COMP6613C: Topics in Computer Security and Privacy (Spring 2021)</li>
+            <li>COMP3632: Principles of Cybersecurity (Fall 2020)</li>
+            <li>COMP3632: Principles of Cybersecurity (Fall 2019)</li>
+            <li>COMP4971A: Independent Work on <em>Software Fuzz Testing</em> (Fall 2019)</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h3>Current Team Members</h3>
+        
+        <h4>Postdoc</h4>
+        <ul>
+            <li><a href="https://qingyue2014.github.io/" target="_blank">Dr. Qingyue Wang</a> (2024 Fall)</li>
+            <li>Dr. Ruochen Zhou (2025 Spring) Co-hosted with Prof. <a href="https://www.cse.ust.hk/~bli/" target="_blank">Bo Li</a></li>
+	    <li><a href="https://whj0401.github.io/" target="_blank">Dr. Huaijin Wang</a> (2025 Fall)</li> 
+            <li><a href="https://dongwei-xiao.github.io/" target="_blank">Dr. Dongwei Xiao</a> (2025 Fall)</li>
+            <li><a href="https://tszdanger.github.io/about/" target="_blank">Dr. Zongjie Li</a> (2025 Fall)</li>
+            <li><a href="" target="_blank">Dr. Wai Kin Wong</a> (2025 Fall)</li>
+        </ul>
+
+        <h4>Ph.D. Students</h4>
+        <ul>
+            <li><a href="https://yanzuo.ch/" target="_blank">Yanzuo Chen</a> (2021 Fall)</li>
+            <li><a href="https://ykzhang1999.github.io/" target="_blank">Yongkang Zhang</a> (2021 Fall)</li>
+            <li><a href="https://blossomin.github.io/" target="_blank">Dong Chen</a> (2022 Fall) Co-advised with Prof. <a href="https://www.cse.ust.hk/~weiwa/" target="_blank">Wei Wang</a></li>
+            <li><a href="https://jwnhy.github.io" target="_blank">Hongyi Lu</a> (2022 Fall) Co-advised with Prof. <a href="https://fengweiz.github.io/" target="_blank">Fengwei Zhang</a></li>
+            <li>Sen Deng (2023 Fall)</li>
+            <li><a href="https://www.pengyiteng.com/" target="_blank">Yiteng Peng</a> (2023 Fall)</li>
+            <li><a href="https://sites.google.com/view/xunguangwang/" target="_blank">Xunguang Wang</a> (2023 Fall)</li>
+            <li><a href="https://wangzhaoyu07.github.io/" target="_blank">Zhaoyu Wang</a> (2023 Fall)</li>
+            <li><a href="https://likuanppd.github.io/" target="_blank">Kuan Li</a> (2023 Fall) Co-advised with Prof. <a href="https://cmhcbb.github.io/" target="_blank">Minhao Cheng</a></li>
+            <li>Yanbo Dai (2024 Fall)</li>
+            <li>Ruixuan Huang (2024 Fall)</li>
+            <li>Zongyi Lv (2024 Fall) Co-advised with Prof. <a href="https://cse.hkust.edu.hk/~scc/" target="_blank">Shing-chi Cheung</a></li>
+            <li>Liwen Wang (2024 Fall)</li>
+            <li>Yuchong Xie (2024 Fall) Co-advised with Prof. <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank">Dongdong She</a></li>
+            <li>Zhantong Xue (2024 Fall)</li>
+            <li>Kunpeng Zhang (2024 Fall)</li>
+            <li>Yudong Gao (2025 Fall)</li>
+            <li>Xing Han (2025 Fall)</li>
+            <li>Mingyuan Huang (2025 Fall)</li>
+            <li>Zimo Ji (2025 Fall) </li>
+            <li>Gengyang Xu (2025 Fall)</li>
+            <li>Zheng Zhang (2025 Fall)</li>
+            <li>Yuguang Zhou (2025 Fall)</li>
+        </ul>
+
+        <h4>RA</h4>
+        <ul>
+            <li>Xin Wei (2025 Winter)</li>
+        </ul>
+    </section>
+
+    <section id="alumni">
+        <h3>Alumni</h3>
+        
+        <h4>Postdocs & Research Professors Alumni</h4>
+        <ul>
+            <li>
+                <strong>Daoyuan Wu</strong> (Research Assistant Professor, 2024-2025)
+                <br>Currently: <span class="alumni-dest">Assistant Professor @ Lingnan University</span>
+            </li>
+            <li>
+                <strong>Wenxuan Wang</strong> (Postdoc, 2024-2025)
+                <br>Currently: <span class="alumni-dest">Assistant Professor @ Renmin University of China</span> å½å®¶çº§é«å±æ¬¡éå¹´äººæè®¡å
+            </li>
+            <li>
+                <strong>Han Liu</strong> (Postdoc, 2024-2026)
+                <br>Currently: <span class="alumni-dest">Associate Professor @ Nankai University</span> 100 Young Academic Leaders of Nankai University
+        </ul>
+
+        <h4>Ph.D. Alumni</h4>
+        <ul>
+            <li>
+                <strong>Zhibo Liu</strong> (Ph.D.#1, 2019-2023) (RGC Postdoc Fellow 2023-2025)
+		<br>Currently: <span class="alumni-dest">Associate Professor @ Nanjing University</span> å½å®¶çº§é«å±æ¬¡éå¹´äººæè®¡å
+                <span class="alumni-thesis">Thesis: Towards Assessing and Enhancing Modern Software Reverse Engineering.</span>
+                <span class="award-text">â 2023 CSE Best PhD Dissertation Award - Honorable Mention</span>
+            </li>
+            <li>
+                <strong>Huaijin Wang</strong> (Ph.D.#2, 2019-2023) (Postdoc 2024-2026)
+		<br>Currently: <span class="alumni-dest">Faculty @ Shandong University</span> å½å®¶çº§é«å±æ¬¡éå¹´äººæè®¡å
+                <span class="alumni-thesis">Thesis: Advanced Binary Similarity Analysis and Its Downstream Applications.</span>
+            </li>
+            <li>
+                <strong>Yuanyuan Yuan</strong> (Ph.D.#3, 2020-2024)
+		<br>Currently: <span class="alumni-dest">Assistant Professor @ Tsinghua University</span> å½å®¶çº§é«å±æ¬¡éå¹´äººæè®¡å
+                <span class="alumni-thesis">Thesis: Side Channel Analysis for AI Infrastructures.</span>
+                <span class="award-text">â 2024 CSE Best PhD Dissertation Award</span>
+            </li>
+            <li>
+                <strong>Pingchuan Ma</strong> (Ph.D.#4, 2020-2024) (Postdoc 2024-2025)
+		<br>Currently: <span class="alumni-dest">Professor @ Zhejiang University of Technology</span> å½å®¶çº§é«å±æ¬¡éå¹´äººæè®¡å
+                <span class="alumni-thesis">Thesis: Algorithms, Applications, and Verification of Causal Structure Learning.</span>
+                <span class="award-text">â HKUST Engineering PhD Research Excellence Award 2024-25</span>
+                <span class="award-text">â 2025 CSE Best PhD Dissertation Award</span>
+            </li>
+            <li>
+                <strong>Zongjie Li</strong> (Ph.D.#5, 2021-2025)
+                <span class="alumni-thesis">Thesis: Enhancing and Hardening Neural Code Model.</span>
+                <span class="award-text">â 2025 Ant InTech Technology Scholarship</span>
+            </li>
+            <li>
+                <strong>Dongwei Xiao</strong> (Ph.D.#6, 2021-2025)
+                <span class="alumni-thesis">Thesis: Improving the Reliability of Privacy-Enhancing Technology (PET) Systems.</span>
+            </li>
+            <li>
+                <strong>Wai Kin WONG</strong> (Ph.D.#7, 2021-2025)
+                <span class="alumni-thesis">Thesis: Enhancing Binary Analysis Tooling.</span>
+            </li>
+            <li>
+                <strong>Zhenlan Ji</strong> (Ph.D.#8, 2021-2025)
+                <span class="alumni-thesis">Thesis: Causality-Driven Interpretation and Inspection of Deep Learning
+
+Systems.</span>
+            </li>
+        </ul>
+
+		<h4>MPhil Alumni</h4>
+        <ul>
+            <li>
+                <strong>Kun Hung LUNG</strong> (MPhil @ CSE HKUST)
+		<span class="alumni-info"><span class="alumni-thesis">Thesis: Sanitizer Check Debloating with Reinforcement Learning</span> 2019-2021. â <span class="alumni-dest">Engineer @ cybersecurity startup</span></span>
+            </li>
+            <li>
+                <strong>Wai Kin WONG</strong> (MPhil @ CSE HKUST)
+		<span class="alumni-info"><span class="alumni-thesis">Thesis: Attacking deep learning-based anti-malware engines</span> 2019-2021. â <span class="alumni-dest">Ph.D. student @ HKUST</span></span>
+            </li>
+            <li>
+                <strong>Wei Chen</strong> (MPhil @ CSE HKUST)
+		<span class="alumni-info"><span class="alumni-thesis">Thesis: Synthesizing High-Quality System Call Traces for OS Fuzz Testing</span> 2019-2021. â <span class="alumni-dest">Ph.D. student @ HKUST</span></span>
+            </li>
+            <li>
+                <strong><a href="https://qi-pang.github.io/" target="_blank">Qi Pang</a></strong> (MPhil @ CSE HKUST)
+                <span class="alumni-info"><span class="alumni-thesis">Thesis: Testing Models Solving Markov Decision Processes</span> 2020-2022. â <span class="alumni-dest">Ph.D. student @ CMU</span></span>
+            </li>
+            <li>
+                <strong>Sen Li</strong> (MPhil @ CSE HKUST)
+                <span class="alumni-info">Co-advised with Prof. <a href="https://cmhcbb.github.io/" target="_blank">Minhao Cheng</a>. <span class="alumni-thesis">Thesis: Towards Trustworthy Visual Generative Models: Reliable and Controllable Generation of Diffusion Models</span> 2022-2024. â <span class="alumni-dest">Ph.D. student @ Penn State</span></span>
+            </li>
+            <li>
+                <strong>Yichen Li</strong> (MPhil @ CSE HKUST)
+                <span class="alumni-info"><span class="alumni-thesis">Thesis: Testing Secure Multi-Party Computation Compilers</span> 2022-2024. â <span class="alumni-dest">Ph.D. student @ SusTech</span></span>
+            </li>
+            <li>
+                <strong>Ao Sun</strong> (MPhil @ CSE HKUST)
+                <span class="alumni-info"><span class="alumni-thesis">Thesis: Enabling Explainable AI with Transformer Models: Opportunities and Limitations in Visual and Textual Concept Generation</span> 2023-2025. â <span class="alumni-dest">RD Engineer@ Huawei 2012</span></span>
+            </li>
+        </ul>
+        </ul>
+
+        <h4>Undergraduate Researchers & RAs</h4>
+        <p class="note-text"></p>
+        <ul>
+            <li><strong>LAU Pak Hin</strong> (2024 UG)</li>
+            <li><strong>Yigit Sen</strong> (2024 UG)</li>
+            <li><strong>Kaiwen Yang</strong> (2024 RA) â <span class="alumni-dest">Ph.D. student @ ANU</span></li>
+            <li><strong>Zhaoyu Wang</strong> (2022-2023) â <span class="alumni-dest">Ph.D. student @ HKUST</span></li>
+            <li><strong>Ao Sun</strong> (2023 UG@UIUC) â <span class="alumni-dest">Ph.D. student @ HKUST</span></li>
+            <li><strong>Yiteng Peng</strong> (2023 UG@USTC) â <span class="alumni-dest">Ph.D. student @ HKUST</span></li>
+            <li><strong>Sarthak Singhal</strong> (2023 UG) â <span class="alumni-dest">Security Intern @ Deloitte</span></li>
+            <li><strong>Qi Wu</strong> (2022-2023) â <span class="alumni-dest">MS student @ CMU</span></li>
+            <li><strong>Wenbo Li</strong> (2022-2023) â <span class="alumni-dest">MS student @ USC</span></li>
+            <li><strong>Qihao He</strong> (2022-2023) â <span class="alumni-dest">MS student @ TAMU</span></li>
+            <li><strong>Wangkai Jin</strong> (2021 Intern) â <span class="alumni-dest">MSCS student @ Duke</span></li>
+            <li><strong>Yujie Wang</strong> (2020-2021) â <span class="alumni-dest">Ph.D. student @ WUSTL</span></li>
+            <li><strong>Xirui Nie</strong> (2020 Intern) â <span class="alumni-dest">Ph.D. student @ CUHK</span></li>
+            <li><strong>Reiff Loris</strong> (UG @ ETH Zurich) â <span class="alumni-dest">Masters @ ETH Zurich</span></li>
+            <li><strong><a href="https://twitter.com/theflow0?lang=en" target="_blank">Nguyen Andy</a></strong> (UG @ ETH Zurich) â <span class="alumni-dest">InfoSec Engineer @ Google</span></li>
+        </ul>
+    </section>
+
+    <section id="service">
+        <h3>Organization & Service</h3>
+        <ul>
+            <li>General Chair OpenHarmony CTF 2025 [<a href="https://mp.weixin.qq.com/s/eH9GCmQ4JsHneBabeMU3Dw" target="_blank">link</a>]</li>
+            <li>Co-chair AISTA 2024</li>
+            <li>Co-chair <a href="https://conf.researchr.org/home/issta-2022/aista-2022" target="_blank">AISTA 2022</a></li>
+            <li>Co-chair <a href="https://conf.researchr.org/track/aista-2021/ecoop-issta-2021-aista" target="_blank">AISTA 2021</a></li>
+        </ul>
+        
+        <h4>Program Committees</h4>
+        <p class="note-text" style="color: #0056b3;">
+            Due to significant departmental commitments, I will have limited capacity to take on additional external responsibilities starting in fall 2025.
+        </p>
+        <ul>
+            <li><strong>2026:</strong> CCS, OOPSLA</li>
+            <li><strong>2025:</strong> IEEE S&P, USENIX Security, CCS (Top Reviewer Award), ASE</li>
+            <li><strong>2024:</strong> IEEE S&P, USENIX Security, FSE, ISSTA</li>
+            <li><strong>2023:</strong> IEEE S&P, USENIX Security, CCS, FSE, ISSTA, ASE, PoPETs/PETS, PRDC</li>
+            <li><strong>2022:</strong> CCS, ASE, ICSE (SEET), AsiaCCS, NDSS (BAR), DBTest</li>
+            <li><strong>2021:</strong> ICSE (AE), AsiaCCS</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h3>Selected Publications</h3>
+        <ul class="pub-list">
+            <li>
+                <span class="pub-title">GPU-Fuzz: Finding Memory Errors in Deep Learning Frameworks.</span>
+                <span class="pub-authors">Zihao Li, Hongyi Lu, Yanan Guo, Zhenkai Zhang, Shuai Wang, and Fengwei Zhang.</span>
+                <span class="pub-venue">DAC 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">MetaSpace: Metamorphic Testing for Spatial Cognition in Embodied Agents.</span>
+                <span class="pub-authors">Gengyang Xu, Dongwei Xiao, Yiteng Peng, and Shuai Wang.</span>
+                <span class="pub-venue">OOPSLA 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">LLM-Powered Silent Bug Fuzzing in Deep Learning Libraries via Versatile and Controlled Bug Transfer.</span>
+                <span class="pub-authors">Kunpeng Zhang, Dongwei Xiao, Daoyuan Wu, Shuai Wang, Jiali Zhao, Yuanyi Lin, Tongtong Xu, and Shaohua Wang.</span>
+                <span class="pub-venue">OOPSLA 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">RandSet: Randomized Corpus Reduction for Fuzzing Seed Scheduling.</span>
+                <span class="pub-authors">Yuchong Xie, Kaikai Zhang, Yu Liu, Rundong Yang, Ping Chen, Shuai Wang, and Dongdong She.</span>
+                <span class="pub-venue">OOPSLA 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">No More Translation at Runtime: LLM-Empowered Static Binary Translation.</span>
+                <span class="pub-authors">Zhibo Liu, Huaijin Wang, Wai Kin Wong, Daoyuan Wu, and Shuai Wang.</span>
+                <span class="pub-venue">EuroSys 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">EAMET: Robust Massive Model Editing Via Embedding Alignment Optimization.</span>
+                <span class="pub-authors">Yanbo Dai, Zhenlan Ji, Zongjie Li, Shuai Wang.</span>
+                <span class="pub-venue">ICLR 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods.</span>
+                <span class="pub-authors">Ruixuan Huang, Xunguang Wang, Zongjie Li, Daoyuan Wu, Shuai Wang.</span>
+                <span class="pub-venue">ICLR 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning.</span>
+                <span class="pub-authors">Kuan Li, Zhongwang Zhang, Huifeng Yin, Rui Ye, Yida Zhao, Liwen Zhang, Litu Ou, Ding-Chu Zhang, Xixi Wu, Xinmiao Yu, Jialong Wu, Xinyu Wang, Zile Qiao, Zhen Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Zhi-Qin John Xu, Shuai Wang, Minhao Cheng, Jingren Zhou.</span>
+                <span class="pub-venue">ICLR 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">Exploring Multi-Lingual Bias of Large Code Models in Code Generation.</span>
+                <span class="pub-authors">Chaozheng Wang, Zongjie Li, Cuiyun Gao, Wenxuan Wang, Ting Peng, Hailiang Huang, Yuetang Deng, Shuai Wang, and Michael Lyu.</span>
+                <span class="pub-venue">TOSEM 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">Towards Secure BPF Kernel Extension With Hardware-Enhanced Memory Isolation.</span>
+                <span class="pub-authors">Lijian Huang, Hongyi Lu, Shuai Wang, and Fengwei Zhang.</span>
+                <span class="pub-venue">TDSC 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">CuSafe: Capturing Memory Corruption on NVIDIA GPUs.</span>
+                <span class="pub-authors">Hongyi Lu, Fengwei Zhang, Zhenkai Zhang, Shuai Wang, and Yanan Guo.</span>
+                <span class="pub-venue">USENIX Security 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">MASLeak: Investigating and Exposing IP Leakage Vulnerabilities in Multi-Agent Systems.</span>
+                <span class="pub-authors">Liwen Wang, Wenxuan Wang, Shuai Wang, Zongjie Li, Zhenlan Ji, Zongyi Lyu, Daoyuan Wu, and Shing-Chi Cheung.</span>
+                <span class="pub-venue">USENIX Security 2026</span>
+            <li>
+            <li>
+                <span class="pub-title">Revealing the Dark Side of Smart Accounts: An Empirical Study of EIP-7702 Incurred Risks in Blockchain Ecosystem.</span>
+                <span class="pub-authors">Mingyuan Huang, Han Liu, Shuo Yang, Daoyuan Wu, and Shuai Wang.</span>
+                <span class="pub-venue">USENIX Security 2026</span>
+            <li>
+                <span class="pub-title">SoK: Evaluating Jailbreak Guardrails for Large Language Models.</span>
+                <span class="pub-authors">Xunguang Wang, Zhenlan Ji, Wenxuan Wang, Zongjie Li, Daoyuan Wu, and Shuai Wang.</span>
+                <span class="pub-venue">IEEE Security & Privacy 2026</span>
+            </li>
+            <li>
+                <span class="pub-title">Privacy-preserving and Verifiable Causal Prescriptive Analytics.</span>
+                <span class="pub-authors">Zhaoyu Wang, Pingchuan Ma, Zhantong Xue, Yanbo Dai, Zhenlan Ji, and Shuai Wang.</span>
+                <span class="pub-venue">SIGMOD 2026</span>
+            </li>
+            <li>
+                <span class="pub-title">Guardrail: Automated Integrity Constraint Synthesis From Noisy Data.</span>
+                <span class="pub-authors">Pingchuan Ma, Zhaoyu Wang, Zhenlan Ji, Zongjie Li, Ao Sun, and Shuai Wang.</span>
+                <span class="pub-venue">SIGMOD 2026</span>
+            </li>
+
+            <li>
+                <span class="pub-title">The Phantom Menace in PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks.</span>
+                <span class="pub-authors">Yiteng Peng, Dongwei Xiao, Zhibo Liu, Zhenlan Ji, Daoyuan Wu, Shuai Wang, and Juergen Rahmel.</span>
+                <span class="pub-venue">CCS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Have We Solved Access Control Vulnerability Detection in Smart Contracts? A Benchmark Study.</span>
+                <span class="pub-authors">Han Liu, Daoyuan Wu, Yuqiang Sun, Shuai Wang, and Yang Liu.</span>
+                <span class="pub-venue">ASE 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Testing for Audio Content Moderation Software.</span>
+                <span class="pub-authors">Wenxuan Wang, Yongjiang Wu, Junyuan Zhang, Shuqing Li, Yun Peng, Wenting Chen, Shuai Wang, and Michael Lyu.</span>
+                <span class="pub-venue">ASE 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Demystifying OpenZeppelin's Own Vulnerabilities and Analyzing Their Propagation in Smart Contracts.</span>
+                <span class="pub-authors">Han Liu, Daoyuan Wu, Yuqiang Sun, Shuai Wang, Yang Liu, and Yixiang Chen.</span>
+                <span class="pub-venue">ASE 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Extraction and Mutation at a High Level: Template-Based Fuzzing for JavaScript Engines.</span>
+                <span class="pub-authors">Wai Kin Wong, Dongwei Xiao, Cheuk Tung LAI, Yiteng Peng, Daoyuan Wu, and Shuai Wang.</span>
+                <span class="pub-venue">OOPSLA 2025</span>
+		<span class="award-text">â Acknowledged by Apple <a href="https://support.apple.com/en-hk/122379">WebKit Security</a> </span>
+            </li>
+            <li>
+                <span class="pub-title">An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches.</span>
+                <span class="pub-authors">Sen Deng, Zhibo Liu, Shuai Wang, Yinqian Zhang.</span>
+                <span class="pub-venue">CCS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs.</span>
+                <span class="pub-authors">Zongjie Li, Daoyuan Wu, Shuai Wang, Zhendong Su.</span>
+                <span class="pub-venue">CCS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Measuring and Augmenting Large Language Models for Solving Offensive Security Challenges.</span>
+                <span class="pub-authors">Zimo Ji, Daoyuan Wu, Wenyuan Jiang, Pingchuan Ma, Zongjie Li, and Shuai Wang.</span>
+                <span class="pub-venue">CCS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">MOLE: Breaking GPU TEE with GPU-Embedded MCU.</span>
+                <span class="pub-authors">Hongyi Lu, Yunjie Deng, Sukarno Mertoguno, Shuai Wang, Fengwei Zhang.</span>
+                <span class="pub-venue">CCS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Can't See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for Multimodal LLMs.</span>
+                <span class="pub-authors">Wenxuan Wang, Xiaoyuan Liu, Kuiyi Gao, Jen-tse Huang, Youliang Yuan, Pinjia He, Shuai Wang, Zhaopeng Tu.</span>
+                <span class="pub-venue">ACL 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Chain-of-Jailbreak Attack for Image Generation Models via Step by Step Editing.</span>
+                <span class="pub-authors">Wenxuan Wang, Kuiyi Gao, Youliang Yuan, Jen-tse Huang, Qiuzhi Liu, Shuai Wang, Wenxiang Jiao, Zhaopeng Tu.</span>
+                <span class="pub-venue">ACL 2025 (finding)</span>
+            </li>
+            <li>
+                <span class="pub-title">LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs â No Silver Bullet for LC or RAG Routing.</span>
+                <span class="pub-authors">Kuan Li, Liwen Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Shuai Wang, and Minhao Cheng.</span>
+                <span class="pub-venue">ICML 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Divergence-aware Testing of Graphics Shader Compiler Back-ends.</span>
+                <span class="pub-authors">Dongwei Xiao, Shuai Wang, Zhibo Liu, Yiteng Peng, Daoyuan Wu, and Zhendong Su.</span>
+                <span class="pub-venue">PLDI 2025</span>
+		<span class="award-text">â Selected by <a href="https://plr.csail.mit.edu/">MIT Programming Languages Review</a> for an Invited Talk </span>
+            </li>
+            <li>
+                <span class="pub-title">Causality-Aided Evaluation and Explanation of Large Language Model-based Code Generation.</span>
+                <span class="pub-authors">Zhenlan Ji, Pingchuan Ma, Zongjie Li, Zhaoyu Wang, and Shuai Wang.</span>
+                <span class="pub-venue">ISSTA 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code.</span>
+                <span class="pub-authors">Wai Kin Wong, Daoyuan Wu, Huaijin Wang, Zongjie Li, Zhibo Liu, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">ISSTA 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Reeq: Testing and Mitigating Ethically Inconsistent Suggestions of Large Language Models with Reflective Equilibrium.</span>
+                <span class="pub-authors">Pingchuan Ma, Zhaoyu Wang, Zongjie Li, Zhenlan Ji, Ao Sun, Juergen Rahmel, and Shuai Wang.</span>
+                <span class="pub-venue">TOSEM 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">API-guided Dataset Synthesis to Finetune Large Code Models.</span>
+                <span class="pub-authors">Zongjie Li, Daoyuan Wu, Shuai Wang, and Zhendong Su.</span>
+                <span class="pub-venue">OOPSLA 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Binary Cryptographic Function Identification via Similarity Analysis with Path-insensitive Emulation.</span>
+                <span class="pub-authors">Yikun Hu, Yituo He, Wenyu He, Haoran Li, Yubo Zhao, Shuai Wang, and Dawu Gu.</span>
+                <span class="pub-venue">OOPSLA 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Low-Cost and Comprehensive Non-textual Input Fuzzing with LLM-Synthesized Input Generators.</span>
+                <span class="pub-authors">Kunpeng Zhang, Zongjie Li, Daoyuan Wu, Shuai Wang, and Xin Xia.</span>
+                <span class="pub-venue">USENIX Security 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner.</span>
+                <span class="pub-authors">Xunguang Wang, Daoyuan Wu, Zhenlan Ji, Zongjie Li, Pingchuan Ma, Shuai Wang, Yingjiu Li, Yang Liu, Ning Liu, and Juergen Rahmel.</span>
+                <span class="pub-venue">USENIX Security 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements.</span>
+                <span class="pub-authors">Huaijin Wang, Zhibo Liu, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">ICSE 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Testing and Understanding Deviation Behaviors in FHE-hardened Machine Learning Models.</span>
+                <span class="pub-authors">Yiteng Peng, Daoyuan Wu, Zhibo Liu, Dongwei Xiao, Zhenlan Ji, Juergen Rahmel, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">BitShield: Defending Against Bit-Flip Attacks on DNN Executables.</span>
+                <span class="pub-authors">Yanzuo Chen, Zhibo Liu, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang.</span>
+                <span class="pub-venue">NDSS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Zhibo Liu, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.</span>
+                <span class="pub-venue">IEEE Security & Privacy 2025</span>
+                <span class="award-text">â Distinguished Paper Award</span>
+            </li>
+            <li>
+                <span class="pub-title">MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers.</span>
+                <span class="pub-authors">Dongwei Xiao, Zhibo Liu, Yiteng Peng, and Shuai Wang.</span>
+                <span class="pub-venue">NDSS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables.</span>
+                <span class="pub-authors">Yanzuo Chen, Zhibo Liu, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang.</span>
+                <span class="pub-venue">NDSS 2025</span>
+            </li>
+            <li>
+                <span class="pub-title">Your Fix Is My Exploit: Enabling Comprehensive DL Library API Fuzzing with Large Language Models.</span>
+                <span class="pub-authors">Kunpeng Zhang, Shuai Wang, Jitao Han, Xiaogang Zhu, Xian Li, Shaohua Wang, and Sheng Wen.</span>
+                <span class="pub-venue">ICSE 2025</span>
+            </li>
+
+            <li>
+                <span class="pub-title">LLM for Mobile: An Initial Roadmap.</span>
+                <span class="pub-authors">Daihang Chen, Yonghui Liu, Mingyi Zhou, Yanjie Zhao, Haoyu Wang, Shuai Wang, Xiao Chen, TegawendÃ© F. BissyandÃ©, Jacques Klein, and Li Li.</span>
+                <span class="pub-venue">TOSEM 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-Flip Attack Surfaces in DNN Executables.</span>
+                <span class="pub-authors">Yanzuo Chen, Zhibo Liu, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang.</span>
+                <span class="pub-venue">Black Hat Europe 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Split and Merge: Aligning Position Biases in LLM-based Evaluators.</span>
+                <span class="pub-authors">Zongjie Li, Chaozheng Wang, Pingchuan Ma, Daoyuan Wu, Shuai Wang, Cuiyun Gao, and Yang Liu.</span>
+                <span class="pub-venue">EMNLP 2024 (main)</span>
+            </li>
+            <li>
+                <span class="pub-title">DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables.</span>
+                <span class="pub-authors">Zhibo Liu, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang.</span>
+                <span class="pub-venue">CCS 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Zhibo Liu, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.</span>
+                <span class="pub-venue">CCS 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">MOAT: Towards Safe BPF Kernel Extension.</span>
+                <span class="pub-authors">Hongyi Lu, Shuai Wang, Yechang Wu, Wanning He, and Fengwei Zhang.</span>
+                <span class="pub-venue">USENIX Security 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">See the Forest, not Trees: Unveiling and Escaping the Pitfalls of Error-Triggering Inputs in Neural Network Testing.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Shuai Wang and Zhendong Su.</span>
+                <span class="pub-venue">ISSTA 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Scalable Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior.</span>
+                <span class="pub-authors">Pingchuan Ma, Rui Ding, Qiang Fu, Jiaru Zhang, Shuai Wang, Shi Han, and Dongmei Zhang.</span>
+                <span class="pub-venue">KDD 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis.</span>
+                <span class="pub-authors">Huaijin Wang, Zhibo Liu, Shuai Wang, Ying Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">IEEE EuroS&P 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">LLM for Mobile: An Initial Roadmap.</span>
+                <span class="pub-authors">Daihang Chen, Yonghui Liu, Mingyi Zhou, Yanjie Zhao, Haoyu Wang, Shuai Wang, Xiao Chen, Tegawende Bissyande, Jacques Klein, and Li Li.</span>
+                <span class="pub-venue">2030 Software Engineering at FSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Provably Valid and Diverse Mutations of Real-World Media Data for DNN Testing.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">TSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">PP-CSA: Practical Privacy-Preserving Software Call Stack Analysis.</span>
+                <span class="pub-authors">Zhaoyu Wang, Pingchuan Ma, Huaijin Wang, and Shuai Wang.</span>
+                <span class="pub-venue">OOPSLA 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers.</span>
+                <span class="pub-authors">Yichen Li, Dongwei Xiao, Zhibo Liu, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">FSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">DTD: Comprehensive and Scalable Testing for Debuggers.</span>
+                <span class="pub-authors">Hongyi Lu, Zhibo Liu, Shuai Wang, and Fengwei Zhang.</span>
+                <span class="pub-venue">FSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Strengthening Supply Chain Security with Fine-grained Safe Patch Identification.</span>
+                <span class="pub-authors">Changhua Luo, Wei Meng, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Testing Graph Database Systems via Graph-Aware Metamorphic Relations.</span>
+                <span class="pub-authors">Zeyang Zhuang, Penghui Li, Pingchuan Ma, Wei Meng, and Shuai Wang.</span>
+                <span class="pub-venue">VLDB 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools.</span>
+                <span class="pub-authors">Zongjie Li, Zhibo Liu, Wai Kin Wong, Pingchuan Ma, and Shuai Wang.</span>
+                <span class="pub-venue">TDSC 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">On Extracting Specialized Code Abilities from Large Language Models: A Feasibility Study.</span>
+                <span class="pub-authors">Zongjie Li, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang, Daoyuan Wu, Cuiyun Gao, Yang Liu.</span>
+                <span class="pub-venue">ICSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">BinAug: Enhancing Binary Similarity Analysis with Low-Cost Input Repairing.</span>
+                <span class="pub-authors">Wai Kin Wong, Huaijin Wang, Zongjie Li, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">Enabling Runtime Verification of Causal Discovery Algorithms with Automated Conditional Independence Reasoning.</span>
+                <span class="pub-authors">Pingchuan Ma, Zhenlan Ji, Peisen Yao, Shuai Wang, and Kui Ren.</span>
+                <span class="pub-venue">ICSE 2024</span>
+            </li>
+            <li>
+                <span class="pub-title">MPCDiff: Testing and Repairing MPC-Hardened Deep Learning Models.</span>
+                <span class="pub-authors">Qi Pang, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">NDSS 2024</span>
+            </li>
+
+            <li>
+                <span class="pub-title">InsightPilot: An LLM-Empowered Automated Data Exploration System.</span>
+                <span class="pub-authors">Pingchuan Ma, Rui Ding, Shuai Wang, Han Shi, and Dongmei Zhang.</span>
+                <span class="pub-venue">EMNLP 2023 (Demo Track)</span>
+            </li>
+            <li>
+                <span class="pub-title">Explain Any Concept: Segment Anything Meets Concept-Based Explanation.</span>
+                <span class="pub-authors">Ao Sun, Pingchuan Ma, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">NeurIPS 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">Protecting Intellectual Property of Large Language Model-Based Code Generation APIs via Watermarks.</span>
+                <span class="pub-authors">Zongjie Li, Chaozheng Wang, Shuai Wang, and Cuiyun Gao.</span>
+                <span class="pub-venue">CCS 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes.</span>
+                <span class="pub-authors">Chaozheng Wang, Li Zongjie, Yun Peng, Shuzheng Gao, Sirong Chen, Shuai Wang, Cuiyun Gao, and Michael Lyu.</span>
+                <span class="pub-venue">ASE 2023 (Industry Challenge Track)</span>
+                <span class="award-text">â Distinguished Paper Award</span>
+            </li>
+            <li>
+                <span class="pub-title">Causality-Aided Trade-off Analysis for Machine Learning Fairness.</span>
+                <span class="pub-authors">Zhenlan Ji, Pingchuan Ma, Shuai Wang, and Yanhui Li.</span>
+                <span class="pub-venue">ASE 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">PerfCE: Performance Debugging on Databases with Chaos Engineering-Enhanced Causality Analysis.</span>
+                <span class="pub-authors">Zhenlan Ji, Pingchuan Ma and Shuai Wang.</span>
+                <span class="pub-venue">ASE 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">PHYFU: Fuzzing Modern Physics Simulation Engines.</span>
+                <span class="pub-authors">Dongwei Xiao, Zhibo Liu and Shuai Wang.</span>
+                <span class="pub-venue">ASE 2023</span>
+                <span class="award-text">â ACM SIGSOFT Distinguished Paper Award</span>
+            </li>
+            <li>
+                <span class="pub-title">Towards Practical Federated Causal Structure Learning.</span>
+                <span class="pub-authors">Zhaoyu Wang, Pingchuan Ma, and Shuai Wang.</span>
+                <span class="pub-venue">ECML-PKDD 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">Precise and Generalized Robustness Certification for Neural Networks.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Shuai Wang, and Zhendong Su.</span>
+                <span class="pub-venue">USENIX Security 2023</span>
+                <a href="https://arxiv.org/abs/2306.06747" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables.</span>
+                <span class="pub-authors">Zhibo Liu, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.</span>
+                <span class="pub-venue">Blackhat USA 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">Exploiting Code Reuse Attacks from Obfuscated Programs.</span>
+                <span class="pub-authors">Naiqian Zhang, Daroc Alden, Dongpeng Xu, Shuai Wang, Trent Jaeger, and Wheeler Ruml.</span>
+                <span class="pub-venue">DSN 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">Beyond "Protected" and "Private": An Empirical Security Analysis of Custom Function Modifiers in Smart Contracts.</span>
+                <span class="pub-authors">Yuzhou Fang, Daoyuan Wu, Xiao Yi, Shuai Wang, Yufan Chen, Mengjie Chen, Yang Liu, and Lingxiao Jiang.</span>
+                <span class="pub-venue">ISSTA 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">Secure Federated Correlation Test and Entropy Estimation.</span>
+                <span class="pub-authors">Qi Pang, Lun Wang, Shuai Wang, Wenting Zheng, and Dawn Song.</span>
+                <span class="pub-venue">ICML 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">ADI: Adversarial Dominating Inputs in Vertical Federated Learning Systems.</span>
+                <span class="pub-authors">Qi Pang, Yuanyuan Yuan, Shuai Wang, and Wenting Zheng.</span>
+                <span class="pub-venue">IEEE Security & Privacy 2023</span>
+                <a href="https://arxiv.org/abs/2201.02775" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">XInsight: eXplainable Data Analysis Through The Lens of Causality.</span>
+                <span class="pub-authors">Pingchuan Ma, Rui Ding, Shuai Wang, Shi Han, and Dongmei Zhang.</span>
+                <span class="pub-venue">SIGMOD 2023</span>
+                <a href="https://arxiv.org/abs/2207.12718" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Byzantine-Robust Federated Learning with Optimal Statistical Rates.</span>
+                <span class="pub-authors">Banghua Zhu, Lun Wang, Qi Pang, Shuai Wang, Jiantao Jiao, Dawn Song, and Michael Jordan.</span>
+                <span class="pub-venue">AISTATS 2023</span>
+                <a href="https://arxiv.org/abs/2205.11765" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Exploring Missed Optimizations in WebAssembly Optimizers.</span>
+                <span class="pub-authors">Zhibo Liu, Dongwei Xiao, Zongjie Li, Shuai Wang, and Wei Meng.</span>
+                <span class="pub-venue">ISSTA 2023</span>
+            </li>
+            <li>
+                <span class="pub-title">OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables.</span>
+                <span class="pub-authors">Yanzuo Chen, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">NDSS 2023</span>
+                <a href="https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Revisiting Neuron Coverage for DNN Testing: A Layer-Wise and Distribution-Aware Criterion.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2023</span>
+                <a href="https://arxiv.org/abs/2112.01955" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Shader Fusion for Testing Graphics Shader Compilers.</span>
+                <span class="pub-authors">Dongwei Xiao, Zhibo Liu, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2023</span>
+                <a href="https://ieeexplore.ieee.org/document/10172737/" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">CC: Causality-Aware Coverage Criterion for Deep Neural Networks.</span>
+                <span class="pub-authors">Zhenlan Ji, Pingchuan Ma, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">ICSE 2023</span>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10172609" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">CCTEST: Testing and Repairing Code Completion Systems.</span>
+                <span class="pub-authors">Zongjie Li, Chaozheng Wang, Zhibo Liu, Haoxuan Wang, Dong Chen, Shuai Wang, and Cuiyun Gao.</span>
+                <span class="pub-venue">ICSE 2023</span>
+                <a href="https://arxiv.org/pdf/2208.08289.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Zhibo Liu, and Shuai Wang.</span>
+                <span class="pub-venue">USENIX Security 2023</span>
+                <a href="https://www.usenix.org/system/files/sec23summer_195-yuan_yuanyuan-prepub.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">CipherH: Automated Detection of Ciphertext Side-channel Vulnerabilities in Cryptographic Implementations.</span>
+                <span class="pub-authors">Sen Deng, Mengyuan Li, Yining Tang, Shuai Wang, Shoumeng Yan, and Yinqian Zhang.</span>
+                <span class="pub-venue">USENIX Security 2023</span>
+                <a href="https://www.usenix.org/system/files/sec23summer_289-deng-prepub.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Decompiling x86 Deep Neural Network Executables.</span>
+                <span class="pub-authors">Zhibo Liu, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, and Lei Ma.</span>
+                <span class="pub-venue">USENIX Security 2023</span>
+                <a href="https://www.usenix.org/system/files/sec23summer_406-liu_zhibo-prepub.pdf" target="_blank">[paper]</a>
+            </li>
+
+            <li>
+                <span class="pub-title">sem2vec: Semantics-Aware Assembly Tracelet Embedding.</span>
+                <span class="pub-authors">Huaijin Wang, Pingchuan Ma, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">ACM TOSEM 2022</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3569933" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Unveiling the Hidden Defection of DNN Testing with Decision-Based Metamorphic Oracle.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">ASE 2022</span>
+                <a href="https://arxiv.org/pdf/2210.04942.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Cache Refinement Type for Side-channel Detection of Cryptographic Software.</span>
+                <span class="pub-authors">Ke Jiang, Yuyan Bao, Shuai Wang, Zhibo Liu, and Tianwei Zhang.</span>
+                <span class="pub-venue">CCS 2022</span>
+                <a href="https://arxiv.org/abs/2209.04610" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Deceiving Deep Neural Networks-Based Binary Code Matching with Adversarial Programs.</span>
+                <span class="pub-authors">Wai Kin Wong, Huaijin Wang, Pingchuan Ma, Shuai Wang, Mingyue Jiang, Tsong Yueh Chen, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">ICSME 2022</span>
+                <a href="https://ieeexplore.ieee.org/document/9978244" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">NOLEAKS: Differentially Private Causal Discovery Under Functional Causal Model.</span>
+                <span class="pub-authors">Pingchuan Ma, Zhenlan Ji, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">IEEE TIFS 2022</span>
+                <a href="https://ieeexplore.ieee.org/document/9798874" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">On the Effectiveness of Testing Sentiment Analysis Systems with Metamorphic Testing.</span>
+                <span class="pub-authors">Mingyue Jiang, Shuai Wang, and Tsong Yueh Chen.</span>
+                <span class="pub-venue">Elsevier IST 2022</span>
+                <a href="https://www.sciencedirect.com/science/article/pii/S0950584922001069" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">ML4S: Learning Causal Skeleton from Vicinal Graphs.</span>
+                <span class="pub-authors">Pingchuan Ma, Rui Ding, Haoyue Dai, Yuanyuan Jiang, Shuai Wang, Shi Han, and Dongmei Zhang.</span>
+                <span class="pub-venue">KDD 2022</span>
+                <a href="https://www.microsoft.com/en-us/research/uploads/prod/2022/07/ML4S-camera-ready.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Unlearnable Examples: Protecting Open-Source Software from Unauthorized Neural Code Learning.</span>
+                <span class="pub-authors">Zhenlan Ji, Pingchuan Ma, and Shuai Wang.</span>
+                <span class="pub-venue">SEKE 2022</span>
+                <a href="https://ksiresearch.org/seke/seke22paper/paper066.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">MDPFuzz: Testing Models Solving Markov Decision Processes.</span>
+                <span class="pub-authors">Qi Pang, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">ISSTA 2022</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3533767.3534388" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">TORPEDO: A Fuzzing Framework for Discovering Adversarial Container Workloads.</span>
+                <span class="pub-authors">Kent McDonough, Xing Gao, Shuai Wang, and Haining Wang.</span>
+                <span class="pub-venue">DSN 2022</span>
+            </li>
+            <li>
+                <span class="pub-title">NeuralD: Detecting Indistinguishability Violations of Oblivious RAM with Neural Distinguishers.</span>
+                <span class="pub-authors">Pingchuan Ma, Zhibo Liu, Yuanyuan Yuan, and Shuai Wang.</span>
+                <span class="pub-venue">IEEE TIFS 2022</span>
+                <a href="https://ieeexplore.ieee.org/document/9722877" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Enhancing DNN-Based Binary Code Function Search With Low-Cost Equivalence Checking.</span>
+                <span class="pub-authors">Huaijin Wang, Pingchuan Ma, Yuanyuan Yuan, Zhibo Liu, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">IEEE TSE 2022</span>
+                <a href="https://ieeexplore.ieee.org/document/9707874" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">FED-X2: Privacy Preserving Federated Correlation Test.</span>
+                <span class="pub-authors">Lun Wang*, Qi Pang*, Shuai Wang, Dawn Song.</span>
+                <span class="pub-venue">PPAI-22 co-located with AAAI 2022</span>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Testing of Deep Learning Compilers.</span>
+                <span class="pub-authors">Dongwei Xiao, Zhibo Liu, Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">SIGMETRICS 2022</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3508035" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Unleashing the Power of Compiler Intermediate Representation to Enhance Neural Program Embeddings.</span>
+                <span class="pub-authors">Zongjie Li, Pingchuan Ma, Huaijin Wang, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                <span class="pub-venue">ICSE 2022</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3510003.3510217" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">MT-Teql: Evaluating and Augmenting Neural NLIDB on Real-world Linguistic and Schema Variations.</span>
+                <span class="pub-authors">Pingchuan Ma and Shuai Wang.</span>
+                <span class="pub-venue">VLDB 2022</span>
+                <a href="https://www.vldb.org/pvldb/vol15/p569-ma.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Automated Side Channel Analysis of Media Software with Manifold Learning.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                <span class="pub-venue">USENIX Security 2022</span>
+                <a href="https://www.usenix.org/conference/usenixsecurity22/presentation/yuan" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications.</span>
+                <span class="pub-authors">Zhibo Liu, Yuanyuan Yuan, Shuai Wang, and Yuyan Bao.</span>
+                <span class="pub-venue">IEEE Security & Privacy 2022</span>
+                <a href="https://ieeexplore.ieee.org/document/9833799" target="_blank">[paper]</a>
+            </li>
+
+            <li>
+                <span class="pub-title">SanRazor: Reducing Redundant Sanitizer Checks in C/C++ Programs.</span>
+                <span class="pub-authors">Jiang Zhang, Shuai Wang, Manuel Rigger, Pinjia He, and Zhendong Su.</span>
+                <span class="pub-venue">OSDI 2021</span>
+                <a href="https://www.usenix.org/conference/osdi21/presentation/zhang" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Perception Matters: Detecting Perception Failures of VQA Models Using Metamorphic Testing.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Shuai Wang, Mingyue Jiang, and Tsong Yueh Chen.</span>
+                <span class="pub-venue">CVPR 2021</span>
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Yuan_Perception_Matters_Detecting_Perception_Failures_of_VQA_Models_Using_Metamorphic_CVPR_2021_paper.html" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Private Image Reconstruction from System Side Channels Using Generative Models.</span>
+                <span class="pub-authors">Yuanyuan Yuan, Shuai Wang, and Junping Zhang.</span>
+                <span class="pub-venue">ICLR 2021</span>
+                <a href="https://openreview.net/pdf?id=y06VOYLcQXa" target="_blank">[paper]</a>
+            </li>
+
+            <li>
+                <span class="pub-title">F2ED-Learning: Good Fences Make Good Neighbors.</span>
+                <span class="pub-authors">Lun Wang, Qi Pang, Shuai Wang, and Dawn Song.</span>
+                <span class="pub-venue">SpicyFL 2020 at NeurIPS 2020</span>
+            </li>
+            <li>
+                <span class="pub-title">Generating Effective Software Obfuscation Sequences with Reinforcement Learning.</span>
+                <span class="pub-authors">Huaijin Wang, Shuai Wang, Dongpeng Xu, Xiangyu Zhang, and Xiao Liu.</span>
+                <span class="pub-venue">IEEE TDSC 2020</span>
+                <a href="https://ieeexplore.ieee.org/document/9275317" target="_blank">[preprint]</a>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Object Insertion for Testing Object Detection Systems.</span>
+                <span class="pub-authors">Shuai Wang and Zhendong Su.</span>
+                <span class="pub-venue">ASE 2020</span>
+                <a href="https://dl.acm.org/doi/10.1145/3324884.3416584" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Metamorphic Testing and Certified Mitigation of Fairness Violations in NLP Models.</span>
+                <span class="pub-authors">Pingchuan Ma, Shuai Wang, and Jin Liu.</span>
+                <span class="pub-venue">IJCAI 2020</span>
+                <a href="https://www.ijcai.org/Proceedings/2020/64" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">How Far We Have Come: Testing Decompilation Correctness of C Decompilers.</span>
+                <span class="pub-authors">Zhibo Liu and Shuai Wang.</span>
+                <span class="pub-venue">ISSTA 2020</span>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3395363.3397370" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Quantitative Assessment on the Limitations of Code Randomization for Legacy Binaries.</span>
+                <span class="pub-authors">Pei Wang, Jinquan Zhang, Shuai Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">IEEE EuroS&P 2020</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/rop-eurosp-2020.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Detecting Nondeterministic Payment Bugs in Ethereum Smart Contracts.</span>
+                <span class="pub-authors">Shuai Wang, Chengyu Zhang, and Zhendong Su.</span>
+                <span class="pub-venue">OOPSLA 2019</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/oopsla19.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Identifying Cache-Based Side Channels through Secret-Augmented Abstract Interpretation.</span>
+                <span class="pub-authors">Shuai Wang, Yuyan Bao, Xiao Liu, Pei Wang, Danfeng Zhang, and Dinghao Wu.</span>
+                <span class="pub-venue">USENIX Security 2019</span>
+                <a href="https://arxiv.org/abs/1905.13332" target="_blank">[Extended Version]</a>
+            </li>
+            <li>
+                <span class="pub-title">Automatic Grading of Programming Assignments: A Formal Semantics Based Approach.</span>
+                <span class="pub-authors">Xiao Liu, Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">ICSE 2019, SEET Track</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/autograder.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Large-Scale Third-party Library Detection in Android Markets.</span>
+                <span class="pub-authors">Menghao Li, Pei Wang, Wei Wang, Shuai Wang, Dinghao Wu, Jian Liu, Rui Xue, Wei Huo and Wei Zou.</span>
+                <span class="pub-venue">IEEE TSE</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/libD-TSE-18.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Software Protection on the Go: A Large-Scale Empirical Study on Mobile App Obfuscation.</span>
+                <span class="pub-authors">Pei Wang, Qinkun Bao, Li Wang, Shuai Wang, Zhaofeng Chen, Tao Wei and Dinghao Wu.</span>
+                <span class="pub-venue">ICSE 2018</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/obf-i.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">RedDroid: Android Application Redundancy Customization Based on Static Analysis.</span>
+                <span class="pub-authors">Yufei Jiang, Qinkun Bao, Shuai Wang, Xiao Liu and Dinghao Wu.</span>
+                <span class="pub-venue">ISSRE 2018</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/RedDroid-ISSRE2018.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Binary Code Retrofitting and Hardening Using SGX.</span>
+                <span class="pub-authors">Shuai Wang, Wenhao Wang, Qinkun Bao, Pei Wang, XiaoFeng Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">FEAST 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/bsgx-feast17.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">In-Memory Fuzzing for Binary Code Similarity Analysis.</span>
+                <span class="pub-authors">Shuai Wang and Dinghao Wu.</span>
+                <span class="pub-venue">ASE 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/IMF.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Turing Obfuscation.</span>
+                <span class="pub-authors">Yan Wang, Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">SecureComm 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/TO.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Lambda Obfuscation.</span>
+                <span class="pub-authors">Pengwei Lan, Pei Wang, Shuai Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">SecureComm 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/LO.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Composite Software Diversification.</span>
+                <span class="pub-authors">Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">ICSME 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/div.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Semantics-Aware Machine Learning for Function Recognition in Binary Code.</span>
+                <span class="pub-authors">Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">ICSME 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/fid.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">CacheD: Identifying Cache-Based Timing Channels in Production Software.</span>
+                <span class="pub-authors">Shuai Wang, Pei Wang, Xiao Liu, Danfeng Zhang, and Dinghao Wu.</span>
+                <span class="pub-venue">USENIX Security 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/CacheD.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">LibD: Scalable and Precise Third-party Library Detection in Android Markets.</span>
+                <span class="pub-authors">Menghao Li, Wei Wang, Pei Wang, Shuai Wang, Dinghao Wu, Jian Liu, Rui Xue, and Wei Huo.</span>
+                <span class="pub-venue">ICSE 2017</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/LibD.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">From Physical to Cyber: Escalating Protection for Personalized Auto Insurance.</span>
+                <span class="pub-authors">Le Guan, Jun Xu, Shuai Wang, Xinyu Xing, Lin Lin, Heqing Huang, Peng Liu, and Wenke Lee.</span>
+                <span class="pub-venue">SenSys 2016</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/p42-guan.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Uroboros: Instrumenting Stripped Binaries with Static Reassembling.</span>
+                <span class="pub-authors">Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">SANER 2016</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/uroboros-api.pdf" target="_blank">[paper]</a>
+            </li>
+            <li>
+                <span class="pub-title">Translingual Obfuscation.</span>
+                <span class="pub-authors">Pei Wang, Shuai Wang, Jiang Ming, Yufei Jiang, and Dinghao Wu.</span>
+                <span class="pub-venue">EuroS&P 2016</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/to-eurosp16.pdf" target="_blank">[paper]</a>
+                <a href="http://arxiv.org/abs/1601.00763" target="_blank">[Extended Version]</a>
+            </li>
+            <li>
+                <span class="pub-title">Reassembleable Disassembling.</span>
+                <span class="pub-authors">Shuai Wang, Pei Wang, and Dinghao Wu.</span>
+                <span class="pub-venue">USENIX Security '15</span>
+                <a href="https://www.cse.ust.hk/~shuaiw/papers/uroboros.pdf" target="_blank">[paper]</a>
+                <a href="https://github.com/s3team/uroboros" target="_blank">[Code Release]</a>
+            </li>
+        </ul>
+    </section>
+
+</div>
+</main>
+    </div>
+</div>
+
+</body>
+</html>

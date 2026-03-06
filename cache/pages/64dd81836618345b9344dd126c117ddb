@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheng LONG â Associate Professor, NTU</title>
+  <meta name="description" content="Homepage of Cheng LONG, Associate Professor at Nanyang Technological University, Singapore. Research in vector databases, machine learning, and data management.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #1a2744;
+      --navy-mid: #2d3f6b;
+      --accent: #c8893a;
+      --accent-light: #f0dfc0;
+      --text: #1e1e1e;
+      --text-muted: #555;
+      --border: #ddd;
+      --bg: #faf9f7;
+      --white: #fff;
+      --link: #1a56cc;
+      --sidebar-w: 260px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+
+    /* ââ NAV ââ */
+    header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.18);
+    }
+    nav {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 54px;
+    }
+    .nav-brand {
+      font-family: 'EB Garamond', serif;
+      font-size: 17px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      margin-right: auto;
+    }
+    .nav-brand:hover { text-decoration: none; color: var(--accent-light); }
+    nav ul { list-style: none; display: flex; gap: 4px; }
+    nav ul a {
+      color: rgba(255,255,255,0.82);
+      font-size: 15.5px;
+      font-weight: 500;
+      padding: 6px 13px;
+      border-radius: 4px;
+      transition: background 0.18s, color 0.18s;
+    }
+    nav ul a:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
+    }
+    nav ul a.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ââ LAYOUT ââ */
+    .page-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* ââ SIDEBAR ââ */
+    .sidebar {
+      position: sticky;
+      top: 74px;
+    }
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .sidebar-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .sidebar-body {
+      padding: 18px 20px 22px;
+    }
+    .sidebar-name {
+      font-family: 'EB Garamond', serif;
+      font-size: 21px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 3px;
+      line-height: 1.2;
+    }
+    .sidebar-role {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 14px;
+    }
+    .sidebar-info {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+    .sidebar-info a { color: var(--link); }
+    .sidebar-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 14px 0;
+    }
+    .sidebar-contact {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+    .sidebar-contact strong { color: var(--text); font-weight: 600; }
+    .sidebar-links {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sidebar-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--link);
+      padding: 6px 11px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: var(--bg);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .sidebar-links a:hover {
+      border-color: var(--navy-mid);
+      background: #fff;
+      text-decoration: none;
+    }
+
+    /* ââ MAIN ââ */
+    main { min-width: 0; }
+
+    /* ââ SECTIONS ââ */
+    section { margin-bottom: 40px; }
+    .section-heading {
+      font-family: 'EB Garamond', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 14px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .section-heading .icon {
+      width: 20px;
+      height: 20px;
+      opacity: 0.7;
+    }
+
+    /* ââ BIO ââ */
+    .bio-text p {
+      font-size: 16.5px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    .bio-text p:last-child { margin-bottom: 0; }
+
+    /* ââ RESEARCH AREAS ââ */
+    .research-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .research-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 18px 16px 16px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .research-card:hover {
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    .card-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .card-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .card-tag {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-light);
+      border-radius: 4px;
+      padding: 2px 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ââ NEWS ââ */
+    .news-list { list-style: none; }
+    .news-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      align-items: baseline;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-date {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+    .news-text {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .news-text a { color: var(--link); font-weight: 500; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-right: 4px;
+    }
+    .badge-new { background: #e8f5e9; color: #2e7d32; }
+    .badge-paper { background: #e3f0fb; color: #1565c0; }
+    .badge-talk { background: #fce4ec; color: #c62828; }
+    .badge-release { background: #fff3e0; color: #e65100; }
+
+    /* ââ TALKS ââ */
+    .talks-list { list-style: none; }
+    .talk-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 13px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .talk-item:last-child { border-bottom: none; }
+    .talk-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.5;
+      margin-bottom: 3px;
+    }
+    .talk-venue {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    /* ââ FOOTER ââ */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      font-size: 14.5px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a { color: rgba(255,255,255,0.6); }
+
+    /* ââ RESPONSIVE ââ */
+    @media (max-width: 760px) {
+      .page-wrap {
+        grid-template-columns: 1fr;
+        padding: 24px 16px 48px;
+      }
+      .sidebar { position: static; }
+      .impact-bar { grid-template-columns: repeat(2, 1fr); }
+      .research-cards { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .research-cards { grid-template-columns: 1fr; }
+      .impact-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ââ NAVIGATION ââ -->
+<header>
+  <nav>
+    <a class="nav-brand" href="./index.html">Cheng LONG</a>
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./pages/publications.html">Publications</a></li>
+      <li><a href="./pages/team.html">Team</a></li>
+      <li><a href="./pages/others.html">Teaching &amp; Service</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ââ PAGE BODY ââ -->
+<div class="page-wrap">
+
+  <!-- ââ SIDEBAR ââ -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <img class="sidebar-photo" src="./files/ChengLONG-Photo3.JPG" alt="Cheng LONG">
+      <div class="sidebar-body">
+        <div class="sidebar-name">Cheng LONG</div>
+        <div class="sidebar-role">Associate Professor</div>
+        <div class="sidebar-info">
+          <a href="https://vectordb-ntu.github.io/">VectorDB @NTU</a><br>
+          <a href="https://www3.ntu.edu.sg/computing/dmal/dante/index.html">Data Management @NTU (DANTE)</a><br>
+          <a href="https://www.ntu.edu.sg/computing">College of Computing &amp; Data Science</a><br>
+          <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="sidebar-contact">
+          <strong>Email</strong>&ensp;c.long@ntu.edu.sg<br>
+          <strong>Office</strong>&ensp;S3-B1c-110<br>
+          <strong>Tel</strong>&ensp;+65 6790 6822<br>
+          <strong>Address</strong>&ensp;50 Nanyang Ave, Singapore 639798
+        </div>
+        <div class="sidebar-links">
+        	<!-- Google Scholar -->
+        	<a href="https://scholar.google.com/citations?user=LybJ7ksAAAAJ&hl=en" target="_blank">
+        		<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #4285F4; flex-shrink:0;">
+       			<path d="M12 3L1 9l4 2.18V17c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-5.82L21 9l-9-6zm6 13H6v-4.37l6 3.27 6-3.27V16zm0-6.43L12 12.82 6 9.57 2.91 9 12 3.18 21.09 9 18 9.57z"/>
+       			</svg>
+       			Google Scholar
+       		</a>
+        		
+       		<!-- DBLP -->
+       		<a href="https://dblp.org/pid/58/10813-1.html" target="_blank">
+       			<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #004F9F; flex-shrink:0;">
+  				<path d="M3 5a2 2 0 0 1 2-2h6l2 2h6a2 2 0 0 1 2 2v2H3V5z"/>
+				<path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9zm5 3a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2H8zm0 3a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2H8z"/>
+				</svg>
+				DBLP Profile
+			</a>
+       				
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com/in/cheng-long-a9b79843/" target="_blank">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #0A66C2; flex-shrink:0;">
+				<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+				</svg>
+				LinkedIn Profile
+			</a>
+				
+			<!-- X (Twitter) -->
+			<a href="https://x.com/ChengLongNTU1" target="_blank">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #000000; flex-shrink:0;">
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+				</svg>
+				X Profile
+			</a>
+			</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ââ MAIN CONTENT ââ -->
+  <main>
+
+    <!-- ââ BIOGRAPHY ââ -->
+    <section>
+      <h2 class="section-heading">Biography</h2>
+      <div class="bio-text">
+        <p>
+          Cheng LONG is an Associate Professor at the College of Computing and Data Science (CCDS),
+          Nanyang Technological University (NTU), Singapore. He received his PhD from the Hong Kong University of Science
+          and Technology (HKUST) in 2015.
+        </p>
+        <p>
+          His research spans <strong>databases</strong> and <strong>machine learning</strong>, with
+          a current focus on <strong>vector databases</strong> (for supporting AI applications such as RAG, LLM inference, and agent memory) and <strong>machine learning</strong> and <strong>data management/mining</strong> on spatial data, time series, and graphs. He leads the
+          <a href="https://vectordb-ntu.github.io/"><strong>VectorDB @NTU</strong></a> group.
+          See <a href="./pages/publications.html"><strong>Publications</strong></a> for more details of his research.
+        </p>
+      </div>
+    </section>
+
+    <!-- ââ RESEARCH AREAS ââ -->
+<section>
+<h2 class="section-heading">Research Areas</h2>
+<div class="research-cards">
+
+<div class="research-card">
+<span class="card-icon">
+<!-- Vector Databases: indigo query point, violet neighbours, slate background dots -->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+<!-- background dots -->
+<circle cx="6"  cy="6"  r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="18" cy="6"  r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="30" cy="6"  r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="6"  cy="18" r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="30" cy="18" r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="6"  cy="30" r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="18" cy="30" r="2" fill="#94a3b8" opacity="0.4"/>
+<circle cx="30" cy="30" r="2" fill="#94a3b8" opacity="0.4"/>
+<!-- ANN cluster edges -->
+<line x1="18" y1="18" x2="26" y2="12" stroke="#818cf8" stroke-width="1.2" opacity="0.7"/>
+<line x1="18" y1="18" x2="12" y2="26" stroke="#818cf8" stroke-width="1.2" opacity="0.7"/>
+<line x1="18" y1="18" x2="26" y2="24" stroke="#818cf8" stroke-width="1.2" opacity="0.7"/>
+<!-- cluster neighbours -->
+<circle cx="26" cy="12" r="2.5" fill="#a5b4fc"/>
+<circle cx="12" cy="26" r="2.5" fill="#a5b4fc"/>
+<circle cx="26" cy="24" r="2.5" fill="#a5b4fc"/>
+<!-- query vector -->
+<circle cx="18" cy="18" r="3.5" fill="#4f46e5"/>
+<!-- search ring -->
+<circle cx="18" cy="18" r="8" stroke="#6366f1" stroke-width="1.2" stroke-dasharray="3 2" fill="none" opacity="0.5"/>
+</svg>
+</span>
+<div class="card-title">Vector Databases</div>
+<div class="card-desc">Vector quantization, ANN index, and retrieval for high-dimensional vectors powering modern AI applications including RAG.</div>
+</div>
+
+<div class="research-card">
+<span class="card-icon">
+<!-- Machine Learning: blue input layer, purple hidden layer, pink output layer -->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+<!-- edges: input â hidden -->
+<line x1="6" y1="9"  x2="18" y2="6"  stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="9"  x2="18" y2="18" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="9"  x2="18" y2="30" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="18" x2="18" y2="6"  stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="18" x2="18" y2="18" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="18" x2="18" y2="30" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="27" x2="18" y2="6"  stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="27" x2="18" y2="18" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<line x1="6" y1="27" x2="18" y2="30" stroke="#93c5fd" stroke-width="1.1" opacity="0.5"/>
+<!-- edges: hidden â output -->
+<line x1="18" y1="6"  x2="30" y2="13" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<line x1="18" y1="18" x2="30" y2="13" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<line x1="18" y1="30" x2="30" y2="13" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<line x1="18" y1="6"  x2="30" y2="23" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<line x1="18" y1="18" x2="30" y2="23" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<line x1="18" y1="30" x2="30" y2="23" stroke="#d8b4fe" stroke-width="1.1" opacity="0.5"/>
+<!-- input layer -->
+<circle cx="6"  cy="9"  r="3" fill="#3b82f6"/>
+<circle cx="6"  cy="18" r="3" fill="#3b82f6"/>
+<circle cx="6"  cy="27" r="3" fill="#3b82f6"/>
+<!-- hidden layer -->
+<circle cx="18" cy="6"  r="3" fill="#8b5cf6" opacity="0.8"/>
+<circle cx="18" cy="18" r="3" fill="#8b5cf6"/>
+<circle cx="18" cy="30" r="3" fill="#8b5cf6" opacity="0.8"/>
+<!-- output layer -->
+<circle cx="30" cy="13" r="3" fill="#ec4899"/>
+<circle cx="30" cy="23" r="3" fill="#ec4899"/>
+</svg>
+</span>
+<div class="card-title">Machine Learning</div>
+<div class="card-desc">Deep learning for spatial data, time series forecasting, and graph representation learning.</div>
+</div>
+
+<div class="research-card">
+<span class="card-icon">
+<!-- Data Management & Mining: teal cylinder, amber magnifier -->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+<!-- cylinder body -->
+<rect x="7" y="10" width="22" height="18" rx="1" fill="#0d9488" opacity="0.15"/>
+<!-- top ellipse -->
+<ellipse cx="18" cy="10" rx="11" ry="4" fill="#0d9488" opacity="0.5"/>
+<ellipse cx="18" cy="10" rx="11" ry="4" stroke="#0f766e" stroke-width="1.2" fill="none"/>
+<!-- side walls -->
+<line x1="7"  y1="10" x2="7"  y2="28" stroke="#0f766e" stroke-width="1.2"/>
+<line x1="29" y1="10" x2="29" y2="28" stroke="#0f766e" stroke-width="1.2"/>
+<!-- bottom ellipse -->
+<ellipse cx="18" cy="28" rx="11" ry="4" stroke="#0f766e" stroke-width="1.2" fill="none"/>
+<!-- data rows -->
+<ellipse cx="18" cy="16" rx="11" ry="3.5" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+<ellipse cx="18" cy="22" rx="11" ry="3.5" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+<!-- mining accent: magnifier in amber -->
+<circle cx="27" cy="8" r="3.5" stroke="#f59e0b" stroke-width="1.4" fill="none"/>
+<line x1="29.5" y1="10.5" x2="32" y2="13" stroke="#f59e0b" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
+</span>
+<div class="card-title">Data Management &amp; Mining</div>
+<div class="card-desc">RL-based indexing, dense subgraph mining, trajectory data management, and spatial query processing.</div>
+</div>
+
+</div>
+</section>
+
+    <!-- ââ RECENT NEWS ââ -->
+    <section>
+      <h2 class="section-heading">Recent News</h2>
+      <ul class="news-list">
+        <li class="news-item">
+        	<span class="news-date">Feb 2026</span>
+        	<span class="news-text">
+        		<span class="badge badge-paper">Paper</span>
+        		<a href="https://arxiv.org/abs/2602.23999"><strong>IVF-RaBitQ (GPU)</strong></a> â a GPU-native vector search method that combines IVF and RaBitQ â posted at <strong>arXiv</strong>.
+        	</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Jan 2026</span>
+          <span class="news-text">
+            <span class="badge badge-new">Award</span>
+            Received the <strong>CCDS Research Award (Young Faculty)</strong>, given by the College of Computing and Data Science (CCDS), NTU.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">Jun 2025</span>
+          <span class="news-text">
+            <span class="badge badge-release">Release</span>
+            Launched <a href="https://github.com/VectorDB-NTU/RaBitQ-Library"><strong>RaBitQ Library</strong></a> â an open-source library for advanced quantization (RaBitQ) enabling high-accuracy, low-memory vector search.
+          </span>
+        </li>
+        <li class="news-item">
+        	<span class="news-date">Sep 2024</span>
+        	<span class="news-text">
+        		<span class="badge badge-paper">Paper</span>
+        		<a href="https://arxiv.org/abs/2409.09913"><strong>Multi-bit RaBitQ</strong></a> â quantizing high-dimensional vectors with multi bits per dimension â accepted at <strong>SIGMOD 2025</strong>.
+        	</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">May 2024</span>
+          <span class="news-text">
+            <span class="badge badge-paper">Paper</span>
+            <a href="https://arxiv.org/abs/2405.12497"><strong>1-bit RaBitQ</strong></a> â quantizing high-dimensional vectors with 1 bit per dimension â accepted at <strong>SIGMOD 2024</strong>.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ââ AWARDS ââ -->
+    <section>
+      <h2 class="section-heading">Selected Awards</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">2026</span>
+          <span class="news-text"><strong>CCDS Research Award (Young Faculty)</strong>, College of Computing and Data Science, NTU</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024</span>
+          <span class="news-text"><strong>Best Demo Runner Up Award</strong>, ICDE 2024</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2014</span>
+          <span class="news-text"><strong>Fulbright-RGC Hong Kong Research Scholar Award</strong>, Research Grants Council (RGC), Hong Kong</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2013</span>
+          <span class="news-text"><strong>Prof. Francis Chin Research Award</strong> (Best Research Award), ACM Hong Kong</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2013</span>
+          <span class="news-text"><strong>Overseas Research Award</strong>, HKUST</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2012</span>
+          <span class="news-text"><strong>Professor Samuel Chanson Teaching Assistant Award</strong>, HKUST</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2012</span>
+          <span class="news-text"><strong>Champion, 6th Postgraduate Paper Contest</strong>, IEEE Hong Kong Computational Intelligence Chapter</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ââ SELECTED TALKS ââ -->
+    <section>
+      <h2 class="section-heading">Selected Talks</h2>
+      <ul class="talks-list">
+        <li class="talk-item">
+          <div class="talk-title">High-Dimensional Vector Quantization: General Framework, Recent Advances, and Future Directions</div>
+          <div class="talk-venue">CCDS Research Fest (2026) Â· Alibaba Cloud (2025) Â· International Workshop on Frontiers of Data Engineering and AI (2025)</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">RaBitQ: Quantizing High-Dimensional Vectors with a Theoretical Error Bound for Approximate Nearest Neighbor Search</div>
+          <div class="talk-venue">Huawei Singapore Harmony Software Technology Workshop (2024) Â· Huawei Global Software Technology Summit &amp; Sentosa Summit (2024)</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">Nearest Neighbor Search on High-Dimensional Vector Data</div>
+          <div class="talk-venue">Huawei Sentosa Software Technology Summit (2023) Â· TheWebConf'24 Workshop <em>(Keynote)</em></div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">RL4SpatialDB: On Leveraging Reinforcement Learning for Spatial Data Management</div>
+          <div class="talk-venue">MCSCT 2023 (Macau) Â· Microsoft Research Lab â Redmond (2023) Â· MUST 2023 <em>(Keynote)</em></div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">Dense Subgraph Mining: Applications, Problems, and Algorithms</div>
+          <div class="talk-venue">KDD.SG (2023) Â· WeBank (2022)</div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Â© 2018â2025 Cheng LONG &nbsp;Â·&nbsp; College of Computing and Data Science, NTU Singapore
+</footer>
+
+<a href="/f61217a453d065015090cd27fd6fb2c2"> </a></body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>Allen Liu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a class="w3-bar-item "> Allen Liu</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right">
+      <a  href= "index.html" class="w3-bar-item w3-button active">About Me</a>
+      <a href="CV.pdf" class="w3-bar-item w3-button">CV</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Page content -->
+
+  
+  <div style="width:100%; padding-left: 5%; padding-right: 5%; padding-top: max(64px, 5%); padding-bottom: 1%; display: inline-block;" id="bio" >
+  	<div style = "width:30%; min-width:min(90%,350px); display: inline-block;" >
+    <img src= "pro-pic-3.JPG" align="left" >
+	</div>
+	<div style = "width:10%; display: inline-block;">
+	</div>
+	<div style = " max-width:50%; min-width:min(90%,350px); display: inline-block;  vertical-align: top;" >
+    <h3 class="w3-padding-small" align = "top" ></h3>
+    <p>
+    I am an Assistant Professor of Computer Science at NYU Courant.  I have worked broadly in algorithms and machine learning theory. Currently, my main interest is in foundations of machine learning and language models. I have also worked on areas ranging from fundamental computational and statistical questions to inverse problems in the sciences, especially in quantum information. 
+    </p>
+     
+    <p>
+    Previously I was a Miller postdoctoral fellow at UC Berkeley in fall 2025, hosted by Prasad Raghavendra and I completed my PhD in EECS at MIT where I was fortunate to be advised by Ankur Moitra. My work was supported by an NSF Graduate Research Fellowship, a Hertz Fellowship, and a Citadel GQS 
+    Fellowship.  I also completed my undergraduate degree (in mathematics) at MIT.  
+    </p>
+    
+    <p>
+    <b>Email:</b> cliu568 at gmail dot com
+    </p>
+    </div>
+  </div>
+
+
+  
+  	<div style="width:90%; padding-left: 5%; padding-right: 5%; padding-top: 2%; display: inline-block;" id="pubs" >
+    <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Publications</h3>
+    <i>In my field, author order is generally alphabetical by last name denoting equal contribution</i>
+
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2602.04863">
+    Subliminal Effects in Your Data: A General Mechanism via Log-Linearity</a></b>
+    <br>
+    Ishaq Aden-Ali, Noah Golowich, <i>Allen Liu</i>, Abhishek Shetty, Ankur Moitra, Nika Haghtalab <br>
+    Manuscript
+    </p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2510.24966">
+    Sequences of Logits Reveal the Low Rank Structure of Language Models</a></b>
+    <br>
+    Noah Golowich, <i>Allen Liu</i>, Abhishek Shetty<br>
+    ICLR 2026, <b>Oral Presentation</b>
+    </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2512.15987">
+    Provably Extracting the Features from a General Superposition</a></b>
+    <br>
+    <i>Allen Liu</i><br>
+    Manuscript
+    </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2512.09892">
+    Provably Learning from Modern Language Models via Low Logit Rank</a></b>
+    <br>
+    Noah Golowich, <i>Allen Liu</i>, Abhishek Shetty<br>
+    Manuscript
+    </p></div>
+
+ 
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2411.07536">
+    Model Stealing for Any Low-Rank Language Model</a></b>
+    <br>
+    <i>Allen Liu</i>, Ankur Moitra <br>
+    STOC 2025
+    </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2411.04283">
+    Learning the closest product state</a></b>
+    <br>
+    Ainesh Bakshi, John Bostanci, William Kretschmer, Zeph Landau, Jerry Li, <i>Allen Liu</i>, Ryan O'Donnell, Ewin Tang<br>
+    QIP 2025 <b> Short Plenary</b>, STOC 2025
+    </p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2403.16850">
+    High-Temperature Gibbs States are Unentangled and Efficiently Preparable</a></b>
+    <br>
+    Ainesh Bakshi, <i>Allen Liu</i>, Ankur Moitra, Ewin Tang <br>
+    QIP 2025 <b> Invited Plenary</b>, FOCS 2024,  <a href="https://www.quantamagazine.org/computer-scientists-prove-that-heat-destroys-entanglement-20240828/" style="color:blue;">Quanta</a>
+    </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2405.00082">
+    Structure learning of Hamiltonians from real-time evolution</a></b>
+    <br>
+    Ainesh Bakshi, <i>Allen Liu</i>, Ankur Moitra, Ewin Tang <br>
+    FOCS 2024
+    </p></div>
+
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2310.02243">
+    Learning Quantum Hamiltonians at any Temperature in Polynomial Time</a></b>
+    <br>
+    Ainesh Bakshi, <i>Allen Liu</i>, Ankur Moitra, Ewin Tang <br>
+    QIP 2024 <b> Invited Plenary, Best Student Paper</b>, STOC 2024,  <a href="https://www.quantamagazine.org/scientists-find-a-fast-way-to-describe-quantum-systems-20240501/" style="color:blue;">Quanta</a>
+    </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2402.16353">
+    An Optimal Tradeoff between Entanglement and Copy Complexity for Quantum State Tomography</a></b>
+    <br>
+    Sitan Chen, Jerry Li, <i>Allen Liu</i> <br>
+    STOC 2024 </p></div>
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2309.16840">
+    Constant Approximation for Individual Preference Stable Clustering</a></b>
+    <br>
+    Anders Aamand, Justin Y. Chen, <i>Allen Liu</i>, Sandeep Silwal, Pattara Sukprasert, Ali Vakilian, Fred Zhang <br>
+    NeurIPS 2023, <b>Spotlight</b>
+    </p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2206.05265">
+    When Does Adaptivity Help for Quantum State Learning?</a></b>
+    <br>
+    Sitan Chen, Brice Huang, Jerry Li, <i>Allen Liu</i>, Mark Sellke <br>
+    FOCS 2023 </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2308.03661">
+    Matrix Completion in Almost-Verification Time</a></b>
+    <br>
+    Jonathan A. Kelner, Jerry Li, <i>Allen Liu</i>, Aaron Sidford, Kevin Tian <br>
+    FOCS 2023 </p></div>
+
+   	<div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2307.10273">
+    The Full Landscape of Robust Mean Testing: Sharp Separations between Oblivious and Adaptive Contamination</a></b>
+    <br>
+    Clément L. Canonne, Samuel B. Hopkins, Jerry Li, <i>Allen Liu</i>, Shyam Narayanan <br>
+    FOCS 2023, <b>Invited to SIAM Journal on Computing Special Issue</b></p></div>
+   	
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2203.04002">
+    Semi-Random Sparse Recovery in Nearly-Linear Time</a></b>
+    <br>
+    Jonathan A. Kelner, Jerry Li, <i>Allen Liu</i>, Aaron Sidford, Kevin Tian <br>
+    COLT 2023 </p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2307.06538">
+    Tensor Decompositions Meet Control Theory: Learning General Mixtures of Linear Dynamical Systems</a></b>
+    <br>
+    Ainesh Bakshi, <i>Allen Liu</i>, Ankur Moitra, Morris Yau <br>
+    ICML 2023</p></div>
+
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2301.09519">
+    A New Approach to Learning Linear Dynamical Systems</a></b>
+    <br>
+    Ainesh Bakshi, <i>Allen Liu</i>, Ankur Moitra, Morris Yau <br>
+    STOC 2023 </p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2112.06380">
+    Robust Voting Rules from Algorithmic Robust Statistics</a></b>
+    <br>
+    <i>Allen Liu</i>, Ankur Moitra <br>
+    SODA 2023 </p></div>
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2106.02774v2">
+    Robust Model Selection and Nearly-Proper Learning for GMMs</a></b>
+    <br>
+    Jerry Li, <i>Allen Liu</i>, Ankur Moitra <br>
+    NeurIPS 2022 </p></div>   
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2204.07155">
+    Tight Bounds for Quantum State Certification with Incoherent Measurements</a></b>
+    <br>
+    Sitan Chen, Brice Huang, Jerry Li, <i>Allen Liu</i> <br>
+    QIP 2022, FOCS 2022</p></div>
+
+
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2207.11903">
+    Minimax Rates for Robust Community Detection</a></b>
+    <br>
+    <i>Allen Liu</i>, Ankur Moitra <br>
+    FOCS 2022 </p></div>
+
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2202.09653">
+    The Pareto Frontier of Instance-Dependent Guarantees in Multi-Player Multi-Armed Bandits with no Communication</a></b>
+    <br>
+    <i>Allen Liu</i>, Mark Sellke <br>
+    COLT 2022</p></div>
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2104.09665">
+    Learning GMMs with Nearly Optimal Robustness Guarantees</a></b>
+    <br>
+    <i>Allen Liu</i>,Ankur Moitra <br>
+    COLT 2022</p></div>
+
+
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2112.00706">
+    Clustering Mixtures with Almost Optimal Separation in Polynomial Time</a></b>
+    <br>
+    <i>Allen Liu</i>, Jerry Li <br>
+    STOC 2022, <b>SIAM Journal on Computing Special Issue </b></p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2004.10163">
+    Variable Decomposition for Prophet Inequalities and Optimal Ordering</a></b>
+    <br>
+    <i>Allen Liu</i>, Renato Paes Leme, Martin Pal, Jon Schneider, Balasubramanian Sivan <br>
+    EC 2021</p></div>
+    
+
+    
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2011.03622">
+    Settling the Robust Learnability of Mixtures of Gaussians</a></b>
+    <br>
+    <i>Allen Liu</i>,Ankur Moitra <br>
+    STOC 2021, <b> Journal of the ACM 2023 </b></p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2106.02680">
+    Algorithms from Invariants: Smoothed Analysis of Orbit Recovery over SO(3)</a></b>
+    <br>
+    <i>Allen Liu</i>, Ankur Moitra <br>
+    Manuscript</p></div>
+
+
+    <div><p>
+    <b >
+    <a href = "https://arxiv.org/abs/2003.01703">
+    Optimal Contextual Pricing and Extensions</a></b>
+    <br>
+    <i>Allen Liu</i>, Renato Paes Leme, Jon Schneider <br>
+    SODA 2021</p></div>
+
+
+    <div><p>
+    <b >
+    <a >
+    Distributed Load Balancing: A New Framework and Improved Guarantees</a></b>
+    <br>
+    Sara Ahmadian, <i>Allen Liu</i>, Binghui Peng, Morteza Zadimoghaddam <br>
+    ITCS 2021</p></div>
+
+
+
+    <div><p>
+    <b >
+	<a href = "https://arxiv.org/abs/2006.03134">
+    Tensor Completion Made Practical </a></b>
+    <br>
+    <i>Allen Liu</i>,Ankur Moitra <br>
+    NeurIPS 2020 </p></div>
+
+    <div><p>
+    <b >
+	<a>
+    Myersonian Regression </a></b>
+    <br>
+    <i>Allen Liu</i>, Renato Paes Leme, Jon Schneider <br>
+    NeurIPS 2020 </p></div>
+
+    <div><p>
+    <b >
+	<a href = "http://proceedings.mlr.press/v125/liu20a.html">
+    Better Algorithms for Estimating Non-Parametric Models in Crowd-Sourcing and Rank Aggregation </a></b>
+    <br>
+    <i>Allen Liu</i>,Ankur Moitra <br>
+    COLT 2020 </p></div>
+
+
+    <div><p>
+    <b >
+	<a href = "https://arxiv.org/abs/1902.07334">
+    Fourier and Circulant Matrices are Not Rigid</a></b>
+    <br>
+    Zeev Dvir, <i>Allen Liu</i> <br>
+    Preliminary version appeared in CCC 2019<br>
+    Full version in Theory of Computing 2020 </p></div>
+
+
+    <div><p>
+    <b >
+	<a href = "https://arxiv.org/abs/1808.05731">
+    Efficiently Learning Mixtures of Mallows Models</a></b>
+    <br>
+    <i>Allen Liu</i>, Ankur Moitra <br>
+    FOCS 2018 </p></div>
+
+
+    <div><p>
+    <b >
+	<a href = "http://bulletin.math.uoc.gr/bulletin/vol/62/62-80-93.pdf">
+    Wavelet Decomposition and Bandwidth of Functions Defined on Vector Spaces over Finite Fields</a></b>
+    <br>
+    Alex Iosevich, <i>Allen Liu</i>,Azita Mayeli, Jonathan Pakianathan <br>
+    Bulletin of the Hellenic Mathematical Society 2018 </p></div>
+
+
+
+
+
+
+  </div>
+
+
+
+</body>
+</html>
+
+
+
+

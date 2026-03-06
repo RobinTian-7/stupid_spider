@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Redirect boyuanchen.com to director page before any scripts load -->
+    <script>
+      if (window.location.hostname === 'boyuanchen.com' || window.location.hostname === 'www.boyuanchen.com') {
+        window.location.replace('https://generalroboticslab.com/director');
+      }
+    </script>
+    <link rel="icon" type="image/png" href="/assets/images/GRL_Logo.png" id="favicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/images/GRL_Logo.png" as="image" />
+    
+    <!-- Primary Meta Tags -->
+    <title>General Robotics Lab | Duke University | Discovery Robotics Research</title>
+    <meta name="title" content="General Robotics Lab | Duke University | Discovery Robotics Research" />
+    <meta
+      name="description"
+      content="General Robotics Lab at Duke University - Building discovery machines that learn, act, and collaborate by discovering how the world works. Research in embodied intelligence, robotics, AI, machine learning, and human-robot collaboration."
+    />
+    <meta name="keywords" content="robotics, artificial intelligence, machine learning, embodied intelligence, robot perception, human-robot collaboration, Duke University, Boyuan Chen, discovery robotics, autonomous systems, robot learning, multimodal perception" />
+    <meta name="author" content="General Robotics Lab, Duke University" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://generalroboticslab.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://generalroboticslab.com" />
+    <meta property="og:title" content="General Robotics Lab | Duke University | Discovery Robotics Research" />
+    <meta property="og:description" content="Building discovery machines that learn, act, and collaborate by discovering how the world works. Research in embodied intelligence, robotics, AI, and machine learning." />
+    <meta property="og:image" content="https://generalroboticslab.com/assets/images/GRL_Logo.png" />
+    <meta property="og:site_name" content="General Robotics Lab" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://generalroboticslab.com" />
+    <meta property="twitter:title" content="General Robotics Lab | Duke University | Discovery Robotics Research" />
+    <meta property="twitter:description" content="Building discovery machines that learn, act, and collaborate by discovering how the world works. Research in embodied intelligence, robotics, AI, and machine learning." />
+    <meta property="twitter:image" content="https://generalroboticslab.com/assets/images/GRL_Logo.png" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ResearchProject",
+      "name": "General Robotics Lab",
+      "alternateName": "GRL",
+      "url": "https://generalroboticslab.com",
+      "logo": "https://generalroboticslab.com/assets/images/GRL_Logo.png",
+      "description": "Building discovery machines that learn, act, and collaborate by discovering how the world works. Research in embodied intelligence, robotics, AI, and machine learning.",
+      "foundingDate": "2020",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Duke University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Durham",
+          "addressRegion": "NC",
+          "postalCode": "27708",
+          "addressCountry": "US"
+        }
+      },
+      "director": {
+        "@type": "Person",
+        "name": "Boyuan Chen",
+        "jobTitle": "Dickinson Family Assistant Professor",
+        "url": "https://generalroboticslab.com/director",
+        "email": "boyuan.chen@duke.edu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Duke University"
+        }
+      },
+      "researchArea": [
+        "Robotics",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Embodied Intelligence",
+        "Robot Perception",
+        "Human-Robot Collaboration",
+        "Discovery Robotics"
+      ],
+      "keywords": "robotics, artificial intelligence, machine learning, embodied intelligence, robot perception, human-robot collaboration, discovery robotics, autonomous systems"
+    }
+    </script>
+    
+    <!-- Google Analytics - Defer loading -->
+    <script>
+      // Defer Google Analytics loading
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Load GA after page is interactive
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-WBLHMV4VGE';
+          document.head.appendChild(script);
+          script.onload = function() {
+            gtag('js', new Date());
+            gtag('config', 'G-WBLHMV4VGE');
+          };
+        });
+      } else {
+        // Fallback for browsers without requestIdleCallback
+        setTimeout(function() {
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-WBLHMV4VGE';
+          document.head.appendChild(script);
+          script.onload = function() {
+            gtag('js', new Date());
+            gtag('config', 'G-WBLHMV4VGE');
+          };
+        }, 2000);
+      }
+    </script>
+    <!-- End Google Analytics -->
+    <script type="module" crossorigin src="/assets/index-DPTmUfxB.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-ChPYsUbD.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-BKWqGARv.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-YZwIg9uI.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

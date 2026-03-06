@@ -1,0 +1,291 @@
+<html><head><title>6.896: Probability and Computation, Spring 2011 </title></head><body background="CS270,%20Spring%202005_files/a.html">
+<font  face=georgia>
+<center>
+<h1>6.896: Probability and Computation</h1>
+<h3>Spring 2011</h3>
+<hr width="60%">
+</center>
+
+<!--
+<a name="announce"></a>
+<h2>Announcements</h2>
+<table bgcolor="#cccccc" border="0">
+<tbody>
+
+<tr>
+
+
+<th>May 7</th><td> <blink> <font color="red"><b>FINAL EXAM: </b></red></blink> <b>The <a href="270final.ps">final exam</a> is due Wednesday May 16, noon, at 593 SODA Hall.</b>
+    </td>
+</tr>
+
+
+</tbody></table>
+<hr>
+
+-->
+
+<br><br>Recent years have seen a remarkable interplay between Computer Science and Probability. The ability of computers to toss coins has lead to algorithms that are more efficient, conceptually simpler and more elegant than their best known deterministic counterparts. At the same time, research in computation has influenced the questions and techniques of probability theory. 
+
+<br><br> This class aims to study advanced probabilistic techniques and their applications in computation, drawing examples from algorithms, random structures and combinatorics. The main focus of the class will revolve around Markov chain Monte Carlo theory and applications, Statistical Physics and applications to Phylogenetics, and, if time permits, Harmonic Analysis of Boolean functions and applications to Computational Learning Theory, and Smoothed Analysis.  A tentative syllabus is presented below.
+
+
+<br><br>
+<!--Another Related Class offered this semester:  --- Randomized Algorithms -->
+
+<a name="staff"></a>
+<h2>Course Information</h2>
+
+<ul>
+<li><b>Instructor: <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis</a></b>
+<br>
+Office Hours: Send me an email.
+</li>
+
+<br>
+
+<li><b>TA:</b> <a href="http://people.csail.mit.edu/moitra/">Ankur Moitra</a>
+<br>
+Office Hours: Send Ankur an email.
+</li>
+
+
+<br>
+<li><b>Lecture:</b> <b> Mondays and Wednesdays 1:00-2:30, <font color=red>  ROOM: 2-105. </b></font>
+</li><br>
+
+
+<!--
+<li><b>Section:</b> Mondays 5:00-6:00 in Soda 310.
+</li>
+-->
+
+<li><b>Textbook:</b> Lecture notes and/or presentations will be provided.
+
+<!-- <a href="http://www.cambridge.org/journals/nisan/downloads/Nisan_Non-printable.pdf">Algorithmic Game Theory</a>, by Noam Nisan, Tim Roughgarden, Eva Tardos, Vijay V. Vazirani (eds.), Cambridge University Press, September 2007. -->
+</li>
+
+<br>
+<li><b>Prerequisites:</b> A course in algorithms (6.046 or equivalent), probability (6.041 or equivalent), and discrete mathematics (6.042 or equivalent). 
+<br><br>
+</li>
+<li><b>Assessment:</b> Students will be required to scribe one or two lectures, do a small number of homework problems, and a research-oriented final project. This could be either a survey, or original research; students will be encouraged to relate the project to their own research interests.
+
+</li></ul>
+
+<!--
+<a name="hw"></a>
+<h2>Assignments</h2>
+<ul>
+    <li>Assignment 1, due Feb. 21. Files: <a href=page1.pdf>Page1</a>, <a href=page2.pdf>Page2</a><!--, <a href=Chapter1Exercise2.pdf>Chapter 1 Exercise 2</a>, <a href=Chapter3Exercise6.pdf>Chapter 3 Exercise 6</a>, <a href=Chapter4Exercise11.pdf>Chapter 4 Exercise 11</a>, <a href=Chapter5Ex4partA.pdf>Chapter 5 Exercise 4 partA</a>, <a href=Chapter5Ex4partB.pdf>Chapter 5 Exercise 4 part B</a>
+    </li>
+    <li>Solutions for assignment 1. Files: <a href=sol1.pdf>Solutions1</a>
+    </li>
+</ul>
+
+-->
+
+<a name="outline"></a>
+<h2>Course Outline</h2>
+
+There is a significant dynamic component to the course, as topics drop
+in and out, or get longer or shorter treatment, depending on audience
+interest/reaction/resistence.  We consider this a feature.  Given this,
+here is a rough outline of the course material:
+
+<ul>
+<li> <b> Markov Chain Monte Carlo</b> 
+<ul>
+<li>basics of Markov chains: ergodicity, stationary distributions, reversibility, mixing time, cover time;</li>
+<li>bounds on mixing: conductance, multicommodity flows and canonical paths, coupling, advanced coupling techniques (path coupling, coupling from the past), eigenvalues, Cheeger's Inequality, average conductance; </li>
+<li> applications of MCMC: card shuffling, independent sets and colorings, approximate counting, volume and integration, approximating the permanent, biased sampling, network reliability.</li>
+</ul>
+</li>
+<br>
+
+<li> <b> Statistical Physics and Phylogenetics</b> 
+<ul>
+<li>Statistical Physics: Gibbs measures, the uniqueness problem, phase transitions, correlation decay, the Ising model;</li>
+<li>Phylogenetics: introduction, the quartet method, parsimony, maximum likelihood, connection to the Ising model, Steel's conjecture.</li>
+</ul>
+</li>
+<br>
+
+<li> <b> Computational Learning Theory (if time permits)</b> 
+<ul>
+<li>PAC Learning model, hardness of proper learning, VC-dimension and applications to learning, inherent unpredictability;</li>
+<li>harmonic analysis, noise sensitivity, influence, applications to learning intersections of halfspaces and learning juntas.</li>
+</ul>
+</li>
+<br>
+
+
+<li> <b> Smoothed Analysis (if time permits)</b> 
+<ul>
+<li>smoothed analysis model, applications to TSP and the perceptron algorithm;</li>
+<li>discrete smoothed analysis, smoothed complexity of knapsack, equivalence between smoothed polynomial time and pseudopolynomial time, Pareto optimal solutions.</li>
+</ul>
+</li>
+<br>
+
+</ul>
+
+
+<a name="notes"></a>
+<h2> Lectures </h2> <!--(<a href="scribers.html">Scribe Sheet<a/>) -->
+
+Please use the <a href="6896-template.tex">scribe template</a> to produce your notes. The template contains commands for Theorem, Lemma, Corollary, Proposition, Claim, Definition, Construction, Remark etc. An example file where this template is used is <a href="scribe-frame.tex"> here </a>.
+
+
+<ul>
+
+<li> <b>Lecture 1</b> (February 2nd): Introduction to the material. Card Shuffling; the Markov Chain Monte Carlo paradigm; mixing time; sampling to counting; Gibbs distributions; the Ising Model; critical temperatures and phase transitions; Glauber dynamics; phylogenetic reconstruction and the Ising model on the tree. <a href="lec1.pptx">Slides</a>; <a href="lec1.pdf">Slides in no-animation pdf file</a>.
+</li>
+
+<li> <b>Lecture 2</b> (February 7th): Basic Definitions: Irreducibility; Aperiodicity; Stationarity; Reversibility; the Fundamental Theorem of Markov Chains; Lazy Markov Chains. <a href="lec2.pptx">Slides</a>; <a href="lec2.pdf">Slides in no-animation pdf file</a>; <a href="lec2s.pdf">scribe notes</a>.
+</li>
+
+
+<li> <b>Lecture 3</b> (February 9th): Examples of Markov Chains; the Metropolis Process; (algebra-free) proof of the Fundamental Theorem of Markov Chains. <a href="lec3.pptx">Slides (part a of lecture)</a>; <a href="lec3.pdf">Slides (part a) in no-animation pdf file</a>; <a href="notes3.pdf"> notes (part b of lecture)</a>; <a href="lec3s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 4</b> (February 14th): Bounding Mixing via Coupling; Mixing Time and Rates of Convergence; Transposition Shuffle. <a href="notes4.pdf"> Notes</a>; <a href="lec4s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 5</b> (February 16th): Top-in-at-Random Shuffle; Sharp Cutoffs; Bounding Mixing via Strong Stationary Times; Riffle Shuffle. <a href="notes5.pdf"> Notes</a>; <a href="lec5s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 6</b> (February 22nd): Sampling Graph Colorings; Path Coupling. <a href="notes6.pdf"> Notes</a>; <a href="lec6s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 7</b> (February 24th): Applications of Path Coupling; Sampling Graph Colorings; Sampling Linear Extensions. <a href="notes7.pdf"> Notes</a>; <a href="lec7s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 8</b> (February 28th): Coupling from the past. <a href="notes8.pdf"> Notes</a>; <a href="lec8s.pdf">scribe notes</a>.
+</li>
+
+
+<li> <b>Lecture 9</b> (March 2nd): Coupling from the past: applications to monotone settings; the Ising model and the Hardcore model. <a href="notes9.pdf"> Notes</a>; <a href="lec9s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 10</b> (March 7th): Bounding mixing time using multicommodity flows. <a href="notes10.pdf"> Notes</a>.<!--; <a href="lec10s.pdf">scribe notes</a>.-->
+</li>
+
+<li> <b>Lecture 11</b> (March 9th): Examples of using multicommodity flows to bound mixing. <a href="notes11.pdf"> Notes</a>.<!--; <a href="lec11s.pdf">scribe notes</a>.-->
+</li>
+
+<li> <b>Lecture 12</b> (March 14th): Flow Encodings for bounding the mixing time; application to sampling matchings. <a href="notes12.pdf"> Notes</a>; <a href="lec12s.pdf">scribe notes</a>.
+</li>
+
+<li> <b>Lecture 13</b> (March 16th): Analysis of the Jerrum-Sinclair Markov Chain for Sampling Matchings; computing the matching polynomial. <a href="notes13.pdf"> Notes</a>; <a href="lec12s.pdf">scribe notes</a>. 
+</li>
+
+<li> <b>Lecture 14</b> (March 28th): Using Jerrum-Sinclair to count the number of matchings. <a href="notes14.pdf"> Notes</a>. 
+</li>
+
+<li> <b>Lecture 15</b> (March 30th): The class #P; reducing sampling to counting colorings. <a href="lec15s.pdf"> Scribes</a>. 
+</li>
+
+<li> <b>Lecture 16</b> (April 4th): Self-reducible NP search problems; Equivalence of Counting and Sampling; All-or-nothing Approximability. <a href="notes16.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 17</b> (April 6th): Ising model on the 2-dimensional lattice; Spatial to temporal mixing I. <a href="notes17.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 18</b> (April 11th): Ising model on the 2-dimensional lattice; Spatial to temporal mixing II. <a href="notes18.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 19</b> (April 13th): Introduction to Phylogenetics: Evolution, Phylogenetic trees, Information, Quartet methods. <a href="lec19.pptx"> Slides</a>; <a href="notes19.pdf">Supplementary Notes</a>. 
+</li>
+
+<li> <b>Lecture 20</b> (April 20th): Tree metrics; trees from tree metrics; Markov Chains on trees; the tree reconstruction problem. <a href="notes20.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 21</b> (April 25th): Solving the Tree Reconstruction Problem from Polynomial Sequences; Steel's Conjecture. <a href="notes21.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 22</b> (April 27th): Towards Logarithmic Sequences; the Ancestral Reconstruction Problem; Phase Transition of the Ancestral Reconstruction Problem. <a href="notes22.pdf">Notes</a>. 
+</li>
+
+<li> <b>Lecture 23</b> (May 4th): Using Ancestral Reconstruction for Tree Reconstruction from short sequences. Steel's conjecture <a href="lec23.pptx">Slides</a>. 
+</li>
+
+
+<li> <b>Lecture 24</b>(May 9th) Project Presentations. 
+</li>
+
+<li> <b>Lecture 24</b>(May 11th) Project Presentations. 
+</li>
+
+</ul> 
+
+
+
+
+</ul> 
+
+
+
+<h2> List of Readings</h2>
+
+<ul>
+
+<li>
+D. Weitz: <a href="http://dimacs.rutgers.edu/~dror/pubs/ind_from_tree.pdf">Counting independent sets up to the tree threshold.</a>
+</li>
+
+<li>
+M. Dyer: <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.129.8163">Approximate counting by dynamic programming.</a>
+</li>
+
+<li>
+F. Martinelli, A. Sinclair, D. Weitz: <a href="http://www.mathematik.uni-bielefeld.de/~trutnau/martinelli1.pdf">Glauber dynamics on trees: boundary conditions and mixing time.</a>
+</li>
+<li>
+E. Mossel, A. Sly: <a href="http://arxiv.org/abs/0704.3603">Rapid mixing of Gibbs sampling on graphs that are sparse on average.</a>
+</li>
+<li>
+Y. Peres, P. Winkler: Censoring Inequality, see chapter 16.4 <a href="http://www.stat.berkeley.edu/~peres/ubc.pdf">here</a>.
+</li>
+<li>
+F. Chen ,  L. Lovasz ,  I. Pak: <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.31.5851">Lifting Markov Chains to Speed up Mixing.</a> <b>(taken by Brian)</b>
+</li>
+<li>
+L. Trevisan: <a href="http://www.cs.berkeley.edu/~luca/pubs/ktoone.pdf">Approximation algorithms for unique games.</a>
+</li>
+<li>
+L. Lovasz, M. Simonovitz: <a href="http://portal.acm.org/citation.cfm?id=1398775">The mixing rate of Markov chains, an isoperimetric inequality, and computing the volume.</a> 
+</li>
+<li>
+D. Spielman and S. H. Teng: <a href="http://arxiv.org/abs/0809.3232">A local clustering algorithm for massive graphs and its applications to nearly-linear time graph partitioning. </a>
+</li>
+<li>
+R. Khandekar, S. Rao, U. Vazirani: <a href="http://www.eecs.berkeley.edu/~vazirani/pubs/partitioning.pdf">Graph partitioning using single commodity flows.</a>
+</li>
+<li>
+F. Chierichetti, S. Lattanzi, A. Panconesi: <a href="http://lightless.org/files/papers/gossip_stoc10.pdf">Almost tight bounds for rumor spreading with conductance.</a>
+</li>
+<li>
+E. Mossel: <a href="http://arxiv.org/abs/math/0304491">Phase transitions in phylogeny.</a>
+</li>
+<li>
+E. Mossel, M. Steel: <a href="http://arxiv.org/abs/q-bio/0406048">How much can evolved characters tell us about the tree that generated them?</a>
+</li>
+<li>
+C. Daskalakis, S. Roch: <a href="http://people.csail.mit.edu/costis/align-free.pdf">Alignment-Free Phylogenetic Reconstruction.</a>
+</li>
+<li>
+C. Daskalakis, E. Mossel, S. Roch: <a href="http://arxiv.org/abs/math.PR/0509575">Optimal Phylogenetic Reconstruction.</a> <b>(taken by Maciej)</b>
+</li>
+</ul
+
+<h2>Online Resources</h2>
+
+Other classes with useful resources:
+<ul>
+<li><a href="http://www.cs.berkeley.edu/~sinclair/cs294/f09.html">Markov Chain Monte Carlo: Foundations and Applications</a> by Alistair Sinclair</li>
+<li><a href="http://www.math.ucla.edu/~roch/285k.1.10s/index.html">Stochastic Processes in Evolution and Genetics</a> by Sebastien Roch</li>
+<li><a href="http://www.stat.berkeley.edu/~mossel/teach/206af06/index.htm">Gibbs Measures</a> by Elchanan Mossel</li>
+</ul>
+</font>
+</body></html>

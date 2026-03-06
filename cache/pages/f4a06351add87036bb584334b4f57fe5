@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <style>
+            #main{
+                font-family:Helvetica;
+                line-height:32px;
+                padding:10px;
+                margin:0px;
+                border:0px;
+                border-collapse:collapse
+            }
+            #list{
+                font-family:Helvetica;
+                font-size: 85%;
+                line-height:25px;
+                padding:10px;
+                margin:0px;
+                border:0px;
+                border-collapse:collapse
+            }
+            #award
+            {
+                    color:rgb(250,0,0);
+                    font-family:Helvetica;
+            }
+            #new{
+               background-color: rgb(255,255,180);
+               color: rgb(180,0,0);
+            }
+            #pt{
+                color:rgb(0,0,150);
+            }
+            a
+            {
+                color:rgb(150,0,0);
+                text-decoration:none;
+            }
+            a:hover
+            {
+                    color:rgb(220,0,0);
+                    text-decoration:none;
+            }
+            h1
+            {
+                color:rgb(60,60,60);
+                align:"center";
+                font-family: Helvetica;
+            }
+            #contact
+            {
+                text-align:center;
+                font-family:Helvetica;
+                line-height:32px;
+                padding:10px;
+                margin:0px;
+                border:0px;
+                border-collapse:collapse;
+            }
+
+        </style>
+        <script>
+        function toggleblock(blockId)
+        {
+            var block = document.getElementById(blockId);
+            if (block.style.display == 'none') {
+            	block.style.display = 'block' ;
+            } else {
+            	block.style.display = 'none' ;
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <table style="max-width:1500px" align="center" cellpadding="10">
+            <tr>
+                <td id="main">
+
+                    <h1>Bharath Hariharan</h1>
+                    <p>I am an associate professor in Computer Science at Cornell University.
+                    I work on computer vision and machine learning, in particular on important problems that defy the "Big Data" label.
+                    I enjoy problems that require marrying advances in machine learning with insights from computer vision, geometry and domain-specific knowledge.
+                    A sampling of the research problems my group works on is presented below; an exhaustive list of publications is available on <a href="https://scholar.google.com/citations?user=TpglobcAAAAJ&hl=en">scholar</a>.
+                    <br><br><br>
+                    My work has been recognized with an NSF CAREER award and a PAMI Young Researcher Award.
+                    <br><br>
+                    My CV is <a href="cv.pdf">here</a> and my research statement is <a href="researchstatement.pdf">here</a>.
+                  </p>
+
+                    <br><br>
+                    <p id="main">
+                    <b>Note to prospective PhD students: Admissions at Cornell are done through a committee. If you are interested in working with me, please directly apply through the application website and mention my name</b><br><br>
+                  </p>
+                </td>
+                <td align="center">
+                    <img src="me-web.jpg" height=200></img>
+                    <div id="contact">
+                        Associate Professor<br>
+                        311 Gates Hall<br>
+                        Cornell University<br>
+                        bharathh-AT-cs-DOT-cornell-DOT-edu
+                    </div>
+                </td>
+                </tr>
+
+
+
+            <tr>
+                <td>
+                  <div id="main">
+                    <h2>Teaching</h2>
+                       <ul id="main">
+                       <li>CS6670 (Graduate computer vision): <a href="http://www.cs.cornell.edu/courses/cs6670/2021fa/">Fall 2021</a>, <a href="http://www.cs.cornell.edu/courses/cs6670/2019fa/">Fall 2019</a>, <a href="http://www.cs.cornell.edu/courses/cs6670/2018fa/">Fall 2018</a>, <a href="http://www.cs.cornell.edu/courses/cs6670/2017fa/">Fall 2017</a></li>
+                       <li>CS4670 / 5670 (Undergraduate computer vision): <a href="http://www.cs.cornell.edu/courses/cs4670/2021sp/">Spring 2021</a>, <a href="http://www.cs.cornell.edu/courses/cs4670/2020sp/">Spring 2020</a>, <a href="http://www.cs.cornell.edu/courses/cs4670/2019sp/">Spring 2019</a>,<a href="http://www.cs.cornell.edu/courses/cs4670/2018sp/">Spring 2018</a></li>
+                       </ul>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <div id = "main">
+                    <h2>PhD students</h2>
+                       <ul id="main">
+			<li><a href="https://shreelekha.revankar.net">Shreelekha Revankar</a> (co-advised with Kavita Bala)
+			<li><a href="https://iandrover.github.io">Chia-Hsiang Kao</a></li>
+                <li><a href="https://kwhuang88228.github.io/">Kuan Wei Huang</a></li>
+			<li><a href="https://genechou.com">Gene Chou </a> (co-advised with Noah Snavely)</li>
+			<li><a href="https://gemmechu.github.io/">Gemmechu Hassena</a> (co-advised with Steve Marschner)</li>	
+        	        <li><a href="https://itingtsai.github.io">I-Ting Tsai</a></li>
+			<li><a href="https://bradonthymes.github.io">Bradon Thymes</a></li>
+                       <li><a href="https://yihongsun.github.io">Yihong Sun</a></li>
+                       <li><a href="https://justachetan.github.io">Aditya Chetan</a></li>
+                       <li><a href="http://www.cs.cornell.edu/~ruojin/">Ruojin Cai</a> (co-advised with Noah Snavely) </li>
+                       </ul>
+                    <h2> Former PhD students</h2>
+                        <ul id="main">
+                   	<li><a href="http://lumingtang.info">Luming Tang </a> &rarr; Google </li>
+			<li><a href="https://www.cs.cornell.edu/~cpphoo/">Cheng Perng Phoo </a> &rarr; Waymo</li> 
+                       <li><a href="https://utkarshmall.com">Utkarsh Mall </a> (co-advised with Kavita Bala) &rarr; Faculty at MBZUAI</li>
+                       <li><a href="https://qianqianwang68.github.io/">Qianqian Wang</a> (co-advised with Noah Snavely) &rarr; Postdoc at UC Berkeley</li>
+                       <li><a href="http://www.guandaoyang.com/">Guandao Yang</a> (co-advised with Serge Belongie) &rarr; Apple</li>
+                       <li><a href="http://www.chinasatokolo.com/">Chinasa Okolo </a> (co-advised with Nicola Dell) &rarr; Fellow at Brookings Institute</li>
+                        <li><a href="http://yurongyou.com/">Yurong You</a> (co-advised with Kilian Weinberger) &rarr; NVIDIA </li>
+                        <li> <a href="https://www.cs.cornell.edu/~yanwang/">Yan Wang</a> (co-advised with Kilian Weinberger)  &rarr; NVIDIA </li>
+                        <li><a href="https://sites.coecis.cornell.edu/bram/">Bram Wallace</a> &rarr; Salesforce Research</li>
+                        <li><a href="https://daviswer.github.io/">Davis Wertheimer</a> &rarr; IBM Research </li>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+              <td id="main">
+
+                <h2> Research </h2>
+              </td></tr>
+              <tr><td id="main">
+                <h3> Recognition for satellite images and earth science </h3>
+		 A variety of scientific disciplines, including environmental science and the earth sciences, need to know what is there in any 
+		place on the planet at any time. This requires recognition on satellite images as well as combining information from multiple modalities (satellite, aerial and ground)
+		captured at the same location. Recognition on satellite images is in itself also a fundamental challenge given the absence of large labeled datasets. 
+		As part of this project, we have built one of the most accurate foundation <a href="https://graft.cs.cornell.edu">vision-language model</a> for satellite images as well as new <a href="https://research.cs.cornell.edu/caco/">self-supervised representations</a> for satellite images. See our work <a href="https://caive.cs.cornell.edu/#home">here</a>.
+                </td>
+                <td> <img src="graft-overview-animation.mp4" width=400></img></td>
+              </tr><tr>
+                <td id="main">
+                <h3> 4D Reconstruction and recognition</h3>
+		Humans live in a 4D world that is constantly changing. Yet computer vision systems are classically focused on static images or static scenes. Even work on dynamic scenes or video understanding focuses on short time horizons. We are beginning to explore novel tracking formulations that <a href="https://omnimotion.github.io/">track individual pixels through long-term occlusions</a>, or <a href="https://tubelet-graph.github.io/">objects through state change</a>. We are also exploring new benchmarks for multimodal video understanding and new architectures that can efficiently represent and understand long complex videos.</td>
+                  <td> <img src="tubelet_teaser.mp4" width=400></img></td>
+                </tr>
+
+<tr><td><h2 id='main'>Representative recent publications</h2><br><ul id='main'>
+<b>Tracking and Understanding Object Transformations</b><br>
+Yihong Sun, Xinyu Yang, Jennifer J. Sun, Bharath Hariharan<br>
+In <i>NeurIPS 2025</i>.<br>
+<a href="https://tubelet-graph.github.io/">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Sun2025Tracking')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Sun2025Tracking">
+@article{sun2025tracking,title={Tracking and Understanding Object Transformations},author={Sun, Yihong and Yang, Xinyu and Sun, Jennifer J and Hariharan, Bharath},journal={Advances in Neural Information Processing Systems},year={2025}}</pre></li>
+<b>MONITRS: Multimodal Observations of Natural Incidents Through Remote Sensing</b><br>
+Shreelekha Revankar, Utkarsh Mall, Cheng Perng Phoo, Kavita Bala, Bharath Hariharan<br>
+In <i>NeurIPS 2025</i>.<br>
+<a href="https://arxiv.org/abs/2507.16228">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Revankar2025MONITRS')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Revankar2025MONITRS">
+@inproceedings{revankar2025monitrs,title={MONITRS: Multimodal Observations of Natural Incidents Through Remote Sensing}, author={Shreelekha Revankar and Utkarsh Mall and Cheng Perng Phoo  and Kavita Bala and Bharath Hariharan},year={2025},booktitle={NeurIPS},url={https://arxiv.org/abs/2507.16228}, }</pre></li>
+<b>DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery</b><br>
+Utkarsh Mall, Cheng Perng Phoo, Mia Chiquier, Bharath Hariharan, Kavita Bala, Carl Vondrick<br>
+In <i>CVPR 2025</i>.<br>
+<a href="https://disciple.cs.columbia.edu/">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Mall2025DiSciPLE')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Mall2025DiSciPLE">
+@inproceedings{disciple-25,title={DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery},author={Mall, Utkarsh and Phoo, Cheng Perng and Chiquier, Mia and Hariharan, Bharath and Bala, Kavita and Vondrick, Carl},booktitle={CVPR},year={2025}}</pre></li>
+<b>3D Synthesis for Architectural Design</b><br>
+I-Ting Tsai, Bharath Hariharan<br>
+In <i>WACV 2025</i>.<br>
+<a href="https://openaccess.thecvf.com/content/WACV2025/html/Tsai_3D_Synthesis_for_Architectural_Design_WACV_2025_paper.html">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Tsai20253D')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Tsai20253D">
+@inproceedings{Tsai20253D, title={3D Synthesis for Architectural Design},author={Tsai, I-Ting and Hariharan, Bharath}, booktitle={WACV}, year={2025}}</pre></li>
+<b>Scale-aware Recognition in Satellite Images under Resource Constraints</b><br>
+Shreelekha Revankar, Cheng Perng Phoo, Utkarsh Mall, Bharath Hariharan, Kavita Bala<br>
+In <i>ICLR 2025</i>.<br>
+<a href="https://arxiv.org/abs/2411.00210">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Revankar2025Scale')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Revankar2025Scale">
+@inproceedings{revankar2025scaleawarerecognitionsatelliteimages,title={Scale-Aware Recognition in Satellite Images under Resource Constraints}, author={Shreelekha Revankar and Cheng Perng Phoo and Utkarsh Mall and Bharath Hariharan and Kavita Bala},year={2025},booktitle={ICLR},url={https://arxiv.org/abs/2411.00210}, }</pre></li>
+<b>MOD-UV: Learning Mobile Object Detectors from Unlabeled Videos</b><br>
+Yihong Sun, Bharath Hariharan<br>
+In <i>ECCV 2024</i>.<br>
+<a href="https://mod-uv.github.io/">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Sun2024MOD-UV')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Sun2024MOD-UV">
+@inproceedings{mod-uv,
+title={MOD-UV: Learning Mobile Object Detectors from Unlabeled Videos}, 
+author={Sun, Yihong and Hariharan, Bharath}, 
+booktitle={ECCV}, 
+year={2024}}</pre></li>
+<b>Remote sensing vision-language foundation models without annotations via ground remote alignment</b><br>
+Utkarsh Mall, Cheng Perng Phoo, Meilin Kelsey Liu, Carl Vondrick, Bharath Hariharan, Kavita Bala<br>
+In <i>ICLR 2024</i>.<br>
+<a href="https://graft.cs.cornell.edu">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Mall2024Remote')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Mall2024Remote">
+@inproceedings{graft-24
+,title={Remote sensing vision-language foundation models without annotations via ground remote alignment},
+author={Mall, Utkarsh and Phoo, Cheng Perng and Liu, Meilin Kelsey and Vondrick, Carl and Hariharan, Bharath and Bala, Kavita},
+booktitle={ICLR},
+year={2024}}</pre></li>
+<b>Tracking Everything Everywhere All at Once</b><br>
+Qianqian Wang, Yen-Yu Chang, Ruojin Cai, Zhengqi Li, Bharath Hariharan, Aleksander Holynski, Noah Snavely<br>
+In <i>ICCV 2023</i> (<b>Best Student Paper</b>)<br>
+<a href="https://arxiv.org/abs/2306.05422">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Wang2023Tracking')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Wang2023Tracking">
+@inproceedings{Wang2023Tracking,
+title = {Tracking Everything Everywhere All at Once},
+author = {Qianqian Wang and  Yen-Yu Chang and  Ruojin Cai and  Zhengqi Li and  Bharath Hariharan and  Aleksander Holynski and  Noah Snavely},
+year = {2023},
+booktitle = {ICCV}
+}
+</pre></li>
+<b>Emergent Correspondence from Image Diffusion</b><br>
+Luming Tang, Menglin Jia, Qianqian Wang, Cheng Phoo, Bharath Hariharan<br>
+In <i>NeurIPS 2023</i>.<br>
+<a href="https://arxiv.org/abs/2306.03881">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Tang2023Emergent')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Tang2023Emergent">
+@inproceedings{Tang2023Emergent,
+title = {Emergent Correspondence from Image Diffusion},
+author = {Luming Tang and  Menglin Jia and  Qianqian Wang and  Cheng Phoo and  Bharath Hariharan},
+year = {2023},
+booktitle = {NeurIPS}
+}
+</pre></li>
+<b>Visual Prompt Tuning</b><br>
+Menglin Jia, Luming Tang, Bor-Chun Chen, Claire Cardie, Serge Belongie, Bharath Hariharan, Ser-Nam Lim<br>
+In <i>ECCV 2022</i>.<br>
+<a href="https://arxiv.org/abs/2203.12119">paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:toggleblock('Jia2022Visual')">bibtex</a><br>
+<pre xml:space="preserve" style="display:none" id="Jia2022Visual">
+@inproceedings{Jia2022Visual,
+title = {Visual Prompt Tuning},
+author = {Menglin Jia and  Luming Tang and  Bor-Chun Chen and  Claire Cardie and  Serge Belongie and  Bharath Hariharan and  Ser-Nam Lim},
+year = {2022},
+booktitle = {ECCV}
+}
+</pre></li>
+</ul></td></tr>
+</table></body></html>

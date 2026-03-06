@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kede Ma, biography</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/main.css">
+</head>
+
+<style>
+    .container{
+        max-width: 1000px;
+    }
+
+    /* Responsive logo size for mobile devices */
+    @media (max-width: 768px) {
+        #ma-lab-logo {
+            height: 1.8em !important;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #ma-lab-logo {
+            height: 1.2em !important;
+        }
+    }
+</style>
+
+<body>
+    <div class="box container">
+        <div class="container">
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body">
+                    <h1 style="display: flex; align-items: center; justify-content: space-between; margin: 0px 0 0 0; line-height: .8; padding: 0;">
+                        <span style="display: inline-block;"><b>Biography</b></span>
+                        <img id = "ma-lab-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo" style="height: 2.5em; width: auto; max-width: 100%; object-fit: contain;">
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body" style="border-bottom-style: none;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        Kede Ma is an Associate Professor in the Department of Computer Science at City University of Hong Kong (CityUHK). He received his B.E. degree from the University of Science and Technology of China (USTC) in 2012, and his MASc and Ph.D. degrees from the University of Waterloo in 2014 and 2017, respectively. From 2018 to 2019, he was a Research Associate with the Howard Hughes Medical Institute and New York University. Prof. Ma was named a Highly Cited Researcher by Clarivate Analytics in 2024 and 2025. He currently serves on the editorial boards of <i>IEEE Transactions on Image Processing</i>, <i>IEEE Transactions on Information Forensics and Security</i>, and <i>IEEE Signal Processing Letters</i>. Prof. Ma leads the Multimedia Analytics (MA) Laboratory, an interdisciplinary research group focusing on 
+                        <ul>
+                            <li><b>Computational Vision</b></li>
+                            <ul>
+                                <li>Computational Modeling of Human Visual Perception</li>
+                                <li>Perceptual Multimedia Signal Processing and Quality Assessment</li>
+                                <li>Multimedia Quality of Experience (QoE)</li>
+                            </ul>
+                            <li><b>Computational Photography</b></li>
+                            <ul>
+                                <li>High Dynamic Range (HDR) Imaging and Rendering</li>                             
+                                <li>Omnidirectional Video Analysis, Representation, and Streaming</li>
+                                <li>Camera Processing Pipeline Design and Optimization</li>                               
+                            </ul>
+                                <li><b>Multimedia Forensics and Security</b></li>
+                            <ul>
+                                <li>Multimedia Information Hiding</li>
+                                <li>Multimedia Forgery Detection</li>
+                                <li>Artificial Intelligence (AI) Safety in Multimedia Systems</li>                        
+                            </ul>
+                                <li><b>Machine Learning for Multimedia Signals</b></li>
+                            <ul>
+                                <li>Reinforcement Learning for Multimedia Signals</li>  
+                                <li>Generative Modeling for Multimedia Signals</li>
+                                <li>Self-Supervised Learning for Multimedia Signals</li>
+                                <li>Continual Learning for Multimedia Signals</li>                
+                            </ul>
+                                <li><b>Multimedia Data Engineering</b></li>
+                            <ul>
+                                <li>Multimedia Data Generation and Curation</li>
+                                <li>Multimedia Data Selection and Annotation</li>                                 
+                                <li>Multimedia Data Distillation and Valuation</li>             
+                            </ul>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42280108-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-42280108-2');
+</script>

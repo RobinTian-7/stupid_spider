@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Anjalie Field, JHU</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+            $("#main_box").load("./about.html");
+            $("#news").load("./news.html");
+            $("#second_box").load("./publications.html");
+
+	    $("#about").click(function() {
+               $("#main_box").load("./about.html");
+	  });
+
+	});
+	</script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Anjalie Field
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="index.html" id="about_nav">About</a></div>
+        <div class="nav_cell"><a class="nav" href="https://jhu-field-lab.github.io/" id="lab_nav">Lab</a></div>
+        <div class="nav_cell"><a class="nav" href="#teaching" id="teaching_nav">Teaching</a></div>
+        <div class="nav_cell"><a class="nav" href="#publications" id="Publications_nav">Publications</a></div>
+        <!-- <div class="nav_cell"><a class="nav" href="docs/CV.pdf" id="resume">C.V.</a></div> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction" id="main_box"></div>
+      <div class="introduction" id="news"></div>
+    </div>
+
+      <div class="introduction" id="teaching_div">
+        <a class="anchor" id="teaching"></a>
+        <div class="title">Teaching</div>
+        <p><div class="content">AI Ethics and Social Impact (Fall 2023; Fall 2024), Johns Hopkins University, (<a class="link" target="_blank" href="http://ai-ethics-601-770.cs.jhu.edu/">course website</a>)</div></p>
+        <p><div class="content">NLP for Computational Social Science (Spring 2024; Spring 2025), Johns Hopkins University, (<a class="link" target="_blank" href="https://anjalief.github.io/nlp-css-601-672/">course website</a>)</div></p>
+      </div>
+      
+
+      <div class="introduction"  id="second_box"></div>
+
+  </div>
+
+<!--   <div style="margin-top: 10px; text-align: center; font-size: 14px;"> -->
+<!--   Last Updated: October 11, 2018 -->
+<!--   </div> -->
+
+</body>
+</html>

@@ -1,0 +1,1230 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108280119-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108280119-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="Aditya Parameswaran" />
+  <meta property="og:type" content="profile" />
+  <meta property="profile:first_name" content="Aditya" />
+  <meta property="profile:last_name" content="Parameswaran" />
+  <meta property="profile:username" content="adityagp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aditya Parameswaran - Professor at University of California, Berkeley" />
+  <meta name="keywords" content="Aditya Parameswaran, University of California, Berkeley, UCB, computer science, data management, databases, human-computer interaction, visualization, interactive data analytics, machine learning, crowdsourcing, information, information extraction, recommendations">
+
+
+
+  <title>Aditya Parameswaran</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/offcanvas.css" rel="stylesheet">
+  <!--<link href="css/ap.css" rel="stylesheet">-->
+
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+
+<body>
+
+  <script type="text/javascript" src="papers.json"></script>    
+
+  <script type="text/javascript" src="display_papers.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+  <script src="js/bootstrap.js"></script>
+
+  <script> 
+  $(function(){
+    $("#sidebar").load("sidebar.html"); 
+  });
+  $(document).ready( function() {
+  $('.dropdown-toggle').dropdown();
+  });
+  </script> 
+  
+
+
+<script type="text/javascript">
+function display(action, id)
+{
+if (action == 'show')
+{
+document.getElementById("explanation"+id).style.display = "block";
+document.getElementById("link"+id).href= "javascript:display('hide', "+id+")";
+document.getElementById("link"+id).innerHTML = "Collapse bio";
+}
+
+if (action == 'hide')
+{
+document.getElementById("explanation"+id).style.display = "none";
+document.getElementById("link"+id).href= "javascript:display('show', "+id+")";
+document.getElementById("link"+id).innerHTML = "Click here for a longer bio.";
+}
+}
+</script>
+
+      
+<script type="text/javascript">
+function displayNews(action, id)
+{
+if (action == 'show')
+{
+document.getElementById("explanation"+id).style.display = "block";
+document.getElementById("link"+id).href= "javascript:displayNews('hide', "+id+")";
+document.getElementById("link"+id).innerHTML = "Collapse news";
+}
+
+if (action == 'hide')
+{
+document.getElementById("explanation"+id).style.display = "none";
+document.getElementById("link"+id).href= "javascript:displayNews('show', "+id+")";
+document.getElementById("link"+id).innerHTML = "Click here for more news.";
+}
+}
+</script>
+
+  
+
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html#">Aditya Parameswaran</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html#">Home</a></li>
+              <li><a href="index.html#bio">About</a></li>
+              <li><a href="index.html#synergy">Recent</a></li>
+              <li><a href="index.html#selected">Selected Projects</a></li>
+              <li><a href="cv.pdf">CV</a></li>
+              <!--
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                  Research Themes <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a href="visual.html">Visual Analytics</a></li>
+                <li><a href="scoop.html">Crowd-Powered Analytics</a></li>
+                <li><a href="query.html">Interactive Analytics</a></li>
+                <li><a href="web.html">Info Extraction and Integration</a></li>
+                <li><a href="recom.html">Recommender Systems</a></li>
+                </ul>
+              </li>
+            -->
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Publications <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="topic.html">By Topic</a></li>
+                <li><a href="date.html">By Date</a></li>
+                <li class="divider"></li>
+                <li><a href="index.html#recent">Recent</a></li>
+                </ul>
+              </li>
+
+            </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--
+ <script> 
+    $(document).ready(function() {
+$(".expanded").hide();
+
+$(".expanded a, .collapsed a").click(function(eve) {
+    var $container = $(this).parents("div");
+    eve.preventDefault();
+    $container.children(".expanded, .collapsed").toggle();
+});
+});
+</script>
+
+<span class="collapsed">
+ some small text
+ <a href="javascript:void(0)"> READ MORE>></a>
+</span>
+
+<span class="expanded">
+ here come the full text to replace the small text
+ <a href="javascript:void(0)">Less>></a>
+</span>
+-->
+
+  <div class="container">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Other Info</button>
+          </p>
+          <div class="jumbotron">
+            <h2>Aditya Parameswaran</h2>
+            
+            <div class="row">
+              <div class="col-md-4">
+               <img src="images/IMG_0331-corrected-small.jpg" class="img-responsive img-rounded" style="margin-bottom: -25px;">  
+             </div> <!-- /span2 -->
+             <div class="col-md-8">
+              <p>
+                I am an Associate Professor in <a href="https://eecs.berkeley.edu/">EECS</a> at the <a href="http://www.berkeley.edu">University of California, Berkeley</a>. I co-direct the <a href="http://epic.berkeley.edu">EPIC Data Lab</a> and the <a href="https://bids.berkeley.edu/california-police-records-access-project">Police Records Access project</a>. I co-founded <a href="https://ponder.io">Ponder</a>, which was <a href="https://www.snowflake.com/blog/snowflake-to-acquire-ponder/">acquired</a> <a href="https://venturebeat.com/data-infrastructure/snowflake-to-acquire-ponder-expanding-its-python-capabilities-for-enterprises/">by  Snowflake</a> in October 2023. <!--I am part of the <a href="http://dsf.berkeley.edu">Data Systems & Foundations</a> and <a href="http://hci.berkeley.edu/">Human-Computer Interaction</a> groups, and I am affiliated with the <a href="https://bids.berkeley.edu/people/aditya-parameswaran">Berkeley Institute of Data Science</a> and <a href="https://bid.berkeley.edu/people">Berkeley Institute of Design</a>. </b>--> 
+                <p>
+                  Of late, my team and I have been exploring <em>LLM-powered data tooling</em>: what are new approaches for 
+                data extraction, data transformation, and insight discovery, now with LLMs as a key ingredient.  I'm excited
+                about designing data systems both <i>with</i> and <i>for</i> LLMs. 
+               </p>
+               <p> 
+                I am broadly interested in <em>simplifying data science at scale</em>, i.e., 
+                empowering individuals and teams to leverage and make sense 
+                of their large datasets more easily, efficiently, and effectively. 
+                I am particularly interested in underserved application domains with limited data expertise.
+                </p>
+              <!--
+              <p> 
+                My work involves building real data analytics systems with principled foundations, designing algorithms (with formal guarantees) for the systems, as well as mining data obtained from such systems. 
+              </p>
+              -->
+            </div>
+          </div>
+      </div>
+
+      <br/> <br/>
+      <p>
+      We are always looking for postdocs, PhD, MS, and UG students to join our efforts! 
+      If you are a postdoc applicant, feel free to email me directly.  
+      If you are a PhD applicant, 
+      please apply to our <a href="https://eecs.berkeley.edu/academics/graduate/research-programs/admissions">PhD program</a>. 
+      If you are an MS/UG student, please fill  <a href="https://forms.gle/PkhLYRsANbZNCXBR8">this form</a>: it is rare that 
+      we will work with MS/UG students outside UC Berkeley except in cases of unusually good fit. 
+      </p>
+
+      <a name="bio"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h3> Formal Biographical Sketch</h3>
+
+        </div>
+      </div>
+
+      <a name="synergy"></a>
+      <div class="row">
+        <div class="col-md-12">
+            <p>
+            Aditya Parameswaran is an Associate Professor in <a href="https://eecs.berkeley.edu/">Electrical Engineering and Computer Sciences (EECS)</a> 
+            at <a href="http://www.berkeley.edu">UC Berkeley</a>. Aditya co-directs the <a href="http://epic.berkeley.edu">EPIC Data Lab</a>, 
+            a lab targeted at low/no-code data tooling powered by LLMs. 
+            Aditya also co-directs the <a href="https://bids.berkeley.edu/california-police-records-access-project">Police Records Access project</a>, 
+            an initiative to build a first-of-its-kind state-wide police use-of-force and misconduct database. 
+            Until its <a href="https://venturebeat.com/data-infrastructure/snowflake-to-acquire-ponder-expanding-its-python-capabilities-for-enterprises/">acquisition by Snowflake</a> 
+            in October 2023, Aditya served as the President of <a href="https://ponder.io">Ponder</a>, a company he co-founded 
+            with his students based on popular data science tools developed at Berkeley.   
+            Aditya leverages techniques from data management, HCI, and AI to develop next-gen data tooling â making it easy for end-users 
+            and teams to leverage and make sense of their large and complex datasets. 
+            Multiple tools from his group (DocETL, IPyFlow, Modin, Lux) have been widely adopted by end-users, with tens of millions of downloads.  </p>
+            <a id="link1" href="javascript:display('show', 1)">Click here for a longer bio.</a>
+            <div id="explanation1" style="display:none">
+               <p><!--Until June 2019, Aditya was an Assistant Professor in <a href="https://cs.illinois.edu/">Computer Science</a> at the <a href="https://illinois.edu/">University of Illinois</a>, with affiliate appointments at the <a href="https://www.informatics.illinois.edu/">Illinois Informatics Institute</a>, the <a href="http://www.igb.illinois.edu/">Institute for Genomic Biology</a> and the <a href="https://beckman.illinois.edu/">Beckman Institute for Advanced Science and Technology</a>.-->
+              Aditya spent a year as a PostDoc at <a href="https://www.csail.mit.edu/">MIT CSAIL</a> following his PhD at <a href="http://www.stanford.edu">Stanford</a>.  
+              Aditya is affiliated with the <a href="http://bid.berkeley.edu/people/">Berkeley Institute of Design</a>, 
+              and the <a href="https://bids.berkeley.edu/">Berkeley Institute of Data Science</a> â and is part of the <a href="http://dsf.berkeley.edu">Data Systems & Foundations</a> and <a href="http://hci.berkeley.edu/">Human-Computer Interaction</a> groups at Berkeley. Aditya has received various awards for his work, including being named as Kavli Fellow from the National Academy of Sciences (2023), the IIT Bombay Young Alumnus Achiever award (2022), <a href="https://sigmod.org/sigmod-awards/sigmod-best-paper-award/">SIGMOD 2020 Best Paper Award</a> (2020), <a href="https://sloan.org/fellowships/2020-Fellows">Alfred P. Sloan Research Fellowship</a> (2020), <a href="https://www.vldb.org/awards_early_career.html">VLDB Early Career Research Contributions Award</a> (2019), the <a href="https://cs.illinois.edu/news/parameswaran-aims-algorithms-would-add-perspective-voices-crowd">Army Research Office Young Investigator Program Award</a> (2018), the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1652750">NSF CAREER Award</a> (2017), <a href="http://tab.computer.org/tcde/tcdeawardsrecipients.html">the TCDE Rising Star Award</a> (2017), the <a href="https://engineering.illinois.edu/news/article/24747">Dean's Excellence in Research Award</a> (2018) and the <a href="https://cs.illinois.edu/about-us/awards/alumni-awards">C. W. Gear Junior Faculty Award</a> (2017) from the University of Illinois, multiple "best" doctoral dissertation awards (from <a href="https://sigmod.org/sigmod-awards/citations/2014-sigmod-jim-gray-doctoral-dissertation-award/">SIGMOD</a>, <a href="http://www.kdd.org/awards/view/2014-sigkdd-dissertation-award-winners">SIGKDD</a>, and <a href="https://cs.illinois.edu/news/parameswaran-studies-human-loop-data-management">Stanford</a> in 2014), "Excellent" teacher awards from Illinois (<a href="http://citl.illinois.edu/docs/default-source/teachers-ranked-as-excellent/tre-2015-fall.pdf">2015</a>, <a href="http://citl.illinois.edu/docs/default-source/teachers-ranked-as-excellent/tre-2017-fall.pdf">2017</a>), a Google faculty award (2015) and focused research award (2017), the Key Scientific Challenges award from Yahoo!, six best-of-conference citations (VLDB 2010, KDD 2012, ICDE 2014, ICDE 2016, AISTATS 2017, VLDB 2017, VLDB 2023), a best demo award (ICDE 2019) and a best demo honorable mention (SIGMOD 2017). </p>
+            
+              <p>In the last five years, he has served as the Space Coordinator for Systems (200+ people) for EECS, 
+                Faculty Equity Advisor at the I School and EECS, Area Editor for VLDB and SIGMOD, 
+                Associate Editor for VLDB Journal, the Workshops Co-Chair at SIGMOD, 
+                the US Sponsorship Chair at VLDB, and on the steering committee of the <a href="https://dais-workshop-icde.github.io/">Data AI Systems Workshop</a> @ICDE, 
+                the <a href="http://hilda.io">HILDA</a> (Human-in-the-loop Data Analytics) Workshop @ SIGMOD 
+                and the <a href="http://interactive-analysis.org">DSIA</a> (Data Systems for Interactive Analysis) Workshop @ VIS. 
+                He has also served on program committees of various database, data mining, web, systems, visualization, and crowdsourcing conferences, 
+                as well as as an associate editor of SIGMOD Record (2014-2019). 
+                His research group has been supported with funding from the State of California, 
+                NSF, the NIH, 
+                the Army Research Office, the Sloan Foundation, Toyota, the Siebel Energy Institute, Facebook, 
+                and EPIC lab sponsors: Adobe, Bridgewater, Google, Microsoft, PromptQL, Sigma Computing, and Snowflake. 
+              <!--Aditya Parameswaran is an Assistant Professor in Computer Science at the University of Illinois (UIUC). He spent the 2013-14 year visiting MIT CSAIL and Microsoft Research New England, after completing his Ph.D. from <a href="http://www.stanford.edu">Stanford University</a>, advised by Prof. <a href="http://cs.stanford.edu/~hector">Hector Garcia-Molina</a>. He is broadly interested in data analytics, with research results in human computation, visual analytics, information extraction and integration, and recommender systems. <br/><br/>
+
+              Aditya is a recipient of the Arthur Samuel award for the best dissertation in CS at Stanford (2014), the SIGMOD Jim Gray dissertation award (2014), the SIGKDD dissertation award runner up (2014), a Google Faculty Research Award (2015), an "Excellent Instructor" award from Illinois (2016), the Key Scientific Challenges Award from Yahoo! Research (2010), four best-of-conference citations (VLDB 2010, KDD 2012, ICDE 2014, ICDE 2016), the Terry Groswith graduate fellowship at Stanford (2007), and the Gold Medal in Computer Science at IIT Bombay (2007). His research group is supported with funding from by Adobe, the Siebel Energy Institute, the NIH, the NSF, and Google. -->
+              </p>
+           </div>
+        </div>
+      </div>
+
+
+      <!--
+      <div class="col-md-12">
+        <h2> Quick Project Links </h2>
+          <div class="row">
+
+            <div class = "col-6 col-lg-4">
+           <a href="http://dataspread.github.io"><img src="images/dataspread-main.png" style="width:170px;"  ></a> 
+            </div>
+            <div class = "col-6 col-lg-4">
+           <a href="http://orpheus-db.github.io"><img src="images/orpheus-main.png" style="width:150px;" "></a>
+            </div>
+          <div class = "col-6 col-lg-4">
+             <a href="https://arxiv.org/pdf/1708.08905.pdf"><img src="images/catamaran-main.png" style="width:150px;"></a>
+            </div>
+             <div class = "col-6 col-lg-4">
+              <a href="http://populace-org.github.io"><img src="images/populace-main.png" style="width:150px;" ></a>  
+            </div>
+            <div class = "col-6 col-lg-4">
+            <a href="http://gestalt-ml.github.io"><img src="images/Helix2-02.png" style="width:130px;"></a> 
+            </div>
+             <div class = "col-6 col-lg-4">
+            <a href="http://zenvisage.github.io"><img src="images/zenvisage-main.png" style="width:130px;" ></a> 
+            </div>
+          </div>
+      </div>
+      -->
+      <!--
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Quick Project Links </h2>
+          <div align="left">
+            <a href="http://modin.org"><img src="images/MODIN-webpage.png" style="width:150px;" border="5"></a>&nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="https://github.com/lux-org/lux"><img src="https://github.com/lux-org/lux-resources/raw/master/readme_img/logo.png?raw=true" style="width:150px;" border="5"></a>&nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="http://dataspread.github.io"><img src="images/dataspread-main.png" style="width:150px;" border="5"></a>&nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="http://orpheus-db.github.io"><img src="images/orpheus-main.png" style="width:150px;" border="5"></a> &nbsp; &nbsp; &nbsp; &nbsp; 
+            <a href="http://zenvisage.github.io"><img src="images/zenvisage-main.png" style="width:150px;" border="5"></a> &nbsp; &nbsp; &nbsp; &nbsp; 
+            <a href="http://populace-org.github.io"><img src="images/populace-main.png" style="width:150px;" border="5"></a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="http://helix-ml.github.io"><img src="images/Helix2-02.png" style="width:160px;" border="0"></a> &nbsp;  
+            <a href="https://arxiv.org/pdf/1708.08905.pdf"><img src="images/catamaran-main.png" style="width:160px;" border=""></a>
+          </div>
+        </div>
+        </div>
+      -->
+         
+
+      <a name="news"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> News </h2>
+          <ul>
+            <li>September 4, 2025: Soliciting input into failure modes that reflect real-world performance of data agents to inform our benchmark. 
+              Submit an issue <a href="https://github.com/ucbepic/data-agent-benchmark-study">here</a>.</li>
+            <li>September 3, 2025: DocWrangler won the Best Paper Honorable Mention at UIST, an honor reserved for the top handful of papers. 
+              The deployed version has also been used 2700+ times. Congrats Shreya and Bhavya!</li>
+            <li>September 1, 2025: As we announced in our AIDB keynote at VLDB, 
+              we're kicking off a new research agenda in our lab around redesigning data systems for agents,
+              likely the dominant workload for databases in the future, by
+              supporting and leveraging their characteristics, including scale, heterogeneity, redundancy, and steerability. 
+              New preprint <a href="https://arxiv.org/abs/2509.00997">here</a>.
+            </li>
+            <li>August 24, 2025: TWIX, our PDF reverse engineering tool, and BARGAIN, our low-cost LLM processing framework, 
+              were accepted to SIGMOD 2026. </li>
+            <li>August 20, 2025: Welcome to the group, new PhD students, Shubham Agarwal, and also Ruiying Ma (who was an intern with us last year)!</li>
+            <li>August 4, 2025: The police records access project was launched simultaneously via <a href="https://clean.latimes.com/">LA Times</a>, <a href="https://clean.sfchronicle.com/">SF Chronicle</a>, 
+              <a href="https://clean.calmatters.org/">CalMatters</a>, and <a href="https://policerecords.kqed.org/">KQED</a>.
+            A huge milestone for the project; now anyone anywhere can search through those news sites through over a million pages of PDFs
+            from 500+ agencies in California that we have organized and extracted information from. 
+            Read articles <a href="https://www.kqed.org/news/12050100/thousands-of-once-secret-police-records-are-now-public-heres-how-you-can-use-them">1</a>, <a href="https://www.sfchronicle.com/bayarea/article/california-police-records-20797063.php">2</a>, 
+            <a href="https://calmatters.org/justice/2025/08/police-misconduct-records-database/">3</a>, <a href="https://www.latimes.com/california/story/2025-08-04/clean-database-launch">4</a>. 
+            Article from Berkeley  <a href="https://journalism.berkeley.edu/berkeley-and-stanford-police-database/">here</a>.   </li>
+            <li>July 5, 2025: DataScout, our LLM-powered data discovery engine, and DocWrangler, an IDE for semantic data processing, 
+              were accepted at UIST 2025 in Busan.</li>
+            <li>July 2, 2025: Welcome to Lindsey Wei and Ruiqi Chen who are interning with us this summer!</li>
+            <li>July 1, 2025: Gave a keynote at the NOVAS workshop at SIGMOD; 
+              slides <a href="https://www.dropbox.com/scl/fi/w1nf5szvx7nyg3ykyppa2/2025-novas-keynote.pdf?rlkey=c0ffcbpa3vb2f9ubt65qw0qhy&e=1&st=vplhjrbc&dl=0">here</a>, 
+              and also served on a panel on LLM-meets-databases, 
+              slides <a href="https://www.dropbox.com/scl/fi/i7jb2z35vwdb3hfr0wxz8/2025-ai-for-db-panel-aditya.pdf?rlkey=pt2fdljudjkfvhtroxzdb3tig&e=2&st=v3z7vk41&dl=0">here</a>.</li>
+            <li>June 5, 2025: Fun to talk about agents at the faculty panel on agents at the Snowflake Dev day.</li>
+            <li>June 5, 2025: Excited to <a href="https://www.globenewswire.com/news-release/2025/06/04/3093929/0/en/PromptQL-Partners-with-UC-Berkeley-to-Develop-New-Data-Agent-Benchmark-for-Reliability-of-Enterprise-AI-Agents.html">announce</a>
+              our partnership with PromptQL on building a benchmark for data agents.</li>
+            <li>May 13, 2025: We released <a href="https://github.com/ucbepic/BARGAIN">BARGAIN</a>, led by Sep Zeighami. 
+              The BARGAIN framework gives substantial reduction in LLM costs over prior approaches AND also provides stronger guarantees! </li>
+            <li>May 2, 2025: We released TWIX, our data extraction framework for templatized PDF documents, <a href="https://t.co/9lB2J3I7uZ">here</a>, led by Yiming. 
+            Blog post <a href="https://t.co/S7So7SETTm">here</a>.</li>
+            <li>April 18, 2025: We released a <a href="https://arxiv.org/abs/2504.13587">preprint</a> on a new interface, RAGGY, for debugging RAG pipelines.</li>
+            <li>April 15, 2025: Grad school admission decisions: undergrad alums Ruiying and Reya got into grad school from a number of top places! Reya will be heading to Columbia, while Ruiying will be returning as a grad student to Berkeley! </li>
+            <li>April 15, 2025: We contributed to the once-every-five-years report
+              on the future of database research, take a <a href="https://arxiv.org/abs/2504.11259">look</a>!</li>
+            <li>April 7, 2025: Chroma's Generative Benchmarking <a href="https://research.trychroma.com/generative-benchmarking">approach</a> uses Shreya et al's EvalGen work. </li>
+            <li>March 1, 2025: Our <a href="https://arxiv.org/abs/2504.14738">paper</a>, led by Reya and Shreya, on a benchmark 
+            of assertions for LLM pipelines was accepted to NAACL
+            as an oral talk!</li>
+            <li>February 24, 2025: Turns out, with LLMs, your data systems can now become more proactive. Read about our new vision paper <a href="https://arxiv.org/abs/2502.13016">here</a>.
+            <li>January 16, 2025: I co-wrote a <a href="https://wp.sigmod.org/?p=3820">blog post</a> on challenges in data exploration and visual analytics that appeared on the SIGMOD blog.</li>
+            <li>January 15, 2025: Our preprint on extracting information from templatized documents, led by Yiming, is <a href="https://arxiv.org/abs/2501.06659">up</a>! The results are astounding: 20-30% higher precision and recall than state-of-the-art,
+            at a fraction of the cost and time.</li>
+            <li>January 13, 2025: We've been building an IDE for authoring semantic data processing pipelines in DocETL, called DocWrangler.
+              You can play with it in our <a href="https://www.docetl.org/playground">playground</a>. Led by Shreya and Bhavya. Blogpost <a href="https://data-people-group.github.io/blogs/2025/01/13/docwrangler/">here</a>.</li>
+            <li>January 4, 2025: Call for papers at the first Data-AI Systems workshop is <a href="https://dais-workshop-icde.github.io/">out</a>.</li>
+            <li>November 12, 2024: Shreya presented our paper on the three V's of MLOps at CSCW. Paper <a href="https://dl.acm.org/doi/10.1145/3653697">here.</a>
+            <li>November 1, 2024: We released TARGET, a table retrieval benchmark, led by Madelon. See <a href="https://target-benchmark.github.io/">here</a>.</li>
+            <li>October 22, 2024: I appeared on a podcast called Disseminate and spoke about our CIDR'11 paper, one of the most influential database papers from that year according to a ranking from Ryan Marcus. Listen <a href="https://open.spotify.com/episode/5SngvCYbKuHIYth4NtjGwp">here</a>.</li>
+            <li>October 16, 2024: Our DocETL preprint is <a href="https://arxiv.org/abs/2410.12189">out</a>! Lots of people on GitHub and Discord getting value from it already - spanning domains ranging from forensic analysis to climate science to medical data analysis. Over a 1000 GitHub stars already. Excited to have this out there. </li>
+
+            <li>September 20, 2024: Sep's NUDGE framework is now part of <a href="https://x.com/llama_index/status/1837522959273185521?s=46">LlamaIndex</a>. </li>
+            
+            <li>September 20, 2024: Rachel's paper on RequestAtlas was accepted at CSCW'2025! </li>
+            <li>September 16, 2024: Excited to see pandas-to-SQL translation that we pioneered at Ponder <a href="https://www.linkedin.com/feed/update/urn:li:activity:7241544052100210688/">now generally available</a> to all Snowflake customers. Congrats Ponder team! 
+            <li>September 5, 2024: Sep's paper on lightweight fine-tuning of retrieval for RAG is now on <a href="https://arxiv.org/abs/2409.02343">Arxiv</a>. Blog post <a href="https://data-people-group.github.io/blogs/2024/09/05/nudge/">here</a>. This is a no-brainer for folks wanting to improve retrieval
+            without paying the cost of expensive fine-tuning!</li>
+            <li>September 5, 2024: We restarted our blog! See <a href="https://data-people-group.github.io/blogs/2024/09/05/intro/">here</a>.</li>
+            <li>September 4, 2024: Congrats to incoming PhD student Bhavya Chopra for a VL/HCC best paper (her second in two years!)</li>
+            <li>September 1, 2024: Congrats to alum Madelon Hulsebos for starting as faculty at CWI, a leading research institution in Amsterdam!</li>
+            <li>August 29, 2024: Shreya presented her work on EvalGen and SPADE at Princeton.</li>
+            <li>August 15, 2024: Welcome to incoming PhD students Bhavya Chopra and HC Moore! And goodbyes to Prof. Eugene Wu from Columbia who was visiting us this past year - we'll miss you Eugene!</li>
+            <li>July 23, 2024: Our work on translating dataframes to databases was awarded two patents, see <a href="https://patents.justia.com/patent/12072911">here</a> and <a href="https://patents.justia.com/patent/12056100">here</a>.</li>
+            <li>July 15, 2024: Our work on transactional panorama won a "best of VLDB 2023" award; congrats Dixin!</li>
+            <li>July 1, 2024: Shreya's EvalGen paper was accepted at UIST'24!</li>
+            <li>June 26, 2024: Shreya's work on evaluation assistants was deployed by LangChain! Read more <a href="https://blog.langchain.dev/aligning-llm-as-a-judge-with-human-preferences/">here</a>. She also wrote a piece with other LLM practitioners on best practices with LLMs <a href="https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/">here</a>.</li>
+            <li>June 1, 2024: Our papers on SMASH (a string alignment algorithm) and <a href="https://arxiv.org/abs/2401.03038">SPADE</a> (an LLM-powered assertion generation system) were accepted at VLDB! Five letter acroynms FTW!</li>
+            <li>May 5, 2024: Our paper on dataset search, led by Madelon, was accepted at HILDA! Preprint <a href="https://www.madelonhulsebos.com/assets/dataset_search_survey.pdf">here</a>.</li>
+            <li>May 1, 2024: New preprint up on document analytics with LLMs as part of our new ZenDB system, led by Yiming. Read about it <a href="https://people.eecs.berkeley.edu/~adityagp/papers/zendb-tr.pdf">here</a>!</li>
+            <li>April 28, 2024: Shreya summarized her work on evaluating LLM pipelines, from SPADE to EvalGen, as part of an MLSys seminar. Listen <a href="https://www.youtube.com/watch?v=eGVDKegRdgM">here</a>!</li>
+            </ul>
+             &nbsp; &nbsp; &nbsp; &nbsp; <a id="link2" href="javascript:displayNews('show', 2)"> Click here for more news.
+            </a>
+            <div id="explanation2" style="display:none">
+            <ul>
+            <li>April 24, 2024: Devin gave a nice talk on our journey through dataframe land from Berkeley to Ponder, now to Snowflake at CMU. Listen <a href="https://www.youtube.com/watch?v=7TyIjqvfWto">here</a>!</li>
+            <li>April 22, 2024: Our work on building a UI for evaluating LLM pipelines was just released as a <a href="https://arxiv.org/abs/2404.12272">preprint</a>.</li>
+            <li>April 1, 2024: Our demo on <a href="https://dm4ml.github.io/motion/">Motion</a> was accepted to SIGMOD!</li>
+            <li>April 1, 2024: Welcome to Tarak Shah, who is joining us from the Human Rights Data Advocacy Group for work on the police records project.</li>
+            <li>March 1, 2024: Welcome to our newest postdoc, Sep Zeighami, joining us from USC!</li>
+            <li>February 28, 2024: Our work on LLM-based extraction of information from police misconduct PDFs is having real impact; check out <a href="https://www.capradio.org/articles/2024/02/28/deadly-restraint-despite-decades-of-warnings-police-continue-holding-people-facedown/">this news story</a> from Stockton.</li>
+            <li>February 14, 2024: Two of three organizers for the <a href="https://deem-workshop.github.io/">DEEM workshop</a> this year work in our group, so look out for an exciting event!</li>
+            <li>January 16, 2024: New preprint on automatic assertion generation for LLM pipelines, led by <a href="https://arxiv.org/abs/2401.03038">Shreya</a>!</li>
+            <li>January 13, 2024: We presented our work on prompt engineering-meets-crowdsourcing at CIDR'24!</li>
+            
+                <li>November 28, 2023: <a href="https://www.madelonhulsebos.com/">Madelon Hulsebos</a> joins us as a postdoc, with a BIDS Postdoctoral Fellowship!</li>
+                <li>November 8, 2023: Excited to announce a collaboration with <a href="https://www.langchain.com/">LangChain</a>, a leading LLM framework, to support automatic discovery of evaluation functions and assertions by analysis of prompt version histories. Blog post <a href="https://blog.langchain.dev/spade-automatically-digging-up-evals-based-on-prompt-refinements/">here</a>.</li>
+                <li>October 24, 2023: Delighted to announce that our company Ponder was acquired by Snowflake, the leading cloud data warehouse vendor, to accelerate their
+                  data science offerings. It has been a wild ride, from inception in 2021, to a $7M seed fundraise by leading VC firms, to scaling the company up to 15 employees, to building a never-before-product running data science libraries in data warehouses, to acquisition. Posts from <a href="https://www.snowflake.com/blog/snowflake-to-acquire-ponder/">Snowflake</a>, <a href="https://venturebeat.com/data-infrastructure/snowflake-to-acquire-ponder-expanding-its-python-capabilities-for-enterprises/">VentureBeat</a>, and <a href="https://ponder.io/snowflake-to-acquire-ponder/">us</a>.</li>
+                <li>August 30, 2023: We presented three full papers (one by <a href="https://arxiv.org/abs/2302.05476">Dixin</a>, one by <a href="https://arxiv.org/pdf/2108.13557.pdf">Shreya</a>, and one jointly by <a href="https://smacke.net/papers/nbslicer.pdf">Shreya and Stephen</a>) and one demo paper (by <a href="https://dl.acm.org/doi/10.14778/3611540.3611613">Dixin</a>) at VLDB.</li>
+                <li>August 29, 2023: Here's a blog post describing our VLDB paper on <a href="https://medium.com/@adityagp/its-2023-let-s-stop-making-bi-users-stare-at-spinning-wheels-930c40cea200">Transactional Panorama</a>, led by Dixin Tang.</li>
+                <li>August 25, 2023: We are part of a new NSF-funded <a href="https://ls.berkeley.edu/news/uc-berkeley-launches-ai-training-program-address-criminal-justice-system-inequalities-support">$3M AI training program</a> called CRELS (Computational Research for Equity in the Legal System), with colleagues in social sciences and statistics.</li>
+                <li>August 15, 2023: Welcome to Yiming Lin, our newest postdoc, who comes to us from UC Irvine!</li>
+                <li>August 8, 2023: We released a new <a href="https://arxiv.org/pdf/2308.03854.pdf">preprint</a> on how one can leverage ideas from declarative crowdsourcing to improve accuracy and reduce cost when processing data with Large Language Models. It was nice to revisit work from a decade ago!</li>
+                <li>June 28, 2023: The CA state budget includes <a href="https://data.berkeley.edu/news/state-funds-development-first-its-kind-police-misconduct-database">$6.87M in funding</a> to support the Police Records Access project, which we are part of, along with our partners at the Stanford and Berkeley Schools of Journalism.</li>
+                <li>June 27, 2023: Nice to see a <a href="https://missionlocal.org/2023/06/millions-law-enforcement-sfpd-sheriff-lawsuit-settlements/">shoutout</a> to our work on police roster data cleaning and extraction from a local journalism article on San Francisco law enforcement settlements. Congrats Aditya M and Diana Q!</li>
+                <li>June 18, 2023: I enjoyed giving a keynote at the <a href="http://deem-workshop.org/">DEEM workshop</a> at SIGMOD, with my talk titled "Enhance, don't Replace: a Recipe for Success in Data Science Tooling".</li>
+                <li>May 31, 2023: Dixin Tang, a postdoc working with me, will be an assistant professor at University of Texas, Austin. Go Dixin!</li>
+                <li>May 31, 2023: Dixin and Fanchao's visualization tool for spreadsheet computation networks was accepted at VLDB'23.</li>
+                <li>May 24, 2023: I enjoyed appearing on the <a href="https://t.co/bu8hPPC2lW">data stack show</a>, talking about how decoupling APIs from execution engines is important.</li>
+                <li>May 18, 2023: Our work with journalists and public defenders as part of the EPIC lab was highlighted in the LA Times <a href="https://www.latimes.com/california/story/2023-05-18/uc-berkeley-spreads-the-gospel-of-data-science-with-new-college-free-curriculum">news article</a> about the new college of computing, data science, and society.</li>
+                <li>May 11, 2023: I enjoyed serving on a panel on AI-meets-databases at the NorCal DB day.</li>
+                <li>May 1, 2023: Our paper on GATE, an efficient, automated, and precise
+                  system for ML-centric data validation is up on <a href="https://arxiv.org/pdf/2303.06094.pdf">arxiv</a>.</li>
+                <li>March 27, 2023: Our work with journalists as part of the EPIC data lab is having real impact: we helped journalists identify that responses to 
+                  a FOIA request was inadequate, as detailed in <a href="https://www.mercurynews.com/2023/03/27/amid-fbi-investigation-antioch-police-refuse-to-release-use-of-force-records-including-a-controversial-neck-hold-that-has-since-been-widely-banned/">this news story</a>.</li>
+                <li>March 17, 2023: Modin now supports NumPy in addition to Pandas; we can push down linear algebra operations to distributed computing engines.</li>
+                <li>March 6, 2023: I wrote a rejoinder to the "Big Data is Dead" blogpost: read it <a href="https://ponder.io/big-data-is-dead-long-live-big-data/">here.</a></li>
+                <li>March 4, 2023: Delighted to be inducted as a Kavli Fellow by the National Academy of Sciences at the US Frontiers of Science Symposium in Irvine. </li>
+                <li>February 9. 2023: Enjoyed speaking at the <a href="https://events.economist.com/custom-events/the-data-dividend-san-jose/">Data Dividend</a>, targeted at "harnessing the power of people, processes and technology to unlock value from data", an event hosted by the Economist and by IBM </li>
+                <li>February 10, 2023: Dixin's paper on compaction of spreadsheet graphs was
+                accepted at ICDE! </li>
+                <li>January 13, 2023: Dixin's paper on <a href="https://arxiv.org/abs/2302.05476">transactional panorama</a> â bridging transactions and interactive dashboards â was accepted at VLDB! </li>
+                <li>January 1, 2023: What a year for open-source efforts! Modin reached 5M downloads, Lux reached 500K downloads, and Nbsafety reached 150K downloads. </li>
+            </ul>
+            
+             &nbsp; &nbsp; &nbsp; &nbsp; <a id="link3" href="javascript:displayNews('show', 3)"> Click here for even more news.</a>
+            <div id="explanation3" style="display:none">
+            <ul>
+            <li>December 1, 2022: Modin now <a href="https://aws.amazon.com/blogs/big-data/scale-aws-sdk-for-pandas-workloads-with-aws-glue-for-ray/">ships</a> as part of the AWS SDK for Pandas as well as AWS Glue â showcasing how useful Modin is for data wrangling and ETL with the pandas API at scale. </li>
+            <li>November 29, 2022: Congrats to my former student, Doris Lee, on being named a Forbes' 30 under 30 in Enterprise Technology! </li>
+            <li>September 16, 2022: Shreya and Rolando's paper on lessons from interviewing ML Engineers on MLOps practices and challenges has been posted on <a href="https://arxiv.org/abs/2209.09125">arxiv</a>.</li>
+            <li>September 13, 2022: We formally unveiled our new lab, the <a href="https://epic.berkeley.edu">EPIC Data Lab</a>. <a href="https://data.berkeley.edu/news/epic-data-lab-harnessing-power-computer-science-help-society">Here</a> is an article from CDSS about the lab. We are thankful to our current sponsors, Microsoft, Google, and Sigma Computing, along with the National Science Foundation. </li>
+			      <li>September 1, 2022: Our paper on NBSlicer (led by Shreya and Stephen) and a vision paper on MLOps (led by Shreya) were both accepted at VLDB'23!</li>
+            <li>August 18, 2022: Here's our <a href="https://ponder.io/pandas-vs-sql-part-4-pandas-is-more-convenient/">fourth</a> blog post comparing Pandas to SQL.</li>
+            <li>July 26, 2022: Here's our <a href="https://ponder.io/pandas-vs-sql-part-3-pandas-is-more-flexible/">third</a> blog post comparing Pandas to SQL.</li>
+            <li>July 14, 2022: Here's our <a href="https://ponder.io/pandas-vs-sql-part-2-pandas-is-more-concise/">second</a> blog post comparing Pandas to SQL.</li>
+            <li>June 30, 2022: Our CACM paper on ShapeSearch â the invited extended version of our SIGMOD best paper award, is out <a href="https://cacm.acm.org/magazines/2022/7/262082-expressive-querying-for-accelerating-visual-analytics/fulltext">here</a>.</li>
+            <li>June 28, 2022: Here's our <a href="https://ponder.io/pandas-vs-sql-food-court-michelin-style-restaurant/">first</a> blog post comparing Pandas to SQL.</li>
+            <li>June 23, 2022: Congrats to Drs. Doris Lee, Devin Petersohn, and Doris Xin on their graduation!</li>
+            <li>June 15, 2022: New paper from Joe and I on our new <a href="https://dl.acm.org/doi/abs/10.1145/3531072.3535324">data engineering class</a> at Cal!</li>
+            <li>June 1, 2022: New <a href="https://willepperson.com/papers/solas">paper</a> with CMU folks on extending Lux to remember analysis history in a notebook, and use it to bias recommendations towards recent operations or past interest - to appear at Eurovis.</li>
+            <li>May 20, 2022: We released a <a href="https://arxiv.org/abs/2205.07147">position paper</a> on the vision behind the Sky lab.</li>
+            <li>May 19, 2022: Startups all-around! My former student, <a href="https://dorx.me/">Doris Xin</a> now serves as a CEO of a startup, <a href="https://lineapy.org/">Linea</a>.</li>
+            <li>April 30, 2022: Enjoyed giving a keynote at the SIAM Data Mining Conference.</li>
+            <li>March 9, 2022: Excited to announce the launch of <a href="https://ponder.io">Ponder</a>, a company I co-founded with my students. Ponder raised $7M from top-tier VCs to develop scalable, enterprise-ready data science tools, leveraging our success with <a href="https://ponder.io/how-do-we-parallelized-600-pandas-functions-with-modin/">Modin</a> and <a href="https://ponder.io/using-lux-to-visualize-your-pandas-dataframes-with-zero-effort/">Lux</a>. I am serving as the President of Ponder, while staying on as faculty at Berkeley. </li>
+            <li>February 15, 2022: Modin hit 1.5M downloads this week, with 200K downloads in the last month - grateful to see the groundswell of adoption. </li>
+            <li>February 2, 2022: Delighted to receive the Young Alumni Achiever's award from my alma mater, IIT Bombay. </li>
+            <li>January 6, 2022: I presented a talk on our mission to develop enterprise-ready pandas at CIDR, see recording <a href="https://t.co/XkJDNWH9z5">here</a>. </li>
+            <li>November 18, 2021: Doris presented Lux at the Data Umbrella; see recording <a href="https://www.youtube.com/watch?v=O28RZ8SsSQk">here</a>.</li>
+            <li>November 11, 2021: Shreya Shankar presented her work on MLTrace at the Toronto ML Society as well as at Facebook; recording <a href="https://www.facebook.com/watch/?v=1578607659138164">here</a>.</li>
+            <li>October 26, 2021: Stephen Macke was <a href="https://softwareengineeringdaily.com/2021/10/26/nbsafety-for-jupyter-notebooks-with-stephen-macke/">interviewed</a> about NBSafety in the Software Engineering Daily Podcast.</li>
+            <li>October 28, 2021: Doris Lee presented Lux at <a href="https://pydata.org/global2021/schedule/presentation/105/lux-automatic-visualizations-for-exploratory-data-science/">PyData</a>, while Modin was featured on the <a href="https://www.anaconda.com/blog/scale-your-pandas-workflow-with-modin?utm_medium=twitter&utm_source=social-media-organic&utm_campaign=blog">Anaconda blog</a>.</li> 
+            <li>October 1, 2021: Our papers on <a href="https://arxiv.org/abs/2105.00121">Lux</a> and <a href="https://people.eecs.berkeley.edu/~totemtang/paper/Modin.pdf">Modin</a> were accepted to VLDB 2022!</li>
+            <li>September 15, 2021: <b>Tenure!</b></li>
+            <li>
+            September 7, 2021: We received a 2M <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2129008&HistoricalAwards=false">NSF grant</a> to kickstart the EPIC Data Lab, short for Effective Programming, Interaction, and Computation with Data. Articles on EPIC <a href="https://data.berkeley.edu/news/uc-berkeley-researchers-receive-2-million-grant-build-criminal-justice-big-data-tools">here</a> and <a href="https://www.dailycal.org/2021/09/08/uc-berkeley-researchers-win-2m-grant-for-criminal-justice-datasets/">here</a>. We're working on the messy data challenges 
+            in criminal justice, along with public defenders via the <a href="https://www.nacdl.org/Landing/FullDisclosureProject">NACDL</a> (National Association of Criminal Defense Lawyers) and journalists via the <a href="https://projects.scpr.org/california-reporting-project/">Big Local News/KQED</a>. We're part of a consortium called CLEAN: Community Law Enforcement Accountability Network.
+            </li>
+            <li>September 1, 2021: Delighted to welcome Nithin Chalapathi and Shreya Shankar as new EECS PhD students!</li>
+            <li>
+            August 13, 2021: <a href="http://dorisjunglinlee.com/">Doris Lee</a> and Devin Petersohn wrap up their dissertations on visualization recommendation and dataframe systems respectively. Congratulations Dr. Lee and Dr. Petersohn! Exciting times ahead!!
+            </li>
+            <li>August 9, 2021: Devin Petersohn gives his dissertation talk on dataframe systems. Devin's work has laid the groundwork for how to reason about and optimize dataframe computation. Congrats Devin! </li>
+            <li>August 3, 2021: <a href="https://smacke.net/">Stephen Macke</a> wraps up his dissertation! Stephen's work on minimizing error while ensuring interactivity in a range of settings has been a joy to be a part of.</li>
+            <li>July 26, 2021: Tana Wattanawaroon defends his dissertation on supporting efficient computation in spreadsheets, titled "Generalizing Spreadsheet Computation for Evolving Spreadsheets at Scale". Congratulations Tana!</li>
+            <li>July 12, 2021: Our new PhD student, Shreya Shankar, is off to the races with <a href="https://www.shreya-shankar.com/introducing-mltrace/">MLTrace</a>, a lightweight approach for instrumenting ML code to allow for end-to-end debugging, reproducibility, and introspection. Super exciting stuff; watch this space! </li>
+            <li>July 1, 2021: Our scalable dataframe system, <a href="https://github.com/modin-project/modin">Modin</a>, has over 6000 github stars and over 1M downloads at this point. We're excited that there is so much organic traction and interest!</li>
+            <li>May 14, 2021: Our technical report on Lux is <a href="https://arxiv.org/pdf/2105.00121.pdf">out</a>! Lux has users across a range of industries at this point, including insurance, retail, and education, and thousands of github stars. Our paper introduces our always-on visualization framework, our lightweight intent language, and how we made Lux interactive when operating on large dataframes.</li> 
+            <li>Apr 19, 2021: New Lux release; v0.3.0 supports a relational database backend, geovis, Jupyter lab, and matplotlib instead of altair, and more! Dashboard export (to streamlit, data pane, HTML, etc. forthcoming.) More <a href="https://github.com/lux-org/lux">here</a>.</li>
+            <li>Apr 16, 2021: Doris Xin presents her dissertation talk on "Usable and Efficient Systems for Machine Learning"! Congratulations Dr. Xin! Doris is off to be a CEO at a new startup!
+            </li>
+            <li>Apr 13, 2021: Doris Lee's paper in collaboration with folks at Tableau Research (Vidya Setlur, Melanie Tory) on developing a taxonomy for visualization recommendation was accepted at VIS 2021 via TVCG!</li>
+            <li>March 26, 2021: Doris Xin's paper in collaboration with Google folks on understanding production machine learning pipelines in TFX (along with my longtime collaborator Alkis Polyzotis and Hui Miao) was accepted as an industry paper at SIGMOD'21!</li> 
+            <li>March 15, 2021: Our paper on leveraging think-time for opportunistic dataframe query evaluation was published at <a href="http://sites.computer.org/debull/A21mar/issue1.htm">IEEE Data Engineering Bulletin</a> and showcased at <a href="https://twitter.com/adityagp/status/1371690286414327812?s=20">ML and Data Projects to know</a></li>
+            <li>February 15, 2021: Thrilled to see continued Lux adoption and interest. We had another industry <a href="https://towardsdatascience.com/intelligent-visual-data-discovery-with-lux-a-python-library-dc36a5742b2f">blog post</a>, yet <a href="https://blog.dominodatalab.com/faster-data-exploration-in-jupyter-through-the-lux-widget/">another one</a>, and hit over 700 stars on <a href="https://github.com/lux-org/lux">github</a>.</li>
+            <li>January 15, 2021: Stephen Macke won the CIDR gong show for presenting his take on the next generation of notebooks! Devin Petersohn also presented his work on scalable dataframes. </li>
+            <li>January 10, 2021: Dual VLDB'21 accepts! Our paper on a general-purpose spreadsheet exploration tool, enabling zoom in/out, called NOAH, led by Sajjadur Rahman, was one. Our <a href="https://smacke.net/papers/nbsafety.pdf">paper</a> on NBSafety, a Jupyter kernel for safe notebook interactions, led by Stephen Macke, was another.</li>
+            <li>January 6, 2021: A virtual welcome to our new postdoc, Dixin Tang, who is joining us from U Chicago having worked with Aaron Elmore and Mike Franklin.
+            </li>
+            <li>January 1, 2021: I took on the role of the Faculty Equity Advisor at the School of Information. See more <a href="https://www.ischool.berkeley.edu/about/community">here</a>.</li>
+            <li>December 13, 2020: Our <a href="https://arxiv.org/abs/2101.04834">paper</a> studying industry users of AutoML and how next-gen AutoML tools should look like was accepted at CHI'21, led by Doris Xin, Eva Wu, and Doris Lee.</li>
+            <li>December 9, 2020: Doris Lee passed her qualifying exam!
+            </li>
+            <li>November 20, 2020: Much <a href="https://github.com/lux-org/lux">Lux</a> love coming from industry. This LinkedIn <a href="https://www.linkedin.com/posts/stevenouri_innovation-artificialintelligence-machinelearning-activity-6738770920942501890-_s83/">post</a> has nearly 8000 shares. This <a href="https://towardsdatascience.com/quick-recommendation-based-data-exploration-with-lux-f4d0ccb68133">Medium article</a> was written by another industry person to introduce Lux to the general public. Lux was also listed as a "Project to Know" <a href="https://mailchi.mp/amplifypartners/ptk63">here</a>.</li>
+            <li>November 10, 2020: Our quest for safer notebooks continues with <a href="https://nbsafety.org/">NBSafety</a>, led by Stephen Macke! NBSafety automatically tracks lineage of variables in the notebook, providing suggestions to avoid executions of stale cells that could lead to incorrect or non-reproducible behavior. Lots of heavyweight program analysis techniques leading to a delightful, unobtrusive user experience. NBSafety was first presented at PLATEAU 2020, a PL-HCI workshop.
+            </li>
+            <li>November 4, 2020: Congratulations to Doris Xin for passing her qualifying exam!</li>
+            <li>November 3, 2020: Congratulations to Stephen Macke for defending his thesis!</li>
+            <li>October 23, 2020: Enjoyed writing <a href="https://www.cell.com/patterns/fulltext/S2666-3899(20)30167-7">this perspective piece</a> on the challenges and opportunities from working with domain experts on building
+              interactive visualization tools, appearing at Patterns. 
+            </li>
+            <li>October 10, 2020: We've poured all of our experience building visualization recommendation tools over the years into <a href="https://github.com/lux-org/lux">Lux</a>, led by Doris Lee. Lux provides
+              in-situ visualization recommendations within notebooks as an add-on to
+              dataframes instead of the standard tabular dataframe view. Doris demonstrated Lux at JupyterCon 2020. </li>
+            <li>October 7, 2020: Devin Petersohn wrote about how Modin helps data scientists be more productive <a href="https://medium.com/riselab/how-to-ensure-a-data-scientist-is-never-productive-6702d2990bd3">here</a>.</li>
+            <li>October 9, 2020: Congratulations to Tana Wattanawaroon for passing his preliminary exam!</li>
+            <li>October 3, 2020: Yay! Stephen Macke's <a href="https://arxiv.org/pdf/2008.03891.pdf">paper</a> on tighter confidence intervals for approximate query processing was accepted to ICDE'21!</li>
+            <li>September 14, 2020: Excited to have our paper on visualization recommendation for genomics out in the Patterns journal from Cell Press,
+              led by Silu Huang (now at MSR) and Charles Blatti. Paper <a href="https://www.cell.com/patterns/fulltext/S2666-3899(20)30121-5">here</a>.
+              Our work on this project started as part of the NIH BD2K center a while back. 
+            </li>
+            <li>September 1, 2020: I presented a two-part keynote at the VLDB PhD workshop. One of the parts was on my experiences dealing with rejection; check out the recording <a href="https://www.loom.com/share/89bfb10668d94595b265a156126474a5">here</a>.
+            </li>
+            <li>July 15, 2020: Our <a href="https://arxiv.org/abs/2001.00888">vision paper</a> on scalable dataframe systems has been accepted at VLDB'20.</li>
+            <li>June 16, 2020: Our paper on <a href="https://dl.acm.org/doi/10.1145/3318464.3389722">ShapeSearch</a> won the SIGMOD 2020 Best paper award, one of two awards out of over 450 submissions. It's amazing to see SIGMOD appreciate non-traditional usability-oriented work. Congratulations Tarique! <a href="https://www.ischool.berkeley.edu/news/2020/aditya-parameswaran-awarded-best-paper-sigmod-2020">Here's</a> an (overly generous) article on the award.</li>
+            <li>June 10, 2020: We have open-sourced our spreadsheet benchmark, <a href="https://github.com/dataspread/spreadsheet-benchmark">sheetperf</a>.</li>
+            <li>June 9, 2020: I appeared on the Software Engineering Daily <a href="https://softwareengineeringdaily.com/2020/06/09/human-in-the-loop-data-analytics-with-aditya-parameswaran/">podcast</a> to discuss Human-in-the-loop Data Analytics.</li>
+            <li>May 26, 2020: My former student Silu Huang, now a senior researcher at Microsoft Research, was awarded the <a href="https://t.co/4nZ7V8tl3G?amp=1">Jim Gray dissertation award honorable mention</a>, given to the second ranked dissertation in data management. Congratulations, Silu!</li>
+            <li>May 19, 2020: Slides and other materials from my Spring class on data engineering are available <a href="info290.github.io">here</a>.  I squished the entirety of a traditional database class into the first half of the semester, focusing on user-facing aspects. I then covered non-traditional topics: json/doc stores, IR, spreadsheets, data frames, OLAP/vis, col. stores & compression, parallel proc., streaming/sketching, security & privacy, graph proc., contrasting with the relational approach. The key emphasis was on principles underlying data systems that data scientists may consider using, and how to pick between them for a given situation. </li>
+            <li>May 16, 2020: Congratulations to my Ph.D. student graduates! Tarique Siddiqui is off to be a Senior Researcher at Microsoft Research in the Databases group. Sajjadur Rahman is off to be a Researcher at Megagon Labs. Liqi Xu is off to be a Research Scientist at Facebook. </li>
+            <li>May 16, 2020: Congratulations to my M.S. student graduates! Angela Lee is off to Google, while Jaewoo Kim is off to AWS. </li>
+            <li>May 4, 2020: We released another version of our <a href="https://covidvis.berkeley.edu">covidvis</a> tool. We also released a manually gathered intervention dataset to go with the tool. Grateful to receive <a href="https://twitter.com/Bob_Wachter/status/1256406721821503488?s=20">positive</a> <a href="https://twitter.com/Revkin/status/1256424291207450625?s=20">feedback</a> <a href="https://t.co/7MjSB1DhZ5?amp=1">for</a> our efforts. </li>
+            <li>May 1, 2020: Two papers accepted to HILDA this year: Pingjing et al. lead a paper on <a href="https://hilda.io/2020/proceedings/HILDA2020_paper8.pdf">results</a> from the first lab-based user evaluation across a range of analytical tasks on spreadsheets, identifying roadblocks and opportunities. Doris et al. lead a <a href="https://hilda.io/2020/proceedings/HILDA2020_paper7.pdf">paper</a> on understanding ML development patterns from surveying a large collection of real-world ML traces.</li>
+            <li>April 15, 2020: Doris Lee participated in the CHI'20 doctoral consortium!</li>
+            <li>April 10, 2020: We released our first version of our <a href="https://covidvis.berkeley.edu">covidvis</a> tool to help make sense of the impact of interventions on the progress of the COVID-19. Collaborators include epidemiologists, statisticians, and public health folks.</li>
+            <li>April 1, 2020: SIGMOD paper acceptances: our paper on <a href="https://dl.acm.org/doi/10.1145/3318464.3389782">benchmarking spreadsheets, led by Sajjadur Rahman, and our paper on <a href="https://dl.acm.org/doi/10.1145/3318464.3389722">ShapeSearch</a>, a multi-modality interface for querying for visual patterns led by Tarique Siddiqui.</li>
+            <li>February 12, 2020: Excited to be named one of the Alfred P. Sloan research fellows in Computer Science this year!
+            Articles <a href="https://news.berkeley.edu/story_jump/nine-young-faculty-named-2020-sloan-fellows/">here</a>, <a href="https://sloan.org/fellowships/2020-Fellows">here</a>, and <a href="https://www.ischool.berkeley.edu/news/2020/aditya-parameswaran-awarded-sloan-research-fellowship">here</a>. 
+            </li>
+            <li>February 11, 2020: Preprint on Genvisage is <a href="https://www.biorxiv.org/content/10.1101/2020.02.05.935411v1">live</a>. Genvisage is a tool for explaining the results
+            of genomics experiments; done in collaboration with Saurabh Sinha and Charles Blatti, led by Silu Huang. </li>
+            <li>January 28, 2020: Congrats Doris Lee for winning a Facebook fellowship! She's one of 36 fellows from over 1800 applicants. Article <a href="https://research.fb.com/blog/2020/01/announcing-the-recipients-of-the-2020-facebook-fellowship-awards/">here</a>.</li>
+            <li>January 26, 2020: A photo tribute to Hector Garcia-Molina, my advisor, <a href="http://tiny.cc/hector-students">here</a>, who passed away earlier this year, assembled by his Ph.D. students.</li>
+            <li>January 24, 2020: The SIGMOD 2020 workshops list is <a href="https://sigmod2020.org/sigmod_workshops.shtml">live</a>. Great list of upcoming workshops!</li>
+            <li>January 7, 2020: The first of many papers on the <a href="http://modin.org/">Modin project</a> is live!
+            ArXiV link <a href="https://arxiv.org/abs/2001.00888">here</a>. Modin is aiming to make dataframes more scalable by applying database techniques, and is currently being used in a number of companies,
+            with dozens of collaborators and lots of interest on <a href="https://github.com/modin-project/modin">github</a>. Led by Devin Petersohn. </li>
+            <li>December 6, 2019: The <a href="https://blog.acolyer.org/">Morning Paper</a>, a popular blog that covers academic papers, <a href="https://blog.acolyer.org/2019/12/06/benchmarking-spreadsheet-systems/">covered</a> our paper on spreadsheet benchmarking. Thanks Adrian!
+            </li>
+            <li>November 13, 2019: A <a href="https://data.berkeley.edu/news/uc-berkeley-powers-lead-data-systems">nice article</a> on the new <a href="http://dsf.berkeley.edu">Data Systems & Foundations</a> group at UC Berkeley, from the Division of Data Science and Information. Excited for what lies ahead!</li>
+            <li>September 27, 2019: A generous <a href="https://www.ischool.berkeley.edu/news/2019/democratizing-data-science-parameswaran-receives-2019-vldb-award">article</a> on the VLDB Early Career Award, from the School of Information. Here's the <a href="http://www.vldb.org/pvldb/vol12/p2309-parameswaran.pdf">paper</a> I had the privilege of writing
+            as part of the award.</li>
+
+            <li>September 9. 2019: Double <a href="http://dorx.me">Doris Xin</a> whammy! <a href="http://helix-ml.github.io">Helix</a> was mentioned as a "project to know" in a <a href="https://mailchi.mp/amplifypartners/projects-to-know-vldb-edition-issue-2?e=[UNIQID]">blog post</a> from Amplify Partners. Thanks Sarah! And Doris was selected as a <a href="https://cs.illinois.edu/news/five-cs-graduate-students-chosen-2019-heidelberg-laureate-forum">Hiedelberg Laureate</a>. Congratulations!
+            </li>
+            <li>August 26, 2019: Grateful to receive the <a href="https://eecs.berkeley.edu/news#news-2838">VLDB</a> <a href="https://rise.cs.berkeley.edu/blog/professor-parameswaran-receives-vldb-early-career-award/">Early</a> <a href="https://www.vldb.org/awards_early_career.html">Career</a> <a href="https://vldb.org/2019/?2019-vldb-endowment-awards">Research Contributions Award</a> for "<i>developing tools for large-scale data exploration, targeting non-programmers</i>." The award is given for research impact through a specific technical contribution of high significance since completing the Ph.D. (for up to 8 years post Ph.D.) </li>
+            <li>August 22, 2019: Please send us your most compelling SIGMOD workshop ideas for SIGMOD2020! Deadline September 27. <a href="http://sigmod2020.org/calls_workshop_proposals.shtml">Here's</a> the call for proposals.
+            </li>
+            <li>July 1, 2019: <img src="http://i2.wp.com/www.dailycal.org/assets/uploads/2015/11/University_of_California_Berkeley_athletic_logo.svg_-900x720.png" style="height:20px;" border="10"  alt="Berkeley logo"><b> *BIG NEWS!*</b> I moved to <a href="http://www.berkeley.edu">UC Berkeley</a>, with a faculty appointment at the <a href="https://www.ischool.berkeley.edu/">School of Information</a> and the <a href="https://eecs.berkeley.edu/">EECS Department</a>; you can find articles about my appointment in <a href="http://newsletter.eecs.berkeley.edu/2019/05/new-cs-faculty/">EECS</a> and the <a href="https://www.ischool.berkeley.edu/about/profiles/aditya-parameswaran">I School</a>. 
+            Berkeley has been making some exciting moves in the broad data and information space, including a new <a href="https://news.berkeley.edu/2018/11/01/berkeley-inaugurates-division-of-data-science-and-information-connecting-teaching-and-research-from-all-corners-of-campus/">Division of Data Science and Information</a>, a very popular <a href="https://datascience.berkeley.edu/">Masters in Information and Data Science</a> program, and a new and increasingly popular <a href="https://data.berkeley.edu/news/uc-berkeleys-data-science-major-takes">data science major</a>. Looking forward to being a part of this journey, and to moving back to the Bay Area! 
+            Illinois has been a wonderful home for the past 5-odd years with terrific <a href="images/group2018.jpg">students</a>, a collegial research environment, and Midwestern charm (plus <a href="http://www.prairiefruits.com/">baby goats</a>!); I'm going to miss my colleagues, the university, and the town terribly. </li>
+            
+            <li>June 25, 2019: Our new <a href="https://arxiv.org/abs/1710.00763">paper</a> describing our design study with Zenvisage was accepted at VAST'19 at VIS. Congrats Doris Lee!</li> 
+            <li>June 20, 2019: Our <a href="http://sites.computer.org/debull/A19june/p59.pdf">vision paper</a> on the data management and HCI challenges underlying AutoML was published in the IEEE Data Engg Bulletin. 
+            <li>June 20, 2019: <a href="https://scholar.google.com/citations?user=g4eZa-0AAAAJ&hl=en">Silu Huang</a> defended her thesis on versioning-meets-databases. Congrats Silu!</li>
+            <li>May 1, 2019: Our proposal received a <a href="https://research.fb.com/blog/2019/05/announcing-the-winners-of-the-probability-and-programming-research-awards/">runner-up</a> mention for the Facebook Probability and Programming Research Award.</li>
+            <li>April 11, 2019: Congratulations to the <a href="http://dataspread.github.io">DataSpread</a> team for a best demo award at ICDE 2019! The best demo awards went to two out of 24 demonstrations. </li>
+            <li>March 20, 2019: <a href="http://shuang86.web.engr.illinois.edu/">Silu Huang</a> accepted her offer to be a researcher at the DMX group at Microsoft Research! I interned in the DMX group back in 2010 and it's a fantastic place to work.</li>
+            <li> March 15, 2019: <a href="http://dataspread.github.io">DataSpread</a>'s asynch computation framework was accepted at SIGMOD'19. Congrats to Mangesh, Tana et al.!</li>
+            <li> March 1, 2019: <a href="http://ygao34.web.engr.illinois.edu/">Yihan Gao</a> defended his thesis on data compression and data extraction, titled <a href="https://etd.ideals.illinois.edu/advisor/6UnwNMoQry8/file/65526/GAO-DISSERTATION-2019.pdf">"Extracting and Utilizing Hidden Structures in Large Datasets"</a>. Yihan will return
+            to his undergraduate alma mater to be an assistant professor at Tsinghua University. Congratulations Yihan!</li> 
+            <li> February 10, 2019: Our <a href="papers/dataspread-demo2.pdf">demo paper</a> on DataSpread's navigation, formula, and relational capabilities was accepted at ICDE'19. Congrats Mangesh, Tana, Sajjadur, and gang!</li>
+            <li> February 1, 2019: Mangesh Bendre is leaving the group to start as a 
+            research scientist at Visa Research. Congratulations Mangesh! Mangesh's thesis on DataSpread is up at <a href="https://www.ideals.illinois.edu/bitstream/handle/2142/102483/BENDRE-DISSERTATION-2018.pdf?sequence=1&isAllowed=y">this link</a>.</li>
+            <li> December 15, 2018: Congratulations to Doris and gang for our IUI 2019 paper (link <a href="papers/vispilot.pdf">here</a>) identifying a new fallacy in data exploration-the drill-down fallacy-and developing techniques to work around it. </li>
+            <li> December 1, 2018: Yay! My student Mangesh Bendre (coadvised with Kevin Chang) defended his thesis on DataSpread. Mangesh has spearheaded the development of DataSpread, and was instrumental in many of the key innovations so far: the hybrid data model, positional indexing, and asynchronous formula computation. </li>
+            <li> November 15, 2018: Congrats to Doris and the rest of the <a href="http://helix-ml.github.io">Helix</a> team for the VLDB 2019 paper on the design of Helix, our human-in-the-loop machine learning system. 
+            </li>
+            <li> August 13, 2018: Congratulations to Silu, Liqi et al. (w/ <a href="http://people.cs.uchicago.edu/~aelmore/">Aaron Elmore</a>) for a "best of conference" nomination for our VLDB 2017 paper on our versioned database system Orpheus's design and implementation! 
+            </li>
+            <li> August 13, 2018: Doris's IEEE D.E. Bulletin paper articulating our vision for a visual discovery assistant, called VIDA, will be <a href="vida.pdf">out soon</a>. Thanks to <a href="https://people.cs.umass.edu/~ameli/">Alexandra</a> for inviting us.</li>
+            <li> August 10, 2018: Shreya's paper on incorporating constraints for more accurate crowd-powered sorting was accepted as a short paper at CIKM 2018.</li>
+            <li> July 11, 2018: Thrilled to receive the <a href="https://cs.illinois.edu/news/parameswaran-aims-algorithms-would-add-perspective-voices-crowd">Army Research Office Young Investigator Program Award</a> for our work on decoupling perspectives in crowdsourcing. Thanks to the CS Department for the generous article! </li>
+            <li> June 30, 2018: Our <a href="http://wp.sigmod.org/?p=2342">SIGMOD blog post</a> on why visual data exploration introduces a number of new data management challenges is up. Thank you to Georgia Koutrika for inviting me!</li>
+            <li> June 15, 2018: <img src="images/Helix2-02.png" style="height:30px;" border="5"  alt="helix"> Our project page for Helix is <a href="http://helix-ml.github.io">up</a>! </li> 
+            <li> June 15, 2018: Short papers accepted at IDEA on <a href="https://arxiv.org/abs/1803.10311">iteration</a> in machine learning workflows, and at HCOMP on <a href="http://ilpubs.stanford.edu:8090/1161/1/main.pdf"> quality evaluation methods</a> for crowdsourced segmentation. </li>
+            <li> May 27, 2018: I am serving on the steering committee of the DSIA workshop @ VIS 2018. Consider submitting your latest and greatest work <a href="http://interactive-analysis.org">here</a>!</li>
+            <li> May 2, 2018: Demos on Helix, our <a href="http://helix-ml.github.io">human-in-the-loop machine learning tool</a>, and ShapeSearch, our flexible shape-based trend-line querying tool, were accepted at VLDB 2018.</li>
+            <li> April 25, 2018: Our paper on <a href="https://arxiv.org/abs/1611.04705">Needletail</a>, an efficient sampling engine for browsing, was accepted at the HILDA Workshop at SIGMOD 2018. We've used Needletail in a number of papers on scalable approximate visualization generation, so we're glad to have this finally out there!</li>
+            <li> April 15, 2018: Our paper on <a href="https://arxiv.org/pdf/1804.05892.pdf">accelerating human-in-the-loop ML</a>, a vision paper for the Helix project, was accepted at the DEEM Workshop at SIGMOD 2018. Lots more to come on Helix in the near future. Congrats Doris!  </li>
+            <li> April 1, 2018: Thrilled to receive the <b><i><a href="https://engineering.illinois.edu/news/article/24747">2018 Dean's Excellence in Research Award</i></b></a> from the University of Illinois, given to assistant professors with an outstanding research profile + impact. Delighted to be able to celebrate with the group (photo on the right)! 
+            </li>
+            <li> March 1, 2018: Happy to be recognized with a <a href="http://citl.illinois.edu/docs/default-source/teachers-ranked-as-excellent/tre-2017-fall.pdf">spot on the "List of teachers rated as Excellent"</a> for the second year in a row! </li>
+            <li> February 15, 2018: Our demo paper (w/ folks at UChicago) on generating succinct diffs between data versions was accepted at SIGMOD 2018.</li> 
+            <li> February 10, 2018: Mangesh's <a href="https://arxiv.org/abs/1708.06712">paper</a> on data models and indexes for scalable spreadsheets has been accepted to ICDE 2018! This paper lays out the groundwork for our DataSpread project, many years in the making. </li>
+            
+            <li> December 12, 2017: New paper on quickly identifying a succinct difference (or "diff") between two relational datasets <a href="papers/datadiff.pdf">here</a>. We characterize the complexity of this problem, based on varying the classes of operators and types of attributes. 
+            </li>
+            <li> December 10, 2017: More Kelly news! Kelly received the <a href="https://snapresearchscholarship.splashthat.com/">Snap Research Scholarshop</a> and the CRA Undergraduate research award honorable mention. Woohoo!</li>
+            <li> December 1, 2017: Interested in trying out our latest version of Zenvisage? Here's the link: <a href="http://zenvisage.cs.illinois.edu">zenvisage.cs.illinois.edu</a>. More at our <a href="https://medium.com/@adityagp/effortless-exploration-with-zenvisage-2-0-c1a515477399">Medium blog post</a>.</li>
+            <li> November 18, 2017: Paper <a href="papers/dataspread-reddit.pdf">studying scalability issues in Microsoft Excel</a> by analyzing a large collection of Reddit posts, accepted at CHI 2018. Congrats Kelly Mack (an amazing achievement for an undergrad)! In other news, Kelly was also nominated for the CRA undergraduate
+            research award. </li>
+            <li> November 10, 2017: Paper on our <a href="https://arxiv.org/pdf/1708.08905.pdf">automatic data lake extraction tool</a> accepted at SIGMOD 2018. Our tool automatically identifies the components corresponding to formatting and filters it out to extract a structured representation, with high accuracies on log files from github. Congrats Yihan and Silu!</li>
+            <li> October 15, 2017: <img src="https://d3tdunqjn7n0wj.cloudfront.net/1400x933/orm_logo_1400pxx950px_center-3a39f4f979a573665fd0b8e348b5d359.png" style="height:30px;" border="20"> My O'Reilly Blog post on "Enabling Data Science
+            for the Majority" is <a href="https://www.oreilly.com/ideas/enabling-data-science-for-the-majority">live</a>! 
+            In here, I articulate that there are 5 BIG 
+            challenges in democratizing data science, and describe some 
+            of our work as well as some of the other work in this space. 
+            Read this if you want to find out what's new and cool in data science
+            research. 
+            </li>
+            <li> October 10, 2017: <img src="images/dataspread-main.png" style="height:20px;" border="5"> New preprint on characterizing the spectrum of scalability issues
+            in Microsoft Excel via Reddit posts <a href="papers/dataspread-reddit.pdf">here</a> as part of our <a href="http://dataspread.github.io">DataSpread</a> project. Led by Kelly, our intrepid undergrad!
+            </li>
+            <li> October 1, 2017: <img src="images/zenvisage-main.png" style="height:30px;" border="5"> The Zenvisage gang chronicle 
+            our multi-year effort in participatory design with Zenvisage along with scientists from material science, genetics, and astrophysics is chronicled <a href="https://arxiv.org/pdf/1710.00763.pdf"> here</a>. Many interesting insights on how visual exploration
+            systems like Zenvisage can fit into scientific data exploration workflows + many real instances
+            of valuable scientific findings gained from the process!</li>
+            <li> September 11, 2017: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:30px;" border="5"> Thanks to new funding from the NSF Algorithms in the Field (AitF) program, we can advance scalable visualization by applying sublinear time techniques, along with the super smart theory duo of Ronitt Rubinfeld  (MIT) and Ilias Diakonikolas (USC). NSF page <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733878">here</a>.</li>
+            <li> September 1, 2017: VLDB Blog Posts! Here they are:
+              <ul>
+              <li> "Towards Automating Insight", <a href="https://medium.com/@adityagp/towards-automating-insight-f789d90f7613">here</a>.
+              </li>
+              <li> "Drawing Conclusions Early with Incvisage", <a href="https://medium.com/@adityagp/draw-conclusions-early-with-incvisage-45c608634ca0">here</a>.</li>
+              <li> "Painless Data Versioning for Collaborative Data Science", <a href="https://medium.com/@adityagp/painless-data-versioning-for-collaborative-data-science-90cf3a2e279d">here</a>.</li>
+              <li> "Crowdsourcing in Practice: Our Findings", <a href="https://medium.com/@adityagp/crowdsourcing-in-practice-our-findings-42a6aca36060">here</a>.</li>
+              </ul>
+            </li>
+            <li> August 15, 2017: Grateful to receive the <b><i>C.W. Gear Junior Faculty Award</i></b> from the University of Illinois! Thanks to the Department of CS for being such a supportive environment for junior faculty! </li>
+            <li> August 1, 2017: New/Updated preprints:
+            <ul>
+              <li> on Needletail, our "any-k" browsing and sampling engine, <a href="https://arxiv.org/abs/1611.04705">here</a>. </li>
+              <li> on FastMatch, an algorithm for rapidly matching histograms to a target, applying a variety of systems
+                   and algorithmic ideas, <a href="https://arxiv.org/abs/1708.05918">here</a>; a key component of Zenvisage.</li>
+              <li> on DataSpread, studying representation and indexing schemes for spreadsheet data, <a href="https://arxiv.org/abs/1708.06712">here</a>.</li>
+              <li> on Catamaran (formerly known as Datamaran), our unsupervised extraction tool for large-scale extraction from data lakes, <a href="https://arxiv.org/abs/1708.08905">here</a>.</li>
+              </ul>
+            </li>
+            <li> May 18, 2017: The <a href="http://orpheus-db.github.io">OrpheusDB</a> demo received a best demo honorable mention! Congrats to Liqi + Silu! Missed it at SIGMOD? You can still catch it here: <a href="http://tiny.cc/orpheus-demo">video.</a></li>
+            <li> May 15, 2017: Paper on IncVisage: our incrementally
+              improving visualization algorithm and interface has been accepted to VLDB'17! Paper <a href="papers/incvisage-paper.pdf">here</a>. Joint work
+              with theorists at MIT and Waterloo, and HCI/Viz folks at Illinois. Perhaps the first paper that has theory, DB, and HCI co-authors? (Would love to be corrected if not.)
+            </li>
+            <li> April 15, 2017: Thrilled and honored to receive: 
+              <ul>
+                <li> The <b><i>NSF CAREER Award</i></b>: Abstract <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1652750">here.</a> Excited to pursue the vision of optimizing "open-ended" crowdsourcing! Vision paper from IEEE Data Engg. Bulletin <a href="https://arxiv.org/abs/1610.05377">here</a>.
+                </li>
+                <li> The <b><i>TCDE (Technical Committed on Data Engineering) Early Career Award</i></b>, awarded for an individual's whole body of work in the first 5 years after the PhD. The award citation: <i>The award is for developing new interactive tools and techniques that expand the reach of data analytics, enabling powerful data-driven discoveries by experts and non-experts alike. </i>
+                </li>
+              </ul>
+            </li>
+            <li> April 15, 2017: <a href="http://orpheus-db.github.io">Orpheus</a> Updates:
+              demo accepted at SIGMOD 2017; <a href="https://arxiv.org/abs/1703.02475">paper</a> accepted at VLDB 2017 (no revisions!); open-source release <a href="https://github.com/orpheus-db/implementation/releases">here</a>. </li>
+            <li> April 3, 2017: The New York Times cited Adam Marcus and my <a href="http://populace-org.github.io">book</a> on crowdsourced data management. Article <a href="https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html">here</a>. </li>
+            <li> April 3, 2017: The HILDA 2017 workshop (co-located with SIGMOD) program is <a href="https://t.co/pvWVU4faiM">up</a>. </li>
+            <li> March 1, 2017: Manas's TKDE <a href="http://ieeexplore.ieee.org/document/7885129/">paper</a> on smart drill-down (from the "best of ICDE 2016") was accepted.
+            <li> February 20, 2017: Vision paper on next-gen visualization recommendation systems
+             with Manasi Vartak, Sam et al. is out at SIGMOD Record. Link <a href="https://t.co/gE3N36Igg7">here</a>. </li>
+            <li> 
+              January 30, 2017: My student Silu Huang won the MSR Faculty Fellowship: the first Illinois student since 2011! 
+              A great honor! Silu has been recently working on <a href="http://orpheus-db.github.io">Orpheus</a>. </li>
+            <li>
+              January 30, 2017: Yihan's paper on calibrating classifiers has been accepted as an ORAL presentation at <b>AISTATS'17</b>!  
+            </li>
+            <li>
+              January 15, 2017: Our paper analyzing a very large log of all tasks from a popular
+              crowdsourcing marketplace has been accepted at <b>VLDB'17</b>. Learn all about how a marketplace 
+              operates, what the distribution of tasks look like, and how the workers behave <a href="papers/crowd-data.pdf">here</a>.
+            </li>
+            <li>
+              January 10, 2017: Three of our key analytics tools, DataSpread, Zenvisage, and OrpheusDB,
+              are moving out of private betas with a few interested parties to the public, available 
+              for easy download and deployment. 
+              More details and download links here: <a href="http://tiny.cc/three-tools">
+              http://tiny.cc/three-tools</a>.
+            </li>
+            <li> 
+              January 1, 2017: New preprint release on Catamaran (formerly known as Datamaran), our new fully-unsupervised 
+              data extraction tool from machine generated data: no examples or supervision needed!
+              Preprint <a href="http://publish.illinois.edu/structextract/">here</a>.
+            </li>
+            <li> December 1, 2016: Two new paper updates: 
+              <ul>
+                <li> Our <a href="https://arxiv.org/abs/1512.06474">paper</a> on SlimFast: a data fusion algorithm, spearheaded by Theo Rekatsinas has been accepted at SIGMOD'17! </li>
+                <li> Our <a href="https://arxiv.org/abs/1610.05377">vision paper</a> on Open-Ended Crowdsourcing was accepted to appear at
+                  the IEEE data engineering bulletin, spearheaded by the amazing Tova Milo.</li>
+                </ul>
+            </li>
+            <li> December 1, 2016: I've given a bunch of talks on our three tools for human-in-the-loop data analytics: a distinguished colloquium at Northwestern, a keynote at
+            the Enterprise Intelligence workshop at KDD'16, and BigData events at Illinois
+            and Chicago. Grab the slides <a href="http://www.slideshare.net/AdityaParameswaran/three-tools-for-humanintheloop-data-science">here</a>.
+            <li> December 1, 2016: My exceptional PhD student, Silu Huang, was a finalist in the prestigious Microsoft Research PhD fellowship competition, with an in-person interview at MSR HQ -- so proud of her! Fingers crossed for the eventual outcome. </li>
+            <li> November 15, 2016: Many new preprints! Grab 'em while they're hot:
+            <ul>
+              <li> From the Zenvisage project: a <a href="incvisage.pdf">paper</a> on visualizations that incrementally improve over time, and a <a href="https://arxiv.org/abs/1611.04705">paper</a> on
+                our rapid sampling engine for visualizations. </li>
+              <li> From the Orpheus project: a <a href="nowhere.html">paper</a> describing data models and partitioning schemes
+                for relational dataset versioning. </li>
+              <li> From the Populace project: a <a href="https://arxiv.org/abs/1601.02034">paper</a> on consensus-based clustering of unstructured data. </li>
+              <li> From the DataSpread project: a <a href="dataspread.pdf">paper</a> evaluating representation schemes and 
+                indexing structures for billion cell spreadsheets. </li>
+            </ul> 
+            <li> November 15, 2016: We delivered our tutorial on crowdsourced data management at HCOMP'16: slides part <a href="http://www.slideshare.net/AdityaParameswaran/crowdsourced-data-processing-industry-and-academic-perspectives">1</a> part <a href="https://docs.google.com/presentation/d/1GWZ1hdneqIjABAlBYQtabQWF2nIc4Af3ww8WNIhF-q0/edit#slide=id.p">2</a>. </li>
+            <li> November 1, 2016: <img src="https://pbs.twimg.com/profile_images/786326771729780736/bLsiz7lo.jpg" style="height:30px;" border="20"> Thanks to Adobe for supporting our research efforts!
+            <li> November 1, 2016: New releases for <a href="http://zenvisage.github.io"><img src="images/zenvisage-main.png" style="width:80px;" border="5"></a>: a paper on the Zenvisage query language, ZQL and our smart-fuse query optimizer, accepted at VLDB'17 <a href="papers/zenvisage-vldb.pdf">here</a>, plus a demonstration paper accepted at CIDR'17 <a href="papers/zenvisage-cidr.pdf">here</a>. </li>
+            <li> October 15, 2016: I am one of the chairs of the Human-in-the-loop Data Analytics (HILDA) Workshop at SIGMOD'17, along with the peerless Joe Hellerstein, from Berkeley, and Carsten Binnig from Brown. 
+              Website <a href="http://hilda.io">here</a>. Follow us on <a href="https://twitter.com/hildaworkshop">twitter</a>. </li>
+            <li> October 1, 2016: My outstanding MS student, Vipul Venkataraman won the 
+              Siebel Scholarship: cool cash prize of $20K. Well-deserved! </li>
+            <li> September 15, 2016: Participated in a fun panel on "Will AI eat us all?" with the eminent team of Sunita Sarawagi, Sihem Amer-Yahia, H. Jagadish, and Ihab Ilyas at VLDB'16. Short answer: no.
+            <li> September 1, 2016: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:30px;" border="5"> Thanks to NSF for funding our work on <a href="http://dataspread.github.io">DataSpread</a> with an NSF BigData grant. Some Illinois press <a href="http://cs.illinois.edu/news/illinois-team-lands-major-nsf-funding-bring-spreadsheets-big-data-era">here</a>. </li>
+            <li> September 1, 2016: Participated in an invited workshop on the "Theory and Models for Crowds and Networks" with an eminent team of researchers in Oaxaca, Mexico. I presented a tutorial on the data management community's take on crowdsourcing. Slides <a href="nowhere.html">here</a>.
+            <li> August 1, 2016: New slick websites for projects:
+              <ul>
+                <li> <img src="images/dataspread-main.png" style="width:100px;" border="5">, our spreadsheet-database hybrid: <a href="http://dataspread.github.io">here</a>. </li>
+                <li> <img src="images/orpheus-main.png" style="width:100px;" border="5">, our versioned database system: <a href="http://orpheus-db.github.io">here</a>. </li>
+                <li> <img src="images/zenvisage-main.png" style="width:100px;" border="5">, our visualization recommendation system: <a href="http://zenvisage.github.io">here</a>. </li>
+                <li> <img src="images/populace-main.png" style="width:100px;" border="5">, our project on optimizing crowdsourcing: <a href="http://populace-org.github.io">here</a>. </li>
+              </ul>
+            </li>
+            <li> July 15, 2016: Our new paper on producing intelligent summaries of facets of papers, with Xiang Ren, Tarique Siddiqui, and Jiawei Han has been accepted at CIKM 2016!
+            <li> June 20, 2016: Our paper on data exploration at ICDE 2016 
+              was invited to the TKDE "best of conference" issue, an honor 
+              reserved for the top few papers at the conference. Great job Manas! </li>
+            <li> June 15, 2016: After two years of extensive collaborations with folks at the two institutes, I am now an "official" affiliate
+              of the <a href="http://www.igb.illinois.edu/">Institute for Genomic Biology</a>, and the <a href="http://beckman.illinois.edu/">Beckman Institute for Advanced Science and Technology</a>.
+            <li> June 1, 2016: Our <a href="http://arxiv.org/abs/1602.04256"> paper </a> on Squish: a tool for compression of relational datasets was accepted at KDD 2016! Our code is open-source and available on <a href="https://github.com/Preparation-Publication-BD2K/db_compress">Github</a>. </li>
+            <li> May 1, 2016: <img src="images/zenvisage-main.png" style="width:100px;" border="5"> New release on our visual data exploration platform zenvisage. Paper <a href="zenvisage.pdf">here</a>, and website dedicated to Zenvisage <a href="http://zenvisage.github.io">here</a>. Contact us if you'd like to test run zenvisage on your datasets!</li>
+            <li> April 15, 2016: We just received a seed grant from the Siebel Energy Institute to develop Zenvisage in collaboration with battery scientists at Carnegie Mellon! Excited to see what happens next. </li>
+            <li> April 10, 2016: We received a whopping <b> 3X </b> the number of submissions for the <a href="http://sigmod2016.org/calls_papers_sigmod_undergrad_poster.shtml">undergraduate research contest</a>. Who knows what these young researchers will accomplish next?
+            <li> April 1, 2016: Our <a href="decibel-tr.pdf">paper</a> on Decibel, the storage engine underlying DataHub, was accepted at SIGMOD 2016! 
+            <li> March 1, 2016: Thrilled to be among the "List of Teachers Ranked as Excellent by their Students" at Illinois! Happy to see that students enjoy my classes. </li>
+            <li> January 6, 2016: Adam and I are proud to finally release a <a href="crowd-book.html">book</a> on crowdsourced data management, a labor of love under development for two years. The book not only covers the state of the art, but also contains 
+              a survey of both industry users of crowdsourcing and managers of crowdsourcing marketplaces.
+            We hope that this book will be the <i>definitive reference for how crowdsourcing is used in practice</i>. Do send us comments! </li>
+            <li> January 1, 2016: Our vision <a href="nowhere.html">paper</a> on the unsolved challenges in large-scale data crowdsourcing was accepted at TKDE. </li>
+            <li> December 15, 2015: Our <a href="http://arxiv.org/abs/1412.0364">paper</a> on interactive exploration using a more expressive drill-down
+              operator was accepted at ICDE 2016 in Finland. </li>
+            <li> November 25, 2015: Some <a href = "http://cs.illinois.edu/news/nsf-grant-funds-datahub"> Illinois press
+            </a> on our NSF-funded DataHub grant. Thrilled and honored to be working with the amazing <a href="http://db.csail.mit.edu/madden/">Sam Madden</a> and <a href = "http://www.cs.umd.edu/~amol/">Amol Deshpande</a> at
+            solving the problems underlying collaborative data analytics. </li>
+            <li> November 15, 2015: Our <a href = "papers/param-est.pdf">paper</a> on optimally managing
+            worker and answer quality in crowdsourcing was accepted at SIGMOD 2016.
+            <li> October 1, 2015: <img src="http://www.cccblog.org/wp-content/uploads/2014/01/bd2k_logo.png" style="height:30px;" border="5"> We just heard word that NIH has funded our BD2K commons supplement. 
+              Looking forward to working with folks at UChicago to improve data publication workflows!</a> </li>
+        
+          
+            <li> September 15, 2015: Student awesomeness: my student Silu Huang won the <i>3M foundation fellowship</i>, while Tarique Siddiqui won the <i>Siebel Foundation fellowship</i>. </li>
+            <li> September 1, 2015: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:50px;" border="5"> Thanks to the NSF, we now have funding to support research
+              and development on DataHub via a Medium IIS grant with MIT and UMD! Link to the
+              project page <a href="http://datahub.org">here</a>. </li>
+            <li> August 1, 2015: The full SeeDB <a href="http://people.csail.mit.edu/mvartak/papers/seedb-full.pdf"> paper </a> has been accepted at VLDB 2016 in India! </a>
+            <li> July 1, 2015: Our JellyBean <a href="http://ilpubs.stanford.edu:8090/1128/">paper</a> on using humans to count objects in images will appear at HCOMP 2015!
+            <li> June 9, 2015: Release of a new <a href="http://arxiv.org/abs/1506.03018"> preprint </a> on calibrating the output
+              of confidence estimates from classification algorithms, using classical learning theory tools. This is work driven by my
+              awesome student Yihan Gao.
+            <li> June 6, 2015: Our DataHub query language proposal was accepted at TaPP, a focused provenance workshop. </li>
+            <li> June 1, 2015: Final tally for VLDB 2015 -- <i> three papers and three demos </i> on a variety of topics: 
+              <ul>
+                <li> papers: crowds, visualizations, and versioning; </li>
+                <li> demos: data exploration, Excel-meets-databases, and collaborative data analytics. </li>
+              </ul>
+            </li>
+            <li> May 27, 2015: Our <a href="http://arxiv.org/abs/1505.05211">paper</a> on versioning principles was accepted at VLDB'15 without any revisions! </li>
+            <li> May 15, 2015: Undergraduate research news: Andrew Kuznetsov, a freshman working in our group won
+              the ISUR undergraduate research prize, and Andrew with two other freshmen -- Andrew Thieck and Radhir Kothuri won the
+              third prize in the Illinois Engineering Open House competition for their crowdsourcing tool. </li>
+            <li> May 12, 2015: Our paper on <a href="papers/betamain.pdf">debiasing</a> was accepted at KDD 2015!</li>
+            <li> April 9, 2015: Our first release of a new project, titled <i> Data-Spread, </i> with my esteemed colleague <a href="https://wiki.cites.illinois.edu/wiki/display/kevinchang/Kevin+C.+Chang">Kevin Chang</a> and student Mangesh Bendre. Data-Spread is a tool that unifies databases and spreadsheets. You have to see it to believe it! 
+              <ul>
+                <li> <a href="dataspread">Here</a> is a YouTube video showing Data-Spread in action. </li>
+                <li> <a href="papers/data-spread-demo.pdf">Here</a> is our demo paper on Data-Spread. </li>
+              </ul>
+            </li>
+            <li> March 10, 2015: <i> Four more </i> new preprints in the last month! These were:
+            <ul> 
+              <li><a href="seedb-tr.pdf">our paper on SeeDB</a> for query driven
+                automatic visualization generation;</li>
+              <li><a href="http://ilpubs.stanford.edu:8090/1128/">our jellybean paper</a> on counting objects in images; turns out we can do way better than <i> humans or computer vision algorithms</i>!</li>
+              <li><a href="papers/betamain.pdf">our paper on debiasing of batches</a>; crowdsourcing practitioners often use batching to save costs, but this can lead to non-independence: we deal with this issue.</li>
+              <li>our versioning theory paper; to build a solid foundation for our <a href="datahub.csail.mit.edu">DataHub</a> project, we explored how to trade off storage and retrieval costs.</li>
+            </ul>
+            </li>
+            <li> February 9, 2015: Our <a href="http://arxiv.org/abs/1411.3374">paper</a> on exploiting correlations to avoid expensive predicate
+              evaluations was accepted at SIGMOD 2015! </li>
+            <li> February 12, 2015: Many thanks to Google for their support via a Google
+              Faculty Research <a href="http://googleresearch.blogspot.com/2015/02/google-faculty-research-awards-winter.html"> Award! </a> Excited to be building the next generation
+              visualization toolkit.
+            <li> December 10, 2014: <i> Three </i> new preprints in the last month! These were:
+            <ul> 
+              <li> <a href="http://arxiv.org/abs/1412.0364">smart drill-down</a>, our tool for zooming into portions of a dataset quickly;</li>
+              <li> <a href="papers/param-est.pdf">our paper</a> on globally optimal crowdsourcing quality management; and</li>
+              <li> <a href="papers/crowd-gather.pdf">our paper</a> on gathering data using the crowd, exploiting a hierarchy and MABs.</li>
+            </ul>
+            <li> November 10, 2014: <i> Three </i> new paper acceptances in the last month! 
+              <ul>
+                <li> Our <a href="http://arxiv.org/pdf/1409.0798v1.pdf">Datahub</a> paper was accepted at CIDR; </li>
+                <li> our rapid approximate visualization generation <a href="intel-sample-tr.pdf">paper</a> was accepted at VLDB; </li>
+                <li> and our paper on <a href="http://arxiv.org/pdf/1411.3377.pdf">generalized confidence intervals</a> for crowdsourced workers was accepted at ICDE! </li>
+              </ul>
+            <li> October 10, 2014: <img src="http://www.cccblog.org/wp-content/uploads/2014/01/bd2k_logo.png" style="height:30px;" border="5"> Thrilled to be a part of the new <a href="http://csl.illinois.edu/news/university-illinois-collaborates-mayo-clinic-revolutionize-genomic-data-analysis">NIH BD2K (Big Data 2 Knowledge) center</a> for revolutionizing genomic data analysis. Thank you, NIH, for the support! </li>
+            <li> September 2, 2014: We can finally talk about our exciting new project, titled <a href="http://arxiv.org/pdf/1409.0798v1.pdf">Datahub</a> (i.e., GitHub for Data) on collaborative data science and version management. The ambitious goal is to eliminate the pain-points of data book-keeping while doing collaborative data science. </li>
+            <li> September 1, 2014: Our paper on <a href="http://arxiv.org/abs/1408.6292">pricing for crowdsourcing tasks</a> has been accepted for presentation at <a href="http://www.vldb.org/2015/">VLDB 2015</a>! The paper studies a simple, but important problem: if you have a batch of tasks and a deadline, how should you vary price to meet the deadline? </li>
+            <li> August 25, 2014: Pleasantly surprised to be selected as the <a href="http://www.kdd.org/blog/2014-doctoral-dissertation-award">KDD dissertation award runner-up</a>, having already been given the <a href="http://www.sigmod.org/sigmod-awards">SIGMOD dissertation award</a>! Feel truly lucky to have two communities - SIGMOD and KDD - supporting my work! </li>
+            <li> August 24, 2014: Had a blast being a keynote speaker at <a href="http://poloclub.gatech.edu/idea2014/">KDD IDEA 2014</a> - a big thank you to the organizers for inviting me! If this year was any indication, IDEA is going to flourish as a workshop for many years! </li>
+            <li> August 20, 2014: Our paper on <a href="http://ilpubs.stanford.edu:8090/1098/">optimally learning maximum-likelihood worker accuracies</a> has been accepted as a work-in-progress paper for <a href="http://www.humancomputation.com/2014/">HCOMP 2014</a>! The paper tackles the problem of worker quality estimation in a way EM-based algorithms cannot - by providing optimality guarantees. </li>
+            <li> August 15, 2014: Started at <a href="http://cs.illinois.edu">Illinois</a>; exciting times ahead!  </li>
+            </ul>
+          </div> 
+            </div>
+          </div>
+      </div>
+
+
+      <a name="themes"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Synergistic Activities </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+        <!--
+          <p> I am an Associate Editor for <a href="http://sigmod.hosting.acm.org/record/sigmod/login.php">SIGMOD 
+            Record</a>, focusing on vision articles. Please consider sending us your most
+            controversial and/or interesting papers!
+          </p>
+          -->
+           <p> 
+            I serve on the steering committees of <a href="https://dais-workshop-icde.github.io/">Data AI Systems Workshop</a> @ICDE, <a href="http://hilda.io">HILDA</a>  (Human-in-the-loop Data Analytics) at SIGMOD and <a href="https://www.interactive-analysis.org/">DSIA</a> (Data Systems for Interactive Analysis) at VIS. Lots of excitement around this nascent area at the intersection of AI, databases, data mining, and visualization/HCI - join us! I currently serve as the Faculty Equity Advisor and the Space Lead for Systems for the Computer Science Division in EECS; I also served as the <a href="https://www.ischool.berkeley.edu/about/community">Faculty Equity Advisor</a> at the School of Information for two terms in 2023 and 2021. </p>
+           <p> I am serving as an Area Chair for SIGMOD 2026 and VLDB 2025 Demo.
+           I also serve as the Associate Editor for VLDB Journal. I am serving on the program committee for VLDB Tutorials 2025, VLDB 2024-25, and CIDR 2025.  I've served on the Program
+            Committees and as Area Chair/Editor of VLDB, KDD, SIGMOD, WSDM, WWW, SOCC, HCOMP, ICDE, and EDBT, 
+            many of them multiple times. 
+          </p>
+          <!-- <p>In the past, I stepped down as Associate Editor for <a href="http://sigmod.hosting.acm.org/record/sigmod/login.php">SIGMOD Record</a> after nearly half a decade. 
+            I co-organized HILDA 2017. I was the SIGMOD 2016 Undergraduate Research Chair. 
+          </p>-->
+
+        </div>
+      </div>
+
+      <!--
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h2>Visual Analytics</h2>
+          <p>Automatically recommending visualizations or visual summaries on very large volumes of data</p>
+          <p><a class="btn btn-default" href="visual.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <h2>Interactive Analytics</h2>
+          <p>Interactive querying of large datasets, keeping track of versions, while possibly sacrificing
+            slightly on accuracy of query results </p>
+            <p><a class="btn btn-default" href="query.html" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h2>Crowd-Powered Analytics </h2>
+            <p>Using crowdsourcing to process and make sense of large volumes of data </p>
+            <p><a class="btn btn-default" href="scoop.html" role="button">View details &raquo;</a></p>
+          </div>
+      </div>
+    -->
+      <!--
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h2>Information Extraction</h2>
+          <p>Extracting information from the web, integrating it with existing information, and surfacing this information to users </p>
+          <p><a class="btn btn-default" href="web.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <h2>Recommendation Systems</h2>
+          <p>Building scalable recommendation systems that take into account
+            contextual information</p>
+            <p><a class="btn btn-default" href="recom.html" role="button">View details &raquo;</a></p>
+          </div>
+      </div>
+      -->
+      <a name="recent"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Recent Releases </h2>
+
+        </div>
+      </div>
+
+      <a name="selected"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <script type="text/javascript">
+          display_papers([], true, 15);
+          </script>
+        </div>
+      </div>
+
+      <br/> <br/>
+      <a name="blog"></a>
+      <div class="row">
+        <div class="col-md-12">
+        <h2> Medium Blog </h2>
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-profile" data-width="80%" href="https://medium.com/@adityagp"></a>
+        <br/>  
+        </div>
+      </div> 
+      <br/> <br/>
+    
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Selected Projects</h2>
+
+        </div>
+      </div>
+
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="images/llms-in-prod.jpg"
+                   alt="Motion">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">LLMs In Production</h4>
+                  <p>Supporting and sustaining LLMs in production, including building robust pipelines, 
+                    identifying valuable constraints/assertions,
+                  evaluating performance, and maintaining state for long-running pipelines.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["agent-first", "regdebug", "promptevals","spade-ui", "spade-synthesis", "motion-demo", "mlops-interview", "crowd-prompt"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="images/data-agent-small.jpg"
+                   alt="data-agent">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Question Answering with LLMs</h4>
+                  <p>Building general-purpose question-answering systems with LLM-powered agents operating on stuctured data.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["nudge", "datascout", "multiagent-fail", "llm_proactive", "target-trl"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+
+       <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="images/paper.jpg"
+                   alt="ZenDB">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">LLM-Powered Document Analytics</h4>
+                  <p>Supporting queries on unstructured data, including PDFs, with applications in social justice.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["bargain", "twix","docwrangler","docetl", "zendb", "flor", "quilt", "requestatlas",  "crowd-prompt"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+       
+
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="https://github.com/lux-org/lux-resources/raw/master/readme_img/logo.png?raw=true"
+                   alt="lux">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Lux: An always-on visualization recommendation system</h4>
+                  <p>Lux is a tool for effortlessly visualizing insights from very large data sets in dataframe workflows. Lux builds on half a decade of work on visualization recommendation systems. </p>
+                   <p> Project page <a href="https://github.com/lux-org/lux">here</a>.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["solas", "shapesearch-cacm", "lux", "vizta", "shapesearch", "vispilot","vida","zenvisage-chi", "zenvisage", "vizrec-sigmod", "seedb-paper"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="https://modin.readthedocs.io/en/stable/_images/MODIN_ver2_hrz.png"
+                   alt="modin">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Modin: A Scalable Dataframe System</h4>
+                  <p>Modin applies database and distributed systems ideas to help run dataframe workloads faster, with over 2M open-source downloads. </p>
+                   <p> Project page <a href="https://github.com/modin-project/modin">here</a>.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["modin-parallel", "modin-vision", "opportunistic"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" 
+                  src="https://nbsafety.org/icon/favicon-192x192.png"
+                   alt="nbsafety">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">NBTools: Better Computational Notebooks</h4>
+                  <p>NBsafety and NBslicer make it easy for data scientists to write correct, reproducible code in computational notebooks. </p>
+                   <p> Project page <a href="https://github.com/ipyflow/ipyflow">here</a>.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["nbsafety", "nbslicer"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+<!--
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" src="images/Helix2-02.png" alt="helix">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Helix: An Accelerated Human-in-the-loop Machine Learning System</h4>
+                  <p>Helix accelerates the iterative development of machine learning pipelines with a human developer "in the loop" via intelligent assistance and reuse. </p>
+                   <p> Project page <a href="http://helix-ml.github.io">here</a>. </p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["prod-ml", "automl-survey", "openml","automl-mile","helix-tr", "helix-demo", "helix-vision", "helix-survey"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            <br/>
+          -->
+      <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" src="images/dataspread-fiverr3.png" alt="dataspread">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">DataSpread: A Spreadsheet-Database Hybrid</h4>
+                  <p>DataSpread is a tool that marries the best of databases and spreadsheets.</p>
+                   <p> Project page: <a href="http://dataspread.github.io">here</a></p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["taco-viewer", "taco", "dataspread-bench","dataspread-nav","dataspread-demo2", "dataspread-formula", "dataspread-vision", "dataspread-mental-models", "dataspread-reddit", "dataspread", "data-spread-demo"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+      <br/>
+      <!--
+      <div class="row">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object img-responsive img-thumbnail" width="150px" src="images/orpheus-main.png" alt="Datasift">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Orpheus: Relational Dataset Version Management at Scale</h4>
+            <p>DataHub (or "GitHub for Data") is a system that enables collaborative data science by 
+              keeping track of large numbers of versions and their dependencies compactly, and allowing users to
+              progressively clean, integrate and visualize their datasets. OrpheusDB is a component of DataHub focused on using a relational database for versioning.</p>
+               <p> Project page: <a href="http://orpheus-db.github.io">here</a></p>
+              <small>
+                <script type="text/javascript">
+                display_papers(["orpheus-journal", "data-diff-demo","datadiff", "orpheus", "orpheus-demo", "decibel", "squish", "version-ql", "datahub", "version-theory", "datahub-demo"], false)
+                </script>
+              </small>
+            </div>
+          </div>
+        </div>
+        <br/>
+      -->
+        
+        <!--<div class="row">
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object img-responsive img-thumbnail" width="150px" src="images/seedb.png" alt="SeeDB">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">SeeDB: Automatic Visualization Recommendation</h4>
+              <p>SeeDB automates the task of finding the right visualization for a query, significantly simplifying the laborious
+                task of identifying appropriate visualizations.</p>
+                <small>
+                  <script type="text/javascript">
+                  display_papers(["seedb-paper", "seedb", "seedb-demo"], false)
+                  </script>
+                </small>
+              </div>
+            </div>
+          </div>
+          <br/>
+        -->
+        <!--
+          <div class="row">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object img-responsive img-thumbnail" width="150px" src="images/populace-main.png" alt="crowd-alg">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Populace: A Suite of Crowd-Powered Algorithms</h4>
+                <p>Our work has developed a number of algorithms for gathering, processing, and understanding data obtained
+                  from humans (or crowds), while minimizing cost, latency, and error. Since 2014, our focus has been on optimizing open-ended crowdsourcing: an understudied and challenging class.</p>
+                <p> Project page: <a href="http://populace-org.github.io">here</a></p>
+                  <small>
+                    <script type="text/javascript">
+                    display_papers(["sorting","segmentation", "crowd-data","slimfast", "open-ended", "global", "challenges-crowd", "crowd-book", "jellybean", "pricing", "orchestra"], false)
+                    </script>
+                  </small>
+                </div>
+              </div>
+            </div>
+          -->
+        <!--
+            <br/>
+            <div class="row">
+          <div class="media">  
+          <a class="pull-left" href="#">
+            <img class="media-object img-responsive img-thumbnail" width="150px" src="images/datasift.png" alt="Datasift">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">DataSift: A Crowd-Powered Search Engine</h4>
+            <p>DataSift is a crowd-powered search engine that is useful for long or complex queries that traditional search engines
+              have trouble with, or with queries that contain rich media, such as images or videos.</p>
+              <small>
+                <script type="text/javascript">
+                display_papers(["datasift", "datasift-demo"], false)
+                </script>
+              </small>
+            </div>
+          </div>
+        </div>
+        
+        <br/>
+            <div class="row">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-responsive img-thumbnail" width="150px" src="images/needletail.png" alt="Needletail">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">NeedleTail: A System for Browsing</h4>
+                  <p>NeedleTail is a system tuned towards instantly returning a small number (a "screenful") of query results very quickly
+                    on extremely large datasets.</p>
+                    <small>
+                      <script type="text/javascript">
+                      display_papers(["needletail-demo"], false)
+                      </script>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            
+         --> 
+
+
+
+      </div>
+    </li>
+      
+        
+
+      <br/><br/>
+
+      <div id="sidebar">
+      </div>
+
+      
+      </div><!--/row-->
+
+      
+        
+
+      <hr>
+
+      <footer>
+        <small><p>&copy; Aditya Parameswaran, designed in 2014 with bootstrap</p></small>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+    <!--<script src="offcanvas.js"></script>-->
+  </body>
+  </html>
+
+

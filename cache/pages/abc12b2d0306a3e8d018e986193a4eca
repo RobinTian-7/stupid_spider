@@ -1,0 +1,1054 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="berg_style.css" type="text/css">
+  <title>Alex Berg Computer Vision UC Irvine</title>
+  <link rel="icon" href="im/alex_head.jpg" type="image/jpg">
+  <link rel="stylesheet" href="berg_style.css" type="text/css">
+<style>
+ul.pub{
+    list-style:none;
+    margin:0 0 1em 40px;
+    padding: 0;
+}
+ul.pub li{
+    line-height:1.5em;
+    margin: .25em 0;
+    padding: 0 0 0 40px;
+    background:url(leaf_grey4.png) no-repeat 0 0px;
+}
+ul li.new {
+    line-height:1.5em;
+    margin: .25em 0;
+    padding: 0 0 0 40px;
+    background:url(leaf_color4.png) no-repeat 0 0px;
+}
+@media print{
+  ul {
+    list-style:disc;
+    margin-left:30px;
+  }
+  ul li {
+    padding-left:0px;
+    background:none;
+  }
+  ul li.new {
+    padding-left:0px;
+    background:none;
+  }
+}
+</style>
+</head>
+
+
+
+<body>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3131693-1";
+urchinTracker();
+</script>
+
+<table border=0 cellpadding=10 width=800 bgcolor="#FFFFFF">
+  <tr>
+    <td rowspan=3>
+      <div class="image_link">
+        <a href="figs/alex_berg_new.jpg">
+<!--          <a href="http://www.cs.berkeley.edu/%7Eaberg/im/teetotaling.jpg"> -->
+<!--          <img src="figs/alex_berg_new.jpg" alt="Alex Berg" border="3" width=250> -->
+ <img src="figs/alex_berg_self.jpg" alt="Alex Berg" border="3" width=250>
+</font>
+        </a>
+      </div>
+    </td>
+
+    <td valign=center>
+      <!-- <a href="summary.html">
+        <font  size="+2">Alex Berg</font> ...</a> --> <br>
+      <small> 
+
+Alexander C.  Berg<br>
+UC Irvine<br>
+Computer Science<br>
+Office: DBH 4204<br>
+<td align=left>
+<!--<a href="https://en.wikipedia.org/wiki/Human_Rights_Campaign"><img src="im/hrc.png" width=100></a>-->
+<a href="bagjack_skidcat/index.html"><img src="im/t1.gif" width=100></a>
+</tr>
+  </tr>
+  <tr>
+    <td valign=center align=left>
+      <!-- <a href="#research">Research</a> &nbsp; | --> &nbsp;
+      <img src="leaf_color4.png" style="vertical-align:-20%;"> <a href="#publications">Publications</a> &nbsp; <!-- | &nbsp; -->
+<!--      <a href="#students">Students</a> &nbsp; --> <!-- |  &nbsp;
+      <a href="#teaching">Teaching</a> &nbsp; |  &nbsp;
+      <a href="#links">Links</a>-->
+
+    </td>
+  </tr>
+  <tr>
+    <td valign=center>
+
+<!-- <a href="alex"><b><font size=+1>Job application
+      materials</font></b></a><br><br> --> I am an associate professor
+      at UC Irvine as of March 2022. I have been a professor at UNC Chapel Hill and Stony Brook University, cofounded a startup, Shopagon, and worked in FAIR at Meta. My PhD was completed at U.C. Berkeley
+      with <a href="http://www.cs.berkeley.edu/~malik"><font size=+1>J</font>itendra
+      Malik</a>, and I have had the chance to work with many
+      wonderful people.<!--<a href="people.html"><b>people</b></a>.--><br><br>
+    </td>
+  </tr>
+</table>
+ 
+<table border=0 width=800 bgcolor=white><tr><td> I am interested in
+    all aspects of computer vision and related problems in other
+    fields.  My thesis was on shape and object recognition in images
+    using a new take on deformable templates.  I also work on
+    large-scale machine learning algorithms for object recognition and  detection, image retrieval, recognizing and synthesizing human
+    action in video, recovering human body poses from photographs,
+    detecting and identifying human faces in images, detecting
+      vehicles in images, and more... </p><br>
+<!-- <b><a href="#note">Note for potential graduate students.</a></b></p>   -->
+<br>
+<!--
+You can find my papers and citations on Google Scholar <a href="http://scholar.google.com/citations?user=jjEht8wAAAAJ&pagesize=100"><b>here</b></a>.<br>-->
+
+<!-- <h2>News</h2> -->
+<!-- <ul> -->
+<!-- <li>Talk at <a href="http://www.gputechconf.com/">GPU Technology Conference (GTC)</a> (March 19, 2015). -->
+<!-- <li><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1452851&HistoricalAwards=false">NSF CAREER award on Situated Recognition</a>.   <a href="http://acberg.com/berg_nsf_career.html">Project page</a>. -->
+<!-- <li><A href="#publications">Two papers</a> upcoming at CVPR on learning to match pairs of image patches(MatchNet) and learning when a pair of images can be aligned for fast structure from motion (PAIGE). -->
+<!-- <li><strike>Advertising a joint post-doc <a href="postdocad.html">position</a> together with Svetlana Lazebnik and Tamara Berg.</strike> -->
+<!-- <li>Our paper on entry level categories won the <a href="http://en.wikipedia.org/wiki/Marr_Prize#14th_ICCV.2C_2013.2C_Sydney.2C_Australia">Marr Prize</a> (best paper award) at ICCV 2013. -->
+<!-- <li>Upcoming <a href="http://www.image-net.org/challenges/LSVRC/2013/iccv2013.php">ImageNet challenge workshop</a> at ICCV 2013</li> -->
+<!-- <li><a href="#publications">2 papers</a> coming up at ICCV 2013 in Sydney -- a talk on revisiting entry level categories using modern computer vision recognition systems, and poster analyzing the data and results of last year's ImageNet challenge. -->
+<!-- <li>Invited Speaker at <a href="http://http://publish.illinois.edu/cslallertonconference//">51st Annual Allerton Conference on Communication, Control, and Computing</a>. -->
+<!-- <li><font color="red">Moving to UNC Chapel Hill starting in August!</font></a> -->
+<!-- <li>Invited Panelist at <a href="http://www.fgvc.org/">2nd Workshop on Fine-Grained Visual Classification</a>. -->
+<!-- <li>Invited Speaker at <a href="http://nlp.cs.illinois.edu/WVL13/">Workshop on Vision and Language (WVL) 2013</a>. -->
+<!-- <li>Invited Speaker at <a href="http://ita.ucsd.edu/workshop/13/talks">Information Theory and Applications (ITA)</a> -->
+<!-- <li>Our paper on neural representation during short term visual memory was accepted to NeuroImage. -->
+<!-- <li>Invited Speaker <a href="https://sites.google.com/site/bigvision2012/">BIGVISION</a> workshop at NIPS 2012. -->
+<!-- <li>Invited Speaker NAE JA Frontiers of Engineering, Irvine CA. -->
+<!-- <li>Invited speaker <a href="http://vision.stanford.edu/bavm2012/">San Francisco Bay Area Computer Vision Meeting</a> at Stanford University. -->
+<!-- <li>I will be an area chair for CVPR 2013 -->
+<!-- <li>Keynote speaker at Rutgers end of year Perecptual Science  Forum <a href="http://ruccs.rutgers.edu/ruccs/talks_vision.php"></a>. -->
+<!-- <li><b>Efficient Classification for Additive Kernel SVMs</b> to appear in TPAMI (with Subhransu Maji and Jitendra Malik) -->
+<!-- <li>2 papers related to natural language description of images accepted, one each to ACL and NAACL. -->
+<!-- <li>3 papers accepted to CVPR 2012.</li> -->
+<!-- <li>Speaking at <a href="https://sites.google.com/a/icvgip.org/mpcv/">Mysore Park Workshop on Computer Vision</a> in Mysore, India. -->
+<!-- <li>Speaking at nips <a href="http://nips.cc/Conferences/2011/Program/event.php?ID=2543">workshop</a> on similarity learning</li> -->
+<!-- <li>NIPS paper accepted "Fast and Balanced: Efficient Label Tree Learning for Large Scale Object Recognition" with Jia Deng and Fei-Fei Li. -->
+<!-- <li>Speaking at the <a href="http://www.frontiersincomputervision.com">Frontiers In Computer Vision Workshop</a>. -->
+<!-- <li>I am organizing a <a href="http://tamaraber.com/CLSP2011">6+2 week summer </a><a href="http://tamaraberg.com/CLSP11">workshop</a> at <a href="http://www.clsp.jhu.edu/workshops/">JHU-CLSP</a> with <a href="http://tamaraberg.com">Tamara Berg</a> on modeling the relationship between visually descriptive language and images -->
+<!-- <li><a href="#publications">3 Papers</a> accepted to CVPR 2011. -->
+<!-- <li>I will be an area chair for CVPR 2012. -->
+<!-- <li><b>Describable Visual Attributes for Face Verification and Image Search</b> to appear in TPAMI (with Neeraj Kumar, Peter Belhumeur and Shree Nayar). -->
+<!-- <li>Teaching <a href="vision">computer vision<a/> -->
+<!-- <li><a href=kinect>Simple demo code for interfacing the Kinect with Matlab on OSX (or linux) using a mex file</a>! -->
+<!-- <li>I am organizing the <a href="lslv"><b>Large Scale Learning for Vision</b></a>  workshop at CVPR 2011. -->
+<!-- <li><b>Using Digital Photography to Examine Grazing in Montane Meadows</b> to appear in Rangeland Ecology & Management (with Susan McIlroy and Barbara Allen-Diaz).<br><br> -->
+<!-- <\!-- -->
+<!-- <li><a href="http://www.ri.cmu.edu/event_detail.html?event_id=270&menu_id=242&event_type=seminars"><b>Talk</b></a> at CMU's VASC Seminar Oct 2010. -->
+<!-- <li>Co-organized the <a href="http://www.image-net.org/challenges/LSVRC/2010/index"><b>Pascal Imagenet Large Scale Visual Recognition Challenge</b></a> presented as a workshop at ECCV 2010 (Stay tuned for the 2011 challenge!)<br><br> -->
+<!-- <li>ECCV 2010 paper: <a href="papers/10000_categories_eccv2010.pdf"><b>What does classifying more than 10,000 image categories tell us?</b></a> as part of the <a href="http://www.image-net.org/about-people">ImageNet</a> project. <br><br> -->
+<!-- <li>ECCV 2010 paper: <a href="berg_attributediscovery_eccv2010.pdf"><b>Automatic Attribute Discovery and Characterization</b></a></font> <br><br> -->
+<!-- -\-> -->
+<!-- </ul> -->
+
+<!-- <h2>Students</h2>
+<a name="students">
+Xufeng Han (PhD Co-advised with D. Samaras) &nbsp; |  &nbsp; Yuxi Kou  (MS)  &nbsp; |  &nbsp; Ki Hyun Kim  (MS)  |  &nbsp; Prasad Prabhu (MS)  |  &nbsp; Ankush Gulati  (MS)  |  &nbsp; Hailin  (MS)  |  &nbsp; Hanyu Guo  (MS) <br><br>
+-->
+
+<!-- <h2>Code & Details</h2> -->
+<!-- <a href="http://www.image-net.org/challenges/LSVRC/2012/download-public">ILSVRC dev-kit</a> |  -->
+<!-- <a href="http://ttic.uchicago.edu/~smaji/projects/ped-detector">INRIA Pedestrian Detector</a> |  -->
+<!-- <a href="http://ttic.uchicago.edu/~smaji/projects/fiksvm">Fast IKSVM classifiers</a> |  -->
+<!-- <a href="http://ttic.uchicago.edu/~smaji/projects/add-models">Additive Classifiers</a> -->
+<!-- <\!--- Additive Classifiers --\-> -->
+<!-- <br> -->
+
+<!-- <H2>Research</H2>
+<a name="research">
+
+     <table><tr><td><a href="#research"><img src="figs/additive_small.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="#research"><b>Additive Classifiers for Detection</b></a><br> Exponential improvements
+       for <a href="http://acberg.com/papers/mb09iccv.pdf">training</a>
+       and <a href="http://acberg.com/papers/mbm08cvpr.pdf">evaluating</a>
+       additive classifiers for recognition and detection.  See Code links above for code and evaluations.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="http://www.cs.columbia.edu/CAVE/projects/faceverification/"><img src="figs/pull1_small.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="http://www.cs.columbia.edu/CAVE/projects/faceverification/"><b>Attributes for Face Verification</b></a><br>
+      Describable visual attributes for face recognition.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="shape.html"><img src="figs/helicopters4_small2.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="shape.html"><b>Shape Matching and Object Recognition</b></a><br>
+      Non-rigid alignment of shapes for object recognition.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="gb.html"><img src="figs/gb_catch2_small.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="gb.html"><b>Geometric Blur</b></a><br>
+       Averaging over geometric distortions.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="action.html"><img src="figs/action_catch3_small.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="action.html"><b>Action Recognition and Synthesis</b></a><br>
+       Recognizing and synthesizing actions in video.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="pose.html"><img src="figs/iqp_people_white_small.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="pose.html"><b>Recovering poses of humans in images</b></a><br>
+     Finding  poses in still images using exemplar based and 
+     bottom-up approaches.
+     </td></tr></table><br>
+
+     <table><tr><td><a href="faces.html"><img src="figs/faces_catch.jpg"></a></td><td>&nbsp;&nbsp;</td>
+     <td valign=top><a href="faces.html"><b>Names and Faces</b></a><br>
+       Associating names and faces in news photographs.
+     </td></tr></table><br>
+-->
+
+<a name="publications">&nbsp;</a>
+<H2>Publications</H2>
+
+You can find my papers and citations on Google Scholar <a href="http://scholar.google.com/citations?user=jjEht8wAAAAJ&pagesize=100"><b>here</b></a>.<br><br>
+
+
+<ul class=pub>
+
+<li class=new><font size="+1"><a href="https://openaccess.thecvf.com/content/WACV2024/html/Shvets_Joint_Depth_Prediction_and_Semantic_Segmentation_With_Multi-View_SAM_WACV_2024_paper.html"><b>Joint Depth Prediction and Semantic Segmentation with Multi-View SAM</b></a></font><br>
+M Shvets, D Zhao, M Niethammer, R Sengupta, AC Berg<br>
+ <a href="https://openaccess.thecvf.com/content/WACV2024/html/Shvets_Joint_Depth_Prediction_and_Semantic_Segmentation_With_Multi-View_SAM_WACV_2024_paper.html"><b><font color="black">WACV 2024</font></b></a></i></b> <br><br>
+  
+<li class=new><font size="+1"><a href="https://catherine-r-he.github.io/SelfEQ/"><b>Improved Visual Grounding through Self-Consistent Explanations</b></a></font><br>
+Ruozhen He, Paola Cascante-Bonilla, Ziyan Yang, AC Berg, Vicente Ordo&ntilde;ez<br><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/He_Improved_Visual_Grounding_through_Self-Consistent_Explanations_CVPR_2024_paper.pdf"><b><font color="black">CVPR 2024</font></b></a></i></b><br><br>  
+
+
+
+
+<li class=new><font size="+1"><a href="https://arxiv.org/abs/2304.02643"><b>Segment Anything</b></a></font><br>
+A Kirillov, E Mintun, N Ravi, H Mao, C Rolland, L Gustafson, T Xiao, S Whitehead, AC Berg, W-Y Lo, P Doll&agrave;r, R Girshick<br>
+<b><i><a href="https://arxiv.org/abs/2304.02643"><b><font color="black">ICCV 2023</font></b></a></i></b> [<a href="http://segment-anything.com">website</a>] [<a href="https://github.com/facebookresearch/segment-anything">code</a>] [<A href="https://segment-anything.com/demo">demo</a>]<br><br>
+
+
+<li class=new><font size="+1"><a href="https://arxiv.org/abs/2202.04639"><b>Point-Level Region Contrast for Object Detection Pre-Training</b></a></font><br>
+Y Bai, X Chen, A Kirillov, A Yuille, AC Berg<br>
+<b><i>CVPR 2022</i></b><br><br>
+
+
+<li class=new><font size="+1"><a href="https://arxiv.org/abs/2007.00077"><b>Similarity Search for Efficient Active Learning and Search of Rare Concepts</b></a></font><br>
+  C Coleman, E Chou, J Katz-Samuels, S Culatana, P Bailis, AC Berg, R Nowak, R Sumbaly, M Zaharia, I.Z. Yalniz<br>
+<b><i>AAAI 2022</i></b><br><br>
+
+<li class=new><font size="+1"><a href="https://proceedings.neurips.cc/paper/2021/file/33d6548e48d4318ceb0e3916a79afc84-Paper.pdf"><b>Neural Pseudo-Label Optimism for the Bank Loan Problem</b></a></font><br>
+  A Pacchiano, S Singh, E Chou, AC Berg, J Foerster<br>
+<b><i>Neurips 2021</i></b><br><br>
+
+
+<li class=new><font size="+1"><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Hu_Worldsheet_Wrapping_the_World_in_a_3D_Sheet_for_View_ICCV_2021_paper.html"><b>Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis From a Single Image</b></a></font><br>
+ R Hu, N Ravi, AC Berg, D Pathak<br>
+<b><i>ICCV 2021</i></b><br><br>
+
+<li class=new><font size="+1"><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Hu_Worldsheet_Wrapping_the_World_in_a_3D_Sheet_for_View_ICCV_2021_paper.html"><b>Boundary IoU: Improving Object-Centric Image Segmentation Evaluation</b></a></font><br>
+B Cheng, R Girshick, P DollÃ¡r, AC Berg, A Kirillov<br>
+<b><i>CVPR 2021</i></b><br><br>
+
+
+
+<li ><font size="+1"><a href="to appear"><b>SymGAN: Orientation Estimation without Annotation for Symmetric Objects</b></a></font><br>
+<a href="http://www.cs.unc.edu/~ammirato"><font color="black">Philip Ammirato</font></a>,
+<a href="https://research.nvidia.com/person/jonathan-tremblay"><font color="black">Jonathan Tremblay,</font></a>
+<a href="https://research.nvidia.com/person/mingyu-liu"><font color="black">Ming-Yu Liu,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="https://research.nvidia.com/node/2945"><font color="black">Dieter Fox</font></a>
+<br><b><i>WACV 2020</i></b><br><br>
+
+
+<li ><font size="+1"><a href="http://openaccess.thecvf.com/content_ICCV_2019/html/Shvets_Leveraging_Long-Range_Temporal_Relationships_Between_Proposals_for_Video_Object_Detection_ICCV_2019_paper.html"><b>Leveraging Long-Range Temporal Relationships Between Proposals for Video Object Detection</b></a></font><br>
+  <a href="https://github.com/mike-shvets"><font color="black">Mykailo Shvets</font></a>,
+<a href="https://scholar.google.com/citations?user=yFMX138AAAAJ&hl=en"><font color="black">Wei Liu</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i>ICCV 2019</i></b><br><br>
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1906.06597"><b>IMP: Instance Mask Projection for High Accuracy Semantic Segmentation of Things</b></a></font><br>
+  <a href="https://www.cs.unc.edu/~cyfu"><font color="black">Cheng-Yang Fu</font></a>,
+<a href="https://tlberg.com"><font color="black">Tamara L. Berg</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i>ICCV 2019</i></b><br><br>
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1901.03353"><b>RetinaMask: Learning to predict masks improves state-of-the-art single-shot detection for free</b></a></font><br>
+<a href="https://www.cs.unc.edu/~cyfu"><font color="black">Cheng-Yang Fu,</font></a>
+<a href="https://www.cs.unc.edu/~mshvets"><font color="black">Mykhailo Shvets,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i>arXiv 2019 </i></b><br>
+<a href="https://github.com/chengyangfu/retinamask">GitHub</a><br><br>
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1803.04610"><b>Target-Driven Instance Detection</b></a></font><br>
+<a href="http://www.cs.unc.edu/~ammirato"><font color="black">Philip Ammirato</font></a>,
+<a href="https://www.cs.unc.edu/~cyfu"><font color="black">Cheng-Yang Fu,</font></a>
+<a href="https://www.cs.unc.edu/~mshvets"><font color="black">Mykhailo Shvets,</font></a>
+<a href="http://www.cs.gmu.edu/~kosecka"><font color="black">Jana Ko&#353;eck&#225;</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i>arXiv 2018 </i></b><br>
+<a href="https://github.com/ammirato/target_driven_instance_detection">GitHub</a><br><br>
+
+
+<li ><font size="+1"><a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Ammirato_Active_Vision_Dataset_CVPR_2018_paper.html"><b>Active Vision Dataset Benchmark</b></a></font><br>
+  <a href="http://www.cs.unc.edu/~ammirato"><font color="black">Philip Ammirato</font></a>,
+  <a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+  <a href="http://www.cs.gmu.edu/~kosecka"><font color="black">Jana Ko&#353;eck&#225;</font></a>
+<br><b><i>Computer Vision and Patter Recognition (CVPR) Workshops 2018</i></b><br><br>
+
+<li ><font size="+1"><a href="http://openaccess.thecvf.com/content_ECCV_2018/html/Eunbyung_Park_Meta-Tracker_Fast_and_ECCV_2018_paper.html"><b>Meta-tracker: Fast and robust online adaptation for visual object trackers<b> </b></a></font><br>
+<a href="http://www.sc.unc.edu/~eunbyung"><font color="black">Eunbyung Park,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg.</font></a>
+<br><b><i>European Conference on Computer Vision (ECCV) 2018.</i></b><br><br>
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1707.08559"><b>Video Highlight Prediction Using Audience Chat Reactions</b></a></font><br>
+<a href="https://www.cs.unc.edu/~cyfu"><font color="black">Cheng-Yang Fu,</font></a>
+<a href=""><font color="black">Joon Lee,</font></a>
+<a href="https://www.cs.unc.edu/~mbansal/"><font color="black">Mohit Bansal,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<br><b><i>Empirical Methods in Natural Language Processing (EMNLP), 2017. </i></b><br>
+<a href="https://github.com/chengyangfu/Pytorch-Twitch-LOL">[Code/Dataset]</a><br><br>
+
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1702.07836"><b>Synthesizing training data for object detection in indoor scenes</b></a></font><br>
+  <a href=""><font color="black">G. Georgakis</font></a>,
+  <a href=""><font color="black">A. Mousavian</font></a>,
+  <a href="http://acberg.com"><font color="black">A.C. Berg</font></a>,
+  <a href="http://www.cs.gmu.edu/~kosecka"><font color="black">J. Ko&#353;eck&#225;</font></a>,
+<br><b><i>Robotics Science and Systems (RSS) 2017</i></b><br><br>
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1702.08272"><b>A Dataset for Developing and Benchmarking Active Vision</b></a></font><br>
+  <a href="http://www.cs.unc.edu/~ammirato"><font color="black">Philip Ammirato</font></a>,
+  <a href="http://www.cs.unc.edu/~poirson"><font color="black">Patrick Poirson</font></a>,
+    <a href="http://www.cs.unc.edu/~eunbyung"><font color="black">Eunbyung Park</font></a>,
+  <a href="http://www.cs.gmu.edu/~kosecka"><font color="black">Jana Ko&#353;eck&#225;</font></a>,
+  <a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i>International Conference on Robotics and Automation (ICRA) 2017</i></b><br><br>
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1703.02921"><b>Transformation-grounded Image Generation Network for Novel 3d View Synthesis<b> </b></a></font><br>
+<a href="http://www.sc.unc.edu/~eunbyung"><font color="black">Eunbyung Park,</font></a>
+<a href=""><font color="black"> Jimei Yang,</font></a>
+<a href=""><font color="black"> Ersin Yumer,</font></a>
+<a href=""><font color="black"> Duygu Ceylan,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg.</font></a>
+<br><b><i>Computer Vision and Pattern Reccognition (CVPR) 2017.</i></b><br><br>
+
+
+<li ><font size="+1"><a href="http://ieeexplore.ieee.org/abstract/document/7926668/"><b>When was that made?</a></b></a></font><br>
+<a href="http://www.cs.unc.edu/~sirionv/"><font color="black">Sirion Vittayakorn,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>
+<br><b><i>Winter Conference on Applications of Computer Vision (WACV) 2017.  </i></b><br><br>
+
+
+<li ><font size="+1"><a href="http://arxiv.org/abs/1608.00272"><b>Modeling
+Context in Referring Expressions</b></a></font><br>
+<a href=""><font color="black">Licheng Yu,</font></a>
+<a href=""><font color="black">Patrick Poirson,</font></a>
+<a href=""><font color="black">Shan Yang,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg,</font></a>
+<br><b><i>European Conference on Computer Vision (ECCV) 2016. </i></b><br>
+<a href="https://github.com/lichengunc/refer">[Dataset]</a><br><br>
+
+
+<li ><font size="+1"><a href="http://arxiv.org/abs/1512.02325"><b>SSD: Single Shot MultiBox Detector</b> <b><a href="https://github.com/weiliu89/caffe/tree/ssd">[code]</a></b></a></font><br>
+  <a href="http://www.cs.unc.edu/~wliu"><font color="black">Wei Liu</font></a>,
+  <a href="http://research.google.com/pubs/DragomirAnguelov.html"><font color="black">D. Anguelov</font></a>,
+  <a href="http://research.google.com/pubs/DumitruErhan.html"><font color="black">D. Erhan</font></a>,
+  <a href="http://research.google.com/pubs/ChristianSzegedy.html"><font color="black">C. Szegedy</font></a>,
+  <a href="http://www-personal.umich.edu/~reedscot/"><font color="black">S. Reed</font></a>,
+  <a href="http://www.cs.unc.edu/~cyfu/"><font color="black">C-Y Fu</font></a>,
+  <a href="http://acberg.com"><font color="black">A.C. Berg</font></a>
+<br><b><i><a href="http://arxiv.org/abs/1512.02325">Arxiv preprint</a></i></b> <b>ECCV 2016 (oral)</b><br><br>
+
+
+
+<li ><font size="+1"><a href="https://arxiv.org/abs/1609.05590"><b>Fast Single Shot Detection and Pose Estimation</b></a></font><br>
+  <a href="http://www.cs.unc.edu/~poirson"><font color="black">Patrick Poirson</font></a>,
+  <a href="http://www.cs.unc.edu/~ammirato"><font color="black">Philip Ammirato</font></a>,
+    <a href="http://www.cs.unc.edu/~cyfu"><font color="black">Cheng-Yang Fu</font></a>,
+  <a href="http://www.cs.unc.edu/~wliu"><font color="black">Wei Liu</font></a>,
+  <a href="http://www.cs.gmu.edu/~kosecka"><font color="black">Jana Ko&#353;eck&#225;</font></a>,
+  <a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b>3DV 2016</b><br><br>
+
+
+<li ><font size="+1"><a href=""><b>Combining Multiple Sources of Knowledge in Deep CNNs for Action Recognition<a href="papers/madlibs.pdf"><b> </b></a></font><br>
+<a href=""><font color="black">Eunbyung Park,</font></a>
+<a href=""><font color="black">Xufeng Han,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg.</font></a>
+<br><b><i>IEEE Winter Conference on Computer Vision (WACV) 2016.</i></b><br><br>
+
+
+<li ><font size="+1"><a href="papers/wheretobuyit2015iccv.pdf"><b>Where to buy it: Matching Street clothing Photos to Online Shops</b></a></font><br>
+<a href="http://www.cs.unc.edu/~hadi/"><font color="black">Hadi Kiapour,</font></a>
+<a href="http://www.cs.unc.edu/~xufeng/"><font color="black">Xufeng Han,</font></a>
+<a href="http://www.cs.uiuc.edu/~slazebni"><font color="black">Svetlana Lazebnik,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>
+<br><b><i>International Conference on Computer Vision (ICCV) 2015 (oral).</i></b><br><br>
+
+
+
+<li ><font size="+1"><a href="papers/madlibs.pdf"><b>Visual Madlibs: Fill in the blank Description Generation and Question Answering</b></a></font><br>
+<a href=""><font color="black">Licheng Yu,</font></a>
+<a href=""><font color="black">Eunbyung Park,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg,</font></a>
+<br><b><i>International Conference on Computer Vision (ICCV 2015) (ArXiv, May 2015).</i></b><br>
+<a href="http://tamaraberg.com/visualmadlibs/">Project Page</a><br><br>
+
+
+
+<li ><font size="+1"><a href="papers/schoenberger2015efficient.pdf"><b>Efficient Two-View Geometry Classification</b></a></font><br>
+<a href="http://www.cs.unc.edu/~jsch/"><font color="black">Johannes L. Schonberger</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.unc.edu/~jmf"><font color="black">Jan-Michael Frahm</font></a>
+<br><b><i>German Conference on Pattern Recognition (GCPR) 2015 (Aachen).</i></b><br><br>
+
+
+<li ><font size="+1"><a href="http://link.springer.com/article/10.1007/s11263-015-0840-y?wt_mc=email.event.1.SEM.ArticleAuthorOnlineFirst"><b>Large Scale Retrieval and Generation of Image Descriptions</b></a></font><br>
+<a href=""><font color="black">V. Ordonez, X. Han, P. Kuznetsova, G. Kulkarni, M. Mitchell, K. Yamaguchi, K. Stratos, A. Goyal, J. Dodge,  A. Mensch, H. Daum&eacute III,  A.C. Berg,  Y. Choi, T.L. Berg</font></a><br>
+<b><i>International Journal of Computer Vision (IJCV), July  2015.</i></b><br><br>
+
+
+
+<li ><font size="+1"><a href="http://arxiv.org/abs/1409.0575"><b>ImageNet Large Scale Visual Recognition Challenge</b></a><b></b></a></font><br>
+<a href="http://ai.stanford.edu/~olga/"><font color="black">Olga Russakovsky(*)</font></a>,
+<a href="http://web.eecs.umich.edu/~jiadeng/"><font color="black">Jia Deng(*)</font></a>,
+<a href=""><font color="black">Hao Su</font></a>,
+<a href="http://ai.stanford.edu/~jkrause/"><font color="black">Jonathan Krause</font></a>,
+<a href=""><font color="black">Sanjeev Satheesh</font></a>,
+<a href=""><font color="black">Zhiheng Huang</font></a>,
+<a href="http://ai.stanford.edu/~andrej/"><font color="black">Andrej Karthapy</font></a>,
+<a href="http://people.csail.mit.edu/khosla/"><font color="black">Aditya Khosla</font></a>,
+<a "href=http://hci.stanford.edu/msb/"><font color="black">Michael Bernstein</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a>
+<br><b><i>International Journal of Computer Vision (IJCV) 2015 </i></b><br><br>
+
+
+
+<li ><font size="+1"><a href=""><b>MatchNet: Unifying Feature and Metric Learning for Patch-based Matching</b></a></font><br>
+<a href="http://www.cs.unc.edu/~xufeng/"><font color="black">Xufeng Han</font></a>,
+<a href="http://research.google.com/pubs/ThomasLeung.html"><font color="black">Thomas Leung</font></a>,
+<a href="http://research.google.com/pubs/YangqingJia.html"><font color="black">Yangqing Jia</font></a>,
+<a href="http://research.google.com/pubs/RahulSukthankar.html"><font color="black">Rahul Sukthankar</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>
+<br><b><i> IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2015 </i></b><br><br>
+
+<li ><font size="+1"><a href=""><b>PAIGE: PAirwise Image Geometry Encoding for Improved Efficiency in
+Structure-from-Motion</b></a></font><br>
+<a href="http://www.cs.unc.edu/~jsch/"><font color="black">Johannes L. Schonberger</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.unc.edu/~jmf"><font color="black">Jan-Michael Frahm</font></a>
+<br><b><i> IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2015 </i></b><br><br>
+
+<li ><font size="+1"><a href=""><b>Predicting Entry-Level Categories</b></a> <a href="papers/ijcv_entry_draft.pdf">[draft]</a></font><br>
+<a href="http://www.cs.unc.edu/~vicente/"><font color="black">Vicente Ordonez</font></a>,
+<a href="http://www.cs.unc.edu/~wliu/"><font color="black">Wei Liu</font></a>,
+<a href="http://web.eecs.umich.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://homes.cs.washington.edu/~yejin/"><font color="black">Yejin Choi</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>
+<br><b><i> International Journal of Computer Vision (IJCV) 2015 </i></b><br><br>
+
+
+<li ><font size="+1"><a href="http://tamaraberg.com/papers/runway_to_realway.pdf"><b>Runway to Realway: Visual Analysis of Fashion</a></b></a></font><br>
+<a href="http://www.cs.unc.edu/~sirionv/"><font color="black">Sirion Vittayakorn,</font></a>
+<a href="http://www.cs.sunysb.edu/~kyamagu/"><font color="black">Kota Yamaguchi,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>
+<br><b><i>Winter Conference on Applications of Computer Vision (WACV) 2015.  </i></b><br>
+<a href="http://tamaraberg.com/runway2realway">Project Page</a><br><br>
+
+<li ><font size="+1"><a href="http://tamaraberg.com/papers/aaai2015.pdf"><b>Refer-to-as Relations as Semantic Knowledge</a></b></a></font><br>
+<a href=""><font color="black">Song Feng,</font></a>
+<a href="http://www.sravi.org"><font color="black">Sujith Ravi,</font></a>
+<a href="https://sites.google.com/site/ravik53/"><font color="black">Ravi Kumar,</font></a>
+<a href=""><font color="black">Polina Kuznetsova,</font></a>
+<a href="http://www.cs.unc.edu/~wliu/"><font color="black">Wei Liu,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg,</font></a>
+<a href="http://homes.cs.washington.edu/~yejin/"><font color="black">Yejin Choi</font></a>
+<br><b><i>AAAI Conference on Artificial Intelligence (AAAI) 2015.  </i></b><br><br>
+
+
+<li><font size="+1"><a href="papers/hipster_eccv14.pdf"><b>Hipster Wars: Discovering Elements of Fashion Styles</b></a></font><br>
+<a href="http://www.cs.unc.edu/~hadi/"><font color="black">Hadi Kiapour,</font></a>
+<a href="http://www.cs.sunysb.edu/~kyamagu/"><font color="black">Kota Yamaguchi,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>
+<br><b><i>European Conference on Computer Vision (ECCV) 2014.</i></b><br>
+<a href="http://hipsterwars.com">HipsterWars Game</a><br><br>
+
+
+<li><font size="+1"><a href="papers/multilabel_chi2014.pdf"><b>Scalable Multi-Label Annotation</b></a><b></b></a></font><br>
+<a href="http://web.eecs.umich.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://ai.stanford.edu/~olga/"><font color="black">Olga Russakovsky</font></a>,
+<a href="http://ai.stanford.edu/~jkrause/"><font color="black">Jonathan Krause</font></a>,
+<a "href=http://hci.stanford.edu/msb/"><font color="black">Michael Bernstein</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a>
+<br><b><i>CHI 2014 (short) (Toronto)</i></b><br><br>
+
+
+<li><font size="+1"><a href="papers/xray_wacv2014.pdf"><b>Materials Discovery: Fine-Grained Classification of X-ray Scattering Images</b></a><b></b></a></font><br>
+<a href="http://www.cs.unc.edu/~hadi/"><font color="black">Hadi Kiapour</font></a>,
+<a href="http://yager-research.ca/"><font color="black">Kevin G. Yager</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg</font></a>,
+<br><b><i>Winter Conference on Applications of Vision (WACV) 2014 (Steamboat Springs) </i></b><br><br>
+
+
+
+<li><font size="+1"><a href="http://www.journalofvision.org/content/13/3/30.full"><b>Modeling Guidance and Recognition in Categorical Search: Bridging Human and Computer Object Detection</b></a></font><br>
+Gregory Zelinsky, Yifan Peng, Alexander Berg, Dimitris Samaras<br>
+<b><i>Journal of Vision, Volume 13, Number 3, 2013</i></b><br><br>
+
+
+<li><font size="+1"><a href="papers/naming_iccv2013.pdf"><b>From large scale image categorization to entry-Level categories</a><b></b></a></font><br>
+<a href="http://www.cs.sunysb.edu/~vordonezroma/"><font color="black">Vicente Ordonez</font></a>,
+<a href="http://www.cs.princeton.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href=""><font color="black">Tamara L Berg</font></a>
+<br><i>ICCV 2013 (Sydney) (talk, <a href="http://en.wikipedia.org/wiki/Marr_Prize#14th_ICCV.2C_2013.2C_Sydney.2C_Australia"><font color=red>Marr Prize</font></a>)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/avocado_iccv2013.pdf"><b>Detecting avocados to zucchinis: what have we done, and where are we going?</a><b></b></a></font><br>
+<a href="http://ai.stanford.edu/~olga/"><font color="black">Olga Russakovsky</font></a>,
+<a href="http://web.eecs.umich.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href=""><font color="black">Zhiheng Huang</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a>
+<br><i>ICCV 2013 (Sydney)</i><br><br>
+
+<li><font size="+1"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23380167"><b>Multiple-voxel pattern analysis of selective representation of visual working memory</b></a></font><br>
+<a href="http://www.cs.stonybrook.edu/~xufhan"><font color="black">Xufeng Han</font></a>,  
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, <a href=""><font color="black">Hwamee Oh</font></a>,  
+<a href="http://www.cs.stonybrook.edu/~samaras"><font color="black">Dimitris Samaras</font></a>,
+<a href="http://www.psychology.sunysb.edu/cns/"><font color="black">Hoi-Chung Leung</font></a><br>
+<i><b>NeuroImage 2013</b></i><br><br>
+
+<li><font size="+1"><a href="papers/acl13_generalization.pdf"><b>Generalizing Image Captions for Image-Text Parallel Corpus</a></b></a></font><br>
+<a href=""><font color="black">Polina Kuznetsova,</font></a>
+<a href=""><font color="black">Vicente Ordonez,</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg,</font></a>
+<a href="http://tamaraberg.com"><font color="black">Tamara L. Berg,</font></a>
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a>
+<br><i><b>Association for Computational Linguistics (ACL) 2013.</b> </i><br>
+<a href="http://www.cs.stonybrook.edu/~pkuznetsova/imgcaption/">Data</a><br><br>
+
+<li><font size="+1"><a href=""><b>BabyTalk: Understanding and Generating Simple Image Descriptions</a><b></b></a></font>
+<br><a href="http://girishkulkarni008.web.officelive.com/aboutus.aspx"><font color="black">Girish Kulkarni</font></a>,
+<a href=""><font color="black">Visruth Premraj</font></a>,
+<a href="http://www.cs.sunysb.edu/~vordonezroma/"><font color="black">Vicente Ordonez</font></a>,
+<a href="http://www.sagnikdhar.com"><font color="black">Sagnik Dhar</font></a>,
+<a href=""><font color="black">Siming Li</font></a>,
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href=""><font color="black">Tamara L Berg</font></a>
+<br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2013.  </i><br><br>
+
+
+<li><font size="+1"><a href="papers/mbm2012pami.pdf"><b>Efficient Classification for Additive Kernel SVMs</b></a></font><br>
+<a href="http://www.cs.berkeley.edu/~smaji"><font color="black">Subhransu Maji</font></a>,  
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Jan. 2013, v35,I1,pp. 66-77</i><br><br>
+
+
+<li><font size="+1"><a href="papers/collective_acl.pdf"><b>Collective Generation of Natural Image Descriptions</b></a></font><br>
+<a href=""><font color="black">Polina Kuznetsova</font></a>,
+<a href=""><font color="black">Vicente Ordonez</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara Berg</font></a>
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a><br>
+<i>ACL 2012 (Jeju)</i><br><br>
+
+<li><font size="+1"><a href="papers/desctext.pdf"><b>Detecting Visual Text</b></a></font><br>
+<a href=""><font color="black">J. Dodge, A. Goyal, X. Han,  A. Mensch, M. Mitchell, K. Stratos, K. Yamaguchi,  A.C.Berg,  T.L. Berg, Y. Choi, H. Daum&eacute III</font></a><br>
+<i>NAACL 2012 (Montreal)</i><br><br>
+
+
+<li><font size="+1"><a href=""><b>Modeling Guidance and Recognition in Categorical Search: Bridging Human and Computer Object Detection</b></a></font><br>
+<a href=""><font color="black">Gregory Zelinsky, Yifan Peng, Alexander Berg, Dimitris Samaras</a><br>
+<i>VSS 2012</i><br><br>
+
+
+
+<li><font size="+1"><a href="papers/dcmsvm.pdf"><b>DCMSVM: Distributed Parallel Training For Single-Machine Multiclass Classifiers</b></a>  <a href="papers/dcmsvm_supp.pdf">[supp.]</a></font><br>
+<a href=""><font color="black">Xufeng Han</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a><br>
+<i>CVPR 2012 (Providence)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/hedging.pdf"><b>Hedging Your Bets: Optimizing Accuracy-Specificity Trade-offs in Large Scale Visual Recognition</b></a> <a href="papers/hedging-supp.pdf">[supp.]</a></font><br>
+<a href="http://www.cs.princeton.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://ai.stanford.edu/~jkrause/"><font color="black">Jonathan Krause</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a><br>
+<i>CVPR 2012 (Providence)</i><br><br>
+
+<li><font size="+1"><a href="papers/cvpr12_importance.pdf"><b>Understanding and Predicting Importance in Images</b></a></font><br>
+<a href=""><font color="black">A.C.Berg,  T.L. Berg, H. Daum&eacute III, J. Dodge, A. Goyal, X. Han,  A. Mensch, M. Mitchell, A. Sood, K. Stratos, K. Yamaguchi</font></a><br>
+<i>CVPR 2012 (Providence)</i><br><br>
+
+
+<li><font size="+1"><a href=""><b>Midge: Generating Image Descriptions From Computer Vision Detections</b></a></font><br>
+<a href=""><font color="black"> Mitchell, M., Dodge, J., Goyal, A., Yamaguchi, K., Stratos, K., Han, X., Mensch, A., Berg, A. C., and Berg, T. L., Daum&eacute III, H.</font></a><br>
+<i>EACL 2012 (Avignon)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/fast_balanced.pdf"><b>Fast and Balanced: Efficient Label Tree Learning for Large Scale Object Recognition</b></a></font>[<a href="papers/fast_balanced.pdf">pdf</a>]<br>
+<a href="http://www.cs.princeton.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://stanford.edu/~ssanjeev/"><font color="black">Sanjeev Satheesh</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a><br>
+<i>NIPS 2011 (Granada)</i><br><br>
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/berg_face_attributes_pami.pdf"><b>Describable Visual Attributes for Face Verification and Image Search</b></a></font>
+[<a href="http://acberg.com/papers/berg_face_attributes_pami.pdf">pdf</a>]<br>
+<a href="http://www.cs.columbia.edu/~neeraj"><font color="black">Neeraj Kumar</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+  <a href="http://www.cs.columbia.edu/~belhumeur"><font color="black">Peter N. Belhumeur</font></a>,
+    <a href="http://www.cs.columbia.edu/~nayar"><font color="black">Shree K. Nayar</font></a><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI), October 2011</i><br><br>
+
+<li><font size="+1"><a href="http://www.srmjournals.org/doi/abs/10.2111/REM-D-09-00130.1"><b>Using Digital Photography to Examine Grazing in Montane Meadows [JREM page]</b></a></font><br> 
+<a href="http://ecnr.berkeley.edu/persPage/dispPP.php?I=803"><font color="black">Susan McIlroy</a>,
+<a href="http://nature.berkeley.edu/allen-diazlab/index.html"><font color="black">Barbara Allen-Diaz</a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a><br>
+<i>Journal of Rangeland Ecology & Management, March 2011</i><br><br>
+
+
+<li><font size="+1"><a href="papers/ngram_desc.pdf"><b>Composing Simple Image Descriptions using Web-scale N-grams</b></a></font>[<a href="papers/ngram_desc.pdf">pdf</a>]<br>
+<a href=""><font color="black">Siming Li</font></a>,
+<a href=""><font color="black">Girish Kulkarni</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara Berg</font></a>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a><br>
+<i>CoNLL 2011 (Portland)</i><br><br>
+
+
+
+<li><font size="+1"><a href="papers/hierarchical_semantic_indexing.pdf"><b>Hierarchical Semantic Indexing for Large Scale Image Retrieval</b></a></font>[<a href="papers/hierarchical_semantic_indexing.pdf">pdf</a>]<br>
+<a href="http://www.cs.princeton.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a><br>
+<i>CVPR 2011 (Colorado Springs)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/baby_talk.pdf"><b>Baby Talk: Understanding and Generating Simple Image Descriptions</b></a></font>[<a href="papers/baby_talk.pdf">pdf</a>]<br>
+<a href=""><font color="black">Girish Kulkarni</font></a>,
+<a href=""><font color="black">Visruth Premraj</font></a>,
+<a href=""><font color="black">Sagnik Dhar</font></a>,
+<a href=""><font color="black">Siming Li</font></a>,
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Yejin Choi</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara Berg</font></a><br>
+<i>CVPR 2011 (Colorado Springs)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/socialprediction_cvpr2011.pdf"><b>Who are you with and where are you going?</b></a></font><br>
+<a href="http://www.cs.sunysb.edu/~kyamagu"><font color="black">Kota Yamaguchi</font></a>,
+<a href=""><font color="black">Alexander C. Berg</font></a>,
+<a href="http://tamaraberg.com"><font color="black">Tamara Berg</font></a>,
+<a href="http://www.cs.stonybrook.edu/~ychoi"><font color="black">Luis Ortiz</font></a><br>
+<i>CVPR 2011 (Colorado Springs)</i><br><br>
+
+
+<li><font size="+1"><a href="papers/10000_categories_eccv2010.pdf"><b>What does classifying more than 10,000 image categories tell us?</b></a></font>
+[<a href="papers/10000_categories_eccv2010.pdf">pdf</a>]
+<br>
+<a href="http://www.cs.princeton.edu/~jiadeng/"><font color="black">Jia Deng</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.princeton.edu/~li/"><font color="black">Kai Li</font></a>,
+<a href="http://vision.stanford.edu/~feifeili/"><font color="black">Li Fei-Fei</font></a><br>
+<i>ECCV 2010 (Crete)</i><br><br>
+
+
+
+<li><font size="+1"><a href="papers/berg_attributediscovery_eccv2010.pdf"><b>Automatic Attribute Discovery and Characterization</b></a></font>
+[<a href="papers/berg_attributediscovery_eccv2010.pdf">pdf</a>]
+<br>
+<a href="http://tamaraberg.com/"><font color="black">Tamara L. Berg</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href=""><font color="black">Jonathan Shih</font></a><br>
+<i>ECCV 2010 (Crete)</i><br><br>
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/mb09iccv.pdf"><b>Max-Margin Additive Models for Detection</b></a></font>
+[<a href="http://acberg.com/papers/mb09iccv.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/additive_iccv09.ppt">ppt</a>]
+<br>
+<a href="http://www.cs.berkeley.edu/~smaji"><font color="black">Subhransu Maji</font></a>,
+<a href="http://acberg.edu/~aberg"><font color="black">Alexander C. Berg</font></a><br>
+<i>ICCV 2009 (Kyoto)</i><br><br>
+
+  <li><font size="+1"><a href="http://acberg.com/papers/kbbn09iccv.pdf"><b>Attribute and Simile Classifiers for Face Verification</b></a></font>
+[<a href="http://acberg.com/papers/kbbn09iccv.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/attributes_iccv09.ppt">ppt</a>]<br>
+<a href="http://www.cs.columbia.edu/~neeraj"><font color="black">Neeraj Kumar</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+  <a href="http://www.cs.columbia.edu/~belhumeur"><font color="black">Peter N. Belhumeur</font></a>,
+    <a href="http://www.cs.columbia.edu/~nayar"><font color="black">Shree K. Nayar</font></a><br>
+<i>ICCV 2009 (Kyoto)</i><br><br>
+
+  
+<li><font size="+1"><a href="http://acberg.com/papers/bb09iv.pdf"><b>Finding Iconic Images</b></a></font><br>
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>,  
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a><br>
+Proceedings of the 2nd Internet Vision Workshop, 2009<br><br>
+
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/mbm08cvpr.pdf"><b>Classification using Intersection Kernel Support Vector Machines is Efficient</b></a></font>
+[<a href="http://acberg.com/papers/mbm08cvpr.pdf">pdf</a>][<a href="http://www.cs.berkeley.edu/~smaji/projects/fiksvm/">CODE</a>]<br>
+<a href="http://www.cs.berkeley.edu/~smaji"><font color="black">Subhransu Maji</font></a>,  
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>CVPR 2008</i><br><br>
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/berg_parsing_iccv_07.pdf"><b>Parsing Images of Architectural Scenes</b></a></font>
+[<a href="http://acberg.com/papers/berg_parsing_iccv_07.pdf">pdf</a>]
+<br>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,  
+<a href="http://www.floraine.ch/berkeley%20site/index.htm"><font color="black">Floraine Grabler</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>ICCV 2007</i><br><br>
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/trecvid06.pdf"><b>Detecting Categories in News Video using Acoustic, Speech and Image Features</b></a></font>
+[<a href="http://acberg.com/papers/trecvid06.pdf">pdf</a>]
+<br>
+<a href="http://www.cs.berkeley.edu/%7Epetrov"><font color="black">Slav Petrov</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Earlo"><font color="black">Arlo Faria</font></a>,
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href=""><font color="black">Pascal Michaillat</font></a>,
+<a href=""><font color="black">Andreas Stolcke</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Eklein"><font color="black">Dan Klein</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>(video) TREC 2006</i><br><br>
+
+
+<li><font size="+1"><a href="http://acberg.com/papers/zbmm_cvpr06_knnsvm.pdf"><b>SVM-KNN: Discriminative Nearest Neighbor Classification for Visual Category Recognition</b></a></font>
+[<a href="http://acberg.com/papers/zbmm_cvpr06_knnsvm.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/zbmm_cvpr06_knnsvm.ps.gz">ps</a>]
+<br>
+<a href="http://www.cs.berkeley.edu/%7Enhz"><font color="black">Hao Zhang</font></a>,  
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Emmaire"><font color="black">Michael Maire</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>CVPR 2006</i><br><br>
+
+
+
+
+</li><li><font size="+1"><a href="http://acberg.com/papers/rbm_iccv05_people.pdf"><b>Recovering Human Body Configurations using Pairwise Constraints Between Parts</b></a></font>
+[<a href="http://acberg.com/papers/rbm_iccv05_people.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/rbm_iccv05_people.ps.gz">ps</a>]
+<br>
+<a href="http://www.cs.berkeley.edu/%7Exren"><font color="black">Xiaofeng Ren</font></a>,  
+<a href=""><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>ICCV 2005</i><br><br>
+
+</li><li><a href="http://acberg.com/papers/berg_correspondence_cvpr.pdf"><font size="+1"><b>Shape Matching and Object Recognition using Low Distortion Correspondence</b></font></a>
+[<a href="http://acberg.com/papers/berg_correspondence_cvpr.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_correspondence_cvpr.ps.gz">ps</a>]
+[<a href="http://acberg.com/papers/berg_cvpr05.ppt">ppt</a>]<br>
+<a href=""><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>IEEE Computer Vision and Pattern Recognition (CVPR) 2005</i><br><br>
+
+
+</li><li><a href="http://acberg.com/papers/berg_correspondence.pdf"><font size="+1"><b>Shape Matching and Object Recognition using Low Distortion Correspondence</b></font></a>
+[<a href="http://acberg.com/papers/berg_correspondence.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_correspondence.ps.gz">ps</a>]<br>
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>,
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>,  
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+<i>U.C. Berkeley Technical Report, Dec. 2004</i><br><br>
+
+
+</li><li><font size="+1"><a href="http://acberg.com/papers/journal_berg.pdf"><b>Names and Faces</b></a></font> 
+[<a href="http://acberg.com/papers/journal_berg.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/journal_berg.ps.gz">ps</a>]
+<br>
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Ejaety"><font color="black">Jaety Edwards</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Emmaire"><font color="black">Michael Maire</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Eryanw"><font color="black">Ryan White</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Eywteh"><font color="black">Yee Whye Teh</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Eegmil"><font color="black">Erik Learned-Miller</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Edaf"><font color="black">David A. Forsyth</font></a> <br>
+<i>In submission</i><br><br>
+
+
+</li><li><font size="+1"><a href="http://acberg.com/papers/berg_whos_in_the_picture.pdf"><b>Who's in the Picture</b></a></font>
+[<a href="http://acberg.com/papers/berg_whos_in_the_picture.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_whos_in_the_picture.ps.gz">ps</a>]
+<br>
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Ejaety"><font color="black">Jaety Edwards</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Edaf"><font color="black">David A. Forsyth</font></a> <br>
+<i>NIPS 2004</i><br><br>
+
+
+</li><li><font size="+1"><a href="http://acberg.com/papers/berg_names_and_faces.pdf"><b>Names and Faces in the News</b></a></font>
+[<a href="http://acberg.com/papers/berg_names_and_faces.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_names_and_faces.ps.gz">ps</a>]
+<br>
+<a href="http://www.tamaraberg.com"><font color="black">Tamara L. Berg</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Ejaety"><font color="black">Jaety Edwards</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Emmaire"><font color="black">Michael Maire</font></a>,
+<a href="http://www.cs.berkeley.edu/%7Eryanw"><font color="black">Ryan White</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Eywteh"><font color="black">Yee Whye Teh</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Eegmil"><font color="black">Erik Learned-Miller</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Edaf"><font color="black">David A. Forsyth</font></a> <br>
+Computer Vision and Pattern Recognition (CVPR) 2004, Washington D.C., pp 848-854.<br><br>
+
+</li><li><a href=""><font size="+1"><b>Video Based Motion Synthesis by Splicing and Morphing</b></font></a>
+[<a href="http://acberg.com/papers/berg_video_motion_synthesis_tr.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_video_motion_synthesis_tr.ps.gz">ps</a>]<br>
+<a href="http://www.cs.sfu.ca/%7Emori"><font color="black">Gregory P. Mori</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.cmu.edu/%7Eefros"><font color="black">Alexei A. Efros</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Eeden"><font color="black">Ashley Eden</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a> <br>
+U.C. Berkeley Technical Report UCB/CSD-4-1337<br><br>
+
+
+</li><li><a href=""><font size="+1"><b>Recognizing Action at a Distance</b></font></a>
+[<a href="http://acberg.com/papers/berg_action.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_action.ps.gz">ps</a>]<br>
+<a href="http://www.cs.cmu.edu/%7Eefros"><font color="black">Alexei A. Efros</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.sfu.ca/%7Emori"><font color="black">Gregory P. Mori</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a> <br>
+International Conference on Computer Vision (ICCV) 2003,
+<a href="http://acberg.com/pics/iccv2003_nice.html">Nice</a>, 
+pp 726-733.<br><br>
+
+
+</li><li>
+<a href="http://acberg.com/abstracts/geometric_blur.html"><font size="+1"><b>Geometric Blur for Template Matching</b></font></a>
+[<a href="http://acberg.com/papers/berg_geometric_blur.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_geometric_blur.ps.gz">ps</a>]<br>
+
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Emalik"><font color="black">Jitendra Malik</font></a><br>
+
+Computer Vision and Pattern Recognition (CVPR) 2001, 
+<a href="http://acberg.com/pics/cvpr2001">Hawaii</a>, 
+pp I.607-614<br><font size="-2">&nbsp;</font><br>
+
+</li><li><a href="http://acberg.com/abstracts/webwalker.html"><font size="+1"><b>Approximating Aggregate Queries about Web Pages via Random Walks</b></font></a>
+[<a href="http://acberg.com/papers/berg_webwalker.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_webwalker.ps.gz">ps</a>]<br>
+<a href="http://www.almaden.ibm.com/cs/people/ziv/"><font color="black">Ziv Bar-Yossef</font></a>, 
+<a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a>, 
+<a href="http://research.microsoft.com/users/schien/"><font color="black">Steve Chien</font></a>, 
+<a href="http://www.cpe.ku.ac.th/%7Ejtf/index-en.html"><font color="black">Jittat Fakcharoenphol</font></a>, 
+<a href="http://www.cs.berkeley.edu/%7Edror"><font color="black">Dror Weitz</font></a><br>
+Very Large Data Bases (VLDB) 2000,
+<a href="http://acberg.com/pics/vldb2000_cairo.html">Cairo</a>, 
+pp 535-544<br><br>
+
+
+</li><li><a href="http://acberg.com/papers/berg_thesis.pdf"><font size="+1"><b>Shape Matching and Object Recognition</b></font></a>
+[<a href="http://acberg.com/papers/berg_thesis.pdf">pdf</a>]
+[<a href="http://acberg.com/papers/berg_theis.ps.gz">ps</a>]<br>
+&nbsp; <a href="http://acberg.com"><font color="black">Alexander C. Berg</font></a><br>
+&nbsp; Ph.D. Thesis, Computer Science Division, U.C. Berkeley, December 2005<br>
+
+</li></ul>
+<br><br>
+
+<!--
+<a name="teaching">
+<table>
+  <tr>
+    <td width=18> &nbsp; </td>
+    <td> <H2>Teaching</H2><td>
+  </tr>
+  <tr>
+    <td> <br>&nbsp;&nbsp; <font size=+1>Computer Science (UNC)</font> <ul> 
+      <li> &nbsp; <b>Undergraduate Computational Photography</b> Spring 2016
+      <li> &nbsp; <b>Graduate Machine Learning</b> Spring 2015
+      <li> &nbsp; <b>Graduate Topics in Cyber Physical Systems automotive vision</b> Spring 2015
+      <li> &nbsp; <b>Undergraduate Computational Photography</b> Fall 2014
+      <li> &nbsp; <b>Graduate Computer Vision</b> Spring 2014
+      <li> &nbsp; <b>Graduate Big Data</b> Fall 2013
+      <li>cs170 <b>Efficient Algorithms and Intractable Problems</b> Fall 1997, Fall 1999 
+      <li>cs174 <b>Combinatorics and Discrete Probability</b> Spring 1998
+      <li>cs184 <b>Foundations of Computer Graphics</b> Fall 1998, Spring 1999, Spring 2000
+      <li>cs284 (Graduate) <b>Computer-Aided Geometric Design</b> Fall 1999
+    </td>
+
+    <td width=18> &nbsp; </td>
+    <td> <br>&nbsp;&nbsp; <font size=+1>Computer Science (SBU)</font> <ul> 
+      <li>cs70 &nbsp; <b>Discrete Mathematics for Computer Science</b> Fall 2000
+      <li>cs170 <b>Efficient Algorithms and Intractable Problems</b> Fall 1997, Fall 1999 
+      <li>cs174 <b>Combinatorics and Discrete Probability</b> Spring 1998
+      <li>cs184 <b>Foundations of Computer Graphics</b> Fall 1998, Spring 1999, Spring 2000
+      <li>cs284 (Graduate) <b>Computer-Aided Geometric Design</b> Fall 1999
+    </td>
+
+    <td width=18> &nbsp; </td>
+    <td> <br>&nbsp;&nbsp; <font size=+1>Computer Science</font> <ul> 
+      <li>cs70 &nbsp; <b>Discrete Mathematics for Computer Science</b> Fall 2000
+      <li>cs170 <b>Efficient Algorithms and Intractable Problems</b> Fall 1997, Fall 1999 
+      <li>cs174 <b>Combinatorics and Discrete Probability</b> Spring 1998
+      <li>cs184 <b>Foundations of Computer Graphics</b> Fall 1998, Spring 1999, Spring 2000
+      <li>cs284 (Graduate) <b>Computer-Aided Geometric Design</b> Fall 1999
+    </td>
+  </tr>
+  <tr>
+    <td width=18> &nbsp; </td>
+    <td> <br>&nbsp;&nbsp; <font size=+1>Mathematics</font> <ul> 
+      <li>math 54 <b>Linear Algebra</b> Spring 1996 
+      <li>math 55 <b>Discrete Mathematics</b> Fall 1995
+    </td>
+  </tr>
+</table>
+
+<br><br><br>
+<table>
+ <tr><td width=18> &nbsp; </td>
+ <td> <a name="links"></a><H2>Links </H2><br><font size=-2>&nbsp;</font><br>
+ </tr>
+
+ <tr>
+   <td width=18> &nbsp; </td>
+   <td> <a href="http://www.cs.berkeley.edu/projects/vision/seminar"> <img src="im/vision_meeting.jpg" alt="*" height=51  border=0></a>
+   </td>
+   <td align=top>
+     <font size=+2>
+     <a href="http://www.cs.berkeley.edu/projects/vision/seminar">Computer Vision Seminar</a></font><br>  Schedule for the weekly Computer Vision Seminar.
+   </font>
+</td>
+</tr>
+
+
+ <tr>
+   <td width=18> &nbsp; </td>
+   <td> <a href="http://www.cs.berkeley.edu/projects/vision/"> <img src="im/vision_group.jpg" alt="*" height=51  border=0></a>
+   </td>
+   <td align=top>
+     <font size=+2>
+     <a href="http://www.cs.berkeley.edu/projects/vision/">Computer Vision Group</a></font><br>
+   </font>
+</td>
+</tr>
+
+
+ <tr>
+   <td width=18> &nbsp; </td>
+   <td> <a href="oldnotes"> <img src="im/tnotes2.gif" alt="*" border=0></a>
+   </td>
+   <td align=top>
+     <font size=+2>
+     <a href="oldnotes">Old Course Notes</a></font><br>  Notes and other materials from two undergraduate theory courses I have TA'd, available upon request.
+   </font>
+</td>
+</tr>
+
+ <tr>
+   <td width=18> &nbsp; </td>
+   <td> <a href="http://www.cs.berkeley.edu/projects/vision/workshop01/conference.html"> <img src="im/bim_icon.jpg" alt="*" border=0></a>
+   </td>
+   <td align=top>
+<font size=+2>
+<a href="http://www.cs.berkeley.edu/projects/vision/workshop01/conference.html">CGVV'01</a></font></br>
+Workshop on the Convergence of Graphics, Vision, and Video 2001.<br>
+A great workshop in Berkeley over spring break.
+</td>
+</tr>
+<tr>
+   <td> &nbsp; </td>
+<td>  <a href="http://www.cs.berkeley.edu/Research/Projects/vision/classes/cs294-appearance_models/sp2001"> <img src="im/t2_icon.jpg" alt="*" border=0></a> </td>
+<td align=top>
+<font size=+2>
+<a href="http://www.cs.berkeley.edu/Research/Projects/vision/classes/cs294-appearance_models/sp2001">Appearance Models Course Page</a><br>
+</font>
+A computer vision / computer graphics course at Berkley in spring 2001<br> in cooperation with Pat Hanrahan and others from Stanford.
+
+  </td>
+ </tr>
+-->
+</table>
+<br><br>
+<!-- GoStats.com -->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var go_aid=501935;
+var go_cid=1;
+var go_iid=2;
+var go_z='';
+var go_serv='c2.gostats.com';
+var go_cw=88;
+var go_ch=31;
+var go_js="1.0";
+var go_r=Math.random()+"&amp;a="+go_aid+"&amp;t="+go_cid+"&amp;i="+
+go_iid+"&amp;r="+
+escape(document.referrer)+"&amp;p="+escape(window.location.href);
+document.cookie="gostats=1; path=/";
+go_r+="&amp;c="+(document.cookie?"y":"n");
+//--><!]]></script>
+<script type="text/javascript" language="javascript1.1"><!--//--><![CDATA[//><!--
+go_js="1.1";
+go_r+="&amp;j="+(navigator.javaEnabled()?"y":"n");
+//--><!]]></script>
+<script type="text/javascript" language="javascript1.2"><!--//--><![CDATA[//><!--
+go_js="1.2";
+go_r+="&amp;w="+screen.width+"&amp;h="+screen.height+"&amp;d="+
+(((navigator.appName.substring(0,3)=="Mic"))?screen.colorDepth:screen.pixelDepth);
+//--><!]]></script>
+<script type="text/javascript" language="javascript1.3"><!--//--><![CDATA[//><!--
+go_js="1.3";
+//--><!]]></script>
+
+<!-- <script type="text/javascript" src="http://c2.gostats.com/js/count4.js?id=501935"></script>
+<noscript><div><a href="http://c2.gostats.com/click.xml?501935" target="_top"><img
+src="http://c2.gostats.com/bin/count?a=501935&amp;t=1&amp;i=2&amp;z="
+style="border-width:0px;width:88px;height:31px" alt="Free Hit Counter" 
+width="88" height="31" /></a><br />
+<a style="font-size: 9px" href="http://gostats.com" 
+title="Free Hit Counter">Free Hit Counter</a></div></noscript>
+< ! - - GoStats.com -->
+
+</td></tr></table>
+<!-- 
+<table width=800>
+<tr><td>
+<a name=note>&nbsp;</a>
+<b>Note for potential graduate students:</b>  You do not need to contact me.  UNC Computer Science graduate admissions are done centrally.  See this <a href="http://cs.unc.edu/admissions/graduate/graduate-programs/">link</a>.  Unfortunately I can not respond to very many e-mails about applying.  That said I am always interested in very well qualified large-scale machine learning and computer vision students.  My recent papers give a good sample of my reseach interests.</td>
+</tr>
+</table>
+-->
+</body>
+
+</html>

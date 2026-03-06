@@ -1,0 +1,315 @@
+<html>
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<title> Lauren Pick </title>
+<style>
+body {
+  font-family: 'Nunito', Tahoma, Verdana, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #f1f1f1;
+  background-size: cover;
+  background-attachment:fixed;
+  font-weight: 300;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0px;
+  font-size: 1.1em;
+  border-top: 3px solid #0066bb;
+  display:flex;
+  flex-direction:column;
+  gap: 2em;
+  justify-content:space-evenly;
+}
+a {
+  text-decoration: none;
+  color: #0066bb;
+  font-weight: 500;
+}
+a:hover{
+  text-decoration: none;
+  color: #d9a676;
+}
+.titlebar{
+  color: #0066bb;
+  width: 100%;
+  float: top;
+  margin-bottom: 2em;
+}
+.header {
+  min-width: 400px;
+  width:100%;
+  padding-top: 1em;
+  display:flex;
+  flex-direction:column;
+}
+.intro {
+  display:flex;
+  gap:2em;
+}
+@media screen and (max-width: 850px) {
+  .intro{
+    flex-direction:column;
+  }
+}
+@media screen and (min-width: 900px) {
+  .intro{
+    flex-direction:row;
+  }
+}
+.buttons {
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+.authors {
+  display:block;
+  margin-top:0.5em;
+}
+.conf {
+  display:block;
+  margin-top:0.5em;
+}
+.button {
+  padding: 0.2em;
+  border-radius: 5px;
+  background-color: #0066bb;
+  color: #ffffff;
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: #d39e70;
+  color: #ffffff;
+}
+div {
+  margin: auto;
+}
+ul {
+  list-style: none;
+  margin-left:0em;
+  padding-left:1.5em;
+}
+li {
+  border-left: 2px solid #0066bb;
+  padding:0em;
+  margin-top:0.5em;
+  padding-left:0.5em;
+}
+table {
+  font-weight: 300;
+  font-size: 1em;
+}
+th {
+  border-left: 2px solid #0066bb;
+  padding:0em;
+  padding-left:0.5em;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  margin: 0em;
+  width: 6em;
+  text-align: left;
+  display: inline-block;
+  color:#0066bb;
+  font-weight: 500;
+}
+p {
+  width:100%;
+  padding-left:0%;
+  padding-top:0.5em;
+}
+h1 {
+  padding-top:0;
+  font-size:2em;
+  padding-bottom:0;
+  font-weight: 500;
+  display:inline;
+}
+h2 {
+  color: #0066bb;
+  font-weight: 500;
+  font-size:1.2em;
+  align-items: center;
+  display:flex;
+  padding-top:0.5em;
+  gap:0.5em;
+}
+img {
+  border-radius: 50%;
+}
+.content {
+  width: 100%;
+}
+.box {
+  width: 100%;
+  gap: 0.5em;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  flex-grow:1;
+}
+.subbox {
+  border: 0em;
+  margin: 0em;
+}
+.menu {
+  margin: 0em;
+  padding-bottom: 0em;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top:0.75em;
+}
+.title {
+  font-size:2em;
+  font-weight: 500;
+}
+.titlecard {
+  float: left;
+  display:flex;
+  flex-direction:column;
+  padding-right:1.5em;
+  margin-right:1em;
+  border-right:1px solid #b2bb9b;
+}
+.contact-menu {
+  display: flex;
+  font-size: 1.25em;
+  gap: 0.5em;
+}
+.contact-menu a {
+  text-decoration:none;
+  padding: 0.5em;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #b2bb9b;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+}
+.contact-menu a:hover {
+  background-color: rgba(175,175,175,0.25);
+  border: 1px solid #b2bb9b;
+}
+.paper-title {
+  color: #0066bb;
+  font-style: italic;
+  font-size: 1.1em;
+  display:block;
+  font-weight: 500;
+}
+</style>
+<meta name="google-site-verification" content="eCnle1KS8GJxHrelOFtykEig1gZ8g_188Iqr-GLIer0" />
+</head>
+<body>
+<div class = "header">
+    <div class = "titlebar">
+      <div class = "titlecard">
+        <div class = "title"> Lauren Pick </div>
+      </div>
+      <div class = "contact-menu">
+        <a href ="mailto:pick@cse.cuhk.edu.hk" id="email"><span class="material-symbols-outlined" style="font-size:1em">mail</span></a>
+        <a href= "cv.pdf"><span style="font-size:0.75em">CV</span></a>
+      </div>
+    </div>
+    <div class = "intro">
+       <div class = "box">
+        <div class="subbox">
+           I am an assistant professor in the department of Computer Science and Engineering at the Chinese University of Hong Kong (<a href="https://www.cse.cuhk.edu.hk/">CSE@CUHK</a>), where I work on
+automated techniques for formally reasoning about programs. I am interested in (a) applying these techniques to help people understand and correctly interact with existing software components and (b) figuring out how to scale these techniques so that they can be usefully applied to real systems.
+More specific recent interests are in <i>applications of static analysis and synthesis to LLM interpretability</i> and <i>automated reasoning about concurrent and distributed systems</i>.
+        </div>
+      </div>
+    </div>
+</div>
+<div class = "content" style="display:table">
+    <h2><span class="material-symbols-outlined" style="font-size:1.25em">article</span> Publications</h2>
+      <ul>
+        <li><span class="paper-title">Checking Observational Correctness of Database Systems</span>
+            <span class="authors">
+            Lauren Pick, Amanda Xu, Ankush Desai, Sanjit A. Seshia, Aws Albarghouthi.
+            </span>
+            <span class="conf">
+            OOPSLA 2025. 
+            </span>
+            <div class="buttons">
+              <a href="oopsla25-1.pdf", class="button">paper</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Psym: Efficient Symbolic Exploration of Distributed Systems.</span>
+            <span class="authors">
+            Lauren Pick, Ankush Desai, Aarti Gupta.
+            </span>
+            <span class="conf">
+            PLDI 2023. 
+            </span>
+            <div class="buttons">
+              <a href="https://dl.acm.org/doi/pdf/10.1145/3591247" class="button">paper</a>
+              <a href="psym-extended.pdf" class="button">extended version</a>
+              <a href="https://youtu.be/FXkSMC-kUE8?t=3575", class = "button">talk</a>
+              <a href="https://github.com/p-org/P/tree/master/Src/PRuntimes/PSymRuntime" class="button">code</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Synthesizing Quantum-Circuit Optimizers.</span>
+            <span class="authors">
+            Amanda Xu, Abtin Molavi, Lauren Pick, Swamit S. Tannu, Aws Albarghouthi.
+            </span>
+            <span class="conf">
+            PLDI 2023. 
+            </span>
+            <div class="buttons">
+              <a href="https://arxiv.org/abs/2211.09691" class="button">paper</a>
+            </div>
+        </li>
+        <li><span class="paper-title">AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels.</span><span class="authors">
+              Nicholas Carl Roberts, Xintong Li, Tzu-Heng Huang, Dyah Adila, Spencer Schoenberg, Cheng-Yu Liu, Lauren Pick, Haotian Ma, Aws Albarghouthi, Frederic Sala.</span>
+            <span class="conf">NeurIPS 2022.</span>
+            <div class="buttons">
+              <a href="https://arxiv.org/pdf/2208.14362.pdf" class="button">paper</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Qubit Mapping and Routing via MaxSAT.</span>
+            <span class="authors">
+            Abtin Molavi, Amanda Xu, Martin Diges, Lauren Pick, Swamit S. Tannu, Aws Albarghouthi.
+            </span>
+            <span class="conf">
+            MICRO 2022. 
+            </span>
+            <div class="buttons">
+              <a href="https://arxiv.org/pdf/2208.13679.pdf" class="button">paper</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Unbounded Procedure Summaries from Bounded Environments.</span>
+            <span class="authors">Lauren Pick, Grigory Fedyukovich, Aarti Gupta.</authors>
+            <span class="conf">VMCAI 2021.</span>
+            <div class="buttons">
+              <a href="https://www.cs.princeton.edu/~aartig/papers/clover-vmcai21-extended.pdf" class = "button" >paper</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Automating Modular Verification of Secure Information Flow.</span>
+            <span class="authors">
+            Lauren Pick, Grigory Fedyukovich, Aarti Gupta.
+            </span>
+            <span class="conf">
+            FMCAD 2020.
+            </span>
+            <div class="buttons">
+            <a href="https://repositum.tuwien.at/bitstream/20.500.12708/15519/1/23_Automating%20Modular%20Verification%20of%20Secure%20Information%20Flow.pdf" class = "button" >paper</a>
+            <a href="https://www.youtube.com/watch?v=G9n8pQaYcuo" class = "button">talk</a>
+            </div>
+        </li>
+        <li><span class="paper-title">Exploiting Synchrony and Symmetry in Relational Verification.</span>
+            <span class="authors">
+            Lauren Pick, Grigory Fedyukovich, Aarti Gupta.
+            </span>
+            <span class="conf">CAV 2018.</span>
+            <div class="buttons">
+              <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-319-96145-3_9.pdf" class = "button" >paper</a>
+              <a href="https://www.cs.princeton.edu/~aartig/papers/synonym-cav18.pdf" class = "button" >extended version</a>
+              <a href="https://easychair.org/smart-slide/slide/FKpx#" class = "button">slides</a>
+              <a href ="https://github.com/lmpick/synonym" class = "button" >code</a>
+            </div>
+      </li>
+</body>
+</html>

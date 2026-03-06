@@ -1,0 +1,2927 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head> <title>Constantinos Daskalakis Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="Constantinos, Daskalakis, Costis, Berkeley, game theory, graphical games, Greece, NTUA, Athens, Theory, Computer, Science, ESOP, minimization, and-exor, computational biology, phylogenetics">
+<meta name="description" content="Constantinos Daskalakis, Costis, Homepage, Berkeley, Computer Science">
+<meta name="author" content="Constantinos Daskalakis">
+      <style media="screen" type="text/css" title="Default">
+      @import "style.css";
+    </style>
+</head>
+
+
+<body>
+<script>
+function copy(dest, source) {
+  if(dest.source == source) {
+    dest.innerHTML = "";
+    dest.source = null;
+  }
+  else {
+    dest.innerHTML = source.innerHTML;
+    dest.source = source;
+  }
+  dest.blur();
+}
+
+function costascopy(dest) {
+  if(dest.name == "populated") {
+    dest.style="display:none";
+    dest.name = "unpopulated";
+  }
+  else {
+    dest.style="";
+    dest.name = "populated";
+  }
+  dest.blur();
+}
+
+</script>
+
+    <h1 id="KD">Constantinos Daskalakis</h1>
+    <h2>&nbsp &nbsp Avanessians Professor of Computer Science, EECS and CSAIL, MIT</h2>
+
+
+
+    <div id="Menu">
+      <ul>
+        <li><a href="index.html"<!---->>main</a></li>
+        <li><a href="academic.html" class="active">academic work</a></li>
+      <!--  <li><a href="various.html">personal</a></li>-->
+        <li><a href="contact.html"<!---->>contact</a></li>
+      </ul>
+    </div>
+
+        <div id="MainCopy">
+        <h2> Bio at a Glance </h2>
+
+        <font color="#993300"><b>CSAIL, EECS, MIT</b></font><br>
+        <b>Avanessians Professor, 2022 - present</b><br>
+        <b>Professor, 2018 - 2022</b><br>
+        <b>Associate Professor (with tenure), 2015 - 2018</b><br>
+        <b>X-Window Consortium Associate Professor, 2012 - 2015</b><br>
+        <b>X-Window Consortium Assistant Professor, 2011 - 2012</b><br>
+        <b>Assistant Professor, 2009 - 2011</b><br> <br>
+
+
+        <font color="#993300"><b>MICROSOFT RESEARCH, NEW ENGLAND</b></font><br>
+        <b>Post-Doctoral Researcher, 2008-2009</b><br><br>
+
+        <font color="#993300"><b>UNIVERSITY OF CALIFORNIA, BERKELEY</b></font><br>
+        <b>Ph.D. in Computer Science, 2004-2008</b><br>
+        <b>Thesis:</b> The Complexity of Nash Equilibria<br>
+<!--        <b><i>2008 ACM Doctoral Dissertation Award</i></b><br>
+		 <b> <i>2007 Microsoft Research Fellowship</i></b><br>
+		<b> <i> 2004 UC Regents Fellowship</i></b><br>-->
+		<b> Advisor:</b> Christos H. Papadimitriou <br>
+	<!--	<b>GPA:</b> 4.000/4 (Summa Cum Laude)<br>
+
+        <b>Courses:</b> Complexity Theory, Statistical Learning Theory, Reading the Classics, Foundations of Parallel and Distributed Systems, Computational Geometry, Combinatorial Optimization, Randomness and Computation, Pseudorandomness and Extractors, Polynomials of Random Variables, Markov chain Monte Carlo, Great Algorithms, Topics in Probability, Gibbs Measures, Probability Theory, Probability for Applications, Computer Architecture--> <br>
+
+        <font color="#993300"><b>NATIONAL TECHNICAL UNIVERSITY of ATHENS (NTUA), GREECE</b></font><br>
+        <b>Diploma in Electrical and Computer Engineering, 1999-2004</b><br>
+        <b>Thesis:</b> On the Existence of Pure Nash Equilibria in Graphical Games with succinct description<br>
+        <b>Advisor:</b> Stathis Zachos<br>
+        <!--<b>GPA:</b> 9.98/10.00 (Summa Cum Laude)-->
+
+<!--          <br><br>
+        <font color="#993300"><b>VARVAKIOS HIGH SCHOOL, ATHENS, GREECE</b></font><br>
+        <b>GPA:</b> 20.0/20 -->
+
+
+       <!-- <h2> Research Interests </h2>
+<p> My research interests lie in the area of theoretical computer science, in particular <a href="#games">algorithmic game theory</a>, <a href="#bio">computational biology</a>, <a href="#PT">learning, testing and applied probability</a>.
+
+
+    <p>
+    <h2> Awards </h2>
+    Here is a list of <a href="./honors.html">awards</a>.-->
+
+
+<a name="publications"></a>
+<h2>Publications</h2>
+
+<a href="#chrono">Chronological list</a>, <a href="#journali">journal papers</a>, <a href="#expo">expository articles</a><br><br>
+
+or clustered by topic: <a href="#games">Economics, Game theory, and their interface with Computation</a>, <a href="#PT">Machine Learning, Statistics, and Probability</a>, and <a href="#bio">Computational Biology</a>.<br><br>
+
+
+
+<a name="journali"></a>
+<font size="-1"><a href="javascript:costascopy(journal)"><h3>Journal Publications</h3></a></font>
+<div id="journal" name="populated">
+<blockquote>
+
+ <ul>
+  <li>Itai Ashlagi, Constantinos Daskalakis, Nima Haghpanah: <i>Sequential Mechanisms with Ex Post Individual Rationality.</i>
+  <br> Operations Research (OR),  71(1): 245-258, 2023. <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.2332">pdf</a>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Maxwell Fishelson, Brendan Lucier, Vasilis Syrgkanis,  Santhoshini Velusamy: <i>Multi-Item Nontruthful Auctions Achieve Good Revenue. </i>
+    <br> SIAM Journal of Computing, 51(6):1796-1838, 2022. <a href="https://arxiv.org/abs/2002.06702">arXiv</a>
+    </ul>
+
+  <ul>
+  <li>Constantinos Daskalakis, Vasilis Syrgkanis: <i>Learning in auctions: Regret is hard, envy is easy. </i>
+  <br> Games and Economic Behavior (GEB), 134:308-343, 2022. <a href="https://arxiv.org/abs/1511.01411">arXiv</a>
+  </ul>
+
+ <ul>
+  <li>Liu Yang, Constantinos Daskalakis, George E. Karniadakis: <i>Generative Ensemble Regression: Learning Particle Dynamics from Observations of Ensembles with Physics-informed Deep Generative Models</i>.
+  <br> SIAM Journal of Scientific Computing, 44(1): 80-, 2022. <a href="https://arxiv.org/abs/2008.01915">arXiv</a>
+  </ul>
+
+
+  <ul>
+  <li>Constantinos Daskalakis: <i>Equilibria, Fixed Points, and Computational Complexity</i>.
+  <br> Proceedings of the International Congress of Mathematicians (ICM 2018), 1:147--209, 2019. <a href="https://www.worldscientific.com/doi/abs/10.1142/9789813272880_0009">pdf</a>
+  </ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala and Gautam Kamath: <i>Testing Ising Models</i>.
+<br> IEEE Transactions on Information Theory, 65(11): 6829-6852, 2019. <a href="https://ieeexplore.ieee.org/document/8782628">ieee</a>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Nikhil R. Devanur and S. Matthew Weinberg: <i>Revenue Maximization and Ex-Post Budget Constraints</i>.
+<br> ACM Transactions on Economics and Computation, 6(3-4):20:1-20:19, 2018. <b> Special Issue on EC'15</b>. <a href="journal-budgets.pdf">pdf</a>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Strong Duality for a Multiple-Good Monopolist</i>.
+<br>Econometrica, 85(3):735-767, 2017. <a href="http://arxiv.org/abs/1409.4150">arXiv</a>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Ilias Diakonikolas and Mihalis Yannakakis: <i>How good is the Chord algorithm?</i> <br>SIAM Journal on Computing (SICOMP), 45(3): 811-858, 2016. <a href="chord.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Ozan Candogan, Constantinos Daskalakis and Christos Papadimitriou: <i>Zero-sum Polymatrix Games: A Generalization of Minmax</i>. <br>
+Mathematics of Operations Research (MathOR),  41(2): 648-655, 2016. <a href="zerosum_final3.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Sparse Covers for Sums of Indicators</i>. <br>
+Probability Theory and Related Fields (PTRF), 162(3):679-705, 2015. <a href="http://arxiv.org/abs/1306.1265">arXiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning Poisson Binomial Distributions</i>.
+<br>Algorithmica, 72(1):316-357, 2015. <b>Special Issue on New Theoretical Challenges in Machine Learning. Invited.</b> <a href="http://arxiv.org/abs/1107.2702">arXiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Approximate Nash Equilibria in Anonymous Games</i>. <br>
+Journal of Economic Theory (JET), 156:207--245, 2015. <a href="anonymousJET.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai and Constantinos Daskalakis: <i>Extreme-Value Theorems for Optimal Multidimensional Pricing</i>. <br>
+Games and Economic Behavior, 92:266--305, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited.</b> <a href="http://arxiv.org/abs/1106.0519">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>
+Constantinos Daskalakis, Alan Deckelbaum and Anthony Kim: <i>Near-Optimal No-Regret Algorithms for Zero-sum Games</i>. <br>
+Games and Economic Behavior, 92:327-348, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited. </b> <a href="geb_120513.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning k-Modal Distributions via Testing</i>. <br>
+Theory of Computing, 10:535--570, 2014.  <a href="http://arxiv.org/abs/1107.2700">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>On the Complexity of Approximating a Nash Equilibrium.</i><br>
+ACM Transactions on Algorithms (TALG), 9(3): 23, 2013. <b>Special Issue for SODA 2011. Invited.</b> <a href="appxhardness.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis and Sebastien Roch: <i>Alignment-Free Phylogenetic Reconstruction: Sample Complexity via a Branching Process Analysis.</i><br>
+Annals of Applied Probability, 23(2): 693--721, 2013. <a href="http://arxiv.org/abs/1109.5002">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>
+Sanjeev Arora, Constantinos Daskalakis and David Steurer: <i>Message-Passing Algorithms and Improved LP Decoding.</i><br>
+IEEE Transactions on Information Theory, 58(12): 7260--7271, 2012. <a href="lpdecoding_journal.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Richard M. Karp, Elchanan Mossel, Samantha Riesenfeld and Elad Verbin: <i>Sorting and Selection in Posets</i>.
+<br> SIAM Journal on Computing (SICOMP), 40(3): 597-622, 2011. <a href="http://arxiv.org/abs/0707.1532">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Phylogenies without Branch Bounds: Contracting the Short, Pruning the Deep</i>.
+<br> SIAM Journal on Discrete Mathematics, 25(2): 872-893, 2011. <a href="http://arxiv.org/abs/0801.4190">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Alexandros G. Dimakis and Elchanan Mossel: <i>Connectivity and Equilibrium in Random Games</i>.
+<br> Annals of Applied Probability, 21(3):987-1016, 2011. <a href="http://arxiv.org/abs/math/0703902">arxiv</a>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Evolutionary Trees and the Ising Model on the Bethe Lattice: a Proof of Steel's Conjecture</i>.
+<br> Probability Theory and Related Fields (PTRF), 149(1-2):149-189, 2011. <a href="http://arxiv.org/abs/math.PR/0509575">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Aranyak Mehta and Christos H. Papadimitriou: <i>A Note on Approximate Nash Equilibria</i>. <br>
+<a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505625/description#description"></a>Theoretical Computer Science, 410(17), 1581--1588, 2009. <b> Special Issue for WINE 2006. Invited.</b> <a href="papers/camera-81.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Paul W. Goldberg and Christos H. Papadimitriou: <i>The Complexity of Computing a Nash Equilibrium</i>. <br>
+<a href="http://www.siam.org/journals/sicomp.php"></a>SIAM Journal on Computing (SICOMP), 39(1), 195--259, May 2009. <b>Special issue for STOC 2006. Invited.</b> <a href="journal_ver10.pdf">pdf</a><br>
+<b>2008 Kalai Prize from Game Theory Society</b>; <b> 2011 SIAM Outstanding Paper Prize</b>; <b>2022 ACM SIGECOM Test of Time Award</b>.<br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Alexandros G. Dimakis, Richard Karp and Martin Wainwright: <i>Probabilistic Analysis of Linear Programming Decoding</i>. <br>
+<a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18"></a>IEEE Transactions on Information Theory, 54(8), 3565-3578, August 2008. <a href="http://arxiv.org/abs/cs/0702014">arXiv</a>
+</li>
+</ul>
+
+</blockquote>
+</div>
+
+<a name="expo"></a>
+<font size="-1"><a href="javascript:costascopy(expository)"><h3>Expository Articles</h3></a></font>
+<div id="divc2"></div>
+<div id="expository" name="populated">
+<blockquote>
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>Technical Perspective: The Quest for Optimal Multi-Item Auctions</i>.<br> Communications of the ACM 64(8): 108, 2021. <a href="https://cacm.acm.org/magazines/2021/8/254320-technical-perspective-the-quest-for-optimal-multi-item-auctions/fulltext">html</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>Multi-Item Auctions Defying Intuition?</i>.<br><a href="http://www.sigecom.org/exchanges/volume_14/1/">Newsletter of the ACM Special Interest Group on E-commerce, 14(1), July 2015.</a> <a href="SIGECOM2.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Yang Cai, Constantinos Daskalakis and S. Matthew Weinberg: <i>Reducing Bayesian Mechanism Design to Algorithm Design</i>. <br><a href="http://link.springer.com/referenceworkentry/10.1007/978-3-642-27848-8_787-1">Encyclopedia of Algorithms, 2015.</a> <a href="https://link.springer.com/content/pdf/10.1007/978-3-642-27848-8_787-1.pdf">pdf</a><br>
+</li>
+</ul>
+
+<!--
+<ul>
+<li>
+Yang Cai, Constantinos Daskalakis and S. Matthew Weinberg: <i>On Optimal Multidimensional Mechanism Design</i>. <br><a href="http://www.sigecom.org/exchanges/index.html">Newsletter of the ACM Special Interest Group on E-commerce, 10(2), 2011.</a> <a href="sigecom.pdf">pdf</a><br>
+</li>
+</ul>
+-->
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>Nash equilibria: Complexity, symmetries, and approximation</i>. <br>Computer Science Review 3(2): 87--100, 2009. <a href="reconstruct.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Paul W. Goldberg and Christos H. Papadimitriou: <i>The complexity of computing a Nash equilibrium</i>. <br>Communications of the ACM 52(2):89--97, 2009. <a href="simplified.pdf">pdf</a><br>
+<b>2008 Kalai Prize from Game Theory Society</b>; <b> 2011 SIAM Outstanding Paper Prize</b>; <b>2022 ACM SIGECOM Test of Time Award</b>.<br>
+</li>
+</ul>
+
+</blockquote>
+</div>
+
+
+
+<a name="chrono"></a>
+<font size="-1"><a href="javascript:costascopy(recent)"><h3>Publications in Chronological Order</h3></a></font>
+
+<div id="recent" name="populated">
+
+<blockquote>
+
+  <ul>
+    <li> Giannis Daras, Adrian Rodriguez-Munoz, Adam Klivans, Antonio Torralba, Constantinos Daskalakis: <i>Ambient Diffusion Omni: Training Good Models with Bad Data.</i>
+      <br>In the 39th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2025</a>. <b>Spotlight</b>. <a href="https://arxiv.org/abs/2506.10038">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Giannis Daras, Jeffrey Ouyang-Zhang, Krithika Ravishankar, William Daspit, Costis Daskalakis, Qiang Liu, Adam Klivans, Daniel J. Diaz: <i>Ambient Proteins: Training Diffusion Models on Low Quality Structures.</i>
+      <br>In the 39th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2025</a>. <b>Spotlight</b>.  <a href="https://www.biorxiv.org/content/10.1101/2025.07.03.663105v1">bioarXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li> Vardis Kandiros, Charilaos Pipis, Constantinos Daskalakis, Christopher Harshaw: <i>The Conflict Graph Design: Estimating Causal Effects under Arbitrary Neighborhood Interference.</i>
+      <br>Under Submission, 2024. <a href="https://arxiv.org/abs/2411.10908">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li> Constantinos Daskalakis, Vardis Kandiros, Rui Yao: <i>Learning Gaussian DAG Models without Condition Number Bounds.</i>
+      <br>In the 42nd International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2025">ICML 2025</a>. <a href="https://proceedings.mlr.press/v267/daskalakis25a.html">PDF</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+    <li> Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich, Robert Kleinberg, Princewill Okoroafor: <i>Breaking the T^2/3 Barrier for Sequential Calibration.</i>
+      <br>In the 57th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2025/">STOC 2025</a>. <a href="https://arxiv.org/abs/2406.13668">arXiv</a>. <b>Invited to the Special Issue.</b>
+    </li>
+  </ul>
+
+  <ul>
+    <li> Constantinos Daskalakis, Gabriele Farina, Maxwell Fishelson, Charilaos Pipis, Jon Schneider: <i>Efficient Learning and Computation of Linear Correlated Equilibrium in General Convex Games.</i>
+      <br>In the 57th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2025/">STOC 2025</a>. <a href="https://arxiv.org/abs/2412.20291">arXiv</a>.
+    </li>
+  </ul>
+
+    <ul>
+    <li> Giannis Daras, Yeshwanth Cherapanamjeri, Constantinos Daskalakis: <i>How much is a noisy image worth? Data Scaling Laws for Ambient Diffusion.</i>
+      <br>In the 13th International Conference on Learning Representations, <a href="https://openreview.net/group?id=ICLR.cc/2025/Conference">ICLR 2025</a>. <a href="https://arxiv.org/abs/2411.02780">arXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li> Arnab Bhattacharyya, Constantinos Daskalakis, Themis Gouleakis, Yuhao Wang: <i>Learning High-dimensional Gaussians from Censored Data.</i>
+      <br>In the 28th International Conference on Artificial Intelligence and Statistics, <a href="https://virtual.aistats.org/Conferences/2025">AISTATS 2025</a>. <a href="https://arxiv.org/abs/2504.19446">arXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li> Constantinos Daskalakis, Ian Gemp, Yanchen Jiang, Renato Paes Leme, Christos Papadimitriou, Georgios Piliouras: <i>Charting the Shapes of Stories with Game Theory.</i>
+      <br>In the 38th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2024</a>, Creative Track. <a href="https://arxiv.org/abs/2412.05747">arXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li> Yang Cai, Constantinos Daskalakis, Haipeng Luo, Chen-Yu Wei, Weiqiang Zheng: <i>On Tractable &#934-Equilibria in Non-Concave Games.</i>
+      <br>In the 38th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2024</a>. <a href="https://arxiv.org/abs/2403.08171">arXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li>Angelos Assos, Yuval Dagan, Constantinos Daskalakis: <i>Maximizing utility in multi-agent environments by anticipating the behavior of other learners.</i>
+      <br>In the 38th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2024</a>. <a href="https://arxiv.org/abs/2407.04889">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Fan Chen, Constantinos Daskalakis, Noah Golowich, Alexander Rakhlin: <i>Near-Optimal Learning and Planning in Separated Latent MDPs.</i>
+      <br>In the 36th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2024/index.html">COLT 2024</a>. <a href="https://arxiv.org/abs/2406.07920">arXiv</a>.
+    </li>
+  </ul>
+  
+ 
+  <ul>
+    <li>Constantinos Daskalakis, Noah Golowich: <i>Is Efficient PAC Learning Possible with an Oracle That Responds "Yes" or "No"?</i>
+      <br>In the 36th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2024/index.html">COLT 2024</a>. <a href="https://arxiv.org/abs/2406.11667">arXiv</a>.
+    </li>
+  </ul>
+  
+  <ul>
+    <li>Giannis Daras, Alex Dimakis, Constantinos Daskalakis: <i>Consistent Diffusion Meets Tweedie: Training Exact Ambient Diffusion Models with Noisy Data.</i>
+      <br>In the 41st International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2024">ICML 2024</a>. <a href="https://arxiv.org/abs/2404.10177">arXiv</a>. <a href="https://x.com/giannis_daras/status/1780296157329027254">twitter summary</a>
+    </li>
+  </ul>
+  
+  <ul>
+    <li>Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>From External to Swap Regret 2.0: An Efficient Reduction and Oblivious Adversary for Large Action Spaces.</i>
+      <br>In the 56th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2024/">STOC 2024</a>. <a href="https://arxiv.org/abs/2310.19786">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1732903234992513103">twitter summary</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Noah Golowich, Nika Haghtalab, Abhishek Shetty: <i>Smooth Nash Equilibria: Algorithms and Complexity.</i>
+      <br>In the 15th Innovations in Theoretical Computer Science (ITCS), <a href="http://itcs-conf.org/">ITCS 2024</a>. <a href="https://arxiv.org/abs/2309.12226">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Giannis Daras, Yuval Dagan, Alexandros G. Dimakis, Constantinos Daskalakis: <i>Consistent Diffusion Models: Mitigating Sampling Drift by Learning to be Consistent.</i>
+      <br>In the 37th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2023</a>. <a href="https://arxiv.org/abs/2302.09057">arXiv</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+    <li>Angelos Assos, Idan Attias, Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson: <i>Online Learning and Solving Infinite Games with an ERM Oracle.</i>
+      <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2307.01689">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Noah Golowich, Stratis Skoulakis, Manolis Zampetakis: <i>STay-ON-the-Ridge: Guaranteed Convergence to Local Minimax Equilibrium in Nonconvex-Nonconcave Games.</i>
+      <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2210.09769">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Noah Golowich, Kaiqing Zhang: <i>The Complexity of Markov Equilibrium in Stochastic Games.</i>
+      <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2204.03991">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Davin Choo, Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros: <i>Learning and Testing Latent-Tree Ising Models Efficiently.</i>
+      <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2211.13291">arXiv</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+    <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>What Makes A Good Fisherman? Linear Regression under Self-Selection Bias.</i>
+      <br>In the 55th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2023/">STOC 2023</a>. <a href="https://arxiv.org/abs/2205.03246">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Giannis Daras, Yuval Dagan, Alex Dimakis, Constantinos Daskalakis: <i>Score-Guided Intermediate Level Optimization: Fast Langevin Mixing for Inverse Problems.</i>
+      <br>In the 39th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2022">ICML 2022</a>. <a href="https://arxiv.org/abs/2206.09104">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Yuval Dagan, Vardis Kandiros, Constantinos Daskalakis: <i>EM's Convergence in Gaussian Latent Tree Models.</i>
+      <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2022/index.html">COLT 2022</a>. <a href="https://arxiv.org/abs/2211.11904">arXiv</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+    <li>Yang Cai, Constantinos Daskalakis: <i>Recommender Systems meet Mechanism Design.</i>
+      <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2110.12558">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>Estimation of Standard Auction Models.</i>
+      <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2205.02060">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Noah Golowich: <i>Fast Rates for Nonparametric Online Learning: From Realizability to Learning in Games.</i>
+      <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.08911">arXiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Ioannis Anagnostides, Constantinos Daskalakis, Gabriele Farina, Maxwell Fishelson, Noah Golowich, Tuomas Sandholm: <i>Near-Optimal No-Regret Learning for Correlated Equilibria in Multi-Player General-Sum Games.</i>
+      <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.06008">arXiv</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+    <li>Constantinos Daskalakis, Petros Dellaportas, Ares Panos: <i>How Good are Low-Rank Approximations in Gaussian Process Regression?</i>
+      <br>In the 36th AAAI Conference on Artificial Intelligence (AAAI), <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2022</a>. <a href="https://arxiv.org/abs/2004.01584">arxiv</a>.
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>Near-Optimal No-Regret Learning in General Games</i>.
+      <br>In the 35th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2021</a>. <b>Oral</b>. <a href="https://arxiv.org/abs/2108.06924">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1468747580108685313">twitter summary</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Constantinos Daskalakis, Patroklos Stefanou, Rui Yao, Manolis Zampetakis: <i>Efficient Truncated Linear Regression with Unknown Noise Variance</i>.
+      <br>In the 35th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2021</a>. <a href="https://arxiv.org/abs/2208.12042">arXiv</a>.
+    </li>
+  </ul>
+
+
+  <ul>
+  <li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Surbhi Goel, Anthimos Vardis Kandiros: <i>Statistical Estimation from Dependent Data</i>.
+  <br>In the 38th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2021">ICML 2021</a>. <a href="https://arxiv.org/abs/2107.09773">arXiv</a>.
+  </li>
+  </ul>
+
+  <ul>
+  <li>Constantinos Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis: <i>A Statistical Taylor Theorem and Extrapolation of Truncated Densities</i>.
+  <br>In the 34th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2021/index.html">COLT 2021</a>. <a href="https://arxiv.org/abs/2106.15908">arXiv</a>.
+  </li>
+  </ul>
+
+  <ul>
+  <li>Constantinos Daskalakis, Qinxuan Pan: <i>Sample-Optimal and Efficient Learning of Tree Ising models</i>.
+  <br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2010.14864">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1321963003906961408">twitter summary</a>
+  </li>
+  </ul>
+
+<ul>
+<li>Constantinos Daskalakis, Stratis Skoulakis, Manolis Zampetakis: <i>The Complexity of Constrained Min-Max Optimization</i>.
+<br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2009.09623">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1309142723992203267">twitter summary</a>
+</li>
+</ul>
+
+<ul>
+<li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Anthimos Vardis Kandiros: <i>Learning Ising Models from One or Multiple Samples</i>.
+<br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2004.09370">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1338240417297432576">twitter summary</a>
+</li>
+</ul>
+
+<ul>
+<li>Jelena Diakonikolas, Constantinos Daskalakis, Michael I. Jordan: <i>Efficient Methods for Structured Nonconvex-Nonconcave Min-Max Optimization</i>.
+  <br>In the 24th International Conference on Artificial Intelligence and Statistics (AISTATS), <a href="https://aistats.org/aistats2021/"> AISTATS 2021</a>. <a href="https://arxiv.org/abs/2011.00364">arXiv</a>
+</li>
+</ul>
+
+<!--<ul>
+<li>Liu Yang, Constantinos Daskalakis, George Em Karniadakis: <i>Generative Ensemble-Regression: Learning Stochastic Dynamics from Discrete Particle Ensemble Observations</i>.
+<br><a href="https://arxiv.org/abs/2008.01915">arXiv</a>, 2020.
+</li>
+</ul>-->
+
+
+
+<!--<ul>
+<li>Constantinos Daskalakis, Petros Dellaportas, Aristeidis Panos: <i>Scalable Gaussian Processes, with Guarantees: Kernel Approximations and Deep Feature Extraction</i>.
+<br><a href="https://arxiv.org/abs/2004.01584">arXiv</a>, 2020.
+</li>
+</ul>-->
+
+<ul>
+<li>Mucong Ding, Constantinos Daskalakis, Soheil Feizi: <i>GANs with Conditional Independence Graphs: On Subadditivity of Probability Divergences</i>.
+<br>In the 24th International Conference on Artificial Intelligence and Statistics (AISTATS), <a href="https://aistats.org/aistats2021/"> AISTATS 2021</a>. <b>Oral.</b> <a href="https://arxiv.org/abs/2003.00652">arXiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Fotini Christia, Michael Curry, Constantinos Daskalakis, Erik Demaine, John P. Dickerson, MohammadTaghi Hajiaghayi, Adam Hesterberg, Marina Knittel, Aidan Milliff: <i>Scalable Equilibrium Computation in Multi-agent Influence Games on Networks</i>.
+<br>In the 34th AAAI Conference on Artificial Intelligence, <a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021</a>. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16666">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis: <i>Tight last-iterate convergence rates for no-regret learning in multi-player games</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2010.13724">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dylan Foster, Noah Golowich: <i> Independent Policy Gradient Methods for Competitive Reinforcement Learning</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2101.04233">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dhruv Rohatgi, Manolis Zampetakis: <i>Truncated Linear Regression in High Dimensions</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2007.14539">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dhruv Rohatgi, Manolis Zampetakis: <i>Constant-Expansion Suffices for Compressed Sensing with Generative Priors</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <b> Spotlight.</b> <a href="https://arxiv.org/abs/2006.04237">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>	Constantinos Daskalakis, Manolis Zampetakis: <i>More Revenue from Two Samples via Factor Revealing SDPs</i>.
+<br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://dl.acm.org/doi/epdf/10.1145/3391403.3399543">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>	Constantinos Daskalakis, Maxwell Fishelson, Brendan Lucier, Vasilis Syrgkanis, Santhoshini Velusamy: <i>Simple, Credible, and Approximately-Optimal Auctions</i>.
+<br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://arxiv.org/abs/2002.06702">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>	Johannes Brustle, Yang Cai, Constantinos Daskalakis: <i>Multi-Item Mechanisms without Item-Independence: Learnability via Robustness</i>.
+<br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://arxiv.org/abs/1911.02146">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Qi Lei, Jason D. Lee, Alexandros G. Dimakis, Constantinos P. Daskalakis: <i>SGD Learns One-Layer Networks in WGANs</i>.
+<br>In the 37th International Conference on Machine Learning, <a href="https://icml.cc/">ICML 2020</a>. <a href="https://arxiv.org/abs/1910.07030">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis, Asuman Ozdaglar: <i>Last Iterate is Slower than Averaged Iterate in Smooth Convex-Concave Saddle Point Problems</i>.
+<br>In the 33nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2020/">COLT 2020</a>. <a href="https://arxiv.org/abs/2002.00057">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Ioannis Panageas: <i>Logistic regression with peer-group effects via inference in higher-order Ising models</i>.
+<br>In the 23rd International Conference on Artificial Intelligence and Statistics, <a href="https://www.aistats.org/">AISTATS 2020</a>. <a href="https://arxiv.org/abs/2003.08259">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>A Theoretical and Practical Framework for Regression and Classification from Truncated Samples</i>.
+<br>In the 23rd International Conference on Artificial Intelligence and Statistics, <a href="https://www.aistats.org/">AISTATS 2020</a>. <a href="http://proceedings.mlr.press/v108/ilyas20a.html">pdf</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Themis Gouleakis, Christos Tzamos, Manolis Zampetakis: <i>Computationally and Statistically Efficient Truncated Regression</i>.
+<br>In the 32nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2019/">COLT 2019</a>. <a href="https://arxiv.org/abs/2010.12000">arXiv</a>.
+</li>
+</ul>
+
+
+<ul>
+<li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Siddhartha Jayanti: <i>Generalization and learning under Dobrushin's condition</i>.
+<br>In the 32nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2019/">COLT 2019</a>. <a href="https://arxiv.org/abs/1906.09247">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Ioannis Panageas: <i>Regression from Dependent Observations</i>.
+<br>In the 51st Annual ACM Symposium on the Theory of Computing, <a href="http://acm-stoc.org/stoc2019/">STOC 2019</a>. <a href="https://arxiv.org/abs/1905.03353">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Andrew Ilyas, Ajil Jalal, Eirini Asteri, Constantinos Daskalakis, Alexandros G. Dimakis: <i>The Robust Manifold Defense: Adversarial Training using Generative Models</i>.
+<br><a href="https://arxiv.org/abs/1712.09196">arXiv</a>, 2019.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ioannis Panageas: <i>Last-Iterate Convergence: Zero-Sum Games and Constrained Min-Max Optimization</i>.
+<br>In the 10th Innovations in Theoretical Computer Science (ITCS) conference, <a href="http://itcs-conf.org/">ITCS 2019</a>. <a href="https://arxiv.org/abs/1807.04252">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ioannis Panageas: <i>The Limit Points of (Optimistic) Gradient Descent in Min-Max Optimization</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1807.03907">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Siddhartha Jayanti: <i>HOGWILD!-Gibbs can be PanAccurate</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1811.10581">arXiv</a>.
+
+</li>
+</ul>
+
+<ul>
+<li>Nima Anari, Constantinos Daskalakis, Wolfgang Maass, Christos Papadimitriou, Amin Saberi, Santosh Vempala: <i>Smoothed Analysis of Discrete Tensor Decomposition and Assemblies of Neurons</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1810.11896">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Jayadev Acharya, Arnab Bhattacharyya, Constantinos Daskalakis, Saravanan Kandasamy: <i>  Learning and Testing Causal Models with Interventions</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1805.09697">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Themis Gouleakis, Christos Tzamos, Manolis Zampetakis: <i>Efficient Statistics, in High Dimensions, from Truncated Samples</i>.
+<br>In the 59th Annual IEEE Symposium on Foundations of Computer Science, <a href="https://www.irif.fr/~focs2018/">FOCS 2018</a>. <a href="https://arxiv.org/abs/1809.03986">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Shipra Agrawal, Constantinos Daskalakis, Vahab Mirrokni, Balasubramanian Sivan: <i> Robust Repeated Auctions under Heterogeneous Buyer Behavior</i>.
+<br>In the 19th ACM conference on Economics and Computation, <a href="http://www.sigecom.org/ec18/">EC 2018</a>. <a href="https://arxiv.org/abs/1803.00494">arxiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Nick Gravin: <i>Testing Symmetric Markov Chains from a Single Trajectory</i>.
+<br>In the 31st Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2018/">COLT 2018</a>. <a href="https://arxiv.org/abs/1704.06850">arxiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Andrew Ilyas, Vasilis Syrgkanis, Haoyang Zeng: <i>Training GANs with Optimism</i>.
+<br>In the 6th International Conference on Learning Representations, <a href="https://openreview.net/group?id=ICLR.cc/2018/Conference">ICLR 2018</a>. <a href="https://arxiv.org/abs/1711.00141">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos, Manolis Zampetakis: <i>Bootstrapping EM via EM and Convergence Analysis in the Naive Bayes Model</i>.
+<br>In the 21st International Conference on Artificial Intelligence and Statistics, <a href="http://www.aistats.org/">AISTATS 2018</a>. <a href="https://proceedings.mlr.press/v84/daskalakis18a.html">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos and Manolis Zampetakis: <i>A Converse to Banach's Fixed Point Theorem and its CLS Completeness</i>.
+<br>In the 50th Annual ACM Symposium on the Theory of Computing, <a href="http://acm-stoc.org/stoc2018/">STOC 2018</a>. <a href="https://arxiv.org/abs/1702.07339">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Gautam Kamath and John Wright: <i>Which Distribution Distances are Sublinearly Testable?</i>.
+<br>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="https://archive.siam.org/meetings/da18/">SODA 2018</a>. <a href="https://arxiv.org/abs/1708.00002">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala and Gautam Kamath: <i>Testing Ising Models</i>.
+<br>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="https://archive.siam.org/meetings/da18/">SODA 2018</a>. <a href="https://arxiv.org/abs/1612.03147">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala and Gautam Kamath: <i>Concentration of Multilinear Functions of the Ising Model with Applications to Network Data</i>.
+<br>In the 31st Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2017</a>. <a href="https://arxiv.org/abs/1710.04170">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai and Constantinos Daskalakis: <i>Learning Multi-Item Auctions with (or without) Samples</i>.
+<br>In the 58th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://focs17.simons.berkeley.edu/">FOCS 2017</a>. <a href="https://arxiv.org/abs/1709.00228">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Yasushi Kawase: <i>Optimal Stopping Rules for Sequential Hypothesis Testing</i>.
+<br> In the 25th Annual European Symposium on Algorithms (ESA), <a href="https://algo2017.ac.tuwien.ac.at/esa/">ESA 2017</a>. <a href="http://drops.dagstuhl.de/opus/volltexte/2017/7823/pdf/LIPIcs-ESA-2017-32.pdf">pdf</a>
+
+</li>
+</ul>
+
+<ul>
+<li>Bryan Cai, Constantinos Daskalakis and Gautam Kamath: <i>Priv'IT: Private and Sample Efficient Identity Testing</i>.
+<br>In the 34th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2017">ICML 2017</a>. <a href="https://arxiv.org/abs/1703.10127">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos and Manolis Zampetakis: <i>Ten Steps of EM Suffice for Mixtures of Two Gaussians</i>.
+<br>In the 30th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2017/">COLT 2017</a>. Preliminary version presented at NeurIPS 2016 Workshop on Non-Convex Optimization for Machine Learning. <a href="https://arxiv.org/abs/1609.00368">arXiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Qinxuan Pan: <i>Square Hellinger Subadditivity for Bayesian Networks and its Applications to Identity Testing</i>.
+<br>In the 30th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2017/">COLT 2017</a>. <a href="https://arxiv.org/abs/1612.03164">arXiv</a>
+</li>
+</ul>
+
+
+
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Strong Duality for a Multiple-Good Monopolist</i>.
+<br>Econometrica, 85(3):735-767, 2017. <a href="http://arxiv.org/abs/1409.4150">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Ozan Candogan, Constantinos Daskalakis and Christos Papadimitriou: <i>Zero-sum Polymatrix Games: A Generalization of Minmax</i>. <br>
+Mathematics of Operations Research,  41(2): 648-655, 2016. <a href="zerosum_final3.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Vasilis Syrgkanis: <i>Learning in Auctions: Regret is Hard, Envy is Easy</i>.
+<br>In the 57th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://dimacs.rutgers.edu/FOCS16/">FOCS 2016</a>. <a href="https://arxiv.org/abs/1511.01411">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Aviv Adler, Constantinos Daskalakis and Erik Demaine: <i>The Complexity of Hex and the Jordan Curve Theorem</i>.
+<br>In the 43rd International Colloquium on Automata, Languages and Programming, <a href="http://www.easyconferences.eu/icalp2016/">ICALP 2016</a>. <a href="http://erikdemaine.org/papers/Hex_ICALP2016/paper.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Itai Ashlagi, Constantinos Daskalakis and Nima Haghpanah: <i>Sequential Mechanisms with Ex-post Participation Guarantees.</i>.
+<br>In the 17th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec16/">EC 2016</a>. <b>Invited to Special Issue.</b> <a href="https://arxiv.org/abs/1603.07229">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Papadimitriou and Christos Tzamos: <i>Does Information Revelation Improve Revenue?</i>.
+<br>In the 17th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec16/">EC 2016</a>. <b>Invited to Special Issue.</b> <a href="https://dl.acm.org/doi/pdf/10.1145/2940716.2940789">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Anindya De, Gautam Kamath and Christos Tzamos: <i>A Size-Free CLT for Poisson Multinomials and its Applications</i>.
+<br>In the 48th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2016/">STOC 2016</a>. <a href="http://arxiv.org/abs/1511.03641">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Sebastien Roch: <i>Species Trees from Gene Trees Despite a High Rate of Lateral Genetic Transfer: A Tight Bound</i>.
+<br>In the 27th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da16/">SODA 2016</a>. <a href="http://arxiv.org/abs/1508.01962">arXiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Sparse Covers for Sums of Indicators</i>. <br>
+Probability Theory and Related Fields, 162(3):679-705, 2015. <a href="http://arxiv.org/abs/1306.1265">arXiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Approximate Nash Equilibria in Anonymous Games</i>. <br>
+Journal of Economic Theory, 156:207--245, 2015. <a href="anonymousJET.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Jayadev Acharya, Constantinos Daskalakis and Gautam Kamath: <i>Optimal Testing for Properties of Distributions</i>.
+<br>In the 29th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2015</a>. <b>Spotlight</b>. <a href="http://arxiv.org/abs/1507.05952">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Gautam Kamath and Christos Tzamos: <i>On the Structure, Covering, and Learning of Poisson Multinomial Distributions</i>.
+<br>In the 56th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="https://focs15.simons.berkeley.edu/">FOCS 2015</a>. <a href="http://arxiv.org/abs/1504.08363">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Christos H. Papadimitriou: <i>Optimum Statistical Estimation with Strategic Data Sources</i>.
+<br>In the 28th Annual Conference on Learning Theory (COLT), <a href="http://www.learningtheory.org/colt2015/">COLT 2015</a>. <a href="http://arxiv.org/abs/1408.2539">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Strong Duality for a Multiple-Good Monopolist</i>.
+<br>In the 16th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec15/">EC 2015</a>. <a href="http://arxiv.org/abs/1409.4150">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nikhil Devanur and Matt Weinberg: <i>Revenue Maximization and Ex-Post Budget Constraints</i>.
+<br>In the 16th ACM Conference on Economics and Computation (EC), <a href="http\
+://www.sigecom.org/ec15/">EC 2015</a>. <a href=""\
+>arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Jayadev Acharya: <i>Testing Poisson Binomial Distributions</i>.
+<br>In the 26th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da15/">SODA 2015</a>. <a href="http://arxiv.org/abs/1410.3386">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Matt Weinberg: <i>Bayesian Truthful Mechanisms for Job Scheduling from Bi-criterion Approximation Algorithms</i>.
+<br>In the 26th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da15/">SODA 2015</a>. <a href="http://arxiv.org/abs/1405.5940">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Qinxuan Pan: <i>A Counter-Example to Karlin's Strong Conjecture for Fictitious Play</i>.
+<br>In the 55th IEEE Symposium on Foundations of Computer Science, <a href="http://www.boazbarak.org/focs14/">FOCS 2014</a>. <a href="http://arxiv.org/abs/1412.4840">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Gautam Kamath: <i>Faster and Sample Near-Optimal Algorithms for Proper Learning Mixtures of Gaussians</i>.
+<br>In the 27th Annual Conference on Learning Theory (COLT), <a href="https://orfe.princeton.edu/conferences/colt2014/">COLT 2014</a>. <a href="http://arxiv.org/abs/1312.1054">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i> The Complexity of Optimal Mechanism Design</i>.
+<br>In the 25th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da14/">SODA 2014</a>. <a href="http://arxiv.org/abs/1211.1703">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Anindya De, Ilias Diakonikolas, Ankur Moitra, and Rocco Servedio: <i> A Polynomial-time Approximation Scheme for Fault-tolerant Distributed Storage</i>.
+<br>In the 25th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da14/">SODA 2014</a>. <a href="http://arxiv.org/abs/1307.3621">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas, Ryan O'Donnel, Rocco Servedio and Li-Yang Tan: <i> Learning Sums of Independent Integer Random Variables</i>.
+<br>In the 54th IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2013/">FOCS 2013</a>. <a href="learning-siirvs.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i> Understanding Incentives: Mechanism Design becomes Algorithm Design</i>.
+<br>In the 54th IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2013/">FOCS 2013</a>. <a href="http://arxiv.org/abs/1305.4002">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Mechanism Design via Optimal Transport</i>.
+<br>In the 14th ACM Conference on Electronic Commerce, <a href="http://www.sigecom.org/ec13/">EC 2013</a>. <b>Best Paper and Best Student Paper Award.</b>
+<a href="ec54-daskalakis-full.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>Reducing Revenue to Welfare Maximization : Approximation Algorithms and other Generalizations</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://people.csail.mit.edu/costis/AVCG.pdf">pdf</a> </li>
+</li>
+</ul>
+
+<ul>
+<li>Pablo Azar, Constantinos Daskalakis, Silvio Micali and Matt Weinberg: <i>Optimal and Efficient Parametric Auctions</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://people.csail.mit.edu/costis/parametric.pdf">pdf</a> </li>
+</li>
+</ul>
+
+ <ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas, Rocco Servedio, Greg Valiant and Paul Valiant: <i>Testing k-Modal Distributions: Optimal Algorithms via Reductions</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://arxiv.org/abs/1112.5659">arxiv</a><br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Optimal Pricing is Hard</i>.
+<br>In the 8th Workshop on Internet & Network Economics, <a href="http://wine12.csc.liv.ac.uk/">WINE 2012</a>. <a href="http://people.csail.mit.edu/costis/complexity_auctions1.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>Optimal Multi-Dimensional Mechanism Design: Reducing Revenue to Welfare Maximization</i>.
+<br>In the 53rd Annual IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://ieee-focs.org/focs2012/">FOCS 2012</a>. <b>FOCS 2022 Test of Time Award.</b> <a href="http://arxiv.org/abs/1207.5518">arxiv</a> </li>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Matt Weinberg: <i>Symmetries and Optimal Multi-Dimensional Mechanism Design</i>.
+<br>In the 13th ACM Conference on Electronic Commerce, <a href="http://www.sigecom.org/ec12/index.html">EC 2012</a>. <a href="http://eccc.hpi-web.de/report/2011/170/">ECCC Report</a>. <b> Best Student Paper Award.</b>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>An Algorithmic Characterization of Multi-Dimensional Mechanisms</i>.
+<br>In the 44th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2012/">STOC 2012</a>.  <a href="http://eccc.hpi-web.de/report/2011/172/">ECCC Report</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning Poisson Binomial Distributions</i>.
+<br>In the 44th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2012/">STOC 2012</a>.  <a href="http://arxiv.org/abs/1107.2702">arXiv</a><br>
+Algorithmica, 72(1):316-357, 2015. <b>Special Issue on New Theoretical Challenges in Machine Learning. Invited.</b> <a href="http://arxiv.org/abs/1107.2702">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning k-Modal Distributions via Testing</i>. <br>
+In the 23rd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da12/">SODA 2012</a>.  <a href="http://arxiv.org/abs/1107.2700">arXiv</a><br>
+Theory of Computing, 10:535--570, 2014.  <a href="http://arxiv.org/abs/1107.2700">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and George Pierrakos: <i>Simple, Optimal and Efficient Auctions</i>. <br> In the 7th Workshop on Internet & Network Economics, <a href="http://web.spms.ntu.edu.sg/~wine11/">WINE 2011</a>. <a href="wine11.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai and Constantinos Daskalakis: <i>Extreme-Value Theorems for Optimal Multidimensional Pricing</i>.
+<br> In the 52nd Annual IEEE Symposium on Foundations of Computer Science, <a href="http://www.cs.ucla.edu/~rafail/FOCS11/">FOCS 2011</a>. <a href="http://arxiv.org/abs/1106.0519">arxiv</a><br>
+Games and Economic Behavior, 92:266--305, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited.</b> <a href="http://arxiv.org/abs/1106.0519">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Alexandros G. Dimakis and Elchanan Mossel: <i>Connectivity and Equilibrium in Random Games</i>.
+<br> Annals of Applied Probability, 21(3):987-1016, 2011. <a href="http://arxiv.org/abs/math/0703902">arxiv</a>
+</li>
+</ul>
+
+<!--<ul>
+<li> Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Phylogenies without Branch Bounds: Contracting the Short, Pruning the Deep</i>.
+<br> SIAM Journal on Discrete Mathematics, 25(2): 872-893, 2011. <a href="http://arxiv.org/abs/0801.4190">arxiv</a>
+</li>
+</ul>-->
+
+
+<ul>
+<li> Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Evolutionary Trees and the Ising Model on the Bethe Lattice: a Proof of Steel's Conjecture</i>.
+<br> Probability Theory and Related Fields, 149(1-2):149-189, 2011. <a href="http://arxiv.org/abs/math.PR/0509575">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>On the Complexity of Approximating a Nash Equilibrium</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <br>
+ACM Transactions on Algorithms (TALG), 9(3): 23, 2013. <b>Special Issue for SODA 2011. Invited.</b> <a href="appxhardness.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Alan Deckelbaum and Anthony Kim: <i>Near-Optimal No-Regret Algorithms for Zero-sum Games</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="geb_120513.pdf">pdf</a><br>
+Games and Economic Behavior, 92:327-348, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited. </b> <a href="geb_120513.pdf">pdf</a>
+ <br>
+</li>
+</ul>
+
+<ul>
+<li>
+Yang Cai and Constantinos Daskalakis: <i>On Minmax Theorems for Multiplayer Games</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="network2.pdf">pdf</a> <br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis and Christos Papadimitriou: <i>Continuous Local Search</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="CLS.pdf">pdf</a> and <a href="CLS-corrigendum.pdf">corrigendum</a> <br>
+</li>
+</ul>
+
+<ul>
+<li>C. Daskalakis, R. Frongillo, C. H. Papadimitriou, G. Pierrakos and G. Valiant: <i>On Learning Algorithms for Nash Equilibria</i>. <br> In the  3rd International Symposium on Algorithmic Game Theory, <a href="http://sagt2010.cti.gr/">SAGT 2010</a>. <a href="learning.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis and Sebastien Roch: <i>Alignment-Free Phylogenetic Reconstruction</i>. <br> In the 14th Annual International Conference on Research in Computational Molecular Biology, <a href="http://kdbio.inesc-id.pt/recomb2010/home.php.html">RECOMB 2010</a>. <a href="align-free.pdf">pdf</a><br>
+Annals of Applied Probability, 23(2): 693--721, 2013. <a href="http://arxiv.org/abs/1109.5002">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>
+Alexandr Andoni, Constantinos Daskalakis, Avinatan Hassidim and Sebastien Roch: <i>Global Alignment of Molecular Sequences via Ancestral State Reconstruction</i>. <br>In the 1st Symposium on Innovations in Computer Science, <a href="http://conference.itcs.tsinghua.edu.cn/ICS2010/">ICS 2010</a>. <a href="http://arxiv.org/abs/0912.2577">conference version</a> <br>Stochastic Processes and their Applications, 122(12): 3852--3874, 2012. <a href="http://people.csail.mit.edu/costis/trace.pdf">journal version</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Ilias Diakonikolas and Mihalis Yannakakis: <i>How good is the Chord algorithm?</i> <br>In the 21st Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da10/">SODA 2010</a>. <a href="chord.pdf">pdf</a><br>
+SIAM Journal on Computing, 45(3): 811-858, 2016. <a href="chord.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Ilan Adler, Constantinos Daskalakis and Christos H. Papadimitriou: <i>A Note on Strictly Competitive Games</i>. <br>In the 5th Workshop on Internet & Network Economics, <a href="http://www.dis.uniroma1.it/~wine09/">WINE 2009</a>. <a href="SCG_1.pdf">pdf</a><br>
+</li>
+</ul>
+
+
+<ul>
+<li>
+Constantinos Daskalakis and Christos H. Papadimitriou: <i>On a Network Generalization of the Minmax Theorem</i>. <br>In the 36th International Colloquium on
+Automata, Languages and Programming, <a href="https://dblp.org/db/conf/icalp/icalp2009-2.html">ICALP 2009</a>. <a href="network1.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis and Christos H. Papadimitriou: <i>On Oblivious PTAS's for Nash Equilibrium</i>. <br> In the 41st ACM Symposium On Theory of Computing, <a href="https://www.umiacs.umd.edu/conferences/stoc2009/index.shtml">STOC 2009</a>. <a href="http://arxiv.org/abs/1102.2280">arXiv</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Sanjeev Arora, Constantinos Daskalakis and David Steurer: <i>Message-Passing Algorithms and Improved LP Decoding</i>. <br> In the 41st ACM Symposium On Theory of Computing, <a href="https://www.umiacs.umd.edu/conferences/stoc2009/index.shtml">STOC 2009</a>. <br>
+IEEE Transactions on Information Theory, 58(12):7260--7271, 2012. <a href="lpdecoding_journal.pdf">pdf</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Phylogenies without Branch Bounds: Contracting the Short, Pruning the Deep</i>. <br> In the 13th Annual International Conference on Research in Computational Molecular Biology, <a href="http://www.bio5.org/recomb2009/">RECOMB 2009</a>. <a href="http://arxiv.org/abs/0801.4190">arxiv</a><br>
+Also in SIAM Journal on Discrete Mathematics, 25(2): 872-893, 2011.
+</li>
+</ul>
+
+<ul>
+<li> Kamalika Chaudhuri, Constantinos Daskalakis, Robert Kleinberg and Henry Lin: <i>Online Bipartite Perfect Matching With Augmentation</i>. <br> In the 28th Conference on Computer Communications, <a href="http://www.ieee-infocom.org/">IEEE INFOCOM 2009</a>. <a href="http://people.csail.mit.edu/costis/matching.pdf">pdf</a> <br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Grant Schoenebeck, Gregory Valiant and Paul Valiant: <i>On the Complexity of Nash Equilibria of Action-Graph Games</i>. <br> In the 20th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da09/">SODA 2009</a>. <a href="http://arxiv.org/abs/0802.1604">arxiv</a> <br>
+</li>
+</ul>
+
+<ul>
+<li> Constantinos Daskalakis, Richard M. Karp, Elchanan Mossel, Samantha Riesenfeld and Elad Verbin: <i>Sorting and Ranking in Partially Ordered Sets</i>. <br> In the 20th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da09/">SODA 2009</a>. <a href="http://arxiv.org/abs/0707.1532">arxiv</a><br>
+SIAM Journal on Computing, 40(3): 597-622, 2011.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis: <i>An Efficient PTAS for Two-Strategy Anonymous Games</i>. <br> In the 4th Workshop on Internet and Network Economics, <a href="http://www.se.cuhk.edu.hk/~wine2008/">WINE 2008</a>. <a href="http://arxiv.org/abs/0812.2277">arxiv</a><br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>Discretized Multinomial Distributions and Nash Equilibria in Anonymous Games</i>. <br> In the 49th Annual IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2008/">FOCS 2008</a>. <a href="http://arxiv.org/abs/0808.2801">arxiv</a><br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>Computing Equilibria in Anonymous Games</i>. <br> In the 48th Annual IEEE Symposium on Foundations of Computer Science, <a href="http://focs2007.org/">FOCS 2007</a>. <a href="http://arxiv.org/abs/0710.5582">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Aranyak Mehta and Christos H. Papadimitriou: <i>Progress in Approximate Nash Equilibria</i>.<br> In the 8th ACM Conference on Electronic Commerce, <a href="https://web.archive.org/web/20081006155751/http:/www.si.umich.edu/stietold/ec07/chairs.html">EC 2007</a>. <a href="papers/ec283-daskalakis.pdf">pdf</a>.
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+Christian Borgs, Jennifer T. Chayes, Constantinos Daskalakis and Sebastien Roch: <i>An
+Analysis of Preferential Attachment with Fitness</i>. <br>
+In the 39th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2007/">STOC 2007</a>. <a href="https://arxiv.org/abs/0710.4982">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Alexandros G. Dimakis, Richard Karp and Martin Wainwright: <i>Probabilistic Analysis of Linear Programming Decoding</i>. <br> In the 18th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da07/">SODA 2007</a>. <a href="http://arxiv.org/abs/cs/0702014">arXiv</a><br>
+Journal version in IEEE Transactions on Information Theory, 54(8), 3565-3578, August 2008. <a href="http://arxiv.org/abs/cs/0702014">arxiv</a><br>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Aranyak Mehta and Christos H. Papadimitriou: <i>A Note on Approximate Nash Equilibria</i>.
+<br> In the 2nd international Workshop on Internet & Network Economics, <a href="http://wine2006.cti.gr/">WINE 2006</a>. <a href="papers/camera-81.pdf">pdf</a><br>
+Journal version in <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505625/description#description">Theoretical Computer Science, 410(17), 1581--1588, 2009.</a> (<b>Invited</b>, special issue for WINE 2006.)<br>
+</li>
+</ul>
+
+<ul>
+<li>C. Daskalakis, C. Hill, A. Jaffe, R. Mihaescu, E. Mossel and S. Rao: <i>Maximal Accurate Forests From Distance Matrices</i>. <br>
+In the 10th Annual International Conference on Research in Computational Molecular Biology, <a href="http://recomb06.dei.unipd.it/about.html">RECOMB 2006</a>. <a href="papers/distpaper.pdf">pdf</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alex Fabrikant and Christos Papadimitriou: <i>The Game World is Flat: The Complexity of Nash Equilibria in Succinct Games</i>. <br>In the 33rd International Colloquium on Automata, Languages and Programming, <a href="http://icalp06.dsi.unive.it/">ICALP 2006</a>. <a href="papers/dfp06.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Computing Pure Nash Equilibria via Markov Random Fields</i>. <br>In the 7th ACM Conference on Electronic Commerce, <a href="https://web.archive.org/web/20130701223051/http:/www2.si.umich.edu/stietold/ec06/index.html">EC 2006</a>. <b>Best Paper Award.</b> <a href="papers/fp260-daskalakis.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>Three-Player Games Are Hard</i>.<br><a href="http://eccc.uni-trier.de/eccc-reports/2005/TR05-139/Paper.pdf">ECCC Report 2005</a>.
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Paul W. Goldberg and Christos H. Papadimitriou: <i>The Complexity of Computing a Nash Equilibrium</i>.<br>
+In the 38th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2006/">STOC 2006</a>. <a href="journal_ver10.pdf">pdf</a><br>
+Journal version in <a href="http://www.siam.org/journals/sicomp.php">SIAM Journal on Computing, 39(1), 195--259, May 2009.</a> (<b>Invited</b>, special issue for STOC 2006.) <br>Expository article in Communications of the ACM 52(2):89--97, 2009. (<b>Invited</b>.)<br>
+<b>2008 Kalai Prize from Game Theory Society</b>; <b> 2011 SIAM Outstanding Paper Prize</b>; <b>2022 ACM SIGECOM Test of Time Award</b>.<br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Optimal Phylogenetic Reconstruction</i>.  <br> In the 38th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2006/">STOC 2006</a>. <a href="http://arxiv.org/abs/math.PR/0509575">arXiv</a><br>
+Journal version in Probability Theory and Related Fields, 149(1-2):149-189, 2011. <br>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>The Complexity of Games on Highly Regular Graphs</i>. <br>
+In the 13th Annual European Symposium on Algorithms, <a href="http://www.lsi.upc.edu/~algo05/?cmd=esa2005">ESA 2005</a>. <a href="papers/RegularGames.pdf">pdf</a>
+
+</li>
+</ul>
+</blockquote>
+</div>
+
+
+
+
+
+
+
+        <h2> List of Publications by Topic</h2>
+        <h3> <a name="games"></a>Interface of Computation with Economics and Game Theory</h3>
+
+
+        <ul>
+          <li>Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>From External to Swap Regret 2.0: An Efficient Reduction and Oblivious Adversary for Large Action Spaces.</i>
+            <br>In the 56th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2024/">STOC 2024</a>. <a href="https://arxiv.org/abs/2310.19786">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1732903234992513103">twitter summary</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>Constantinos Daskalakis, Noah Golowich, Nika Haghtalab, Abhishek Shetty: <i>Smooth Nash Equilibria: Algorithms and Complexity.</i>
+            <br>In the 15th Innovations in Theoretical Computer Science (ITCS), <a href="http://itcs-conf.org/">ITCS 2024</a>. <a href="https://arxiv.org/abs/2309.12226">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Angelos Assos, Idan Attias, Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson: <i>Online Learning and Solving Infinite Games with an ERM Oracle.</i>
+            <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2307.01689">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Constantinos Daskalakis, Noah Golowich, Stratis Skoulakis, Manolis Zampetakis: <i>STay-ON-the-Ridge: Guaranteed Convergence to Local Minimax Equilibrium in Nonconvex-Nonconcave Games.</i>
+            <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2210.09769">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Constantinos Daskalakis, Noah Golowich, Kaiqing Zhang: <i>The Complexity of Markov Equilibrium in Stochastic Games.</i>
+            <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2204.03991">arXiv</a>.
+          </li>
+        </ul>
+
+
+
+
+        <ul>
+          <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>What Makes A Good Fisherman? Linear Regression under Self-Selection Bias.</i>
+            <br>In the 55th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2023/">STOC 2023</a>. <a href="https://arxiv.org/abs/2205.03246">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Yang Cai, Constantinos Daskalakis: <i>Recommender Systems meet Mechanism Design.</i>
+            <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2110.12558">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>Estimation of Standard Auction Models.</i>
+            <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2205.02060">arXiv</a>.
+          </li>
+        </ul>
+
+
+
+        <ul>
+          <li>Constantinos Daskalakis, Noah Golowich: <i>Fast Rates for Nonparametric Online Learning: From Realizability to Learning in Games.</i>
+            <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.08911">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Ioannis Anagnostides, Constantinos Daskalakis, Gabriele Farina, Maxwell Fishelson, Noah Golowich, Tuomas Sandholm: <i>Near-Optimal No-Regret Learning for Correlated Equilibria in Multi-Player General-Sum Games.</i>
+            <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.06008">arXiv</a>.
+          </li>
+        </ul>
+
+        <ul>
+          <li>Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>Near-Optimal No-Regret Learning in General Games</i>.
+            <br>In the 35th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2021</a>. <b>Oral</b>. <a href="https://arxiv.org/abs/2108.06924">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1468747580108685313">twitter summary</a>
+          </li>
+        </ul>
+
+
+
+      <ul>
+      <li>Constantinos Daskalakis, Stratis Skoulakis, Manolis Zampetakis: <i>The Complexity of Constrained Min-Max Optimization</i>.
+      <br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2009.09623">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1309142723992203267">twitter summary</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>Jelena Diakonikolas, Constantinos Daskalakis, Michael I. Jordan: <i>Efficient Methods for Structured Nonconvex-Nonconcave Min-Max Optimization</i>.
+        <br>In the 24th International Conference on Artificial Intelligence and Statistics (AISTATS), <a href="https://aistats.org/aistats2021/"> AISTATS 2021</a>. <a href="https://arxiv.org/abs/2011.00364">arXiv</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>Fotini Christia, Michael Curry, Constantinos Daskalakis, Erik Demaine, John P. Dickerson, MohammadTaghi Hajiaghayi, Adam Hesterberg, Marina Knittel, Aidan Milliff: <i>Scalable Equilibrium Computation in Multi-agent Influence Games on Networks</i>.
+      <br>In the 34th AAAI Conference on Artificial Intelligence, <a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021</a>. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16666">arXiv</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis: <i>Tight last-iterate convergence rates for no-regret learning in multi-player games</i>.
+      <br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2010.13724">arXiv</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>Constantinos Daskalakis, Dylan Foster, Noah Golowich: <i> Independent Policy Gradient Methods for Competitive Reinforcement Learning</i>.
+      <br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2101.04233">arXiv</a>
+      </li>
+      </ul>
+
+
+      <ul>
+      <li>	Constantinos Daskalakis, Manolis Zampetakis: <i>More Revenue from Two Samples via Factor Revealing SDPs</i>.
+      <br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://dl.acm.org/doi/epdf/10.1145/3391403.3399543">pdf</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>	Constantinos Daskalakis, Maxwell Fishelson, Brendan Lucier, Vasilis Syrgkanis, Santhoshini Velusamy: <i>Simple, Credible, and Approximately-Optimal Auctions</i>.
+      <br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://arxiv.org/abs/2002.06702">arXiv</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>	Johannes Brustle, Yang Cai, Constantinos Daskalakis: <i>Multi-Item Mechanisms without Item-Independence: Learnability via Robustness</i>.
+      <br>In the 21st ACM Conference on Economics and Computation, <a href="http://ec20.sigecom.org/">EC 2020</a>. <a href="https://arxiv.org/abs/1911.02146">arXiv</a>
+      </li>
+      </ul>
+
+      <ul>
+      <li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis, Asuman Ozdaglar: <i>Last Iterate is Slower than Averaged Iterate in Smooth Convex-Concave Saddle Point Problems</i>.
+      <br>In the 33nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2020/">COLT 2020</a>. <a href="https://arxiv.org/abs/2002.00057">arXiv</a>
+      </li>
+      </ul>
+
+
+
+
+      <ul>
+      <li>Constantinos Daskalakis, Ioannis Panageas: <i>Last-Iterate Convergence: Zero-Sum Games and Constrained Min-Max Optimization</i>.
+      <br>In the 10th Innovations in Theoretical Computer Science (ITCS) conference, <a href="http://itcs-conf.org/">ITCS 2019</a>. <a href="https://arxiv.org/abs/1807.04252">arXiv</a>.
+      </li>
+      </ul>
+
+
+<ul>
+<li>Shipra Agrawal, Constantinos Daskalakis, Vahab Mirrokni, Balasubramanian Sivan: <i> Robust Repeated Auctions under Heterogeneous Buyer Behavior</i>.
+<br>In the 19th ACM conference on Economics and Computation, <a href="http://www.sigecom.org/ec18/">EC 2018</a>. <a href="https://arxiv.org/abs/1803.00494">arxiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai and Constantinos Daskalakis: <i>Learning Multi-Item Auctions with (or without) Samples</i>.
+<br>In the 58th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://focs17.simons.berkeley.edu/">FOCS 2017</a>. <a href="https://arxiv.org/abs/1709.00228">arxiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Strong Duality for a Multiple-Good Monopolist</i>.
+<br>Econometrica, 85(3):735-767, 2017. <a href="http://arxiv.org/abs/1409.4150">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Vasilis Syrgkanis: <i>Learning in Auctions: Regret is Hard, Envy is Easy</i>.
+<br>In the 57th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://dimacs.rutgers.edu/FOCS16/">FOCS 2016</a>. <a href="https://arxiv.org/abs/1511.01411">arxiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Aviv Adler, Constantinos Daskalakis and Erik Demaine: <i>The Complexity of Hex and the Jordan Curve Theorem</i>.
+<br>In the 43rd International Colloquium on Automata, Languages and Programming, <a href="http://www.easyconferences.eu/icalp2016/">ICALP 2016</a>. <a href="http://erikdemaine.org/papers/Hex_ICALP2016/paper.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Itai Ashlagi, Constantinos Daskalakis and Nima Haghpanah: <i>Sequential Mechanisms with Ex-post Participation Guarantees.</i>.
+<br>In the 17th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec16/">EC 2016</a>. <b>Invited to Special Issue.</b> <a href="https://arxiv.org/abs/1603.07229">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Papadimitriou and Christos Tzamos: <i>Does Information Revelation Improve Revenue?</i>.
+<br>In the 17th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec16/">EC 2016</a>. <b>Invited to Special Issue.</b> <a href="https://dl.acm.org/doi/pdf/10.1145/2940716.2940789">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Ozan Candogan, Constantinos Daskalakis and Christos Papadimitriou: <i>Zero-sum Polymatrix Games: A Generalization of Minmax</i>. <br>
+Mathematics of Operations Research,  41(2): 648-655, 2016. <a href="zerosum_final3.pdf">pdf</a>
+</li>
+</ul>
+
+
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Approximate Nash Equilibria in Anonymous Games</i>. <br>
+Journal of Economic Theory, 156:207--245, 2015. <a href="anonymousJET.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Strong Duality for a Multiple-Good Monopolist</i>.
+<br>In the 16th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec15/">EC 2015</a>. <a href="http://arxiv.org/abs/1409.4150">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nikhil Devanur and Matt Weinberg: <i>Revenue Maximization and Ex-Post Budget Constraints</i>.
+<br>In the 16th ACM Conference on Economics and Computation (EC), <a href="http://www.sigecom.org/ec15/">EC 2015</a>.<a href="">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Matt Weinberg: <i>Bayesian Truthful Mechanisms for Job Scheduling from Bi-criterion Approximation Algorithms</i>. <br>In the 26th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da15/">SODA 2015</a>. <a href="http://arxiv.org/abs/1405.5940">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Qinxuan Pan: <i>A Counter-Example to Karlin's Strong Conjecture for Fictitious Play</i>.
+<br>In the 55th IEEE Symposium on Foundations of Computer Science, <a href="http://www.boazbarak.org/focs14/">FOCS 2014</a>. <a href="http://arxiv.org/abs/1412.4840">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i> The Complexity of Optimal Mechanism Design</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da14/">SODA 2014</a>. <a href="http://arxiv.org/abs/1211.1703">arxiv</a>
+</li>
+</ul>
+
+        <ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i> Understanding Incentives: Mechanism Design becomes Algorithm Design</i>.
+<br>In the 54th IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2013/">FOCS 2013</a>. <a href="http://arxiv.org/abs/1305.4002">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Mechanism Design via Optimal Transport</i>.
+<br>In the 14th ACM Conference on Electronic Commerce, <a href="http://www.sigecom.org/ec13/">EC 2013</a>. <b>Best Paper and Best Student Paper Award.</b> <a href="ec54-daskalakis-full.pdf">pdf</a>
+</li>
+</ul>
+
+        <ul>
+<li>Constantinos Daskalakis, Alan Deckelbaum and Christos Tzamos: <i>Optimal Pricing is Hard</i>.
+<br>In the 8th Workshop on Internet & Network Economics, <a href="http://wine12.csc.liv.ac.uk/">WINE 2012</a>. <a href="http://people.csail.mit.edu/costis/complexity_auctions1.pdf">pdf</a>
+</li>
+</ul>
+
+ <ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>Reducing Revenue to Welfare Maximization : Approximation Algorithms and other Generalizations</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://people.csail.mit.edu/costis/AVCG">pdf</a> </li>
+</li>
+</ul>
+
+<ul>
+<li>Pablo Azar, Constantinos Daskalakis, Silvio Micali and Matt Weinberg: <i>Optimal and Efficient Parametric Auctions</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://people.csail.mit.edu/costis/parametric.pdf">pdf</a> </li>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>Optimal Multi-Dimensional Mechanism Design: Reducing Revenue to Welfare Maximization</i>.
+<br>In the 53rd Annual IEEE Symposium on Foundations of Computer Science (FOCS), <a href="http://ieee-focs.org/focs2012/">FOCS 2012</a>. <b>FOCS 2022 Test of Time Award.</b> <a href="http://arxiv.org/abs/1207.5518">arxiv</a> </li>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Matt Weinberg: <i>Symmetries and Optimal Multi-Dimensional Mechanism Design</i>.
+<br>In the 13th ACM Conference on Electronic Commerce, <a href="http://www.sigecom.org/ec12/index.html">EC 2012</a>. <a href="http://eccc.hpi-web.de/report/2011/170/">ECCC Report</a>. <b> Best Student Paper Award.</b>
+</li>
+</ul>
+
+
+ <ul>
+<li>Yang Cai, Constantinos Daskalakis and Matt Weinberg: <i>An Algorithmic Characterization of Multi-Dimensional Mechanisms</i>.
+<br>In the 44th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2012/">STOC 2012</a>. <a href="http://eccc.hpi-web.de/report/2011/172/">ECCC Report</a>, 2011.<br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and George Pierrakos: <i>Simple, Optimal and Efficient Auctions</i>. <br> In the 7th Workshop on Internet & Network Economics, <a href="http://web.spms.ntu.edu.sg/~wine11/">WINE 2011</a>. <a href="wine11.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Yang Cai and Constantinos Daskalakis: <i>Extreme-Value Theorems for Optimal Multidimensional Pricing</i>.
+<br> In the 52nd Annual IEEE Symposium on Foundations of Computer Science, <a href="http://www.cs.ucla.edu/~rafail/FOCS11/">FOCS 2011</a>. <a href="http://arxiv.org/abs/1106.0519">arxiv</a><br>
+Games and Economic Behavior, 92:266--305, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited.</b> <a href="http://arxiv.org/abs/1106.0519">arxiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alexandros G. Dimakis and Elchanan Mossel: <i>Connectivity and Equilibrium in Random Games</i>.<br>Annals of Applied Probability, Volume 21(3):987-1016, 2011.
+
+<div id="abstract2" style="display:none">
+<blockquote>
+<font color="#993300">
+We study how the structure of graphical games affects the existence of Nash equilibria. In particular, we are interested to answer whether pure Nash equilibria exist for games played on a given graph; and we study this question over all possible graphical games played on the given graph in the probabilistic sense, by considering the random measure defined by assigning random utility tables to the player-nodes.<br><br>
+
+We provide conditions for the structure of the graph under which Nash equilibria are likely to exist and complementary conditions which make the existence of Nash equilibria highly unlikely, generalizing known results for games on the complete graph. In particular, we show that bounded degree graphs have Nash equilibria with exponentially small probability in the size of the graph and provide a simple algorithm that finds small non-existence certificates for a large family of graphs. On the contrary, we show that for sufficiently expanding graphs, the number of Nash equilibria is Poisson distributed.<br><br>
+
+To obtain a refined characterization of how connectivity affects the existence of pure Nash equilibria, we study the question also in the random graph setting. In particular, we look at the case where the interaction graph is drawn from the Erdos-Renyi, G(n, p), model, where each edge is present independently with probability p. For this model we establish a double phase transition for the existence of pure Nash equilibria as a function of the average degree pn, consistent with a non-monotone behavior of the model. We show that when the average degree satisfies np >> (2+Omega(1)) log n, the number of pure Nash equilibria follows a Poisson distribution with parameter 1. When 1/n << np < (0.5 - Omega(1)) log n, pure Nash equilibria fail to exist with high probability. Finally, when np << 1/n a pure Nash equilibrium exists with high probability.</font>
+</blockquote>
+</div>
+
+<div id="bib2" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DDM:random games,
+  title = "Connectivity and Equilibrium in Random Games",
+  author = "Constantinos Daskalakis and Alexandros G. Dimakis and Elchanan Mossel",
+  journal = {Annals of Applied Probability},
+  year = {2011},
+  volume = {21},
+  pages = {987-1016},
+  number = {3},
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div2, abstract2)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div2, bib2)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/math/0703902">arXiv</a>]</font><br>
+<div id="div2"></div>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis: <i>On the Complexity of Approximating a Nash Equilibrium</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="http://people.csail.mit.edu/costis/appxhardness.pdf">pdf</a><br>
+ACM Transactions on Algorithms (TALG), 9(3): 23, 2013. <b>Special Issue for SODA 2011. Invited.</b> <a href="appxhardness.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis, Alan Deckelbaum and Anthony Kim: <i>Near-Optimal No-Regret Algorithms for Zero-sum Games</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="geb_120513.pdf">pdf</a><br>
+Games and Economic Behavior, 92:327-348, 2015. <b>Special Issue for STOC/FOCS/SODA 2011. Invited. </b> <a href="geb_120513.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Yang Cai and Constantinos Daskalakis: <i>On Minmax Theorems for Multiplayer Games</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="network2.pdf">pdf</a><br>
+</li>
+</ul>
+
+<ul>
+<li>
+Constantinos Daskalakis and Christos Papadimitriou: <i>Continuous Local Search</i>. <br>In the 22nd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da11/">SODA 2011</a>. <a href="CLS.pdf">pdf</a> and <a href="CLS-corrigendum.pdf">corrigendum</a> <br>
+</li>
+</ul>
+
+<ul>
+<li>C. Daskalakis, R. Frongillo, C. H. Papadimitriou, G. Pierrakos and G. Valiant: <i>On Learning Algorithms for Nash Equilibria</i>. <br> In the  3rd International Symposium on Algorithmic Game Theory, <a href="http://sagt2010.cti.gr/">SAGT 2010</a>. <a href="learning.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Ilan Adler, Constantinos Daskalakis and Christos H. Papadimitriou: <i>A Note on Strictly Competitive Games</i>. <br>In the 5th Workshop on Internet & Network Economics, <a href="http://www.dis.uniroma1.it/~wine09/">WINE 2009</a>.
+
+<div id="abstract26" style="display:none">
+<blockquote>
+<font color="#993300">
+Strictly competitive games are a class of 2-player games often quoted in the literature to be a proper generalization of zero-sum games. Other times it is claimed, e.g. by Aumann, that strictly competitive games are only payoff transformations of zero-sum games. But to the best of our knowledge there is no proof of such claim. We shed light to this point of confusion in the literature, showing that any strictly competitive game is indeed a payoff transformation of a zero sum-game; in fact, an affine transformation. We offer two proofs of this fact, one combinatorial and one algebraic.
+</font>
+</blockquote>
+</div>
+
+<div id="bib26" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{ADP:SCGs,
+  title = "A Note on Strictly Competitive Games",
+  author = "Ilan Adler and Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2009",
+  booktitle = "WINE",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div26, abstract26)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div26, bib26)">bib</a>]</font> <font size="-1">[<a href="SCG_1.pdf">pdf</a>]</font><br>
+<div id="div26"></div>
+
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>On a Network Generalization of the Minmax Theorem</i>. <br>In the 36th International Colloquium on
+Automata, Languages and Programming, <a href="https://dblp.org/db/conf/icalp/icalp2009-2.html">ICALP 2009</a>.
+
+<div id="abstract22" style="display:none">
+<blockquote>
+<font color="#993300">
+We consider graphical games in which the edges are zero-sum games
+between the endpoints/players; the payoff of a player is the sum of
+the payoffs from each incident edge. Such games are arguably very
+broad and useful models of networked economic interactions. We give a simple reduction of
+such games to two-person zero-sum games; as a corollary, a mixed
+Nash equilibrium can be computed efficiently by solving a linear
+program and rounding off the results. Our
+results render polynomially efficient, and simplify considerably,
+the approach in [Bregman and Fokin '98].
+</font>
+</blockquote>
+</div>
+
+<div id="bib22" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP:networkminimax,
+  title = "On a Network Generalization of the Minmax Theorem",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2009",
+  booktitle = "ICALP",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div22, abstract22)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div22, bib22)">bib</a>]</font> <font size="-1">[<a href="network1.pdf">pdf</a>]</font><br>
+<div id="div22"></div>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>On Oblivious PTAS's for Nash Equilibrium</i>. <br> In the 41st ACM Symposium On Theory of Computing, <a href="https://www.umiacs.umd.edu/conferences/stoc2009/index.shtml">STOC 2009</a>.
+
+<div id="abstract20" style="display:none">
+<blockquote>
+<font color="#993300">
+If a class of games is known to have a Nash equilibrium with
+probability values that are either zero or Omega(1)---and thus with support of bounded size---then obviously this equilibrium can be found exhaustively in polynomial time.
+Somewhat surprisingly, we show that there is a PTAS for the class of games whose equilibria are guaranteed to have small---O(1/n)---values, and therefore large---Omega(n)---supports. We also point out that there is a PTAS for games with sparse payoff matrices, a family for which the exact problem is known to be PPAD-complete [Chen, Deng, Teng 2006]. Both algorithms are of a special kind that we call oblivious: The algorithm just samples a fixed distribution on pairs of mixed strategies, and the game is only used to determine whether the sampled strategies comprise an epsilon-Nash equilibrium; the answer is "yes" with inverse polynomial probability (in the second case, the algorithm is actually deterministic).  These results bring about the question: Is there an oblivious PTAS for finding a Nash equilibrium in general games? We answer this question in the negative; our lower bound comes close to the quasi-polynomial upper bound of [Lipton, Markakis, Mehta 2003].<br> <br>
+
+Another recent PTAS for anonymous games [Daskalakis, Papadimitriou 2007 and 2008; Daskalakis 2008] is also oblivious in a weaker sense appropriate for this class of games (it samples from a fixed distribution on unordered collections of mixed strategies), but its running time is exponential in 1/epsilon. We prove that any oblivious PTAS for anonymous games with two strategies and three player types must have 1/epsilon^a in the exponent of the running time for some a >= 1/3, rendering the algorithm in [Daskalakis 2008] (which works with any bounded number of player types) essentially optimal within oblivious algorithms.  In contrast, we devise a poly(n)*(1/epsilon)^O(log^2(1/epsilon)) non-oblivious PTAS for anonymous games with two strategies and any bounded number of player types.  The key idea of our algorithm is to search not over unordered sets of mixed strategies, but over a carefully crafted set of collections of the first O(log(1/epsilon)) moments of the distribution of the number of players playing strategy 1 at equilibrium.  The algorithm works because of a probabilistic result of more general interest that we prove: the total variation distance between two sums of independent indicator random variables decreases exponentially with the number of moments of the two sums that are equal, independent of the number of indicators.
+</font>
+</blockquote>
+</div>
+
+<div id="bib20" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP:oblivious,
+  title = "On Oblivious PTAS's for Nash Equilibrium",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2009",
+  booktitle = "STOC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div20, abstract20)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div20, bib20)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/1102.2280">arXiv</a>]</font><br>
+<div id="div20"></div>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Grant Schoenebeck, Gregory Valiant and Paul Valiant: <i>On the Complexity of Nash Equilibria of Action-Graph Games</i>. <br> In the 20th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da09/">SODA 2009</a>.
+
+<div id="abstract18" style="display:none">
+<blockquote>
+<font color="#993300">
+In light of much recent interest in finding a model of multi-player multi-action games that allows for efficient computation of Nash equilibria yet remains as expressive as possible, we investigate the computational complexity of Nash equilibria in the recently proposed model of action-graph games (AGGs). AGGs, introduced by Bhat and Leyton-Brown, are succinct representations of games that encapsulate both local dependencies as in graphical games, and partial indifference to other agents' identities as in anonymous games, which occur in many natural settings such as financial markets. This is achieved by specifying a graph on the set of actions, so that the payoff of an agent for selecting a strategy depends only on the number of agents playing each of the neighboring strategies in the action graph. We present a simple Polynomial Time Approximation Scheme for computing mixed Nash equilibria of AGGs with constant treewidth and a constant number of agent types (but an arbitrary number of strategies). However, the main results of this paper are negative, showing that when either of these conditions is relaxed the problem becomes intractable. In particular, we show that even if the action graph is a tree but the number of agent-types is unconstrained, it is NP-omplete to decide the existence of a pure-strategy Nash equilibrium and PPAD-complete to compute a mixed Nash equilibrium (even an approximate one). Analogously, for AGGs where all agents are of a single type (symmetric AGGs), if the treewidth is unconstrained then deciding the existence of a pure-strategy Nash equilibrium is NP-complete and computing a mixed Nash is PPAD-omplete. These hardness results suggest that, in some sense, our PTAS is as strong a positive result as one can expect. In the broader context of trying to pin down the boundary where the equilibria of multi-player games can be computed efficiently, these results complement recent hardness results for graphical games and algorithmic results for anonymous games.
+</font>
+</blockquote>
+</div>
+
+<div id="bib18" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DSVV:actiongraph08,
+  title = "On the Complexity of Nash Equilibria of Action-Graph Games",
+  author = "Constantinos Daskalakis and Grant Schoenebeck and Gregory Valiant and Paul Valiant",
+  year = "2009",
+  booktitle = "SODA",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div18, abstract18)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div18, bib18)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0802.1604">arXiv</a>]</font><br>
+<div id="div18"></div>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis: <i>An Efficient PTAS for Two-Strategy Anonymous Games</i>. <br> In the 4th Workshop on Internet and Network Economics, <a href="http://www.se.cuhk.edu.hk/~wine2008/">WINE 2008</a>.
+
+<div id="abstract21" style="display:none">
+<blockquote>
+<font color="#993300">
+We present a novel polynomial time approximation scheme for two-strategy anonymous games, in which the players' utility functions, although potentially different, do not differentiate among the identities of the other players. Our algorithm computes an epsilon-approximate Nash equilibrium of an n-player 2-strategy anonymous game in time poly(n)*(1/epsilon)^O(1/epsilon^2), which significantly improves upon the running time n^O(1/epsilon^2) required by the algorithm of [Daskalakis, Papadimitriou 2007]. The improved running time is based on a new structural understanding of approximate Nash equilibria:  We show that, for any epsilon, there exists an epsilon-approximate Nash equilibrium in which either only O(1/epsilon^3) players randomize, or all players who randomize use the same mixed strategy. To show this result we employ tools from the literature on Stein's Method.
+</font>
+</blockquote>
+</div>
+
+<div id="bib21" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{D:anonymous3,
+  title = "An Efficient PTAS for Two-Strategy Anonymous Games",
+  author = "Constantinos Daskalakis",
+  year = "2008",
+  booktitle = "WINE",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div21, abstract21)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div21, bib21)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0812.2277">arXiv</a>]</font><br>
+<div id="div21"></div>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou: <i>Discretized Multinomial Distributions and Nash Equilibria in Anonymous Games</i>. <br> In the 49th Annual IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2008/">FOCS 2008</a>.
+
+<div id="abstract17" style="display:none">
+<blockquote>
+<font color="#993300"> We show that there is a polynomial time approximation scheme for computing Nash equilibria in anonymous games with any fixed number of strategies (a very broad and important class of games), extending the 2-strategy result of Daskalakis and Papadimitriou, 2007. The approximation guarantee follows from a probabilistic result of more general interest: The distribution of the sum of n independent unit vectors with values ranging over {e_1,...,e_k}, where e_i is the unit vector along dimension i of the k-dimensional Euclidean space, can be approximated by the distribution of the sum of another set of independent unit vectors whose probabilities of obtaining each value are multiples of 1/z for some integer z, and so that the variational distance of the two distributions is at most eps, where eps is bounded by an inverse polynomial in z and a function of k, but with no dependence on n. Our probabilistic result specifies the construction of a sparse eps-cover of the space of distributions of sums of independent unit vectors under the total variation distance, which is of interest on its own right.
+</font>
+</blockquote>
+</div>
+
+<div id="bib17" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP:anonymous08,
+  title = "Discretized Multinomial Distributions and Nash Equilibria in Anonymous Games",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2008",
+  booktitle = "FOCS",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div17, abstract17)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div17, bib17)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0808.2801">arXiv</a>]</font><br>
+<div id="div17"></div>
+
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou, <i>Computing Equilibria in Anonymous Games</i>, <br> In the 48th Annual IEEE Symposium on Foundations of Computer Science, <a href="http://focs2007.org/">FOCS 2007</a>.
+
+<div id="abstract1" style="display:none">
+<blockquote>
+<font color="#993300">
+We present efficient approximation algorithms for finding Nash equilibria in anonymous games, that is, games in which the players utilities, though different, do not differentiate between other players. Our results pertain to such games with many players but few strategies. We show that any such game has an approximate pure Nash equilibrium, computable in polynomial time, with approximation O(s^2 L), where s is the number of strategies and L is the Lipschitz constant of the utilities. Finally, we show that there is a PTAS for finding an eps-approximate Nash equilibrium when the number of strategies is two.</font>
+</blockquote>
+</div>
+
+<div id="bib1" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP:anonymous07,
+  title = "Computing Equilibria in Anonymous Games",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2007",
+  booktitle = "FOCS",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div1, abstract1)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div1, bib1)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0710.5582">arXiv</a>]</font><br>
+<div id="div1"></div>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Aranyak Mehta and Christos H. Papadimitriou, <i>Progress in Approximate Nash Equilibria</i>,<br> In the 8th ACM Conference on Electronic Commerce, <a href="http://stiet.si.umich.edu/ec07/">EC 2007</a>.
+
+<div id="abstract3" style="display:none">
+<blockquote>
+<font color="#993300">
+It is known [Daskalakis, Mehta, Papadimitriou 2006] that an additively eps-approximate Nash equilibrium (with supports of size at most two) can be computed in polynomial time in any 2-player game with eps= .5. It is also known that no approximation better than .5 is possible unless equilibria with support larger than log n are considered, where n is the number of strategies per player. We give a polynomial algorithm for computing an eps-approximate Nash equilibrium in 2-player games with eps= .38; our algorithm computes equilibria with arbitrarily large supports.
+</font>
+</blockquote>
+</div>
+
+<div id="bib3" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DMP:approximate nash 2,
+  title = "Progress in Approximate Nash Equilibria",
+  author = "Constantinos Daskalakis and Aranyak Mehta and Christos H. Papadimitriou",
+  year = "2007",
+  booktitle = "EC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div3, abstract3)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div3, bib3)">bib</a>]</font> <font size="-1">[<a href="papers/ec283-daskalakis.pdf">pdf</a>]</font><br>
+<div id="div3"></div>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis, Aranyak Mehta and Christos H. Papadimitriou, <i>A Note on Approximate
+Nash Equilibria</i>, <br> In the 2nd international Workshop on Internet & Network Economics, <a href="http://wine2006.cti.gr/">WINE 2006</a>.
+<div id="abstract4" style="display:none">
+<blockquote>
+<font color="#993300">
+In view of the intractability of finding a Nash equilibrium, it is important to understand the limits of approximation in this context. A subexponential approximation scheme is known [Lipton, Markakis, Mehta 2003], and no approximation better than 1/4 is possible by any algorithm that examines equilibria involving fewer than log n strategies [Alt94]. We give a simple, linear-time algorithm examining just two strategies per player and resulting in a 1/2 -approximate Nash equilibrium in any 2-player game. For the more demanding notion of well-supported approximate equilibrium due to Daskalakis, Goldberg, Papapdimitriou 2006 no nontrivial bound is known; we show that the problem can be reduced to the case of win-lose games (games with all utilities 0-1), and that an approximation of 5/6 is possible contingent upon a graph-theoretic conjecture.
+</font>
+</blockquote>
+</div>
+
+<div id="bib4" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DMP:approximate nash 1,
+  title = "A Note on Approximate Nash Equilibria",
+  author = "Constantinos Daskalakis and Aranyak Mehta and Christos H. Papadimitriou",
+  year = "2006",
+  booktitle = "WINE",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div4, abstract4)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div4, bib4)">bib</a>]</font> <font size="-1">[<a href="papers/camera-81.pdf">pdf</a>]</font><br>
+<div id="div4"></div>
+Journal version in <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505625/description#description">Theoretical Computer Science, 410(17), 1581--1588, 2009.</a> (<b>Invited</b>, special issue for WINE 2006.)<br>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Alex Fabrikant and Christos Papadimitriou, <i>The Game World is Flat: The Complexity of Nash Equilibria in Succinct Games</i>, <br>In the 33rd International Colloquium on Automata, Languages and Programming, <a href="http://icalp06.dsi.unive.it/">ICALP 2006</a>.
+
+<div id="abstract5" style="display:none">
+<blockquote>
+<font color="#993300">
+A recent sequence of results (see below) established that computing Nash
+equilibria in normal form games is a PPAD-complete problem even in
+the case of two players. By extending these
+techniques we prove a general theorem, showing that, for a far
+more general class of families of succinctly representable
+multiplayer games, the Nash equilibrium problem can also be
+reduced to the two-player case.  In view of empirically successful
+algorithms available for this problem, this is in essence a
+positive result --- even though, due to the complexity of the
+reductions, it is of no immediate practical significance. We
+further extend this conclusion to extensive form games and network
+congestion games, two classes which do not fall into the same
+succinct representation framework, and for which no positive
+algorithmic result had been known.</font>
+</blockquote>
+</div>
+
+<div id="bib5" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DFP:succinct games,
+  title = "The Game World is Flat: The Complexity of Nash Equilibria in Succinct Games",
+  author = "Constantinos Daskalakis and Alex Fabrikant and Christos H. Papadimitriou",
+  year = "2006",
+  booktitle = "ICALP",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div5, abstract5)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div5, bib5)">bib</a>]</font> <font size="-1">[<a href="papers/dfp06.pdf">pdf</a>]</font><br>
+<div id="div5"></div>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou, <i>Computing Pure Nash Equilibria via Markov Random Fields</i>, <br>In the 7th ACM Conference on Electronic Commerce, <a href="http://stiet.si.umich.edu/ec06/">EC 2006</a>. <b>Best Student Paper Award.</b>
+
+<div id="abstract6" style="display:none">
+<blockquote>
+<font color="#993300">
+We present a reduction from graphical games to Markov random
+fields so that pure Nash equilibria in the former can be found by
+statistical inference on the latter.  Our result, when combined
+with the junction tree algorithm for statistical inference, yields
+a unified proof of all previously known tractable cases of the
+NP-complete problem of finding  pure Nash equilibria in graphical
+games, but also implies efficient algorithms for new classes, such
+as the games with O(log n) treewidth.  Furthermore, this
+important problem becomes susceptible to a wealth of sophisticated
+and empirically successful techniques from Machine Learning.</font>
+</blockquote>
+</div>
+
+<div id="bib6" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP: nash via MRFs,
+  title = "Computing Pure Nash Equilibria via Markov Random Fields",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2006",
+  booktitle = "EC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div6, abstract6)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div6, bib6)">bib</a>]</font> <font size="-1">[<a href="papers/fp260-daskalakis.pdf">pdf</a>]</font><br>
+<div id="div6"></div> <!--[<a href="http://arxiv.org/abs/cs.GT/0510031">Arxiv report</a>]-->
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos H. Papadimitriou, <i>Three-Player Games Are Hard</i>,<br> Manuscript 2005.
+
+<div id="abstract7" style="display:none">
+<blockquote>
+<font color="#993300">
+We prove that computing a Nash equilibrium in a 3-player game is PPAD-complete, solving a problem left open in our result on the complexity of Nash equilibria.</font>
+</blockquote>
+</div>
+
+<div id="bib7" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP: three players,
+  title = "Three-Player Games Are Hard",
+  author = "Constantinos Daskalakis and Christos H. Papadimitriou",
+  year = "2005",
+  booktitle = "ECCC Report",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div7, abstract7)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div7, bib7)">bib</a>]</font> <font size="-1">[<a href="http://eccc.uni-trier.de/eccc-reports/2005/TR05-139/Paper.pdf">ECCC Report 2005</a>]</font><br>
+<div id="div7"></div>
+
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Paul W. Goldberg and Christos H. Papadimitriou, <i>The Complexity of Computing a Nash Equilibrium</i>, <br>
+In the 38th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2006/">STOC 2006</a>.
+<div id="abstract8" style="display:none">
+<blockquote>
+<font color="#993300">
+We resolve the question of <b>the complexity of Nash equilibrium</b> by
+showing that the problem of computing a Nash equilibrium in a game
+with 4 or more players is complete for the complexity class PPAD.
+Our proof uses ideas from the recently-established equivalence
+between polynomial-time solvability of normal-form games and
+graphical games, and shows that these kinds of games can implement
+arbitrary members of a PPAD-complete class of Brouwer functions.</font>
+</blockquote>
+</div>
+
+<div id="bib8" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP: complexity of nash equilibria,
+  title = "The Complexity of Computing a Nash Equilibrium",
+  author = "Constantinos Daskalakis and Paul W. Goldberg and Christos H. Papadimitriou",
+  year = "2006",
+  booktitle = "STOC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div8, abstract8)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div8, bib8)">bib</a>]</font> <font size="-1">[<a href="journal_ver10.pdf">pdf</a>]</font><br>
+<div id="div8"></div>
+Journal version in <a href="http://www.siam.org/journals/sicomp.php">SIAM Journal on Computing, 39(1), 195--259, May 2009.</a> (<b>Invited</b>, special issue for STOC 2006.) <br>Expository article in Communications of the ACM 52(2):89--97, 2009. (<b>Invited</b>.)<br>
+<b>2008 Kalai Prize from Game Theory Society</b>; <b> 2011 SIAM Outstanding Paper Prize</b>; <b>2022 ACM SIGECOM Test of Time Award</b>.<br>
+
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou, <i>The Complexity of Games on Highly Regular Graphs</i>, <br>
+In the 13th Annual European Symposium on Algorithms, <a href="http://www.lsi.upc.edu/~algo05/?cmd=esa2005">ESA 2005</a>.
+
+
+
+
+
+<div id="abstract9" style="display:none">
+<blockquote>
+<font color="#993300">
+We study the complexity of computing equilibria in succinct games defined on highly regular graphs. Surprisingly, the problem of deciding whether there exists a pure Nash equilibrium in a one-dimensional highly-regular game is <b>NL-complete</b>, whereas if the game is multi-dimensional it is <b>NEXP-complete</b>. Such a dichotomy does not exist for the problem of computing mixed Nash and correlated equilibria. By taking advantage of the regularities of the game we construct a deterministic exponential time algorithm that computes a (succinct description of a) mixed Nash equilibrium of any given highly regular game and a polynomial time algorithm that computes a (succinct description of a) correlated equilibrium.</font>
+</blockquote>
+</div>
+
+<div id="bib9" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP: regular games,
+  title = "The Complexity of Games on Highly Regular Graphs",
+  author = "Constantinos Daskalakis  and Christos H. Papadimitriou",
+  year = "2005",
+  booktitle = "ESA",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div9, abstract9)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div9, bib9)">bib</a>]</font> <font size="-1">[<a href="papers/RegularGames.pdf">pdf</a>]</font><br>
+<div id="div9"></div>
+
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, <i>On   the Existence of Pure Nash Equilibria in Graphical Games with succinct   description</i>, <br>
+National Technical University of   Athens, 2004 (In Greek).
+
+
+<div id="abstract10" style="display:none">
+<blockquote>
+<font color="#993300">
+My diploma thesis at NTUA. My undergrad advisor was <b>Stathis Zachos</b></font>
+</blockquote>
+</div>
+
+<div id="bib10" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DP: regular games,
+  title = "The Complexity of Games on Highly Regular Graphs",
+  author = "Constantinos Daskalakis",
+  year = "2005",
+  booktitle = "ESA",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div10, abstract10)">abstract</a>]</font> <font size="-1">[<a href="papers/diploma.pdf">pdf</a>]</font><br>
+<div id="div10"></div>
+
+</li>
+</ul>
+
+
+<p>&nbsp;</p>
+<h3><a name="PT"></a>Machine Learning, Statistics and Probability </h3>
+
+<ul>
+  <li>Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>From External to Swap Regret 2.0: An Efficient Reduction and Oblivious Adversary for Large Action Spaces.</i>
+    <br>In the 56th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2024/">STOC 2024</a>. <a href="https://arxiv.org/abs/2310.19786">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1732903234992513103">twitter summary</a>
+  </li>
+</ul>
+
+<ul>
+  <li>Giannis Daras, Yuval Dagan, Alexandros G. Dimakis, Constantinos Daskalakis: <i>Consistent Diffusion Models: Mitigating Sampling Drift by Learning to be Consistent.</i>
+    <br>In the 37th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2023</a>. <a href="https://arxiv.org/abs/2302.09057">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Angelos Assos, Idan Attias, Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson: <i>Online Learning and Solving Infinite Games with an ERM Oracle.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2307.01689">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Constantinos Daskalakis, Noah Golowich, Stratis Skoulakis, Manolis Zampetakis: <i>STay-ON-the-Ridge: Guaranteed Convergence to Local Minimax Equilibrium in Nonconvex-Nonconcave Games.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2210.09769">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Constantinos Daskalakis, Noah Golowich, Kaiqing Zhang: <i>The Complexity of Markov Equilibrium in Stochastic Games.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2204.03991">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Davin Choo, Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros: <i>Learning and Testing Latent-Tree Ising Models Efficiently.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2211.13291">arXiv</a>.
+  </li>
+</ul>
+
+
+<ul>
+  <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>What Makes A Good Fisherman? Linear Regression under Self-Selection Bias.</i>
+    <br>In the 55th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2023/">STOC 2023</a>. <a href="https://arxiv.org/abs/2205.03246">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Giannis Daras, Yuval Dagan, Alex Dimakis, Constantinos Daskalakis: <i>Score-Guided Intermediate Level Optimization: Fast Langevin Mixing for Inverse Problems.</i>
+    <br>In the 39th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2022">ICML 2022</a>. <a href="https://arxiv.org/abs/2206.09104">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Yuval Dagan, Vardis Kandiros, Constantinos Daskalakis: <i>EM's Convergence in Gaussian Latent Tree Models.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2022/index.html">COLT 2022</a>. <a href="https://arxiv.org/abs/2211.11904">arXiv</a>.
+  </li>
+</ul>
+
+
+<ul>
+  <li>Yang Cai, Constantinos Daskalakis: <i>Recommender Systems meet Mechanism Design.</i>
+    <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2110.12558">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Yeshwanth Cherapanamjeri, Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>Estimation of Standard Auction Models.</i>
+    <br>In the 23rd ACM Conference on Economics and Computation, <a href="https://ec22.sigecom.org/">EC 2022</a>. <a href="https://arxiv.org/abs/2205.02060">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Constantinos Daskalakis, Noah Golowich: <i>Fast Rates for Nonparametric Online Learning: From Realizability to Learning in Games.</i>
+    <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.08911">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Ioannis Anagnostides, Constantinos Daskalakis, Gabriele Farina, Maxwell Fishelson, Noah Golowich, Tuomas Sandholm: <i>Near-Optimal No-Regret Learning for Correlated Equilibria in Multi-Player General-Sum Games.</i>
+    <br>In the 54th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2022/">STOC 2022</a>. <a href="https://arxiv.org/abs/2111.06008">arXiv</a>.
+  </li>
+</ul>
+
+
+<ul>
+  <li>Constantinos Daskalakis, Petros Dellaportas, Ares Panos: <i>How Good are Low-Rank Approximations in Gaussian Process Regression?</i>
+    <br>In the 36th AAAI Conference on Artificial Intelligence (AAAI), <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2022</a>. <a href="https://arxiv.org/abs/2004.01584">arxiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich: <i>Near-Optimal No-Regret Learning in General Games</i>.
+    <br>In the 35th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2021</a>. <b>Oral</b>. <a href="https://arxiv.org/abs/2108.06924">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1468747580108685313">twitter summary</a>
+  </li>
+</ul>
+
+<ul>
+  <li>Constantinos Daskalakis, Patroklos Stefanou, Rui Yao, Manolis Zampetakis: <i>Efficient Truncated Linear Regression with Unknown Noise Variance</i>.
+    <br>In the 35th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2021</a>. <a href="https://arxiv.org/abs/2208.12042">arXiv</a>.
+  </li>
+</ul>
+
+
+<ul>
+<li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Surbhi Goel, Anthimos Vardis Kandiros: <i>Statistical Estimation from Dependent Data</i>.
+<br>In the 38th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2021">ICML 2021</a>. <a href="https://arxiv.org/abs/2107.09773">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis: <i>A Statistical Taylor Theorem and Extrapolation of Truncated Densities</i>.
+<br>In the 34th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2021/index.html">COLT 2021</a>. <a href="https://arxiv.org/abs/2106.15908">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Qinxuan Pan: <i>Sample-Optimal and Efficient Learning of Tree Ising models</i>.
+<br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2010.14864">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1321963003906961408">twitter summary</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Stratis Skoulakis, Manolis Zampetakis: <i>The Complexity of Constrained Min-Max Optimization</i>.
+<br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2009.09623">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1309142723992203267">twitter summary</a>
+</li>
+</ul>
+
+<ul>
+<li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Anthimos Vardis Kandiros: <i>Learning Ising Models from One or Multiple Samples</i>.
+<br>In the 53rd ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2021/">STOC 2021</a>. <a href="https://arxiv.org/abs/2004.09370">arXiv</a>. <a href="https://twitter.com/KonstDaskalakis/status/1338240417297432576">twitter summary</a>
+</li>
+</ul>
+
+<ul>
+<li>Jelena Diakonikolas, Constantinos Daskalakis, Michael I. Jordan: <i>Efficient Methods for Structured Nonconvex-Nonconcave Min-Max Optimization</i>.
+  <br>In the 24th International Conference on Artificial Intelligence and Statistics (AISTATS), <a href="https://aistats.org/aistats2021/"> AISTATS 2021</a>. <a href="https://arxiv.org/abs/2011.00364">arXiv</a>
+</li>
+</ul>
+
+<!--<ul>
+<li>Liu Yang, Constantinos Daskalakis, George Em Karniadakis: <i>Generative Ensemble-Regression: Learning Stochastic Dynamics from Discrete Particle Ensemble Observations</i>.
+<br><a href="https://arxiv.org/abs/2008.01915">arXiv</a>, 2020.
+</li>
+</ul>-->
+
+
+
+<!--<ul>
+<li>Constantinos Daskalakis, Petros Dellaportas, Aristeidis Panos: <i>Scalable Gaussian Processes, with Guarantees: Kernel Approximations and Deep Feature Extraction</i>.
+<br><a href="https://arxiv.org/abs/2004.01584">arXiv</a>, 2020.
+</li>
+</ul>-->
+
+<ul>
+<li>Mucong Ding, Constantinos Daskalakis, Soheil Feizi: <i>GANs with Conditional Independence Graphs: On Subadditivity of Probability Divergences</i>.
+<br>In the 24th International Conference on Artificial Intelligence and Statistics (AISTATS), <a href="https://aistats.org/aistats2021/"> AISTATS 2021</a>. <b>Oral.</b> <a href="https://arxiv.org/abs/2003.00652">arXiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis: <i>Tight last-iterate convergence rates for no-regret learning in multi-player games</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2010.13724">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dylan Foster, Noah Golowich: <i> Independent Policy Gradient Methods for Competitive Reinforcement Learning</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2101.04233">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dhruv Rohatgi, Manolis Zampetakis: <i>Truncated Linear Regression in High Dimensions</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <a href="https://arxiv.org/abs/2007.14539">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Dhruv Rohatgi, Manolis Zampetakis: <i>Constant-Expansion Suffices for Compressed Sensing with Generative Priors</i>.
+<br>In the 34th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2020</a>. <b> Spotlight.</b> <a href="https://arxiv.org/abs/2006.04237">arXiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Qi Lei, Jason D. Lee, Alexandros G. Dimakis, Constantinos P. Daskalakis: <i>SGD Learns One-Layer Networks in WGANs</i>.
+<br>In the 37th International Conference on Machine Learning, <a href="https://icml.cc/">ICML 2020</a>. <a href="https://arxiv.org/abs/1910.07030">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Noah Golowich, Sarath Pattathil, Constantinos Daskalakis, Asuman Ozdaglar: <i>Last Iterate is Slower than Averaged Iterate in Smooth Convex-Concave Saddle Point Problems</i>.
+<br>In the 33nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2020/">COLT 2020</a>. <a href="https://arxiv.org/abs/2002.00057">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Ioannis Panageas: <i>Logistic regression with peer-group effects via inference in higher-order Ising models</i>.
+<br>In the 23rd International Conference on Artificial Intelligence and Statistics, <a href="https://www.aistats.org/">AISTATS 2020</a>. <a href="https://arxiv.org/abs/2003.08259">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Andrew Ilyas, Manolis Zampetakis: <i>A Theoretical and Practical Framework for Regression and Classification from Truncated Samples</i>.
+<br>In the 23rd International Conference on Artificial Intelligence and Statistics, <a href="https://www.aistats.org/">AISTATS 2020</a>. <a href="http://proceedings.mlr.press/v108/ilyas20a.html">pdf</a>.
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Themis Gouleakis, Christos Tzamos, Manolis Zampetakis: <i>Computationally and Statistically Efficient Truncated Regression</i>.
+<br>In the 32nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2019/">COLT 2019</a>. <a href="https://arxiv.org/abs/2010.12000">arXiv</a>.
+</li>
+</ul>
+
+
+<ul>
+<li>Yuval Dagan, Constantinos Daskalakis, Nishanth Dikkala, Siddhartha Jayanti: <i>Generalization and learning under Dobrushin's condition</i>.
+<br>In the 32nd Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2019/">COLT 2019</a>. <a href="https://arxiv.org/abs/1906.09247">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Ioannis Panageas: <i>Regression from Dependent Observations</i>.
+<br>In the 51st Annual ACM Symposium on the Theory of Computing, <a href="http://acm-stoc.org/stoc2019/">STOC 2019</a>. <a href="https://arxiv.org/abs/1905.03353">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Andrew Ilyas, Ajil Jalal, Eirini Asteri, Constantinos Daskalakis, Alexandros G. Dimakis: <i>The Robust Manifold Defense: Adversarial Training using Generative Models</i>.
+<br><a href="https://arxiv.org/abs/1712.09196">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ioannis Panageas: <i>Last-Iterate Convergence: Zero-Sum Games and Constrained Min-Max Optimization</i>.
+<br>In the 10th Innovations in Theoretical Computer Science (ITCS) conference, <a href="http://itcs-conf.org/">ITCS 2019</a>. <a href="https://arxiv.org/abs/1807.04252">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ioannis Panageas: <i>The Limit Points of (Optimistic) Gradient Descent in Min-Max Optimization</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1807.03907">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Siddhartha Jayanti: <i>HOGWILD!-Gibbs can be PanAccurate</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1811.10581">arXiv</a>.
+
+</li>
+</ul>
+
+<ul>
+<li>Nima Anari, Constantinos Daskalakis, Wolfgang Maass, Christos Papadimitriou, Amin Saberi, Santosh Vempala: <i>Smoothed Analysis of Discrete Tensor Decomposition and Assemblies of Neurons</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1810.11896">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Jayadev Acharya, Arnab Bhattacharyya, Constantinos Daskalakis, Saravanan Kandasamy: <i>  Learning and Testing Causal Models with Interventions</i>.
+<br>In the 32nd Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2018</a>. <a href="https://arxiv.org/abs/1805.09697">arXiv</a>.
+</li>
+</ul>
+<ul>
+<li>Constantinos Daskalakis, Themis Gouleakis, Christos Tzamos, Manolis Zampetakis: <i>Efficient Statistics, in High Dimensions, from Truncated Samples</i>.
+<br>In the 59th Annual IEEE Symposium on Foundations of Computer Science, <a href="https://www.irif.fr/~focs2018/">FOCS 2018</a>. <a href="https://arxiv.org/abs/1809.03986">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala, Nick Gravin: <i>Testing Symmetric Markov Chains from a Single Trajectory</i>.
+<br>In the 31st Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2018/">COLT 2018</a>. <a href="https://arxiv.org/abs/1704.06850">arxiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Andrew Ilyas, Vasilis Syrgkanis, Haoyang Zeng: <i>Training GANs with Optimism</i>.
+<br>In the 6th International Conference on Learning Representations, <a href="https://openreview.net/group?id=ICLR.cc/2018/Conference">ICLR 2018</a>. <a href="https://arxiv.org/abs/1711.00141">arXiv</a>.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos, Manolis Zampetakis: <i>Bootstrapping EM via EM and Convergence Analysis in the Naive Bayes Model</i>.
+<br>In the 21st International Conference on Artificial Intelligence and Statistics, <a href="http://www.aistats.org/">AISTATS 2018</a>. <a href="https://proceedings.mlr.press/v84/daskalakis18a.html">pdf</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos and Manolis Zampetakis: <i>A Converse to Banach's Fixed Point Theorem and its CLS Completeness</i>.
+<br>In the 50th Annual ACM Symposium on the Theory of Computing, <a href="http://acm-stoc.org/stoc2018/">STOC 2018</a>. <a href="https://arxiv.org/abs/1702.07339">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Gautam Kamath and John Wright: <i>Which Distribution Distances are Sublinearly Testable?</i>.
+<br>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="https://archive.siam.org/meetings/da18/">SODA 2018</a>. <a href="https://arxiv.org/abs/1708.00002">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala and Gautam Kamath: <i>Testing Ising Models</i>.
+<br>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="https://archive.siam.org/meetings/da18/">SODA 2018</a>. <a href="https://arxiv.org/abs/1612.03147">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Nishanth Dikkala and Gautam Kamath: <i>Concentration of Multilinear Functions of the Ising Model with Applications to Network Data</i>.
+<br>In the 31st Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2017</a>. <a href="https://arxiv.org/abs/1710.04170">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Yasushi Kawase: <i>Optimal Stopping Rules for Sequential Hypothesis Testing</i>.
+<br> In the 25th Annual European Symposium on Algorithms (ESA), <a href="https://algo2017.ac.tuwien.ac.at/esa/">ESA 2017</a>. <a href="http://drops.dagstuhl.de/opus/volltexte/2017/7823/pdf/LIPIcs-ESA-2017-32.pdf">pdf</a>
+</li>
+</ul>
+
+<ul>
+<li>Bryan Cai, Constantinos Daskalakis and Gautam Kamath: <i>Priv'IT: Private and Sample Efficient Identity Testing</i>.
+<br>In the 34th International Conference on Machine Learning, <a href="https://icml.cc/Conferences/2017">ICML 2017</a>. <a href="https://arxiv.org/abs/1703.10127">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Christos Tzamos and Manolis Zampetakis: <i>Ten Steps of EM Suffice for Mixtures of Two Gaussians</i>.
+<br>In the 30th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2017/">COLT 2017</a>. Preliminary version presented at NeurIPS 2016 Workshop on Non-Convex Optimization for Machine Learning. <a href="https://arxiv.org/abs/1609.00368">arXiv</a>
+</li>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Qinxuan Pan: <i>Square Hellinger Subadditivity for Bayesian Networks and its Applications to Identity Testing</i>.
+<br>In the 30th Annual Conference on Learning Theory, <a href="http://www.learningtheory.org/colt2017/">COLT 2017</a>. <a href="https://arxiv.org/abs/1612.03164">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Anindya De, Gautam Kamath and Christos Tzamos: <i>A Size-Free CLT for Poisson Multinomials and its Applications</i>.
+<br>In the 48th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2016/">STOC 2016</a>. <a href="http://arxiv.org/abs/1511.03641">arXiv</a>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Christos Papadimitriou: <i>Sparse Covers for Sums of Indicators</i>. <br>
+Probability Theory and Related Fields, 162(3):679-705, 2015. <a href="http://arxiv.org/abs/1306.1265">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Jayadev Acharya, Constantinos Daskalakis and Gautam Kamath: <i>Optimal Testing for Properties of Distributions</i>.
+<br>In the 29th Annual Conference on Neural Information Processing Systems (NeurIPS), <a href="https://nips.cc/">NeurIPS 2015</a>. <b>Spotlight</b>. <a href="http://arxiv.org/abs/1507.05952">arXiv</a>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Gautam Kamath and Christos Tzamos: <i>On the Structure, Covering, and Learning of Poisson Multinomial Distributions</i>.
+<br>In the 56th IEEE Symposium on Foundations of Computer Science (FOCS), <a href="https://focs15.simons.berkeley.edu/">FOCS 2015</a>. <a href="http://arxiv.org/abs/1504.08363">arXiv</a>
+</ul>
+
+
+<ul>
+<li>Yang Cai, Constantinos Daskalakis and Christos H. Papadimitriou: <i>Optimum Statistical Estimation with Strategic Data Sources</i>.
+<br>In the 28th Annual Conference on Learning Theory (COLT), <a href="http://www.learningtheory.org/colt2015/">COLT 2015</a>. <a href="http://arxiv.org/abs/1408.2539">arXiv</a>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis and Jayadev Acharya: <i>Testing Poisson Binomial Distributions</i>.
+<br>In the 26th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da15/">SODA 2015</a>. <a href="http://arxiv.org/abs/1410.3386">arXiv</a>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis and Gautam Kamath: <i>Faster and Sample Near-Optimal Algorithms for Proper Learning Mixtures of Gaussians</i>.
+<br>In the 27th Annual Conference on Learning Theory (COLT), <a href="https://orfe.princeton.edu/conferences/colt2014/">COLT 2014</a>. <a href="http://arxiv.org/abs/1312.1054">arxiv</a>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Anindya De, Ilias Diakonikolas, Ankur Moitra, and Rocco Servedio: <i> A Polynomial-time Approximation Scheme for Fault-tolerant Distributed Storage</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da14/">SODA 2014</a>. <a href="http://arxiv.org/abs/1307.3621">arxiv</a>
+</ul>
+
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas, Ryan O'Donnel, Rocco SIIRVedio and Li-Yang Tan: <i> Learning Sums of Independent Integer Random Variables</i>.
+<br>In the 54th IEEE Symposium on Foundations of Computer Science, <a href="http://ieee-focs.org/focs2013/">FOCS 2013</a>. <a href="learning-siirvs.pdf">pdf</a>
+</ul>
+
+ <ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas, Rocco Servedio, Greg Valiant and Paul Valiant: <i>Testing k-Modal Distributions: Optimal Algorithms via Reductions</i>.
+<br>In the 24th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>. <a href="http://arxiv.org/abs/1112.5659">arxiv</a> </li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning Poisson Binomial Distributions</i>.
+<br>In the 44th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2012/">STOC 2012</a>.
+<a href="http://arxiv.org/abs/1107.2702">arXiv</a>
+<br>Algorithmica, 72(1):316-357, 2015. <b>Special Issue on New Theoretical Challenges in Machine Learning. Invited.</b> <a href="http://arxiv.org/abs/1107.2702">arXiv</a>
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Ilias Diakonikolas and Rocco A. Servedio: <i>Learning k-Modal Distributions via Testing</i>. <br>
+In the 23rd Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da12/">SODA 2012</a>.  <a href="http://arxiv.org/abs/1107.2700">arXiv</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+Sanjeev Arora, Constantinos Daskalakis and David Steurer: <i>Message-Passing Algorithms and Improved LP Decoding</i>. <br> In the 41st ACM Symposium On Theory of Computing, <a href="https://www.umiacs.umd.edu/conferences/stoc2009/index.shtml">STOC 2009</a>. <br>
+IEEE Transactions on Information Theory, 58(12):7260--7271, 2012. <a href="lpdecoding_journal.pdf">pdf</a>
+</li>
+</ul>
+
+
+
+<ul>
+<li>
+Constantinos Daskalakis, Alexandros G. Dimakis, Richard Karp and Martin Wainwright: <i>Probabilistic Analysis of Linear Programming Decoding</i>. <br> In the 18th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da07/">SODA 2007</a>.
+<div id="abstract13" style="display:none">
+<blockquote>
+<font color="#993300">
+We initiate the probabilistic analysis of linear programming (LP)
+decoding of low-density parity-check (LDPC) codes. Specifically,
+we show that for a random LDPC code ensemble, the linear
+programming decoder of Feldman et al. succeeds in correcting a
+constant fraction of errors with high probability. The fraction of
+correctable errors guaranteed by our analysis surpasses all prior
+non-asymptotic results for LDPC codes, and in particular exceeds
+the best previous finite-length result on LP decoding by a factor
+greater than ten. This improvement stems in part from our analysis
+of probabilistic bit-flipping channels, as opposed to adversarial
+channels.  At the core of our analysis is a novel combinatorial
+characterization of LP decoding success, based on the notion of a
+generalized matching.  An interesting by-product of our analysis
+is to establish the existence of "almost expansion" in random
+bipartite graphs, in which one requires only that almost every (as
+opposed to every) set of a certain size expands, with expansion
+coefficients much larger than the classical case.</font>
+</blockquote>
+</div>
+
+<div id="bib13" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DDKW: LP decoding,
+  title = "Probabilistic Analysis of Linear Programming Decoding",
+  author = "Constantinos Daskalakis and Alexandros G. Dimakis and Richard Karp and Martin Wainwright",
+  year = "2007",
+  booktitle = "SODA",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div13, abstract13)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div13, bib13)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/cs/0702014">arXiv</a>]</font><br>
+<div id="div13"></div>
+Journal version in IEEE Transactions on Information Theory, 54(8), 3565-3578, August 2008. <a href="http://arxiv.org/abs/cs/0702014">arxiv</a><br>
+</li>
+</ul>
+
+
+<ul>
+<li>
+Christian Borgs, Jennifer T. Chayes, Constantinos Daskalakis and Sebastien Roch: <i>An
+Analysis of Preferential Attachment with Fitness</i>. <br>
+In the 39th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2007/">STOC 2007</a>.
+
+<div id="abstract14" style="display:none">
+<blockquote>
+<font color="#993300">
+We provide a rigorous analysis of <i> preferential
+attachment with fitness</i>, suggested by Bianconi and Barabasi and
+studied by Motwani and Xu, in which the degree of a
+vertex is scaled by its quality to determine its attractiveness.
+Including quality considerations in the classical preferential
+attachment model provides a much more realistic description of
+many complex networks, such as the web graph, and allows to
+observe a much richer behavior in the growth dynamics of these
+networks. Specifically, depending on the shape of the distribution
+from which the qualities of the vertices are drawn, we observe
+three distinct phases, namely a <i>first-mover-advantage</i> phase, a
+<i>fit-get-richer</i> phase and an <i>innovation-pays-off</i>
+phase. We precisely characterize the properties of the quality
+distribution that result in each of these phases and we compute
+the exact growth dynamics for each phase. The dynamics provide
+rich information about the quality of the vertices, which can be
+very useful in many practical contexts, including ranking
+algorithms for the web, recommendation algorithms, as well as the
+study of social networks.
+</font>
+</blockquote>
+</div>
+
+<div id="bib14" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{BCDR: pref attachment fitness,
+  title = "An Analysis of Preferential Attachment with Fitness",
+  author = "Christian Borgs and Jennifer T. Chayes and Constantinos Daskalakis and Sebastien Roch",
+  year = "2007",
+  booktitle = "STOC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div14, abstract14)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div14, bib14)">bib</a>]</font> <font size="-1">[<a href="https://arxiv.org/abs/0710.4982">arxiv</a>]</font><br>
+<div id="div14"></div>
+</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3><a name="bio"></a>Computational Biology </h3>
+
+
+
+<ul>
+  <li>Davin Choo, Yuval Dagan, Constantinos Daskalakis, Anthimos-Vardis Kandiros: <i>Learning and Testing Latent-Tree Ising Models Efficiently.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2023/index.html">COLT 2023</a>. <a href="https://arxiv.org/abs/2211.13291">arXiv</a>.
+  </li>
+</ul>
+
+<ul>
+  <li>Yuval Dagan, Vardis Kandiros, Constantinos Daskalakis: <i>EM's Convergence in Gaussian Latent Tree Models.</i>
+    <br>In the 35th Annual Conference on Learning Theory, <a href="http://learningtheory.org/colt2022/index.html">COLT 2022</a>. <a href="https://arxiv.org/abs/2211.11904">arXiv</a>.
+  </li>
+</ul>
+
+
+
+<ul>
+<li>Constantinos Daskalakis and Sebastien Roch: <i>Species Trees from Gene Trees Despite a High Rate of Lateral Genetic Transfer: A Tight Bound</i>.
+<br>In the 27th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), <a href="http://www.siam.org/meetings/da16/">SODA 2016</a>. <a href="http://arxiv.org/abs/1508.01962">arXiv</a>
+</ul>
+
+
+<ul>
+<li>
+Constantinos Daskalakis and Sebastien Roch: <i>Alignment-Free Phylogenetic Reconstruction</i>. <br> In the 14th Annual International Conference on Research in Computational Molecular Biology, <a href="http://kdbio.inesc-id.pt/recomb2010/home.html">RECOMB 2010</a>. <a href="align-free.pdf">conference version</a><br>
+Journal version in Annals of Applied Probability, 23(2): 693--721, 2013. <a href="http://arxiv.org/abs/1109.5002">journal version</a>
+</li>
+</ul>
+
+<ul>
+<li>
+Alexandr Andoni, Constantinos Daskalakis, Avinatan Hassidim and Sebastien Roch: <i>Global Alignment of Molecular Sequences via Ancestral State Reconstruction</i>. <br>First Symposium on Innovations in Computer Science, <a href="http://conference.itcs.tsinghua.edu.cn/ICS2010/">ICS 2010</a>.
+
+<div id="abstract25" style="display:none">
+<blockquote>
+<font color="#993300">
+Molecular phylogenetic techniques do not generally account for such
+common evolutionary events as site insertions and deletions (known as
+indels). Instead tree building algorithms and ancestral state
+inference procedures typically rely on substitution-only models of
+sequence evolution. In practice these methods are extended beyond this
+simplified setting with the use of heuristics that produce global
+alignments of the input sequences---an important problem which has no
+rigorous model-based solution. In this paper we open a new direction
+on this topic by considering a version of the multiple sequence
+alignment in the context of stochastic indel models. More precisely,
+we introduce the following {\em trace reconstruction problem on a
+tree} (TRPT): a binary sequence is broadcast through a tree channel
+where
+we allow substitutions, deletions, and insertions; we seek
+to reconstruct the original sequence from the sequences
+received at the leaves of the tree. We give a recursive
+procedure for this problem with strong reconstruction
+guarantees at low mutation rates, providing also an alignment of the
+sequences at the leaves of the tree. The TRPT problem without indels
+has been studied in previous work (Mossel 2004, Daskalakis et al.
+2006) as a bootstrapping step towards obtaining
+information-theoretically optimal phylogenetic reconstruction methods.
+The present work sets up a framework for extending these works to
+evolutionary models with indels.<br><br>
+
+
+In the TRPT problem we begin with a random sequence $x_1, \ldots, x_k$ at the root of a $d$-ary tree. If vertex $v$ has the sequence $y_1, \ldots y_{k_{v}}$, then each one of its $d$ children will have a sequence which is generated from $y_1, \ldots y_{k_{v}}$ by flipping three biased coins for each bit. The first coin has probability $p_s$ for Heads, and determines whether this bit will be substituted or not. The second coin has probability $p_d$, and determines whether this bit will be deleted, and the third coin has probability $p_i$ and determines whether a new random bit will be inserted. The input to the procedure is the sequences of the $n$ leaves of the tree, as well as the tree structure (but not the sequences of the inner vertices) and the goal is to reconstruct an approximation to the sequence of the root (the DNA of the ancestral father). For every $\epsilon > 0$,  we present a deterministic algorithm which outputs an approximation of $x_1, \ldots, x_k$ if $\prbi + \prbd < O(1/k^{2/3} \log n)$ and $(1 - 2\prbs)^2 > O(d^{-1} \log d)$.
+
+To our knowledge, this is the first rigorous trace reconstruction result on a tree in the presence of indels.
+</font>
+</blockquote>
+</div>
+
+<div id="bib25" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{ADHR:AncestralReconstruction,
+  title = "Global Alignment of Molecular Sequences via Ancestral State Reconstruction",
+  author = "Alexandr Andoni and Constantinos Daskalakis and Avinatan Hassidim and Sebastien Roch",
+  year = "2010",
+  booktitle = "ICS",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div25, abstract25)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div25, bib25)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0912.2577">arxiv</a>]</font><br>
+<div id="div25"></div>
+Journal version in Stochastic Processes and their Applications, 122(12): 3852--3874, 2012. <a href="http://people.csail.mit.edu/costis/trace.pdf">journal version</a>
+
+
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Phylogenies without Branch Bounds: Contracting the Short, Pruning the Deep</i>. <br> In the 13th Annual International Conference on Research in Computational Molecular Biology, <a href="http://www.bio5.org/recomb2009/">RECOMB 2009</a>.
+<div id="abstract24" style="display:none">
+<blockquote>
+<font color="#993300">
+We introduce a new phylogenetic reconstruction algorithm which, unlike most previous rigorous inference techniques, does not rely on assumptions regarding the branch lengths or the depth of the tree. The algorithm returns a forest which is guaranteed to contain all edges that are: 1) sufficiently long and 2) sufficiently close to the leaves. How much of the true tree is recovered depends on the sequence length provided. The algorithm is distance-based and runs in polynomial time.
+</font>
+</blockquote>
+</div>
+
+<div id="bib24" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DMR:contracted,
+  title = "Phylogenies without Branch Bounds: Contracting the Short, Pruning the Deep",
+  author = "Constantinos Daskalakis and Elchanan Mossel and Sebastien Roch",
+  year = "2009",
+  booktitle = "RECOMB",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div24, abstract24)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div24, bib24)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0801.4190">arXiv</a>]</font><br>
+<div id="div24"></div>
+Journal version in SIAM Journal on Discrete Mathematics, 25(2): 872-893, 2011.
+</li>
+</ul>
+
+<ul>
+<li>Constantinos Daskalakis, Elchanan Mossel and Sebastien Roch: <i>Optimal Phylogenetic Reconstruction</i>.  <br> In the 38th ACM Symposium on Theory of Computing, <a href="http://acm-stoc.org/stoc2006/">STOC 2006</a>.
+
+<div id="abstract11" style="display:none">
+<blockquote>
+<font color="#993300">
+We resolve an important problem in systematic biology, namely that of <b>reconstructing phylogenies from few characters</b>. It is well known that, in order to reconstruct a tree on n taxa, sequences of length at least log n are needed. It was conjectured by Mike Steel that for the Cavender-Farris-Neyman model of evolution, if the mutation probability p on all edges of the tree satisfies 2(1-2p)^2<1, then the
+tree can be recovered from sequences of length O(log n). We resolve this conjecture in the positive way by describing a phylogenetic reconstruction algorithm that uses O(log n) characters. The algorithm is tight for the Cavender-Farris-Neyman model, since, if the mutation probability does not satisfy 2(1-2p)^2<1, there is a lower bound of polynomially many characters. Finally, our algorithm extends to reconstructing phylogenies from O(log n) taxa in the Jukes-Cantor model and it is tight for the <i>robust reconstruction problem</i>.</font>
+</blockquote>
+</div>
+
+<div id="bib11" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DMR: optimal phylo,
+  title = "Optimal Phylogenetic Reconstruction",
+  author = "Constantinos Daskalakis and Elchanan Mossel and Sebastien Roch",
+  year = "2006",
+  booktitle = "STOC",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div11, abstract11)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div11, bib11)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/math.PR/0509575">arXiv</a>]</font><br>
+<div id="div11"></div>
+Journal version in Probability Theory and Related Fields, 149(1-2):149-189, 2011. <br>
+</li>
+</ul>
+
+
+<ul>
+<li>C. Daskalakis, C. Hill, A. Jaffe, R. Mihaescu, E. Mossel and S. Rao: <i>Maximal Accurate Forests From Distance Matrices</i>. <br>
+In the 10th Annual International Conference on Research in Computational Molecular Biology, <a href="http://recomb06.dei.unipd.it/about.html">RECOMB 2006</a>.
+
+
+
+<div id="abstract12" style="display:none">
+<blockquote>
+<font color="#993300">
+We present a fast converging method for distance-based
+phylogenetic inference, which is novel in two respects. First, it
+is the only method (to our knowledge) to guarantee accuracy when
+knowledge about the model tree, i.e bounds on the edge lengths, is
+<b>not</b> assumed. Second, our algorithm guarantees that, with
+high probability, no false assertions are made. The algorithm
+produces a maximal edge-disjoint subforest of the model tree, with
+running time O(n^4) in the worst case. Empirical testing has
+been promising, comparing favorable to Neighbor Joining and
+Maximum Parsimony, with the advantage of making no false
+assertions about the topology of the model tree; guarantees
+against false positives can be controlled as a parameter by the
+user.</font>
+</blockquote>
+</div>
+
+<div id="bib12" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DHJMMR: maximal forests,
+  title = "Maximal Accurate Forests From Distance Matrices",
+  author = "C. Daskalakis and C. Hill and A. Jaffe and R. Mihaescu and E. Mossel and S. Rao",
+  year = "2006",
+  booktitle = "RECOMB",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div12, abstract12)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div12, bib12)">bib</a>]</font> <font size="-1">[<a href="papers/distpaper.pdf">pdf</a>]</font><br>
+<div id="div12"></div>
+
+</li>
+</ul>
+
+
+<p>&nbsp;</p>
+<h3> Other Topics</h3>
+
+<ul>
+<li>
+Constantinos Daskalakis, Ilias Diakonikolas and Mihalis Yannakakis: <i>How good is the Chord algorithm?</i>. <br>In the 21st Annual ACM-SIAM Symposium on Discrete Algorithms, <a href="http://www.siam.org/meetings/da10/">SODA 2010</a>. <a href="chord.pdf">pdf</a><br>
+SIAM Journal on Computing, 45(3): 811-858, 2016. <a href="chord.pdf">pdf</a><br>
+</li>
+</ul>
+
+
+<ul>
+<li> Kamalika Chaudhuri, Constantinos Daskalakis, Robert Kleinberg and Henry Lin: <i>Online Bipartite Perfect Matching With Augmentation</i>. <br> In the 28th Conference on Computer Communications, <a href="http://www.ieee-infocom.org/">IEEE INFOCOM 2009</a>.
+
+<div id="abstract19" style="display:none">
+<blockquote>
+<font color="#993300">
+In this paper, we study an online bipartite matching problem, motivated by applications in wireless communication, content delivery, and job scheduling.  In our problem, we have a bipartite graph G between n clients and n servers, which represents the servers to which each client can connect.  Although the edges of G are unknown at the start, we learn the graph over time, as each client arrives and requests to be matched to a server.  As each client arrives, she reveals the servers to which she can connect, and the goal of the algorithm is to maintain a matching between the clients who have arrived and the servers.  Assuming that G has a perfect matching which allows all clients to be matched to servers, the goal of the online algorithm is to minimize the switching cost, the total number of times a client needs to switch servers in order to maintain a matching at all times.<br><br>
+
+Although there are no known algorithms which are guaranteed to yield switching cost better than the trivial O(n^2) in the worst case, we show that the switching cost can be much lower in three natural settings.  In our first result, we show that for any arbitrary graph G with a perfect matching, if the clients arrive in random order, then the total switching cost is only O(n log n) with high probability.  This bound is tight, as we show an example where the switching cost is Omega(n log n) in expectation.  In our second result, we show that if each client has edges to Theta(log n) uniformly random servers, then the total switching cost is even better; in this case, it is only O(n) with high probability, and we also have a lower bound of Omega(n/log n).  In terms of the number of edges needed for each client, our result is tight, since Omega(log n) edges are needed to guarantee a perfect matching in G with high probability.  In our last result, we derive the first algorithm known to yield total cost O(n log n), given that the underlying graph G is a forest.  This is the first result known to match the existing lower bound for forests, which shows that any online algorithm must have switching cost Omega(n log n), even when G is restricted to be a forest.
+
+</font>
+</blockquote>
+</div>
+
+<div id="bib19" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{CSKL: onlineMatching,
+  title = "Online Bipartite Perfect Matching With Augmentation",
+  author = "Kamalika Chaudhuri and Constantinos Daskalakis and Robert Kleinberg and Henry Lin",
+  year = "2009",
+  booktitle = "IEEE INFOCOM",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div19, abstract19)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div19, bib19)">bib</a>]</font> <font size="-1">[<a href="matching.pdf">pdf</a>]</font><br>
+<div id="div19"></div>
+
+</li>
+</ul>
+
+
+<ul>
+<li> Constantinos Daskalakis, Richard M. Karp, Elchanan Mossel, Samantha Riesenfeld and Elad Verbin: <i>Sorting and Ranking in Partially Ordered Sets</i>. <br> In the 20th Annual ACM-SIAM Symposium On Discrete Algorithms, <a href="http://www.siam.org/meetings/da09/">SODA 2009</a>.
+
+<div id="abstract15" style="display:none">
+<blockquote>
+<font color="#993300">
+Classical problems of sorting and  searching assume an underlying linear ordering of the objects being compared. In this paper, we study these problems in the context of partially ordered sets, in which some pairs of objects are incomparable. This generalization is interesting from a combinatorial perspective, and it has immediate applications in ranking scenarios where there is no underlying linear ordering, e.g., conference submissions. It also has applications in reconstructing certain types of networks, including biological networks. <br><br>
+
+Our results represent significant progress over previous results from two decades ago by Faigle and Turan. In particular, we present the first algorithm that sorts a width-w poset of size n with optimal query complexity O(n (w + log n)). We also describe a variant of Mergesort with query complexity O(w n log(n/w)) and total complexity O(w^2 n log(n/w); an algorithm with the same query complexity was given by Faigle and Turan, but no efficient implementation of that algorithm is known. Both our sorting algorithms can be applied with negligible overhead to the more general problem of reconstructing transitive relations. <br><br>
+
+We also consider two related problems: finding the minimal elements, and its generalization to finding the bottom k "levels", called the k-selection problem. We give efficient deterministic and randomized algorithms for finding the minimal elements with O(w n) query and total complexity. We provide matching lower bounds for the query complexity up to a factor of 2 and generalize the results to the k-selection problem. Finally, we present efficient algorithms for computing a linear extension of a poset and computing the heights of all elements.
+</font>
+</blockquote>
+</div>
+
+<div id="bib15" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{DKMRV: sorting posets,
+  title = "Sorting and Ranking in Partially Ordered Sets",
+  author = "Constantinos Daskalakis and Richard M. Karp and Elchanan Mossel and Samantha Riesenfeld and Elad Verbin ",
+  year = "2009",
+  booktitle = "SODA",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div15, abstract15)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div15, bib15)">bib</a>]</font> <font size="-1">[<a href="http://arxiv.org/abs/0707.1532">arxiv</a>]</font><br>
+<div id="div15"></div>
+Journal version in SIAM Journal on Computing, 40(3): 597-622, 2011.<br>
+</li>
+</ul>
+
+
+<ul>
+<li>Stergios Stergiou,   Constantinos Daskalakis and George K. Papakonstantinou: <i>Fast and Efficient Heuristic ESOP Minimization Algorithm</i>. <br>
+IEEE Great Lakes Symposium on VLSI (GLSVLSI 2004).
+
+
+<div id="abstract16" style="display:none">
+<blockquote>
+<font color="#993300">
+We present an algorithm that solves a fundamental theoretical problem in logic synthesis, the problem of <i>&nbsp;Exclusive-Sum-of-Products Minimization</i>. Our algorithm is compared to the state-of-the art algorithm used in most CAD-programs. The experiments show that our algorithm matches and in some cases surpasses the performance of the state of the art algorithm.
+</font>
+</blockquote>
+</div>
+
+<div id="bib16" style="display:none">
+<blockquote>
+<pre>
+@inproceedings{SDP: esop minimization,
+  title = "Fast and Efficient Heuristic ESOP Minimization Algorithm",
+  author = "Stergios Stergiou and Constantinos Daskalakis and George K. Papakonstantinou",
+  year = "2004",
+  booktitle = "GLSVLSI",
+}
+</pre>
+</blockquote>
+</div>
+
+<font size="-1">[<a href="javascript:copy(div16, abstract16)">abstract</a>]</font> <font size="-1">[<a href="javascript:copy(div16, bib16)">bib</a>]</font> <font size="-1">[<a href="papers/esop.pdf">pdf</a>]</font><br>
+<div id="div16"></div>
+
+</li>
+</ul>
+
+<br><a href="http://accessibility.mit.edu">[Accessibility]</a>
+
+
+</body></html>

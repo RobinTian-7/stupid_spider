@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+
+
+
+
+<script type="text/javascript" src="rw_common/themes/aqualicious/javascript.js"></script>
+
+
+    
+<style>
+/* --- CS660 minimal reset & theme --- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: #0f172a;
+  background: #f8fafc;
+}
+a { color: #0ea5e9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#container, .container {
+  max-width: 1100px; margin: 0 auto; padding: 1.25rem;
+}
+#pageHeader h1, #pageHeader h2, h1, h2, h3 {
+  margin: .25rem 0 1rem; line-height: 1.2;
+}
+#pageHeader h1 { font-size: clamp(1.4rem, 2.2vw + 1rem, 2rem); text-align: center; }
+#pageHeader h2 { font-size: 1rem; font-weight: 500; text-align: center; color: #334155; }
+
+.topnav {
+  position: sticky; top: 0; z-index: 10;
+  background: #ffffffcc; backdrop-filter: saturate(150%) blur(6px);
+  border-bottom: 1px solid #e2e8f0;
+}
+.topnav .inner {
+  display: flex; gap: 1rem; align-items: center; justify-content: space-between;
+  max-width: 1100px; margin: 0 auto; padding: .6rem 1rem;
+}
+.brand { font-weight: 700; letter-spacing: .2px; color:#0f172a; }
+.navlinks a {
+  padding: .4rem .6rem; border-radius: .5rem; font-weight: 500; color:#0f172a;
+}
+.navlinks a.active, .navlinks a:hover { background: #e2e8f0; }
+
+.card {
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem; box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+#contentContainer, #sidebarContainer, #footer {
+  margin-top: 1rem;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .6rem .7rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+thead th { position: sticky; top: 48px; background: #f1f5f9; z-index: 1; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+
+.table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+mark { background: #fde68a; padding: 0 .2rem; border-radius: .2rem; }
+
+ul, ol { padding-left: 1.25rem; }
+blockquote { margin: .5rem 0; padding: .5rem .75rem; border-left: 4px solid #cbd5e1; background: #f1f5f9; border-radius: 6px; }
+
+img, video { max-width: 100%; height: auto; border-radius: 8px; }
+
+#footer { color: #475569; font-size: .95rem; border-top: 1px solid #e2e8f0; padding-top: .75rem; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background: #0f172a0d; padding: .15rem .35rem; border-radius: 6px; }
+pre { overflow-x: auto; padding: .75rem; }
+</style>
+</head>
+
+
+    <body>
+
+<div class="topnav">
+  <div class="inner">
+    <a class="brand" href="index.html">CS660 · Fall 2025</a>
+    <div class="navlinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="schedule.html" >Schedule</a>
+      <a href="projects.html" >Projects</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div id="container"><!-- Start container -->
+        <!-- Start page header -->
+        <div id="pageHeader">
+
+            <h1 align="center">COMPSCI 660: Advanced Information Assurance (Fall'25)</h1>
+			<h2 align="center"></h2>
+
+        </div><!-- End page header -->
+
+
+
+        <div id="contentContainer"><!-- Start main content wrapper -->
+            <div id="content">
+<div class="card"><!-- Start content -->
+                <div class="contentSpacer"></div><!-- this makes sure the content is long enough for the design -->
+
+
+
+
+
+            <a name="Organization"></a>
+<h1>Organization </h1>
+<div align="left"><strong>Instructor:</strong> <a href="https://cs.umass.edu/~amir/" target="_blank"> Amir Houmansadr</a><br />
+  <strong>Course number:</strong> COMPSCI 660 @ <a href="https://www.cs.umass.edu/" target="_blank">University of Massachusetts Amherst</a><br />
+  <strong>Class hours:</strong> TuTh 11:30am-12:45pm <br />
+  <strong>Class location:</strong> LGRT 121 <br />
+  <strong>Office hours information:</strong> Please check Canvas<br />
+  <strong>Communications:</strong> Convas and Piazza <br />
+
+</div>
+        <br>
+
+                <a name="Overview"></a>
+                        <h1>Overview </h1>
+                <div align="justify">
+
+This course provides an in-depth examination of the fundamental principles of information assurance.
+While the companion course for undergraduates is
+focused on practical issues, the syllabus of this course is influenced strictly by the latest research.
+ We will cover a range of topics including authentication, adversarial ML,
+social networks, anonymity systems, malware,  intrusion detection, intellectual property protection, and more.
+
+<br>
+<br>
+For each class session:<br>
+                <ol>
+                    <li>Students are expected to read all the assigned papers, and to submit a review for one of the papers.
+                    <li>You should submit your paper review on Canvas. Use <a href="Sample-Review.pdf" target="_blank">this format</a> for writing reviews.  </li>
+
+                    <li> You are expected to engage in class discussions.</li>
+                  </ol>
+
+
+<b>Class attendence:</b> You are expected to attend the class in person. If there are certain circumstances that require you to miss some sessions, you should contact the instructors on Piazza before class. Failure to attending classes can lead to failing the class. <br><br>
+					
+
+<b>Grading</b> is done based on these items: (summarized in the following table)<br>
+<ol>
+                    <li> <u>Final Projects</u>: You should form a team and work with the instructor to choose a project topic. You will present the project at the end of the semester, and you need to submit a 6-pages report. Further details here: <a href="projects.html" rel="self">Projects</a>.</li>
+
+
+	                <li> <u>Mini-projects</u>: You will be given ~3 mini-projects throughout the semester, which you will need to submit on Canvas. Each mini-project is a programming homework related to the topics coverd in class. </li>
+						
+
+                    <li> <u>Paper reviews</u>: Reviews of the assigned papers turned in on Canvas. Check out the <a href="schedule.html" rel="self">Schedule</a> for papers. </li>
+	
+					<li> <u>Pop up Quizzes</u>: An undetermined number of (easy) quizzes will be given during the semester. </li>
+
+                  
+
+                </ol>
+   </div>
+
+
+
+
+                <div class="table-wrap"><table border = "3" style="width:60%" align="center">
+<tr>
+  <td width="60%">Grading Item</td>
+  <td width="40%">Percentage</td>
+</tr>
+<tr>
+  <td>Paper Reviews</td>
+  <td>30%</td>
+</tr>
+					
+	<tr>
+		<td>Mini-projects (~3 total)</td>
+		<td>30%</td>
+	</tr>
+
+
+	<tr>
+		<td>Final Project Presentation</td>
+		<td>15%</td>
+	</tr>
+	<tr>
+		<td>Final Project Report</td>
+		<td>15%</td>
+	</tr>
+	<tr>
+		<td>Pop-up Quizzes</td>
+		<td>10%</td>
+	</tr>					
+</table></div>
+
+
+
+<br>
+<a name="Prerequisites"></a>
+<h1>Prerequisites</h1>
+Undergraduate degree in computer science, or CS460 or 466, or equivalent.
+<br><br>
+
+                <a name="Ethics"></a>
+                <h1>Ethics</h1>
+                Here are some of the ethical rules that must be practiced by the students. If you are uncertain about an action being ethical please contact the instructor. You can also read UMass's <a href="https://www.umass.edu/senate/book/academic-regulations-academic-integrity-policy" target="_blank">Academic Integrity Policy</a>.
+                <ul>
+                <li>Paper reviews must be prepared independently. Students may collaborate on the project if agreed by the instructor.</li>
+                <li>Presentation slides may be borrowed from others (e.g., authors of the papers), given proper acknowledgement.  </li>
+                <li>As a general rule, students are not permitted to submit the same work for credit in multiple courses (e.g., a project submitted for another course, or an already published paper). Extensions to previous projects may be accepted after discussing with the instructor.</li>
+                <li>Plagiarism is a serious crime! If you use someone else's result in your report make sure to give proper reference. Exact wording should be reported inside quotation marks.  </li>
+                </ul>
+
+<br>
+<a name="Links"></a>
+<h1>Useful links</h1>
+<ul>
+<li> <a href="http://www.cs.columbia.edu/~hgs/netbib/efficientReading.pdf" target="_blank">Efficient reading of research papers</a></li>
+<li> <a href="https://people.inf.ethz.ch/troscoe/pubs/review-writing.pdf" target="_blank">Writing conference-style reviews</a> </li>
+<li> <a href="https://people.inf.ethz.ch/markusp/teaching/guides/guide-presentations.pdf" target="_blank">Presenting  technical talks</a></li>
+</ul>
+
+                <div class="clear"></div>
+                <div class="clearer"></div>
+            </div>
+</div><!-- End content -->
+        </div><!-- End main content wrapper -->
+
+
+
+
+
+
+       <div id="footer"><!-- Start Footer -->
+    <p style="text-align:center">&copy; 2025 Amir Houmansadr</p>
+</div><!-- End Footer -->
+    </div><!-- End container -->
+
+
+
+
+    </body>
+</html>

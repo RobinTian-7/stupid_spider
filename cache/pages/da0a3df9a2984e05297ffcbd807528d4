@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amir Houmansadr | UMass Amherst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amir Houmansadr — Professor of Computer Science at UMass Amherst. Research in network &amp; AI security, privacy, and censorship circumvention.">
+  <link rel="canonical" href="https://people.cs.umass.edu/~amir/">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Amir Houmansadr | UMass Amherst">
+  <meta property="og:description" content="Professor of Computer Science. Network &amp; AI security, privacy, censorship circumvention.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://people.cs.umass.edu/~amir/resources/2022-amir.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --brand-accent: #21618C; }
+    body { padding-top: 4.5rem; }
+    .hero { padding-top: 1rem; padding-bottom: 1rem; }
+    .headshot { max-width: 190px; border-radius: .75rem; }
+    .section-lead { font-size: 1.05rem; }
+    .brand-hr { border: 0; height: 3px; background: var(--brand-accent); opacity: .9; }
+    .list-compact li { margin-bottom: .35rem; }
+    .nav-link { font-size: 1.1rem; }
+    .muted { color: #6c757d; }
+    .title-role { font-size: 1.3em; }
+    .social-twitter { font-weight: 500; color: #1DA1F2; }
+    .social-linkedin { font-weight: 500; color: #0A66C2; }
+    body.home-page .navbar {
+      background: #fff !important;
+      border-bottom: 1px solid #ddd !important;
+    }
+    body.home-page .navbar-light .navbar-brand,
+    body.home-page .navbar-light .navbar-nav .nav-link {
+      color: #000 !important;
+      text-shadow: none !important;
+    }
+    body.home-page .navbar-light .navbar-nav .nav-link:hover,
+    body.home-page .navbar-light .navbar-nav .nav-link:focus {
+      color: #555 !important;
+    }
+    body.home-page .navbar-light .navbar-toggler {
+      border-color: rgba(0, 0, 0, 0.2) !important;
+    }
+    body.home-page .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52264805-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-52264805-1');
+  </script>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="android-chrome-512x512.png" sizes="512x512">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="home-page">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Amir Houmansadr</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="Research.html">Research Group</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
+  <main class="container hero" id="main">
+    <div class="row align-items-center g-4">
+      <div class="col-auto">
+        <img alt="Portrait of Amir Houmansadr" class="headshot" src="resources/2022-amir.jpeg" width="190" height="190" loading="eager">
+      </div>
+      <div class="col">
+        <h1 class="h2 mb-2">Amir Houmansadr</h1>
+        <p class="lead mb-2">
+          <strong class="title-role">Professor</strong><br>
+          <a href="https://www.cics.umass.edu/" rel="noopener" target="_blank">Manning College of Information and Computer Sciences</a><br>
+          <a href="https://www.umass.edu/" rel="noopener" target="_blank">University of Massachusetts Amherst</a>
+        </p>
+        <p class="mb-1">
+          Email: amir (at) cs.umass.edu [<a href="Amir Houmansadr (E35CF8CE) – Public.asc" rel="noopener" target="_blank">Public Key</a>]; Office: CSB 374
+        </p>
+        <p class="mb-0">
+          Online: <a href="https://twitter.com/houmansadr" target="_blank" rel="noopener" class="social-twitter">Twitter</a> · <a href="https://www.linkedin.com/pub/amir-houmansadr/13/555/5b7" target="_blank" rel="noopener" class="social-linkedin">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <hr class="brand-hr my-4">
+
+    <section class="section-lead mb-3">
+      <p><strong>Bio:</strong> I am a Full Professor of Computer Science at the University of Massachusetts Amherst, where I have been a faculty member since Fall 2014 (tenured in Fall 2019). I received my Ph.D. from the <a href="https://illinois.edu/" rel="noopener" target="_blank">University of Illinois at Urbana‑Champaign</a> in 2012 and subsequently spent two years as a postdoctoral scholar at the <a href="https://www.cs.utexas.edu/" rel="noopener" target="_blank">University of Texas at Austin</a>. Prior to that, I earned my M.Sc. and B.Sc. degrees from <a href="https://www.ee.sharif.ir/en/" rel="noopener" target="_blank">Aryamehr University of Technology</a>.</p>
+    </section>
+    <section class="section-lead mb-3">
+      <p><strong>Research Area:</strong> My research focuses on <strong>network and AI security and privacy</strong>, with particular emphasis on <em>privacy‑enhancing technologies</em> and <em>trustworthy AI</em>. I design and deploy censorship circumvention systems, analyze network protocols and services (e.g., messaging platforms and machine‑learning APIs) for privacy leakage, use theoretical tools such as game theory and information theory to derive privacy bounds, and evaluate the security and privacy of emerging AI technologies.</p>
+    </section>
+    <section class="section-lead mb-4">
+      <p><strong>Research Team:</strong> I lead the <a href="https://people.cs.umass.edu/~amir/Research.html" rel="noopener" target="_blank">Secure, Private Internet (SPIN) Research Group</a> and co‑lead the <a href="https://aisec.cs.umass.edu" rel="noopener" target="_blank">UMass AI Security Lab</a>.</p>
+    </section>
+    <hr class="my-4">
+    <!-- Selected Awards -->
+    <section class="mb-4">
+      <h2 class="h4">Selected Awards</h2>
+      <ul class="list-unstyled list-compact">
+        <li>USENIX Security Honorable Mention, 2025</li>
+        <li>The Caspar Bowden PET Award Runner Up, 2025</li>
+        <li>FOCI Best Practical Paper Award, 2025</li>
+        <li>DARPA Director's Award, 2024</li>
+        <li>COLM Spotlight Paper, 2024</li>
+        <li>Applied Networking Research Prize (ANRP), 2024</li>
+        <li>ACM CCS Distinguished Paper Award, 2023</li>
+        <li>First place at CSAW Applied Research Competition, 2023</li>
+        <li>Best Practical Paper Award of the FOCI Community, 2023</li>
+        <li>DARPA Young Faculty Award (YFA), 2022</li>
+        <li>ACM IMC Best Paper Award Runner‑Up, 2020</li>
+        <li>CSAW Applied Research Competition Finalist, 2019</li>
+        <li>NSF CAREER Award, 2016</li>
+        <li>Google Faculty Research Award, 2015</li>
+        <li>IEEE S&amp;P Best Practical Paper Award, 2013</li>
+      </ul>
+    </section>
+    <hr class="my-4">
+
+    <!-- News -->
+    <section class="mb-4">
+      <h2 class="h4">News</h2>
+      <ul class="list-unstyled list-compact">
+        <li>2025-11-03: Gave a Keynote at Brazil's <a href="https://www.rnp.br/" rel="noopener" target="_blank">National backbone Internet measurement (RNP)</a>!</li>
+        <li>2025-09-01: Promoted to Full Professor!</li>
+<li>
+      2025-08-12: Our
+      <a href="https://gfw.report/publications/usenixsecurity25/data/paper/quic-sni.pdf" rel="noopener" target="_blank">
+       paper
+      </a>
+      received an Honorable Mention Award from USENIX Security'25 (top 6% of accepted papers)!
+     </li>
+<li>
+      2025-07-17: Our
+      <a href="papers/UsenixSecurity23_Encrypted_Censorship.pdf" rel="noopener" target="_blank">
+       paper
+      </a>
+      on the blocking of fully encrypted protocols recognized as The 2025 Caspar Bowden PET Award Runner Up!
+     </li>
+<li>
+      2025-07-14: Spoke on a panel on Internet freedom at
+      <a href="https://www.petsymposium.org/2025/" rel="noopener" target="_blank">
+       PETS
+      </a>
+      !
+     </li>
+<li>
+      2025-07-14:
+      <a href="https://gfw.report/publications/ndss25/en/" rel="noopener" target="_blank">
+       Wallbleed
+      </a>
+      receives the Best Practical Paper Award of 2025 from the FOCI Community!
+     </li>
+        <li>2025-05-24:
+      <a href="https://www.theguardian.com/world/2025/may/24/alarming-rise-in-regional-internet-censorship-in-china-study-finds?CMP=Share_iOSApp_Other" rel="noopener" target="_blank">
+       The Guardian
+      </a>
+      writes about our
+      <a href="https://gfw.report/publications/sp25/data/paper/paper.pdf" rel="noopener" target="_blank">
+       Oakland'25 paper
+      </a>
+      !
+     </li>
+<li>
+      2025-05-22: Served on the Privacy Panel at
+      <a href="https://sbrc.sbc.org.br/2025/en/paineis/" rel="noopener" target="_blank">
+       Brazil's SBRC
+      </a>
+      !
+     </li>
+<li>
+      2025-02-28: I gave a keynote at
+      <a href="https://www.ndss-symposium.org/ndss-program/impact-2025/" rel="noopener" target="_blank">
+       IMPACT
+      </a>
+      !
+     </li>
+<li>
+      2025-01-27: Interview with
+      <a href="https://www.masslive.com/westernmass/2025/01/fighting-censorship-umass-amherst-prof-develops-tools-for-internet-freedom.html" rel="noopener" target="_blank">
+       MassLive
+      </a>
+      on Internet freedom!
+     </li>
+<li>
+      2025-01-22: I was on
+      <a href="https://www.nepm.org/podcast/the-fabulous-413/2025-01-23/jan-22-2025-civil-digital-discourse" rel="noopener" target="_blank">
+       The Fabulous 413
+      </a>
+      !
+     </li>
+<li>
+      2025-01-06: Article covering our
+      <a href="https://www.umass.edu/news/article/how-games-might-be-key-avoiding-digital-censorship" rel="noopener" target="_blank">
+       DARPA Director's Award
+      </a>
+      !
+     </li>
+<li>
+      2024-12-01:
+      <a href="https://censorlab.cs.umass.edu/" rel="noopener" target="_blank">
+       CensorLab
+      </a>
+      , our censorship emulation testbed, is online!
+     </li>
+<li>
+      2024-10-05: Interviewed by
+      <a href="https://wbznewsradio.iheart.com/featured/new-england-weekend/content/2024-10-05-1248-new-england-weekend-from-inbox-to-danger-understanding-scam-emails-and/" rel="noopener" target="_blank">
+       WBZ NewsRadio 1030
+      </a>
+      on online safety.
+     </li>
+<li>
+      2024-10-01: Our
+      <a href="https://arxiv.org/abs/2404.13784" rel="noopener" target="_blank">
+       COLM paper
+      </a>
+      on LLM prompt reproduction is selected as a Spotlight!
+     </li>
+<li>
+      2024-02-21: Interviewed by MassLive on
+      <a href="https://www.masslive.com/westernmass/2024/02/russia-installed-malware-on-wi-fi-routers-the-boston-fbi-helped-shut-it-down.html&amp;subscribed=google-oauth2%7C107241143355617134915" rel="noopener" target="_blank">
+       Russian Wi‑Fi malware
+      </a>
+      .
+     </li>
+<li>
+      2024-01-12: Our
+      <a href="https://people.cs.umass.edu/~amir/papers/UsenixSecurity23_Encrypted_Censorship.pdf" rel="noopener" target="_blank">
+       USENIX Security paper
+      </a>
+      won a
+      <a href="https://www.irtf.org/anrp/" rel="noopener" target="_blank">
+       2024 Applied Networking Research Prize (ANRP)
+      </a>
+      .
+     </li>
+<li>
+      2023-11-29: Our
+      <a href="papers/CCS23-LM-stealing.pdf" rel="noopener" target="_blank">
+       CCS'23 paper
+      </a>
+      received a Distinguished Paper Award!
+     </li>
+<li>
+      2023-11-11: Our
+      <a href="https://people.cs.umass.edu/~amir/papers/UsenixSecurity23_Encrypted_Censorship.pdf" rel="noopener" target="_blank">
+       USENIX Security paper
+      </a>
+      won first place at
+      <a href="https://www.csaw.io/" rel="noopener" target="_blank">
+       CSAW 2023 Applied Research Competition
+      </a>
+      .
+     </li>
+<li>
+      2023-07-10: Our upcoming
+      <a href="https://people.cs.umass.edu/~amir/papers/UsenixSecurity23_Encrypted_Censorship.pdf" rel="noopener" target="_blank">
+       USENIX Security paper
+      </a>
+      received the 2023
+      <a href="https://foci.community/awards.html" rel="noopener" target="_blank">
+       Best Practical Paper Award
+      </a>
+      from the FOCI Community.
+     </li>
+<li>
+      2023-05-05: Gave the keynote talk at
+      <a href="https://iclr23-bands.github.io/schedule" rel="noopener" target="_blank">
+       ICLR BANDS 2023 Workshop
+      </a>
+      .
+     </li>
+<li>
+      2023-04-01: Served on a panel at
+      <a href="https://www.wesleyan.edu/shasha/seminar2022-2023/schedule.html" rel="noopener" target="_blank">
+       Shasha Seminar for Human Concerns
+      </a>
+      .
+     </li>
+<li>
+      2022-10-05:
+      <a href="https://techcrunch.com/2022/10/05/china-censorship-vpn-ban-party-congress/" rel="noopener" target="_blank">
+       TechCrunch
+      </a>
+      covers GFW Report's findings about TLS censorship.
+     </li>
+<li>
+      2022-08-11: Received a DARPA Young Faculty Award (YFA).
+     </li>
+<li>
+      2021-07-29: Two finalist proposals for Facebook
+      <a href="https://research.fb.com/blog/2021/07/investing-in-academic-research-to-improve-our-privacy-technology-our-approach-and-recent-rfp-winners/" rel="noopener" target="_blank">
+       Privacy‑Enhancing Technologies
+      </a>
+      .
+     </li>
+<li>
+      2020-12-10: Invited
+      <a href="https://www.pluggabletransports.info/blog/umass_blog/" rel="noopener" target="_blank">
+       blog post
+      </a>
+      on the use of ML for censorship circumvention.
+     </li>
+<li>
+      2020-10-27: Best Paper Award Runner‑up at ACM IMC'20.
+     </li>
+<li>
+      2020-09-01: Interview with
+      <a href="https://www.thewirechina.com/2020/08/30/security-rift/" rel="noopener" target="_blank">
+       The Wire China
+      </a>
+      on recent developments in censorship techniques.
+     </li>
+<li>
+      2020-08-08:
+      <a href="https://www.zdnet.com/article/china-is-now-blocking-all-encrypted-https-traffic-using-tls-1-3-and-esni/" rel="noopener" target="_blank">
+       ZDNet
+      </a>
+      article on our collaborative study of ESNI censorship.
+     </li>
+<li>
+      2020-01-23: Three papers accepted at NDSS'20!
+     </li>
+<li>
+      2019-11-01: DeepCorr is a finalist at the CSAW’19 Applied Research Competition!
+     </li>
+<li>
+      2019-09-01: Promoted to associate professor with tenure!
+     </li>
+<li>
+      2018-07-24: Two papers accepted at ACM CCS'18!
+     </li>
+<li>
+      2018-05-30: TV interview on
+      <a href="https://www.youtube.com/watch?v=L_rYbkjdYOU" rel="noopener" target="_blank">
+       Net Neutrality
+      </a>
+      .
+     </li>
+      </ul>
+      <p class="mb-1"><a class="link-dark" href="#olderNews" role="button" data-bs-toggle="collapse" data-bs-target="#olderNews" aria-expanded="false" aria-controls="olderNews">[+] Older News…</a></p>
+      <div class="collapse" id="olderNews">
+        <div class="card card-body">
+          <ul class="list-unstyled list-compact mb-0">
+<li>
+        2017-08-22: Received a collaborative
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1739462" rel="noopener" target="_blank">
+         NSF Award
+        </a>
+        to investigate IoT Privacy!
+       </li>
+<li>
+        2017-08-02: 2/2 papers accepted at ACM CCS'17! Congrats to my students Hadi and Milad!
+       </li>
+<li>
+        2017-05-15: Received a collaborative
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1719386" rel="noopener" target="_blank">
+         NSF/Intel Award
+        </a>
+        to investigate future network architectures!
+       </li>
+<li>
+        2017-04-07: Spoke at a panel at the
+        <a href="https://www.obfuscationworkshop.io/" rel="noopener" target="_blank">
+         Obfuscation Workshop
+        </a>
+        at NYU.
+       </li>
+<li>
+        2016-12-09: Moderated a
+        <a href="https://www.acsac.org/2016/openconf/modules/request.php?module=oc_program&amp;action=page.php&amp;id=77" rel="noopener" target="_blank">
+         panel on Internet censorship
+        </a>
+        at
+        <a href="https://www.acsac.org/" rel="noopener" target="_blank">
+         ACSAC 2016
+        </a>
+        .
+       </li>
+<li>
+        2016-11-09: Keynote on Internet censorship at
+        <a href="http://sbseg2016.ic.uff.br/pt/index.php" rel="noopener" target="_blank">
+         SBSeg 2016
+        </a>
+        in Niteroi, Brazil.
+       </li>
+<li>
+        2016-07-25: Received a collaborative
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1564067" rel="noopener" target="_blank">
+         Medium NSF Award
+        </a>
+        to investigate Covert Communications!
+       </li>
+<li>
+        2016-07-23: 2/2 papers accepted at CCS'16! Congrats to my students, Hadi and Milad!
+       </li>
+<li>
+        2016-02-25:
+        <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118861698.html" rel="noopener" target="_blank">
+         Book on Information Hiding
+        </a>
+        is published!
+       </li>
+<li>
+        2016-01-27: Received an
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1553301" rel="noopener" target="_blank">
+         NSF CAREER Award
+        </a>
+        !
+       </li>
+<li>
+        2015-12-16: Co‑chaired the 2016 USENIX Workshop on FOCI!
+       </li>
+<li>
+        2015-11-20:
+        <a href="http://www.technologyreview.com/news/543711/browser-plug-in-punches-an-unfixable-hole-in-chinas-great-firewall/" rel="noopener" target="_blank">
+         MIT Technology Review article
+        </a>
+        on CacheBrowser.
+       </li>
+<li>
+        2015-07-24: Received an
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1525642" rel="noopener" target="_blank">
+         NSF Award
+        </a>
+        to investigate statistical traffic analysis.
+       </li>
+<li>
+        2015-02-12: Awarded a
+        <a href="http://research.google.com/university/relations/research_awards.html" rel="noopener" target="_blank">
+         Google Faculty Research Award
+        </a>
+        .
+       </li>
+<li>
+        2014-05-16: Joining Computer Science at UMass Amherst as an Assistant Professor in the Fall.
+       </li>
+<li>
+        2013-11-25: Paper accepted at NDSS 2014: "No Direction Home: The True Cost of Routing Around Decoys."
+       </li>
+<li>
+        2013-05-21: Paper won the
+        <em>
+         Best Practical Paper
+        </em>
+        award at IEEE S&amp;P 2013.
+       </li>
+<li>
+        2013-01-28: Paper accepted at IEEE S&amp;P 2013: "The Parrot is Dead: Observing Unobservable Network Communications."
+       </li>
+<li>
+        2012-10-20: Paper accepted at NDSS 2013: "I want my voice to be heard: IP over VoIP for unobservable censorship circumvention."
+       </li>
+<li>
+        2012-07-09: Joined the University of Texas at Austin as a postdoc.
+       </li>
+<li>
+        2011-09-01: Featured on UIUC ECE and CSL websites.
+       </li>
+<li>
+        2011-07-21: Interviewed by
+        <a href="http://www.newscientist.com/article/mg21128225.500-stegobot-can-steal-passwords-from-your-facebook-photos.html" rel="noopener" target="_blank">
+         New Scientist
+        </a>
+        about
+        <a href="papers/IH11-Stegobot.pdf" rel="noopener" target="_blank">
+         Stegobot
+        </a>
+        .
+       </li>
+<li>
+        2011-07-15: Paper Cirripede accepted to ACM CCS 2011.
+       </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr class="my-4">
+
+    <!-- Service -->
+    <section class="mb-4">
+      <h2 class="h4">Service</h2>
+      <p class="fw-semibold mb-1">Leadership Roles</p>
+      <ul class="list-unstyled list-compact">
+        <li>Associate Chair: <a href="https://www.ndss-symposium.org/ndss2026/" rel="noopener" target="_blank">NDSS 2026</a></li>
+        <li>Associate Chair: <a href="https://sp2025.ieee-security.org/" rel="noopener" target="_blank">IEEE S&amp;P 2025, 2026</a></li>
+        <li>Associate Editor: <a href="https://www.computer.org/csdl/journal/tq/about/107350" rel="noopener" target="_blank">IEEE TDSC (2021–2025)</a></li>
+        <li>Advisory Council: <a href="https://www.opentech.fund/" rel="noopener" target="_blank">Open Technology Fund</a></li>
+        <li>Advisory Board: <a href="https://foci.community/foci24.html" rel="noopener" target="_blank">FOCI (2022–now)</a></li>
+        <li>Steering Committee: <a href="http://security.cs.umass.edu/nesd" rel="noopener" target="_blank">NESD (2016–now)</a></li>
+        <li>Co‑Chair: <a href="http://security.cs.umass.edu/nesd" rel="noopener" target="_blank">NESD</a> 2016, 2019; <a href="https://www.internetsociety.org/events/ndss-symposium/ndss-symposium-2017" rel="noopener" target="_blank">NDSS Posters</a> 2017; <a href="https://www.usenix.org/conference/foci16/call-for-papers" rel="noopener" target="_blank">USENIX FOCI</a> 2016; <a href="http://stegano.net/IWCC2014/" rel="noopener" target="_blank">IWCC</a> 2014</li>
+      </ul>
+      <p class="fw-semibold mb-1">Technical Program Committees</p>
+      <ul class="list-unstyled list-compact">
+        <li><a href="https://www.caisconf.org/" rel="noopener" target="_blank">ACM CAIS</a> 2026</li>
+        <li><a href="https://sp2025.ieee-security.org/" rel="noopener" target="_blank">IEEE S&amp;P</a> 2016, 2017, 2018, 2020, 2021, 2025, 2026</li>
+        <li><a href="https://www.sigcomm.org/events/imc-conference" rel="noopener" target="_blank">ACM IMC</a> 2024</li>
+        <li><a href="https://www.sigsac.org/ccs/CCS2024/call-for/call-for-papers.html" rel="noopener" target="_blank">ACM CCS</a> 2015, 2016, 2017, 2019, 2020, 2022, 2023, 2024</li>
+        <li><a href="https://www.usenix.org/conference/foci15/call-for-papers" rel="noopener" target="_blank">USENIX FOCI</a> 2015, 2016 (co‑chair), 2017, 2020, 2024, 2025, 2026</li>
+        <li><a href="https://www.petsymposium.org" rel="noopener" target="_blank">PETS</a> 2014, 2015, 2016, 2018, 2019, 2020, 2023</li>
+        <li><a href="https://www.internetsociety.org/events/ndss-symposium/ndss-symposium-2019" rel="noopener" target="_blank">NDSS</a> 2017, 2018, 2019, 2020, 2021, 2026</li>
+        <li><a href="https://www.usenix.org/conference/usenixsecurity21" rel="noopener" target="_blank">USENIX Security</a> 2021</li>
+        <li><a href="http://www.acsac.org/" rel="noopener" target="_blank">ACSAC</a> 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2022</li>
+      </ul>
+      <p class="mb-1"><a class="link-dark" href="#pastService" role="button" data-bs-toggle="collapse" data-bs-target="#pastService" aria-expanded="false" aria-controls="pastService">[+] Past service…</a></p>
+            <div class="collapse" id="pastService">
+        <div class="card card-body">
+          <p class="fw-semibold mb-1">Technical Program Committees</p>
+          <ul class="list-unstyled list-compact">
+            <li><a href="https://cns2019.ieee-cns.org/" rel="noopener" target="_blank">IEEE CNS</a> 2019, 2020</li>
+            <li><a href="http://wtmc.info/" rel="noopener" target="_blank">WTMC</a> 2016, 2017, 2018, 2019</li>
+            <li><a href="http://sopac-conference.info/" rel="noopener" target="_blank">IEEE Symposium on Privacy‑Aware Computing (PAC)</a> 2017</li>
+            <li><a href="http://www.wisa.or.kr/" rel="noopener" target="_blank">World Conference on Information Security Applications (WISA)</a> 2017</li>
+            <li><a href="http://meeting.xidian.edu.cn/conference/AsiaCCS2016/home.html" rel="noopener" target="_blank">ACM ASIACCS</a> 2016</li>
+            <li><a href="http://globecom2016.ieee-globecom.org/" rel="noopener" target="_blank">IEEE GLOBECOM</a> 2016</li>
+            <li><a href="http://icccn.org/icccn16/" rel="noopener" target="_blank">ICCCN</a> 2016</li>
+            <li><a href="https://wpes15.cs.umn.edu/" rel="noopener" target="_blank">WPES</a> 2015</li>
+            <li><a href="https://sites.google.com/site/mobidataconf/mobidata2015" rel="noopener" target="_blank">Mobidata</a> 2015</li>
+            <li><a href="http://stegano.net/IWCC2015/" rel="noopener" target="_blank">IWCC</a> 2015</li>
+            <li><a href="http://stegano.net/BCSN2015/" rel="noopener" target="_blank">BCSN</a> 2015</li>
+            <li><a href="http://petsymposium.org/2014/hotpets.php" rel="noopener" target="_blank">HotPETs</a> 2014</li>
+            <li><a href="http://www.simplexconf.net/" rel="noopener" target="_blank">SIMPLEX</a> 2014, 2013</li>
+            <li><a href="http://www.csnt.in/" rel="noopener" target="_blank">CSNT</a> 2014</li>
+            <li><a href="http://icnp13.informatik.uni-goettingen.de/" rel="noopener" target="_blank">IEEE ICNP PhD Forum</a> 2013</li>
+            <li><a href="http://www.cs.utsa.edu/~acmstc/stc2012/" rel="noopener" target="_blank">ACM STC</a> 2012</li>
+            <li><a href="http://www.ftrai.org/acsas2012/" rel="noopener" target="_blank">FTRA ACSA</a> 2012</li>
+          </ul>
+          <p class="fw-semibold mb-1">Other Service</p>
+          <ul class="list-unstyled list-compact mb-0">
+            <li>Posters Committee: <a href="http://www.codaspy.org/" rel="noopener" target="_blank">CODASPY 2015</a></li>
+            <li>Guest editor: EURASIP Journal on Information Security (Special Issue on Advances in Digital Forensics)</li>
+            <li>Reviewer: ACM TISSEC; IEEE/ACM Transactions on Networking; IEEE TMC; ACM TAAS; Elsevier Computers &amp; Security; Elsevier Journal of Systems and Software; International Journal of Communication Systems; International Journal of Advanced Robotic Systems; Journal of Computer Networks and Communications</li>
+            <li>External reviewer: CCS'08, ICDCS'09, CCS'09, IEEE S&amp;P'10, WPES'11, CCS'11, NDSS'12, USENIX Security'12, NDSS'13, PETS'13, HotPETs'13</li>
+            <li>Graduate Representative: ECE Student Advisory Committee (ECESAC), UIUC, 2011–2012</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr class="my-4">
+
+    <!-- Courses -->
+    <section class="mb-5">
+      <h2 class="h4">Courses</h2>
+      <ul class="list-unstyled list-compact">
+        <li>Fall 2025: <a href="https://people.cs.umass.edu/~amir/courses/CS660-FALL25" rel="noopener" target="_blank">Advanced Information Assurance (COMPSCI 660)</a></li>
+        <li>Fall 2025: <a href="https://aisec.cs.umass.edu/seminar/" rel="noopener" target="_blank">Seminar: AI Safety, Privacy, and Security (COMPSCI 692PA)</a></li>
+      </ul>
+      <p class="mb-1"><a class="link-dark" href="#previousCourses" role="button" data-bs-toggle="collapse" data-bs-target="#previousCourses" aria-expanded="false" aria-controls="previousCourses">[+] Previous courses…</a></p>
+      <div class="collapse" id="previousCourses">
+        <div class="card card-body">
+          <ul class="list-unstyled list-compact mb-0">
+            <li>Fall 2024: <a href="https://people.cs.umass.edu/~amir/courses/CS660-FALL24" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2023: <a href="https://people.cs.umass.edu/~amir/courses/CS660-FALL23" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2022: <a href="https://people.cs.umass.edu/~amir/courses/CS660-FALL22" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2020: <a href="https://people.cs.umass.edu/~amir/courses/CS660-FALL20" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2020: <a href="http://infosec.cs.umass.edu/speakers" rel="noopener" target="_blank">Seminar - CyberSecurity Lecture Series (CMPSCI 591CF)</a></li>
+            <li>Fall 2019: <a href="https://people.cs.umass.edu/~amir/courses/CS460-FALL19/" rel="noopener" target="_blank">Introduction to Computer and Network Security (CMPSCI 460)</a></li>
+            <li>Fall 2019: <a href="http://infosec.cs.umass.edu/speakers" rel="noopener" target="_blank">Seminar - CyberSecurity Lecture Series (CMPSCI 591CF)</a></li>
+            <li>Spring 2019: <a href="https://people.cs.umass.edu/~amir/courses/CS660-SPRING19" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2018: <a href="https://people.cs.umass.edu/~amir/courses/CS460-FALL18/" rel="noopener" target="_blank">Introduction to Computer and Network Security (CMPSCI 460)</a></li>
+            <li>Fall 2018: <a href="https://people.umass.edu/dholcomb/ece591cf_syllabus.pdf" rel="noopener" target="_blank">Seminar - CyberSecurity Lecture Series (CMPSCI 591CF)</a></li>
+            <li>Spring 2018: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI660-SP18" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2017: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI460-FALL17/" rel="noopener" target="_blank">Introduction to Computer and Network Security (CMPSCI 460)</a></li>
+            <li>Spring 2017: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI660-SP17" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2016: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI460-FALL16/" rel="noopener" target="_blank">Introduction to Computer and Network Security (CMPSCI 460/597N)</a></li>
+            <li>Fall 2016: <a href="https://people.umass.edu/dholcomb/ece591cf_syllabus.pdf" rel="noopener" target="_blank">Seminar - CyberSecurity Lecture Series (CMPSCI 591CF)</a></li>
+            <li>Fall 2015: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI460-FALL15/" rel="noopener" target="_blank">Introduction to Computer and Network Security (CMPSCI 460)</a></li>
+            <li>Fall 2015: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI460-FALL15/" rel="noopener" target="_blank">Special Topics - Introduction to Computer and Network Security (CMPSCI 597N)</a></li>
+            <li>Fall 2015: <a href="https://people.umass.edu/dholcomb/ece591cf_syllabus.pdf" rel="noopener" target="_blank">Seminar - Cyber Security Faculty Lecture Series (CMPSCI 591CF)</a></li>
+            <li>Spring 2015: <a href="https://people.cs.umass.edu/~amir/courses/CMPSCI660-SP15" rel="noopener" target="_blank">Advanced Information Assurance (CMPSCI 660)</a></li>
+            <li>Fall 2014: <a href="CMPSCI691PT-Fall14.html" rel="noopener" target="_blank">Hot Topics in Privacy Enhancing Technologies (CMPSCI 691PT)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-top pt-3 mt-5 mb-4 text-center small text-muted">
+      <p class="mb-1">© 2026 Amir Houmansadr</p>
+    </footer>
+  </main>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

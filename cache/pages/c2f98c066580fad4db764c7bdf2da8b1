@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Chien-Ming Huang's Website</title>
+		<link href='https://fonts.googleapis.com/css?family=Libre Franklin' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="https://kit.fontawesome.com/469af2fdf1.js" crossorigin="anonymous"></script>
+
+		
+		<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+				font-family: 'Open Sans', 'Libre Franklin',  sans-serif;
+				line-height: 1.5em;
+				font-size: 18px;
+			}
+			
+			main {
+				color: #1C2833;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				float: left;
+				width: 250px;
+				margin-left: -100%;
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				background: #eee;
+			}
+
+			#side-video {
+				float: right;
+				width: 300px;
+				margin-left: -100%;
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				/*background: #f2f2f2;*/
+			}
+			
+			/*#wrapper {
+				overflow: hidden;
+				
+			}*/
+			
+			#content {
+				/*margin-left: 20%;*/ /* 270px Same as 'nav' width */
+				/*margin-right: 15%;*/ /*280px*/
+				width: 1000px;/* 864px 850px 1536*/
+				margin: auto;
+			}
+			
+			.innertube{
+				/*margin: 15px;*/ /* Padding for content */
+/*				margin-top: 50px;*/
+				margin-bottom: 50px;
+			}
+			
+			p {
+				color: #778899;
+				margin-top: 0;
+				margin-bottom: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			h1 span { font-weight: normal; }
+
+			h2{
+				line-height:0.1;
+			}
+			h2 span { font-weight: normal; }
+			h3 {font-weight: normal;}
+			h3 span { font-weight: normal; }
+
+			sidenote{
+				font-size: smaller;
+				color: #808B96;
+				
+			}
+
+			highlight{
+				font-weight: bold;
+				color: #778899;
+				border-bottom: 1px #FF6347 dotted;
+			}
+
+			date {
+
+				font-weight: normal;
+				margin-right: 1em;
+			}
+
+			pub {
+				color: #5D6D7E; /*#1F618D 784212*/
+				font-weight: 100;
+/*				font-variant: small-caps;*/
+				margin-right: 1em;
+			}
+
+			award {
+				color: #c29602; /*B18904. DF3A01 c29602 */
+			}
+
+			note {
+				color: #848484; /*DF3A01*/
+			}
+
+			focus {
+				color: #CD5C5C; /*CD5C5C DF3A01 #FF5733*/
+/*				font-size: 20px;*/
+/*				font-weight: 900;*/
+			}
+
+			subheading {
+				color: #000; /*CD5C5C DF3A01 #FF5733*/
+				font-size: 20px;
+				font-weight: normal;
+			}
+
+			next {
+				color: #CD5C5C; /*DF3A01*/
+			}
+
+			theme {
+				font-weight: 300;
+/*				font-size: 150%;*/
+				margin-right: 1em;
+				margin-top: 20;
+				line-height: 2.5em;
+				font-family:  'Open Sans', 'PT Serif', 'Roboto Slab';
+			}
+
+			a:link {
+				text-decoration:none;
+				/*border-bottom: 1px dotted;*/
+				color:#005EB8; /*005EB8*/
+			}
+			a:hover{
+				border-bottom: 1px gray dotted;
+				/*color:#fff;*/
+			}
+			a:visited {
+				color:#005EB8; /* 5499C7 #0E4C92*/ /*4b99e7*/ 
+			}
+			img {
+  				border-radius: 12px;
+			}
+			header {
+			  position: sticky;
+			  top:0;
+			  padding:1px;
+			  background: white;
+			  text-align: right;
+			}
+			ul {
+ 			   margin-top: 0px;
+			}
+
+			/* Style the button that is used to open and close the collapsible content */
+			.collapsible {
+			  background-color: #fff;
+			  color: #909C1F;
+			  /*font-weight: bold;*/
+			  cursor: pointer;
+			  padding: 0px;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 18px;
+			}
+
+			/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+			.active, .collapsible:hover {
+			  background-color: #F6F6F6;
+			}
+
+			/* Style the collapsible content. Note: hidden by default */
+			.callapse-content {
+			  padding: 0 px;
+			  display: none;
+			  overflow: hidden;
+			  /*transition: max-height 0.2s ease-out;*/
+			  background-color: #f6f6f6;
+			}
+			.collapsible:after {
+			  content: '\02795'; /* Unicode character for "plus" sign (+) */
+			  font-size: 13px;
+			  color: white;
+			  float: right;
+			  margin-left: 5px;
+			}
+
+			.active:after {
+			  content: "\2796"; /* Unicode character for "minus" sign (-) */
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<main>
+				
+				<div id="content">
+					<header>
+				    	<!-- <h1>CHIEN-MING HUANG &nbsp; <span>黃健鳴</span></h1>  -->
+				    	<h3>Chien-Ming Huang &nbsp; <span>黃健鳴</span></h3> 
+				  	</header>
+					<div class="innertube">
+						
+						<h1>Chien-Ming Huang &nbsp; <span>黃健鳴</span></h1> 
+						<img src="images/headshot2.jpg" alt="Chien-Ming Huang" height="250" width="400" border="0" align="right">
+						John C. Malone Associate Professor<br>
+
+						<a href="http://intuitivecomputing.github.io" target="_blank">Intuitive Computing Laboratory</a><br>
+						<a href="https://hci.jhu.edu" target="_blank">HCI@Hopkins</a> | <a href="https://lcsr.jhu.edu" target="_blank">Robotics@Hopkins</a> | <a href="https://ai.jhu.edu" target="_blank">AI@Hopkins</a><br>
+						<!-- <br> -->
+						<!-- <p>Other affiliations</p> -->
+						<a href="https://malonecenter.jhu.edu" target="_blank">Malone Center for Engineering in Healthcare</a><br>
+						<a href="https://www.cs.jhu.edu" target="_blank">Dept. of Computer Science</a>, <a href="https://www.jhu.edu" target="_blank">Johns Hopkins University</a><br />
+						
+						<br>
+
+						chienming.huang @jhu.edu<br>
+						410-516-4537 (unlikely to reach me)<br>
+						<!-- <a href="https://twitter.com/chienming_huang" target="_blank">@chienming_huang</a><br> -->
+						<br>
+						
+						<br>
+						<!-- <focus><i class="fa-solid fa-fire fa-lg"></i></focus> I am currently on an academic sabbatical for the 2024 calendar year. I will be using this time to recharge and explore new research directions. I will not be taking on any service responsibilities during this period.<br> -->
+						
+						<!-- <focus><i class="fa-solid fa-fire fa-lg"></i></focus> I am recruiting PhD students to join my research group.<br> -->
+						<!-- <focus><i class="fa-solid fa-fire fa-lg"></i></focus> I am on parental leave during spring 2025.<br> -->
+						<br>
+
+						<i class="fa fa-thumb-tack"></i> In an effort to maintain a sustainable and fulfilling academic career, I prioritize student mentoring, teaching, and scientific inquiry when time conflicts occur.<br>
+						<i class="fa fa-thumb-tack"></i> Prospective students interested in joining my group please read the notes at the end of this page.<br>
+						<br>
+
+						<h2>About</h2>
+				 		<a href="documents/cv_huang.pdf" target="_blank">Curriculum Vitae</a> | <a href="https://scholar.google.com/citations?user=0kTel90AAAAJ" target="_blank">Google Scholar</a> | <a href="https://orcid.org/0000-0002-6838-3701" target="_blank">ORCiD</a> <br>
+				 		My scientific work contributes to the fields of human-robot interaction (HRI), human-computer interaction (HCI), and robotics.
+				 		The research directions I am currently pursuing include: 
+						<ul>
+				 			<li>Making robotic technology more accessible to people with diverse backgrounds.</li> 
+				 			<li>Understanding the long-term effects of human-robot interactions in real-world settings.</li>
+				 			<li>Improving the quality of life for older adults using technology.</li>
+				 			<li>Designing effective interaction strategies for AI systems to assist people.</li>
+				 		</ul>
+				 		<!-- <br><br> -->
+				 		My research has been supported by NSF, NIH, NIST, Johns Hopkins Institute for Assured Autonomy (IAA), Applied Physics Laboratory, and Malone Center for Engineering in Healthcare. 
+				 		<br><br>
+				 		
+				 		<h2>Advisees (PhD and Postdoc)</h2>
+				 		<date>2021–now</date><a href="https://cs.jhu.edu/~ktpineda" target="_blank">Kaitlynn Pineda</a> (CS PhD) | <award>CS Department fellow</award> <br>
+				 		<date>2021–now</date><a href="https://vantony1.github.io/" target="_blank">Victor Nikhil Antony</a> (CS PhD) | <award>2025 HRI Pioneer</award> <br>
+				 		<date>2022–now</date><a href="https://shiye-cao.github.io/" target="_blank">Shiye Cao</a> (CS PhD) | <award>2026 HRI Pioneer</award> | Co-advised by Anqi Liu<br> 
+				 		<!-- | <award>2022 CRA Outstanding Undergraduate Researcher Finalist</award> -->
+				 		<!-- <date>2023-now</date>Jiwon Moon (CS BS) | <award>2025 CRA Outstanding Undergraduate Researcher Honorable Mention</award><br>
+				 		<date>2023-now</date>Nadia Kim (CS BS)<br>
+				 		<date>2024-now</date>Tony Davis (D.Eng)<br>
+				 		<date>2024–now</date>Zhili Gong (ME MS)<br> -->
+				 		<date>2025–now</date><a href="https://laurafleig.github.io/" target="_blank">Laura Fleig</a> (CS PhD) | <award>Percy Pierre fellow</award> | Co-advised by Mathias Unberath <br>
+				 		<date>2025–now</date><a href="https://gaojie058.github.io/" target="_blank">Jie Gao</a> (Postdoc) | <award>John C. Malone Postdoctoral Fellow</award> | Co-advised by Ziang Xiao and Mark Dredze <br>
+				 		<date>2025–now</date><a href="https://amamamahmood.github.io/" target="_blank">Amama Mahmood</a> (Postdoc) | <award>John C. Malone Postdoctoral Fellow</award> | Co-advised by Ziang Xiao and Paul Yi<br>
+
+				 		
+				 		
+				 		<br>
+				 		<date>2023–2025</date><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://www.lintsungchi.com/" target="_blank">Tsung-Chi Lin</a> (Postdoc) | <award>John C. Malone Postdoctoral Fellow</award> <br>
+				 		<p style="text-indent: 110px;">Now: New Jersey Institute of Technology</p>
+				 		<date>2020–2025</date><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://amamamahmood.github.io/" target="_blank">Amama Mahmood</a> (CS PhD) | <award>CS Department fellow</award> <br>
+				 		<p style="text-indent: 110px;">Now: Johns Hopkins Malone Center for Engineering in Healthcare</p>
+				 		<date>2019–2024</date><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="http://www.maiastiber.com" target="_blank">Maia Stiber</a> (CS PhD) | <award>CS Department fellow</award> | <award>2024 HRI Pioneer</award> | Co-advised by Russ Taylor <br>
+				 		<p style="text-indent: 110px;">Now: Microsoft Research</p>
+				 		<date>2018–2023</date><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://gopikaajaykumar.github.io" target="_blank">Gopika Ajaykumar</a> (CS PhD) | <award>NSF GRFP</award> | <award>JHU Engineering/Nursing fellow</award> | <award>2023 HRI Pioneer</award> <br> 
+				 		<p style="text-indent: 110px;">Now: Southwest Research Institute</p>
+				 		<!-- <date>2019–now</date>Yuxiang Gao (CS PhD) | On leave since 2022 <br> -->
+				 		
+
+				 		<br>
+
+						<h2>Publications</h2>
+						I mainly publish at <i>HRI</i>, <i>HCI</i> (CHI, CSCW, IUI), and <i>Robotics</i> (ICRA, IROS, RSS) venues. My full publication list is available on <a href="https://scholar.google.com/citations?user=0kTel90AAAAJ" target="_blank">Google Scholar</a>. Here are some highlights: <br><br>
+						
+						<pub>HRI'26</pub>Plant-Inspired Robot Design Metaphors for Ambient HRI | <a href="https://arxiv.org/pdf/2601.22387" target="_blank">pdf</a> <br>
+
+						<pub>RSS'25</pub>Interruption Handling for Conversational Robots | <a href="https://arxiv.org/pdf/2501.01568" target="_blank">pdf</a><br>
+
+						<pub>HRI'25</pub>"See You Later, Alligator": Impacts of Robot Small Talk on Task, Rapport, and Interaction Dynamics in Human-Robot Collaboration | <a href="https://arxiv.org/pdf/2501.13233" target="_blank">pdf</a> | <award><i class="fa-solid fa-award fa-lg"></i> Best paper award honorable mention</award>  <br>
+
+						<pub>CHI'25</pub>Voice Assistants for Health Self-Management: Designing for and with Older Adults | <a href="https://arxiv.org/pdf/2409.15488" target="_blank">pdf</a> <br>
+
+						<pub>Radiology</pub>Care to Explain? AI Explanation Types Differentially Impact Physician Diagnostic Performance and Trust in AI | <a href="https://pubs.rsna.org/doi/full/10.1148/radiol.233261" target="_blank">pdf</a><br>
+
+						<pub>IJHCS</pub>User Interaction Patterns and Breakdowns in Conversing with LLM-Powered Voice Assistants | <a href="https://arxiv.org/pdf/2309.13879.pdf" target="_blank">pdf</a> <br>
+
+						<pub>IROS'22</pub>Modeling Human Response to Robot Errors for Timely Error Detection | <a href="https://arxiv.org/pdf/2208.00565.pdf" target="_blank">pdf</a> <br>						
+
+
+						<button type="button" class="collapsible">[More]</button>
+						<div class="callapse-content">
+
+						<subheading><i class="fa fa-share-alt"></i> Human-Robot Collaboration</subheading><br>
+						<pub>ArXiv</pub>Robot Error Awareness Through Human Reactions: Implementation, Evaluation, and Recommendations | <a href="https://arxiv.org/pdf/2501.05723" target="_blank">pdf</a><br>
+						<pub>HRI'25</pub>"See You Later, Alligator": Impacts of Robot Small Talk on Task, Rapport, and Interaction Dynamics in Human-Robot Collaboration | <a href="https://arxiv.org/pdf/2501.13233" target="_blank">pdf</a> | <award><i class="fa-solid fa-award fa-lg"></i> Best paper award honorable mention</award>  <br>
+						<pub>ArXiv</pub>"You Might Like It": How People Respond to Small Talk During Human-Robot Collaboration | <a href="https://arxiv.org/pdf/2312.07454.pdf" target="_blank">pdf</a><br>
+						<pub>ACM THRI</pub>Forging Productive Human-Robot Partnerships Through Task Training | <a href="https://dl.acm.org/doi/pdf/10.1145/3611657" target="_blank">pdf</a><br>
+						<pub>HRI'23</pub>"What If It Is Wrong": Effects of Power Dynamics and Trust Repair Strategy on Trust and Compliance in HRI | <a href="https://intuitivecomputing.github.io/publications/2023-hri-karli.pdf" target="_blank">pdf</a> <br>
+						<pub>HRI'23</pub>On Using Social Signals to Enable Flexible Error-Aware HRI | <a href="https://intuitivecomputing.github.io/publications/2023-hri-stiber.pdf" target="_blank">pdf</a> <br>
+						<pub>IROS'22</pub>Modeling Human Response to Robot Errors for Timely Error Detection | <a href="https://arxiv.org/pdf/2208.00565.pdf" target="_blank">pdf</a> <br>
+
+						
+
+						<pub>HRI'20</pub>See What I See: Enabling User-Centric Robotic Assistance Using First-Person Demonstrations | <a href="https://intuitivecomputing.github.io/publications/2020-hri-wang.pdf" target="_blank">pdf</a> <br>
+		              	<pub>HRI'16</pub>Anticipatory Robot Control for Efficient Human-Robot Collaboration | <a href="https://intuitivecomputing.github.io/publications/2016-hri-huang.pdf" target="_blank">pdf</a> <br>
+		              	<pub>Frontiers in Psychology</pub>Using Gaze Patterns to Predict Task Intent in Collaboration | <a href="https://journal.frontiersin.org/article/10.3389/fpsyg.2015.01049/abstract" target="_blank">pdf</a> <br>
+		              	<pub>RSS'15</pub>Adaptive Coordination Strategies for Human-Robot Handovers | <a href="https://www.roboticsproceedings.org/rss11/p31.pdf" target="_blank">pdf</a> <br>
+		              	<br>
+		              	
+
+		              	<subheading><i class="fa fa-share-alt"></i> Social Robots</subheading><br>
+		              	<pub>RSS'25</pub>Interruption Handling for Conversational Robots | <a href="https://arxiv.org/pdf/2501.01568" target="_blank">pdf</a><br>
+		              	<pub>HRI'25</pub>Xpress: Generating Dynamic, Context-Aware Robot Facial Expressions Using Language Models | <a href="https://arxiv.org/pdf/2503.00283" target="_blank">pdf</a><br>
+		              	<pub>IJSR</pub>Social Robots for Sleep Health: A Scoping Review | <a href="https://arxiv.org/pdf/2403.04169" target="_blank">pdf</a> <br>
+		              	<pub>HRI'23</pub>Co-Designing with Older Adults, for Older Adults: Robots to Promote Physical Activity | <a href="https://intuitivecomputing.github.io/publications/2023-hri-antony.pdf" target="_blank">pdf</a> <br>
+		              	<pub>Science Robotics</pub>Improving Social Skills in Children with ASD Using a Long-Term, In-Home Social Robot | <a href="https://robotics.sciencemag.org/content/robotics/3/21/eaat7544.full.pdf?casa_token=vh-Sc7qHGHsAAAAA:Ash9VEBe8kcwDX1nQL8onkQYiHVsk_AaBHQ2DL_JjEOWmnLomrmGDkN9igsdDN6p8iDU-ToiULvZ" target="_blank">pdf</a> <br>
+
+		              	<pub>HRI'18</pub>Thinking Aloud with a Tutoring Robot to Enhance Learning | <a href="https://dl.acm.org/doi/pdf/10.1145/3171221.3171250" target="_blank">pdf</a> <br>
+		              	<pub>HRI'17</pub>Give Me a Break! Personalized Timing Strategies to Promote Learning in Robot-Child Tutoring | <a href="https://intuitivecomputing.github.io/publications/2017-hri-ramachandran.pdf" target="_blank">pdf</a> <br>
+		              	<pub>RSS'13</pub>Modeling and Evaluating Narrative Gestures for Humanlike Robots | <a href="https://www.roboticsproceedings.org/rss09/p26.pdf" target="_blank">pdf</a> | <award><i class="fa-solid fa-award fa-lg"></i> Best paper award runner-up</award> <br>
+		              	<br>
+
+
+		              	<subheading><i class="fa fa-share-alt"></i> End-User Robot Programming </subheading><br> 
+						<pub>HRI'24</pub>Alchemist: LLM-Aided End-User Development of Robot Applications | <a href="https://dl.acm.org/doi/pdf/10.1145/3610977.3634969" target="_blank">pdf</a> <br>
+						<pub>IJHCS</pub>Older Adults' Expectations, Experiences, and Preferences in Programming Physical Robot Assistance | <a href="https://intuitivecomputing.github.io/publications/2023-ijhcs-ajaykumar.pdf" target="_blank">pdf</a> <br>
+						<pub>ACM Computing Survey</pub>A Survey on End-User Robot Programming | <a href="https://dl.acm.org/doi/pdf/10.1145/3466819" target="_blank">pdf</a> <br>
+						<pub>Robotics and Autonomous Systems</pub>Designing User-Centric Programming Aids for Kinesthetic Teaching of Collaborative Robots | <a href="https://intuitivecomputing.github.io/publications/2021-ras-ajaykumar.pdf" target="_blank">pdf</a> <br>
+						<pub>IUI'19</pub>PATI: A Projection-Based Augmented Table-Top Interface for Robot Programming | <a href="https://intuitivecomputing.github.io/publications/2019-iui-gao.pdf" target="_blank">pdf</a> <br>
+						<br>
+
+		              	<subheading><i class="fa fa-share-alt"></i> Socially Aware Robot Navigation </subheading><br>
+						<pub>IROS'22</pub>Learning a Group-Aware Policy for Robot Navigation | <a href="https://arxiv.org/pdf/2012.12291" target="_blank">pdf</a> <br>
+						<pub>Frontiers in Robotics and AI</pub>Evaluation of Socially-Aware Robot Navigation | <a href="https://www.frontiersin.org/articles/10.3389/frobt.2021.721317/abstract" target="_blank">pdf</a> | <award><i class="fa-solid fa-award fa-lg"></i> 2022 Outstanding Article, Editor's Picks</award> <br>
+						<pub>ICRA'20</pub>Intent-Aware Pedestrian Prediction for Adaptive Crowd Navigation | <a href="https://intuitivecomputing.github.io/publications/2020-icra-katyal.pdf" target="_blank">pdf</a> <br>
+						<br>
+
+						<subheading><i class="fa fa-share-alt"></i> Human-AI Interaction</subheading><br>
+						<pub>Radiology</pub>Care to Explain? AI Explanation Types Differentially Impact Physician Diagnostic Performance and Trust in AI | <a href="https://pubs.rsna.org/doi/full/10.1148/radiol.233261" target="_blank">pdf</a><br>
+						<pub>ACM TiiS</pub>ID.8: Co-Creating Visual Stories with Generative AI | <a href="https://arxiv.org/pdf/2309.14228.pdf" target="_blank">pdf</a><br>
+						<pub>CSCW'24</pub>Designing for Appropriate Reliance: The Roles of AI Uncertainty Presentation, Initial User Decision, and User Demographics in AI-Assisted Decision-Making | <a href="https://dl.acm.org/doi/pdf/10.1145/3637318" target="_blank">pdf</a> <br>
+						<pub>CSCW'23</pub>How Time Pressure from Different Phases of Decision-Making Influences Human-AI Collaboration | <a href="https://dl.acm.org/doi/pdf/10.1145/3610068" target="_blank">pdf</a> <br>
+						<pub>IJHCS</pub>Mitigating Knowledge Imbalance in AI-Advised Decision-Making Through Collaborative User Involvement | <a href="https://doi.org/10.1016/j.ijhcs.2022.102977" target="_blank">pdf</a> <br>
+						<pub>CSCW'22</pub>Understanding User Reliance on AI in Assisted Decision-Making | <a href="https://dl.acm.org/doi/pdf/10.1145/3555572" target="_blank">pdf</a> <br>
+						<pub>CHI'22</pub>Owning Mistakes Sincerely: Strategies for Mitigating AI Errors | <a href="https://intuitivecomputing.github.io/publications/2022-chi-mahmood.pdf" target="_blank">pdf</a> <br>
+						<pub>npj Digital Medicine</pub>Explainable Medical Imaging AI Needs Human-Centered Design: Guidelines and Evidence from a Systematic Review | <a href="https://www.nature.com/articles/s41746-022-00699-2" target="_blank">pdf</a> <br>
+						<br>
+
+						<subheading><i class="fa fa-share-alt"></i> Conversational Voice Assistants</subheading><br>
+						<pub>CHI'25</pub>Voice Assistants for Health Self-Management: Designing for and with Older Adults | <a href="https://arxiv.org/pdf/2409.15488" target="_blank">pdf</a> <br>
+						<pub>IJHCS</pub>User Interaction Patterns and Breakdowns in Conversing with LLM-Powered Voice Assistants | <a href="https://arxiv.org/pdf/2309.13879.pdf" target="_blank">pdf</a> <br>
+						<pub>ArXiv</pub>Situated Understanding of Older Adults' Interactions with Voice Assistants: A Month-long In-home Study | <a href="https://arxiv.org/pdf/2403.02421" target="_blank">pdf</a> <br>
+						<pub>CSCW'24</pub>Gender Biases in Error Mitigation by Voice Assistants | <a href="https://arxiv.org/pdf/2310.13074.pdf" target="_blank">pdf</a> <br>
+						<br>
+
+						<subheading><i class="fa fa-share-alt"></i> Exploratory Projects</subheading><br>
+						<pub>HRI'25</pub>The Design of On-Body Robots for Older Adults | <a href="https://arxiv.org/pdf/2502.02725" target="_blank">pdf</a><br> 
+						<pub>IROS'24</pub>Reducing Performance Variability and Overcoming Limited Spatial Ability: Targeted Training for Remote Robot Teleoperation <br>
+						<pub>ArXiv</pub>An Introduction to Causal Inference Methods for Observational Human-Robot Interaction Research | <a href="https://arxiv.org/pdf/2310.20468" target="_blank">pdf</a> <br>
+						<pub>ISMAR'23</pub>Active Engagement with Virtual Reality Reduces Stress and Increases Positive Emotions <br>
+						<pub>IUI'22</pub>Crowdsourcing Thumbnail Captions Using Time-Constrained Methods | <a href="https://intuitivecomputing.github.io/publications/2022-iui-aguirre.pdf" target="_blank">pdf</a> <br>
+
+						</div> <!-- end of callapse -->
+
+						<br><br>
+
+						<h2>Teaching</h2>
+				 		EN.601.493/693 Accessible Computing<br>
+				 		<note>Fall 2025</note><br>
+				 		<br>
+				 		EN.601.491/691 Human-Robot Interaction<br>
+				 		<note>Spring 2026, Spring 2022, Spring 2021, Spring 2020, Spring 2019, Spring 2018</note><br>
+				 		<br>
+				 		EN.601.490/690 Introduction to Human-Computer Interaction<br>
+				 		<note>Fall 2023, Fall 2022, Fall 2021, Fall 2020, Fall 2019, Fall 2018</note><br>
+				 		<br>
+				 		
+
+		              	<!-- <h2>Community services</h2>
+			            <date>2018–now</date>Associate Editor for the ACM Transactions on Human-Robot Interaction<br>
+			            <date>2024, 2022, 2021, 2019, 2018</date>HRI Program Committee<br>
+			            <date>2019</date>CHI Program Committee (AC)<br>
+			            <date>2024</date>ICRA Associate Editor for Human-Robot Interaction<br>
+			            I'm also a frequent reviewer for HRI, ICRA, and CHI.<br>
+			            <br> -->
+
+
+			            <h2>Updates</h2><a name="news"></a>
+			            
+			            <date>12.25</date> <focus><i class="fa-solid fa-fire fa-lg"></i></i></focus> I am co-chairing the 2025 Johns Hopkins Research Symposium on <br>Engineering in Healthcare: <a href="https://malonecenter.jhu.edu/2025-symposium/" target="_blank">Human + AI: Redefining the Standard of Care in Medicine</a>.<br>
+
+			            <date>09.25</date> <focus><i class="fa-solid fa-fire fa-lg"></i></i></focus> <award>Research award</award> – New NIST project in collaboration with Tinglong Dai and Michael Oberst to investigate "Evaluation of AI Benefits for Informed AI Adoption at Scale"
+						<br>
+
+			            <date>07.25</date> <focus><i class="fa-solid fa-fire fa-lg"></i></i></focus> I am co-editing a special issue on <a href="https://dl.acm.org/pb-assets/static_journal_pages/thri/pdf/THRI-ACM-CFP-UDREF-HRI-1753127118830.pdf" target="_blank"> Understanding, Detecting and Repairing Errors and Failures in Human-Robot Interactions</a> for the ACM Transactions on Human-Robot Interaction
+						<br>
+
+			            <date>03.25</date> I am co-organizing the ERR@HRI 2.0 Challenge on <a href="https://sites.google.com/view/errhri20?usp=sharing" target="_blank"> Multimodal Detection of Errors and Failures in Human-Robot Conversations</a>
+						<br>
+
+						<button type="button" class="collapsible">[Before 2025]</button>
+						<div class="callapse-content">
+
+			            <date>05.24</date> I am co-organizing the ERR@HRI 2024 ICMI Challenge on 
+			            "<a href="https://sites.google.com/cam.ac.uk/err-hri/home" target="_blank">Multimodal Detection of Errors and Failures in Human-Robot Interactions</a>"
+						<br>
+
+						<date>11.23</date> I am co-organizing an HRI'24 workshop on "<a href="https://sites.google.com/cam.ac.uk/ss4hri/" target="_blank">Social Signal Modeling in Human-Robot Interaction</a>"
+						<br>
+
+						<date>11.23</date> <award>Research award</award> – New NIH P30 project in collaboration with Hao Su and Junxin Li to investigate "Improving Mobility for Dementia Alleviation in Older Adults via AI-Powered Affordable Exosuits"
+						<br>
+
+
+						<date>12.22</date> I am co-organizing a AAAI spring symposium on "<a href="https://sites.google.com/view/aaai-hri-bridge" target="_blank">HRI in Academia and Industry: Bridging the Gap</a>"
+						<br>
+
+						<date>06.22</date><award>Research award</award> – New NSF project in collaboration with Greg Hager to investigate "<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2141335" target="_blank">Modeling Ad Hoc Collaboration on Complex Manipulation Tasks for Human-Robot Teams</a>"
+						<br>
+
+						<date>02.22</date><award>Research award</award> – I received an NSF <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143704&HistoricalAwards=false" target="_blank">CAREER</a> award to investigate end-user robot programming systems for everyday people, especially older adults who want to live independently at home.
+						<br>
+
+						<date>10.21</date><award>Research award</award> – New NIH project in collaboration with Shameema Sikder (PI), Swaroop Vedula, and Greg Hager to investigate "<a href="" target="https://reporter.nih.gov/search/7MXPNJs2GkyFO6dr6e860A/project-details/10279444" target="_blank">Artificial Intelligence Driven Tools for Objective Surgical Performance Improvement</a>"
+						<br>
+
+						<date>05.20</date>Humbled to receive <award>Professor Joel Dean Excellence in Teaching Award</award><br>
+						<date>02.20</date><award>Research award</award> – New project in collaboration with I-Jeng Wang and Kapil Katyal to investigate "Human-Centered Assured Autonomy" supported by the JHU <a href="https://iaa.jhu.edu" target="_blank">Institute for Assured Autonomy</a><br>
+						<date>02.19</date><award>Rsearch award</award> – New project to investigate "Human-Robot Co-Navigation" supported by APL<br>
+						<date>12.18</date>Joined the editorial board for the <a href="https://dl.acm.org/journal/thri" target="_blank">ACM Transactions on Human-Robot Interaction</a><br>
+						<date>10.18</date>Honored to be named the <award>John C. Malone Assistant Professor</award><br>
+						<date>09.18</date><award>Research award</award> – New NSF project in collaboration with Suchi Saria (PI) to investigate "<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1840088&HistoricalAwards=false" target="_blank">Human-Machine Cognitive Teaming for Medical Decision Making</a>"<br>
+						<date>08.17</date>Joined CS@Johns Hopkins University<br>
+						<br>
+						</div>
+
+			            <!-- <h2>Selected press</h2>
+			            <date>2021</date><a href="https://hub.jhu.edu/2021/09/24/programming-workplace-robots/" target="_blank">Robot programming for everyday people</a> (JHU Hub)<br>
+			            <date>2019</date><a href="https://hub.jhu.edu/magazine/2019/winter/ethical-robots-2501-em1-art1-nr-science/" target="_blank">Plays well with humans</a> (JHU Magazine)<br>
+			            <date>2019</date><a href="https://www.sciencenews.org/article/robots-are-becoming-classroom-tutors-will-they-make-grade" target="_blank">Robots are becoming classroom tutors. But will they make the grade?</a> (Science News)<br>
+			            <date>2015</date><a href="http://www.techinsider.io/scientists-program-robotic-arm-to-help-unload-a-dishwasher-2015-8" target="_blank">A new robot helper could make daily chores astronomically more fun</a> (Tech Insider) <br>
+			            <date>2015</date><a href="https://www.technologyreview.com/s/539781/teach-your-robot-to-do-the-dishes/" target="_blank">Teach Your Robot to Do the Dishes</a> (MIT Technology Review) <br>
+			            <br> -->
+
+			            <br><br>
+			            <h2>Working with me</h2>
+						
+						<pub>Postdoc</pub> I encourage prospective postdoctoral researchers to apply for fellowships offered by <a href="https://ai.jhu.edu/careers/postdoctoral-fellowship-program/" target="_blank">Johns Hopkins Data Science and AI Institute</a> and <a href="https://malonecenter.jhu.edu/malone-fellows/" target="_blank">Johns Hopkins Malone Center for Engineering in Healthcare</a>. I would be happy to discuss potential project fits and ways we could collaborate. Please send me your CV and a brief description of your interest in joining my group.
+						<br><br>
+
+						<pub>PhD</pub> I am always looking for highly motivated students interested in human-computer interaction and/or robotics. However, I do not reply to any inquiries and/or comment on applicaiton materials. If you are interested in working with me, you need to apply to our <a href="https://www.cs.jhu.edu/graduate-studies/phd-program/" target="_blank">CS graduate program</a> directly.<br><br>
+						
+						<pub>MSE and Undergraduates</pub> 
+						I am always willing to mentor and involve highly motivated MSE and undergraduate students in research. Research projects in my group typically involve substantial software engineering. Prospective students should have completed at least <i>Intermediate Programming</i>, <i>Data Structures</i>, or <i>Algorithms for Sensor-Based Robotics</i> before reaching out. 
+						Research is not a hobby; it requires a strong commitment. To make meaningful progress, you should be prepared to dedicate at least 10 hours per week to your research project. Teamwork is essential, as you will likely collaborate with one or two of my PhD or Master’s students on a project.
+						If you believe you are ready for this commitment, please send me a note along with your resume and transcript for consideration. 
+
+				 		
+					</div>
+					<!-- <hr>
+					Last update: May 20, 2024
+					<hr> -->
+				</div>
+			</main>
+		</div>
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.display === "block") {
+		      content.style.display = "none";
+		    } else {
+		      content.style.display = "block";
+		    }
+		  });
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wei Meng</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var loc = window.location.href + '';
+            if (loc.indexOf('http://') == 0) {
+                window.location.href = loc.replace('http://','https://');
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/nav.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-26556214-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+
+    </head>
+
+    <body class="home">
+        <div class="container">
+            <div class="navWrapper">
+                <div class="burger-container">
+                    <div id="burger">
+                        <div class="bar topBar"></div>
+                        <div class="bar btmBar"></div>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <img src="assets/wei.jpg" class="logo img-circle">
+                    <li class="menu-item"><a id="nav-about" href="#about" class="navButton current">About</a></li>
+                    <li class="menu-item"><a id="nav-openings" href="#openings" class="navButton">Openings</a></li>
+                    <li class="menu-item"><a id="nav-teaching" href="#teaching" class="navButton">Teaching</a></li>
+                    <li class="menu-item d-sm-none"><a id="nav-experience" href="#experience" class="navButton">Experience</a></li>
+                    <li class="menu-item"><a id="nav-publications" href="#publications"class="navButton">Publications</a></li>
+                    <li class="menu-item"><a id="nav-services" href="#services" class="navButton">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="bgWrapper clearfix">
+            </div>
+
+            <div class="mainWrapper clearfix">
+                <div class="wrapper clearfix">
+                    <div class="page column-4">
+
+                        <!-- ABOUT -->
+                        <section class="homeIntro" id="about">
+                            <div class="intro column-4">
+                                <div class="name">
+                                    <h1>Wei</h1><h1>MENG</h1>
+                                </div>
+                                <div class="emailWrapper">
+                                    <div class="column-4">
+                                        <h4>Associate Professor</h4>
+                                        <h4>
+                                            <a href="https://www.cse.cuhk.edu.hk/en/" target="_blank">
+                                                Department of Computer Science & Engineering
+                                            </a>
+                                            <br>
+                                            <a href="http://www.cuhk.edu.hk/english/index.html" target="_blank">
+                                                The Chinese University of Hong Kong
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div class="column-4 homeEmail">
+                                        <h4 class="lighter">wei @ cse.cuhk.edu.hk</h4>
+                                    </div>
+                                    <div class="column-4">
+                                        <h4 class="lighter">Room 109, HSH Eng. Bldg.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="introText introSub">
+                                    <p>
+                                    I founded and lead the 
+                                    <a href="https://seclab.cse.cuhk.edu.hk/" target="_blank">CUHK Computer Security Lab</a>.
+                                    </p>
+
+                                    <p>
+                                    I am generally interested in all problems related to computer security and privacy, including the ones intersecting with other areas in computer science and other disciplines. Most recently, I have been focusing on protecting the applications/services and the end users on the Internet.
+                                    </p>
+
+                                    <p>
+                                    I received my Ph.D. in Computer Science from Georgia Institute of Technology in 2017, and my B.Eng. in Computer Science from Tsinghua University in 2012.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- OPENINGS -->
+
+                        <section class="" id="openings">
+                            <div class="column-4">
+                                <h2 class="sectionHeader">
+                                    OPENINGS
+                                </h2>
+                                <div class="column-4">
+                                    <p>
+                                    If you are interested in working with me on research in <b>computer security</b> or <b>computer systems</b> (e.g., programming languages, software engineering, operating systems, computer networks, etc.),
+                                    please find the information about our vacancy <a href="https://seclab.cse.cuhk.edu.hk/#recruitment" target="_blank">HERE</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- TEACHING -->
+
+                        <section class="" id="teaching">
+                            <div class="column-4">
+                                <h2 class="sectionHeader">
+                                    TEACHING
+                                </h2>
+                                <div class="contentLeft column-4">
+                                    <p class="item">
+                                        ENGG 5105/CSCI 5470 Computer and Network Security: Fall 2018, Fall 2019, Spring 2021, Fall 2021, Fall 2022, Fall 2023, Fall 2024,
+                                        <a href="https://course.cse.cuhk.edu.hk/~engg5105/" target="_blank">Fall 2025</a>.
+                                    </p>
+
+                                    <p class="item">
+                                        CSCI 4130 Introduction to Cyber Security: Fall 2019, Fall 2020, Spring 2022, Spring 2023, Spring 2024, Spring 2025,
+                                        <a href="https://course.cse.cuhk.edu.hk/~csci4130/" target="_blank">Spring 2026</a>.
+                                    </p>
+
+                                    <p class="item">
+                                        CSCI 4140 Open-Source Software Project Development: Spring 2018, Spring 2019, Spring 2020,
+                                        <a href="https://course.cse.cuhk.edu.hk/~csci4140/" target="_blank">Spring 2024</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- EXPERIENCE -->
+
+                        <section class="d-sm-none" id="experience">
+                            <div class="column-4">
+                                <h2 class="sectionHeader">
+                                    EXPERIENCE
+                                </h2>
+                                <img src="assets/experience.png" class="timeline">
+                            </div>
+                        </section>
+
+
+                        <!-- PUBLICATIONS -->
+
+                        <section class="" id="publications">
+                            <div class="pubWrapper column-4">
+                                <h2 class="sectionHeader">
+                                    PUBLICATIONS
+                                </h2>
+                                <div class="column-4">
+                                    <p> My Google Scholar profile is <a href="https://scholar.google.com/citations?user=CBLnYLEAAAAJ&hl=en" target="_blank">here</a>.
+                                    </p>
+                                </div>
+
+                                <div class="column-4">
+                                    <p> The full list can be found <a href="https://seclab.cse.cuhk.edu.hk/#publications" target="_blank">here</a>.
+                                    </p>
+                                </div>
+                                <iframe class="pubFrame" id="publications-frame" name="frame-publication" src="publications.html" frameborder="0" scrolling="0" width="100%" height="100%"></iframe>
+                            </div>
+                        </section>
+
+
+                        <!-- SERVICES -->
+
+                        <section class="" id="services">
+                            <div class="column-4">
+                                <h2 class="sectionHeader">
+                                    SERVICES
+                                </h2>
+                                <div class="contentLeft column-4">
+                                    <h3 class="subTitle">
+                                        Organizing Committee Member
+                                    </h3>
+                                    <p class="">Publication Chair, International Symposium on Research in Attacks, Intrusions, and Defenses 2023</p>
+                                    <p class="">Panel Co-Chair, EAI International Conference on Security and Privacy in Communication Networks 2023</p>
+
+                                    <h3 class="subTitle">
+                                        Program Committee Member
+                                    </h3>
+                                    <p class="">The Web Conference (Security and Privacy Track) 2020, 2021, 2022, 2024, 2025, 2026</p>
+                                    <p class="">ACM Conference on Computer and Communications Security 2021, 2022, 2023, 2024, 2025</p>
+                                    <p class="">USENIX Security Symposium 2025</p>
+                                    <p class="">IEEE Symposium on Security and Privacy 2023, 2024</p>
+                                    <p class="">ACM Workshop on Secure and Trustworthy Superapps 2023</p>
+                                    <p class="">SecWeb Workshop 2023, 2024</p>
+                                    <p class="">The Annual Computer Security Applications Conference 2023</p>
+                                    <p class="">EAI International Conference on Security and Privacy in Communication Networks 2023</p>
+                                    <p class="">ACM Asia Conference on Computer and Communications Security 2021, 2022</p>
+                                    <p class="">International World Wide Web Conference (Security and Privacy Track) 2017</p>
+
+                                    <h3 class="subTitle">
+                                        Journal Reviewer
+                                    </h3>
+                                    <p class="">ACM Transactions on Software Engineering and Methodology (2017, 2020, 2026)</p>
+                                    <p class="">IEEE Transactions on Software Engineering (2025)</p>
+                                    <p class="">Science of Computer Programming (2024)</p>
+                                    <p class="">IEEE/ACM Transactions on Networking (2022)</p>
+                                    <p class="">Elsevier Computers & Security (2019)</p>
+                                    <p class="">ACM Transactions on the Web (2018)</p>
+                                    <p class="">ACM Computing Surveys (2016)</p>
+
+                                    <h3 class="subTitle">
+                                        Other Services
+                                    </h3>
+                                    <p class="">Preliminary Judge, CSAW Applied Research Competition 2017, 2018, 2019, 2020</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--! end of .page -->
+                </div>
+                <!--! end of .wrapper -->
+            </div>
+            <!--! end of .mainWrapper -->
+        </div>
+        <!--! end of .container -->
+
+        <script src="//static.getclicky.com/js" type="text/javascript"></script>
+        <script type="text/javascript">try{ clicky.init(101002489); }catch(e){}</script>
+        <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101002489ns.gif" /></p></noscript>
+
+    </body>
+</html>

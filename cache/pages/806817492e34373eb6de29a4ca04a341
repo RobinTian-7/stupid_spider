@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Alex C. Snoeren</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="homepage.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+
+    <main role="main">
+      
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+	  <div class="row">
+	    <div class="col-md-4">
+	      <img src="images/srq.jpg" class="img-fluid">
+	    </div>
+            <div class="col-lg-4">
+	      
+	      <p>
+		<h1>Alex C. Snoeren</h1> 
+		<h5>Professor</h5>
+		<a href="http://www.cs.ucsd.edu">Computer Science & Engineering Dept.</a><br>
+		<a href="http://www.ucsd.edu">University of California, San Diego</a><br>
+	      </p>
+	      
+	    </div>
+	    <div class="col-lg-4 align-self-end">
+	      <div class="row no-gutters justify-content-end">
+		<p class="text-right">
+	          EBU3B 3114<br>
+                  9500 Gilman Drive, M/C 0404<br>
+                  La Jolla, CA 92093-0404
+		  </p>
+	      </div>
+	      <div class="row no-gutters justify-content-end">
+		<div class="col-auto"> 
+		  <p class="text-right">
+                    (858) 822-2289
+		  </p>
+		  </div>
+		  <div class="col-auto">
+		    <p class="text-right">
+		      &nbsp;| (858) 534-7029 fax
+		    </p>		    
+		  
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+
+
+      <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
+	<a class="navbar-brand" href="mailto:snoeren@cs.ucsd.edu">snoeren@cs.ucsd.edu</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#papers">Papers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Students</a>
+            </li>
+            <li class="nav-item dropup">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classes</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+		<a class="dropdown-item" href="#ug">Undergraduate</a>
+		<a class="dropdown-item" href="#grad">Graduate</a>
+		<a class="dropdown-item" href="#sem">Seminar</a>
+              </div>
+            </li>
+	    <li class="nav-item">
+              <a class="nav-link" href="bio.html">Bio</a>
+            </li>
+	    <li class="nav-item">
+              <a class="nav-link" href="cv.pdf">CV</a>
+            </li>
+          </ul>
+	</div>
+      </nav>
+
+	<div class="container">
+<p> I am a member of the <a
+href="http://www.sysnet.ucsd.edu">Systems and Networking
+Research Group</a>, the <a href="https://cryptosec.ucsd.edu">Security and Cryptography Research Group</a>, and
+the <a href="http://cns.ucsd.edu">Center for Networked Systems</a>.
+<!--, and the <a href="http://www.sysnet.ucsd.edu/frontier/">Center for
+Evidence-Based Security Research (CESR)</a>. -->
+<br>&nbsp;
+</div>
+     
+<hr>
+ 
+      <div class="container" id="papers">
+        <div class="row">
+	  <div class="col">
+            <h2>Recent papers</h2>
+	    
+	    <ul>
+
+<li> <p><b><a href="papers/cuckoo-atc25.pdf">Cuckoo for Clients: Disaggregated Cuckoo Hashing</a></b><br>
+<span class="author">S. Grant and A. C. Snoeren</span><br> 
+<span class="biblio"><a
+href="https://www.usenix.org/conference/atc25/">ATC</a></span>,
+Boston, MA, July 2025.
+
+<li><p><b><a
+href="https://www.cs.ucsd.edu/~snoeren/papers/eden-nsdi25.pdf">Eden: Developer-Friendly
+Application-Integrated Far Memory</a></b><br>
+<span class="author">A. Yelam, S. Grant, S. Deshpande,
+N. Amit, R. N. Mysore, A. Ousterhout,
+M. K. Aguilera, and <a href="https://cseweb.ucsd.edu/~snoeren/">A.
+C. Snoeren</a></span><br> <span class="biblio"><a
+href="https://www.usenix.org/conference/nsdi25/">NSDI</a></span>,
+Philadelphia, PA, April 2025.
+
+	    </ul>
+	    
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col">
+	    <p><a class="btn btn-secondary" href="publications.shtml" role="button">Full
+		list &raquo;</a></p>
+	  </div>
+	  <div class="col align-self-end">
+	    <p class="text-right"><a class="btn btn-secondary" href="https://scholar.google.com/citations?user=lBzZU1IAAAAJ" role="button">Google Scholar</a></p>
+	  </div>
+	</div>
+      </div>
+
+      <hr>
+      
+      <div class="container" id="classes">
+	
+	<div class="row">
+	  <div class="col">
+            <h2>Classes</h2>
+	  </div>
+	</div>
+		
+	<div class="container" id="ug">
+	  <div class="row">
+	    <div class="col">
+	      <div class="row">
+		<h6>CSE 8B Introduction to Computer Science: Java (II)</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto">
+		  <a href="https://sites.google.com/eng.ucsd.edu/cse-8b">Spring '19</a>
+	      </div>
+  	    </div>
+	      		<p>
+
+	      <div class="row">
+		<h6>CSE 120 Principles of Computer Operating Systems</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp08/cse120/"> Spring '08</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa06/cse120/">Fall '06</a>
+		</div>
+		<div class="col-auto">		  
+		  <a href="http://www.cs.ucsd.edu/classes/fa05/cse120/">Fall '05</a>
+		</div>
+	      </div>
+	      		<p>
+
+	      <div class="row">
+		<h6>CSE 121 Operating Systems: Architecture and Implementation</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi10/cse121">Winter '10</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi09/cse121">Winter '09</a>
+	      	</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi07/cse121/">Winter '07</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi06/cse121/">Winter '06</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi05/cse121/">Winter '05</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/fa03/cse121/">Fall '03</a>
+		</div>
+	      </div>
+	      		<p>
+	      <div class="row">
+		<h6>CSE 123 Computer Networks</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa24/cse123-a">Fall '24</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa23/cse123-a">Fall '23</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi22/cse123-a">Winter '22</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi21/cse123-a">Winter '21</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa19/cse123-a">Fall '19</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa18/cse123-a">Fall '18</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa17/cse123-a">Fall '17</a>
+		</div>
+		<div class="col-auto border-right border-secondary">		  
+		  <a href="http://www.cs.ucsd.edu/classes/wi17/cse123-a">Winter '17</a>
+		</div>
+	      	<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp16/cse123-a">Spring '16</a>
+		</div>
+	      	<div class="col-auto border-right border-secondary">		
+		  <a href="http://www.cs.ucsd.edu/classes/fa15/cse123-a">Fall '15</a>
+		</div>
+	      	<div class="col-auto border-right border-secondary">		  		
+		  <a href="http://www.cs.ucsd.edu/classes/fa14/cse123-a">Fall '14</a>
+		</div>
+	      	<div class="col-auto border-right border-secondary">		  
+		  <a href="http://www.cs.ucsd.edu/classes/fa13/cse123-a">Fall '13</a>
+		</div>
+	      	<div class="col-auto">		  
+		  <a href="http://www.cs.ucsd.edu/classes/fa10/cse123">Fall '10</a>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div> <!-- container -->
+<p>
+	
+	<div class="container" id="grad">
+	  <div class="row">
+	    <div class="col">
+	      <div class="row">
+		<h6>CSE 220 Operating Systems Principles</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/wi26/cse220-a">Winter '26</a>
+	      </div>
+	   </div>
+		<p>
+
+
+	      <div class="row">
+		<h6>CSE 221 Graduate Operating Systems</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa16/cse221-a">Fall '16</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi16/cse221-b">Winter '16</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi11/cse221">Winter '11</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/fa08/cse221">Fall '08</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/fa07/cse221">Fall '07</a>
+		</div>
+	      </div>
+		<p>
+	      
+	      <div class="row">
+		<h6>CSE 222A Computer Communication Networks</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi19/cse222A-a">Winter '19</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi18/cse222A-a">Winter '18</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi15/cse222A-a">Winter '15</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi14/cse222A-a">Winter '14</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/wi13/cse222A-a">Winter '13</a>
+		</div>
+	      </div>
+	      		<p>
+	      
+	      <div class="row">
+		<h6>CSE 223B Distributed Computing and Systems</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp25/cse223B-a/">Spring '25</A>
+</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp22/cse223B-a/">Spring '22</A>
+</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp21/cse223B-a/">Spring '21</A>
+</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp20/cse223B-a/">Spring '20</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp18/cse223B-a/">Spring '18</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp17/cse223B-a/">Spring '17</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp15/cse223B-a/">Spring '15</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp14/cse223B-a/">Spring '14</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp13/cse223B-a/">Spring '13</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp11/cse223b/">Spring '11</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp10/cse223b/">Spring '10</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp09/cse223b/">Spring '09</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/wi08/cse223b/">Winter '08</A>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp06/cse223b/">Spring '06</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp05/cse223b/">Spring '05</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp04/cse223b/">Spring '04</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/sp03/cse291-d/">Spring '03 (CSE 291D)</a>
+		</div>
+	      </div>
+	      		<p>
+		  
+	    </div>		  	    
+	  </div>
+
+	      <div class="row">
+		<h6>CSE 224 Graduate Networked Systems</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto">
+		  <a
+href="https://canvas.ucsd.edu/courses/55062">Spring '24</a>
+		</div>
+	      </div>
+	      		<p>
+
+	</div> <!-- container -->
+
+	<div class="container" id="sem">
+	  <div class="row">
+	    <div class="col">
+	      <div class="row">
+		<h6>CSE 291 Topics in Mobile & Wireless Networking</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.cs.ucsd.edu/classes/sp07/cse291-d/">Spring '07</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.cs.ucsd.edu/classes/wi03/cse291-k">Winter '03</a>
+		</div>
+	      </div>
+	      <p>
+	      <div class="row">
+		<h6>CSE 294 Systems and Networking Research Seminar</h6>
+	      </div>
+	      <div class="row justify-content-start">
+		<div class="col-auto border-right border-secondary">
+		  <a
+href="http://www.sysnet.ucsd.edu/classes/cse294/fa25">Fall '25</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a
+href="http://www.sysnet.ucsd.edu/classes/cse294/wi25">Winter '25</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a
+href="http://www.sysnet.ucsd.edu/classes/cse294/wi24">Winter '24</a>
+</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/sp22">Spring '22</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a
+href="http://www.sysnet.ucsd.edu/classes/cse294/sp20">Spring '20</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/fa19">Fall '19</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/fa18">Fall '18</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi18">Winter '18</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi17">Winter '17</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi16">Winter '16</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/fa15">Fall '15</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/sp15">Spring '15</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi15"> Winter '15</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/sp14">Spring '14</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/sp10">Spring '10</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi08">Winter '08</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi07">Winter '07</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi06">Winter/Spring '06</a>
+		</div>
+		<div class="col-auto border-right border-secondary">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi05">Winter '05</a>
+		</div>
+		<div class="col-auto border-right border-secondary">		
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/fa04">Fall '04</a>
+		</div>
+		<div class="col-auto border-right border-secondary">		
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/sp04">Spring '04</a>
+		</div>
+		<div class="col-auto">
+		  <a href="http://www.sysnet.ucsd.edu/classes/cse294/wi04">Winter '04</a>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div> <!-- container -->
+	
+      </div> <!-- classes container -->
+	  
+      
+      <hr>
+      
+      <div class="container" id="students">
+
+	<div class="row">
+	  <div class="col">
+	    <h2>Students</h2>
+	  </div>
+	</div>
+
+	<div class = "row justify-content-end">
+	  <div class="col-sm">
+            <h4>Current</h4>
+<a href="https://liam0215.github.io/">Liam Arzola</a><br>
+<a href="https://www.ryankosta.com/">Ryan Kosta</a><br>
+<a href="https://www.alishaukani.com/">Alisha Ukani</a><br>
+	    </p>
+          </div>
+          <div class="col-lg-6">
+            <h4>Graduated</h4>
+	    <a href = "http://cse.ucsd.edu/~mafanasyev/">Mikhail Afanasyev,
+	      PhD</a><br>
+	    <a href="http://www.cs.williams.edu/~jeannie/">Jeannie Albrecht, PhD</a>
+	    (joint w/Amin Vahdat)<br>
+	    <a href="http://www.cs.ucsd.edu/~aauyoung/">Alvin AuYoung, PhD</a><br>
+	    <a href="http://cseweb.ucsd.edu/~kbenson/">Karyn Benson, PhD</a> (joint
+	    w/k claffy)<br>
+<a href="http://www.sysnet.ucsd.edu/~r4das/">Rajdeep Das, PhD</a><br>
+	    <a href="http://cseweb.ucsd.edu/~mdeblasi/">Joe DeBlasio, PhD</a><br>
+<a href="https://www.bencdu.com">Ben Du</a>, PhD (joint w/k claffy)<br>
+	      <a href="http://cseweb.ucsd.edu/~agamerog">Alex
+Gamero Garrido, PhD</a> (joint w/Alberto Dainotti)<br>
+<a href="http://cseweb.ucsd.edu/~ssgrant">Stewart Grant, PhD</a><br>
+	    <a href="https://mlab.engineering.nyu.edu/">Danny Huang, PhD</a> (joint
+	    w/Kirill Levchenko)<br>
+	    <a href="http://www.cs.purdue.edu/homes/kompella/">Ramana Kompella,
+	      PhD</a> (joint w/George Varghese)<br>
+	    <a href="http://ieng9.ucsd.edu/~f1lu/">Feng Lu, PhD</a> (joint w/Geoff
+	    Voelker & Tara Javidi) <br>
+	    <a href="http://www.cse.ucsd.edu/~jmccullo">John McCullough, PhD</a><br>
+	    <a href="http://www1.icsi.berkeley.edu/~barath/">Barath Raghavan,
+	      PhD</a><br>
+	    <a href="http://cseweb.ucsd.edu/~arroy/">Arjun Roy, PhD</a> (joint
+	    w/Ken Yocum)<br>
+	    <a href="http://www.cs.ucsd.edu/~djturner">Daniel Turner, PhD</a> (joint
+	    w/Stefan Savage)<br>
+	    <a href="http://cseweb.ucsd.edu/~bvattikonda/">Bhanu Vattikonda,
+	      PhD</a><br>
+	    <a href="http://www.cs.ucsd.edu/~pverkaik">Patrick Verkaik, PhD</a><br>
+	    <a href="http://www.cs.swarthmore.edu/~kwebb">Kevin Webb, PhD</a> (joint
+	    w/Ken Yocum)<br>
+<a href="https://anilkyelam.github.io/">Anil Yelam, PhD</a>
+          </div>
+          <div class="col">
+            <h4>&nbsp;</h4>
+	    <p><a href="http://cs.nyu.edu/~jchen/">Jay Chen</a><br>
+	      Shaan Mahbubani<br>
+	      Chris Tuttle<br>
+	      Erik VandeKieft<br>
+	      Sen Zhang<br>
+		<p>Weiyang "Frank" Wang<br>
+	    </p>
+          </div>
+        </div>
+		
+      </div> <!-- /container -->
+
+    </main>
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!--
+				<p>
+				CSE 229A Topics in Computer Systems
+(SysLunch)<br>
+				Spring '07 &nbsp;|&nbsp; Spring '04
+&nbsp;|&nbsp; Winter '04 &nbsp;|&nbsp; Fall '03
+				-->

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Anuran Makur Homepage</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<style> 
+ul{ list-style-position: inside; line-height: 1.8; } 
+ol{ margin-left: 40px; line-height: 1.8; }
+</style> <!--Aligns the bullet points-->
+
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script> <!--MathJax: use \( \) for in-line Latex and $$ $$ for display Latex-->
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="images/pic6.jpg" width="220" height="220"/>
+			<h1><a href="#">Anuran Makur</h1>
+			<span><a href="#">Assistant Professor of CS and ECE<br>Purdue University</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="publications.html" accesskey="2" title="See Publications List">Publications</a></li>
+				<li><a href="teaching.html" accesskey="3" title="See Teaching Information">Teaching</a></li>
+				<li><a href="biography.html" accesskey="4" title="See Biography">Biography</a></li>
+				<li><a href="contact.html" accesskey="5" title="See Contact Information">Contact</a></li>
+			</ul>
+		</div>
+	</div>	
+	<div id="main">
+		<div class="title">
+			<h2>Anuran Makur</h2>
+			<span class="byline">Assistant Professor of Computer Science and Electrical & Computer Engineering<br>Purdue University</span>
+		</div>
+		<div id="welcome">
+			<div align="justify">
+				<p>I am an Assistant Professor in the Department of Computer Science (<a href="https://www.cs.purdue.edu/" title="Purdue CS Homepage">CS</a>) and the Elmore Family School of Electrical and Computer Engineering (<a href="https://engineering.purdue.edu/ECE" title="Purdue ECE Homepage">ECE</a>) at <a href="https://www.purdue.edu/" title="Purdue Homepage">Purdue University</a>, where I am also affiliated with the Institute for Control, Optimization and Networks (<a href="https://engineering.purdue.edu/ICON" title="ICON Homepage">ICON</a>). Previously, I completed my Sc.D. from the Department of Electrical Engineering and Computer Science (<a href="https://www.eecs.mit.edu/" title="MIT EECS Department Homepage">EECS</a>) at Massachusetts Institute of Technology (<a href="http://www.mit.edu/" title="MIT Homepage">MIT</a>) and was also a postdoctoral researcher in the Laboratory for Information and Decision Systems (<a href="https://lids.mit.edu/" title="MIT LIDS Homepage">LIDS</a>) and the Institute for Data, Systems, and Society (<a href="https://idss.mit.edu/" title="MIT IDSS Homepage">IDSS</a>) at MIT.</p>
+			</div>
+			<div class="title"> <!--for spacing-->
+			</div> 
+			<div class="title">
+				<h2>Research Interests</h2>
+			</div>
+			<div align="justify">
+				<p> I am broadly interested in theoretical EECS areas. In particular, my research interests are in:
+					<ul style="list-style-type:disc">
+						<li><u>Theory of Machine Learning</u>
+							<ol style="list-style-type:circle">
+								<li>ranking and preference learning</li>
+								<li>optimization for machine learning</li>
+								<li>non-parametric and high-dimensional inference<p></p></li>
+							</ol>
+						</li>
+						<li><u>Information Theory</u> 
+  							<ol style="list-style-type:circle">
+								<li>information measures and inequalities</li>
+								<li>fundamental limits of permutation channels and networks</li>
+								<li>information theoretic methods for statistical inference<p></p></li>
+								
+							</ol>
+  						</li>
+						<li><u>Applied Probability</u>
+							<ol style="list-style-type:circle">
+								<li>broadcasting on graphs</li>
+								<li>interacting particle systems</li>
+								<li>reliable computation using noisy circuits<p></p></li>
+							</ol>
+						</li>
+  					</ul>
+  				</p>
+			</div>
+		<div class="title"> <!--for spacing-->
+		</div> 
+		<div id="copyright">
+			<span>&copy; Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

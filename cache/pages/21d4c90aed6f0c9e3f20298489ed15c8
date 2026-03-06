@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pheng Ann Heng Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #ffffff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header img {
+            width: 750px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        nav { 
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 10px 0;
+            background: #4482cd;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: justify;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .card {
+            flex: 1 1 calc(33.3% - 10px);
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #4482cd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="background03.png" alt="background03" style="max-width: 100%; height: auto">
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Publications.html">Publications</a>
+        <a href="Team.html">Team</a>
+        <a href="Contact.html">Contact</a> 
+    </nav>
+    <main>
+        <section id="about" style="display: flex; align-items: center; gap: 20px; padding: 20px 10;">    
+            <img src="selfie.png" alt="Photo" style="width: 150px; height: 180px; border-radius: 8px; object-fit: cover;">
+                
+                <!-- å³ä¾§æå­ç®ä» -->
+            <div style="font-size: 16px; line-height: 1.5;">
+                <p><strong style="font-size: 30px;">Pheng Ann Heng</strong></p>
+                <p style="line-height: 1;">B.Sc. (NUS), M.Sc., M.A., Ph.D. (Indiana)</p>
+                <p style="line-height: 1;">Choh-Ming Li Professor of Computer Science and Engineering</p>
+            </div>
+        </section>
+
+        <section id="Biography">
+            <h2>Biography</h2>
+            <p>Dr. HENG Pheng Ann is Choh-Ming Li Professor of Computer Science and Engineering and the Director of Institute of Medical Intelligence and XR at The Chinese University of Hong Kong. He is also a Co-Director of Guangdong-Hong Kong-Macao Joint Lab of Human-Machine Intelligence Synergy Systems.</p>
+            <p>He received his B.Sc. (Computer Science) from the National University of Singapore in 1985 and his Ph.D. (Computer Science) from Indiana University in 1992.</p>
+            <p>He joined NUS-JHU Center for Information-enhanced Medicine at NUS in 1992 as a Research Associate. He then joined the Department of Computer Science and Engineering at CUHK as an Assistant Professor in 1995 and promoted to Professor in 2002.  He was awarded Cheung Kong Scholar Chair Professorship by China Ministry of Education in 2007. He formerly served as Department Chairman and Head of Graduate Division. He has served as the Director of CUHK Virtual Reality, Visualization, and Imaging Research Centre since 1999 and the Director of Centre for Cognition and Interaction Technology at Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences since 2006. </p>
+            <p>Hengâs research interests include medical image analysis, artificial intelligence, surgical simulation, visualization, and extended reality. He has published over 760 publications cited with 66736 Google citations and h-index at 121. He has been recognized as a Highly Cited Researcher by Clarivate and recognized with the Computer Science Leader Award in China by Research.com.</p>
+        </section>
+        <!--<section id="skills">
+            <h2>Research Areas</h2>
+            <p>â¢ Applications</p>
+            <p>â¢ Artificial Intelligence</p>
+            <p style="margin-left: 40px;">â¦ Human Computer Interaction</p>
+            <p>â¢ Rich Media</p>
+            <p style="margin-left: 40px;">â¦ AR/VR</p>
+            <p style="margin-left: 40px;">â¦ Computer Graphics</p>
+            <p style="margin-left: 40px;">â¦ Visualization</p>
+        </section> -->
+    </main>
+    <footer>
+        <p>Â© 2025 Pheng Ann Heng. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

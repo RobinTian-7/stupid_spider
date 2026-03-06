@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Ribeiro, Associate Professor at Purdue University, specializing in Machine Learning">
+    <meta name="keywords" content="Bruno Ribeiro, machine learning, graph neural networks, causal representation learning, OOD robustness">
+    <title>Bruno Ribeiro - Purdue University</title>
+    <style>
+        :root {
+            --purdue-gold: #CEB888;
+            --purdue-black: #272727;
+            --purdue-secondary: #8E6F3E;
+            --light-gray: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: white;
+            color: var(--purdue-black);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        #content {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 20px;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 3em;
+            padding-bottom: 2em;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-section {
+            padding-top: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 0 0 0.3em 0;
+            color: var(--purdue-black);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0em 0 1em 0;
+            color: var(--purdue-secondary);
+            border-bottom: 2px solid var(--purdue-gold);
+            padding-bottom: 0.5em;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0.5em 0;
+            color: var(--purdue-black);
+        }
+
+        .title {
+            font-size: 1.4rem;
+            color: var(--purdue-secondary);
+            margin: 0.2em 0;
+        }
+
+        .contact-info {
+            line-height: 1.8;
+            margin: 2em 0;
+            color: #444;
+        }
+
+        a {
+            color: var(--purdue-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--purdue-gold);
+            text-decoration: underline;
+        }
+
+        .student-section {
+            background: var(--light-gray);
+            padding: 2em;
+            border-radius: 8px;
+            margin: 2em 0;
+        }
+
+        .student-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .student-section li {
+            margin: 0.7em 0;
+            padding-left: 1em;
+            position: relative;
+        }
+
+        .student-section li::before {
+            content: "â¢";
+            color: var(--purdue-gold);
+            position: absolute;
+            left: 0;
+        }
+
+        .publications {
+            margin-top: 3em;
+        }
+
+        .pubitem {
+            margin-bottom: 2em;
+            padding: 1em;
+            border-left: 3px solid var(--purdue-gold);
+            background: white;
+            transition: background-color 0.2s ease;
+        }
+
+        .pubitem:hover {
+            background: var(--light-gray);
+        }
+
+        .hidden {
+            display: none;
+            background: var(--light-gray);
+            padding: 1.5em;
+            margin: 1em 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            border-left: 3px solid var(--purdue-secondary);
+        }
+
+        .pubyear {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2em 0 1em 0;
+            color: var(--purdue-secondary);
+            border-bottom: 2px solid var(--purdue-gold);
+            padding-bottom: 0.5em;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .info-section {
+                text-align: center;
+            }
+
+            #content {
+                width: 95%;
+                padding: 1rem 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="header">
+            <div class="profile-section">
+                <img src="images/RibeiroB.png" alt="Bruno Ribeiro" class="profile-img">
+            </div>
+            <div class="info-section">
+                <h1>Bruno Ribeiro</h1>
+                <div class="title">Associate Professor of Computer Science</div>
+                <div class="title">Purdue University</div>
+                <div class="contact-info">
+                    Hall of Data Science and AI 3142<br>
+                    Department of Computer Science<br>
+                    Purdue University<br>
+                    West Lafayette, IN<br>
+                    <a href="mailto:ribeirob@purdue.edu">ribeirob@purdue.edu</a><br>
+                    <a href="pdf/CV.pdf">Curriculum Vitae [PDF]</a>
+                </div>
+            </div>
+        </div>
+
+      <div class="student-section">
+	      <h2>Recent News</h2>
+	      <ul>
+		      <li>(Spring 2025): The CS58700 Foundations of Deep Learning course has reached maximum capacity. However, we anticipate that some seats may become available after the initial week of classes since the class is at 9:30am.If you are interested in enrolling, we recommend waiting until after the first week of classes</li>
+		      <li>Upcoming talk at the Joint Mathematics Meeting on the Mathematics of Graph Foundation Models: <b>Jan 8th, 2025, 1-2pm.</b><br>"As we exhaust sequential data for training LLMs, relational data remains mostly untapped. In this talk we will explore the mathematical challenges and potential solutions for harnessing relational data in foundation models."</li>
+                
+		      <li>Congratulations to Beatrice Bevilacqua for her 2024 MIT EECS Risiting Stars award.</li>
+		      <li>I am back from my sabbatical at Stanford.</li>
+	      </ul>
+	</div> 
+        <div class="student-section">
+            <h2>Current Students</h2>
+            <h3>PhD</h3>
+            <ul>
+                <li><a href="https://scholar.google.com/citations?user=RvtEObEAAAAJ&hl=en&oi=sra">Beatrice Bevilacqua</a></li>
+                <li><a href="https://scholar.google.com/citations?user=-3BQQJ4AAAAJ&hl=en&oi=sra">Jincheng Zhou</a></li>
+                <li>Yucheng Zhang</li>
+            </ul>
+
+            <h3>MSc</h3>
+            <ul>
+                <li>Ipsit Mantri</li>
+            </ul>
+
+            <h3>Undergraduate</h3>
+            <ul>
+            </ul>
+        </div>
+
+        <div class="student-section">
+            <h2>Former Students</h2>
+            <h3>PhD</h3>
+            <ul>
+                <li><a href="https://scholar.google.com/citations?user=FP3FEc4AAAAJ&hl=en&oi=ao">S Chandra Mouli</a> (Ph.D. 2024, Applied Scientist @ Meta)</li>
+                <li><a href="https://scholar.google.com/citations?user=o_lyLmgAAAAJ&hl=en&oi=sra">Yangze Zhou</a> (Ph.D. 2024, Applied Scientist @ Spotify)</li>
+                <li><a href="https://scholar.google.com/citations?user=4BigfuMAAAAJ&hl=en&oi=ao">Jianfei Gao</a> (Ph.D. 2023, Applied Scientist @ Amazon)</li>
+                <li><a href="https://scholar.google.com/citations?user=0GI4MyoAAAAJ&hl=en&oi=ao">Leonardo Cotta</a> (Ph.D. 2022, Postdoctoral Fellow @ Vector Institute)</li>
+                <li><a href="https://www.linkedin.com/in/balasubramaniam-srinivasan/">Bala Srinivasan</a> (Ph.D. 2022, Senior Applied Scientist and Tech Lead @ Amazon)</li>
+                <li><a href="https://www.linkedin.com/in/mayankkakodkar/">Mayank Kakodkar</a> (Ph.D. 2022, Applied Scientist @ Amazon)</li>
+                <li>Ryan Murphy (Ph.D. 2021, Financial Industry Regulatory Authority)</li>
+            </ul>
+
+            <h3>Undergraduate</h3>
+            <ul>
+                <li>Kevin Xia (now PhD student at Columbia)</li>
+                <li>Jack Good (now PhD student at CMU)</li>
+            </ul>
+        </div>
+
+        <div class="publications">
+            <h2>Publications</h2>
+            <p>See complete list at <a href="https://scholar.google.com/citations?hl=en&user=KIEleCsAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></p>
+
+    
+    <h3 class="pubyear">2025</h3>
+
+    <p class="pubitem">
+        Yangyi Shen, Jincheng Zhou, Beatrice Bevilacqua, Joshua Robinson, Charilaos Kanatsoulis, Jure Leskovec, Bruno Ribeiro<br>
+        <b>Zero-Shot Generalization of GNNs over Distinct Attribute Domains</b><br>
+        ICML 2025<br>
+        <a href="javascript:show('bib-3')">BibTex</a> | <a href="pdf/Shen2025_STAGE.pdf">pdf</a>
+    </p>
+    <span class="hidden" id="bib-3">
+    <pre><code>@inproceedings{shen2025stage,
+        title={Zero-Shot Generalization of GNNs over Distinct Attribute Domains},
+        author={Shen, Yangyi  and Zhou, Jincheng and Bevilacqua, Beatrice and Robinson, Joshua and Kanatsoulis, Charilaos and Leskovec, Jure and  Ribeiro, Bruno},
+        booktitle={ICML},
+        year={2025}
+    }</code></pre>
+    </span>
+
+
+    
+    <p class="pubitem">
+        Abd Alrhman AlQiam,Zhuocong Li, Satyajeet Singh Ahuja, Zhaodong Wang, Ying Zhang, Sanjay Rao, Bruno Ribeiro, Mohit Tawarmalani<br>
+        <b>Hattrick: Solving Multi-Class TE using Neural Models</b><br>
+        SIGCOMM 2025<br>
+        <a href="javascript:show('bib-3')">BibTex</a> | <a href="https://openreview.net/forum?id=hYgDLyudos">OpenReview</a>
+    </p>
+    <span class="hidden" id="bib-3">
+    <pre><code>@inproceedings{alqiam2025hattrick,
+        title={Hattrick: Solving Multi-Class TE using Neural Models},
+        author={AlQiam, Abd Alrhman and Li, Zhuocong and Ahuja, Satyajeet Singh and Wang, Zhaodong and Zhang, Ying and Rao, Sanjay and Ribeiro, Bruno and Tawarmalani, Mohit},
+        booktitle={ACM SIGCOMM},
+        year={2025}
+    }</code></pre>
+    </span>
+
+    <p class="pubitem">
+        Kenneth Lee, Bruno Ribeiro, Murat Kocaoglu<br>
+        <b>Constraint-based Causal Discovery from a Collection of Conditioning Sets</b><br>
+        UAI 2025<br>
+        <a href="javascript:show('bib-3')">BibTex</a> | <a href="https://openreview.net/forum?id=hYgDLyudos">OpenReview</a>
+    </p>
+    <span class="hidden" id="bib-3">
+    <pre><code>@inproceedings{bevilacqua2025holo,
+        title={Constraint-based Causal Discovery from a Collection of Conditioning Sets},
+        author={Lee, Kenneth and Ribeiro, Bruno and Kocaoglu, Murat},
+        booktitle={UAI},
+        year={2025}
+    }</code></pre>
+    </span>
+
+
+    <p class="pubitem">
+        Beatrice Bevilacqua, Joshua Robinson, Jure Leskovec, Bruno Ribeiro<br>
+        <b>Holographic Node Representations: Pre-training Task-Agnostic Node Embeddings</b><br>
+        ICLR 2025<br>
+        <a href="javascript:show('bib-2')">BibTex</a> | <a href="https://openreview.net/forum?id=tGYFikNONB">OpenReview</a>
+    </p>
+    <span class="hidden" id="bib-2">
+    <pre><code>@inproceedings{bevilacqua2025holo,
+        title={Holographic Node Representations: Pre-training Task-Agnostic Node Embeddings},
+        author={Bevilacqua, Beatrice and Robinson, Joshua and Leskovec, Jure and Ribeiro, Bruno},
+        booktitle={ICLR},
+        year={2025}
+    }</code></pre>
+    </span>
+
+    <p class="pubitem">
+        Parjanya Prajakta Prashant, Seyedeh Baharan Khatami, Bruno Ribeiro, Babak Salimi <br>
+        <b>Scalable Out-of-Distribution Robustness in the Presence of Unobserved Confounders</b><br>
+        AISTATS 2025<br>
+        <a href="javascript:show('bib-1')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib-1">
+    <pre><code>@inproceedings{prashant2025scaleOOD,
+        title={Scalable Out-of-Distribution Robustness in the Presence of Unobserved Confounders},
+        author={Prashant, Parjanya Prajakta and Khatami, Seyedeh Baharan and Ribeiro, Bruno and Salimi, Babak},
+        booktitle={AISTATS},
+        year={2025}
+    }</code></pre>
+    </span>
+
+    <p class="pubitem">
+        Kaiyuan Zhang, Siyuan Cheng, Guangyu Shen, Bruno Ribeiro, Shengwei An, Pin-Yu Chen, Xiangyu Zhang, Ninghui Li<br>
+        <b>CENSOR: Defense Against Gradient Inversion via Orthogonal Subspace Bayesian Sampling</b><br>
+        NDSS, 2025<br>
+        <a href="javascript:show('bib1')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib1">
+    <pre><code>@inproceedings{zhang2025censor,
+        title={CENSOR: Defense Against Gradient Inversion via Orthogonal Subspace Bayesian Sampling},
+        author={Zhang, Kaiyuan and Cheng, Siyuan and Shen, Guangyu and Ribeiro, Bruno and An, Shengwei and Chen, Pin-Yu and Zhang, Xiangyu and Li, Ninghui},
+        booktitle={Network and Distributed System Security Symposium},
+        year={2025}
+    }</code></pre>
+    </span>
+    
+    <h3 class="pubyear">2024</h3>
+
+    <p class="pubitem">
+        Krishna Sri Ipsit Mantri, Xinzhi Wang, Carola-Bibiane ScÃ¶nlieb, Bruno Ribeiro, Beatrice Bevilacqua, Moshe Eliasof<br>
+        <b>DiGRAF: Diffeomorphic Graph-Adaptive Activation Function</b><br>
+        NeurIPS, 2024<br>
+        <a href="javascript:show('bib2')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib2">
+    <pre><code>@inproceedings{mantri2024digraf,
+        title={DiGRAF: Diffeomorphic Graph-Adaptive Activation Function},
+        author={Mantri, Krishna Sri Ipsit and Wang, Xinzhi and ScÃ¶nlieb, Carola-Bibiane and Ribeiro, Bruno and Bevilacqua, Beatrice and Eliasof, Moshe},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Mikhail Galkin, Jincheng Zhou, Bruno Ribeiro, Jian Tang, Zhaocheng Zhu<br>
+        <b>A Foundation Model for Zero-shot Logical Query Reasoning</b><br>
+        NeurIPS, 2024<br>
+        <a href="javascript:show('bib3')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib3">
+    <pre><code>@inproceedings{galkin2024foundation,
+        title={A Foundation Model for Zero-shot Logical Query Reasoning},
+        author={Galkin, Mikhail and Zhou, Jincheng and Ribeiro, Bruno and Tang, Jian and Zhu, Zhaocheng},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Shirley Wu, Kaidi Cao, Bruno Ribeiro, James Zou, Jure Leskovec<br>
+        <b>GraphMETRO: Mitigating Complex Graph Distribution Shifts via Mixture of Aligned Experts</b><br>
+        NeurIPS, 2024<br>
+        <a href="javascript:show('bib4')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib4">
+    <pre><code>@inproceedings{wu2024graphmetro,
+        title={GraphMETRO: Mitigating Complex Graph Distribution Shifts via Mixture of Aligned Experts},
+        author={Wu, Shirley and Cao, Kaidi and Ribeiro, Bruno and Zou, James and Leskovec, Jure},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Abd AlRhman AlQiam, Yuanjun Yao, Zhaodong Wang, Satyajeet Singh Ahuja, Ying Zhang, Sanjay Rao, Bruno Ribeiro, Mohit Tawarmalani<br>
+        <b>Transferable Neural WAN TE for Changing Topologies</b><br>
+        ACM SIGCOMM, 2024<br>
+        <a href="javascript:show('bib5')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib5">
+    <pre><code>@inproceedings{alqiam2024transferable,
+        title={Transferable Neural WAN TE for Changing Topologies},
+        author={AlQiam, Abd AlRhman and Yao, Yuanjun and Wang, Zhaodong and Ahuja, Satyajeet Singh and Zhang, Ying and Rao, Sanjay and Ribeiro, Bruno and Tawarmalani, Mohit},
+        booktitle={ACM SIGCOMM},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Mai Elkady, Thu Bui, Bruno Ribeiro, David I. Inouye<br>
+        <b>Vertical Validation: Evaluating Implicit Generative Models for Graphs on Thin Support Regions</b><br>
+        UAI, 2024<br>
+        <a href="https://openreview.net/pdf?id=u5zVjFaxSs">PDF</a>  | <a href="javascript:show('bib6')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib6">
+    <pre><code>@inproceedings{elkady2024vertical,
+        title={Vertical Validation: Evaluating Implicit Generative Models for Graphs on Thin Support Regions},
+        author={Elkady, Mai and Bui, Thu and Ribeiro, Bruno and Inouye, David I.},
+        booktitle={Conference on Uncertainty in Artificial Intelligence},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Jiacheng Li, Ninghui Li, Bruno Ribeiro<br>
+        <b>MIST: Defending Against Membership Inference Attacks Through Membership-Invariant Subspace Training</b><br>
+        USENIX Security, 2024<br>
+        <a href="javascript:show('bib7')">BibTex</a> | <a href="https://arxiv.org/abs/2311.00919">arXiv</a>
+    </p>
+    <span class="hidden" id="bib7">
+    <pre><code>@inproceedings{li2024mist,
+        title={MIST: Defending Against Membership Inference Attacks Through Membership-Invariant Subspace Training},
+        author={Li, Jiacheng and Li, Ninghui and Ribeiro, Bruno},
+        booktitle={USENIX Security Symposium},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        S Chandra Mouli, Muhammad Alam, Bruno Ribeiro<br>
+        <b>MetaPhysiCa: Improving OOD Robustness in Physics-informed Machine Learning</b><br>
+        ICLR, 2024 (spotlight)<br>
+        <a href="javascript:show('bib8')">BibTex</a> | <a href="https://arxiv.org/abs/2303.03181">arXiv</a>
+    </p>
+    <span class="hidden" id="bib8">
+    <pre><code>@inproceedings{mouli2024metaphysica,
+        title={MetaPhysiCa: Improving OOD Robustness in Physics-informed Machine Learning},
+        author={Mouli, S Chandra and Alam, Muhammad and Ribeiro, Bruno},
+        booktitle={International Conference on Learning Representations},
+        year={2024}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Beatrice Bevilacqua, Moshe Eliasof, Eli Meirom, Bruno Ribeiro, Haggai Maron<br>
+        <b>Efficient Subgraph GNNs by Learning Effective Selection Policies</b><br>
+        ICLR, 2024<br>
+        <a href="javascript:show('bib9')">BibTex</a> | <a href="https://arxiv.org/abs/2310.20082">arXiv</a>
+    </p>
+    <span class="hidden" id="bib9">
+    <pre><code>@inproceedings{bevilacqua2024efficient,
+        title={Efficient Subgraph GNNs by Learning Effective Selection Policies},
+        author={Bevilacqua, Beatrice and Eliasof, Moshe and Meirom, Eli and Ribeiro, Bruno and Maron, Haggai},
+        booktitle={International Conference on Learning Representations},
+        year={2024}
+    }</code></pre>
+    </span>
+
+
+
+    <h3 class="pubyear">2023</h3>
+
+    <p class="pubitem">
+        Jianfei Gao, Yangze Zhou, Jincheng Zhou, Bruno Ribeiro<br>
+        <b>Double Equivariance for Inductive Link Prediction for Both New Nodes and New Relation Types</b><br>
+        arXiv:2302.01313<br>
+        <a href="javascript:show('bib10')">BibTex</a> | <a href="https://arxiv.org/abs/2302.01313">arXiv</a>
+    </p>
+    <span class="hidden" id="bib10">
+    <pre><code>@article{gao2023double,
+        title={Double Equivariance for Inductive Link Prediction for Both New Nodes and New Relation Types},
+        author={Gao, Jianfei and Zhou, Yangze and Zhou, Jincheng and Ribeiro, Bruno},
+        journal={arXiv preprint arXiv:2302.01313},
+        year={2023}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Leonardo Cotta, Beatrice Bevilacqua, Nesreen Ahmed, Bruno Ribeiro<br>
+        <b>Causal Lifting and Link Prediction</b><br>
+        Proceedings of the Royal Society A, 2023<br>
+        <a href="javascript:show('bib11')">BibTex</a> | <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspa.2023.0121">Paper</a>
+    </p>
+    <span class="hidden" id="bib11">
+    <pre><code>@article{cotta2023causal,
+        title={Causal Lifting and Link Prediction},
+        author={Cotta, Leonardo and Bevilacqua, Beatrice and Ahmed, Nesreen and Ribeiro, Bruno},
+        journal={Proceedings of the Royal Society A},
+        year={2023}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Chandan Botha, Jianfei Gao, Sanjay Rao, Bruno Ribeiro<br>
+        <b>Veritas: Answering Causal Queries from Video Streaming Traces</b><br>
+        ACM SIGCOMM, 2023<br>
+        <a href="javascript:show('bib12')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib12">
+    <pre><code>@inproceedings{botha2023veritas,
+        title={Veritas: Answering Causal Queries from Video Streaming Traces},
+        author={Botha, Chandan and Gao, Jianfei and Rao, Sanjay and Ribeiro, Bruno},
+        booktitle={ACM SIGCOMM},
+        year={2023}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Jiacheng Li, Ninghui Li, Bruno Ribeiro<br>
+        <b>Effective passive membership inference attacks in federated learning against overparameterized models</b><br>
+        ICLR, 2023<br>
+        <a href="javascript:show('bib13')">BibTex</a> | <a href="https://openreview.net/forum?id=QsCSLPP55Ku">Paper</a>
+    </p>
+    <span class="hidden" id="bib13">
+    <pre><code>@inproceedings{li2023effective,
+        title={Effective passive membership inference attacks in federated learning against overparameterized models},
+        author={Li, Jiacheng and Li, Ninghui and Ribeiro, Bruno},
+        booktitle={International Conference on Learning Representations},
+        year={2023}
+    }</code></pre>
+    </span>
+    
+    <h3 class="pubyear">2022</h3>
+
+    <p class="pubitem">
+        Yun Seong Nam, Jianfei Gao, Chandan Bothra, Ehab Ghabashneh, Sanjay Rao, Bruno Ribeiro, Jibin Zhan, Hui Zhang<br>
+        <b>Xatu: Richer Neural Network Based Prediction for Video Streaming</b><br>
+        SIGMETRICS, 2022<br>
+        <a href="javascript:show('bib14')">BibTex</a> | <a href="https://web.archive.org/web/20220608235435id_/https://dl.acm.org/doi/pdf/10.1145/3489048.3522641">Paper</a>
+    </p>
+    <span class="hidden" id="bib14">
+    <pre><code>@inproceedings{nam2022xatu,
+        title={Xatu: Richer Neural Network Based Prediction for Video Streaming},
+        author={Nam, Yun Seong and Gao, Jianfei and Bothra, Chandan and Ghabashneh, Ehab and Rao, Sanjay and Ribeiro, Bruno and Zhan, Jibin and Zhang, Hui},
+        booktitle={SIGMETRICS},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Yangze Zhou, Gitta Kutyniok, Bruno Ribeiro<br>
+        <b>OOD Link Prediction Generalization Capabilities of Message-Passing GNNs in Larger Test Graphs</b><br>
+        NeurIPS, 2022<br>
+        <a href="javascript:show('bib15')">BibTex</a> | <a href="https://arxiv.org/pdf/2205.15117.pdf">arXiv</a>
+    </p>
+    <span class="hidden" id="bib15">
+    <pre><code>@inproceedings{zhou2022ood,
+        title={OOD Link Prediction Generalization Capabilities of Message-Passing GNNs in Larger Test Graphs},
+        author={Zhou, Yangze and Kutyniok, Gitta and Ribeiro, Bruno},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        S Chandra Mouli, Yangze Zhou, Bruno Ribeiro<br>
+        <b>Bias Challenges in Counterfactual Data Augmentation</b><br>
+        UAI Workshop on Causal Representation Learning, 2022<br>
+        <a href="javascript:show('bib16')">BibTex</a> | <a href="https://arxiv.org/pdf/2209.05104.pdf">arXiv</a>
+    </p>
+    <span class="hidden" id="bib16">
+    <pre><code>@inproceedings{mouli2022bias,
+        title={Bias Challenges in Counterfactual Data Augmentation},
+        author={Mouli, S Chandra and Zhou, Yangze and Ribeiro, Bruno},
+        booktitle={UAI Workshop on Causal Representation Learning},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Jianfei Gao, Bruno Ribeiro<br>
+        <b>On the Equivalence Between Temporal and Static Equivariant Graph Representations</b><br>
+        ICML, 2022<br>
+        <a href="javascript:show('bib17')">BibTex</a> | <a href="https://proceedings.mlr.press/v162/gao22e/gao22e.pdf">Paper</a>
+    </p>
+    <span class="hidden" id="bib17">
+    <pre><code>@inproceedings{gao2022equivalence,
+        title={On the Equivalence Between Temporal and Static Equivariant Graph Representations},
+        author={Gao, Jianfei and Ribeiro, Bruno},
+        booktitle={International Conference on Machine Learning},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        S. Chandra Mouli, Bruno Ribeiro<br>
+        <b>Asymmetry Learning for Counterfactually-invariant Classification in OOD Tasks</b><br>
+        ICLR, 2022 (Oral)<br>
+        <a href="javascript:show('bib18')">BibTex</a> | <a href="https://openreview.net/forum?id=avgclFZ221l">Paper</a>
+    </p>
+    <span class="hidden" id="bib18">
+    <pre><code>@inproceedings{mouli2022asymmetry,
+        title={Asymmetry Learning for Counterfactually-invariant Classification in OOD Tasks},
+        author={Mouli, S Chandra and Ribeiro, Bruno},
+        booktitle={International Conference on Learning Representations},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Carlos HC Teixeira, Mayank Kakodkar, VinÃ­cius Dias, Wagner Meira, Bruno Ribeiro<br>
+        <b>Sequential stratified regeneration: MCMC for large state spaces with an application to subgraph count estimation</b><br>
+        Data Mining and Knowledge Discovery, 2022<br>
+        <a href="javascript:show('bib19')">BibTex</a> | <a href="https://openreview.net/forum?id=avgclFZ221l">Paper</a>
+    </p>
+    <span class="hidden" id="bib19">
+    <pre><code>@article{teixeira2022sequential,
+        title={Sequential stratified regeneration: MCMC for large state spaces with an application to subgraph count estimation},
+        author={Teixeira, Carlos HC and Kakodkar, Mayank and Dias, VinÃ­cius and Meira, Wagner and Ribeiro, Bruno},
+        journal={Data Mining and Knowledge Discovery},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Lisette EspÃ­n-Noboa, Fariba Karimi, Bruno Ribeiro, Kristina Lerman, Claudia Wagner<br>
+        <b>Explaining classification performance and bias via network structure and sampling technique</b><br>
+        Applied Network Science, 2022<br>
+        <a href="javascript:show('bib20')">BibTex</a> | <a href="https://appliednetsci.springeropen.com/articles/10.1007/s41109-021-00394-3">Paper</a>
+    </p>
+    <span class="hidden" id="bib20">
+    <pre><code>@article{espin2022explaining,
+        title={Explaining classification performance and bias via network structure and sampling technique},
+        author={EspÃ­n-Noboa, Lisette and Karimi, Fariba and Ribeiro, Bruno and Lerman, Kristina and Wagner, Claudia},
+        journal={Applied Network Science},
+        year={2022}
+    }</code></pre>
+    </span>
+    
+    <h3 class="pubyear">2021</h3>
+
+    <p class="pubitem">
+        Leonardo Cotta, Christopher Morris, Bruno Ribeiro<br>
+        <b>Reconstruction for Powerful Graph Representations</b><br>
+        NeurIPS, 2021<br>
+        <a href="javascript:show('bib21')">BibTex</a> | <a href="https://arxiv.org/abs/2110.00577">arXiv</a> | <a href="https://github.com/PurdueMINDS/reconstruction-gnns">Code</a>
+    </p>
+    <span class="hidden" id="bib21">
+    <pre><code>@inproceedings{cotta2021reconstruction,
+        title={Reconstruction for Powerful Graph Representations},
+        author={Cotta, Leonardo and Morris, Christopher and Ribeiro, Bruno},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2021}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Beatrice Bevilacqua, Yangze Zhou, Bruno Ribeiro<br>
+        <b>Size-Invariant Graph Representations for Graph Classification Extrapolations</b><br>
+        ICML, 2021 (Long Talk)<br>
+        <a href="javascript:show('bib22')">BibTex</a> | <a href="https://arxiv.org/abs/2103.05045">arXiv</a> | <a href="https://github.com/PurdueMINDS/size-invariant-GNNs">Code</a>
+    </p>
+    <span class="hidden" id="bib22">
+    <pre><code>@inproceedings{bevilacqua2021size,
+        title={Size-Invariant Graph Representations for Graph Classification Extrapolations},
+        author={Bevilacqua, Beatrice and Zhou, Yangze and Ribeiro, Bruno},
+        booktitle={International Conference on Machine Learning},
+        year={2021}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Mengyue Hang, Jennifer Neville, Bruno Ribeiro<br>
+        <b>A Collective Learning Framework to Boost GNN Expressiveness</b><br>
+        ICML, 2021<br>
+        <a href="javascript:show('bib23')">BibTex</a> | <a href="https://arxiv.org/abs/2003.12169">arXiv</a>
+    </p>
+    <span class="hidden" id="bib23">
+    <pre><code>@inproceedings{hang2021collective,
+        title={A Collective Learning Framework to Boost GNN Expressiveness},
+        author={Hang, Mengyue and Neville, Jennifer and Ribeiro, Bruno},
+        booktitle={International Conference on Machine Learning},
+        year={2021}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        S Chandra Mouli, Bruno Ribeiro<br>
+        <b>Neural Networks for Learning Counterfactual G-Invariances from Single Environments</b><br>
+        ICLR, 2021<br>
+        <a href="javascript:show('bib24')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib24">
+    <pre><code>@inproceedings{mouli2021neural,
+        title={Neural Networks for Learning Counterfactual G-Invariances from Single Environments},
+        author={Mouli, S Chandra and Ribeiro, Bruno},
+        booktitle={International Conference on Learning Representations},
+        year={2021}
+    }</code></pre>
+    </span>
+    
+    <p class="pubitem">
+        Mohsen Minaei, S Chandra Mouli, Mainack Mondal, Bruno Ribeiro, Aniket Kate<br>
+        <b>Deceptive Deletions for Protecting Withdrawn Posts on Social Media Platform</b><br>
+        NDSS, 2021<br>
+        <a href="javascript:show('bib25')">BibTex</a>
+    </p>
+    <span class="hidden" id="bib25">
+    <pre><code>@inproceedings{minaei2021deceptive,
+        title={Deceptive Deletions for Protecting Withdrawn Posts on Social Media Platform},
+        author={Minaei, Mohsen and Mouli, S Chandra and Mondal, Mainack and Ribeiro, Bruno and Kate, Aniket},
+        booktitle={Network and Distributed System Security Symposium},
+        year={2021}
+    }</code></pre>
+    </span>
+
+    <p class="pubitem">
+        Jiacheng Li, Ninghui Li, Bruno Ribeiro<br>
+        <b>Membership Inference Attacks and Defenses in Classification Models</b><br>
+        ACM CODASPY, 2021 (Best Paper Award) ð <br>
+        <a href="javascript:show('bibMIAD')">BibTeX</a>
+    </p>
+    <span class="hidden" id="bibMIAD">
+    <pre><code>@inproceedings{li2021membership,
+        title={Membership Inference Attacks and Defenses in Classification Models},
+        author={Li, Jiacheng and Li, Ninghui and Ribeiro, Bruno},
+        booktitle={Proceedings of the Eleventh ACM Conference on Data and Application Security and Privacy},
+        pages={5--16},
+        year={2021}
+    }</code></pre>
+    </span>
+
+    <h3 class="pubyear">2020</h3>
+<p class="pubitem">
+    Leonardo Cotta, Carlos H. C. Teixeira, Ananthram Swami, Bruno Ribeiro<br>
+    <b>Unsupervised Joint k-node Graph Representations with Compositional Energy-Based Models</b><br>
+    NeurIPS, 2020<br>
+    <a href="javascript:show('bib26')">BibTex</a> | <a href="https://arxiv.org/pdf/2010.04259.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib26">
+<pre><code>@inproceedings{cotta2020unsupervised,
+    title={Unsupervised Joint k-node Graph Representations with Compositional Energy-Based Models},
+    author={Cotta, Leonardo and Teixeira, Carlos H. C. and Swami, Ananthram and Ribeiro, Bruno},
+    booktitle={Advances in Neural Information Processing Systems},
+    year={2020}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Amit Sheoran, Sonia Fahmy, Matthew Osinski, Chunyi Peng, Bruno Ribeiro, Jia Wang<br>
+    <b>Experience: towards automated customer issue resolution in cellular networks</b><br>
+    MOBICOM, 2020<br>
+    <a href="javascript:show('bib27')">BibTex</a> | <a href="https://dl.acm.org/doi/abs/10.1145/3372224.3419203">Paper</a>
+</p>
+<span class="hidden" id="bib27">
+<pre><code>@inproceedings{sheoran2020experience,
+    title={Experience: towards automated customer issue resolution in cellular networks},
+    author={Sheoran, Amit and Fahmy, Sonia and Osinski, Matthew and Peng, Chunyi and Ribeiro, Bruno and Wang, Jia},
+    booktitle={Proceedings of the Annual International Conference on Mobile Computing and Networking},
+    year={2020}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    P. C. Sruthi, Sanjay Rao, Bruno Ribeiro<br>
+    <b>Pitfalls of data-driven networking: A case study of latent causal confounders in video streaming</b><br>
+    ACM SIGCOMM Workshop on Network Meets AI & ML (NetAI), 2020<br>
+    <a href="javascript:show('bib28')">BibTex</a> | <a href="https://www.cs.purdue.edu/homes/ribeirob/pdf/netai20-final13.pdf">Paper</a>
+</p>
+<span class="hidden" id="bib28">
+<pre><code>@inproceedings{sruthi2020pitfalls,
+    title={Pitfalls of data-driven networking: A case study of latent causal confounders in video streaming},
+    author={Sruthi, P. C. and Rao, Sanjay and Ribeiro, Bruno},
+    booktitle={ACM SIGCOMM Workshop on Network Meets AI \& ML (NetAI)},
+    year={2020}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Balasubramaniam Srinivasan, Bruno Ribeiro<br>
+    <b>On the Equivalence between Positional Node Embeddings and Structural Graph Representations</b><br>
+    ICLR, 2020<br>
+    <a href="javascript:show('bib29')">BibTex</a> | <a href="https://arxiv.org/pdf/1910.00452">arXiv</a>
+</p>
+<span class="hidden" id="bib29">
+<pre><code>@inproceedings{srinivasan2020equivalence,
+    title={On the Equivalence between Positional Node Embeddings and Structural Graph Representations},
+    author={Srinivasan, Balasubramaniam and Ribeiro, Bruno},
+    booktitle={International Conference on Learning Representations},
+    year={2020}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Jianfei Gao, Mohamed A. Zahran, Amit Sheoran, Sonia Fahmy, Bruno Ribeiro<br>
+    <b>Infinity Learning: Learning Markov Chains from Aggregate Steady-State Observations</b><br>
+    AAAI, 2020<br>
+    <a href="javascript:show('bib30')">BibTex</a> | <a href="https://arxiv.org/pdf/2002.04186.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib30">
+<pre><code>@inproceedings{gao2020infinity,
+    title={Infinity Learning: Learning Markov Chains from Aggregate Steady-State Observations},
+    author={Gao, Jianfei and Zahran, Mohamed A. and Sheoran, Amit and Fahmy, Sonia and Ribeiro, Bruno},
+    booktitle={AAAI Conference on Artificial Intelligence},
+    year={2020}
+}</code></pre>
+</span>
+
+
+<h3 class="pubyear">2019</h3>
+<p class="pubitem">
+    Changping Meng, Jiasen Yang, Bruno Ribeiro, Jennifer Neville<br>
+    <b>HATS: A Hierarchical Sequence-Attention Framework for Inductive Set-of-Sets Embeddings</b><br>
+    KDD, 2019<br>
+    <a href="javascript:show('bib31')">BibTex</a> | <a href="https://www.cs.purdue.edu/homes/ribeirob/pdf/Meng_SetofSets_KDD2019.pdf">Paper</a>
+</p>
+<span class="hidden" id="bib31">
+<pre><code>@inproceedings{meng2019hats,
+    title={HATS: A Hierarchical Sequence-Attention Framework for Inductive Set-of-Sets Embeddings},
+    author={Meng, Changping and Yang, Jiasen and Ribeiro, Bruno and Neville, Jennifer},
+    booktitle={Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Ryan L. Murphy, Balasubramaniam Srinivasan, Vinayak Rao, Bruno Ribeiro<br>
+    <b>Relational Pooling for Graph Representations</b><br>
+    ICML, 2019<br>
+    <a href="javascript:show('bib32')">BibTex</a> | <a href="https://arxiv.org/pdf/1903.02541.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib32">
+<pre><code>@inproceedings{murphy2019relational,
+    title={Relational Pooling for Graph Representations},
+    author={Murphy, Ryan L. and Srinivasan, Balasubramaniam and Rao, Vinayak and Ribeiro, Bruno},
+    booktitle={International Conference on Machine Learning},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Ryan L. Murphy, Balasubramaniam Srinivasan, Vinayak Rao, Bruno Ribeiro<br>
+    <b>Janossy Pooling: Learning Deep Permutation-Invariant Functions for Variable-Size Inputs</b><br>
+    ICLR, 2019<br>
+    <a href="javascript:show('bib33')">BibTex</a> | <a href="https://arxiv.org/pdf/1811.01900.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib33">
+<pre><code>@inproceedings{murphy2019janossy,
+    title={Janossy Pooling: Learning Deep Permutation-Invariant Functions for Variable-Size Inputs},
+    author={Murphy, Ryan L. and Srinivasan, Balasubramaniam and Rao, Vinayak and Ribeiro, Bruno},
+    booktitle={International Conference on Learning Representations},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Leonardo Teixeira, Brian Jalaian, Bruno Ribeiro<br>
+    <b>Are Graph Neural Networks Miscalibrated?</b><br>
+    Learning and Reasoning with Graph-Structured Representations Workshop @ ICML (Spotlight), 2019<br>
+    <a href="javascript:show('bib34')">BibTex</a> | <a href="https://arxiv.org/pdf/1905.02296.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib34">
+<pre><code>@inproceedings{teixeira2019graph,
+    title={Are Graph Neural Networks Miscalibrated?},
+    author={Teixeira, Leonardo and Jalaian, Brian and Ribeiro, Bruno},
+    booktitle={Learning and Reasoning with Graph-Structured Representations Workshop at ICML},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Guangyu Li, Yong Liu, Bruno Ribeiro, Hao Ding<br>
+    <b>On group popularity prediction in event-based social networks</b><br>
+    IEEE Transactions on Network Science and Engineering, 2019<br>
+    <a href="javascript:show('bib35')">BibTex</a> | <a href="https://ieeexplore.ieee.org/abstract/document/8713911">Paper</a>
+</p>
+<span class="hidden" id="bib35">
+<pre><code>@article{li2019group,
+    title={On group popularity prediction in event-based social networks},
+    author={Li, Guangyu and Liu, Yong and Ribeiro, Bruno and Ding, Hao},
+    journal={IEEE Transactions on Network Science and Engineering},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Fabricio Murai, Bruno Ribeiro, Don Towlsey, Pinghui Wang<br>
+    <b>Characterizing directed and undirected networks via multidimensional walks with jumps</b><br>
+    ACM Transactions on Knowledge Discovery from Data (TKDD), 2019<br>
+    <a href="javascript:show('bib36')">BibTex</a> | <a href="https://arxiv.org/pdf/1703.08252.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib36">
+<pre><code>@article{murai2019characterizing,
+    title={Characterizing directed and undirected networks via multidimensional walks with jumps},
+    author={Murai, Fabricio and Ribeiro, Bruno and Towlsey, Don and Wang, Pinghui},
+    journal={ACM Transactions on Knowledge Discovery from Data},
+    year={2019}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    S Chandra Mouli, Leonardo Teixeira, Jennifer Neville, Bruno Ribeiro<br>
+    <b>Deep Lifetime Clustering</b><br>
+    arXiv:1910.00547, 2019<br>
+    <a href="javascript:show('bib37')">BibTex</a> | <a href="https://arxiv.org/pdf/1910.00547">arXiv</a>
+</p>
+<span class="hidden" id="bib37">
+<pre><code>@article{mouli2019deep,
+    title={Deep Lifetime Clustering},
+    author={Mouli, S Chandra and Teixeira, Leonardo and Neville, Jennifer and Ribeiro, Bruno},
+    journal={arXiv preprint arXiv:1910.00547},
+    year={2019}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2018</h3>
+<p class="pubitem">
+    Pedro Savarese, Mayank Kakodar, Bruno Ribeiro<br>
+    <b>From Monte Carlo to Las Vegas: Improving Restricted Boltzmann Machine Training through Stopping Sets</b><br>
+    AAAI, 2018<br>
+    <a href="javascript:show('bib38')">BibTex</a> | <a href="https://arxiv.org/abs/1711.08442">arXiv</a>
+</p>
+<span class="hidden" id="bib38">
+<pre><code>@inproceedings{savarese2018monte,
+    title={From Monte Carlo to Las Vegas: Improving Restricted Boltzmann Machine Training through Stopping Sets},
+    author={Savarese, Pedro and Kakodar, Mayank and Ribeiro, Bruno},
+    booktitle={AAAI Conference on Artificial Intelligence},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Jason Meng, Chandra S. Mouli, Bruno Ribeiro, Jennifer Neville<br>
+    <b>Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction</b><br>
+    AAAI, 2018<br>
+    <a href="javascript:show('bib39')">BibTex</a> | <a href="https://github.com/PurdueMINDS/SPNN">Code</a>
+</p>
+<span class="hidden" id="bib39">
+<pre><code>@inproceedings{meng2018subgraph,
+    title={Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction},
+    author={Meng, Jason and Mouli, Chandra S. and Ribeiro, Bruno and Neville, Jennifer},
+    booktitle={AAAI Conference on Artificial Intelligence},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Carlos Teixeira, Leonardo Cotta, Bruno Ribeiro, Wagner Meira Jr.<br>
+    <b>Graph Pattern Mining and Learning through User-defined Relations</b><br>
+    ICDM, 2018<br>
+    <a href="javascript:show('bib40')">BibTex</a> | <a href="https://arxiv.org/pdf/1809.05241.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib40">
+<pre><code>@inproceedings{teixeira2018graph,
+    title={Graph Pattern Mining and Learning through User-defined Relations},
+    author={Teixeira, Carlos and Cotta, Leonardo and Ribeiro, Bruno and Meira Jr., Wagner},
+    booktitle={IEEE International Conference on Data Mining},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Zahaib Akhtar, Yun Seong Nam, Ramesh Govindan, Sanjay Rao, Jessica Chen, Ethan Katz-Bassett, Bruno Ribeiro, Jibin Zhan, Hui Zhang<br>
+    <b>Oboe: auto-tuning video ABR algorithms to network conditions</b><br>
+    SIGCOMM, 2018<br>
+    <a href="javascript:show('bib41')">BibTex</a> | <a href="https://dl.acm.org/citation.cfm?id=3230558">Paper</a>
+</p>
+<span class="hidden" id="bib41">
+<pre><code>@inproceedings{akhtar2018oboe,
+    title={Oboe: auto-tuning video ABR algorithms to network conditions},
+    author={Akhtar, Zahaib and Nam, Yun Seong and Govindan, Ramesh and Rao, Sanjay and Chen, Jessica and Katz-Bassett, Ethan and Ribeiro, Bruno and Zhan, Jibin and Zhang, Hui},
+    booktitle={ACM SIGCOMM},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Guangyu Li, Yong Liu, Bruno Ribeiro, Hao Ding<br>
+    <b>On Group Popularity Prediction in Event-Based Social Networks</b><br>
+    ICWSM, 2018<br>
+    <a href="javascript:show('bib42')">BibTex</a> | <a href="https://dl.acm.org/citation.cfm?id=3230558">Paper</a>
+</p>
+<span class="hidden" id="bib42">
+<pre><code>@inproceedings{li2018group,
+    title={On Group Popularity Prediction in Event-Based Social Networks},
+    author={Li, Guangyu and Liu, Yong and Ribeiro, Bruno and Ding, Hao},
+    booktitle={International AAAI Conference on Web and Social Media},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Mohamed S Hassan, Bruno Ribeiro, Walid G Aref<br>
+    <b>SBG-sketch: a self-balanced sketch for labeled-graph stream summarization</b><br>
+    ICSSDM, 2018<br>
+    <a href="javascript:show('bib43')">BibTex</a> | <a href="https://arxiv.org/abs/1711.08442">arXiv</a>
+</p>
+<span class="hidden" id="bib43">
+<pre><code>@inproceedings{hassan2018sbg,
+    title={SBG-sketch: a self-balanced sketch for labeled-graph stream summarization},
+    author={Hassan, Mohamed S and Ribeiro, Bruno and Aref, Walid G},
+    booktitle={International Conference on Scientific and Statistical Database Management},
+    year={2018}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Pinghui Wang, Junzhou Zhao, Bruno Ribeiro, John C.S. Lui, Don Towsley, Xiaohong Guan<br>
+    <b>Practical Characterization of Large Networks Using Neighborhood Information</b><br>
+    Knowledge and Information Systems, 2018<br>
+    <a href="javascript:show('bib44')">BibTex</a>
+</p>
+<span class="hidden" id="bib44">
+<pre><code>@article{wang2018practical,
+    title={Practical Characterization of Large Networks Using Neighborhood Information},
+    author={Wang, Pinghui and Zhao, Junzhou and Ribeiro, Bruno and Lui, John C.S. and Towsley, Don and Guan, Xiaohong},
+    journal={Knowledge and Information Systems},
+    year={2018}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2017</h3>
+<p class="pubitem">
+    Fabricio Murai, Diogo RennÃ³, Bruno Ribeiro, Gisele L. Pappa, Don Towsley, Krista Gile<br>
+    <b>Selective Harvesting over Networks</b><br>
+    Data Mining and Knowledge Discovery, 2017<br>
+    <a href="javascript:show('bib45')">BibTex</a> | <a href="https://arxiv.org/abs/1703.05082">arXiv</a>
+</p>
+<span class="hidden" id="bib45">
+<pre><code>@article{murai2017selective,
+    title={Selective Harvesting over Networks},
+    author={Murai, Fabricio and RennÃ³, Diogo and Ribeiro, Bruno and Pappa, Gisele L. and Towsley, Don and Gile, Krista},
+    journal={Data Mining and Knowledge Discovery},
+    year={2017}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Jiasen Yang, Bruno Ribeiro, Jennifer Neville<br>
+    <b>Stochastic Gradient Descent for Relational Logistic Regression via Partial Network Crawls</b><br>
+    UAI Workshop on Statistical Relational AI, 2017<br>
+    <a href="javascript:show('bib46')">BibTex</a> | <a href="https://arxiv.org/pdf/1707.07716.pdf">arXiv</a>
+</p>
+<span class="hidden" id="bib46">
+<pre><code>@inproceedings{yang2017stochastic,
+    title={Stochastic Gradient Descent for Relational Logistic Regression via Partial Network Crawls},
+    author={Yang, Jiasen and Ribeiro, Bruno and Neville, Jennifer},
+    booktitle={UAI Workshop on Statistical Relational AI},
+    year={2017}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Jiasen Yang, Bruno Ribeiro, Jennifer Neville<br>
+    <b>Should We Be Confident in Peer Effects Estimated from Partial Crawls of Social Networks?</b><br>
+    ICWSM (Poster), 2017<br>
+    <a href="javascript:show('bib47')">BibTex</a> | <a href="https://pdfs.semanticscholar.org/5e9c/d6ca6dcc0579f60f39a989b6d460f7404609.pdf">Paper</a>
+</p>
+<span class="hidden" id="bib47">
+<pre><code>@inproceedings{yang2017should,
+    title={Should We Be Confident in Peer Effects Estimated from Partial Crawls of Social Networks?},
+    author={Yang, Jiasen and Ribeiro, Bruno and Neville, Jennifer},
+    booktitle={International AAAI Conference on Web and Social Media},
+    year={2017}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Kun Tu, Bruno Ribeiro, Ananthram Swami, Don Towsley<br>
+    <b>Temporal Clustering in time-varying Networks with Time Series Analysis</b><br>
+    NIPS Time Series Workshop, 2017<br>
+    <a href="javascript:show('bib48')">BibTex</a>
+</p>
+<span class="hidden" id="bib48">
+<pre><code>@inproceedings{tu2017temporal,
+    title={Temporal Clustering in time-varying Networks with Time Series Analysis},
+    author={Tu, Kun and Ribeiro, Bruno and Swami, Ananthram and Towsley, Don},
+    booktitle={NIPS Time Series Workshop},
+    year={2017}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Mohamed S. Hassan, Bruno Ribeiro, Walid G. Aref<br>
+    <b>SBG-Sketch: A Self-Balanced Sketch for Labeled-Graph Stream Summarization</b><br>
+    arXiv preprint, 2017<br>
+    <a href="javascript:show('bib49')">BibTex</a> | <a href="https://arxiv.org/abs/1709.06723">arXiv</a>
+</p>
+<span class="hidden" id="bib49">
+<pre><code>@article{hassan2017sbg,
+    title={SBG-Sketch: A Self-Balanced Sketch for Labeled-Graph Stream Summarization},
+    author={Hassan, Mohamed S. and Ribeiro, Bruno and Aref, Walid G.},
+    journal={arXiv preprint arXiv:1709.06723},
+    year={2017}
+}</code></pre>
+</span>
+
+
+<h3 class="pubyear">2016</h3>
+<p class="pubitem">
+    Flavio Figueiredo, Bruno Ribeiro, Jussara Almeida, Christos Faloutsos<br>
+    <b>TribeFlow: Mining & Predicting User Trajectories</b><br>
+    ACM International Conference on World Wide Web (WWW), 2016<br>
+    <a href="javascript:show('bib50')">BibTex</a> | <a href="https://github.com/flaviovdf/tribeflow">Code</a> | <a href="https://arxiv.org/abs/1511.01032">arXiv</a>
+</p>
+<span class="hidden" id="bib50">
+<pre><code>@inproceedings{figueiredo2016tribeflow,
+    title={TribeFlow: Mining \& Predicting User Trajectories},
+    author={Figueiredo, Flavio and Ribeiro, Bruno and Almeida, Jussara and Faloutsos, Christos},
+    booktitle={International Conference on World Wide Web},
+    year={2016}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bo Jiang, Daniel R. Figueiredo, Bruno Ribeiro, Don Towsley<br>
+    <b>On the Duration and Intensity of Competitions in Nonlinear Polya Urn Processes with Fitness</b> <br>
+    ACM SIGMETRICS, 2016 (Best Paper Award) ð<br>
+    <a href="javascript:show('bib51')">BibTex</a>
+</p>
+<span class="hidden" id="bib51">
+<pre><code>@inproceedings{jiang2016duration,
+    title={On the Duration and Intensity of Competitions in Nonlinear Polya Urn Processes with Fitness},
+    author={Jiang, Bo and Figueiredo, Daniel R. and Ribeiro, Bruno and Towsley, Don},
+    booktitle={ACM SIGMETRICS},
+    year={2016}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Konstantin Avrachenkov, Bruno Ribeiro, Jithin K. Sreedharan<br>
+    <b>Inference in OSNs via Lightweight Partial Crawls</b><br>
+    ACM SIGMETRICS, 2016<br>
+    <a href="javascript:show('bib52')">BibTex</a> | <a href="http://arxiv.org/pdf/1510.05407">arXiv</a>
+</p>
+<span class="hidden" id="bib52">
+<pre><code>@inproceedings{avrachenkov2016inference,
+    title={Inference in OSNs via Lightweight Partial Crawls},
+    author={Avrachenkov, Konstantin and Ribeiro, Bruno and Sreedharan, Jithin K.},
+    booktitle={ACM SIGMETRICS},
+    year={2016}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Flavio Figueiredo, Bruno Ribeiro, Jussara M. Almeida, Christos Faloutsos<br>
+    <b>A Summary of the TribeFlow Model for Music Discovery Applications</b><br>
+    ICML Workshop on Machine Learning for Music Discovery (Invited), 2016<br>
+    <a href="javascript:show('bib53')">BibTex</a>
+</p>
+<span class="hidden" id="bib53">
+<pre><code>@inproceedings{figueiredo2016summary,
+    title={A Summary of the TribeFlow Model for Music Discovery Applications},
+    author={Figueiredo, Flavio and Ribeiro, Bruno and Almeida, Jussara M. and Faloutsos, Christos},
+    booktitle={ICML Workshop on Machine Learning for Music Discovery},
+    year={2016}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Flavio Figueiredo, Bruno Ribeiro, Christos Faloutsos, Nazareno Andrade, Jussara M. Almeida<br>
+    <b>Mining Online Music Listening Trajectories</b><br>
+    ISMIR: International Symposium/Conference on Music Information Retrieval, 2016<br>
+    <a href="javascript:show('bib54')">BibTex</a>
+</p>
+<span class="hidden" id="bib54">
+<pre><code>@inproceedings{figueiredo2016mining,
+    title={Mining Online Music Listening Trajectories},
+    author={Figueiredo, Flavio and Ribeiro, Bruno and Faloutsos, Christos and Andrade, Nazareno and Almeida, Jussara M.},
+    booktitle={International Society for Music Information Retrieval Conference},
+    year={2016}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2015</h3>
+<p class="pubitem">
+    Bruno Ribeiro, Minh Hoang, Ambuj Singh<br>
+    <b>Beyond Models: Forecasting Complex Network Processes Directly from Data</b><br>
+    ACM International Conference on World Wide Web (WWW), 2015<br>
+    <a href="javascript:show('bib55')">BibTex</a> | <a href="http://www.cs.ucsb.edu/~mhoang/release/sed">Code</a>
+</p>
+<span class="hidden" id="bib55">
+<pre><code>@inproceedings{ribeiro2015beyond,
+    title={Beyond Models: Forecasting Complex Network Processes Directly from Data},
+    author={Ribeiro, Bruno and Hoang, Minh and Singh, Ambuj},
+    booktitle={International Conference on World Wide Web},
+    year={2015}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Christos Faloutsos<br>
+    <b>Modeling Website Popularity Competition in the Attention-Activity Marketplace</b><br>
+    ACM International Conference on Web Search and Data (WSDM), 2015<br>
+    <a href="javascript:show('bib56')">BibTex</a> | <a href="http://arxiv.org/abs/1403.0600">arXiv</a>
+</p>
+<span class="hidden" id="bib56">
+<pre><code>@inproceedings{ribeiro2015modeling,
+    title={Modeling Website Popularity Competition in the Attention-Activity Marketplace},
+    author={Ribeiro, Bruno and Faloutsos, Christos},
+    booktitle={ACM International Conference on Web Search and Data Mining},
+    year={2015}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bo Jiang, Liyuan Sun, Daniel R Figueiredo, Bruno Ribeiro, Don Towsley<br>
+    <b>On the duration and intensity of cumulative advantage competitions</b><br>
+    Journal of Statistical Mechanics: Theory and Experiment, 2015<br>
+    <a href="javascript:show('bib57')">BibTex</a>
+</p>
+<span class="hidden" id="bib57">
+<pre><code>@article{jiang2015duration,
+    title={On the duration and intensity of cumulative advantage competitions},
+    author={Jiang, Bo and Sun, Liyuan and Figueiredo, Daniel R and Ribeiro, Bruno and Towsley, Don},
+    journal={Journal of Statistical Mechanics: Theory and Experiment},
+    year={2015}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2014</h3>
+<p class="pubitem">
+    Pinghui Wang, John C.S. Lui, Bruno Ribeiro, Don Towsley, Junzhou Zhao, Xiaohong Guan<br>
+    <b>Efficiently Estimating Motif Statistics of Large Networks</b><br>
+    ACM Transactions on Knowledge Discovery from Data (TKDD), 2014<br>
+    <a href="javascript:show('bib58')">BibTex</a> | <a href="http://arxiv.org/abs/1306.5288">arXiv</a>
+</p>
+<span class="hidden" id="bib58">
+<pre><code>@article{wang2014efficiently,
+    title={Efficiently Estimating Motif Statistics of Large Networks},
+    author={Wang, Pinghui and Lui, John C.S. and Ribeiro, Bruno and Towsley, Don and Zhao, Junzhou and Guan, Xiaohong},
+    journal={ACM Transactions on Knowledge Discovery from Data},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Ting-Kai Huang, Bruno Ribeiro, Harsha V. Madhyastha, Michalis Faloutsos<br>
+    <b>The Socio-monetary Incentives of Online Social Network Malware Campaigns</b><br>
+    ACM Conference on Online Social Networks (COSN), 2014<br>
+    <a href="javascript:show('bib59')">BibTex</a>
+</p>
+<span class="hidden" id="bib59">
+<pre><code>@inproceedings{huang2014socio,
+    title={The Socio-monetary Incentives of Online Social Network Malware Campaigns},
+    author={Huang, Ting-Kai and Ribeiro, Bruno and Madhyastha, Harsha V. and Faloutsos, Michalis},
+    booktitle={ACM Conference on Online Social Networks},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Flavio Figueiredo, Jussara M Almeida, Yasuko Matsubara, Bruno Ribeiro, Christos Faloutsos<br>
+    <b>Revisit Behavior in Social Media: The Phoenix-R Model and Discoveries</b><br>
+    ECML/PKDD, 2014<br>
+    <a href="javascript:show('bib60')">BibTex</a> | <a href="http://arxiv.org/abs/1405.1459">arXiv</a>
+</p>
+<span class="hidden" id="bib60">
+<pre><code>@inproceedings{figueiredo2014revisit,
+    title={Revisit Behavior in Social Media: The Phoenix-R Model and Discoveries},
+    author={Figueiredo, Flavio and Almeida, Jussara M and Matsubara, Yasuko and Ribeiro, Bruno and Faloutsos, Christos},
+    booktitle={European Conference on Machine Learning and Knowledge Discovery in Databases},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro<br>
+    <b>Modeling and Predicting the Growth and Death of Membership-based Websites</b><br>
+    International Conference on World Wide Web (WWW), 2014<br>
+    <a href="javascript:show('bib61')">BibTex</a> | <a href="http://arxiv.org/abs/1307.1354">arXiv</a>
+</p>
+<span class="hidden" id="bib61">
+<pre><code>@inproceedings{ribeiro2014modeling,
+    title={Modeling and Predicting the Growth and Death of Membership-based Websites},
+    author={Ribeiro, Bruno},
+    booktitle={International Conference on World Wide Web},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    K. Avrachenkov, P. Basu, G. Neglia, B. Ribeiro*, D. Towsley<br>
+    <b>Pay Few, Influence Most: Online Myopic Network Covering</b><br>
+    IEEE NetSciCom Workshop, 2014 (Best Paper Award) ð<br>
+    <a href="javascript:show('bib62')">BibTex</a> | <a href="http://arxiv.org/abs/1212.5035">arXiv</a>
+</p>
+<span class="hidden" id="bib62">
+<pre><code>@inproceedings{avrachenkov2014pay,
+    title={Pay Few, Influence Most: Online Myopic Network Covering},
+    author={Avrachenkov, K. and Basu, P. and Neglia, G. and Ribeiro, B. and Towsley, D.},
+    booktitle={IEEE NetSciCom Workshop},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bo Jiang, Liyuan Sun, Daniel R. Figueiredo, Bruno Ribeiro, Don Towsley<br>
+    <b>On the duration and intensity of cumulative advantage competitions and the struggle of the fittest</b><br>
+    arXiv, 2014<br>
+    <a href="javascript:show('bib63')">BibTex</a> | <a href="http://arxiv.org/abs/1402.4536">arXiv</a>
+</p>
+<span class="hidden" id="bib63">
+<pre><code>@article{jiang2014duration,
+    title={On the duration and intensity of cumulative advantage competitions and the struggle of the fittest},
+    author={Jiang, Bo and Sun, Liyuan and Figueiredo, Daniel R. and Ribeiro, Bruno and Towsley, Don},
+    journal={arXiv preprint arXiv:1402.4536},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Peng Xia, Kun Tu, Bruno Ribeiro, Hua Jiang, Xiaodong Wang, Cindy Chen, Benyuan Liu, Don Towsley<br>
+    <b>Who is Dating Whom: Characterizing User Behaviors of a Large Online Dating Site</b><br>
+    Social Network Analysis â Community Detection and Evolution, Springer, 2014<br>
+    <a href="javascript:show('bib64')">BibTex</a> | <a href="http://arxiv.org/abs/1401.5710">arXiv</a>
+</p>
+<span class="hidden" id="bib64">
+<pre><code>@incollection{xia2014dating,
+    title={Who is Dating Whom: Characterizing User Behaviors of a Large Online Dating Site},
+    author={Xia, Peng and Tu, Kun and Ribeiro, Bruno and Jiang, Hua and Wang, Xiaodong and Chen, Cindy and Liu, Benyuan and Towsley, Don},
+    booktitle={Social Network Analysis - Community Detection and Evolution},
+    publisher={Springer},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Kun Tu, Bruno Ribeiro, H. Jiang, X. Wang, David Jensen, Benyuan Liu, Don Towsley<br>
+    <b>Online Dating Recommendations: Matching Markets and Learning Preferences</b><br>
+    5th International Workshop on Social Recommender Systems (SRS) @ WWW, 2014<br>
+    <a href="javascript:show('bib65')">BibTex</a> | <a href="http://arxiv.org/abs/1401.8042">arXiv</a>
+</p>
+<span class="hidden" id="bib65">
+<pre><code>@inproceedings{tu2014online,
+    title={Online Dating Recommendations: Matching Markets and Learning Preferences},
+    author={Tu, Kun and Ribeiro, Bruno and Jiang, H. and Wang, X. and Jensen, David and Liu, Benyuan and Towsley, Don},
+    booktitle={International Workshop on Social Recommender Systems},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Yeon-sup Lim, Bruno Ribeiro, Don Towsley<br>
+    <b>Classifying Latent Infection States in Complex Networks</b><br>
+    SIMPLEX Workshop @ WWW, 2014<br>
+    <a href="javascript:show('bib66')">BibTex</a> | <a href="http://arxiv.org/abs/1402.0013">arXiv</a>
+</p>
+<span class="hidden" id="bib66">
+<pre><code>@inproceedings{lim2014classifying,
+    title={Classifying Latent Infection States in Complex Networks},
+    author={Lim, Yeon-sup and Ribeiro, Bruno and Towsley, Don},
+    booktitle={SIMPLEX Workshop at WWW},
+    year={2014}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    James Atwood, Bruno Ribeiro, Don Towsley<br>
+    <b>Efficient Network Generation Under General Preferential Attachment</b><br>
+    SIMPLEX Workshop @ WWW, 2014<br>
+    <a href="javascript:show('bib67')">BibTex</a> | <a href="http://arxiv.org/abs/1403.4521">arXiv</a> | <a href="https://github.com/hackscience/quicknet">Code</a>
+</p>
+<span class="hidden" id="bib67">
+<pre><code>@inproceedings{atwood2014efficient,
+    title={Efficient Network Generation Under General Preferential Attachment},
+    author={Atwood, James and Ribeiro, Bruno and Towsley, Don},
+    booktitle={SIMPLEX Workshop at WWW},
+    year={2014}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2013</h3>
+<p class="pubitem">
+    Bruno Ribeiro, Nicola Perra, Andrea Baronchelli<br>
+    <b>Quantifying the Effect of Temporal Resolution on Time-varying Networks</b><br>
+    Scientific Reports, 2013<br>
+    <a href="javascript:show('bib68')">BibTex</a> | <a href="http://arxiv.org/abs/1211.7052">arXiv</a>
+</p>
+<span class="hidden" id="bib68">
+<pre><code>@article{ribeiro2013quantifying,
+    title={Quantifying the Effect of Temporal Resolution on Time-varying Networks},
+    author={Ribeiro, Bruno and Perra, Nicola and Baronchelli, Andrea},
+    journal={Scientific Reports},
+    year={2013}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Peng Xia, Bruno Ribeiro, Cindy Chen, Benyuan Liu, Don Towsley<br>
+    <b>A Study of User Behavior on an Online Dating Site</b><br>
+    ASONAM (Short Paper), 2013<br>
+    <a href="javascript:show('bib69')">BibTex</a>
+</p>
+<span class="hidden" id="bib69">
+<pre><code>@inproceedings{xia2013study,
+    title={A Study of User Behavior on an Online Dating Site},
+    author={Xia, Peng and Ribeiro, Bruno and Chen, Cindy and Liu, Benyuan and Towsley, Don},
+    booktitle={International Conference on Advances in Social Networks Analysis and Mining},
+    year={2013}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Ting-Kai Huang, Md Sazzadur Rahman, Harsha V. Madhyastha, Michalis Faloutsos, Bruno Ribeiro<br>
+    <b>An Analysis of Socware Cascades in Online Social Networks</b><br>
+    WWW, 2013<br>
+    <a href="javascript:show('bib70')">BibTex</a>
+</p>
+<span class="hidden" id="bib70">
+<pre><code>@inproceedings{huang2013analysis,
+    title={An Analysis of Socware Cascades in Online Social Networks},
+    author={Huang, Ting-Kai and Rahman, Md Sazzadur and Madhyastha, Harsha V. and Faloutsos, Michalis and Ribeiro, Bruno},
+    booktitle={International Conference on World Wide Web},
+    year={2013}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Fabricio Murai, Bruno Ribeiro, Don Towsley, Krista Gile<br>
+    <b>Characterizing Branching Processes from Sampled Data</b><br>
+    SIMPLEX Workshop @ WWW, 2013<br>
+    <a href="javascript:show('bib71')">BibTex</a> | <a href="http://arxiv.org/abs/1302.5847">arXiv</a>
+</p>
+<span class="hidden" id="bib71">
+<pre><code>@inproceedings{murai2013characterizing,
+    title={Characterizing Branching Processes from Sampled Data},
+    author={Murai, Fabricio and Ribeiro, Bruno and Towsley, Don and Gile, Krista},
+    booktitle={SIMPLEX Workshop at WWW},
+    year={2013}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    F. Murai, B. Ribeiro, D. Towsley, P. Wang<br>
+    <b>On Set Size Distribution Estimation and the Characterization of Large Networks via Sampling</b><br>
+    IEEE Journal on Selected Areas in Communications (Special Issue on Network Science), 2013<br>
+    <a href="javascript:show('bib72')">BibTex</a> | <a href="http://arxiv.org/abs/1209.0736">arXiv</a>
+</p>
+<span class="hidden" id="bib72">
+<pre><code>@article{murai2013set,
+    title={On Set Size Distribution Estimation and the Characterization of Large Networks via Sampling},
+    author={Murai, F. and Ribeiro, B. and Towsley, D. and Wang, P.},
+    journal={IEEE Journal on Selected Areas in Communications},
+    year={2013}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2012</h3>
+<p class="pubitem">
+    D. Figueiredo, P. Nain, B. Ribeiro*, E. de Souza e Silva, D. Towsley<br>
+    <b>Characterizing Continuous Time Random Walks on Time-varying Graphs</b><br>
+    SIGMETRICS, 2012<br>
+    <a href="javascript:show('bib73')">BibTex</a> | <a href="http://arxiv.org/abs/1112.5762">arXiv</a>
+</p>
+<span class="hidden" id="bib73">
+<pre><code>@inproceedings{figueiredo2012characterizing,
+    title={Characterizing Continuous Time Random Walks on Time-varying Graphs},
+    author={Figueiredo, D. and Nain, P. and Ribeiro, B. and de Souza e Silva, E. and Towsley, D.},
+    booktitle={ACM SIGMETRICS},
+    year={2012}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Prithwish Basu, Don Towsley<br>
+    <b>Multiple Random Walks to Uncover Short Paths in Power Law Networks</b><br>
+    IEEE INFOCOM NetSciCom, 2012<br>
+    <a href="javascript:show('bib74')">BibTex</a>
+</p>
+<span class="hidden" id="bib74">
+<pre><code>@inproceedings{ribeiro2012multiple,
+    title={Multiple Random Walks to Uncover Short Paths in Power Law Networks},
+    author={Ribeiro, Bruno and Basu, Prithwish and Towsley, Don},
+    booktitle={IEEE INFOCOM NetSciCom Workshop},
+    year={2012}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Don Towsley<br>
+    <b>On the Estimation Accuracy of Degree Distributions from Graph Sampling</b><br>
+    IEEE Conference on Decision and Control (Invited), 2012<br>
+    <a href="javascript:show('bib75')">BibTex</a>
+</p>
+<span class="hidden" id="bib75">
+<pre><code>@inproceedings{ribeiro2012estimation,
+    title={On the Estimation Accuracy of Degree Distributions from Graph Sampling},
+    author={Ribeiro, Bruno and Towsley, Don},
+    booktitle={IEEE Conference on Decision and Control},
+    year={2012}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Pinghui Wang, Fabricio Murai, Don Towsley<br>
+    <b>Sampling Directed Graphs with Random Walks</b><br>
+    INFOCOM, 2012<br>
+    <a href="javascript:show('bib76')">BibTex</a>
+</p>
+<span class="hidden" id="bib76">
+<pre><code>@inproceedings{ribeiro2012sampling,
+    title={Sampling Directed Graphs with Random Walks},
+    author={Ribeiro, Bruno and Wang, Pinghui and Murai, Fabricio and Towsley, Don},
+    booktitle={IEEE INFOCOM},
+    year={2012}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2011</h3>
+<p class="pubitem">
+    Y. Lim, D. S. Menasche, B. Ribeiro, D. Towsley, P. Basu<br>
+    <b>Online estimating the k central nodes of a network</b><br>
+    IEEE Network Science Workshop (NSW), 2011<br>
+    <a href="javascript:show('bib77')">BibTex</a>
+</p>
+<span class="hidden" id="bib77">
+<pre><code>@inproceedings{lim2011online,
+    title={Online estimating the k central nodes of a network},
+    author={Lim, Y. and Menasche, D. S. and Ribeiro, B. and Towsley, D. and Basu, P.},
+    booktitle={IEEE Network Science Workshop},
+    year={2011}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Daniel Figueiredo, Edmundo de Souza e Silva, Don Towsley<br>
+    <b>Characterizing Dynamic Graphs with Continuous-time Random Walks</b><br>
+    SIGMETRICS, 2011<br>
+    <a href="javascript:show('bib78')">BibTex</a>
+</p>
+<span class="hidden" id="bib78">
+<pre><code>@inproceedings{ribeiro2011characterizing,
+    title={Characterizing Dynamic Graphs with Continuous-time Random Walks},
+    author={Ribeiro, Bruno and Figueiredo, Daniel and de Souza e Silva, Edmundo and Towsley, Don},
+    booktitle={ACM SIGMETRICS},
+    year={2011}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2010</h3>
+<p class="pubitem">
+    Konstantin Avrachenkov, Bruno Ribeiro, Don Towsley<br>
+    <b>Improving Random Walk Estimation Accuracy with Uniform Restarts</b><br>
+    Workshop on Algorithms and Models for the Web Graph (WAW), 2010<br>
+    <a href="javascript:show('bib79')">BibTex</a>
+</p>
+<span class="hidden" id="bib79">
+<pre><code>@inproceedings{avrachenkov2010improving,
+    title={Improving Random Walk Estimation Accuracy with Uniform Restarts},
+    author={Avrachenkov, Konstantin and Ribeiro, Bruno and Towsley, Don},
+    booktitle={Workshop on Algorithms and Models for the Web Graph},
+    year={2010}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    William Gauvin, Bruno Ribeiro, Benyuan Liu, Don Towsley, Jie Wang<br>
+    <b>Measurement and Gender-Specific Analysis of User Publishing Characteristics on MySpace</b><br>
+    IEEE Network Special Issue on Online Social Networks, 2010<br>
+    <a href="javascript:show('bib80')">BibTex</a>
+</p>
+<span class="hidden" id="bib80">
+<pre><code>@article{gauvin2010measurement,
+    title={Measurement and Gender-Specific Analysis of User Publishing Characteristics on MySpace},
+    author={Gauvin, William and Ribeiro, Bruno and Liu, Benyuan and Towsley, Don and Wang, Jie},
+    journal={IEEE Network},
+    year={2010}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Don Towsley<br>
+    <b>Estimating and Sampling Graphs with Multidimensional Random Walks</b><br>
+    ACM SIGCOMM Internet Measurement Conference, 2010<br>
+    <a href="javascript:show('bib81')">BibTex</a>
+</p>
+<span class="hidden" id="bib81">
+<pre><code>@inproceedings{ribeiro2010estimating,
+    title={Estimating and Sampling Graphs with Multidimensional Random Walks},
+    author={Ribeiro, Bruno and Towsley, Don},
+    booktitle={ACM SIGCOMM Internet Measurement Conference},
+    year={2010}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, William Gauvin, Benyuan Liu, Don Towsley<br>
+    <b>On MySpace Account Spans and Double Pareto-Like Distribution of Friends</b><br>
+    IEEE Infocom Network Science Workshop, 2010<br>
+    <a href="javascript:show('bib82')">BibTex</a>
+</p>
+<span class="hidden" id="bib82">
+<pre><code>@inproceedings{ribeiro2010myspace,
+    title={On MySpace Account Spans and Double Pareto-Like Distribution of Friends},
+    author={Ribeiro, Bruno and Gauvin, William and Liu, Benyuan and Towsley, Don},
+    booktitle={IEEE Infocom Network Science Workshop},
+    year={2010}
+}</code></pre>
+</span>
+
+<h3 class="pubyear">2009 and Earlier</h3>
+<p class="pubitem">
+    Bruno Ribeiro, Daniel Figueiredo, Don Towsley<br>
+    <b>Herding BitTorrent Traffic away from Expensive ISP Links</b><br>
+    UMass CMPSCI Technical Report, 2009<br>
+    <a href="javascript:show('bib83')">BibTex</a>
+</p>
+<span class="hidden" id="bib83">
+<pre><code>@techreport{ribeiro2009herding,
+    title={Herding BitTorrent Traffic away from Expensive ISP Links},
+    author={Ribeiro, Bruno and Figueiredo, Daniel and Towsley, Don},
+    institution={University of Massachusetts Amherst},
+    number={UM-CS-2008-029},
+    year={2009}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Tao Ye, Don Towsley<br>
+    <b>A Resource-minimalist Flow Size Histogram Estimator</b><br>
+    ACM SIGCOMM Internet Measurement Conference, 2008<br>
+    <a href="javascript:show('bib84')">BibTex</a>
+</p>
+<span class="hidden" id="bib84">
+<pre><code>@inproceedings{ribeiro2008resource,
+    title={A Resource-minimalist Flow Size Histogram Estimator},
+    author={Ribeiro, Bruno and Ye, Tao and Towsley, Don},
+    booktitle={ACM SIGCOMM Internet Measurement Conference},
+    year={2008}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Weifeng Chen, Gerome Miklau, Don Towsley<br>
+    <b>Analyzing Privacy in Enterprise Packet Trace Anonymization</b><br>
+    Network & Distributed System Security Symposium (NDSS), 2008<br>
+    <a href="javascript:show('bib85')">BibTex</a>
+</p>
+<span class="hidden" id="bib85">
+<pre><code>@inproceedings{ribeiro2008analyzing,
+    title={Analyzing Privacy in Enterprise Packet Trace Anonymization},
+    author={Ribeiro, Bruno and Chen, Weifeng and Miklau, Gerome and Towsley, Don},
+    booktitle={Network and Distributed System Security Symposium},
+    year={2008}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Don Towsley, Tao Ye, Jean Bolot<br>
+    <b>Fisher Information of Sampled Packets: an Application to Flow Size Estimation</b><br>
+    ACM SIGCOMM Internet Measurement Conference (IMC), 2006<br>
+    <a href="javascript:show('bib86')">BibTex</a>
+</p>
+<span class="hidden" id="bib86">
+<pre><code>@inproceedings{ribeiro2006fisher,
+    title={Fisher Information of Sampled Packets: an Application to Flow Size Estimation},
+    author={Ribeiro, Bruno and Towsley, Don and Ye, Tao and Bolot, Jean},
+    booktitle={ACM SIGCOMM Internet Measurement Conference},
+    year={2006}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Bruno Ribeiro, Edmundo de Souza e Silva, Don Towsley<br>
+    <b>On the Efficiency of Path Diversity for Continuous Media Applications</b><br>
+    UMass CMPSCI Technical Report 05-19, 2005<br>
+    <a href="javascript:show('bib87')">BibTex</a>
+</p>
+<span class="hidden" id="bib87">
+<pre><code>@techreport{ribeiro2005efficiency,
+    title={On the Efficiency of Path Diversity for Continuous Media Applications},
+    author={Ribeiro, Bruno and de Souza e Silva, Edmundo and Towsley, Don},
+    institution={University of Massachusetts Amherst},
+    number={05-19},
+    year={2005}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    Weifeng Chen, Yong Huang, Bruno Ribeiro, Kyoungwon Suh, Honggang Zhang, Edmundo de Souza e Silva, Jim Kurose, Don Towsley<br>
+    <b>Exploiting the IPID field to infer network path and end-system characteristics</b><br>
+    Passive and Active Measurement Workshop (PAM), 2005<br>
+    <a href="javascript:show('bib88')">BibTex</a>
+</p>
+<span class="hidden" id="bib88">
+<pre><code>@inproceedings{chen2005exploiting,
+    title={Exploiting the IPID field to infer network path and end-system characteristics},
+    author={Chen, Weifeng and Huang, Yong and Ribeiro, Bruno and Suh, Kyoungwon and Zhang, Honggang and de Souza e Silva, Edmundo and Kurose, Jim and Towsley, Don},
+    booktitle={Passive and Active Measurement Workshop},
+    year={2005}
+}</code></pre>
+</span>
+
+<p class="pubitem">
+    S. C. Coutinho, Bruno Ribeiro<br>
+    <b>On Holomorphic Foliations without Algebraic Solutions</b><br>
+    Experimental Mathematics, Vol. 10, No. 4, pp. 529-536, 2001<br>
+    <a href="javascript:show('bib89')">BibTex</a>
+</p>
+<span class="hidden" id="bib89">
+<pre><code>@article{coutinho2001holomorphic,
+    title={On Holomorphic Foliations without Algebraic Solutions},
+    author={Coutinho, S. C. and Ribeiro, Bruno},
+    journal={Experimental Mathematics},
+    volume={10},
+    number={4},
+    pages={529--536},
+    year={2001}
+}</code></pre>
+</span>
+
+
+    <script type="text/javascript">
+        function show(ID){
+            if(document.getElementById(ID).style.display != "inline"){
+                document.getElementById(ID).style.display = "inline";
+            }else{
+                document.getElementById(ID).style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

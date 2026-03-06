@@ -1,0 +1,4496 @@
+
+
+<html>
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async 
+src="https://www.googletagmanager.com/gtag/js?id=G-G49FTCNDTL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G49FTCNDTL');
+</script>
+<title>Alexei A. Efros homepage</title>
+</head>
+
+
+<STYLE>
+<!--
+A{text-decoration:none}
+-->
+</STYLE>
+
+
+<BODY MARGINWIDTH=0 MARGINHEIGHT=0 BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000C8" ALINK="#C80000"> 
+
+
+<table border="0" cellpadding="15" cellspacing="0" width="1000">
+<td class="sidebar">&nbsp;</td>
+</tr>
+<tr>
+
+<td class="sidebar" valign="top">
+<table border=0 cellspacing=0 cellpadding=2>
+&nbsp;&nbsp;&nbsp;&nbsp;
+</table>
+</td>
+
+<td valign="top">
+
+<p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<td align="left" width="60%">
+<font face="helvetica, ariel, 'sans serif'" size="3"> 
+    <font size="+2">
+    <b>Alexei <a href="myname.html">(Alyosha)</a> Efros</b><br></font>
+</font>
+<font face="helvetica, ariel, 'sans serif'">
+    <br>
+
+    Howard Friesen Professor<br>
+    <a href="http://www.eecs.berkeley.edu/">EECS Department</a><br>
+    <a href="http://www.berkeley.edu">UC Berkeley</a><br>
+    Mailing Address: 395 Soda Hall #1776, Berkeley CA 94720<br><p>
+
+    Office: 8016 Berkeley Way West (BWW)<br>
+    Email: efros -at- eecs.berkeley.edu<br>
+    <a 
+href="http://www.eecs.berkeley.edu/Faculty/Homepages/efros.html">My 
+Official 
+Berkeley Page</a>
+
+
+    <p>
+
+<a href="http://bair.berkeley.edu/"><img 
+src="https://bair.berkeley.edu/blog/assets/BAIR_Logo.png"
+height="90" border="0"></a>
+
+    <p>
+</font>
+</td>
+<td  valign="top" align="left">
+<a href="img/Efros__photo_Peter_Badge.jpg">
+<img src="img/Efros__photo_Peter_Badge_crop.jpg" border=0 height=300></a>
+</td>
+</table>
+
+<font face="helvetica, ariel, 'sans serif'">
+
+<p>
+<hr size="1" align="left" noshade>
+<p>
+<h2>
+<a href="#group">Research Group</a> |
+<a href="#alumni">Alumni</a> |
+<a href="#teaching">Teaching</a> |
+<a href="#pubs">Publications</a> |
+<a href="https://people.eecs.berkeley.edu/~efros/cv.html">CV</a>
+
+</h2>
+<p>
+<hr size="1" align="left" noshade>
+<p>
+
+
+I am a professor at EECS Department at 
+<a href="http://www.berkeley.edu">UC Berkeley</a>, where I am part of 
+the 
+<a href="http://bair.berkeley.edu/">Berkeley Artificial Intelligence 
+Research Lab (BAIR)</a>.  
+Before that, I spent a decade on the 
+faculty of the 
+<a href="http://www.ri.cmu.edu/">Robotics Institute</a> at <a 
+href="http://www.cmu.edu">CMU</a>.   I am also 
+<a href="http://www.robots.ox.ac.uk/~vgg/people.html">still remembered
+</a> in <a 
+href="https://flic.kr/s/aHskAiHGFr">lovely 
+Oxford</a>, where I did a post-doc 
+with <a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman</a>. 
+During 2007-2015, I have also been closely collaborating with 
+<a href="http://www.di.ens.fr/willow/">Team WILLOW</a>
+at <a href="http://www.ens.fr/">&#201;cole Normale Sup&#233;rieure</a> / 
+ <a href="http://www.inria.fr">INRIA</a>
+in <a 
+href="https://flic.kr/s/aHsju3GuLK"> 
+beautiful Paris</a>.  Over the years, I was lucky to have some <a 
+href="officemates.html">amazing 
+officemates</a>.  
+<p>
+
+
+
+<h2>Research</h2>
+
+
+The central goal of my research is to use vast amounts of unlabelled 
+visual data to understand, model, and recreate the visual world around 
+us.  My research has been mainly in data-driven computer vision, as well as its 
+projection onto computer graphics and computational photography.  I have been working on  
+autoregressive image generation <a 
+href="research/NPS/efros-iccv99.pdf">since 
+1999</a>, visual data scaling <a 
+href="https://graphics.cs.cmu.edu/projects/scene-completion/">since 2007</a>,
+self-supervised learning <a 
+href="OUI2015.pdf">since 
+2015</a>, continual learning 
+<a href="https://slideslive.com/38930883/imagining-a-postdataset-era">since 2020</a>, and 
+on what is now called "world models" <a 
+href="https://pathak22.github.io/noreward-rl/">since 
+2017</a>.  Other interests include human vision, visual 
+data 
+mining, 
+robotics, and the applications of computer vision to the visual arts and 
+the humanities.  I also enjoy making <a href="gelato_bet.html">scientific 
+bets</a>.
+<p>
+
+For a high-level overview of my research, here are some of my
+<a 
+href="https://youtube.com/playlist?list=PLJRtItMmpCFYUu_52nLs4BLLXriLk6Nhy&si=c6iNGUFeq6xCKq5g"> 
+recent talks</a>.
+Or, for something completely different, check out a (somewhat dated)
+<a 
+href="https://www.newyorker.com/magazine/2018/11/12/in-the-age-of-ai-is-seeing-still-believing">New 
+Yorker article</a> about some of our work.  Also, I was doing vision-based 
+robotics <a 
+href="https://aaai.org/ojs/index.php/aimagazine/article/download/1130/1048">before 
+it was cool</a> (see picture on page 23 :). 
+<p>
+
+I (try to) practice <a href="http://slow-science.org/">Slow 
+Science</a>.<br>
+I 
+<a href="https://u24.gov.ua/">support Ukraine</a> in its fight <a 
+href="https://zarinazabrisky.medium.com/tyrants-destroyed-by-v-nabokov-fba3a490c021">against 
+tyranny</a>.
+
+
+
+<a name="group"></a>
+
+<h2>Postdocs</h2>
+<ul>
+<li>
+<a href="https://yutongbai.com/">Yutong Bai</a> (with 
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a> and 
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>)
+<li><a href="https://tzler.github.io/">Tyler 
+Bonnen</a> 
+(with <a 
+href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a> 
+and
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>)
+<li><a href="https://akoepke.github.io/">Sophia Koepke</a> (visiting 
+scholar) 
+</ul>
+<p>
+
+<h2>Graduate Students</h2>
+
+<ul> 
+<li>
+<a href="https://avdravid.github.io/">
+Amil Dravid</a>
+<li>
+<a href="https://www.alonsorobots.com/">
+Alonso Martinez</a>
+<li>
+<a href="https://konpat.me/">
+Konpat Preechakul</a>
+<li>
+<a href="https://renwang435.github.io/">
+Renhao Wang</a>
+</ul>
+
+<a name="alumni"></a>
+<h2>Alumni</h2>
+
+<a href="https://academictree.org/computerscience/tree.php?pid=95366&pnodecount=1&cnodecount=4">My branch of 
+the Academic Family Tree</a>
+<ul>
+<li>
+<h3>Former PhD Students</h3>
+<ul>
+<li>
+<a href="https://yossigandelsman.github.io/">
+Dr. Yossi Gandelsman</a> (PhD 2025), now assistant professor at TTIC<br>
+PhD Thesis:
+<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-44.html">
+Interpreting the Inner-Workings of Vision Models</a><br>
+<font color="#B22222">
+Berkeley Fellowship<br>
+Google Fellowship<br>
+</font>
+<li>
+<a href="https://dave.ml/">
+Dr. Dave Epstein</a> (PhD 2024), now reserach scientist at Anthropic<br>
+PhD Thesis:
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-65.html">
+Disentangled Visual Generative Models
+</a><br>
+<font color="#B22222">
+<a href="https://www.pdsoros.org/meet-the-fellows/allan-jabri">Soros</a> 
+Fellowship<br>
+</font>
+<li> 
+<a href="https://ajabri.github.io/">
+Dr. Allan Jabri</a> (PhD 2023), now research scientist at OpenAI<br>
+PhD Thesis: 
+<a 
+href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-192.pdf">Scalable 
+Binding</a><br>
+<font color="#B22222">
+<a href="https://www.pdsoros.org/meet-the-fellows/allan-jabri">Soros</a> 
+Fellowship<br>
+</font>
+<li>
+<a 
+href="https://yueatsprograms.github.io/">
+Dr. Yu Sun</a> (PhD 2023, co-advised with <a 
+href="https://www.mrtz.org/about.html">Moritz 
+Hardt</a>), now postdoc at Stanford<br>
+PhD Thesis: 
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-86.html">Test-Time 
+Training</a><br>
+<li>
+<a href="https://www.wpeebles.com/">Dr. Bill Peebles</a> (PhD 2023),
+now research scientist at OpenAI<br>
+PhD Thesis:
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-108.html">Generative 
+Models of Images and Neural Networks</a><br>
+<font color="#B22222">
+NSF Fellowship<br>
+</font>
+<li>
+<a href="https://www.timothybrooks.com/">Dr. Tim Brooks</a> (PhD 2023), 
+now research scientist at Meta Superintelligence Labs<br>
+PhD Thesis:
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-100.html">Generative 
+Models for Image and Long Video Synthesis</a><br>
+<font color="#B22222">
+NSF Fellowship<br>
+</font>
+
+<li>
+<a href="https://taesung.me/">Dr. Taesung Park</a> (PhD 2021), now co-founder of 
+startup <a href="https://reve.art/">Reve</a><br>
+PhD Thesis:
+<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-143.pdf">
+Machine Learning for Deep Image Synthesis</a><br>
+<font color="#B22222">
+Samsung Fellowship<br>
+Adobe Fellowship<br>
+</font>
+
+<li>
+<a href="http://www.eecs.berkeley.edu/~shiry/">Dr. Shiry Ginosar</a>
+(PhD 2020), now assistant professor at TTIC<br>
+PhD Thesis:
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-148.html">Modeling 
+Visual Minutiae: Gestures, Styles, and Temporal 
+Patterns</a><br>
+<font color="#B22222">
+NSF Fellowship<br>
+Samuel Silver Memorial Scholarship Award<br>
+NSF Computing Innotation Fellow<br>
+</font>
+
+<li>
+<a href="https://www.cs.cmu.edu/~dpathak/">Dr. Deepak Pathak</a> 
+(PhD 2019, co-advised with <a 
+href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>), now 
+assistant professor at CMU<br>
+PhD Thesis: 
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-132.html">
+Learning to Generalize via Self-Supervised Prediction</a><br>
+<font color="#B22222">
+Facebook Fellowship<br>
+NVIDIA Fellowship<br>
+</font>
+<li><a href="http://www.eecs.berkeley.edu/~tinghuiz/">Dr. Tinghui 
+Zhou</a> (PhD 2018), now Engineering Manager at <a href="https://corp.roblox.com/">Roblox</a><br>
+PhD Thesis: <a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-128.pdf">
+Visual Learning beyond Direct Supervision</a><br>
+<li><a href="http://richzhang.github.io/">
+Dr. Richard Zhang</a> (PhD 2018), now senior research scientist at 
+Adobe<br>
+PhD Thesis: 
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-36.pdf">
+Image Synthesis for Self-Supervised Visual Representation Learning</a><br>
+<font color="#B22222">
+Adobe Fellowship
+</font>
+<li>
+<a href="https://www.cs.cmu.edu/~junyanz/">Dr. Jun-Yan Zhu</a> 
+(PhD 2017), now assistant professor at CMU<br>
+PhD Thesis: <a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-214.pdf">
+Learning to Synthesize and Manipulate Natural Images
+</a><br>
+<font color="#B22222">
+Facebook Fellowship<br>
+Recipient of <a 
+href="https://www.siggraph.org/outstanding-doctoral-dissertation-award-jun-yan-zhu">SIGGRAPH 
+Outstanding Doctoral Dissertation 
+Award</a>
+</font>
+<li>
+<a href="https://tcwang0509.github.io/">Dr. Ting-Chun 
+Wang</a> (PhD 2017, co-advised with <a 
+href="http://cseweb.ucsd.edu/~ravir/">Ravi 
+Ramamoorthi</a>), now principal research scientist at NVIDIA<br>
+PhD Thesis: 
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-50.pdf">
+Beyond Photo-Consistency: Shape, Reflectance, and Material
+Estimation Using Light-Field Cameras</a><br>
+<font color="#B22222">
+Berkeley Fellowship
+</font>
+<li><a 
+href="http://www.cs.cmu.edu/~cdoersch/">Dr. Carl Doersch</a> (MLD, PhD 
+2016, co-advised with 
+<a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>), now 
+senior research scientist at 
+Google DeepMind<br>
+PhD Thesis: <a 
+href="http://www.carldoersch.com/docs/thesis.pdf">Supervision 
+Beyond Manual Annotations for Learning 
+Visual 
+Representations</a><br>
+<font color="#B22222">
+Google Graduate Fellow<br>
+NDSEG Graduate Fellow</font>
+<li><a href="http://santoshd.people.allenai.org/">Dr. Santosh Kumar 
+Divvala</a> (Robotics, PhD 2012,
+co-advised with <a 
+href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>), now research 
+scientisit at Allen Institute for Artificial Intelligence (AI2)<br>
+PhD Thesis: 
+<a href="http://www.ri.cmu.edu/publication_view.html?pub_id=7300">Context 
+and Subcategories for Sliding Window Object 
+Recognition</a>
+<li><a 
+href="https://tom.ai/">Dr. Tomasz Malisiewicz</a> 
+(Robotics, PhD 2011), now Research Scientist Manager at Meta Reality Labs<br>
+PhD Thesis:
+<a href="http://www.ri.cmu.edu/publication_view.html?pub_id=6911">
+Exemplar-based Representations for
+ Object Detection, Association and Beyond</a><br>
+<font color="#B22222">
+NSF Graduate Fellow</font>
+<li><a href="http://vision.gel.ulaval.ca/~jflalonde/">Dr. 
+Jean-Fran&ccedil;ois 
+Lalonde</a> (Robotics, PhD 2011, co-advised with <a 
+href="http://www.cs.cmu.edu/~srinivas/">Srinivas Narasimhan</a>),
+now professor at Universit&#233; Laval<br>
+PhD Thesis:
+<a href="http://vision.gel.ulaval.ca/~jflalonde/">
+Understanding and Recreating Visual Appearance Under Natural Illumination
+</a><br>
+<font color="#B22222">
+Microsoft Graduate Fellow<br>
+Recipient of
+<a href="http://www.cs.cmu.edu/~scsfacts/dissertation.html">
+<em>CMU School of Computer Science Distinguished Dissertation 
+Award</em></a></font>
+<li>
+<a href="https://www.cc.gatech.edu/~hays/">Dr. James Hays</a>
+(CSD, PhD 2009), now professor at Georgia Tech<br>
+PhD Thesis:
+<a href="http://www.cs.cmu.edu/~jhhays/thesis/index.html">Large Scale 
+Scene Matching for Graphics and Vision</a><br>
+<font color="#B22222">
+NSF Graduate Fellow</font>
+<li>
+<a href="https://dhoiem.cs.illinois.edu/">Dr. Derek Hoiem</a> 
+(Robotics, PhD 2007, co-advised with <a 
+href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>),
+now professor at University of Illinois<br>
+PhD Thesis: 
+<a href="http://www.lulu.com/content/1410779">
+Seeing the World Behind the Image: Spatial Layout for 3D Scene 
+Understanding</a><br>
+<font color="#B22222">
+Microsoft Graduate Fellow<br>
+Recipient of 
+<a href="http://www.cs.cmu.edu/~scsfacts/dissertation.html">
+<em>CMU School of Computer Science Distinguished Dissertation 
+Award</em></a><br>
+Recipient of
+<a 
+href="http://awards.acm.org/citation.cfm?id=7530355&srt=all&aw=146&ao=DOCDISRT&yr=2008">
+<em>ACM Doctoral Dissertation Honorable Mention</em></a></font><br>
+</ul>
+
+<li><h3>Former Postdocs</h3>
+<ul>
+<li><a href="https://qianqianwang68.github.io/">Qianqian Wang</a> 
+(2023-2025, co-advised with <a 
+href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>), now assistant professor at Harvard
+<li>
+<a href="https://homes.cs.washington.edu/~holynski/">Aleksander 
+Holynski</a> 
+(2022-2025, co-advised with <a 
+href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>),
+now assistant professor at Columbia University
+<li>
+<a href="https://assafshocher.github.io/">Assaf Shocher</a>
+(2021-2023), now assistant professor at Technion
+<li><a href="https://xiaolonw.github.io/">Xiaolong Wang</a> 
+(2019-2020, co-advised with 
+<a href="http://people.eecs.berkeley.edu/~trevor">Trevor Darrell</a>), now 
+associate professor at UC San Diego
+<li><a href="https://cs.nyu.edu/~lp91/">Lerrel Pinto</a> (2019-2020,  
+co-advised with <a 
+href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter 
+Abbeel</a>), now assistant professor at NYU
+<li><a href="http://andrewowens.com/">Andrew Owens</a> (2016-2019, 
+co-advised with 
+<a href="http://people.eecs.berkeley.edu/~malik">Jitendra 
+Malik</a>), now associate professor at Cornell Tech
+<li><a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo 
+Kanazawa</a> (2017-2019, co-advised with <a 
+href="http://people.eecs.berkeley.edu/~malik">Jitendra 
+Malik</a> and <a 
+href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>), now 
+assistant professor at UC Berkeley
+<li><a href="https://www.seas.upenn.edu/~dineshj/">Dinesh 
+Jayaraman</a> (2017-2019, co-advised with <a 
+href="https://people.eecs.berkeley.edu/~svlevine/">Sergey 
+Levine</a>), now assistant professor at UPenn 
+<li><a href="https://cs.nyu.edu/~fouhey/">David Fouhey</a> 
+(2016-2018, co-advised with <a href="http://people.eecs.berkeley.edu/~malik">Jitendra 
+Malik)</a>, now associate professor at NYU
+<li><a href="https://jhoffman.github.io/">Judy Hoffman</a>
+(2017-2018, co-advised with <a 
+href="https://people.eecs.berkeley.edu/~trevor/">Trevor 
+Darrell</a>), now associate professor at UC Irvine
+<li><a href="http://web.mit.edu/phillipi/">Phillip Isola</a> (2015-2017), 
+now 
+associate professor at MIT
+<li><a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a> 
+(2014-2016, co-advised with 
+<a href="http://www.eecs.berkeley.edu/~malik">Jitendra Malik</a>), now 
+associate professor at UT Austin
+<li><a href="http://imagine.enpc.fr/~aubrym/index.html">Mathieu Aubry</a>
+(2015), now faculty at &#201;cole des Ponts ParisTech
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a>
+(2012-2014), now professor at University of Wisconsin, Madison 
+<li>
+<a href="http://www.cs.cmu.edu/~olivierd/">Olivier Duchenne</a> (fall 
+2012), now resercher at Mistral AI and serial startup founder
+<li><a href="http://homes.cs.washington.edu/~ali/">Ali Farhadi</a>
+(2011-2012, 
+co-advised with <a href="http://www.cs.cmu.edu/~hebert/">Martial 
+Hebert)</a>,
+now professor at University of Washington and CEO of <a href="https://allenai.org/">AI2</a>
+<li><a href="http://www.cs.cmu.edu/~abhinavg/Home.html">Abhinav 
+Gupta</a> (2009-2011, 
+co-advised with <a href="http://www.cs.cmu.edu/~hebert/">Martial 
+Hebert</a>),
+now professor at CMU
+</ul>
+
+<li><h3>Former MS/BS Students and Visitors</h3>
+<ul>
+<li>
+<a href="https://ryantabrizi.com/">Ryan Tabrizi</a> (BS 2025);
+<a href="https://peterwang512.github.io/">Sheng-Yu Wang</a> (BS 2019);
+<a href="https://people.csail.mit.edu/cmchan/">Caroline Chan</a> (BS 
+2018);
+<a href="http://andrewhliu.github.io/">Andrew Liu</a> (MS 2018);
+<a href="https://ssnl.github.io/">Tongzhou Wang (BS 2017);
+<a href="http://minyounghuh.com/">Jacob Huh</a> (BS 2016);
+<a href="http://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh</a>
+(MS 2015); 
+<a href="http://www.eecs.berkeley.edu/~rakelly/">Kate Rakelly</a> (BS 
+2015); 
+<a href="http://www.achaldave.com/">Achal Dave</a> (BS 
+2015);
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui 
+Zhou</a>
+(MS 2012); <a href="http://www.abhinav-shrivastava.info/">Abhinav 
+Shrivastava</a> (MS 2011); <a href="http://www.saurabhsingh.info/">Saurabh 
+Singh</a> (MS 2011); 
+<a 
+href="https://www.linkedin.com/in/danielle-millett-78002b2a">Danielle 
+Millett</a> (BS 
+2009);
+<a 
+href="https://www.researchgate.net/profile/Suporn_Pongnumkul">Suporn 
+Pongnumkul</a> (BS 2005)
+<li><b>Lab Visitors:</b> 
+<a href="https://anandbhattad.github.io/">Anand Bhattad</a> (summer 2024),
+<a href="https://akoepke.github.io/">Sophia Koepke</a> (spring 2024),
+<a href="https://imagine.enpc.fr/~siglidii/">Yannis Siglidis</a> (summer 
+2023, Summer 2024),
+<a 
+href="http://www.gestaltrevision.be/en/about-us/contact/all-contacts/45-jan-j-koenderink">
+Jan Koenderink</a> (fall 2018),
+<a 
+href="https://www.linkedin.com/in/petr-gronat-38b703aa/">Petr 
+Gronat</a> (spring 2016),
+<a 
+href="https://www.linkedin.com/in/mohammad-rastegari-50a88a44/">Mohammad 
+Rastegari</a> 
+(summer 2015), 
+<a href="http://www.cs.utexas.edu/~huangqx/">Qixing Huang</a> (summer 
+2015),
+<a href="http://web.engr.oregonstate.edu/~leestef/">Stefan Lee</a> (summer 
+2014),
+<a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a> 
+(summer 2014), 
+<a href="https://www.linkedin.com/pub/sarah-sachs/62/7b5/6bb">Sarah 
+Sachs</a> (summer 2014), 
+<a href="https://www.linkedin.com/pub/ekaterina-zaytseva/11/b53/758"> 
+Ekaterina Zaytseva</a> (fall 2013),
+<a href="https://www.linkedin.com/pub/vincent-delaitre/45/43b/276">Vincent 
+Delaitre</a> (fall 2012),
+<a href="http://www3.uji.es/~ribelles/">Jose Ribelles</a> (fall 2007)
+</ul>
+</ul>
+
+<a name="teaching"></a>
+<h2>Teaching</h2>
+
+<ul>
+
+<li> <a href="https://cs280-berkeley.github.io/">CS 280: Graduate 
+Computer Vision</a> [
+<a href="https://cs280-berkeley.github.io">Sp'26</a>,<a 
+href="https://cs280-berkeley.github.io/sp24">Sp'24</a>,<a 
+href="https://cs280-berkeley.github.io/sp23">Sp'23</a>,Sp'21,Sp'19,Sp'18, 
+Sp'17, 
+<a href="https://inst.eecs.berkeley.edu/~cs280/sp16/">Sp'16</a>, 
+Fall'13]
+
+<li> 
+<a href="https://cal-cs180.github.io/">
+CS 180/280A: Intro to Computer Vision and 
+Computational Photography</a> 
+[<a href="https://cal-cs180.github.io/fa25/">Fall'25</a>,
+<a href="https://cal-cs180.github.io/fa24/">Fall'24</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs180/fa23/">Fall'23</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa22/">
+Fall'22</a>, 
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa21/">
+Fall'21</a>, 
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa20/">
+Fall'20</a>, 
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/sp20/">
+Sp'20</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa18/">
+Fall'18</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa17/">
+Fall'17</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa16/">
+Fall'16</a>,
+<a href="http://inst.eecs.berkeley.edu/~cs194-26/fa15/">
+Fall'15</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2012_fall/463.html">
+Fall'12</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2011_fall/463.html">
+Fall'11</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2010_fall/">
+Fall'10</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2010_spring/">
+Sp'10</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2008_fall/"> 
+Fall'08</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2007_fall/">
+Fall'07</a>,
+<a href="http://graphics.cs.cmu.edu/courses/15-463/2006_fall/www/463.html"> 
+Fall'06</a>,
+<a 
+href="http://graphics.cs.cmu.edu/courses/15-463/2005_fall/www/463.html"> 
+Fall'05</a>, 
+<a 
+href="http://graphics.cs.cmu.edu/courses/15-463/2004_fall/www/463.html"> 
+Fall'04</a>]
+<li>CS 294-192: <a 
+href="https://docs.google.com/document/u/1/d/e/2PACX-1vQaioAfwh81lxb3Z3B-Qf83I8DSb6Xu1z7KBbcJBxBrutR6qVEZ12lig5rEgfyq31Ojamf8JeVzSvVg/pub">Visual 
+Scene Understanding (Spring 2022)</a>
+<li> CS 189: Intro to Machine Learning [
+<a href="http://www-inst.eecs.berkeley.edu/~cs189/fa15/">Fall'15</a>, 
+<a href="http://www-inst.eecs.berkeley.edu/~cs189/sp15/">Sp'15</a>, 
+<a href="http://www-inst.eecs.berkeley.edu/~cs189/sp14/">Sp'14</a>]  
+<li> <a href="https://sites.google.com/site/ucbcs29443/">
+CS 294-43: Visual Object and Activity Recognition</a> [Fall'14--Fall'18]
+
+<li><a href="http://graphics.cs.cmu.edu/courses/P2P/">
+16-899A: Pixels to Percepts: Human Visual Perception 
+for Vision and Graphics</a> [Spring'11]
+
+
+<li> 16-824: Learning-based Methods in Vision 
+[
+<a 
+href="https://docs.google.com/document/pub?id=1jGBn7zPDEaU33fJwi3YI_usWS-U6gpSSJotV_2gDrL0">Sp'12</a>,
+<A href="http://www.cs.cmu.edu/~efros/courses/LBMV09/">
+Sp'09</a>,
+<a href="http://www.cs.cmu.edu/~efros/courses/LBMV07/">
+Sp'07</a>,
+<a href="courses/AP06/">
+Sp'06</a>]
+</ul>
+
+<a name="pubs"></a>
+<h2>Publications</h2>
+
+See also my Google Scholar profile for the 
+<a 
+href="https://scholar.google.com/citations?hl=en&user=d97bGd8AAAAJ&view_op=list_works&sortby=pubdate">most 
+recent 
+publications</a> as well as the <a 
+href="http://scholar.google.com/citations?user=d97bGd8AAAAJ&hl=en">most-cited 
+papers</a> (which are quite different from my self-selected <a 
+href="https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html">key  
+publications</a>).
+
+<font face="helvetica, ariel, 'sans serif'">
+<table cellspacing="15"> 
+
+
+
+
+<tr>
+<td width="35%">
+<a href="https://akoepke.github.io/noise_optimization_diversity/index.html">
+<img 
+src="https://akoepke.github.io/images/noise_optimization_diversity.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<img src="img/new.gif"> 
+<a href="https://akoepke.github.io/noise_optimization_diversity/index.html">
+<b>It's Never Too Late:
+Noise Optimization for Collapse Recovery in Trained Diffusion Models</b></a>
+<br>
+<a href="https://anneharrington.github.io/">Anne Harrington</a>,
+<a href="https://akoepke.github.io/">Sophia Koepke</a>,
+<a href="https://sgk98.github.io/">Shyamgopal Karthik</a>,
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+Alexei A. Efros
+<br>
+in CVPR 2026<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://visualjenga.github.io/">
+<img 
+src="https://anandbhattad.github.io/images/visual_jenga.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<img src="img/new.gif"> 
+<a href="https://visualjenga.github.io/">
+<b>Visual Jenga: Discovering Object Dependencies via Counterfactual Inpainting</b></a>
+<br>
+<a href="https://anandbhattad.github.io/">Anand Bhattad</a>,
+<a href="https://konpat.notion.site/">Konpat Preechakul</a>,
+Alexei A. Efros
+<br>
+in Neurips 2025<br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://avdravid.github.io/test-time-registers/">
+<img 
+src="https://yossigandelsman.github.io/images/registers.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<img src="img/new.gif"> 
+<a href="https://avdravid.github.io/test-time-registers/">
+<b>Vision Transformers Don't Need Trained Registers</b></a>
+<br>
+<a href="https://nickjiang.me/">Nick Jiang</a>,
+<a href="https://avdravid.github.io/">Amil Dravid</a>,
+Alexei A. Efros,
+<a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>
+<br>
+in Neurips 2025<br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://peterwang512.github.io/FastGDA/">
+<img 
+src="https://peterwang512.github.io/FastGDA/files/teaser.jpg" 
+height="80"
+border="0"></a>
+</td>
+<td>
+<img src="img/new.gif"> 
+<a 
+href="https://peterwang512.github.io/FastGDA/">
+<b>Fast Data Attribution for Text-to-Image Models</b></a>
+<br>
+<a href="https://peterwang512.github.io/">
+Sheng-Yu Wang</a>,
+<a href="https://www.dgp.toronto.edu/~hertzman/">Aaron Hertzmann</a>
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>,
+<a href="http://richzhang.github.io/">
+Richard Zhang</a>
+<br>
+in <em>Neurips 2025</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://cut3r.github.io/">
+<img 
+src="https://raw.githubusercontent.com/tmpcut3r/tmpcut3r.github.io/refs/heads/master/assets/ezgif-19805d6c6b21fe.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://cut3r.github.io/">
+<b> Continuous 3D Perception Model with Persistent State</b></a>
+<br>
+<a href="https://qianqianwang68.github.io/">Qianqian Wang</a>,
+<a href="https://forrest-110.github.io/">Yifei Zhang</a>,
+<a href="https://holynski.org/">Aleksander Holynski</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>
+<br>
+in CVPR 2025<br>
+<a href="https://github.com/CUT3R/CUT3R">Code and weights</a> available on GitHub
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a href="https://cfeng16.github.io/gps-gen/">
+<img 
+src="https://andrewowens.com/ims/gpsgen.jpg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://cfeng16.github.io/gps-gen/">
+<b>GPS as a Control Signal for Image Generation</b></a>
+<br>
+<a href="https://cfeng16.github.io/">Chao Feng</a>,
+<a href="https://ificl.github.io/">Ziyang Chen</a>,
+<a href="https://holynski.org/">Aleksander Holynski</a>,
+Alexei A. Efros,
+<a href="https://andrewowens.com/">Andrew Owens</a>
+<br>
+in CVPR 2025<br>
+</td>
+
+<tr> <td width="35%"> <a href="https://pgenreplay.github.io/"> <img 
+src="https://renwang435.github.io/images/pgr.png" height="110" 
+border="0"></a> </td> <td> 
+<a href="https://pgenreplay.github.io/"> <b>Prioritized Generative 
+Replay</b></a> <br> <a href="https://renwang435.github.io/">Renhao 
+Wang</a>, <a href="https://kvfrans.com/">Kevin Frans</a>, <a 
+href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, <a 
+href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, 
+Alexei A. Efros <br> in ICLR 2025<br> </td>
+
+<tr> <td width="35%"> <a 
+href="https://yossigandelsman.github.io/clip_neurons/index.html"> <img 
+src="https://yossigandelsman.github.io/images/clip_neurons.png" 
+height="140" border="0"></a> </td> <td> <a 
+href="https://yossigandelsman.github.io/clip_neurons/index.html"> 
+<b>Interpreting the Second-Order Effects of Neurons in CLIP</b></a> <br> 
+<a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>, Alexei 
+A. Efros, <a href="https://jsteinhardt.stat.berkeley.edu/">Jacob 
+Steinhardt</a> <br> in ICLR 2025<br> <a 
+href="https://github.com/yossigandelsman/second_order_lens">Code available 
+on GitHub</a><br> </td>
+
+
+<tr>
+<td width="35%">
+<a href="https://test-time-training.github.io/video/">
+<img src="https://renwang435.github.io/images/ttt_vid.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://test-time-training.github.io/video/">
+<b>Test-Time Training on Video Streams</b></a>
+<br>
+<a href="https://renwang435.github.io/">Renhao Wang</a>,
+<a href="https://yueatsprograms.github.io/">Yu Sun</a>,
+<a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>,
+<a href="https://xinleic.xyz/">Xinlei Chen</a>,
+Alexei A. Efros,
+<a href="https://xiaolonw.github.io/">Xiaolong Wang</a>
+<br>
+in JMLR<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://snap-research.github.io/weights2weights/">
+<img 
+src="https://snap-research.github.io/weights2weights/images/ood_project_web.jpeg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://snap-research.github.io/weights2weights/">
+<b>Interpreting the Weight Space of Customized Diffusion Models</b></a>
+<br>
+<a href="https://avdravid.github.io/">Amil Dravid</a>,
+<a href="https://yossigandelsman.github.io/">Yossi 
+Gandelsman</a>,
+<a href="https://wangkua1.github.io/">Kuan-Chieh Wang</a>,
+<a href="https://rameenabdal.github.io/">Rameen Abdal</a>,
+<a href="https://rameenabdal.github.io/">Gordon Wetzstein</a>,
+Alexei A. Efros,
+<a href="https://kfiraberman.github.io/">Kfir Aberman</a>
+<br>
+in Neurips 2024<br>
+<a href="https://github.com/snap-research/weights2weights">Code and weights</a> available on GitHub
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://peterwang512.github.io/AttributeByUnlearning/">
+<img 
+src="https://peterwang512.github.io/AttributeByUnlearning/files/coco_composition.jpg" 
+height="80"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://peterwang512.github.io/AttributeByUnlearning/">
+<b>Data Attribution for Text-to-Image Models by Unlearning Synthesized Images</b></a>
+<br>
+<a href="https://peterwang512.github.io/">
+Sheng-Yu Wang</a>,
+<a href="https://www.dgp.toronto.edu/~hertzman/">Aaron Hertzmann</a>
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>,
+<a href="http://richzhang.github.io/">
+Richard Zhang</a>
+<br>
+in <em>Neurips 2024</em><br>
+<a href="https://github.com/peterwang512/AttributeByUnlearning">Code</a> is available on GitHub
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://tzler.github.io/MOCHI/">
+<img 
+src="https://tzler.github.io/MOCHI/static/images/mochi_teaser.png" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a href="https://tzler.github.io/MOCHI/">
+<b>Evaluating Multiview Object Consistency in Humans and Image Models</b></a>
+<br>
+<a href="https://tzler.github.io/">Tyler Bonnen</a>,
+<a href="https://stephanie-fu.github.io/">Stephanie Fu</a>,
+<a href="https://yutongbai.com/">Yutong Bai</a>,
+<a href="https://scholar.google.com/citations?user=lNQeAXEAAAAJ&hl=en">Thomas O'Connell</a>,
+<a href="https://www.yonifriedman.com/">Yoni Freedman</a>,
+<a href="https://mcgovern.mit.edu/profile/nancy-kanwisher/">Nancy Kanwisher</a>,
+<a href="https://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a>,
+Alexei A. Efros
+<br>
+in Neurips 2024<br>
+<a href="https://github.com/tzler/mochi_code">Code and data</a> available on GitHub
+</td>
+
+
+
+
+<tr>
+<td width="35%">
+<a href="https://diff-mining.github.io/">
+<img 
+src="https://diff-mining.github.io/media/Teaser.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://diff-mining.github.io/">
+<b>Diffusion Models as Data Mining Tools</b></a>
+<br>
+<a href="https://ysig.github.io/">Ioannis Siglidis</a>,
+<a href="https://holynski.org/">Aleksander Holynski</a>,
+Alexei A. Efros,
+<a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>,
+<a href="https://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a>
+<br>
+in ECCV 2024<br>
+<a href="https://github.com/ysig/diff-mining">Code</a> available on GitHub
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://dave.ml/layoutlearning/">
+<video muted="" playsinline="" autoplay="" loop=""
+height="140"
+border="0"
+src="https://holynski.org/images/layout.mp4">
+</video>
+</a>
+</td>
+<td>
+<a href="https://dave.ml/layoutlearning/">
+<b>Disentangled 3D Scene Generation with Layout Learning</b></a>
+<br>
+<a href="https://dave.ml/">Dave Epstein</a>,
+<a href="https://poolio.github.io/">Ben Poole</a>,
+<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+Alexei A. Efros,
+<A href="https://holynski.org/">Aleksander Holynski</a>
+<br>
+in ICML 2024<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://yutongbai.com/lvm.html">
+<img src="https://yutongbai.com/static/images/videos.jpg" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a href="https://yutongbai.com/lvm.html">
+<b>Sequential Modeling Enables Scalable Learning for
+Large Vision Models</b></a>
+<br>
+<a href="https://yutongbai.com/">Yutong Bai</a>,
+<a href="https://young-geng.xyz/">Xinyang Geng</a>,
+<a href="https://karttikeya.github.io/">Karttikeya Mangalam</a>,
+<a href="https://www.amirbar.net/">Amir Bar</a>,
+<a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a>,
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+Alexei A. Efros
+<br>
+in CVPR 2024<br>
+<a href="https://github.com/ytongbai/LVM">Code and model</a> available on GitHub
+
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://oasisyang.github.io/colmap-free-3dgs/">
+<img src="https://xiaolonw.github.io/static/pub-pic/cf-3dgs.gif" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://oasisyang.github.io/colmap-free-3dgs/">
+<b>COLMAP-Free 3D Gaussian Splatting</b></a>
+<br>
+<a href="https://oasisyang.github.io/">
+Yang Fu</a>,
+<a href="https://www.sifeiliu.net/">
+Sifei Liu</a>,
+Amey Kulkarni,
+<a href="https://jankautz.com/">Jan Kautz</a>,
+Alexei A. Efros,
+<a href="https://xiaolonw.github.io/">
+Xiaolong Wang</a>
+<br>
+in <em>CVPR 2024</em><br>
+Watch the <a 
+href="https://youtu.be/mGeVQS4ExK4?si=S2wUtbLJXOKKSKOk">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://yossigandelsman.github.io/clip_decomposition/index.html">
+<img src="https://yossigandelsman.github.io/images/clip_decomposition.png" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a href="https://yossigandelsman.github.io/clip_decomposition/index.html">
+<b>Interpreting CLIP's Image Representation
+via Text-Based Decomposition</b></a>
+<br>
+<a href="https://yossigandelsman.github.io/">Yossi 
+Gandelsman</a>,
+Alexei A. Efros,
+<a href="https://jsteinhardt.stat.berkeley.edu/">Jacob Steinhardt</a>
+<br>
+in ICLR 2024<br>
+<a href="https://github.com/yossigandelsman/clip_prs">Code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://assafshocher.github.io/IGN/">
+<img src="https://assafshocher.github.io/IGN/images/IGN_teaser2.jpg" 
+height="140"
+border="0"></a>
+</td>
+<td>
+<a href="https://assafshocher.github.io/IGN/">
+<b>Idempotent Generative Network</b></a><br>
+<a href="https://assafshocher.github.io/">Assaf Shocher</a>,
+<a href="https://avdravid.github.io/">Amil Dravid</a>,
+<a href="https://yossigandelsman.github.io/">Yossi 
+Gandelsman</a>,
+<a href="https://research.google/people/inbar-mosseri/">Inbar Mosseri</a>,
+<a href="https://research.google/people/michael-rubinstein/">Michael 
+Rubinstein</a>,
+Alexei A. Efros
+<br>
+in ICLR 2024<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://www.tmonnier.com/DBW/">
+<img 
+src="https://imagine.enpc.fr/~aubrym/img/thumbnail-2023-dbw.jpg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.tmonnier.com/DBW/">
+<b>Differentiable Blocks World:
+Qualitative 3D Decomposition by Rendering Primitives</b></a>
+<br>
+<a href="http://imagine.enpc.fr/~monniert/">Tom Monnier</a>,
+<a href="https://github.com/jake-austin">Jake Austin</a>,
+<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
+Alexei A. Efros,
+<a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>
+<br>
+in NeurIPS 2023<br>
+<a href="https://github.com/monniert/differentiable-blocksworld">Code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://dave.ml/selfguidance/">
+<img src="https://dave.ml/selfguidance/static/512/01/raccoonoriginal.jpg"
+src="https://dave.ml/selfguidance/static/512/01/raccoonup.jpg"
+height="100"
+border="0">
+<img src="https://dave.ml/selfguidance/static/512/01/raccoonup.jpg"
+height="100"
+border="0">
+</a>
+</td>
+<td>
+<a href="https://dave.ml/selfguidance/">
+<b>Diffusion Self-Guidance for Controllable Image Generation</b></a>
+<br>
+<a href="https://dave.ml/">Dave Epstein</a>,
+<a href="https://ajabri.github.io/">Allan Jabri</a>,
+<a href="https://poolio.github.io/">Ben Poole</a>,
+Alexei A. Efros,
+<A href="https://holynski.org/">Aleksander Holynski</a>
+<br>
+in NeurIPS 2023<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://peterwang512.github.io/GenDataAttribution/">
+<img 
+src="http://richzhang.github.io/index_files/datattribution_teaser.jpg" 
+height="80"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://peterwang512.github.io/GenDataAttribution/">
+<b>Evaluating Data Attribution for Text-to-Image Models</b></a>
+<br>
+<a href="https://peterwang512.github.io/">
+Sheng-Yu Wang</a>,
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>,
+<a href="http://richzhang.github.io/">
+Richard Zhang</a>
+<br>
+in <em>ICCV 2023</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://yossigandelsman.github.io/rosetta_neurons/index.html">
+<img src="https://yossigandelsman.github.io/images/rosetta_neurons.png" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a href="https://yossigandelsman.github.io/rosetta_neurons/index.html">
+<b>Rosetta Neurons: Mining the Common Units in a Model Zoo</b></a>
+<br>
+<a href="https://avdravid.github.io/">Amil Dravid</a>,
+<a href="https://yossigandelsman.github.io/">Yossi 
+Gandelsman</a>,
+Alexei A. Efros,
+<a href="https://assafshocher.github.io/">Assaf Shocher</a>
+<br>
+in ICCV 2023<br>
+<a href="https://github.com/yossigandelsman/rosetta_neurons">Code 
+available on 
+GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://instruct-nerf2nerf.github.io/">
+<video muted="" playsinline="" autoplay="" loop=""
+height="140"
+border="0"
+src="https://holynski.org/images/face_small.mp4">
+</video>
+</td>
+<td>
+<a href="https://instruct-nerf2nerf.github.io/">
+<b>Instruct-NeRF2NeRF: Editing 3D Scenes with Instructions</b></a>
+<br>
+<a href="https://www.ayaanzhaque.me/">Ayaan Haque</a>, 
+<a href="https://www.matthewtancik.com/">Matthew Tancik</a>, 
+Alexei A. Efros, 
+<a href="https://holynski.org/">Aleksander Holynski</a>,
+<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>
+<br>
+in ICCV 2023<br>
+<a href="https://github.com/ayaanzhaque/instruct-nerf2nerf">Code</a> 
+available<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://internet-explorer-ssl.github.io/">
+<img 
+src="img/IE.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://internet-explorer-ssl.github.io/">
+<b>Internet Explorer: Targeted Representation Learning on the Open 
+Web</b></a>
+<br>
+<a href="https://alexanderli.com/">Alex Li</a>,
+<a href="https://ellisbrown.github.io/">Ellis Brown</a>,
+Alexei A. Efros,
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>
+<br>
+in ICML 2023<br>
+Code and models are <a 
+href="https://github.com/internet-explorer-ssl/internet-explorer">available</a>.
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://www.timothybrooks.com/instruct-pix2pix">
+<img src="https://instruct-pix2pix.timothybrooks.com/teaser.jpg" 
+height="170"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.timothybrooks.com/instruct-pix2pix">
+<b>InstructPix2Pix: Learning to Follow Image Editing Instructions</b></a>
+<br>
+<a href="https://www.timothybrooks.com/about/">Tim Brooks</a>,
+<a href="https://holynski.org/">Aleksander Holynski</a>,
+Alexei A. Efros
+<br>
+in CVPR 2023<br>
+<a href="https://github.com/timothybrooks/instruct-pix2pix">Code</a> and 
+<a 
+href="https://huggingface.co/spaces/timbrooks/instruct-pix2pix">demo</a> 
+available</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://sumith1896.github.io/affordance-insertion/">
+<img 
+src="https://sumith1896.github.io/affordance-insertion/static/images/collage_person_00129.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://sumith1896.github.io/affordance-insertion/">
+<b>Putting People in Their Place:
+Affordance-Aware Human Insertion into Scenes</b></a>
+<br>
+<a href="https://cs.stanford.edu/~sumith/">Sumith Kulal</a>,
+<a href="https://www.timothybrooks.com/about/">Tim Brooks</a>,
+<a href="http://theory.stanford.edu/~aiken/">Alex Aiken</a>,
+<a href="https://jiajunwu.com/">Jiajun Wu</a>,
+<a href="https://jimeiyang.github.io/">Jimei Yang</a>,
+<a href="https://research.adobe.com/person/jingwan-lu/">Jingwan Lu</a>,
+Alexei A. Efros,
+<a href="http://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh</a>
+<br>
+in CVPR 2023<br>
+Code available on <a 
+href="https://github.com/adobe-research/affordance-insertion">GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://georgecazenavette.github.io/glad/">
+<img 
+src="https://georgecazenavette.github.io/glad/static/resources/2x5/dc/gan/cats.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://georgecazenavette.github.io/glad/">
+<b>GLaD: Generalizing Dataset Distillation
+via Deep Generative Prior</b></a>
+<br>
+<a href="https://georgecazenavette.github.io/">George Cazenavette</a>,
+<a href="https://ssnl.github.io/">Tongzhou Wang</a>,
+<a href="https://web.mit.edu/torralba/www/">Antonio Torralba</a>, 
+Alexei A. Efros,
+<a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>
+<br>
+in CVPR 2023<br>
+Code available on <a 
+href="https://github.com/georgecazenavette/glad">GitHub</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://yossigandelsman.github.io/visual_prompt/index.html">
+<img src="https://www.amirbar.net/images/vp_before.png" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a href="https://yossigandelsman.github.io/visual_prompt/index.html">
+<b>Visual Prompting via Image Inpainting</b></a>
+<br>
+<a href="https://www.amirbar.net/">Amir Bar</a>,
+<a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>,
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+<a href="https://cs3801.wixsite.com/amirgloberson">Amir Globerson</a>,
+Alexei A. Efros
+<br>
+in NeurIPS 2022<br>
+<a href="https://github.com/amirbar/visual_prompting">Code available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://yossigandelsman.github.io/ttt_mae/index.html">
+<img src="https://yossigandelsman.github.io/images/ttt_mae.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://yossigandelsman.github.io/ttt_mae/index.html">
+<b>Test-Time Training with Masked Autoencoders</b></a>
+<br>
+<a href="https://yossigandelsman.github.io/">Yossi Gandelsman</a>,
+<a href="https://yueatsprograms.github.io/">Yu Sun</a>,
+<a href="https://xinleic.xyz/">Xinlei Chen</a>,
+Alexei A. Efros
+<br>
+in NeurIPS 2022<br>
+<a href="https://github.com/yossigandelsman/test_time_training_mae">Code 
+available on GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://www.timothybrooks.com/tech/long-video-gan/">
+<img 
+src="https://www.timothybrooks.com/tech/long-video-gan/long-video-gan.gif" 
+height="100"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.timothybrooks.com/tech/long-video-gan/">
+<b>Generating Long Videos of Dynamic Scenes</b></a>
+<br>
+<a href="https://www.timothybrooks.com/tech/">Tim Brooks</a>,
+<a href="https://research.nvidia.com/person/janne-hellsten">Janne 
+Hellsten</a>,
+<a href="https://people.csail.mit.edu/miika/">Miika Aittala</a>, 
+<a href="https://tcwang0509.github.io/">Ting-Chun Wang</a>,
+<a href="https://research.nvidia.com/person/timo-aila">Timo Aila</a>,
+<a href="https://users.aalto.fi/~lehtinj7/">Jaakko Lehtinen</a>, 
+<a href="https://mingyuliu.net/">Ming-Yu Liu</a>,
+Alexei A. Efros,
+<a href="https://research.nvidia.com/person/tero-karras">Tero Karras</a>
+<br>
+in NeurIPS 2022<br>
+<a href="https://github.com/NVlabs/long-video-gan">Code and models 
+available on GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://dave.ml/blobgan/">
+<video muted="" playsinline="" autoplay="" loop="" 
+height="140"
+border="0"
+src="img/blobgan.mp4">
+</video>
+</a>
+</td>
+<td>
+<a href="https://dave.ml/blobgan/">
+<b>BlobGAN: Spatially Disentangled Scene Representations</b></a>
+<br>
+<a href="https://dave.ml/">Dave Epstein</a>,
+<a href="https://taesung.me/">Taesung Park</a>,
+<a href="https://richzhang.github.io/">Richard Zhang</a>,
+<A href="https://research.adobe.com/person/eli-shechtman/">Eli 
+Shechtman</a>,
+Alexei A. Efros
+<br>
+in ECCV 2022<br>
+Watch <a 
+href="https://youtu.be/KpUv82VsU5k">video</a><br>
+<a href="https://github.com/dave-epstein/blobgan">Code available on 
+GitHub</a><br>
+<a 
+href="https://colab.research.google.com/drive/1NnMe6pmsKxaDCWdFcFTDdjIUdZUKmfAL?usp=sharing">CoLab 
+Demo</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://www.timothybrooks.com/tech/hallucinating-scenes/">
+<img src="img/hpcs_thumbnail.jpg" 
+height="100"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.timothybrooks.com/tech/hallucinating-scenes/">
+<b>Hallucinating Pose-Compatible Scenes</b></a>
+<br>
+<a href="https://www.timothybrooks.com/tech/">Tim Brooks</a>,
+Alexei A. Efros
+<br>
+in ECCV 2022<br>
+<a href="https://github.com/timothybrooks/hallucinating-scenes">Code and 
+models available on GitHub</a><br>
+Watch <a 
+href="https://youtu.be/Ijm9FmTFmbg">video</a><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a href="http://imagine.enpc.fr/~monniert/UNICORN/">
+<img 
+src="img/CrossInst.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://imagine.enpc.fr/~monniert/UNICORN/">
+<b>Share With Thy Neighbors: Single-View Reconstruction by 
+Cross-Instance Consistency</b></a>
+<br>
+<a href="http://imagine.enpc.fr/~monniert/">Tom Monnier</a>,
+<a href="https://techmatt.github.io/">Matt Fisher</a>,
+Alexei A. Efros,
+<a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>
+<br>
+in ECCV 2022<br>
+<a href="https://github.com/monniert/unicorn">Code available on 
+GitHub</a><br>
+Watch 
+<a href="https://www.youtube.com/watch?v=26N3CeVvZDs&t=3s&ab_channel=TomMonnier">Video</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://www.cs.cmu.edu/~dpathak/papers/eccv22.pdf">
+<img 
+src="https://www.cs.cmu.edu/~dpathak/images/eccv22.jpg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.cs.cmu.edu/~dpathak/papers/eccv22.pdf">
+<b>Understanding Collapse in Non-Contrastive Siamese 
+Representation Learning</b></a>
+<br>
+<a href="https://alexanderli.com/">Alex Li</a>,
+Alexei A. Efros,
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>
+<br>
+in ECCV 2022<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://neerja.me/bias-gans/">
+<img 
+src="https://neerja.me/bias-gans/teaser.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://neerja.me/bias-gans/">
+<b>Studying Bias in GANs through the Lens of Race</b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~vongani_maluleke/">Vongani 
+Maluleke</a>,
+<a href="https://neerja.me/">Neerja Thakkar</a>,
+<a href="https://www.timothybrooks.com/tech/">Tim Brooks</a>,
+<a href="https://ethanweber.me/">Ethan Weber</a>,
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
+<a href="https://www.devinguillory.com/">Devin Guillory</a>
+<br>
+in ECCV 2022<br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://georgecazenavette.github.io/mtt-distillation/">
+<img 
+src="img/DD22.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://georgecazenavette.github.io/mtt-distillation/">
+<b>Dataset Distillation by Matching Training Trajectories</b></a>
+<br>
+<a href="https://georgecazenavette.github.io/">George Cazenavette</a>,
+<a href="https://ssnl.github.io/">Tongzhou Wang</a>,
+<a href="https://web.mit.edu/torralba/www/">Antonio Torralba</a>, 
+Alexei A. Efros,
+<a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>
+<br>
+in CVPR'22<br>
+<a href="https://github.com/GeorgeCazenavette/mtt-distillation">Code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://www.wpeebles.com/gangealing">
+<img 
+src="http://richzhang.github.io/index_files/cats_cube_3.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="https://www.wpeebles.com/gangealing">
+<b>GAN-Supervised Dense Visual Alignment</b></a>
+<br>
+<a href="https://www.wpeebles.com/">William Peebles</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://richzhang.github.io/">Richard Zhang</a>,
+<a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio 
+Torralba</a>
+Alexei A. Efros,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+Shechtman</a>
+<br>
+in CVPR'22<br>
+Watch <a 
+href="https://www.youtube.com/watch?v=Qa1ASS_NuzE&ab_channel=BillPeebles">video</a><br>
+<a 
+href="https://github.com/wpeebles/gangealing">code 
+available on 
+GitHub</a><br>
+mixed reality <a 
+href="https://colab.research.google.com/drive/1JkUjhTjR8MyLxwarJjqnh836BICfocTu?usp=sharing">demo</a>
+<br>
+</td>
+
+
+<tr> 
+<td width="35%"> 
+<a href="https://jasonbian97.github.io/flowwalk/"> 
+<img src="https://andrewowens.com/ims/flowwalk.png" height="110" 
+border="0"></a> 
+</td> 
+<td> 
+<a href="https://jasonbian97.github.io/flowwalk/"> 
+<b>Learning Pixel Trajectories with Multiscale Contrastive Random 
+Walks</b></a> 
+<br> 
+Zhangxing Bian,
+<a href="https://ajabri.github.io/">Allan Jabri</a>, 
+Alexei A. Efros, 
+<a href="http://andrewowens.com/">Andrew Owens</a> 
+<br> 
+in CVPR'22<br> 
+<a href="https://github.com/jasonbian97/flowwalk">Code available on 
+GitHub</a><br> 
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://people.csail.mit.edu/smirnov/marionette/">
+<img src="img/marionette.png" 
+height="140"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://people.csail.mit.edu/smirnov/marionette/">
+<b>MarioNette: Self-Supervised Sprite Learning</b></a>
+<br>
+<a href="https://people.csail.mit.edu/smirnov/">
+Dmitriy Smirnov</a>,
+<a href="http://mgharbi.com/">
+ Michael Gharbi</a>,
+<a href="https://techmatt.github.io/">
+Matt Fisher</a>,
+<a href="http://vitorguizilini.weebly.com/">
+ Vitor Guizilini</a>,
+Alexei A. Efros,
+<a href="https://people.csail.mit.edu/jsolomon/">
+Justin Solomon</a>
+<br>
+in <em>NeurIPS 2021</em><br>
+<a href="https://github.com/dmsm/MarioNette">Code 
+avaiable on GitHub</a><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=KMrdh8RQCJk">video</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://zlai0.github.io/VideoAutoencoder/">
+<img src="https://zlai0.github.io/VideoAutoencoder/resources/method.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://zlai0.github.io/VideoAutoencoder/">
+<b>Video Autoencoder: self-supervised disentanglement of static 3D 
+structure and motion</b></a>
+<br>
+<a href="https://zlai0.github.io/">
+Zihang Lai</a>,
+<a href="https://www.sifeiliu.net/">
+Sifei Liu</a>,
+Alexei A. Efros,
+<a href="https://xiaolonw.github.io/">
+Xiaolong Wang</a>
+<br>
+in <em>ICCV 2021</em><br>
+<a href="https://github.com/zlai0/VideoAutoencoder/">Code 
+avaiable on GitHub</a><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=SIg_8URon14">video</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://utkarshojha.github.io/few-shot-gan-adaptation/">
+<img src="img/gan2gan.gif" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://utkarshojha.github.io/few-shot-gan-adaptation/">
+<b>Few-shot Image Generation via Cross-domain Correspondence</b></a>
+<br>
+<a href="https://utkarshojha.github.io/">
+Utkarsh Ojha</a>,
+<a href="https://yijunmaverick.github.io/">
+Yijun Li</a>,
+<a href="https://research.adobe.com/person/jingwan-lu/">
+Jingwan Lu</a>,
+Alexei A. Efros,
+<a href="https://web.cs.ucdavis.edu/~yjlee/">
+Yong Jae Lee</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+Shechtman</a>,
+<a href="http://richzhang.github.io/">Richard Zhang</a>
+<br>
+in <em>CVPR 2021</em><br>
+<a href="https://github.com/utkarshojha/few-shot-gan-adaptation">Code 
+avaiable on GitHub</a><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=GCDm8hOlpHs&ab_channel=UtkarshOjha">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://sjtuzq.github.io/cycle_dynamics.html">
+<img src="img/dyncycle.gif" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://sjtuzq.github.io/cycle_dynamics.html">
+<b>Learning Cross-Domain Correspondence for Control with Dynamics 
+Cycle-Consistency</b></a>
+<br>
+<a href="https://sjtuzq.github.io/">Qiang Zhang</a>,
+<a href="https://tetexiao.com/">Tete Xiao</a>,
+Alexei A. Efros,
+<a href="https://www.lerrelpinto.com/#">Lerrel Pinto</a>, 
+<a href="https://xiaolonw.github.io/index.html">Xiaolong Wang</a>
+<br>
+in ICLR 2021<br>
+<a href="https://github.com/sjtuzq/Cycle_Dynamics">Code available on 
+GitHub</a><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=CZAsUM96oVg">video</a><br>
+
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://nicklashansen.github.io/PAD/">
+<img src="img/pad-thumbnail.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://nicklashansen.github.io/PAD/">
+<b>Self-Supervised Policy Adaptation
+during Deployment</b></a>
+<br>
+<a href="https://nicklashansen.github.io/">Nicklas Hansen</a>,
+<a href="https://jangirrishabh.github.io/">Rishabh Jangir</a>,
+<a href="https://yueatsprograms.github.io/">Yu Sun</a>, 
+<a href="http://www.iri.upc.edu/people/galenya/">Guillem AlenyÃ </a>,
+<a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, 
+Alexei A. Efros,
+<a href="https://www.lerrelpinto.com/#">Lerrel Pinto</a>, 
+<a href="https://xiaolonw.github.io/index.html">Xiaolong Wang</a>
+<br>
+in ICLR 2021<br>
+<a 
+href="https://github.com/nicklashansen/policy-adaptation-during-deployment">
+Code aviable on GitHub</a><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=a9DwLg0nRUQ&t=8s">video</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://arxiv.org/abs/2008.05659">
+<img src="img/tete_iclr21.jpg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://arxiv.org/abs/2008.05659">
+<b>What Should Not Be Contrastive in Contrastive Learning</b></a>
+<br>
+<a href="https://tetexiao.com/">Tete Xiao</a>,
+<a href="https://xiaolonw.github.io/index.html">Xiaolong Wang</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>
+<br>
+in ICLR 2021<br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=RajmUQKLG2U">video</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://ajabri.github.io/videowalk/">
+<img src="https://ajabri.github.io/images/teaser_animation.gif" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://ajabri.github.io/videowalk/">
+<b>Space-Time Correspondence as a Contrastive Random Walk</b></a>
+<br>
+<a href="https://ajabri.github.io/">Allan Jabri</a>,
+<a href="http://andrewowens.com/">Andrew Owens</a>,
+Alexei A. Efros
+<br>
+in Neural Information Processing Systems 2020<br>
+<a href="https://github.com/ajabri/videowalk">Code available on 
+GitHub</a><br>
+Watch 12 min <a 
+href="https://www.youtube.com/watch?v=UaOcjxrPaho&feature=emb_title&ab_channel=ajabri">video</a><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://taesung.me/SwappingAutoencoder/"">
+<img 
+src="https://taesung.me/SwappingAutoencoder/index_files/tree_smaller.gif" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://taesung.me/SwappingAutoencoder/">
+<b>Swapping Autoencoder for Deep Image Manipulation</b></a>
+<br>
+<a href="https://taesung.me/">Taesung Park</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>,
+<a href="https://research.adobe.com/person/jingwan-lu/">
+Jingwan (Cynthia) Lu</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+Shechtman</a>,
+Alexei A. Efros,
+<a href="https://richzhang.github.io/">
+Richard Zhang</a>
+<br>
+in Neural Information Processing Systems 2020<br>
+Watch 3 min <a 
+href="https://www.youtube.com/watch?v=0elW11wRNpg&feature=emb_title&ab_channel=parktaesung89">video</a><br>
+<a 
+href="https://github.com/taesungp/swapping-autoencoder-pytorch">code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://factorize-a-city.github.io/">
+<img 
+src="img/paris_rot_web.gif" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://factorize-a-city.github.io/">
+<b>Learning to Factorize and Relight a City</b></a>
+<br>
+<a href="https://andrewhliu.github.io/">Andrew Liu</a>,
+<a href="https://people.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a>,
+<a href="https://people.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>,
+Alexei A. Efros,
+<a href="http://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+<br>
+in ECCV 2020<br>
+<a 
+href="https://github.com/google-research/google-research/tree/master/factorize_a_city">Code 
+available on GitHub</a><br>
+Watch 90 sec <a 
+href="https://youtu.be/-0_gmw_oxvA">video</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://taesung.me/ContrastiveUnpairedTranslation/">
+<img 
+src="img/eccv2020_cut.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://taesung.me/ContrastiveUnpairedTranslation/">
+<b>Contrastive Learning for Unpaired Image-to-Image Translation</b></a>
+<br>
+<a href="https://taesung.me/">Taesung Park</a>,
+Alexei A. Efros,
+<a href="https://richzhang.github.io/">
+Richard Zhang</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>
+<br>
+in ECCV 2020<br>
+Watch 1 min <a 
+href="https://youtu.be/Llg0vE_MVgk">video</a><br>
+<a 
+href="https://github.com/taesungp/contrastive-unpaired-translation">code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://imagine.enpc.fr/~shenx/RANSAC-Flow/">
+<img src="img/medici_small.gif" 
+height="140"
+border="0">
+<img src="img/RANSACflow_small.gif" 
+height="140"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://imagine.enpc.fr/~shenx/RANSAC-Flow/">
+<b>RANSAC-Flow: generic two-stage image alignment</b></a>
+<br>
+<a href="https://xishen0220.github.io/">Xi Shen</a>,
+<a 
+href="https://imagine-lab.enpc.fr/staff-members/francois-darmon/">Fran&ccedil;ois 
+Darmon</a>,
+Alexei A. Efros,
+<a href="http://imagine.enpc.fr/~aubrym/">
+Mathieu Aubry</a>
+<br>
+in ECCV 2020<br>
+Watch 90 sec <a href="https://youtu.be/FXqCZlmipdM">video</a><br>
+Results <a 
+href="https://www.youtube.com/watch?v=ltZpqRtuA6A&feature=emb_title">video</a><br>
+<a href="https://github.com/XiSHEN0220/RANSAC-Flow">
+Code available on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://www.wpeebles.com/hessian-penalty.html">
+<img 
+src="img/hessian.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://www.wpeebles.com/hessian-penalty.html">
+<b>The Hessian Penalty: a Weak Prior for Unsupervised 
+Disentanglement</b></a>
+<br>
+<a href="https://www.wpeebles.com/">William Peebles</a>,
+<a href="http://johnpeebles.com/">John Peebles</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+Alexei A. Efros,
+<a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio 
+Torralba</a>
+<br>
+in ECCV 2020<br>
+Watch 90 sec <a 
+href="https://www.youtube.com/watch?v=jPl-0EN6S1w&feature=emb_title">video</a><br>
+<a 
+href="https://github.com/wpeebles/hessian_penalty">code 
+available on 
+GitHub</a><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://yueatsprograms.github.io/ttt/home.html">
+<img src="https://xiaolonw.github.io/static/pub-pic/ttt.jpg" 
+height="70"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://yueatsprograms.github.io/ttt/home.html">
+<b>Test-Time Training with Self-Supervision for Generalization 
+under Distribution Shifts</b></a>
+<br>
+<a href="https://yueatsprograms.github.io/">
+Yu Sun,
+<a href="https://xiaolonw.github.io/">Xiaolong Wang</a>,
+<a href="https://liuzhuang13.github.io/">Zhuang Liu</a>,
+<a href="https://people.eecs.berkeley.edu/~miller_john/">John Miller</a>,
+Alexei A. Efros,
+<a href="https://mrtz.org/">Moritz Hardt</a>
+<br>
+in <em>ICML 2020</em><br>
+Video of <a 
+href="https://www.youtube.com/watch?v=NbuWxmMco30">ICML talk</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://peterwang512.github.io/CNNDetection/">
+<img 
+src="https://richzhang.github.io/index_files/cnndetect_teaser2.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://peterwang512.github.io/CNNDetection/">
+<b>CNN-generated images are surprisingly easy to spot... for now</b></a>
+<br>
+<a href="https://peterwang512.github.io/">
+Sheng-Yu Wang,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>,
+<a href="http://richzhang.github.io/">
+Richard Zhang</a>,
+<a href="http://andrewowens.com/">Andrew Owens</a>,
+Alexei A. Efros
+<br>
+in <em>CVPR 2020</em><br>
+Video of <a 
+href="https://www.youtube.com/watch?v=98bCHTkp5sE&feature=emb_title">
+CVPR talk</a><br>
+<a href="https://github.com/PeterWang512/CNNDetection">
+Code avaiable on GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://pathak22.github.io/modular-assemblies/">
+<img 
+src="https://www.cs.cmu.edu/~dpathak//images/assemblies19.gif" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://pathak22.github.io/modular-assemblies/">
+<b>Learning to Control Self-Assembling Morphologies:
+A Study of Generalization via Modularity</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>,
+<a href="https://chris-lu.weebly.com/">Chris Lu</a>,
+<a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, 
+<a href="http://web.mit.edu/phillipi/">Phillip 
+Isola</a>,
+Alexei A. Efros
+<br>
+in NIPS'19<br>
+Winner of <a href="https://virtualcreatures.github.io/">Virtual Creatures 
+Competition</a> at GECCO 2019.<br> 
+Watch the <a 
+href="https://www.youtube.com/watch?v=cg-RdkPtRiQ">video</a><br>
+<a href="https://github.com/pathak22/modular-assemblies/">
+Code available on GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://peterwang512.github.io/FALdetector/">
+<img 
+src="http://richzhang.github.io/index_files/falteaser.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://peterwang512.github.io/FALdetector/">
+<b>Detecting Photoshopped Faces by Scripting Photoshop</b></a>
+<br>
+<a href="https://peterwang512.github.io/">
+Sheng-Yu Wang,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>,
+<a href="http://andrewowens.com/">Andrew Owens</a>,
+<a href="http://richzhang.github.io/">
+Richard Zhang</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV'19</em><br>
+Watch the 
+<a href="https://www.youtube.com/watch?v=TUootD36Xm0">video</a><br>
+<a href="https://github.com/peterwang512/FALdetector">
+Code avaiable on GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://arnabgho.github.io/iSketchNFill/">
+<img 
+src="http://richzhang.github.io/index_files/isketchnfill_teaser2.gif" 
+height="140"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://arnabgho.github.io/iSketchNFill/">
+<b>Interactive Sketch & Fill: Multiclass Sketch-to-Image 
+Translation</b></a>
+<br>
+<a href="https://arnabgho.github.io/">
+Arnab Ghosh,
+<a href="http://richzhang.github.io/">Richard Zhang</a>,
+<a href="https://puneetkdokania.github.io/">Puneet Dokaria</a>,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>,
+Alexei A. Efros,
+<a href="http://www.robots.ox.ac.uk/~phst/">Phillip Torr</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+Shechtman</a>
+<br>
+in <em>ICCV'19</em><br>
+Watch the 
+<a href="https://www.youtube.com/watch?v=T9xtpAMUDps">video</a><br>
+<a href="https://github.com/arnabgho/iSketchNFill">
+Code avaiable on GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://carolineec.github.io/everybody_dance_now/">
+<img 
+src="https://laughingsquid.com/wp-content/uploads/2018/08/Everybody-Dance-Now.gif" 
+height="145"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://carolineec.github.io/everybody_dance_now/">
+<b>Everybody Dance Now</b></a>
+<br>
+<a href="https://people.csail.mit.edu/cmchan/">Caroline Chan</a>, 
+<a href="http://www.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a>, 
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+Alexei A. Efros
+<br>
+in ICCV'19<br>
+Watch the <a 
+href="https://www.youtube.com/watch?time_continue=1&v=PCBTZh41Ris">video</a><br>
+<img src="img/new.gif">
+<a href="https://github.com/carolineec/EverybodyDanceNow">
+Code avaiable on GitHub</a><br>
+<img src="img/new.gif">
+Check out the new <a href="http://GetSway.app">Sway: Magic Dance</a> 
+iphone app!
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://repo-sam.inria.fr/fungraph/deep-relighting/">
+<img 
+src="img/siggraph19_small.jpg" 
+height="130"
+border="0">
+</td>
+<td>
+<a 
+href="https://repo-sam.inria.fr/fungraph/deep-relighting/">
+<b>Multi-view Relighting Using a
+Geometry-Aware Network</b></a>
+<br>
+<a href="https://www-sop.inria.fr/members/Julien.Philip/">Julien 
+Philip</a>,
+<a href="https://research.adobe.com/person/michael-gharbi/">Michael 
+Gharbi</a>,
+<a href="https://people.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+Alexei A. Efros and
+<a href="http://www-sop.inria.fr/members/George.Drettakis/">George 
+Drettakis</a> 
+<br>
+in <em>SIGGRAPH 2019</em><br>
+Watch project <a 
+href="https://www.youtube.com/watch?v=C_V8UpZYAQU">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://ajabri.github.io/timecycle/">
+<img src="img/cycle_time.jpg" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://ajabri.github.io/timecycle/">
+<b>Learning Correspondence from the Cycle-Consistency of Time</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~xiaolonw/">Xiaolong Wang</a>,
+<a href="https://ajabri.github.io/">Allan Jabri</a>,
+Alexei A. Efros
+<br>
+in CVPR 2019<br>
+Watch <a 
+href="https://www.youtube.com/watch?time_continue=4&v=yLUCTX7bZVI">project 
+video</a><br>
+<a href="https://github.com/xiaolonw/TimeCycle">Code available on GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://imagine.enpc.fr/~shenx/ArtMiner/">
+<img src="img/thumbnail-2019-artminer.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://imagine.enpc.fr/~shenx/ArtMiner/">
+<b>Discovering Visual Patterns in Art Collections with 
+Spatially-consistent Feature Learning</b></a>
+<br>
+<a href="https://xishen0220.github.io/">Xi Shen</a>,
+Alexei A. Efros,
+<a href="http://imagine.enpc.fr/~aubrym/">
+Mathieu Aubry</a>
+<br>
+in CVPR 2019<br>
+<a href="https://github.com/XiSHEN0220/ArtMiner">
+Code available on GitHub</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://pathak22.github.io/large-scale-curiosity/">
+<img 
+src="https://www.cs.cmu.edu/~dpathak/images/icmlw18.jpg" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://pathak22.github.io/large-scale-curiosity/">
+<b>Large-Scale Study of Curiosity-Driven Learning</b></a>
+<br>
+<a href="https://sites.google.com/site/yburda/">Yuri Burda</a>,
+<a href="https://github.com/harri-edwards/">Harri Edwards</a>,
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>,
+<a href="http://homepages.inf.ed.ac.uk/amos/">Amos Storkey</a>, 
+<a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, 
+Alexei A. Efros
+<br>
+in <em>ICLR'19</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=l1FqtAHfJLI&feature=youtu.be">video</a><br>
+<a href="https://github.com/openai/large-scale-curiosity">Code avaiable on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://sites.google.com/view/predictingthepredictablesupp/home">
+<img 
+src="img/bottle.png" 
+height="100"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://sites.google.com/view/predictingthepredictablesupp/home">
+<b>Time-Agnostic Prediction:
+Predicting Predictable Video Frames</b></a>
+<br> 
+<a href="https://people.eecs.berkeley.edu/~dineshjayaraman/">Dinesh 
+Jayaraman</a>, 
+<a href="https://febert.github.io/">Frederik Ebert</a>, 
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> 
+<br>
+in <em>ICLR'19</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://ssnl.github.io/dataset_distillation/">
+<img 
+src="https://www.cs.cmu.edu/~junyanz/imgs/distillation.jpg" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://ssnl.github.io/dataset_distillation/">
+<b>Dataset Distillation</b></a>
+<br>
+<a href="https://ssnl.github.io/">Tongzhou Wang</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a>,
+<a href="https://web.mit.edu/torralba/www/">Antonio Torralba</a>, 
+Alexei A. Efros
+<br>
+<em>unpublished (arXiv, 2018)</em><br>
+<a href="https://github.com/SsnL/dataset-distillation">Code available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://minyoungg.github.io/selfconsistency/">
+<img 
+src="http://andrewhliu.github.io/img/forensics.png" 
+height="180"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://minyoungg.github.io/selfconsistency/">
+<b>Fighting Fake News: Image Splice Detection via Learned 
+Self-Consistency</b></a>
+<br>
+<a href="http://minyounghuh.com/">Minyoung Huh</a>,
+<a href="http://andrewhliu.github.io/">Andrew Liu</a>,
+<a href="http://andrewowens.com/">Andrew Owens</a>, 
+Alexei A. Efros
+<br>
+in <em>ECCV'18</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=lmOejdhSio0">video</a><br>
+<a href="https://github.com/minyoungg/selfconsistency">Code available on 
+GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://andrewowens.com/multisensory/">
+<img 
+src="http://andrewowens.com/multisensory/fig/multisensory-icon.jpg" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://andrewowens.com/multisensory/">
+<b>Audio-Visual Scene Analysis with Self-Supervised Multisensory 
+Features</b></a>
+<br>
+<a href="http://andrewowens.com/">Andrew Owens</a>, 
+Alexei A. Efros
+<br>
+in <em>ECCV'18</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=rwCIRu_hAJ8">video</a><br>
+<a href="https://github.com/andrewowens/multisensory">Code available on 
+GitHub</a><br>
+</td>
+
+<tr>
+<td width="35%">
+</td>
+<td>
+<a 
+href="http://www1.icsi.berkeley.edu/~stellayu/publication/doc/2018ncaECCV.pdf">
+<b>Improving Generalization via Scalable Neighborhood Component 
+Analysis</b></a>
+<br>
+<a 
+href="https://www.microsoft.com/en-us/research/people/wuzhiron/">Zhirong 
+Wu</a>, 
+Alexei A. Efros,
+<a href="http://www1.icsi.berkeley.edu/~stellayu/">Stella Yu</a>
+<br>
+in <em>ECCV'18</em><br>
+<a href="https://github.com/Microsoft/snca.pytorch">Code available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://akanazawa.github.io/cmr/">
+<img 
+src="https://people.eecs.berkeley.edu/~shubhtuls/figures/arxiv18cmr.png" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://akanazawa.github.io/cmr/">
+<b>Learning Category-Specific Mesh Reconstruction 
+from Image Collections</b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>ECCV'18</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=cYHQKtBLI3Q">video</a><br>
+<a href="https://github.com/akanazawa/cmr">Code avaiable on GitHub</a><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://rach0012.github.io/humanRL_website/">
+<img 
+src="https://www.cs.cmu.edu/~dpathak/images/iclrw18.png" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://rach0012.github.io/humanRL_website/">
+<b>Investigating Human Priors for Playing Video Games</b></a>
+<br>
+<a href="https://cocosci.berkeley.edu/rachit/">Rachit Dubey</a>,
+<a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>,
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, 
+<a href="https://cocosci.berkeley.edu/tom/tom.php">
+Tom Griffiths</a>,
+Alexei A. Efros
+<br>
+in <em>ICML'18</em><br>
+Watch <a href="https://www.youtube.com/watch?time_continue=161&v=Ol0-c9OE3VQ&feature=emb_title">Arxiv 
+Insights episode</a> covering our paper<br>
+Get in touch with your inner RL agent: play our <a 
+href="https://high-level-4.herokuapp.com/experiment">super-hard 
+platformer game</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://richzhang.github.io/PerceptualSimilarity/">
+<img 
+src="http://richzhang.github.io/index_files/perceptual_teaser.jpg" 
+height="90"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://richzhang.github.io/PerceptualSimilarity/">
+<b>The Unreasonable Effectiveness of Deep Features as a Perceptual
+Metric</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~rich.zhang/">
+Richard Zhang</a>,
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+Alexei A. Efros,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+ Shechtman</a>,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>
+<br>
+in <em>CVPR'18</em><br>
+<a href="https://github.com/richzhang/PerceptualSimilarity">code available 
+on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://shubhtuls.github.io/mvcSnP/">
+<img 
+src="https://people.eecs.berkeley.edu/~shubhtuls/figures/arxiv18mvc.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://shubhtuls.github.io/mvcSnP/">
+<b>Multi-view Consistency as Supervisory Signal for Learning Shape 
+and Pose Prediction </b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>CVPR'18</em><br>
+<a href="https://github.com/shubhtuls/mvcSnP">code available 
+on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://cs.nyu.edu/~fouhey/2017/VLOG/index.html">
+<img 
+src="https://cs.nyu.edu/~fouhey/2017/VLOG/teaser.jpg" 
+height="90"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://cs.nyu.edu/~fouhey/2017/VLOG/index.html">
+<b>From Lifestyle VLOGs to Everyday Interactions </b></a>
+<br>
+<a href="https://cs.nyu.edu/~fouhey/">David Fouhey</a>,
+<a href="https://people.eecs.berkeley.edu/~wckuo/">Weicheng Kuo</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>CVPR'18</em><br>
+<a 
+href="https://cs.nyu.edu/~fouhey/2017/VLOG/index.html">dataset 
+available 
+on online</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://shubhtuls.github.io/factored3d/">
+<img 
+src="https://shubhtuls.github.io/factored3d/resources/images/teaser.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://shubhtuls.github.io/factored3d/">
+<b>Factoring Shape, Pose, and Layout 
+from the 2D Image of a 3D Scene </b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+<a href="https://people.eecs.berkeley.edu/~sgupta/">Saurabh Gupta</a>,
+<a href="https://cs.nyu.edu/~fouhey/">David Fouhey</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>CVPR'18</em><br>
+<a href="https://github.com/shubhtuls/factored3d">code available 
+on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://pathak22.github.io/zeroshot-imitation/">
+<img 
+src="https://www.cs.cmu.edu/~dpathak/images/iclr18_2.gif" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://pathak22.github.io/zeroshot-imitation/">
+<b>Zero-Shot Visual Imitation</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, 
+<a href="https://people.eecs.berkeley.edu/~parsa.m/">Parsa Mahmoudieh</a>,
+<a href="https://www.linkedin.com/in/unavailable/">Guanghao Luo,
+<a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>,
+<a href="https://dianchen96.github.io/">Dian Chen</a>,
+<a href="https://fredshentu.github.io/">Yide Shentu</a>,
+<a href="http://imaginarynumber.net/">Evan Shelhamer</a>, 
+<a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+Alexei A. Efros,
+<a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>
+<br>
+in <em>ICLR'18</em><br>
+<a href="https://github.com/pathak22/zeroshot-imitation">code 
+available on 
+GitHub</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://ns.inria.fr/d3/3DSketching/">
+<img src="http://web.mit.edu/phillipi/www/images/3DSketch.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://ns.inria.fr/d3/3DSketching/">
+<b>3D Sketching using Multi-View 
+Deep Volumetric Prediction</b></a>
+<br>
+Johanna Delanoy, 
+<a href="http://imagine.enpc.fr/~aubrym/">
+Mathieu Aubry</a>, 
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+Alexei A. Efros,
+<a href="http://www-sop.inria.fr/members/Adrien.Bousseau/">
+Adrien Bousseau</a> 
+<br>
+in I3D 2018<br>
+Watch
+<a 
+href="https://www.youtube.com/watch?v=DGIYzmlm2pQ&feature=youtu.be">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://junyanz.github.io/BicycleGAN/">
+<img 
+src="img/BicycleGAN.gif" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://junyanz.github.io/BicycleGAN/">
+<b>Toward Multimodal Image-to-Image Translation</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.eecs.berkeley.edu/~rich.zhang/">
+Richard Zhang</a>,
+<a href="https://www.cs.cmu.edu/~dpathak/">
+Deepak Pathak</a>,
+<a href="http://www.eecs.berkeley.edu/~trevor/">
+Trevor Darrell</a>,
+Alexei A. Efros,
+<a href="http://www.oliverwang.info/">Oliver Wang</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+ Shechtman</a>
+<br>
+in <em>NIPS'17</em><br>
+<a href="https://github.com/junyanz/BicycleGAN">code available on 
+GitHub</a><br>
+Watch <a href="https://www.youtube.com/watch?v=JvGysD2EFhw">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://junyanz.github.io/CycleGAN/">
+<img 
+src="img/cycleGAN.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://junyanz.github.io/CycleGAN/">
+<b>Unpaired Image-to-Image Translation using Cycle-Consistent 
+Adversarial Networks</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="https://taesung.me/">Taesung Park</a>,
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+Alexei A. Efros
+<br>
+in ICCV'17<br>
+<a href="https://github.com/junyanz/CycleGAN">code available on 
+GitHub</a><br>
+Watch ICCV <a href="https://www.youtube.com/watch?v=AxrKVfjSBiA">spotlight 
+talk</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://pathak22.github.io/noreward-rl/">
+<img 
+src="https://pathak22.github.io/noreward-rl/resources/overview_small.jpg" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://pathak22.github.io/noreward-rl/">
+<b>Curiosity-driven Exploration by Self-supervised Prediction</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, 
+<a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>,
+Alexei A. Efros,
+<a href="http://www.eecs.berkeley.edu/~trevor/">
+Trevor Darrell</a>
+<br>
+in <em>ICML'17</em><br>
+<a href="https://github.com/pathak22/noreward-rl">code 
+available on 
+GitHub</a><br>
+Watch <a href="https://www.youtube.com/watch?v=J3FHOyhUn3A">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://richzhang.github.io/InteractiveColorization/">
+<img 
+src="http://richzhang.github.io/index_files/siggraph2017.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://richzhang.github.io/InteractiveColorization/">
+<b>Real-Time User-Guided Image Colorization with Learned Deep 
+Priors</b></a>
+<br>
+<a href="https://richzhang.github.io/">Richard Zhang</a>, 
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+<a href="http://young-geng.xyz/">Xinyang Geng</a>, 
+Angela S. Lin, Tianhe Yu,
+Alexei A. Efros
+<br>
+in <em>SIGGRAPH'17</em><br>
+<a href="https://github.com/junyanz/interactive-deep-colorization">code 
+available on 
+GitHub</a><br>
+Watch <a href="https://www.youtube.com/watch?v=eL5ilZgM89Q">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://cseweb.ucsd.edu/~viscomp/projects/LF/papers/SIG17/lfv/">
+<img 
+src="https://cseweb.ucsd.edu//~viscomp/projects/LF/papers/SIG17/lfv/teaser.jpg" 
+height="140"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://cseweb.ucsd.edu/~viscomp/projects/LF/papers/SIG17/lfv/">
+<b>Light Field Video Capture Using a Learning-Based Hybrid Imaging 
+System</b></a>
+<br>
+<a 
+href="https://tcwang0509.github.io/">Ting-Chun 
+Wang</a>, 
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://nkhademi.com/">Nima Khademi Kalantari</a>,	
+Alexei A. Efros,
+<a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+<br>
+in <em>SIGGRAPH'17</em><br>
+<a href="https://github.com/junyanz/light-field-video">code 
+available on 
+GitHub</a><br>
+Watch <a href="https://www.youtube.com/watch?v=TqVKcssYfAo">video</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://phillipi.github.io/pix2pix/">
+<img 
+src="img/pix2pix_teaser.jpg" 
+height="145"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://phillipi.github.io/pix2pix/">
+<b>Image-to-Image Translation with Conditional Adversarial Nets</b></a>
+<br>
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+Alexei A. Efros
+<br>
+in <em>CVPR'17</em><br>
+<a href="https://github.com/phillipi/pix2pix">code available on 
+GitHub</a><br>
+Check out some neat/crazy uses of our software on twitter: 
+<a 
+href="https://twitter.com/search?vertical=default&q=pix2pix&src=typd">#pix2pix</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://richzhang.github.io/splitbrainauto/">
+<img 
+src="https://richzhang.github.io/index_files/cvpr2017_splitbrain.png" 
+height="100"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://richzhang.github.io/splitbrainauto/">
+<b>Split-Brain Autoencoders:
+Unsupervised Learning by Cross-Channel Prediction</b></a>
+<br>
+<a href="https://richzhang.github.io/">Richard Zhang</a>, 
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+Alexei A. Efros
+<br>
+in <em>CVPR'17</em><br>
+<a href="https://github.com/richzhang/splitbrainauto">code available on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://shubhtuls.github.io/drc/">
+<img 
+src="https://people.eecs.berkeley.edu/~shubhtuls/figures/cvpr17drc.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://shubhtuls.github.io/drc/">
+<b>Multi-view Supervision for Single-view Reconstruction 
+via Differentiable Ray Consistency</b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+<a href="https://people.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>CVPR'17</em><br>
+<a href="https://github.com/shubhtuls/drc">code available 
+on 
+GitHub</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://shubhtuls.github.io/volumetricPrimitives/">
+<img 
+src="https://people.eecs.berkeley.edu/~shubhtuls/figures/arxiv16abstraction.png" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://shubhtuls.github.io/volumetricPrimitives/">
+<b>Learning Shape Abstractions by Assembling Volumetric Primitives</b></a>
+<br>
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+<a href="http://ai.stanford.edu/~haosu/">Hao Su</a>,
+<a href="http://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,
+Alexei A. Efros,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
+<br>
+in <em>CVPR'17</em><br>
+<a href="https://github.com/shubhtuls/volumetricPrimitives">code available 
+on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://cphoto.uji.es/buildup/">
+<img 
+src="img/buildup1.jpg"
+height="120"
+border="0">
+<img 
+src="img/buildup2.jpg"
+height="120"
+border="0">
+</a>
+</td>
+<td>
+<a 
+href="http://cphoto.uji.es/buildup/">
+<b>BUILDUP: Interactive Creation of Urban Scenes
+from Large Photo Collections</b></a>
+<br>
+<a href="http://www3.uji.es/~ribelles/">Jose Ribelles</a>,
+<a 
+href="http://giga.cps.unizar.es/~diegog/">Diego Gutierrez</a>,
+Alexei A. Efros
+<br>
+<em>Multimedia Tools and Applications, 2017</em><br>
+Watch the <a href="https://youtu.be/DNqQizMZcBY">video</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://people.csail.mit.edu/minhuh/papers/analysis/">
+<img 
+src="http://people.csail.mit.edu/minhuh/thumb/imagenet_thumb.PNG" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://people.csail.mit.edu/minhuh/papers/analysis/">
+<b>What makes ImageNet good for transfer learning?</b></a>
+<br>
+<a href="http://minyounghuh.com/">Jacob Huh</a>, 
+<a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>,
+Alexei A. Efros<br>
+in NIPS Workshop on Large Scale Computer Vision Systems (2016)<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://richzhang.github.io/colorization/">
+<img 
+src="https://richzhang.github.io/index_files/arxiv2016_colorization.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://richzhang.github.io/colorization/">
+<b>Colorful Image Colorization</b></a>
+<br>
+<a href="https://richzhang.github.io/">Richard Zhang</a>, 
+<a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+Alexei A. Efros
+<br>
+in <em>ECCV'16</em><br>
+<a href="https://github.com/richzhang/colorization">code available on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://people.eecs.berkeley.edu/~tinghuiz/papers/eccv16_appflow.pdf">
+<img 
+src="https://people.eecs.berkeley.edu/~tinghuiz/projects/appearanceFlow/car.gif" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://people.eecs.berkeley.edu/~tinghuiz/papers/eccv16_appflow.pdf">
+<b>View Synthesis by Appearance Flow</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+<a href="https://people.eecs.berkeley.edu/~shubhtuls/">Shubham 
+Tulsiani</a>,
+<a href="http://sunweilun.github.io/">Weilun Sun</a>,
+<a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+Alexei A. Efros
+<br>
+in <em>ECCV'16</em><br>
+<a href="https://github.com/tinghuiz/appearance-flow">code available on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://www.cs.cmu.edu/~junyanz/projects/gvm/">
+<img 
+src="img/eccv16_gvm.gif" 
+height="150"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://people.eecs.berkeley.edu/~junyanz/projects/gvm/">
+<b>Generative Visual Manipulation on the Natural Image Manifold</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+ Shechtman</a>,
+Alexei A. Efros
+<br>
+in <em>ECCV'16</em><br>
+<a href="https://github.com/junyanz/iGAN">code available on GitHub</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/learnCycle/">
+<img 
+src="http://www.eecs.berkeley.edu/~tinghuiz/images/cvpr16.png" 
+height="160"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/learnCycle/">
+<b>Learning Dense Correspondence via 3D-guided 
+Cycle Consistency</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+<a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a>,
+<a href="http://imagine.enpc.fr/~aubrym/index.html">
+Mathieu Aubry</a>,
+<a href="http://ttic.uchicago.edu/~huangqx/">
+Qixing Huang</a>,
+Alexei A. Efros
+<br>
+in <em>CVPR'16</em><br>
+code and models available
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://www.cs.cmu.edu/~dpathak/context_encoder/">
+<img 
+src="https://www.cs.cmu.edu/~dpathak/images/cvpr16.jpg" 
+height="220"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://www.cs.cmu.edu/~dpathak/context_encoder/">
+<b>Context Encoders: Feature Learning by Inpainting</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>, 
+<a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a>,
+<a href="http://jeffdonahue.com/">
+Jeff Donahue</a>,
+<a href="http://www.eecs.berkeley.edu/~trevor/">
+Trevor Darrell</a>,
+Alexei A. Efros
+<br>
+in <em>CVPR'16</em><br>
+<a href="https://github.com/pathak22/context-encoder">code available on 
+GitHub</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://cseweb.ucsd.edu/~viscomp/projects/LF/papers/PAMI17/BRDF_TPAMI.pdf"></a>
+</td>
+<td>
+<a 
+href="https://cseweb.ucsd.edu/~viscomp/projects/LF/papers/PAMI17/BRDF_TPAMI.pdf">
+<b>SVBRDF-Invariant Shape and Reflectance Estimation from 
+Light-Field Cameras</b></a>
+<br>
+<a 
+href="https://tcwang0509.github.io/">Ting-Chun 
+Wang</a>, 
+<a href="http://www.nec-labs.com/~manu/"> 
+Manmohan Chandraker</a>,
+Alexei A. Efros,
+<a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+<br>
+in <em>CVPR'16</em><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://krsingh.cs.ucdavis.edu/krishna_files/papers/krishnacam/krishnacam.html">
+<img 
+src="http://krsingh.cs.ucdavis.edu/krishna_files/paper_images/kcam.png" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://krsingh.cs.ucdavis.edu/krishna_files/papers/krishnacam/krishnacam.html">
+<b>KrishnaCam: Using a Longitudinal, Single-Person, Egocentric 
+Dataset for Scene Understanding Tasks</b></a>
+<br>
+<a href="http://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh</a>,
+<a href="http://www.cs.cmu.edu/~kayvonf/">Kayvon Fatahalian</a>,
+Alexei A. Efros
+<br>
+in <em>WACV 2016</em><br>
+Full egocentric dataset now <a 
+href="https://olimar.stanford.edu/hdd/kcam/">available</a>!
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-167.pdf">
+<img 
+src="img/postpostmodern.png" 
+height="60"
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-167.pdf">
+<b>Post-Post-Modern Photography: Capture-Time Perceptual
+Matching For More Faithful Photographs</b></a>
+<br>
+<a href="http://www.rachelabrown.com/">Rachel Albert</a>,
+Alexei A. Efros
+<br>
+<em>UCB Tech Report, 2016</em><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://www.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">
+<img 
+src="http://www.eecs.berkeley.edu/~shiry/projects/yearbooks/images/decade_averages_labelled.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://www.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html">
+<b>A Century of Portraits:
+A Visual Historical Record of American High School Yearbooks</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~shiry/">Shiry Ginosar</a>,
+<a href="http://www.eecs.berkeley.edu/~rakelly/">Kate Rakelly</a>,
+<a href="http://www.sarahmsachs.com/">Sarah Sachs</a>,
+<a href="https://www.linkedin.com/in/brian-yin-b8314386">Brian Yin</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV'15 Extreme Imaging Workshop</em><br>
+See <a 
+href="https://www.washingtonpost.com/news/wonk/wp/2015/12/01/researchers-have-discovered-a-surprising-reason-we-smile-in-photos/">article</a> 
+in the Washington Post<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/deepContext/">
+<img 
+src="img/carl_teaser.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/deepContext/">
+<b>Unsupervised Visual Representation Learning by Context 
+Prediction</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~cdoersch">Carl Doersch</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV'15</em><br>
+<a href="https://github.com/cdoersch/deepcontext">code available on 
+GitHub</a>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/learnReflectance/">
+<img 
+src="http://www.philkr.net/2015/zhou2015learning.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/learnReflectance/">
+<b>Learning Data-driven Reflectance Priors for Intrinsic Image 
+Decomposition</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+<a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV'15</em><br>
+<a href="https://github.com/tinghuiz/learn-reflectance">code available on 
+GitHub</a>
+
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://efrosprojects.eecs.berkeley.edu/realism/index.html">
+<img 
+src="https://www.cs.cmu.edu/~junyanz/projects/realism/images/teaser.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://efrosprojects.eecs.berkeley.edu/realism/index.html">
+<b>Learning a Discriminative Model for the Perception of Realism 
+in Composite Images</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.philkr.net/">Philipp
+Kr&auml;henb&uuml;hl</a>,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+ Shechtman</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV'15</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://cseweb.ucsd.edu/~ravir/lfocclusion.pdf">
+<img src="http://cseweb.ucsd.edu/~ravir/lfocclusion.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://cseweb.ucsd.edu/~ravir/lfocclusion.pdf">
+<b>Occlusion-aware Depth Estimation Using Light-field Cameras</b></a>
+<br>
+<a 
+href="https://tcwang0509.github.io/">Ting-Chun 
+Wang</a>, 
+Alexei A. Efros,
+<a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+<br>
+in <em>ICCV'15</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://www-sop.inria.fr/reves/Basilic/2015/OVBED15/">
+<img 
+src="http://www-sop.inria.fr/reves/Basilic/2015/OVBED15/teaser.jpg" 
+height="170"
+border="0">
+</td>
+<td>
+<a 
+href="http://www-sop.inria.fr/reves/Basilic/2015/OVBED15/">
+<b>Unifying Color and Texture Transfer for Predictive Appearance 
+Manipulation</b></a>
+<br>
+<a href="http://www.am.sanken.osaka-u.ac.jp/~okura/">Fumio Okura</a>, 
+<a 
+href="http://www-sop.inria.fr/members/Kenneth.Vanhoey/pro/">
+Kenneth Vanhoey</a>, 
+<a href="http://www-sop.inria.fr/members/Adrien.Bousseau/">
+Adrien Bousseau</a>,
+Alexei A. Efros and
+<a href="http://www-sop.inria.fr/members/George.Drettakis/">George 
+Drettakis</a> 
+<br>
+in <em>EGSR 2015</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/flowWeb/">
+<img 
+src="http://www.eecs.berkeley.edu/~tinghuiz/images/cvpr15_flow.png" 
+height="170"
+border="0">
+</td>
+<td>
+<a 
+href="http://www.eecs.berkeley.edu/~tinghuiz/projects/flowWeb/">
+<b>FlowWeb: Joint Image Set Alignment by Weaving Consistent, 
+Pixel-wise Correspondences</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>, 
+<a 
+href="http://web.cs.ucdavis.edu/~yjlee/">
+Yong Jae Lee</a>, 
+<a href="http://www1.icsi.berkeley.edu/~stellayu/">
+Stella Yu</a>, and
+Alexei A. Efros 
+<br>
+in <em>CVPR 2015</em><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://vision.soic.indiana.edu/linking-past-to-present/">
+<img 
+src="http://vision.soic.indiana.edu/wp/wp-content/uploads/fig1.jpg" 
+height="140"
+border="0">
+</td>
+<td>
+<a 
+href="http://vision.soic.indiana.edu/linking-past-to-present/">
+<b>Linking past to present: Discovering style in two centuries of 
+architecture</b></a>
+<br>
+<a href="http://homes.soic.indiana.edu/steflee/">Stefan Lee</a>, 
+<a 
+href="https://www.linkedin.com/profile/view?id=2861667&authType=NAME_SEARCH&authToken=KCgC&locale=en_US&srchid=3690916921429942514996&srchindex=1&srchtotal=15&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3690916921429942514996%2CVSRPtargetId%3A2861667%2CVSRPcmpt%3Aprimary%2CVSRPnm%3">
+Nicolas Maisonneuve</a>, 
+<a href="http://www.cs.indiana.edu/~djcran/">
+David Crandall</a>, 
+Alexei A. Efros, and 
+<a href="http://www.di.ens.fr/~josef/">
+Josef Sivic</a>
+<br>
+in <em>International Conference on Computational Photography (ICCP 
+2015)</em><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://www.cs.cmu.edu/~junyanz/projects/mirrormirror/index.html">
+<img 
+src="https://www.cs.cmu.edu/~junyanz/imgs/mirrormirror.jpg" 
+height="120"
+border="0">
+</td>
+<td>
+<a 
+href="https://www.cs.cmu.edu/~junyanz/projects/mirrormirror/index.html">
+<b>Mirror Mirror: Crowdsourcing Better Portraits</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.agarwala.org/">Aseem Agarwala</a>,
+Alexei A. Efros,
+<a href="https://research.adobe.com/person/eli-shechtman/">Eli 
+ Shechtman</a>,
+<a href="http://www.juew.org/">
+Jue Wang</a>
+<br>
+in <em>SIGGRAPH Asia 2014</em><br>
+Watch <a 
+href="https://www.youtube.com/watch?time_continue=4&v=AWjcAbvtm04">video</a>.
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://vis.berkeley.edu/papers/cityforensics/">
+<img 
+src="img/teaser650.jpg" 
+height="110"
+border="0">
+</td>
+<td>
+<a 
+href="http://vis.berkeley.edu/papers/cityforensics/">
+<b>City Forensics: Using Visual Elements to Predict Non-Visual 
+City Attributes</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~sarietta/">
+Sean Arietta</a>,
+Alexei A. Efros,
+<a href="http://vis.berkeley.edu/~maneesh/">Maneesh Agrawala</a>,
+<a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+<br>
+in <em>IEEE Transactions on Visualization and Computer Graphics 
+(TVCG 2014)</em><br>
+<font color="#B22222">
+Best Paper Honorable Mention</font>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/contextPrediction/">
+<img 
+src="img/regionsv2_black.png" 
+height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/contextPrediction/">
+<b>Context as Supervisory Signal: 
+Discovering Objects with Predictable Context</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~cdoersch">Carl Doersch</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+in <em>ECCV 2014</em><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://www.cs.cmu.edu/~junyanz/projects/averageExplorer/">
+<img 
+src="img/santa.jpg" 
+height="120"
+border="0">
+</td>
+<td>
+<a href="https://www.cs.cmu.edu/~junyanz/projects/averageExplorer/">
+<b>AverageExplorer: Interactive Exploration and Alignment of Visual 
+Data Collections</b></a>
+<br>
+<a href="https://www.cs.cmu.edu/~junyanz/">
+Jun-Yan Zhu</a>,
+<a href="http://www.cs.ucdavis.edu/~yjlee/">
+Yong Jae Lee</a>, and
+Alexei A. Efros
+<br>
+in <em>SIGGRAPH 2014</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=1QgL_aPPCpM&feature=youtu.be">video</a><br>
+See <a 
+href="http://www.newyorker.com/tech/elements/out-of-many-one">article</a> 
+in The New Yorker<br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~nkholgad/om3d.html">
+<img 
+src="img/taxi.jpg" 
+height="130"
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~nkholgad/om3d.html">
+<b>3D Object Manipulation in a Single Photograph using Stock 3D 
+Models</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~nkholgad/">
+Natasha Kholgade</a>,
+<a href="http://www.cs.cmu.edu/~tsimon/">
+Tomas Simon</a>, 
+Alexei A. Efros, and 
+<a href="http://www.cs.cmu.edu/~yaser/">
+Yaser Sheikh</a>
+<br>
+in <em>SIGGRAPH 2014</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=bMeBvrG9Uyo">video</a><br>
+See <a 
+href="http://www.nytimes.com/2014/08/12/science/3-d-tool-guesses-what-a-photo-is-missing.html?_r=0">article</a> 
+in New York Times<br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://www.di.ens.fr/willow/research/seeing3Dchairs/">
+<img 
+src="http://www.di.ens.fr/willow/research/seeing3Dchairs/images/thumbnail-2014-Chairs.jpg" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a href="http://www.di.ens.fr/willow/research/seeing3Dchairs/">
+<b>Seeing 3D chairs: exemplar part-based 2D-3D alignment using a 
+large dataset of CAD models</b></a>
+<br>
+<a href="http://www.di.ens.fr/~aubry/">
+Mathieu Aubry</a>,
+<a href="http://dimatura.net/index.html">
+Daniel Maturana</a>, 
+Alexei A. Efros, 
+<a href="http://bryanrussell.org/">
+Bryan Russell</a>, 
+<a href="http://www.di.ens.fr/~josef/">
+Josef Sivic</a>
+<br>
+in <em>CVPR 2014</em><br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=wIofm1r3Ano">video</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.eecs.berkeley.edu/~yjlee22/iccv2013.html">
+<img 
+src="img/iccv2013_concept.png" height="70"
+border="0"></a>
+</td>
+<td>
+<a href="http://www.eecs.berkeley.edu/~yjlee22/iccv2013.html">
+<b>Style-aware Mid-level Representation for Discovering
+Visual Connections in Space and Time</b></a>
+<br>
+<a href="http://www.eecs.berkeley.edu/~yjlee22/">Yong Jae Lee</a>,
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~herbert">Martial Hebert</a>
+<br>
+in <em>ICCV 2013</em><br>
+Watch the <a 
+href="http://techtalks.tv/talks/style-aware-mid-level-representation-for-discovering-visual-connections-in-space-and-time/59414/">presentation</a><br>
+Source code <a 
+href="http://ladoga.graphics.cs.cmu.edu/yjlee22/web/iccv2013Style/download_code.html">available</a><br>
+Expanded <a 
+href="http://link.springer.com/chapter/10.1007/978-3-319-25781-5_2">book 
+chapter</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/discriminativeModeSeeking/">
+<img src="img/laundromat_heatmap.jpg" height="90"
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/discriminativeModeSeeking/">
+<b>Mid-Level Visual Element Discovery as Discriminative Mode 
+Seeking</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~cdoersch">Carl Doersch</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+in <em>NIPS 2013</em><br>
+Source code
+<a href="https://github.com/cdoersch/elementdiscovery">available</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/whatMakesParis/">
+<img src="img/paris.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/whatMakesParis/">
+<b>What makes Paris look like Paris?</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~cdoersch">Carl Doersch</a>,
+<a href="http://www.saurabhsingh.info/">Saurabh 
+Singh</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>,
+Alexei A. Efros
+<br>
+in <em>SIGGRAPH 2012</em><br>
+Source code
+<a href="http://graphics.cs.cmu.edu/projects/whatMakesParis/">available</a><br>
+Watch the <a 
+href="http://www.youtube.com/watch?v=s5-30NKSwo8&feature=player_embedded">video</a><br>
+Republished in <em>Communications of the ACM</em> 
+<a 
+href="http://cacm.acm.org/magazines/2015/12/194622-what-makes-paris-look-like-paris/fulltext">article</a>, 
+with a <a 
+href="http://cacm.acm.org/magazines/2015/12/194620-technical-perspective-paris-beyond-frommers/fulltext">forward</a> 
+by Noah Snavely and a <a href="https://vimeo.com/145472163">video</a>.
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/discriminativePatches/">
+<img src="img/midlevel.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/discriminativePatches/">
+<b>Unsupervised Discovery of Mid-Level Discriminative Patches</b></a>
+<br>
+<a href="http://www.saurabhsingh.info/">Saurabh 
+Singh</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+<em>in ECCV 2012</em>
+<br>
+Source code <a 
+href="https://github.com/saurabhme/discriminative-patches">available</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/peopleWatching/">
+<img src="http://cs.nyu.edu/~fouhey/2014/pwijcv/teaser.jpg" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/peopleWatching/">
+<b>People Watching: Human Actions as a Cue for Single View 
+Geometry</b></a>
+<br>
+<a href="http://cs.nyu.edu/~fouhey/">David Fouhey</a>,
+<a href="http://www.di.ens.fr/~vdelaitr/">Vincent Delaitre</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros,
+<a href="http://www.di.ens.fr/~laptev/index.html">Ivan Laptev</a>,
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>
+<br>
+<em>in ECCV 2012</em>
+<br>
+Watch the <a href="http://youtu.be/IWQ952r61JI">video</a><br>
+<img src="img/new.gif">
+Extended <a href="http://cs.nyu.edu/~fouhey/pw_IJCV_preprint.pdf">Journal 
+Version</a> in IJCV 2014
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.di.ens.fr/willow/research/scenesemantics/">
+<img src="img/semantics.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.di.ens.fr/willow/research/scenesemantics/">
+<b>Scene Semantics from Long-term Observation of People</b></a>
+<br>
+<a href="http://www.di.ens.fr/~vdelaitr/">Vincent Delaitre</a>,
+<a href="http://cs.nyu.edu/~fouhey/">David Fouhey</a>,
+<a href="http://www.di.ens.fr/~laptev/index.html">Ivan Laptev</a>,
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+<em>in ECCV 2012</em>
+<br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/historicalColor/">
+<img src="img/dating.jpg" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/historicalColor/">
+<b>Dating Historical Color Images</b></a>
+<br>
+<a href="http://www.frankpalermo.com/">Frank Palermo</a>,
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+Alexei A. Efros
+<br>
+<em>in ECCV 2012</em><br>
+Partial source code 
+<a 
+href="http://graphics.cs.cmu.edu/projects/historicalColor/">available</a>
+<br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="https://ri.cmu.edu/pub_files/2012/9/multipleHypothesis_bmvc12.pdf">
+</td>
+<td>
+<a 
+href="https://ri.cmu.edu/pub_files/2012/9/multipleHypothesis_bmvc12.pdf">
+<b>Object Instance Sharing by Enhanced
+Bounding Box Correspondence
+</b></a>
+<br>
+<a href="http://santoshd.people.allenai.org/">Santosh Kumar Divvala</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+<em>in BMVC 2012</em><br>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/">
+<img src="img/crossDomain_thumb.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/">
+<b>Data-driven Visual Similarity for Cross-domain Image Matching</b></a>
+<br>
+<a href="http://www.abhinav-shrivastava.info/">Abhinav Shrivastava</a>,
+<a href="http://www.cs.cmu.edu/~tmalisie/">Tomasz Malisiewicz</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+in <em>SIGGRAPH Asia 2011</em><br>
+Watch the <a 
+href="http://www.youtube.com/watch?feature=player_embedded&v=PY__Fo4o67I">video</a><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/iccv11/">
+<img src="img/esvm_thumb.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/iccv11/">
+<b>Ensemble of Exemplar-SVMs for Object Detection and Beyond</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~tmalisie/">Tomasz Malisiewicz</a>,
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros
+<br>
+in <em>ICCV 2011</em><br>
+Source code <a 
+href="http://www.cs.cmu.edu/~tmalisie/projects/iccv11/">available</a><br>
+<a href="http://icml.cc/2012/">ICML'12</a> invited applications talk 
+(see <a 
+href="http://www.cs.cmu.edu/~tmalisie/projects/iccv11/malisiewicz_icml2012_abstract.pdf">Extended 
+Abstract)</a><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~abhinavg/affordances/">
+<img src="img/stickfigs_thumb.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~abhinavg/affordances/">
+<b>From 3D Scene Geometry to Human Workspace</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+<a href="http://research.satkin.com/">Scott Satkin</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+in <em>CVPR 2011</em><br>
+Watch <a href="http://www.youtube.com/watch?v=12uTfURRGF4">video</a>
+</td>
+
+
+
+<tr>
+<td width="30%">
+<a href="http://people.csail.mit.edu/torralba/research/bias/">
+<img src="img/datasets_thumb.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://people.csail.mit.edu/torralba/research/bias/">
+<b>Unbiased Look at Dataset Bias</b></a>
+<br>
+<a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a>,
+Alexei A. Efros<br>
+in <em>CVPR 2011</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~abhinavg/blocksworld/">
+<img src="img/p11.jpg" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~abhinavg/blocksworld/">
+<b>Blocks World Revisited: Image Understanding using Qualitative 
+Geometry and Mechanics</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~abhinavg">Abhinav Gupta</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+in <em>ECCV 2010</em><br>
+<font color="#B22222">
+<em>ECCV Best Paper Honorable Mention</em></font><br>
+Source code <a 
+href="http://www.cs.cmu.edu/~abhinavg/blocksworld/#downloads">available</a>
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/shadows/index.html">
+<img 
+src="http://www.cs.cmu.edu/~ILIM/projects/IL/gnd-shadow-thumb.jpg" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/shadows/index.html">
+<b>Detecting Ground Shadows
+in Outdoor Consumer Photographs</b></a>
+<br>
+<a href="http://vision.gel.ulaval.ca/~jflalonde/">Jean-Fran&ccedil;ois
+Lalonde</a>, 
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~srinivas">Srinivasa G. Narasimhan</a><br>
+in <em>ECCV 2010</em><br>
+Source code <a 
+href="https://github.com/jflalonde/shadowDetection">available</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/nips09/">
+<img src="img/memex_tiny.png" border="0" height="100"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/nips09/">
+<b>Beyond Categories: The Visual Memex Model for Reasoning About 
+Object Relationships</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~tmalisie/">Tomasz Malisiewicz</a>,
+Alexei A. Efros<br>
+in <em>NIPS 2009</em>.<br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://bryanrussell.org/projects/SceneComposites/index.html">
+<img src="img/russell09.jpg" height="100" 
+border="0">
+</a>
+</td>
+<td>
+<a 
+href="http://bryanrussell.org/projects/SceneComposites/index.html">
+<b>Segmenting Scenes by Matching Image Composites </b></a>
+<br>
+<a href="http://bryanrussell.org/">Bryan Russell</a>,
+Alexei A. Efros, 
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>,
+<a href="http://people.csail.mit.edu/billf/wtf.html">Bill Freeman</a>,
+<a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman</a><br>
+in <em>NIPS 2009</em><br>
+Source code <a 
+href="http://bryanrussell.org/projects/SceneComposites/index.html">available</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/webcamclipart/index.html">
+<img 
+src="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/webcamclipart/figures/calibrationFig.jpg" 
+height="120"
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/webcamclipart/index.html">
+<b>Webcam Clip Art: Appearance and Illuminant Transfer from 
+Time-lapse Sequences</b></a>
+<br>
+<a href="http://vision.gel.ulaval.ca/~jflalonde/">Jean-Fran&ccedil;ois
+Lalonde</a>, 
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~srinivas">Srinivasa G. Narasimhan</a><br>
+in <em>SIGGRAPH Asia 2009</em><br>
+Source code <a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/webcamclipart/software/envMapGeneration.zip">available</a><br>
+Watch the 
+<a href="http://vimeo.com/44554090">video</a>
+</td>
+
+<tr>
+<td width="35%">
+<a "http://www.hwkang.com/files/ICOP/ICOP.html">
+<img src="img/popout.png" height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://www.hwkang.com/files/ICOP/ICOP.html">
+<b>Image Composition for Object Pop-out</b></a>
+<br>
+<a href="http://www.hwkang.com/">Hongwen (Henry) Kang</a>,
+Alexei A. Efros, 
+<a href="http://www.ri.cmu.edu/person.html?person_id=136">Takeo 
+Kanade</a>,
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+<em>Workshop on 3D Representation for Recognition (3dRR-09) (at ICCV 
+2009)</em><br>
+</td>
+
+
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/outdoorIllumination/">
+<img src="img/iccv09.png" height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/outdoorIllumination/">
+<b>Estimating Natural Illumination from a Single Outdoor Image</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~jlalonde/">Jean-Fran&ccedil;ois
+Lalonde</a>, 
+Alexei A. Efros,
+<a href="http://www.cs.cmu.edu/~srinivas">Srinivasa G. Narasimhan</a><br>
+in <em>ICCV 2009</em><br>
+(see expanded <a 
+href="http://www.springerlink.com/content/257hv5310133l3q7/">journal version</a> in IJCV 2012)<br>
+Source code <a 
+href="https://github.com/jflalonde/illuminationSingleImage">available</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.dgp.toronto.edu/~kalo/papers/images2gps/">
+<img src="img/tim2gps.png" height="110"
+border="0"></a>
+</td>
+<td>
+<a href="http://www.dgp.toronto.edu/~kalo/papers/images2gps/">
+<b>Image Sequence Geolocation with Human Travel Priors</b></a>
+<br>
+<a href="http://www.dgp.toronto.edu/~kalo/">Evangelos Kalogerakis</a>,
+Olga Vesselova,
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+Alexei A. Efros, 
+<a href="http://www.dgp.toronto.edu/~hertzman/">Aaron Hertzmann</a><br>
+in <em>ICCV 2009</em><br>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="https://kilthub.cmu.edu/articles/An_Empirical_Study_of_Context_in_Object_Detection/6551903/files/12033113.pdf">
+<img src="img/context.jpg" 
+border="0"></a>
+</td>
+<td>
+<a 
+href="https://kilthub.cmu.edu/articles/An_Empirical_Study_of_Context_in_Object_Detection/6551903/files/12033113.pdf">
+<b>An Empirical Study of Context in Object Detection</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~santosh">Santosh Kumar Divvala</a>,
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+<em>in CVPR 2009</em><br>
+</td>
+
+<tr>
+<td width="35%">
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/sky/index.html">
+<img src="img/lalonde:2008:sky.jpg" 
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/sky/index.html">
+<b>What Does the Sky Tell Us About the Camera?</b></a>
+<br>
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/">Jean-Fran&ccedil;ois
+Lalonde</a>, 
+<a href="http://www.cs.cmu.edu/~srinivas">Srinivasa G. Narasimhan</a>,
+Alexei A. Efros.<br>
+in <em>ECCV 2008</em><br>
+(see <a 
+href="http://vision.gel.ulaval.ca/~jflalonde/assets/pubs/papers/lalonde_ijcv_10.pdf">expanded 
+journal version</a>, IJCV 
+2009)<br>
+Source code <a 
+href="https://github.com/jflalonde/webcamCalibration">available</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~santosh/projects/sceneMatches.html">
+<img src="img/sceneMatches_thumb2.png" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~santosh/projects/sceneMatches.html">
+<b>Can Similar Scenes help Surface Layout Estimation?</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~santosh">Santosh Kumar Divvala</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+in <em>IEEE Workshop on Internet Vision</em> (at CVPR'08)<br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/cvpr08/">
+<img src="img/assoc.PNG" 
+border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/cvpr08/">
+<b>Recognition by Association via Learning Per-exemplar Distances</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~tmalisie/">Tomasz Malisiewicz</a>,
+Alexei A. Efros<br>
+in <em>CVPR 2008</em>.<br>
+Source code <a 
+href="http://www.cs.cmu.edu/~tmalisie/projects/cvpr08/dfuns.tar.gz">available</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/im2gps/">
+<img src="img/im2gps.jpg" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/im2gps/">
+<b>im2gps: estimating geographic information from a single image</b></a>
+<br>
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+Alexei A. Efros<br> 
+in <em>CVPR 2008</em>.<br>
+Flickr download code 
+<a href="http://graphics.cs.cmu.edu/projects/im2gps/flickr_code.html">available</a><br>
+<font color="#B22222"><em>
+See  
+<a href="http://kdka.com/seenon/computer.technology.CMU.2.751567.html">
+interview with Hays</a> on Pittsburgh TV station.  And 
+<a href="http://www.thepittsburghchannel.com/video/16907807/?taf=pit">
+another one</a>.
+<br>
+<img src="img/new.gif">
+Extended version: <a 
+href="http://link.springer.com/chapter/10.1007/978-3-319-09861-6_3">
+Large-Scale Image Geolocalization</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/cvpr2008SceneInterpretation.pdf">
+<img src="img/loop.PNG" 
+border="0"></a>
+</td>
+<td>
+<a 
+href="http://dhoiem.cs.illinois.edu/publications/cvpr2008SceneInterpretation.pdf">
+<b>Closing the Loop on Scene Interpretation</b></a>
+<br>
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+in <em>CVPR 2008</em>.<br>
+See <a href="https://www.youtube.com/watch?v=NyjyGuESkfM">video</a>.
+ </td>
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/imageshaving/">
+<img src="img/shaving.jpg" 
+border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/imageshaving/">
+<b>Image-based Shaving</b></a>
+<br>
+<a href="https://www3.cs.stonybrook.edu/~minhhoai/">Minh Hoai 
+Nguyen</a>,
+<a href="http://www.cs.cmu.edu/~jlalonde/">Jean-Fran&ccedil;ois
+Lalonde</a>, Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~ftorre/">Fernando de la Torre</a><br>
+in <em>Eurographics 2008</em>.
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://dhoiem.cs.illinois.edu/publications/iccv07hoiem.pdf">
+<img src="img/occlusion.PNG" height="120" border="0"></a>
+</td>
+<td>
+<a href="http://dhoiem.cs.illinois.edu/publications/iccv07hoiem.pdf">
+<b>Recovering Occlusion Boundaries from a Single Image</b></a>
+<br>
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+<a href="http://andrewstein.net/">Andrew Stein</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+in <em>ICCV 2007</em>.<br>
+(see expanded <a 
+href="http://dhoiem.cs.illinois.edu/publications/ijcv2010_occlusion.pdf">journal 
+version</a> in IJCV 2011)<br>
+Source code <a 
+href="http://dhoiem.cs.illinois.edu/software/occlusion_iccv07_src.zip">available</a>
+</td>
+
+
+<tr>
+<td width="35%">
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/realismcolor/index.html">
+<img src="img/color.PNG" border="0"></a>
+</td>
+<td>
+<a 
+href="http://vision.gel.ulaval.ca/~jflalonde/publications/projects/realismcolor/index.html">
+<b>Using Color Compatibility for Assessing Image Realism</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~jlalonde">Jean-Fran&ccedil;ois 
+Lalonde</a>,
+Alexei A. Efros<br>
+in <em>ICCV 2007</em>.
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/bmvc07/">
+<img src="img/boat.png" height="100" border="0"></a>
+</td>
+<td>
+<a href="http://www.cs.cmu.edu/~tmalisie/projects/bmvc07/">
+<b>Improving Spatial Support for Objects via Multiple Segmentations</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~tmalisie/">Tomasz Malisiewicz</a>,
+Alexei A. Efros<br>
+in <em>BMVC 2007</em>.
+</td>
+
+
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/scene-completion/">
+<img src="img/scene_thumbnail.jpg" border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/scene-completion/">
+<b>Scene Completion using Millions of Photographs</b></a>
+<br>
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+Alexei A. Efros<br> 
+in <em>SIGGRAPH 2007</em>.<br>
+Flickr download code 
+<a href="http://graphics.cs.cmu.edu/projects/im2gps/flickr_code.html">available</a><br>
+<font color="#B22222"><em>
+See <a href="http://news.bbc.co.uk/2/hi/technology/6936444.stm">article</a> 
+on BBC News</em><br>
+See also <em>Communications of the ACM</em> 
+<a href="http://graphics.cs.cmu.edu/projects/scene-completion/scene_comp_cacm.pdf">article</a> with 
+<a href="http://graphics.cs.cmu.edu/projects/scene-completion/levoy_cacm.pdf">
+forward</a> by Marc Levoy
+</font>
+<font color="#B22222">
+<br>
+Named one of 
+<a 
+href="https://dl.acm.org/doi/book/10.1145/3596711">seminal graphics 
+papers</a>
+</font>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/photoclipart/">
+<img src="img/thumbnail-gui.jpg" height="150" border="0"></a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/photoclipart/">
+<b>Photo Clip Art</b></a>
+<br>
+<a href="http://www.cs.cmu.edu/~jlalonde">Jean-Fran&ccedil;ois 
+Lalonde</a>,
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+Alexei Efros, 
+<a href="http://research.microsoft.com/~carrot/">Carsten Rother</a>,
+<a href="http://johnwinn.org">John Winn</a>,
+<a href="http://research.microsoft.com/~antcrim/">Antonio Criminisi</a><br>
+in <em>SIGGRAPH 2007</em>.<br>
+<font color="#B22222"><em>
+Try the <a 
+href="http://balaton.graphics.cs.cmu.edu/jlalonde/applet/applet.html">Live 
+Java Demo</a></font><br>
+Watch the 
+<a href="http://vimeo.com/44674817">video</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~dhoiem/projects/pop/index.html">
+<img src="img/hoiem06.jpg" height="100" border="0">
+</a>
+</td>
+<td>
+<a href="http://dhoiem.cs.illinois.edu/projects/pop/">
+<b>Putting Objects in Perspective</b></a>
+<br>
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+In <em>CVPR 2006.</em> <br>
+Source code <a 
+href="http://dhoiem.cs.illinois.edu/projects/pop/">available</a><br>
+<font color="#B22222">
+<em>CVPR Best Paper Award</em></font><br>
+(see also <a href="hoiem_ijcv2008.pdf">expanded journal version</a>, IJCV 2008)
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://bryanrussell.org/projects/mult_seg_discovery/index.html">
+<img src="img/russell06.jpg" height="150" border="0">
+</a>
+</td>
+<td>
+<a 
+href="http://bryanrussell.org/projects/mult_seg_discovery/index.html">
+<b>Using Multiple Segmentations to Discover Objects and their 
+Extent in Image Collections</b></a>
+<br>
+<a 
+href="http://bryanrussell.org/">Bryan 
+Russell</a>,
+Alexei A. Efros, 
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>,
+<a href="http://people.csail.mit.edu/billf/wtf.html">Bill Freeman</a>,
+<a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman</a><br>
+in <em>CVPR 2006</em><br>
+Source code 
+<a href="http://bryanrussell.org/projects/mult_seg_discovery/index.html">
+available</a>
+</td>
+
+<tr>
+<td width="35%">
+<a href="https://www.cc.gatech.edu/~hays/papers/texture_matching.pdf">
+<img src="img/pears_input.jpg" height="150" border="0">
+<img src="img/pears_lattice.jpg" height="150" border="0">
+</a>
+</td>
+<td>
+<a href="https://www.cc.gatech.edu/~hays/papers/texture_matching.pdf">
+<b>Discovering Texture Regularity as a Higher-Order Correspondence 
+Problem</b></a>
+<br>
+<a href="https://www.cc.gatech.edu/~hays/">James Hays</a>,
+<a href="http://www.ri.cmu.edu/people/leordeanu_marius.html">Marius 
+Leordeanu</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~yanxi/home.html">Yanxi Liu</a><br>
+in <em>ECCV 2006</em><br>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://dhoiem.cs.illinois.edu/projects/context/">
+<img src="img/gcimage.jpg" height="100" border="0">
+</a>
+</td>
+<td>
+<a href="http://dhoiem.cs.illinois.edu/projects/context/">
+<b>Geometric Context from a Single Image</b></a><br>
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+In <em>ICCV 2005</em><br>
+<em>(see also <a
+href="http://www.ri.cmu.edu/pubs/pub_5818.html">
+expanded journal version</a>, IJCV 2007)</em><br>
+Executable <a 
+href="http://dhoiem.cs.illinois.edu/projects/software.html">available</a>
+(for non-commerical use only)
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.ri.cmu.edu/pubs/pub_5237.html">
+<img src="img/words.jpg" border="0">
+<img src="img/words_seg.jpg" border="0">
+</a>
+</td>
+<td>
+<a 
+href="http://www.robots.ox.ac.uk/~vgg/publications/papers/sivic05b.pdf">
+<b>Discovering Objects and their Location in Images</b></a><br>
+<a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>,
+<a href="http://bryanrussell.org/">Bryan Russell</a>,
+Alexei A. Efros, 
+<a href="http://www.robots.ox.ac.uk/~az">Andrew Zisserman</a>,
+<a href="http://people.csail.mit.edu/billf/wtf.html">Bill Freeman</a><br>
+In <em>ICCV 2005</em>
+<br>
+<font color="#B22222">
+Recepient of the test-of-time 
+<a 
+href="https://www.thecvf.com/?page_id=413#Helmholtz">Helmholtz 
+Prize</a>
+</font>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://www.cs.cmu.edu/~dhoiem/projects/popup/index.html">
+<img src="img/popup_small.jpg" height="200" border="0">
+</a>
+</td>
+<td>
+<a href="http://dhoiem.cs.illinois.edu/projects/popup/">
+<b>Automatic Photo Pop-up</b></a><br>
+<a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~hebert">Martial Hebert</a><br>
+In <em>SIGGRAPH 2005</em><br>
+See <a 
+href="https://www.youtube.com/watch?v=qbWDXP0WaA0&feature=youtu.be">video</a>.
+<font color="#B22222"><em>
+See <a href="Popup-economist.pdf">article</a> in The Economist</em><br>
+</font>
+</td>
+
+<tr>
+<td width="35%">
+<a href="http://graphics.cs.cmu.edu/projects/natural/">
+<img src="img/natural_motion.jpg" height="200" border="0">
+</a>
+</td>
+<td>
+<a href="http://graphics.cs.cmu.edu/projects/natural/">
+<b>A Data-Driven Approach to Quantifying Natural Human Motion</b></a><br>
+<a href="http://www.cs.cmu.edu/~liuren">Liu Ren</a>,
+<a href="http://www.cc.gatech.edu/~apatrick/">Alton Patrick</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.cmu.edu/~jkh">Jessica Hodgins</a>.
+<a href="http://www.cc.gatech.edu/~rehg/">James Rehg</a>.<br>
+In <em>SIGGRAPH 2005</em>
+</td>
+
+
+<tr>
+<td width="35%">
+<a href="https://papers.nips.cc/paper/2618-seeing-through-water.pdf">
+<img src="img/SeeingThroughWater.jpg" height="120" border="0">
+</a>
+</td>
+<td>
+<a 
+href="https://papers.nips.cc/paper/2618-seeing-through-water.pdf"><b>Seeing 
+Through 
+Water</b></a><br>
+Alexei A. Efros, 
+<a href="http://www.eecs.berkeley.edu/~isler/">Volkan Isler</a>, 
+<a href="http://www.cis.upenn.edu/~jshi/">Jianbo Shi</a>, 
+<a href="http://www.grasp.upenn.edu/~mirko/">Mirko Visontai</a><br>
+In <em>NIPS 17</em>, 2004<br>
+Data available as 
+<a href="http://graphics.cs.cmu.edu/people/efros/pool/ComputerVisionWater.tgz">
+frames</a> or 
+<a href="http://graphics.cs.cmu.edu/people/efros/pool/ComputerVisionWater.avi">
+video</a>
+</td>
+<tr>
+<td>
+<a href="http://www.cs.sfu.ca/~mori/research/papers/mori_cvpr04.pdf">
+<img src="img/human1.jpg" height="110" border="0">
+<img src="img/human2.jpg" height="110" border="0">
+<img src="img/human3.jpg" height="110" border="0">
+</a>
+</td>
+<td>
+<a href="http://www.cs.sfu.ca/~mori/research/papers/mori_cvpr04.pdf">
+<b>Recovering Human Body Configurations: Combining Segmentation and
+Recognition</b><br></a>
+<a href="http://www.cs.sfu.ca/~mori/">Greg Mori</a>, 
+<a href="http://www.cs.berkeley.edu/~xren">Xiaofeng Ren</a>,
+Alexei A. Efros, 
+<a href="http://www.cs.berkeley.edu/~malik">Jitendra Malik</a><br>
+In <em>CVPR 2004</em>
+</td>
+
+<tr>
+<td>
+<a href="research/action/">
+<img src="img/action.jpg" height="120" border="0">
+</a>
+</td>
+<td>
+<a href="research/action/">
+<b>Recognizing Action at a Distance</b></a><br>
+Alexei A. Efros, 
+<a href="http://www.cs.berkeley.edu/~aberg/">Alexander Berg</a>, 
+<a href="http://www.cs.sfu.ca/~mori/">Greg Mori</a>, 
+<a href="http://www.cs.berkeley.edu/~malik">Jitendra Malik</a><br>
+In <em>ICCV 2003</em>
+<br>
+Watch the <a 
+href="https://www.youtube.com/watch?v=UMJcpLIAwKg&feature=youtu.be">video</a><br>
+<font color="#B22222">
+Recepient of the test-of-time 
+<a 
+href="https://www.thecvf.com/?page_id=413#Helmholtz">Helmholtz 
+Prize</a>
+</font>
+</td>
+
+<tr>
+<td>
+<a href="research/quilting.html">
+<img src="img/bill.jpg" height="120" border="0">
+<img src="img/bill-rice.gif" height="120" border="0">
+</a>
+</td>
+<td>
+<b><a href="research/quilting.html">
+Image Quilting for Texture Synthesis and Transfer</a></b><br>
+Alexei A. Efros,
+<a href="http://www.ai.mit.edu/people/wtf/wtf.html">Bill Freeman</a><br>
+In <em>SIGGRAPH 2001</em>
+<br>
+Source code <a href="quilt_research_code.zip">available</a>
+<br>
+<font color="#B22222">
+Named one of 
+<a 
+href="https://dl.acm.org/doi/book/10.1145/3596711">seminal graphics 
+papers</a>
+</font>
+</td>
+
+<tr>
+<td>
+<a href="research/EfrosLeung.html">
+<img src="img/bread.gif" height="60" border="0">
+<img src="img/bread_w7.gif" height="120" border="0">
+</a>
+</td>
+<td>
+<b><a href="research/EfrosLeung.html">
+Texture Synthesis by Non-parametric Sampling</a></b><br>
+Alexei A. Efros,
+<a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/l/Leung:Thomas_K=.html">Thomas 
+Leung</a><br>
+<em>In ICCV 1999</em>
+<br>
+<font color="#B22222">
+Recepient of the test-of-time 
+<a 
+href="https://www.thecvf.com/?page_id=413#Helmholtz">Helmholtz 
+Prize</a>
+</font>
+</td>
+</table>
+
+<h2>Funding Sources</h2>
+
+My research group is funded from a range of sources, including 
+federal, state and other grants, fellowships to students, and industrial 
+gifts.  Current funding comes from:
+ONR MURI, NSF, BAIR Commons and  
+<a href="http://www.adobe.com/">Adobe</a>.   From time 
+to time, I 
+also engage in personal consulting activities for government and industry 
+entities.  
+Currently, I am consulting for <a 
+href="https://www.adobe.com/">Adobe</a> 
+(~3hr/week).
+
+</ul>
+
+
+<h2><a href="cv.html">Curriculum Vitae</a></h2>
+
+<h2>Misc.</h2>
+<ul>
+<li><a href="travel.txt">My planned absences</a>
+<li><a 
+href="personal/justapp.pdf">Berkeley 
+Hiking Guide</a> (part of my PhD dissertation)
+<li><a 
+href="https://www.google.com/maps/d/u/0/edit?mid=1y7W7A5Jm5Jr-9a7lJ4ebKvASNX8&usp=sharing">
+Paris Walking, Eating, and Pique-Niquing Map</a>
+<li>My first (and last!) Java program was an 
+<a href="java/tracer/tracer.html">Interactive Ray Tracer</a>.
+<li><a href="https://flickr.com/people/aaefros/">
+My photos are on Flickr</a>
+<li><a
+href="personal/">My personal 
+page</a>
+<li>You might be looking for my father, 
+<a href="http://www.physics.utah.edu/~efros">Alexei <b>L.</b> 
+Efros</a>, the physicist
+<li>My baby brother is a lighting and media designer. Check out his <a 
+href="http://www.danefros.com/">
+webpage</a>. 
+<li>A talk I gave about how to be an 
+<a href="Epicurean.pdf">epicurean in Pittsburgh</a>
+</ul> <p> 
+
+</body>
+</html>

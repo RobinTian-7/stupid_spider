@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i586) [Netscape]">
+   <TITLE>Alex Aiken</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<font face="arial">
+<TABLE> 
+<TR>
+<TH>
+ <H2>Alex Aiken</H2>
+ <H3>Alcatel-Lucent Professor, Stanford University </H3>
+ <H3>Computer Science Division Director, SLAC </H3>
+</TH>
+<TH>
+ <IMG SRC="personal/pictures/aiken2024.jpg"  WIDTH="300" ALIGN=TOP>
+ <br><a href="alternatepics.html"><font size=1>past portraits</a>
+</TH>
+</TR>
+</TABLE>
+<p>
+<center>
+<a href="#contact"><big><b>Contact</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="personal/email.html"><big><b>FAQ</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="publications/publications.html"><big><b>Publications</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="personal/software.html"><big><b>Software</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#bio"><big><b>Bio</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#teaching"><big><b>Teaching</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#research"><big><b>Research</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#misc"><big><b>Misc</big></b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#students"><big><b>Current Students</big></b></a>
+<a href="phds.html"><big><b>Graduated Students</big></b></a>
+</center>
+<p>
+<a name="contact">
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Contact Information</b></center>
+</font></td></tr>
+</table>
+
+<TABLE>
+<TR>
+<TD><I>email</I></TD><TD>aaiken@stanford.edu</TD>
+</TR>
+<TR>
+<TD><I>office</I></TD><TD>E462 CoDa</TD>
+</TR>
+<TR>
+<TD><I>phone</I></TD><TD>650-725-3359</TD>
+</TR>
+<TR>
+<TD><I>assistant</I></TD><TD> 
+  <BR> Opeta Henderson
+  <BR> opetah@stanford.edu
+  <BR> 650-721-1166
+</TD>
+</TR>
+<TR>
+</TABLE>
+<p>
+<a name="bio">
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Biographical Sketch</b></center>
+</font></td></tr>
+</table>
+
+Alex Aiken is the Alcatel-Lucent Professor of Computer Science at Stanford.
+Alex received his Bachelors degree in Computer Science and Music
+from <A HREF="http://www.bgsu.edu/">Bowling Green State University</A>
+in 1983 and his Ph.D. from <A HREF="http://www.cs.cornell.edu/">Cornell
+University</A> in 1988. Alex was a Research Staff Member at the <A HREF="http://www.almaden.ibm.com/">IBM
+Almaden Research Center</A> (1988-1993) and a Professor in the EECS department at <a href="http://www.eecs.berkeley.edu">UC Berkeley</a> (1993-2003) before joining the Stanford faculty in 2003.  His research interest is in areas related to programming languages.
+He is an ACM Fellow, a recipient of ACM SIGPLAN's Programming Languages Achievement Award and Phi Beta Kappa's Teaching Award, and a former chair of the Stanford Computer Science Department.<p>
+
+Alex is married to <A HREF="http://www-db.stanford.edu/people/widom.html">Jennifer
+Widom</A>. Jennifer and Alex have a son <A HREF="http://timaiken.org">Tim</A>
+and a daughter <A HREF="https://www.ischool.berkeley.edu/people/emily-aiken">Emily</A>.
+<A HREF="http://www-db.stanford.edu/~widom/travel.html">Here</A> are some photos from the family's travels.
+<p>
+
+
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Announcements</b></center> 
+</font></td></tr>
+</table>
+<ul>
+<li> 2/2024 Here are the talks and slides from the 2024 <a href="https://legion.stanford.edu/retreat2024/">Legion Retreat</a>.
+</ul> 
+<p>
+<a name="teaching">
+<p>
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Teaching</b></center>
+</font></td></tr>
+</table>
+<UL>
+<LI> <a href="http://www.stanford.edu/class/cs242">CS242: Programming Languages</a> </LI>
+<LI> <a href="http://www.stanford.edu/class/cs315b">CS315B: Programming Supercomputers</a> </LI>
+<LI> My publicly available, free, self-study  <a href="https://www.edx.org/course/compilers">compilers course</a>.  The course covers
+the essentials of compiler construction, plus material on
+language design and semantics, optimization, and bit on the history of
+programming languages.  There are optional programming assignments for
+hard-core enthusiasts who want to build a full, functioning compiler for
+<a href="http://theory.stanford.edu/~aiken/software/cooldist">COOL</a>, the Classroom Object Oriented Language.
+<LI> <a href="sss.html">Stanford Software Seminar</a>
+<LI> The weekly software <a href="http://software-research-lunch.stanford.edu">research lunch</a>.
+</UL>
+<p>
+<a name="research">
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Research Projects</b></center>
+</font></td></tr>
+</table>
+<UL>
+<LI> <a href="https://flexflow.ai">FlexFlow</a> is a system for automatically finding fast parallelization strategies for deep learning training and inference. FlexFlow is built on Legion (see below).</LI>
+<LI> <a href="http://legion.stanford.edu">Legion</a> is a programming system for heterogenous, parallel machines with complex memory hierarchies.  
+<UL> 
+     <LI> A <a href="http://theory.stanford.edu/~aiken/regent.zip">Regent tutorial</a></LI>
+     <LI> A <a href="http://theory.stanford.edu/~aiken/ecp">Legion tutorial</a></LI>
+<p>
+    
+</ul>
+</li>
+</UL>
+I also maintain a page of <a href="http://theory.stanford.edu/~aiken/pastprojects.html">past research projects</a> and a 
+set of <a href="http://theory.stanford.edu/~aiken/misc/index.html"> pages</a> internal to current projects</a>.
+
+
+
+<a name="misc">
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Miscellany</b></center>
+</font></td></tr>
+</table>
+<UL>
+<li> Here's a recent <a href="https://medium.com/@aaiken/the-50-to-80-a-tahoe-ski-traverse-59cce89bd0d8">trip report</a> from a winter crossing of the wilderness areas west of Lake Tahoe.
+<li> I gave the commencement speech at CS graduation during the time I was department chair (well, I did miss one year ...).   I've received requests for links to those speeches, so here they are: 
+<a href="http://theory.stanford.edu/~aiken/talks/commencements/Commencement2015.pdf">2015</a>,
+<a href="http://theory.stanford.edu/~aiken/talks/commencements/Commencement2017.pdf">2017</a>, and
+<a href="http://theory.stanford.edu/~aiken/talks/commencements/Commencement2018.pdf">2018</a>.
+</li>
+<li> If my bio is too short for you, People of PLDI has published an <a href="http://abstract.ece.cmu.edu/peopleOfPLDI/aiken.html">interview with me</a>, along with a number of other <a href="http://abstract.ece.cmu.edu/peopleOfPLDI/index.html">PL researchers</a>.</li>
+<li> In 2018 I celebrated the (almost) end of my term as department chair by hiking the Sierra High Route.  <a href="https://medium.com/@aaiken/sierra-high-route-2018-a100eb3aabaa">Here is the trip report.</a></li>
+<LI> <a href="publications/trs/ProgramChair.pdf">Advice for Program Chairs</a> distills my experience (and things I've learned from many other people) as a program chair for POPL and PLDI.</LI>
+<LI> I delivered a <a href="other/backus.pdf">memorial</a> for John Backus at PLDI'07. </LI>
+<LI> My family took most of the '07-'08 academic year off to travel the world.  Those with too much time on their hands can check out the trip's <a href="http://infolab.stanford.edu/~widom/yearoff.html">web page</a>.
+</LI>
+
+
+</ul>
+<a name="students">
+<table border=0 cellpadding=4 cellspacing=10 width="100%">
+<tr><td width="100%" bgcolor="#6666ff"><font face="Arial">
+<center><b>Current Ph.D. and Postdoctoral Students</b></center>
+</font></td></tr>
+</table>
+
+<UL>
+<LI> <a href="https://github.com/willtunnels">Benjamin Driscoll</a></LI>
+<LI> Qiantan Hong </LI>
+<LI> <a href="https://rupanshusoi.github.io/">Rupanshu Soi</a> </LI>
+<LI> <a href="https://www.lockshaw.io/">Colin Unger</a> </LI>
+<LI> <a href="https://cs.stanford.edu/~anjiang/">Anjiang Wei</a> </LI>
+<LI> <a href="https://rohany.github.io/">Rohan Yadav</a> </LI>
+</UL>
+</BODY>
+</HTML>
+
+
+
+
+
+
+

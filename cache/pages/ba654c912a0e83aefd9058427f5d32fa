@@ -1,0 +1,6136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <title>The Stanford Natural Language Processing Group </title>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap-markdown.min.css" type="text/css">
+
+    <!-- LayerSlider styles -->
+    <link rel="stylesheet" href="/static/css/vendor/layerslider/layerslider.css" type="text/css">
+
+    <!-- twitter -->
+    <meta property="twitter:account_id" content="118263124">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@stanfordnlp">
+    <meta name="twitter:title" content="The Stanford NLP Group">
+    <meta name="twitter:description" content="Performing groundbreaking
+           Natural Language Processing research since 1999.">
+    <meta name="twitter:image"
+          content="https://nlp.stanford.edu/img/Stanford-NLP-stack-small-465-400px.jpg">
+    <meta name="twitter:url" content="http://nlp.stanford.edu/">
+     <!-- Google analytics -->
+    <script type="text/javascript">
+       var _gaq = _gaq || [];
+           _gaq.push(['_setAccount', 'UA-23880590-1']);
+           _gaq.push(['_trackPageview']);
+       (function() {
+         var ga = document.createElement('script');
+             ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ?
+               'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="/static/css/styles-cleanred.css" id="grove-styles">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css" type="text/css">
+
+    <!-- table highlighting -->
+    <!--<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.css">-->
+
+    <!-- site-wide custom css -->
+    <link rel="stylesheet" href="/static/css/nlp.css" id="nlp-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    <!-- jQuery with jQuery Easing, and jQuery Transit JS -->
+
+    <!-- LayerSlider from Kreatura Media with Transitions -->
+    <script src="/static/js/vendor/layerslider/greensock.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Markdown for Blog editing-->
+    <script src="/static/js/markdown.js" type="text/javascript"></script>
+    <script src="/static/js/to-markdown.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap-markdown.js" type="text/javascript"></script>
+
+    <!-- Grove Layerslider initiation script -->
+    <script src="/static/js/grove-slider.js" type="text/javascript"></script>
+
+    <!-- DataTables.net for publications -->
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- highlighting for tables -->
+    <script src="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+    <script src="//bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+
+</head>
+<body>
+
+  <!-- navigation -->
+  <header>
+    <nav class="navbar navbar-default grove-navbar" role="navigation">
+      <div class="container">
+	<div class="navbar-header">
+          <a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+          <img class="navbar-brand navbar-left hidden-xs" src="/static/img/logos/Stanford-NLP-icon-144x72.gif" width="144" height="72">
+          <a class="navbar-brand navbar-left" href="/"><h3 class="hidden-xs hidden-sm">The Stanford Natural Language Processing Group</h3><h3 class="hidden-md hidden-lg hidden-xl">The Stanford NLP Group</h3></a>
+	</div>
+
+	<div class="navbar-collapse grove-nav collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/people/">people</a>
+            </li>
+            <!-- <li> -->
+            <!--   <a href="/pubs/">publications</a> -->
+            <!-- </li> -->
+            <li>
+              <a href="https://ai.stanford.edu/blog/nlp/">research blog</a>
+            </li>
+            <li>
+              <a href="/software/">software</a>
+            </li>
+            <!-- <li> -->
+            <!--   <a href="/teaching/">teaching</a> -->
+            <!-- </li> -->
+	    <li>
+              <a href="/seminar/">seminar</a>
+            </li>
+	    <li>
+              <a href="/prospective/">join</a>
+            </li>
+	    <li>
+              <a href="/support.shtml">donate</a>
+            </li>
+            <li>
+              <a href="/new_local/">local</a>
+            </li>
+
+          </ul>
+	</div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="widewrapper">
+    <!--<div class="container" id="maincontent">-->
+      <div id="body_content">
+<div class="widewrapper pagetitle">
+  <div class="container">
+
+  </div>
+</div>
+
+
+<div class="widewrapper weak-highlight">
+<div class="container content">
+
+
+<!-- THE ACTUAL PAGE CONTENTS START HERE //-->
+<style>
+td,th {
+  padding-left: 10px;
+}
+</style>
+
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2020<br>
+  Monday 3:00-4:00pm, Video Chat <br>
+</h2>
+<p>Person in charge: <a href="https://cs.stanford.edu/~rpryzant/">Reid Pryzant</a> <br/>
+Theme: we broke into random subgroups and each group picked papers. </p> 
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="150">Date</th>
+        <th class="bottomborder" align="left" width="1000">Topic / Paper</th>
+    </tr>
+<tr>
+  <td>Week of 10/5</td>
+  <td> 
+    <ul>
+      <li><strong>X-LXMERT: Paint, Caption and Answer Questions with Multi-Modal Transformers</strong> [<a href="https://arxiv.org/abs/2009.11278.pdf">pdf</a>] </li>
+      <li><strong>Word meaning in minds and machines</strong> [<a href="https://arxiv.org/pdf/2008.01766.pdf">pdf</a>]</li>
+      <li> <strong>Building machines that learn and think like people</strong> [<a href="https://cims.nyu.edu/~brenden/papers/LakeEtAl2017BBS.pdf">pdf</a>]</li>
+      <li> <strong>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</strong> [<a href="https://arxiv.org/pdf/2005.11401.pdf">pdf</a>]</li>
+      <li> <strong>It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners</strong> [<a href="https://arxiv.org/pdf/2009.07118.pdf">pdf</a>]</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>Week of 10/19</td>
+  <td> 
+    <ul>
+      <li> <strong>ALICE: Active Learning with Contrastive Natural Language Explanations</strong> [<a href="https://arxiv.org/pdf/2009.10259.pdf">pdf</a>] </li>
+      <li><strong>Language Models are Few-Shot Learners</strong> [<a href="https://arxiv.org/pdf/2005.14165.pdf">pdf</a>] </li>
+      <li><strong>Vokenization: Improving Language Understanding with Contextualized, Visual-Grounded Supervision</strong> [<a href="https://arxiv.org/pdf/2010.06775.pdf">pdf</a>] </li>
+      <li><strong>With Little Power Comes Great Responsibility</strong> [<a href="https://arxiv.org/pdf/2010.06595.pdf">pdf</a>]</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>Week of 11/2</td>
+  <td> 
+    <ul>
+      <li> <strong>Word Frequency Does Not Predict Grammatical Knowledge in Language Models</strong> [<a href="https://arxiv.org/pdf/2010.13870.pdf">pdf</a>] </li>
+      <li><strong>Unsupervised Question Decomposition for Question Answering</strong> [<a href="https://arxiv.org/pdf/2002.09758.pdf">pdf</a>] </li>
+      <li><strong>Graph-based, Self-Supervised Program Repair from Diagnostic Feedback</strong> [<a href="https://arxiv.org/pdf/2005.10636.pdf">pdf</a>] </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>Week of 11/16</td>
+  <td> 
+    <ul>
+      <li> <strong>Beyond Accuracy: Behavioral Testing of NLP models with CheckList</strong> [<a href="https://arxiv.org/pdf/2005.04118.pdf">pdf</a>] </li>
+      <li><strong>When Do You Need Billions of Words of Pretraining Data?</strong> [<a href="https://arxiv.org/pdf/2011.04946.pdf">pdf</a>] </li>
+    </ul>
+  </td>
+</tr>
+</table>
+
+
+
+
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2020<br>
+  Monday 3:00-4:00pm, Video Chat <br>
+</h2>
+<p>Person in charge: <a href="https://cs.stanford.edu/~rpryzant/">Reid Pryzant</a> <br/>
+Theme: StanfordNLP pubs </p> 
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+<tr>
+  <td>Jul 6</td>
+  <td>Reid Pryzant</td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Jul 13</td>
+  <td>Reid Pryzant</td>
+  <td>
+    Zhang et al.
+    <strong>Optimizing the Factual Correctness of a Summary: A Study of Summarizing Radiology Reports</strong>.
+    ACL 2020.
+    [<a href="https://arxiv.org/pdf/1911.02541.pdf">pdf</a>]    
+  </td>
+</tr>
+<tr>
+  <td>Jul 20</td>
+  <td>Mina Lee</td>
+  <td>
+    White, Mu et al.
+    <strong>Learning to Refer Informatively by Amortizing Pragmatic Reasoning</strong>.
+    CogSci 2020.
+    [<a href="https://arxiv.org/pdf/2006.00418.pdf">pdf</a>]    
+  </td>
+</tr>
+<tr>
+  <td>Jul 27</td>
+  <td>Shikhar Murty</td>
+  <td>
+    Coleman et al.
+    <strong>Selection via proxy: Efficient data selection via deep learning</strong>.
+    ICLR 2020.
+    [<a href="https://arxiv.org/abs/1906.11829">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Aug 3</td>
+  <td></td>
+  <td>
+    No meeting.
+  </td>
+</tr>
+<tr>
+  <td>Aug 10</td>
+  <td>Isabel Papadimitriou</td>
+  <td>
+    Geiger et al.
+    <strong>Modular Representation Underlies Systematic Generalization in Neural Natural Language Inference Models</strong>.
+    Arxiv.
+    [<a href="https://arxiv.org/pdf/2004.14623.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Aug 17</td>
+  <td>Nelson Liu</td>
+  <td>
+    Manning
+    <strong>Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?</strong>.
+    CICLing 2011.
+    [<a href="https://nlp.stanford.edu/pubs/CICLing2011-manning-tagging.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Aug 24</td>
+  <td></td>
+  <td>
+    No Meeting.
+  </td>
+</tr>
+<tr>
+  <td>Aug 31 </td>
+  <td>Michihiro Yasunaga</td>
+  <td>
+    Liang
+    <strong>Learning Executable Semantic Parsers for Natural Language Understanding</strong>.
+    ACM 2016.
+    [<a href="https://cs.stanford.edu/~pliang/papers/executable-cacm2016.pdf">pdf</a>]
+  </td>
+</tr>
+</table>
+
+
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2019<br>
+  Friday 3:00-4:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Peter Henderson <br/>
+Theme: Emergent Communication </p> 
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+<tr>
+  <td>Jan 10</td>
+  <td></td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Jan 17</td>
+  <td>Kawin Ethayarajh</td>
+  <td>
+    Andreas et al.
+    <strong>Translating Neuralese</strong>.
+    ACL 2017.
+    [<a href="https://www.aclweb.org/anthology/P17-1022.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Jan 24</td>
+  <td>Ben Newman</td>
+  <td>
+    Kharitonov et al.
+    <strong>Entropy Minimization In Emergent Languages</strong>.
+    Arxiv.
+    [<a href="https://arxiv.org/pdf/1905.13687.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Jan 31</td>
+  <td>Mina Lee</td>
+  <td>
+    Lee et al.
+    <strong>Learning Autocomplete Systems as a Communication Game</strong>.
+    Emergent Communication Workshop at Neural Information Processing Systems (NeurIPS) 2019.
+    [<a href="https://arxiv.org/abs/1911.06964">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 7</td>
+  <td>Shikhar Murty</td>
+  <td>
+    Andreas. 
+    <strong>Measuring Compositionality in Representation Learning</strong>.
+    ICLR 2019.
+    [<a href="https://openreview.net/pdf?id=HJz05o0qK7">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 14</td>
+  <td></td>
+  <td>No meeting</td>
+</tr>
+<tr>
+  <td>Feb 21</td>
+  <td>Dilip Arumugam</td>
+  <td>
+    Mordatch and Abbeel.
+    <strong>Emergence of Grounded Compositional Language in Multi-Agent Populations</strong>.
+    AAAI 2018.
+    [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 29</td>
+  <td>Siddharth Karamcheti</td>
+  <td>
+    <strong>On the interaction between supervision and self-play in emergent communication</strong>.
+    ICLR 2020.
+    [<a href="https://openreview.net/forum?id=rJxGLlBtwH">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>March 6</td>
+  <td>Peter Henderson</td>
+  <td>
+    <strong>Ease-of-Teaching and Language Structure from Emergent Communication</strong>.
+    NeurIPS 2019.
+    [<a href="http://arxiv.org/abs/1906.02403">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>March 13</td>
+  <td>Dan Iter</td>
+  <td>
+    <strong>TBD</strong>
+    TBD
+    [<a href="">pdf</a>]
+  </td>
+</tr>
+</table>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Autumn 2019<br>
+  Friday 2:00-3:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Amita Kamath <br/>
+Theme: Topics from Language Grounding, Transfer Learning and Dialogue Systems</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Oct 4</td>
+  <td></td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Oct 11</td>
+  <td>Ashwin Paranjape</td>
+  <td>
+    Niu et al. 
+    <strong>Polite Dialogue Generation without Parallel Data</strong>.
+    TACL 2018.
+    [<a href="https://arxiv.org/pdf/1805.03162.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Oct 18</td>
+  <td>Abigail See</td>
+  <td>
+    Sankar et al.
+    <strong>Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study</strong>.
+    ACL 2019.
+   [<a href="https://arxiv.org/pdf/1906.01603.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Oct 25</td>
+  <td>Michihiro Yasunaga</td>
+  <td>
+    Levy et al.
+    <strong>Zero-Shot Relation Extraction via Reading Comprehension</strong>.
+    CoNLL 2017.
+    [<a href="http://nlp.cs.washington.edu/zeroshot/zeroshot.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 1</td>
+  <td>Siddharth Karamcheti</td>
+  <td>
+    <i>Instruction Following as Reward Modeling</i><br/>
+    Bahdanau et al.
+    <strong>Learning to Understand Goal Specifications by Modelling Reward</strong>.
+    ICLR 2019.
+    [<a href="https://arxiv.org/pdf/1806.01946.pdf">pdf</a>] <br/>
+    Fu et al.
+    <strong>From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following</strong>.
+    ICLR 2019.
+    [<a href="https://arxiv.org/pdf/1902.07742.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 8</td>
+  <td></td>
+  <td>No meeting (EMNLP in progress)</td>
+</tr>
+<tr>
+  <td>Nov 15</td>
+  <td>
+    Abigail See, John Hewitt, <br/>
+    Nelson Liu, Robin Jia</td>
+  <td>
+    Discussion: Interesting presentations from EMNLP 2019.
+  </td>
+</tr>
+<tr>
+  <td>Nov 22</td>
+  <td>Chris Donahue</td>
+  <td>
+    Yang et al. 
+    <strong>XLNet: Generalized Autoregressive Pretraining for Language Understanding</strong>.
+    Preprint 2019.
+    [<a href="https://arxiv.org/pdf/1906.08237.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 29</td>
+  <td></td>
+  <td>No meeting (Thanksgiving)
+  </td>
+</tr>
+<tr>
+  <td>Dec 6</td>
+  <td></td>
+  <td>No meeting (ACL Deadline)
+  </td>
+</tr>
+<tr>
+  <td>Dec 13</td>
+  <td></td>
+  <td>
+    TBD: Wrap-up or discussion about Ethics in NLP.
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2019<br>
+  Friday 12:00-1:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Robin Jia <br/>
+Theme: Reinforcement learning and NLP</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Apr 5</td>
+  <td></td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Apr 12</td>
+  <td>Peng Qi</td>
+  <td>
+    Overview of reinforcement learning
+  </td>
+</tr>
+<tr>
+  <td>Apr 19</td>
+  <td>Ashwin Paranjape</td>
+  <td>
+    <i>Inverse reinforcement learning and NLP</i><br/>
+    Wang et al.
+    <strong>No Metrics Are Perfect: Adversarial Reward Learning for Visual Storytelling</strong>.
+   ACL 2018.
+   [<a href="https://www.aclweb.org/anthology/P18-1083">pdf</a>]
+
+  </td>
+</tr>
+<tr>
+  <td>Apr 26</td>
+  <td>Alex Tamkin</td>
+  <td>
+    <i>Hierarchical reinforcement learning and NLP</i><br/>
+    Wang et al.
+    <strong>Video Captioning via Hierarchical Reinforcement Learning</strong>.
+    CVPR 2018.
+    [<a href="https://arxiv.org/pdf/1711.11135.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>May 3</td>
+  <td>Panupong Pasupat</td>
+  <td>
+    <i>Imitation learning and dynamic oracles</i><br/>
+    Goldberg and Nivre. 
+    <strong>A Dynamic Oracle for Arc-Eager Dependency Parsing</strong>.
+    COLING 2012.
+    [<a href="https://www.aclweb.org/anthology/C12-1059">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>May 10</td>
+  <td>Peter Henderson</td>
+  <td><i>Exploring latent search spaces with reward shaping</i><br/>
+    Misra et al. 
+    <strong>Mapping Instructions and Visual Observations to Actions with Reinforcement Learning</strong>. 
+    EMNLP 2017. 
+    [<a href="https://arxiv.org/pdf/1704.08795.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>May 17</td>
+  <td></td>
+  <td>No meeting (EMNLP deadline)</td>
+</tr>
+<tr>
+  <td>May 24</td>
+  <td>Henry Friedlander</td>
+  <td><i>Learning to ask questions</i><br/>
+    Buck et al. 
+    <strong>Ask the Right Questions: Active Question Reformulation with Reinforcement Learning</strong>.
+    ICLR 2018.
+    [<a href="https://arxiv.org/pdf/1705.07830.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>May 31</td>
+  <td>Mina Lee</td>
+  <td><i>Reinforcement learning and dialogue systems</i><br/>
+    Liu et al.
+    <strong>Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems</strong>.
+    NAACL 2018. 
+    [<a href="https://www.aclweb.org/anthology/N18-1187">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Jun 7</td>
+  <td></td>
+  <td>
+    Wrap-up: what did we learn about reinforcement learning and NLP?
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2019<br>
+  Friday 12:00-1:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Robin Jia<br/>
+Theme: Analyzing and attacking NLP models</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Jan 11</td>
+  <td></td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Jan 18</td>
+  <td>Robin Jia</td>
+  <td>
+    Kuncoro et al.
+    <strong>LSTMs Can Learn Syntax-Sensitive Dependencies Well,
+      But Modeling Structure Makes Them Better</strong>.
+    ACL 2018.
+    [<a href="http://aclweb.org/anthology/P18-1132">pdf</a>]
+    [<a href="https://nlp.stanford.edu/blog/reading-group-blog-lstms-can-learn-syntax-sensitive-dependencies-well-but-modeling-structure-makes-them-better-acl-2018-/">blog post</a>]
+  </td>
+</tr>
+<tr>
+  <td>Jan 25</td>
+  <td>Amita Kamath</td>
+  <td>
+    Belinkov and Bisk.
+    <strong>Synthetic and Natural Noise Both Break Neural Machine Translation</strong>.
+    ICLR 2018. 
+    [<a href="https://arxiv.org/pdf/1711.02173.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 1</td>
+  <td>Allen Nie</td>
+  <td>
+    Ribeiro et al.
+    <strong>Semantically Equivalent Adversarial Rules for Debugging NLP Models</strong>.
+    ACL 2018.
+    [<a href="https://homes.cs.washington.edu/~marcotcr/acl18.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 8</td>
+  <td>John Hewitt</td>
+  <td>
+    Dalvi et al.
+    <strong>What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in Deep NLP Model</strong>.
+    AAAI 2019.
+    [<a href="https://arxiv.org/pdf/1812.09355.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 15</td>
+  <td>Jesse Mu</td>
+  <td>
+    Ribeiro et al.
+    <strong>Anchors: High-Precision Model-Agnostic Explanations</strong>.
+    AAAI 2018.
+    [<a href="https://homes.cs.washington.edu/~marcotcr/aaai18.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 22</td>
+  <td>Sumith Kulal</td>
+  <td>
+    Feng et al.
+    <strong>Pathologies of Neural Models Make Interpretations Difficult</strong>.
+    EMNLP 2018.
+    [<a href="https://arxiv.org/pdf/1804.07781.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Mar 1</td>
+  <td></td>
+  <td>No meeting (ACL Deadline)</td>
+</tr>
+<tr>
+  <td>Mar 8</td>
+  <td>Kerem Goksel</td>
+  <td>Peters et al.
+    <strong>Dissecting Contextual Word Embeddings: Architecture and Representation</strong>.
+    EMNLP 2018.
+    [<a href="https://arxiv.org/pdf/1808.08949.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Mar 15</td>
+  <td>Akhila Yerukola</td>
+  <td>
+    Tenney et al.
+    <strong>What do you learn from context? Probing for sentence structure in contextualized word representations</strong>.
+    ICLR 2019.
+    [<a href="https://openreview.net/pdf?id=SJzSgnRcKX">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Mar 22</td>
+  <td></td>
+  <td>
+    Wrap-up: what did we learn about analyzing and attacking NLP models?
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Autumn 2018<br>
+  Friday 12:00-1:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Robin Jia<br/>
+Theme: Natural language generation</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Oct 5</td>
+  <td></td>
+  <td> Organizational meeting </td>
+</tr>
+<tr>
+  <td>Oct 12</td>
+  <td>Ashwin Paranjape</td>
+  <td>
+    Wiseman et al.
+    <strong>Learning Neural Templates for Text Generation</strong>.
+    2018.
+    [<a href="https://arxiv.org/pdf/1808.10122.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Oct 19</td>
+  <td>Akhila Yerukola</td>
+  <td>
+    Clark et al.
+    <strong>Neural Text Generation in Stories Using Entity Representations as Context</strong>.
+    NAACL 2018.
+    [<a href="https://homes.cs.washington.edu/~eaclark7/www/naacl2018.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Oct 26</td>
+  <td>Robin Jia</td>
+  <td>
+    Holtzman et al.
+    <strong>Learning to Write with Cooperative Discriminators</strong>.
+    ACL 2018.
+    [<a href="https://arxiv.org/pdf/1805.06087.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 2</td>
+  <td>Amita Kamath</td>
+  <td>
+    Guo et al.
+    <strong>Top-Down Tree Structured Text Generation</strong>.
+    2018.
+    [<a href="https://arxiv.org/pdf/1808.04865.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 9</td>
+  <td>Alex Tamkin</td>
+  <td>Gu et al.
+    <strong>Non-autoregressive Neural Machine Translation</strong>.
+    ICLR, 2018
+    [<a href="https://arxiv.org/pdf/1711.02281.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 16</td>
+  <td>Abigail See</td>
+  <td>Caccia et al.
+    <strong>Language GANs Falling Short</strong>.
+    2018.
+    [<a href="https://arxiv.org/pdf/1811.02549.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 23</td>
+  <td></td>
+  <td>No meeting (Thanksgiving)</td>
+</tr>
+<tr>
+  <td>Nov 30</td>
+  <td>Hugh Zhang</td>
+  <td>
+    Fan et al.
+    <strong>Hierarchical Neural Story generation</strong>.
+    ACL 2018.
+    [<a href="http://aclweb.org/anthology/P18-1082">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Dec 7</td>
+  <td></td>
+  <td>No meeting (NAACL deadline)</td>
+</tr>
+<tr>
+  <td>Dec 14</td>
+  <td>Mina Lee</td>
+  <td>
+    Ci&#769;fka et al.
+    <strong>Eval all, trust a few, do wrong to none: Comparing sentence generation models</strong>.
+    2018.
+    [<a href="https://arxiv.org/pdf/1804.07972.pdf">pdf</a>]
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<!-- -------------------------------------------------------- -->
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2018<br>
+  Friday 1:00-2:00pm, Gates 304 <br>
+</h2>
+<p>Person in charge: Robin Jia</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>April 13</td>
+  <td>Robin Jia</td>
+  <td>Recent work on unsupervised machine translation:
+    <ul>
+      <li> Alexis Conneau, Guillaume Lample, Marc'Aurelio Ranzato, Ludovic Denoyer, and Herve Jegou.
+      <strong> Word Translation without Parallel Data.</strong>
+      ICLR 2018.
+      [<a href="https://arxiv.org/pdf/1710.04087.pdf">pdf</a>]
+      <li> Guillaume Lample, Ludovic Denoyer, and Marc'Aurelio Ranzato.
+      <strong> Unsupervised Machine Translation using Monolingual Corpora Only.</strong>
+      ICLR 2018.
+      [<a href="https://arxiv.org/pdf/1711.00043.pdf">pdf</a>]
+      <li> Mikel Artetxe, Gorka Labaka, Eneko Agirre, and Kyunghyun Cho.
+      <strong> Unsupervised Neural Machine Translation.</strong>
+      ICLR 2018.
+      [<a href="https://arxiv.org/pdf/1710.11041.pdf">pdf</a>]
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>April 20</td>
+  <td>Braden Hancock</td>
+  <td>
+    Sebastian Ruder.
+    <strong>
+      An Overview of Multi-Task Learning in Deep Neural Networks.
+    </strong>
+    [<a href="https://arxiv.org/pdf/1706.05098.pdf">pdf</a>]<br/>
+  </td>
+</tr>
+<tr>
+  <td>April 27</td>
+  <td>Peng Qi</td>
+  <td>
+    David Yarowsky.
+    <strong>
+      Unsupervised Word Sense Disambiguation Rivaling Supervised Methods.
+    </strong>
+    ACL 1995.
+    [<a href="http://www.aclweb.org/anthology/P95-1026">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>May 4</td>
+  <td>Ashwin Paranjape</td>
+  <td>
+    <ul>
+      <li> Hal Daume III.
+      <strong>
+        Frustratingly Easy Domain Adaptation.
+      </strong>
+      ACL 2007.
+      [<a href="http://legacydirs.umiacs.umd.edu/~hal/docs/daume07easyadapt.pdf">pdf</a>]
+      <li> Baochen Sun, Jiashi Feng, and Kate Saenko.  
+      <strong>Return of Frustratingly Easy Domain Adaptation.</strong>
+      AAAI 2016.
+      [<a href="https://arxiv.org/abs/1511.05547">pdf</a>]
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>May 11</td>
+  <td>Dan Iter</td>
+  <td>
+    <ul>
+      <li> Chelsea Finn, Pieter Abbeel, and Sergey Levine.
+      <strong>
+        Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks.
+      </strong>
+      ICML 2017.
+      [<a href="https://arxiv.org/pdf/1703.03400.pdf">pdf</a>]
+      <li> Alex Nichol, Joshua Achiam, and John Schulman.
+      <strong>On First-Order Meta-Learning Algorithms.</strong>
+      [<a href="https://arxiv.org/pdf/1803.02999.pdf">pdf</a>]
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>May 18</td>
+  <td/>
+  <td>EMNLP break</td>
+</tr>
+<tr>
+  <td>Mar 25</td>
+  <td/>
+    <td>Canceled due to Ilya Sutskever talk</td>
+</tr>
+<tr>
+  <td>June 1</td>
+  <td>Ice Pasupat</td>
+  <td>
+    <ul>
+      <li>Yuan Zhang, David Gaddy, Regina Barzilay, and Tommi Jaakkola.
+      <strong>Ten Pairs to Tag - Multilingual POS Tagging via Coarse Mapping between Embeddings.</strong>
+      NAACL 2016.
+      [<a href="https://people.csail.mit.edu/tommi/papers/Zhangetal_naacl16.pdf">pdf</a>]</li>
+      <li>Mikel Artetxe, Gorka Labaka, and Eneko Agirre.
+      <strong>Learning bilingual word embeddings with (almost) no bilingual data.</strong>
+      ACL 2017.
+      [<a href=https://aclweb.org/anthology/P/P17/P17-1042.pdf>pdf</a>]</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>June 8</td>
+  <td>Abigail See</td>
+  <td>
+    Yuan Zhang, Regina Barzilay, and Tommi Jaakkola.
+    <strong>Aspect-augmented Adversarial Networks for Domain Adaptation</strong>.
+    TACL 2017.
+    [<a href="https://arxiv.org/pdf/1701.00188.pdf">pdf</a>]
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<!-- -------------------------------------------------------- -->
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2018<br>
+  Monday 2:00-3:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Robin Jia</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Jan 22</td>
+  <td>Allen Nie</td>
+  <td>
+    Tao Lei, Regina Barzilay, and Tommi Jaakkola.
+    <strong> Rationalizing Neural Predictions. </strong>
+    EMNLP 2016.
+    [<a href="https://arxiv.org/pdf/1606.04155.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Jan 29</td>
+  <td>Peng Qi</td>
+  <td>Recent work that uses syntactic parses for neural machine translation:
+    <ul>
+    <li>Akiko Eriguchi, Yoshimasa Tsuruoka, and Kyunghyun Cho.  
+    <strong>Learning to Parse and Translate Improves Neural Machine Translation.</strong>
+    ACL 2017.  [<a href="http://www.aclweb.org/anthology/P/P17/P17-2012.pdf">pdf</a>]<br/>
+
+    <li>Shuangzhi Wu, Dongdong Zhang, Nan Yang, Mu Li, and Ming Zhou.
+    <strong>Sequence-to-Dependency Neural Machine Translation.</strong> 
+    ACL 2017.  [<a href="http://www.aclweb.org/anthology/P/P17/P17-1065.pdf">pdf</a>]<br/>
+
+    <li>Huadong Chen, Shujian Huang, David Chiang, Jiajun Chen.  
+    <strong>Improved Neural Machine Translation with a Syntax-Aware Encoder and Decoder.</strong>
+    ACL 2017.  [<a href="http://www.aclweb.org/anthology/P/P17/P17-1177.pdf">pdf</a>]<br/>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>Feb 5</td>
+  <td>Will Monroe</td>
+  <td>
+    Jacob Andreas, Dan Klein, and Sergey Levine.
+    <strong>
+      Learning with Latent Language.
+    </strong>
+    arXiv, 2017.
+    [<a href="https://arxiv.org/pdf/1711.00482.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 12</td>
+  <td>Braden Hancock</td>
+  <td>
+    Shashank Srivastava, Igor Labutov, and Tom Mitchell.
+    <strong>
+      Joint Concept Learning and Semantic Parsing from Natural Language Explanations.
+    </strong>
+    EMNLP, 2017.
+    [<a href="http://aclweb.org/anthology/D17-1161">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Feb 19</td>
+  <td/>
+  <td>President's Day/ACL break</td>
+</tr>
+<tr>
+  <td>Feb 26</td>
+  <td>Yoav Artzi</td>
+  <td>Guest talk</td>
+</tr>
+<tr>
+  <td>Mar 5</td>
+  <td>Ice Pasupat</td>
+  <td>
+    Sanjeev Arora, Yingyu Liang, and Tengyu Ma.
+    <strong>
+      A Simple but Tough-to-beat Baseline for Sentence Embeddings.
+    </strong>
+    ICLR, 2017.
+    [<a href="https://openreview.net/pdf?id=SyK00v5xx">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Mar 12</td>
+  <td>Dan Iter</td>
+  <td>
+    Alec Radford, Rafal Jozefowicz, and Ilya Sutskever.
+    <strong>Learning to Generate Reviews and Discovering Sentiment.</strong>
+    [<a href="https://arxiv.org/abs/1704.01444">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Mar 19</td>
+  <td>Yuhao Zhang</td>
+  <td>
+    Amar Parkash and Devi Parikh.
+    <strong>
+      Attributes for Classifier Feedback.
+    </strong>
+    [<a href="https://www.cc.gatech.edu/~parikh/Publications/ParkashParikh_ECCV_2012_attributes_feedback.pdf">pdf</a>]
+  </td>
+</tr>
+
+
+</table>
+<br/>
+
+<!-- -------------------------------------------------------- -->
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2017<br>
+  Monday 2:00-3:00pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Robin Jia</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+  <td>Oct 23</td>
+  <td>Ashwin Paranjape</td>
+  <td>
+    Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, and Pieter Abbeel.
+    <strong>
+      InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets.
+    </strong>
+    NIPS 2016.
+    [<a href="https://arxiv.org/pdf/1606.03657.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Oct 30</td>
+  <td>Peng Qi</td>
+  <td>Overview of the Turing Test, including: Alan Turing.
+    <strong>
+      Computing Machinery and Intelligence.
+    </strong>
+    Mind, 1950.
+    [<a href="https://www.csee.umbc.edu/courses/471/papers/turing.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 6</td>
+  <td>Siva Reddy</td>
+  <td>
+    Brenden M. Lake, Marco Baroni.
+    <strong>
+      Still not systematic after all these years: On the compositional skills of sequence-to-sequence recurrent networks.
+    </strong>
+    arXiv, 2017.
+    [<a href="https://arxiv.org/abs/1711.00350">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 13</td>
+  <td>Ice Pasupat</td>
+  <td>
+    Tim Paek. 
+    <strong>
+      Towards evaluation that leads to best practice: reconciling dialog evaluation in research and industry.
+    </strong>
+    NAACL, 2007.
+    [<a href="http://www.aclweb.org/anthology/W07-0306">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Nov 20</td>
+  <td/>
+  <td>Thanksgiving Week</td>
+</tr>
+<tr>
+  <td>Nov 27</td>
+  <td>Urvashi Khandelwal</td>
+  <td>
+    Gábor Melis, Chris Dyer, and Phil Blunsom.
+    <strong>
+      On the State of the Art of Evaluation in Neural Language Models.
+    </strong>
+    arXiv, 2017.
+    [<a href="https://arxiv.org/abs/1707.05589">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Dec 4</td>
+  <td>Will Monroe</td>
+  <td>Zachary Lipton.
+    <strong>
+      The Mythos of Model Interpretability.
+    </strong>
+    ICML 2016 Workshop on Human Interpretability in Machine Learning (WHI 2016).
+    [<a href="https://arxiv.org/pdf/1606.03490.pdf">pdf</a>]
+  </td>
+</tr>
+<tr>
+  <td>Dec 11</td>
+  <td>Ziang Xie</td>
+  <td>
+    Huan Ling, Sanja Fidler.
+    <strong>
+      Teaching Machines to Describe Images via Natural Language Feedback.
+    </strong>
+    [<a href="https://arxiv.org/pdf/1706.00130.pdf">pdf</a>]
+  </td>
+</tr>
+
+
+</table>
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2017<br>
+  Wednesday 3:00-4:15pm, Gates 463A/219 <br>
+</h2>
+<p>Person in charge: Urvashi Khandelwal</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+    <td>Jun 28</td>
+    <td>Siva Reddy</td>
+    <td>Adhiguna Kuncoro, Miguel Ballesteros, Lingpeng Kong, Chris Dyer, Graham Neubig, Noah A. Smith.
+    <strong>What Do Recurrent Neural Network Grammars Learn About Syntax?</strong>
+    EACL 2017.
+    [<a href="https://arxiv.org/pdf/1611.05774.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Jul 12</td>
+    <td>Abi See</td>
+    <td>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
+    <strong>Attention is all you need</strong>.
+    [<a href="https://arxiv.org/pdf/1706.03762.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Jul 19</td>
+    <td>Panupong (Ice) Pasupat</td>
+    <td> Lukasz Kaiser, Aidan N. Gomez, Noam Shazeer, Ashish Vaswani, Niki Parmar, Llion Jones, Jakob Uszkoreit.
+        <strong>One Model To Learn Them All</strong>.
+    [<a href="https://arxiv.org/pdf/1706.05137.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Jul 26</td>
+    <td>Robin Jia</td>
+    <td>Mandar Joshi, Eunsol Choi, Daniel S. Weld, Luke Zettlemoyer.
+    <strong>TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension</strong>.
+    [<a href="https://arxiv.org/pdf/1705.03551.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Aug 2</td>
+    <td></td>
+    <td>ACL.
+</tr>
+
+<tr>
+    <td>Aug 9</td>
+    <td>Ashwin Paranjape</td>
+    <td>Alex Gittens, Dimitris Achlioptas, Michael W. Mahoney.
+    <strong>Skip-Gram – Zipf + Uniform = Vector Additivity</strong>.
+    ACL 2017.
+    [<a href="http://aclanthology.coli.uni-saarland.de/pdf/P/P17/P17-1007.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Aug 16</td>
+    <td>Fereshte Khani</td>
+    <td>Igor Mordatch, Pieter Abbeel.
+    <strong>Emergence of Grounded Compositional Language in Multi-Agent Populations</strong>.
+    [<a href="https://arxiv.org/pdf/1703.04908.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Aug 23</td>
+    <td>Sebastian Schuster</td>
+    <td>Jacob Andreas, Anca Dragan, Dan Klein.
+    <strong>Translating Neuralese</strong>.
+    ACL 2017.
+    [<a href="https://arxiv.org/pdf/1704.06960.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Sep 6</td>
+    <td>Mihail Eric</td>
+    <td>Jason D. Williams, Kavosh Asadi, Geoffrey Zweig.
+    <strong>Hybrid Code Networks: practical and efficient end-to-end dialog control with supervised and reinforcement learning</strong>
+    ACL 2017.
+    [<a href="https://arxiv.org/pdf/1702.03274.pdf">pdf</a>]
+</tr>
+
+
+</table>
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2017<br>
+  Wednesday 3:00-4:15pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Peng Qi</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+<tr>
+    <td>Apr 5</td>
+    <td>Sanjeev Arora</td>
+    <td>Guest talk on generative adversarial networks.
+</tr>
+
+<tr>
+    <td>Apr 12</td>
+    <td></td>
+    <td>EMNLP deadline (4/14).
+</tr>
+
+<tr>
+    <td>Apr 19</td>
+    <td>Peng Qi</td>
+    <td>Tal Linzen, Emmanuel Dupoux, Yoav Goldberg.
+    <strong>Assessing the Ability of LSTMs to Learn Syntax-Sensitive Dependencies</strong>.
+    TACL 2017.
+    [<a href="https://arxiv.org/pdf/1611.01368.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Apr 26</td>
+    <td>Fereshte Khani</td>
+    <td>Angeliki Lazaridou, Alexander Peysakhovich, Marco Baroni.
+    <strong>Multi-Agent Cooperation and the Emergence of (Natural) Language</strong>.
+    ICLR 2017.
+    [<a href="https://arxiv.org/pdf/1612.07182.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>May 3</td>
+    <td>Urvashi Khandelwal</td>
+    <td>Bhuwan Dhingra, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov.
+    <strong>Linguistic Knowledge as Memory for Recurrent Neural Networks</strong>.
+    arXiv.
+    [<a href="https://arxiv.org/pdf/1703.02620.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>May 10</td>
+    <td>Robin Jia</td>
+    <td>Ben Athiwaratkun, Andrew Gordon Wilson.
+    <strong>Multimodal Word Distributions</strong>.
+    ACL 2017.
+    [<a href="https://arxiv.org/pdf/1704.08424.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>May 17</td>
+    <td>Arun Chaganty</td>
+    <td>Zhiting Hu, Zichao Yang, Xiaodan Liang, Ruslan Salakhutdinov, Eric P. Xing.
+    <strong>Controllable Text Generation</strong>.
+    arXiv.
+    [<a href="https://arxiv.org/pdf/1703.00955.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>May 24</td>
+    <td>Panupong (Ice) Pasupat</td>
+    <td>Haonan Yu, Haichao Zhang, Wei Xu.
+    <strong>A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment</strong>.
+    arXiv.
+    [<a href="https://arxiv.org/pdf/1703.09831.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>May 31</td>
+    <td>Kelvin Guu</td>
+    <td>Mohammad Norouzi, Samy Bengio, Zhifeng Chen, Navdeep Jaitly, Mike Schuster, Yonghui Wu, Dale Schuurmans.
+    <strong>Reward Augmented Maximum Likelihood for Neural Structured Prediction</strong>.
+    NIPS 2016.
+    [<a href="https://arxiv.org/pdf/1609.00150.pdf">pdf</a>]
+</tr>
+
+<tr>
+    <td>Jun 7</td>
+    <td>Dor Arad</td>
+    <td>Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes, Jason Weston.
+    <strong>Key-Value Memory Networks for Directly Reading Documents</strong>.
+    EMNLP 2016.
+    [<a href="https://arxiv.org/pdf/1606.03126.pdf">pdf</a>]
+</tr>
+
+
+
+</table>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2017<br>
+  Wednesday 3:00-4:15pm, Gates 219 <br>
+</h2>
+<p>Person in charge: Urvashi Khandelwal</p>
+<table class="p" cellpadding="5">
+    <tr>
+        <th class="bottomborder" align="left" width="75">Date</th>
+        <th class="bottomborder" align="left" width="100">Moderator</th>
+        <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+    </tr>
+
+    <tr>
+        <td>Jan 18</td>
+        <td>Will Monroe</td>
+        <td>Yoon Kim and Alexander M. Rush.
+            <B>Sequence-Level Knowledge Distillation</B>. EMNLP 2016.
+            [<a href="http://aclweb.org/anthology/D16-1139">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jan 25</td>
+        <td>Fereshte Khani</td>
+        <td>E. Dario Gutierrez, Roger Levy and Benjamin K. Bergen.
+            <B>Finding Non-Arbitrary Form-Meaning Systematicity Using
+            String-Metric
+        Learning for Kernel Regression</B>.
+            ACL 2016.
+            [<a href="http://www.cogsci.ucsd.edu/~bkbergen/papers/smlkr_final.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Feb 1 </td>
+        <td></td>
+        <td>ACL Deadline (2/6).
+        </td>
+    </tr>
+
+    <tr>
+        <td>Feb 8</td>
+        <td>He He</td>
+        <td>Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka, Richard Socher.
+            <B>A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks</B>.
+            Under review at ICLR 2017.
+            [<a href="https://arxiv.org/pdf/1611.01587v3.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Feb 15</td>
+        <td>Jon Gauthier</td>
+        <td>Eric Jang, Shane Gu, Ben Poole.
+            <B>Categorical Reparameterization with Gumbel-Softmax</B>.
+            ICLR 2017.
+            [<a href="https://arxiv.org/pdf/1611.01144.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Feb 22</td>
+        <td>Kevin Clark</td>
+        <td>Karthik Narasimhan, Adam Yala, Regina Barzilay.
+            <B>Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning</B>.
+            EMNLP 2016.
+            [<a href="https://arxiv.org/pdf/1603.07954.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Mar 1</td>
+        <td>Yuhao Zhang</td>
+        <td>Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, Hannaneh Hajishirzi.
+            <B>Bidirectional Attention Flow for Machine Comprehension</B>.
+            arXiv:1611.01603.
+            [<a href="https://arxiv.org/pdf/1611.01603.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Victor Zhong</td>
+        <td>Caiming Xiong, Victor Zhong, Richard Socher.
+            <B>Dynamic Coattention Networks For Question Answering</B>.
+            Under review at ICLR 2017.
+            [<a href="https://arxiv.org/pdf/1611.01604.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mar 8</td>
+        <td>Danqi Chen</td>
+        <td>Yoon Kim, Carl Denton, Luong Hoang, Alexander M. Rush.
+            <B>Structured Attention Networks</B>.
+            Under review at ICLR 2017.
+            [<a href="https://openreview.net/pdf?id=HkE0Nvqlg">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mar 15</td>
+        <td>Robin Jia</td>
+        <td>Kenton Lee, Mike Lewis, Luke Zettlemoyer.
+            <B>Global Neural CCG Parsing with Optimality Guarantees</B>.
+            EMNLP 2016.
+            [<a href="https://arxiv.org/pdf/1607.01432.pdf">pdf</a>]
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mar 22</td>
+        <td>Abi See</td>
+        <td>Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals.
+            <B>Understanding Deep Learning Requires Rethinking Generalization</B>.
+            Under review at ICLR 2017.
+            [<a href="https://openreview.net/pdf?id=Sy8gdB9xx">pdf</a>]
+        </td>
+    </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2016<br>
+  Wednesday 3:00-4:15pm, Gates 219/415 <br>
+</h2>
+<p>Person in charge: Urvashi Khandelwal</p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 5th</td>
+    <td>Abi See</td>
+    <td>Joseph Weizenbaum.
+      <B>ELIZA - A Computer Program for the Study of Natural Language Communication Between Man and Machine</B>.
+      Computational Linguistics 1966.
+    [<a href="http://web.stanford.edu/class/cs124/p36-weizenabaum.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 12th</td>
+    <td>Kai Sheng Tai</td>
+    <td>Daniel G. Bobrow, Ronald M. Kaplan, Martin Kay,
+        Donald A. Norman, Henry Thompson and
+        Terry Winograd.
+      <B>GUS, A Frame-Driven Dialog System</B>.
+      Artificial Intelligence 1977.
+      [<a href="http://nlp.stanford.edu/acvogel/gus.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 19th</td>
+    <td>Panupong Pasupat</td>
+    <td>Bhuwan Dhingra, Lihong Li, Xiujun Li, Jianfeng Gao, Yun-Nung Chen,
+        Faisal Ahmed, Li Deng.
+      <B>End-to-End Reinforcement Learning of Dialogue Agents for Information
+        Access</B>.
+      arXiv:1609.00777.
+      [<a href="https://arxiv.org/pdf/1609.00777v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 26th</td>
+    <td>Jon Gauthier</td>
+    <td>Sainbayar Sukhbaatar, Arthur Szlam, Rob Fergus.
+      <B>Learning Multiagent Communication with Backpropagation</B>.
+      arXiv:1605.07736.
+      [<a href="https://arxiv.org/pdf/1605.07736v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 2nd</td>
+    <td>Fereshte Khani</td>
+    <td>Steve Young, Milica Gasic, Blaise Thomson and Jason D. Williams.
+      <B>POMDP-based Statistical Spoken Dialogue
+      Systems: a Review</B>.
+      IEEE2013.
+      [<a
+          href="http://mi.eng.cam.ac.uk/~sjy/papers/ygtw13.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 9th</td>
+    <td>Robin Jia</td>
+    <td>Barbara J. Grosz and Candace L. Sidner.
+      <B>Attention, Intentions, and the  Structure of Discourse</B>.
+      Computational Linguistics 1986.
+      [<a href="http://www.aclweb.org/anthology/J86-3001">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 16th</td>
+    <td>He He</td>
+    <td>Iulian Vlad Serban, Alessandro Sordoni, Ryan Lowe, Laurent Charlin,
+        Joelle Pineau, Aaron Courville, Yoshua Bengio.
+      <B>A Hierarchical Latent Variable Encoder-Decoder Model for Generating
+          Dialogues</B>.
+        arXiv:1605.06069.
+        [<a href="https://arxiv.org/pdf/1605.06069.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 23rd</td>
+    <td></td>
+    <td>Thanksgiving break.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 30th</td>
+    <td>Yulia Tsvetkov</td>
+    <td>Kenneth Mark Colby, Sylvia Weber and Franklin Dennis Hilf.
+        <B>Artificial Paranoia</B>.
+        Artificial Intelligence 1971.
+      [<a
+          href="http://web.stanford.edu/class/cs125/colby_71.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 7th</td>
+    <td>Ashwin Paranjape</td>
+    <td>Terry Winograd.
+      <B>Understanding Natural Language</B>.
+      Cognitive Psychology 1972.
+      [<a
+          href="http://www.cs.uu.nl/docs/vakken/b3ii/Intelligente%20Interactie%20literatuur/College%208.%20Natuurlijke%20taal%20processing%20(Dignum)/Extra%20literatuur/shrdlu_Winograd.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 14th</td>
+    <td>Kevin Clark</td>
+    <td>Jason D. Williams, Geoffrey Zweig.
+      <B>End-to-end LSTM-based dialog control optimized with supervised and
+          reinforcement learning</B>.
+      arXiv:1606.01269.
+      [<a href="https://arxiv.org/pdf/1606.01269v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2016<br>
+  Wednesday 12:00-1:15pm, Gates 120 <br>
+</h2>
+<p>Person in charge: Urvashi Khandelwal</p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jun 29th</td>
+    <td>Alex Wang</td>
+    <td>Sarath Chandar, Sungjin Ahn, Hugo Larochelle, Pascal Vincent, Gerald
+        Tesauro, Yoshua Bengio.
+      <B>Hierarchical Memory Networks</B>.
+      arXiv:1605.07427.
+    [<a href="https://arxiv.org/pdf/1605.07427v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 6th</td>
+    <td>Fereshte Khani</td>
+    <td>Dave Golland, Percy Liang, Dan Klein.
+      <B>A Game-Theoretic Approach to Generating Spatial Descriptions</B>.
+      EMNLP2010.
+      [<a href="http://cs.stanford.edu/~pliang/papers/pragmatics-emnlp2010.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 13th</td>
+    <td>Mihail Eric</td>
+    <td>Antoine Bordes, Jason Weston.
+      <B>Learning End-to-End Goal-Oriented Dialog</B>.
+      arXiv:1605.07683.
+      [<a href="https://arxiv.org/pdf/1605.07683v2.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 20th</td>
+    <td>Arun Chaganty</td>
+    <td>Sanjeev Arora, Yuanzhi Li, Yingyu Liang, Tengyu Ma, Andrej Risteski.
+      <B>Linear Algebraic Structure of Word Senses, with Applications to
+      Polysemy</B>.
+      arXiv:1601.03764.
+      [<a href="http://arxiv.org/pdf/1601.03764v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 27th</td>
+    <td>Sebastian Schuster</td>
+    <td>Siva Reddy, Oscar Tackstrom, Michael Collins, Tom Kwiatkowski, Dipanjan
+        Das, Mark Steedman, Mirella Lapata.
+      <B>Transforming Dependency Structures to Logical Forms for Semantic
+          Parsing</B>.
+      ACL2016
+      [<a
+          href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44858.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 3rd</td>
+    <td>Grace Muzny</td>
+    <td>Mohit Iyyer, Anupam Guha, Snigdha Chaturvedi, Jordan Boyd-Graber, Hal
+        Daume III.
+      <B>Feuding Families and Former Friends:
+      Unsupervised Learning for Dynamic Fictional Relationships</B>.
+      NAACL2016.
+      [<a href="https://www.cs.umd.edu/~miyyer/pubs/2016_naacl_relationships.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 10th</td>
+    <td></td>
+    <td>
+      ACL.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 17th</td>
+    <td></td>
+    <td>ACL review.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 24th</td>
+    <td>Ellie Pavlick (guest talk)</td>
+    <td>Ellie Pavlick, Chris Callison-Burch.
+        <B>Most <i>babies</i> are <i>little</i> and most <i>problems</i> are
+            <i>huge</i>: Compositional Entailment in Adjective-Nouns</B>.
+        ACL2016.
+      [<a
+          href="http://www.cis.upenn.edu/~ccb/publications/compositional-entailment-in-adjective-nouns.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 31st</td>
+    <td>Panupong Pasupat</td>
+    <td>Daniel Andor, Chris Alberti, David Weiss, Aliaksei Severyn, Alessandro
+        Presta, Kuzman Ganchev, Slav Petrov, Michael Collins.
+      <B>Globally Normalized Transition-Based Neural Networks</B>.
+      arXiv:1603.06042.
+      [<a href="https://arxiv.org/pdf/1603.06042v2.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Sep 7th</td>
+    <td>Urvashi Khandelwal</td>
+    <td>Tsung-Hsien Wen, David Vandyke, Nikola Mrksic, Milica Gasic, Lina M.
+        Rojas-Barahona, Pei-Hao Su, Stefan Ultes, Steve Young.
+      <B>A Network-based End-to-End Trainable Task-oriented Dialogue System</B>.
+      arXiv:1604.04562.
+      [<a href="http://arxiv.org/pdf/1604.04562v2.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Sep 14th</td>
+    <td>Yuhao Zhang</td>
+    <td>Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, Yonghui
+        Wu.
+      <B>Exploring the Limits of Language Modeling</B>.
+      arXiv:1602.02410.
+      [<a href="http://arxiv.org/pdf/1602.02410.pdf">pdf</a>]
+    </td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2016<br>
+  Wednesday 12:15-1:15pm, Gates 219 <br>
+</h2>
+<p>Person in charge: <a href="http://cs.stanford.edu/~danqi/">Danqi Chen</a>, <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 13th</td>
+    <td>Will Monroe</td>
+    <td>Jacob Andreas, Dan Klein.
+      <B>Reasoning About Pragmatics with Neural Listeners and Speakers</B>.
+      arXiv:1604.00562.
+    [<a href="http://arxiv.org/pdf/1604.00562.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>April 20th</td>
+    <td>Kevin Clark</td>
+    <td>Marc’Aurelio Ranzato, Sumit Chopra, Michael Auli, Wojciech Zaremba.
+      <B>Sequence Level Training with Recurrent Neural Networks</B>.
+      ICLR2016.
+      [<a href="http://arxiv.org/pdf/1511.06732v5.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>April 27th</td>
+    <td>Jon Krause</td>
+    <td>Alex Graves.
+      <B>Adaptive Computation Time for Recurrent Neural Networks</B>.
+      arXiv:1603.08983.
+      [<a href="http://arxiv.org/pdf/1603.08983v2.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 4th</td>
+    <td>Robin Jia</td>
+    <td>Ben Hixon, Peter Clark, Hannaneh Hajishirzi.
+      <B>Learning Knowledge Graphs for Question Answering through Conversational Dialog</B>.
+      NAACL2015.
+      [<a href="http://allenai.org/content/publications/hixon_naacl_2015.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 11th</td>
+    <td>Fereshte Khani</td>
+    <td>Andreas Vlachos, Stephen Clark.
+      <B>A New Corpus and Imitation Learning Framework for Context-Dependent Semantic Parsing</B>.
+      TACL2014.
+      [<a href="http://www.cl.cam.ac.uk/~sc609/pubs/tacl14andreas.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 18th</td>
+    <td>Peng Qi</td>
+    <td>
+      Trevor Cohn, Cong Duy Vu Hoang, Ekaterina Vymolova, Kaisheng Yao, Chris Dyer, Gholamreza Haffari.
+      <B>Incorporating Structural Alignment Biases into an Attentional Neural Translation Model</B>.
+      NAACL2016.
+      [<a href="http://arxiv.org/pdf/1601.01085v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 25th</td>
+    <td>Arun Chaganty</td>
+    <td>
+      Kai-Wei Chang, Akshay Krishnamurthy, Alekh Agarwal, Hal Daume; III, John Langford. <B>Learning to Search Better than Your Teacher</B>.
+      ICML2015
+      [<a href="http://www.umiacs.umd.edu/~hal/docs/daume15lols.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 1st</td>
+    <td></td>
+    <td>EMNLP deadline
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 8th</td>
+    <td>Danqi Chen</td>
+    <td>Adam Trischler, Zheng Ye, Xingdi Yuan, Jing He, Phillip Bachman, Kaheer Suleman. <B>A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data</B>.
+        arXiv:1603.08884.
+      [<a href="http://arxiv.org/pdf/1603.08884v1.pdf">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2016<br>
+  Wednesday 1-2pm, Gates 120 (usually) <br>
+</h2>
+<p>Person in charge: <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 20th</td>
+    <td>Panupong Pasupat</td>
+    <td>Jacob Andreas, Marcus Rohrbach, Trevor Darrell, Dan Klein.
+      <B>Composing neural network modules for question answering</B>.
+      arXiv2015/2016.
+    [<a href="http://arxiv.org/pdf/1601.01705v1.pdf">paper1</a>]
+    [<a href="http://arxiv.org/pdf/1511.02799v2.pdf">paper2</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 27th</td>
+    <td>Arun Chaganty</td>
+    <td>Judith Eckle-Kohler, Roland Kluge, Iryna Gurevych.
+      <B>On the Role of Discourse Markers for Discriminating Claims and
+      Premises in Argumentative Discourse</B>.
+      EMNLP2015.
+      [<a href="https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/publikationen/2015/emnlp15discourseMarkers_cameraReady.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 3rd</td>
+    <td>Sam Bowman</td>
+    <td>
+      <B>Survey of four papers on NNs for textual entailment</B>.
+      [<a href="http://arxiv.org/pdf/1511.06361v3.pdf">paper1</a>]
+      [<a href="http://arxiv.org/pdf/1512.08422.pdf">paper2</a>]
+      [<a href="http://arxiv.org/pdf/1509.06664v1.pdf">paper3</a>]
+      [<a href="http://arxiv.org/pdf/1512.08849v1.pdf">paper4</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 10th</td>
+    <td>Robin Jia</td>
+    <td>Felix Hill, Antoine Bordes, Sumit Chopra, Jason Weston
+      <B>The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations</B>.
+      arXiv2015.
+      [<a href="http://arxiv.org/pdf/1511.02301v3.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 17th</td>
+    <td>Fereshte Khani</td>
+    <td>Volodymyr Kuleshov, Percy Liang.
+      <B>Calibrated Structured Prediction</B>.
+      NIPS2015.
+      [<a href="http://cs.stanford.edu/~pliang/papers/calibration-nips2015.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 24th</td>
+    <td>Suzanne Tamang</td>
+    <td>
+      <B>Clinical event extraction</B>.
+      [<a href="http://www.ncbi.nlm.nih.gov/pubmed/23673394">paper1</a>]
+      [<a href="https://www.dropbox.com/s/ora6nngr0a5wdo8/JOP-2015-Tamang-e313-9.pdf?dl=0">paper2</a>]
+      [<a href="http://repository.edm-forum.org/cgi/viewcontent.cgi?article=1114&context=egems">paper3</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 2nd</td>
+    <td>Thang Luong</td>
+    <td>
+      <B>Multi-task neural translation</B>.
+      [<a href="http://arxiv.org/pdf/1511.06114.pdf">paper1</a>]
+      [<a href="http://arxiv.org/pdf/1601.01073.pdf">paper2</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 9th</td>
+    <td>Rob Voigt</td>
+    <td><B>More than Words + Media and Bias</B>.
+      [<a href="http://www.aclweb.org/anthology/N09-1057">paper1</a>]
+      [<a href="http://core.ac.uk/download/files/153/6894218.pdf">paper2</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2015<br>
+  Wednesday 1:00-2:00pm, Gates 120 (usually) <br>
+</h2>
+<p>Person in charge: <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 7th</td>
+    <td>Russell Stewart</td>
+    <td>S. Sukhbaatar, A. Szlam, J. Weston & R. Fergus.
+      <B>End-To-End Memory Networks</B>.
+      arXiv2015.
+    [<a href="http://arxiv.org/pdf/1503.08895v4.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 14th</td>
+    <td>Panupong Pasupat</td>
+    <td>Yoav Artzi, Kenton Lee and Luke Zettlemoyer.
+      <B>Broad-coverage CCG Semantic Parsing with AMR</B>.
+      EMNLP2015.
+      [<a href="http://yoavartzi.com/pub/alz-emnlp.2015.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 21st</td>
+    <td>Peng Qi</td>
+    <td>Karthik Narasimhan, Tejas Kulkarni and Regina Barzilay.
+      <B>Language Understanding for Text-based Games
+      using Deep Reinforcement Learning</B>.
+      EMNLP2015.
+      [<a href="http://arxiv.org/pdf/1506.08941.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 28th</td>
+    <td>Danqi Chen</td>
+    <td>
+      <B>Survey of attention-based papers: <a href=http://arxiv.org/abs/1409.0473>neural machine translatione</a>, <a href=http://arxiv.org/abs/1509.00685>summarization<a>, <a href=http://arxiv.org/abs/1509.06664>textual entailment</a>, and <a href=http://arxiv.org/abs/1506.03340>reading comprehension</a></B>.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 4th</td>
+    <td><a href="http://cs.stanford.edu/~quocle/">Quoc Le</a></td>
+    <td>Invited Talk. <B>End-to-end Deep Learning for Text and Speech </B>. Venue: <B>Gates 219</B>.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 11th</td>
+    <td>Wil Hamilton</td>
+    <td>Tatsunori B. Hashimoto, David Alvarez-Melis, Tommi S. Jaakkola.
+      <B>Word, graph and manifold embedding from Markov processes</B>.
+     arXiv2015.
+      [<a href="http://arxiv.org/pdf/1509.05808.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 18th (Gates 219)</td>
+    <td>Fereshte Khani</td>
+    <td>Jacob Andreas and Dan Klein.
+      <B>Alignment-Based Compositional Semantics for Instruction Following</B>.
+     EMNLP2015.
+      [<a href="http://nlp.cs.berkeley.edu/pubs/Andreas-Klein_2015_AlignmentSemantics_paper.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 25th</td>
+    <td></td>
+    <td>Thanksgiving Break.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 2nd</td>
+    <td>Robin Jia</td>
+    <td>Minjoon Seo, Hannaneh Hajishirzi, Ali Farhadi, Oren Etzioni, Clint Malcolm.
+      <B>Solving Geometry Problems: Combining Text and Diagram Interpretation</B>.
+    EMNLP2015.
+      [<a href="http://seominjoon.github.io/assets/papers/geosolver/geos.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 9th</td>
+    <td>Kevin Clark</td>
+    <td>Ryan Kiros, Yukun Zhu, Ruslan Salakhutdinov, Richard S. Zemel, Antonio Torralba, Raquel Urtasun, Sanja Fidler.
+      <B>Skip-Thought Vectors</B>.
+      arXiv2015.
+    [<a href="http://arxiv.org/pdf/1506.06726.pdf">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2015<br>
+  Wednesday 11:30-1:00pm, Gates 120 (usually) <br>
+</h2>
+<p>Person in charge: <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 1st</td>
+    <td>Sam Bowman</td>
+    <td>Joel Legrand, Ronan Collobert.
+      <B>Joint RNN-based Greedy Parsing and Word Composition</B>.
+      arXiv2014.
+    [<a href="http://arxiv.org/pdf/1412.7028.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Apr 8th</td>
+    <td></td>
+    <td>Brainstorming
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 15th</td>
+    <td>Gabor Angeli</td>
+    <td>Marjan Ghazvininejad, Kevin Knight.
+      <B>How to Memorize a Random 60-Bit String</B>.
+      NAACL2015.
+      [<a href="http://www.isi.edu/natural-language/mt/memorize-random-60.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 22nd</td>
+    <td>Panupong Pasupat</td>
+    <td>Greg Durrett Dan Klein.
+      <B>A Joint Model for Entity Analysis: Coreference, Typing, and Linking</B>.
+      TACL2014.
+      [<a href="http://www.eecs.berkeley.edu/~gdurrett/papers/durrett-klein-tacl2014.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 29th</td>
+    <td>Will Monroe</td>
+    <td> Jason Weston, Antoine Bordes, Sumit Chopra, Tomas Mikolov.
+      <B>Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks</B>.
+      arXiv2015
+      [<a href="http://arxiv.org/pdf/1502.05698v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 6th</td>
+    <td>Danqi Chen</td>
+    <td>Jonathan Malmaud, Jonathan Huang, Vivek Rathod, Nick Johnston, Andrew Rabinovich, and Kevin Murphy.
+      <B>What’s Cookin’? Interpreting Cooking Videos using Text, Speech and Vision</B>.
+     NAACL2015.
+      [<a href="http://www.cs.ubc.ca/~murphyk/Papers/naacl15.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 13th</td>
+    <td></td>
+    <td>Cancelled due to Sanjeev Arora's talk.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 20th</td>
+    <td><a href="http://www.cs.toronto.edu/~ilya/">Ilya Sutskever</a></td>
+    <td>Invited Talk. <B>Sequence to sequence parsing and the Reinforcement Learning Neural Turing Machine</B>. Venue: <B>Gates 219</B>.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 27th</td>
+    <td></td>
+    <td>Break (EMNLP).
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 3rd</td>
+    <td>Kai Sheng</td>
+    <td>Luke Vilnis, Andrew McCallum.
+      <B>Word Representations via Gaussian Embeddings</B>.
+      ICLR2015.
+    [<a href="http://arxiv.org/pdf/1412.6623v2.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jun 10th</td>
+    <td><a href="http://web.mit.edu/timod/www/">Tim O'Donnell</a></td>
+    <td>Invited Talk. <B>Productivity, Reuse, and Lexicon Learning</B>.
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2015<br>
+  Wednesday 12:30-2:00pm, Gates 120 (usually) <br>
+</h2>
+<p>Person in charge: <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+
+  <tr>
+    <td>Jan 14th</td>
+    <td><a href="http://research.google.com/pubs/OriolVinyals.html">Oriol Vinyal</a></td>
+    <td>Invited Talk. <B>Recurrent Neural Nets as Language Decoders</B>. Venue: Gates 219.
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Jan 21st</td>
+    <td>Thang Luong</td>
+    <td>Sebastien Jean, Kyunghyun Cho, Roland Memisevic, Yoshua Bengio.
+      <B>On Using Very Large Target Vocabulary for Neural Machine Translation.</B>. arXiv2014.
+      [<a href="http://arxiv.org/pdf/1412.2007.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jan 28th</td>
+    <td>Panupong Pasupat</td>
+    <td>Antoine Bordes, Sumit Chopra, Jason Weston.
+      <B>Question Answering with Subgraph Embeddings</B>.
+      EMNLP2014.
+      [<a href="http://emnlp2014.org/papers/pdf/EMNLP2014067.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 4th</td>
+    <td>Sebastian Schuster</td>
+    <td>Lingpeng Kong, Nathan Schneider, Swabha Swayamdipta, Archna Bhatia, Chris Dyer, Noah A. Smith.
+      <B>A Dependency Parser for Tweets</B>.
+      EMNLP2014.
+    [<a href="http://www.cs.cmu.edu/~nasmith/papers/kong+schneider+swayamdipta+bhatia+dyer+smith.emnlp14.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 11th</td>
+    <td>Russell Stewart</td>
+    <td> Jason Weston, Sumit Chopra, Antoine Bordes.
+      <B>Memory Networks</B>.
+      arXiv2014
+      [<a href="http://arxiv.org/abs/1410.3916">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 18th</td>
+    <td>Arun Chaganty</td>
+    <td>R. Tsarfaty, E. Pogrebezky, G. Weiss, Y. Natan, S. Szekely, D. Harel.
+      <B>Semantic Parsing Using Content and Context: A Case Study from Requirements Elicitation</B>.
+     EMNLP2014.
+      [<a href="http://www.wisdom.weizmann.ac.il/~dharel/papers/Semantic%20Parsing.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 25th</td>
+    <td></td>
+    <td>Break.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 4th</td>
+    <td>Fei-Fei Li</td>
+    <td>
+      <B>TED Talk Practice</B>.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 11th</td>
+    <td><a href="http://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a></td>
+    <td>Invited Talk. <B>Crowdsourcing Translation</B>. Venue: Gates 104 (12pm-1pm).
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2014<br>
+  Wednesday 12:30-2:00pm, Gates 120 (usually) <br>
+</h2>
+<p>Person in charge: <a href="http://stanford.edu/~lmthang/">Thang Luong</a></p>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 1st</td>
+    <td>Thang Luong</td>
+    <td>Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio.
+      <B>Neural Machine Translation by Jointly Learning to Align and Translate</B>. arXiv2014.
+      [<a href="http://arxiv.org/abs/1409.0473">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Oct 8th</td>
+    <td>Arun Chaganty</td>
+    <td>Siva Reddy, Mirella Lapata, Mark Steedman. <B>Large-scale Semantic Parsing without Question-Answer Pairs</B>. TACL2014. [<a href="http://sivareddy.in/papers/reddy2014semanticparsing.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 15th</td>
+    <td>Kai Sheng (Gates 463)</td>
+    <td>Ryan Kiros, Ruslan Salakhutdinov, Richard Zemel.
+      <B>Multimodal Neural Language Models</B>.
+      ICML2014.
+      [<a href="http://www.cs.toronto.edu/~rkiros/papers/mnlm2014.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 22nd</td>
+    <td>Mike Kayser</td>
+    <td>Nal Kalchbrenner, Edward Grefenstette, Phil Blunsom.
+      <B>A Convolutional Neural Network for Modelling Sentences</B>.
+      ACL2014.
+    [<a href="http://nal.co/papers/Kalchbrenner_DCNN_ACL14">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 29th</td>
+    <td></td>
+    <td> Break
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 5th</td>
+    <td>Alex Ratner</td>
+    <td>Nate Kushman, Yoav Artzi, Luke Zettlemoyer, Regina Barzilay.
+      <B>Learning to Automatically Solve Algebra Word Problems</B>.
+      ACL2014.
+    [<a href="https://homes.cs.washington.edu/~lsz/papers/kazb-acl14.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 12th</td>
+    <td>Jiwei Li</td>
+    <td>Miao Fan, Deli Zhao, Qiang Zhou, Zhiyuan Liup, Thomas Fang Zheng, Edward Y. Chang.
+      <B>Distant Supervision for Relation Extraction with Matrix Completion</B>.
+      ACL2014.
+      [<a href="http://aclweb.org/anthology/P14-1079">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 19th</td>
+    <td>Thang Luong</td>
+    <td>Quoc Le, Tomas Mikolov.
+      <B>Distributed Representations of Sentences and Documents</B>.
+      ICML2014.
+    [<a href="http://cs.stanford.edu/~quocle/paragraph_vector.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 26th</td>
+    <td></td>
+    <td>Thanksgiving break.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 3rd</td>
+    <td>Will Hamilton</td>
+    <td>Jacob Andreas, Andreas Vlachos, Stephen Clark.
+      <B>Semantic Parsing as Machine Translation</B>.
+      ACL2013.
+    [<a href="http://www.cl.cam.ac.uk/~sc609/pubs/acl13jacob.pdf">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2014<br>
+  Wednesday 12:30-2:00pm, Gates 159 (usually) <br>
+</h2>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jul 16th</td>
+    <td>Keenon Werling</td>
+    <td>David Hall, Taylor Berg-Kirkpatrick, John Canny, Dan Klein.
+      <B>Sparser, Better, Faster GPU parsing</B>. ACL2014.
+      [<a href="http://people.eecs.berkeley.edu/~dlwh/papers/gpuparser.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Jul 23rd</td>
+    <td>Angel Chang</td>
+    <td>Qi Li, Heng Ji. <B>Incremental Joint
+            Extraction of Entity Mentions and Relations</B>. ACL2014.
+        [<a href="http://nlp.cs.rpi.edu/paper/jointmentionrelation.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 30th</td>
+    <td>Gabor Angeli</td>
+    <td>Ce Zhang, Christopher Ré.
+      <B>DimmWitted: A Study of Main-Memory Statistical Analytics</B>.
+      VLDB2014.
+      [<a href="http://arxiv.org/pdf/1403.7550v3.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 6th</td>
+    <td>Caroline</td>
+    <td>Mohit Bansal, David Burkett, Gerald de Melo, Dan Klein.
+      <B>Structured Learning for Taxonomy Induction with Belief Propagation</B>.
+      ACL2014.
+    [<a
+        href="http://ttic.uchicago.edu/~mbansal/papers/acl14_structuredTaxonomy.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 13th</td>
+    <td>Arthur</td>
+    <td> Thomas Kollar, Stefanie Tellex, Matthew R. Walter, Albert Huang, Abraham
+        Bachrach, Sachi Hemachandra, Emma Brunskill, Ashis Banerjee, Deb Roy,
+        Seth Teller, Nicholas Roy.
+        <B>Generalized Grounding Graphs: A Probabilistic Framework
+        for Understanding Grounded Language</B>.
+        JAIR2013.
+        [<a
+        href="http://people.csail.mit.edu/sachih/home/wp-content/uploads/2014/04/G3_JAIR.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 20th</td>
+    <td>Yushi</td>
+    <td>Junwei Bao, Nan Duan, Ming Zhou, Tiejun Zhao.
+      <B>Knowledge-Based Question Answering as Machine Translation</B>.
+      ACL2014.
+    [<a href="http://acl2014.org/acl2014/P14-1/pdf/P14-1091.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 27th</td>
+    <td>Sebastian</td>
+    <td>Nicholas Andrews, Jason Eisner, Mark Dredze.
+      <B>Robust Entity Clustering via Phylogenetic Inference</B>.
+      ACL2014.
+      [<a href="http://www.cs.jhu.edu/~noa/papers/phyloinf.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Sep 3rd</td>
+    <td>Kelvin Guu</td>
+    <td>Tao Lei, Yu Xin, Yuan Zhang, Regina Barzilay, Tommi Jaakkola.
+      <B>Low-Rank Tensors for Scoring Dependency Structures</B>.
+      ACL2014.
+    [<a href="https://people.csail.mit.edu/regina/my_papers/tens14.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sep 10th</td>
+    <td>Sonal Gupta.</td>
+    <td>Islam Beltagy, Katrin Erk, Raymond Mooney.
+        <B>Probabilistic Soft Logic for Semantic Textual Similarity</B>.
+        ACL2014.
+    [<a href="http://www.cs.utexas.edu/users/ml/papers/beltagy.acl14.pdf">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2014<br>
+  Wednesday 12:30-2:00pm, Gates 159 (usually) <br>
+</h2>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 23rd</td>
+    <td>Jonathan</td>
+    <td>Anthony Fader, Luke Zettlemoyer, Oren Etzioni.
+      <B>Open Question Answering Over Curated and Extracted
+      Knowledge Bases</B>. KDD2014.
+      [<a href="https://homes.cs.washington.edu/~lsz/papers/fze-kdd14.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Apr 30th</td>
+    <td>Sam Bowman</td>
+    <td>Karl Moritz Hermann, Phil Blunsom.
+        <B>A Simple Model for Learning Multilingual Compositional Semantics</B>.
+        arXiv:1312.6173.
+        [<a
+            href="http://nlp.cs.rpi.edu/paper/jointmentionrelation.pd://arxiv.org/pdf/1312.6173v1.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 7th</td>
+    <td>Sebastian</td>
+    <td>Laura Chiticariu, Yunyao Li, Frederick R. Reiss.
+      <B>Rule-based Information Extraction is Dead!
+      Long Live Rule-based Information Extraction Systems!</B>.
+      ACL2013.
+      [<a href="http://aclweb.org/anthology//D/D13/D13-1079.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 14th</td>
+    <td>Gabor Angeli</td>
+    <td>Jeffrey Flanigan, Sam Thomson, Jaime Carbonell, Chris Dyer, Noah A. Smith.
+      <B>A Discriminative Graph-Based Parser
+      for the Abstract Meaning Representation</B>.
+      ACL2014.
+    [<a
+        href="https://www.cs.cmu.edu/~jmflanig/flanigan+etal.acl2014.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 21st</td>
+    <td>Mike Kayser</td>
+    <td> Jacob Devlin, Rabih Zbib, Zhongqiang Huang,
+        Thomas Lamar, Richard Schwartz, John Makhoul.
+        <B>Fast and Robust Neural Network Joint Models for Statistical Machine
+        Translation</B>.
+        ACL2014.
+        [<a
+        href="http://acl2014.org/acl2014/P14-1/pdf/P14-1129.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 28th</td>
+    <td>Sonal Gupta</td>
+    <td>Ni Lao, Amarnag Subramanya, Fernando Pereira, William W. Cohen.
+      <B>Reading The Web with Learned Syntactic-Semantic Inference Rules</B>.
+      EMNLP2012.
+    [<a href="http://www.cs.cmu.edu/~nlao/publication/2012/2012.emnlp.paper.pdf">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2014<br>
+  Wednesday 12:30-2:00pm, Gates 159 (usually) <br>
+</h2>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 22nd</td>
+    <td>Gabor Angeli</td>
+    <td>Benjamin Roth, Dietrich Klakow.
+      <B>Combining Generative and Discriminative Model Scores for Distant
+      Supervision</B>.
+        EMNLP2013.
+      [<a href="http://www.aclweb.org/anthology/D13-1003">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Jan 29th</td>
+    <td>Panupong Pasupat</td>
+    <td>Peter D. Turney.
+        <B>Distributional Semantics Beyond Words:
+        Supervised Learning of Analogy and Paraphrase</B>.
+        TACL2013.
+        [<a href="https://www.aclweb.org/anthology/Q/Q13/Q13-1029.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 5th</td>
+    <td>Jacob Steinhardt</td>
+    <td>Qi Zhang, Jin Qian, Huan Chen, Jihua Kang, Xuanjing Huang.
+      <B>Discourse Level Explanatory Relation Extraction from Product Reviews
+      Using First-order Logic</B>.
+      EMNLP2013.
+      [<a href="http://www.aclweb.org/anthology/D/D13/D13-1097.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 12th</td>
+    <td>Roy Frostig</td>
+    <td>Shay B. Cohen, Karl Stratos, Michael Collins, Dean P. Foster, Lyle
+        Ungar.
+      <B>Experiments with Spectral Learning of Latent-Variable PCFGs</B>.
+      NAACL2013.
+    [<a
+        href="http://www.cs.columbia.edu/~mcollins/papers/naacl13spectral.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 19th</td>
+    <td>Arun Chaganty</td>
+    <td> Greg Durrett, Dan Klein.
+        <B>Easy Victories and Uphill Battles in Coreference Resolution</B>.
+        EMNLP2013.
+        [<a
+        href="http://nlp.cs.berkeley.edu/pubs/Durrett-Klein_2013_Coreference_paper.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 26th</td>
+    <td>Angel Chang</td>
+    <td>Alan Ritter, Luke Zettlemoyer, Mausam, Oren Etzioni.
+      <B>Modeling Missing Data in Distant Supervision for Information Extraction</B>.
+      TACL2013.
+    [<a href="http://homes.cs.washington.edu/~lsz/papers/rzme-tacl13.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 5th</td>
+    <td>Adam Vogel</td>
+    <td>Anais Cadilhac, Nicholas Asher, Farah Benamara, Alex Lascarides.
+      <B>Grounding Strategic Conversation: Using negotiation dialogues to
+          predict trades in a win-lose game</B>.
+      EMNLP2013.
+      [<a href="http://aclweb.org/anthology/D/D13/D13-1035.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 12th</td>
+    <td>Danqi Chen</td>
+    <td>He He, Hal Daume III, Jason Eisner.
+      <B>Dynamic Feature Selection for Dependency Parsing</B>.
+      EMNLP2013.
+    [<a href="http://www.cs.jhu.edu/~jason/papers/he+al.emnlp13.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 19th</td>
+    <td>Ziang Xie.</td>
+    <td>Jimmy Dubuisson, Jean-Pierre Eckmann, Christian Scheible, Hinrich
+        Schutze.
+        <B>The Topology of Semantic Knowledge</B>.
+        EMNLP2013.
+    [<a href="http://www.aclweb.org/anthology/D13-1063">pdf</a>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!--<h2>
+  NLP Reading Group Schedule &mdash; Winter 2013<br>
+  Wednesday 12:30-2:00pm, Gates 159 (usually) <br>
+</h2>
+<a href='https://docs.google.com/document/d/1rhKP8MWz7UWpsShLYeqHcCfFJdvDD5SdmET3WfxYo5E/edit?usp=sharing'>Schedule</a> on Google Drive. Email nlp-reading-group@lists.stanford.edu if you need permission.
+
+<br><p><br>-->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2013<br>
+  Wednesday 12:30-2:00pm, Gates 159 (usually) <br>
+</h2>
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 16th</td>
+    <td>Sonal (Gates 400)</td>
+    <td>Hector J. Levesque.
+      <B>On our best behaviour</B>. IJCAI13.
+      [<a href="http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr  bgcolor="#F5EEC6">
+    <td>Oct 23rd</td>
+    <td>Roy Schwartz</td>
+    <td>Roy Schwartz. <B>Semantic representation using Flexible Patterns</B>. EMNLP2013. [<a href="http://www.cs.huji.ac.il/~roys02/papers/twitter_authorship/twitter_authorship_emnlp.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 30th</td>
+    <td>Kenneth Heafield</td>
+    <td>Barry Haddow.
+      <B>Applying Pairwise Ranked Optimisation to Improve the Interpolation of Translation Models</B>.
+      [<a href="http://homepages.inf.ed.ac.uk/bhaddow/mixture.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 6th</td>
+    <td>Jonathan Berant</td>
+    <td>Anthony Fader et al.
+    <B>Paraphrase-Driven Learning for Open Question Answering</B>
+    [<a href="http://homes.cs.washington.edu/~afader/bib_pdf/acl13.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 13th</td>
+    <td>Danqi Chen</td>
+    <td>Liang Huang et al.
+    <B>Structured Perceptron with Inexact Search</B>
+    [<a href="http://aclweb.org/anthology//N/N12/N12-1015.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 20th</td>
+    <td>Sida Wang</td>
+    <td>Alexander Rush.
+    <B>Optimal Beam Search for Machine Translation</B>
+    [<a href="http://people.csail.mit.edu/srush/optbeam.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 27th</td>
+    <td>Break</td>
+    <td>Break
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 4</td>
+    <td>Angel Cheng</td>
+    <td>Sebastian Riedel.
+    <B>Relation Extraction with Matrix Factorization and Universal Schemas</B>
+    [<a href="http://people.cs.umass.edu/~lmyao/papers/univ-schema-tacl.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 11th</td>
+    <td>Gabor Angeli</td>
+    <td>Johan van Benthem.
+    <B>A Brief History of Natural Logic</B>
+    [<a href="http://www.illc.uva.nl/Research/Reports/PP-2008-05.text.pdf">pdf</a>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2013<br>
+  Thursdays 4:00pm-5:30pm, Gates 260 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+
+  <tr>
+    <td>Jul 25</td>
+    <td><a href="http://www.stanford.edu/~robvoigt">Rob</a></td>
+    <td>Shutova, Teufel, and Korhonen.
+     <B>Statistical Metaphor Processing</B>.
+       <a href="http://www.mitpressjournals.org/toc/coli/39/2">CL 2013</a>.
+      [<A HREF="http://aclweb.org/anthology/J/J13/J13-2003.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 15</td>
+    <td><a href="http://arun.chagantys.org/">Arun</a></td>
+    <td>Artzi and Zettlemoyer.
+      <B>Weakly Supervised Learning of Semantic Parsers for Mapping Instructions to Actions</B>.
+      <a href="http://www.transacl.org/papers/">TACL 2013</a>.
+      [<A HREF="http://homes.cs.washington.edu/~lsz/papers/az-tacl13.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 22</td>
+    <td>Gabor</td>
+    <td>Cai and Yates.
+     <B>Large-scale Semantic Parsing via Schema Matching and Lexicon Extension.</B>.
+       <a href="www.acl2013.org">ACL 2013</a>.
+      [<A HREF="http://www.cis.temple.edu/~yates/papers/textual-schema-matching.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 29</td>
+    <td><a href="http://www.stanford.edu/~lmthang/">Thang</a></td>
+    <td>Liu, Watanabe, Sumita, and Zhao.
+     <B>Additive Neural Networks for Statistical Machine Translation</B>.
+         <a href="www.acl2013.org">ACL 2013</a>.
+        [<A HREF="http://www.aclweb.org/anthology/P/P13/P13-1078.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+
+
+
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2013<br>
+  Wednesdays 12:00pm-1:30pm, Gates 159 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 10</td>
+    <td><a href="http://dmcer.net/">Dan</a> and <a href="http://www.spencegreen.com/">Spence</a></td>
+    <td>Chiang, Knight, and Wang.
+     <B>11,001 New Features for Statistical Machine Translation</B>.
+       <a href="http://clear.colorado.edu/NAACLHLT2009/">NAACL 2009</a>.
+      [<A HREF="http://www.isi.edu/~chiang/papers/11001.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 17</td>
+    <td><a href="http://cs.stanford.edu/~jsteinhardt/">Jacob</a></td>
+    <td>Clark and Lappin.
+     <B>Computational Learning Theory and Language Acquisition</B>.
+         <a href="http://www.sciencedirect.com/science/book/9780444517470">Philosophy of Linguistics</a>.
+        [<A HREF="http://www.cs.rhul.ac.uk/home/alexc/papers/clarklappinphil.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 24</td>
+    <td><a href="http://www.stanford.edu/~robvoigt">Rob</a></td>
+    <td>Bamman, O'Connor, and Smith.
+     <B>Censorship and Content Deletion in Chinese Social Media</B>.
+         <a href="http://www.firstmonday.org/">First Monday 2012</a>.
+        [<A HREF="http://www.uic.edu/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3943/3169">text</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 1</td>
+    <td><a href="http://www.stanford.edu/~sidaw">Sida</a></td>
+    <td>Goodfellow, Warde-Farley, Mirza, Courville, and Bengio.
+      <B>Maxout Networks</B>.
+      <a href="http://www.arxiv.org">arXiv 2013</a>.
+      [<A HREF="http://arxiv.org/pdf/1302.4389v3.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 8</td>
+    <td><a href="http://cs.stanford.edu/~rfrostig">Roy</a></td>
+    <td>Macherey, Och, Thayer, and Uszkoreit.
+     <B>Lattice-based Minimum Error Rate Training for Statistical Machine Translation.</B>.
+         <a href="http://conferences.inf.ed.ac.uk/emnlp08/">EMNLP 2008</a>.
+        [<A HREF="http://www.aclweb.org/anthology-new/D/D08/D08-1076.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 15</td>
+    <td><a href="http://www.cs.tau.ac.il/~jonatha6/">Jonathan</a></td>
+    <td>Das and Smith.
+     <B>Graph-Based Lexicon Expansion with Sparsity-Inducing Penalties</B>.
+       <a href="http://www.naaclhlt2012.org/">NAACL/HLT 2012</a>.
+      [<A HREF="http://www.dipanjandas.com/files/naaclhlt2012.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 22</td>
+    <td><a href="http://cs.stanford.edu/~rfrostig">Roy</a></td>
+    <td>Rush and Petrov.
+     <B>Vine Pruning for Efficient Multi-Pass Dependency Parsing</B>.
+       <a href="http://www.naaclhlt2012.org/">NAACL/HLT 2012</a>.
+      [<A HREF="http://people.csail.mit.edu/srush/vine-paper.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 29</td>
+    <td><a href="http://arun.chagantys.org/">Arun</a></td>
+    <td>Rush and Collins.
+      <B>Exact Decoding of Syntactic Translation Models through Lagrangian Relaxation</B>.
+      <a href="http://www.acl2011.org/">ACL/HLT 2011</a>.
+      [<A HREF="http://people.csail.mit.edu/srush/exdecmt.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>June 5</td>
+    <td>Miriam</td>
+    <td>Webber and Joshi.
+      <B>Discourse Structure and Computation: Past, Present and Future</B>.
+      <a href="http://translit.i2r.a-star.edu.sg/r50/">ACL 2012</a>.
+      [<A HREF="http://homepages.inf.ed.ac.uk/bonnie/final_discourse_50.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+
+
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2013<br>
+  Wednesdays 12:00pm-1:30pm, Gates 359 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 23</td>
+    <td><a href="https://sites.google.com/site/kevinreschke/">Kevin</a></td>
+    <td>Huang and Riloff.
+     <B>Modeling Textual Cohesion for Event Extraction</B>.
+       <a href="www.aaai.org/Conferences/AAAI/aaai12.php">AAAI 2012</a>.
+      [<A HREF="http://www.cs.utah.edu/~riloff/pdfs/official-aaai12.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 30</td>
+    <td><a href="http://www.stanford.edu/~sidaw">Sida</a></td>
+    <td>Chiang.
+     <B>Hope and Fear for Discriminative Training of Statistical Translation Models</B>.
+       <a href="http://jmlr.csail.mit.edu">JMLR 2012</a>.
+      [<A HREF="http://jmlr.csail.mit.edu/papers/volume13/chiang12a/chiang12a.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 6</td>
+    <td><a href="http://ai.stanford.edu/~wzou">Will</a></td>
+    <td>Dyer, Clark, Lavie, and Smith.
+     <B>Unsupervised Word Alignment with Arbitrary Features</B>.
+         <a href="http://www.acl2011.org/">ACL 2011</a>.
+        [<A HREF="http://www.cs.cmu.edu/~jhclark/pubs/alignment.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 13</td>
+    <td><a href="http://cs.stanford.edu/~jsteinhardt/">Jacob</a></td>
+    <td>McDonald, Pereira, Ribarov, and Hajic.
+      <B>Non-projective Dependency Parsing using Spanning Tree Algorithms</B>.
+      <a href="http://www.cs.utexas.edu/~ml/HLT-EMNLP05/">HLT/EMNLP 2005</a>.
+      [<A HREF="http://acl.ldc.upenn.edu/H/H05/H05-1066.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 27</td>
+    <td><a href="http://arun.chagantys.org/">Arun</a></td>
+    <td>Scheible and Schuetze.
+     <B>Cutting Recursive Auto-encoder Trees</B>.
+         <a href="http://arxiv.org">arXiv 2013</a>.
+        [<A HREF="http://arxiv.org/pdf/1301.2811v1">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 6</td>
+    <td><a href="http://www.stanford.edu/~robvoigt">Rob</a></td>
+    <td>Mikolov, Chen, Corrado, and Dean.
+     <B>Efficient Estimation of Word Representation in Vector Space</B>.
+       <a href="http://arxiv.org">arXiv 2013</a>.
+      [<A HREF="http://arxiv.org/pdf/1301.3781">pdf</A>]
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 13</td>
+    <td><a href="http://cs.stanford.edu/~av/">Adam</a></td>
+    <td>Branavan, Kushman, Lei, and Barzilay.
+     <B>Learning High-Level Planning from Text</B>.
+       <a href="http://www.acl2012.org/">ACL 2012</a>.
+      [<A HREF="http://people.csail.mit.edu/regina/my_papers/planning12.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 20</td>
+    <td><a href="http://arun.chagantys.org/">Arun</a></td>
+    <td>Yahya, Berberich, Elbassuoni, Ramanath, Tresp, and Weikum.
+      <B>Natural Language Questions for the Web of Data</B>.
+      <a href="http://emnlp-conll2012.unige.ch/">EMNLP 2012</a>.
+      [<A HREF="http://www.aclweb.org/anthology-new/D/D12/D12-1035.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2012<br>
+  Wednesdays 12:30pm-2:00pm, Gates 159 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 10</td>
+    <td><a href="http://stanford.edu/~angeli">Gabor</a></td>
+    <td>Samdani, Chang, and Roth.
+     <B>Unified Expectation Maximization</B>.
+       <a href="www.naaclhlt2012.org/">NAACL 2012</a>.
+      [<A HREF="http://web.engr.illinois.edu/~rsamdan2/papers/UEM.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 17</td>
+    <td><a>Julie</a></td>
+    <td>Bootkrajang and Kaban.
+     <B>Label-noise Robust Logistic Regression and Its
+Applications</B>.
+       <a href="http://www.ecmlpkdd2012.net/">ECML/PKDD 2012</a>.
+      [<A HREF="http://www.cs.bris.ac.uk/~flach/ECMLPKDD2012papers/1125527.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 24</td>
+    <td><a href="http://www.cs.stanford.edu/people/sonal/">Sonal</a></td>
+    <td>Mukherjee and Liu.
+     <B>Aspect Extraction through Semi-Supervised Modeling</B>.
+         <a href="http://www.acl2012.org/">ACL 2012</a>.
+        [<A HREF="http://www.cs.uic.edu/~liub/publications/ACL-2012-aspect-extraction.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 31</td>
+    <td><a href="http://stanford.edu/~robvoigt/">Rob</a></td>
+    <td>Yao, Riedel, and McCallum.
+      <B>Unsupervised Relation Discovery with Sense Disambiguation</B>.
+      <a href="http://www.acl2012.org/">ACL 2012</a>.
+      [<A HREF="http://people.cs.umass.edu/~lmyao/papers/unsuprel-acl12.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 7</td>
+    <td><a href="http://www.cs.tau.ac.il/~jonatha6/">Jonathan</a></td>
+    <td>Gillenwater, Kulesza, and Taskar.
+     <B>Discovering Diverse and Salient Threads in Document Collections</B>.
+         <a href="http://emnlp-conll2012.unige.ch/">EMNLP 2012</a>.
+        [<A HREF="http://www.seas.upenn.edu/~taskar/pubs/timelines_emnlp12.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 14</td>
+    <td><a href="http://ir.hit.edu.cn/~car/">Wanxiang</a></td>
+    <td>Berg-Kirkpatrick, Burkett, and Klein.
+     <B>An Empirical Investigation of Statistical Significance in NLP.</B>.
+       <a href="http://emnlp-conll2012.unige.ch/">EMNLP 2012</a>.
+      [<A HREF="http://www.cs.berkeley.edu/~tberg/papers/emnlp2012.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 28</td>
+    <td><a href="http://www.stanford.edu/~jeaneis/">Jean</a></td>
+    <td>Shindo, Miyao, Fujino, and Nagata.
+     <B>Bayesian Symbol-Refined Tree Substitution Grammars for Syntactic Parsing</B>.
+       <a href="http://www.acl2012.org/">ACL 2012</a>.
+      [<A HREF="http://www.aclweb.org/anthology/P/P12/P12-1046.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 5</td>
+    <td><a href="http://nlp.stanford.edu/people.shtml">Everyone</a></td>
+    <td>
+      Writing Group - NAACL 2013 and Beyond
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 12</td>
+    <td></td>
+    <td>
+      Risk Extraction Paper.
+
+    </td>
+  </tr>
+
+
+
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2012<br>
+  Wednesdays 1:00pm-3:00pm, Gates 159 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 11</td>
+    <td><a href="http://clic.ub.edu/en/marta+recasens">Marta</a></td>
+    <td>Barzilay and Lapata.
+     <B>Modeling Local Coherence: An Entity-Based Approach</B>.
+       <a href="http://www.aclweb.org/mirror/acl2005/">ACL 2005</a>.
+      [<A HREF="http://acl.ldc.upenn.edu/P/P05/P05-1018.pdf">pdf</A>;
+       <a href="http://cljournal.org/">CL</a> <A HREF="http://www.aclweb.org/anthology-new/J/J08/J08-1001.pdf">2008 version</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 18</td>
+    <td><a href="http://cs.stanford.edu/~valentin/">Val</a></td>
+    <td>Bille.
+     <B>A Survey on Tree Edit Distance and Related Problems</B>.
+       <a href="http://www.journals.elsevier.com/theoretical-computer-science/">TCS</a> 2005.
+      [<A HREF="http://grfia.dlsi.ua.es/ml/algorithms/references/editsurvey_bille.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 25</td>
+    <td><a href="http://cs.stanford.edu/people/mengqiu/">Mengqiu</a></td>
+    <td>Mao and Lebanon.
+     <B>Isotonic Conditional Random Fields and Local Sentiment Flow</B>.
+         <a href="http://nips.cc/Conferences/2007/">NIPS 2007</a>.
+        [<A HREF="http://www.cc.gatech.edu/~lebanon/papers/sentimentNIPS.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 2</td>
+    <td><a href="http://stanford.edu/~mcclosky/">David</a></td>
+    <td>Mohamed, Hruschka and Mitchell.
+      <B>Discovering Relations between Noun Categories</B>.
+      <a href="http://conferences.inf.ed.ac.uk/emnlp2011/">EMNLP 2011</a>.
+      [<A HREF="http://rtw.ml.cmu.edu/papers/mohamed-emnlp11.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 9</td>
+    <td><a href="http://www.stanford.edu/~robvoigt">Rob</a></td>
+    <td>Elson, Dames and McKeown.
+     <B>Extracting Social Networks from Literary Fiction</B>.
+         <a href="http://acl2010.org/">ACL 2010</a>.
+        [<A HREF="http://www1.cs.columbia.edu/~delson/pubs/ACL2010-ElsonDamesMcKeown.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 16</td>
+    <td><a href="http://stanford.edu/~angeli">Gabor</a></td>
+    <td>Bernstein, Little, Miller, Hartmann, Ackerman, Karger, Crowell and Panovich.
+     <B>Soylent: A Word Processor with a Crowd Inside</B>.
+       <a href="http://www.acm.org/uist/uist2010/">UIST 2010</a>.
+      [<A HREF="http://groups.csail.mit.edu/uid/other-pubs/soylent.pdf">pdf</A>]
+<br>(<em>and/or</em>
+        Bernstein, Brandt, Miller and Karger.
+     <B>Crowds in Two Seconds: Enabling Realtime Crowd-Powered Interfaces</B>.
+       <a href="http://www.acm.org/uist/uist2011/">UIST 2011</a>.
+      [<A HREF="http://people.csail.mit.edu/msbernst/papers/adrenaline-uist2011.pdf">pdf</A>])
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 23</td>
+    <td><a href="http://ir.hit.edu.cn/~car/">Wanxiang</a></td>
+    <td>Martins, Smith and Xing.
+     <B>Concise Integer Linear Programming Formulations for Dependency Parsing</B>.
+       <a href="http://www.acl-ijcnlp-2009.org/">ACL-IJCNLP 2009</a>.
+      [<A HREF="http://aclweb.org/anthology-new/P/P09/P09-1039.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 30</td>
+    <td><a href="http://www.surdeanu.name/mihai/">Mihai</a></td>
+    <td>McIntosh, Yencken, Curran and Baldwin.
+     <B>Relation Guided Bootstrapping of Semantic Lexicons</B>.
+        <a href="http://www.acl2011.org/">ACL 2011</a>.
+      [<A HREF="http://www.aclweb.org/anthology-new/P/P11/P11-2046.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jun 6</td>
+    <td><a href="http://www.stanford.edu/~heeyoung/">Heeyoung</a></td>
+    <td>Lerman, Gilder, Dredze and Pereira.
+     <B>Reading the Markets: Forecasting Public Opinion of Political Candidates by News Analysis</B>.
+         <a href="http://personalpages.manchester.ac.uk/staff/harold.somers/coling/">COLING 2008</a>.
+        [<A HREF="http://www.cs.jhu.edu/~mdredze/publications/markets_coling08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 13</td>
+    <td><a href="http://www.cs.stanford.edu/people/sonal/">Sonal</a></td>
+    <td>Popescu and Etzioni.
+     <B>Extracting Product Features and Opinions from Reviews</B>.
+       <a href="http://www.cs.utexas.edu/~ml/HLT-EMNLP05/">HLT-EMNLP 2005</a>.
+      [<A HREF="http://turing.cs.washington.edu/papers/emnlp05_opine.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2012<br>
+  Fridays 1:15pm-2:30pm, Gates 392 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 27</td>
+    <td><a href="http://cs.stanford.edu/people/mengqiu/">Mengqiu</a></td>
+    <td>Zhang, Fang, Xu and Wu.
+     <B>Binarized Forest to String Translation</B>.
+         <a href="http://www.acl2011.org/">ACL 2011</a>.
+        [<A HREF="http://www.aclweb.org/anthology/P/P11/P11-1084.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 3</td>
+    <td><a href="http://sites.google.com/site/ucsclrclabs/people/students/kevin-reschke">Kevin</a></td>
+    <td>Li.
+     <B>Understanding the Semantic Structure of Noun Phrase Queries</B>.
+       <a href="http://acl2010.org/">ACL 2010</a>.
+      [<A HREF="http://aclweb.org/anthology/P/P10/P10-1136.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 10</td>
+    <td><a href="http://cs.stanford.edu/~angelx/">Angel</a></td>
+    <td>Das and Petrov.
+     <B>Unsupervised Part-of-Speech Tagging with Bilingual Graph-Based Projections</B>.
+         <a href="http://www.acl2011.org/">ACL 2011</a>.
+        [<A HREF="http://aclweb.org/anthology/P/P11/P11-1061.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 17</td>
+    <td>Natalia</td>
+    <td>Kim and Mooney.
+     <B>Generative Alignment and Semantic Parsing for Learning from Ambiguous Supervision</B>.
+         <a href="http://www.coling-2010.org/">COLING 2010</a>.
+        [<A HREF="http://aclweb.org/anthology/C/C10/C10-2062.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 24</td>
+    <td><a href="http://www.stanford.edu/~heeyoung/">Heeyoung</a></td>
+    <td>Berg-Kirkpatrick, Bouchard-Côté, DeNero and  Klein.
+     <B>Painless Unsupervised Learning with Features</B>.
+         <a href="http://naaclhlt2010.isi.edu/">NAACL 2010</a>.
+        [<A HREF="http://aclweb.org/anthology-new/N/N10/N10-1083.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 2</td>
+    <td><a href="http://www.cs.stanford.edu/people/sonal/">Sonal</a></td>
+    <td>Ganchev, Graça, Gillenwater and Taskar.
+     <B>Posterior Regularization for Structured Latent Variable Models</B>.
+       <a href="http://jmlr.csail.mit.edu/papers/v11/">MLR 2010</a>.
+      [<A HREF="http://www.jmlr.org/papers/volume11/ganchev10a/ganchev10a.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 9</td>
+    <td><a href="http://www.stanford.edu/~robvoigt">Rob</a></td>
+    <td>Berant, Gross, Mussel, Sandbank, Ruppin and Edelman.
+     <B>Boosting Unsupervised Grammar Induction by Splitting Complex Sentences on Function Words</B>.
+         <a href="http://www.bu.edu/linguistics/BUCLD/schedule_31.htm">BUCLD 2006</a>.
+        [<A HREF="http://kybele.psych.cornell.edu/%7Eedelman/BUCLD-Berant-etal3.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 16</td>
+    <td><a href="http://ir.hit.edu.cn/~car/">Wanxiang</a></td>
+    <td>McDonald, Petrov and Hall.
+     <B>Multi-Source Transfer of Delexicalized Dependency Parsers</B>.
+       <a href="http://conferences.inf.ed.ac.uk/emnlp2011/">EMNLP 2011</a>.
+      [<A HREF="http://www.aclweb.org/anthology/D11-1006">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 23</td>
+    <td><a href="http://stanford.edu/~angeli">Gabor</a></td>
+    <td>Mulkar-Mehta, Welty, Hobbs and Hovy.
+     <B>Using Granularity Concepts for Discovering Causal Relations</B>.
+       <a href="http://www.flairs-24.info/">FLAIRS 2011</a>.
+      [<A HREF="http://www.isi.edu/natural-language/people/hovy/papers/11FLAIRS-granularity-causality.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 30</td>
+    <td><a href="http://clic.ub.edu/en/marta+recasens">Marta</a></td>
+    <td>Ittoo, Bouma, Maruster and Wortmann.
+     <B>Extracting Meronymy Relationships from Domain-Specific, Textual Corporate Databases</B>.
+       <a href="http://www.nldb.org/">NLDB</a> 2010.
+      [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.178.5012&rep=rep1&type=pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2011<br>
+  Wednesdays 12:15pm-2:00pm, Gates 359 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 12</td>
+    <td><a href="http://ai.stanford.edu/~acvogel/">Adam</a></td>
+    <td>Artzi and Zettlemoyer.
+      <B>Bootstrapping Semantic Parsers from Conversations</B>.
+      <a href="http://conferences.inf.ed.ac.uk/emnlp2011/">EMNLP 2011</a>.
+        [<A HREF="http://www.cs.washington.edu/homes/lsz/papers/az-emnlp2011.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 19</td>
+    <td><a href="http://stanford.edu/~mcclosky/">David</a></td>
+    <td>Tsarfaty, Nivre and Andersson.
+      <B>Evaluating Dependency Parsing: Robust and Heuristics-Free Cross-Annotation Evaluation</B>.
+      <a href="http://conferences.inf.ed.ac.uk/emnlp2011/">EMNLP 2011</a>.
+      [<A HREF="http://stp.ling.uu.se/~tsarfaty/pdfs/emnlp11.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 26</td>
+    <td><a href="http://sites.google.com/site/ucsclrclabs/people/students/kevin-reschke">Kevin</a></td>
+    <td>Poon and Domingos.
+     <B>Sum-Product Networks: A New Deep Architecture</B>.
+         <a href="http://auai.org/uai2011/">UAI 2011</a>.
+        [<A HREF="http://alchemy.cs.washington.edu/spn/poon11.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 2</td>
+    <td><a href="http://nlp.stanford.edu/~manning/">Chris</a></td>
+    <td>Manning.
+     <B>Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?</B>
+         <a href="http://www.cicling.org/2011/">CICLing 2011</a>.
+        [<A HREF="http://nlp.stanford.edu/~manning/papers/CICLing2011-manning-tagging.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 9</td>
+    <td><a href="http://clic.ub.edu/en/marta+recasens">Marta</a></td>
+    <td>Baroni and Lenci.
+     <B>Distributional Memory: A General Framework for Corpus-Based Semantics</B>.
+        <a href="http://cljournal.org/">CL</a> 2010.
+        [<A HREF="http://www.mitpressjournals.org/doi/pdfplus/10.1162/coli_a_00016">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 16</td>
+    <td><a href="http://stanford.edu/~angeli">Gabor</a></td>
+    <td>Chen, Benson, Naseem and Barzilay.
+     <B>In-domain Relation Discovery with Meta-constraints via Posterior Regularization</B>.
+       <a href="http://www.acl2011.org/">ACL 2011</a>.
+      [<A HREF="http://people.csail.mit.edu/eob/papers/acl2011-relation-discovery.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 30</td>
+    <td><a href="http://cs.stanford.edu/~angelx/">Angel</a></td>
+    <td>Clark.
+     <B>Efficient, correct, unsupervised learning of context-sensitive languages</B>.
+         <a href="http://www.clips.ua.ac.be/conll2010/">CoNLL 2010</a>.
+        [<A HREF="http://www.cs.rhul.ac.uk/home/alexc/papers/conll2010.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 7</td>
+    <td><a href="http://cs.stanford.edu/~valentin/">Val</a></td>
+    <td>Atkinson.
+     <B>Phonemic Diversity Supports a Serial Founder Effect Model of Language Expansion from Africa</B>.
+       <a href="http://www.sciencemag.org/">Science</a> 2011.
+      [<A HREF="http://www.sciencemag.org/content/332/6027/346.abstract">abstract</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 14</td>
+    <td><a href="http://www.surdeanu.name/mihai/">Mihai</a></td>
+    <td>Hoffmann, Zhang, Ling, Zettlemoyer and Weld.
+     <B>Knowledge-Based Weak Supervision for Information Extraction of Overlapping Relations</B>.
+        <a href="http://www.acl2011.org/">ACL 2011</a>.
+      [<A HREF="http://aclweb.org/anthology-new/P/P11/P11-1055.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2011<br>
+  Wednesdays 12:00pm-1:30pm, Gates 159 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 13</td>
+    <td>Nate</td>
+    <td>Eisenstein, O'Connor, Smith and Xing. <B>A Latent Variable Model for Geographic
+	Language Variation</B>
+        EMNLP 2010.
+        [<A HREF="http://www.cs.cmu.edu/~nasmith/papers/eisenstein+oconnor+smith+xing.emnlp10.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 20</td>
+    <td>Adam</td>
+    <td>Poon and Domingos
+      <B>Unsupervised Ontology Induction from Text.</B>
+      ACL 2010.
+      [<A HREF="http://www.cs.washington.edu/homes/pedrod/papers/acl10.pdf">pdf</A>]
+    </td>
+
+  <tr>
+    <td>Apr 27</td>
+    <td>Yves</td>
+    <td>Reisinger and Mooney
+	<B>Multi-Prototype Vector-Space Models of Word Meaning.</B>
+        NAACL 2010.
+        [<A HREF="http://www.aclweb.org/anthology-new/N/N10/N10-1013.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 4</td>
+    <td>Nikhil</td>
+    <td>Hoffman, Blei and Bach
+      <B>Online Learning for Latent Dirichlet Allocation.</B>
+	NIPS 2010.
+      [<A HREF="http://www.cs.princeton.edu/~blei/papers/HoffmanBleiBach2010b.pdf">pdf</A>]
+    </td>
+
+  <tr>
+    <td>May 11</td>
+    <td>Gabor</td>
+    <td>Corlett and Penn
+        <B>An Exact A* Method for Deciphering Letter-Substitution Ciphers.</B>
+        ACL 2010.
+        [<A HREF="http://aclweb.org/anthology-new/P/P10/P10-1106.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 18</td>
+    <td>Angel</td>
+    <td>Liang, Jordan and Klein
+      <B>Learning Dependency-Based Compositional Semantics.</B>
+        ACL 2011.
+      [<A HREF="http://www.cs.berkeley.edu/~pliang/papers/dcs-acl2011.pdf">pdf</A>]
+    </td>
+
+
+  <tr>
+    <td>May 25</td>
+    <td>David</td>
+    <td>Dredze, Oates and Piatko
+        <B>We're Not in Kansas Anymore: Detecting Domain Changes in Streams.</B>
+        EMNLP 2010.
+        [<A HREF="http://www.aclweb.org/anthology-new/D/D10/D10-1057.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2011<br>
+  Tuesdays 12:00pm-1:30pm, Gates 200 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 18</td>
+    <td>Robert</td>
+    <td>Bergsma, Bhargava, He and Kondrak. <B>Predicting the Semantic Compositionality of Prefix Verbs.</B>
+	EMNLP 2010.
+	[<A HREF="http://aclweb.org/anthology/D/D10/D10-1029.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 25</td>
+    <td>Yves</td>
+    <td>Mitchell and Lapata.
+      <B>Composition in Distributional Models of Semantics.</B>
+      Cognitive Science 34(8): 1388-1429, November 2010.
+      [<A HREF="http://homepages.inf.ed.ac.uk/s0453356/composition.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Feb 1</td>
+    <td>Adam</td>
+    <td>Daume, Langford, and Marcu. <B>Search-based Structured Prediction.</B> Machine Learning Journal 2006.      [<A HREF="http://hal3.name/docs/daume06searn.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 8</td>
+    <td>Nikhil</td>
+    <td>Dunning.
+      <B>Accurate Methods for the Statistics of Surprise and Coincidence.</B>
+      Computational Linguistics 19(1): 61-74, 1993.
+      [<A HREF="http://www.ldc.upenn.edu/acl/J/J93/J93-1003.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 15</td>
+    <td>Sonal</td>
+    <td>Sauper, Haghighi and Barzilay. <B>Incorporating Content Structure into Text Analysis Applications.</B>
+        EMNLP 2010.
+        [<A HREF="http://www.aclweb.org/anthology/D/D10/D10-1037.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 22</td>
+    <td>Heeyoung</td>
+    <td>Grosz and Sidner.
+      <B>Attention, Intentions and the Structure of Discourse.</B>
+      Computational Linguistics 12(3), 1986.
+      [<A HREF="http://www.aclweb.org/anthology-new/J/J86/J86-3001.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 1</td>
+    <td>Gabor</td>
+    <td>Michel et al. <B>Quantitative Analysis of Culture Using Millions of Digitized Books.</B>
+        Science 17 December 2010: 1600. [<A HREF="http://www.librarian.net/wp-content/uploads/science-googlelabs.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 8</td>
+    <td>David</td>
+    <td>Charniak.
+      <B>Top-Down Nearly Context-Sensitive Parsing.</B>
+      EMNLP 2010.
+      [<A HREF="http://bllip.cs.brown.edu/papers/con.pdf">pdf</A>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2010<br>
+  Mondays 11:00am-12:30pm, Gates 200 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 4</td>
+    <td>Valentin Spitkovsky</td>
+    <td>Adwait Ratnaparkhi. <B>A Linear Observed Time Statistical Parser Based on Maximum Entropy Models</B>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 11</td>
+    <td>Adam Vogel</td>
+    <td>Dave Golland, Percy Liang and Dan Klein.
+      <B>A Game-Theoretic Approach to Generating Spatial Descriptions</B>
+      2010. EMNLP
+      [<A HREF="http://www.cs.berkeley.edu/~pliang/papers/pragmatics-emnlp2010.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 18</td>
+    <td>David McClosky</td>
+    <td>Hagen Fuerstenau and Mirella Lapata.
+        <B>Graph Alignment for Semi-Supervised Semantic Role Labeling</B>
+        2009. EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1002.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 25</td>
+    <td>Reza Zadeh</td>
+    <td>Aria Haghighi, Taylor Berg-Kirkpatrick and Dan Klein.
+      <B>Learning Bilingual Lexicons from Monolingual Corpora</B>
+      2008. ACL
+      [<A HREF="http://www.cs.berkeley.edu/~aria42/pubs/acl2008-unsup-bilexicon.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 1</td>
+    <td>Richard Socher</td>
+    <td>Mark Johnson, Thomas L. Griffiths, and Sharon Goldwater.
+        <B>Adaptor Grammars: A Framework for Specifying Compositional Nonparametric Bayesian Models</B>
+        2007. NIPS.
+        [<A HREF="http://cocosci.berkeley.edu/tom/papers/adaptornips.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 8</td>
+    <td>Nate Chambers</td>
+    <td>Andrew Carlson, Justin Betteridge, Richard C. Wang, Estevam R. Hruschka Jr. and Tom Mitchell.
+      <B>Coupled Semi-Supervised Learning for Information Extraction</B>
+      2010. WSDM
+      [<A HREF="http://rtw.ml.cmu.edu/papers/carlson-wsdm10.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 15</td>
+    <td>Spence Green</td>
+    <td>Kuzman Ganchev, Joao Graca, Jennifer  Gillenwater and Ben Taskar.
+        <B>Posterior Regularization for Structured Latent Variable Models</B>
+        2010 JMLR.
+        [<A HREF="http://jmlr.csail.mit.edu/papers/volume11/ganchev10a/ganchev10a.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2010 <br>
+  Tuesdays 1:30-3:00pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Mar 30</td>
+    <td>Spence Green</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 6</td>
+    <td>Dan Ramage </td>
+    <td> Arthur Asuncion, Max Welling, Padhraic Smyth, and Yee Whye Teh.
+      <B>On Smoothing and inference for Topic Modeling</B>
+      2009. UAI
+      [<A HREF="http://www.cs.mcgill.ca/~uai2009/papers/UAI2009_0243_1a80458f5db72411c0c1e392f7dbbc48.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 13</td>
+    <td>Adam Vogel</td>
+    <td>Fei Xu, Joshua Tenenbaum
+	<B>Word Learning as Bayesian Inference </B>
+        2007. Psychological Review 114(2).
+        [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.128.9998&rep=rep1&type=pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 20</td>
+    <td>Sonal Gupta </td>
+    <td> Jonathan Chang, Jordan Boyd-Graber, and David M. Blei.
+      <B>Connecting Between the Lines: Augmenting Social Networks with Text.</B>
+      2009. In KDD.
+      [<A HREF="http://umiacs.umd.edu/~jbg/docs/kdd2009.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 27</td>
+    <td>Richard Socher</td>
+    <td>
+	<B>Three New Graphical Models for Statistical Language Modeling.</B>
+        2007. In ICML.
+        [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.11&rep=rep1&type=pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 4</td>
+    <td>Steven Bethard </td>
+    <td>Cohn, T.
+      <B>A Bayesian Model of Syntax-Directed Tree to String Grammar Induction.</B>
+      2009. In EMNLP.
+      [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1037.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 11</td>
+    <td>David McClosky</td>
+    <td>Huang, L.
+	<B>Bilingually-Constrained (Monolingual) Shift-Reduce Parsing.</B>
+        2009. In EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1127.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 18</td>
+    <td>Adam Vogel</td>
+    <td>Bengio et al.
+      <B>Curriculum Learning. </B>
+      2009. In ICML.
+      [<A HREF="http://www.cs.mcgill.ca/~icml2009/papers/119.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 25</td>
+    <td>Spence Green</td>
+    <td>Smith and Eisner.
+	<B>Parser Adaptation and Projection with Quasi-synchronous Grammar Features. </B>
+  2009. In EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1086.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 8</td>
+    <td>Michel Galley</td>
+    <td>M. Hopkins and G. Langmead.
+      <B>Cube Pruning as Heuristic Search</B>
+      2009. In EMNLP.
+			[<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1007.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2011<br>
+  Tuesdays 12:00pm-1:30pm, Gates 200 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 18</td>
+    <td>Robert</td>
+    <td>Bergsma, Bhargava, He and Kondrak. <B>Predicting the Semantic Compositionality of Prefix Verbs.</B>
+	EMNLP 2010.
+	[<A HREF="http://aclweb.org/anthology/D/D10/D10-1029.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 25</td>
+    <td>Yves</td>
+    <td>Mitchell and Lapata.
+      <B>Composition in Distributional Models of Semantics.</B>
+      Cognitive Science 34(8): 1388-1429, November 2010.
+      [<A HREF="http://homepages.inf.ed.ac.uk/s0453356/composition.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Feb 1</td>
+    <td>Adam</td>
+    <td>Daume, Langford, and Marcu. <B>Search-based Structured Prediction.</B> Machine Learning Journal 2006.      [<A HREF="http://hal3.name/docs/daume06searn.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 8</td>
+    <td>Nikhil</td>
+    <td>Dunning.
+      <B>Accurate Methods for the Statistics of Surprise and Coincidence.</B>
+      Computational Linguistics 19(1): 61-74, 1993.
+      [<A HREF="http://www.ldc.upenn.edu/acl/J/J93/J93-1003.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 15</td>
+    <td>Sonal</td>
+    <td>Sauper, Haghighi and Barzilay. <B>Incorporating Content Structure into Text Analysis Applications.</B>
+        EMNLP 2010.
+        [<A HREF="http://www.aclweb.org/anthology/D/D10/D10-1037.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 22</td>
+    <td>Heeyoung</td>
+    <td>Grosz and Sidner.
+      <B>Attention, Intentions and the Structure of Discourse.</B>
+      Computational Linguistics 12(3), 1986.
+      [<A HREF="http://www.aclweb.org/anthology-new/J/J86/J86-3001.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 1</td>
+    <td>Gabor</td>
+    <td>Michel et al. <B>Quantitative Analysis of Culture Using Millions of Digitized Books.</B>
+        Science 17 December 2010: 1600. [<A HREF="http://www.librarian.net/wp-content/uploads/science-googlelabs.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 8</td>
+    <td>David</td>
+    <td>Charniak.
+      <B>Top-Down Nearly Context-Sensitive Parsing.</B>
+      EMNLP 2010.
+      [<A HREF="http://bllip.cs.brown.edu/papers/con.pdf">pdf</A>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2010<br>
+  Mondays 11:00am-12:30pm, Gates 200 <br>
+</h2>
+
+
+<table class="p" cellpadding="5">
+
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 4</td>
+    <td>Valentin Spitkovsky</td>
+    <td>Adwait Ratnaparkhi. <B>A Linear Observed Time Statistical Parser Based on Maximum Entropy Models</B>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 11</td>
+    <td>Adam Vogel</td>
+    <td>Dave Golland, Percy Liang and Dan Klein.
+      <B>A Game-Theoretic Approach to Generating Spatial Descriptions</B>
+      2010. EMNLP
+      [<A HREF="http://www.cs.berkeley.edu/~pliang/papers/pragmatics-emnlp2010.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 18</td>
+    <td>David McClosky</td>
+    <td>Hagen Fuerstenau and Mirella Lapata.
+        <B>Graph Alignment for Semi-Supervised Semantic Role Labeling</B>
+        2009. EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1002.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 25</td>
+    <td>Reza Zadeh</td>
+    <td>Aria Haghighi, Taylor Berg-Kirkpatrick and Dan Klein.
+      <B>Learning Bilingual Lexicons from Monolingual Corpora</B>
+      2008. ACL
+      [<A HREF="http://www.cs.berkeley.edu/~aria42/pubs/acl2008-unsup-bilexicon.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 1</td>
+    <td>Richard Socher</td>
+    <td>Mark Johnson, Thomas L. Griffiths, and Sharon Goldwater.
+        <B>Adaptor Grammars: A Framework for Specifying Compositional Nonparametric Bayesian Models</B>
+        2007. NIPS.
+        [<A HREF="http://cocosci.berkeley.edu/tom/papers/adaptornips.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 8</td>
+    <td>Nate Chambers</td>
+    <td>Andrew Carlson, Justin Betteridge, Richard C. Wang, Estevam R. Hruschka Jr. and Tom Mitchell.
+      <B>Coupled Semi-Supervised Learning for Information Extraction</B>
+      2010. WSDM
+      [<A HREF="http://rtw.ml.cmu.edu/papers/carlson-wsdm10.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 15</td>
+    <td>Spence Green</td>
+    <td>Kuzman Ganchev, Joao Graca, Jennifer  Gillenwater and Ben Taskar.
+        <B>Posterior Regularization for Structured Latent Variable Models</B>
+        2010 JMLR.
+        [<A HREF="http://jmlr.csail.mit.edu/papers/volume11/ganchev10a/ganchev10a.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2010 <br>
+  Tuesdays 1:30-3:00pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+     <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Mar 30</td>
+    <td>Spence Green</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 6</td>
+    <td>Dan Ramage </td>
+    <td> Arthur Asuncion, Max Welling, Padhraic Smyth, and Yee Whye Teh.
+      <B>On Smoothing and inference for Topic Modeling</B>
+      2009. UAI
+      [<A HREF="http://www.cs.mcgill.ca/~uai2009/papers/UAI2009_0243_1a80458f5db72411c0c1e392f7dbbc48.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 13</td>
+    <td>Adam Vogel</td>
+    <td>Fei Xu, Joshua Tenenbaum
+	<B>Word Learning as Bayesian Inference </B>
+        2007. Psychological Review 114(2).
+        [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.128.9998&rep=rep1&type=pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 20</td>
+    <td>Sonal Gupta </td>
+    <td> Jonathan Chang, Jordan Boyd-Graber, and David M. Blei.
+      <B>Connecting Between the Lines: Augmenting Social Networks with Text.</B>
+      2009. In KDD.
+      [<A HREF="http://umiacs.umd.edu/~jbg/docs/kdd2009.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 27</td>
+    <td>Richard Socher</td>
+    <td>
+	<B>Three New Graphical Models for Statistical Language Modeling.</B>
+        2007. In ICML.
+        [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.11&rep=rep1&type=pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 4</td>
+    <td>Steven Bethard </td>
+    <td>Cohn, T.
+      <B>A Bayesian Model of Syntax-Directed Tree to String Grammar Induction.</B>
+      2009. In EMNLP.
+      [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1037.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 11</td>
+    <td>David McClosky</td>
+    <td>Huang, L.
+	<B>Bilingually-Constrained (Monolingual) Shift-Reduce Parsing.</B>
+        2009. In EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1127.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 18</td>
+    <td>Adam Vogel</td>
+    <td>Bengio et al.
+      <B>Curriculum Learning. </B>
+      2009. In ICML.
+      [<A HREF="http://www.cs.mcgill.ca/~icml2009/papers/119.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 25</td>
+    <td>Spence Green</td>
+    <td>Smith and Eisner.
+	<B>Parser Adaptation and Projection with Quasi-synchronous Grammar Features. </B>
+  2009. In EMNLP.
+        [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1086.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 8</td>
+    <td>Michel Galley</td>
+    <td>M. Hopkins and G. Langmead.
+      <B>Cube Pruning as Heuristic Search</B>
+      2009. In EMNLP.
+			[<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1007.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2010 <br>
+  Tuesdays 1:30-3:00pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 12</td>
+    <td>Spence Green</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 19</td>
+    <td>Steven Bethard </td>
+    <td> Brown, P., deSouza, P, Mercer, R, Della Pietra, V and Lai, J.
+      <B>Class-based n-gram models of natural language.</B>
+      1992. Computational Linguistics.
+      [<A HREF="http://www.ldc.upenn.edu/acl/J/J92/J92-4003.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jan 26</td>
+    <td>David McClosky and Mihai Surdeanu</td>
+    <td>Collins, M. and Singer, Y.
+	<B>Unsupervised Models for Named Entity Classification. </B>
+	1999.
+      [<A HREF="http://acl.ldc.upenn.edu/W/W99/W99-0613.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 2</td>
+    <td>Sonal Gupta and Chris Manning</td>
+    <td>Evans, N., & Levinson, S. C.
+      <B>The myth of language universals: Language diversity and its importance for cognitive science. </B>
+      2009. Behavioral and Brain Sciences, 32(5), 429-492.
+    [<A HREF="http://www.bbsonline.org/Preprints/Evans-08042008/Evans-08042008_REV.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 9</td>
+    <td>Spence Green</td>
+    <td>Evans, N., & Levinson, S. C.
+      <B>The myth of language universals: Language diversity and its importance for cognitive science. </B>
+      2009. Behavioral and Brain Sciences, 32(5), 429-492.
+    [On cluster: /scr/spenceg/lev2.pdf]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 16</td>
+    <td>Val Spitkovsky</td>
+    <td> Daelemans, W.
+      <b>Memory-Based Lexical Acquisition and Processing.</b>
+         1995. Proc. of the Third International EAMT Workshop on Machine Translation and the Lexicon
+      [<A HREF="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.42.4197&rep=rep1&type=pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 23</td>
+    <td>Spence Green</td>
+    <td>Fong, S. and Berwick, R.
+      <B> Treebank Parsing and Knowledge of Language: A Cognitive Perspective.</b>
+      2008. Proc. of the Annual Meeting of the Cognitive Science Society
+      [<A HREF="http://csjarchive.cogsci.rpi.edu/Proceedings/2008/pdfs/p539.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 2</td>
+    <td>Nate Chambers </td>
+    <td>Liszkowski, U., Schäfer, M., Carpenter, M., & Tomasello, M.
+      <B>Prelinguistic infants, but not chimpanzees, communicate about absent entities.</B>
+      2009. Psychological Science, 20(5), 654-660.
+      [<A HREF="http://email.eva.mpg.de/%7Etomas/pdf/Liszkowski_AbsentEntities_09.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 9</td>
+    <td>Richard Socher</td>
+    <td>Bengio, Y., Ducharme, R., Vincent, P., and Jauvin, C.
+      <B>A Neural Probabilistic Language Model.</B>
+      Journal of Machine Learning Research 3 (2003) 1137-1155.
+      [<A HREF="http://jmlr.csail.mit.edu/papers/volume3/bengio03a/bengio03a.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 16</td>
+    <td>Adam Vogel</td>
+    <td>Collobert, Ronan and Weston, Jason.
+      <b>A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning.</b>
+      In ICML.
+      [<A HREF="http://www.kyb.tuebingen.mpg.de/bs/people/weston/papers/unified_nlp.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2009 <br>
+  Wednesdays at 12:00-1:30pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Sep 30</td>
+    <td>Spence Green</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 7</td>
+    <td>Ramesh Nallapati </td>
+    <td> G. Druck, B. Settles and A. McCallum.
+      <B>Active Learning by Labeling Features.</B>
+      EMNLP 2009.
+      [<A HREF="http://www.cs.umass.edu/%7Egdruck/pubs/druck09active.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 14</td>
+    <td>David Vickrey</td>
+    <td>P. Liang, M. Jordan and D. Klein.
+	<B>Learning Semantic Correspondences with Less Supervision. </B>
+	ACL 2009.
+      [<A HREF="http://www.cs.berkeley.edu/%7Epliang/papers/semantics-acl2009.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 21</td>
+    <td>Jenny Finkel</td>
+    <td> A. Haghighi and D. Klein.
+      <B> Simple Coreference Resolution with Rich Syntactic and Semantic Features. </B>
+      NAACL 2009.
+      [<A HREF="http://aclweb.org/anthology/D/D09/D09-1120.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 28</td>
+    <td>Nate Chambers</td>
+    <td>S. Patwardhan and E. Riloff.
+      <b>A Unified Model of Phrasal and Sentential Evidence for Information Extraction.</b>
+      EMNLP 2009.
+      [<A HREF="http://www.cs.utah.edu/~riloff/pdfs/emnlp09-ie.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 4</td>
+    <td>Mihai Surdeanu</td>
+    <td> J. Suzuki, H. Isozaki, X. Carreras and M. Collins.
+      <b>An Empirical Study On Semi-Supervised Structured Conditional Models
+For Dependency Parsing.</b>
+      EMNLP 2009.
+      [<A HREF="http://people.csail.mit.edu/mcollins/papers/emnlp09parsing.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 11</td>
+    <td>Adam Vogel</td>
+    <td>S.R.K. Branavan, H. Chen, L. Zettlemoyer and R. Barzilay.
+      <B>  Reinforcement Learning for Mapping Instructions to Actions.</B>
+      ACL 2009.
+      [<A HREF="http://people.csail.mit.edu/branavan/papers/acl2009.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 18</td>
+    <td>Spence Green </td>
+    <td>R. Tsarfaty, K. Sima'an, and R. Scha.
+      <B>  An Alternative to Head-Driven Approaches for Parsing a (Relatively) Free Word-Order Language.</B>
+      EMNLP 2009.
+      [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1088.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 25</td>
+    <td>Thanksgiving</td>
+    <td>
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 2</td>
+    <td>Steven Bethard</td>
+    <td> C. Callison-Burch.
+      <b> Fast, Cheap, and Creative: Evaluating Translation Quality Using Amazon's Mechanical Turk. </b>
+      EMNLP 2009.
+      [<A HREF="http://www.aclweb.org/anthology/D/D09/D09-1030.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 9</td>
+    <td>Uriel Cohen-Priva</td>
+    <td>J. Nivre.
+      <b>Non-Projective Dependency Parsing in Expected Linear Time.</b>
+      ACL 2009.
+      [<A HREF="http://www.aclweb.org/anthology/P/P09/P09-1040.pdf">pdf</A>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2009 <br>
+  Mondays at 2:30-4:00pm, Gates 400 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jun 15</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 22</td>
+    <td>Dan Ramage </td>
+    <td> C. Wang, B. Thiesson, C. Meek, and D. Blei.
+      <B>Markov Topic Models.</B>
+      AIStats 2009.
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jun 29</td>
+    <td>Adam Vogel</td>
+    <td>
+Hoifung Poon, Colin Cherry and Kristina Toutanova .
+<B>Unsupervised Morphological Segmentation with Log-Linear Models. </B>
+NAACL 2009.
+      [<A HREF="">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 6</td>
+    <td>David Vickrey</td>
+    <td> Hoifung Poon and Pedro Domingos.
+      <B> Unsupervised Semantic Parsing. </B>
+      EMNLP 2009.
+      [<A HREF="http://www.cs.washington.edu/homes/hoifung/papers/poon09.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 13</td>
+    <td>Jenny Finkel</td>
+    <td>Andrew Carlson, Justin Betteridge, Estevam Rafael Hruschka Junior and
+      Tom M. Mitchell.
+      <b>Coupling Semi-Supervised Learning of Categories and Relations.
+      </b>
+      [<A HREF="http://rtw.ml.cmu.edu/papers/cbl-sslnlp09.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 20</td>
+    <td>--</td>
+    <td> No Meeting - Pi-Chuan's defense!!!!!
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 27</td>
+    <td>Val Spitkovsky</td>
+    <td>D. Roth, K. Small, and I. Titov .
+      <B> Sequential Learning of Classifiers for Structured Prediction
+      Problems. </B>  AIStats 2009.
+      [<A HREF="http://www.cs.uiuc.edu/homes/ksmall/pdf/RothSmTi09.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 3</td>
+    <td> -- </td>
+    <td>  No Meeting - ACL/EMNLP
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 10</td>
+    <td></td>
+    <td>
+      <b>
+
+      </b>
+
+
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 17</td>
+    <td>Mihai Durdeanu</td>
+    <td> J. Reisinger and M. Pasca.
+      <b> Latent Variable Models of Concept-Attribute Attachment. </b>
+      ACL 2009.
+      [<A HREF="">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 24</td>
+    <td>Yun-Hsuan Sung</td>
+    <td>D. Chiang, K. Knight, and W. Wang.
+      <b>
+      11,001 New Features for Statistical Machine Translation.
+      </b>
+      NAACL 2009.
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 31</td>
+    <td>Val Spitkovsky</td>
+    <td> Y. Albert Park and Roger Levy.
+      <b> Minimal-length linearizations for mildly context-sensitive
+      dependency trees.  </B>
+      NAACL 2009.
+      [<A HREF="">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sept. 7</td>
+    <td></td>
+    <td>
+      <b>
+
+      </b>
+
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Sept. 14</td>
+    <td>Dan Cer</td>
+    <td> Chun-Nam John Yu, Thorsten Joachims.
+      <b> Learning Structural SVMs with Latent Variables. </B>
+      ICML 2009.
+      [<A HREF="http://www.cs.cornell.edu/~cnyu/papers/icml09_latentssvm.pdf">pdf</a>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Sept. 21</td>
+    <td>Ramesh Nallapati</td>
+    <td>Chen, Branavan, Berzilay and Karger.
+      <b>
+Global Models of Document Structure using Latent Permutations.
+      </b>
+      NAACL 2009.
+      [<A HREF="http://www.aclweb.org/anthology/N/N09/N09-1042.pdf">pdf</A>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2009 <br>
+  Tuesdays at 12:0-1:30pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 31</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting
+    </td>
+  </tr>
+
+<!--  <tr>
+    <td>Apr 7</td>
+    <td>David Hall </td>
+    <td>
+      <B>Bullshit ICML Paper</B>
+      [<A HREF="http://ronan.collobert.com/pub/matos/2008_nlp_icml.pdf">pdf</A>]
+    </td>
+  </tr> -->
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 14</td>
+    <td>Adam Vogel</td>
+    <td>Wei Lu, Hwee Tou Ng, Wee Sun Lee, Luke S. Zettlemoyer.
+    <b> A Generative Model for Parsing Natural Language to Meaning Representations</b>
+    EMNLP 2008.
+    [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 21</td>
+    <td>Nate Chambers</td>
+    <td>
+      <B> Finding and Linking Incidents in the News </B>
+      [<A HREF="http://maroo.cs.umass.edu/pdf/IR-558.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 28</td>
+    <td>-- </td>
+    <td>No Meeting - Good Luck with EMNLP Submissions!
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 5</td>
+    <td>Jenny Finkel</td>
+    <td>
+      <b>The Unreasonable Effectiveness of Data
+      </b>
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 12</td>
+    <td>David Vickrey</td>
+    <td> S. Cohen and N. Smith.
+      <b>Shared Logistic Normal Distributions for Soft Parameter Tying in Unsupervised Grammar Induction</b>
+      NAACL 2009
+      [<A HREF="http://www.cs.cmu.edu/~scohen/">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 19</td>
+    <td>Ramesh Nallapati</td>
+    <td> David Mimno, Hanna Wallach and Andrew McCallum.
+      <B> Gibbs Sampling for Logistic Normal Topic Models with Graph-Based Priors. </B>
+      NIPS Workshop on Analyzing Graphs, 2008, Whistler, BC.
+      [<A HREF="http://www.cs.umass.edu/~mimno/papers/sampledlgstnorm.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 26</td>
+    <td> Steven Bethard </td>
+    <td> Amarnag Subramanya, Jeff Bilmes.
+      <b>Soft-Supervised Learning for Text Classification</b>
+      EMNLP 2008
+      [<A HREF="http://www.aclweb.org/anthology-new/D/D08/D08-1114.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jun 2</td>
+    <td>Mihai Surdeanu</td>
+    <td> Yi Zhang, Jeff Schneider, Artur Dubrawski.
+      <b>Learning the Semantic Correlation: An Alternative Way to Gain from
+Unlabeled Text
+      </b>
+      NIPS 2008
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 9</td>
+    <td>Jenny Finkel</td>
+    <td>
+      <b>Syntactic Topic Models</b>
+      NIPS 2008
+      [<A HREF="">pdf</a>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2009 <br>
+  Mondays at 2:30-4:00pm, Gates 200 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 26</td>
+    <td>Sebastian Pado</td>
+    <td>O. Zaidan, J. Eisner
+      <b>Modelling Annotators: A Generative Approach to Learning from
+      Annotator Rationales.</b>
+      EMNLP 2008.
+      [<A HREF="http://aclweb.org/anthology-new/D/D08/D08-1004.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 2</td>
+    <td>David Hall </td>
+    <td> Kemp, C., & Tenenbaum, J. B.
+      <B>The discovery of structural form.</B>
+      Proceedings of the National Academy of Sciences. 105(31), 10687-10692.
+      [<A HREF="http://www.psy.cmu.edu/~ckemp/papers/kempt08.pdf">pdf</A>]
+    </td>
+    </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 9</td>
+    <td>Marie-Catherine de Marneffe</td>
+    <td>Ritter, Soderland, Downey, and Etzioni
+    <b>It's a Contradiction -- no, it's not: A Case Study using Functional Relations.</b>
+    EMNLP 2008.
+    [<A HREF="http://aclweb.org/anthology-new/D/D08/D08-1002.pdf">pdf</A>]
+</td>
+</tr>
+
+  <tr>
+    <td>Feb 16</td>
+    <td>all</td>
+    <td>ACL abstracts & more</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 23</td>
+    <td>Mihai Surdeanu</td>
+    <td>Mustafa Bilgic and Lise Getoor
+      <B> Effective Label Acquisition for Collective Classification. </B>
+      KDD 2008
+      [<A HREF="http://www.cs.umd.edu/~mbilgic/pdfs/kdd08.pdf">pdf</A>]
+    </td>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 2</td>
+    <td>Nate Chambers</td>
+    <td>Stanley Kok and Pedro Domingos
+      <b> Extracting Semantic Networks from Text Via Relational Clustering.
+      </b>
+      ECML 2008
+      [<A HREF="http://www.cs.washington.edu/homes/pedrod/papers/ecml08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 9</td>
+    <td>Yun-Hsuan Sung</td>
+    <td>Gross, Russakovsky, Do, and Batzoglou
+      <b>Training Conditional Random Fields for Maximum Labelwise Accuracy.
+      </b>
+      NIPS 2006
+      [<A HREF="www.stanford.edu/~ssgross/nips2006.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Mar 16</td>
+    <td>Val Spitkovsky</td>
+    <td>David Smith and Jason Eisner
+      <b>Dependency Parsing by Belief Propagation.</b>
+    EMNLP 2008
+      [<A HREF="http://aclweb.org/anthology-new/D/D08/D08-1016.pdf">pdf</a>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Autumn 2008 <br>
+  Mondays at 12:30-2:00pm, Gates 359 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Sept. 29</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 6</td>
+    <td>Jenny Finkel</td>
+    <td> M.D. Escobar and M. West.
+      <b>Bayesian Density Estimation and Inference Using Mixtures.</b>
+      JASA 1995.
+      [<A HREF="http://www.cs.berkeley.edu/~jordan/courses/281B-spring04/readings/escobar-west.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 13</td>
+    <td>Val Spitkovsky</td>
+    <td>Yoav Seginer
+        <B>Fast Unsupervised Incremental Parsing.</B>
+      ACL 2007.
+      [<A HREF="http://www.aclweb.org/anthology-new/P/P07/P07-1049.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 20</td>
+    <td> David Hall </td>
+    <td> Kemp, C., & Tenenbaum, J. B.
+      <B>The discovery of structural form.</B>
+      Proceedings of the National Academy of Sciences. 105(31), 10687-10692.
+      [<A HREF="http://www.psy.cmu.edu/~ckemp/papers/kempt08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 27</td>
+    <td>--</td>
+    <td> No Meeting - Have fun at EMNLP!
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 3</td>
+    <td>Dan Ramage</td>
+    <td> Perci Diaconis
+      <B>The MCMC Revolution</B>
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 10</td>
+    <td>Nate Chambers</td>
+    <td>Stanley Kok and Pedro Domingos
+      <b> Extracting Semantic Networks from Text Via Relational Clustering
+      </b>
+      ECML 2008
+      [<A HREF="http://www.cs.washington.edu/homes/pedrod/papers/ecml08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 17</td>
+    <td> Ramesh Nallapati </td>
+    <td>Mustafa Bilgic and Lise Getoor
+      <B> Effective Label Acquisition for Collective Classificatio </B>
+      KDD 2008
+      [<A HREF="http://www.cs.umd.edu/~mbilgic/pdfs/kdd08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Nov 24</td>
+    <td> --</td>
+    <td> No Meeting - Happy Thanksgiving!
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 1</td>
+    <td> -- </td>
+    <td> NAACL abstracts
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 8</td>
+    <td> Sebastian Pado </td>
+    <td> Shane Bergsma, Dekang Lin and Randy Goebel
+      <B> Discriminative Learning of Selectional Preference from Unlabeled Text </B>
+      EMNLP 2008
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Summer 2008 <br>
+  Tuesdays at 12:15-1:45pm, Gates 260 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jun 23</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 1</td>
+    <td>--</td>
+    <td>No Meeting - Good luck on EMNLP submissions
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 8</td>
+    <td>Jenny Finkel</td>
+    <td>Benjamin Snyder and Regina Barzilay.
+        <B>Unsupervised Multilingual Learning for Morphological Segmentation.</B>
+      ACL 2008.
+      [<A HREF="http://people.csail.mit.edu/bsnyder/papers/SnyderB-acl08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 15</td>
+    <td> Daniel Ramage </td>
+    <td> Branavan, S.R.K., Harr Chen, Jacob Eisenstein and Regina Barzilay.
+      <B> Learning Document-Level Semantic Properties from Free-text
+      Annotations.</B>
+      ACL 2008.
+      [<A HREF="http://people.csail.mit.edu/regina/my_papers/rev.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jul 22</td>
+    <td>Anna Rafferty</td>
+    <td> Joakim Nivre and Ryan McDonald.
+      <B>Integrating Graph-Based and Transition-Based Dependency Parsers.</B>
+      ACL 2008.
+      [<A HREF="http://ryanmcd.googlepages.com/integratingACL08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jul 29</td>
+    <td>Mengqiu Wang</td>
+    <td> Kuzman Ganchev, Joao Graca and Ben Taskar.
+      <B>Better Alignments = Better Translations?</B>
+      ACL 2008.
+      [<A HREF="http://www.seas.upenn.edu/~kuzman/publications/ganchev_acl_2008.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Aug 5</td>
+    <td>Eric Yeh</td>
+    <td>Statistical Machine Translation for Query Expansion in Answer Retrieval
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 12</td>
+    <td> David Hall </td>
+    <td>Shiqi Zhao; Haifeng Wang; Ting Liu; Sheng Li.
+      <B> Pivot Approach for Extracting Paraphrase Patterns from Bilingual
+      Corpora.</B> ACL 2008.
+      [<A
+      HREF="http://aclweb.org/anthology-new/P/P08/P08-1089.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Aug 19</td>
+    <td> Ramesh Nallapati</td>
+    <td> <B>Approximate Inference using conditional entropy decomposition.</B>
+      [<A HREF="http://people.csail.mit.edu/tommi/papers/GloJaa-ais07.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Aug 26</td>
+    <td> Sebastian Pado </td>
+    <td> Shane Bergsma; Dekang Lin; Randy Goebel.
+      <B> Distributional Identification of Non-Referential Pronouns.</B>  ACL 2008.
+      [<A HREF="http://aclweb.org/anthology-new/P/P08/P08-1002.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Sep 2</td>
+    <td> David Hall </td>
+    <td> Jason Wolfe, Aria Haghighi and Dan Klein.
+      <B> Fully Distributed EM for Very Large Datasets.</B>  ICML 2008.
+      [<A HREF="http://www.cs.berkeley.edu/~aria42/pubs/icml08-distributedem">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td> September 9 </td>
+    <td> Jenny Finkel </td>
+    <td> Mark Johnson, Thomas L. Griffiths, and Sharon Goldwater.
+      <b> Bayesian Inference for PCFGs via Markov Cain Monte Carlo.</b>
+      Proceedings of NAACL, 2007.
+      [<A HREF="http://www.stanford.edu/~sgwater/papers/naacl07-mcmc-pcfg.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td> September 16 </td>
+    <td> Pi-chuan Chang </td>
+    <td> Zhu, Xiaojin; Andrew B. Goldberg; Michael Rabbat; Robert Nowak
+      <B> Learning Bigrams from Unigrams </B>
+      [<A HREF="http://aclweb.org/anthology-new/P/P08/P08-1075.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td> September 23 </td>
+    <td>Ramesh Nallapati</td>
+    <td> <B> Accurate max margin training for structured output spaces.</B>
+      [<A HREF="http://www.it.iitb.ac.in/~sunita/papers/icml08.pdf">pdf</A>]
+    </td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2008 <br>
+  Tuesdays at 1:00-2:30pm, Gates 159 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 15</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 22</td>
+    <td>David Hall</td>
+    <td>Li, Wei and McCallum, Andrew.
+      <B>Pachinko allocation: DAG-structured
+mixture models of topic correlations</B>
+      ICML 2006.
+      [<A HREF="http://portal.acm.org/citation.cfm?id=1143917">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Apr 29</td>
+    <td>Daniel Ramage</td>
+    <td>Andrew McCallum, Chris Pal, Greg Druck, Xuerui Wang.
+        <B>Multi-Conditional Learning: Generative/Discriminative Training for Clustering and Classification</B>
+      AAAI 2006.
+      [<A HREF="http://www.cs.umass.edu/~mccallum/papers/mcl-aaai06.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 6</td>
+    <td>Anna Rafferty</td>
+    <td> Coarse-to-fine parsing
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 13</td>
+    <td>Sebastian Pado</td>
+    <td> Learning on the test data.
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 20</td>
+    <td>Jenny Finkel</td>
+    <td> Scalable Models of Real Graphs
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 27</td>
+    <td>Pichuan Chang</td>
+    <td> author-topic model (or community topic model)
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 2</td>
+    <td>Ramesh Nallapati</td>
+    <td> Gal Chechik, Geremy Heitz, Gal Elidan, Pieter Abbeel, Daphne Koller
+      <B> Max Margin classification of incomplete data. </B>
+      [<A
+      HREF="http://jmlr.csail.mit.edu/papers/volume9/chechik08a/chechik08a.pdf">long version</A>]
+      [<A HREF="http://books.nips.cc/papers/files/nips19/NIPS2006_0124.pdf">short version</A>]
+    </td>
+  </tr>
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2008 <br>
+  Tuesdays at 2:30-4:00pm, Gates ??? <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 15</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 22</td>
+    <td>Jenny Finkel</td>
+    <td>Kristina Toutanova and Mark Johnson.
+      <B>A Bayesian LDA-based model for semi-supervised part-of-speech tagging.</B>
+      NIPS 2007.
+      [<A HREF="http://books.nips.cc/papers/files/nips20/NIPS2007_0964.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jan 29</td>
+    <td>Anna Rafferty</td>
+    <td>John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, Jennifer Wortman.
+        <B>Learning Bounds for Domain Adaptation.</B>
+      NIPS 2007
+      [<A HREF="http://books.nips.cc/papers/files/nips20/NIPS2007_0628.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 5</td>
+    <td>David Hall</td>
+    <td> TBD David Blei topic models papers
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 12</td>
+    <td>Nate Chambers</td>
+    <td> Dan Shen and Mirella Lapata.
+        <B>Using Semantic Roles to Improve Question Answering.</b>
+      [<A HREF="http://acl.ldc.upenn.edu/D/D07/D07-1002.pdf">pdf</A>] <BR>
+      Michael Kaisser and Bonnie Webber.
+      <B> Question Answering based on Semantic Roles. </B>
+      [<A HREF="http://acl.ldc.upenn.edu/W/W07/W07-1206.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 19</td>
+    <td>Pi-Chuan Chang</td>
+    <td> Stefan Riezler, Alexander Vasserman, Ioannis Tsochantaridis, Vibhu
+Mittal and Yi Liu.
+      <B>Statistical Machine Translation for Query Expansion in Answer Retrieval. </B>
+      [<A HREF="http://www.stefanriezler.com/PAPERS/ACL07.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 26</td>
+    <td>Bill MacCartney</td>
+    <td> Wong and Mooney.
+        <B> Learning Synchronous Grammars for Semantic Parsing with Lambda Calculus.</B>
+      ACL 2007.
+      [<A HREF="http://www.cs.utexas.edu/users/ml/papers/wasp-logic-acl-07.pdf">pdf</A>]
+    </td>
+  </tr>
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 4</td>
+    <td>Jenny Finkel</td>
+    <td> Pascal Denis and Jason Baldridge.
+      <B> Global, Joint Determination of Anaphoricity and Coreference Resolution using Integer Programming. </B>
+      NAACL 2007.
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 11</td>
+    <td></td>
+    <td> --== No Meeting ==--
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 18</td>
+    <td>Pichuan Chang & Michel Galley</td>
+    <td> TBD MT paper
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2006-2007 <br>
+  Wednesdays at 1:30-3:00pm, Gates 359 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 18</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 25</td>
+    <td>Rion Snow</td>
+    <td>Daniel Gildea and Daniel Jurafsky.
+      <B>Automatic Labeling of Semantic Roles.</B>
+      ACL 2000.
+      [<A HREF="http://acl.ldc.upenn.edu/P/P00/P00-1065.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 2</td>
+    <td>Dan Ramage</td>
+    <td>McCarthy, D., Koeling, R., Weeds, J. and Carroll, J.
+        <B>Finding predominant word senses in untagged text.</B>
+      ACL 2004.
+      [<A HREF="http://acl.ldc.upenn.edu/P/P04/P04-1036.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 9</td>
+    <td>Bill MacCartney</td>
+    <td> P. Blackburn and J. Bos.
+      <B> Computational Semantics. </B>
+      Theoria 18
+      [<A HREF="http://www.cogsci.ed.ac.uk/%7Ejbos/pubs/theoria.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 16</td>
+    <td>Nate Chambers</td>
+    <td> Mann, W. C. and S. A. Thompson.
+        <B>Rhetorical Structure Theory: Toward a Functional Theory of Text Organization.</B>
+
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+  <tr bgcolor="#F5EEC6">
+    <td>May 23</td>
+    <td>Pi-Chuan Chang</td>
+    <td> Jerry R. Hobbs, Mark Stickel, Paul Martin and Douglas Edwards.
+      <B>Interpretation as Abduction.  </B>
+      ACL 1988
+      [<A HREF="http://acl.ldc.upenn.edu/P/P88/P88-1012.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 30</td>
+    <td>Yun-Hsuan Sung</td>
+    <td> Fei Sha and Lawrence K. Saul.
+        <B> Large margin hidden Markov models for automatic speech recognition.  </B>
+      NIPS 2007.
+      [<A HREF="http://www.cs.berkeley.edu/~feisha/pubs/nips2006.pdf">pdf</A>]
+    </td>
+  </tr>
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 6</td>
+    <td>Jenny Finkel</td>
+    <td> Rie K. Ando and Tong Zhang.
+      <B> A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data. </B>
+      JMLR 2005.
+      [<A HREF="http://www-cs-students.stanford.edu/~tzhang/papers/jmlr05_semisup.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2006-2007 <br>
+  Wednesdays at 1:30-3:00pm, Gates 459 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 24</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 31</td>
+    <td>Jenny Finkel</td>
+    <td> John Blitzer, Ryan McDonald, and Fernando Pereira.
+      <B> Domain Adaptation with Structural Correspondence Learning. </B>
+      EMNLP 2006.
+      [<A HREF="http://www.cis.upenn.edu/~blitzer/papers/emnlp06.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 7</td>
+    <td>Pi-Chuan</td>
+    <td> David Chiang.
+        <B>A Hierarchical Phrase-Based Model for Statistical Machine Translation.</B>
+        ACl 2005.
+       [<A HREF="http://acl.ldc.upenn.edu/P/P05/P05-1033.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 14</td>
+    <td>Dan Cer</td>
+    <td> P Liang, A Bouchard-Cote, D Klein, B Taskar.
+      <B>  An End-to-End Discriminative Approach to Machine Translation.  </B>
+      ACL 2006.
+      [<A HREF="http://acl.ldc.upenn.edu/P/P06/P06-1096.pdf">pdf</A>.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 21</td>
+    <td>Sharon</td>
+    <td> Ellison, M. and Kirby, S.
+        <B>Measuring Language Divergence by Intra-lexical Comparison.</B>
+        ACL 2006.
+       [<A HREF="http://www.ling.ed.ac.uk/~simon/Papers/Ellison/Measuring%20Language%20Divergence%20by%20Intra-Lexical%20Comparison.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 28</td>
+    <td>Chris </td>
+    <td> Slav Petrov, Leon Barrett, Romain Thibaux and Dan Klein.
+      <B> Learning Accurate, Compact, and Interpretable Tree Annotation. </B>
+      ACL 2006.
+      [<A HREF="http://www.cs.berkeley.edu/~petrov/data/acl06.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 7</td>
+    <td>Bill</td>
+    <td> S Harabagiu, A Hickl.
+        <B> Methods for Using Textual Entailment in Open-Domain Question Answering.</B>
+        ACL 2006.
+       [<A HREF="http://acl.ldc.upenn.edu/P/P06/P06-1114.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 14</td>
+    <td>Alex</td>
+    <td> NN Schraudolph.
+      <B>Local Gain Adaptation in Stochastic Gradient Descent.  </B>
+      Artificial Neural Nets 1999.
+      [<A HREF="http://ieeexplore.ieee.org/iel5/6633/17688/00817990.pdf?isnumber=17688&arnumber=817990">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 21</td>
+    <td>Dan R.</td>
+    <td> E Gabrilovich, S Markovitch,
+        <B>Text Categorization with Many Redundant Features: Using Aggressive Feature
+Selection to Make SVMs Competitive with C4.5.</B>
+        ICML 2004
+       [<A HREF="http://wassist.cs.technion.ac.il/~yair_k/nph-gateway.cgi/000101A/http/www.cs.technion.ac.il/~gabr/papers/fs-svm.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Autumn 2006 <br>
+  Mondays at 2:00-3:30pm, Gates 459 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Sept. 25</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 2</td>
+    <td>William Morgan</td>
+    <td> David J. Hand.
+      <B>Classifier Technology and the Illusion of Progress.</B>
+      Statistical Science, 2006.
+      [<A HREF="http://arxiv.org/pdf/math.ST/0606441">pdf</A>]
+      <br>
+      Leo Breiman.
+      <B>Statistical Modeling: The Two Cultures.</B>
+      Statistical Science, 2001.
+      [<A HREF="http://www.cis.upenn.edu/group/datamining/ReadingGroup/papers/breiman2001.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 9</td>
+    <td>Surabhi</td>
+    <td> Hal Daume III and Daniel Marcu.
+        <B>Bayseian Query-Focused Summarization.</B>
+        ACL 2006.
+       [<A HREF="http://www.cs.utah.edu/~hal/docs/daume06bqfs.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 16</td>
+    <td>Dan Ramage</td>
+    <td> Mochihashi and Matsumoto.
+        <B>Context as Filtering.</B>
+        NIPS 2005.
+       [<A HREF="http://books.nips.cc/papers/files/nips18/NIPS2005_0407.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 23</td>
+    <td>Jenny</td>
+    <td> Aria Haghighi and Dan Klein.
+      <B>Prototype-driven Learning for Sequence Models.</B>
+      NAACL 2006.
+      [<A HREF="http://www.cs.berkeley.edu/~aria42/pubs/naacl06-posinduction.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 30</td>
+    <td>Sebastian</td>
+    <td> Ioannis Tsochantaridis, et al.
+      <B>Support Vector Machine Learning for Interdependent and Structured
+      Output Spaces.</B>
+      ICML 2004.
+      [<A HREF="http://www.cs.brown.edu/~th/papers/TsoHofJoaAlt-ICML2004.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 6</td>
+    <td>Dan Cer</td>
+    <td> Vishwanathan et al.
+        <B>Accelerated training of CRFs with stochastic gradient methods.</B>
+        ICML 2006.
+        [<A HREF="http://www.icml2006.org/icml_documents/camera-ready/122_Accelerated_Training.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 13</td>
+    <td>Jeff</td>
+    <td> Li and Yang.
+        <B>Loss function analysis for classification methods in text categorization.</B>
+        ICML 2003.
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 27</td>
+    <td>Teg</td>
+    <td> Galen Andrew.
+      <B> Hybrid Markov/Semi-Markov Conditional Random Field for Sequence Segmentation.</B>
+      EMNLP 2006.
+      [<A HREF="">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 4</td>
+    <td>Dan Cer</td>
+    <td> Hal Daume III and Daniel Marcu.
+        <B>Learning as Search Optimization.</B>
+        ICML 2005.
+      [<A HREF="http://www.isi.edu/~marcu/papers/daume05laso.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Dec 11</td>
+    <td>John Hale</td>
+    <td> Eric Villemonte de la Clergerie.
+      <B> Parsing Mildly Context Sensitive Languages with Thread Automata.</B>
+      Coling 2002.
+      [<A HREF="http://acl.ldc.upenn.edu/C/C02/C02-1028.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Winter 2006 <br>
+  Mondays at 4:15-5:45pm, Gates 359 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Jan 23</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jan 30</td>
+    <td>William Morgan</td>
+    <td> Franz Josef Och.
+        <B> Minimum Error Rate Training for Statistical Machine Translation </B>
+        ACL 2003.
+      [<A HREF="http://www.fjoch.com/acl03.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 6</td>
+    <td>Dan Ramage</td>
+    <td> M. Narasimhan, N. Jojic, and J. Bilmes.
+        <B>Q-Clustering</B>
+        NIPS 2005.
+       [<A HREF="http://ssli.ee.washington.edu/~mukundn/pubs/QClustering/QClustering-long.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 13</td>
+    <td>Chris Manning</td>
+    <td>S. Reynolds and J. Bilmes.
+        <B>Part-of-Speech Tagging with Virtual Evidence and Negative Training</B>
+        HLT 2005.
+      [<A
+      HREF="http://ssli.ee.washington.edu/people/bilmes/mypapers/sheila-hlt05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 20</td>
+    <td>Rajat Raina</td>
+    <td> Structured Prediction Via the Extragradient Method/M3NS
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Feb 27</td>
+    <td>--</td>
+    <td>NO MEETING - Good Luck with ACL submissions!</td>
+  </tr>
+
+  <tr>
+    <td>Mar 6</td>
+    <td>Bill MacCartney</td>
+    <td> Rodrigo de Salvo Braz, Eyal Amir, and Dan Roth
+        <B>Lifted First-Order Probabilistic Inference</B>
+        IJCAI 2005
+        [<A HREF="http://reason.cs.uiuc.edu/eyal/papers/fopl-res-ijcai05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 13</td>
+    <td>Teg Grenager</td>
+    <td> S. Goldwater, T. Griffiths, and M. Johnson
+        <B>Interpolating Between Types and Tokens by Estimating Power-Law Generators</B>
+        NIPS 2005
+      [<A HREF="http://cog.brown.edu/~gruffydd/papers/typetoken.pdf">pdf</A>]
+
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Mar 20</td>
+    <td>Jenny Finkel</td>
+    <td> Latent Head Models For Parsing
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Fall 2005 <br>
+  Mondays at 10:45pm, Gates 400 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Oct 3</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 10</td>
+    <td>Teg</td>
+    <td> Andrew McCallum, Kedar Bellare and Fernando Pereira.
+        <B> A Conditional Random Field for Discriminatively-trained Finite-state String Edit Distance.</B>
+        Conference on Uncertainty in AI (UAI), 2005.
+        [<A HREF="http://www.cs.umass.edu/~mccallum/papers/crfstredit-uai05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 17</td>
+    <td>Pi-Chuan</td>
+    <td> Noah A. Smith and Jason Eisner.
+        <B>Contrastive Estimation: Training Log-Linear Models on Unlabeled Data.</B>
+        Proceedings of the Association for Computational Linguistics (ACL 2005), Ann Arbor, Michigan.
+       [<A HREF="http://nlp.cs.jhu.edu/~nasmith/ce_acl05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Oct 24</td>
+    <td>Teg</td>
+    <td>Ryan McDonald, Koby Crammer and Fernando Pereira.
+        <B>Online Large-Margin Training of Dependency Parsers.</B>
+        43rd Annual Meeting of the Association for Computational Linguistics, 2005.  Ann Arbor, Michigan.
+        [<A HREF="http://www.seas.upenn.edu/~ryantm/papers/dependencyACL2005.pdf">pdf</A>][<A HREF="http://www.seas.upenn.edu/~ryantm/papers/MS-CIS-05-11.pdf">longer version</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Oct 31</td>
+    <td>Jenny</td>
+    <td> Mark A. Paskin.
+        <B>Maximum Entropy Probabilistic Logic.</B>
+        Technical Report UCB/CSD-01-1161, University of California, Berkeley.
+        [<A HREF="http://www.stanford.edu/~paskin/pubs/csd-01-1161.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 7</td>
+    <td>Rion</td>
+    <td>Brian Milch, Bhaskara Marthi, and Stuart Russell. <B>BLOG: Relational Modeling with Unknown Objects.</B> Proc. ICML-04 Workshop on Statistical Relational Learning. [<a href="http://www.cs.berkeley.edu/~russell/papers/srl04-blog.pdf">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 14</td>
+    <td>Jenny</td>
+    <td> B. Taskar, V. Chatalbashev and D. Koller.
+        <B>Learning Associative Markov Networks.</B>
+        Twenty First International Conference on Machine Learning (ICML04), Banff, Canada, July 2004.
+        [<A HREF="http://www.cs.berkeley.edu/~taskar/pubs/mmamn.ps">ps</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Nov 21</td>
+    <td>--</td>
+    <td>NO MEETING - Happy Thanksgiving!
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nov 28</td>
+    <td>Bill</td>
+    <td> Luke S. Zettlemoyer and Michael Collins.
+         <B> Learning to Map Sentences to Logical Form: Structured Classification with Probabilistic Categorial Grammars.</B>
+         In Proceedings of the Twenty First Conference on Uncertainty in Artificial Intelligence (UAI-05), 2005.
+        [<A HREF="http://people.csail.mit.edu/lsz/papers/uai05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Dec 5</td>
+    <td>Rajat</td>
+    <td> Sheila M. Reynolds and Jeff A. Bilmes
+        <B>Part-of-Speech Tagging using Virtual Evidence and Negative Training.</B>
+        Human Language Technology (HLT) Conference/ Conference on Empirical Methods in Natural Language Processing , Vancouver, B.C., Canada. Oct, 2005
+        [<A HREF="http://ssli.ee.washington.edu/people/bilmes/mypapers/sheila-hlt05.pdf">pdf</A>]
+    </td>
+  </tr>
+
+</table>
+
+<br><p><br>
+
+<!-- -------------------------------------------------------- -->
+
+<h2>
+  NLP Reading Group Schedule &mdash; Spring 2005 <br>
+  Fridays at 12:45pm, Gates 400 <br>
+</h2>
+
+<table class="p" cellpadding="5">
+
+  <tr>
+    <th class="bottomborder" align="left" width="75">Date</th>
+    <th class="bottomborder" align="left" width="100">Moderator</th>
+    <th class="bottomborder" align="left" width="400">Topic / Paper</th>
+  </tr>
+
+  <tr>
+    <td>Apr 22</td>
+    <td>Jenny Finkel</td>
+    <td>Organizational Meeting</td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Apr 29</td>
+    <td>Jenny Finkel</td>
+    <td><U>Relational Markov Networks</U><BR>
+        B. Taskar, P. Abbeel and D. Koller.
+        <B>Discriminative Probabilistic Models for Relational Data.</B>
+        Eighteenth Conference on Uncertainty in Artificial Intelligence (UAI02), Edmonton, Canada, August 2002.
+        [<A HREF="http://www.cs.berkeley.edu/~taskar/pubs/rmn.pdf">pdf</A>]
+        [<A HREF="http://www.cs.berkeley.edu/~taskar/pubs/rmn.ps">ps</A>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>May 6</td>
+    <td>Rion Snow</td>
+    <td><U>Inductive Logic Programming</U><BR>
+        Mary Elaine Califf and Raymond J. Mooney
+        <B>Relational Learning of Pattern-Match Rules for Information
+        Extraction</B>
+        Proceedings of the Sixteenth National Conference on Artificial
+        Intelligence (AAAI-99), Orlando, FL, pp. 328-334, July 1999.
+       [<A HREF="http://www.cs.utexas.edu/users/ml/papers/rapier-aaai99.pdf">pdf</A>]<BR>--<BR>
+       Fabio Ciravegna.
+       <B>Adaptive Information Extraction from Text by Rule Induction and Generalisation</B>
+       in Proceedings of 17th International Joint Conference on Artificial Intelligence (IJCAI 2001), Seattle, August 2001.
+       [<A HREF="http://www.dcs.shef.ac.uk/%7Efabio/paperi/IJCAI01.pdf">pdf</A>]<BR>--<BR>
+        <I>optional longer versions:</I><BR>
+        Mary Elaine Califf and Raymond J. Mooney
+        <B>Bottom-Up Relational Learning of Pattern Matching Rules for Information Extraction</B>
+        Journal of Machine Learning Research, 4, (2003), pp. 177-210.
+        [<A HREF="http://www.cs.utexas.edu/users/ml/papers/rapier-jmlr-03.pdf">pdf</A>]<BR>--<BR>
+        Fabio Ciravegna.
+        <B>(LP)2, an Adaptive Algorithm for  Information Extraction from Web-related Texts</B>
+        in Proceedings of the  IJCAI-2001 Workshop on Adaptive Text Extraction and Mining, Seattle, August, 2001
+        [<A HREF="http://www.dcs.shef.ac.uk/%7Efabio/paperi/Atem01.pdf">pdf</A>]<BR>
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 13</td>
+    <td>Aria Haghighi</td>
+    <td>SVMs</td>
+  </tr>
+
+  <tr>
+    <td>May 20</td>
+    <td>Aria Haghighi</td>
+    <td><U>Maximum Margin Markov Networks</U><BR>
+        B. Taskar, C. Guestrin and D. Koller.
+        <B>Max-Margin Markov Networks.</B>
+        Neural Information Processing Systems Conference (NIPS03),
+        Vancouver, Canada, December 2003.
+        [<A HREF="http://www.cs.berkeley.edu/~taskar/pubs/mmmn.ps">ps</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>May 27</td>
+    <td>Rajat Raina</td>
+    <td><U>Latent Dirichlet Allocation</U><BR>
+        David Blei, Andrew Y. Ng, and Michael Jordan.
+        <B>Latent Dirichlet Allocation.</B>
+        In NIPS 14, 2002.
+        [<A HREF="http://ai.stanford.edu/~ang/papers/nips01-lda.ps">ps</A>]
+        [<A HREF="http://ai.stanford.edu/~ang/papers/nips01-lda.pdf">pdf</A>]
+        <BR>--<BR>
+        <I>optional longer version:</I></BR>
+        David Blei, Andrew Y. Ng and Michael Jordan.
+        <B>Latent Dirichlet Allocation.</B>
+        Journal of Machine Learning Research, 3:993-1022, 2003.
+        [<A HREF="http://ai.stanford.edu/~ang/papers/jair03-lda.ps">ps</A>]
+        [<A HREF="http://ai.stanford.edu/~ang/papers/jair03-lda.pdf">pdf</A>]
+</td>
+  </tr>
+
+  <tr>
+    <td>Jun 3</td>
+    <td>Marie-Catherine de Marneffe</td>
+    <td><U>Integrating Topics and Syntax</U><BR>
+        T. Griffiths, M. Steyvers, D. Blei, and J. Tenenbaum.
+        <B>Integrating topics and syntax.</B>
+        Advances in Neural Information Processing Systems (NIPS) 17, 2004.
+        [<A HREF="http://www.cs.berkeley.edu/~blei/papers/syntax-semantics.pdf">pdf</A>]
+    </td>
+  </tr>
+
+  <tr bgcolor="#F5EEC6">
+    <td>Jun 10</td>
+    <td>Chris Cox</td>
+    <td>Rule Learning</td>
+  </tr>
+
+
+</table>
+
+<br><p><br>
+
+
+<!-- END OF PAGE CONTENTS ----------------------------- //-->
+</div></div>
+      </div>
+    <!--</div>--><!-- /container -->
+  </div>
+  <footer>
+    <div id="footer" class="container">
+      <footer class="widewrapper footer">
+  <div class="container">
+    <div class="row footer">
+      
+      <div class="col-sm-3">
+        <h4>Stanford NLP Group</h4>
+	Gates Computer Science Building<br>
+	353 Jane Stanford Way<br>
+	Stanford, CA 94305-9020<br>
+	<a href="http://forum.stanford.edu/visitors/directions/gates.php">Directions and Parking</a>
+      </div>
+
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+          <h4>Affiliated Groups</h4>
+          <ul class="grove-list">
+            <li><a href="http://ai.stanford.edu/">Stanford AI Lab</a></li>
+            <li><a href="http://infolab.stanford.edu/">Stanford InfoLab</a></li>
+            <li><a href="https://www-csli.stanford.edu/">Center for the Study of Language and Information</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-sm-3">
+	<!--<a href="https://docs.google.com/forms/d/19uyf5YSiQd9PGkl26Lnbpze3Ab_ipTSoMNIctrVQG2o/viewform">
+	  <h2>BUG REPORT!</h2>
+	</a>-->
+	
+	
+      </div>
+      
+      
+      <div class="col-sm-3">
+        <h4>Connect</h4>
+
+	<div class="row">
+	  <ul>
+	    <li><a href="http://stackoverflow.com/tags/stanford-nlp">Stack Overflow</a></li>
+	    <li><a href="https://github.com/stanfordnlp/CoreNLP">Github</a></li>
+	    <li><a href="https://twitter.com/stanfordnlp">Twitter</a></li>
+	  </ul>
+	</div>
+	<!--
+	<div class="row center-block">
+          <a href="https://github.com/stanfordnlp/CoreNLP" class="social github"></a>
+          <a href="https://twitter.com/stanfordnlp" class="social twitter"></a>
+	</div>
+	-->
+      </div>
+    </div>
+
+    <div class="small row" align="right">
+      Local links: &nbsp;
+      <a href="/local/nlp_lunch.shtml">NLP lunch</a> &middot;
+      <!-- <img src="/img/middot.gif" align="center"> -->
+      <a href="http://nlp.stanford.edu/read/">NLP Reading Group</a> &middot;
+      <a href="http://nlp.stanford.edu/seminar/">NLP Seminar</a> &middot;
+      <a href="http://ai.stanford.edu/portfolio-view/distinguished-speaker-series">AI Speakers</a>
+      &middot;
+      <a href="/javanlp/">JavaNLP</a>
+      (<a href="/nlp/javadoc/javanlp/">javadocs</a>) &middot;
+      <a href="/local/machines.shtml">machines</a> &middot;
+      <a href="/wiki/">Wiki</a> &middot;
+      <a href="/local/calendar.shtml">Calendar</a> &middot;
+      <a href="/local/qa/">Q&amp;A</a>
+    </div>
+
+  </div>
+  
+</footer>
+
+
+    </div><!-- /footer -->
+  </footer>
+  <script src="/static/js/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/static/js/vendor/modernizr/modernizr.js"></script>
+
+
+  <script>
+    $('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
+  </script>
+
+  
+
+</body>
+</html>
+

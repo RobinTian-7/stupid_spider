@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.152.2">
+    
+      <title>
+        iQua
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content=""
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hello">
+  <meta name="twitter:description" content="The iQua group at the Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto, is a small team of people who work on challenging research problems in distributed machine learning, federated learning, cloud computing, security and privacy, and networking. The team enjoys applying theoretical tools to solve problems in real-world systems.">
+
+
+
+<meta property="og:url" content="/">
+  <meta property="og:site_name" content="iQua">
+  <meta property="og:title" content="Hello">
+  <meta property="og:description" content="The iQua group at the Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto, is a small team of people who work on challenging research problems in distributed machine learning, federated learning, cloud computing, security and privacy, and networking. The team enjoys applying theoretical tools to solve problems in real-world systems.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/index.xml" title="iQua" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+    body.dark-theme {
+        --pagefind-ui-primary: #eeeeee;
+        --pagefind-ui-text: #eeeeee;
+        --pagefind-ui-background: #152028;
+        --pagefind-ui-border: #152028;
+        --pagefind-ui-tag: #152028;
+    }
+    code {
+        font-family: JetBrains Mono, monospace;
+        font-size: inherit;
+        background: var(--ui-background);
+    }
+    
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-family: JetBrains Mono, monospace;
+    }
+</style>
+
+
+  </head>
+  <body class="light-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >iQua Group</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+           <li><a href="/publications">Publications</a></li>
+        
+      
+        
+           <li><a href="/research">Research</a></li>
+        
+      
+        
+           <li><a href="/aboutus">About Us</a></li>
+        
+      
+        
+          <ul class="menu__sub-inner">
+            <li class="menu__sub-inner-more-trigger">
+              Baochun Li
+              <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+            </li>
+            <ul class="menu__sub-inner-more hidden">
+              
+                <li><a href="/bli">About</a></li>
+              
+                <li><a href="/awards">Awards</a></li>
+              
+                <li><a href="/teaching">Teaching</a></li>
+              
+                <li><a href="/services">Services</a></li>
+              
+                <li><a href="/bio">Bio &amp; CV</a></li>
+              
+                <li><a href="/contact">Contact</a></li>
+              
+            </ul>
+          </ul>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      <li><a href="/publications">Publications</a></li>
+    
+      <li><a href="/research">Research</a></li>
+    
+      <li><a href="/aboutus">About Us</a></li>
+    
+      <li><a href="/bli">Baochun Li</a></li>
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  
+  
+    
+  
+  
+
+  
+    <div class="index-content framed">
+      
+  <img src="assets/iqua-logo-intro.svg"  alt="iQua group"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>The iQua group at the Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto, is a small team of people who work on challenging research problems in distributed machine learning, federated learning, cloud computing, security and privacy, and networking. The team enjoys applying theoretical tools to solve problems in real-world systems.</p>
+
+
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({
+                element: "#search",
+                showImages: false
+            });
+        });
+    </script>
+
+
+    </div>
+  
+
+  <div class="posts">
+    
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">iQua Group &copy; 2000 &mdash; 2026</div>
+      
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script><script defer src="/js/math-code.js"></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script defer src="/js/center-img.js"></script>
+
+      
+    </div>
+
+    
+  </body>
+</html>

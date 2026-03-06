@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group | MLO @ CityU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        /* --- Global Reset & Typography --- */
+        :root {
+            --primary-color: #0056b3;
+            --text-dark: #1a1a1a;
+            --text-light: #555;
+            --bg-color: #ffffff;
+            --accent-bg: #f4f6f8;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        a { text-decoration: none; color: inherit; transition: color 0.2s; }
+        a:hover { color: var(--primary-color); }
+
+        /* --- Layout --- */
+        .container {
+            width: 92%;             /* Adaptive width */
+            max-width: 1200px;      /* Larger cap for wide screens */
+            margin: auto;      /* Vertical spacing */
+            padding: 20px;
+        }
+
+        /* --- Navigation --- */
+        .nav {
+            display: flex;
+            gap: 25px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-light);
+        }
+        .nav a:hover, .nav span.active {
+            color: var(--primary-color);
+        }
+
+        /* --- Section Headers --- */
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; letter-spacing: -0.02em; line-height: 1.2; }
+        h2 { font-size: 1.75rem; margin-top: 3rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-bg); padding-bottom: 10px; }
+        h3 { font-size: 1.2rem; color: var(--text-dark); font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; }
+
+        /* --- Content Styling --- */
+        .intro-text {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+        }
+
+        .interest-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .interest-list li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+
+        /* --- Member Cards --- */
+        .member-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .member-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            transition: color 0.2s;
+        }
+        
+        .member-header:hover .member-name {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .member-name {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .member-meta {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .toggle-icon {
+            font-size: 0.8rem;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        /* --- Hidden Details --- */
+        .detail-container {
+            display: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: var(--accent-bg);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #444;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .detail-container.show {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .detail-container ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .detail-container li {
+            margin-bottom: 6px;
+        }
+
+        /* --- Alumni Note --- */
+        .alumni-note {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* Utility for links inside details */
+        .detail-link {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .nav { justify-content: center; gap: 15px; }
+            .member-header { flex-direction: column; align-items: flex-start; gap: 4px;}
+        }
+    </style>
+    <script>
+        function toggleMember(id) {
+            const content = document.getElementById(id);
+            const isHidden = !content.classList.contains('show');
+            
+            if (isHidden) {
+                content.classList.add('show');
+            } else {
+                content.classList.remove('show');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <a href="./index.html">Home</a>
+            <span class="active" style="font-weight: 700; color: var(--primary-color);">Group</span>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./talk.html">Talks</a>
+            <a href="./publication.html">Publications</a>
+            <a href="./openings.html">Open Positions</a>
+        </div>
+
+        <h1>Machine Learning and Optimization Lab</h1>
+
+        <div class="intro-text">
+            Machine Learning and Optimization Lab (MLO) at City University of Hong Kong primarily performs research in understanding and improving the reliability of modern machine learning systems. Our research interests include the following areas:
+            <ul class="interest-list">
+                <li>Robustness of multimodal large models.</li>
+                <li>Privacy-preserving machine learning systems.</li>
+                <li>Efficient learning algorithms, especially for large language models.</li>
+                <li>Optimization and generalization properties of machine learning algorithms.</li>
+                <li>Interdisciplinary applications of machine learning, especially in the domain of FinTech.</li>
+            </ul>
+            If you are interested in fundamental machine learning theory and algorithms, please check the page of <a href="./openings.html" style="text-decoration: underline; color: var(--primary-color);">open positions</a> for potential opportunities.
+        </div>
+
+        <h2>Members</h2>
+
+        <h3>Faculty and PI</h3>
+        <div class="member-item">
+            <div class="member-header">
+                <a href="./index.html"><span class="member-name">Chen Liu</span></a>
+            </div>
+        </div>
+
+        <h3>PhD Students</h3>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('hqren')">
+                <span><span class="member-name">Heqing Ren</span> <span class="member-meta">(2026.01 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="hqren">
+                <ul>
+                    <li><strong>Research Area:</strong> Machine Unlearning; Large Language Model.</li>
+                    <li>Master's Degree, University of Zurich.</li>
+                    <li>Master's Degree, Tsinghua University.</li>
+                    <li>Bachelor's Degree, Zhejiang University.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('xfwang')">
+                <span><span class="member-name">Xiaofei Wang</span> <span class="member-meta">(2025.09 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="xfwang">
+                <ul>
+                    <li><strong>Research Area:</strong> Efficient Learning; Large Language Model.</li>
+                    <li>Master's Degree, Northwestern Polytechnical University.</li>
+                    <li>Bachelor's Degree, Northwestern Polytechnical University.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('zywu')">
+                <span><span class="member-name">Zhiyang Wu</span> <span class="member-meta">(2025.01 - , with <a href="https://scholar.google.com/citations?user=xCxyGuwAAAAJ&hl=en" target="_blank" class="detail-link">Zhicong Lu</a> from <a href="https://www.gmu.edu" target="_blank" class="detail-link">George Mason University</a>)</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="zywu">
+                <ul>
+                    <li><strong>Research Area:</strong> Human Computer Interaction; AI Ethics.</li>
+                    <li>Bachelor's Degree, Hong Kong University of Science and Technology.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('jnxu')">
+                <span><span class="member-name">Jingning Xu</span> <span class="member-meta">(2024.09 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="jnxu">
+                <ul>
+                    <li><strong>Research Area:</strong> Adversarial Robustness; Multimodal Model.</li>
+                    <li>Master's Degree, Tongji University.</li>
+                    <li>Bachelor's Degree, Tongji University.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('xyang')">
+                <span><span class="member-name">Xu Yang</span> <span class="member-meta">(2023.09 - , with <a href="https://wei-ying.net" target="_blank" class="detail-link">Ying Wei</a> from <a href="https://www.zju.edu.cn/english/" target="_blank" class="detail-link">Zhejiang University</a>)</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="xyang">
+                <ul>
+                    <li><strong>Research Area:</strong> Large Language Model; Domain Generalization.</li>
+                    <li>Bachelor's Degree, Sichuan University.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('xpchen')">
+                <span><span class="member-name">Xinping Chen</span> <span class="member-meta">(2023.09 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="xpchen">
+                <ul>
+                    <li><strong>Research Area:</strong> Privacy; Data Reconstruction.</li>
+                    <li>Master's Degree, Imperial College London.</li>
+                    <li>Bachelor's Degree, University of Electronic Science and Technology of China.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('dchen')">
+                <span><span class="member-name">Ding Chen</span> <span class="member-meta">(2023.06 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="dchen">
+                <ul>
+                    <li><strong>Research Area:</strong> Differential Privacy; Optimization Theory.</li>
+                    <li>Master's Degree, Shanghai Jiao Tong University.</li>
+                    <li>Bachelor's Degree, Huazhong University of Science and Technology.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('xyzhong')">
+                <span><span class="member-name">Xuyang Zhong</span> <span class="member-meta">(2023.01 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="xyzhong">
+                <ul>
+                    <li><strong>Research Area:</strong> Adversarial Training; Machine Unlearning.</li>
+                    <li>Master's Degree, Technical University of Munich.</li>
+                    <li>Bachelor's Degree, Beijing Institute of Technology.</li>
+                    <li><a href="https://xuyangzhong-29.github.io" target="_blank" class="detail-link">Personal Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h3>MPhil Students</h3>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('byzhong')">
+                <span><span class="member-name">Baoyi Zhong</span> <span class="member-meta">(2026.01 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="byzhong">
+                <ul>
+                    <li><strong>Research Area:</strong> Efficient Learning; Large Language Model.</li>
+                    <li>Bachelor's Degree, Dalian University of Technology.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('jdchen')">
+                <span><span class="member-name">Jiandong Chen</span> <span class="member-meta">(2025.09 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="jdchen">
+                <ul>
+                    <li><strong>Research Area:</strong> Large Language Model; AI4Finance.</li>
+                    <li>Bachelor's Degree, Beijing Normal University.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('hcluo')">
+                <span><span class="member-name">Haochen Luo</span> <span class="member-meta">(2025.01 - )</span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="hcluo">
+                <ul>
+                    <li><strong>Research Area:</strong> Large Language Model; AI4Finance.</li>
+                    <li>Bachelor's Degree, Northeastern University.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2>Alumni</h2>
+        <div class="alumni-note">Including project advisees who worked with the PI for more than 6 months.</div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('alum_yxhuang')">
+                <span><span class="member-name">Yixiao Huang</span> <span class="member-meta">(2024.03 - 2024.07) &rarr; PhD at <a href="https://www.berkeley.edu/" target="_blank" class="detail-link">UC Berkeley</a></span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="alum_yxhuang">
+                <ul>
+                    <li><strong>Role:</strong> Research Assistant.</li>
+                    <li><strong>Current:</strong> PhD student at <a href="https://www.berkeley.edu/" target="_blank" class="detail-link">UC Berkeley</a>.</li>
+                    <li><a href="https://yixiao-huang.github.io" target="_blank" class="detail-link">Personal Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('alum_sqli')">
+                <span><span class="member-name">Shuangqi Li</span> <span class="member-meta">(2022.03 - 2023.05) &rarr; PhD at <a href="https://www.epfl.ch/en/" target="_blank" class="detail-link">EPFL</a></span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="alum_sqli">
+                <ul>
+                    <li><strong>Role:</strong> Project Advisee.</li>
+                    <li><strong>Current:</strong> PhD student at <a href="https://www.epfl.ch/en/" target="_blank" class="detail-link">EPFL</a>.</li>
+                    <li><a href="https://lishuangqi.com" target="_blank" class="detail-link">Personal Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('alum_yljiang')">
+                <span><span class="member-name">Yulun Jiang</span> <span class="member-meta">(2021.09 - 2023.01) &rarr; PhD at <a href="https://www.epfl.ch/en/" target="_blank" class="detail-link">EPFL</a></span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="alum_yljiang">
+                <ul>
+                    <li><strong>Role:</strong> Project Advisee.</li>
+                    <li><strong>Current:</strong> PhD student at <a href="https://www.epfl.ch/en/" target="_blank" class="detail-link">EPFL</a>.</li>
+                    <li><a href="https://yljblues.github.io" target="_blank" class="detail-link">Personal Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="member-item">
+            <div class="member-header" onclick="toggleMember('alum_zqzhao')">
+                <span><span class="member-name">Ziqi Zhao</span> <span class="member-meta">(2021.03 - 2022.01) &rarr; PhD at <a href="https://www.hku.hk" target="_blank" class="detail-link">HKU</a></span></span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="detail-container" id="alum_zqzhao">
+                <ul>
+                    <li><strong>Role:</strong> Project Advisee.</li>
+                    <li><strong>Current:</strong> PhD student at <a href="https://www.hku.hk" target="_blank" class="detail-link">HKU</a>.</li>
+                    <li><a href="https://robertflame.github.io/Homepage/" target="_blank" class="detail-link">Personal Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

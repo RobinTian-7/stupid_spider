@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Yingyu Liang's Personal Website">
+		<meta name="author" content="Yingyu Liang">
+
+		 <!-- Bootstrap -->
+    		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+	</head>
+
+	<body>
+
+			<!-- js -->
+    		<script src="http://code.jquery.com/jquery.js"></script>
+    		<script src="js/bootstrap.min.js"></script>
+
+			<!-- header -->
+    		<div class="container"> 
+
+    			<div class="row">
+    				<div class = "span6">
+    					<h3>Yingyu Liang</h3>
+    				</div>
+    				<div class = "span6">
+    					<!--
+    					<img src="img/uw-madison-badger-logo.jpg" style="float:right;" width="35%"  alt="UW-Madison"/><br/>
+    				-->
+    				</div>	
+    			</div>
+
+    			
+				<!-- nav bar -->	
+				<div class="navbar">
+						<div class="navbar-inner">
+								
+								<div class="container">
+									
+									<ul class="nav">
+											
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#teaching">Teaching/Advising</a></li>
+										<li><a href="#publications">Publications</a></li>
+										<!-- <li><a href="#activities">Activities</a></li> -->
+										<!-- <li><a href="#links">Links</a></li>-->
+								  </ul>
+						</div>
+				</div>
+				
+			</div>
+			
+			
+			<!-- bio -->
+			<div class="row"  id="positions">
+			<div class = "span10 offset2">
+				<h4>About Me  <!--<font size="2"><a href="YingyuLiang.CV.pdf">[CV]</a></font>  <font size="2"><a href="YingyuLiang.statement.pdf">[RESEARCH STATEMENT]</a></font> <font size="2"><a href="YingyuLiang.teaching.pdf">[TEACHING STATEMENT]</a></font> --> </h4> 
+			</div>
+			</div>
+
+			<div class="row">
+				
+				<div class = "span8 offset2"> 
+						<!--
+						<li><p class="text-left">Assistant Professor in Computer Sciences, University of Wisconsin-Madison
+						<br>
+						I'm looking for motivated students who like research in Machine Learning! Contact me if you're interested.
+						<br>
+						</p></li>
+						
+						<li><p class="text-left">Lecturer/Associate Research Scholar in Computer Science, Princeton University<br>
+						Host: <a href="http://www.cs.princeton.edu/~arora/"> Sanjeev Arora</a>
+                        </p></li>
+						<li><p class="text-left">Postdoc in Computer Science, Princeton University<br>
+						Hosts: <a href="http://www.cs.princeton.edu/~arora/"> Sanjeev Arora</a>, <a href="https://profiles.stanford.edu/moses-charikar"> Moses Charikar</a> 
+                        </p></li>
+						
+						<li><p class="text-left">Ph.D. in Computer Science, Georgia Tech <br>
+						Advisor: <a href="http://www.cs.cmu.edu/~ninamf/"> Maria-Florina Balcan </a></p></li>
+						-->
+						
+						<!--
+						<li><p class="text-left">M. S. in Computer Science, Tsinghua University <br>
+						Advisors: <a href="http://www.tsinghua.edu.cn/publish/csen/4623/2010/20101226104412516277601/20101226104412516277601_.html"> Bo Zhang</a>, <a href="http://www.tsinghua.edu.cn/publish/csen/4623/2010/20101225164517300815523/20101225164517300815523_.html">Jianmin Li</a></p></li>
+						
+						<li><p class="text-left">B. S. in Computer Science, Tsinghua University</p></li>
+						<br>
+						-->
+						
+						I am an associate professor of <a href="https://datascience.hku.hk/">IDS</a> and <a href="https://www.cs.hku.hk/">CS</a> at the <a href="https://www.hku.hk/">University of Hong Kong</a>, and an adjunct professor of <a href="http://www.cs.wisc.edu/">Computer Sciences</a> at the <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a> by courtesy. Before I was an assistant then associate professor of Computer Sciences at the University of Wisconsin-Madison. I was a postdoc at <a href="https://www.cs.princeton.edu/">Princeton</a> and had the pleasure to work with <a href="https://www.cs.princeton.edu/~arora/">Sanjeev Arora</a>. I received my Ph.D. in 2014 from <a href="https://www.cc.gatech.edu/">Georgia Tech</a>, where I was advised by <a href="http://www.cs.cmu.edu/~ninamf/">Nina Balcan</a> and also worked closely with <a href="https://dasongle.github.io/index.html">Le Song</a>. I received my M.S. (2010) and B.S. (2008) from <a href="http://www.tsinghua.edu.cn/">Tsinghua University</a> advised by <a href="https://www.tsinghua.edu.cn/publish/csen/4623/2010/20101225164517300815523/20101225164517300815523_.html">Jianmin Li</a> and <a href="https://www.tsinghua.edu.cn/publish/csen/4623/2010/20101226104412516277601/20101226104412516277601_.html">Bo Zhang</a>. I'm a recipient of the NSF CAREER award.<br> 
+				</div>
+			 
+				<div class = "span2">
+				<img src="img/YingyuLiang.png" class="img-rounded" width="80%" />
+				</div>
+			</div>
+
+			
+					<!--
+			<div class="row">
+				<div class = "span2"> 
+					<p class="text-right">Contact<br></p> 
+				</div>
+				
+				<div class = "span8"> 
+						<p>yliang at cs dot wisc dot edu <br>
+						Office 5387, Department of Computer Sciences, University of Wisconsin-Madison</p>	
+
+						<p>yingyul@hku.hk <br>
+						P307, Graduate House, The University of Hong Kong</p>				  
+				</div>
+			
+			</div>
+						-->
+
+			
+			<div class="row">
+				<div class = "span2"> 
+					<p class="text-right">Research</p> 
+				</div>
+				
+				<div class = "span8"> 
+						<p>
+						Machine learning. In particular, providing theoretical foundations for modern machine learning models and designing efficient algorithms for real world applications. Recent focuses include optimization and generalization in deep learning, language modeling, robust learning, and their applications. 
+						</p>
+				</div>
+			</div>
+
+
+
+
+			<!-- teaching -->
+			<div class="row"  id="teaching">
+			<div class = "span10 offset2">
+			<h4>Teaching</h4>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right"></p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+
+				<li><p class="text-left">
+					<strong>HKU DATA8003: Theoretical Foundation of Deep Learning
+					</strong> <br>
+				</p>
+				</li>
+
+				<li><p class="text-left">
+					<strong>HKU COMP3354: Statistical Learning
+					</strong> <br>
+				</p>
+				</li> 
+
+				<li><p class="text-left">
+					<strong>UW-Madison CS 839: Theoretical Foundations of Deep Learning
+					<a href="cs839_spring23/index.html">[Spring 2023]</a><a href="cs839_spring22/index.html">[Spring 2022]</a> </strong> <br>
+				</p>
+				</li>
+
+				<li><p class="text-left">
+					<strong>UW-Madison CS 540: Introduction to Artificial Intelligence 
+					<a href="https://pages.cs.wisc.edu/~jerryzhu/cs540f23/index.html">[Fall 2023]</a>
+					<a href="https://pages.cs.wisc.edu/~kandasamy/courses/22fall-cs540/index.html">[Fall 2022]</a>
+					<a href="cs540_1_fall21/">[Fall 2021]</a> 
+					<a href="https://happyharrycn.github.io/CS540-Fall20/">[Fall 2020]</a>
+					<a href="cs540_spring19/">[Spring 2019]</a> 
+					<a href="cs540_1_spring18/">[Spring 2018]</a> </strong><br>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>UW-Madison CS 760: Machine Learning
+					<a href="cs760_spring21/index.html">[Spring 2021]</a> <a href="cs760_spring20/index.html">[Spring 2020]</a> <a href="cs760_fall18/index.html">[Fall 2018]</a> <a href="cs760_fall17/index.html">[Fall 2017]</a>  </strong> <br>
+				</p>
+				</li>
+				
+								
+				<li><p class="text-left">
+					<strong>Princeton COS 495: Introduction to Deep Learning
+					<a href="https://www.cs.princeton.edu/courses/archive/spring16/cos495/"> [Spring 2016] </a> </strong> <br>
+				</p>
+				</li>
+				
+                
+				<!--
+				<li><p class="text-left">
+					<strong><a href="https://www.cs.princeton.edu/courses/archive/spring15/cos423/">Princeton COS 423: Theory of Algorithms</a> </strong><br>
+					Instructor: <a href="https://www.cs.princeton.edu/~ret/"> Robert E. Tarjan</a> <br>
+					<i>Princeton University, Spring 2015</i>. <br>
+				</p>
+				</li>
+				-->
+				
+				</ul>
+			</div>
+			</div>
+ 
+			
+			<!-- Team -->
+			<div class="row"  id="team">
+			<div class = "span10 offset2">
+			<h4>Advising</h4>  
+			</div>
+			</div>
+			
+			<div class="row">
+				<div class = "span2">
+				<p class="text-right">Students</p>
+				</div>
+				<div class = "span8">
+				 Zidong Liu, Yuxiang Tian, Bo Chen, Jiangxuan Long
+				</div>
+			</div>
+			<div class="row">
+				<div class = "span2">
+				<p class="text-right">Alumni</p>
+				</div>
+				<div class = "span8">
+				<a href="https://pages.cs.wisc.edu/~zxu444/home/">Zhuoyan Xu</a> (co-advised with Yin Li and Yiqiao Zhong), <a href="http://pages.cs.wisc.edu/~zhmeishi/">Zhenmei Shi</a>, <a href="https://yguooo.github.io/">Yang Guo</a> (Co-advised with Rob Nowak), <a href="https://jweiae.github.io/">Junyi Wei</a>, Nils Palumbo, <a href="http://pages.cs.wisc.edu/~demirel/">Mehmet Furkan Demirel</a>,
+				<a href="https://jfc43.github.io/">Jiefeng Chen</a> (Co-advised with Somesh Jha), <a href="https://prathushasarma.weebly.com/"> Prathusha Sarma</a> (Co-advised with William Sethares), <a href = "https://sid7954.github.io/">Siddhant Garg</a>, Zhongkai Sun (Co-advised with William Sethares), <a href="https://chao1224.github.io/">Shengchao Liu</a>
+				</div>
+			</div>
+			
+			
+			<!-- publications -->
+
+			<div class="row"  id="publications">
+			<div class = "span10 offset2">
+			<h4>Publications</h4> 
+			(authors are listed in alphabetic order, except for those papers with *)<br>
+			(Full/up-to-date list on <a href="https://scholar.google.com/citations?user=_RVvnS4AAAAJ">Google Scholar page</a>)
+			<h6></h6>
+			</div>
+			</div> 
+
+
+			<div class="row"  id="selected-publications">
+			<div class = "span10 offset2">
+			<h4>Selected Publications</h4>
+			<h6></h6>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class = "span2"> 
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">      
+				
+
+				<li><p class="text-left">
+					<strong>Provable Guarantees for Neural Networks via Gradient Feature Learning*</strong> 
+					<br>Zhenmei Shi, Jenny Wei, Yingyu Liang.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2023.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=5F04bU79eK">[NeurIPS]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2310.12408">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>The Trade-off between Universality and Label Efficiency of Representations from Contrastive Learning*</strong> 
+					<br>Zhenmei Shi, Jiefeng Chen, Kunyang Li, Jayaram Raghuram, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Learning Representations (ICLR), 2023</i>.<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=rvsbw2YthH_">[ICLR]</a></font> 
+				</p></li>
+
+ 
+				<li><p class="text-left">
+					<strong>A Theoretical Analysis on Feature Learning in Neural Networks: Emergence from Inputs and Advantage over Fixed Features*</strong> 
+					<br>Zhenmei Shi, Jenny Wei, Yingyu Liang.<br>
+					<i>International Conference on Learning Representations (ICLR), 2022</i>.<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=wMpS-Z_AI_E">[ICLR]</a></font> 
+				</p></li>
+		
+
+
+				<li><p class="text-left">
+					<strong>Functional Regularization for Representation Learning: A Unified Theoretical Perspective</strong> 
+					<br>Siddhant Garg, Yingyu Liang.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2008.02447">[arXiv]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Learning and Generalization in Overparameterized Neural Networks, Going Beyond Two Layers</strong> 
+					<br>Zeyuan Allen-Zhu, Yuanzhi Li, Yingyu Liang. <br>
+					<i> Neural Information Processing Systems (NeurIPS), 2019</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1811.04918">[arXiv]</a></font> 
+					<!-- <font color="#0000FF"><a href="three-layer.pdf">[slides]</a></font> -->
+				</p></li>
+				
+				</ul>
+			</div>
+			</div> <!-- Selected -->
+
+			<div class="row"  id="conference-publications">
+			<div class = "span10 offset2">
+			<h4>Conference Publications</h4> 
+			<h6></h6>
+			</div>
+			</div> 
+						
+			
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right"></p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+
+				<li><p class="text-left">
+					<strong>Kernel Regression in Structured Non-IID Settings: Theory and Implications for Denoising Score Learning*</strong> 
+					<br>Dechen Zhang, Zhenmei Shi, Yi Zhang, Yingyu Liang, Difan Zou. <br>
+					<i>Neural Information Processing Systems (NeurIPS), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=tOwP9z1Zde">[OpenReview]</a></font> 
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Fundamental Limits of Visual Autoregressive Transformers: Universal Approximation Abilities</strong> 
+					<br>Yifang Chen, Xiaoyu Li, Yingyu Liang, Zhenmei Shi, Zhao Song.<br>
+					<i>International Conference on Machine Learning (ICML), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=magOSIm8UT">[OpenReview]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Dissecting Submission Limit in Desk-Rejections: A Mathematical Analysis of Fairness in AI Conference Policies</strong> 
+					<br>Yuefan Cao, Xiaoyu Li, Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song, Jiahao Zhang.<br>
+					<i>International Conference on Machine Learning (ICML), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=wDKlybjm7T">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2502.00690">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Beyond Linear Approximations: A Novel Pruning Approach for Attention Matrix</strong> 
+					<br>Yingyu Liang, Jiangxuan Long, Zhenmei Shi, Zhao Song, Yufa Zhou.<br>
+					<i>International Conference on Learning Representations (ICLR), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=sgbI8Pxwie">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2410.11261">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Learning to Inference Adaptively for Multimodal Large Language Models*</strong> 
+					<br>Zhuoyan Xu, Khoi Duc Nguyen, Preeti Mukherjee, Saurabh Bagchi, Somali Chaterji, Yingyu Liang, Yin Li.<br>
+					<i>International Conference on Computer Vision (ICCV), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=6hD5CzzOyL">[OpenReview]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Unraveling the Smoothness Properties of Diffusion Models: A Gaussian Mixture Perspective</strong> 
+					<br>Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song, Mingda Wan, Yufa Zhou.<br>
+					<i>International Conference on Computer Vision (ICCV), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=E9MPcFpUlA">[OpenReview]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Towards Infinite-Long Prefix in Transformers</strong> 
+					<br>Yingyu Liang, Zhenmei Shi, Zhao Song, Chiwun Yang.<br>
+					<i>Empirical Methods in Natural Language Processing (EMNLP), 2025.</i> <br>  
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Circuit Complexity Bounds for RoPE-based Transformer Architecture</strong> 
+					<br>Bo Chen, Xiaoyu Li, Yingyu Liang, Jiangxuan Long, Zhenmei Shi, Zhao Song, Jiahao Zhang.<br>
+					<i>Empirical Methods in Natural Language Processing (EMNLP), 2025.</i> <br>  
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Conv-Basis: A New Paradigm for Efficient Attention Inference and Gradient Computation in Transformers</strong> 
+					<br>Yingyu Liang, Heshan Liu, Zhenmei Shi, Zhao Song, Zhuoyan Xu, Jiale Zhao, Zhen Zhuang.<br>
+					<i>Empirical Methods in Natural Language Processing Findings (EMNLP Findings), 2025.</i> <br>  
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>NRFlow: Towards Noise-Robust Generative Modeling via High-Order Mechanism</strong> 
+					<br>Bo Chen, Chengyue Gong, Xiaoyu Li, Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song, Mingda Wan, Xugang Ye.<br>
+					<i>Conference on Uncertainty in Artificial Intelligence (UAI), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=hCONRCHDEL">[OpenReview]</a></font> 
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>When Can We Solve the Weighted Low Rank Approximation Problem in Truly Subquadratic Time?</strong> 
+					<br>Chenyang Li, Yingyu Liang, Zhenmei Shi, Zhao Song.<br>
+					<i> International Conference on Artificial Intelligence and Statistics (AISTAT), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=SQkur6MNOR">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2502.16912">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Fourier Circuits in Neural Networks and Transformers: A Case Study of Modular Arithmetic with Multiple Inputs</strong> 
+					<br>Chenyang Li, Yingyu Liang, Zhenmei Shi, Zhao Song, Tianyi Zhou.<br>
+					<i> International Conference on Artificial Intelligence and Statistics (AISTAT), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=RFpIosT9WI">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2402.09469">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Looped ReLU MLPs May Be All You Need as Practical Programmable Computers</strong> 
+					<br>Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song, Yufa Zhou.<br>
+					<i> International Conference on Artificial Intelligence and Statistics (AISTAT), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=XjNFnBqrEi">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2410.09375">[arXiv]</a></font>
+				</p></li>
+	
+
+				<li><p class="text-left">
+					<strong>Bypassing the Exponential Dependency: Looped Transformers Efficiently Learn In-context by Multi-step Gradient Descent</strong> 
+					<br>Bo Chen, Xiaoyu Li, Yingyu Liang, Zhenmei Shi, Zhao Song.<br>
+					<i> International Conference on Artificial Intelligence and Statistics (AISTAT), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=4C1aRz2gRq">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2410.11268">[arXiv]</a></font>
+				</p></li>	
+
+
+				<li><p class="text-left">
+					<strong>Differential Privacy Mechanisms in Neural Tangent Kernel Regression</strong> 
+					<br>Jiuxiang Gu, Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song.<br>
+					<i> IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025.</i> <br>  
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2407.13621">[arXiv]</a></font>
+				</p></li>	
+
+
+				<li><p class="text-left">
+					<strong>The Computational Limits of State-Space Models and Mamba via the Lens of Circuit Complexity</strong> 
+					<br>Yifang Chen, Xiaoyu Li, Yingyu Liang, Zhenmei Shi, Zhao Song.<br>
+					<i> Conference on Parsimony and Learning (CPAL), 2025. Oral.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=bImlLT3r62">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2412.06148">[arXiv]</a></font>
+				</p></li>	
+
+
+				<li><p class="text-left">
+					<strong>Fast John Ellipsoid Computation with Differential Privacy Optimization</strong> 
+					<br>Xiaoyu Li, Yingyu Liang, Zhenmei Shi, Zhao Song, Junwei Yu.<br>
+					<i> Conference on Parsimony and Learning (CPAL), 2025. Oral.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=yfmFSc5ZPG">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2408.06395">[arXiv]</a></font>
+				</p></li>	
+
+
+				<li><p class="text-left">
+					<strong>Curse of Attention: A Kernel-Based Perspective for Why Transformers Fail to Generalize on Time Series Forecasting and Beyond</strong> 
+					<br>Yekun Ke, Yingyu Liang, Zhenmei Shi, Zhao Song, Chiwun Yang.<br>
+					<i> Conference on Parsimony and Learning (CPAL), 2025. </i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=bdOmItHgU5">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2412.06061">[arXiv]</a></font>
+				</p></li>	
+
+				<li><p class="text-left">
+					<strong>HSR-Enhanced Sparse Attention Acceleration</strong> 
+					<br>Bo Chen, Yingyu Liang, Zhizhou Sha, Zhenmei Shi, Zhao Song.<br>
+					<i> Conference on Parsimony and Learning (CPAL), 2025. </i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=wso1gABiPZ">[OpenReview]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2410.10165">[arXiv]</a></font>
+				</p></li>	
+
+
+				<li><p class="text-left">
+					<strong>Do Large Language Models Have Compositional Ability? An Investigation into Limitations and Scalability*</strong> 
+					<br>Zhuoyan Xu, Zhenmei Shi, Yingyu Liang.<br>
+					<i>Conference on Language Modeling (COLM), Oct 2024.</i> <br>   
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=iI1CzEhEMU">[COLM]</a></font>  <font color="#0000FF"><a href="https://arxiv.org/abs/2407.15720">[arXiv]</a></font> 
+				</p></li>
+ 
+
+				<li><p class="text-left">
+					<strong>Why Larger Language Models Do In-context Learning Differently?*</strong> 
+					<br>Zhenmei Shi, Junyi Wei, Zhuoyan Xu, Yingyu Liang.<br>
+					<i>International Conference on Machine Learning (ICML), July 2024.</i> <br>   
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=WOa96EG26M">[ICML]</a></font>  <font color="#0000FF"><a href="https://arxiv.org/abs/2405.19592">[arXiv]</a></font>
+				</p></li>
+
+ 
+				<li><p class="text-left">
+					<strong>Two Heads are Actually Better than One: Towards Better Adversarial Robustness via Transduction and Rejection*</strong> 
+					<br>Nils Palumbo, Yang Guo, Xi Wu, Jiefeng Chen, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Machine Learning (ICML), July 2024.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=vn92qYjL1F">[ICML]</a></font> 
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Towards Few-shot Adaptation of Foundation Models via Multitask Finetuning*</strong> 
+					<br>Zhuoyan Xu, Zhenmei Shi, Junyi Wei, Fangzhou Mu, Yin Li, Yingyu Liang.<br>
+					<i>International Conference on Learning Representations (ICLR), May 2024.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=1jbh2e0b2K">[ICLR]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2402.15017">[arXiv]</a></font>
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Domain Generalization via Nuclear Norm Regularization*</strong> 
+					<br>Zhenmei Shi, Yifei Ming, Ying Fan, Frederic Sala, Yingyu Liang.<br>
+					<i>Conference on Parsimony and Learning (CPAL), Jan 2024.</i> <br>  
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2303.07527">[arXiv]</a></font>
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Provable Guarantees for Neural Networks via Gradient Feature Learning*</strong> 
+					<br>Zhenmei Shi, Jenny Wei, Yingyu Liang.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2023.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=5F04bU79eK">[NeurIPS]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2310.12408">[arXiv]</a></font>
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Dissecting Knowledge Distillation: An Exploration of its Inner Workings and Applications*</strong> 
+					<br>Utkarsh Ojha, Yuheng Li, Anirudh Sundara Rajan, Yingyu Liang, Yong Jae Lee.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2023.</i> <br>  
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=Poj71ASubN">[NeurIPS]</a></font> <!--<font color="#0000FF"><a href="">[arXiv]</a></font>-->
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Stratified Adversarial Robustness with Rejection*</strong> 
+					<br>Jiefeng Chen, Jayaram Raghuram, Jihye Choi, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Machine Learning (ICML), 2023.</i> <br>  
+					<font color="#0000FF"><a href="https://proceedings.mlr.press/v202/chen23w.html">[ICML]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2305.01139">[arXiv]</a></font>
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>When and How Does Known Class Help Discover Unknown Ones? Provable Understandings Through Spectral Analysis*</strong> 
+					<br>Yiyou Sun, Zhenmei Shi, Yingyu Liang, Yixuan Li.<br>
+					<i>International Conference on Machine Learning (ICML), 2023.</i> <br> 
+					<font color="#0000FF"><a href="https://proceedings.mlr.press/v202/sun23i.html">[ICML]</a></font> <font color="#0000FF"><a href="https://arxiv.org/abs/2308.05017">[arXiv]</a></font>
+				</p></li>
+
+				
+				<li><p class="text-left">
+					<strong>The Trade-off between Universality and Label Efficiency of Representations from Contrastive Learning*</strong> 
+					<br>Zhenmei Shi, Jiefeng Chen, Kunyang Li, Jayaram Raghuram, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Learning Representations (ICLR), 2023.</i> (Spotlight)<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=rvsbw2YthH_">[ICLR]</a></font> 
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>A Theoretical Analysis on Feature Learning in Neural Networks: Emergence from Inputs and Advantage over Fixed Features*</strong> 
+					<br>Zhenmei Shi, Jenny Wei, Yingyu Liang.<br>
+					<i>International Conference on Learning Representations (ICLR), 2022</i>.<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=wMpS-Z_AI_E">[ICLR]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Towards Evaluating the Robustness of Neural Networks Learned by Transduction*</strong> 
+					<br>Jiefeng Chen, Xi Wu, Yang Guo, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Learning Representations (ICLR), 2022</i>.<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=_5js_8uTrx1">[ICLR]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Deep Online Fused Video Stabilization*</strong> 
+					<br>Zhenmei Shi, Fuhao Shi, Wei-Sheng Lai, Chia-Kai Liang, Yingyu Liang.<br>
+					<i>Winter Conference on Applications of Computer Vision (WACV), 2022</i>.<br> 
+					<font color="#0000FF"><a href="https://zhmeishi.github.io/dvs/">[Project Page]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Detecting Errors and Estimating Accuracy on Unlabeled Data with Self-training Ensembles*</strong> 
+					<br>Jiefeng Chen, Frederick Liu, Besim Avci, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2021</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2106.15728">[arXiv]</a></font> 
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>ATOM: Robustifying Out-of-distribution Detection Using Outlier Mining*</strong> 
+					<br>Jiefeng Chen, Yixuan Li, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>European Conference on Machine Learning (ECML), 2021</i>.<br>
+					<font color="#0000FF"><a href="https://link.springer.com/chapter/10.1007/978-3-030-86523-8_26">[ECML]</a></font> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2006.15207">[arXiv]</a></font> 
+				</p></li>
+				
+
+				<li><p class="text-left">
+					<strong>A New View of Multi-modal Language Analysis: Audio and Video Features as Text “Styles”*</strong> 
+					<br>Zhongkai Sun, Prathusha Kameswara Sarma,William Sethares, Yingyu Liang.<br>
+					<i>The Conference of the European Chapter of the Association for Computational Linguistics (EACL), 2021</i>.<br> 
+					<font color="#0000FF"><a href="https://aclanthology.org/2021.eacl-main.167/">[EACL]</a></font> 
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Functional Regularization for Representation Learning: A Unified Theoretical Perspective</strong> 
+					<br>Siddhant Garg, Yingyu Liang.<br>
+					<i>Neural Information Processing Systems (NeurIPS), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2008.02447">[arXiv]</a></font> 
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Learning Entangled Single-Sample Gaussians in the Subset-of-Signals Model</strong> 
+					<br>Yingyu Liang, Hui Yuan.<br>
+					<i>Annual Conference on Learning Theory (COLT), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2007.05557">[arXiv]</a></font> 
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Gradients as Features for Deep Representation Learning*</strong> 
+					<br>Fangzhou Mu, Yin Li, Yingyu Liang. <br>
+					<i> International Conference on Learning Representations (ICLR), 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=BkeoaeHKDS">[OPENREVIEW]</a></font>
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>PBoS: Probabilistic Bag-of-Subwords for Generalizing Word Embedding*</strong> 
+					<br>Zhao Jinman, Shawn Zhong, Xiaomin Zhang, Yingyu Liang.<br>
+					<i>Findings of Empirical Methods in Natural Language Processing (Findings of EMNLP), 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2010.10813">[arXiv]</a></font>  
+				</p></li>
+				
+												
+				<li><p class="text-left">
+					<strong>Learning Entangled Single-Sample Distributions via Iterative Trimming*</strong> 
+					<br>Hui Yuan, Yingyu Liang.<br>
+					<i>International Conference on Artificial Intelligence and Statistics (AISTATS), 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2004.09563">[arXiv]</a></font> 
+				</p></li>
+
+
+				<li><p class="text-left">
+					<strong>Sketching Transformed Matrices with Applications to Natural Language Processing</strong> 
+					<br>Yingyu Liang, Zhao Song, Mengdi Wang, Lin F. Yang, Xin Yang.<br>
+					<i>International Conference on Artificial Intelligence and Statistics (AISTATS), 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2002.09812">[arXiv]</a></font> 
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis*</strong> 
+					<br>Zhongkai Sun, Prathusha Kameswara Sarma, William Sethares, Yingyu Liang. <br>
+					<i> AAAI Conference on Artificial Intelligence (AAAI), 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1911.05544">[arXiv]</a></font> 
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Beyond Fine-tuning: Few-Sample Sentence Embedding Transfer*</strong> 
+					<br>Sidhhant Garg, Rohit Sharma, Yingyu Liang.<br>
+					<i>The 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing (AACL-IJCNLP), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2004.05119">[arXiv]</a></font>  
+				</p></li>
+
+				
+				<li><p class="text-left">
+					<strong>Can Adversarial Weight Perturbations Inject Neural Backdoors?*</strong> 
+					<br>Siddhant Garg, Adarsh Kumar, Vibhor Goel, Yingyu Liang.<br>
+					<i>International Conference on Information and Knowledge Management (CIKM), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2008.01761">[arXiv]</a></font>
+				</p></li>
+				
+				<!--
+				<li><p class="text-left">
+					<strong>Robust Out-of-distribution Detection via Informative Outlier Mining*</strong> 
+					<br>Jiefeng Chen, Yixuan Li, Xi Wu, Yingyu Liang, Somesh Jha.<br>
+					<i>International Conference on Machine Learning workshop on Uncertainty and Robustness in Deep Learning (ICML-UDL), 2020</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2006.15207">[arXiv]</a></font> 
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Machine Learning the magnetostriction of polycrystalline Tb_{x}Dy_{1-x}Fe_{2} alloys: A Graph Neural Network Approach*</strong> 
+					<br>Minyi Dai, Mehmet Furkan Demirel, Yingyu Liang, Jiamian Hu.<br>
+					<i>Abstract in Material Research Society Spring AI session, 2020</i>.<br> 
+					<font color="#0000FF"><a href="https://mesomod.weebly.com/2018-present.html">[DATASET]</a></font> 
+				</p></li>
+				-->
+				
+				
+				
+				 
+
+				<li><p class="text-left">
+					<strong>N-Gram Graph: Simple Unsupervised Representation for Graphs, with Applications to Molecules*</strong> 
+					<br>Shengchao Liu, Mehmet Furkan Demirel, Yingyu Liang. <br>
+					<i> Neural Information Processing Systems (NeurIPS), 2019</i>. (Spotlight)<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1806.09206">[arXiv]</a></font>
+					<font color="#0000FF"><a href="ngram_graph_presentation.pdf">[slides]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Robust Attribution Regularization*</strong> 
+					<br>Jiefeng Chen, Xi Wu, Vaibhav Rastogi, Yingyu Liang, Somesh Jha. <br>
+					<i> Neural Information Processing Systems (NeurIPS), 2019</i>. <br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1905.09957">[arXiv]</a></font>
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Learning and Generalization in Overparameterized Neural Networks, Going Beyond Two Layers</strong> 
+					<br>Zeyuan Allen-Zhu, Yuanzhi Li, Yingyu Liang. <br>
+					<i> Neural Information Processing Systems (NeurIPS), 2019</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1811.04918">[arXiv]</a></font> 
+					<!-- <font color="#0000FF"><a href="three-layer.pdf">[slides]</a></font> -->
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>Shallow Domain Adaptive Embeddings for Sentiment Analysis*</strong> 
+					<br>Prathyusha Sharma, Bill Sethares, Yingyu Liang.<br>
+					<i>Empirical Methods in Natural Language Processing (EMNLP), 2019</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1908.06082">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Towards Understanding Limitations of Pixel Discretization Against Adversarial Attacks*</strong> 
+					<br>Jiefeng Chen, Xi Wu, Vaibhav Rastogi, Yingyu Liang, Somesh Jha.<br>
+					<i>IEEE European Symposium on Security and Privacy 2019 (EuroS&P), 2019</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1805.07816">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Recovery Guarantees for Quadratic Tensors with Limited Observations*</strong> 
+					<br>Hongyang Zhang, Vatsal Sharan, Moses Charikar, Yingyu Liang.<br>
+					<i>International Conference on Artificial Intelligence and Statistics (AISTATS), 2019</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1811.00148">[arXiv]</a></font>
+				</p></li>
+
+				
+				<li><p class="text-left">
+					<strong>Loss-Balanced Task Weighting to Reduce Negative Transfer in Multi-Task Learning*</strong> 
+					<br>Shengchao Liu, Yingyu Liang, Anthony Gitter.<br>
+					<i>AAAI Conference on Artificial Intelligence (AAAI), 2019, Student Abstract and Poster Program</i>.<br>
+					<font color="#0000FF"><a href="https://www.aaai.org/Papers/AAAI/2019/SA-LiuS.371.pdf">[AAAI]</a></font>
+					<font color="#0000FF"><a href="https://doi.org/10.6084/m9.figshare.7732964">[Appendix]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Learning Overparameterized Neural Networks via Stochastic Gradient Descent on Structured Data</strong> 
+					<br>Yuanzhi Li, Yingyu Liang. <br>
+					<i> Neural Information Processing Systems (NeurIPS), 2018</i>. (Spotlight)<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1808.01204">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Generalizing Word Embeddings using Bag of Subwords*</strong> 
+					<br>Jinman Zhao, Sidharth Mudgal, Yingyu Liang. <br>
+					<i> Empirical Methods in Natural Language Processing (EMNLP), 2018</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1809.04259">[arXiv]</a></font>
+					<font color="#0000FF"><a href="https://github.com/jmzhao/bag-of-substring-embedder">[CODE]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Learning Mixtures of Linear Regressions with Nearly Optimal Complexity</strong> 
+					<br>Yuanzhi Li, Yingyu Liang. <br>
+					<i> Annual Conference on Learning Theory (COLT), 2018</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1802.07895">[arXiv]</a></font>
+				</p></li>
+				
+				
+				<li><p class="text-left">
+					<strong>A La Carte Embeddings: Cheap but Effective Induction of Semantic Feature Vectors*</strong> 
+					<br>Mikhail Khodak, Nikunj Saunshi, Yingyu Liang, Tengyu Ma, Brandon Stewart, Sanjeev Arora.<br>
+					<i> Annual Meeting of the Association for Computational Linguistics (ACL), 2018</i>.<br>
+					<font color="#0000FF"><a href="http://aclweb.org/anthology/P18-1002">[PAPER]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1805.05388">[arXiv]</a></font>
+					<font color="#0000FF"><a href="https://github.com/NLPrinceton/ALaCarte">[CODE]</a></font>					
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Domain Adapted Word Embeddings for Improved Sentiment Classification*</strong> 
+					<br>Prathyusha Sharma, Bill Sethares, Yingyu Liang.<br>
+					<i> Annual Meeting of the Association for Computational Linguistics (ACL), 2018</i>.<br>
+					<font color="#0000FF"><a href="http://www.aclweb.org/anthology/W18-3407">[PAPER]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1805.04576">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Matrix Completion and Related Problems via Strong Duality</strong> 
+					<br>Maria-Florina Balcan, Yingyu Liang, David P. Woodruff, and Hongyang Zhang. <br>
+					<i>Innovations in Theoretical Computer Science Conference (ITCS), 2018</i>.<br>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1704.08683">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Generalization and Equilibrium in Generative Adversarial Nets (GANs)</strong>
+					<br>Sanjeev Arora, Rong Ge, Yingyu Liang, Tengyu Ma, Yi Zhang. <br>
+					<i>International Conference on Machine Learning (ICML), 2017</i>.<br>
+					<font color="#0000FF"><a href="http://proceedings.mlr.press/v70/arora17a.html">[PAPER]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1703.00573">[arXiv]</a></font>
+				</p></li>
+		
+				<li><p class="text-left">
+					<strong>Provable Alternating Gradient Descent for Non-negative Matrix Factorization with Strong Correlations</strong>
+					<br>Yuanzhi Li, Yingyu Liang. <br>
+					<i>International Conference on Machine Learning (ICML), 2017</i>.<br>
+					<font color="#0000FF"><a href="http://proceedings.mlr.press/v70/li17b.html">[PAPER]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1706.04097">[arXiv]</a></font>
+					<font color="#0000FF"><a href="https://github.com/PrincetonML/AND4NMF">[CODE]</a></font>
+				</p></li>
+		
+				<li><p class="text-left">
+					<strong>Differentially Private Clustering in High-Dimensional Euclidean Spaces</strong>
+					<br>Maria-Florina Balcan, Travis Dick, Yingyu Liang, Wenlong Mou, Hongyang Zhang. <br>
+					<i>International Conference on Machine Learning (ICML), 2017</i>.<br>
+					<font color="#0000FF"><a href="http://proceedings.mlr.press/v70/balcan17a.html">[PAPER]</a></font>
+				</p></li>		
+
+				<li><p class="text-left">
+					<strong>A Simple but Tough-to-Beat Baseline for Sentence Embedding</strong>
+					<br>Sanjeev Arora, Yingyu Liang, Tengyu Ma. 
+					<br><i>International Conference on Learning Representations (ICLR), 2017</i>.
+					<br><font color="#0000FF"><a href="https://openreview.net/forum?id=SyK00v5xx">[OPEN REVIEW]</a></font>
+					<font color="#0000FF"><a href="https://github.com/PrincetonML/SIF">[CODE]</a></font>
+					<font color="#0000FF"><a href="https://github.com/YingyuLiang/SIF_mini_demo">[minimal example CODE]</a></font>
+					<font color="#0000FF"><a href="http://www.manikvarma.org/events/XC16/schedule.html">[Preliminary version appeared in NIPS'16 Workshop]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Diverse Neural Network Learns True Target Functions*</strong>
+					<br>Bo Xie, Yingyu Liang, Le Song.
+					<br><i>International Conference on Artificial Intelligence and Statistics (AISTAT), 2017</i>.
+                     <br><font color="#0000FF"><a href="https://arxiv.org/abs/1611.03131">[arXiv]</a></font><font color="#0000FF"><a href="https://sites.google.com/site/nonconvexnips2016/accepted-papers">[Preliminary version appeared in NIPS'16 Workshop]</a></font>
+				</p></li>		
+				
+				
+				<li><p class="text-left">
+					<strong>Recovery Guarantee of Non-negative Matrix Factorization via Alternating Updates</strong>
+					<br>Yuanzhi Li, Yingyu Liang, Andrej Risteski. 
+                  <br><i>Neural Information Processing Systems (NIPS), 2016</i>.
+					<br><font color="#0000FF"><a href="http://arxiv.org/abs/1611.03819">[arXiv]</a></font>
+				</p></li>  
+              		
+				<li><p class="text-left">
+					<strong>Recovery Guarantee of Weighted Low-Rank Approximation via Alternating Minimization</strong>
+					<br>Yuanzhi Li, Yingyu Liang, Andrej Risteski. 
+                  <br><i>International Conference on Machine Learning (ICML), 2016</i>.
+					<br><font color="#0000FF"><a href="http://arxiv.org/abs/1602.02262">[arXiv]</a></font>
+				</p></li>  
+              		
+				<li><p class="text-left">
+					<strong>Communication Efficient Distributed Kernel Principal Component Analysis</strong>
+					<br>Maria-Florina Balcan, Yingyu Liang, Le Song, David Woodruff, Bo Xie. 
+                  <br><i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2016</i>.
+				    <br><font color="#0000FF"><a href="http://www.kdd.org/kdd2016/subtopic/view/communication-efficient-distributed-kernel-principal-component-analysis">[PAPER and VIDEO]</a></font>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1503.06858">[arXiv]</a></font>
+				</p></li>  
+				
+				
+				<li><p class="text-left">
+					<strong>Learning in Indefinite Proximity Spaces - Recent Trends*</strong>
+					<br>Frank-Michael Schleif, Peter Tino, Yingyu Liang. 
+                  <br><i>European Symposium on Artificial Neural Networks (ESANN), 2016</i>.
+					<br><font color="#0000FF"><a href="https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2016-22.pdf">[PAPER]</a></font>
+				</p></li>  
+				
+						
+				<li><p class="text-left">
+					<strong>Scale Up Nonlinear Component Analysis with Doubly Stochastic Gradients*</strong><br>
+					Bo Xie, Yingyu Liang, Le Song. <br>
+					<i>Neural Information Processing Systems (NIPS), 2015</i>.<br>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1504.03655">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Distributed Frank-Wolfe Algorithm: A Unified Framework for Communication-Efficient Sparse Learning*</strong><br>
+					Aurelien Bellet, Alireza Bagheri Garakani, Yingyu Liang, Maria-Florina Balcan, Fei Sha.<br>					
+					<i>SIAM International Conference on Data Mining (SDM), 2015</i>. <br>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1404.2644">[arXiv]</a></font>
+					<font color="#0000FF"><a href="dfw_slides.pdf">[PRESENTATION]</a></font>
+					<font color="#0000FF"><a href="http://mloss.org/revision/download/1740/">[CODE]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Scalable Kernel Methods via Doubly Stochastic Gradients*</strong>
+					<br>Bo Dai, Bo Xie, Niao He, Yingyu Liang, Anant Raj, Maria-Florina Balcan, Le Song.<br>
+					<i>Neural Information Processing Systems (NIPS), 2014</i>.<br>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1407.5599">[arXiv]</a></font>
+					<font color="#0000FF"><a href="doublyStochstic_poster.pdf">[POSTER]</a></font>
+					<font color="#0000FF"><a href="https://github.com/doubling/Doubly_Stochastic_Gradients">[CODE]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Learning Time-Varying Coverage Functions*</strong>
+					<br>Nan Du, Yingyu Liang, Maria-Florina Balcan, Le Song.<br>
+					<i>Neural Information Processing Systems (NIPS), 2014</i>.<br>
+					<font color="#0000FF"><a href="TimeVaryingCoverage.pdf">[FULL VERSION]</a></font>
+					<font color="#0000FF"><a href="TVCLearning_poster.pdf">[POSTER]</a></font>					
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Improved Distributed Principal Component Analysis</strong>
+					<br>Maria-Florina Balcan, Vandana Kanchanapally, Yingyu Liang, David Woodruff.<br>
+					<i>Neural Information Processing Systems (NIPS), 2014</i>.<br>					
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1408.5823">[arXiv]</a></font>
+					<font color="#0000FF"><a href="disPCA_poster.pdf">[POSTER]</a></font>		
+					<font color="#0000FF"><a href="DistributedCoresetAndPCA.zip">[CODE]</a></font>
+				</p></li> 
+  								
+				<li><p class="text-left">
+					<strong>Influence Function Learning in Information Diffusion Networks*</strong><br>
+					Nan Du, Yingyu Liang, Maria-Florina Balcan, Le Song.<br>
+					<i>The 31th International Conference on Machine Learning (ICML), 2014</i>. <br>
+					<font color="#0000FF"><a href="DirectLearning.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="DirectLearning_full.pdf">[FULL VERSION]</a></font>
+					<font color="#0000FF"><a href="DirectLearning_poster.pdf">[POSTER]</a></font>	
+					<font color="#0000FF"><a href="http://www.cc.gatech.edu/~ndu8/InfluLearner.html">[CODE]</a></font>					
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Distributed k-Means and k-Median Clustering on General Topologies</strong><br>
+					Maria-Florina Balcan, Steven Ehrlich, Yingyu Liang.<br>
+					<i>Neural Information Processing Systems (NIPS), 2013</i>. <br>
+					<font color="#0000FF"><a href="distributedClustering.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="distributedClustering_full.pdf">[FULL VERSION]</a></font>
+					<font color="#0000FF"><a href="distributedClustering_presentation_GWU.pdf">[SLIDES]</a></font>
+					<font color="#0000FF"><a href="disClustering_poster.pdf">[POSTER]</a></font>
+					<font color="#0000FF"><a href="DistributedCoresetAndPCA.zip">[CODE]</a></font>
+				</p>
+				</li>
+				
+				
+				<li><p class="text-left">
+					<strong>Modeling and Detecting Community Hierarchies</strong><br>
+					Maria-Florina Balcan, Yingyu Liang.<br>
+					<i>The 2nd International Workshop on Similarity-Based Pattern Analysis and Recognition (SIMBAD), 2013</i>. <br>
+					<font color="#0000FF"><a href="ModelingandDetectingCommunityHierarchies.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="SIMBAD2013presentation.Modeling and Detecting Community Hierarchies.pdf">[SLIDES]</a></font>
+				</p>
+				</li>
+
+				<li><p class="text-left">
+					<strong>Efficient Semi-supervised and Active Learning of Disjunctions</strong><br>
+					Maria-Florina Balcan, Christopher Berlind, Steven Ehrlich, Yingyu Liang.<br>
+					<i>The 30th International Conference on Machine Learning (ICML), 2013</i>. <br>
+					<font color="#0000FF"><a href="ssl_camera_ready.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="ssl_sup_camera_ready.pdf">[SUPPLEMENTARY MATERIAL]</a></font>
+					<font color="#0000FF"><a href="ssl_presentation.pdf">[SPOTLIGHT]</a></font>
+					<font color="#0000FF"><a href="ssl_poster.pdf">[POSTER]</a></font>
+				</p>
+				</li>
+
+				<li><p class="text-left">
+					<strong>Clustering under Perturbation Resilience</strong><br>
+					Maria-Florina Balcan, Yingyu Liang.<br>
+					<i>The 39th International Colloquium on Automata, Languages and Programming (ICALP), 2012</i>. <br>
+					<font color="#0000FF"><a href="ICALP2012-clustering under perturbation resilience.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="slides.ICALP2012.Clustering under Perturbation Resilience.pdf">[SLIDES]</a></font>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1112.0826">[EXTENDED arXiv VERSION]</a></font>
+					<font color="#0000FF"><a href="ssl_poster.pdf">[POSTER]</a></font>
+				</p>
+				</li>
+				
+				
+				<li><p class="text-left">
+					<strong>Learning Vocabulary-based Hashing with AdaBoost*</strong><br>
+					Yingyu Liang, Jianmin Li, Bo Zhang.<br>
+					<i>The 16th International Conference of Multimedia Modeling (MMM), 2010</i>. <br>
+					<font color="#0000FF"><a href="Learning Vocabulary-Based Hashing with AdaBoost.pdf">[PAPER]</a></font>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Vocabulary-based Hashing for Image Search*</strong><br>
+					Yingyu Liang, Jianmin Li, Bo Zhang.<br>
+					<i>The ACM International Conference on Multimedia (MM), 2009</i>. <br>
+					<font color="#0000FF"><a href="Vocabulary-based Hashing for Image Search.pdf">[PAPER]</a></font>
+				</p>
+				</li>
+				
+				</ul>
+
+			
+			</div>
+			</div> <!-- Conference -->
+			
+
+
+			<div class="row"  id="journal-publications">
+			<div class = "span10 offset2">
+			<h4>Journal Publications</h4> 
+			<h6></h6>
+			</div>
+			</div> 
+			
+
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right"></p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">        
+
+				<li><p class="text-left">
+					<strong>Graph neural network for predicting the effective properties of polycrystalline materials: A comprehensive analysis*</strong>
+					<br>Minyi Dai, Mehmet F. Demirel, Xuanhan Liu, Yingyu Liang, Jia-Mian Hu.<br>
+					<i>Computational Materials Science, Volume 230, October 2023.</i><br>
+					<font color="#0000FF"><a href="https://www.sciencedirect.com/science/article/pii/S092702562300455X">[Computational Materials Science]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2209.05583">[arXiv]</a></font>
+				</p></li>
+								
+								 
+
+
+				<li><p class="text-left">
+					<strong>Attentive Walk-Aggregating Graph Neural Network*</strong>
+					<br>Mehmet F. Demirel, Shengchao Liu, Siddhant Garg, Zhenmei Shi, Yingyu Liang.<br>
+					<i>Transaction of Machine Learning Research (TMLR), 2022.</i><br>
+					<font color="#0000FF"><a href="https://openreview.net/forum?id=TWSTyYd2Rl">[OPENREVIEW]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2110.02667">[arXiv]</a></font>
+					<font color="#0000FF"><a href="https://github.com/mehmetfdemirel/aware">[CODE]</a></font>
+				</p></li>
+
+				<li><p class="text-left">
+					<strong>Graph Neural Networks for An Accurate and Interpretable Prediction of the Properties of Polycrystalline Materials*</strong>
+					<br>Minyi Dai, Mehmet F. Demirel, Yingyu Liang, Jia-Mian Hu.<br>
+					<i>NPJ Computational Materials 7: 103 (2021).</i><br>
+					<font color="#0000FF"><a href="https://www.nature.com/articles/s41524-021-00574-w">[NPJ CM]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/2010.05851">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Non-Convex Matrix Completion and Related Problems via Strong Duality</strong>
+					<br>Maria-Florina Balcan, Yingyu Liang, Zhao Song, David P. Woodruff, Hongyang Zhang.<br>
+					<i>Journal of Machine Learning Research (JMLR), 2019.</i><br>
+					<font color="#0000FF"><a href="http://jmlr.org/papers/v20/17-611.html">[JMLR]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1704.08683">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Linear Algebraic Structure of Word Senses, with Applications to Polysemy</strong>
+					<br>Sanjeev Arora, Yuanzhi Li, Yingyu Liang, Tengyu Ma, Andrej Risteski. <br>
+					<i>Transactions of the Association for Computational Linguistics (TACL), 2018</i>. <br>
+					<font color="#0000FF"><a href="https://transacl.org/ojs/index.php/tacl/article/view/1346">[TACL]</a></font>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1601.03764">[arXiv]</a></font>
+				    <font color="#0000FF"><a href="https://github.com/YingyuLiang/SemanticVector">[CODE]</a></font>
+					<font color="#0000FF"><a href="PolysemyTestbed.xlsx">[Police Lineup Test bed]</a></font>
+					<font color="#0000FF"><a href="http://www.offconvex.org/2016/07/10/embeddingspolysemy/">[Sanjeev's post]</a></font>
+				</p></li>						
+                        
+				<li><p class="text-left">
+					<strong>Mapping Between Natural Movie fMRI Responses and Word-Sequence Representations*</strong>
+					<br>Kiran Vodrahalli, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong, Christopher Honey, Peter Ramadge, Ken  Norman, Sanjeev Arora. <br>
+					<i>Neuroimage, 2017</i>.<br> 
+					<font color="#0000FF"><a href="http://www.sciencedirect.com/science/article/pii/S1053811917305128">[Neuroimage]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1610.03914">[arXiv]</a></font><font color="#0000FF"><a href="https://sites.google.com/site/mlini2016nips/">[Appear in NIPS'16 Workshop]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Scalable Influence Maximization for Multiple Products in Continuous-Time Diffusion Networks*    </strong>
+					<br>Nan Du, Yingyu Liang, Maria-Florina Balcan, Manuel Gomez-Rodriguez, Hongyuan Zha, Le Song. <br>
+					<i>Journal of Machine Learning Research (JMLR), 2017</i>.<br> 
+					<font color="#0000FF"><a href="http://www.jmlr.org/papers/volume18/14-400/14-400.pdf">[JMLR]</a></font>
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1612.02712">[arXiv]</a></font>
+					<!-- <font color="#0000FF"><a href="http://www.cc.gatech.edu/~ndu8/DuSonZhaMan-NIPS-2013.html">[CODE]</a></font> -->
+				</p></li>                 
+              
+				<li><p class="text-left">
+					<strong>A Latent Variable Model Approach to PMI-based Word Embeddings</strong>
+					<br>Sanjeev Arora, Yuanzhi Li, Yingyu Liang, Tengyu Ma, Andrej Risteski. <br>
+					<i>Transactions of the Association for Computational Linguistics (TACL), 2016</i>. <br>
+					<font color="#0000FF"><a href="https://transacl.org/ojs/index.php/tacl/article/view/742">[TACL]</a></font>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1502.03520">[arXiv]</a></font>
+					<font color="#0000FF"><a href="https://github.com/YingyuLiang/SemanticVector">[CODE]</a></font>
+					<font color="#0000FF"><a href="http://www.offconvex.org/2016/07/10/embeddingspolysemy/">[Sanjeev's post]</a></font>
+				</p></li> 
+              
+				<li><p class="text-left">
+					<strong>Clustering Under Perturbation Resilience</strong>
+					<br>Maria-Florina Balcan, Yingyu Liang.<br>
+					<i>SIAM Journal on Computing (SICOMP), 2016</i>. <br>
+					<font color="#0000FF"><a href="http://epubs.siam.org/doi/abs/10.1137/140981575?journalCode=smjcat">[SICOMP]</a></font> 
+					<font color="#0000FF"><a href="https://arxiv.org/abs/1112.0826">[arXiv]</a></font> 
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Robust Hierarchical Clustering</strong>
+					<br>Maria-Florina Balcan, Pramod Gupta, Yingyu Liang.<br>
+					<i>Journal of Machine Learning Research (JMLR), 2014</i>. <br>
+					<font color="#0000FF"><a href="http://jmlr.org/papers/v15/balcan14a.html">[JMLR]</a></font> 
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1401.0247">[arXiv]</a></font> 
+					<font color="#0000FF"><a href="https://www.dropbox.com/sh/r84rdj3eg0bing2/AACNVdM4FhW7jxLmvUNoMqQ7a?dl=0">[CODE]</a></font> 
+				</p></li>
+								
+				
+				</ul>
+			</div>
+			</div> <!-- Journal -->
+
+			
+		 <!--
+           <div class="row">
+			<div class = "span2">
+			<p class="text-right">Manuscripts</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+                		
+				<li><p class="text-left">
+					<strong>Why are Deep Nets Reversible: A Simple Theory, with Implications for Training</strong>
+					<br>Sanjeev Arora, Yingyu Liang, Tengyu Ma. 
+					<br><font color="#0000FF"><a href="http://arxiv.org/abs/1511.05653">[arXiv]</a></font><font color="#0000FF"><a href="http://www.iclr.cc/doku.php?id=iclr2016:main">[Appear in ICLR'16 Workshop]</a></font>
+				</p></li>                
+				
+				</ul>
+			</div>
+			</div> --> <!-- Manuscripts -->
+
+			<!--
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Workshop Publications</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+								
+				<li><p class="text-left">
+					<strong>Diversity Leads to Generalization in Neural Networks*</strong>
+					<br>Yingyu Liang, Bo Xie, Le Song. 
+					<br><i>In Non-convex Optimization for Machine Learning Workshop in NIPS 2016.</i>
+					<br><font color="#0000FF"><a href="https://arxiv.org/abs/1611.03131">[arXiv]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Mapping Between Natural Movie fMRI Responses and Word-Sequence Representations*</strong>
+					<br>Kiran Vodrahalli, Po-Hsuan Chen, Yingyu Liang, Janice Chen, Esther Yong, Christopher Honey, Peter Ramadge, Ken Norman, and Sanjeev Arora. 
+					<br><i>In Representation Learning in Artificial and Biological Neural Networks Workshop in NIPS 2016.</i>
+					<br><font color="#0000FF"><a href="https://arxiv.org/abs/1610.03914">[arXiv]</a></font>
+				</p></li>
+				       
+				<li><p class="text-left">
+					<strong>A Simple but Tough-to-Beat Baseline for Sentence Embedding</strong>
+					<br>Sanjeev Arora, Yingyu Liang, Tengyu Ma.
+					<br><i>In Multi-class and Multi-label Learning in Extremely Large Label Spaces Workshop in NIPS 2016.</i>
+					<br><font color="#0000FF"><a href="https://openreview.net/forum?id=SyK00v5xx">[OPEN REVIEW]</a></font>
+				</p></li>
+                                
+				<li><p class="text-left">
+					<strong>Why are Deep Nets Reversible: A Simple Theory, with Implications for Training</strong>
+					<br>Sanjeev Arora, Yingyu Liang, Tengyu Ma. 
+					<br><i>International Conference on Learning Representations (ICLR), 2016</i>. 
+                    <br><font color="#0000FF"><a href="http://arxiv.org/abs/1511.05653">[arXiv]</a></font>
+				</p></li>
+                
+  				<li><p class="text-left">
+					<strong>Distributed Frank-Wolfe Algorithm: A Unified Framework for Communication-Efficient Sparse Learning*</strong><br>
+					Aurelien Bellet, Alireza Bagheri Garakani, Yingyu Liang, Maria-Florina Balcan, and Fei Sha.<br>					
+					<i>The Workshop on New Learning Frameworks and Models for Big Data in ICML 2014</i>. <br>
+					<font color="#0000FF"><a href="http://arxiv.org/abs/1404.2644">[arXiv]</a></font>
+					<font color="#0000FF"><a href="dfw_slides.pdf">[PRESENTATION]</a></font>
+				</p></li>
+				
+				<li><p class="text-left">
+					<strong>Distributed PCA and k-Means Clustering</strong><br>
+					Maria-Florina Balcan, Vandana Kanchanapally, Yingyu Liang.<br>
+					<i>The Big Learning Workshop in NIPS 2013</i>. <br>
+					<font color="#0000FF"><a href="distributedPCAandCoreset.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="disPCAandKMeans.pdf">[PRESENTATION]</a></font>
+					<font color="#0000FF"><a href="disPCA_poster.pdf">[POSTER]</a></font>
+					<font color="#0000FF"><a href="DistributedCoresetAndPCA.zip">[CODE]</a></font>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Clustering Perturbation Resilient k-Median Instances</strong><br>
+					Maria-Florina Balcan, Yingyu Liang.<br>
+					<i>The Learning Faster from Easy Data Workshop in NIPS 2013</i>. <br>
+					<font color="#0000FF"><a href="clusteringPRMedian.pdf">[PAPER]</a></font>
+					<font color="#0000FF"><a href="clusteringPRKmedian.pdf">[SPOTLIGHT]</a></font>
+					<font color="#0000FF"><a href="clusteringPRKmedian_poster.pdf">[POSTER]</a></font>
+				</p>
+				</li>				
+								
+				<li><p class="text-left">
+					<strong>THU-IMG at TRECVID 2009*</strong><br>
+					Yingyu Liang, Binbin Cao, Jianmin Li, Chenguang Zhu, Yongchao Zhang, Chenhao Tan, Ge Chen, Chen Sun, Jinhui Yuan, Mingxing Xu, and Bo Zhang.<br>
+					<i>The TRECVID workshop, 2009</i>. <br>
+					<font color="#0000FF"><a href="thu-img-2009.pdf">[REPORT]</a></font>
+				</p>
+				</li>
+  
+				<li><p class="text-left">
+					<strong>THU and ICRC at TRECVID 2008*</strong><br>
+					Yingyu Liang, Xiaobing Liu, Zhikun Wang, Jianmin Li, Binbin Cao, Zhichao Cao, Zhenlong Dai, Zhishan Guo, Wen Li, Leigang Luo, Zhaoshi Meng, Yinfeng Qin, Shi Qiu, Aibo Tian, Dong Wang, Qiuping Wang, Chenguang Zhu, Xiaolin Hu, Jinhui Yuan, Peijiang Yuan, Bo Zhang, Shi Chen, Jianguo Li, Tao Wang, and Yimin Zhang.<br>
+					<i>The TRECVID workshop, 2008</i>. <br>
+					<font color="#0000FF"><a href="thu-icrc-2008.pdf">[REPORT]</a></font>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>THU and ICRC at TRECVID 2007*</strong><br>
+					Jinhui Yuan, Zhishan Guo, Li Lv, Wei Wan, Teng Zhang, Dong Wang, Xiaobing Liu, Cailiang Liu, Shengqi Zhu, Duanpeng Wang, Yang Pang, Nan Ding, Ying Liu, Jiangping Wang, Xiujun Zhang, Xiaozheng Tie, Zhikun Wang, Huiyi Wang, Tongchun Xiao, Yingyu Liang, Jianmin Li, Fuzong Lin, Bo Zhang, Jianguo Li, Weixin Wu, Xiaofeng Tong, Dayong Ding, Yurong Chen, Tao Wang, and Yimin Zhang.<br>
+					<i>The TRECVID workshop, 2007</i>. <br>
+					<font color="#0000FF"><a href="thu-icrc-2007.pdf">[REPORT]</a></font>
+				</p>
+				</li>
+				
+  				</ul>
+			
+			</div>
+			</div> 
+			--> <!--Workshop-->
+			
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Ph.D. Thesis</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+				<li><p class="text-left">
+					<strong>Modern Aspects of Unsupervised Learning</strong><br>
+					Advisor: <a href="http://www.cs.cmu.edu/~ninamf/"> Maria-Florina Balcan</a> <br>
+					Committee: <a href="http://www.cs.cmu.edu/~ninamf/"> Maria-Florina Balcan</a>, 
+					<a href="http://www.cs.cmu.edu/~avrim/"> Avrim Blum</a>,
+					<a href="http://lance.fortnow.com/"> Lance Fortnow</a>,
+					<a href="http://www.cc.gatech.edu/~isbell/"> Charles L. Isbell, Jr.</a>,
+					<a href="http://people.math.gatech.edu/~randall/"> Dana Randall</a>,
+					<a href="http://www.cc.gatech.edu/~lsong/"> Le Song</a>.					
+					<br>
+					<i>Georgia Institue of Technology, June 2014</i>. <br>
+					<font color="#0000FF"><a href="YingyuLiang_thesis.pdf">[THESIS]</a></font>
+				</p>
+				</li>
+				
+				</ul>
+			</div>
+			</div>
+			
+			<!--
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Master Thesis</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+				<li><p class="text-left">
+					<strong>Content-Based Video Copy Detection</strong><br>
+					Advisor: <a href="http://www.cs.tsinghua.edu.cn/publish/csen/4623/2010/20101226104412516277601/20101226104412516277601_.html">Bo Zhang</a>, <a href="http://www.tsinghua.edu.cn/publish/csen/4623/2010/20101225164517300815523/20101225164517300815523_.html">Jianmin Li</a>.<br>
+					<i>Tsinghua University, 2010.</i><br>
+					<font color="#0000FF"><a href="024-2004011304-2003.pdf">[THESIS] (in Chinese)</a></font>
+				</p>
+				</li>
+				
+				</ul>
+			</div>
+			</div>
+               -->
+			
+           
+
+			
+			<!-- Activities -->
+			<!-- 
+			<div class="row"  id="activities">
+			<div class = "span10 offset2">
+			<h4>Activities</h4>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Presentations</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+				<li><p class="text-left">
+					<strong>Theory for New Machine Learning Problems and Applications</strong>
+					<ul>
+						<li>University of Texas at Dallas, February 2017</li>
+						<li>University of Massachusetts Amherst, February 2017</li>
+						<li>University of Illinois Urbana-Champaign, February 2017</li>
+						<li>University of Wisconsin-Madison, March 2017</li>
+						<li>Northwestern University, March 2017</li>
+						<li>University of California, Santa Barbara, March 2017</li>
+						<li>University of Pennsylvania, March 2017</li>
+						<li>Emory University, March 2017</li>
+						<li>Penn State University, April 2017</li>
+						<li>Cornell University, May 2017</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Recovery guarantee of non-negative matrix factorization via alternating updates</strong>
+					<ul>
+						<li>Simons Workshop on Learning, Algorithm Design and Beyond Worst-Case Analysis, November 2016</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Distributed kernel principal component analysis</strong>
+					<ul>
+						<li>KDD, August 2016</li>
+						<li>IMA Workshop on Transdisciplinary Foundations of Data Science, September 2016</li>
+					</ul>
+				</p>
+				</li>
+								
+				<li><p class="text-left">
+					<strong>Recovery guarantee of weighted low-rank approximation via alternating minimization </strong>
+					<ul>
+						<li>Rutgers University, DIMACS Theoretical Computer Science Seminar, April 2016</li>
+						<li>ICML, June 2016</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Why are deep nets reversible: a simple theory, with implications for training </strong>
+					<ul>
+						<li>ICLR, May 2016</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Two distributed optimization algorithms for machine learning</strong>
+					<ul>
+						<li>IMA Workshop on Convexity and Optimization: Theory and Applications, February 2015</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Communication efficient algorithms for distributed unsupervised learning</strong>
+					<ul>
+						<li>CMU Machine Learning Lunch, October 2014</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Modern aspects of unsupervised learning: stability and scalability</strong>
+					<ul>
+						<li>Princeton Theory Lunch, September 2014</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Clustering under perturbation resilience</strong>
+					<ul>
+						<li>Learning Faster from Easy Data Workshop at NIPS, December 2013</li>
+						<li>University of Maryland, September 2013</li>
+						<li>ACO student seminar, Georgia Institute of Technology, August 2013</li>
+						<li>Theory group seminar, Georgia Institute of Technology, July 2012</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Distributed PCA and k-means clustering</strong>
+					<ul>
+						<li>Georgia Scientific Computing Symposium, February 2014</li>
+						<li>Big Learning Workshop at NIPS, December 2013</li>
+					</ul>
+				</p>
+				</li>
+				
+				
+				<li><p class="text-left">
+					<strong>Distributed k-median and k-means clustering on general topologies</strong>
+					<ul>
+						<li>NIPS, December 2013</li>
+						<li>HPArch Lab, Georgia Institute of Technology, November 2013</li>
+						<li>George Washington University, September 2013</li>
+						<li>MURI Symposium, University of Maryland, September 2013</li>
+					</ul>
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					<strong>Efficient semi-supervised and active learning of disjunctions</strong>
+					<ul>
+						<li>ICML, June 2013</li>
+					</ul>
+				</p>
+				</li>
+				
+				</ul>
+			</div>
+			</div>
+			-->
+			
+			<!--
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Symposiums/Workshops</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+				<li><p class="text-left">
+					Simons Program on Foundations of Machine Learning, January to May 2017
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Simons Workshop on Learning, Algorithm Design and Beyond Worst-Case Analysis, November 2016
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					IMA Workshop on Transdisciplinary Foundations of Data Science, September 2016
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Information Theory and Applications Workshop (ITA), February 2015
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					IMA Workshop on Convexity and Optimization: Theory and Applications, February 2015
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Georgia Scientific Computing Symposium, February 2014
+				</p>
+				</li>
+				<li><p class="text-left">
+					MURI Symposium, September 2013 
+				</p>
+				</li>
+				<li><p class="text-left">
+					ARC Theory Day, April 2013 
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					ARC-Yandex Workshop: Internet Topology and Economics, November 2012 
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					CMU Summer School on Algorithmic Economics, August 2012
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Center of Data Analytics Workshop on Big Data Research and Development, April 2012
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					ARC Submodular Workshop, March 2012
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					ARC Theory Day, November 2011
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Machine Learning Summer School at Purdue, June 2011
+				</p>
+				</li>
+				
+				</ul>
+			</div>
+			</div> -->
+			
+			<!--
+			<div class="row">
+			<div class = "span2">
+			<p class="text-right">Service</p>
+			</div>
+			<div class = "span10">
+				<ul class="unstyled">
+				
+				<li><p class="text-left">
+					Area Chair for ICML 2016; <br>
+					PC member for Tsinghua University CS PhD Forum 2010, ICCI 2010, SIMBAD 2015, ESANN 2016 special session: Indefinite proximity learning
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Reviewer for conferences: COLT 2012, UAI 2012, STACS 2013, SIMBAD 2015, SODA 2015, FOCS 2015, ITCS 2015, AISTAT 2015, COLT 2015, IJCAI 2015, UAI 2015, ICML 2015, AISTAT 2016, SODA 2016, WDSM 2016, COLT 2016, UAI 2016, NIPS 2016, AAAI 2017, STOC 2017, WWW 2017, ICML 2017, NIPS 2017;<br>
+					Reviewer for journals/collections: Data Mining and Knowledge Discovery 2011, IEEE Transactions on Information Theory 2014, Information & Computation 2015, Journal of ACM 2016, Machine Learning 2016, Journey Through Discrete Mathematics: A Tribute to Jiri Matousek, Journal of Machine Learning Research 2016 and 2017.
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					Organizer of Machine Learning Reading Group at Georgia Tech, 2012-2014
+				</p>
+				</li>
+				
+				<li><p class="text-left">
+					ICML 2013 Volunteer, June 2013 
+				</p> 
+				
+				</ul>
+			</div>
+			</div> 
+			-->
+			<!-- Activities -->
+
+			
+			<!-- Links -->
+			<!--
+			<div class="row"  id="links">
+			<div class = "span10 offset2">
+			<h4>Related Links</h4>
+			</div>
+			</div>
+
+			<div class="row">
+				<div class = "span2">
+					<p class="text-right">Machine Learning </p>
+					<p class="text-right">Theoretical CS</p>
+				</div>
+
+				<div class = "span10">
+					
+					<ul class="unstyled">
+					
+					<p class="text-left">
+						<a href="https://machinelearning.wisc.edu/">Machine Learning@UW-Madison</a>, <a href="https://sml.princeton.edu/">Statistics and Machine Learning@Princeton</a>, <a href="http://ml.cc.gatech.edu/">Machine Learning@GaTech</a>
+					</p>
+					
+					<p class="text-left">
+						<a href="http://research.cs.wisc.edu/areas/theory/">Theory@UW-Madison</a>, <a href="http://www.cs.princeton.edu/theory/">Theory@Princeton</a>, <a href="http://www.cc.gatech.edu/theory/">Theory@GaTech </a>
+					</p>
+					
+					
+					<br>
+					<p class="text-left">The webpage template is kindly provided by <a href="http://www.cc.gatech.edu/~ndu8/">Nan Du</a></p>
+					
+					
+					</ul>
+					
+				</div>
+			</div> --> 
+			<!-- links -->
+
+
+	</body>
+
+</html>

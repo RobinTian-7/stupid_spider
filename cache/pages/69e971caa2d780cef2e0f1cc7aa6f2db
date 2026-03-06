@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Van Durme</title>
+
+    <!-- CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/class.css" rel="stylesheet">   
+    <link href="assets/css/syntax.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/homepage.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function toggleDiv(divId) {
+      $("#"+divId).toggle();
+      }
+    </script>
+
+    <!-- MathJax -->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+     <!--Docs master nav -->
+    <header class="navbar navbar-fixed-top navbar-default" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">Benjamin Van Durme</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="collaborators.html">Collaborators</a></li>
+            <li><a href="research.html">Research</a></li> 
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-sm-9">
+          <p>I am an Associate Professor in <a href="https://www.cs.jhu.edu">Computer
+Science</a> at <a href="https://www.jhu.edu">Johns Hopkins
+University</a>, and
+<a href="http://cogsci.jhu.edu">Cognitive Science</a>.</p>
+
+<p>I am a member of the <a href="https://www.clsp.jhu.edu">Center for Language and Speech Processing
+(CLSP)</a> and lead Natural Language
+Understanding research at the <a href="https://hltcoe.jhu.edu">Human Language Technology Center of
+Excellence (HLTCOE)</a>.  My work focuses on helping people work with large amounts of information.  This involves understanding what is in documents and images, helping people find that information, and being able help answer questions about that content.</p>
+
+<p>With my collaborators I publish on topics in natural language processing, data
+mining, social media analysis, machine learning, linguistic semantics,
+and generally most things Artificial Intelligence or Cognitive
+Science. See <a href="research.html">Research Areas</a> for details about our current interests.</p>
+
+<p>Our work with colleagues in <em>decompositional semantics</em> is organized at
+<a href="http://decomp.io">Decomp.io</a>.</p>
+
+<p>I am also the research lead at <a href="https://www.microsoft.com/en-us/research/project/semantic-machines/">Microsoft Semantic Machines</a>.</p>
+
+        </div>
+        <div class="col-sm-3">
+          <a href="assets/img/vandurme-profile.jpg"> 
+          <img src="assets/img/vandurme-profile-small.jpg" class="img-responsive img-rounded" alt=""/>
+          </a> 
+          <span class="text-muted"><b>Office:</b> Hackerman 316C<br/>
+<b>Email:</b> vandurme@jhu.edu<br/>
+</span>
+        </div>
+
+      
+      </div>
+
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated February 28, 2026. <br/>
+      </footer>
+    </div>
+
+    <!-- Page content of course! -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#main_page").addClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"
+href="mystyle.css" />
+<style type="text/css" media=screen>
+<!--
+        A:link {text-decoration: none; color:blue;}
+        A:visited {text-decoration: none; color: #660066;}
+        A:hover { color: #ff9900;}
+-->   
+</style>
+
+<script src="authors.js"></script>
+
+<title>Ke Yi's Home Page</title>
+</head>
+
+<body>
+<table border="0" cellspacing="10">
+    <tr>
+<td> 
+        <p><img src="yike.jpg" width="150"></p>
+        </td>
+        <td>
+        <p>Ke Yi &nbsp;&nbsp;&nbsp;&nbsp; Ò×çæ</p>
+<p>Professor, <a href="http://www.cse.ust.hk">Department of Computer Science
+        and Engineering</a><br>
+Director, <a href="https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-bdt">MSc Program in Big Data Technology</a>
+	<p><a href="http://www.ust.hk">Hong Kong University of Science and Technology</a><br>
+	Clear Water Bay, 
+	Hong Kong, China
+<p>Office: CYT 3002
+        </td>
+    </tr>
+</table>
+
+<p><a href="cv.htm">[CV]</a> <a href="research.htm">[Publications]</a> 
+</p>
+
+<!--<p>I am looking for PhD students with an interest in algorithms and database systems.  Please contact me with your CV.
+-->
+
+<H3><p>Research Interests</H3> 
+<p>Database theory and systems; query processing; data security and privacy; parallel and distributed algorithms; sampling; data summarization; data streams; data structures; external memory algorithms; computational geometry.
+
+<p>Exploiting the rich interdependence between theory and practice is the
+main theme of my research.  I always strive to design algorithms with nice
+theoretical guarantees that also work well in practice.  I like simple
+algorithms with nontrivial and elegant analyses.  I like theories that
+bring insights to how things should be done in practice (this includes
+lower bounds!).
+
+<p>Despite of the theoretical focus, our group has developed the following system prototypes based on the theory: 
+<p>
+<ul>
+<li><a href="https://github.com/hkustDB/Quorion">Quorion</a>: Query optimization by rewriting, based on the Yannakakis+ algorithm.
+<li><a href="https://github.com/hkustDB/DPSQL">DPSQL</a>: A differentially private SQL engine.
+<li><a href="https://github.com/hkustDB/SparkSQLPlus">SparkSQL+</a>: Next-generation query planning over Spark using generalized hypertree decompositions (GHD), worst-case optimal join (WCOJ) algorithms, and conjunctive queries with comparisons (CQC).
+<li><a href="https://github.com/hkustDB/SECYAN">SecYan</a>: Two-party secure query processing based on the secure Yannakakis algorithm.
+<li><a href="https://github.com/hkustDB/CROWN">CROWN</a> and <a href="https://github.com/hkustDB/Cquirrel-Frontend">Cquirrel</a>: Continuous query processing / change propogation in Flink.
+<li><a href="https://initialdlab.github.io/XDB/">XDB</a>: Online aggregation for PostgreSQL based on the wander join algorithm.
+</ul>
+
+<p>My research has been supported by Hong Kong RGC, Alibaba, ByteDance, Huawei, Microsoft, and Google.</p>
+
+<!--
+<H3><p>Overview slides on some topics of my recent interests</H3>
+<p>
+<a href="talks/sampling.pptx">Random Sampling on Big Data: Techniques and Applications</a><br>
+<a href="talks/SummarizeDistributedData.pptx">Summarizing
+Distributed Data</a> <br>
+<a href="talks/distributed-tracking.pdf">Tracking Distributed Data</a><br>
+<a href="talks/external-lb-overview.pdf">Dynamic Indexability and the Optimality of
+B-trees and Hash Tables</a>
+</p>
+
+<p>An overview article in Chinese: <a href="BigDataCCF.pdf">´óÊý¾ÝËã·¨</a>
+-->
+
+<H3><p>Students</H3>
+
+<p>Current students:
+<ul>
+<li>Bingnan Chen (PhD, since Fall 2021)
+<li>Zijun Chen (PhD, since Fall 2022)
+<li>Binyang Dai (PhD, since Fall 2022)
+<li>Jianzhe Yu (PhD, since Fall 2023)
+<li>Tian Shu (PhD, since Fall 2024)
+<li>Qi Dong (MPhil, since Fall 2024)
+<li>Zifei Liu (MPhil, since Spring 2025)
+<li>Xiaoyu Han (PhD, since Fall 2025)
+</ul>
+
+<p>Former students:
+<ul>
+<li><a href="https://liangy42.github.io/">Yuting Liang</a> (PhD 2025; now Postdoctal Fellow at University of Toronto)
+	<li><a href="https://www.linkedin.com/in/dajun-sun-6184b4185/">Dajun Sun</a> (PhD 2025; now Researcher at Huawei Hong Kong Research Center)
+ <li><a href="https://juanru-fang.github.io/">Juanru Fang</a> (PhD 2025; now Assistant Lecturer at University of Hong Kong)
+<li><a href="https://www.linkedin.com/in/qiyao-luo-642293162/">Qiyao Luo</a> (PhD 2024; now Researcher at Ant Group)
+<li><a href="http://weidong.hk/">Wei Dong</a> (PhD 2023; SIGMOD Jim Gray Doctoral Dissertation Award Runner-up; now Assistant Professor at Nanyang Technological University)
+<li><a href="https://wqc0712.github.io/">Qichen Wang</a> (PhD 2022; now Assistant Professor at Nanyang Technological University)
+<li><a href="https://qiutedyuan.github.io/">Yuan Qiu</a> (PhD 2022; now Professor at Southeast University)
+<li><a href="https://yilei.aqua.hk.cn/">Yilei Wang</a> (PhD 2022; now Research Scientist at Alibaba Cloud)
+<li><a href="https://scholar.google.com/citations?user=Eq2jI2gAAAAJ&hl=en">Ziyue Huang</a> (PhD 2022; now at Tencent)
+<li><a href="https://cs.uwaterloo.ca/~xiaohu/">Xiao Hu</a> (PhD 2019; now Assistant Professor at University of Waterloo)
+	<li><a href="https://www.linkedin.com/in/yu-chen-13053584/">Yu Chen</a> (PhD 2019; now at Alibaba Cloud)
+<li><a href="https://ca.linkedin.com/in/bin-wu-15213438">Bin Wu</a> (PhD 2017; now Senior Technology Research Expert at Alibaba Cloud)
+<li><a href="https://hk.linkedin.com/in/di-chen-97abb126">Di Chen</a> (PhD 2017; co-advised with Mordecai Golin; now at Virtu Financial, Singapore)
+<li><a href="https://hk.linkedin.com/in/han-xu-46497355">Han Xu</a> (PhD 2016; co-advised with Yunhao Liu; now at Huawei)
+<li><a href="https://hk.linkedin.com/in/ge-luo-49481a107">Ge Luo</a> (PhD 2016; now Chief Scientist at DataYes)
+<li><a href="https://wang-lu.com/">Lu Wang</a> (PhD 2015; now at Google Switzerland)
+<li><a href="https://person.zju.edu.cn/xji">Xiaoyu Ji</a> (PhD 2015; co-advised with Yunhao Liu; now Professor at Zhejiang University)
+<li><a href="https://shanggdlk.github.io/">Longfei Shangguan</a> (PhD 2015; co-advised with Yunhao Liu; now Assistant Professor at University of Pittsburgh)
+<li><a href="https://zengfenghuang.github.io/">Zengfeng Huang</a> (PhD 2013; now  Professor at Fudan University)
+<li><a href="http://weizhewei.com/">Zhewei Wei</a> (PhD 2012; now Professor at Renmin University)  
+<li><a href="http://homes.soic.indiana.edu/qzhangcs/">Qin Zhang</a> (PhD 2011; co-advised with Mordecai Golin; now Professor at Indiana University Bloomington)
+	<li><a href="https://haoqian.info/">Haoqian Zhang</a> (MPhil 2019; now PhD student at EPFL)
+		<li><a href="https://www.linkedin.com/in/junhong-cao-3729b28a/">Junhong Cao</a> (MPhil 2019; now at Lyft)
+<li><a href="https://spapadias.github.io/">Serafeim Papadias</a> (MPhil 2018; now PhD student at TU Berlin)
+<li>Dexter Lee (MPhil 2018)
+<li><a href="https://www.linkedin.com/in/waimingtai/">Wai Ming Tai</a> (MPhil 2015; now at Huawei Singapore)
+<li><a href="https://raymondhliu.github.io/">Hao Liu</a> (MPhil 2014; now Assistant Professor at HKUST-GZ)
+<li>Ching-Hin Lau (MPhil 2009)
+<li>Wenqi Zhu (MPhil 2008)
+<li><a href="https://cgi.csc.liv.ac.uk/~tsakalid/">Konstantinos Tsakalidis</a> (Postdoc 2012 ~ 2013; now Lecturer at University of Liverpool)
+<li><a href="https://sites.google.com/view/kyle-chi-hoi-yip/home">Chi Hoi Yip</a> (Final-year thesis 2019; to join HKUST as an Assistant Professor)
+<li><a href="https://wangxiao1254.github.io/">Xiao Wang</a> (Final-year thesis 2013; now Associate Professor at Northwestern University)
+<li><a href="https://www.linkedin.com/in/allen-zhepeng-yan-21543622/">Zhepeng Yan</a> (Final-year thesis 2010; now at Google US)
+</ul>
+
+<H3><p>Awards and Recognitions</H3> 
+
+<ul>
+<li><a href="https://www.acm.org/articles/people-of-acm/2026/ke-yi">People of ACM</a>, 2026.
+	<li><a href="https://awards.acm.org/fellows">ACM Fellow</a>, 2025.
+<li><a href="https://sigmod.org/sigmod-awards/sigmod-best-paper-award/">ACM SIGMOD Best Paper Award</a>, 2016, 2022.
+<li><a href="https://sigmod.org/sigmod-awards/sigmod-best-paper-award/">ACM SIGMOD Best Paper Honorable Mention</a>, 2022, 2024.
+<li><a href="https://sigmod.org/sigmod-awards/sigmod-research-highlights/">ACM SIGMOD Research Highlight Award</a>, 2017, 2023x2, 2025.
+<li><a href="https://sigmod.org/pods-home/acm-pods-alberto-o-mendelzon-test-of-time-award/">ACM PODS Test-of-Time Award</a>, 2022. 
+<li>ACM Distinguished Member, 2021.
+<li>ACM SIGMOD Best Demonstration Award, 2015.
+<li>6 invited articles in ACM TODS.
+<li>2 invited articles in JACM.
+<li>1 invited article in CACM - Research Highlights.
+<li>Outstanding Research Collaboration Award, Alibaba Innovative Research Program (AIR), 2024.
+<li>
+<a href="http://www.ust.hk/eng/news/press_20120505-958.html">HKUST School of Engineering Young Investigator Research Award, 2012.</a>
+<li>Google Faculty Research Award, 2010. 
+<li>Best Teaching Award, MSc Program in Big Data Technology, 2017, 2020.
+<li>Outstanding Ph.D. Dissertation Award, Department of Computer Science, Duke University, August, 2006.</a>
+<li><a href="https://baike.baidu.com/item/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E7%89%B9%E7%AD%89%E5%A5%96%E5%AD%A6%E9%87%91">Top-grade Scholarship</a>, Tsinghua University, 2001.
+<li>Silver Medal, <a href="https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics">International Olympiad in Informatics (IOI)</a>, 1997.
+</ul>
+
+<H3><p>Teaching</H3>
+<p>
+COMP 2711: Discrete Mathematical Tools for Computer Science (17S, 19S, 20S, 21S, 22S, 22F, 23S, 25S, 26S) <br>
+COMP 3711: Design and Analysis of Algorithms (08F, 09S, 09F, 11F, 12F, 14F, 15S, 15F, 16S, 24S) <br>
+COMP 3721: Theory of Computation (11S, 12S, 13S)<br>
+COMP 5711: Advanced Algorithms (14F, 15F, 16F, 17F, 18F, 19F, 20F, 21F, 23F, 25F)<br>
+COMP 5713: Computational Geometry (10S)<br>
+MSBD 6000P: Big Data Algorithms (25S, 26S) <br>
+MSBD 5003: Big Data Computing (17S, 17F, 18S, 18F, 19S, 19F, 20F, 21F, 23S, 24S) <br>
+COMP 6311D: Hot Topics on Big Data: Algorithms, Analytics and Applications (13F)<br>
+COMP 670S: Data Stream Algorithms (10F) <br>
+COMP 670R: Hashing (09F)<br>
+COMP 670Q: I/O-Efficient Algorithms and Data Structures (08S) <br>
+
+<H3><p>Contact</h3>
+        <p>Email: <u>user name in the url</u>@ust.hk
+        <p>Phone: +852-2358 8770<br>
+        Fax: +852-2358 1477
+</body>
+</html>
+

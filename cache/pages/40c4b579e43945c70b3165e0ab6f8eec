@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <title>Abhinav Bhatele - University of Maryland</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143765943-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143765943-1');
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-radius: 0; background-color: #d1ecf1;">
+      <span class="navbar-brand mb-0 h1">Abhinav Bhatele</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="students.html">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="research.html">Research</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications<span class="sr-only">(current)</span></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="publications.html">All Publications</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="publications.html#journal">Journals</a>
+            <a class="dropdown-item" href="publications.html#conference">Conferences</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="publications.html#book">Books & Chapters</a>
+            <a class="dropdown-item" href="publications.html#report">Theses & Reports</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="publications.html#poster">Posters</a>
+            <a class="dropdown-item" href="publications.html#talk">Presentations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV & Bio</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="add-padding">
+        <div class="row justify-content-md-center" style="padding-top: 70px;">
+	      <div class="col-md-7 pt-md-3" style="background-color: #e6e6e6;">
+	        <h2>Abhinav Bhatele</h2>
+	        <p>Associate Professor, <a href="https://www.cs.umd.edu" class="text-info">Department of Computer Science</a> and <a href="http://www.umiacs.umd.edu" class="text-info">UMIACS</a><br>
+            Affiliate Faculty Member, <a href="https://aim.umd.edu" class="text-info">AIM (AI Institute at Maryland)</a> and <a href="https://amsc.umd.edu" class="text-info">AMSC Program</a><br>
+            Director, <a href="https://pssg.cs.umd.edu" class="text-info">Parallel Software and Systems Group (PSSG)</a><br>
+            University of Maryland, College Park
+	        </p>
+            <div class="row">
+            <div class="col-md-8">
+	        <address style="font-size: 14px;">Brendan Iribe Center for Computer Science and Engineering<br>
+            8125 Paint Branch Drive, College Park, MD 20742<br>
+            E-mail: <img src="images/avoid-spam-image.png" style="height: 16px;">
+	        </address>
+            </div>
+            <div class="col-md-4">
+            <address style="font-size: 14px;">
+            <i class="fas fa-map-marker-alt"></i>&nbsp;IRB 5218<br>
+	        <i class="fas fa-phone"></i>&nbsp;(301) 405-4507
+	        </address>
+	        <a href="https://www.linkedin.com/in/bhatele" rel="me" target="_blank" class="text-info"><i class="fab fa-linkedin-in fa-2x">&nbsp;</i></a>
+	        <a href="https://scholar.google.com/citations?user=3x65qtwAAAAJ" rel="me" target="_blank" class="text-info"><i class="fas fa-graduation-cap fa-2x">&nbsp;</i></a>
+	        <a href="https://twitter.com/hpc_group" rel="me" target="_blank" class="text-info"><i class="fab fa-x-twitter fa-2x">&nbsp;</i></a>
+	        <a href="https://github.com/hpcgroup" rel="me" target="_blank" class="text-info"><i class="fab fa-github fa-2x"></i></a><br>
+            </div>
+            </div>
+	      </div><!-- col-md-7 -->
+	      <div class="col-md-3 pt-md-3" style="background-color: #e6e6e6;">
+            <center>
+            <img src="images/bhatele.jpg" style="height: 250px;" class="img-thumbnail"><br>
+            <div class="mt-2 col-md-12">
+            </div>
+	        <!--<a href="mailto:bhatele@cs.umd.edu" rel="me" target="_blank" class="text-info"><i class="fas fa-paper-plane fa-2x">&nbsp;</i></a>-->
+            <div class="mt-2 col-md-12">
+            </div>
+            </center>
+	      </div> <!-- col-md-3 -->
+        </div> <!-- row -->
+      </div> <!-- padding -->
+    </div> <!-- container -->
+
+    <!-- Rest of text -->
+    <div class="container">
+      <div class="add-padding">
+        <div class="row justify-content-md-center" style="padding-top: 10px;">
+          <div class="col-md-12 pt-md-3" style="border-radius: 4px;">
+            <div class="alert alert-info" role="alert">
+                Self-driven, motivated undergraduate/graduate students (studying computer science) interested in conducting research in my group should drop me an e-mail and mention some topics on the <a href="https://pssg.cs.umd.edu/research" class="alert-link">PSSG research</a> page that might interest them.<br><br>
+                <strong>Students enrolled in the UMD science academy or professional masters of engineering programs:</strong> <i>Do NOT e-mail me about GA/RA/TA/Grader positions. I do not have the bandwith to take on students whose major is not Computer Science.</i>
+            </div>
+          </div> <!-- col-md-6 -->
+        </div>
+      </div> <!-- padding -->
+    </div> <!-- container -->
+
+    <div class="container">
+      <div class="add-padding">
+        <div class="row justify-content-md-center" style="padding-top: 10px;">
+          <div class="col-md-12 pt-md-3" style="border-radius: 4px; background-color: #e6e6e6; padding-bottom: 20px;">
+            <h4>Recent Publications</h4>
+<a href="https://doi.acm.org/10.1145/3712285.3759890" class="text-info"><strong>Plexus: Taming Billion-edge Graphs with 3D Parallel GNN Training</strong></a><br>
+Aditya K. Ranjan, Siddharth Singh, Cunyang Wei, and Abhinav Bhatele<br>
+<em>Proceedings of the ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis</em>. November 2025.<br><br>
+
+<a href="http://doi.acm.org/10.1145/3754598.3754669" class="text-info"><strong>ParEval-Repo: A Benchmark Suite for Evaluating LLMs with Repository-level HPC Translation Tasks</strong></a><br>
+Joshua H. Davis, Daniel Nichols, Ishan Khillan, and Abhinav Bhatele<br>
+<em>Proceedings of the International Conference on Parallel Processing</em>. September 2025.
+            <div align="right">
+            <a href="publications.html" class="btn btn-info">Full list >></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- padding -->
+    </div> <!-- container -->
+
+    <div class="container">
+      <div class="add-padding">
+        <div class="row justify-content-md-center" style="padding-top: 10px;">
+          <div class="col-md-8 pt-md-3" style="border-radius: 4px;">
+            <h4>Teaching (at UMD)</h4>
+            <strong>Systems for Machine Learning (CMSC828G)</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cs.umd.edu/class/spring2026/cmsc828g" class="text-info">Spring 2026</a> | <a href="https://www.cs.umd.edu/class/spring2025/cmsc828g" class="text-info">Spring 2025</a><br>
+            <strong>Introduction to Parallel Computing (CMSC416) / Foundations of Parallel Computing (CMSC616)</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cs.umd.edu/class/fall2025/cmsc416" class="text-info">Fall 2025</a> | <a href="https://www.cs.umd.edu/class/fall2024/cmsc416" class="text-info">Fall 2024</a> | <a href="http://www.cs.umd.edu/class/spring2024/cmsc416" class="text-info">Spring 2024</a> | <a href="http://www.cs.umd.edu/class/fall2023/cmsc416" class="text-info">Fall 2023</a> | <a href="http://www.cs.umd.edu/class/fall2022/cmsc416" class="text-info">Fall 2022</a> | <a href="http://www.cs.umd.edu/class/fall2021/cmsc416" class="text-info">Fall 2021</a> | <a href="http://www.cs.umd.edu/class/fall2020/cmsc498x" class="text-info">Fall 2020</a><br>
+            <strong>Advanced Scientific Computing I & II (CMSC663, CMSC664)</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cs.umd.edu/class/fall2022/cmsc663" class="text-info">Fall 2022 & Spring 2023</a><br>
+            <strong>High Performance Computing Systems (CMSC714)</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cs.umd.edu/class/spring2021/cmsc714" class="text-info">Spring 2021</a> | <a href="http://www.cs.umd.edu/class/fall2019/cmsc714" class="text-info">Fall 2019</a><br>
+          </div>
+          <div class="col-md-4 pt-md-3" style="border-radius: 4px;">
+            <h4>Tutorials</h4>
+            <strong>Distributed Deep Learning</strong> <a href="https://isc.app.swapcard.com/event/isc-high-performance-2025/planning/UGxhbm5pbmdfMjU4MTgxMg==" class="text-info">ISC '25</a> | <a href="https://sc25.conference-program.com/presentation/?id=tut139&sess=sess267" class="text-info">SC '25</a><br>
+            <strong>HPC Programming Bootcamp</strong> <a href="https://hpcbootcamp.readthedocs.io/en/latest/" class="text-info">Winter 2020</a><br><br>
+          </div>
+        </div> <!-- row -->
+      </div> <!-- padding -->
+    </div> <!-- container -->
+
+    <div class="container">
+      <div class="add-padding">
+        <div class="row justify-content-md-center" style="padding-top: 10px;">
+          <div class="col-md-12 pt-md-3" style="border-radius: 4px;">
+            <h4>Work/Education History</h4>
+            <strong>2019-2022</strong> Assistant Professor, <a href="http://cs.umd.edu" class="text-info">Department of Computer Science</a> and  <a href="http://www.umiacs.umd.edu" class="text-info">UMIACS</a>, University of Maryland<br>
+            <strong>2018-2019</strong> Principal Computer Scientist, <a href="https://computation.llnl.gov/casc" class="text-info">Center for Applied Scientific Computing</a>, Lawrence Livermore National Laboratory<br>
+            <strong>2012-2018</strong> Senior Computer Scientist, CASC, <a href="http://www.llnl.gov" class="text-info">Lawrence Livermore National Laboratory</a><br>
+            <strong>2011-2012</strong> Post-doctoral Research Scholar, CASC, Lawrence Livermore National Laboratory<br>
+            <strong>2010-2011</strong> Post-doctoral Research Associate, <a href="http://cs.illinois.edu" class="text-info">Department of Computer Science</a>, University of Illinois at Urbana-Champaign<br>
+            <strong>Aug 2010</strong> Ph. D., Computer Science, <a href="http://www.illinois.edu" class="text-info">University of Illinois at Urbana-Champaign</a><br>
+            <strong>Dec 2007</strong> M. S., Computer Science, University of Illinois at Urbana-Champaign<br>
+            <strong>May 2005</strong> B. Tech., <a href="http://www.cse.iitk.ac.in" class="text-info">Computer Science and Engineering</a>, Indian Institute of Technology, Kanpur
+          </div>
+        </div> <!-- row -->
+      </div> <!-- padding -->
+    </div> <!-- container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="padding-top: 24px; text-align: center;">
+          <small>Abhinav Sudarshan Bhatele &#169; 2001-2025. All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

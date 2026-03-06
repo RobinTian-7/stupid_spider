@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="bootstrap/js/bootstrap.min.js"></script>
+  	<style>
+  	.carousel-inner > .item > img,
+  	.carousel-inner > .item > a > img {
+      	/*width: 70%;*/
+      	margin: auto;
+ 	}
+ 	.carousel-inner > .item > iframe,
+  	.carousel-inner > .item > a > iframe {
+      	/*width: 70%;*/
+      	margin: auto;
+ 	}
+ 	.carousel-caption {
+    	position: relative;
+    	left: auto;
+    	right: auto;
+	}
+	.carousel-indicators li {
+    	background: #ccc;
+	}
+	.carousel-indicators .active {
+    	background: #666;
+	}
+  	</style>
+  	
+    <title>Bonnie Berger Home Page</title>
+
+    <script type='text/javascript' src='scripts/lib/object-keys.js'></script>
+    <script type='text/javascript' src='scripts/lib/lodash.compat.min.js'></script>
+    <script type='text/javascript' src='scripts/lib/jquery-1.4.1.min.js'></script>
+
+    <script type='text/javascript' src='scripts/js/sidebar-data.js'></script>
+    <script type='text/javascript' src='scripts/js/sidebar.js'></script>
+    <script>
+    $(document).ready(function(){
+	$('video').on('play', function (e) {
+		setTimeout(function() {
+	    $("#myCarousel").carousel('pause');
+	    }, 500);
+	});
+	$('video').on('stop pause ended', function (e) {
+	    $("#myCarousel").carousel();
+	});
+	}
+	</script>
+
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bab.css" />
+
+    <script type="text/template" id="t_top-bar">
+      <div id="top-left" class="center">
+        <div id="top-left-text">
+          <b>Professor</b><br />
+          <b>Bonnie Berger</b>
+        </div>
+      </div>
+      <div id="top-right">
+        <h2 id="title"><%= header %></h2>
+      </div>
+    </script>
+    
+    <script type="text/javascript">
+    var t_topBar = _.template($('#t_top-bar').html());
+
+    $(document).ready(function(){
+      $("#top-bar").html(t_topBar({"header":"Bonnie Berger"}));
+      generateSidebar(sidebarData, '');
+    });
+    </script>
+
+    
+  </head>
+
+  <body class="bkgd">
+    <div id="container">
+      <div id="top-bar"></div>
+      <div class="container-content">
+        <div class="container-sidebar">
+          <div class="sidebar"><div id='sidebar-links'></div></div>
+          <div class="content" style="width:768px">
+            <div id="home-page-content">
+              
+              <h2>Background and Research Interests</h2>
+              <img id="bonnie-picture" src="http://people.csail.mit.edu/bab/images/bab_swiss.png">
+              <p class="MsoNormal" align="justify">
+				<span style="font-size: 0.9em; color: black; background: white">
+				Bonnie Berger is the Simons Professor of Mathematics at MIT 
+				and serves as head of Computation and Biology group 
+				at MIT's Computer Science and AI Lab. Her recent work focuses on 
+				designing algorithms to gain biological insights from advances 
+				in automated data collection and the subsequent large data sets 
+				drawn from them. She works on a diverse set of problems, including Compressive Genomics, Network Inference, Structural Bioinformatics, Genomic Privacy, and Medical Genomics. Additionally, she collaborates 
+				closely with biologists in order to design experiments to 
+				maximally leverage the power of computation for biological 
+				explorations.</span></p>
+				<p class="MsoNormal" align="justify">
+				<span style="font-size: 0.9em">After beginning her career 
+				working in algorithms at MIT, she was one of the pioneer 
+				researchers in the area of computational molecular biology and, 
+				together with the many students she has mentored, has been 
+				instrumental in defining the field. Professor Berger is an elected fellow of the American Academy of Arts and Sciences, Association for Computing Machinery, International Society for Computational Biology (ISCB), American Institute of Medical and Biological Engineering, American Mathematical Society, the Society of Industrial and Applied Mathematics. Recently she was recognized by ISCB with their Accomplishments by a Senior Scientist Award. She received the NIH Margaret Pittman Director's Award, the SIAM Sonya Kovalevsky Lecture Prize and an Honorary Doctorate from EPFL. Earlier in her career, she received an NSF Career Award, the Biophysical Society's Dayhoff Award, and recognition as Technology Review Magazine's inaugural TR100 top young innovators. She won the RECOMB Test of Time Award both in 2010 and 2019. She also serves on the Executive Editorial Board of Journal of Computational Biology and as member of the editorial boards of Annual Review for Biomedical Data Science, Genome Biology, Bioinformatics, IEEE/ACM TCBB, and Cell Systems. In addition, Professor Berger is an Associate Member of the Broad Institute, Faculty member of Harvard/MIT Health Science 	&amp; Technology, and Affiliated Faculty of Harvard Medical School. <!--Recently she received the <a href="http://news.mit.edu/2019/mit-professor-bonnie-berger-receives-iscb-senior-scientist-award-0226">ISCB Accomplishments by a Senior Scientist Award</a-->Recently she was elected to the  <a href="http://news.mit.edu/2020/three-mit-elected-national-academy-sciences-0501">National Academy of Sciences Class of 2021</a>.</span></p>
+      			<!--
+				<h2>Current Research Highlights</h2></p>
+				<p class='paragraph' align="justify"><b>Voices of Biotech</b> </p>
+				<p class='paragraph' align="justify">
+					"<i>As biotech enters the age of massive data analytics, we gain the ability to reveal biological phenomena and personalize medicine. But large, noisy data provide new challenges of scale and precision. To enable efficient and effective analyses, we need to develop technologies that allow direct operation on compressed data by taking advantage of evolutionary constraints on their topological footprint.</i>" - says Bonnie Berger in <b>Voices of Biotech</b> [<i>Nature Biotechnology</i> 34, 270-275 (2016)].
+				</p>
+				<p class='paragraph' align="justify"><b>Entropy Scaling on Cell Systems cover</b> </p>
+                <p>
+                <div class="img">
+                  	<img  id="cs-cover" src="http://people.csail.mit.edu/bab/images/highrespurple.jpg" >
+				</div>
+				<div class="img">                
+				  	<img  id="cs-paper" src="http://people.csail.mit.edu/bab/images/CellSystems.png">
+            	</div>
+				<p>
+				&nbsp;</p>
+				<p class='paragraph' align="justify">
+				The August 2015 issue of <u><i>Cell Systems</i></u> highlighted our 
+				work &quot;Entropy-scaling search of massive biological data&quot; by 
+				Y.William Yu, Noah M. Daniels, David C. Danko and Bonnie Berger on the cover. Here, we develop a compressive 
+				algorithmic framework for efficiently searching massive datasets 
+				having certain structural properties (i.e., low metric entropy 
+				and fractal dimension) common in biology and applies the general 
+				framework to chemogenomic, metagenomic, and protein structure 
+				data sets. (published on August 26, 2015) </p>
+            	
+         
+				<p class='paragraph' align="justify"><b>Compressive Mapping for NGS</b> </p>
+				<div>
+				<p class='paragraph' align="justify">&quot;<a href="http://www.nature.com/nbt/journal/v34/n4/full/nbt.3511.html">Compressive Mapping for 
+				Next-Generation Sequencing</a>.&quot; by Deniz Yorukoglu, Yun William Yu, Jian Peng 
+				and Bonnie Berger in the April 7, 2016 issue of 
+				<i>Nature Biotechnology</i>.&nbsp;&nbsp; </p>
+				<p>
+				</div>
+				<div class="img-large">                
+				  	<img  border="2" id="cora-pipeline" src="http://people.csail.mit.edu/bab/images/cora.png">
+            	</div>
+            	
+				-->
+			<div><h3>Recent Highlights</h3></div>
+      		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    		<!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="9" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="10" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="11" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="12" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="13" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="14" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="15" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="16" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="17" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="18" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="19" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="20" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="21" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="22" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="23" class=""></li>
+		      <li data-target="#myCarousel" data-slide-to="24" class=""></li>
+
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+
+	    <div class="carousel-inner" role="listbox">
+                    <div class="item active" align="center">
+                        <img src="images/national-academy.png" alt="national-academy" width="220" height="230">
+                        <div class="carousel-caption">
+                          <h2><font color=black>Professor Bonnie Berger has been elected to the National Academy of Sciences</font></h2>
+                          <!--p><h1><font color=black>Professor Bonnie Berger has been elected to the National Academy of Science</font></h1></p-->
+                          <!--p><font color=black>Professor Bonnie Berger has been selected to give the 2020 AWM SIAM Sonia Kovalevsky Lecture</font></p-->
+                        </div>
+
+                    </div>
+
+                    <div class="item" align="center">
+                        <img src="images/bab_NeurIPS.jpg" alt="bab_NeurIPS" width="220" height="230">
+                        <div class="carousel-caption">
+                          <h2><font color=black>Ellen Zhong and Bonnie Berger are co-organizing a workshop on Machine Learning for Structural Biology at NeurIPS 2020</font></h2>
+			  <p><font color=black>For more info see our <a href="http://mlsb.io">website</a>.</font></p>
+                        </div>
+
+                    </div>
+
+                    <div class="item" align="center">
+		    	<div style="display: table;">
+				  <div style="float: left; with:30%;padding: 5px;">
+					<img src="images/ashg_maxwell.jpg" alt="ashg_maxwell" width="220" height="250">
+			  	    <figcaption style="color: black;padding: 2px; text-align: center;font-size: 150%;font-family: TimesNewRoman">Maxwell Sherman</figcaption>
+			 	 </div>
+				 <div style="float: left;with:50%;padding: 5px;">
+                            		<img src="images/ashg_adam.jpeg" alt="ashg_adam" width="200" height="250">
+			    		<figcaption style="color: black;padding: 2px; text-align: center;font-size: 150%;font-family: TimesNewRoman">Adam Uri Yaari</figcaption>
+			  	</div>
+			</div>
+                        <div class="carousel-caption">
+                          <h2><font color=black>ASHG 2020: Reviewersâ Choice Recipients</font></h2>
+                        </div>
+
+                    </div>
+
+
+
+		  <div class="item" align="center">
+		      	<img src="images/seq-poster.png" alt="seq-lamguage" width="220" height="230">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Seq â a language for bioinformatics</font></h2>
+		          <p><font color=black>Seq is a programming language for computational genomics and bioinformatics. </font></p>
+			  <p><font color=black>For more info see our <a href="https://seq-lang.org/">website</a>.</font></p>
+		        </div>
+
+		    </div>
+		    <div class="item" align="center">
+                        <img src="images/bonnie_siam_lecture.jpg" alt="senior-scientist" width="220" height="230">
+                        <div class="carousel-caption">
+                          <h2><font color=black>Sonia Kovalevsky Lecture Prize</font></h2>
+                          <p><h1><font color=black>AWM SIAM - Annual Meeting, 2020</font></h1></p>
+                          <p><font color=black>Professor Bonnie Berger has been selected to give the 2020 AWM SIAM Sonia Kovalevsky Lecture</font></p>
+                        </div>
+
+                    </div>
+
+		    <!--addhere-->
+	            <!--div class="item" align="center">
+                        <video controls="controls" width="424" height="258" name="Science-paper" src="video/science-clip.mov"></video>
+                        <div class="carousel-caption">
+                          <h2><font color=black>Paper in Science - October 199, 2018</font></h2>
+                          <p><font color=black><a href="https://dx.doi.org/10.1126/science.aat4807">Realizing private and practical pharmacological collaboration</a><br/>Brian Hie&dagger;, Hyunghoon Cho&dagger; and Bonnie Berger*</font></p>
+                        </div>
+                      </div-->
+ 	            <div class="item" align="center">
+                        <img src="images/bab-sensci.png" alt="senior-scientist" width="460" height="450">
+                        <div class="carousel-caption">
+						<h2><font color=black>ISCB 2019 Senior Scientist Award </font></h2>
+		          		<p><font color=black>Professor Bonnie Berger has been honored with ISCB Senior Scientist Award</font></p>
+                        </div>
+                      </div>
+
+		    <!--addhere-->
+
+		    	<div class="item" align="center">
+		      	<video controls="controls" width="424" height="258" name="Science-paper" src="video/science-clip.mov"></video>
+		        <div class="carousel-caption">
+		          <h2><font color=black>Paper in Science - October 19, 2018</font></h2>
+		          <p><font color=black><a href="https://dx.doi.org/10.1126/science.aat4807">Realizing private and practical pharmacological collaboration</a><br/>Brian Hie&dagger;, Hyunghoon Cho&dagger; and Bonnie Berger*</font></p>
+		        </div>
+		      </div>
+		      <div class="item" align="center">
+		      	<img src="images/lillian-award.png" alt="lillain-urop" width="460" height="450">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Lillian wins MIT UROP Award - May 2019</font></h2>
+		          <p><font color=black>Lillian Zhang was selected as a co-recipient of the 2019 Randolph G. Wei UROP Award for her outstanding work âat the interface of the life sciences and engineering.â</font></p>
+		        </div>
+		      </div>
+		      <div class="item" align="center">
+		      	<img src="images/tristan-mit.png" alt="iclr-tristan" width="460" height="450">
+		        <div class="carousel-caption">
+		          <h2><font color=black>MIT News - March 22, 2019</font></h2>
+		          <p><font color=black><a href="https://openreview.net/pdf?id=SygLehCqtm">Learning protein sequence embeddings using information from structure</a><br/>Tristan Bepler and Bonnie Berger*</font></p>
+		        </div>
+		      </div>
+		      
+		      <div class="item">
+		      	<img src="images/netSNE.png" alt="netSNE" width="460" height="400">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Featured in Cell Systems - September 2018</font></h2>
+		          <p><font color=black><a href="https://doi.org/10.1016/j.cels.2018.05.017">Generalizable and Scalable Visualization of Single-Cell Data Using Neural Networks</a></font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="images/bab-gp-cacm.png" alt="cacm-news" width="460" height="450">
+		        <div class="carousel-caption">
+		          <h2><font color=black>PI Berger in CACM News - August 2018</font></h2>
+		          <p><font color=black><a href="https://cacm.acm.org/news/230750-is-genomic-privacy-possible/fulltext">ACM News: Is Genomic Privacy Possible?</a></font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="images/scimag.png" alt="Private Genomics" width="460" height="460">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Featured in Science - Jun 8, 2018</font></h2>
+		          <p><font color=black><a href="http://science.sciencemag.org/content/360/6393/1083.6">Genomic crowdsourcing with privacy</a> - <a href="https://www.nature.com/articles/nbt.4108">Paper in Nature Biotechnology</a></font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		      	<img src="images/crowdsourcing.png" alt=ISMB Oral Presentation Award" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>ISMB Best Oral Presentation Award</font></h2>
+		          <p><font color=black>Hyunghoon Cho receives "Best Oral Presentation Award" at ISMB 2018 TransMed Track</font></p>
+		        </div>
+		      </div>	
+		      <div class="item">
+		      	<img src="images/mit-privdeep.png" alt=Private Genomics" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>MIT News - May 8, 2018</font></h2>
+		          <p><font color=black>Protecting confidentiality in genomic studies - <a href="https://www.nature.com/articles/nbt.4108">Paper in Nature Biotechnology</a></font></p>
+		        </div>
+		      </div>	
+		      <div class="item">
+		        <img src="images/ariya_photo.jpeg" alt="RECOMBbestPaper" width="428" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Ariya receives Best Student Paper Award at RECOMB 2018</font></h2>
+		          <p><font color=black>Ariya Shajii's <a href="https://doi.org/10.1101/220236">paper</a> received Best Student Paper Award at RECOMB 2018. This paper has been accepted to Cell Systems.</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/mashup-news.png" alt="mashup F1000" width="428" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>F1000Prime Recommended Article - May 2017</font></h2>
+		          <p><font color=black>Compact Integration of Multi-Network Topology for Functional Analysis of Genes [<a href="http://dx.doi.org/10.1016/j.cels.2016.10.017">Cell Systems Article</a>, <a href="http://f1000.com/prime/727044572?bd=1">F1000Prime Recommendation</a>]</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/cs2017.png" alt="Cell Systems Cover" width="428" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Cell Systems Cover - February 22, 2017</font></h2>
+		          <p><font color=black>Genome-scale networks link diverse molecular pathways and neurodegenerative disease genes to alpha-synuclein [featured in <a href="http://stm.sciencemag.org/content/9/376/eaam6058.full">Science Translational Medicine Editor's Choice</a>]</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/casp12.gif" alt="Protein Contact Prediction Winner" width="203">
+		        <div class="carousel-caption">
+		          <h2><font color=black>iFold_1 wins CASP 12 PCP - December 2016</font></h2>
+		          <p><font color=black>The deep learning algorithm by Team iFold_1 ranked first place in protein contact prediction amongst all CASP12 participants, during a year where the CASP organizers deemed the improvement in contact prediction to be one of the four major advances in the 24 year history of CASP.<br />Y. Liu, P. Pameldo â , Q. Ye, B. Berger *, and J. Peng *. "<a href="http://www.predictioncenter.org/casp12/zscores_rrc.cgi">Deep Learning Reveals Evolutionary Grammar of Interaction Motifs</a>". </font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/nature-news.png" alt="Differencial Privacy Nature" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Nature News - August 15, 2016</font></h2>
+		          <p><font color=black>Spiking genomic databases with misinformation could protect patient privacy - Paper in Cell Systems</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/mitnews-sean2.png" alt="Differencial Privacy" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>MIT News - August 10, 2016</font></h2>
+		          <p><font color=black>Protecting Privacy in Genomic Databases - Paper in Cell Systems</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/cacm-news.png" alt="CompBio21" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>CACM Cover - August 2016</font></h2>
+		          <p><font color=black>Computational Biology in the 21st Century: Scaling with Compressive Algorithms</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/rck.png" alt="ISMBbestPaper" width="460" height="345">
+		        <div class="carousel-caption">
+		          <h2><font color=black>ISMB Best Student Paper Award - July 2016</font></h2>
+		          <p><font color=black>Yaron Orenstein's Paper Received Ian Lawson Van Toch Memorial Award for Outstanding Student Paper</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/williamAward2.png" alt="JohnsonPrize" width="395">
+		        <div class="carousel-caption">
+		          <h2><font color=black>William wins MIT Johnson Prize - May 2016</font></h2>
+		          <p><font color=black>Yun William Yu awarded "MIT Charles W. and Jennifer C. Johnson Prize" for Cell Systems Paper<br />Yun William Yu, Noah M. Daniels, David C. Danko, &amp; Bonnie Berger. "Entropy-scaling search of massive biological data." Cell systems (2015) 1(2): 130-140.</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <img src="images/cora-news.png" alt="CORA" width="428" height="332">
+		        <div class="carousel-caption">
+		          <h2><font color=black>Nature Biotechnology Paper - April 2016</font></h2>
+		          <p><font color=black>Compressive Mapping for Next-Generation Sequencing:<br/>accurate multi-read mapping at orders of magnitude speedup</font></p>
+		        </div>
+		      </div>
+		      <div class="item">
+		        <!--
+		        <div align="center">
+               	<video width="460" height="282" controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw">
+                 <source src="video/dss-talk" type="video/mp4">
+                 Your browser does not support the video tag.
+              	</video>
+          		</div>
+          		!-->
+          		
+          		<div align="center">
+          		<iframe src="https://www.youtube.com/embed/wHYHmnPF6zk?list=PLpGHT1n4-mAsMDIVNRVejVOaPSTmvReh5" allowfullscreen="" frameborder="0" width="460" height="278"></iframe>
+             	</div>
+          		
+             	<div class="carousel-caption">
+              		<h2><font color=black>Data Science @ Stanford - March 2016</font></h2>
+		     		<p><font color=black>click on the video to play or pause</font></p>
+            	</div>
+            	
+		      </div>
+		    </div>
+			<!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		    </div>
+			<p> &nbsp;</p>
+
+			<!--
+			<h2>March 16, 2016: Data Science @ Stanford</h2>
+			<object data="https://www.youtube.com/embed/wHYHmnPF6zk?list=PLpGHT1n4-mAsMDIVNRVejVOaPSTmvReh5" width="560" height="315" border="1" align="center"></object>
+      		<p> &nbsp;</p>
+      		!-->
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	
+  	<p>&nbsp;</p>
+  </body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cameron Musco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./personal_site/css/bootstrapFlatly.min.css" rel="stylesheet">
+    <!-- <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style> -->
+    <!-- <link href="./personal_site/css/bootstrap-grid.min.css" rel="stylesheet"> -->
+    <link href="./personal_site/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26357977-3', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./personal_site/images/favicon.ico">
+  </head>
+
+  <body>
+
+
+	<nav class="navbar navbar-default navbar-static-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#"></a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+		  <li><a href=#courses>Courses</a></li>
+	      <li><a href=#students>Students</a></li>
+		  <li><a href=#publications>Publications</a></li>
+		  <li><a href=#writing>Other</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	
+
+    <div class="container">
+
+	 
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 style="text-align:center; margin-top:30px;">Cameron Musco</h1>
+          </div>
+        <div class="col-lg-12" style="text-align:center;">
+            University of Massachusetts Amherst | Computer Science Building, Office W234 <a href="https://umass-amherst.zoom.us/my/cnmusco">(Zoom Link)</a> | cmusco at cs dot umass dot edu
+			<hr class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="border-top: 2px solid #000000;">
+        </div>
+      </div>
+      <div class="row voffset1">
+        <div class="col-lg-3 col-md-4 col-sm-5 col-lg-offset-2 col-md-offset-1 col-sm-offset-0" style="margin-bottom:20px;">
+          <img src="./personal_site/images/head5.jpg" class="img-rounded img-responsive" alt="my photo">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6" style="text-align:justify">
+
+          <p>I am an Associate Professor in UMass Amherst's <a href="https://www.cics.umass.edu/">Manning College of Information and Computer Sciences</a>, where I am a member of the <a href="https://groups.cs.umass.edu/theory/">Theory Group</a>. </p>
+			  
+			  <p>I study algorithms, working at the intersection of theoretical computer science, numerical linear algebra, and machine learning. My group's research is supported in part by an NSF CAREER Award and a Google Research Scholar Award. 
+				 <!-- I am especially interested in randomized methods that adapt to streaming and distributed computation. I am also interested in understanding randomized computation and algorithmic robustness by studying computational processes in biological systems.</p>-->
+				  
+
+					  
+					  <p>I completed my Ph.D. in the <a href="http://toc.csail.mit.edu/">Theory of Computation Group</a> at MIT, advised by <a href="http://people.csail.mit.edu/lynch/">Nancy Lynch</a>. Before MIT, I studied Computer Science and Applied Math at Yale.</p>
+			
+            <p>Here are my <a href="https://scholar.google.com/citations?user=EeYGZCwAAAAJ&hl=en">Google Scholar profile</a>, <a href="./personal_site/pdfs/cnmusco_cv.pdf">CV</a>, and <a href="https://github.com/cnmusco">GitHub</a>.
+			  </p>
+			  
+			<!--</p>The website for our reading group on distributed computation in biological systems can be found <a href="./realisticReadingGroup/index.html">here</a>.</p>-->
+        </div>
+      </div>
+      <div class="row voffset1">
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
+
+		  <section id="courses">
+		 <h3 style="padding-bottom: 10px; border-bottom: 1px solid;">Courses</h3>
+		 <!--<hr class="col-lg-12 col-lg-offset-0" style="border-top: 1px solid;">-->
+		 <div style="margin-left: 0px; margin-top: 15px;">
+			 <p>
+				 <b>COMPSCI 514</b>: Algorithms for Data Science, <a href="CS514S26/index.html">Spring 2026</a>. (Past editions: <a href="CS514F24/index.html">F24</a>, <a href="CS514F23/index.html">F23</a>, <a href="CS514F22/index.html">F22</a>, <a href="CS514F21/index.html">F21</a>, <a href="CS514F20/index.html">F20</a>, <a href="CS514S20/index.html">S20</a>, <a href="CS514F19/index.html"> F19</a>).
+			 </p>
+			 <p>
+				 <b>COMPSCI 614</b>: Randomized Algorithms with Applications to Data Science, <a href="CS614S24/index.html">Spring 2024</a>. (Past editions: <a href="CS690RAS22/index.html">S22</a>).
+			 </p>
+		 <p>
+			 <b>COMPSCI 891M</b>: <a href="https://groups.cs.umass.edu/theory/theory-seminar/">Theory Seminar</a>.
+		 </p>
+			
+				 
+				 <!--<p>
+				 <a href="hackHer.pdf">Hack(H)er413 slides</a>.</a>
+				 <p>-->
+		 </div>
+		
+		  </section>
+		  
+		  
+ 		  <section id="students">
+ 		 <h3 style="padding-bottom: 10px; border-bottom: 1px solid;">Research Group</h3>
+ 		 <!--<hr class="col-lg-12 col-lg-offset-0" style="border-top: 1px solid;">-->
+ 		 <div style="margin-left: 0px; margin-top: 15px;">
+			 
+			 <b>Current:</b><br>
+			  <a href="https://rbhattacharj.github.io/">Rajarshi Bhattacharjee</a>, Ph.D.<br>
+			  <a href="https://moreda-a.github.io/">Mohammadreza Daneshvaramoli</a>, Ph.D., co-advised with Mohammad Hajiesmaili<br>
+			  <a href="https://tao-he.com/">Tao He</a>, Ph.D.<br><br>
+			  
+ 			 <b>Ph.D. Alumni:</b><br>
+			 <a href="https://archanray.github.io/">Archan Ray</a>, Ph.D. (2019-2024). Now Applied Research Scientist  at JP Morgan Chase.<br>
+	      <a href="https://ymohit.github.io/">Mohit Yadav</a>, Ph.D. (2020-2024), co-advised with Dan Sheldon. Now Research Scientist at Pythia Labs.<br>
+		  <a href="https://schariya.github.io/">Sudhanshu Chanpuriya</a>, Ph.D. (2019-2023). Now Research Scientist at Meta.<br>
+			  <a href="https://raddanki.github.io/">Raghavendra Addanki</a>, Ph.D. (2019-2022), co-advised with Andrew McGregor. Now Research Scientist at Adobe.<br><br>
+			   <b>Undergraduate/Masters Alumni:</b><br>
+			   <a href="https://shamanthkuthpadi.com/">Shamanth Kuthpadi Seethakantha</a>, Undergraduate (2024). Now Ph.D. student at UMass Amherst.<br>
+			   <a href="https://www.cs.toronto.edu/~jacobgray/">Jacob Gray</a>, Undergraduate (2023-2024). Now Ph.D. student at University of Toronto.<br>
+			  			  <a href="https://adamlechowicz.github.io/">Adam Lechowicz</a>, Undergraduate (2021-2022). Now Ph.D. student at UMass Amherst.<br>
+			  <a href="https://aarshvig.github.io/">Aarshvi Gajjar</a>, Masters (2020-2021). Now Ph.D. student at NYU.<br>
+			  <a href="https://hannahlawrence.github.io/">Hannah Lawrence</a>, Summer Intern (2019). Now Ph.D. student at MIT.<br>
+			  
+			  
+		 </div>
+	 	</section>
+          <section id="publications">
+            <h3 style="padding-bottom: 10px; border-bottom: 1px solid;">Publications</h3>				
+			<div style="margin-left: 0px;" class="btn-group">
+					<button class="btn btn-light active" type="radio" data-toggle="collapse" data-target=".collapse:not(.show)">All</button>
+					<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA:not(.show),.sketchrandNLA:not(.show),.randNLAOther:not(.show),.sketch.show,.graph.show,.other.show,.opinion.show,.bio.show,.sketchbio.show">Fast Linear Algebra</button> 	
+					<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA.show,.sketchrandNLA:not(.show),.sketch:not(.show),.sketchbio:not(.show),.randNLAOther.show,.graph.show,.other.show,.opinion.show,.bio.show">Sketching/Streaming</button>
+					<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA.show,.sketch.show,.graph:not(.show),.randNLAOther.show,.other.show,.opinion.show,.bio.show,.sketchrandNLA.show,.sketchbio.show">Graph Embedding and Learning</button>
+					<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA.show,.sketch.show,.graph.show,.other:not(.show),.randNLAOther:not(.show),.opinion.show,.bio.show,.sketchrandNLA.show,.sketchbio.show">Other Algorithms</button>
+					<!--<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA.show,.sketch.show,.graph.show,.other.show,.opinion:not(.show),.bio.show,.sketchrandNLA.show,.sketchbio.show">Opinion Dynamics</button>-->
+					<button class="btn btn-light" type="radio" data-toggle="collapse" data-target=".randNLA.show,.sketch.show,.graph.show,.other.show,.opinion.show,.bio:not(.show),.sketchbio:not(.show),.sketchrandNLA.show,.randNLAOther.show">Biological Computation</button>
+			  </div>
+              <div style="margin-left: 0px; margin-top: 15px;">
+    				<p class="collapse multi-collapse show randNLA">
+    				  <b><a href="https://arxiv.org/abs/2507.19290">Query Efficient Structured Matrix Learning</a></b>
+    				  <br>Noah Amsel, Pratyush Avi, Tyler Chen, Feyza Duman Keles, Chinmay Hegde, Cameron Musco, Christopher Musco, David Persson
+    				 </p>
+	 				 <p class="collapse multi-collapse show other">
+	    				  <b><a href="">Online Caching in Tree Networks: Algorithms, Regret, and Complexity</a></b><br>Ativ Joshi, Rajarshi Bhattacharjee, Rajat De, Abhishek Sinha,  Cameron N Musco, Mohammad Hajiesmaili<br>
+	  					Learning for Dynamics and Control (L4DC) 2026.
+	    				</p>
+	 				 <p class="collapse multi-collapse show randNLAOther">
+	 				 <b><a href="https://arxiv.org/abs/2602.05674">Fast Private Adaptive Query Answering for Large Data Domains</a></b><br>
+	 				 Brett Mullins, Miguel Fuentes, Yingtai Xiao, Daniel Kifer, Cameron Musco, Daniel Sheldon<br>
+	 				 International Conference on Artificial Intelligence and Statistics (AISTATS) 2026.
+	 				</p>
+    				<p class="collapse multi-collapse show randNLA">
+    				  <b><a href="https://arxiv.org/abs/2505.16937">Quasi-Optimal Hierarchically Semi-Separable Matrix Approximation</a></b>
+    				  <br>Noah Amsel, Tyler Chen, Feyza Duman Keles, Diana Halikias, Cameron Musco, Christopher Musco, David Persson<br>
+					  SIAM Journal on Matrix Analysis and Applications (SIMAX) 2026.
+    				 </p>
+					 <p class="collapse multi-collapse show other">
+	   				      					<b><a href="https://arxiv.org/abs/2512.20960">Fairness in the k-Server Problem</a></b><br>Mohammadreza Daneshvaramoli, Helia Karisani, Mohammad Hajiesmaili, Shahin Kamali, Cameron Musco<br>
+	 					Innovations in Theoretical Computer Science (ITCS) 2026.
+	   				</p>
+	 				<p class="collapse multi-collapse show other">
+	 				      					<b><a href="https://arxiv.org/abs/2601.07482">The Secretary Problem with Predictions and a Chosen Order</a></b><br>Helia Karisani, Mohammadreza Daneshvaramoli, Hedyeh Beyhaghi, Mohammad Hajiesmaili, Cameron Musco<br>
+	 				Innovations in Theoretical Computer Science (ITCS) 2026.
+	 				</p>
+	   				<p class="collapse multi-collapse show randNLA">
+	   				  <b><a href="https://arxiv.org/abs/2509.19528">A Note on Fine-Grained Quantum Reductions for Linear Algebraic Problems</a></b>
+	   				  <br>Kyle Doney, Cameron Musco
+	   				 </p>
+		    		<p class="collapse multi-collapse show randNLA">
+		    			     	<b><a href="https://arxiv.org/abs/2511.21418">Sublinear Time Low-Rank Approximation of Hankel Matrices</a></b><br>
+		  				Michael Kapralov, Cameron Musco, Kshiteej Sheth.<br>
+		  				ACM-SIAM Symposium on Discrete Algorithms (SODA) 2026.
+		  			</p>
+	  				<p class="collapse multi-collapse show sketchrandNLA">
+	  				      					<b><a href="https://arxiv.org/abs/2402.09379">Fixed-Sparsity Matrix Approximation from Matrix-Vector Products</a></b>
+	  				  <br>Noah Amsel, Tyler Chen, Feyza Duman Keles, Diana Halikias, Cameron Musco, Christopher Musco<br>
+					  SIAM Journal on Matrix Analysis and Applications (SIMAX) 2025.
+	  				 </p>
+    				<p class="collapse multi-collapse show graph">
+    				      	<b><a href="https://arxiv.org/abs/2505.15636">Distance Adaptive Beam Search for Provably Accurate Graph-Based Nearest Neighbor Search</a></b>
+  						<br>Yousef Al-Jazzazi, Haya Diwan, Jinrui Gou, Cameron Musco, Christopher Musco, Torsten Suel<br>
+						Conference on Neural Information Processing Systems (NeurIPS) 2025.
+    				</p>
+    				<p class="collapse multi-collapse show randNLAOther">
+    				      					<b><a href="https://arxiv.org/abs/2408.12385">Sharper Bounds for Chebyshev Moment Matching, with Applications
+    				  </a></b><br>Cameron Musco, Christopher Musco, Lucas Rosenblatt, Apoorv Vikram Singh<br>
+					  Conference on Learning Theory (COLT) 2025.
+    				    					</p>
+    				<p class="collapse multi-collapse show other">
+    				      					<b><a href="https://arxiv.org/abs/2406.18752">Near-Optimal Consistency-Robustness Trade-Offs for Learning-Augmented Online Knapsack Problems</a></b><br>Mohammadreza Daneshvaramoli, Helia Karisani, Adam Lechowicz, Bo Sun, Cameron Musco, Mohammad Hajiesmaili<br>
+  					International Conference on Machine Learning (ICML) 2025.
+    				</p>
+   				<p class="collapse multi-collapse show randNLA">
+   				      					<b><a href="https://arxiv.org/abs/2407.04686">Near-Optimal Hierarchical Matrix Approximation from Matrix-Vector Products
+   				  </a></b><br>Tyler Chen, Feyza Duman Keles, Diana Halikias, Cameron Musco, Christopher Musco, David Persson<br>
+ 				           ACM-SIAM Symposium on Discrete Algorithms (SODA) 2025.
+   				 </p>
+  				<p class="collapse multi-collapse show randNLA">
+  				      					<b><a href="https://arxiv.org/abs/2410.21690">Improved Spectral Density Estimation via Explicit and Implicit Deflation</a></b><br>
+                  Rajarshi Bhattacharjee, Rajesh Jayaram, Cameron Musco, Christopher Musco, Archan Ray<br>
+ 				 ACM-SIAM Symposium on Discrete Algorithms (SODA) 2025.
+  				 </p>
+				 <p class="collapse multi-collapse show randNLAOther">
+				 <b><a href="https://arxiv.org/abs/2410.01091">Efficient and Private Marginal Reconstruction with Local Non-Negativity</a></b><br>
+				 Brett Mullins, Miguel Fuentes, Yingtai Xiao, Daniel Kifer, Cameron Musco, Daniel Sheldon<br>
+				 Conference on Neural Information Processing Systems (NeurIPS) 2024.
+				</p>
+   				<p class="collapse multi-collapse show randNLAOther">
+   				<b><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/8874a21bfb43738f5af2eb348f2bc693-Paper-Conference.pdf">Gaussian Process Bandits for Top-k Recommendations</a></b>
+				<br>Mohit Yadav, Cameron Musco, Daniel Sheldon<br>
+ 				Conference on Neural Information Processing Systems (NeurIPS) 2024.
+   				</p>
+  				<p class="collapse multi-collapse show graph">
+  				      	<b><a href="https://arxiv.org/abs/2405.18680">Navigable Graphs for High-Dimensional Nearest Neighbor Search: Constructions and Limits</a></b>
+						<br>Haya Diwan, Jinrui Gou, Cameron Musco, Christopher Musco, Torsten Suel<br>
+				Conference on Neural Information Processing Systems (NeurIPS) 2024.
+  				</p>
+				<p class="collapse multi-collapse show randNLA">
+				      <b><a href="https://arxiv.org/abs/2303.03358">Nearly Optimal Approximation of Matrix Functions by the Lanczos Method
+</a></b>
+					  <br>Noah Amsel, Tyler Chen, Anne Greenbaum, Cameron Musco, Christopher Musco<br>
+				  Conference on Neural Information Processing Systems (NeurIPS) 2024. <b>Spotlight Presentation.</b><br>
+  				  					<a href="./personal_site/pdfs/instanceOptimalSimons.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=vezej4nvkw8&ab_channel=SimonsInstitute">video</a> from my talk at 
+  				  Simons.
+   				  				<p class="collapse multi-collapse show graph">
+   				  			     	<b><a href="https://arxiv.org/abs/2312.03691">On the Role of Edge Dependency in Graph Generative Models
+   				</a></b><br>
+   				  					Sudhanshu Chanpuriya, Cameron Musco, Konstantinos Sotiropoulos, Charalampos Tsourakakis<br>
+   									International Conference on Machine Learning (ICML) 2024.
+   								</p>
+				    					</p>
+  				<p class="collapse multi-collapse show sketchrandNLA">
+  			     	<b><a href="https://arxiv.org/abs/2305.05826">Universal Matrix Sparsifiers and Fast Deterministic Algorithms for Linear Algebra
+</a></b><br>
+  					Rajarshi Bhattacharjee, Gregory Dexter, Cameron Musco, Archan Ray, Sushant Sachdeva, David P. Woodruff<br>
+					Innovations in Theoretical Computer Science (ITCS) 2024.<br>
+    				  					<a href="./personal_site/pdfs/focm30.pdf">Slides</a> from my talk at 
+    				  FOCM.
+  				</p>
+				  				<p class="collapse multi-collapse show randNLA">
+				  			     	<b><a href="https://arxiv.org/abs/2305.02535">On the Unreasonable Effectiveness of Single Vector Krylov Methods for Low-Rank Approximation</a></b><br>
+				  					Raphael Meyer, Cameron Musco, Christopher Musco<br>
+									ACM-SIAM Symposium on Discrete Algorithms (SODA) 2024.<br>
+									<a href="https://www.chrismusco.com/svk_30min.pdf">Chris's slides</a> for 30 minute talk.
+				  				</p>
+					    		<p class="collapse multi-collapse show randNLA">
+					    			     	<b><a href="https://arxiv.org/abs/2404.13757">Sublinear Time Low-Rank Approximation of Toeplitz Matrices</a></b><br>
+					  				Cameron Musco, Kshiteej Sheth.<br>
+					  				ACM-SIAM Symposium on Discrete Algorithms (SODA) 2024.
+					  			</p>
+				      				<p class="collapse multi-collapse show other">
+				      					<b><a href="https://arxiv.org/abs/2303.06396">No-regret Algorithms for Fair Resource Allocation
+				  </a></b><br>Abhishek Sinha, Ativ Joshi, Rajarshi Bhattacharjee, Cameron Musco, Mohammad Hajiesmaili<br>
+				  Conference on Neural Information Processing Systems (NeurIPS) 2023.
+				    					</p>
+						  				<p class="collapse multi-collapse show graph">
+						  			     	<b><a href="http://arxiv.org/abs/2111.03030">Exact Representation of Sparse Networks with Symmetric Nonnegative Embeddings</a></b><br>
+						  					Sudhanshu Chanpuriya, Ryan A. Rossi, Anup B. Rao, Tung Mai, Nedim Lipka, Zhao Song, Cameron Musco<br>
+											Conference on Neural Information Processing Systems (NeurIPS) 2023.
+						  				</p>
+										<p class="collapse multi-collapse show sketchrandNLA">
+											<b><a href="">Finite Population Regression Adjustment and Non-asymptotic Guarantees for Treatment Effect Estimation</a></b><br>
+											Mehrdad Ghadiri, David Arbour, Tung Mai, Cameron Musco, Anup B. Rao<br>
+											Conference on Neural Information Processing Systems (NeurIPS) 2023.
+										</p>
+								  				    				<p class="collapse multi-collapse show graph">
+								  				    			     	<b><a href="https://arxiv.org/abs/2308.06448">Latent Random Steps as Relaxations of Max-Cut, Min-Cut, and More
+								  				  </a></b><br>
+								  				    					Sudhanshu Chanpuriya, Cameron Musco<br>
+								  										Differentiable Almost Everything Workshop at ICML 2023.<br>
+								  				    				</p>
+													<p class="collapse multi-collapse show sketchrandNLA">
+					  				  			     	<b><a href="https://arxiv.org/abs/2109.07647">Sublinear Time Eigenvalue Approximation via Random Sampling</a></b><br>
+					  				  					Rajarshi Bhattacharjee, Gregory Dexter, Petros Drineas, Cameron Musco, Archan Ray<br>
+					  									International Colloquium on Automata, Languages, and Programming (ICALP) 2023. Full version in Algorithmica 2024.<br>
+					  				  					<a href="./personal_site/pdfs/sublinearEigenvaluesTalk.pdf">Slides</a> from my talk at 
+					  				  the Algorithms and Foundations for Data Science Workshop, NUS. <a href="https://www.youtube.com/watch?v=M50gkD0r7M4&ab_channel=SimonsInstitute">Video</a> of my talk at Simons.<br>
+					  				  				</p>
+    				<p class="collapse multi-collapse show sketchrandNLA">
+    					<b><a href="https://arxiv.org/abs/2301.05811">Weighted Minwise Hashing Beats Linear Sketching for Inner Product Estimation
+</a></b><br>
+    									Aline Bessa, Majid Daliri, Juliana Freire, Cameron Musco, Christopher Musco, Aécio Santos, Haoxiang Zhang<br>
+										Symposium on Principles of Database Systems (PODS) 2023.
+  					</p>
+					<p class="collapse multi-collapse show graph">
+		  			     	<b><a href="http://arxiv.org/abs/2210.00032">Direct Embedding of Temporal Network Edges via Time-Decayed Line Graphs</a></b><br>
+						Sudhanshu Chanpuriya, Ryan A. Rossi, Sungchul Kim, Tong Yu, Jane
+						  Hoffswell, Nedim Lipka, Shunan Guo, Cameron Musco<br>
+						  International Conference on Learning Representations (ICLR) 2023.<br>
+						  <a href="https://www.youtube.com/watch?v=yQpDb0m_1V4">Video</a> of an hour long talk by Dan.
+		    		</p>
+    				<p class="collapse multi-collapse show sketchrandNLA">
+    			     	<b><a href="https://arxiv.org/abs/2304.02261">Optimal Sketching Bounds for Sparse Linear Regression</a></b><br>
+    					Tung Mai, Alexander Munteanu, Cameron Musco, Anup B. Rao, Chris Schwiegelshohn, David P. Woodruff<br>
+						International Conference on Artificial Intelligence and Statistics (AISTATS) 2023.
+    				</p>
+    				<p class="collapse multi-collapse show randNLA">
+    			     	<b><a href="https://arxiv.org/abs/2202.11251">Low-Memory Krylov Subspace Methods for Optimal Rational Matrix Function Approximation</a></b><br>
+    					Tyler Chen, Anne Greenbaum, Cameron Musco, Christopher Musco<br>
+  					SIAM Journal on Matrix Analysis and Applications (SIMAX) 2023.
+    				</p>
+  				<p class="collapse multi-collapse show graph">
+  					<b><a href="https://arxiv.org/abs/2111.14020">Local Edge Dynamics and Opinion Polarization</a></b><br>
+  									Nikita Bhalla, Adam Lechowicz, Cameron Musco<br>
+									ACM International Conference on Web Search and Data Mining (WSDM) 2023.<br>
+									<b>Invited to special issue of ACM Transactions on Intelligent Systems and Technology</b><br>
+									<a href=./personal_site/pdfs/integrity.pdf>Slides</a> from my talk at the Integrity 2023 Workshop at WSDM. <a href="https://dl.acm.org/doi/10.1145/3539597.3570442">Video</a> of Adam's WSDM talk. <a href="https://github.com/adamlechowicz/opinion-polarization">Code repository.</a>
+  								</p>
+	    				<p class="collapse multi-collapse show randNLA">
+	    			     	<b><a href="http://arxiv.org/abs/2211.11328">Toeplitz Low-Rank Approximation with Sublinear Query Complexity</a></b><br>
+	  				Michael Kapralov, Hannah Lawrence, Mikhail Makarov, Cameron Musco, Kshiteej Sheth.<br>
+	  				ACM-SIAM Symposium on Discrete Algorithms (SODA) 2023.
+	  			</p>
+  				<p class="collapse multi-collapse show randNLA">
+  			     	<b><a href="https://arxiv.org/abs/2211.06790">Near-Linear Sample Complexity for L<sub>p</sub> Polynomial Regression</a></b><br>
+				Raphael Meyer, Cameron Musco, Christopher Musco, David P. Woodruff, Samson Zhou.<br>
+				ACM-SIAM Symposium on Discrete Algorithms (SODA) 2023.
+			</p>  				
+  				<p class="collapse multi-collapse show randNLA">
+  			     	<b><a href="https://arxiv.org/abs/2305.14451">Kernel Interpolation with Sparse Grids</a></b><br>
+					Mohit Yadav, Daniel Sheldon, Cameron Musco<br>
+					Conference on Neural Information Processing Systems (NeurIPS) 2022.
+  				</p>
+    				<p class="collapse multi-collapse show graph">
+    			     	<b><a href="https://papers.nips.cc/paper_files/paper/2022/hash/44a1f18afd6d5cc34d7e5c3d8a80f63b-Abstract-Conference.html">Modeling Transitivity and Cyclicity in Directed Graphs via Binary Code Box Embeddings</a></b><br>
+						Dongxu Zhang, Michael Boratko, Cameron Musco, Andrew McCallum<br>
+  					Conference on Neural Information Processing Systems (NeurIPS) 2022.<br>
+					<a href="https://github.com/iesl/geometric-graph-embedding">Code repository.</a>
+    				</p>
+  				<p class="collapse multi-collapse show sketchrandNLA">
+  			     	<b><a href="https://arxiv.org/abs/2210.06594">Sample Constrained Treatment Effect Estimation</a></b><br>
+  					Raghavendra Addanki, David Arbour, Tung Mai, Cameron Musco, Anup B. Rao<br>
+					Conference on Neural Information Processing Systems (NeurIPS) 2022.<br>
+					<a href="https://github.com/raddanki/Sample-Constrained-Treatment-Effect-Estimation">Code repository.</a>
+  				</p>
+				<p class="collapse multi-collapse show graph">
+					<b><a href="https://arxiv.org/abs/2202.04139">Simplified Graph Convolution with Heterophily</a></b><br>
+					Sudhanshu Chanpuriya, Cameron Musco.<br>
+					Conference on Neural Information Processing Systems (NeurIPS) 2022.<br>
+					<a href="https://github.com/schariya/adaptive-simple-convolution ">Code repository.</a>
+												</p>
+				<p class="collapse multi-collapse show randNLA">
+					<b><a href="https://arxiv.org/abs/2111.04888">Active Linear Regression for &#8467<sub>p</sub> Norms and Beyond</a></b><br>
+					Cameron Musco, Christopher Musco, David P. Woodruff, Taisuke Yasuda<br>
+					IEEE Symposium on Foundations of Computer Science (FOCS) 2022
+				</p>
+    				<p class="collapse multi-collapse show sketch">
+    			     	<b><a href="https://arxiv.org/abs/2207.02817">Non-Adaptive Edge Counting and Sampling via Bipartite Independent Set Queries</a></b><br>
+    					Raghavendra Addanki, Andrew McGregor, Cameron Musco<br>
+						European Symposium on Algorithms (ESA) 2022.
+    				</p>
+				<p class="collapse multi-collapse show randNLA">
+					<b><a href="https://arxiv.org/abs/2203.07557">Fast Regression for Structured Inputs</a></b><br>
+									Raphael Meyer, Cameron Musco, Christopher Musco, David P. Woodruff, Samson Zhou<br>
+									International Conference on Learning Representations (ICLR) 2022.
+								</p>
+				<p class="collapse multi-collapse show randNLA">
+					<b><a href="http://arxiv.org/abs/2112.09631">Sublinear Time Approximation of Text Similarity Matrices</a></b><br>
+									Archan Ray, Nicholas Monath, Andrew McCallum, Cameron Musco<br>
+									AAAI Conference on Artificial Intelligence (AAAI) 2022.<br>
+								</p>
+				<p class="collapse multi-collapse show randNLA">
+			     	<b><a href="https://arxiv.org/abs/2106.09806">Error Bounds for Lanczos-Based Matrix Function Approximation</a></b><br>
+					Tyler Chen, Anne Greenbaum, Cameron Musco, Christopher Musco<br>
+					SIAM Journal on Matrix Analysis and Applications (SIMAX) 2022.<br>
+				</p>
+				<p class="collapse multi-collapse show graph">
+			     	<b><a href="https://arxiv.org/abs/2111.00048">On the Power of Edge Independent Graph Models</a></b><br>
+					Sudhanshu Chanpuriya, Cameron Musco, Konstantinos Sotiropoulos, Charalampos E. Tsourakakis<br>
+					Conference on Neural Information Processing Systems (NeurIPS) 2021.<br>
+				</p>
+				<p class="collapse multi-collapse show sketchrandNLA">
+			     	<b><a href="https://arxiv.org/abs/2106.04254">Coresets for Classification - Simplified and Strengthened</a></b><br>
+					Tung Mai, Cameron Musco, Anup B. Rao<br>
+					Conference on Neural Information Processing Systems (NeurIPS) 2021.<br>
+				</p>
+				<p class="collapse multi-collapse show graph">
+			     	<b><a href="https://arxiv.org/abs/2102.08532">DeepWalking Backwards: From Embeddings Back to Graphs</a></b> <br>
+					Sudhanshu Chanpuriya, Cameron Musco, Konstantinos Sotiropoulos, Charalampos E. Tsourakakis<br>
+					International Conference on Machine Learning (ICML) 2021. <b>Spotlight Presentation.</b><br>
+					<a href="https://github.com/konsotirop/Invert_Embeddings">Code repository.</a>
+				</p>
+				<p class="collapse multi-collapse show randNLA">
+			     	<b><a href="https://arxiv.org/abs/2102.08341">Faster Kernel Matrix Algebra via Density Estimation</a></b><br>
+					Arturs Backurs, Piotr Indyk, Cameron Musco, Tal Wagner<br>
+					International Conference on Machine Learning (ICML) 2021.
+			   	</p>
+				<p class="collapse multi-collapse show randNLA">
+			     	<b><a href="https://arxiv.org/abs/2101.11751">Faster Kernel Interpolation for Gaussian Processes</a></b><br>
+					Mohit Yadav, Daniel Sheldon, Cameron Musco<br>
+					International Conference on Artificial Intelligence and Statistics (AISTATS) 2021. <b>Oral Presentation.</b>
+			   	</p>
+				<p class="collapse multi-collapse show other">
+			     	<b><a href="https://arxiv.org/abs/2012.13976">Intervention Efficient Algorithms for Approximate Learning of Causal Graphs</a></b><br>
+					Raghavendra Addanki, Andrew McGregor, Cameron Musco<br>
+					Algorithmic Learning Theory (ALT) 2021.<br>
+					<a href="https://www.youtube.com/watch?v=inAVnFzMJT0">Video</a> of Raghav's talk at ALT.
+			   	</p>
+				<p class="collapse multi-collapse show sketchrandNLA">
+			     	<b><a href="https://arxiv.org/abs/2010.02264">Subspace Embeddings Under Nonlinear Transformations</a></b><br>
+					Aarshvi Gajjar, Cameron Musco<br>
+					Algorithmic Learning Theory (ALT) 2021.<br>
+					<a href="https://www.youtube.com/watch?v=nv8r-0K45Qg">Video</a> of Aarshvi's talk at ALT.
+			   	</p>
+  				<p class="collapse multi-collapse show randNLA">
+                    		<b><a href="https://arxiv.org/abs/2011.09986">Estimation of Shortest Path Covariance Matrices</a></b><br>
+                    		Raj Kumar Maity, Cameron Musco<br>
+                  </p>
+				<p class="collapse multi-collapse show randNLA">
+                  		<b><a href="https://arxiv.org/abs/1904.09841">Simple Heuristics Yield Provable Algorithms for Masked
+              Low-Rank Approximation</a></b><br>
+                  		Cameron Musco, Christopher Musco, David P. Woodruff<br>
+                  	    Innovations in Theoretical Computer Science (ITCS) 2021.<br>
+  						<a href="./personal_site/pdfs/commComplexityTalk.pdf">Slides</a> from my talks at ITA/UMass. <a href="https://www.youtube.com/watch?v=8KLzk-PO_tI">Video</a> of my talk at ITCS.
+                </p>
+				<p class="collapse multi-collapse show randNLA">
+							     	<b><a href="https://arxiv.org/abs/2010.09649">Hutch++: Optimal Stochastic Trace Estimation
+				</a></b><br>
+									Raphael Meyer, Cameron Musco, Christopher Musco, David P. Woodruff<br>
+									SIAM Symposium on Simplicity in Algorithms (SOSA) 2021.<br>
+									<a href="https://www.youtube.com/watch?v=7djUH2uAoaM">Video</a> of my E-NLA Seminar talk. Corresponding <a href="./personal_site/pdfs/hutchplusplus50.pdf">slides</a>. <a href="https://github.com/RaphaelArkadyMeyerNYU/HutchPlusPlus">Code repository</a>.<br>
+									The Hutch++ algorithm is also implemented in <a href="https://pylops.readthedocs.io/en/latest/api/others.html">PyLops</a>, <a href="https://github.com/scipy/scipy/blob/main/scipy/sparse/linalg/_expm_multiply.py">SciPy</a>, and elsewhere (e.g., <a href="https://github.com/cvxgrp/torch_linops">1</a>, <a href="https://github.com/akshayka/hessian_trace_estimation">2</a>).
+				</p>
+				<p class="collapse multi-collapse show randNLA">
+							     	<b><a href="https://arxiv.org/abs/2006.07340">Fourier Sparse Leverage Scores and Approximate Kernel Learning
+				</a></b><br>
+									Tam&aacute;s Erd&eacute;lyi, Cameron Musco, Christopher Musco<br>
+									Conference on Neural Information Processing Systems (NeurIPS) 2020. <b>Spotlight Presentation.</b><br>
+									<a href="https://github.com/cpmusco/leverage_score_rff">Code repository.</a>
+				</p>
+				<p class="collapse multi-collapse show graph">
+							     	<b><a href="https://arxiv.org/abs/2006.05592">Node Embeddings and Exact Low-Rank Representations of Complex Networks</a></b><br>
+									Sudhanshu Chanpuriya, Cameron Musco, Konstantinos Sotiropoulos, Charalampos E. Tsourakakis<br>
+									Conference on Neural Information Processing Systems (NeurIPS) 2020.<br>
+									<a href="./personal_site/pdfs/MDS.pdf">Slides</a> from my talk at SIAM Mathematics of Data Science. <a href=" https://github.com/schariya/exact-embeddings">Code repository</a> with LPCA exact factorization code.
+				</p>
+    			 <p class="collapse multi-collapse show sketchbio">
+                   		<b><a href="https://arxiv.org/abs/2010.01423">Spiking Neural Networks Through the Lens of Streaming Algorithms</a></b><br>
+                   		Yael Hitron, Cameron Musco, Merav Parter<br>
+                   	    International Symposium on Distributed Computing (DISC) 2020.
+    			</p>
+  			  <p class="collapse multi-collapse show sketchrandNLA">
+                 		<b><a href="https://arxiv.org/abs/1805.03765">Near Optimal Linear Algebra in the Online and Sliding Window Models</a></b><br>
+                 		Vladimir Braverman, Petros Drineas, Cameron Musco, Christopher Musco, Jalaj Upadhyay, David P. Woodruff, Samson Zhou<br>
+                 	    IEEE Symposium on Foundations of Computer Science (FOCS) 2020.
+  			   </p>
+				<p class="collapse multi-collapse show other">
+               		<b><a href="https://arxiv.org/abs/2005.11736">Efficient Intervention Design for Causal Discovery with Latents</a></b><br>
+               		Raghavendra Addanki, Shiva Prasad Kasiviswanathan, Andrew McGregor, Cameron Musco<br>
+               	    International Conference on Machine Learning (ICML) 2020.
+              </p>
+              <p class="collapse multi-collapse show graph">
+               		<b><a href="https://arxiv.org/abs/2006.00094">InfiniteWalk: Deep Network Embeddings as Laplacian Embeddings with a Nonlinearity</a></b><br>
+               		Sudhanshu Chanpuriya, Cameron Musco<br>
+               	    Knowledge Discovery and Data Mining (KDD) 2020.<br>
+					<a href="https://github.com/schariya/infwalk">Code repository.</a>
+              </p>
+               <p class="collapse multi-collapse show randNLA">
+                		<b><a href="https://arxiv.org/abs/1911.08015">Low-Rank Toeplitz Matrix Estimation via Random Ultra-Sparse Rulers</a></b><br>
+                		Hannah Lawrence, Jerry Li, Cameron Musco, Christopher Musco<br>
+                	    International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2020.<br> 
+						<a href="https://cmsworkshops.com/ICASSP2020/Papers/ViewPaper.asp?PaperNum=4554">Video</a> of Hannah's (remote) talk at ICASSP.
+              </p>
+               <p class="collapse multi-collapse show sketchrandNLA">
+                		<b><a href="https://arxiv.org/abs/1911.01575">Importance Sampling via Local Sensitivity</a></b><br>
+                		Anant Raj, Cameron Musco, Lester Mackey<br>
+                	    International Conference on Artificial Intelligence and Statistics (AISTATS) 2020.<br> 
+              </p>
+               <p class="collapse multi-collapse show sketchbio">
+                		<b><a href="https://drops.dagstuhl.de/opus/volltexte/2020/11708/">Random Sketching, Clustering, and Short-Term Memory in Spiking Neural Networks</a></b><br>
+                		Yael Hitron, Nancy Lynch, Cameron Musco, Merav Parter<br>
+                	    Innovations in Theoretical Computer Science (ITCS) 2020.<br> 
+              </p>
+               <p class="collapse multi-collapse show randNLA">
+                		<b><a href="https://arxiv.org/abs/1905.05643">Sample Efficient Toeplitz Covariance Estimation</a></b><br>
+                		Yonina Eldar, Jerry Li, Cameron Musco, Christopher Musco<br>
+                	    ACM-SIAM Symposium on Discrete Algorithms (SODA) 2020.<br> 
+						<a href="./personal_site/pdfs/toeplitzSlides.pdf">Slides</a> from my talk at Cornell. <a href="https://www.youtube.com/watch?v=27aBIw8O5BE">Video</a> from my talk at DIMACS.
+              </p>
+               <p class="collapse multi-collapse show sketch">
+                		<b><a href="https://arxiv.org/abs/1903.12165">Fast and Space Efficient Spectral Sparsification in Dynamic Streams</a></b><br>
+						Michael Kapralov, Aida Mousavifar, Cameron Musco, Christopher Musco, Navid Nouri, Aaron Sidford, Jakab Tardos<br>
+                	    ACM-SIAM Symposium on Discrete Algorithms (SODA) 2020.<br> 
+						<a href="./personal_site/pdfs/toeplitzSlides.pdf">Slides</a> from my talk at Cornell.
+              </p>
+               <p class="collapse multi-collapse show other">
+                		<b><a href="http://arxiv.org/abs/1906.02652">Toward a Characterization of Loss Functions for Distribution Learning</a></b><br>
+                		Nika Haghtalab, Cameron Musco, Bo Waggoner<br>
+                	    Conference on Neural Information Processing Systems (NeurIPS) 2019.<br> 
+              </p>
+               <p class="collapse multi-collapse show other">
+                		<b><a href="https://arxiv.org/abs/1904.11875">Learning to Prune: Speeding up Repeated Computations</a></b><br>
+                		Daniel Alabi, Adam Tauman Kalai, Katrina Ligett, Cameron Musco, Christos Tzamos, Ellen Vitercik<br>
+                	    Conference on Learning Theory (COLT) 2019.
+              </p>
+               <p class="collapse multi-collapse show randNLA">
+                		<b><a href="https://arxiv.org/abs/1812.08723">A Universal Sampling Method for Reconstructing Signals with Simple Fourier Transforms</a></b><br>
+                		Haim Avron, Michael Kapralov, Cameron Musco, Christopher Musco, Ameya Velingker, Amir Zandieh<br>
+                	    ACM Symposium on Theory of Computing (STOC) 2019.<br> 
+						<a href="https://www.chrismusco.com/universalSampling60.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=9y24Zm1rMCk">video</a> from Chris's talk at Simons.
+              </p>
+               <p class="collapse multi-collapse show graph">
+                		<b><a href="https://arxiv.org/abs/1801.07386">Learning Networks from Random Walk-Based Node Similarities</a></b><br>
+                		Jeremy G. Hoskins, Cameron Musco, Christopher Musco, Charalampos E. Tsourakakis<br>
+                	    Conference on Neural Information Processing Systems (NeurIPS) 2018.<br>
+						<a href="https://github.com/cnmusco/graph-similarity-learning">Code repository</a>. 
+						
+              </p>
+               <p class="collapse multi-collapse show graph">
+                		<b><a href="https://arxiv.org/abs/1712.09948">Minimizing Polarization and Disagreement in Social Networks</a></b><br>
+                		Cameron Musco, Christopher Musco, Charalampos E. Tsourakakis<br>
+                		The Web Conference (WWW) 2018.<br>
+						<a href="https://github.com/tsourolampis/polarization-disagreement">Code repository</a>. 
+						
+              </p>
+               <p class="collapse multi-collapse show randNLA">
+                		<b><a href="https://arxiv.org/abs/1804.08548">Eigenvector Computation and Community Detection in Asynchronous Gossip Models</a></b><br>
+                		Frederik Mallmann-Trenn, Cameron Musco, Christopher Musco<br>
+                	    International Colloquium on Automata, Languages, and Programming (ICALP) 2018.<br> 
+              </p>
+               <p class="collapse multi-collapse show randNLA">
+                		<b><a href="https://arxiv.org/abs/1704.04163">Spectrum Approximation Beyond Fast Matrix Multiplication: Algorithms and Hardness</a></b><br>
+                		Cameron Musco, Praneeth Netrapalli, Aaron Sidford, Shashanka Ubaru, David P. Woodruff<br>
+                		Innovations in Theoretical Computer Science (ITCS) 2018.<br>
+						<a href="./personal_site/pdfs/spectralSumTalk.pdf">Slides</a> from my talk at ITCS. 
+              </p>
+			     <p class="collapse multi-collapse show randNLA">
+			    		<b><a href="https://arxiv.org/abs/1708.07788">Stability of the Lanczos Method for Matrix Function Approximation</a></b><br>
+			    		Cameron Musco, Christopher Musco, Aaron Sidford<br>
+			    		ACM-SIAM Symposium on Discrete Algorithms (SODA) 2018.<br>
+						<a href="https://github.com/cpmusco/fast-pcr">Code repository</a> for matrix function approximation (see <code>lanczos.m</code>).
+						
+			    </p>
+                <p class="collapse multi-collapse show randNLA"> 
+                  		<b><a href="http://arxiv.org/abs/1605.07583">Recursive Sampling for the Nystr&ouml;m Method</a></b><br>
+                  		Cameron Musco, Christopher Musco<br>
+                  		Conference on Neural Information Processing Systems (NeurIPS) 2017.<br>
+                  		<a href="https://github.com/cnmusco/recursive-nystrom">Code repository</a>.&nbsp <a href="./personal_site/pdfs/shortSimons.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=QoH_WMadipk&t=145s">video</a> from my talk at Simon's discussing this line of work.
+                </p>
+  		    	<p class="collapse multi-collapse show randNLA">
+  		                <b><a href="https://arxiv.org/abs/1711.01596">Is Input Sparsity Time Possible for Kernel Low-Rank Approximation?</a></b><br>
+  		                Cameron Musco, David P. Woodruff <br>
+  		                Conference on Neural Information Processing Systems (NeurIPS) 2017.<br>
+                </p>
+           		<p class="collapse multi-collapse show randNLA">
+                 		<b><a href="https://arxiv.org/abs/1704.03371">Sublinear Time Low-Rank Approximation of Positive Semidefinite Matrices</a></b><br>
+                 		Cameron Musco, David P. Woodruff<br>
+                 		IEEE Symposium on Foundations of Computer Science (FOCS) 2017.<br>
+						<a href="./personal_site/pdfs/focsTalk.pdf">Slides</a> and <a href="https://vimeo.com/channels/1315001/241957727">video</a> from my talk at FOCS. <a href="./personal_site/pdfs/longTalk.pdf">Extended slides</a> slides for hour long talk.
+               	</p>
+		    	<p class="collapse multi-collapse show randNLA">
+		                <b><a href="https://arxiv.org/abs/1804.09893">Random Fourier Features for Kernel Ridge Regression: Approximation Bounds and Statistical Guarantees</a></b><br>
+		                Haim Avron, Michael Kapralov, Cameron Musco, Christopher Musco, Ameya Velingker, Amir Zandieh <br>
+		                International Conference on Machine Learning (ICML) 2017.<br>
+						<a href="./personal_site/pdfs/icmlTalk.pdf">Slides</a> and <a href="https://vimeo.com/237274729">video</a> from my talk at ICML. <a href="http://www.chrismusco.com/fourierFeaturesHour.pdf">Chris's extended slides</a> for an hour long talk.
+				</p>
+                <p class="collapse multi-collapse show randNLA">
+                  		<b><a href="http://arxiv.org/abs/1511.07263">Input Sparsity Time Low-Rank Approximation via Ridge Leverage Score Sampling</a></b><br>
+                  	  	Michael B. Cohen, Cameron Musco, Christopher Musco<br>
+                  	  	ACM-SIAM Symposium on Discrete Algorithms (SODA) 2017.<br>
+                  	  	<a href="./personal_site/pdfs/sodaTalk.pdf">Slides</a> from my talk at SODA. <a href="http://www.chrismusco.com/ridgeLeverageHour.pdf">Chris's extended slides</a> from his talk at University of Utah.
+                </p>
+                <p class="collapse multi-collapse show bio">
+                  		<b><a href="https://arxiv.org/abs/1706.01382">Neuro-RAM Unit with Applications to Similarity Testing and Compression in Spiking Neural Networks</a></b><br>
+                    	  	Nancy Lynch, Cameron Musco, Merav Parter<br>
+  	              	 	International Symposium on Distributed Computing (DISC) 2017.
+  	          </p>
+			  <p class="collapse multi-collapse show bio">
+                <b><a href="">Spiking Neural Networks: An Algorithmic Perspective </a></b><br>
+                Nancy Lynch, Cameron Musco, Merav Parter<br>
+                Presentation at Workshop on Biological Distributed Algorithms (BDA) 2017.<br>
+				<a href="./personal_site/pdfs/bdaTalk.pdf">Slides</a> from my talk at BDA.
+              </p>
+			  <p class="collapse multi-collapse show bio">
+                <b><a href="">New Perspectives on Algorithmic Robustness Inspired by Ant Colony House-Hunting</a></b><br>
+                Tsvetomira Radeva, Cameron Musco, Nancy Lynch<br>
+                Presentation at Workshop on Biological Distributed Algorithms (BDA) 2017.
+              </p>
+			  <p class="collapse multi-collapse show bio">
+                <b><a href="https://arxiv.org/abs/1610.02084">Computational Tradeoffs in Biological Neural Networks: Self-Stabilizing Winner-Take-All Networks</a></b><br>
+                Nancy Lynch, Cameron Musco, Merav Parter<br>
+                Innovations in Theoretical Computer Science (ITCS) 2017.
+              </p>
+              <p class="collapse multi-collapse show bio">
+                <b><a href="http://www.pnas.org/content/early/2017/09/18/1706439114.abstract"> Ant-Inspired Density Estimation via Random Walks</a></b><br>
+                Cameron Musco, Hsin-Hao Su, Nancy Lynch<br>
+				Proceedings of the National Academy of Sciences (PNAS) 2017.<br>
+				Full paper also available on <a href="http://arxiv.org/abs/1603.02981"> arXiv</a>. An extended abstract initially appeared in PODC 2016.
+              </p>
+	          	<p class="collapse multi-collapse show sketchrandNLA">
+	                	<b><a href="http://arxiv.org/abs/1604.05448">Online Row Sampling</a></b><br>
+	                	Michael B. Cohen, Cameron Musco, Jakub Pachocki<br>
+	                	International Workshop on Approximation Algorithms for Combinatorial Optimization Problems (APPROX) 2016.<br>
+						<b>Appeared in special issue of Theory of Computing.</b>
+	          	</p>
+				<p class="collapse multi-collapse show randNLA">
+                		<b><a href="http://arxiv.org/abs/1602.06872">Principal Component Projection Without Principal Component Analysis</a></b><br>
+                		Roy Frostig, Cameron Musco, Christopher Musco, Aaron Sidford<br>
+                		International Conference on Machine Learning (ICML) 2016.<br>
+                		<a href="https://github.com/cpmusco/fast-pcr">Code repository</a>. <a href="http://www.chrismusco.com/pcrPresentation15min.pdf">Chris's slides</a> from his talk at ICML.
+              </p>
+              <p class="collapse multi-collapse show randNLA">
+                		<b><a href="http://arxiv.org/abs/1605.08754">Faster Eigenvector Computation via Shift-and-Invert Preconditioning</a></b><br>
+                		Daniel Garber, Elad Hazan, Chi Jin, Sham M. Kakade, Cameron Musco, Praneeth Netrapalli, Aaron Sidford<br>
+                		International Conference on Machine Learning (ICML) 2016.
+              </p>
+              <p class="collapse multi-collapse show randNLA">
+                		<b><a href="./personal_site/pdfs/blockKrylov.pdf">Randomized Block Krylov Methods for Stronger and Faster Approximate Singular Value Decomposition</a></b><br>
+                		Cameron Musco, Christopher Musco<br>
+                		Conference on Neural Information Processing Systems (NeurIPS) 2015. <b>Oral Presentation</b>.<br>
+                		<!--<b>Selected for Oral Presentation (1 of 15 out of 403 papers).</b><br>-->
+                		<a href="./personal_site/pdfs/nipsPresentation.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=igy1_Ly9JG8">video</a> from my talk at NeurIPS. <a href="https://github.com/cpmusco/bksvd">Code repository</a>.
+              </p>
+              <p class="collapse multi-collapse show sketchrandNLA">
+                		<b><a href="http://arxiv.org/abs/1410.6801"> Dimensionality Reduction for k-Means Clustering and Low Rank Approximation</a></b><br>
+                		Michael B. Cohen, Sam Elder, Cameron Musco, Christopher Musco, Madalina Persu<br>
+                		ACM Symposium on Theory of Computing (STOC) 2015.<br>
+                		<a href="./personal_site/pdfs/kmeans_presentation.pptx">Slides</a> from my talk at MIT's Algorithms and Complexity Seminar.<br>
+                		My <a href="./personal_site/pdfs/masters.pdf">Master's Thesis</a> containing empirical evaluation along with a guide to implementation. <a href="https://arxiv.org/abs/2004.08434">A note</a> containing simplified proofs for common projection-cost-preserving sketches.
+              </p>
+              <p class="collapse multi-collapse show randNLA">
+                		<b><a href="http://arxiv.org/abs/1408.5099">Uniform Sampling for Matrix Approximation</a></b><br>
+                		Michael B. Cohen, Yin Tat Lee, Cameron Musco, Christopher Musco, Richard Peng, Aaron Sidford<br>
+                		Innovations in Theoretical Computer Science (ITCS) 2015.<br>
+                		<a href="./personal_site/pdfs/uniformSamplingPresentation.pdf">Slides</a> from my talk at MIT's Algorithms and Complexity Seminar.
+              </p>
+              <p class="collapse multi-collapse show bio">
+                <b><a href="http://arxiv.org/abs/1505.03799"> Distributed House-Hunting in Ant Colonies</a></b><br>
+                Mohsen Ghaffari, Cameron Musco, Tsvetomira Radeva, Nancy Lynch<br>
+                ACM Symposium on Principles of Distributed Computing (PODC) 2015.
+              </p>
+              <p class="collapse multi-collapse show sketch">
+                		<b><a href="http://arxiv.org/abs/1407.1289">Single Pass Spectral Sparsification in Dynamic Streams</a></b><br>
+                		Michael Kapralov, Yin Tat Lee, Cameron Musco, Christopher Musco, Aaron Sidford<br>
+                		IEEE Symposium on Foundations of Computer Science (FOCS) 2014.<br>
+                		<b>Appeared in special issue of SIAM Journal on Computing (SICOMP).</b><br>
+                		<a href="http://www.christophermusco.com/spectralSparsifierPresentation.pdf">Chris's Slides</a> from his talks at FOCS and the Harvard TOC Seminar.
+              </p>
+            </div>
+          </section>
+          <section id="writing">
+			<!--<hr class="col-lg-12 col-lg-offset-0" style="border-top: 2px solid #000000;">-->
+			<div><h3 style="padding-bottom: 10px; border-bottom: 1px solid;">Other Writing</h3></div>
+			<div style="margin-left: 0px;">
+            <p>
+              Here are a few writeups, notes, and talks.
+            </p>
+			<p>
+				<a href="https://arxiv.org/abs/2004.08434">Projection-cost-preserving sketch note</a>, containing simplified proofs for common projection-cost-preserving sketching techniques, following the work in our STOC 2015 and SODA 2017 papers.
+			</p>
+			<p> <a href="./personal_site/pdfs/vcTalk.pdf">VC dimension in (neural) circuit complexity</a>, outline of a talk on the basics of VC dimension and how it can be used to give circuit size lower bounds for certain functions. 
+			</p>
+			<p><a href="./personal_site/pdfs/mmdsTalk.pdf">Fast Low-Rank Approximation and PCA Beyond Sketching</a>, slides for a talk I gave at Mining Massive Datasets (MMDS 2016) on new techniques for large scale low-rank approximation. Corresponding <a href="https://www.youtube.com/watch?v=yEPlpYqXSjc">video</a>.
+			</p>
+            <p> 
+              <a href="./personal_site/pdfs/retreatTalk.pdf">Chebyshev Polynomials in TCS and Algorithm Design</a>, outline of a talk I gave at the MIT Theory student retreat on the many applications of Chebyshev polynomials to upper and lower bounds in Theoretical Computer Science.
+            </p>
+
+     <!--       <p> 
+              <a href="./personal_site/pdfs/subspace_scores.pdf">Subspace Scores for Feature Selection in Computer Vision</a>, final project report where we test leverage score based sampling algorithms for k-means/PCA dimension reduction and general feature selection.
+            </p>
+		 -->
+
+            <p> 
+              <a href="./personal_site/pdfs/tds_presentation.pdf">Applications of Linear Sketching to Distributed Computing</a>, slides for a talk I gave at our Theory of Distributed Systems seminar. High level overview of linear sketching, my work on k-means clustering and spectral sparsification, and applications to distributed data analysis.
+            </p>
+
+            <p> 
+             <!-- <a href="./personal_site/pdfs/cmusco-project.pdf">Graph Sparsification and Dimensionality Reduction</a>, final project for Jelani Nelson's <a href="http://people.seas.harvard.edu/~minilek/cs229r/">Algorithms for Big Data</a> class.
+            </p> -->
+            <p>
+              <a href="./personal_site/pdfs/linear_least_squares.pdf">Linear Regression and Pseudoinverse Cheatsheet</a>, since there are a lot of ways to explain the pseudoinverse.
+            </p>
+            <p>
+              <a href="./personal_site/pdfs/bigO_cheat_sheet.pdf">Big-O and Asymptotic Notation Cheatsheet</a>, just in case.
+            </p>
+
+           <!-- <p><a href="./personal_site/pdfs/CNMSpringThesis.pdf">Fast Approximation of Maximum Flow using Electrical Flows</a>, undergraduate Applied Mathematics senior project report. I was fortunate to be advised by <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a> for both my senior projects. They were my first introduction to research in computer science and the reason I decided to go to graduate school.
+            </p> 
+            <p><a href="./personal_site/pdfs/CNMFallThesisAndExtensions.pdf">Graph Construction Through Laplacian Function Optimization</a>, Computer Science senior project report.
+            </p>-->
+		</div>
+          </section>
+          <section id="projects">
+			<h3 style="padding-bottom: 10px; border-bottom: 1px solid;">Other Projects</h3>
+			<div style="margin-left: 0px;">
+            <p>
+              I've worked on a lot of projects, some more serious than others.
+            </p>
+            <p>
+              I built this <a href="./rap_collaboration_graph">Rap Collaboration Graph</a>, which gives a visualization of musical collaborations in hip hop. Unfortunately, colors are only rendering in Safari right now, it looks fuzzy on retina displays, and the data is about a year (10 years...) out of date. But I promise I'll get to it.
+            </p>
+            <p>
+              I had a lot of fun helping build the first version of <a href="http://yaledailynews.com/blog/2012/02/28/one-button-wenzel-relaunches-expands/">One Button Wenzel</a>, a site that sold buffalo chicken sandwiches. It evolved into <a href="https://crunchbutton.com/food-delivery">Crunchbutton</a>, then devolved back into <a href="https://onebuttonwenzel.com/">One Button Wenzel</a>. <a href="./personal_site/images/obw.png">Here</a> is a screenshot of the original site in all its glory.
+            </p>
+            
+
+            <p> 
+              <!--My friend <a href="http://www.charliecroom.com">Charlie</a> and I once built an <a href="https://code.google.com/p/zooelite/">AI</a> to play <a href="http://www.openttd.org/en/">Transport Tycoon Deluxe</a>. Here is a <a href="./personal_site/pdfs/MuscoCroomPoster.pdf">poster</a> describing the project.  -->
+            </p>
+            <p>
+              In college I also had a lot of fun working on Yale's <a href="http://www.bulldogsracing.com/">Formula Hydrid Racecar Team</a>.
+            </p>
+
+            <p>
+              I love to ski, and a long time ago, my brother <a href="http://www.chrismusco.com">Chris</a> and I used to build custom skis. <a href="./personal_site/images/skis1.jpg">Our first pair</a> had maple/poplar cores, varnished wood sidewalls, and flex comparable to a pair of 2x4s. <a href="./personal_site/images/skis2.jpg">Our second pair</a> has more precisely shaped pine cores, an improved top sheet, and a much smoother flex. The tips delaminated once, but we riveted them together and still ski on them today! <a href="http://skibuilders.com/phpBB2/viewtopic.php?p=7767&highlight=#7767">Here's</a> an old forum post on <a href="http://www.skibuilders.com">SkiBuilders.com</a> with more pictures of our setup.
+            </p>
+		</div>
+          </section>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    <hr>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./personal_site/js/jquery-1.11.1.min.js"></script>
+    <script src="./personal_site/js/popper.min.js"></script>
+    <script src="./personal_site/js/bootstrap.min.js"></script>
+	<script src="./personal_site/js/main.js"></script>
+    <!--
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script> -->
+
+  </body>
+</html>

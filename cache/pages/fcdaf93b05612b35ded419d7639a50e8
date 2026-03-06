@@ -1,0 +1,1103 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Heming Cui</title>
+</head>
+<body>
+
+<TABLE style="MARGIN-LEFT: 4em" cellPadding=10 width="95%" align=center  border=0>   
+<TBODY>
+<TR vAlign=bottom>
+<TD align=left width="30%"><IMG height=300 alt="Picture of Heming Cui"        src="files/profile.jpg"></TD>
+<TD align=left>
+
+<BR><IMG alt="Name of Heming Cui"        src="files/name.jpg"> <BR>
+<BR><A        href="http://www.cs.hku.hk/">Department of Computer Science</A>
+<BR><A href="http://www.hku.hk/">The University of Hong Kong (HKU)</A>
+
+<BR>
+<BR>Room 421, Chow Yei Ching Building, HKU, Pok Fu Lam Road, Hong Kong 
+
+<BR><BR><IMG alt="Email of Heming Cui"        src="files/email.jpg"> <BR>
+<BR>[ <A        href="http://i.cs.hku.hk/~heming/files/heming-resume.pdf">Resume</A> |
+<A        href="http://i.cs.hku.hk/~heming/#publication">Publication</A> | 
+<A        href="http://i.cs.hku.hk/~heming/#lab">Research Lab</A> |
+<A        href="http://i.cs.hku.hk/~heming/#admit">Admitting New Students</A> ]
+<BR><BR></TD></TR></TBODY></TABLE>
+
+<P  style="WIDTH: 90%; TEXT-ALIGN: justify">I am an associate professor in HKU CS. I  got my bachelor and master degrees from Tsinghua University; I joined HKU in January 2015 right after I got my PhD degree from Columbia University (my PhD supervisor is <a href="http://www.cs.columbia.edu/%7Ejunfeng">Prof. Junfeng Yang</a>). I lead the <A href="http://i.cs.hku.hk/~heming/#lab">HKU Systems Software Lab</A>. I am interested in building parallel and distributed systems, including blockchain systems, distributed AI training/serving systems, distributed big-data and parallel computing systems, and cloud computing systems. I have a particular focus on improving the reliability, security, and performance of these systems. I publish papers in broad areas of systems, security, and networking, including SOSP, NSDI, ASPLOS, ATC, EuroSys, DSN, TPDS, and TDSC. In recent three years, I serve on the program committees of international systems/networking conferences, including OSDI, NSDI, ATC, DSN, EuroSys, SOCC, and ICDCS. I also serve as constant reviewers for international systems/networking/software/security journals, including TPDS, TOCS, TSE, TON, TMC, and TDSC. I receive several world-wide competative research awards, including a Croucher Innovation Award in 2016 (HK $5 million), an outstanding (best) paper award from ACSAC '17, two Huawei flagship research grants in 2018 (blockchain and security) and 2021 (AI), and the Best Collaborating Scientist Medal from the Huawei Theory Lab in 2021, and the RGC Research Impact Fund (RIF) in 2023 (HK $4.3 million). He is the project leader of a National Key R&D Program of China 2030 (the project topic is about building new parallel training systems for large AI models). As (one of) the project leaders or principle investigators, Dr. Cui's total amount of competative research grants in Hong Kong and mainland China has reached about HK $90 million.
+
+<P  style="WIDTH: 90%; TEXT-ALIGN: justify">My recent research papers have led to commercial software releases with global leading IT industries. For instance, My secure system papers (e.g., [Uranus AsiaCCS 2020] and [DAENet TDSC 2021]) on Trusted Execution Environments have become a core component of Huawei's Trusted and Intelligent Cloud Services (see the UTEE component in <a href="https://www.huaweicloud.com/product/tics.html">TICS</a>). In addition, my students and I are actively collaborating with industries to jointly publish research papers and to transfer the resultant systems from these papers into commercial software of broad areas, including distributed AI training systems, permissioned blockchain systems, security and privacy preserving systems, and geo distributed transaction systems.
+
+<P  style="WIDTH: 90%; TEXT-ALIGN: justify">I admit several PhD students every year. I expect my students to have good skills/experience on hacking systems software (e.g., Linux kernel, LLVM, or distributed protocols) or AI frameworks, and have strong motivation on research. If you are interested, please directly apply <A        href="http://www.cs.hku.hk/programme/mphil-phd/admission.jsp">here</A> and select "systems and networking research" as your interested field during the application. If you also want to talk with me individually, please read my recent papers (at least several times for each paper), understand how they work deeply, compile and run them, and then email me what new research topics you can think of (e.g., new applications or significant improvments of my systems, or some other relevant and crazy ideas). I will reply your email quickly if your ideas make sense. I also recruit postdoc of broad systems and networking areas. Please read my papers, form a few short research proposals (ideas/plans) within the intersections of your work and my work, and send me your CV with the proposals.
+
+<P  style="WIDTH: 90%; TEXT-ALIGN: justify">I have several well funded <a href="http://www.cs.hku.hk/people/profile.jsp?teacher=heming">research grants</a> that can support student Research Assistants (RAs) and summer research interns for students around the world. If you are interested and you can work full-time in HKU for a few months, you can send me emails with your CV and thoughts on my papers.
+
+<!--
+I have also been working with Prof. <A  href="http://www.cs.cmu.edu/~garth/">Garth Gibson</A>, Prof. <A  href="http://www.cs.cmu.edu/~bryant/">Randy Bryant</A>,
+Prof. <A  href="http://www.cs.columbia.edu/~roxana/">Roxana Geambasu</A>, and many other awesome people from academia and industry.
+
+I got my bachelor's degree (July 2005) and master's degree (June 2008, advisor is Professor Yong Xiang) on Computer Science from <A  href="http://www.thu.edu.cn">Tsinghua University</A>, Beijing, China.
+I was born and grew up at Dianbai, Guangdong, China. I love my hometown (especially fruits and seafood there).
+-->
+
+<BR>
+<BR>
+<A  id=publication name=publication></A>
+<H3>Selected Publication ("*" means corresponding author)</H3>
+	<ul>
+
+<!-- template -->
+<!-- 
+<li><p><span class="title"><b>Paper title</b>
+</span>[<a href="tbd">tbd</a> | <a href="tbd">tbd</a> | <a href="https://github.com/hku-systems/tbd">code</a>]<br>
+Lebron James, <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>, Lebron James
+</span><br><span class="conference">
+Proceedings of the 2022 USENIX Annual Technical Conference (<b>ATC '22</b>)</span>
+<br></p></li>
+with -->
+
+
+
+			<li> 
+				<p>
+					<span class="title"><b>BIDL: A High-throughput, Low-latency Permissioned Blockchain Framework for Datacenter Networks</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/sosp21-bidl.pdf">pdf</a> | 
+<a href="https://www.youtube.com/watch?v=y44C_Hl_dQs">video</a> | <a href="http://github.com/hku-systems/bidl">code</a>]
+					<br>
+					<span class="author">
+                                                Ji Qi,
+                                                Xusheng Chen,
+						Yunpeng Jiang,
+						Jianyu Jiang,
+						Tianxiang Shen,
+						Shixiong Zhao,
+						Sen Wang,
+						Gong Zhang,
+						Li Chen,
+						Man Ho Au,
+						<a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of the 28th ACM Symposium on Operating Systems Principles 2021 (<b>SOSP '21</b>). <b>ACM results reproduced badge</b>.
+					</span>
+					<br>
+					<div class="description">Describe BIDL, a high-performance and BFT-compatible permissioned blockchain workflow that can parallelize the executions of smart contracts and their BFT ordering on dedicated datacenter networks; BIDL can also tackle aborts caused by concurrently contending smart contract transactions and non-determinism (e.g., multithreading races in transactions).</div>
+				</p>
+			</li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Fold3D: Rethinking and Parallelizing Computational and Communicational Tasks in the Training of Large DNN Models
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/tpds23-fold3d.pdf">pdf</a> | 
+<a href="http://www.cs.hku.hk/~heming/papers/tpds23-fold3d-slides.pptx">slides</a> | 
+<a href="http://github.com/hku-systems/fold3d">code</a>]
+                                        <br>
+                                        <span class="author">
+						Fanxin Li, Shixiong Zhao*, Yuhao Qing, Xusheng Chen, Xiuxian Guan, Sen Wang, Gong Zhang, and
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="Journal">
+						IEEE Transactions on Parallel and Distributed Systems 2021 (<b>TPDS '23</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe Fold3D, a general pipepline parallel training system for big AI models (e.g., Transformer and GPT). Fold3D introduces a new scheduling algorithm that folds Data Parallel (DP), Pipeline Parallel (PP) and Tensor Parallel (TP) tasks in a highly parallel way. Compared to world's latest relevant training systems (e.g., Megatron), Fold3D improves all GPUs' utilization (training throughput) for training each big AI model significantly by about 40%.</div>
+                                </p>
+                        </li>
+
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>JITfuzz: Coverage-guided Fuzzing for JVM Just-in-Time Compilers
+</b></span>
+                                        <br>
+                                        <span class="author">
+Mingyuan Wu, Minghai Lu, <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>, Yanwei Huang, Junjie Chen, Yuqun Zhang, and Lingming Zhang			
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						Proceedings of the 45th International Conference on Software Engineering (<b>ICSE '23</b>)
+                                        </span>
+                                </p>
+                        </li>
+
+
+
+
+
+<li><p><span class="title"><b>CRONUS: Fault-isolated, Secure and High-performance Heterogeneous Computing for Trusted Execution Environments</b>
+</span>[<a href="http://www.cs.hku.hk/~heming/papers/micro22-cronus.pdf">pdf</a> | <a href="http://www.cs.hku.hk/~heming/papers/micro22-cronus-slides.pdf">slides</a> | <a href="https://v.youku.com/v_show/id_XNTkwODU2NTEwMA==.html">video</a> | <a href="https://github.com/hku-systems/cronus">code</a>]<br>
+Jianyu Jiang, Qi Ji, Tianxiang Shen, Xusheng Chen, Shixiong Zhao, Sen Wang, Li Chen, Gong Zhang, Xiapu Luo,
+<a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a></span><br><span class="conference">
+Proceedings of the 55th ACM/IEEE International Symposium on Microarchitecture (<b>MICRO '22</b>). <b>ACM results reproduced badge</b>.</span>
+<br></p></li>
+
+
+<li><p><span class="title"><b>ROG: A High Performance and Robust Distributed Training System for Robotic IoT</b>
+</span>[<a href="http://www.cs.hku.hk/~heming/papers/micro22-rog.pdf">pdf</a> | <a href="http://www.cs.hku.hk/~heming/papers/micro22-rog-slides.pdf">slides</a> | <a href="https://v.youku.com/v_show/id_XNTkwODU2NTIyOA==.html">video</a> | <a href="https://github.com/hku-systems/rog">code</a>]<br>
+Xiuxian Guan, Zekai Sun, Shengliang Deng, Xusheng Chen, Shixiong Zhao*, Zongyuan Zhang, Tianyang Duan, Yuexian Wang, Chenshu Wu, Yong Cui, Libo Zhang, Yanjun Wu, Rui Wang, <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a></span><br><span class="conference">
+Proceedings of the 55th ACM/IEEE International Symposium on Microarchitecture (<b>MICRO '22</b>). <b>ACM results reproduced badge</b>.</span>
+<br></p></li>
+
+<li><p><span class="title"><b>A Geography-Based P2P Overlay Network for Fast and Robust Blockchain Systems</b>
+</span>[<a href="https://ieeexplore.ieee.org/document/9826458/">paper</a>]<br>
+Haoran Qiu, Tao Ji, Shixiong Zhao*, Xusheng Chen*, Ji Qi,
+<a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>, Sen Wang
+</span><br><span class="conference">
+IEEE Transactions on Services Computing 2022 (<b>TSC '22</b>)</span>
+<br></p></li>
+
+
+
+<li><p>
+<span class="title"><b>SOTER: Guarding Black-box Inference for General Neural Networks at the Edge
+</b></span>[<a href="https://www.usenix.org/system/files/atc22-shen.pdf">pdf</a> | <a href="https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_shen_tianxiang.pdf">slides</a> | <a href="https://github.com/hku-systems/soter">code</a>]
+                                        <br>
+                                        <span class="author">
+				Tianxiang Shen, 
+				Ji Qi, 
+				Jianyu Jiang*, 
+				Xian Wang, 
+				Siyuan Wen, 
+				Xusheng Chen, 
+				Shixiong Zhao, 
+				Sen Wang, 
+				Li Chen, 
+				Xiapu Luo, 
+				Fengwei Zhang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 2022 USENIX Annual Technical Conference (<b>ATC '22</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe SOTER, a system for enforcing the confidentiality and integrity of a trained DNN model's parameters for inference tasks on end devices by automatically splitting, transforming, recovering a part of the model's neuron layers within and outside a trusted execution environment (e.g., an Intel SGX CPU). SOTER incurs no inference precision loss for an DNN model and incurs only moderate performance overhead compared to the execution time of insecure inference tasks.</div>
+                                </p>
+                        </li>
+
+
+
+
+			<li> 
+				<p>
+					<span class="title"><b>NASPipe: High Performance and Reproducible Pipeline Parallel Supernet Training via Causal Synchronous Parallel</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/asplos22-naspipe.pdf">pdf</a> | 
+<a href="https://www.youtube.com/watch?v=grvD-WmR1Qw">video</a> | 
+<a href="http://github.com/hku-systems/naspipe">code</a>]
+					<br>
+					<span class="author">
+                                                Shixiong Zhao,
+                                                Fanxin Li,
+						Xusheng Chen,
+						Tianxiang Shen,
+						Li Chen
+						Sen Wang,
+						Gong Zhang,
+						Cheng Li,
+						<a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+					</span>
+					<br>
+					<span class="conference">
+						The 2022 Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS '22</b>). <b>ACM results reproduced badge</b>.
+					</span>
+					<br>
+					<div class="description">Describe NASPipe, the first pipeline parallel (PP) training system for training multiple subnets concurrently in NAS (Neural Arch Search) based big AI models. 
+
+</div>
+				</p>
+			</li>
+
+
+
+<!--
+ To deterministically resolve the hazzards on neural operators of subnets being trained concurrently, we present CSP (Causual Sync Parallel), a new parallel training sync method. NASPipe and its CSP method greatly improve the training throughput of NAS based big AI models for about 7X than existing relevant and notable training systems, while reserving deterministic training quality (AI model accuracy) across different training clusters; existing ASP or BSP methods are unable to achieve determinism on the hazards. In short, NASPipe presents a new dimension of paralism for training big AI models: Supernet-Subnet Parallel.
+ -->
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>vPipe: A Virtualized Acceleration System for Achieving Efficient and Scalable Pipeline Parallel DNN Training
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/tpds21-vpipe.pdf">pdf</a> | <a href="http://github.com/hku-systems/vpipe">code</a>]
+                                        <br>
+                                        <span class="author">
+						Shixiong Zhao,
+						Fanxin Li,
+                                                		Xusheng Chen,
+						Xiuxian Guan,
+						Jianyu Jiang,
+                                                		Dong Huang,
+						Yuhao Qing,
+						Sen Wang,
+						Peng Wang,
+						Gong Zhang,
+						Cheng Li,
+						Ping Luo,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						IEEE Transactions on Parallel and Distributed Systems 2021 (<b>TPDS '21</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe vPipe, a general pipepline parallel training system for big AI models (e.g., Transformer, AboebaNet, GPT, and GNMT). vPipe tackles a severe load imbalance problem among the multi-GPU pipeline stages caused by inherent tensors accumulation in former stages, which can greatly downgrade training performance. vPipe's throughput and effective GPU ALU utilization are higher than existing premier pipepline parallel training systems (e.g., GPipe and Pipedream). vPipe is also the first pipeline parallel training system that supports NAS (Neural Arch Search) during the training of a big AI model.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>COORP: Satisfying Low-Latency and High-Throughput Requirements of Wireless Network for Coordinated Robotic Learning
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/iotj22-coorp.pdf">pdf</a> | <a href="http://github.com/hku-systems/coorp">code</a>]
+                                        <br>
+                                        <span class="author">
+						Shengliang Deng,
+						Xiuxian Guan,
+                                                		Zekai Sun,
+						Shixiong Zhao,
+						Tianxiang Shen,
+                                                		Xusheng Chen,
+						Tianyang Duan,
+						Yuexuan Wang,
+						Jia Pan,
+						Yanjun Wu,
+						Libo Zhang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						IEEE Internet of Things Journal 2022 (<b>IOT-J '22</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe Coorp, a wireless and distributed scheduling system for robots which conduct high-throughput distributed online learning as well as low-latency wireless coordinating operations.</div>
+                                </p>
+                        </li>
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Evaluating and Improving Neural Program-Smoothing-based Fuzzing
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/icse22-program-smooth-fuzzing.pdf">pdf</a>]
+                                        <br>
+                                        <span class="author">
+						Mingyuan Wu,
+						Jing Liang,
+                                                		Jiahong Xiang,
+						Yuqun Zhang,
+						Guowei Yang,
+                                                		Huixin Ma,
+						Sen Nie,
+						Shi Wu,
+						Heming Cui,
+						Lingming Zhang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						Proceedings of the 44th International Conference on Software Engineering (<b>ICSE '22</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Evaluate the coverage limitations of existing program smoothing fuzzing techniques and introduce our optimizations on these techniques.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>One Fuzzing Strategy to Rule Them All
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/icse22-fuzzing.pdf">pdf</a>]
+                                        <br>
+                                        <span class="author">
+						Mingyuan Wu,
+						Jing Liang,
+                                                		Jiahong Xiang,
+						Yanwei Huang,
+						Heming Cui,
+						Lingming Zhang,
+						Yuqun Zhang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						Proceedings of the 44th International Conference on Software Engineering (<b>ICSE '22</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">We study the coverage limitations of existing Havoc based techniques; inspired by these findings, we further propose HavocDMA, which models the Havoc mutation strategy as a multi-armed bandit problem to be solved by dynamically adjusting the mutation strategy; HavocDMA improves the coverage of state-of-the-art.</div>
+                                </p>
+                        </li>
+
+
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Achieving Low Tail-latency and High Scalability for Serializable Transactions in Edge Computing
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/eurosys21-dast.pdf">pdf</a> | 
+<a href="https://www.youtube.com/watch?v=aZNJLuFzJQ0">video</a>  | <a href="http://github.com/hku-systems/dast">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Xusheng Chen,
+						Haoze Song,
+						Jianyu Jiang,
+                                                Chaoyi Ruan,
+						Cheng Li,
+						Sen Wang,
+						Gong Zhang,
+						Reynold Cheng,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						Proceedings of the European Conference on Computer Systems 2021 (<b>EuroSys '21</b>). <b>ACM results reproduced badge</b>.
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe DAST (Decentralized Anticipating and STretching), a new geo distributed transaction system for achieving serializable and low-tail latency transactions among many edge computing datacenters and regions (e.g., cities/towns).</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Efficient and DoS-resistant Consensus for Permissioned Blockchains
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/performance21-eges.pdf">pdf</a> | <a href="http://github.com/hku-systems/eges">code</a>]
+                                        <br>
+                                        <span class="author">
+						Xusheng Chen,
+						Shixiong Zhao,
+						Ji Qi,
+						Jianyu Jiang,
+						Haoze Song,
+						Cheng Wang,
+						Tsz On Li,
+						Hubert Chan,
+						Fengwei Zhang,
+						Xiapu Luo,
+						Sen Wang,
+						Gong Zhang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+						Proceedings of the 39th International Symposium on Computer Performance, Modeling, Measurements and Evaluation 2021 (<b>Performance '21</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe Eges, an SGX-powered distriburted consensus protocol for permissioned blockchains. Eges's new <i>stealth consensus committee</i> abstraction can rotate and reach consensus securely, stealthly and efficiently. Among consensus protocols for permissioned blockchains, Eges is the first protocol that can ensure both safety (consistency on confirming blocks) and good performance against tough DOS attacks, including targetting attacks on consensus nodes and network partition attacks.</div>
+                                </p>
+                        </li>
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Securing Big Data Scientific Workflows via Trusted Heterogeneous Environments
+</b></span>[<a href="https://ieeexplore.ieee.org/document/9594452">paper</a>]
+                                        <br>
+                                        <span class="author">
+                                                Saeid Mofrad,
+						Ishtiaq Ahmed,
+                                                Fengwei Zhang,
+						Shiyong Lu,
+						Ping Yang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                IEEE Transactions on Dependable and Secure Computing 2022 (<b>TDSC '22</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe SecDataView, a secure big-data workflow exeuction system that can leverage diverse trusted execution environments on clouds.</div>
+                                </p>
+                        </li>
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>DAENet: Making Strong Anonymity Scale in a Fully Decentralized Network
+</b></span>[<a href="https://ieeexplore.ieee.org/document/9328493">paper</a> | <a href="http://github.com/hku-systems/daenet">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Tianxiang Shen,
+						Jianyu Jiang,
+                                                Yunpeng Jiang,
+						Xusheng Chen,
+						Ji Qi,
+						Shixiong Zhao,
+						Fengwei Zhang*,
+						Xiapu Luo,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                IEEE Transactions on Dependable and Secure Computing 2021 (<b>TDSC '21</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe DAENet, an SGX-powered secure communication system that can provide strong anonymity (e.g., hiding communication endpoints and traffic routes) and ensure reasonable communication efficiency even on packet dropping and DOS attacking scenarios. DAENet's strong anonimity and efficiency are scalable on Internet.</div>
+                                </p>
+                        </li>
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>vSMT-IO: Improving I/O Performance and Efficiency on SMT Processors in Virtualized Clouds
+</b></span>[<a href="https://www.usenix.org/conference/atc20/presentation/jia">link</a>]
+                                        <br>
+                                        <span class="author">
+                                                Weiwei Jia,
+						Jianchen Shan,
+                                                Tsz On Li,
+						Xiaowei Shang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>,
+                                                Xiaoning Ding
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 2020 USENIX Annual Technical Conference (<b>ATC '20</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe vSMT-IO, a virtual machine IO management system that can mitigate the IO contention in SMT (hyper-threading) in modern CPUs and greatly improve IO performance of VMs.</div>
+                                </p>
+                        </li>
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>HAMS: High Availability for Distributed Machine Learning Service Graphs
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/dsn20-hams.pdf">pdf</a> | 
+<a href="https://v.youku.com/v_show/id_XNDczODk4NDIwNA==.html">video</a>  | <a href="http://github.com/hku-systems/hams">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Shixiong Zhao,
+                                                Xusheng Chen,
+						Cheng Wang,
+                                                Fanxin Li,
+                                                Ji Qi,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+                                                Cheng Li,
+                                                Sen Wang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 50th IEEE/IFIP International Conference on Dependable Systems and Networks (<b>DSN '20</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe HAMS, an efficient fault-tolerence system for a distributed deployment graph consisting of machine learning serving models (some are stateful) with little performance overhead. HAMS is the first system that can correctly replicate the nondeterminism caused by GPU threads on running AI serving models.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>UPA: An Automated, Accurate and Efficient Differentially Private Big-data Mining System
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/dsn20-upa.pdf">pdf</a> | 
+<a href="https://v.youku.com/v_show/id_XNDczODk4NTk4NA==.html">video</a> | <a href="http://github.com/hku-systems/upa">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Tzs On Li,
+                                                Jianyu Jiang,
+						Ji Qi,
+                                                Chi Chiu So,
+                                                Jiacheng Ma,
+						Xusheng Chen,
+                                                Tianxiang Shen,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+                                                Yuexuan Wang,
+                                                Peng Wang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 50th IEEE/IFIP International Conference on Dependable Systems and Networks (<b>DSN '20</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe UPA, the first automated, efficient and precise differentially private big-data mining system that can preserve individual privacy while supporting general Spark big-data queries.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Uranus: Simple, Efficient SGX Programming and Its Applications
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/asiaccs20-uranus.pdf">pdf</a> | <a href="http://github.com/hku-systems/uranus">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Jianyu Jiang,
+                                                Xusheng Chen,
+                                                Tzs On Li,
+						Cheng Wang,
+                                                Tianxiang Shen,
+                                                Shixiong Zhao,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+                                                Cho-Li Wang,
+                                                Fengwei Zhang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 15th ACM ASIA Conference on Computer and Communications Security (<b>ASIACCS '20</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe Uranus, the first SGX-compatible and Spark-compatible secure big-data computing system that can practically support typical big-data datasets with our  new big-data aware Java memory reuse protocols.</div>
+                                </p>
+                        </li>
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Fulva: Efficient Live Migration for In-memory Key-Value Stores with Zero Downtime
+</b></span>[<a href="http://www.cs.hku.hk/~heming/papers/srds19-fulva.pdf">pdf</a>]
+                                        <br>
+                                        <span class="author">
+                                                Jiewen Hai,
+                                                Cheng Wang,
+                                                Xusheng Chen,
+                                                Tsz On Li,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 38th International Symposium on Reliable Distributed Systems (<b>SRDS '19</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe Fulva, an in-memory key-value store migration system that can almost pertain the store's normal-case performance with no downtime during migration.</div>
+                                </p>
+                        </li>
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>NFVactor: A Resilient NFV System using the Distributed Actor Model</b></span>
+[<a href="https://ieeexplore.ieee.org/document/8633371">pdf</a>]
+                                        <br>
+                                        <span class="author">
+                                                Jingpu Duan,
+                                                Xiaodong Yi,
+                                                Shixiong Zhao,
+                                                Chuan Wu,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>,
+                                                Franck Le
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                IEEE Journal on Selected Areas in Communications (<b>JSAC</b>) 2019
+                                        </span>
+                                        <br>
+                                        <div class="description">Describe NFVactor, an actor-based system for efficiently and reliably deploying NFV service chains.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Effectively Mitigating I/O Inactivity in vCPU Scheduling</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/atc18-vmigrator.pdf">pdf</a> | 
+<a href="http://github.com/hku-systems/vMigrater">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Weiwei Jia,
+						Cheng Wang,
+						Xusheng Chen,
+						Jianchen Shan,
+						Xiaowei Shang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+						Xiaoning Ding, 
+						Luwei Cheng, 
+						F.C.M. Lau,
+						Yuexuan Wang,
+						Yuangang Wang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 2018 USENIX Annual Technical Conference (<b>ATC '18</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes vMigrator, a lightweight, easy to use tool that can effectively mitigate I/O inactivity in vCPU scheduling, greatly improving I/O performance in VMs.
+                                </p>
+                        </li>
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>PLOVER: Fast, Multi-core Scalable Virtual Machine Fault-tolerance</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/nsdi18-plover.pdf">pdf</a> |
+<a href="https://www.youtube.com/watch?v=vK9AHAodLD4">video</a> |
+ <a href="http://github.com/hku-systems/plover">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Cheng Wang,
+                                                Xusheng Chen,
+                                                Weiwei Jia,
+                                                Haoran Qiu,
+						Boxuan Li,
+						Shixiong Zhao,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 15th USENIX Symposium on Networked Systems Design and Implementation 2018 (<b>NSDI '18</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes PLOVER, a multi-core scalable VM fault-tolerance system built on the Virtualized State Machine Replication (VSMR) concept.
+                                </p>
+                        </li>
+
+
+
+		 	<li>
+                                <p>
+                                        <span class="title"><b>OWL: Understanding and Detecting Concurrency Attacks</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/dsn18-owl.pdf">pdf</a> | <a href="http://github.com/hku-systems/owl">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Shixiong Zhao,
+                                                Rui Gu,
+                                                Haoran Qiu,
+						Tsz On Li,
+                                                Yuexuan Wang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+						Junfeng Yang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of The 48th IEEE/IFIP International Conference on Dependable Systems and Networks 2018 (<b>DSN '18</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes OWL, the first tool for detecting multi-threading concurrency attacks in general software (e.g., Linux kernels).
+                                </p>
+                        </li>
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>How Local Information Improves Rendezvous in Cognitive Radio Networks</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/secon18-yongqin.pdf">pdf</a>]
+                                        <br>
+                                        <span class="author">
+                                                Yongqin Fu,
+                                                Yuexuan Wang,
+                                                Zhaoquan Gu,
+                                                Xiaolin Zheng,
+                                                Tianhao Wei,
+                                                Zhen Cao,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>,
+						F.C.M. Lau
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the IEEE International Conference on Sensing, Communication and Networking 2018 (<b>SECON '18</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes optimized rendezvous algorithms for CRN.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>APUS: Fast and Scalable PAXOS on RDMA</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/socc17-apus.pdf">pdf</a> |
+<a href="https://v.youku.com/v_show/id_XMzA1MzQyOTk0NA">video</a> |
+ <a href="http://github.com/hku-systems/apus">code</a>]
+                                        <br>
+                                        <span class="author">
+                                                Cheng Wang,
+                                                Jianyu Jiang,
+                                                Xusheng Chen,
+                                                Ning Yi,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the ACM Symposium on Cloud Computing (<b>SOCC '17</b>), 2017
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes APUS, a fast Paxos protocol and its runtime system using fast RDMA features.</div>
+                                </p>
+                        </li>
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Kakute: A Precise, Unified Information Flow Analysis System for Big-data Security</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/acsac17-kakute.pdf">pdf</a> |
+<a href="https://www.youtube.com/watch?v=AXP-2rUKSVg">video</a> |
+ <a href="http://github.com/hku-systems/kakute">code</a>]
+                                        <br>
+                                        <span class="author">
+						Jianyu Jiang,
+                                                Shixiong Zhao,
+                                                Danish Alsayed,
+                                                Yuexuan Wang,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui*</b></a>,
+                                                Feng Liang,
+                                                Zhaoquan Gu
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the Annual Computer Security Applications Conference (<b>ACSAC '17</b>), 2017. <b>Best paper award!</b>
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes Kakute, an information flow tracking system for preventing various big-data security issues (data leakage in user-defined-functions) without reporting false positives.</div> 
+                                </p>
+                        </li>
+
+
+
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Confluence: Speeding Up Iterative Distributed Operations by Key-dependency-aware Partitioning</b></span>
+                                        <br>
+                                        <span class="author">
+                                                Feng Liang,
+                                                F.C.M. Lau,
+                                                <a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>,
+						C.L. Wang
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                IEEE Transactions on Parallel and Distributed Systems 2017 (<b>TPDS '17</b>)
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes Confluence, a system that can greatly reduce shuffle traffic and improve performance in big-data flatforms using a novel key-dependency-aware partitioning scheme.
+                                </p>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+			<li> 
+				<p>
+					<span class="title"><b>Paxos Made Transparent</b></span>
+[<a href="http://www.cs.hku.hk/~heming/papers/crane-sosp15.pdf">pdf</a> | <a href="http://github.com/columbia/crane">code</a>]
+					<br>
+					<span class="author">
+						<a href="http://i.cs.hku.hk/%7Eheming"><b>Heming Cui</b></a>,
+                                                Rui Gu,
+                                                Cheng Liu,
+						Tianyu Chen,
+						<a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of the 25th ACM Symposium on Operating Systems Principles (<b>SOSP '15</b>), 2015
+					</span>
+					<br>
+					<div class="description">Describes RepBox, a state machine replication system that can transparently replicate general multithreaded programs without intervention from the developers.</div>
+				</p>
+			</li>
+
+
+                        <li>
+                                <p>
+                                        <span class="title"><b>Parrot: a Practical Runtime for Deterministic, Stable, and Reliable Threads</b></span>
+
+                                        [<a href="http://www.cs.columbia.edu/~junfeng/papers/parrot-sosp13.pdf">pdf</a> |
+					<a href="http://www.cs.columbia.edu/~heming/files/sosp13/cui-parrot-sosp13.pptx">slides</a> |
+					<a href="http://dl.acm.org/ft_gateway.cfm?id=2522735&ftid=1418248&dwn=1">video</a> |
+                                        <a href="https://github.com/columbia/smt-mc">code</a>]
+
+                                        <br>
+                                        <span class="author">
+                                                <a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+                                                <a href="http://www.cs.cmu.edu/~jsimsa/">Jiri Simsa</a>,
+                                                Yi-Hong Lin,
+                                                Hao Li,
+                                                <a href="http://bblum.net/">Ben Blum</a>,
+                                                Xinan Xu,
+                                                <a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>,
+                                                <a href="http://www.cs.cmu.edu/~garth/">Garth Gibson</a>,
+                                                <a href="http://www.cs.cmu.edu/~bryant/">Randal E. Bryant</a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Proceedings of the 24th ACM Symposium on Operating Systems Principles (<b>SOSP '13</b>), 2013
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes PARROT, a simple and deployable system for making threads deterministic and stable.
+						PARROT is easy to use, fast, scalable, and it improves the state-space coverage of a state-of-the-art
+						model checker, DBUG, by many orders of magnitude.
+						Together with the code, we also released a benchmark suite with 100+ multithreaded programs,
+						and PARROT's complete results on these programs.</div>
+                                </p>
+                        </li>
+
+
+
+			<li>
+                        <p>
+                                        <span class="title"><b>Determinism Is Not Enough: Making Parallel Programs Reliable with Stable Multithreading</b></span>
+                                        <br>
+                                        <span class="author">
+                                                <a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>,
+                                                <a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+                                                <a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+                                                <a href="http://www.ytang.net/">Yang Tang</a>,
+                                                Gang Hu
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                <b>Communications of the ACM (2014)</b>
+                                        </span>
+                                        <br>
+                                        <div class="description">Describes our vision of stable multithreading, a radically new approach
+                                        	to making multithreading reliable, and summarizes our last five years of work on designing,
+						building, and applying stable multithreading systems.</div>
+                                </p>
+                        </li>
+
+
+
+
+
+
+			<li>
+                                <p>
+                                        <span class="title"><b>Verifying Systems Rules Using Rule-Directed Symbolic Execution</b></span>
+                                        [<a href="http://www.cs.columbia.edu/~junfeng/papers/woodpecker-asplos13.pdf">pdf</a> |
+					<a href="http://www.cs.columbia.edu/~heming/files/asplos13/cui-woodpecker-asplos13.pptx">slides</a>]
+
+
+                                        <br>
+                                        <span class="author">
+						<a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+						Gang Hu,
+                                                <a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+                                                <a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+                                        </span>
+                                        <br>
+                                        <span class="conference">
+                                                Eighteenth International Conference on Architecture Support for Programming Languages and Operating Systems (<b>ASPLOS '13</b>), 2013
+                                        </span>
+					<br>
+					<div class="description">Describes WOODPECKER, a system that leverages path slicing to speed up symbolic execution. It enables users to check systems rules, and avoids checking program paths irrelevant to the rule, drastically reducing the amount of redundant work.</div>
+                                </p>
+                        </li>
+
+
+
+			<li>
+				<p>
+					<span class="title"><b>Sound and Precise Analysis of Parallel Programs through Schedule Specialization</b></span>
+					[<a href="http://www.cs.columbia.edu/~junfeng/papers/wu-pldi12.pdf">pdf</a>]
+
+					
+					<br>
+					<span class="author">
+						<a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+						<a href="http://www.ytang.net/">Yang Tang</a>,
+						Gang Hu,
+						<a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+						<a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of the 33rd ACM SIGPLAN Conference on Programming Language Design and Implementation (<b>PLDI '12</b>), 2012
+					</span>
+					<br>
+					<div class="description">Describes a program analysis framework for analyzing multithreaded programs with high precision. The key idea is to statically analyze a multithreaded program toward only a small set of schedules to improve precision, then enforce these schedules at runtime for soundness.</div>
+				</p>
+			</li>
+
+
+
+			<li>
+				<p>
+					<span class="title"><b>Efficient Deterministic Multithreading through Schedule Relaxation</b></span>
+					[<a href="http://www.cs.columbia.edu/~junfeng/papers/peregrine-sosp11.pdf">pdf</a> |
+						<a href="http://www.cs.columbia.edu/~heming/files/sosp11/cui-peregrine-sosp11.pptx">slides</a>]
+
+					
+					<br>
+					<span class="author">
+						<a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+						<a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+						<a href="http://www.cs.columbia.edu/%7Ejmg">John Gallagher</a>,
+						Huayang Guo,
+						<a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of 23rd ACM Symposium on Operating Systems Principles (<b>SOSP '11</b>), 2011
+					</span>
+					<br>
+					<div class="description">Describes PEREGRINE, a system for efficiently making threads deterministic, addressing a key open challenge within the field of deterministic execution.</div>
+				</p> 
+			</li>
+
+			<li>
+				<p>
+					<span class="title"><b>Stable Deterministic Multithreading through Schedule Memoization</b></span>
+					[<a href="http://www.cs.columbia.edu/~junfeng/papers/wu-loom-osdi10.pdf">pdf</a> | <a href="http://www.cs.columbia.edu/~heming/files/osdi10/cui-tern-osdi10.pptx">slides</a>]
+					
+					<br>
+					<span class="author">
+						<a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+						<a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+						Chia-che Tsai,
+						<a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of the Ninth Symposium on Operating Systems Design and Implementation (<b>OSDI '10</b>), 2010
+					</span>
+					<br>
+					<div class="description">Describes TERN, a system for making threads more deterministic and stable. The key idea is to memoize past schedules and reuse them when possible, much like the natural tendencies in animals and humans to repeat familiar routes to avoid possible hazards along unknown routes.</div>
+				</p> 
+			</li>
+
+			<li> 
+				<p>
+					<span class="title"><b>Bypassing Races in Live Applications with Execution Filters</b></span>
+					[<a href="http://www.cs.columbia.edu/~junfeng/papers/wu-loom-osdi10.pdf">pdf</a>]
+					<br>
+					<span class="author">
+						<a href="http://www.cs.columbia.edu/%7Ejingyue">Jingyue Wu</a>,
+						<a href="http://www.cs.columbia.edu/%7Eheming"><b>Heming Cui</b></a>,
+						<a href="http://www.cs.columbia.edu/%7Ejunfeng">Junfeng Yang</a>
+					</span>
+					<br>
+					<span class="conference">
+						Proceedings of the Ninth Symposium on Operating Systems Design and Implementation (<b>OSDI '10</b>), 2010
+					</span>
+					<br>
+					<div class="description">Describes LOOM, a live-workaround system for fixing races in live applications. LOOM is safe (live-update will not introduce new errors), fast (negligible overhead for most benchmarks), and flexible (able to fix all bugs evaluated). </div>
+				</p>
+			</li>
+	</ul>
+<BR>
+<BR>
+
+
+
+
+<A  id=lab name=lab></A>
+<H3>Members in My HKU Systems Software Lab</H3>
+<IMG alt="Lab logo"  width="200" height="70"      src="files/lab-logo.jpg"> <BR><BR>
+<a href="http://www.cs.hku.hk/%7Eheming/files/group-photo.jpeg">Group photo</a><BR><BR>
+
+<a href="http://i.cs.hku.hk/%7Eamywang/">Prof. Yuexuan Wang</a> (Professor in Zhejiang University, visiting scholar)<BR>
+<a href="https://shengliangd.github.io/about/">Shengliang Deng</a> (PhD student)<BR>
+Tianyang Duan (MPhil student)<BR>
+Yichao Fu (PhD student)<BR>
+Ruijie Gong (PhD student)<BR>
+Rongxin Guan (MPhil  student)<BR>
+<a href="https://guanxiux.github.io/selfie">Xiuxian Guan</a> (PhD student)<BR>
+Dong Huang (PhD student)<BR>
+<a href="http://i.cs.hku.hk/%7Ejyjiang/">Jianyu Jiang</a> (PhD student)<BR>
+<a href="http://i.cs.hku.hk/%7Efxli/">Fanxin Li</a> (PhD student)<BR>
+<a href="https://lililqth.github.io/">Ji Qi</a> (PhD student)<BR>
+Yuhao Qing (PhD student)<BR>
+Mingde Ren (PhD student)<BR>
+<a href="https://tianxiang999.github.io/">Tianxiang Shen</a> (PhD student)<BR>
+<a href="https://haozesong.github.io/">Haoze Song</a> (PhD student)<BR>
+<a href="https://sunzekai-cn.github.io/aboutme/">Zekai Sun</a> (PhD student)<BR>
+Junming Wang (MPhil student)<BR>
+<a href="https://x1anwang.github.io/">Xian Wang</a> (PhD student)<BR>
+Siyuan Wen (MPhil student)<BR>
+<a href="https://shadowmydx.github.io/">Mingyuan Wu</a> (PhD student)<BR>
+Bocheng Xiao (PhD student)<BR>
+Zongyuan Zhang (MPhil student)<BR>
+<a href="http://i.cs.hku.hk/%7Esxzhao/">Shixiong Zhao</a> (PhD student)<BR>
+<BR>
+<BR>
+
+<BR>
+<A  id=admit name=admit></A>
+<H3>Alumni</H3>
+<a href="http://i.cs.hku.hk/%7Exschen/">Xusheng Chen</a> (PhD student, graduated, joined Huawei via the <a href="https://career.huawei.com/reccampportal/portal5/topminds.html">Top Minds</a> program)<BR>
+<a href="https://litszon.github.io/">Tsz On Li</a> (MPhil student, graduated)<BR>
+<a href="http://i.cs.hku.hk/%7Ecwang2/">Cheng Wang</a> (PhD student, graduated, joined Huawei)<BR>
+<BR>
+<BR>
+
+
+
+
+<BR>
+<A  id=admit name=admit></A>
+<H3>Admitting New Students</H3>
+
+
+<A  href="tbd">My academic talk about building supporting systems for securing big-data and AI computing on public clouds in Huawei Strategy and Technology Workshop (STW), Sep 2022
+</A><BR>
+
+
+<!-- template -->
+<!-- 
+
+<A  href="tbd">My academic talk about building multi-dimentional parallel training systems for big AI models in Huawei InnovWave, May 2021
+</A><BR>
+with -->
+
+<A  href="https://lsds.doc.ic.ac.uk/content/building-four-dimensional-parallel-training-systems-large-ai-models">My academic talk about building multi-dimentional parallel training systems for big AI models in Imperial College London, May 2021
+</A><BR>
+
+<A  href="https://v.youku.com/v_show/id_XNTgzMDM3NzE0NA==.html">My keynote speech on building multi-dimentional parallel training systems for big AI models in the OS2ATC conference, December 2021
+</A><BR>
+<A  href="https://v.youku.com/v_show/id_XNTA4NjAxNDEyOA==.html">My academic talk for CS undergraduate students in USTC, China, January 2021
+</A>
+<BR>
+<BR>
+
+
+<BR>
+<A  id=misc name=misc></A>
+<H3>Misc</H3>
+<A  href="http://www.cs.hku.hk/~heming/misc/methods.html">Methods of doing systems research and writing papers
+</A>
+<BR>
+<BR>
+
+
+
+</body>
+</html>

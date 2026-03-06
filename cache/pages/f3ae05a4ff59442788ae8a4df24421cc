@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- start barzan -->
+<!-- *
+<style type="text/css">
+
+/*Example CSS for the two demo scrollers*/
+#pscroller2{
+//width: 350px;
+height: 40px;
+border: none; //1px solid black;
+padding: 3px;
+}
+
+#pscroller2 a{
+text-decoration: none;
+}
+
+.someclass{ //class to apply to your scroller(s) if desired
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+pausecontent[0]='<a href="http://www.javascriptkit.com">JavaScript Kit</a><br />Comprehensive JavaScript tutorials and over 400+ free scripts!'
+pausecontent[1]='<a href="http://www.codingforums.com">Coding Forums</a><br />Web coding and development forums.'
+pausecontent[2]='<a href="http://www.cssdrive.com" target="_new">CSS Drive</a><br />Categorized CSS gallery and examples.'
+
+var newsItems=new Array()
+newsItems[0]='<b>Wall Street Journal:</b> <a href="http://blogs.wsj.com/cio/2013/03/15/mit-researchers-pushing-for-a-better-run-cloud/" target="_blank">MIT Researchers Pushing for a Better-Run Cloud</a>'
+newsItems[1]='<b>MIT News:</b> <a href="http://web.mit.edu/newsoffice/2013/making-cloud-computing-more-efficient-0312.html" target="_blank">Making cloud computing more efficient</a>'
+newsItems[2]='<b>The Register:</b> <a href="http://www.theregister.co.uk/2013/03/14/dbseer_cracks_database_modelling_problem/"  target="_blank">Software seer shows companies path to cheaper databases</a>'
+newsItems[3]='<b>O\'REILLY Strata:</b> <a href="http://strata.oreilly.com/2013/08/interactive-big-data-analysis-using-approximate-answers.html" target="_blank">Interactive Big Data analysis using approximate answers</a>'
+newsItems[4]='<b>Forbes:</b> <a href="http://www.forbes.com/sites/oreillymedia/2013/11/06/simplifying-interactive-realtime-and-advanced-analytics/" target="_blank">Simplifying Interactive, Real-Time And Advanced Analytics</a>'
+newsItems[5]='<b>Telruptive:</b> <a href="http://telruptive.com/2013/04/06/a-big-data-base-that-is-fast-but-inaccurate-blinkdb/" target="_blank">A Big Data-Base that is fast but inaccurate: BlinkDB</a>'
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- Â© Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+-->
+<!-- end --> 
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Barzan MozafariâÂ·âU of Michigan . Big Data . Cloud Computing . Database Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barzan Mozafari is an Associate Professor of Computer Science and Engineering at the University of Michigan. He studies databases, distributed systems, and large-scale data-intensive systems.">
+    
+    <!-- to see or edit this font collection, go to http://www.google.com/webfonts#UsePlace:use/Collection:Lato|Open+Sans:300italic,400italic,400,300,700 -->
+    <link href="style_files/css.css" rel="stylesheet" type="text/css">
+    <link href="style_files/bootstrap.css" rel="stylesheet">
+    <link href="style_files/bootstrap-responsive.css" rel="stylesheet">
+    <link href="style_files/msb.css" rel="stylesheet">    
+    
+    <!-- javascript includes are at the bottom of the document -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>  
+  
+<body>
+    <div id="msbnav" class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="http://web.eecs.umich.edu/~mozafari/">Barzan Mozafari</a><span class="brand" style="padding-left: 0px; padding-right: 0px;">&nbsp;&middot;&nbsp;</span><a class="brand" href="http://umich.edu/">University Of Michigan</a><span class="brand" style="padding-left: 0px; padding-right: 0px;">&nbsp;&middot;&nbsp;</span><a class="brand" href="http://www.eecs.umich.edu/db/">Database Systems</a>
+ 
+            </div>
+        </div>
+    </div>        
+    
+    <div class="container">            
+        <div class="row">             
+            <div class="span9">
+                <div class="row">
+                    <div class="span2">
+                       <img src="pics/IMG_0291.JPG" class="img-rounded" style="margin-bottom: 10px;">
+                    </div> <!-- /span2 -->
+                    <div class="span7">
+                        <p class="lead">
+I build data-intensive systems that are more scalable, more robust, and more predictable.
+I draw from advanced statistical models to deliver practical database solutions to real-world problems.
+In particular, I adapt concepts and tools from applied statistics, optimization theory, and machine learning.
+</p>
+                    </div> <!-- /span7 -->
+                </div> <!-- row -->
+                <div style="margin-top: 15px;">
+<p>Barzan Mozafari is an Associate Professor of Computer Science and Engineering at the University of Michigan, Ann Arbor, where he leads a research group designing the next generation of scalable databases using advanced statistical models. Prior to that, he was a Postdoctoral Associate at MIT. He earned his Ph.D. in Computer Science from UCLA in 2011. His research career has led to several open-source projects, 
+including <a href="http://blinkdb.org">BlinkDB</a> (the first massively parallel approximate query engine),
+<a href="http://dbseer.org">DBSeer</a> (the first automated database diagnosis tool), and 
+<a href="http://verdictdb.org">VerdictDB</a> (the first platform-independent approximate query engine). 
+He helped commercialize the ideas introduced by BlinkDB, as part of <a href="https://web.eecs.umich.edu/~mozafari/php/data/uploads/cidr_2017.pdf">SnappyData</a>, a company that was later acquired by TIBCO.
+He has won the National Science Foundation CAREER award, as well as several best paper awards in ACM SIGMOD and EuroSys. 
+</p>
+                </div>
+<!-- barzan -->
+<h1>
+about &nbsp;&nbsp;&nbsp;
+<a class="nav" href="php/projects.php">projects</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav" href="php/publications.php">publications</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav" href="files/mozafari-cv.pdf">vita</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <a class="nav" href="bio.php">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;  -->
+<a class="nav" href="php/people.php">students</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav" href="php/press.php">press coverage</a> &nbsp;&nbsp;&nbsp;
+</h1>
+
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="padding-right: 25px;" valign="top" width="50%">
+	
+  <!--
+	<div class="entry">
+ 	DATA PLACE HOLDER
+  </div>
+	--!>
+	<h6>exciting news</h6>
+  
+  <div class="entry">
+	<a href="https://keebo.ai"><img src="pics/keebo-Logo.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>I have co-founded <a href="https://keebo.ai">Keebo</a>!</strong>
+Keebo is a turn-key <a href="https://keebo.ai/data-learning/">Data Learning</a> technology, which automates and accelerates enterprise analytics. You can learn more <a href="https://keebo.ai/why-keebo/">here</a>.
+	</div></div>
+
+  <div class="entry">
+	<a href="http://snappydata.io"><img src="pics/snappy.jpg" border="0" width="125px"></a>
+	<div class="main">
+<strong>SnappyData acquired by TIBCO!</strong>
+As of March 2019, SnappyData is officially part of 
+<a href="https://www.tibco.com/press-releases/2019/tibco-announces-acquisition-high-performance-memory-data-platform-snappydata">TIBCO Software Inc.</a>
+Here's <a href="http://web.eecs.umich.edu/~mozafari/php/data/uploads/cidr_2017.pdf">the vision paper</a> we wrote two years ago at CIDR 2017!
+	</div></div>
+ 
+<div class="entry">
+	<a href="http://dbgroup.eecs.umich.edu/acaia/" target="_blank"><img src="pics/acaia-logo.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>I am organizing the first <a href="http://dbgroup.eecs.umich.edu/acaia/" target="_blank">ACAIA workshop</a>, a workshop on
+Approximate Computing for Affordable and Interactive Analytics.</strong>
+<a href="http://dbgroup.eecs.umich.edu/acaia/" target="_blank">ACAIA 2017</a> aims to bridge the gap between academia and industry by discussing the latest advances in 
+approximate computing. You can register <a href="http://dbgroup.eecs.umich.edu/acaia/3participation/" target="_blank">here</a>.
+	</div></div>
+ 
+  <div class="entry">
+	<a href="https://sigmod.org/sigmod-awards/citations/2018-sigmod-jim-gray-doctoral-dissertation-award"><img src="cep/pics/sigmod.jpg" border="0" width="125px"></a>
+	<div class="main">
+<strong>SIGMOD Jim Gray Dissertation Award Runner-up:</strong> 
+My student (co-advised by Micheal Cafarella), <a href="http://yongjoopark.com/">Yongjoo Park</a> is the runner-up winner of this year's <a href="https://sigmod.org/sigmod-awards/citations/2018-sigmod-jim-gray-doctoral-dissertation-award/">SIGMOD Jim Gray Dissertation Award</a>
+for his work on "Fast Data Analytics by Learning". Congratulations to Yongjoo!
+	</div></div> 
+
+  <div class="entry">
+	<a href="http://mysql.org"><img src="pics/mysql.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>MySQL, the most popular DB in the world, adopts our CATS algorithm as its the default scheduling strategy!</strong>
+Our scheduling algorithm, known as <a href="php/data/uploads/pvldb_2018_sched.pdf">Contention-Aware Transaction Scheduling (CATS)</a>, is now the default policy in Oracle MySQL too! 
+With this adoption, over 2M+ servers in the world are running CATS! 
+Congratulations to my students, <a href="php/data/uploads/sigmod_2017_predictability.pdf">Jiamin Huang</a> and <a href="php/data/uploads/pvldb_2018_sched.pdf">Boyu Tian</a>, for developing these algorithms!
+Read our papers in <a href="php/data/uploads/sigmod_2017_predictability.pdf">SIGMOD 2017</a>, <a href="php/data/uploads/eurosys_2017.pdf">EuroSys 2017</a> and  
+<a href="php/data/uploads/pvldb_2018_sched.pdf">VLDB 2018</a>. 
+	</div></div>
+ 
+
+  <div class="entry">
+	<a href="https://github.com/MariaDB/server/pull/248"><img src="pics/mariadb.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Our VATS algorithm is now the default scheduling strategy in MariaDB!</strong>
+Starting MariaDB 10.2.3+, the default scheduling algorithm is <a href="https://github.com/MariaDB/server/pull/248">Variance-Aware Transaction Scheduling (VATS)</a>, 
+	an algorithm developed by my brilliant student Jiamin Huang and <a href="php/data/uploads/sigmod_2017_predictability.pdf">published in ACM SIGMOD 2017</a>. 
+	</div></div>
+ 
+  <div class="entry">
+	<a href="http://www.eecs.umich.edu/eecs/about/articles/2017/Mozafari-Wellman-Professor.html"><img src="pics/umich.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Morris Wellman Faculty Development Assistant Professorship</strong>
+Humbled and honored to be named 
+<a href="http://www.eecs.umich.edu/eecs/about/articles/2017/Mozafari-Wellman-Professor.html">Morris Wellman Faculty Development Assistant Professor</a>. Many thanks to Wellman family for their generosity.
+	</div></div> 
+
+  <div class="entry">
+	<a href="http://snappydata.io"><img src="pics/snappy.jpg" border="0" width="125px"></a>
+	<div class="main">
+<strong>SnappyData v0.1 open sourced and available for Download!</strong>
+<a href="http://snappydata.io">SnappyData</a> is a commercialization of approximate query processing, providing an integrated 
+framework for interactive analytics, transactions and stream processing. <a href="http://disq.us/95rqgr">Check out our release!</a>
+	</div></div> 
+  
+  <div class="entry">
+	<a href="php/projects.php#Conflux"><img src="pics/nsf.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>$3.46M to combine supercomputer simulations with big data:</strong> 
+<a href="http://www.engin.umich.edu/college/about/news/stories/2015/september/supercomputer-simulations-with-big-data">NSF and University of Michigan</a> have jointly sponsored our <a href="php/projects.php#Conflux">ConFlux</a> project: a massively parallel system for solving open problems in computational physics using large-scale machine learning!
+	</div></div> 
+
+  <div class="entry">
+	<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1553169"><img src="pics/nsf.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>CAREER Award: Designing a Predictable Database - An Overlooked Virtue</strong> 
+Database research has mostly focused on improving the raw performance of database systems, while neglecting the predictability of their performance.
+NSF has funded us to
+rethink this traditional architecture, and build a new class of databases that guarantee predictability.
+	</div></div> 
+
+
+  <div class="entry">
+	<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1544844"><img src="pics/nsf.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Vehicle-aware data management for autonomous cars</strong>
+Testing autonomous vehicles is an extremely involved task, as an enormous amount of data is constantly collected and processed by thousands of sensors.
+NSF has funded us to design a <strong>smart black-box for cars</strong> that can use effective data collection strategies for maximizing the likelihood of finding various types of faults!
+	</div></div> 
+
+  <div class="entry">
+	<a href="http://bigdatasummerinst.sph.umich.edu/"><img src="pics/nih.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Big Data Summer Institute in Bio-statistics</strong>
+Funded by National Institutes of Health, we have launched our Big Data Summer Institute, where you can learn about Big Data, statistics and bio-informatics while getting paid!
+All details and how to apply, can be found <a href="http://bigdatasummerinst.sph.umich.edu/">here</a> (do NOT email me about this)! 
+	</div></div> 
+
+  <div class="entry">
+	<a href="php/publications.php#2014"><img src="cep/pics/sigmod.jpg" border="0" width="125px"></a>
+	<div class="main">
+<strong>SIGMOD's Best Demo Award:</strong> 
+Our <a href="papers/sigmod_2014_demo.pdf">ABS system</a> won this year's best demo award at SIGMOD! 
+We also had <a href="php/publications.php#2014">a number of papers</a> on Approximate Query Processing at this year's SIGMOD (2014). 
+	</div></div> 
+
+  <div class="entry">
+	<!-- <a href="opening.html"><img src="pics/news.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Openings in My Research Group:</strong> 
+I am looking for strong PhD students and postdocs! See the details <a href="opening.html">here</a>.
+	</div></div> -->
+  
+	<div class="entry">
+	<a href="http://eurosys2013.tudos.org/"><img src="pics/eurosys.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Best Paper Award:</strong> Our BlinkDB <a href="papers/eurosys_2013.pdf">paper</a> won EuroSys 2013's Best Paper Award!
+	</div></div>
+
+	<!--
+	<div class="entry">
+	<a href="http://www.teradata.com"><img src="pics/teradata.png" border="0" width="125px"></a>
+	<div class="main">
+<strong><a href="http://www.teradata.com">Teradata</a> is adopting <a href="http://dbseer.org/">DBSeer</a>!</strong>
+We're working with Teradata (a leading provider of enterprise analytic technologies) to consider  porting DBSeer into their framework with the goal of automating their workload management mechanisms.
+	</div></div> -->
+
+
+  <div class="entry">
+	<a href="cep/cep.html#news"><img src="cep/pics/sigmod.jpg" border="0" width="125px"></a>
+	<div class="main">
+<strong>Best Paper Award:</strong> 
+Our <a href="cep/cep.html#publications">paper</a> won SIGMOD 2012's Best Paper Award!
+	</div></div> 
+	
+  <!-- <div class="entry">
+	<a href="news.html#address"><img src="pics/news.png" border="0" width="125px"></a>
+	<div class="main">
+<strong>Title:</strong> 
+TEXT
+	</div></div> -->
+	
+</td><td valign="top" width="50%">
+
+	<h6>selected projects</h6>
+
+	<div class="entry"> <a href="https://www.youtube.com/watch?v=dxP4HtgfLG0"><img src="http://web.eecs.umich.edu/~mozafari/pics/verdict.jpg" width="125px"></a>
+	<div class="main">
+	<strong><a href="http://verdictdb.org/">VerdictDB</a></strong><br>
+	Approximation for All.<br>
+	<div class="links">
+	Video: <a href="https://www.youtube.com/watch?v=dxP4HtgfLG0">Watch a live demo</a><br/>
+	Software: <a href="http://verdictdb.org/">Download VerdictDB for Amazon Redshift, Apache Hive, Apache Spark, and Impala</a><br>
+	Papers:
+	<a href="papers/sigmod_2017.pdf" title="Database Learning: Toward a Database that Becomes Smarter Every Time">SIGMOD'17</a>,
+	<br>
+  Press:
+	<a href="https://t.co/mmdRHtt02R" target="_blank">UM News</a>,
+	</div></div></div>
+
+	<div style="margin: 0; padding: 0; height: 5px; overflow: hidden;">&nbsp;</div>
+	<div class="entry"> <a href="http://dbseer.org/"><img src="http://web.eecs.umich.edu/~mozafari/pics/dbseer.png" width="125px"></a>
+	<div class="main">
+	<strong><a href="http://dbseer.org/">DBSeer: Self-Driving Databases</a></strong><br>
+	automatic resource provisioning, automatic performance diagnosis, and automatic physical design. <br>
+	<div class="links">
+	Video: <a href="http://dbseer.org/video">Watch a live demo</a><br/>
+	Software: <a href="https://github.com/barzan/dbseer">DBSeer for MySQL &amp; PostgreSQL</a><br>
+	Papers:
+	<a href="papers/cidr_2013.pdf" title="Barzan Mozafari, Carlo Curino, Samuel Madden, âDBSeer: Resource and Performance Prediction for Building a Next Generation Database Cloudâ, In proceedings of CIDR">CIDR'13</a>,
+	<a href="papers/sigmod_2013.pdf" title="Barzan Mozafari, Carlo Curino, Alekh Jindal, Samuel Madden, âPerformance and
+Resource Modeling in Highly-Concurrent OLTP Workloadsâ, In proceedings of SIGMOD, 2013.">SIGMOD'13</a>, <a href="php/data/uploads/vldb_2015_demo.pdf">PVLDB'15 (demo)</a>
+	<br>
+  Press:
+	<a href="http://blogs.wsj.com/cio/2013/03/15/mit-researchers-pushing-for-a-better-run-cloud/" target="_blank">Wall Street Journal (CIO)</a>,
+  <a href="http://web.mit.edu/newsoffice/2013/making-cloud-computing-more-efficient-0312.html" target="_blank">MIT News</a>,
+  <a href="http://www.theregister.co.uk/2013/03/14/dbseer_cracks_database_modelling_problem/" target="_blank">The Register</a>,
+  <a href="http://www.rdmag.com/news/2013/03/making-cloud-computing-more-efficient" target="_blank">R&amp;D Magazine</a>,
+  <a href="dbseer/dbseer.html#press">...</a>
+	</div></div></div>
+
+	<div style="margin: 0; padding: 0; height: 5px; overflow: hidden;">&nbsp;</div>
+
+	<div class="entry"> <a href="http://blinkdb.org"><img src="http://web.eecs.umich.edu/~mozafari/pics/blinkdb.png" width="125px"></a>
+	<div class="main">
+	<strong><a href="http://blinkdb.org">BlinkDB</a></strong><br>
+        Delivering sub-second latency when querying terabytes and petabytes of data.<br>
+	<div class="links">
+	Software: <a href="http://blinkdb.org/#Download">BlinkDB (for Hive/Shark)</a><br>
+	Papers:
+	<a href="papers/pvldb_2012.pdf" title="Sameer Agarwal, Aurojit Panda, Barzan Mozafari, Anand P. Iyer, Samuel Madden, Ion Stoica, âBlink and Itâs Done: Interactive Queries on Very Large Dataâ, In proceedings of PVLDB, 5(12): 1902-1905, 2012. [Demo]">PVLDB'12</a>,
+	<a href="papers/eurosys_2013.pdf" title="Sameer Agarwal, Barzan Mozafari, Aurojit Panda, Henry Milner, Samuel Madden, Ion Stoica, âBlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Dataâ, In EuroSys, 2013. [Best Paper Award]">EuroSys'13 (best paper award)</a>, <a href="php/data/uploads/sigmod_2014_diagnosis.pdf">SIGMOD'14 (1)</a>, <a href="php/data/uploads/sigmod_2014_abm.pdf">SIGMOD'14 (2)</a>, <a href="php/data/uploads/sigmod_2014_demo.pdf">SIGMOD'14 (demo)</a>, <a href=php/data/uploads/cidr_2015.pdf">CIDR'15</a>
+  <br>
+  Press:
+  <a href="http://strata.oreilly.com/2013/08/interactive-big-data-analysis-using-approximate-answers.html" target="_blank">O'REILLY Strata</a>,
+	<a href="http://telruptive.com/2013/04/06/a-big-data-base-that-is-fast-but-inaccurate-blinkdb/" target="_blank">Telruptive</a>,
+  <a href="http://h30507.www3.hp.com/t5/Innovation-HP-Labs/BlinkDB-a-query-engine-for-making-perfect-decisions-in-the/ba-p/119303" target="_blank">Innovation @ HP Labs</a>
+	</div></div></div>
+
+	<div style="margin: 0; padding: 0; height: 5px; overflow: hidden;">&nbsp;</div>
+	
+  <div class="entry"> <a href="php/projects.php#crowdsourcing"><img src="http://web.eecs.umich.edu/~mozafari/pics/al.png" width="125px"></a>
+	<div class="main">
+	<strong><a href="php/projects.php#Crowdsourcing Big Data">Crowd-sourcing Big Data</a></strong><br>
+	Making crowd-sourcing scale up to tens of millions of tasks.<br>
+	<div class="links">
+  Download:
+  <a href="http://people.csail.mit.edu/barzan/datasets/crowdsourcing/">Datasets</a>
+  <br>
+	Papers:
+  <a href="http://arxiv.org/abs/1209.3686" title="Barzan Mozafari, Purnamrita Sarkar, Michael J. Franklin, Michael I. Jordan, and Samuel Madden. Active Learning for Crowd-Sourced Databases. Technical Report, 2012">Technical report</a>, <a href="php/data/uploads/vldb_2015_crowd.pdf">PVLDB'15</a>
+	<br>
+  </div></div></div>
+
+	<div style="margin: 0; padding: 0; height: 5px; overflow: hidden;">&nbsp;</div>
+	
+	<div class="entry"> <a href="http://web.eecs.umich.edu/~mozafari/cep/cep.html"><img src="http://web.eecs.umich.edu/~mozafari/pics/cep3.png" width="125px"></a>
+	<div class="main">
+	<strong><a href="php/projects.php#High-Performance Complex Event Processing">K*SQL and XSeq</a></strong><br>
+	High-performance complex event processing on complex data types such as RNA sequences, JSON files, and software traces.<br>
+	<div class="links">
+  Papers:
+  <a href="papers/sigmod_2010.pdf" title="Barzan Mozafari, Kai Zeng, Carlo Zaniolo, âK*SQL: a Unifying Engine for Sequence Patterns and XMLâ, In proceedings of SIGMOD, 2010. [Honorable Mention Demo]">SIGMOD'10</a>,
+  <a href="papers/sigmod_2012.pdf" title="Barzan Mozafari, Kai Zeng, Carlo Zaniolo, âHigh-Performance Complex Event Processing over XML Streamsâ, In proceedings of SIGMOD, 253-264, 2012. [Best Paper Award].">'12</a>,
+  <a href="papers/pvldb_10.pdf" title="Barzan Mozafari, Kai Zeng, Carlo Zaniolo, âFrom Regular Expressions to Nested Words: Unifying Languages and Query Execution for Relational and XML Sequencesâ, In proceedings of PVLDB, 3(1): 150-161, 2010.">PVLDB'10</a>,
+  <a href="papers/tods_2013.pdf" title="Barzan Mozafari, Kai Zeng, Carlo Zaniolo, âComplex Event Processing over Hierarchical Dataâ, Invited to Special Issue of ACM Transactions on Database Systems (TODS) for SIGMOD 2012 Best Papers, Dec 2013.">TODS'13</a>,
+  <a href="papers/icde_2013.pdf" title="Kai Zeng, Mohan Yang, Barzan Mozafari, Carlo Zaniolo, âComplex Pattern Matching Publications in Complex Structures: the XSeq Approachâ, In proceedings of ICDE, 2013. [Demo]">ICDE'13</a>
+  <br>
+	</div></div></div>
+	
+
+</td></tr></tbody></table>
+                    
+<!-- barzan -->
+                </div> <!-- /span9 -->
+                
+                <div class="span3">
+                    <p>
+                        Associate Professor<br>
+                        <a href="http://cse.umich.edu/">Computer Science and Engineering</a><br>
+                        <a href="http://umich.edu/">University of Michigan (Ann Arbor)</a><br>
+                        <a href="http://www.eecs.umich.edu/db/">Database Group</a>
+                    </p>
+                    
+                    <p>
+                        Computer Science and Engineering<br>
+                        4769 Beyster Building<br>
+                        2260 Hayward St.<br>
+                        University of Michigan<br>
+                        Ann Arbor, MI 48109-2121<br>
+                    </p>
+                    <p>
+                        Phone: (734) 763-3669<br>
+                        Email: <a href="mailto:mozafari@umich.edu">mozafari@umich.edu</a><br>
+			<a href="https://twitter.com/barzanmozafari"><img src="http://web.eecs.umich.edu/~mozafari/pics/twitter.png" width="25px"></a>: <a href="https://twitter.com/barzanmozafari">@BarzanMozafari</a><br>
+                    </p>
+                    <p>
+                        Office hours: <a href="mailto:mozafari@umich.edu">by appointment only</a><br>
+                    </p>
+                    <p>
+                        <a href="files/mozafari-cv.pdf">Curriculum vitae</a>&nbsp;Â·&nbsp;<a href="php/publications.php">all publications</a><br>
+                        Archived faculty app: <a href="files/barzan-rs.pdf">research</a>, <a href="files/barzan-ts.pdf">teaching</a>
+                    </p>
+                    
+                    <div id="news">
+			<iframe src="php/scroller.php" marginwidth="0" frameBorder="0">Browser not compatible.</iframe>
+<!--
+                        <h5>What Others Say About Our Research</h5>
+<script type="text/javascript">
+//new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
+new pausescroller(newsItems, "pscroller2", "someclass", 2500)
+</script>
+<a href="http://web.eecs.umich.edu/~mozafari/press.html" style="margin-left:150px;">(Read more)</a>
+<p></p>
+-->
+	<!-- start 
+																<br/>
+<iframe id="frmFile" src="okok.html" onload="LoadFile();" style="display: none;"></iframe>
+
+<script type="text/javascript">
+
+var bvar = (function LoadFile() {
+  var nodeArray=new Array();  
+  var oFrame = document.getElementById("frmFile");
+  var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML.replace(/\r/g, '');
+  var arrLines = strRawContents.split("\n");
+  arrLines.forEach(function (line) {
+		nodeArray.push(JSON.parse(line));
+    //nodeArray.push(line);
+  });
+});
+
+alert(bvar[0]);
+//        document.write("<br />BarzanTEST1:"+curLine+":test2:"+newscontent[0]);
+//new pausescroller(nodeArray, "pscroller2", "someclass", 2000)
+</script>	
+															end -->
+                    </div>
+
+
+
+                    <div id="talks">
+                        <h5>Talks &amp; Travel</h5>
+                        <table class="talk table table-condensed">
+                          <tbody>
+                               <tr class="olddate"><td class="date">Jun 25</td><td><a href="http://www.sigmod.org/2013/">SIGMOD</a></td></tr>
+                               <tr class="olddate"><td class="date">Nov 21</td><td><a href="http://google.com">Google Kirkland</a></td></tr>
+                               <tr class="olddate"><td class="date">Nov 22</td><td><a href="http://www.cs.washington.edu/">University of Washington</a></td></tr>
+			       <tr class="olddate"><td class="date">May 30</td><td><a href="http://www.teradata.com/">Teradata (San Diego)</a></td></tr>
+			       <tr class="olddate"><td class="date">May 31</td><td><a href="http://scai.cs.ucla.edu/?page_id=191">UCLA</a></td></tr>
+			       <tr class="olddate"><td class="date">June 23-26</td><td><a href="http://sigmod2014.org/">SIGMOD</a></td></tr>
+			       <tr class="olddate"><td class="date">Jan 4-7</td><td><a href="http://www.cidrdb.org/cidr2015/">CIDR</a></td></tr>
+<!-- <tr><td class="date">DATE</td><td><a href="">VENUE</a></td></tr>-->
+                          </tbody>
+                        </table>
+                    </div>
+                    <p></p> 
+
+                    <div id="classes">
+                        <h5>Teaching</h5>
+                        <p>
+                            Fall 2020<br>
+                            <a href="https://dijkstra.eecs.umich.edu/kleach/eecs484/f20/" target="_blank">EECS 484: Database Management Systems</a><br>
+                        </p> 
+                        <p>
+                            Fall 2018<br>
+                            <a href="fall2018/eecs584">EECS 584: Advanced Database Management Systems</a><br>
+                        </p> 
+                        <p>
+                            Fall 2015<br>
+                            <a href="fall2015/eecs584">EECS 584: Advanced Database Management Systems</a><br>
+                        </p> 
+                        <p>
+                            Winter 2015<br>
+                            <a href="eecs484">EECS 484: Database Management Systems</a><br>
+                        </p>           
+                        <p>
+                            Fall 2014<br>
+                            <a href="fall2014/eecs584">EECS 584: Advanced Database Management Systems</a><br>
+                        </p> 
+                        <p>
+                            Winter 2014<br>
+                            <a href="winter2014/eecs684">EECS 684: Current Topics in Databases</a><br>
+                        </p>           
+                        <p>
+                            Fall 2013<br>
+                            <a href="fall2013/eecs584">EECS 584: Advanced Database Management Systems</a><br>
+                        </p> 
+                    </div>                    
+                    
+                    <p>
+                    </p>
+                    <div id="acknowledgements">
+                        <h5>Acknowledgements</h5>
+                        <p>Our research is made possible through the generosity of the University of Michigan.</p>
+                        <p></p>
+                        <p>* This website's template is borrowed from Michael Bernstein and Jeffrey Heer.</p>
+                    </div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8687700;
+var sc_invisible=1;
+var sc_security="ea8e3d95";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="create counter"
+href="http://statcounter.com/free-hit-counter/" target="_blank"><img
+class="statcounter" src="http://c.statcounter.com/8687700/0/ea8e3d95/0/"
+alt="create counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+                    
+
+
+                </div>                
+            </div> <!-- /row -->
+            
+            <!--
+            <div class="row">
+                <div class="span12">
+                    
+                </div>
+            </div> --> <!-- /row -->
+        </div> <!-- /container -->  
+
+        <!-- ================================================== -->
+    
+  
+</body></html>

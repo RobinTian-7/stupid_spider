@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BO ZHU@GT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav nav-text">
+                <li class="active"><a href="index.html"><strong>BO ZHU@GT</strong></a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="index.html#publication">Publications</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="software.html">Software</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="res/bozhu.jpg" alt="Cinque Terre" width="116">
+        </div>
+        <div class="col-sm-8">
+            <p class="name">Bo Zhu</p>
+            <p class="text">
+                Assistant Professor, School of Interactive Computing <br>
+				Georgia Institute of Technology<br>
+                Office: Klaus 3146, GT Campus, Atlanta<br>
+                Email: <a href="mailto:bo.zhu@gatech.edu">bo.zhu@gatech.edu</a>
+            </p>
+        </div>
+    </div>
+
+    <!--Introduction-->
+    <hr class="dv2" />
+    <div class="text">
+        <p class="title">About Me</p>
+        <p>I am an Associate Professor in the <a href="https://ic.gatech.edu/">School of Interactive Computing</a> at Georgia Tech. My research interests lie in computer graphics, computational physics, and scientific machine learning. My primary focus is to develop geometric data structures and numerical algorithms for solving computational challenges associated with various kinds of physical systems. I am consistently fascinated by the beauty and complexity of fluids, with a particular emphasis on simulating their interfacial dynamics, vortical structures, and topological evolution. For these works, I was awarded the NSF Career Award in 2022.</p>
+
+		<p>Prior to relocating to Atlanta, I spent five wonderful years as an Assistant Professor of Computer Science at Dartmouth College. I formerly worked as a postdoc researcher at MIT CSAIL. I earned my Ph.D. from the Computer Science Department at Stanford University, under the guidance of Prof. Ron Fedkiw. My B.Eng. and M.Sc. degrees were obtained at Shanghai Jiao Tong University.</p>
+        <!--<p class="title">Research Summary</p>-->
+    </div>
+
+    <hr class="dv2" />
+    <div class="text">
+        <p><b>[SCA 2025]</b> This year, I am co-organizing the 24th Symposium on Computer Animation (<a href="https://computeranimation.org/">SCA 2025</a>) together with Prof. Yin Yang from the University of Utah. SCA 2025 will be co-located with ACM SIGGRAPH in downtown Vancouver from August 8 to 10. We would sincerely appreciate it if you would consider submitting your work and/or sponsoring this long-standing symposium in computer animation!</p>
+        <!--<p class="title">Research Summary</p>-->
+    </div>
+
+    <hr class="dv2" />
+    <div class="text">
+        <p><b>[NSF IRES: Summer Research Intern Opportunity]</b> Starting in the fall of 2022, I began leading a three-year research project on <a href="https://nsf-ires-physics-ai-design.github.io/">Physical AI Design</a>, sponsored by the NSF Office of International Science and Engineering. We are actively seeking summer research interns in the areas of physics simulation, machine learning, and user interface design. If you are interested in collaborating with us, please don't hesitate to submit your application. Additional information about the internship can be found on the <a href="https://nsf-ires-physics-ai-design.github.io/">project webpage</a>.</p>
+        <!--<p class="title">Research Summary</p>-->
+    </div>
+	
+    <!--Publication-->
+    <hr class="dv2" />
+	<table border="0" class="text">
+	
+	</table>
+	
+    <table border="0" class="text">
+    <tr>
+        <td colspan="2" class="title" id="publication">Publications</td>
+    </tr>
+
+    <tr>
+        <td colspan="8">
+        See my <a href="https://scholar.google.com/citations?user=atNjbs0AAAAJ&hl=nl&authuser=1&oi=ao">Google Scholar</a> for an up-to-date publication list.</td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://yuchen-sun-cg.github.io/projects/lfm/"><img src="images/pfm_leapfrog.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yuchen Sun, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart G. van Bloemen Waanders, Bo Zhu. <strong>Leapfrog Flow Maps for Real-Time Fluid Simulation.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). <a href="https://yuchen-sun-cg.github.io/projects/lfm/static/pdfs/SIG_2025_Leapfrog_Flow_Maps.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=-LK3ZDMByCE">[video]</a><a href="https://yuchen-sun-cg.github.io/projects/lfm/">[project page]</a><a href="https://github.com/yuchen-sun-cg/lfm">[code]</a>
+        </td>
+    </tr>    
+    
+    <tr>
+        <td>
+            <a href="https://cdwj.github.io/projects/compressible-flowmap-project-page/index.html"><img src="images/pfm_compressible.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Duowen Chen*, Zhiqi Li* (joint 1st authors), Taiyuan Zhang, Jinjin He, Junwei Zhou, Bart G. van Bloemen Waanders, Bo Zhu. <strong>Fluid Simulation on Compressible Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). <a href="https://cdwj.github.io/projects/compressible-flowmap-project-page/static/pdfs/SIG_2025__Compressible_Flow_Map_Upload.pdf">[paper]</a><a href="https://youtu.be/vb8ZIhlgvDE">[video]</a><a href="https://cdwj.github.io/projects/compressible-flowmap-project-page/index.html">[project page]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://pearseven.github.io/PFMClebschProject/"><img src="images/pfm_clebsch.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Zhiqi Li, Candong Lin, Duowen Chen, Xinyi Zhou, Shiying Xiong, Bo Zhu. <strong>Clebsch Gauge Fluid on Particle Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). (Best Paper Award Honorable Mention) <a href="https://pearseven.github.io/PFMClebschProject/static/pdfs/SIG_2025__Clebsch_PFM_Upload.pdf">[paper]</a><a href="https://youtu.be/U0iTO8tfRK0">[video]</a><a href="https://pearseven.github.io/PFMClebschProject/">[project page]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://pearseven.github.io/EDGEProject/"><img src="images/pfm_edge.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Zhiqi Li*, Ruicheng Wang*, Junlin Li* (joint 1st authors), Duowen Chen, Sinan Wang, Bo Zhu. <strong>EDGE: Epsilon-Difference Gradient Evolution for Buffer-Free Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). <a href="https://pearseven.github.io/EDGEProject/static/pdfs/SIG_2025__Buffer_free_flow_map.pdf">[paper]</a><a href="https://youtu.be/IH4WWuEFoqA">[video]</a><a href="https://pearseven.github.io/EDGEProject/">[project page]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://wang-mengdi.github.io/proj/25-cirrus/"><img src="images/pfm_adaptive.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Mengdi Wang, Fan Feng, Junlin Li, Bo Zhu. <strong>Cirrus: Adaptive Hybrid Particle-Grid Flow Maps on GPU.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). <a href="https://wang-mengdi.github.io/proj/25-cirrus/cirrus-preprint.pdf">[paper]</a><a href="https://youtu.be/cANbIa_m3mY">[video]</a><a href="https://wang-mengdi.github.io/proj/25-cirrus/">[project page]</a><a href="https://github.com/wang-mengdi/Cirrus">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://vpfm.sinanw.com/"><img src="images/vpfm.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Sinan Wang, Junwei Zhou, Fan Feng, Zhiq i Li, Yuchen Sun, Duowen Chen, Greg Turk, Bo Zhu. <strong>Fluid Simulation on Vortex Particle Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH 2025), Volume 44, Issue 4 (to appear). <a href="https://arxiv.org/pdf/2505.21946">[paper]</a><a href="https://youtu.be/8DukQvmr2EI">[video]</a><a href="https://vpfm.sinanw.com/">[project page]</a><a href="https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://cdwj.github.io/projects/neural-pls-project-page/index.html"><img src="images/neural_pls.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Duowen Chen, Junwei Zhou, Bo Zhu. <strong>A Neural Particle Level Set Method for Dynamic Interface Tracking.</strong> ACM Transactions on Graphics, Volume 44, Issue 3 (to be presented in SIGGRAPH 2025). <a href="https://cdwj.github.io/projects/neural-pls-project-page/static/pdfs/neural-pls.pdf">[paper]</a><a href="https://youtu.be/65sWegMNwNA">[video]</a><a href="https://cdwj.github.io/projects/neural-pls-project-page/index.html">[project page]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://github.com/ueoo/FluidNexus"><img src="images/smoke_recon.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yue Gao*, Hong-Xing Yu* (joint 1st authors), Bo Zhu, Jiajun Wu. <strong>FluidNexus: 3D Fluid Reconstruction and Prediction from a Single Video.</strong> Computer Vision and Pattern Recognition (CVPR 2025), Oral Presentation. <a href="https://arxiv.org/pdf/2503.04720">[paper]</a><a href="https://yuegao.me/FluidNexus/">[project page]</a><a href="https://github.com/ueoo/FluidNexus">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://wang-mengdi.github.io/proj/triangle-edge-cuts/"><img src="images/edge_cut.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Mengdi Wang, Matthew Cong, Bo Zhu. <strong>An Interface Tracking Method with Triangle Edge Cuts.</strong> Journal of Computational Physics (JCP), Volume 520, 2025. <a href="https://wang-mengdi.github.io/proj/triangle-edge-cuts/resources/preprint.pdf">[paper]</a><a href="https://wang-mengdi.github.io/proj/triangle-edge-cuts/">[project page]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://www.liebertpub.com/doi/abs/10.1089/cmb.2024.0491"><img src="images/cell_graph.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Ziqian Wu, Jiyoon Park, Paul R Steiner, Bo Zhu, John XJ Zhang. <strong>A Graph-Based Machine-Learning Approach Combined with Optical Measurements to Understand Beating Dynamics of Cardiomyocytes.</strong> Journal of Computational Biology, Volume 32, Issue 3, 2025. <a href="https://www.liebertpub.com/doi/abs/10.1089/cmb.2024.0491">[paper]</a>
+        </td>
+    </tr> 
+        
+    <tr>
+        <td>
+            <a href="https://www.nature.com/articles/s41598-024-77943-0"><img src="images/cell_gan.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Ziqian Wu, Jiyoon Park, Paul R Steiner, Bo Zhu, John XJ Zhang. <strong>Generative Adversarial Network Model to Classify Human Induced Pluripotent Stem Cell-Cardiomyocytes based on Maturation Level.</strong> Scientific Reports, 14, 2024. <a href="https://www.nature.com/articles/s41598-024-77943-0">[paper]</a>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            <a href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/"><img src="images/neural_fluid.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yifei Li, Yuchen Sun, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik. <strong>Neural Fluidic System Design and Control with Differentiable Simulation.</strong> Neural Information Processing Systems (NeurIPS 2024). <a href="https://arxiv.org/pdf/2405.14903">[paper]</a><a href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/">[project page]</a>
+        </td>
+    </tr>
+        
+	<tr>
+        <td>
+            <a href="https://yuchen-sun-cg.github.io/projects/igfm/"><img src="images/igfm.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yuchen Sun, Linglai Chen, Weiyuan Zeng, Tao Du, Shiying Xiong, and Bo Zhu. <strong>An Impulse Ghost Fluid Method for Simulating Two-Phase Flows.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. <a href="https://yuchen-sun-cg.github.io/projects/igfm/static/pdfs/SIG_Asia_2024_Impulse_Two_Phase_Flow.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=MbEyyH2UB3s">[video]</a><a href="https://yuchen-sun-cg.github.io/projects/igfm/">[project page]</a>
+        </td>
+    </tr>
+
+ 	<tr>
+        <td>
+            <a href="https://pearseven.github.io/LadenFlowProject/"><img src="images/pfm_laden.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Zhiqi Li, Duowen Chen, Candong Lin, Jinyuan Liu, and Bo Zhu. <strong>Particle-Laden Fluid on Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. (Best Paper Award) <a href="https://arxiv.org/pdf/2409.06246">[paper]</a><a href="https://youtu.be/JzozR1t-sIE">[video]</a><a href="https://pearseven.github.io/LadenFlowProject/">[project page]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://evm.sinanw.com/"><img src="images/evm.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Sinan Wang, Yitong Deng, Molin Deng, Hong-Xing Yu, Junwei Zhou, Duowen Chen, Taku Komura, Jiajun Wu, and Bo Zhu. <strong>An Eulerian Vortex Method on Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. <a href="https://arxiv.org/pdf/2409.06201">[paper]</a><a href="https://youtu.be/okVnD-rCYrw">[video]</a><a href="https://evm.sinanw.com/">[project page]</a><a href="https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps">[code]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://cdwj.github.io/projects/pfm-sfi-project-page/index.html"><img src="images/pfm_sfi2.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Duowen Chen, Zhiqi Li, Junwei Zhou, Fan Feng, Tao Du, Bo Zhu. <strong>Solid-Fluid Interaction on Particle Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. <a href="https://cdwj.github.io/projects/pfm-sfi-project-page/static/pdfs/SASIA_2024__Solid_Fluid_Interaction_on_Particle_Flow_Maps.pdf">[paper]</a><a href="https://youtu.be/nUJe4QIhoB8">[video]</a><a href="https://cdwj.github.io/projects/pfm-sfi-project-page/index.html">[project page]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://jinjinhe2001.github.io/diffmpu-page/index.html"><img src="images/mpu_particles.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Jinjin He, Taiyuan Zhang, Hiroki Kobayashi, Atsushi Kawamoto, Yuqing Zhou, Tsuyoshi Nomura, and Bo Zhu. <strong>Multi-level Partition of Unity on Differentiable Moving Particles.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. <a href="https://jinjinhe2001.github.io/diffmpu-page/assets/paper/SASIA_2024__Particle_PU%20(5).pdf">[paper]</a><a href="https://youtu.be/idHAYIO04AY">[video]</a><a href="https://jinjinhe2001.github.io/diffmpu-page/index.html">[project page]</a>
+        </td>
+    </tr>
+
+ 	<tr>
+        <td>
+            <a href="https://leqiqin.github.io/publication/seeds2024"><img src="images/wing_seeds.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Qiqin Le, Jiamu Bu, Yanke Qu, Bo Zhu, Tao Du. <strong>Computational Biomimetics of Winged Seeds.</strong> ACM Transactions on Graphics (SIGGRAPH Asia 2024), Volume 43, Issue 6. <a href="https://leqiqin.github.io/files/seed2024.pdf">[paper]</a> <a href="https://leqiqin.github.io/publication/seeds2024">[project page]</a><a href="https://github.com/leqiqin/Computational-Biomimetics-of-Winged-Seeds">[code]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://hhuiwangg.github.io/projects/walking-droplet/"><img src="images/walking_droplet.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Hui Wang, Yuwei Xiao, Yankai Mao, Shiying Xiong, Xubo Yang, and Bo Zhu. <strong>A Two-Way Coupling Approach for Simulating Bouncing Droplets.</strong> International Journal for Numerical Methods in Engineering (IJNME), Volume 125, Issue 24, 2024. <a href="https://hhuiwangg.github.io/assets/pdf/walking_droplet_ijnme_pre_compressed.pdf">[preprint]</a><a href="https://www.youtube.com/watch?v=WxcVmrmByVU">[video]</a><a href="https://hhuiwangg.github.io/projects/walking-droplet/">[project page]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://hhuiwangg.github.io/projects/melp-levelset/"><img src="images/mlsls.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Hui Wang, Zhi Wang, Shulin Hong, Xubo Yang, and Bo Zhu. <strong>A Moving Least-Squares/Level-Set Particle Method for Bubble and Foam Simulation.</strong> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024. <a href="https://hhuiwangg.github.io/assets/pdf/mlsls_main.pdf">[paper]</a><a href="https://youtu.be/1tWclARBiHY">[video]</a><a href="https://hhuiwangg.github.io/projects/melp-levelset/">[project page]</a>
+        </td>
+    </tr>
+		
+ 	<tr>
+        <td>
+            <a href="https://zjw49246.github.io/projects/pfm/"><img src="images/pfm.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Junwei Zhou, Duowen Chen, Molin Deng, Yitong Deng, Yuchen Sun, Sinan Wang, Shiying Xiong, Bo Zhu. <strong>Eulerian-Lagrangian Fluid Simulation on Particle Flow Maps.</strong> ACM Transactions on Graphics (SIGGRAPH 2024), Volume 43, Issue 4. <a href="https://www.arxiv.org/pdf/2405.09672">[paper]</a><a href="https://www.youtube.com/watch?v=aErgFhxil7o">[video]</a><a href="https://zjw49246.github.io/projects/pfm/">[project page]</a><a href="https://github.com/pfm-gatech/particle-flow-maps">[code]</a>
+        </td>
+    </tr>
+		
+	<tr>
+        <td>
+            <a href="https://lwruan.com/pubs/vortex-bubble"><img src="images/vortex_bubble.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Ningxiao Tao, Liangwang Ruan, Yitong Deng, Bo Zhu, Bin Wang, Baoquan Chen. <strong>A Vortex Particle-on-Mesh Method for Soap Film Simulation.</strong> ACM Transactions on Graphics (SIGGRAPH 2024), Volume 43, Issue 4. <a href="https://www.youtube.com/watch?v=nOxEHghSE-U">[video]</a><a href="https://taoningxiao.github.io/files/VortexBubble.pdf">[pdf]</a><a href="https://lwruan.com/pubs/vortex-bubble">[project page]</a>
+        </td>
+    </tr>
+		
+	<tr>
+        <td>
+            <a href="https://zhiqili-cg.github.io/CovectorFluidFreeSurface/"><img src="images/lag_covector.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Zhiqi Li, Barnabás Börcsök, Duowen Chen, Yutong Sun, Bo Zhu, Greg Turk. <strong>Lagrangian Covector Fluid with Free Surface.</strong> ACM SIGGRAPH 2024 (Conference Track). <a href="https://arxiv.org/pdf/2405.09801">[paper]</a><a href="https://www.youtube.com/watch?v=MCa_CwekSAM">[video]</a><a href="https://zhiqili-cg.github.io/CovectorFluidFreeSurface/">[project page]</a>
+        </td>
+        </td>
+    </tr>
+		
+	<tr>
+        <td>
+            <a href="https://sking8.github.io/assets/paper/thin_shell_topo.pdf"><img src="images/thin_shell_to.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Fan Feng, Shiying Xiong, Hiroki Kobayashi, Yuqing Zhou, Masato Tanaka, Atsushi Kawamoto, Tsuyoshi Nomura, Bo Zhu. <strong>Nonlinear Topology Optimization on Thin Shells using a Reduced-order Elastic Shell Mode.</strong> Thin-Walled Structures, Volume 197, 2024. <a href="https://sking8.github.io/assets/paper/thin_shell_topo.pdf">[paper]</a> 
+        </td>
+    </tr>
+		
+ 	<tr>
+        <td>
+            <a href="https://shiyingxiong.github.io/proj/RoeNet/RoeNet.pdf"><img src="images/roe_net.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yunjin Tong, Shiying Xiong, Xingzhe He, Shuqi Yang, Zhecheng Wang, Rui Tao, Runze Liu, and Bo Zhu. <strong>RoeNet: Predicting Discontinuity of Hyperbolic Systems from Continuous Data.</strong> International Journal for Numerical Methods in Engineering (IJNME), Volume 125, 2024. <a href="https://shiyingxiong.github.io/proj/RoeNet/RoeNet.pdf">[paper]</a> 
+        </td>
+    </tr>
+
+ 	<tr>
+        <td>
+            <a href="https://kovenyu.com/hyfluid/"><img src="images/hyfluid.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Hong-Xing Yu*, Yang Zheng*, (joint 1st authors) Yuan Gao, Yitong Deng, Bo Zhu, Jiajun Wu. <strong>Inferring Hybrid Fluid Fields from Videos</strong>. Neural Information Processing Systems (NeurIPS 2023). <a href="https://arxiv.org/pdf/2312.06561.pdf">[paper]</a><a href="https://youtu.be/SDY447IYQGM">[video]</a><a href="https://kovenyu.com/hyfluid/">[project page]</a><a href="https://github.com/y-zheng18/HyFluid">[code]</a> 
+        </td>
+    </tr>
+
+ 	<tr>
+        <td>
+            <a href="https://yitongdeng-projects.github.io/neural_flow_maps_webpage/"><img src="images/flow_map.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yitong Deng, Hong-Xing Yu, Diyang Zhang, Jiajun Wu, Bo Zhu. <strong>Fluid Simulation on Neural Flow Maps</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2023), Volume 42, Issue 6. (Best Paper Award) <a href="https://yitongdeng-projects.github.io/neural_flow_maps_webpage/assets/paper/NFM_v1.pdf">[paper]</a><a href="https://youtu.be/zNtPw1zr5tM">[video]</a><a href="https://yitongdeng-projects.github.io/neural_flow_maps_webpage/">[project page]</a><a href="https://github.com/yitongdeng-projects/neural_flow_maps_code">[code]</a> 
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://leqiqin.github.io/publication/fem2023"><img src="images/thin_shell.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Qiqin Le, Yitong Deng, Jiamu Bu, Bo Zhu, Tao Du. <strong>Second-Order Finite Elements for Deformable Surfaces</strong>. SIGGRAPH Asia 2023 (Conference track). <a href="https://leqiqin.github.io/files/fem2023.pdf">[paper]</a><a href="https://youtu.be/RnpLhyPNaFg">[video]</a><a href="https://leqiqin.github.io/publication/fem2023">[project page]</a>
+        </td>
+    </tr>
+		
+	<tr>
+        <td>
+            <a href="https://starryuniv.cn/files/siga23levelset.pdf"><img src="images/level_set_flow_map.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Xingqiao Li, Xingyu Ni, Bo Zhu, Bin Wang, Baoquan Chen. <strong>GARM-LS: A Gradient-Augmented Reference-Map Method for Level-Set Fluid Simulation</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2023), Volume 42, Issue 6. <a href="https://www.youtube.com/watch?v=EN2_eJ98dPg">[video]</a><a href="https://starryuniv.cn/files/siga23levelset.pdf">[paper]</a><a href="https://github.com/li-xingqiao/GARM-LS">[code]</a>
+        </td>
+    </tr>		
+
+	<tr>
+        <td>
+            <a href="https://yitongdeng.github.io/vortex_learning_webpage/"><img src="images/diff_vortex.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yitong Deng, Hong-Xing Yu, Jiajun Wu, Bo Zhu.<strong>Learning Vortex Dynamics For Fluid Inference and Prediction.</strong> International Conference on Learning Representations (ICLR 2023). <a href="https://arxiv.org/pdf/2301.11494.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=R2RIS-k50so">[video]</a><a href="https://yitongdeng.github.io/vortex_learning_webpage/">[project page]</a><a href="https://github.com/yitongdeng-projects/learning_vortex_dynamics_code">[code]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://fluidlab2023.github.io/"><img src="images/fluid_lab.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Zhou Xian, Bo Zhu, Zhenjia Xu, Hsiao-Yu Tung, Antonio Torralba, Katerina Fragkiadaki, Chuang Gan.<strong> FluidLab: A Differentiable Environment for Benchmarking Complex Fluid Manipulation.</strong> International Conference on Learning Representations (ICLR 2023). <a href="https://openreview.net/forum?id=Cp-io_BoFaE">[paper]</a><a href="https://fluidlab2023.github.io/">[project page]</a><a href="https://github.com/zhouxian/FluidLab">[code]</a>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            <a href="https://arxiv.org/pdf/2006.04178.pdf"><img src="images/nvm.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Shiying Xiong, Xingzhe He, Yunjin Tong, Yitong Deng, and Bo Zhu.<strong> Neural Vortex Method: from Finite Lagrangian Particles to Infinite Dimensional Eulerian Dynamics. </strong> Computers & Fluids, 2023. <a href="https://arxiv.org/pdf/2006.04178.pdf">[paper]</a>
+        </td>
+    </tr>
+
+	<tr>
+		<td>
+			<a href="https://sking8.github.io/TopoVoronoi/"><img src="images/dragonfly.jpg" class="image"></a>
+		</td>
+		<td width="10px">&nbsp;</td>
+		<td>
+			<p>Fan Feng, Shiying Xiong, Ziyue Liu, Zangyueyang Xian, Yuqing Zhou, Hiroki Kobayashi, Atsushi Kawamoto, Tsuyoshi Nomura, Bo Zhu. <strong>Cellular Topology Optimization on Differentiable Voronoi Diagrams</strong>. International Journal for Numerical Methods in Engineering (IJNME), Volume 124, Issue 1, 2023. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/voronoi_to.pdf">[paper]</a><a href="https://youtu.be/pXEM0PZKp48">[video]</a><a href="https://sking8.github.io/TopoVoronoi/">[project page]</a>
+		</td>
+	</tr> 
+		
+	<tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/hydrophobic_hydrophilic_sfi.pdf"><img src="images/hh_sfi.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Jinyuan Liu, Mengdi Wang, Fan Feng, Annie Tang, Qiqin Le, and Bo Zhu. <strong>Hydrophobic and Hydrophilic Solid-Fluid Interaction</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2022), Volume 41, Issue 6. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/hydrophobic_hydrophilic_sfi.pdf">[paper]</a><a href="https://youtu.be/X_nPvKjl5k0">[video]</a><a href="https://jinyuan-liu.github.io/projects/2022hydro/">[project page]</a>
+        </td>
+    </tr> 
+		
+	<tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/stokes_to.pdf"><img src="images/stokes_to.jpeg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yifei Li, Tao Du, Sangeetha Grama Srinivasan, Kui Wu, Bo Zhu, Eftychios Sifakis, and Wojciech Matusik. <strong>Fluidic Topology Optimization with an Anisotropic Mixture Model</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2022), Volume 41, Issue 6. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/stokes_to.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=0AJbtATZ1B0">[video]</a>
+        </td>
+    </tr> 
+		
+	<tr>
+        <td>
+            <a href="https://lwruan.com/pubs/pbd-st"><img src="images/pbd_surface_tension.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Jingrui Xing, Liangwang Ruan, Bin Wang, Bo Zhu, Baoquan Chen. <strong>Position-Based Surface Tension Flow</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2022), Volume 41, Issue 6. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/pb_st_flow.pdf">[paper]</a><a href="https://www.bilibili.com/video/BV1414y1H734">[video]</a><a href="https://lwruan.com/pubs/pbd-st">[project page]</a>
+        </td>
+    </tr> 
+
+	<tr>
+		<td>
+				<a href="https://www.cs.dartmouth.edu/~bozhu/papers/fff_printing.pdf"><img src="images/fff_printing.jpg" class="image"></a>
+			</td>
+			<td width="10px">&nbsp;</td>
+			<td>
+				<p>Eammon Littler, Bo Zhu, Wojciech Jarosz. <strong>Automated Filament Inking for Multi-color FFF 3D Printing</strong>. ACM Symposium on User Interface Software and Technology (UIST), 2022. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/fff_printing.pdf">[paper]</a><a href="https://cs.dartmouth.edu/~wjarosz/publications/littler22automated.html">[project page]</a>
+		</td>
+	</tr> 
+	
+	<tr>
+        <td>
+                <a href="https://shiyingxiong.github.io/proj/Clebsch/Clebsch"><img src="images/clebsch_paddle.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Shiying Xiong, Zhecheng Wang, Mengdi Wang, and Bo Zhu. <strong>A Clebsch Method for Free-Surface Vortical Flow Simulation</strong>. ACM Transactions on Graphics (SIGGRAPH 2022), Volume 41, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/clebsch_fluid.pdf">[paper]</a><a href="https://youtu.be/uPDpqDbsDtQ">[video]</a><a href="https://shiyingxiong.github.io/proj/Clebsch/Clebsch">[project page]</a>
+        </td>
+    </tr> 
+		
+	<tr>
+        <td>
+            <a href="https://yitongdeng.github.io/MELP_Project.github.io/"><img src="images/melp.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yitong Deng, Mengdi Wang, Xiangxin Kong, Shiying Xiong, Zangyueyang Xian, Bo Zhu. <strong>A Moving Eulerian-Lagrangian Particle Method for Thin Film and Foam Simulation</strong>. ACM Transactions on Graphics (SIGGRAPH 2022), Volume 41, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/melp.pdf">[paper]</a><a href="https://youtu.be/xW-G7hm6SWQ">[video]</a><a href="https://yitongdeng.github.io/MELP_Project.github.io/">[project page]</a><a href="https://github.com/wang-mengdi/melp-thin-film">[code]</a>
+        </td>
+    </tr> 
+		
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/magnetic_thin_shell.pdf"><img src="images/mag_thin_shell.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Xuwen Chen, Xingyu Ni, Bo Zhu, Bin Wang, Baoquan Chen. <strong>Simulation and Optimization of Magnetoelastic Thin Shells</strong>. ACM Transactions on Graphics (SIGGRAPH 2022), Volume 41, Issue 4. 
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/magnetic_thin_shell.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=TeHcg75m9Vw&feature=youtu.be">[video]</a>
+        </td>
+    </tr>		
+
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/heart_on_chip_review.pdf"><img src="images/heart_on_chip.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Jiyoon Park, Ziqian Wu, Paul R. Steiner, Bo Zhu, John X. J. Zhang. <strong>Heart-on-Chip for Combined Cellular Dynamics Measurements and Computational Modeling Towards Clinical Applications</strong>. Annals of Biomedical Engineering (ABME), 2022. (Cover Image) <a href="https://www.cs.dartmouth.edu/~bozhu/papers/heart_on_chip_review.pdf">[paper]</a>
+        </td>
+    </tr> 
+    
+    <tr>
+        <td>
+            <a href="https://sking8.github.io/ImpulseFluid"><img src="images/impulse_fluid.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Fan Feng, Jinyuan Liu, Shiying Xiong, Shuqi Yang, Yaorui Zhang, Bo Zhu. <strong>Impulse Fluid Simulation</strong>. IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/impulse_fluid.pdf">[paper]</a><a href="https://youtu.be/MFAXIETFC9M">[video]</a><a href="https://sking8.github.io/ImpulseFluid">[project page]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/gpu_stokes_to.pdf"><img src="images/gpu_stokes_to.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Jinyuan Liu, Zangyueyang Xian, Yuqing Zhou, Tsuyoshi Nomura, Ercan M. Dede, Bo Zhu. <strong>A Marker-And-Cell Method for Large-scale Flow-based Topology Optimization on GPU</strong>. Structural and Multidisciplinary Optimization (SMO), 65-125 (2022). <a href="https://www.cs.dartmouth.edu/~bozhu/papers/gpu_stokes_to.pdf">[paper]</a><a href="https://github.com/jyl-pages/Stokes_TO">[code]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/magnetic_mpm.pdf"><img src="images/mag_mpm.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yuchen Sun, Xingyu Ni, Bo Zhu, Bin Wang, Baoquan Chen. <strong>A Material Point Method for Nonlinearly Magnetized Materials</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2021), Volume 41, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/magnetic_mpm.pdf">[paper]</a><a href="https://youtu.be/tIgXPT_G21w">[video]</a>
+        </td>
+    </tr>		
+    
+    <tr>
+        <td>
+            <a href="https://wang-mengdi.github.io/proj/thin-film-sph/"><img src="images/sph_thin_film.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Mengdi Wang, Yitong Deng, Xiangxin Kong, Aditya H. Prasad, Shiying Xiong, Bo Zhu. <strong>Thin-Film Smoothed Particle Hydrodynamics Fluid</strong>. ACM Transactions on Graphics (SIGGRAPH 2021), Volume 40, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/sph_bubble.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=__1VjKF-gTk">[video]</a><a href="https://wang-mengdi.github.io/proj/thin-film-sph/">[project page]</a><a href="https://github.com/wang-mengdi/sph-thin-film">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/surface_tension_sfi.pdf"><img src="images/surface_tension_contact.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Liangwang Ruan*, Jinyuan Liu* (joint 1st authors), Bo Zhu, Shinjiro Sueda, Bin Wang, Baoquan Chen. <strong>Solid-Fluid Interaction with Surface-Tension-Dominant Contact</strong>. ACM Transactions on Graphics (SIGGRAPH 2021), Volume 40, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/surface_tension_sfi.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=3ejKNbtdfnY">[video]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://y-sq.github.io/proj/clebsch_gauge_fluid/"><img src="images/clebsch_gauge_fluid.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Shuqi Yang, Shiying Xiong, Yaorui Zhang, Fan Feng, Jinyuan Liu, Bo Zhu. <strong>Clebsch Gauge Fluid</strong>. ACM Transactions on Graphics (SIGGRAPH 2021), Volume 40, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/clebsch_gauge_fluid.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=QF_XGzrJfa8&t=3s">[video]</a><a href="https://y-sq.github.io/proj/clebsch_gauge_fluid/">[project page]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://shiyingxiong.github.io/proj/VortexSegments/VortexSegments"><img src="images/vortex_segments.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Shiying Xiong, Rui Tao, Yaorui Zhang, Fan Feng, Bo Zhu. <strong>Incompressible Flow Simulation on Vortex Segment Clouds</strong>. ACM Transactions on Graphics (SIGGRAPH 2021), Volume 40, Issue 4. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/vortex_segment.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=swAISiNZfoc">[video]</a><a href="https://shiyingxiong.github.io/proj/VortexSegments/VortexSegments">[project page]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://shiyingxiong.github.io/proj/TaylorNet/TaylorNet"><img src="images/taylornet.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yunjin Tong*, Shiying Xiong* (joint 1st authors), Xingzhe He, Guanghan Pan, Bo Zhu. <strong>Symplectic Neural Networks in Taylor Series Form for Hamiltonian Systems</strong>. Journal of Computational Physics (JCP), Volume 437, 2021.  <a href="https://arxiv.org/pdf/2005.04986.pdf">[paper]</a><a href="https://shiyingxiong.github.io/proj/TaylorNet/TaylorNet">[project]</a><a href="https://github.com/ytong6/Taylor-net">[code]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://github.com/penn-graphics-research/LETO"><img src="images/leto.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yue Li*, Xuan Li*, Minchen Li* (joint 1st authors), Yixin Zhu, Bo Zhu, Chenfanfu Jiang. <strong>Lagrangian–Eulerian Multidensity Topology Optimization with the Material Point Method</strong>. International Journal for Numerical Methods in Engineering (IJNME), Volume 122, Issue 14, 2021.  <a href="https://arxiv.org/abs/2003.01215">[paper]</a><a href="https://www.youtube.com/watch?v=O43tASS9DXQ&feature=youtu.be">[video]</a><a href="https://github.com/penn-graphics-research/LETO">[88-line MatLab]</a><a href="https://github.com/penn-graphics-research/LETO">[code]</a>
+        </td>
+    </tr>
+		
+    <tr>
+        <td>
+            <a href="https://shiyingxiong.github.io/proj/NSSNN/NSSNN"><img src="images/nonsep.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Shiying Xiong, Yunjin Tong, Xingzhe He, Shuqi Yang, Cheng Yang, Bo Zhu.<strong> Nonseparable Symplectic Neural Networks</strong>. International Conference on Learning Representations (ICLR 2021).<a href="https://arxiv.org/pdf/2010.12636.pdf">[paper]</a><a href="https://youtu.be/NPxk2xb77pk">[video]</a><a href="https://shiyingxiong.github.io/proj/NSSNN/NSSNN">[project page]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://arxiv.org/pdf/2008.07689.pdf"><img src="images/soft_drone.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yitong Deng, Yaorui Zhang, Xingzhe He, Shuqi Yang, Yunjin Tong, Michael Zhang, Daniel M. DiPietro, Bo Zhu.<strong>
+Soft Multicopter Control using Neural Dynamics Identification</strong>. Conference on Robot Learning (CoRL 2020).  <a href="https://arxiv.org/pdf/2008.07689.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=DjQq3i53W8k">[video]</a><a href="https://www.youtube.com/watch?v=o9KjUyFhmI8">[presentation]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://y-sq.github.io/proj/neural_proj/"><img src="images/projection.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Shuqi Yang, Xingzhe He, Bo Zhu. <strong>
+Learning Physical Constraints with Neural Projections</strong>. Neural Information Processing Systems (NeurIPS 2020). <a href="https://arxiv.org/pdf/2006.12745.pdf">[paper]</a><a href="https://www.cs.dartmouth.edu/~bozhu/videos/neural_projection.mp4">[video]</a><a href="https://y-sq.github.io/proj/neural_proj/">[project page]</a><a href="https://github.com/y-sq/neural_proj">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Daniel M. DiPietro, Shiying Xiong, Bo Zhu. <strong>Sparse Symplectically Integrated Neural Networks</strong>, Neural Information Processing Systems (NeurIPS 2020). <a href="https://arxiv.org/pdf/2006.12972.pdf">[paper]</a><a href="https://github.com/dandip/ssinn">[code]</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/differentiable_stokes.pdf"><img src="images/stokes.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Tao Du, Kui Wu, Andrew Spielberg, Wojciech Matusik, Bo Zhu, Eftychios Sifakis. <strong>Functional Optimization of Fluidic Devices with Differentiable Stokes Flow</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2020), Volume 39, Issue 6.<a href="https://www.cs.dartmouth.edu/~bozhu/papers/differentiable_stokes.pdf">[paper]</a><a href="https://youtu.be/Aptn9AvSb58">[video]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/ast_grid.pdf"><img src="images/ast_grid.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Yuwei Xiao, Siyu Chen, Siqi Wang, Bo Zhu, Xubo Yang. <strong>An Adaptive Staggered-Tilted Grid for Incompressible Flow Simulation</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2020), Volume 39, Issue 6.<a href="https://www.cs.dartmouth.edu/~bozhu/papers/ast_grid.pdf">[paper]</a><a href="https://www.cs.dartmouth.edu/~bozhu/videos/ast_grid.mp4">[video]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/codimensional_mls_particle.pdf"><img src="images/codim_mls.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Hui Wang, Yongxu Jin, Anqi Luo, Xubo Yang, Bo Zhu. <strong>Codimensional Surface Tension Flow using Moving-Least-Squares Particles</strong>. ACM Transactions on Graphics (SIGGRAPH 2020), Volume 39, Issue 4.<a href="https://www.cs.dartmouth.edu/~bozhu/papers/codimensional_mls_particle.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=ugJhLMlyctc&lc=UgyByVP_xa_TdnJOzXp4AaABAg">[video]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://www.cs.dartmouth.edu/~bozhu/papers/ferrofluid.pdf"><img src="images/ferro.jpg" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Xingyu Ni, Bo Zhu, Bin Wang, Baoquan Chen. <strong>A Level-Set Method for Magnetic Substance Simulation</strong>. ACM Transactions on Graphics (SIGGRAPH 2020), Volume 39, Issue 4.<a href="https://www.cs.dartmouth.edu/~bozhu/papers/ferrofluid.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=0cCJKg3Oa9U&feature=youtu.be">[video]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://arxiv.org/pdf/2002.00118.pdf"><img src="images/advectivenet.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Xingzhe He, Helen L. Cao, Bo Zhu. <strong>AdvectiveNet: An Eulerian-Lagrangian Fluidic Reservoir for Point Cloud Processing</strong>. International Conference on Learning Representations (ICLR), 2020. <a href="https://arxiv.org/pdf/2002.00118.pdf">[paper]</a><a href="https://github.com/xingzhehe/AdvectiveNet-An-Eulerian-Lagrangian-Fluidic-Reservoir-for-Point-Cloud-Processing">[code]</a>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <a href="https://arxiv.org/pdf/1906.08708.pdf"><img src="images/puzzleflex.png" class="image"></a>
+        </td>
+        <td width="10px">&nbsp;</td>
+        <td>
+            <p>Samuel Lensgraf, Karim Itani, Yinan Zhang, Zezhou Sun, Yijia Wu, Alberto Quattrini Li, Bo Zhu, Emily Whiting, Weifu Wang, Devin Balkcom. <strong>PuzzleFlex: Kinematic Motion of Chains with Loose Joints</strong>.  International Conference on Robotics and Automation (ICRA), 2020. <a href="https://arxiv.org/pdf/1906.08708.pdf">[paper]</a>
+        </td>
+    </tr>
+
+	</table>
+    
+    <div class="text">
+        <p>David Guirguis, Nikola Aulig, Renato Picelli, Bo Zhu, Yuqing Zhou, William Vicente, Francesco Iorio, Markus Olhofer, Wojciech Matusik, Carlos Artemio Coello Coello, Kazuhiro Saitou. <strong>Evolutionary Black-box Topology Optimization: Challenges and Promises</strong>. IEEE Transactions on Evolutionary Computation, 2019. <a href="https://ieeexplore.ieee.org/document/8906012">[paper]</a></p>
+    </div>
+
+	<table border="0" class="text">
+        <tr>
+            <td>
+                <a href="https://cdfg.mit.edu/publications/learning-fly-computational-controller-design-hybrid-uavs-reinforcement-learning"><img src="images/hybrid_uav.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Jie Xu, Tao Du, Michael Foshey, Beichen Li, Bo Zhu, Adriana Schulz, and Wojciech Matusik. <strong>Learning to Fly: Computational Controller Design for Hybrid UAVs with Reinforcement Learning</strong>. ACM Transactions on Graphics (SIGGRAPH 2019), Volume 38, Issue 4. <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/learning_to_fly.pdf">[paper]</a><a href="https://www.youtube.com/watch?time_continue=19&v=oOuOxgJzsgI&feature=emb_logo">[video]</a><a href="https://cdfg.mit.edu/publications/learning-fly-computational-controller-design-hybrid-uavs-reinforcement-learning">[project]</a><a href="https://github.com/eanswer/LearningToFly">[code]</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://yuanming.taichi.graphics/publication/2018-narrowband-topopt/"><img src="images/beak.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Haixiang Liu*, Yuanming Hu*, (joint 1st authors) Bo Zhu, Wojciech Matusik, Eftychios Sifakis. <strong>Narrow-Band Topology Optimization on a Sparsely Populated Grid</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2018), Volume 38, Issue 6, 2019. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/narrowband_topoOpt.pdf">[paper]</a><a href="https://www.youtube.com/watch?v=H2OxHdQEQCQ">[video]</a><a href="https://yuanming.taichi.graphics/publication/2018-narrowband-topopt/">[project]</a><a href="https://github.com/yuanming-hu/spgrid_topo_opt">[code]</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="http://advances.sciencemag.org/content/4/1/eaao7005"><img src="images/ms_discovery.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Desai Chen, Melina Skouras, Bo Zhu, Wojciech Matusik. <strong>Computational Discovery of Extremal Microstructure Families</strong>. Science Advances 4(1), 2018. <a href="http://advances.sciencemag.org/content/4/1/eaao7005">[paper]</a><a href="https://youtu.be/v759cZI4cqc">[video]</a><a href="http://news.mit.edu/2018/automating-materials-design-0202">[MIT News]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://www.cs.dartmouth.edu/~bozhu/projects/topo.htm"><img src="images/gripper.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Bo Zhu, Melina Skouras, Desai Chen, Wojciech Matusik. <strong>Two-Scale Topology Optimization with Microstructures</strong>. ACM Transactions on Graphics, 36(5):164. (Presented at SIGGRAPH 2017). <a href="https://www.cs.dartmouth.edu/~bozhu/papers/topoOpt.pdf">[paper]</a><a href="https://www.cs.dartmouth.edu/~bozhu/papers/topoOptSup.pdf">[supplementary]</a><a href="https://youtu.be/AT6ZSBJINjQ">[video]</a><a href="https://www.cs.dartmouth.edu/~bozhu/projects/topo.htm">[project page]</a><a href="http://news.mit.edu/2017/designing-microstructure-3-d-printed-objects-0804">[MIT News]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="http://people.csail.mit.edu/aschulz/optCAD/index.html"><img src="images/drone_ui.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Adriana Schulz, Jie Xu, Bo Zhu, Changxi Zheng, Eitan Grinspun, Wojciech Matusik. <strong>Interactive Design Space Exploration and Optimization for CAD Models</strong>. ACM Transactions on Graphics (SIGGRAPH 2017), Volume 36, Issue 4. <a href="https://people.csail.mit.edu/aschulz/optCAD/a11-schulz.pdf">[paper]</a><a href="https://youtu.be/_vHMFXfTq6o">[video]</a><a href="http://people.csail.mit.edu/aschulz/optCAD/index.html">[project page]</a><a href="http://news.mit.edu/2017/reshaping-computer-aided-design-instantcad-0724">[MIT News]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://cdfg.mit.edu/publications/computational-multicopter-design"><img src="images/bunnycopter.jpg" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Tao Du, Adriana Schulz, Bo Zhu, Bernd Bickel, Wojciech Matusik. <strong>Computational Multicopter Design</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2016), Volume 35, Issue 6. <a href="http://cfg.mit.edu/sites/cfg.mit.edu/files/copter.pdf">[paper]</a><a href="https://youtu.be/GC8fv7kd9mM">[video]</a><a href="https://cdfg.mit.edu/publications/computational-multicopter-design">[project page]</a><a href="http://news.mit.edu/2016/design-your-own-custom-drone-1205">[MIT News]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2015-01.pdf"><img src="images/pizza.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Bo Zhu, Minjae Lee, Ed Quigley, Ron Fedkiw. <strong>Codimensional Non-Newtonian Fluids</strong>. ACM Transactions on Graphics (SIGGRAPH 2015), Volume 34, Issue 4. <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2015-01.pdf">[paper]</a><a href="https://vimeo.com/127891298">[video]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="http://physbam.stanford.edu/~fedkiw/papers/stanford2013-05.pdf"><img src="images/milk_crown.png" class="image">
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Wen Zheng, Bo Zhu, Byungmoon Kim, Ron Fedkiw. <strong>A New Incompressibility Discretization for a Hybrid Particle MAC Grid Representation with Surface Tension</strong>. Journal of Computational Physics (JCP), 280:94-142, 2015. <a href="http://physbam.stanford.edu/~fedkiw/papers/stanford2013-05.pdf">[paper]</a><a href="http://physbam.stanford.edu/~fedkiw/animations/hybrid_droplet_impact.avi">[video]</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2014-01.pdf"><img src="images/water_bell.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Bo Zhu, Ed Quigley, Matthew Cong, Justin Solomon, Ron Fedkiw. <strong>Codimensional Surface Tension Flow on Simplicial Complexes</strong>. ACM Transactions on Graphics (SIGGRAPH 2014), , Volume 33, Issue 4. <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2014-01.pdf">[paper]</a><a href="http://vimeo.com/94716977">[video]</a></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2013-03.pdf"><img src="images/fire.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Bo Zhu, Wenlong Lu, Matthew Cong, Byungmoon Kim, Ron Fedkiw. <strong>A New Grid Structure for Domain Extension</strong>. ACM Transactions on Graphics (SIGGRAPH 2013), Volume 32, Issue 4. <a href="https://physbam.stanford.edu/~fedkiw/papers/stanford2013-03.pdf">[paper]</a><a href="http://vimeo.com/71362780">[video]</a> </p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="https://www.jst.go.jp/erato/igarashi/en/projects/sketchfluid/"><img src="images/sketch_fluid.png" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <p>Bo Zhu, Michiaki Iwata, Ryo Haraguchi, Takashi Ashihara, Nobuyuki Umetani, Takeo Igarashi, Kazuo Nakazawa. <strong>Sketch-based Dynamic Illustration of Fluid Systems</strong>. ACM Transactions on Graphics (SIGGRAPH Asia 2011), Volume 30, Issue 6.<a href="https://www.cs.dartmouth.edu/~bozhu/papers/sketch_fluid.pdf"> [paper]</a><a href="http://vimeo.com/29846540">[video]</a><a href="https://www.jst.go.jp/erato/igarashi/en/projects/sketchfluid/">[project page]</a></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="https://www.cs.dartmouth.edu/~bozhu/papers/sph_vortex.pdf"><img src="images/paddle.jpg" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                Bo Zhu, Xubo Yang, Ye Fan. <strong>Creating and Preserving Vortical Details in SPH Fluid. </strong>Computer Graphics Forum (Pacific Graphics 2010), 29(7):2207. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/sph_vortex.pdf">[paper]</a><a href="http://vimeo.com/12313694">[video]</a><a href="http://dalab.se.sjtu.edu.cn/%7Ebo/sph/sph.htm">[project page]</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="https://www.cs.dartmouth.edu/~bozhu/papers/sand_surface_flow.pdf"><img src="images/sand.jpg" class="image"></a>
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td>
+                Bo Zhu, Xubo Yang. <strong>Animating Sand as a Surface Flow.</strong> Eurographics 2010 short paper. <a href="https://www.cs.dartmouth.edu/~bozhu/papers/sand_surface_flow.pdf">[paper] </a><a href="http://vimeo.com/12313312">[video]</a><a href="http://dalab.se.sjtu.edu.cn/%7Ebo/sand/sand.htm">[project page]</a>
+            </td>
+        </tr>
+    </table>
+
+    <!--Dissertation-->
+    <hr class="dv2" />
+    <div class="text">
+        <p class="title">Dissertation</p>
+        <p>Bo Zhu. <strong>Codimensional Fluid Simulation on Simplicial Complexes</strong>. PhD Thesis, Stanford University, 2015. <a href="http://purl.stanford.edu/cv928rs2874">[Thesis]</a></p>
+    </div>
+
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p class="text"><span style="color: darkgray; font:14px">Last updated in 04/2025. Copyright © Bo Zhu at Georgia Tech.</span></p>
+	<hr class="dv2" />
+</div>
+
+<!-- Default Statcounter code for index
+http://www.dartmouth.edu/~boolzhu/ -->
+<script type="text/javascript">
+    var sc_project=11839957;
+    var sc_invisible=1;
+    var sc_security="05b14d3a";
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="http://statcounter.com/"
+                                      target="_blank"><img class="statcounter"
+                                                           src="//c.statcounter.com/11839957/0/05b14d3a/1/" alt="Web
+Analytics Made Easy - StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->

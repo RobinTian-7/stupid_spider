@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<!-- saved from url=(0042)https://people.eecs.berkeley.edu/~sseshia/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>Sanjit Seshia's Home</title>
+<link rel="stylesheet" href="./styles/my-std.css"></head>
+
+<!---<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#FF0000" alink="#00FF00">--->
+
+<body><table width="100%" cellpadding="13">
+
+<tbody>
+
+<tr>
+<td rowspan="2" width="140">
+<a href="./SanjitSeshia_photograph.jpg"><img border="0" src="./SanjitSeshia_webphoto.jpg" height="260"></a>
+<!---<a href="./SanjitSeshia_photograph.jpg"><img border="0" src="https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/seshia.jpg" height="260"></a>--->
+</td>
+
+<td valign="top" width="350">
+<h1><b><font size="+3"> Sanjit A. Seshia </font></b></h1>
+</td>
+
+</tr>
+
+<tr>
+<td valign="top">
+<!--<td valign=bottom>-->
+&nbsp; Cadence Founders Chair Professor<br>
+&nbsp; <a href="http://www.eecs.berkeley.edu/">Department of Electrical Engineering and Computer Sciences</a><br>
+&nbsp; and <a href="http://logic.berkeley.edu/">Group in Logic and the Methodology of Science</a><br>
+&nbsp; <a href="http://www.berkeley.edu/">University of California, Berkeley</a><br>
+&nbsp; <br>
+&nbsp; Affiliated Faculty, <a href="https://www.icyphy.org/">Industrial Cyber-Physical Systems Center</a>, <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, <br>
+&nbsp; &nbsp; and the <a href="https://simons.berkeley.edu/">Simons Institute for the Theory of Computing</a>.<br>
+&nbsp;<br>
+&nbsp; <a href="https://people.eecs.berkeley.edu/~sseshia/contact.html">Contact Information</a> &nbsp; <br>
+&nbsp;<br>
+&nbsp; Biography: <a href="https://people.eecs.berkeley.edu/~sseshia/bio.html">Brief</a>, <a href="https://people.eecs.berkeley.edu/~sseshia/bio_full.html">Full</a> &nbsp; <br>
+</td>
+</tr>
+
+</tbody>
+
+<tbody>
+
+<tr>
+<td colspan="3">
+<img src="./images/greenline.gif" height="5" width="100%">
+<center> 
+[ &nbsp;
+<!---<a href="contact.html">Contact Information</a> &nbsp; | &nbsp;--->
+<!---<a href="bio.html">Biography</a> &nbsp; | &nbsp; --->
+Quick Links: &nbsp;
+<a href="#pubs">Publications</a> &nbsp; | &nbsp;
+<a href="#research">Research</a> &nbsp; | &nbsp;  
+<a href="#talks">Talks</a> &nbsp; | &nbsp;  
+<a href="#software">Software</a> &nbsp; | &nbsp;  
+<a href="#teaching">Teaching</a> &nbsp; | &nbsp;
+<a href="#students">Students &amp; Postdocs</a> &nbsp; | &nbsp;
+<a href="https://people.eecs.berkeley.edu/~sseshia/CV/seshia-cv.pdf">CV (in PDF)</a> &nbsp;
+]
+<br>
+<img src="./images/greenline.gif" height="5" width="100%">
+</center></td>
+</tr>
+
+<tr>
+<td colspan="3">
+
+<i>How do we ensure that computational systems are provably safe, secure, and trustworthy?</i>
+My research group seeks to address this question by developing <i>theory and tools</i> of 
+<i>formal methods</i>, which are 
+mathematical techniques to model, design, and verify systems
+using <i>computational proof engines</i>.
+<!---We seek to embed formal methods within the software tools that are used 
+to design and implement computational systems.--->
+
+<p>
+The intersection of formal methods (FM)/automated reasoning 
+and artificial intelligence (AI)/machine learning (ML) has been an active research topic of mine for over 25 years. 
+This research comprises two inter-related thrusts:
+<ul>
+<li><b>AI-Enabled Formal Methods:</b> Perform tasks in formal methods by reduction to synthesis, and 
+   perform synthesis by integrating AI/ML with deductive procedures. 
+   The following position paper, first published in 2011-2012, outlines this approach and initial results.<br>
+       &nbsp; &nbsp; <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-seshia-pieee15.html">Sanjit A. Seshia. <b>Combining Induction, Deduction, and Structure for
+            Verification and Synthesis</b>. Proceedings of the IEEE,  103(11):2036&ndash;2051, 2015.
+            </a><br>
+   See also <a href="https://www.youtube.com/watch?v=7J01Yf8lRmg">this 2025 talk (video)</a> describing my work in this thrust over 25+ years.
+   Our <a href="https://github.com/uclid-org/uclid/">UCLID5</a> open-source project implements this approach.
+</li><br>
+<li><b>Verified AI:</b> Develop and employ novel formal methods for safe and trustworthy AI systems. The following position paper, 
+   first published in 2016, outlines this approach and describes preliminary results:<br>
+    &nbsp; &nbsp; <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-seshia-cacm22a.html">Sanjit A. Seshia,  Dorsa Sadigh, and  S. Shankar Sastry. <b> Toward Verified
+            Artificial Intelligence</b>. <i> Communications of the ACM</i>,  65(7):46&ndash;55, 2022.
+            </a><br>
+   See <a href="https://mediaspace.illinois.edu/media/t/1_m6n2o3a6">this 2024 colloquium lecture (video)</a> describing this approach.
+   This approach is implemented in our open-source tools 
+   <a href="https://scenic-lang.org">Scenic</a> and 
+   <a href="https://github.com/BerkeleyLearnVerify/VerifAI">VerifAI</a>. 
+</li>
+</ul>
+
+<p>
+I take a <i><b>full stack</b> approach to formal methods</i>, meaning that my group  
+works on all of the layers that make up formal tools: 
+(i) computational engines such as satisfiability (SAT/SMT) solvers 
+that underpin automated reasoning; 
+(ii) algorithmic strategies for verification and synthesis that build on those engines; and 
+(iii) formalisms and languages for modeling and specifying problems and systems from a variety of domains.
+Our work has been applied to improving the safety, security, and dependability of 
+software, hardware, distributed systems, AI/ML, robotics, cyber-physical systems, and biological systems,
+impacting societal-scale applications in several domains including 
+cloud computing, transportation, healthcare, and education.
+Our research is made available to the broader community in a <a href="#software">range of open-source tools</a>.
+<!--Our work spans several abstraction layers, from mathematical models, through software, to electronic and biological substrates.-->
+<p>
+Here is a selection of some of our most impactful research contributions:
+<ul>
+<li> <b>SMT Solving and SMT-based Verification:</b> We developed 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-bryant-cav02.html">UCLID</a> (pronounced "Euclid"), one of the first 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-barrett-smtbookch21.html"><i>satisfiability modulo theories (SMT) solvers</i></a>
+and SMT-based verifiers. We continue to work on new SMT solvers  (e.g., <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-shah-aaai24.html">Algaroba</a>),
+along with verifiers (e.g., <a href="https://github.com/uclid-org/uclid/">UCLID5</a>) applied to 
+novel motivating applications.
+See <a href="https://youtu.be/vaEDBs3YWrY">this brief video</a> for a 
+perspective on our contributions to SMT solving at the 2021 CAV Award presentation.
+   
+<li> <b>Algorithmic Formal Synthesis:</b> We have contributed to the development of fundamental techniques
+in the synthesis of programs and other formal artifacts, including 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-solar-asplos06.html"><i>counterexample-guided inductive synthesis (CEGIS)</i></a>, 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-alur-fmcad13.html"><i>syntax-guided synthesis (SyGuS)</i></a>,
+and 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-jha-acta17.html"><i>oracle-guided inductive synthesis (learning)</i></a>,
+as well as applications of AI/ML-based formal synthesis including 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-jin-tcad15.html">specification synthesis</a>, 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-seshia-acmtecs10.html">timing analysis of embedded software</a>, 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-jha-icse10.html">program synthesis</a>, 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-raman-hscc15.html">controller synthesis</a>,
+and 
+<a href="https://algoimprov.org/">algorithmic improvisation</a>.
+See <a href="https://www.youtube.com/watch?v=kwlhTd957ag">this brief video</a> for a 
+perspective on oracle-guided inductive synthesis
+presented during the Most Influential Paper award session at ICSE 2020.
+
+<li> <b>Verified AI and AI-Enabled Autonomy:</b> We have developed formal methods to address the topics of  
+<a href="http://learnverify.org/VerifiedAI">AI Safety and Trustworthy AI</a>, 
+implemented in open-source tools
+<a href="https://scenic-lang.org/">Scenic</a> and
+<a href="https://github.com/BerkeleyLearnVerify/VerifAI">VerifAI</a>,
+which we have demonstrated for the design and verification of AI-enabled autonomous 
+and semi-autonomous cyber-physical systems (such as autonomous vehicles including industrial-scale systems).
+In the <a href="https://vehical.org">VeHICaL project</a>, we pioneered several techniques for 
+<a href="http://human-cps.eecs.berkeley.edu/">Human-CPS</a>, 
+cyber-physical systems that operate in concert with humans (also called human-robot systems).
+</li>
+
+<li> <b>Formal Methods for Secure and Distributed Computing:</b> 
+Our work has addressed formal
+modeling and verification of secure and distributed systems, in collaboration with and having 
+industrial impact at several companies including Microsoft, Amazon (AWS), and Intel.
+Contributions include 
+verification of software <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-sinha-pldi16.html">written for</a> and 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-subramanyan-ccs17.html">designs of</a> trusted execution environments;
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-cheang-csf19.html">specification</a> and <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-godbole-ccs24.html">verification</a> of microarchitectural side-channel attacks, 
+and to the <a href="https://github.com/P-org/P/">P</a> modeling and testing framework, particularly its 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-desai-oopsla18.html">compositional modeling and testing</a> tools, 
+and its <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-mora-oopsla23.html">formal verifier</a>, the <a href="https://p-org.github.io/P/advanced/PVerifierLanguageExtensions/announcement/">P Verifier</a>.
+Most of these contributions build on our <a href="https://github.com/uclid-org/uclid/">UCLID5</a> open-source project.
+
+</li>
+
+</ul>
+</p>
+
+<p>
+Over the years, our research has had substantial industrial impact through our open-source projects. 
+My research has also contributed to the founding of a few startup companies, 
+<a href="https://citrisfoundry.org/portfolio_page/decyphir/">Decyphir, Inc.</a> (in the area of automotive powertrain systems)
+<!--http://www.decyphir.com/-->
+and <a href="https://www.ycombinator.com/companies/20n">20<sup>n</sup>&nbsp;Labs, Inc.</a>
+<!--http://20n.com/--> 
+(based on the <a href="http://www.eecs.berkeley.edu/~sseshia/pubs/b2hd-srivastava-iwbda12.html">ACT project</a> addressing 
+modeling, verification, and synthesis problems in synthetic biology).
+</p>
+
+<p>
+I co-developed, with Edward A. Lee, an <a href="http://chess.eecs.berkeley.edu/eecs149/">undergraduate course on Embedded, Cyber-Physical Systems</a>. 
+We also published an accompanying <i>textbook</i>
+<a href="http://leeseshia.org/">Introduction to Embedded Systems: A Cyber-Physical Systems Approach</a> currently in its second edition published by MIT Press. Our textbook has been <a href="http://leeseshia.org/adoptions.html">adopted in over 50 countries</a>.
+In 2014, we offered one of the first "massive open online courses" (MOOCs) on Cyber-Physical Systems on the edX platform: <a href="http://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-eecs149-1x-cyber-physical-1629">EECS149.1x</a>. This MOOC was the first, to our knowledge, to employ formal verification in the automatic grading system (which was designed using inductive synthesis). More information about the automatic grading software,
+<a href="http://cpsgrader.org/">CPSGrader, is available here</a>. 
+I also taught a graduate-level course on 
+<a href="http://www.eecs.berkeley.edu/~sseshia/fmee">Formal Methods for Engineering Education</a>, one of the 
+early classes to explore the use of AI/ML in CPS and robotics education at scale.
+</p>
+
+<p>
+In 2024, I helped create a new international conference on <a href="https://www.neusconference.org">Neuro-Symbolic Systems (NeuS)</a>,
+and serve on its steering committee.
+</p>
+
+<p>
+<a href="https://people.eecs.berkeley.edu/~sseshia/#talks">Selected talks</a> and further details on 
+<a href="https://people.eecs.berkeley.edu/~sseshia/#research">research</a> and <a href="https://people.eecs.berkeley.edu/~sseshia/#teaching">teaching</a> are available.
+A good starting point is to browse my 
+<a href="https://people.eecs.berkeley.edu/~sseshia/pubs/sort_date.html">recent publications</a>.
+
+<br><br>
+
+<br>
+<img src="./images/greenline.gif" height="5" width="100%">
+</p><p>
+<a href="https://people.eecs.berkeley.edu/~sseshia/prospective-students.html">Note to prospective students and postdocs</a>
+
+<!----------------
+<br>
+<img SRC="images/greenline.gif" height=5 width="100%">
+<br>
+---------------->
+</p></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<a name="research">
+
+<h2>&nbsp;&nbsp;&nbsp;Research</h2>
+
+<table width="100%" cellpadding="13">
+<tbody>
+<tr>
+<td colspan="3">
+
+
+<h3>Areas of Interest</h3>
+
+Formal Methods, 
+Dependable Computing, 
+Computational Logic, 
+Cyber-Physical Systems,
+Computer Security, 
+Design Automation, 
+Programming Systems, 
+Artificial Intelligence, 
+Theory.
+
+
+<a name="pubs">
+
+<h3>Publications</h3>
+
+<!---<p>--->
+</a><a href="https://people.eecs.berkeley.edu/~sseshia/pubs/pubs.html">Full publications list</a>, organized by
+<ul>
+<li> <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/class_type.html">Type</a> </li>
+<li> <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/class_rescat.html">Area</a> </li>
+<li> <a href="https://people.eecs.berkeley.edu/~sseshia/pubs/sort_date.html">Year</a> </li>
+</ul>
+
+
+
+<a name="talks">
+
+<h3>Selected Talks:</h3>
+Here are videos/slides from selected presentations: (listed in reverse chronological order)
+</a><ul><a name="talks">
+</a><li><a name="talks"></a><a href="https://uva-mcps-lab.github.io/RV21/paper10.1.html">Formal Analysis of AI-Based Autonomy: From Modeling to Runtime Assurance</a>, Invited Tutorial at the 21st International Conference on Runtime Verification (RV), October 2021. (<a href="https://www.youtube.com/watch?v=IkJ8pRLr3RM">watch the video on youtube</a>)
+</li><li><a href="https://www.youtube.com/watch?v=5nIK96kADj4">Formal Specification for Machine Learning Systems (video)</a>, Invited Talk at ATVA/HYPER 2021, October 2021. 
+</li><li><a href="https://youtu.be/wBxPk1FXPFg?t=673">Algorithmic Improvisation for Dependable Intelligent Autonomy (video)</a>, Keynote Talk at FSTTCS 2020 (the 40th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science), December 2020. 
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-VerifiedAI_NFM20.pdf">Verified Artificial Intelligence and Autonomy (PDF)</a>, Keynote Talk at the NASA Formal Methods Conference (NFM), May 2020. (<a href="https://youtu.be/_qszqXlKADw?t=12274">watch the video on youtube</a>)
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia_Sim_Real_VerifAI_Scenic.pdf">Bridging Simulation and the Real World with VerifAI and Scenic (PDF)</a>, Talk at Berkeley Deep Drive Spring Retreat, March 2020. 
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-VerifiedAI_RV19.pdf">Verified Artificial Intelligence: A Runtime Verification Perspective (PDF)</a>, Keynote Talk at the International Conference on Runtime Verification (RV), October 2019. (<a href="https://www.youtube.com/watch?v=QF210fIhkuo">watch the video on youtube</a>)
+</li><li><a href="https://simons.berkeley.edu/talks/towards-verified-deep-learning">Towards Verified Deep Learning (video)</a>, Invited Talk at Simons Institute Workshop on Emerging Challenges in Deep Learning, August 2019.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/UCLID5-MEMOCODE18-Seshia.pdf">UCLID5: Integrating Modeling, Verification, Synthesis, and Learning (PDF)</a>, Keynote Talk at the 16th ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE), October 2018.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-VerifiedAI-ATVA2018.pdf">Towards Verified Artificial Intelligence (PDF)</a>, Keynote Talk at the International Symposium on Automated Technology for Verification and Analysis (ATVA), October 2018.
+</li><li>Formal Methods, Machine Learning, and Cyber-Physical Systems (<a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-FM_ML_CPS-ATVA2018Tutorial-Part1.pdf">Part 1 PDF</a>, <a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-FM_ML_CPS-ATVA2018Tutorial-Part2.pdf">Part 2 PDF</a>), Invited Tutorial at the International Symposium on Automated Technology for Verification and Analysis (ATVA), October 2018.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-FM_ML_CPS-Dec2017.pdf">Formal Methods meets Machine Learning: Explorations in Cyber-Physical System Design (PDF)</a>, Special EE/CS Seminar at Stanford University, December 2017. 
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-VerifiedAI-SETTA17.pdf">Towards Verified Artificial Intelligence (PDF)</a>, Keynote Talk at the Symposium on Dependable Software Engineering: Theories, Tools and Applications (SETTA), October 2017. Earlier version of talk given above.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-VerifiedCognitiveSystems-DAC17.pdf">Principles for Verified Artificial Intelligence (PDF)</a>, Invited Talk at the Design Automation Conference 2017, June 2017.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-FormalInductiveSynthesis.pdf">Formal Inductive Synthesis: Theory and Applications (PDF)</a>, Invited Tutorial given at Haifa Verification Conference 2016 and the First Indian SAT/SMT School, November/December 2016.
+</li><li><a href="https://georgeboole200.ucc.ie/conversations/seshia/">Interview as part of George Boole Bicentenary Celeberations (video)</a>, part of the <a href="https://georgeboole200.ucc.ie/conversations/">George Boole Legacy Interviews Project</a>, 2015.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-UIUCColloquium.pdf">Verification by, for, and of Humans: Formal Methods for Cyber-Physical Systems and Beyond (PDF)</a>, ECE Department Colloquium, University of Illinois at Urbana-Champaign, March 2015.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/LabMOOCs-Seshia-UCB.pdf">Towards Lab-Based MOOCs: Embedded Systems, Robotics, and Beyond (PDF)</a>, Invited Talk, National Instruments (NI) Week, August 2014.
+</li><li><a href="http://www.eecs.berkeley.edu/~sseshia/talks/Seshia-DATE13.pdf">Integrating Induction and Deduction for Verification and Synthesis (PDF)</a>, DATE 2013 Tutorial: A Tribute to Robert Brayton, March 2013.
+</li><li><a href="http://www.youtube.com/watch?v=VUyfi6JJRgA">Formal Methods for Dependable Computing: From Models, through Software, to Circuits (video)</a>, CITRIS Research Exchange Seminar Series, November 2010.
+</li><li> <a href="https://wikis.mit.edu/confluence/display/satsmtschool11/Uclid">UCLID's Elements: Term-Level Verification and SMT Solving</a>, SAT/SMT Summer School, MIT, Cambridge, MA, June 2011.
+</li><li><a href="http://hcss-cps.org/events/seshia.pdf">Verifying Timing-Centric Software Systems (PDF)</a>, Invited talk at High-Confidence Software Systems (HCSS), May 2011.
+</li><li><a href="http://fm.csl.sri.com/UV10/slides/Seshia-UsableVerif-Nov10.pdf"> The Challenge of Environment Modeling in Verifying Cyber-Physical Software Systems (PDF)</a>, Workshop on Usable Verification, November 2010.
+</li><li>
+<a href="https://people.eecs.berkeley.edu/~sseshia/talks/Seshia-FMCAD10_Panel.pdf">Low-Level Verification of Embedded Software: Addressing the Challenge (PDF)</a>, FMCAD 2010 panel presentation.
+</li><li>
+<a href="http://research.microsoft.com/apps/video/default.aspx?id=121527">On Voting Machine Design for Verification and Testability (video)</a>, Microsoft Research, March 2010.
+</li><li>
+Tutorial at ICCAD'09 on Satisfiability Modulo Theories (joint with Clark Barrett):
+<a href="https://people.eecs.berkeley.edu/~sseshia/talks/ICCAD09-Tutorial-Seshia.ppt">My slides (PPT)</a>, 
+<a href="http://www.cs.nyu.edu/~barrett/slides/iccad.pdf">Clark's slides (PDF)</a>.
+</li></ul>
+
+
+
+<h3>Affiliations</h3>
+
+
+Centers/Large Projects/Labs my group participates in:
+<ul>
+<li> <a href="https://bair.berkeley.edu/">BAIR</a>: Berkeley Artificial Intelligence Research</li>
+<li> <a href="https://www.icyphy.org/">iCyPhy</a>: Industrial Cyber-Physical Systems Center</li>
+<li> <a href="https://rdi.berkeley.edu/">RDI</a>: Center for Responsible, Decentralized Intelligence</li>
+<li><a href="https://simons.berkeley.edu/">Simons Institute</a> for the Theory of Computing</li>
+<li> <a href="http://embedded.eecs.berkeley.edu/">DOP Center</a>: Donald O. Pederson Center for Electronic Systems Design </li>
+<li> <a href="https://deepdrive.berkeley.edu/">BDD</a>: Berkeley Deep Drive</li>
+</ul>
+
+
+Past centers/projects:
+<ul>
+<li> <a href="http://vehical.org/">VeHICaL</a>: Verified Human Interfaces, Control, and Learning for Semi-Autonomous Systems </li>
+<li> <a href="https://logics.design/">LOGiCS</a>: Learning-Based Oracle-Guided Compositional Symbiotic Design of Cyber-Physical Systems </li>
+<li> <a href="https://adept.eecs.berkeley.edu/">ADEPT</a>: Agile Design of Efficient Processing Technologies</li>
+<li> <a href="http://chess.eecs.berkeley.edu/">CHESS</a>: Center for Hybrid and Embedded Software Systems </li>
+<li> <a href="http://www.terraswarm.org/">TSRC</a>: TerraSwarm Research Center </li>
+<li> <a href="https://excape.cis.upenn.edu/">ExCAPE</a>: Expeditions in Computer Augmented Program Engineering </li>
+<li> <a href="http://www.gigascale.org/">GSRC</a>: Gigascale Systems Research Center </li>
+<li> <a href="http://scrub.cs.berkeley.edu/">SCRUB</a>: Secure Computing Research for Users' Benefit </li>
+<li> <a href="http://www.musyc.org/">MuSyC</a>: Multiscale Systems Center </li>
+<li> <a href="http://trust.eecs.berkeley.edu/">TRUST</a>: Team for Research in Ubiquitous Secure Technology </li>
+<li> <a href="http://osq.cs.berkeley.edu/">OSQ</a>: Open Source Quality Project </li>
+</ul>
+
+<!---<h3>Past Research Projects</h3>
+(click on a project name for further details)
+--->
+
+Still older research projects:
+<ul>
+
+<li>
+<a href="https://people.eecs.berkeley.edu/~sseshia/research/resilient.html">VGER</a>: Verification-Guided Error Resilience of Circuits and Systems
+</li>
+
+<li>
+<a href="https://people.eecs.berkeley.edu/~sseshia/research/embedded.html">Robust Embedded Systems</a>: 
+Verification and Learning for Provably Dependable Embedded Systems
+</li>
+
+<li>
+<a href="https://people.eecs.berkeley.edu/~sseshia/research/security.html">SOS -- Solvers for Security</a>: SAT, SMT, and Constraint-Based Techniques 
+for Analyzing Security and Building Secure Systems
+</li>
+</ul>
+
+
+<p>
+Descriptions of <a href="https://people.eecs.berkeley.edu/~sseshia/past_projects.html">other past projects</a> are also available.<br>
+
+
+</p></td>
+</tr>
+</tbody>
+</table>
+
+
+</a><a name="software">
+<h2>&nbsp;&nbsp;&nbsp;Software</h2>
+
+Over the years, my group members and I have developed several software
+toolkits related to formal methods and its applications.<br>
+
+Here are some software packages that we actively develop and support:
+</a><ul><a name="software">
+</a><li><a name="software">
+<b></b></a><b><a href="https://github.com/uclid-org/uclid">UCLID5</a>:</b>
+A system for modeling, verification, and synthesis of computational systems
+</li>
+
+<li>
+<b><a href="http://github.com/BerkeleyLearnVerify/VerifAI">VerifAI</a>:</b>
+A system for design and verification of AI-based systems -- the Verified AI toolkit
+</li>
+
+<li>
+<b><a href="https://scenic-lang.org/">Scenic</a>:</b>
+A probabilistic programming system for scenario description and data generation
+for autonomous systems
+</li>
+
+<li>
+<b><a href="https://berkeleylearnverify.github.io/GameTime/">GameTime</a>:</b>
+A software toolkit for timing analysis of embedded software
+</li>
+
+<li>
+<b><a href="http://cpsgrader.org/">CPSGrader</a>:</b>
+An automatic grading and feedback system for cyber-physical systems education 
+</li>
+
+</ul>
+
+The following software distributions are not being actively developed
+within my research group but are still available publicly with documentation
+or are being maintained by alumni or elsewhere:
+<ul>
+<li>
+<b><a href="https://p-org.github.io/P/">P</a>:</b>
+A programming language and system for formal modeling and analysis of distributed systems and cloud computing services
+</li>
+
+<li>
+<b><a href="https://drona-org.github.io/Drona/">Drona/SOTER</a>:</b>
+A Programming Framework for Building Reliable Distributed Mobile Robotics Systems
+including Run-Time Assurance
+</li>
+
+<li>
+<b><a href="https://yshoukry.bitbucket.io/SatEX/">SMC</a>:</b>
+Satisfiability Modulo Convex Programming
+</li>
+
+<li>
+<b><a href="https://markusrabe.github.io/cadet/">CADET</a>:</b>
+A solver for 2QBF (quantified Boolean formulas with one quantifier alternation)
+</li>
+
+<li>
+<b><a href="https://github.com/dfremont/maxcount">MaxCount</a>:</b>
+An approximate Max#SAT solver 
+</li>
+
+<li>
+<b><a href="https://github.com/BluSTL/BluSTL/">BluSTL</a>:</b>
+A Matlab toolkit for automatically generating hybrid controllers from signal temporal logic specifications
+</li>
+
+<li>
+<b><a href="https://github.com/decyphir/breach">Breach</a>:</b>
+<!---<b><a href="http://www.eecs.berkeley.edu/~donze/breach_page.html">Breach</a>:</b>--->
+A Matlab/C++ toolbox for the simulation-based verification of temporal logic properties 
+of hybrid dynamical systems 
+</li>
+
+<li>
+<b><a href="http://www.cse.iitk.ac.in/users/isaha/complan.shtml">Complan</a>:</b>
+SMT-based compositional multi-robot motion planning
+</li>
+
+<li>
+<b><a href="http://uclid.eecs.berkeley.edu/v2ucl/">v2ucl</a> &amp;
+<a href="http://uclid.eecs.berkeley.edu/atlas/">ATLAS</a>:</b>
+Abstraction tools for generating UCLID models from word-level/Verilog descriptions of hardware
+</li>
+
+<li>
+<b><a href="http://people.umass.edu/dholcomb/bfit.html">BFIT</a>:</b>
+The Berkeley FIT (failure-in-time) Estimation Tool
+</li>
+
+<li>
+<b><a href="http://uclid.eecs.berkeley.edu/Beaver/">Beaver</a>:</b>
+A satisfiability-modulo-theories (SMT) solver for finite-precision bit-vector arithmetic
+</li>
+
+</ul>
+
+<br>
+
+<a name="teaching">
+<h2>&nbsp;&nbsp;&nbsp;Teaching</h2>
+
+<table width="100%" cellpadding="13">
+<tbody>
+<tr>
+<td colspan="3">
+
+<h3>Current</h3>
+Fall 2025: <a href="http://chess.eecs.berkeley.edu/eecs149/">EECS 149/249A: Introduction to Embedded Systems</a> (co-taught with Prabal Dutta)<br>
+
+<h3>Recent Past</h3>
+<!---<h3>Recent Courses</h3>--->
+Spring 2024: <a href="http://www.eecs.berkeley.edu/~sseshia/219c/">EECS 219C: Formal Methods: Specification, Verification, and Synthesis</a><br>
+Fall 2024: <a href="http://chess.eecs.berkeley.edu/eecs149/">EECS 149/249A: Introduction to Embedded Systems</a> (co-taught with Prabal Dutta)<br>
+Spring 2024: <a href="http://www.eecs.berkeley.edu/~sseshia/219c/spr24/">EECS 219C: Formal Methods: Specification, Verification, and Synthesis</a><br>
+Spring 2024: <a href="http://eecs70.org/">CS 70: Discrete Mathematics and Probability Theory</a> (co-taught with Alistair Sinclair)<br>
+Fall 2023: <a href="http://chess.eecs.berkeley.edu/eecs149/">EECS 149/249A: Introduction to Embedded Systems</a> (co-taught with Prabal Dutta)<br>
+Spring 2023: <a href="http://www.eecs.berkeley.edu/~sseshia/219c/spr23/">EECS 219C: Formal Methods: Specification, Verification, and Synthesis</a><br>
+Spring 2022: <a href="http://www.eecs.berkeley.edu/~sseshia/219c/spr22/">EECS 219C: Formal Methods: Specification, Verification, and Synthesis</a><br>
+Fall 2021: <a href="http://chess.eecs.berkeley.edu/eecs149/">EECS 149/249A: Introduction to Embedded Systems</a><br>
+<!---
+Spring 2021: <a href="http://www.eecs.berkeley.edu/~sseshia/219c/spr21">EECS 219C: Formal Methods: Specification, Verification, and Synthesis</a><br>
+Fall 2020: <a href="http://chess.eecs.berkeley.edu/eecs149/">EECS 149/249A: Introduction to Embedded Systems</a> (co-taught with Prabal Dutta)<br>
+--->
+
+<p>
+Click here for the <a href="https://people.eecs.berkeley.edu/~sseshia/teaching.html">full list of courses taught</a>.
+
+</p></td>
+</tr>
+</tbody>
+</table>
+
+
+</a><a name="students">
+
+<!---<h2>&nbsp;&nbsp;&nbsp;Ph.D. & M.S. Students</h2>--->
+<h2>&nbsp;&nbsp;&nbsp;Group Members</h2>
+
+<table width="100%" cellpadding="13">
+<tbody>
+<tr>
+<td colspan="3">
+
+<h3>Current</h3>
+
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Sahil Bhatia</a> (Ph.D.) (co-advised with Alvin Cheung)<br>
+<a href="https://kevinchang73.github.io/">Kai-Chun Chang</a> (Ph.D.) (co-advised with Alberto Sangiovanni-Vincentelli)<br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Pei-Wei Chen</a> (Ph.D.) <br>
+<a href="https://kael.tech.blog/">Karim Elmaaroufi</a> (Ph.D.) (co-advised with Matei Zaharia)<br>
+<a href="http://adwait.github.io/">Adwait Godbole</a> (Ph.D.) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Aniruddha Joshi</a> (Ph.D.) <br>
+<a href="https://www.eddie-kim.org/">Edward Kim</a> (Postdoc) (co-mentored with Bjoern Hartmann) <br>
+<a href="https://hanna.krasowski.io/">Hanna Krasowski</a> (Postdoc) (co-mentored with Murat Arcak) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Niklas Lauffer</a> (Ph.D.) (co-advised with Stuart Russell) <br>
+<a href="https://shaokai.io/">Shaokai Lin</a> (Ph.D.) (co-advised with Edward A. Lee) <br>
+<a href="https://ameesh-shah.github.io/">Ameesh Shah</a> (Ph.D.) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Lawrence Shieh</a> (M.S.) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Justin Wong</a> (Ph.D.) (co-advised with Joseph Gonzalez) <br>
+<!-- href="https://people.eecs.berkeley.edu/~sseshia/">Kaifei Xu</a> (M.S.) <br>-->
+<a href="https://people.eecs.berkeley.edu/~beyazit/">Beyazit Yalcinkaya</a> (Ph.D.) <br>
+
+
+<h3>Graduated Ph.D. Students <small>(reverse chronological order, with current/last known position and links to theses)</small></h3>
+
+<a href="https://federicoaureliano.github.io/">Federico Mora</a> (Ph.D.) [AWS; then Asst. Prof. U. Waterloo] <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-163.html"><i>Scalable and Usable Domain-Specific Automated Reasoning</i></a> <br>
+<a href="https://www.linkedin.com/in/victoria-tuck-8414139b">Victoria Tuck</a> (Ph.D.) (co-advised with Shankar Sastry) [Postdoc, U. Penn] <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-164.html"><i>From Local Coordination to System-Level Strategies: Designing Reliable, Societal-Scale Multi-Agent Autonomy Across Scales</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Kevin Cheang</a> (Ph.D.) [Amazon Web Services] <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-224.html"><i>Formal Specification and Verification of Secure Information Flow for Hardware Platforms</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Edward Kim</a> (Ph.D.) (co-advised with Alberto Sangiovanni-Vincentelli) [Postdoc, UC Berkeley] <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-214.html"><i>Simulation-Based Testing, Validation, and Training with Probabilistic Programming</i></a> <br>
+<a href="https://mjvc.me/">Marcell Vazquez-Chanlatte</a> (Ph.D.) [Nissan Labs]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2022/EECS-2022-107.html"><i>Specifications from Demonstrations: Learning, Teaching, and Control</i></a><br> 
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Gil Lederman</a> (Ph.D.) (co-advised with Edward A. Lee): <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-135.html"><i>Neural Guidance in Constraint Solvers</i></a><br> 
+<a href="https://people.eecs.berkeley.edu/~bcaulfield/">Ben Caulfield</a> (Ph.D.) (co-advised with Stavros Tripakis) <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-113.html"><i>Learning and Logic for Formal Synthesis</i></a><br> 
+<a href="http://people.eecs.berkeley.edu/~shromona.ghosh/">Shromona Ghosh</a> (Ph.D.) (co-advised with Alberto Sangiovanni-Vincentelli) [Waymo]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-7.html"><i>Oracle-Guided Design and Analysis of Learning-Based Cyber-Physical Systems</i></a><br>
+<a href="https://ankushdesai.github.io/">Ankush Desai</a> (Ph.D.) [Amazon/AWS]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-3.html"><i>Modular and Safe Event-Driven Programming</i></a><br>
+<a href="https://people.ucsc.edu/~dfremont/">Daniel Fremont</a> (Ph.D.) [Assoc. Professor, UC Santa Cruz]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-133.html"><i>Algorithmic Improvisation</i></a><br>
+<a href="http://www.eecs.berkeley.edu/~eskim/">Eric Kim</a> (Ph.D.) (co-advised with Murat Arcak) [Waymo]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-118.html"><i>Constructive Formal Control Synthesis through Abstraction and Decomposition</i></a><br>
+<a href="https://www.linkedin.com/in/rohit-sinha-0a0a906">Rohit Sinha</a> (Ph.D.) [Hedera]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-216.html"><i>Secure Computing using Certified Software and Trusted Hardware</i></a> <br>
+<a href="https://dorsa.fyi/">Dorsa Sadigh</a> (Ph.D.) (co-advised with Shankar Sastry) [Assoc. Professor, Stanford Univ.]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-143.html"><i>Safe and Interactive Autonomy: Control, Learning, and Verification</i></a><br>
+<a href="http://rafaelvalle.github.io/">Rafael Valle</a> (Ph.D.) (co-advised with Edmund Campion) [Nvidia]: <a href="http://www.cnmat.berkeley.edu/publications/data-hallucination-falsification-and-validation-using-generative-models-and-formal"><i>Data Hallucination, Falsification and Validation using Generative Models and Formal Methods</i></a><br>
+<a href="http://sites.bu.edu/depend/">Wenchao Li</a> (Ph.D.) [Assoc. Professor, Boston Univ.]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-20.html"><i>Specification Mining: New Formalisms, Algorithms and Applications</i></a>  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (M.S.): <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-222.html"><i>Formal Methods for Reverse Engineering Gate-Level Netlists</i></a> <br>
+<a href="http://people.umass.edu/dholcomb/">Dan Holcomb</a> (Ph.D.) [Assoc. Professor, UMass Amherst]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-228.html"><i>Formal Verification and Synthesis for Quality-of-Service in On-Chip Networks</i></a> <br>
+<a href="http://susmitjha.github.io/">Susmit Jha</a> (Ph.D.) [Technical Director, SRI International]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-118.html"><i>Towards Automated System Synthesis Using Sciduction</i></a> <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (M.S.): <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-112.html"><i>Reachability Analysis of Lazy Linear Hybrid Automata</i></a> <br>
+<a href="http://www.eecs.berkeley.edu/~bbrady">Bryan Brady</a> (Ph.D.): <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-51.html"><i>Automatic Term-Level Abstraction</i></a>  <br> 
+
+<h3>Graduated M.S. Students <small>(reverse chronological order, with current/last known position and links to theses)</small></h3>
+
+<!---  MS students below ---->
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Alejandro Sanchez Ocegueda</a> (M.S.) <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-169.html"><i>Abstracting Architectures: Two Techniques in Formal Hardware Security Verification</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Kaifei Xu</a> (M.S.) <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-168.html"><i>ScenicGym: Reinforcement Learning with Data Generation Using Scenic</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Anirudh Chaudhary</a> (M.S.) <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-115.html"><i>Improving Auto-Formalization to UCLID5 with LLMs and Formal Methods</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Devan Shanker</a> (M.S.): <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-136.html"><i>Querying Labeled Time Series Data with Scenario Programs</i></a> <br> 
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Jonathan Shi</a> (M.S.): <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2022/EECS-2022-149.html"><i>Lifting Hardware Models from Implementations for Verification</i></a> <br> 
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Mark Wu</a> (M.S.): <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2022/EECS-2022-129.html"><i>Assisting Reinforcement Learning in Real-time Strategy Environments with SCENIC</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Pranav Gaddamadugu</a> (M.S.): <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-200.html"><i>Formally Verifying Trusted Execution Environments with UCLID5</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Kesav Viswanadha</a> (M.S.) [Google]:  <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-103.html"><i>Scalable Techniques for Sampling-Based Falsification of AI-Based Cyber Physical Systems</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Lakshya Jain</a> (M.S.) [Trifacta]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-85.html"><i>Generating Semantic Adversarial Examples through Differentiable Rendering</i></a> <br>
+<a href="https://www.shivkushwah.com/">Shivendra Kushwah</a> (M.S.) [Meta]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-83.html"><i>PSec: A Programming Language for Secure Distributed Computing</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Sumukh Shivakumar</a> (M.S.) [Amazon]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-99.html"><i>A Language-Based Approach to Run-Time Assurance for Autonomous Systems</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Cameron Rasmussen</a> (M.S.) [Apple]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-95.html"><i>Secure Speculation: From Vulnerability to Assurances with UCLID5</i></a> <br>
+<a href="https://nishanttotla.com/">Nishant Totla</a> (M.S.) [Docker]: 
+<a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-158.html"><i>Oracle-Guided Heap Interpolant Synthesis</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Matthew Fong</a> (M.S.): 
+<a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-126.html"><i>Two Optimal Path Problems in Synthetic Biology</i></a> <br>
+<a href="http://www.eecs.berkeley.edu/~garvitjuniwal">Garvit Juniwal</a> (M.S.) [Rubrik]: 
+<a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-237.html"><i>CPSGrader: Auto-Grading and Feedback Generation for Cyber-Physical Systems Education</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Wei Yang Tan</a> (M.S.): <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-112.html"><i>Formal Modeling and Verification of CloudProxy</i></a> <br>
+<a href="http://www.zachwasson.com/">Zach Wasson</a> (M.S.) [Fitbit]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-132.html"><i>Analyzing Data-Dependent Timing and Timing Repeatability with GameTime</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Jonathan Kotker</a> (M.S.) [Microsoft]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-116.html"><i>The Internals of GameTime: Implementation and Evaluation of a Timing Analyzer for Embedded Software</i></a> <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Rhishikesh Limaye</a> (M.S.) [National Instruments]: <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-67.html"><i>Beaver: An SMT Solver for Quantifier-free Bit-vector Logic</i></a>  <br> 
+
+<h3>"Graduated" Postdocs <small>(reverse chronological order, with current/last known position)</small></h3>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Inigo Incer</a> [Asst. Professor, Univ. Michigan Ann Arbor] (co-mentored with Richard Murray and Alberto Sangiovanni-Vincentelli) <br>
+<a href="https://lmpick.github.io/">Lauren Pick</a> [Asst. Professor, City Univ. of Hong Kong] (co-mentored with Aws Albarghouthi)<br>
+<a href="https://people.eecs.berkeley.edu/~hazem.torfah/">Hazem Torfah</a> [Asst. Professor, Chalmers University] <br>
+<a href="https://engineering.wustl.edu/faculty/Hussein-Sibai.html">Hussein Sibai</a> [Asst. Professor, Washington University at St. Louis] (co-mentored with Murat Arcak) <br>
+<a href="https://web.eecs.umich.edu/~manerkar/">Yatin Manerkar</a> [Asst. Professor, Univ. Michigan Ann Arbor] <br>
+<a href="https://sjunges.github.io/sebastian-junges/">Sebastian Junges</a> [Asst. Professor, Radboud University] <br>
+<a href="https://yashpant.github.io/">Yash Pant</a> [Asst. Professor, Univ. of Waterloo] (co-mentored with Bjoern Hartmann and Richard Murray on the <a href="http://vehical.org/">VeHICaL</a> project) <br>
+<a href="https://polgreen.github.io/">Elizabeth Polgreen</a> [Lecturer/Asst. Professor, Univ. of Edinburgh] <br>
+<a href="http://www.markkho.com/">Mark Ho</a> [Asst. Prof., NYU] (co-mentored with Tom Griffiths on the <a href="http://vehical.org/">VeHICaL</a> project) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Hadi Ravanbakhsh</a> [Google] <br>
+<a href="https://people.eecs.berkeley.edu/~tommasodreossi/">Tommaso Dreossi</a> [insitro] <br>
+<a href="http://www.eecs.berkeley.edu/~rabe/">Markus Rabe</a> [Google Research] <br>
+<a href="https://people.eecs.berkeley.edu/~spramod/">Pramod Subramanyan</a> [Asst. Prof., IIT Kanpur] <br>
+<a href="https://rcpsl.eng.uci.edu/yshoukry/">Yasser Shoukry</a> [Assoc. Prof., UCI] (co-mentored with Paulo Tabuada and George Pappas) <br>
+<a href="http://www.eecs.berkeley.edu/~donze">Alexandre Donze</a> [Decyphir] <br>
+<a href="http://www-personal.umich.edu/~ycwu">Yi-Chin Wu</a> [Pure Storage] (co-mentored with Stephane Lafortune) <br>
+<a href="https://vraman.github.io/">Vasu Raman</a> [Zipline] (co-mentored with Richard Murray) <br>
+<a href="http://cse.iitk.ac.in/users/isaha/">Indranil Saha</a> [Assoc. Prof., IIT Kanpur] (co-mentored with George Pappas) <br>
+<a href="https://people.eecs.berkeley.edu/~sseshia/">Daniel Bundala</a> [Google] <br>
+<a href="https://www.ruediger-ehlers.de/">Ruediger Ehlers</a> [Assoc. Prof., TU Clausthal] (co-mentored with Hadas Kress-Gazit) <br>
+
+
+
+<p>
+A complete list of current and past students, including undergraduate advisees, and postdoctoral researchers 
+is available in <a href="https://people.eecs.berkeley.edu/~sseshia/CV/seshia-cv.pdf">my CV</a>.
+
+<!---
+<p>
+<a href="graduated_students.html">Graduated students</a>
+---->
+
+</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>&nbsp;&nbsp;&nbsp;Professional Activities</h2>
+
+<table width="100%" cellpadding="13">
+<tbody>
+<tr>
+<td colspan="3">
+
+<p>
+Editorial Board:<br>
+&nbsp;&nbsp;
+<a href="http://dl.acm.org/journal/tecs">ACM Transactions on Embedded Computing Systems</a> 
+<br>
+
+</p><p>
+Selected Steering/Program Committee Service: <br>
+&nbsp;&nbsp;
+<a href="https://www.neusconference.org">NeuS: International Conference on Neuro-Symbolic Systems</a> 
+(Co-Founder and Steering Committee Member)
+<br>
+
+&nbsp;&nbsp;
+<a href="https://neus-2025.github.io">NeuS'25: 2nd International Conference on Neuro-Symbolic Systems</a> 
+ (Program co-chair) 
+<br>
+
+&nbsp;&nbsp;
+<a href="https://berkeleylearnverify.github.io/HSCC_2020/">HSCC '20: 23rd ACM International Conference on
+Hybrid Systems: Computation and Control</a> (Program co-chair) 
+<br>
+
+&nbsp;&nbsp;
+<a href="http://verifun.eecs.berkeley.edu/vstte15/">VSTTE '15: 7th Working Conference on Verified Software: Theories, Tools, and Experiments</a> (Program co-chair)
+<br>
+
+&nbsp;&nbsp;
+<a href="http://cav12.cs.illinois.edu/">CAV '12: 24th International Conference on Computer-Aided Verification</a> (Program co-chair)
+<br>
+
+<!--------------
+&nbsp;&nbsp;
+<a href="http://fm2015.ifi.uio.no/">FM '15: 20th International Symposium on Formal Methods</a> 
+<br>
+
+&nbsp;&nbsp;
+<a href="http://cavconference.org/2018/">CAV '18: 30th International Conference on Computer-Aided Verification</a> 
+<br>
+
+&nbsp;&nbsp;
+<a href="http://uclid.eecs.berkeley.edu/smt11/">SMT '11: International Workshop on Satisfiability Modulo Theories</a> (Program co-chair)
+<br>
+
+&nbsp;&nbsp;
+<a href="http://www.iccad.com">ICCAD'11: International Conference on Computer-Aided Design</a> (chair of Verification track)
+<br>
+---------------->
+</p><p>
+Other Conference/Workshop Organization: (recent)<br>
+&nbsp;&nbsp;
+<a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=17351">Dagstuhl Seminar on Machine Learning and Formal Methods</a>, August 2017 (co-organizer)
+<br>
+&nbsp;&nbsp;
+<a href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=14351">Dagstuhl Seminar on Decision Procedures and Abstract Interpretation</a>, August 2014 (co-organizer)
+<br>
+
+
+</p><p>
+A complete list of professional activities is available in <a href="https://people.eecs.berkeley.edu/~sseshia/CV/seshia-cv.pdf">my CV</a>.
+
+</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>&nbsp;&nbsp;&nbsp;Miscellaneous</h2>
+
+<table width="100%" cellpadding="13">
+<tbody>
+<tr>
+<td colspan="3">
+
+<p>
+<a href="http://pag.csail.mit.edu/~mernst/advice/">Advice for students and others, compiled by Michael Ernst</a> 
+
+</p><p>
+<a href="https://people.eecs.berkeley.edu/~sseshia/genealogy.txt">My academic genealogy</a> (courtesy
+<a href="http://www.genealogy.ams.org/">the Mathematics Genealogy Project</a>)
+
+</p><p>
+A partial list of "popular press" articles about research my group has contributed to:
+</p><ul>
+<li> <a href="https://www.sciencedaily.com/releases/2017/01/170103122316.htm">Streamlining the Internet of Things and other cyber-physical systems</a> (Science Daily)
+</li><li> <a href="http://spectrum.ieee.org/cars-that-think/transportation/human-factors/autonomous-cars-could-determine-your-driving-style-by-gently-probing-you">Autonomous Cars Could Determine Your Driving Style by Gently Probing You</a> (IEEE Spectrum)
+</li><li> <a href="http://www.newscientist.com/article/mg22029444.400-robotutors-can-a-teach-a-class-of-thousands.html">Robotutor marks the homework of a class of thousands</a> (New Scientist)
+</li><li> <a href="http://alumni.berkeley.edu/california-magazine/2013-winter/metal-machine-music">
+Metal Machine Music: Berkeley researchers write programs that jam</a> (California Magazine)
+</li><li> <a href="http://www.coe.berkeley.edu/labnotes/0606/seshia.html">A Logical Approach to Computer Security</a> (Berkeley Lab Notes) 
+</li></ul>
+
+<br>&nbsp;
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<img src="./images/greenline.gif" height="5" width="100%">
+
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+
+
+
+
+
+
+</a></body></html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Interpretable Machine Learning Lab</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-46180937-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Interpretable Machine Learning Lab</div>
+<div class="menu-item"><a href="lab.html" class="current">Interpretable&nbsp;ML&nbsp;Lab</a></div>
+<div class="menu-item"><a href="papers.html">Papers</a></div>
+<div class="menu-item"><a href="code.html">Code</a></div>
+<div class="menu-item"><a href="mediatalks.html">Announcements&nbsp;<br /> Media,&nbsp;Talks</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Interpretable Machine Learning Lab </h1>
+<div id="subtitle">
+</div>
+</div>
+<table class="imgtable"><tr><td>
+<img src="images/CynthiaMay2020.jpg" alt="" width="105px" height="138px" />&nbsp;</td>
+<td align="left"><p><a href="home.html" target=&ldquo;blank&rdquo;>Cynthia Rudin, PI</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/StephenHahn.jpg" alt="" width="100px" height="113px" />&nbsp;</td>
+<td align="left"><p><a href="https://sites.google.com/view/stephen-ni-hahn?usp=sharing" target=&ldquo;blank&rdquo;>Stephen Ni-Hahn, Postdoc, Duke ECE/CS</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Stark.JPG" alt="" width="100px" height="110px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Zhicheng (Stark) Guo, PhD student, Duke CS</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/RuiZhang.jpg" alt="" width="100px" height="116px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/rui-zhang-588014184/" target=&ldquo;blank&rdquo;>Rui Zhang, PhD student, Duke CS</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/SrikarKatta.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://kattasa.github.io" target=&ldquo;blank&rdquo;>Srikar Katta, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JonDonnelly.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~jcd97/" target=&ldquo;blank&rdquo;>Jon Donnelly, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Hayden.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Hayden McTavish, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Varun.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://varunbabbar.github.io/" target=&ldquo;blank&rdquo;>Varun Babbar, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Gaurav.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://gauravrparikh.github.io/" target=&ldquo;blank&rdquo;>Gaurav Parikh, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ZackBoner.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Zack Boner, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/EricChen.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Eric Chen, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/LukeMoffett.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/luke-moffett-73482459/." target=&ldquo;blank&rdquo;>Luke Moffett, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Yiyang.jpg" alt="" width="100px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Yiyang Sun, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ChloeZhu.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://scholar.google.com/citations?user=GAsrj-EAAAAJ&amp;hl=en" target=&ldquo;blank&rdquo;>Chloe Zhu, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/DennisTang.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Dennis Tang, Research Associate and Former Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/MaximillianMachado.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.mkmachado.com/" target=&ldquo;blank&rdquo;>Maximillian Machado, MS Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/LiamConnor.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.liamgconnor.com/" target=&ldquo;blank&rdquo;>Liam Connor, MSEC student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ShihanFeng.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/shihan-feng-a04175314/" target=&ldquo;blank&rdquo;>Shihan Feng, MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/XinZheng.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/xin-zheng-3274412b2" target=&ldquo;blank&rdquo;>Xin Zheng, MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/YixiaoWang.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://yixiao-wang-stats.github.io/" target=&ldquo;blank&rdquo;>Yixiao Wang, MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/WillLi.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/tianyangwillli/" target=&ldquo;blank&rdquo;>Will Li, MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ZakkHeile.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/zakk-heile-000a88267/" target=&ldquo;blank&rdquo;>Zakk Heile, Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JudyHe.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/judyyanqihe/" target=&ldquo;blank&rdquo;>Judy He, Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ChristopherLi.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://github.com/chrisli36" target=&ldquo;blank&rdquo;>Christopher Li, Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/RussellBarton.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://github.com/rbarton124" target=&ldquo;blank&rdquo;>Russell Barton, Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/RichardCui.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/richard-ziyao-cui/" target=&ldquo;blank&rdquo;>Richard Cui, Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/PeterYang.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://site-cpyang.github.io" target=&ldquo;blank&rdquo;>Peter Yang, Masters Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/IslinaShan.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/islina-shan/" target=&ldquo;blank&rdquo;>Islina Shan, MS Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/CharlieBerens.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://berens.xyz" target=&ldquo;blank&rdquo;>Charlie Berens, Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/RiyaManchanda.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/riya-manchanda-2966b320b/" target=&ldquo;blank&rdquo;>Riya Manchanda, Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/ErickJiang.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Erick Jiang, Undergraduate Student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/AdamCostarino.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/feed/" target=&ldquo;blank&rdquo;>Adam Costarino, MS Student, Duke University</a>
+</p>
+</td></tr></table>
+<p>
+
+
+</p>
+<h1>Alumni</h1>
+<table class="imgtable"><tr><td>
+<img src="images/Alina.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://alinajadebarnett.github.io/" target=&ldquo;blank&rdquo;>Alina Barnett, Former PhD student and postdoc, Duke University, now faculty at University of Rhode Island</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/MichelleQiu.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/michelle-qiu-2a69ab220/" target=&ldquo;blank&rdquo;>Michelle Qiu, Former undergraduate student, Duke University, now PhD student, University of Michigan</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Quinn.jpeg" alt="" width="100px" height="97px" />&nbsp;</td>
+<td align="left"><p><a href="https://qlanners.github.io/" target=&ldquo;blank&rdquo;>Quinn Lanners, Former PhD student, Duke Biostat, now in industry</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Haiyang.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.cs.duke.edu/people/graduates/927" target=&ldquo;blank&rdquo;>Haiyang Huang, PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Yingfan.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/yingfan-wang-2387421a7/" target=&ldquo;blank&rdquo;>Yingfan Wang, Former PhD student, Duke University, now at AWS</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Chudi.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://stat.duke.edu/people/chudi-zhong" target=&ldquo;blank&rdquo;>Chudi Zhong, Former PhD student, Duke University, now faculty at UNC Chapel Hill</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Jiachang.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://jiachangliu.github.io/" target=&ldquo;blank&rdquo;>Jiachang Liu, Former PhD student, Duke ECE, now postdoc at Cornell</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Lesia.jpg" alt="" width="100px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~lesia/" target=&ldquo;blank&rdquo;>Lesia Semenova, Former PhD student, Duke CS, now postdoc at Microsoft Research NYC, incoming faculty at Rutgers</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/EdnaRuixinZhang.PNG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/ruixin-zhang-edna/" target=&ldquo;blank&rdquo;>Edna Ruixin Zhang, Former MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Rico.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://ricohasgithub.github.io/" target=&ldquo;blank&rdquo;>Rico Zhu, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/HarryChen.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/harry-chen/" target=&ldquo;blank&rdquo;>Harry Chen, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JerryYin.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/zirui-yin-921b4b214/" target=&ldquo;blank&rdquo;>Jerry Yin, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/AlexKatopodis.JPG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/alexkatopodis/" target=&ldquo;blank&rdquo;>Alex Katopodis, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/HungLe.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/hungviet-le/" target=&ldquo;blank&rdquo;>Hung Le, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/MuchangBahng.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://mbahng.com/" target=&ldquo;blank&rdquo;>Muchang Bahng, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/MariaIzzi.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://linkedin.com/in/maria-izzi/" target=&ldquo;blank&rdquo;>Maria Izzi, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Sully.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Sully Chen, Former medical student, Duke University, now at OpenAI</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/TonyTian.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://scholar.google.com/citations?user=sdzH93QAAAAJ&amp;hl=en" target=&ldquo;blank&rdquo;>Muhang (Tony) Tian, Former undergraduate student, Duke University, now PhD student at Columbia</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/GiyoungKim.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://giykim.github.io/portfolio" target=&ldquo;blank&rdquo;>Giyoung Kim, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/SamRosen.JPG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://samgrosen.github.io/" target=&ldquo;blank&rdquo;>Sam Rosen, Former PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/FrankieWillard.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/frank-willard/" target=&ldquo;blank&rdquo;>Frank Willard, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/TonyWu.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/shiyou-tony-wu/" target=&ldquo;blank&rdquo;>Tony Wu, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/HenryMa.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/henry-chiyu-ma-3b7b30203/" target=&ldquo;blank&rdquo;>Henry Ma, Former Masters student, Duke University, now PhD student at Dartmouth</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Neha.jpg" alt="" width="100px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="http://nehargupta.github.io" target=&ldquo;blank&rdquo;>Neha Gupta, Former MS student, Duke, currently PhD student at Carnegie Mellon</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Pranay.JPEG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/pranayjain1/" target=&ldquo;blank&rdquo;>Pranay Jain, Former Masters student, Duke University, now PhD student at University of Washingon</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Harsh.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://sites.google.com/view/harshparikh/" target=&ldquo;blank&rdquo;>Harsh Parikh, PhD student, Duke University, now postdoc at Johns Hopkins</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Zhi.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~zhichen/" target=&ldquo;blank&rdquo;>Zhi Chen, Former PhD student, Duke University, now working in finance</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Vittorio.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://vittorioorlandi.github.io" target=&ldquo;blank&rdquo;>Vittorio Orlandi, Former PhD student, Duke University, now working in finance</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JerryLiu.jpg" alt="" width="100px" height="80px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Jerry Liu, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/RuiXin.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/rui-xin-8070181b9/" target=&ldquo;blank&rdquo;>Rui Xin, Former undergraduate student, Duke University, now PhD student at University of Washington</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Boxuan.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/boxuan-li-b575271bb/--would" target=&ldquo;blank&rdquo;>Boxuan Li, Former undergraduate student, Duke University, now PhD student at Columbia</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Cristina.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://es.linkedin.com/in/cristina-molero-del-r%C3%ADo-333a31171?challengeId=AQFtavdH54Gs8wAAAYAHUymlp0gvarsUfqhmVDdyQ3yH19odogeANztzMSK9Q3ruw8ASpqzl5AdcoOiVB4arfw27wgTyEZQgcQ&amp;submissionId=486c37a4-c4cf-e316-a68a-0b0df988840d" target=&ldquo;blank&rdquo;>Cristina Molero Del Rio, Former visiting PhD student, Universidad de Sevilla</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/DannyLuo.JPG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Danny Luo, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Flora.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="." target=&ldquo;blank&rdquo;>Flora Shi, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/LilyZhu.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/lily-zhu-2023/" target=&ldquo;blank&rdquo;>Lily Zhu, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/BinHan.JPG" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://beanham.github.io" target=&ldquo;blank&rdquo;>Bin Han, Former MS student, Currently PhD student at University of Washington</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Edwin.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://github.com/edwinagnew" target=&ldquo;blank&rdquo;>Edwin Agnew, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Harsha.jpeg" alt="" width="100px" height="122px" />&nbsp;</td>
+<td align="left"><p><a href="https://hsrijay.github.io" target=&ldquo;blank&rdquo;>Harsha Srijay, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/BrandonZhao.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="brandonyzhao.github.io" target=&ldquo;blank&rdquo;>Brandon Zhao, Former Undergraduate student, Currently PhD student at CalTech</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Saksham.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/saksham-jain01/" target=&ldquo;blank&rdquo;>Saksham Jain, Former MS student, Currently PhD student at University of Washington</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Kentaro.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/kentaro-hoffman-a3aaa013a" target=&ldquo;blank&rdquo;>Kentaro Hoffman, Former PhD student, University of North Carolina, Chapel Hill, now postdoc at University of Washington</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Marco.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://polisci.duke.edu/people/marco-morucci" target=&ldquo;blank&rdquo;>Marco Morucci, Former PhD student, Faculty at Michigan State University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Bhrij.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://bridge00.github.io/" target=&ldquo;blank&rdquo;>Bhrij Patel, Former Undergraduate student, Duke University, now PhD student at U Maryland</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JordanDiamond.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/jordan-diamond-5b407a154" target=&ldquo;blank&rdquo;>Jordan Diamond, Former Undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Rachel.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~rachel/" target=&ldquo;blank&rdquo;>Rachel Draelos, Former PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Tianyu.jpg" alt="" width="100px" height="150px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~tianyu/" target=&ldquo;blank&rdquo;>Tianyu Wang, Former PhD student, Faculty at Fudan University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Chaofan.jpg" alt="" width="100px" height="150px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~cfchen/" target=&ldquo;blank&rdquo;>Dr. Chaofan Chen, Former PhD student, Faculty at University of Maine</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/VaishaliJain.jpg" alt="" width="95px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/vaishalijain700" target=&ldquo;blank&rdquo;>Vaishali Jain, Former masters student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Nathan.png" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/nathan-o-hara-7b44a615b/" target=&ldquo;blank&rdquo;>Nathan O'Hara, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Jiayun.jpg" alt="" width="95px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://econ.duke.edu/people/jiayun-dong" target=&ldquo;blank&rdquo;>Jiayun Dong, Former PhD student, Economics, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Daniel.jpg" alt="" width="100px" height="110px" />&nbsp;</td>
+<td align="left"><p><a href="https://bigdata.duke.edu/people/daniel-chaofan-tao" target=&ldquo;blank&rdquo;>Daniel (Chaofan) Tao, Former undergraduate student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Berk.jpg" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="http://www.berkustun.com" target=&ldquo;blank&rdquo;>Dr. Berk Ustun, Former PhD student, Faculty at UCSD</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/AnqiLin.jpg" alt="" width="95px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/anqi-claire-lin-081179128?challengeId=AQE2doMICo1B8gAAAXKoethgEYCkzcFLaGyn59Rp0QI1RRW2465qocnpKIrivtgktt6i3MBOaXK1_4cxN4Ck9z2nG6d5DgHMZA&amp;submissionId=bde7ce68-4ccb-1716-2d7f-5378d7bde923" target=&ldquo;blank&rdquo;>Anqi (Claire) Lin, Former PhD student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Anna.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://annasun28.github.io" target=&ldquo;blank&rdquo;>Anna Sun, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Divya.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/divya-koyyalagunta-300a1810a" target=&ldquo;blank&rdquo;>Divya Koyyalagunta, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/DianeHu.jpg" alt="" width="100px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/diane-hu7/" target=&ldquo;blank&rdquo;>Diane Hu, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Nikhil.JPG" alt="" width="100px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/nikhilvravi" target=&ldquo;blank&rdquo;>Nikhil Ravi, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Usaid.jpeg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/usaidawan/" target=&ldquo;blank&rdquo;>Usaid Awan, Former PhD student in Economics</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Chris.jpg" alt="" width="95px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/christopher-suh-5a4186133/" target=&ldquo;blank&rdquo;>Christopher Suh, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Andre.jpg" alt="" width="95px" height="115px" />&nbsp;</td>
+<td align="left"><p><a href="https://bigdata.duke.edu/people/andre-wang" target=&ldquo;blank&rdquo;>Andre Wang, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/HenryYurenZhou.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/henry-yuren-zhou-236563160/" target=&ldquo;blank&rdquo;>Henry Yuren Zhou, Former masters student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Isaac.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/xiaoxuan-z-a1bb46113/" target=&ldquo;blank&rdquo;>Xiaoxuan Isaac Zhang, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Jiali.jpg" alt="" width="95px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.cs.duke.edu/~jx76" target=&ldquo;blank&rdquo;>Jiali Xing, Former masters student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/AlexDamian.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/damianalex" target=&ldquo;blank&rdquo;>Alexandru Damian, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Sachit.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://sachit-menon.github.io" target=&ldquo;blank&rdquo;>Sachit Menon, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/McCourt.jpeg" alt="" width="95px" height="110px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/shijia-hu-ba4b76142/" target=&ldquo;blank&rdquo;>McCourt Hu, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Aaron.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://aaronjfisher.github.io" target=&ldquo;blank&rdquo;>Dr. Aaron Fisher, Former Postdoc, Employed in industry in Boston</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Beau.png" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://stat.duke.edu/people/beau-coker" target=&ldquo;blank&rdquo;>Beau Coker, Former masters student, currently a PhD student at Harvard Biostatistics</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Caroline.jpg" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://bigdata.duke.edu/people/" target=&ldquo;blank&rdquo;>Caroline Wang, Former undergraduate student, currently a PhD student at the University of Texas, Austin</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Oscar.png" alt="" width="100px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/runliangoscarli" target=&ldquo;blank&rdquo;>Oscar (Runliang) Li, Former undergraduate student, currently a PhD student at Carnegie Mellon University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Sean.jpg" alt="" width="95px" height="95px" />&nbsp;</td>
+<td align="left"><p><a href="https://stat.duke.edu/people/xiyang-hu" target=&ldquo;blank&rdquo;>Xiyang (Sean) Hu, Former masters student, PhD student at Carnegie Mellon University, now Asst Prof at Arizona State University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Matias.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://scholars.duke.edu/person/matias.benitez" target=&ldquo;blank&rdquo;>Matias Benitez, Former masters student, Employed in industry</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Weiyu.jpg" alt="" width="95px" height="97px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/weiyu-yan-54a06314a/" target=&ldquo;blank&rdquo;>Weiyu Yan, Former masters student, Employed in industry</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Jake.jpg" alt="" width="95px" height="130px" />&nbsp;</td>
+<td align="left"><p><a href="https://github.com/JakeShulman/" target=&ldquo;blank&rdquo;>Jake Shulman, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Webster.jpeg" alt="" width="100px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/yijie-bei-2878b1126/" target=&ldquo;blank&rdquo;>Webster Bei Yijie, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Kenny.png" alt="" width="95px" height="97px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/kennethpgreen/" target=&ldquo;blank&rdquo;>Kenny Green, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Chunxiao.jpg" alt="" width="95px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/chunxiao-li-593322106" target=&ldquo;blank&rdquo;>Chunxiao Li, Former masters student, Employed at a consulting firm in Boston</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JerryPan.jpg" alt="" width="100px" height="135px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~cynthia/lab.html" target=&ldquo;blank&rdquo;>Jerry Pan, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Peter.jpg" alt="" width="100px" height="110px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/peter-hase-8092a6b9/" target=&ldquo;blank&rdquo;>Peter Hase, Former undergraduate student, currently a PhD student at UNC</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Yameng.jpg" alt="" width="95px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.cs.duke.edu/people/graduates/770" target=&ldquo;blank&rdquo;>Yameng Liu, former masters student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Hongyu.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://edwardyhy.wixsite.com/hongyuy" target=&ldquo;blank&rdquo;>Dr. Hongyu Yang, Former PhD student, Employed in finance, Boston</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/JerryChang.png" alt="" width="90px" height="105px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/jerry-chia-rui-chang-b11303ab" target=&ldquo;blank&rdquo;>Jerry Chia-Rui Chang, Former undergraduate student, currently a PhD student at Harvard Biostatistics</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Wilson.jpg" alt="" width="100px" height="95px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/bdzhang/" target=&ldquo;blank&rdquo;>Wilson Zhang, Former undergraduate student</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Lei.jpeg" alt="" width="95px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="https://www.linkedin.com/in/rachelchen-duke/" target=&ldquo;blank&rdquo;>Lei Chen, Former masters student, Employed in industry</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Fulton.jpg" alt="" width="95px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.mit.edu/fultonw/www/index.html" target=&ldquo;blank&rdquo;>Dr. Fulton Wang, Former PhD student, currently employed at Sandia National Labs</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/SiongThye.jpg" alt="" width="100px" height="150px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.mit.edu/stgoh/www/mypage/siongthye.html" target=&ldquo;blank&rdquo;>Dr. Siong Thye Goh, Former PhD student, employed at SMU</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Hima.jpeg" alt="" width="100px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.stanford.edu/~himalv/" target=&ldquo;blank&rdquo;>Dr. Himabindu Lakkaraju, Former PhD student collaborator, currently an Assistant Professor at Harvard Business School</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Stefano.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://orc.scripts.mit.edu/people/student.php?name=stet" target=&ldquo;blank&rdquo;>Dr. Stefano Traca, Former PhD student, Employed at Disney Research</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Tong.jpg" alt="" width="100px" height="130px" />&nbsp;</td>
+<td align="left"><p><a href="https://tippie.uiowa.edu/people/tong-wang" target=&ldquo;blank&rdquo;>Dr. Tong Wang, Former PhD student, currently an assistant professor at the Tippie School of Business, University of Iowa</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Prashan.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://www.linkedin.com/in/prashanw" target=&ldquo;blank&rdquo;>Prashan Wanigasekara, Former masters student, Employed in industry</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Jiaming.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="https://jmzeng.github.io/" target=&ldquo;blank&rdquo;>Jiaming Zeng, Former undergraduate student, has graduated with a PhD from Stanford in 2021</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Noor.jpg" alt="" width="100px" height="160px" />&nbsp;</td>
+<td align="left"><p><a href="http://www.mie.neu.edu/people/alam-md-noor-e," target=&ldquo;blank&rdquo;>Dr. Noor E-Alam, Former Postdoc, currently Assistant Professor, Mechanical and Industrial Engineering, Northeastern University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Been.jpg" alt="" width="100px" height="133px" />&nbsp;</td>
+<td align="left"><p><a href="http://people.csail.mit.edu/beenkim/" target=&ldquo;blank&rdquo;>Dr. Been Kim, Former PhD student, currently employed at Google</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Ben.jpg" alt="" width="100px" height="115px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.mit.edu/bletham/www/" target=&ldquo;blank&rdquo;>Dr. Ben Letham, Former PhD student, currently employed at FaceBook Data Science Team</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Ramin.jpg" alt="" width="100px" height="80px" />&nbsp;</td>
+<td align="left"><p><a href="http://www.ie.miami.edu/people/indextest.php?id=145" target=&ldquo;blank&rdquo;>Dr. Ramin Moghaddass, Former PhD student, currently Assistant Professor, Industrial Engineering, University of Miami, Florida</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Theja.jpg" alt="" width="100px" height="95px" />&nbsp;</td>
+<td align="left"><p><a href="http://thejat.github.io" target=&ldquo;blank&rdquo;>Dr. Theja Tulabandhula, Former PhD student, currently Assistant Professor of Information and Decision Sciences, University of Illinois at Chicago</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Seyda.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.mit.edu/seyda/www/" target=&ldquo;blank&rdquo;>Dr. Seyda Ertekin, Former postdoc, currently Assistant Professor, Middle Eastern Technical University, Turkey</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Kangcheng.jpg" alt="" width="95px" height="97px" />&nbsp;</td>
+<td align="left"><p><a href="https://stat.duke.edu/people/kangcheng-lin" target=&ldquo;blank&rdquo;>Kangcheng Lin, Former MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Sijia.jpg" alt="" width="90px" height="120px" />&nbsp;</td>
+<td align="left"><p><a href="https://ece.duke.edu" target=&ldquo;blank&rdquo;>Sijia Wang, Former MS student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Awa.jpg" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://users.cs.duke.edu/~adieng/" target=&ldquo;blank&rdquo;>Awa Dieng, Former PhD student, Duke University</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Allison.jpg" alt="" width="100px" height="100px" />&nbsp;</td>
+<td align="left"><p><a href="http://web.mit.edu/aachang/www/" target=&ldquo;blank&rdquo;>Dr. Allison Chang, Former PhD student, MIT Lincoln Labs</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Ashia.jpeg" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="https://aswilson07.github.io/website/" target=&ldquo;blank&rdquo;>Dr. Ashia Wilson, Former undergraduate, currently an assistant professor at MIT EECS</a>
+</p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/Yining.jpg" alt="" width="100px" height="140px" />&nbsp;</td>
+<td align="left"><p><a href="http://yining-wang.com" target=&ldquo;blank&rdquo;>Dr. Yining Wang, Former undergraduate, currently assistant professor at University of Florida</a>
+</p>
+</td></tr></table>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://www.linkedin.com/in/lydia-letham-2bb6a3234" target=&ldquo;blank&rdquo;>Lydia Letham, MIT</a>
+</p>
+</div></div>
+<p>
+
+
+
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2026-02-01, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

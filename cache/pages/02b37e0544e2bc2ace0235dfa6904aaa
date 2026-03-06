@@ -1,0 +1,149 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head> <title>FOCS Workshop on Bayesian Mechanism Design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="Constantinos, Daskalakis, Costis, Berkeley, game theory, graphical games, Greece, NTUA, Athens, Theory, Computer, Science, ESOP, minimization, and-exor, computational biology, phylogenetics">
+<meta name="description" content="Constantinos Daskalakis, Costis, Homepage, Berkeley, Computer Science">
+<meta name="author" content="Constantinos Daskalakis">
+      <style media="screen" type="text/css" title="Default">
+      @import "style.css";
+    </style>
+</head>
+
+
+<body>
+<script>
+function copy(dest, source) {
+  if(dest.source == source) {
+    dest.innerHTML = "";
+    dest.source = null;
+  }
+  else {
+    dest.innerHTML = source.innerHTML;
+    dest.source = source;
+  }
+  dest.blur();
+}
+</script>
+<h2></h2>
+    <h1><a href="http://dimacs.rutgers.edu/FOCS12/">FOCS 2012</a> Workshop on Bayesian Mechanism Design</h1>
+    <h2>&nbsp&nbsp&nbspSaturday, October 20 2012 - Hyatt Regency, New Brunswick, New Jersey</h2>
+     
+     <h3>&nbsp&nbsp&nbspOrganizers: <a href="http://people.csail.mit.edu/costis">Costis Daskalakis,</a> <a href="http://www.eecs.northwestern.edu/hartline/">Jason Hartline</a></h3>
+
+<h3>&nbsp&nbsp&nbsp Speakers: <a href="http://pages.cs.wisc.edu/~shuchi/">Shuchi Chawla</a>, <a href="http://people.csail.mit.edu/costis">Costis Daskalakis</a>, <a href="http://www.eecs.northwestern.edu/hartline/">Jason Hartline</a>, <a href="http://users.eecs.northwestern.edu/~nickle/">Nicole Immorlica</a>, <a href="http://theory.stanford.edu/~tim/">Tim Roughgarden</a>, <a href="http://www.cs.cornell.edu/people/eva/eva.html">Eva Tardos</a></h3>
+
+<!--    <div id="Menu">
+      <ul>
+        <li><a href="index.html" class="active" >main</a></li>
+        <li><a href="academic.html" >academic work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div> -->
+
+    <div id="MainCopy">
+    
+<p><p><p><p><p><p><p><p>
+<h4>
+Mechanism design is the subfield of economics that looks at economic systems from the point of view of an optimizing designer. This designer would like to build a system whose agents' individual optimization leads in equilibrium to global optimization of a desired objective. While it is desirable to be able to perform this optimization in the "worst case," that is, in the absence of any assumption on the input, this is often not possible. On the other hand, stochastic prior information about the agents' private preferences can circumvent such impossibility results. A celebrated example is Myerson's revenue optimal single-item auction [Myerson 1981].</h4>
+
+<h4>Over the last few years a number of works have demonstrated the benefits of using stochastic information about the bidders' preferences to circumvent impossibilities in the worst case, as well as of applying computer science techniques such as approximation to classical problems in the economic theory of Bayesian, i.e. with stochastic prior information, mechanism design. These include, for example, combinatorial algorithms for revenue optimization in multi-item auctions, black-box reductions from mechanism to algorithm design, simplicity versus optimality tradeoffs. At the same time, mechanism design has lent itself to the development of compelling new models bridging between the worst-case and the Bayesian model, such as prior-independent and detail-free mechanism design.</h4>
+
+<h4>The goal of this workshop is to introduce the broad CS theory community to central problems in mechanism design, present a rich set of models that, inspired by computation, interpolate between the worst- and average-case model, and stimulate new  directions for the interactions between theory of computation and mechanism design.
+</h4>
+
+
+<h2><a name="schedule"></a>Workshop Schedule</h2>
+    <ul>
+	<h3><b>Session 1 (9:00am-10:30am)</b></h3>
+	<table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>9:00 - 10:00 </td> <td> Jason Hartline<span style="text-decoration: underline;"><br></span>Introduction to Bayesian Mechanism Design <a href="jason.pdf">[slides]</a><span style="text-decoration: underline;"></span> </td></tr><tr>
+		  <td>10:00 - 10:30 </td> <td>Tim Roughgarden <br><a href=#simple>Simple/Prior-Independent Auctions (Part A)</a> <a href="tim.pptx">[slides]</a></td></tr>
+      </tbody>
+    </table>
+    
+    <h3>Coffee Break (provided) (10:30am-11am)<br></h3>
+    <h3><b>Session 2 (11:00am-12:30pm)</b></h3>
+
+      <table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>11:00 - 11:30 </td> <td>Tim Roughgarden <br> <a href=#simple>Simple/Prior-Independent Auctions (Part B)</a></td></tr><tr>
+		  <td>11:30 - 12:30 </td> <td> Costis Daskalakis <br> <a href=#revenue>Revenue-optimization in multi-item auctions</a> <a href="costis.pptx">[slides]</a><span style="text-decoration: underline;"><br></span></td></tr>    
+      </tbody>
+    </table>
+    
+    
+    <h3>Lunch break (on your own) (12:30pm-2:30pm)<br></h3>
+    
+    <h3><b>Session 3 (2:30pm-4:00pm)</b></h3>
+
+    <table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>2:30 - 3:30 </td> <td> Nicole Immorlica <br><a href=#welfare>Black-box reductions from mechanism to algorithm design</a>  <a href="nicole.pptx">[slides]</a></td></tr><tr>
+		  <td>3:30 - 4:00 </td> <td>Shuchi Chawla <br><a href=#nonlinear>Non-linear objectives in mechanism design (Part A)</a>  <a href="shuchi.pptx">[slides]</a></td></tr><tr>
+        
+      </tbody>
+    </table>
+    
+
+    </ul><h3>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Coffee Break (provided) (4:00pm-4:30pm)</h3><ul>
+    
+    <h3><b>Session 4 (4:30pm-6:00pm)</b></h3>
+	<table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>4:30 - 5:00 </td> <td>Suchi Chawla <br><a href=#nonlinear>Non-linear objectives in mechanism design (Part B) </a></td></tr><tr>
+		  <td>5:00 - 6:00 </td> <td>Eva Tardos<br><a href=#poa>Price of Anarchy of Practical Auctions</a>  <a href="eva.pdf">[slides]</a></td></tr><tr style="background-color: rgb(204, 204, 204);">        
+      </tbody>
+    </table>
+    </ul>
+
+<h2><a name="schedule"></a>Abstracts</h2>
+
+<br><br><a name=simple>Simple/Prior-Independent Auctions</a>
+<br>Speaker: Tim Roughgarden (Stanford) 
+
+<br><br>Optimal mechanisms are often complex and depend on the details of the distribution of bidders' preferences. On the other hand, strong impossibility results hold under worst-case input assumptions, as discussed above. To mediate between these extremes the literature has proposed interesting models bridging worst- and average-case models, and compelling positive results have been obtained for such models. Examples include simple, approximately optimal mechanisms, which are only parameterized by minimal properties of the  distribution; and prior-independent auctions, whose guarantees hold under the assumption that the agents' preferences are stochastic, but without knowledge of the underlying distributions of preferences. This lecture will survey work on this front.<p><p>
+
+<br><br><a name=revenue>Revenue-optimization in multi-item auctions</a>
+<br>Speaker: Costis Daskalakis (MIT) 
+
+<br><br>While welfare optimizing mechanism design has been solved in very general settings, even under worst-case assumptions about the agents' preferences, research on revenue optimization has been stagnant. Myerson's seminal work provides a revenue-optimizing single-item auction, but generalizing this auction to more general settings, e.g. multi-item auctions, has been challenging to economists. Algorithmic techniques have enabled breakthroughs on this problem, enabling exactly optimal mechanisms. This lecture will survey work on designing revenue optimal auctions, discuss the relevant combinatorial optimization techniques, and present open problems going forward. <p><p>
+
+<a name=welfare>Black-box reductions from mechanism to algorithm design</a>
+<br>Speaker: Nicole Immorlica
+
+<br><br>Computational considerations aside, welfare optimizing mechanism design has been solved, even under worst-case assumptions about the bidders' preferences. It has also been shown that, under worst-case assumptions, not all welfare problems that can be efficiently approximated can also be approximated in a mechanism design setting. On the other hand, Bayesian information about the agents' preferences enables very general, black-box reductions from mechanism to algorithm design. This lecture will survey work on this frontier, outlining challenges in going beyond the fully Bayesian model and the welfare objectives.<p><p>
+
+<br><br><a name=nonlinear>Non-linear objectives in mechanism design</a>
+<br>Speaker: Shuchi Chawla (University of Wisconsin-Madison) 
+
+<br><br>The mechanism design literature commonly focuses on the welfare and revenue objectives. Less is known for other objectives and typically results are negative, e.g. for minimizing makespan in scheduling jobs to strategic machines. Here, too, the Bayesian perspective has provided ways to circumvent worst-case impossibility results. This lecture will  survey work on mechanism design with general objectives.<p><p>
+
+<br><br><a name=poa>Price of Anarchy of Practical Auctions</a>
+<br>Speaker: Eva Tardos (Cornell)
+
+<br><br>Auctions used in practice, such as the generalized second price auction of sponsored search, are often not optimal theoretically. Recent work has quantified the loss in objective, e.g. welfare, of using such suboptimal auctions. This lecture will survey this work, outlining challenges in analyzing incomplete information settings. 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html> 

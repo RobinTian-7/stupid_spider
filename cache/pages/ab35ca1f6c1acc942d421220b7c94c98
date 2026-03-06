@@ -1,0 +1,274 @@
+<html><head><title>6.896: Topics in Algorithmic Game Theory, Spring 2010 </title></head><body background="CS270,%20Spring%202005_files/a.html">
+<font  face=georgia>
+<center>
+<h1>6.896: Topics in Algorithmic Game Theory</h1>
+<h3>Spring 2010</h3>
+<hr width="60%">
+</center>
+
+<!--
+<a name="announce"></a>
+<h2>Announcements</h2>
+<table bgcolor="#cccccc" border="0">
+<tbody>
+
+<tr>
+
+
+<th>May 7</th><td> <blink> <font color="red"><b>FINAL EXAM: </b></red></blink> <b>The <a href="270final.ps">final exam</a> is due Wednesday May 16, noon, at 593 SODA Hall.</b>
+    </td>
+</tr>
+
+
+</tbody></table>
+<hr>
+
+-->
+
+<br><br>As Computer Science struggles to understand the Internet and its capabilities, computer scientists are incorporating concepts and methodologies from 
+Economics and Game Theory into their discipline. In the past decade, there 
+has been a tremendous growth in research, centering around the following 
+questions: what game-theoretic tools are applicable to computer systems? 
+How far is the performance of a system from optimality due to the conflict 
+of interests of its users and administrators? And how can we design a system whose performance is robust with respect to the potential conflict of 
+interests inside the system? 
+
+<br><br>This class aims to tackle some of the fundamental problems at the interface of Computer Science and Game theory, with an emphasis on algorithms and computational complexity. Our main focus will be on algorithms for equilibria, the complexity of equilibria and fixed points, algorithmic tools in mechanism design, learning in games, and the price of anarchy.
+
+<br><br>
+Another Class of Potential Interest: 6.254 --- Game Theory with Engineering Applications
+
+<a name="staff"></a>
+<h2>Course Information</h2>
+
+<ul>
+<li><b>Instructor: <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis</a></b>
+<br>
+Office Hours: Send me an email.
+</li>
+<br>
+<li><b>TA:</b> <a href="http://people.csail.mit.edu/ycai/">Yang Cai</a>
+<br>
+Office Hours: Send Yang an email.
+</li>
+
+<br>
+<li><b>Lecture:</b> Mondays and Wednesdays 2:30-4:00, 4-145.
+</li><br>
+<!--
+<li><b>Section:</b> Mondays 5:00-6:00 in Soda 310.
+</li>
+-->
+<li><b>Textbook:</b> <a href="http://www.cambridge.org/journals/nisan/downloads/Nisan_Non-printable.pdf">Algorithmic Game Theory</a>, by Noam Nisan, Tim Roughgarden, Eva Tardos, Vijay V. Vazirani (eds.), Cambridge University Press, September 2007.
+</li>
+<li><b>Lecture Notes:</b> Lecture notes and/or presentations will be provided.
+</li>
+
+<br>
+<li><b>Prerequisites:</b> A course in algorithms (6.046 or equivalent), probability (6.041 or equivalent), and discrete mathematics (6.042 or equivalent). 
+<br><br>
+</li>
+<li><b>Assessment:</b> Students will be required to scribe one or two lectures, do a small number of homework problems, and a research-oriented final project. This could be either a survey, or original research; students will be encouraged to relate the project to their own research interests.
+
+</li></ul>
+
+<!--
+<a name="hw"></a>
+<h2>Assignments</h2>
+<ul>
+    <li>Assignment 1, due Feb. 21. Files: <a href=page1.pdf>Page1</a>, <a href=page2.pdf>Page2</a><!--, <a href=Chapter1Exercise2.pdf>Chapter 1 Exercise 2</a>, <a href=Chapter3Exercise6.pdf>Chapter 3 Exercise 6</a>, <a href=Chapter4Exercise11.pdf>Chapter 4 Exercise 11</a>, <a href=Chapter5Ex4partA.pdf>Chapter 5 Exercise 4 partA</a>, <a href=Chapter5Ex4partB.pdf>Chapter 5 Exercise 4 part B</a>
+    </li>
+    <li>Solutions for assignment 1. Files: <a href=sol1.pdf>Solutions1</a>
+    </li>
+</ul>
+
+-->
+
+<a name="outline"></a>
+<h2>Course Outline</h2>
+
+There is a significant dynamic component to the course, as topics drop
+in and out, or get longer or shorter treatment, depending on audience
+interest/reaction/resistence.  We consider this a feature.  Given this,
+here is a rough outline of the course material:
+
+<ul>
+<li> <b> Introduction</b> 
+<ul>
+<li>Examples of games and basic solution concepts, such as the Nash and the correlated equilibrium;</li>
+<li> Nash equilibria in 2-player zero-sum games, min-max solutions & relation to Linear Programming Duality. </li>
+</ul>
+</li>
+<br>
+
+
+<li> <b> Nash Equilibria</b> 
+<ul>
+<li>Existence of equilibria: proof via Sperner's lemma; emphasis on the combinatorial proofs of existence; </li>
+<li>Algorithms for computing Nash equilibria: the Lemke Howson 
+algorithm, support enumeration algorithms, sampling methods, 
+simplicial approximation algorithms;</li>
+<li>Complexity theory of total search problems and fixed points: definition of the complexity classes PLS, PPAD, PPP and relation 
+to P, NP;</li>
+
+<li>The complexity of computing a Nash equilibrium: PPAD-completeness 
+results;</li>
+
+<li> The complexity of pure Nash equilibria in congestion games: 
+PLS-completeness results;</li>
+
+<li> Description method vs computational complexity in games; alternative game representations: graphical games, action graph 
+games; emphasis on modeling the structure of the player interactions;
+</li>
+
+<li>Symmetries in games: algorithms for symmetric games; algorithms for anonymous games; relation to Central Limit Theorems 
+in probability theory.  </li>
+</ul>
+</li>
+<br>
+
+
+<li> <b>Algorithms for Correlated Equilibria.</b> 
+<br>
+<br>
+
+<li> <b> Market Equilibria</b> 
+<ul>
+<li>Arrow-Debreu existence theorem;</li>
+<li>Algorithms for markets with linear utility functions; </li>
+<li> PPAD-hardness of markets with Leontief utility functions and 
+markets with piecewise-linear utility functions.</li>
+<!--<li> Computational Hardness of Constant Elasticity of Substitution 
+(CES) utility functions. </li>-->
+</ul>
+</li>
+<br>
+
+<li> <b>Learning in games: </b> fictitious play, experts algorithm, no-regret algorithms; convergence for zero-sum games; cycling behavior 
+for general games. 
+<br>
+<br>
+
+<li> <b> Mechanism Design</b> 
+<ul>
+<li>algorithmic mechanism design;</li>
+<li>auctions for digital goods; </li>
+<li>combinatorial auctions: path auctions in networks and VCG; </li>
+<li> computational hardness of approximate combinatorial public project 
+auctions;</li>
+<li> Bayesian Mechanism Design.</li>
+</ul>
+</li>
+<br>
+
+<li> <b> Price of Anarchy :</b> selfish routing in networks; PoA results for 
+atomic and non-atomic congestion games. 
+<br>
+
+
+</ul>
+
+
+<a name="notes"></a>
+<h2> Lectures (<a href="scribers.html">Scribe Sheet<a/>)</h2>
+
+Please us the <a href="6896-template.tex">scribe template</a> to produce your notes. The template contains commands for Theorem, Lemma, Corollary, Proposition, Claim, Definition, Construction, Remark etc. An example file where this template is used is <a href="scribe-frame.tex"> here </a>.
+
+<ul>
+
+<li> <b>Lecture 1</b> (February 3rd): Introduction to Algorithmic Game Theory and Overview of the Class. Examples of Games; Nash Equilibrium; Computation of equilibria; Price of Anarchy; Mechanism Design. <a href="Lecture01.pptx">Slides</a>; <a href="Lecture1.pdf">Slides in no-animation pdf file</a> .
+</li>
+
+
+<li> <b>Lecture 2</b> (February 8th): Definitions of Games and Equilibria; Zero-Sum Games; Minmax Theorem; Proof using Linear Programming Duality. <a href="lec2.pdf">Notes</a>.
+</li>
+
+
+<li> <b>Lecture 3</b> (February 10th): Fictitious Play; Robinson's Proof and rate of Convergence; Karlin's Conjecture; Beyond Fictitious Play: Learning from Expert Advice; Follow the Leader and Hedging Algorithms. <a href="lec3.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 4</b> (February 16th): Quadratic convergence of the Hedging Algorithm against an adversary; Tightness of the bound; Implications for Zero-Sum Games. <a href="lec4.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 5</b> (February 17th): Multiplayer Games; Nash equilibria; Proof of Nash's Theorem via Brouwer's Fixed Point Theorem; Proof of Sperner's Lemma in 2 dimensions; Proof of Brouwer's theorem via Sperner's lemma in 2 dimensions. <a href="Lecture05.pptx">Slides</a>; <a href="Lecture5.pdf">Slides in no-animation pdf file</a>; <a href="lec5.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 6</b> (February 22nd): Multi-dimensional version of Sperner's Lemma; Canonical Simplicization of the Hypercube; Legal Coloring; Proof of Sperner's Lemma; Direction in the space. <a href="Lecture06.pptx">Slides</a>; <a href="Lecture6.pdf">Slides in no-animation pdf file</a>; <a href="lec6.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 7</b> (February 24th): Total Search Problems; FNP; Computational Problems SPERNER, BROUWER, NASH; Complexity Theory of Total Search Problems; PPAD. <a href="Lecture07.pptx">Slides</a>; <a href="Lecture7.pdf">Slides in no-animation pdf file</a>; <a href="lec7.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 8</b> (March 1st): Complexity Theory of Total Search Problems: PPAD, PPA, PPP, PLS; PPAD-completeness of SPERNER. <a href="Lecture08.pptx">Slides</a>; <a href="Lecture8.pdf">Slides in no-animation pdf file</a>; <a href="lec8.pdf">Notes</a>.
+</li>
+
+<li> <b>Lecture 9</b> (March 3rd): PPAD-completeness of BROUWER; towards a PPAD-completeness of NASH: game gadgets. <a href="Lecture09.pptx">Slides</a>; <a href="Lecture9.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec8.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 10</b> (March 8th): PPAD-completeness of NASH. <a href="Lecture10.pptx">Slides</a>; <a href="Lecture10.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec8.pdf">Notes</a>.-->
+</li>
+
+
+<li> <b>Lecture 11</b> (March 10th): Algorithms for Nash Equilibria: Simplicial Approximation Algorithms; Support Enumeration; Lipton-Markakis-Mehta; Symmetrization. <a href="Lecture11.pptx">Slides</a>; <a href="Lecture11.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec8.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 12</b> (March 15th): The Lemke-Howson Algorithm; Inapproximability Results for Nash equilibria; Constant Approximation Algorithms; Algorithms for Graphical Games; the Total Variation Distance bound. <a href="Lecture12.pptx">Slides</a>; <a href="Lecture12.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec8.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 13</b> (March 17th): Multiplayer Zero-Sum Games; Anonymous Games; Probabilistic Approximation Theorems; Introduction to Market Equilibria. Slides <a href="Lecture13.pptx">Part a</a> and  <a href="Lecture13b.pptx">Part b</a> ; <a href="Lecture13.pdf">Part a in no-animation pdf file</a> and <a href="Lecture13b.pdf">Part b in no-animation pdf file</a> . <!--<a href="lec8.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 14</b> (March 29th): Proof of the Arrow-Debreu Theorem for exchange economies; Utility Functions; Fisher's Model ; Eisenberg-Gale Convex Program for Fisher Markets. <a href="Lecture14.pptx">Slides</a>; <a href="Lecture14.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec14.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 15</b> (March 31st): Complexity of Exchange Markets; Excess Demand Functions; Gross-Substitutability (GS) Condition; Computation of Equilibria under (GS); Tatonnement Procedure for (GS) markets. <a href="Lecture15.pptx">Slides</a>; <a href="Lecture15.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec15.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 16</b> (April 5th): Introduction to Social Choice Theory; Majority Voting ; Arrow's Impossibility Theorem.
+<!-- <a href="Lecture16.pptx">Slides</a>; <a href="Lecture16.pdf">Slides in no-animation pdf file</a>.--><!--<a href="lec16.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 17</b> (April 7th): Proof of Arrow's Impossibility Theorem. Manipulability of social choice functions. <!-- <a href="Lecture17.pptx">Slides</a>; <a href="Lecture17.pdf">Slides in no-animation pdf file</a> .--> <!--<a href="lec17.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 18</b> (April 12th): Gibbard-Satterthwaite Theorem; Introduction to Mechanisms with Money; Vickrey's Second Price Auction. <a href="Lecture18.pptx">Slides</a>; <a href="Lecture18.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec18.pdf">Notes</a>.-->
+</li>
+
+
+<li> <b>Lecture 19</b> (April 14th): Incentive Compatible Mechanisms; VCG mechanisms; Clarke Pivot Rule; Examples; Games with Strict Incomplete Information. 
+<!--<a href="Lecture19.pptx">Slides</a>; <a href="Lecture19.pdf">Slides in no-animation pdf file</a>.--> <!--<a href="lec19.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 20</b> (April 21st): Implementation in Dominant Strategies; The Revelation Principle; Characterization of Incentice Compatible Mechanisms: Direct Characterization, and Weak Monotonicity. 
+<a href="Lecture20.pptx">Slides</a>; <a href="Lecture20.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec20.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 21</b> (May 3rd): Frugality in Auctions: Path Auctions and Spanning Tree Auctions.
+<a href="Lecture21.pptx">Slides</a>; <a href="Lecture21.pdf">Slides in no-animation pdf file</a> . <!--<a href="lec21.pdf">Notes</a>.-->
+</li>
+
+<li> <b>Lecture 22 (double)</b> (May 5th): Single-Parameter Settings; Bayesian Mechanism Design; Characterization of Truthful Mechanisms; Myerson's Optimal Mechanism; Vickrey Auction with Reservation Price. 
+<!--<a href="Lecture22.pptx">Slides</a>; <a href="Lecture22.pdf">Slides in no-animation pdf file</a> .--> 
+<a href="http://www.eecs.northwestern.edu/~hartline/omd.pdf">Hartline's notes</a>.
+</li>
+
+<li> <b>Lecture 23</b> (May 10th): Congestion games; Price of Anarchy. 
+<!--<a href="Lecture23.pptx">Slides</a>; <a href="Lecture23.pdf">Slides in no-animation pdf file</a> .--> 
+<a href="http://www.mpi-inf.mpg.de/conferences/adfocs-09/material/Adfocs09-Roughgarden-Lectures.pdf">Roughgarden's notes</a>.
+</li>
+
+<li> <b>Lecture 24 (double)</b> (May 12th): Project Presentations.</li>
+
+</ul>
+
+<h2>Online Resources</h2>
+
+Different incarnations of the class at other universities:
+<ul>
+<li><a href="http://www.cs.berkeley.edu/~christos/games/cs294.html">Algorithmic Aspects of Game Theory</a> by Christos Papadimitriou</li>
+<li><a href="http://www.cs.cornell.edu/courses/cs684/2008sp/">Algorithmic Game Theory</a> by Eva Tardos</li>
+<li><a href="http://theory.stanford.edu/~tim/f05/f05.html">Topics in Algorithmic Game Theory</a> by Tim Roughgarden and Jason Hartline</li>
+<li><a href="http://www.eecs.northwestern.edu/~hartline/courses/eecs510/">Algorithmic Mechanism Design </a> by Jason Hartline</li>
+</ul>
+</font>
+</body></html>

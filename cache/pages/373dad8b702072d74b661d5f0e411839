@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Andrew Gordon Wilson</title>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81945202-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <meta id="viewport" name="viewport" content="width=500">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="base.css" type="text/css">
+    <link rel="stylesheet" href="code.css" type="text/css">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="940x1641">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="32x32">
+  </head>
+  <body>
+    <div class="content">
+      <header> <img src="andrewcropfast.jpg" alt="andrewphoto"
+          height="1471" width="1094"><br>
+        <h1><a href="https://cims.nyu.edu/~andrewgw">Andrew
+            Gordon Wilson<br>
+          </a></h1>
+        <ul>
+          <li><a href="https://cims.nyu.edu/~andrewgw/andrewcv.pdf">CV</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/bio">Bio</a></li>
+       <!--   <li><a href="https://cims.nyu.edu/~andrewgw/#thesis">PhD Thesis</a></li>
+-->          <li><a href="https://cims.nyu.edu/~andrewgw/#papers">Papers</a></li>
+ <li><a href="https://cims.nyu.edu/~andrewgw/talks">Talks</a></li>     
+     <li><a href="https://cims.nyu.edu/~andrewgw/group">Group</a></li>
+ <li><a href="https://cims.nyu.edu/~andrewgw/join">Join</a></li>       
+   <li><a href="https://cims.nyu.edu/~andrewgw/teaching">Teaching</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/code">Code<br>
+            </a></li>
+          <!--   <li><a href="mailto:%20andrew@cornell.edu">Contact</a></li> -->
+        </ul>
+      </header>
+      <div align="center">
+        <section id="bio">
+          <meta http-equiv="content-type" content="text/html;
+            charset=UTF-8">
+          <b><b><big><big><big>Joining our Group<br>
+                    <br>
+             </big></big></big></b></b>
+<div align="justify">
+It is safe to assume I am taking PhD students and postdocs, unless I explicitly specify otherwise on this page. At the same time, admissions into our group is exceptionally competitive. The best way to improve your chances of admission is to make a detailed genuine case in your formal application about why our group, and me as an advisor, are the best fit for your interests and plans, and how you expect to contribute to the group. In order to make that case, you will need to meaningfully engage with the work we are doing, and understand our vision. 
+<br><br>
+
+Fundamentally, we aim to develop a prescriptive approach to building autonomous intelligent systems. This effort involves a variety of different research initiatives, which cumulatively work together towards achieving this vision. A major theme that unifies many of these initiatives is progress towards an actionable understanding, so that we can select for particular properties aligned with human goals, including safe and reliable decision making. These areas, and some example papers, include:
+<br>
+• <i>Understanding deep learning models, including LLMs and vision models, generalization theory, and reasoning </i> [e.g., <a href="https://arxiv.org/abs/2002.08791">1</a>, <a href="https://arxiv.org/abs/1802.10026">2</a>, <a href="https://arxiv.org/abs/2211.13609">3</a>, <a href="https://arxiv.org/abs/2310.07820">4</a>, <a href="https://arxiv.org/abs/2304.05366">29</a>, <a href="https://arxiv.org/abs/2311.15990">30</a>, <a href="https://arxiv.org/abs/2106.05945">31</a>]  <br>
+• <i>Uncertainty representation, Bayesian methods, online decision making</i>
+<br>
+[e.g., <a href="https://arxiv.org/abs/2002.08791">1</a>, <a href="https://arxiv.org/abs/2104.14421">5</a>, <a href="https://arxiv.org/abs/1910.06403">6</a>, <a href="https://arxiv.org/abs/2202.11678">7</a>]
+  <br>
+• <i>Distribution shifts, spurious correlations</i>
+[e.g., <a href="https://arxiv.org/abs/2204.02937">8</a>, <a href="https://arxiv.org/abs/2210.11369">9</a>, <a href="https://arxiv.org/abs/2306.11074">10</a>, <a href="https://arxiv.org/abs/2106.11905">11</a>] <br>
+• <i>Encoding and learning inductive biases (e.g., equivariances)</i> [e.g., <a href="https://arxiv.org/abs/2104.09459">12</a>, <a href="https://arxiv.org/abs/2002.12880">13</a>, <a href="https://arxiv.org/abs/2010.11882">14</a>, <a href="https://arxiv.org/abs/2112.01388">15</a>]
+  <br>
+  • <i>Linear algebra as a foundation for ML</i> [e.g., <a href="https://arxiv.org/abs/2309.03060">16</a>, <a href="https://arxiv.org/abs/2406.06248">33</a>, <a href="https://arxiv.org/abs/2410.02117">34</a>, <a href="https://arxiv.org/abs/1809.11165">17</a>, <a href="https://arxiv.org/abs/1903.08114">18</a>, <a href="http://proceedings.mlr.press/v37/wilson15.pdf">19</a>, <a href="https://arxiv.org/abs/2304.14994">20</a>]  <br>
+• <i>Machine learning for physics, and physics for ML</i> [e.g., <a href="https://arxiv.org/abs/2010.13581">21</a>, <a href="https://arxiv.org/abs/2202.04836">22</a>, <a href="https://arxiv.org/abs/2002.12880">13</a>, <a href="https://arxiv.org/abs/2304.14994">20</a>, <a href="https://arxiv.org/abs/2112.01388">15</a>] <br>
+• <i>Simple practical methods</i> [e.g., <a href="https://arxiv.org/abs/1803.05407">23</a>, <a href="https://arxiv.org/abs/1902.02476">24</a>, <a href="https://arxiv.org/abs/1905.07121">25</a>, <a href="https://arxiv.org/abs/2204.02937">26</a>, <a href="https://arxiv.org/abs/2310.07820">4</a>] <br>
+• <i>Scientific discovery (protein engineering, materials design)</i> [e.g., <a href="https://arxiv.org/abs/2203.12742">27</a>, <a href="https://arxiv.org/abs/2305.20009">28</a>, <a href="https://arxiv.org/abs/2402.04379">32</a>] <br>
+<br>
+
+If you wish to apply, I recommend reading some of our papers <i>carefully</i>, and describing how your interests connect to our work in your application. Try to pick out at least one paper and read every detail. A full list of papers is available at my <a href="https://scholar.google.com/citations?user=twWX2LIAAAAJ&hl=en">Google Scholar</a>. I also strongly recommend checking out some of my <b> <a href="https://cims.nyu.edu/~andrewgw/talks/">talks and interviews</a></b> for a sense of my approach, and an overview of some of our work (note that much of our work is not covered in those talks).
+
+<!--
+the following video lectures, for a sense of my approach, and an overview of some of our work. While many topics are covered, much of our work, for example on equivariance modelling, LLMs, and distribution shifts, is not described in these videos: <br>
+(1) <a href="https://www.youtube.com/watch?v=QWQB2aF8XB8">My introduction to Bayesian machine learning</a>, which opens with background on how I started and how my interests have evolved. <br> 
+(2)  <a href="https://www.youtube.com/watch?v=E1qhGw8QxqYi">ICML Bayesian Deep Learning Tutorial</a>. <br>
+(3) <a href="https://www.youtube.com/watch?v=jq8A4keABx4">Lecture on Representation Learning with Gaussian Processes</a>. <br>
+<br>
+-->
+I advise students in Courant <a href="https://cs.nyu.edu/home/phd/admission.html">Computer Science</a> (Dec 12 deadline), <a href="https://gsas.nyu.edu/admissions/gsas-application-resource-center/2017-programs--requirements--and-deadlines/mathematics.html">Mathematics</a> (Dec 18 deadline), and the <a href="https://cds.nyu.edu/phd-admissions-req/">Center for Data Science</a> (Dec 6 deadline). 
+<br><br>
+If you apply to math, feel welcome to let me know you applied. In general, you are free to e-mail me, but please only do so if you have carefully read some of my papers and believe there is a particularly compelling and specific connection with my group. I will not be able to reply to any generic messages. In general, do not be discouraged by a lack of response, as I receive many more e-mails than I can respond to. It is most important to simply list my name in your formal application. 
+<br><br>
+<!-- A subset of initiatives I am particularly excited about this year include AI alignment (especially weak-to-strong generalization, truthfulness, and disentangled representations), numerical methods as a foundation for ML (see the CoLA project), understanding and generalizing large language models, and machine learning for science.-->
+
+This year I am particularly interested in generalization theory for an actionable understanding of foundation models (involving analysis rooted in math, physics, information theory), numerical methods as a foundation for machine learning (see <a href="https://arxiv.org/abs/2309.03060">CoLA</a>, <a href="https://arxiv.org/abs/2406.06248">compute better spent</a>, <a href="https://arxiv.org/abs/2410.02117">einsum</a>, and my talk <a href="https://www.youtube.com/watch?v=nplao1_t8ig">machine learning is linear algebra</a>),
+<!--technical work in AI alignment (especially uncertainty representation, distribution shifts, weak-to-strong generalization, truthfulness, mechanistic interpretability, and disentangled representations), and AI for science (biological sequence design, materials engineering, and discovering scientific theories and insights).--> However, I am open to virtually any direction that is aiming to answer <i>foundational</i> questions towards building intelligent systems, as long as you can make a good case for it. 
+
+<br><br>
+<b>Postdoctoral Fellow Applicants:</b> E-mail me your CV and a short description of how your interests and plans connect to my group. The best way to work with me as a postdoc is through the <a href="https://cds.nyu.edu/fellowsjobs/">CDS faculty fellowship</a> program. But be mindful of the deadlines! The <a href="https://apply.interfolio.com/134823">Courant CS faculty fellowship</a> is also a nice option. I'd recommend applying to both. Your chances of something working out are best if you reach out directly as early as possible; for example, if you wish to start in Fall 2025, it's best to reach out to me in early Fall 2024.
+<br><br>
+<b>Undergraduates:</b> If you're at NYU, and you have done courses in machine learning, probability, and linear algebra, you can send me an e-mail with your CV. <br>
+<br><br><br>
+
+
+
+
+
+
+      <footer> Find me on <a href="https://twitter.com/andrewgwils">Twitter</a>
+        <br>
+        Theme Inspired by Dan Foreman-Mackey<br>
+      </footer>
+    </div>
+  </body>
+</html>

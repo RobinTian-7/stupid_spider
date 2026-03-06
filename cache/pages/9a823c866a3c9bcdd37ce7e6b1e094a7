@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kai Chen's Homepage</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+  </head>
+  <body>
+    <div class="center">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td width="20"></td>
+            <td height="200"> <img src="./images/kaichen.jpeg" width="156" height="201"> </td>
+            <td width="30"></td>
+            <td>
+              <span class="myname">Kai Chen</span> (<a href="./bio.txt">short bio</a>)<br>
+              <!--affiliation-->
+              Professor<br>
+              <a href="http://www.cse.ust.hk/">Department of Computer Science &amp; Engineering</a><br>
+              <a href="http://www.ust.hk/">Hong Kong University of Science &amp; Technology</a><br> 
+              Clear Water Bay, Hong Kong SAR, China
+              <p class="address">
+                Office: CYT-3005 (via lift 35/36)<br>
+                Phone:  (852) 2358-7028<br>
+                Fax: (852) 2358-1477<br>
+                Email: <a href="mailto:kaichen@cse.ust.hk">kaichen (at) cse.ust.hk</a><br>
+              </p>
+            </td>
+            <td width="100"></td>
+            <td height="150"><a href="http://www.cse.ust.hk/"><img src="./images/dept.png" width="480" height="100"></a>
+              <br><br><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="0" align="center" width="100%">
+        <tbody>
+          <tr>
+            <td width="40"></td>
+            <td align="center">
+              <p class="welcome">Welcome to Kai Chen's Homepage!</p> 
+              I received BS/MS in 2004/2007 from <a href="https://ustc.edu.cn/">USTC</a> and PhD in 2012 from <a href="http://www.northwestern.edu/">Northwestern</a> all in Computer Science, and joined <a href="http://www.ust.hk/">HKUST</a> in July 2012, where I direct the <a href="https://ising.cse.ust.hk/">intelligent System &amp; networkING (iSING)</a> Lab and the <a href="https://www.cse.ust.hk/BDI/WHATLab/">WHAT Lab</a> WeChat-HKUST Joint Lab on Artificial Intelligence Technology.<br>
+              <h3>
+                <a href="https://ising.cse.ust.hk/">iSING Lab</a>
+                <a href="#newslist">News</a>
+                <a href="#research">Research</a>
+                <a href="./publication.html">Publications</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#students">Students</a>
+                <a href="#services">Professional Activities</a>
+              </h3>
+            </td>
+            <td width="40"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="newslist">News</h2>
+      <p class="recruit">Interested in applying for a PhD, PostDoc, or RA position with me? Please read <a target="_blank" href="./iSING-recruit2026.pdf">this</a>!!</p>
+
+      <!--This is <a href="http://www.cse.ust.hk/~kaichen/requirement.html">requirement</a> and <a href="http://www.cse.ust.hk/~kaichen/reading.html">background</a>, we build datacenter and cloud systems, email me with your CV if interested.-->
+      <script type="text/javascript" src="./shownews.js"></script> 
+      <div id="news"></div>
+      <p></p>
+      <!-----Interests----->          
+      <h2 id="research">Research</h2>
+      <ul>
+        <li>
+          <b><font size="+0">Research Interests</font></b>
+          <ul>
+            <li>Data Center Networks</li>
+            <li>AI-centric Networking</li>
+	    <li>High-performance Networking</li>
+            <li>Machine Learning Systems</li>
+            <li>Hardware Acceleration</li>
+            <li>Privacy-preserving Computing</li>
+          </ul>
+        </li>
+        <li>
+          <b><font size="+0">Selected Publications (<a href="http://www.cse.ust.hk/~kaichen/publication.html">Full List</a>)</font></b>
+          <ul>
+	  <li>"MixNet: A Runtime Reconfigurable Optical-Electrical Fabric for Distributed Mixture-of-Experts Training", ACM SIGCOMM 2025 [<a href="./papers/mixnet-sigcomm25.pdf">pdf</a>]</li>
+	    <li>"CEIO: A Cache-Efficient Network I/O Architecture for NIC-CPU Data Paths", ACM SIGCOMM 2025 [<a href="./papers/ceio-sigcomm25.pdf">pdf</a>]</li>
+            <li>"Revisiting RDMA Reliability for Lossy Fabrics", ACM SIGCOMM 2025 (<b>Best student paper honorable mention</b>) [<a href="./papers/dcp-sigcomm25.pdf">pdf</a>]</li>
+	    <li>"Enabling Efficient GPU Communication over Multiple NICs with FuseLink", USENIX OSDI 2025 [<a href="./papers/fuselink-osdi25.pdf">pdf</a>]</li>
+            <li>"GREEN: Carbon-efficient Resource Scheduling for Machine Learning Clusters", USENIX NSDI 2025 [<a href="./papers/green-nsdi25.pdf">pdf</a>]</li>
+            <li>"Fast, Scalable, and Accurate Rate Limiter for RDMA NICs", ACM SIGCOMM 2024 [<a href="https://cse.hkust.edu.hk/~kaichen/papers/tassel-sigcomm24.pdf">pdf</a>]</li>
+            <li>"Towards Domain-Specific Network Transport for Distributed DNN Training", USENIX NSDI 2024 [<a href="http://www.cse.ust.hk/~kaichen/papers/mlt-nsdi24.pdf">pdf</a>]</li>
+            <li>"Accelerating Neural Recommendation Training with Embedding Scheduling", USENIX NSDI 2024 [<a href="http://www.cse.ust.hk/~kaichen/papers/herald-nsdi24.pdf">pdf</a>]</li>
+            <li>"Flow Scheduling with Imprecise Knowledge", USENIX NSDI 2024  [<a href="http://www.cse.ust.hk/~kaichen/papers/qclimb-nsdi24.pdf">pdf</a>]</li>
+            <li>"FLASH: Towards a High-performance Hardware Acceleration Architecture for Cross-silo Federated Learning", USENIX NSDI 2023 [<a href="http://www.cse.ust.hk/~kaichen/papers/flash-nsdi23.pdf">pdf</a>]</li>
+            <li>"SRNIC: A Scalable Architecture for RDMA NICs", USENIX NSDI 2023 [<a href="http://www.cse.ust.hk/~kaichen/papers/srnic-nsdi23.pdf">pdf</a>]</li>
+            <li>"LiteFlow: Towards High-performance Adaptive Neural Networks for Kernel Datapath", ACM SIGCOMM 2022 [<a href="http://www.cse.ust.hk/~kaichen/papers/liteflow-sigcomm22.pdf">pdf</a>]</li>
+            <li>"FAERY: An FPGA-accelerated Embedding-based Retrieval System", USENIX OSDI 2022 [<a href="http://www.cse.ust.hk/~kaichen/papers/faery-osdi22.pdf">pdf</a>]</li>
+            <li>"Tiara: A Scalable and Efficient Hardware Acceleration Architecture for Stateful Layer-4 Load Balancing", USENIX NSDI 2022 [<a href="http://www.cse.ust.hk/~kaichen/papers/tiara-nsdi22.pdf">pdf</a>]</li>
+            <li>"Aeolus: A Building Block for Proactive Transport in Datacenters", ACM SIGCOMM 2020 [<a href="http://www.cse.ust.hk/~kaichen/papers/aeolus-sigcomm20.pdf">pdf</a>]</li>
+            <li>"AuTO: Scaling Deep Reinforcement Learning to Enable Datacenter-Scale Automatic Traffic Optimization", ACM SIGCOMM 2018 [<a href="http://www.cse.ust.hk/~kaichen/papers/sigcomm18-auto.pdf">pdf</a>]</li>
+            <li>"PowerMan: An Out-of-Band Management Network for Datacenters using Power Line Communication", USENIX NSDI 2018 [<a href="http://www.cse.ust.hk/~kaichen/papers/nsdi18-powerman.pdf">pdf</a>] </li>
+            <li>"Resilient Datacenter Load Balancing in the Wild", ACM SIGCOMM 2017 [<a href="http://www.cse.ust.hk/~kaichen/papers/hermes-sigcomm17.pdf">pdf</a>]</li>
+            <li>"Enabling Wide-spread Communications on Optical Fabric with MegaSwitch", USENIX NSDI 2017 [<a href="http://www.cse.ust.hk/~kaichen/papers/megaswitch-nsdi17.pdf">pdf</a>]</li>
+            <li>"<a>Scheduling Mix-flows in Commodity Datacenters with Karuna</a>", ACM SIGCOMM 2016 [<a href="http://www.cse.ust.hk/~kaichen/papers/karuna-sigcomm16.pdf">pdf</a>]</li>
+            <li>"<a>CODA: Toward Automatically Identifying and Scheduling Coflows in the Dark</a>", ACM SIGCOMM 2016[<a href="http://www.cse.ust.hk/~kaichen/papers/coda-sigcomm16.pdf">pdf</a>]</li>
+            <li>"<a>Enabling ECN in Multi-Service Multi-Queue Data Centers</a>", USENIX NSDI 2016 [<a href="http://www.cse.ust.hk/~kaichen/papers/mqecn-nsdi16.pdf">pdf</a>]</li>
+            <li>"<a>Information-Agnostic Flow Scheduling for Commodity Data Centers</a>", USENIX NSDI 2015 [<a href="http://www.cse.ust.hk/~kaichen/papers/pias-nsdi15.pdf">pdf</a>]</li>
+            <li>"<a>Explicit Path Control in Commodity Data Centers: Design and Applications</a>", USENIX NSDI 2015 [<a href="http://www.cse.ust.hk/~kaichen/papers/xpath-nsdi15.pdf">pdf</a>]</li>
+            <li>"<a>OSA: An Optical Switching Architecture for Data Center Networks with Unprecedented Flexibility</a>", USENIX NSDI 2012 [<a href="http://www.cse.ust.hk/~kaichen/papers/osa-nsdi12.pdf">pdf</a>]</li>
+            <li>"Generic and Automatic Address Configuration for Data Center Networks", ACM SIGCOMM 2010 (<b>Best paper candidate</b>) [<a href="http://www.cse.ust.hk/~kaichen/papers/dac-sigcomm10.pdf">pdf</a>]</li>
+          </ul>
+        </li>
+      </ul>
+      <p></p>
+
+      <h2 id="teaching">Teaching</h2>
+      <ul>
+        <ul>
+          <li><a href="http://course.cse.ust.hk/comp4621/">Computer Communication Networks</a> &nbsp; Spring 2021, 2020, 2019, 2018, 2017, 2016, 2014</li>
+          <li><a href="http://course.cse.ust.hk/comp3511/">Operating Systems</a> &nbsp; Spring 2026, 2023, 2022, 2021, 2020, Fall 2018, 2016, 2014, 2013</li>
+          <li><a href="http://ising.cse.ust.hk/fl/index.html">Federated Learning</a> &nbsp; Spring 2021</li>
+          <li><a href="https://sing.cse.ust.hk/msbd5001/index.html">Foundations of Data Analytics</a> &nbsp; Spring 2022, Fall 2020, 2019</li>
+          <!---li><a href="http://www.cse.ust.hk/~kaichen/courses/spring2015/comp6611/index.html">Topics in Data Center Networks and Clouds</a> &nbsp; Spring 2015, 2013</li>
+            --->
+        </ul>
+      </ul>
+
+      <h2 id="students" href="http://ising.cse.ust.hk/people">Students</a> and their Achievements</h2>
+      <ul>
+        <li>
+          <b><font size="+0">Current Members</font></b>
+          <ul>
+            <li><a href="https://huhuzizi.github.io/jinbinhu.github.io/index.html">Jinbin Hu</a> (PostDoc, Winter 2021)</li>
+            <li><a href="https://albertbowen.github.io/">Bowen Liu</a> (PostDoc, Fall 2024)</li>
+            <li>Hao Xu (PhD student, Fall 2019)</li>
+            <li>Liming Zhang (PhD student, Fall 2022)</li>
+	    <li><a href="https://huangxy-minel.github.io/">Xinyang Huang</a> (PhD student, Fall 2023)</li>
+            <li>Decang Sun (PhD student, Fall 2023)</li>
+            <li>Yijun Sun (PhD student, Fall 2023)</li>
+            <li>Xinyu Yang (PhD student, Fall 2023)</li>
+	    <li>Yuxuan Li (PhD student, Fall 2024)</li>
+	    <li>Qijing Li (PhD student, Fall 2024)</li>
+	    <li>Pengbo Li (PhD student, Fall 2024)</li>
+	    <li>Xiangzhou Liu(PhD student, Fall 2024)</li>
+	    <li>Yunxuan Zhang (PhD student, Fall 2024)</li>
+	    <li>Zhaoxiang Bao (PhD student, Fall 2025)</li>
+	    <li>Yu Liu (PhD student, Fall 2025)</li>
+	    <li>Linkai Song (PhD student, Fall 2025)</li>
+	    <li>Zihao Wang (PhD student, Fall 2025)</li>
+	    <li>Songrun Xie (PhD student, Fall 2025)</li>
+            <li>Feiyuan Zhang (PhD student, Fall 2025)</li>
+          </ul>
+        </li>
+        <li>
+          <b><font size="+0">Past Members</font></b>
+          <ul>
+            <li><a href="https://leewxgit.github.io/index.html">Wenxue Li</a> (PhD #20, 2025)</li>
+	    <li><a href="https://home.cse.ust.hk/~zrenak/">Zhenghang Ren</a> (PhD #19, 2025)</li>
+            <li>Liu Yang (PhD #18, co-supervise with Prof. Qiang Yang, 2025)</li>
+            <li><a href="https://xudongliao.github.io/">Xudong Liao</a> (PhD #17, 2025)</li>
+            <li><a href="https://kqxu.com">Kaiqiang Xu</a> (PhD #16, 2025)</li>
+	    <li><a href="https://kl4805.github.io/">Yilun Jin</a> (PhD #15, co-supervise with Prof. Qiang Yang, 2025)</li>
+	    <li><a href="https://whwh1996.github.io/">Hao Wang</a> (PhD #14, 2025)</li>
+	    <li><a href="https://egoinside.github.io">Zilong Wang</a> (PhD #13, 2025)</li>
+	    <li><a href="https://xcwanandy.github.io">Xinchen Wan</a> (PhD #12, 2025)</li>
+            <li><a href="https://di-chai.github.io/">Di Chai</a> (PhD #11, co-supervise with Prof. Qiang Yang, 2025)</li>
+            <li><a href="https://weiyan-wang.github.io/">Weiyan Wang</a> (PhD #10, 2023, Researcher at Tencent)</li>
+            <li><a href="https://hydrazeng.github.io/">Chaoliang Zeng</a> (PhD #9, 2023, Chip Architect at BitIntelligence)</li>
+            <li><a href="https://tianhan4.github.io/">Han Tian</a> (PhD #8, 2023, Assistant Professor, USTC)</li>
+            <li><a href="https://www.cse.ust.hk/~ywanggf/">Yiding Wang</a> (PhD #7, 2023, Researcher at Huawei)</li>
+            <li><a href="https://snowzjx.me/"> Junxue Zhang</a> (PhD #6, 2022, Professor, USTC)</li>
+            <li><a href="https://gaoxiongzeng.github.io/">Gaoxiong Zeng</a> (PhD #5, 2021, Researcher at Huawei, Gifted Young Award)</li>
+            <li><a href="https://shuihaihu.github.io/index.html">Shuihai Hu</a> (PhD #4, 2019, Researcher at Huawei)</li>
+            <li><a href="https://hongzhangblaze.github.io/">Hong Zhang</a> (PhD #3, 2019, Assistant Professor, University of Waterloo)</li>
+            <li><a href="https://li-ch.github.io/resume/">Li Chen</a> (PhD #2, 2018, Researcher at Zhongguancun Lab)</li>
+            <li><a href="https://baiwei0427.github.io/">Wei Bai</a> (PhD #1, 2017, Principal Architect at NVIDIA)</li>
+            <li><a href="https://xiaojin319.github.io/">Xiaojin Zhang</a> (PostDoc 2023, Assistant Professor, Huazhong University of Science and Technology)</li>
+            <li><a href="https://raymondhliu.github.io/">Hao Liu</a> (PostDoc 2021, Assistant Professor, HKUST-Guangzhou)</li>
+            <li><a href="http://cic.tju.edu.cn/faculty/liwenxin/index.html">Wenxin Li</a> (PostDoc 2019, Professor, Tianjin University)</li>
+            <li><a href="http://yuchaozhang.weebly.com/">Yuchao Zhang</a> (PostDoc 2018, Professor, Beijing University of Posts and Telecommunications)</li>
+            <li><a href="http://www.cs.uml.edu/~hsusanto/">Hengky Susanto</a> (PostDoc, 2016, Principle Researcher Scientist at Huawei)</li>
+            <li>Yuxuan Qin (MPhil 2024)</li>
+            <li>Mingxuan Fan (MPhil 2024)</li>
+            <li>Xiaodian Cheng (MPhil 2023)</li>
+            <li>Shuowei Cai (MPhil 2023)</li>
+            <li>Ding Tang (MPhil 2022)</li>
+            <li>Yiqing Ma (MPhil 2021)</li>
+            <li>Cengguang Zhang (MPhil 2021)</li>
+            <li>Zhuoyi Peng (MPhil 2021)</li>
+            <li>Duowen Liu (MPhil 2021)</li>
+            <li>Zhaorong Liu (MPhil 2021)</li>
+            <li>Jingrong Chen (MPhil 2020)</li>
+            <li>Ge Chen (MPhil 2020)</li>
+            <li>Zhaoxiong Yang (MPhil 2020)</li>
+            <li>Jiacheng Xia (MPhil 2019)</li>
+            <li>Qinghe Jing (MPhil 2019)</li>
+            <li>Bairen Yi (MPhil 2019)</li>
+            <li>Justinas Lingys (MPhil 2018)</li>
+            <li>Baochen Qiao (MPhil 2018)</li>
+            <li>Yang Peng (MPhil 2014) </li>
+            <li>Ye Tao (MPhil 2014)</li>
+            <li>Ziyang Li (Intern student, from National Univ. of Defense Technology)</li>
+            <li>Jinzhen Bao (Intern student, from National Univ. of Defense Technology)</li>
+            <li><a href="https://inspiringgroup.github.io/">Zhuotao Liu</a> (Intern student, from Univ. of Illinois Urbana-Champaign)</li>
+            <li><a href="http://www.haow.ca/">Hao Wang</a> (Intern student, from Shanghai Jiaotong Univ.)</li>
+            <li>Weiyu Zhang (Intern student, from Shanghai Jiaotong Univ.)</li>
+            <li>Yangming Zhao (Intern student, from Univ. of Electronic Science and Technology of China) </li>
+            <li>Weicheng Sun (Intern student, from Shanghai Jiaotong Univ.) </li>
+            <li>Zhouwang Fu (Intern student, from Shanghai Jiaotong Univ.)</li>
+            <li>Hao Jin (Intern student, from Nanjing Univ.)</li>
+            <li>Libin Liu (Intern student, from Shandong Univ.)</li>
+            <li>Kun Guo (Visiting scholar, from Fuzhou University)</li>
+            <li>Xuangou Wu (Visiting scholar, from Anhui Univ. of Technology)</li>
+            <li>Deke Guo (Visiting scholar, from National Univ. of Defense Technology)</li>
+            <li>Hangxing Wu (Visiting scholar, from Univ. of Science and Technology Beijing)</li>
+            <li>Dezun Dong (Visiting scholar, from National Univ. of Defense Technology)</li>
+          </ul>
+        </li>
+        <li>
+          <b><font size="+0">Student Supervision Achievements</font></b>
+          <ul>
+            <li>Kaiqiang Xu, PhD, Honorable Mention in CSE Best PhD Dissertation Award, 2024/25</li>
+            <li>Wenxue Li, PhD, ACM SIGCOMM'25 Best Student Paper Award Honorable Mention, 2025</li>
+            <li>Chaoliang Zeng, PhD, Honorable Mention in CSE Best PhD Dissertation Award, 2022/23</li>
+            <li>Junxue Zhang, PhD, Honorable Mention in CSE Best PhD Dissertation Award, 2021/22</li>
+            <li>Li Chen, PhD, Microsoft Research Asia PhD Fellowship Award, 2016</li>
+            <li>Hong Zhang, PhD, Google PhD Fellowship Award, 2016</li>
+            <li>Wei Bai, PhD, Microsoft Research Asia PhD Fellowship Award, 2015</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 id="services">Professional Activities</h2>
+      <ul>
+        <li>
+          <b><font size="+0">Journal Editorship</font></b>
+          <ul>
+            <li>Editor, IEEE/ACM Transactions on Networking, &nbsp;2019 - present</li>
+            <li>Associate Editor, IEEE Transactions on Cloud Computing, &nbsp;2018 - 2022</li>
+            <li>Associate Editor, IEEE Transactions on Big Data, &nbsp;2016 - 2020</li>
+            <li>Guest Editor, Journal of Computer Research and Development special issue on "Data-driven Networking", &nbsp;2020</li>
+            <li>Guest Editor, China Communications special issue on "New Era of Software Defined Networking", &nbsp;2016</li>
+          </ul>
+        </li>
+        <li>
+          <b><font size="+0">Steering Committee</font></b>
+          <ul>
+            <li>2017-now Chair, <a href="https://conferences.sigcomm.org/events/apnet2017/program.html">Asia-Pacific Workshop on Networking (APNet'17)</a>, 
+              <a href="https://conferences.sigcomm.org/events/apnet2018/program.html">APNet'18</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2019/program.html">APNet'19</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2020/program.html">APNet'20</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2021/index.html">APNet'21</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2022/index.html">APNet'22</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2023/index.html">APNet'23</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2024">APNet'24</a>,
+              <a href="https://conferences.sigcomm.org/events/apnet2025">APNet'25</a>
+	      <a href="https://conferences.sigcomm.org/events/apnet2026">APNet'26</a>
+	    </li>
+          </ul>   
+        </li>
+        <li>
+          <b><font size="+0">Program Committee</font></b>
+          <ul>
+            <li>2026 &nbsp; SIGCOMM, NSDI, EuroSys, CoNEXT, INFOCOM (TPC Area-chair)</li>
+            <li>2025 &nbsp; SIGCOMM, NSDI, EuroSys, CoNEXT, INFOCOM (TPC Area-chair)</li>
+            <li>2024 &nbsp; SIGCOMM, CoNEXT, INFOCOM (TPC Area-chair), ICNP (TPC Co-chair)</li>
+            <li>2023 &nbsp; SIGCOMM, INFOCOM (TPC Area-chair), ICNP, ICDCS</li>
+            <li>2022 &nbsp; CoNEXT, INFOCOM, APNet, ICDCS</li>
+            <li>2021 &nbsp; SIGCOMM, NSDI, INFOCOM, SOSR, HotNets</li>
+            <li>2020 &nbsp; SIGCOMM poster/demo, SIGCOMM-NetAI, CoNEXT, INFOCOM, IEEE BigData (PC Vice-chair)</li>
+            <li>2019 &nbsp; SIGCOMM, SIGCOMM poster/demo (PC Co-chair), NSDI, INFOCOM</li>
+            <li>2018 &nbsp; SIGCOMM poster/demo, NSDI, INFOCOM, APNet</li>
+            <li>2017 &nbsp; SIGCOMM poster/demo, INFOCOM, APNet (PC Co-chair), Sigcomm-China-Symposium (PC Co-chair), ANCS</li>
+            <li>2016 &nbsp; IEEE INFOCOM, IEEE LANMAN, IEEE ICCCN</li>
+            <li>2015 &nbsp; IEEE INFOCOM, IEEE LANMAN, IEEE ICCCN</li>
+            <li>2014 &nbsp; ACM SIGCOMM poster/demo, USENIX HotCloud, IEEE INFOCOM, IEEE LANMAN</li>
+            <li>2013 &nbsp; ACM SIGCOMM poster/demo</li>
+            <li>2012 &nbsp; ACM CoNEXT student workshop</li>
+          </ul>
+        </li>
+        <li>
+          <b><font size="+0">Organizing Committee</font></b>
+          <ul>
+            <li>2026 &nbsp; Sponsorship Chair, IEEE ICNP</li>
+	    <li>2025 &nbsp; General Chair, ACM CoNEXT</li>
+            <li>2023 &nbsp; General Chair, APNet</li>
+	    <li>2021 &nbsp; Publicity Chair, IEEE ICNP</li>
+            <li>2019 &nbsp; Demo Chair, ACM SIGCOMM</li>
+            <li>2018 &nbsp; Workshop Chair, IEEE ICNP</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="footer"> Welcome, you're the <img style="display:inline" src="http://pages.swcp.com/cgi-bin/counter-nmia?//http://www.cs.northwestern.edu/~kch670/"> th visitor since 8/25/2009. </p>
+      
+    </div>
+  </body>
+</html>

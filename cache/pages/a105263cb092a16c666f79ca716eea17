@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Anupam Datta</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navContainer" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">Home</a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li> <a href="publications.html">Research</a> </li>
+        <li> <a href="teaching.html">Teaching</a> </li>
+        <li> <a href="research.html">Students & Postdocs</a> </li>
+        <li> <a href="service.html">Service</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 text-center sm-text-right">
+        <h2>Anupam Datta</h2>
+	<small>
+        Professor <br/>
+        <a href="http://www.ece.cmu.edu/" target="_blank">Electrical and Computer Engineering Department</a><br/>
+        and (by courtesy) <a href="http://www.csd.cs.cmu.edu/" target="_blank">Computer Science Department</a> <br/>
+        Carnegie Mellon University Silicon Valley <br/>
+	PhD 2005, Computer Science, Stanford University </br>
+
+      </div>
+    <div class="col-sm-4 text-center"> <img class="img-header img-center" src="https://www.andrew.cmu.edu/user/danupam/ad.jpg" alt="Anupam Datta"> </br>
+        <a href="http://www.andrew.cmu.edu/user/danupam/bio.txt">Brief bio</a>
+                </small>
+            </div>
+    </div>
+  </div>
+</header>
+
+<!-- Content Section -->
+<div class="container" id="content">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <a name="about"></a>
+          <p>
+
+          My current focus is on foundations and tools for Trustworthy AI. The goal is to ensure that data-driven systems that employ artificial intelligence and machine learning are not inscrutable black-boxes; rather their operation is explained in a form that enables trust in their operation, performance improvements, and protection of societal values, including privacy and fairness. For contributions in this area, I am the recipient of the <a href="https://engineering.cmu.edu/faculty-staff/awards/faculty-awards/winners.html">2018 David P. Casasent Outstanding Research Award</a> from the CMU College of Engineering, a <a href="https://kgpchronicle.iitkgp.ac.in/iit-kgp-to-e-felicitate-young-alumni-on-70th-foundation-day/">2020 Young Alumni Achiever Award from IIT Kharagpur</a>, and a 2021 Google Faculty Research Award.
+
+
+          <p>
+          <b> Note: </b> I am on leave from CMU at <a href="https://www.truera.com">Truera</a> (renamed from AILens), a company I co-founded to enable effective and responsible adoption of artificial intelligence.
+          </p>
+
+<h3>Education Highlights</h3>
+          <ul>
+              <li> <a href="https://web.stanford.edu/class/cs329t/">Trustworthy Machine Learning</a> [Stanford CS329T; Spring 2021, 2022]</li>
+              <li> <a href="https://course.ece.cmu.edu/~ece739/2019-spring/index.html">Security and Fairness of Deep Learning</a> [CMU 18739; Spring 2018, 2019]</li>
+              <li> <a href="https://neurips.cc/Conferences/2021/ScheduleMultitrack?event=30636">Exploring Conceptual Soundness with TruLens</a> [NeurIPS 2021 Demo]</li>
+              <li> <a href="https://sites.google.com/andrew.cmu.edu/kdd-2021-tutorial-expl-robust/">Machine Learning Explainability and Robustness: Connected at the Hip</a> [KDD 2021 Tutorial]</li>
+              <li> <a href="https://fairlyaccountable.org/aaai-2021-tutorial/">From Explanability to Model Quality and Back Again</a> [AAAI 2021 Tutorial]</li>
+          </ul>
+<h3>Research Highlights</h3>
+          <ul>
+              <li>Our 2021 paper on <a href="https://proceedings.neurips.cc/paper/2021/file/239f914f30ea3c948fce2ea07a9efb33-Paper.pdf">Influence Patterns for Explaining Information Flow in BERT</a>  presents an explanation method for transformer models called BERT, which are very widely used for <b>natural language processing</b> tasks. In particular, it surfaces how BERT models internally capture interactions among words. It builds on our 2020 paper on <a href="https://aclanthology.org/2020.acl-main.430/">Influence Paths in LSTM Language Models</a>. See also our result on <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oK3QM1wAAAAJ&cstart=20&pagesize=80&citation_for_view=oK3QM1wAAAAJ:JH5k92_tO-AC">Gender Bias in Neural Natural Language Processing</a>. </li>
+              <li>Our 2018 paper on <a href="https://arxiv.org/abs/1802.03788">Influence-Directed Explanations for Deep Convolutional Networks</a> presents a general approach to create explanations not just at the input (i.e. pixel level) but also at an internal level (e.g., identifying neurons and other network units inside deep networks that capture visual concepts such as eyes and lips for facial recognition. This kind of <b>gradient-based internal explanations</b> are increasingly being used in practice. This paper serves as a building block for number of subsequent results on <a href="https://arxiv.org/abs/1812.08999">bias amplification</a>, <a href="https://www.usenix.org/system/files/sec20-leino.pdf">privacy</a>, and <a href="https://papers.nips.cc/paper/2020/file/9d94c8981a48d12adfeecfe1ae6e0ec1-Paper.pdf">robustness</a> of deep networks. </li>
+              <li>Our 2016 paper on <a href="https://scholar.google.com/citations?view_op=view_citation\&hl=en&user=oK3QM1wAAAAJ&citation_for_view=oK3QM1wAAAAJ:4X0JR2_MtJMC">Algorithmic Transparency via Quantitative Input Influence</a> introduced a method for <b>Explainable Machine Learning</b> by leveraging a combination of techniques from co-operative game theory (e.g., Shapley Values) and causality. These methods are now widely used. See an accessible article in <a href="https://theconversation.com/did-artificial-intelligence-deny-you-credit-73259">The Conversation</a> and my <a href="http://www.fatml.org/schedule/2016/presentation/algorithmic-transparency-quantitative-input">FAT/ML'16 Invited Talk</a>.</li>
+              <li>Our 2015 paper on <a href="http://fairlyaccountable.org/adfisher/">Discrimination in Online Behavioral Advertising</a> was an early demonstration that <b>fairness</b> of data-driven systems that use machine learning is a real problem -- a well-recognized and mainstream area of research and practice now. See also our 2017 paper on root causes of <a href="https://arxiv.org/abs/1707.08120">proxy discrimination</a> in ML models, and our <a href="https://proceedings.neurips.cc/paper/2018/file/6cd9313ed34ef58bad3fdd504355e72c-Paper.pdf">2018 NeurIPS paper</a> on a highly efficient method for rooting out proxies in linear models</li>
+              <li>Our 2014 paper on <a href="http://www.andrew.cmu.edu/user/danupam/sen-guha-datta-oakland14.pdf">Bootstrapping Privacy Compliance in Big Data Systems</a> created methods and a toolchain to annotate data elements and check Map-Reduce style codebases for <b>privacy compliance</b>. This work was further developed by Microsoft as part of their DataMap project and became a key foundation for their GDPR compliance toolkit for Azure and Office 360.</li>
+              <li>Our results on <b>differential privacy</b>, including applications to <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oK3QM1wAAAAJ&citation_for_view=oK3QM1wAAAAJ:tOudhMTPpwUC">social networks</a>, <a href="https://eprint.iacr.org/2016/153">password protection</a>, <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oK3QM1wAAAAJ&citation_for_view=oK3QM1wAAAAJ:xtRiw3GOFMkC">JL transform</a>, and privacy-preserving AI counterfactual explanations (coming soon!).
+      </li>
+      <li>Our 2006 paper on <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oK3QM1wAAAAJ&citation_for_view=oK3QM1wAAAAJ:d1gkVwhDpl0C">Privacy and Contextual Integrity</a> spawned a body of work on specifying and enforcing privacy requirements. The computational approach formalizes an influential normative approach to <a href="https://www.degruyter.com/document/doi/10.1515/9780804772891/html?lang=en">Privacy in Context</a>. See also this article in <a href="http://www.economist.com/science/displaystory.cfm?story_id=8486072">The Economist</a> and the <a href="https://www.whitehouse.gov/sites/default/files/privacy-final.pdf">White House Consumer Privacy Bill of Rights</a></li>.
+</ul>
+
+<h3>Selected Recent Talks</h3>
+<ul>
+    <li> 2018: <a href="https://events.economist.com/events-conferences/americas/innovation#agenda">The Economist Innovation Summit</a>, Fairness/Gender and Machine Learning@Stanford, Machine Learning and Formal Methods Summit@Oxford, <a href="http://privaci.info/event/ci_symposium/">PrivaCI@Princeton</a>, Interpretable Machine Learning Models and Financial Applications@MIT, <a href="http://mtv.ece.ucsb.edu/ITC2018/AP.pdf">International Test Conference (AI session)</a>, UW-Madison CS Distinguished Lecture Series, CMKL Tech Summit on AI@Thailand
+    <li> 2017: <a href="https://simons.berkeley.edu/workshops/safe-m-l">DARPA Safe Machine Learning</a>, <a href="https://simons.berkeley.edu/workshops/privacy2017">Data Privacy@Simons Institute</a>, <a href="https://cvpip.wp.imt.fr/2017/04/26/the-many-dimensions-of-data/">Data Economy@Telecom ParisTech</a>, <a href="https://www.law.berkeley.edu/research/bclt/past-events/june-2017-10th-annual-privacy-law-scholars-conference-plsc/agenda-plsc-2017/">PLSC@Berkeley</a>, <a href="http://www.law.nyu.edu/centers/ili/events/algorithms-and-explanations">Algorithms and Explanations@NYU</a>
+    </li>
+<li>2016: <a href="http://www.fatml.org/schedule/2016/presentation/algorithmic-transparency-quantitative-input">FAT/ML@NYU</a>, BigData@CSAIL Data Privacy Series at MIT,  <a href="https://www.cmu.edu/safartint/">Safe AI@CMU + White House OSTP</a>, <a href="http://conf.researchr.org/track/pldi-2016/FMS-2016-papers#program">Formal Methods and Security@PLDI'16</a>, <a href="https://www.schneier.com/shb2016/">Security and Human Behavior'16@Harvard</a>, <a href="http://ieee-security.org/TC/SPW2016/IWPE/">Privacy Engineering@Oakland'16</a>, <a href="https://crypto.stanford.edu/jcm60/">John Mitchell Festscrift@Stanford</a>, <a href="http://publish.illinois.edu/science-of-security-lablet/science-of-security-for-cyber-physical-systems-workshop/">Science of Security@CPSWeek'16</a>, <a href="https://www.ftc.gov/news-events/audio-video/video/privacycon-part-3">FTC PrivacyCon'16</a> </li>
+</ul>
+<h3>Activities</h3>
+<ul>
+    <li><a href="http://fairlyaccountable.org/satc/">Accountable Decision Systems</a> [Lead PI; NSF large collaborative involving CMU, Cornell, ICSI] </li>
+    <li><a href="https://fatconference.org/">Conference on Fairness, Accountability, and Transparency</a> [Steering Committee]</li>
+    <li><a href="http://www.nowpublishers.com/SEC">Foundations and Trends in Privacy and Security</a> [Editor-in-Chief]</li>
+    <li><a href="http://www.ieee-security.org/CSFWweb/">IEEE Computer Security Foundations Symposium</a> [Steering Committee]</li>
+    <li><a href="https://www.ece.cmu.edu/news-and-events/story/2018/09/onr-grant-software-reduction.html">Accountable Protocol Customization </a>[Lead PI; ONR large collaborative involving CMU, Stanford, UPenn] </li>
+    <li> <a   href="https://www.cylab.cmu.edu/">CMU Security and Privacy Institute</a>, <a           href="http://www.cs.cmu.edu/Groups/pop/index.html">Principles of Programming</a>, <a href="https://www.csd.cs.cmu.edu/research-areas/artificial-intelligence">Artificial Intelligence</a> group [Affiliate] </li>
+</ul>
+
+    </div>
+  </div>
+
+</div>
+</small>
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Computer Science; Rutgers, The State University of New Jersey">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Home</title>
+	<link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+	<link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+	<link href="/media/templates/site/cassiopeia_sas/images/favicon.ico" rel="alternate icon" type="image/vnd.microsoft.icon">
+	<link href="/media/system/images/joomla-favicon-pinned.svg" rel="mask-icon" color="#000">
+
+	<link href="/media/system/css/joomla-fontawesome.min.css?5d8de0" rel="lazy-stylesheet"><noscript><link href="/media/system/css/joomla-fontawesome.min.css?5d8de0" rel="stylesheet"></noscript>
+	<link href="/media/cache/com_latestnewsenhancedpro/style_articles_blog_101.css?5d8de0" rel="stylesheet">
+	<link href="/media/syw/css/fonts.min.css?5d8de0" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia/css/template.min.css?5d8de0" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia/css/global/colors_standard.min.css?5d8de0" rel="stylesheet">
+	<link href="/media/cache/mod_latestnewsenhanced/style_191.css?5d8de0" rel="stylesheet">
+	<link href="/media/mod_latestnewsenhanced/css/common_styles.min.css?5d8de0" rel="stylesheet">
+	<link href="/media/cache/mod_latestnewsenhanced/style_350.css?5d8de0" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia/css/vendor/joomla-custom-elements/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia_sas/css/user.css?5d8de0" rel="stylesheet">
+	<link href="/media/plg_system_jcepro/site/css/content.min.css?86aa0286b6232c4a5b58f892ce080277" rel="stylesheet">
+	<link href="/media/plg_system_jcemediabox/css/jcemediabox.min.css?7d30aa8b30a57b85d658fcd54426884a" rel="stylesheet">
+	<link href="/components/com_jevents/views/flatplus/assets/css/modstyle.css?v=3.6.98" rel="stylesheet">
+	<link href="/components/com_jevents/assets/css/jevcustom.css?v=3.6.98" rel="stylesheet">
+	<link href="https://www.cs.rutgers.edu/modules/mod_socialmedia/assets/css/mod_socialmedia.css" rel="stylesheet">
+	<style>@media (min-width: 768px) {#lnepmodal .modal-dialog {width: 80%;max-width: 600px;}}</style>
+	<style>.cloaked_email span:before { content: attr(data-ep-ac557); } .cloaked_email span:after { content: attr(data-ep-b44fb); } img.cloaked_email { display: inline-block !important; vertical-align: middle; border: 0; }</style>
+	<style>:root {
+		--hue: 214;
+		--template-bg-light: #f0f4fb;
+		--template-text-dark: #495057;
+		--template-text-light: #ffffff;
+		--template-link-color: #2a69b8;
+		--template-special-color: #001B4C;
+		
+	}</style>
+
+	<script src="/media/vendor/metismenujs/js/metismenujs.min.js?1.4.0" defer></script>
+	<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script src="/media/templates/site/cassiopeia/js/mod_menu/menu-metismenu.min.js?5d8de0" defer></script>
+	<script src="/media/mod_menu/js/menu.min.js?5d8de0" type="module"></script>
+	<script type="application/json" class="joomla-script-options new">{"bootstrap.tooltip":{".hasTooltip":{"animation":true,"container":"body","html":true,"trigger":"hover focus","boundary":"clippingParents","sanitize":true}},"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/www.cs.rutgers.edu\/","base":"","baseFull":"https:\/\/www.cs.rutgers.edu\/"},"csrf.token":"69393664e48df713788e833726dadef5"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/templates/site/cassiopeia/js/template.min.js?5d8de0" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/popover.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/modal.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/offcanvas.min.js?5.3.8" type="module"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="/media/plg_system_jcemediabox/js/jcemediabox.min.js?7d30aa8b30a57b85d658fcd54426884a"></script>
+	<script>document.addEventListener("readystatechange", function(event) {if (event.target.readyState === "complete") {var modal = document.getElementById("lnepmodal");modal.addEventListener("show.bs.modal", function (event) {var link = event.relatedTarget;if (typeof (link) !== "undefined" && link !== null) {var dataTitle = link.getAttribute("data-modaltitle");if (typeof (dataTitle) !== "undefined" && dataTitle !== null) {this.querySelector(".modal-title").innerText = dataTitle;}var dataURL = link.getAttribute("href");this.querySelector(".iframe").setAttribute("src", dataURL);}document.querySelector("body").classList.add("modal-open");var event = document.createEvent("Event"); event.initEvent("modalopen", true, true); document.dispatchEvent(event);}, this);modal.addEventListener("shown.bs.modal", function (event) {var modal_body = this.querySelector(".modal-body");}, this);modal.addEventListener("hide.bs.modal", function (event) {this.querySelector(".modal-title").innerText = "Article";var modal_body = this.querySelector(".modal-body");modal_body.querySelector(".iframe").setAttribute("src", "about:blank");document.querySelector("body").classList.remove("modal-open");var event = document.createEvent("Event"); event.initEvent("modalclose", true, true); document.dispatchEvent(event);}, this);}});</script>
+	<script>window.RegularLabs=window.RegularLabs||{};window.RegularLabs.EmailProtector=window.RegularLabs.EmailProtector||{unCloak:function(e,g){document.querySelectorAll("."+e).forEach(function(a){var f="",c="";a.className=a.className.replace(" "+e,"");a.querySelectorAll("span").forEach(function(d){for(name in d.dataset)0===name.indexOf("epA")&&(f+=d.dataset[name]),0===name.indexOf("epB")&&(c=d.dataset[name]+c)});if(c){var b=a.nextElementSibling;b&&"script"===b.tagName.toLowerCase()&&b.parentNode.removeChild(b);b=f+c;g?(a.parentNode.href="mailto:"+b,a.parentNode.removeChild(a)):a.innerHTML=b}})}};</script>
+	<script>jQuery(document).ready(function(){WfMediabox.init({"base":"\/","theme":"standard","width":"","height":"","lightbox":0,"shadowbox":0,"icons":1,"overlay":1,"overlay_opacity":0.8000000000000000444089209850062616169452667236328125,"overlay_color":"#000000","transition_speed":500,"close":2,"labels":{"close":"Close","next":"Next","previous":"Previous","cancel":"Cancel","numbers":"{{numbers}}","numbers_count":"{{current}} of {{total}}","download":"Download"},"swipe":true,"expand_on_click":true});});</script>
+	<script>function fetchMoreLatestEvents(modid, direction)
+{        
+        jQuery.ajax({
+                    type : 'POST',
+                    dataType : 'json',
+                    url : "https://www.cs.rutgers.edu/index.php?option=com_jevents&ttoption=com_jevents&typeaheadtask=gwejson&file=fetchlatestevents&path=module&folder=mod_jevents_latest&token=69393664e48df713788e833726dadef5",
+                    data : {'json':JSON.stringify({'modid':modid, 'direction':direction})},
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    scriptCharset: "utf-8"
+            })                        
+                .done(function( data ){                    
+                    jQuery("#mod_events_latest_"+modid+"_data").replaceWith(data.html);
+                    try {
+                        document.getElementById("mod_events_latest_"+modid+"_data").parentNode.scrollIntoView({block: "start", behavior: "smooth"});
+                    }
+                    catch (e) {
+                    }
+                })
+                .fail(function(x) {
+        alert('fail '+x);
+                });
+}</script>
+	<meta property="og:locale" content="en_GB" class="4SEO_ogp_tag">
+	<meta property="og:url" content="https://www.cs.rutgers.edu/" class="4SEO_ogp_tag">
+	<meta property="og:site_name" content="Department of Computer Science | Rutgers, The State University of New Jersey" class="4SEO_ogp_tag">
+	<meta property="og:type" content="article" class="4SEO_ogp_tag">
+	<meta property="og:title" content="Home" class="4SEO_ogp_tag">
+	<meta property="og:description" content="Computer Science; Rutgers, The State University of New Jersey" class="4SEO_ogp_tag">
+	<meta property="fb:app_id" content="966242223397117" class="4SEO_ogp_tag">
+	<meta property="og:image" content="https://www.cs.rutgers.edu/media/cache/com_latestnewsenhancedpro/thumb_articles_blog_101_77.jpg?ba70b96e85039a4fa7cdd16c14da2993" class="4SEO_ogp_tag">
+	<meta property="og:image:width" content="400" class="4SEO_ogp_tag">
+	<meta property="og:image:height" content="400" class="4SEO_ogp_tag">
+	<meta property="og:image:alt" content="Department Overview" class="4SEO_ogp_tag">
+	<meta property="og:image:secure_url" content="https://www.cs.rutgers.edu/media/cache/com_latestnewsenhancedpro/thumb_articles_blog_101_77.jpg?ba70b96e85039a4fa7cdd16c14da2993" class="4SEO_ogp_tag">
+	<meta name="twitter:card" content="summary" class="4SEO_tcards_tag">
+	<meta name="twitter:url" content="https://www.cs.rutgers.edu/" class="4SEO_tcards_tag">
+	<meta name="twitter:title" content="Home" class="4SEO_tcards_tag">
+	<meta name="twitter:description" content="Computer Science; Rutgers, The State University of New Jersey" class="4SEO_tcards_tag">
+	<meta name="twitter:image" content="https://www.cs.rutgers.edu/media/cache/com_latestnewsenhancedpro/thumb_articles_blog_101_77.jpg?ba70b96e85039a4fa7cdd16c14da2993" class="4SEO_tcards_tag">
+	<link rel="canonical" href="https://www.cs.rutgers.edu/" class="4SEO_auto_canonical">
+	<meta name="google-site-verification" content="wyJGVQa1FzdLzk5D1lM7GfT9b3OWT4hppjPUCw1cMNs"  class="4SEO_google_site_verification_tag" />
+
+<link rel="stylesheet" type="text/css" href="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=c397fa89" media="all">
+<style data-related="n2-ss-2">div#n2-ss-2 .n2-ss-slider-1{display:grid;position:relative;}div#n2-ss-2 .n2-ss-slider-2{display:grid;position:relative;overflow:hidden;padding:0px 0px 0px 0px;border:0px solid RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;z-index:1;}div#n2-ss-2:not(.n2-ss-loaded) .n2-ss-slider-2{background-image:none !important;}div#n2-ss-2 .n2-ss-slider-3{display:grid;grid-template-areas:'cover';position:relative;overflow:hidden;z-index:10;}div#n2-ss-2 .n2-ss-slider-3 > *{grid-area:cover;}div#n2-ss-2 .n2-ss-slide-backgrounds,div#n2-ss-2 .n2-ss-slider-3 > .n2-ss-divider{position:relative;}div#n2-ss-2 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-2 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-2 .n2-ss-slide-background{transform:translateX(-100000px);}div#n2-ss-2 .n2-ss-slider-4{place-self:center;position:relative;width:100%;height:100%;z-index:20;display:grid;grid-template-areas:'slide';}div#n2-ss-2 .n2-ss-slider-4 > *{grid-area:slide;}div#n2-ss-2.n2-ss-full-page--constrain-ratio .n2-ss-slider-4{height:auto;}div#n2-ss-2 .n2-ss-slide{display:grid;place-items:center;grid-auto-columns:100%;position:relative;z-index:20;-webkit-backface-visibility:hidden;transform:translateX(-100000px);}div#n2-ss-2 .n2-ss-slide{perspective:1000px;}div#n2-ss-2 .n2-ss-slide-active{z-index:21;}.n2-ss-background-animation{position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;}div#n2-ss-2 .nextend-arrow{cursor:pointer;overflow:hidden;line-height:0 !important;z-index:18;-webkit-user-select:none;}div#n2-ss-2 .nextend-arrow img{position:relative;display:block;}div#n2-ss-2 .nextend-arrow img.n2-arrow-hover-img{display:none;}div#n2-ss-2 .nextend-arrow:FOCUS img.n2-arrow-hover-img,div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-hover-img{display:inline;}div#n2-ss-2 .nextend-arrow:FOCUS img.n2-arrow-normal-img,div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-normal-img{display:none;}div#n2-ss-2 .nextend-arrow-animated{overflow:hidden;}div#n2-ss-2 .nextend-arrow-animated > div{position:relative;}div#n2-ss-2 .nextend-arrow-animated .n2-active{position:absolute;}div#n2-ss-2 .nextend-arrow-animated-fade{transition:background 0.3s, opacity 0.4s;}div#n2-ss-2 .nextend-arrow-animated-horizontal > div{transition:all 0.4s;transform:none;}div#n2-ss-2 .nextend-arrow-animated-horizontal .n2-active{top:0;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal .n2-active{left:100%;}div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal .n2-active{right:100%;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:FOCUS > div{transform:translateX(-100%);}div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:FOCUS > div{transform:translateX(100%);}div#n2-ss-2 .nextend-arrow-animated-vertical > div{transition:all 0.4s;transform:none;}div#n2-ss-2 .nextend-arrow-animated-vertical .n2-active{left:0;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-vertical .n2-active{top:100%;}div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-vertical .n2-active{bottom:100%;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-vertical:FOCUS > div{transform:translateY(-100%);}div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-vertical:FOCUS > div{transform:translateY(100%);}div#n2-ss-2 .nextend-autoplay{cursor:pointer;z-index:16;line-height:1;}div#n2-ss-2 .nextend-autoplay img{display:block;}div#n2-ss-2 .nextend-autoplay .nextend-autoplay-play{display:none;}div#n2-ss-2 .nextend-autoplay.n2-autoplay-paused .nextend-autoplay-play{display:block;}div#n2-ss-2 .nextend-autoplay.n2-autoplay-paused .nextend-autoplay-pause{display:none;}div#n2-ss-2 .n2-style-f17ddbf2d8ed14421f9093b94b93b8a9-heading{background: RGBA(0,0,0,0.67);opacity:1;padding:10px 10px 10px 10px ;box-shadow: none;border: 0px solid RGBA(0,0,0,1);border-radius:3px;}div#n2-ss-2 .n2-style-f17ddbf2d8ed14421f9093b94b93b8a9-heading:Hover, div#n2-ss-2 .n2-style-f17ddbf2d8ed14421f9093b94b93b8a9-heading:ACTIVE, div#n2-ss-2 .n2-style-f17ddbf2d8ed14421f9093b94b93b8a9-heading:FOCUS{background: RGBA(0,0,0,0.67);}div#n2-ss-2 .n-uc-4CRnXLIedYFa{padding:10px 10px 10px 10px}div#n2-ss-2 .n-uc-3FM7HybJqj3t{padding:10px 10px 10px 10px}div#n2-ss-2 .n-uc-YrJdTsyGpwJn{padding:10px 10px 10px 10px}div#n2-ss-2 .n-uc-24SIlZrr5GgM{padding:10px 10px 10px 10px}div#n2-ss-2 .nextend-arrow img{width: 32px}div#n2-ss-2 .nextend-autoplay img{width: 16px}@media (min-width: 1200px){div#n2-ss-2 [data-hide-desktopportrait="1"]{display: none !important;}}@media (orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px){div#n2-ss-2 [data-hide-tabletportrait="1"]{display: none !important;}}@media (orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px){div#n2-ss-2 [data-hide-mobileportrait="1"]{display: none !important;}div#n2-ss-2 .n2-ss-preserve-size[data-related-device="desktopPortrait"] {display:none}div#n2-ss-2 .n2-ss-preserve-size[data-related-device="mobilePortrait"] {display:block}div#n2-ss-2 .nextend-arrow img{width: 16px}div#n2-ss-2 .nextend-autoplay img{width: 8px}}</style>
+<script>(function(){this._N2=this._N2||{_r:[],_d:[],r:function(){this._r.push(arguments)},d:function(){this._d.push(arguments)}}}).call(window);!function(e,i,o,r){(i=e.match(/(Chrome|Firefox|Safari)\/(\d+)\./))&&("Chrome"==i[1]?r=+i[2]>=32:"Firefox"==i[1]?r=+i[2]>=65:"Safari"==i[1]&&(o=e.match(/Version\/(\d+)/)||e.match(/(\d+)[0-9_]+like Mac/))&&(r=+o[1]>=14),r&&document.documentElement.classList.add("n2webp"))}(navigator.userAgent);</script><script src="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/n2.min.js?ver=c397fa89" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider-frontend.min.js?ver=c397fa89" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Slider/SliderType/Simple/Assets/dist/ss-simple.min.js?ver=c397fa89" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Widget/Arrow/ArrowImage/Assets/dist/w-arrow-image.min.js?ver=c397fa89" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Widget/Autoplay/AutoplayImage/Assets/dist/w-autoplay.min.js?ver=c397fa89" defer async></script>
+<script>_N2.r('documentReady',function(){_N2.r(["documentReady","smartslider-frontend","SmartSliderWidgetArrowImage","SmartSliderWidgetAutoplayImage","ss-simple"],function(){new _N2.SmartSliderSimple('n2-ss-2',{"admin":false,"background.video.mobile":1,"loadingTime":2000,"randomize":{"randomize":0,"randomizeFirst":0},"callbacks":"","alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scroll":1},"align":"normal","isDelayed":0,"responsive":{"mediaQueries":{"all":false,"desktopportrait":["(min-width: 1200px)"],"tabletportrait":["(orientation: landscape) and (max-width: 1199px) and (min-width: 901px)","(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)"],"mobileportrait":["(orientation: landscape) and (max-width: 900px)","(orientation: portrait) and (max-width: 700px)"]},"base":{"slideOuterWidth":1200,"slideOuterHeight":453,"sliderWidth":1200,"sliderHeight":453,"slideWidth":1200,"slideHeight":453},"hideOn":{"desktopLandscape":false,"desktopPortrait":false,"tabletLandscape":false,"tabletPortrait":false,"mobileLandscape":false,"mobilePortrait":false},"onResizeEnabled":true,"type":"fullwidth","sliderHeightBasedOn":"real","focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":453,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":264,"customHeight":false,"max":1199,"min":701},"mobilePortrait":{"width":300,"height":225,"customHeight":true,"max":900,"min":300}},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"playWhenVisible":1,"playWhenVisibleAt":0.5,"lazyLoad":1,"lazyLoadNeighbor":1,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":5000,"autoplayLoop":1,"allowReStart":0,"reverse":0,"pause":{"click":0,"mouse":"0","mediaStarted":0},"resume":{"click":0,"mouse":"0","mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"bgAnimations":0,"mainanimation":{"type":"fade","duration":500,"delay":0,"ease":"easeInOutQuint","shiftedBackgroundAnimation":"auto"},"carousel":1,"initCallbacks":function(){new _N2.SmartSliderWidgetArrowImage(this);new _N2.SmartSliderWidgetAutoplayImage(this,0,0,0)}})})});</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVCN4VQT8D"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'G-DVCN4VQT8D');
+</script>
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" class="4SEO_robots_tag">
+	<script type="application/ld+json" class="4SEO_structured_data_sitelinks">{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.cs.rutgers.edu/",
+    "name": "Department of Computer Science | Rutgers, The State University of New Jersey",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.cs.rutgers.edu/search-website?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}</script>
+<script type="application/ld+json" class="4SEO_structured_data_page">{
+    "@context": "http://schema.org",
+    "@graph": [
+        {
+            "@id": "https://www.cs.rutgers.edu/#defaultBusiness",
+            "@type": "LocalBusiness",
+            "name": "Department of Computer Science | Rutgers, The State University of New Jersey",
+            "url": "https://www.cs.rutgers.edu/",
+            "telephone": "",
+            "address": {
+                "@id": "https://www.cs.rutgers.edu/#defaultAddress"
+            },
+            "geo": {
+                "@id": "https://www.cs.rutgers.edu/#defaultGeo"
+            },
+            "image": {
+                "@id": "https://www.cs.rutgers.edu/#defaultLogo"
+            }
+        },
+        {
+            "@id": "https://www.cs.rutgers.edu/#defaultLogo",
+            "@type": "ImageObject",
+            "url": "",
+            "width": "",
+            "height": ""
+        }
+    ]
+}</script></head>
+<body class="site com_latestnewsenhancedpro wrapper-static view-articles no-layout no-task itemid-101">
+	<header class="header container-header full-width">
+
+		      
+            
+        			<div class="container-rutgers-menu full-width ">
+				<div class="rutgers-menu no-card d-none d-lg-block">
+        <ul class="mod-menu mod-list nav navbar-sas-ru">
+<li class="nav-item item-1625"><a href="https://sas.rutgers.edu/about/events/upcoming-events" target="_blank" rel="noopener noreferrer">SAS Events</a></li><li class="nav-item item-1626"><a href="https://sas.rutgers.edu/about/news" target="_blank" rel="noopener noreferrer">SAS News</a></li><li class="nav-item item-102"><a href="http://www.rutgers.edu" target="_blank" rel="noopener noreferrer">rutgers.edu</a></li><li class="nav-item item-192"><a href="http://sas.rutgers.edu/" target="_blank" rel="noopener noreferrer">SAS</a></li><li class="nav-item item-103"><a href="https://search.rutgers.edu/people" target="_blank" rel="noopener noreferrer">Search People</a></li><li class="nav-item item-1263"><a href="/search-website" class="fs-6"><span class="p-2 fa-solid fa-magnifying-glass rutgersRed" aria-hidden="true"></span><span class="visually-hidden">Search Website</span></a></li></ul>
+</div>
+
+			</div>
+		
+        			<div class="container-sas-branding ">
+				<div class="sas-branding no-card ">
+        
+<div id="mod-custom336" class="mod-custom custom">
+    <div class="container-logo">
+<div class="row">
+<div><a href="https://sas.rutgers.edu" target="_blank" rel="noopener"><img alt="Rutgers - New Brunswick School of Arts and Sciences logo" class="theme-image" /></a></div>
+</div>
+</div>
+<div class="container-unit">
+<div class="row">
+<div class="col title-unit"><a href="/." class="no-underline no-hover">Department of Computer Science</a></div>
+</div>
+</div></div>
+</div>
+
+			</div>
+		      
+					<div class="grid-child">
+				<div class="navbar-brand">
+					<a class="brand-logo" href="/">
+						<img class="logo d-inline-block" loading="eager" decoding="async" src="/media/templates/site/cassiopeia/images/logo.svg" alt="Department of Computer Science | Rutgers, The State University of New Jersey">					</a>
+									</div>
+			</div>
+		      
+      
+		
+					<div class="container-banner full-width">
+				<div class="banner card menu-bar">
+        <div class="card-body">
+                <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar106" aria-controls="navbar106" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" id="navbar106">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+ 
+        </div>
+        <div class="offcanvas-body">
+         <div class="d-lg-none mt-3">
+                <div class="moduletable ">
+        
+<div id="mod-custom337" class="mod-custom custom">
+    <p style="text-align: center;"><a href="https://sas.rutgers.edu" target="_blank" rel="noopener"><img alt="Rutgers - New Brunswick School of Arts and Sciences logo" class="theme-image" style="max-width: 80%;" /></a><br /><a href="/." class="no-underline no-hover title-unit">Department of Computer Science</a></p>
+<p><a href="/./search-website"><img src="/media/templates/site/cassiopeia_sas/images/search-magnifying-glass.PNG" alt="Search Website - Magnifying Glass" style="display: block; margin-left: auto; margin-right: auto;" /></a></p></div>
+</div>
+            </div>
+
+            <ul class="mod-menu mod-menu_dropdown-metismenu metismenu mod-list navbar navbar-nav dropdown sas-main-menu">
+<li class="metismenu-item item-421 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">About</button><ul class="mm-collapse"><li class="metismenu-item item-422 level-2"><a href="/about/the-department" >The Department</a></li><li class="metismenu-item item-423 level-2"><a href="/about/employment" >Employment</a></li></ul></li><li class="metismenu-item item-269 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">People</button><ul class="mm-collapse"><li class="metismenu-item item-688 level-2"><a href="/people/professors" >Professors</a></li><li class="metismenu-item item-737 level-2"><a href="/people/lecturers" >Lecturers</a></li><li class="metismenu-item item-659 level-2"><a href="/people/affiliated-faculty" >Affiliated Faculty</a></li><li class="metismenu-item item-744 level-2"><a href="/people/researchers" >Researchers</a></li><li class="metismenu-item item-642 level-2"><a href="/people/staff" >Administrative Staff</a></li><li class="metismenu-item item-1956 level-2"><a href="/people/graduate-students" >Graduate Students</a></li><li class="metismenu-item item-738 level-2"><a href="/people/technical-staff" >Technical Staff</a></li><li class="metismenu-item item-660 level-2"><a href="/people/emeritus" >Emeritus</a></li><li class="metismenu-item item-1070 level-2"><a href="/people/in-memoriam" >In Memoriam</a></li></ul></li><li class="metismenu-item item-394 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">Academics</button><ul class="mm-collapse"><li class="metismenu-item item-395 level-2 parent"><a href="/academics/undergraduate" >Undergraduate</a></li><li class="metismenu-item item-406 level-2 parent"><a href="/academics/graduate" >Graduate</a></li></ul></li><li class="metismenu-item item-416 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">News &amp; Events</button><ul class="mm-collapse"><li class="metismenu-item item-425 level-2"><a href="/news-events/news" >News</a></li><li class="metismenu-item item-436 level-2"><a href="/news-events/highlights" >Highlights</a></li><li class="metismenu-item item-524 level-2 parent"><a href="/news-events/cs-events/range.listevents/-" >CS Events</a></li><li class="metismenu-item item-711 level-2 parent"><a href="/news-events/videos-of-past-events" >Videos of Past Events</a></li></ul></li><li class="metismenu-item item-417 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">Research</button><ul class="mm-collapse"><li class="metismenu-item item-446 level-2 parent"><a href="/research/computer-and-network-systems-list" >Computer and Network Systems</a></li><li class="metismenu-item item-447 level-2 parent"><a href="/research/intelligent-systems-list" >Intelligent Systems</a></li><li class="metismenu-item item-448 level-2 parent"><a href="/research/theory-of-computing-list" >Theory of Computing</a></li></ul></li><li class="metismenu-item item-418 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">Resources</button><ul class="mm-collapse"><li class="metismenu-item item-533 level-2"><a href="/resources/business-office" >Business Office</a></li><li class="metismenu-item item-534 level-2"><a href="https://www.cs.rutgers.edu/apps/" target="_blank" rel="noopener noreferrer">Internal Applications</a></li><li class="metismenu-item item-535 level-2"><a href="https://resources.cs.rutgers.edu/" target="_blank" rel="noopener noreferrer">Technical Support &amp; Services</a></li></ul></li><li class="metismenu-item item-419 level-1"><a href="https://give.rutgersfoundation.org/computer-science-dept/4979.html" target="_blank" rel="noopener noreferrer">Donate</a></li><li class="metismenu-item item-1764 level-1 divider deeper parent"><button class="mod-menu__separator separator mm-collapsed mm-toggler mm-toggler-nolink" aria-haspopup="true" aria-expanded="false">Alumni</button><ul class="mm-collapse"><li class="metismenu-item item-607 level-2"><a href="/alumni/alumni" >Alumni</a></li><li class="metismenu-item item-641 level-2"><a href="/alumni/distinguished-alumni" >Distinguished Alumni</a></li><li class="metismenu-item item-1766 level-2"><a href="/alumni/alumni-news" >Alumni News</a></li></ul></li><li class="metismenu-item item-420 level-1"><a href="/contact-us" >Contact</a></li></ul>
+
+
+        </div>
+    </div>
+</nav>    </div>
+</div>
+
+			</div>
+		
+
+	</header>
+
+<main>
+  
+		<div class="grid container-sas-extension-top sas-wrapper-fw">
+			<div class="sas-extension-top no-card ">
+        <div><div class="n2_clear"><ss3-force-full-width data-overflow-x="body" data-horizontal-selector="body"><div class="n2-section-smartslider fitvidsignore  n2_clear" data-ssid="2"><div id="n2-ss-2-align" class="n2-ss-align"><div class="n2-padding"><div id="n2-ss-2" data-creator="Smart Slider 3" data-responsive="fullwidth" class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
+
+
+
+<div class="n2-ss-slider-wrapper-inside">
+        <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow">
+            <div class="n2-ss-slider-2 n2-ow">
+                                                <div class="n2-ss-slider-3 n2-ow">
+
+                    <div class="n2-ss-slide-backgrounds n2-ow-all"><div class="n2-ss-slide-background" data-public-id="1" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="Department of Computer Science" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/CS_Banner_Mobile.webp" media="(orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px)" class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/CS_Banner_Mobile.webp" media="(orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)" class="skip-lazy" data-skip-lazy="1"><img src="/images/banners/webp/CS_Banner.webp" alt="Department of Computer Science" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="2" data-mode="fill" aria-hidden="true"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="Hill Center on Busch Campus" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Hill_Center_Mobile.webp" media="(orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px)" class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Hill_Center_Mobile.webp" media="(orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)" class="skip-lazy" data-skip-lazy="1"><img src="/images/banners/webp/Hill_Center.webp" alt="Hill Center on Busch Campus" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="3" data-mode="fill" aria-hidden="true"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="Rutgers banner" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Rutgers_Banner_Mobile.webp" media="(orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px)" class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Rutgers_Banner_Mobile.webp" media="(orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)" class="skip-lazy" data-skip-lazy="1"><img src="/images/banners/webp/Rutgers_Banner.webp" alt="Rutgers banner" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="4" data-mode="fill" aria-hidden="true"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="Students in a lecture" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Ana-Paula_Class_Mobile.webp" media="(orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px)" class="skip-lazy" data-skip-lazy="1"><source srcset="/images/banners/webp/Ana-Paula_Class_Mobile.webp" media="(orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)" class="skip-lazy" data-skip-lazy="1"><img src="/images/banners/webp/Ana-Paula_Class.webp" alt="Students in a lecture" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div></div>                    <div class="n2-ss-slider-4 n2-ow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 453" data-related-device="desktopPortrait" class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" data-related-device="mobilePortrait" class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg><div data-first="1" data-slide-duration="0" data-id="3" data-slide-public-id="1" data-title="slider.jpeg" class="n2-ss-slide n2-ow  n2-ss-slide-3"><div role="note" class="n2-ss-slide--focus" tabindex="-1">slider.jpeg</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-4CRnXLIedYFa" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="4" data-slide-public-id="2" aria-hidden="true" data-title="Busch-Campus.jpeg" class="n2-ss-slide n2-ow  n2-ss-slide-4"><div role="note" class="n2-ss-slide--focus" tabindex="-1">Busch-Campus.jpeg</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-3FM7HybJqj3t" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="5" data-slide-public-id="3" aria-hidden="true" data-title="Rutgers-banner.jpeg" class="n2-ss-slide n2-ow  n2-ss-slide-5"><div role="note" class="n2-ss-slide--focus" tabindex="-1">Rutgers-banner.jpeg</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-YrJdTsyGpwJn" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="7" data-slide-public-id="4" aria-hidden="true" data-title="ID24_Ana-Paula_Class_DSCF4028-Enhanced-NR.jpeg" class="n2-ss-slide n2-ow  n2-ss-slide-7"><div role="note" class="n2-ss-slide--focus" tabindex="-1">ID24_Ana-Paula_Class_DSCF4028-Enhanced-NR.jpeg</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-24SIlZrr5GgM" data-sstype="slide" data-pm="default"></div></div></div>                    </div>
+
+                                    </div>
+            </div>
+        </div>
+        <div class="n2-ss-slider-controls n2-ss-slider-controls-absolute-left-center"><div style="--widget-offset:15px;" class="n2-ss-widget nextend-arrow n2-ow-all nextend-arrow-previous  nextend-arrow-animated-fade" data-hide-mobilelandscape="1" data-hide-mobileportrait="1" id="n2-ss-2-arrow-previous" role="button" aria-label="previous arrow" tabindex="0"><img width="32" height="32" class="skip-lazy" data-skip-lazy="1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMS40MzMgMTUuOTkyTDIyLjY5IDUuNzEyYy4zOTMtLjM5LjM5My0xLjAzIDAtMS40Mi0uMzkzLS4zOS0xLjAzLS4zOS0xLjQyMyAwbC0xMS45OCAxMC45NGMtLjIxLjIxLS4zLjQ5LS4yODUuNzYtLjAxNS4yOC4wNzUuNTYuMjg0Ljc3bDExLjk4IDEwLjk0Yy4zOTMuMzkgMS4wMy4zOSAxLjQyNCAwIC4zOTMtLjQuMzkzLTEuMDMgMC0xLjQybC0xMS4yNTctMTAuMjkiCiAgICAgICAgICBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4=" alt="previous arrow"></div></div><div class="n2-ss-slider-controls n2-ss-slider-controls-absolute-right-center"><div style="--widget-offset:15px;" class="n2-ss-widget nextend-arrow n2-ow-all nextend-arrow-next  nextend-arrow-animated-fade" data-hide-mobilelandscape="1" data-hide-mobileportrait="1" id="n2-ss-2-arrow-next" role="button" aria-label="next arrow" tabindex="0"><img width="32" height="32" class="skip-lazy" data-skip-lazy="1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMC43MjIgNC4yOTNjLS4zOTQtLjM5LTEuMDMyLS4zOS0xLjQyNyAwLS4zOTMuMzktLjM5MyAxLjAzIDAgMS40MmwxMS4yODMgMTAuMjgtMTEuMjgzIDEwLjI5Yy0uMzkzLjM5LS4zOTMgMS4wMiAwIDEuNDIuMzk1LjM5IDEuMDMzLjM5IDEuNDI3IDBsMTIuMDA3LTEwLjk0Yy4yMS0uMjEuMy0uNDkuMjg0LS43Ny4wMTQtLjI3LS4wNzYtLjU1LS4yODYtLjc2TDEwLjcyIDQuMjkzeiIKICAgICAgICAgIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPg==" alt="next arrow"></div></div><div class="n2-ss-slider-controls n2-ss-slider-controls-absolute-right-bottom"><div style="--widget-offset:15px;" class="n2-ss-widget n2-style-f17ddbf2d8ed14421f9093b94b93b8a9-heading nextend-autoplay n2-ow-all nextend-autoplay-image" role="button" aria-label="Play autoplay" data-pause-label="Pause autoplay" data-play-label="Play autoplay" tabindex="0"><img width="16" height="16" class="nextend-autoplay-play skip-lazy" data-skip-lazy="1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMS41OCA3LjAzTDUuMzAyIDIuMTY1QzUuMTY1IDIuMDU3IDUuMDE2IDIgNC44NTcgMiA0LjM4NCAyIDQgMi41MDQgNCAzLjEyNXY5Ljc1YzAgLjYyLjM4NCAxLjEyNS44NTcgMS4xMjUuMTYgMCAuMzA4LS4wNTcuNDM2LS4xNTZMMTEuNTggOC45N2MuMjUtLjE5OC40Mi0uNTU4LjQyLS45NyAwLS40MTItLjE3LS43NzMtLjQyLS45N3oiCiAgICAgICAgICBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4=" alt="Play"><img width="16" height="16" class="nextend-autoplay-pause skip-lazy" data-skip-lazy="1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik00IDJ2MTJoM1YySDR6bTUgMHYxMmgzVjJIOXoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPg==" alt="Pause"></div></div></div></div><ss3-loader></ss3-loader></div></div><div class="n2_clear"></div></div></ss3-force-full-width></div></div></div>
+<div class="sas-extension-top no-card scarletBackground">
+        
+<div id="mod-custom351" class="mod-custom custom">
+    <h1>Department of Computer Science</h1></div>
+</div>
+<div class="sas-extension-top no-card ">
+        
+<link rel="stylesheet" type="text/css" href="https://siteresources-rutgers.cloudaccess.host/assets/ticker/rualerts.css" media="screen" />
+
+		<div style=""  class="feed_rualerts ">
+			
+
+	<!-- Show items -->
+			
+		<ul class="newsfeed_rualerts">
+				</ul>
+		
+		</div>
+	</div>
+
+		</div>
+	  
+  
+	<div class="site-grid">
+
+		
+		
+		
+		
+		<div class="grid-child container-component">
+			
+			
+			<div id="system-message-container" aria-live="polite"></div>
+
+
+				<div class="lnep_blog">
+	
+	
+	
+	<form action="/" method="get" name="adminForm" id="adminForm">
+
+		<input type="hidden" name="option" value="com_latestnewsenhancedpro">
+		<input type="hidden" name="view" value="articles">
+		<input type="hidden" name="category" value="" />
+		<input type="hidden" name="article" value="" />
+		<input type="hidden" name="tag" value="" />
+		<input type="hidden" name="author" value="" />
+		<input type="hidden" name="alias" value="" />
+		<input type="hidden" name="period" value="" />
+		<input type="hidden" name="stage" value="" />
+				<input type="hidden" name="limitstart" value="0" />
+		<input type="hidden" name="filter_order" value="" />
+		<input type="hidden" name="filter_order_Dir" value="ASC" />
+		<input type="hidden" name="c8a62a91057f58fd38906708ee611cab" value="1">
+					<div class="pagination_wrapper top">
+							
+				
+				
+																																			
+							</div>
+		
+					<div class="latestnews-items">
+				 <div class="latestnews-item id-77 catid-54 featured head_left"> <div class="news"> <div class="innernews"> <div class="newshead picturetype"> <div class="picture"> <div class="innerpicture"> <a href="/about/the-department" class="hasTooltip" title="Department Overview" aria-label="Read more about Department Overview"> <img src="/media/cache/com_latestnewsenhancedpro/thumb_articles_blog_101_77.jpg?ba70b96e85039a4fa7cdd16c14da2993" alt="Department Overview" width="400" height="400" loading="eager"> </a> </div> </div> </div> <div class="newsinfo"> <div class="newsintro"> Discover the dynamic world of Computer Science at Rutgers University! Since 1966, the Rutgers Computer Science Department has been paving the way for innovative thinkers. Whether you're starting your journey with a bachelor's degree or delving deeper into research with our graduate programs, you'll be part of a vibrant community within the Rutgers School of Arts and Sciences. Ranked by US News & World Report and CS Rankings, our Undergraduate, MA and PhD programs offer top-tier education. Start your academic journey with us. </div> <p class="link"> <a href="/about/the-department" class="hasTooltip framed-link no-underline" title="Department Overview" aria-label="Read more about Department Overview"> <span>Read More</span> </a> </p> </div> </div> </div> </div> 			</div>
+		
+		<div class="pagination_wrapper bottom">
+			
+												<div class="counterpagination">
+																	</div>
+				
+																
+																																							</div>
+	</form>
+
+	</div>
+	<div id="lnepmodal" data-backdrop="false" data-keyboard="true" data-remote="true" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="lnepmodalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+            	<div class="modal-header">
+            		            		            		            			<h5 id="lnepmodalLabel" class="modal-title">Article</h5>
+            			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            		            	</div>
+            	<div class="modal-body">
+            		<iframe class="iframe" height="500" style="display: block; width: 100%; border: 0; max-height: none; overflow: auto"></iframe>
+            	</div>
+            	<div class="modal-footer">
+            		<button class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="true">Close</button>
+            	</div>
+    		</div>
+    	</div>
+    </div>
+
+          		          		          		          			<div class="main-bottom no-card blackBackground p-5 fullwidth-mod">
+        <div class="large-normal" style="line-height: 150%;">We are committed to fostering a safe environment while upholding the principles of <a href="https://free-expression.rutgers.edu/" target="_blank" rel="noopener" style="color: #FFEA00;">academic freedom and free expression</a> of our community.</span></div></div>
+
+                    			</div>
+
+		
+					<div class="grid-child container-bottom-a">
+				<div class="bottom-a card ">
+            <h2 class="card-header ">We're Hiring</h2>        <div class="card-body">
+                
+<div id="mod-custom215" class="mod-custom custom">
+    <p><a href="/about/employment"><img src="/images/bottom-buttons/ID24_Ana-Paula_Class_We_are_hiring_500x500.jpg" alt="Hiring CompSci" width="500" height="500" /></a></p></div>
+    </div>
+</div>
+<div class="bottom-a card ">
+            <h2 class="card-header ">Undergraduate</h2>        <div class="card-body">
+                
+<div id="mod-custom226" class="mod-custom custom">
+    <div><a href="/academics/undergraduate/why-computer-science"><img src="/images/bottom-buttons/homepage_undergraduates_500x500.jpg" alt="Undergrad CompSci" width="500" height="500" /></a></div></div>
+    </div>
+</div>
+<div class="bottom-a card ">
+            <h2 class="card-header ">Graduate</h2>        <div class="card-body">
+                
+<div id="mod-custom227" class="mod-custom custom">
+    <div><a href="/academics/graduate"><img src="/images/bottom-buttons/Grad_CompSci_2016_06_17_0136_Rutgers_SAS_SQ.jpg" alt="Grad CompSci 2016 06 17 0136 Rutgers SAS SQ" width="500" height="500" /></a></div></div>
+    </div>
+</div>
+<div class="bottom-a card ">
+            <h2 class="card-header ">Research</h2>        <div class="card-body">
+                
+<div id="mod-custom239" class="mod-custom custom">
+    <p><a href="/research/computer-and-network-systems-list"><img src="/images/bottom-buttons/Research_CompSci_2018_08_29_0224_RU_SAS_SQ.jpg" alt="Research CompSci 2018 08 29 0224 RU SAS SQ" width="500" height="500" /></a></p></div>
+    </div>
+</div>
+
+			</div>
+		
+		      
+      
+      		      
+      					<div class="grid-child container-bottom-d">
+				<div class="bottom-d card ">
+            <h3 class="card-header ">Upcoming Events</h3>        <div class="card-body">
+                <div class='mod_events_latest_data'  id='mod_events_latest_238_data'><table class="mod_events_latest_table jevbootstrap" width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td class="mod_events_latest_first" style="border-color:#3854a3"><span class="mod_events_latest_date">09 Mar 2026</span>; - <span class="mod_events_latest_date">10:30AM</span> - <span class="mod_events_latest_date">12:00PM</span><br />
+<span class="mod_events_latest_content"><a href="/news-events/cs-events/icalrepeat.detail/2026/03/09/4939/-/decentralization-at-scale-rethinking-design-of-distributed-systems"  target="_top" >Decentralization at Scale: Rethinking Design of Distributed Systems</a></span></td></tr>
+<tr><td class="mod_events_latest" style="border-color:#ba3e25"><span class="mod_events_latest_date">10 Mar 2026</span>; - <span class="mod_events_latest_date">04:00PM</span> - <span class="mod_events_latest_date">05:30PM</span><br />
+<span class="mod_events_latest_content"><a href="/news-events/cs-events/icalrepeat.detail/2026/03/10/4944/-/beyond-the-classroom-careers-in-computer-science-series"  target="_top" >Beyond the Classroom: Careers in Computer Science Series</a></span></td></tr>
+<tr><td class="mod_events_latest" style="border-color:#a88420"><span class="mod_events_latest_date">11 Mar 2026</span>; - <span class="mod_events_latest_date">03:30PM</span> - <span class="mod_events_latest_date">04:30PM</span><br />
+<span class="mod_events_latest_content"><a href="/news-events/cs-events/icalrepeat.detail/2026/03/11/4945/-/memory-centric-agent-systems-for-long-horizon-and-multimodal-reasoning"  target="_top" >Memory-Centric Agent Systems for Long-Horizon and Multimodal Reasoning</a></span></td></tr>
+</table>
+<div class="mod_events_latest_callink"><a href="/news-events/cs-events/range.listevents/-"  target="_top" >View Full Calendar</a></div></div>    </div>
+</div>
+
+			</div>
+      
+			</div>
+
+	  
+  
+	
+			<div class="grid container-sas-extension sas-wrapper-fw ">
+			<div class="sas-extension no-card center-title blueBackground">
+            <h2 >In the News</h2>        	 <div id="lnee_191" class="lnee newslist horizontal"> <ul class="latestnews-items"> <li class="latestnews-item id-3965 catid-52"> <div class="news odd text_bottom"> <div class="innernews"> <div class="newshead picturetype"> <div class="picture"> <div class="innerpicture"> <a href="/news-events/news/news-item/professor-santosh-nagarakatte-receives-gemini-academic-program-award" class="hasTooltip" title="Professor Santosh Nagarakatte receives Gemini Academic Program Award" aria-label="Read more about Professor Santosh Nagarakatte receives Gemini Academic Program Award"> <img src="/media/cache/mod_latestnewsenhanced/thumb_191_3965.jpg?2f32e08489e1d5e30f68bf0a0017820e" alt="Professor Santosh Nagarakatte receives Gemini Academic Program Award" width="300" height="300" loading="eager"> </a> </div> </div> </div> <div class="newsinfo"> <h3 class="newstitle"> <a href="/news-events/news/news-item/professor-santosh-nagarakatte-receives-gemini-academic-program-award" class="hasTooltip" title="Professor Santosh Nagarakatte receives Gemini Academic Program Award" aria-label="Read more about Professor Santosh Nagarakatte receives Gemini Academic Program Award"> <span>Professor Santosh Nagarakatte receives Gemini Academic...</span> </a> </h3> </div> </div> </div> </li> <li class="latestnews-item id-3963 catid-52"> <div class="news even text_bottom"> <div class="innernews"> <div class="newshead picturetype"> <div class="picture"> <div class="innerpicture"> <a href="/news-events/news/news-item/rutgers-cs-team-wins-first-place-at-the-2025-automated-negotiating-agents-competition-anac-tournament" class="hasTooltip" title="Rutgers CS Team wins first place at the 2025 Automated Negotiating Agents Competition (ANAC)Tournament" aria-label="Read more about Rutgers CS Team wins first place at the 2025 Automated Negotiating Agents Competition (ANAC)Tournament"> <img src="/media/cache/mod_latestnewsenhanced/thumb_191_3963.jpg?2f32e08489e1d5e30f68bf0a0017820e" alt="Rutgers CS Team wins first place at the 2025 Automated Negotiating Agents Competition (ANAC)Tournament" width="300" height="300" loading="eager"> </a> </div> </div> </div> <div class="newsinfo"> <h3 class="newstitle"> <a href="/news-events/news/news-item/rutgers-cs-team-wins-first-place-at-the-2025-automated-negotiating-agents-competition-anac-tournament" class="hasTooltip" title="Rutgers CS Team wins first place at the 2025 Automated Negotiating Agents Competition (ANAC)Tournament" aria-label="Read more about Rutgers CS Team wins first place at the 2025 Automated Negotiating Agents Competition (ANAC)Tournament"> <span>Rutgers CS Team wins first place at the 2025 Automated...</span> </a> </h3> </div> </div> </div> </li> <li class="latestnews-item id-3954 catid-52"> <div class="news odd text_bottom"> <div class="innernews"> <div class="newshead picturetype"> <div class="picture"> <div class="innerpicture"> <a href="/news-events/news/news-item/cs-professors-dimitris-metaxas-and-vladimir-pavlovic-named-general-co-chair-and-program-co-chair-respectively-at-the-cvpr-2026" class="hasTooltip" title="CS Professors Dimitris Metaxas and Vladimir Pavlovic Named General Co-Chair and Program Co-Chair, respectively, at the CVPR 2026" aria-label="Read more about CS Professors Dimitris Metaxas and Vladimir Pavlovic Named General Co-Chair and Program Co-Chair, respectively, at the CVPR 2026"> <img src="/media/cache/mod_latestnewsenhanced/thumb_191_3954.jpg?2f32e08489e1d5e30f68bf0a0017820e" alt="CS Professors Dimitris Metaxas and Vladimir Pavlovic Named General Co-Chair and Program Co-Chair, respectively, at the CVPR 2026" width="300" height="300" loading="eager"> </a> </div> </div> </div> <div class="newsinfo"> <h3 class="newstitle"> <a href="/news-events/news/news-item/cs-professors-dimitris-metaxas-and-vladimir-pavlovic-named-general-co-chair-and-program-co-chair-respectively-at-the-cvpr-2026" class="hasTooltip" title="CS Professors Dimitris Metaxas and Vladimir Pavlovic Named General Co-Chair and Program Co-Chair, respectively, at the CVPR 2026" aria-label="Read more about CS Professors Dimitris Metaxas and Vladimir Pavlovic Named General Co-Chair and Program Co-Chair, respectively, at the CVPR 2026"> <span>CS Professors Dimitris Metaxas and Vladimir Pavlovic Named...</span> </a> </h3> </div> </div> </div> </li> <li class="latestnews-item id-3952 catid-52"> <div class="news even text_bottom"> <div class="innernews"> <div class="newshead picturetype"> <div class="picture"> <div class="innerpicture"> <a href="/news-events/news/news-item/associate-professor-jingjin-yu-to-contribute-to-afosr-project-on-robust-trajectory-planning-for-space-manipulators" class="hasTooltip" title="Associate Professor Jingjin Yu to Contribute to AFOSR Project on Robust Trajectory Planning for Space Manipulators" aria-label="Read more about Associate Professor Jingjin Yu to Contribute to AFOSR Project on Robust Trajectory Planning for Space Manipulators"> <img src="/media/cache/mod_latestnewsenhanced/thumb_191_3952.png?2f32e08489e1d5e30f68bf0a0017820e" alt="Associate Professor Jingjin Yu to Contribute to AFOSR Project on Robust Trajectory Planning for Space Manipulators" width="300" height="300" loading="eager"> </a> </div> </div> </div> <div class="newsinfo"> <h3 class="newstitle"> <a href="/news-events/news/news-item/associate-professor-jingjin-yu-to-contribute-to-afosr-project-on-robust-trajectory-planning-for-space-manipulators" class="hasTooltip" title="Associate Professor Jingjin Yu to Contribute to AFOSR Project on Robust Trajectory Planning for Space Manipulators" aria-label="Read more about Associate Professor Jingjin Yu to Contribute to AFOSR Project on Robust Trajectory Planning for Space Manipulators"> <span>Associate Professor Jingjin Yu to Contribute to AFOSR...</span> </a> </h3> </div> </div> </div> </li> </ul> </div> 	</div>
+<div class="sas-extension no-card center-title goldBackground">
+            <h2 >Highlights</h2>        		<div id="lnee_350" class="lnee newslist horizontal">
+		
+		
+								<ul class="latestnews-items">
+											<li class="latestnews-item id-3969 catid-50">
+										<div class="news odd text_bottom">
+						<div class="innernews">
+																																																							<div class="newshead picturetype">
+																							<div class="picture">
+																																				<div class="innerpicture">
+																													<a href="/news-events/highlights/highlight-item/the-rutgers-computer-science-department-is-excited-to-share-the-fall-2025-edition-of-the-cs-newsletter" class="hasTooltip" title="The Rutgers Computer Science Department publishes the Fall 2025 edition of the CS Newsletter" aria-label="Read more about The Rutgers Computer Science Department publishes the Fall 2025 edition of the CS Newsletter">																<img src="/media/cache/mod_latestnewsenhanced/thumb_350_3969.png?ec449fb721dc65397f460a501656f366" alt="The Rutgers Computer Science Department publishes the Fall 2025 edition of the CS Newsletter" width="300" height="300" loading="eager">															</a>
+																											</div>
+																																																</div>
+										</div>
+																																							<div class="newsinfo">
+																																																																						<h3 class="newstitle">
+																																	<a href="/news-events/highlights/highlight-item/the-rutgers-computer-science-department-is-excited-to-share-the-fall-2025-edition-of-the-cs-newsletter" class="hasTooltip" title="The Rutgers Computer Science Department publishes the Fall 2025 edition of the CS Newsletter" aria-label="Read more about The Rutgers Computer Science Department publishes the Fall 2025 edition of the CS Newsletter">													<span>The Rutgers Computer Science Department publishes the Fall...</span>
+												</a>
+																																									</h3>
+																																																																																																																																															</div>
+						</div>
+					</div>
+				</li>
+											<li class="latestnews-item id-3964 catid-50">
+										<div class="news even text_bottom">
+						<div class="innernews">
+																																																							<div class="newshead picturetype">
+																							<div class="picture">
+																																				<div class="innerpicture">
+																													<a href="/news-events/highlights/highlight-item/rutgers-undergraduate-william-zhang-earns-recognition-with-paper-accepted-to-aaai-2026" class="hasTooltip" title="Rutgers Undergraduate William Zhang Earns Recognition with Paper Accepted to AAAI 2026" aria-label="Read more about Rutgers Undergraduate William Zhang Earns Recognition with Paper Accepted to AAAI 2026">																<img src="/media/cache/mod_latestnewsenhanced/thumb_350_3964.jpg?ec449fb721dc65397f460a501656f366" alt="Rutgers Undergraduate William Zhang Earns Recognition with Paper Accepted to AAAI 2026" width="300" height="300" loading="eager">															</a>
+																											</div>
+																																																</div>
+										</div>
+																																							<div class="newsinfo">
+																																																																						<h3 class="newstitle">
+																																	<a href="/news-events/highlights/highlight-item/rutgers-undergraduate-william-zhang-earns-recognition-with-paper-accepted-to-aaai-2026" class="hasTooltip" title="Rutgers Undergraduate William Zhang Earns Recognition with Paper Accepted to AAAI 2026" aria-label="Read more about Rutgers Undergraduate William Zhang Earns Recognition with Paper Accepted to AAAI 2026">													<span>Rutgers Undergraduate William Zhang Earns Recognition with...</span>
+												</a>
+																																									</h3>
+																																																																																																																																															</div>
+						</div>
+					</div>
+				</li>
+											<li class="latestnews-item id-3949 catid-50">
+										<div class="news odd text_bottom">
+						<div class="innernews">
+																																																							<div class="newshead picturetype">
+																							<div class="picture">
+																																				<div class="innerpicture">
+																													<a href="/news-events/highlights/highlight-item/rutgers-team-earns-top-40-rank-at-2025-icpc-world-finals" class="hasTooltip" title="Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals" aria-label="Read more about Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals">																<img src="/media/cache/mod_latestnewsenhanced/thumb_350_3949.jpg?ec449fb721dc65397f460a501656f366" alt="Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals" width="300" height="300" loading="eager">															</a>
+																											</div>
+																																																</div>
+										</div>
+																																							<div class="newsinfo">
+																																																																						<h3 class="newstitle">
+																																	<a href="/news-events/highlights/highlight-item/rutgers-team-earns-top-40-rank-at-2025-icpc-world-finals" class="hasTooltip" title="Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals" aria-label="Read more about Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals">													<span>Rutgers Team Earns Top 40 Rank at 2025 ICPC World Finals</span>
+												</a>
+																																									</h3>
+																																																																																																																																															</div>
+						</div>
+					</div>
+				</li>
+											<li class="latestnews-item id-3928 catid-50">
+										<div class="news even text_bottom">
+						<div class="innernews">
+																																																							<div class="newshead picturetype">
+																							<div class="picture">
+																																				<div class="innerpicture">
+																													<a href="/news-events/highlights/highlight-item/rutgers-computer-science-department-publishes-spring-2025-newsletter" class="hasTooltip" title="Rutgers Computer Science Department Publishes Spring 2025 Newsletter" aria-label="Read more about Rutgers Computer Science Department Publishes Spring 2025 Newsletter">																<img src="/media/cache/mod_latestnewsenhanced/thumb_350_3928.png?ec449fb721dc65397f460a501656f366" alt="Rutgers Computer Science Department Publishes Spring 2025 Newsletter" width="300" height="300" loading="eager">															</a>
+																											</div>
+																																																</div>
+										</div>
+																																							<div class="newsinfo">
+																																																																						<h3 class="newstitle">
+																																	<a href="/news-events/highlights/highlight-item/rutgers-computer-science-department-publishes-spring-2025-newsletter" class="hasTooltip" title="Rutgers Computer Science Department Publishes Spring 2025 Newsletter" aria-label="Read more about Rutgers Computer Science Department Publishes Spring 2025 Newsletter">													<span>Rutgers Computer Science Department Publishes Spring 2025...</span>
+												</a>
+																																									</h3>
+																																																																																																																																															</div>
+						</div>
+					</div>
+				</li>
+					</ul>
+								
+		
+	</div>
+
+	
+		</div>
+
+		</div>
+	  
+</main>
+
+<footer class="container-footer footer full-width">
+  
+  			<sas-footer-identity class=" grid-child container-sas-footer-identity full-width-v2">
+			<div class=" sas-footer-identity">
+				<div class="sas-footer-identity no-card  sas-footer-logo-left sas-footer-logo-left sas-branding">
+        
+<div id="mod-custom338" class="mod-custom custom">
+    <p><img src="/media/templates/site/cassiopeia_sas/images/RNBSAS_H_WHITE.svg" alt="Rutgers - New Brunswick School of Arts and Sciences logo" style="min-width: 300px; max-width: 400px; margin-top: 10px; margin-left: 15px; margin-bottom: 10px;" loading="lazy" /></p></div>
+</div>
+<div class="sas-footer-identity no-card ">
+        <ul class="mod-menu mod-menu_dropdown-metismenu metismenu mod-list mod-menu mod-list nav navbar-sas-ru sas-footer-menu sas-footer-menu-right">
+<li class="metismenu-item item-1625 level-1"><a href="https://sas.rutgers.edu/about/events/upcoming-events" target="_blank" rel="noopener noreferrer">SAS Events</a></li><li class="metismenu-item item-1626 level-1"><a href="https://sas.rutgers.edu/about/news" target="_blank" rel="noopener noreferrer">SAS News</a></li><li class="metismenu-item item-102 level-1"><a href="http://www.rutgers.edu" target="_blank" rel="noopener noreferrer">rutgers.edu</a></li><li class="metismenu-item item-192 level-1"><a href="http://sas.rutgers.edu/" target="_blank" rel="noopener noreferrer">SAS</a></li><li class="metismenu-item item-103 level-1"><a href="https://search.rutgers.edu/people" target="_blank" rel="noopener noreferrer">Search People</a></li><li class="metismenu-item item-1263 level-1"><a href="/search-website" class="fs-6"><span class="p-2 fa-solid fa-magnifying-glass rutgersRed" aria-hidden="true"></span><span class="visually-hidden">Search Website</span></a></li></ul>
+</div>
+
+			</div>
+		</sas-footer-identity>
+	
+         
+ <!-- Display any module in the footer position from the sites -->         
+<div class="grid-child">
+<!--2025-01 LG: Display Rutgers Menu from rutgers file -->              
+<div><h2 class="footer-title">Connect with Rutgers</h2>
+<ul  class="list-unstyled">
+<li><a href="https://newbrunswick.rutgers.edu/" target="_blank" >Rutgers New Brunswick</a>
+<li><a href="https://www.rutgers.edu/news" target="blank">Rutgers Today</a>
+<li><a href="https://my.rutgers.edu/uxp/login" target="_blank">myRutgers</a>
+<li><a href="https://scheduling.rutgers.edu/scheduling/academic-calendar" target="_blank">Academic Calendar</a>
+<li><a href="https://classes.rutgers.edu//soc/#home" target="_blank">Rutgers Schedule of Classes</a>
+<li><a href="https://emnb.rutgers.edu/one-stop-overview/" target="_blank">One Stop Student Service Center</a>
+<li><a href="https://rutgers.campuslabs.com/engage/events/" target="_blank">getINVOLVED</a>
+<li><a href="https://admissions.rutgers.edu/visit-rutgers" target="_blank">Plan a Visit</a>
+</ul>
+</div> 
+  <!--2025-01 LG: Display SAS Menu from SAS file -->              
+  <div>
+    <h2 class="footer-title">Explore SAS</h2>
+<ul  class="list-unstyled">
+<li><a href="https://sas.rutgers.edu/academics/majors-minors" target="blank">Majors and Minors</a>
+<li><a href="https://sas.rutgers.edu/academics/areas-of-study" target="_blank" >Departments and Programs</a>
+<li><a href="https://sas.rutgers.edu/academics/centers-institutes" target="_blank">Research Centers and Institutes</a>
+<li><a href="https://sas.rutgers.edu/about/sas-offices" target="_blank">SAS Offices</a>  
+<li><a href="https://sas.rutgers.edu/giving" target="_blank">Support SAS</a>
+</ul>
+</div> 
+  
+<!--2025-01 LG: Display NOTICES Menu from NOTICES file -->              
+<div>
+<h2 class="footer-title">Notices</h2>
+<ul class="list-unstyled">
+<li><a href="https://www.rutgers.edu/status" target="_blank" >University Operating Status</a>
+</ul>
+<hr>
+<ul  class="list-unstyled">
+<li><a href="https://www.rutgers.edu/privacy-statement" target="blank">Privacy</a>
+</ul>
+</div> 
+                 <div class="moduletable ">
+            <h2 class="footer-title">Quick Links</h2>        
+<div id="mod-custom208" class="mod-custom custom">
+    <ul style="list-style: none;">
+<li><a href="/about/employment">We Are Hiring!</a></li>
+<li><a href="/academics/undergraduate/advising">Undergraduate Academic Advising</a></li>
+<li><a href="/academics/undergraduate">Undergraduate Program</a></li>
+<li><a href="/academics/graduate">Graduate Program</a></li>
+<li><a href="/academics/undergraduate/prospective-students">Welcome New CS Undergraduate Students</a></li>
+<li><a href="/academics/undergraduate/course-registration-and-special-permission">Course Registration and Special Permission</a></li>
+<li><a href="/academics/undergraduate/undergraduate-courses-schedule?view=category&amp;id=67">Course Schedule</a></li>
+</ul></div>
+</div>
+<div class="moduletable ">
+            <h2 class="footer-title">Contact Us</h2>        
+<div id="mod-custom108" class="mod-custom custom">
+    <p><img src="/images/computer-science.jpg" alt="computer science" width="104" height="78" style="margin-right: 5px; margin-bottom: 5px; float: left;" />Department of Computer Science<br />Rutgers, The State University of New Jersey<br />110 Frelinghuysen Road<br />Piscataway, NJ 08854-8019</p>
+<p>(848) 445-2001</p></div>
+</div>
+
+	</div>
+
+<!-- Display Social Media Module -->    
+			<socialmedia class="container-sas-socialmedia  full-width">
+      	 		<div class="wrapper-socialmedia">
+				<div class="grid-child sas-socialmedia">
+					
+
+	<table style="margin-left: 10px; margin-right: auto; max-width: 95%; margin-top: 20px; margin-bottom: 20px;" class="table-horizontal-socialmedia">
+		<tbody>
+			<tr>
+								<td style="width: 22px;"><img alt="Facebook" src="/modules/mod_socialmedia/assets/images/socialMediaIcon_Facebook.png" height="20" width="20" /></td>
+				<td style="width: 80px;"><a style="padding: 2px 5px;" href="https://www.facebook.com/RutgersUniversityComputerScience" target="_blank">Facebook</a></td>
+				
+								<td style="width: 22px;"><img alt="Twitter" src="/modules/mod_socialmedia/assets/images/socialMediaIcon_Twitter.png" height="20" width="20" /></td>
+				<td style="width: 80px;"><a style="padding: 2px 5px;" href="https://x.com/RutgersCS" target="_blank">Twitter</a></td>
+				
+								<td style="width: 22px;"><img alt="Instagram" src="/modules/mod_socialmedia/assets/images/socialMediaIcon_Instagram.png" height="20" width="20" /></td>
+				<td style="width: 80px;"><a style="padding: 2px 5px;" href="https://www.instagram.com/rutgerscomputerscience/" target="_blank">Instagram</a></td>
+				
+				
+								<td style="width: 22px;"><img alt="Linked In" src="/modules/mod_socialmedia/assets/images/socialMediaIcon_LinkedIn.png" height="20" width="20" /></td>
+				<td style="width: 80px;"><a style="padding: 2px 5px;" href="https://www.linkedin.com/school/rutgers-university-department-of-computer-science" target="_blank">LinkedIn</a></td>
+				
+				
+				
+				
+			</tr>
+		</tbody>
+	</table>
+
+
+            			</div>
+			</div>
+		</socialmedia>
+	 
+
+<!--Display Footer Menu -->  
+          
+			<sas-footer-menu class="container-sas-footer-menu full-width">
+			<div class="sas-footer-menu">
+				<ul class="mod-menu mod-menu_dropdown-metismenu metismenu mod-list navbar navbar-nav dropdown sas-footer-menu">
+<li class="metismenu-item item-126 level-1 current active"><a href="/" >Home</a></li><li class="metismenu-item item-115 level-1"><a href="/site-map?view=html&amp;id=1" >Site Map</a></li><li class="metismenu-item item-125 level-1"><a href="/search" >Search</a></li><li class="metismenu-item item-322 level-1"><a href="https://www.cs.rutgers.edu/?morequest=sso&amp;idp=urn:mace:incommon:rutgers.edu" >Login</a></li></ul>
+
+			</div>
+		</sas-footer-menu>
+	
+
+<!-- Display Copyright -->
+		<copyright class="container-sas-copyright  full-width">
+			<div class="sas-copyright">
+
+<!--2025-01 LG: Display Copyright Text from copyright text file -->              
+<p>
+    <!-- paragraph 1 of copy right - information -->
+<p style="text-align: center;">Rutgers is an equal access/equal opportunity institution. Individuals with disabilities are encouraged to direct suggestions, comments, or complaints concerning any<br />
+accessibility issues with Rutgers websites to <a href='mailto:accessibility@rutgers.edu'><!-- This email address is being protected from spambots. --><span class="cloaked_email ep_3d9a2521"><span data-ep-ac557="&#97;&#99;c&#101;&#115;" data-ep-b44fb=""><span data-ep-ac557="&#115;&#105;&#98;&#105;&#108;" data-ep-b44fb="s&#46;e&#100;u"><span data-ep-b44fb="&#117;t&#103;&#101;r" data-ep-ac557="&#105;&#116;&#121;&#64;r"></span></span></span></span><script>RegularLabs.EmailProtector.unCloak("ep_3d9a2521");</script></a> or complete the <a href='https://it.rutgers.edu/it-accessibility-initiative/barrierform/'  rel='nofollow' target='_blank'>Report Accessibility Barrier / Provide Feedback</a> form.</p>
+    <!-- paragraph 2 of copy right - information -->
+<p style="text-align: center;"><a href='https://www.rutgers.edu/copyright-information' rel='nofollow' target='_blank'>Copyright ©<script>document.write(new Date().getFullYear())</script></a>, <a href='https://www.rutgers.edu/' rel='nofollow' target='_blank'>Rutgers, The State University of New Jersey</a>. All rights reserved.  <a href='https://ithelp.sas.rutgers.edu/' rel='nofollow' target='_blank'>Contact webmaster</a></p>
+<p>&nbsp;</p>
+
+</p>
+
+<!-- Display back to top link -->              
+			<a href="#top" id="back-top" class="back-to-top-link" aria-label="Back to Top">
+			<span class="icon-arrow-up icon-fw" aria-hidden="true"></span>
+		</a>
+
+	
+
+</footer>
+<script class="4SEO_performance_probe" data-speed-no-transform >
+    var forseoPerfProbeEndpoint = 'https://www.cs.rutgers.edu/index.php/_wblapi?nolangfilter=1&_wblapi=/forseo/v1/perf/data&u=&f='
+	!function(){"use strict";var e,n,t,i,r,o=-1,a=function(e){addEventListener("pageshow",function(n){n.persisted&&(o=n.timeStamp,e(n))},!0)},c=function(){return window.performance&&performance.getEntriesByType&&performance.getEntriesByType("navigation")[0]},u=function(){var e=c();return e&&e.activationStart||0},f=function(e,n){var t=c(),i="navigate";return o>=0?i="back-forward-cache":t&&(document.prerendering||u()>0?i="prerender":document.wasDiscarded?i="restore":t.type&&(i=t.type.replace(/_/g,"-"))),{name:e,value:void 0===n?-1:n,rating:"good",delta:0,entries:[],id:"v3-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12),navigationType:i}},s=function(e,n,t){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){var i=new PerformanceObserver(function(e){Promise.resolve().then(function(){n(e.getEntries())})});return i.observe(Object.assign({type:e,buffered:!0},t||{})),i}}catch(e){}},d=function(e,n,t,i){var r,o;return function(a){n.value>=0&&(a||i)&&((o=n.value-(r||0))||void 0===r)&&(r=n.value,n.delta=o,n.rating=function(e,n){return e>n[1]?"poor":e>n[0]?"needs-improvement":"good"}(n.value,t),e(n))}},v=function(e){requestAnimationFrame(function(){return requestAnimationFrame(function(){return e()})})},l=function(e){var n=function(n){"pagehide"!==n.type&&"hidden"!==document.visibilityState||e(n)};addEventListener("visibilitychange",n,!0),addEventListener("pagehide",n,!0)},p=function(e){var n=!1;return function(t){n||(e(t),n=!0)}},m=-1,h=function(){return"hidden"!==document.visibilityState||document.prerendering?1/0:0},g=function(e){"hidden"===document.visibilityState&&m>-1&&(m="visibilitychange"===e.type?e.timeStamp:0,T())},y=function(){addEventListener("visibilitychange",g,!0),addEventListener("prerenderingchange",g,!0)},T=function(){removeEventListener("visibilitychange",g,!0),removeEventListener("prerenderingchange",g,!0)},E=function(){return m<0&&(m=h(),y(),a(function(){setTimeout(function(){m=h(),y()},0)})),{get firstHiddenTime(){return m}}},b=function(e){document.prerendering?addEventListener("prerenderingchange",function(){return e()},!0):e()},w=[1800,3e3],L=[.1,.25],C={passive:!0,capture:!0},S=new Date,P=function(i,r){e||(e=r,n=i,t=new Date,M(removeEventListener),A())},A=function(){if(n>=0&&n<t-S){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+n};i.forEach(function(e){e(r)}),i=[]}},I=function(e){if(e.cancelable){var n=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,n){var t=function(){P(e,n),r()},i=function(){r()},r=function(){removeEventListener("pointerup",t,C),removeEventListener("pointercancel",i,C)};addEventListener("pointerup",t,C),addEventListener("pointercancel",i,C)}(n,e):P(n,e)}},M=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach(function(n){return e(n,I,C)})},D=[100,300],F=0,k=1/0,B=0,x=function(e){e.forEach(function(e){e.interactionId&&(k=Math.min(k,e.interactionId),B=Math.max(B,e.interactionId),F=B?(B-k)/7+1:0)})},O=function(){return r?F:performance.interactionCount||0},R=function(){"interactionCount"in performance||r||(r=s("event",x,{type:"event",buffered:!0,durationThreshold:0}))},H=[200,500],N=0,q=function(){return O()-N},j=[],J={},_=function(e){var n=j[j.length-1],t=J[e.interactionId];if(t||j.length<10||e.duration>n.latency){if(t)t.entries.push(e),t.latency=Math.max(t.latency,e.duration);else{var i={id:e.interactionId,latency:e.duration,entries:[e]};J[i.id]=i,j.push(i)}j.sort(function(e,n){return n.latency-e.latency}),j.splice(10).forEach(function(e){delete J[e.id]})}},z=[2500,4e3],G={},K=[800,1800],Q=function e(n){document.prerendering?b(function(){return e(n)}):"complete"!==document.readyState?addEventListener("load",function(){return e(n)},!0):setTimeout(n,0)};if(navigator.sendBeacon){let t=!1;const r={CLS:0,device:/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)?0:1},o=e=>{e.name&&(r[e.name]=e.value)},m=()=>{if(!t)try{if(void 0===r.LCP||void 0===r.FID||void 0===r.INP)return;r.ts=Date.now(),t=!0,navigator.sendBeacon(forseoPerfProbeEndpoint,JSON.stringify(r))}catch(e){console.error(e)}};document.addEventListener("visibilitychange",()=>"hidden"===document.visibilityState&&m()),function(e,n){n=n||{};var t=f("TTFB"),i=d(e,t,K,n.reportAllChanges);Q(function(){var r=c();if(r){var o=r.responseStart;if(o<=0||o>performance.now())return;t.value=Math.max(o-u(),0),t.entries=[r],i(!0),a(function(){t=f("TTFB",0),(i=d(e,t,K,n.reportAllChanges))(!0)})}})}(o),function(e,n){n=n||{},function(e,n){n=n||{},b(function(){var t,i=E(),r=f("FCP"),o=s("paint",function(e){e.forEach(function(e){"first-contentful-paint"===e.name&&(o.disconnect(),e.startTime<i.firstHiddenTime&&(r.value=Math.max(e.startTime-u(),0),r.entries.push(e),t(!0)))})});o&&(t=d(e,r,w,n.reportAllChanges),a(function(i){r=f("FCP"),t=d(e,r,w,n.reportAllChanges),v(function(){r.value=performance.now()-i.timeStamp,t(!0)})}))})}(p(function(){var t,i=f("CLS",0),r=0,o=[],c=function(e){e.forEach(function(e){if(!e.hadRecentInput){var n=o[0],t=o[o.length-1];r&&e.startTime-t.startTime<1e3&&e.startTime-n.startTime<5e3?(r+=e.value,o.push(e)):(r=e.value,o=[e])}}),r>i.value&&(i.value=r,i.entries=o,t())},u=s("layout-shift",c);u&&(t=d(e,i,L,n.reportAllChanges),l(function(){c(u.takeRecords()),t(!0)}),a(function(){r=0,i=f("CLS",0),t=d(e,i,L,n.reportAllChanges),v(function(){return t()})}),setTimeout(t,0))}))}(o),function(t,r){r=r||{},b(function(){var o,c=E(),u=f("FID"),v=function(e){e.startTime<c.firstHiddenTime&&(u.value=e.processingStart-e.startTime,u.entries.push(e),o(!0))},m=function(e){e.forEach(v)},h=s("first-input",m);o=d(t,u,D,r.reportAllChanges),h&&l(p(function(){m(h.takeRecords()),h.disconnect()})),h&&a(function(){var a;u=f("FID"),o=d(t,u,D,r.reportAllChanges),i=[],n=-1,e=null,M(addEventListener),a=v,i.push(a),A()})})}(o),function(e,n){n=n||{},b(function(){var t;R();var i,r=f("INP"),o=function(e){e.forEach(function(e){e.interactionId&&_(e),"first-input"===e.entryType&&!j.some(function(n){return n.entries.some(function(n){return e.duration===n.duration&&e.startTime===n.startTime})})&&_(e)});var n,t=(n=Math.min(j.length-1,Math.floor(q()/50)),j[n]);t&&t.latency!==r.value&&(r.value=t.latency,r.entries=t.entries,i())},c=s("event",o,{durationThreshold:null!==(t=n.durationThreshold)&&void 0!==t?t:40});i=d(e,r,H,n.reportAllChanges),c&&("PerformanceEventTiming"in window&&"interactionId"in PerformanceEventTiming.prototype&&c.observe({type:"first-input",buffered:!0}),l(function(){o(c.takeRecords()),r.value<0&&q()>0&&(r.value=0,r.entries=[]),i(!0)}),a(function(){j=[],N=O(),r=f("INP"),i=d(e,r,H,n.reportAllChanges)}))})}(o),function(e,n){n=n||{},b(function(){var t,i=E(),r=f("LCP"),o=function(e){var n=e[e.length-1];n&&n.startTime<i.firstHiddenTime&&(r.value=Math.max(n.startTime-u(),0),r.entries=[n],t())},c=s("largest-contentful-paint",o);if(c){t=d(e,r,z,n.reportAllChanges);var m=p(function(){G[r.id]||(o(c.takeRecords()),c.disconnect(),G[r.id]=!0,t(!0))});["keydown","click"].forEach(function(e){addEventListener(e,function(){return setTimeout(m,0)},!0)}),l(m),a(function(i){r=f("LCP"),t=d(e,r,z,n.reportAllChanges),v(function(){r.value=performance.now()-i.timeStamp,G[r.id]=!0,t(!0)})})}})}(o)}}();
+</script>
+</body>
+</html>

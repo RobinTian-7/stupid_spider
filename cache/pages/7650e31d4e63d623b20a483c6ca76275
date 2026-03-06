@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Alexandra Meliou: Associate Professor, University of Massachusetts, Amherst</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="computer science, database, tiresias, causality, reverse data management, umass, amherst" >
+    <meta name="Description" content="Homepage of Alexandra Meliou" >
+    <link rel="SHORTCUT ICON" href="http://www.umass.edu/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+    <link rel="stylesheet" type="text/css" href="styles/green-style.css">
+    <link rel="stylesheet" type="text/css" href="styles/sizing.css">
+    
+    <script src="js/css_browser_selector.js" type="text/javascript"> </script>  
+     
+     <script type="text/javascript" language="javascript">
+     function getHash(){
+         var currentTabName = location.hash.replace("#","");
+         if(currentTabName == ""){
+             currentTabName = "research"; //this denotes the default tab
+         }
+         var currentTab = document.getElementById(currentTabName + "Tab");
+         activatePanel(currentTab, currentTabName);
+         // alert(currentTab);
+     }
+     </script>
+     
+     <script type="text/javascript">
+         function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if(e.style.display != 'none')
+            {
+               e.style.display = 'none';
+            }
+            else
+            {
+               e.style.display = 'inline';
+            }
+         }
+     </script>
+     
+     <script type="text/javascript">
+         function showMore(currentButton, myId,id) {
+             toggle_visibility(myId);
+             toggle_visibility(id);
+             var currentText = currentButton.innerHTML;
+             if(currentText == 'show less'){
+                 currentButton.innerHTML = 'show more';
+             }
+             else{
+                 currentButton.innerHTML = 'show less';
+             }
+         }
+     </script>
+     
+     <script type="text/javascript">
+         function growDiv(v,u,b) {
+             var growDiv = document.getElementById(v);
+             if (growDiv.clientHeight) {
+               growDiv.style.height = 0;
+             } else {
+               var wrapper = document.getElementById(u);
+               growDiv.style.height = wrapper.clientHeight + "px";
+             }
+         var currentText = b.innerHTML;
+         if(currentText == 'show less'){
+             b.innerHTML = 'show more';
+         }
+         else{
+             b.innerHTML = 'show less';
+         }
+         }
+     </script>
+     
+     
+     <script type="text/javascript" language="javascript">
+        function switchPubView(outView, inView){
+            //activate the inView
+            var activatePubs = document.getElementById(inView);
+            var elemClass = activatePubs.className;
+            // activatePubs.className = elemClass.replace(/invisible/g,"");
+            activatePubs.className = "";
+            
+            //de-activate the outView
+            var deactivatePubs = document.getElementById(outView);
+            deactivatePubs.className = deactivatePubs.className + " invisible";
+        }
+
+     </script>
+    <script type="text/javascript">
+
+        function activatePanel(currentTab, panelId){
+            //Find all panels in the scrolling region
+            var tabPanel = document.getElementById("scrollingPane");
+            var elems = tabPanel.getElementsByTagName('*'),i;
+            for (i in elems){
+                if((" "+elems[i].className+" ").indexOf(" panel ") > -1){
+                    //The command below does not work in IE 9
+                    //elems[i].classList.add('invisible');
+                    
+                    elems[i].className = elems[i].className + " invisible";
+                }
+            }
+            
+            // The command below does not work in IE 9
+            // document.getElementById(panelId).classList.remove('invisible');
+            
+            var elemClass = document.getElementById(panelId).className;
+            document.getElementById(panelId).className = elemClass.replace(/invisible/g,"");
+            
+            //Find all tabs in the tabContainer region
+            var tabCont = document.getElementById("tabs");
+            var elems2 = tabCont.getElementsByTagName('*'),j;
+            for (j in elems2){
+                if((" "+elems2[j].className+" ").indexOf(" activeTab ") > -1){
+                    // Same problem with IE 9
+                    //elems2[j].classList.remove('activeTab');
+                    var elemClass = elems2[j].className
+                    elems2[j].className = elemClass.replace(/activeTab/g,"");
+                }
+            }
+            // Same problem with IE 9
+            // currentTab.classList.add('activeTab');
+            
+            currentTab.className = currentTab.className + " activeTab";
+        }
+    </script>
+    
+</head>
+
+<body onhashchange="getHash();" onload="getHash();">
+    
+    
+    <div id="content">
+
+        <div id="fixedPaneLeft">
+            <div class="panel">
+                <div id="hideScroll"><div id="scrollWrapper"><div id="infoWrapper">
+                        <div id="infoBlock">
+                            <div id="photo">
+                            <img src="images/alexandra_meliou.jpg" width="100%" alt="Alexandra Meliou">
+                            </div>
+                            <div class="details">
+                                <div id="name">
+                                    <h1>Alexandra Meliou</h1><br>
+                                </div>
+                                <div id="position">
+                                    <h3>Professor
+                                        <!-- <br>
+                                                                        University of Massachusetts, Amherst -->
+                                    </h3>
+									<br><br>
+									<h3>Associate Chair for<br> Faculty Development
+									</h3>
+                                </div>
+                                <div id="address">
+                                    <p>Robert and Donna Manning <br/>
+                                        College of Information
+                                        and Computer Sciences</p>
+                                    <p>140 Governors Drive</p>
+                                    <p>University of Massachusetts</p>
+                                    <p>Amherst, MA 01003-9264 USA</p>
+                                    <br>
+                                    <table cellspacing=0px>
+                                        <tr>
+                                            <td>Email:</td>
+                                            <td>
+                                                <script type="text/javascript">
+                                                dont_want_spam=(':ame' + 'li@' + 'c' + 's' + ".umass." + "e" + "du");
+                                                subtle=dont_want_spam.substring(1);
+                                                document.write('<a href="mailto' + dont_want_spam + '">' + subtle + '</a>')
+                                                </script>
+                                            </td>
+                                        </tr>
+                                       <tr>
+                                           <td>Office:</td>
+                                           <td>330</td>
+                                       </tr>
+                                       <tr>
+                                            <td>Phone:</td>
+                                            <td>+1-413-545-3788</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fax:</td>
+                                            <td>+1-413-545-1249</td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <br><br>
+                                    <p style="text-align:center; font-size:20px"><a href="MeliouCV.pdf" style="text-decoration:none; color:maroon">Curriculum Vitae</a></p>
+                            
+                                </div>
+                        
+                                <!--<div class="headline">News</div>
+                                <ul>
+                                    <li>Thanks to Google for selecting me for a Google Faculty Research award.
+                                
+                                    <li><a href="projects/dataTesting/papers/Muslu13ni-fse.pdf">"Data Debugging..."</a> accepted to <a href="http://esec-fse.inf.ethz.ch/">ESEC/FSE NI 2013</a>!</li>
+                                                                                  
+                                    <li>The <a href="projects/tiresias">Tiresias</a> system won the Best Demo award at <a href="http://www.sigmod.org/2012/">SIGMOD 2012</a>!</li>
+                                </ul>
+                                -->
+                            </div>
+                        </div>
+                </div></div></div>
+            </div>
+
+        </div>
+        <div id="fixedPaneRight">
+
+            <div id="scrollingPane">
+                
+                <!--
+                    Naming convention for Tabs: hashtag+Tab
+                    e.g., hashtag #research corresponds to tab with id="researchTab" 
+                -->
+                <div id="tabs" class="tabContainer">
+                    <a href="#research">
+                    <div id="researchTab" class="tab activeTab" onclick="activatePanel(this,'research');">
+                        Research
+                    </div></a>
+                    <a href="#publications">
+                    <div id="publicationsTab" class="tab" onclick="activatePanel(this,'publications');">
+                        Publications
+                    </div></a>
+                    <a href="#teaching">
+                    <div id="teachingTab" class="tab" onclick="activatePanel(this,'teaching');">
+                        Teaching
+                    </div></a>
+                    <!--<a href="#calendar">
+                    <div id="calendarTab" class="tab" onclick="activatePanel(this,'calendar');">
+                        Calendar
+                    </div></a>-->
+                    <a href="#bio">
+                    <div id="bioTab" class="tab" onclick="activatePanel(this,'bio');">
+                        Bio
+                    </div></a>
+                    <a href="#service">
+                    <div id="serviceTab" class="tab" onclick="activatePanel(this,'service');">
+                        Service
+                    </div></a>
+                    <a href="#personal">
+                    <div id="personalTab" class="tab" onclick="activatePanel(this,'personal');">
+                        Personal
+                    </div></a>
+                </div>
+
+                <!--
+                    Naming convention for panels: hashtag
+                    e.g., hashtag #research corresponds to panel with id="research" 
+                -->
+                <div id="research" class="panel">
+                    <h2 class="title">Research</h2>
+                    <div class="content">
+                        <h3 class="subheader">DREAM lab: <strong>D</strong>ata-systems <strong>R</strong>esearch for <strong>E</strong>xploration, <strong>A</strong>nalytics, and <strong>M</strong>ining</h3>
+                        
+                        <p>
+                            I co-direct the <a href="http://dbgroup.cs.umass.edu/">DREAM lab</a>, with an awesome group of people!  UMass is a vibrant place, and one of the 
+<!-- <a href="http://csrankings.org/#/index?mod">top universities in the US</a>  -->
+                            top universities in the US
+                            for data management research!
+                        </p>
+                        
+                        <h3 class="subheader">My interests</h3>
+                        <p>
+                        <!--
+                            My research interests are in the area of
+                            data and information management, with an
+                            emphasis on provenance, causality, and
+                            reverse data management. 
+                            -->
+                            Data is critical
+                            in almost every aspect of society,
+                            including education, technology,
+                            healthcare, economy, and science. Poor
+                            understanding and handling of data, data biases, poor
+                            data quality, and errors in data-driven
+                            processes are detrimental in all domains
+                            that rely on data. 
+                            My research augments data management with user-facing functionality that helps
+                            people make sense of their data and use it effectively, at a time when data
+                            becomes increasingly unpredictable, unwieldy, and unmanageable. I focus on issues of
+                            provenance, causality, explanations, data quality, usability, and data and
+                            algorithmic bias.
+                            <!--
+                            The goal of my research
+                            is to target these particular challenges,
+                            to develop tools that improve our
+                            understanding of data and facilitate the
+                            diagnosis of errors, and to extend the
+                            capabilities of modern database systems to
+                            support complex decisions and strategy
+                            planning queries.
+                            -->
+                        </p>
+                        
+                       <p>
+                            <div class="expandableBox">
+                                <div class="subheader" style="margin-top:10px; margin-bottom:10px">
+                                    <div class="title">
+                                        Prospective students
+                                    </div>
+                                    <div id="studentsShow" class="showButton" onclick="growDiv('studentsLong', 'studentRecruit', this);">
+                                        show more
+                                    </div>
+                                </div>
+                                
+                                <div id="studentsLong" class="expandableContent">
+                                    <div id="studentRecruit">
+                                    <p>
+                                    I am actively recruiting strong
+                                    graduate and junior / senior undergraduate
+                                    students to work on research projects. If
+                                    you are a UMass student interested in
+                                    doing research with me, you should email
+                                    me to set up an appointment, giving me a
+                                    brief summary of your background and
+                                    interests. My interests are not restricted
+                                    to my existing projects, so do not
+                                    hesitate to come to me with ideas of your
+                                    own.
+                                    </p>
+
+                                  <p>
+                                    <strong>If you are not yet a UMass
+                                    student:</strong> You should apply (<a
+                                    href="https://www.umass.edu/admissions">undergraduate</a>
+                                    | <a
+                                    href="https://www.cs.umass.edu/admissions/prospective-graduates">graduate</a>)
+                                    to become one <em>before</em> contacting
+                                    me. Emailing me directly will not affect
+                                    your chances of admission, and I will not
+                                    be able to respond to these requests.
+                                    However, if you have done research, you
+                                    can have your mentor email me with a
+                                    recommendation.
+                                  </p>
+                                  <br>
+
+                                  <!--<p>
+                                    <strong>Potential postdocs:</strong>
+                                    You should apply directly to me with your CV and references' contact information.  
+                                  </p>-->
+                                  </div>
+                                    
+                                </div>
+                            </div>
+                        </p>
+                        
+                        <p></p>
+                        <br>
+                        
+        <!-- <h3>Research highlights</h3> -->
+        <div class="headline addMargin">Research highlights</div>
+        <br>
+        
+
+        <h3 class="subheader">Usability and analysis</h3>
+        
+        <p>
+        As data is now a staple in so many aspects of human activity, the
+        audience for data technologies has expanded to include a varied range
+        of users: from non-experts wishing to peruse datasets, to domain
+        experts with specialized data processing needs. Data systems have not
+        adapted to address these demands effectively: databases' specialized
+        query languages and structure create barriers for non-experts, while
+        the lack of native support for important computing needs leaves
+        experts to develop application-specific solutions themselves. Our work
+        removes data-use barriers by simplifying access for non-experts to
+        data and by augmenting database functionality with advanced
+        problem-solving capabilities, thus simplifying analytics workflows by
+        moving them closer to the data.
+        </p>
+                            
+<table class="projects">
+    <tbody><tr>
+        <td class="projectleft"></td>
+        <td class="projecticon">
+        <a href="http://packagebuilder.cs.umass.edu/" title="Package queries">
+            <img src="projects/thumbs/package.png" class="projecticon" alt="Package queries" border="0"></a></td>
+        <td class="projectmiddle"></td>
+        <td class="projectdetails">
+            <b>PackageBuilder: supporting queries for packages</b> <a href="http://packagebuilder.cs.umass.edu/" title="Package queries">[Project page]</a>
+            
+            <br>
+            Traditional database queries follow a simple model: they define
+            constraints that each tuple in the result must satisfy. This model
+            is computationally efficient, as the database system can evaluate
+            the query conditions on each tuple individually. However, many
+            practical, real-world problems require a collection of result
+            tuples&mdash;which we call a package&mdash;to satisfy constraints
+            collectively, rather than individually. We developed an end-to-end
+            system that supports package queries, allowing the declarative
+            specification and efficient evaluation of a significant class of
+            constrained optimization problems within a database.
+<br>
+<b>Publications:</b>
+<a href="http://www.vldb.org/pvldb/vol9/p576-brucato.pdf">[PVLDB 2016]</a>
+<a href="https://sigmodrecord.org/publications/sigmodRecord/1703/pdfs/08_ASalable_RH_Brucato.pdf">[SIGMOD Record 2017]</a>
+<a href="projects/packageBuilder/papers/scalable-paql.pdf">[VLDBJ 2017]</a>
+<a href="https://cacm.acm.org/magazines/2019/2/234358-scalable-computation-of-high-order-optimization-queries/">[CACM 2018]</a>
+<a href="https://people.cs.umass.edu/~ameli/projects/packageBuilder/papers/mod0632-brucatoA.pdf">[SIGMOD 2020]</a>
+<a href="https://www.vldb.org/pvldb/vol17/p1146-mai.pdf">[PVLDB 2024]</a> 
+<br>
+<img src="projects/thumbs/award.png" width="15px" alt="award" border="0" style="vertical-align:sub">
+<b>Awards:</b> ACM SIGMOD Research Highlight, CACM Research Highlight, Best demo in SIGMOD 2020, Best Papers of VLDB 2016
+<br>
+
+
+
+      </td>
+    </tr></tbody></table>
+
+
+
+    <br>
+    
+    <p></p>
+                            
+<table class="projects">
+    <tbody><tr>
+        <td class="projectleft"></td>
+        <td class="projecticon">
+        <a href="http://squid.cs.umass.edu/" title="SQuID">
+            <img src="projects/thumbs/squid.png" class="projecticon" alt="SQuID" border="0"></a></td>
+        <td class="projectmiddle"></td>
+        <td class="projectdetails">
+            <b>SQuID: Semantic-similarity-aware Query Intent Discovery</b> <a href="http://squid.cs.umass.edu/" title="SQuID">[Project page]</a>
+
+            <br>
+                Non-experts cannot easily peruse relational data, as
+                traditional query interfaces allow data retrieval through
+                well-structured queries. To write such queries, one needs
+                expertise in the query language (typically SQL) and knowledge
+                of the potentially complex database schema. Unfortunately,
+                non-expert users typically lack both. SQuID infers query
+                intent effectively by leveraging the data in the database to
+                understand the context of the provided examples. SQuID's
+                abduction-aware probabilistic model captures esoteric and
+                complex semantic contexts, outperforming the state of the art.
+<br>
+<b>Publications:</b> <a href="http://squid.cs.umass.edu/papers/p1129-fariha.pdf">[PVLDB 2019]</a><a href="projects/squid/papers/squid-demo.pdf">[SIGMOD 2018 demo]</a> 
+<br>
+
+
+
+      </td>
+    </tr></tbody></table>
+
+    <br>
+    <p></p>
+    
+
+                            
+        <h3 class="subheader">Fairness and diversity</h3>
+        
+        <p>
+Data-driven software has the ability to shape human behavior: it affects the
+products we view and purchase, the news articles we read, the social
+interactions we engage in, and, ultimately, the opinions we form. Yet, data is
+an imperfect medium, tainted by errors, omissions, and biases. As a result,
+discrimination shows up in many data-driven applications, such as
+advertisements, hotel bookings, image search, and vendor services. Biases in
+data and software risk forming, propagating, and perpetuating biases in
+society. Data management research should develop tools to detect, inform, and
+mitigate the effects of bias, skew, and misuse in data-driven processes.
+        </p>
+                            
+<table class="projects">
+    <tbody><tr>
+        <td class="projectleft"></td>
+        <td class="projecticon">
+        <a href="http://fairness.cs.umass.edu/" title="Fairness testing">
+            <img src="projects/thumbs/fairness.png" class="projecticon" alt="Fairness testing" border="0"></a></td>
+        <td class="projectmiddle"></td>
+        <td class="projectdetails">
+            <b>Fairness testing and mitigation</b> <a href="http://fairness.cs.umass.edu/" title="Fairness testing">[Project page]</a>
+            
+            <br>
+            Our work studied software fairness and discrimination and produced a
+            testing-based method for measuring if and how much software
+            discriminates, focusing on causality in discriminatory behavior.
+            Our approach, Themis, is the first framework of its kind that
+            automatically generates efficient test suites to measure
+            discrimination. Our techniques rely on reasoning about
+            causal relationships between inputs and outputs of a system.
+            Understanding how inputs affect software behavior can empower
+            developers to control for bias in data and ensure more fair use of
+            software systems.
+	    Our work further contributes non-invasive strategies for mitigating bias in learned classification.	
+<br>
+<b>Publications:</b> 
+<a href="projects/fairness/papers/discriminationTesting.pdf">[ESEC/FSE 2017]</a>
+<a href="http://people.cs.umass.edu/brun/pubs/pubs/Angell18fse-demo.pdf">[ESEC/FSE 2018 demo]</a>
+<a href="http://people.cs.umass.edu/brun/pubs/pubs/Brun18fse-nier.pdf">[ESEC/FSE 2018 vision]</a>
+<a href="https://dl.acm.org/doi/pdf/10.1145/3514221.3517841">[SIGMOD 2022]</a>
+<a href="https://www.computer.org/csdl/proceedings-article/icde/2024/171500c164/1YOtHiPdnk4">[ICDE 2023]</a>
+<br>
+<img src="projects/thumbs/award.png" width="15px" alt="award" border="0" style="vertical-align:sub">
+<b>Awards:</b> ACM SIGSOFT Distinguished Paper Award
+<br>
+      </td>
+    </tr></tbody></table>
+
+    <br>
+    <p></p>
+
+    <table class="projects">
+        <tbody><tr>
+            <td class="projectleft"></td>
+            <td class="projecticon">
+                <img src="projects/thumbs/diversity.png" class="projecticon" alt="RC-index" border="0"></a></td>
+            <td class="projectmiddle"></td>
+            <td class="projectdetails">
+                <b>Fast diverse data retrieval</b> 
+
+                <br>
+                    Data skew is often a cause of algorithmic bias, and the
+                    ability to retrieve balanced, diverse datasets can
+                    mitigate the underlying problem. Diversification is one
+                    common way to present representative results to users, and
+                    it is employed by many real-world systems. However,
+                    providing diverse results for general range queries (i.e.,
+                    queries that return a subset of the data based on
+                    filtering conditions) efficiently and scalably remains
+                    challenging. Our work introduced a general, index-based
+                    algorithm for diversifying the results of
+                    multi-dimensional range queries over a single relation. At
+                    a high level, our algorithm transforms each range query
+                    into a set of subordinate searches, performs these
+                    searches using a novel index structure, the RC-Index.
+		    We further developed algorithms with approximation guarantees for the problem of MaxMin diversification, under fairness constraints. 
+    <br>
+    <b>Publications:</b> 
+	<a href="https://drops.dagstuhl.de/opus/volltexte/2022/15881/pdf/LIPIcs-ICDT-2022-7.pdf">[ICDT 2022]</a>
+	<a href="https://drops.dagstuhl.de/opus/volltexte/2021/13721/pdf/LIPIcs-ICDT-2021-13.pdf">[ICDT 2021]</a> 
+	<a href="http://www.vldb.org/pvldb/vol11/p773-wang.pdf">[PVLDB 2018]</a>
+    <br>
+
+
+
+          </td>
+        </tr></tbody></table>
+
+        <br>
+        <p></p>
+
+        <h3 class="subheader">Data quality</h3>
+
+        <p>
+        Data quality has long been a focus of data management research, but
+        our data quality challenges have only grown. Data is produced at
+        unprecedented rates, from sources that are broad, varied, and
+        unreliable, and through large-scale processes that introduce their own
+        inaccuracies (e.g., structured data extraction from unstructured
+        text). Traditional data cleaning techniques identify discrepancies and
+        purge datasets of errors, but they treat the manifestation of a
+        problem, not its root cause. They disregard the fact that errors are
+        often systemic, inherent to the process that produces the data, and
+        thus will keep occurring unless the problems are corrected at their
+        source. Our work offers crucial insights into data quality issues:
+        instead of repairing the errors themselves, our research focuses on
+        diagnosing the reasons for the errors and identifying repairs in the
+        processes that produce the data.
+        </p>
+
+        <table class="projects">
+            <tbody><tr>
+                <td class="projectleft"></td>
+                <td class="projecticon">
+                    <img src="projects/thumbs/dataxray.png" class="projecticon" alt="Data X-Ray" border="0"></td>
+                <td class="projectmiddle"></td>
+                <td class="projectdetails">
+                    <b>Data X-Ray: Diagnosing errors in data systems</b><br>
+                     Data X-Ray is a diagnostic framework for profiling errors
+                     in data and determining systemic reasons for them in
+                     internet-scale knowledge extraction pipelines. This
+                     setting is challenging due to the large scale of the
+                     data, the prevalence of errors, and the complexity of the
+                     system.
+<br>
+<b>Publications:</b> <a href="projects/dataxray/papers/modf554-Wang.pdf">[SIGMOD 2015]</a> <a href="http://www.vldb.org/pvldb/vol8/p1984-wang.pdf">[PVLDB 2015 demo]</a>
+
+              </td>
+            </tr></tbody></table>
+
+            <br>
+            <p></p>
+
+            <table class="projects">
+                <tbody><tr>
+                    <td class="projectleft"></td>
+                    <td class="projecticon">
+                        <img src="projects/thumbs/qfix.png" class="projecticon" alt="QFix" border="0"></td>
+                    <td class="projectmiddle"></td>
+                    <td class="projectdetails">
+                        <b>QFix: Diagnosing errors in relational logs</b><br>
+                         Relational databases are often dynamic, and even when
+                         data is cleaned, new errors can be introduced by
+                         applications and users who interact with the data.
+                         Subsequent valid updates can obscure these errors and
+                         propagate them through the dataset causing more
+                         discrepancies. Any discovered errors tend to be
+                         corrected superficially, on a case-by-case basis,
+                         further obscuring the true underlying cause, and
+                         making detection of the remaining errors harder. QFix
+                         derives explanations and repairs for discrepancies in
+                         relational data by analyzing the effects of queries
+                         that operated on the data and identifying potential
+                         mistakes in those queries.
+<br>
+<b>Publications:</b> <a href="projects/queryProvenance/papers/WangMW2017.pdf">[SIGMOD 2017]</a> <a href="projects/queryProvenance/papers/QFix-demo.pdf">[SIGMOD 2016 demo]</a>
+
+                  </td>
+                </tr></tbody></table>
+
+
+
+            <br>
+            <p></p>
+ 
+    <h3 class="subheader">Causality and explanations</h3>
+    
+    <p>
+Today's data is vast and often unreliable and the systems that process data
+are increasingly complex. Even simple transformations through database queries
+obscure the origins of data and the derivation of results. The goal of my
+research is to promote users' trust in data and systems through support for
+understanding and explanations. Explanations provide opportunities for systems
+to interact with humans and obtain feedback, improving their operation.
+Explanations also allow domain experts and system developers to understand
+system decisions and improve system function.
+</p>
+
+
+<table class="projects">
+    <tbody><tr>
+        <td class="projectleft"></td>
+        <td class="projecticon">
+        <a href="http://people.cs.umass.edu/~ameli/projects/causality/" title="Causality">
+            <img src="projects/thumbs/causality.png" class="projecticon" alt="Causality" border="0"></a></td>
+        <td class="projectmiddle"></td>
+        <td class="projectdetails">
+            <b>Causal analysis and explanations in data management</b> <a href="http://people.cs.umass.edu/~ameli/projects/causality/" title="Causality">[Project page (causality)]</a>
+            
+            <br>
+            Our research investigates techniques that help users understand the
+            results of their queries by analyzing the history of data
+            transformations (provenance). Unfortunately, using the provenance to
+            explain query results is often impractical, as provenance
+            information can grow very large even for simple transformations
+            and modest-size datasets. Our work refines provenance information
+            by analyzing the causal contributions of data to a result, and
+            develops explanation frameworks for a variety of data-driven
+            settings.
+<br>
+<b>Publications (sample):</b> 
+<a href="http://www.vldb.org/pvldb/vol12/p779-wang.pdf">[PVLDB 2019]</a>
+<a href="http://sites.computer.org/debull/A18june/p47.pdf">[DE Bulletin 2018]</a>
+<a href="https://people.cs.umass.edu/~ameli/papers/EDBT2017.pdf">[EDBT 2017]</a>
+<a href="http://www.vldb.org/pvldb/vol9/p180-freire.pdf">[PVLDB 2015]</a>
+<a href="http://www.vldb.org/pvldb/vol7/p1715-meliou.pdf">[PVLDB 2014 tutorial]</a>
+<br>
+      </td>
+    </tr></tbody></table>
+
+    <br>
+    <p></p>
+    
+<!--
+                            <table class="projects">
+
+                                <tbody>
+                                    <tr>
+                                        <td class="projectleft"></td>
+                                        <td class="projecticon">
+                                            <a href="http://people.cs.umass.edu/~ameli/projects/tiresias/" title="The Tiresias System">
+                                            <img src="images/tiresias.png" class="projecticon" alt="Tiresias" border="0"></a></td>
+                                        <td class="projectmiddle"></td>
+                                        <td class="projectdetails">
+                                            <a href="http://people.cs.umass.edu/~ameli/projects/tiresias/" title="The Tiresias System">
+                                            <b>The Tiresias System</b></a><br>
+                                            The goal of this project is to seamlessly integrate databases with constrained problem solving in a fully-fledged system. We are building a system that allows the user to specify an optimization problem over their data declaratively. The system then translates the declarative input into a mixed integer program that is sent to a dedicated solver.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br>
+                            <p></p>
+                        <table class="projects">
+                            <tbody><tr>
+                                <td class="projectleft"></td>
+                                <td class="projecticon">
+                                    <a href="http://people.cs.umass.edu/~ameli/projects/causality/" title="Causality in Databases">
+                                    <img src="images/causality.png" class="projecticon" alt="Causality" border="0"></a></td>
+                                <td class="projectmiddle"></td>
+                                <td class="projectdetails">
+                                    <a href="http://people.cs.umass.edu/~ameli/projects/causality/" title="Causality in Databases">
+                                    <b>Causality in Databases</b></a><br>
+                                    When queries return unexpected results, users require explanations for their observations. In this project we explore what constitutes a cause for a query answer, or non-answer, and augment databases with support for causal queries. We demonstrate how causality can be used to provide explanations, as well as identify and correct data errors in a process called post-factum data cleaning.
+                            <br>
+                        <em>Collaboration: University of Washington, CMU</em>
+                              </td>
+                            </tr></tbody></table>
+
+                            <br>
+
+                            <p></p>
+                            <table class="projects">
+
+                            <tbody><tr>
+                                <td class="projectleft"></td>
+                                <td class="projecticon">
+                                    <a href="http://rdm.cs.umass.edu" title="Reverse Data Management">
+                                    <img src="images/RDM.png" class="projecticon" alt="RDM" border="0"></a></td>
+                                <td class="projectmiddle"></td>
+                                <td class="projectdetails">
+                                    <a href="http://rdm.cs.umass.edu" title="Reverse Data Management">
+                                    <b>Reverse Data Management</b></a><br>
+                                    Reverse Data Management encompasses an array of problems in database research where an action needs to be performed on the input data, on behalf of desired outcomes in the output data. Some examples include updates through views, data generation, data cleaning and repair. Today, as increasingly more of the available data is derived from other data, there is an increased need to be able to modify the input in order to achieve a desired effect on the output, motivating a systematic study of RDM.
+                              </td>
+                            </tr></tbody></table>
+                            
+                        <br>
+                        <p></p>
+                        
+                        
+                        -->
+                        
+                            <div class="headline addMargin">Funding sponsors</div>
+                            <br>
+                            <p align="center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/NSF_logo.png" height=100 style="vertical-align:middle">
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; -->
+                            <img src="http://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" width=150 style="vertical-align:middle">
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; -->
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1280px-Oracle_logo.svg.png" width=150 style="vertical-align:middle">
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Adobe_Systems_Logo_002.svg" width=150 style="vertical-align:middle">
+                            </p>
+                    </div>
+                </div>
+
+                <div id="publications" class="panel invisible">
+                    <h2 class="title">Publications</h2>
+                    <!-- <div id="pubSort">
+                         <button type="button" onclick="switchPubView('pubType','pubYear');">by year</button>
+                         <button type="button" onclick="switchPubView('pubYear','pubType');">by type</button>
+                     
+                    </div> -->
+                    <div class="content">
+                        
+
+			 <div class="headline addMargin">Publications</div>
+
+			<p>
+			I am working to revamp my publications page.  In the meantime, you can view my publications on <a href="https://dblp.org/pid/04/1835.html">DBLP</a>, also loaded below.
+			</p>
+			<p></p>
+
+			<iframe class="addMargin"  src="https://dblp.org/pid/04/1835.html" width=95% height=800 title="Alexandra's DBLP page">
+</iframe>
+
+
+                    </div>
+                </div>
+
+                <div id="teaching" class="panel invisible">
+                    <h2 class="title">Teaching</h2>
+                    <div class="content">
+                    <div class="headline addMargin">Teaching</div>
+
+                    <ul>
+						<li><strong>Spring 2023</strong> <a href="http://avid.cs.umass.edu/courses/345/s2023/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+					<li><strong>Fall 2022</strong> <a href="http://avid.cs.umass.edu/courses/345/f2022/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                    <li><strong>Spring 2020</strong> <a href="http://avid.cs.umass.edu/courses/345/s2020/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                    <li><strong>Fall 2019</strong> <a href="http://avid.cs.umass.edu/courses/345/f2019/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                    <li><strong>Fall 2019</strong> COMPSCI H345: Practice and Applications of Data Management - Honors colloquium</a></li>
+                    <li><strong>Spring 2019</strong> <a href="http://avid.cs.umass.edu/courses/345/s2019/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                        <li><strong>Fall 2018</strong> <a href="http://avid.cs.umass.edu/courses/345/f2018/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                        <li><strong>Spring 2018</strong> <a href="http://avid.cs.umass.edu/courses/645/s2018/">CMPSCI 645: Database Design and Implementation</a></li>
+                        <li><strong>Fall 2017</strong> <a href="http://avid.cs.umass.edu/courses/345/f2017/">COMPSCI 345: Practice and Applications of Data Management</a></li>
+                        <li><strong>Fall 2017</strong> COMPSCI H345: Practice and Applications of Data Management - Honors colloquium</a></li>
+                        <li><strong>Spring 2017</strong> <a href="http://avid.cs.umass.edu/courses/645/s2017/">CMPSCI 645: Database Design and Implementation</a></li>
+                        <li><strong>Fall 2015</strong> <a href="http://avid.cs.umass.edu/courses/345/f2015/">CMPSCI 345: Practice and Applications of Data Management</a></li>
+                        <li><strong>Spring 2015</strong> <a href="http://avid.cs.umass.edu/courses/645/s2015/">CMPSCI 645: Database Design and Implementation</a></li>
+                        <li><strong>Fall 2014</strong> <a href="http://avid.cs.umass.edu/courses/345/f2014/">CMPSCI 345: Practice and Applications of Data Management</a></li>
+                        <li><strong>Fall 2014</strong> CMPSCI H345: Practice and Applications of Data Management - Honors section</a></li>
+                        <li><strong>Fall 2013</strong> <a href="http://avid.cs.umass.edu/courses/390DB/f2013/">CMPSCI 390DB: Practice and Applications of Data Management</a></li>
+                        <li><strong>Fall 2013</strong> CMPSCI H390DB: Practice and Applications of Data Management - Honors section</a></li>
+                        <li><strong>Spring 2013</strong> <a href="http://avid.cs.umass.edu/courses/390DB/s2013/">CMPSCI 390DB: Practice and Applications of Data Management</a></li>
+                         <li><strong>Fall 2012</strong> <a href="http://avid.cs.umass.edu/courses/645/f2012/">CMPSCI 645: Database Design and Implementation</a></li>
+                        <li><strong>Winter 2011</strong> <a href="http://www.cs.washington.edu/education/courses/cse444/11wi/">CSE444: Introduction to Database Systems</a> (University of Washington)</li>
+                        <li><strong>Winter 2010</strong> <a href="http://www.cs.washington.edu/education/courses/cse590q/10wi/"> CSE590q: Positive and Negative Provenance in Database Systems</a> (seminar, University of Washington)</li>
+                    </ul>
+
+                    <div class="headline addMargin">Students</div>
+                    <p><b>Current PhD students and postdocs:</b>
+                    <ul>
+			<li> <a href="https://people.cs.umass.edu/~yanqichen/">Yanqi Chen</a> (PhD)</li>
+			<li><a href="https://riddhohaque.github.io/riddho/">Riddho Ridwanul Haque</a> (PhD)</li>
+                        <li><a href="https://imoumoulidou.github.io/">Iro Moumoulidou</a> (PhD)</li>
+		        <li><a href="https://vvittis.github.io/">Vasilis Vittis</a> (PhD)</li>
+                    </ul>
+                    
+                    <p><b>Graduated PhD students and postdocs:</b>
+                    <ul>
+                        <li><a href="https://matteo-brucato.github.io/">Matteo Brucato</a> (PhD, 2021; co-advised with Peter Haas) Senior Researcher, Microsoft Research</li>
+                        <li><a href="https://afariha.github.io/">Anna Fariha</a> (PhD, 2021) Assistant Professor, University of Utah 
+							(previously, Researcher, Microsoft PROSE team)
+						</li>
+                    <li><a href="https://megagon.ai/team/xiaolan-wang/">Xiaolan Wang</a> (PhD, 2018) Software Engineer, Meta (previously, Senior Research Scientist, Megagon Labs)</li>
+                    <li><a href="https://www.microsoft.com/en-us/research/people/wanyue/">Yue Wang</a> (PhD, 2017; co-advised with Gerome Miklau)  Senior Research SDE, Microsoft Research.</li>
+                    <li><a href="https://keyang0923.github.io/">Ke Yang</a> (Postdoc) Assistant Professor, University of Texas San Antonio</li>
+                    </ul>
+                    
+                    <p><b>Other alumni:</b>
+                    <ul>
+						<li><a href="https://maliha93.github.io/MalihaIslam/">Maliha Islam</a> (MS, Software Engineer, Microsoft)
+                        <li>Ravali Pochampally (MS, now at Google)</li>
+                        <li>Rahul Ramakrishna (MS, Fall 2013-Spring 2014)
+                        <li>Kevin Fernandes (undergraduate, Spring 2014, now M.D Candidate at Albert Einstein College of Medicine)
+                        <li>Jeffrey Pezzone (undergraduate, Spring 2013, now at CISCO Systems)</li>
+                        <li>Joseph Scherr (undergraduate, REU summer 2013)</li>
+                        <li>Hridya Turlapati (undergraduate, Spring 2013)</li>
+                        <li>Linda Yeboah (undergraduate, Summer 2014)</li>
+                    </ul></p>
+                    
+                    
+                    </div>
+                    
+                </div>
+                
+                <!--<div id="calendar" class="panel invisible">
+                    <h2 class="title">Calendar</h2>
+                    <div class="content">
+                        <p style="height:95%">
+                        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=alexandra.meliou%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style=" border-width:0" width="100%" height="95%" frameborder="0" scrolling="no"></iframe>
+                        </p>
+                    </div>
+                </div>-->
+
+                <div id="bio" class="panel invisible">
+                    <h2 class="title">Bio</h2>
+                    <div class="content">
+                        <!-- <h3>Short Bio</h3> -->
+                        <div class="headline addMargin">Short Bio</div>
+                        <p>
+                            Alexandra Meliou is a Professor in the College of Information and
+                            Computer Sciences, at the University of Massachusetts Amherst. Prior to joining UMass,
+                            she was a Postdoctoral Research Associate at the University of Washington.
+                            Alexandra received her PhD degree from the Electrical Engineering and Computer
+                            Sciences Department at the University of California, Berkeley. She has
+                            received recognitions for research, teaching, and service, including a CACM
+                            Research Highlight, an ACM SIGMOD Research Highlight Award, an ACM SIGSOFT
+                            Distinguished Paper Award, an NSF CAREER Award, a Google Faculty Research
+                            Award, multiple Distinguished Reviewer Awards, and a Lilly Fellowship for
+                            Teaching Excellence. Her research focuses on data provenance, causality,
+                            explanations, data quality, and algorithmic fairness.
+                        </p>
+                        <div class="headline addMargin">Education</div>
+                        <div class="education">
+                            <h3>University of California, Berkeley</h3>
+                                <p>PhD in Computer Science (December 2009)<br>
+                                MS in Computer Science (December 2005)
+                                <br>
+    <em>Advisors: <a href="http://db.cs.berkeley.edu/jmh/">Joseph Hellerstein</a> and <a href="https://homes.cs.washington.edu/~guestrin/">Carlos Guestrin</a></em>
+                               </p>
+                       </div>    
+                       <div class="education">         
+                            <h3>National Technical University of Athens</h3>
+                                <p>BS in Electrical Engineering and Computer Science (June 2003)<br>
+                                    <em>Advisor: <a href="https://www.swinburne.edu.au/research-institutes/data-science/people/timos-sellis/">Timos Sellis</a></em>
+                                </p>
+                        </div>
+
+                    </div>
+                </div>
+
+<!--
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-->
+
+                <div id="service" class="panel invisible">
+                    <h2 class="title">Service</h2>
+                    <div class="content">
+                        <div class="headline addMargin">Professional Service</div>
+			<h3>Significant recent  professional service roles</h3>
+			<ul>
+				<li>SIGMOD Executive Committee (2024-2025)</li>
+				<li>PVLDB Endowment Board of Trustees (2022-2027)</li>
+				<li>PVLDB Advisory Board</li>
+				<li>DBCares (chair)</li>
+				<li>Joint DB Task Force on Reviewing Processes (co-chair)</li>
+				<li>SIGMOD 2024 PC co-chair</li>
+			</ul>			
+
+                        <h3>Conference Organization and Editorial Service</h3>
+                        <ul>
+						<!--	<li>PC co-Chair for SIGMOD 2024</li>-->
+							<li>Diversity and Inclusion Chair for ICDE 2023</li>
+                            <li>Workshop Chair for VLDB 2021</li>
+                            <li>Tutorials Chair for ICDE 2021</li>
+                            <li>Associate editor for VLDBJ (2019-2025).</li>
+                            <li>Associate editor for PVLDB 2020.</li>
+                            <li>Associate editor for PVLDB 2019.</li>
+                            <li>Associate editor for the IEEE Data Engineering Bulletin (2018-2019).</li>
+                            <li>PC co-Chair for <a href="http://fairware.cs.umass.edu">FairWare 2018</a>.</li>
+                            <li>PC co-Chair for <a href="https://icde2018.org/index.php/call-for-contributions/phd-symposiums/">ICDE PhD Symposium 2018</a>.</li>
+                            <li>PC co-Chair for <a href="http://webdb2017.cs.umass.edu">WebDB 2017</a>.</li>
+                            <li>PC Track Chair for <a href="http://www.sigmod2016.org">SIGMOD 2016</a>.</li>
+                            <li>New Researcher Symposium co-Chair for <a href="http://www.sigmod2015.org/">SIGMOD 2015</a>.</li>
+                            <li>Student Travel Award selection committee co-Chair for <a href="http://www.sigmod2015.org/">SIGMOD 2015</a>.</li>
+                            <li>New Researcher Symposium co-Chair for <a href="http://www.sigmod2014.org/">SIGMOD 2014</a>.</li>
+                            <li>Student Travel Award selection committee co-Chair for <a href="http://www.sigmod2014.org/">SIGMOD 2014</a>.</li>
+                            <li>Program Chair for <a href="https://www.usenix.org/conference/tapp13/">TaPP 2013</a></li>
+                            <li>Demonstration Chair for <a href="http://www.ssdbm2013.org/">SSDBM 2013</a></li>
+                            <li>Undergraduate Research Program co-Chair for <a href="http://www.sigmod.org/2013/">SIGMOD 2013</a>.</li>
+                        </ul>
+
+                        <h3>Program Committees</h3>
+                        <ul>
+						<li>Proceedings of the VLDB Endowment (PVLDB) 2023.</li>
+						<li>Conference on Management of Data (SIGMOD) 2023.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2021 (Associate Editor).</li>
+                        <li>Conference on Management of Data (SIGMOD) 2020.</li>
+                        <li>Hellenic Database Management Symposium 2019.</li>
+                        <li> Alberto Mendelzon International Workshop on Foundations of Data Management (AMW) 2019.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2019. (Core PC)</li>
+                        <li>Proceedings of the VLDB Endowment (PVLDB) 2018.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2018.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2017.</li>
+                        <li> Alberto Mendelzon International Workshop on Foundations of Data Management (AMW) 2017.</li>
+                        <li>International Conference on Data Engineering (ICDE) 2016.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2015.</li>
+                        <li>Proceedings of the VLDB Endowment (PVLDB) 2015.</li>
+                        <li>VLDB PhD Workshop 2015.
+                        </li>
+                        <li>International Conference on Scientific and Statistical Database Management (SSDBM) 2014, demo track.</li>
+                        <li>Proceedings of the VLDB Endowment (PVLDB) 2014.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2014, demo track.</li>
+                        <li>Conference on Very Large Databases (VLDB) 2013, demo track.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2013.</li>
+                        <li>International Conference on Data Engineering (ICDE) 2013.</li>
+                        <li>International Conference on Information and Knowledge Management (CIKM) 2012.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2012, demo track.</li>
+                        <li>International Conference on Data Engineering (ICDE) 2012.</li>
+                        <li>Workshop on the Theory and Practice of Provenance (TaPP) 2012.</li>
+                        <li>Workshop on the Web and Databases (WebDB) 2012.</li>
+                        <li>Proceedings of the VLDB Endowment (PVLDB) 2011.</li>
+                        <li>Conference on Management of Data (SIGMOD) 2011.</li>
+                        <li>Workshop on Management of Uncertain Data (MUD) 2011.</li>
+                        </ul>
+                        
+                        <h3>Other Service</h3>
+                        <ul>
+                        <li>Core member of <a href="https://dbdni.github.io/">D&I in DB</a></li>
+                        <li>ACM Publications Board Task Force on Improving Peer-Reviewer Incentives.</li>
+                        <li>ACM SIGMOD Jim Gray Dissertation Award (2019 and 2020).</li>
+                        </ul>
+                    </div>
+                </div>
+<!--
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-->
+
+<div id="personal" class="panel invisible">
+    <h2 class="title">Personal</h2>
+    <div class="content">
+        <div class="headline addMargin">Drawing</div>
+        <p>
+            <a href="images/draw01.jpg"><img src="images/thumbs/draw01.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw02.jpg"><img src="images/thumbs/draw02.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw03.jpg"><img src="images/thumbs/draw03.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw04.jpg"><img src="images/thumbs/draw04.jpg" width=50 height=50 alt="charcoal"></a>
+            <!-- <a href="images/draw05.jpg"><img src="images/thumbs/draw05.jpg" width=50 height=50/></a> -->
+            <a href="images/draw06.jpg"><img src="images/thumbs/draw06.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw07.jpg"><img src="images/thumbs/draw07.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw08.jpg"><img src="images/thumbs/draw08.jpg" width=50 height=50 alt="charcoal"></a>
+            <a href="images/draw09.jpg"><img src="images/thumbs/draw09.jpg" width=50 height=50 alt="charcoal"></a>
+        </p>
+        
+        <div class="headline addMargin">Pottery</div>
+        <p>
+            <a href="images/pot01.jpg"><img src="images/thumbs/pot01.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot02.jpg"><img src="images/thumbs/pot02.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot03.jpg"><img src="images/thumbs/pot03.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot04.jpg"><img src="images/thumbs/pot04.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot05.jpg"><img src="images/thumbs/pot05.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot06.jpg"><img src="images/thumbs/pot06.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot07.jpg"><img src="images/thumbs/pot07.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot08.jpg"><img src="images/thumbs/pot08.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot09.jpg"><img src="images/thumbs/pot09.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot10.jpg"><img src="images/thumbs/pot10.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot11.jpg"><img src="images/thumbs/pot11.jpg" width=50 height=50 alt="pottery"></a>
+            <a href="images/pot12.jpg"><img src="images/thumbs/pot12.jpg" width=50 height=50 alt="pottery"></a>
+        </p>
+        
+        <div class="headline addMargin">Pumpkin Carving</div>
+        <p>
+            <a href="images/carv01.jpg"><img src="images/thumbs/carv01.jpg" width=50 height=50 alt="pumpkin"></a>
+            <a href="images/carv02.jpg"><img src="images/thumbs/carv02.jpg" width=50 height=50 alt="pumpkin"></a>
+            <a href="images/carv03.jpg"><img src="images/thumbs/carv03.jpg" width=50 height=50 alt="pumpkin"></a>
+        </p>
+        
+        <div class="headline addMargin">Animation</div>
+        <!-- <p>
+            Watch with the Quicktime plugin:<br>
+            <a href="BodyShuffle.html"><img src="images/thumbs/BodyShuffle.jpg" width=200/></a>
+        </p> -->
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ozpdWVF-3lg" frameborder="0" allowfullscreen></iframe>
+        </p>
+        
+        
+        
+        <div class="headline addMargin">Family</div>
+        
+        <p>
+            My sister is a <a href="https://mariameliou.gr/">doctor of internal medicine, specializing in infectious diseases</a>.
+        </p>
+    </div>
+</div>
+
+<!--
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-->
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <!-- Google analytics -->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-4165043-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    
+
+</body>
+</html>

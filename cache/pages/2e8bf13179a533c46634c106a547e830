@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <title>Cho-Jui Hsieh</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+		<a class="navbar-brand" href="#"> 
+			<h2>Cho-Jui Hsieh</h2></a>
+		<!--                <a class="navbar-brand" href="#"><img width="40px" height="40px" src="aaa.png" style="margin-top:5px;background:white;" alt=""></a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="publications_full.html">Publications</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="software.html">Software</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <section id="about">
+        <a name="about"></a>
+        <!-- Heading Row -->
+        <div class="row">
+            <div class="col-md-4">
+                <br>
+
+		<img class="img-responsive img-rounded" src="http://www.cs.ucla.edu/~chohsieh/ccc.JPG" alt="" > 
+		<!-- <img class="img-responsive img-rounded" src="http://www.cs.ucla.edu/~chohsieh/img/2018-09-11_small.jpg" alt=""> -->
+		<!--    <img class="img-responsive img-rounded" src="http://www.stat.ucdavis.edu/~chohsieh/photo.jpg" alt=""> -->
+            </div>
+            <!-- /.col-md-8 -->
+            <div class="col-md-8">
+                <h2>Cho-Jui Hsieh 
+					<!--<img height="25px" style="margin-top:-5px" src="img/cali.jpg">--></h2>
+                <p style="text-align:justify">
+		<!--    I am an assistant professor of <a href="http://www.cs.ucdavis.edu/">Computer Science</a> and <a href="http://www.stat.ucdavis.edu/">Statistics</a> at UC Davis and will join UCLA CS at Fall 2018. -->
+		I am an associate professor of Computer Science at UCLA and a research scientist at Google. 
+                  I was a Ph.D. student at UT Austin working with
+                  <a href=http://www.cs.utexas.edu/~inderjit>Prof. Inderjit Dhillon</a>.
+                  I received my master degree in National Taiwan University under
+                  supervision of <a href=http://www.csie.ntu.edu.tw/~cjlin>Prof. Chih-Jen Lin</a>.
+		Before joining UCLA, I have worked as an Assistant Professor at UC Davis Computer Science and Statistics for three years, 
+		and was a visiting scholar in Google since summer 2018. 
+		  <br>
+		  <br>
+I am interested in developing new algorithms and optimization techniques for large-scale
+machine learning problems. Currently, I am working on developing new machine learning models as well as improving
+the model size, training speed, prediction speed, and robustness of popular (deep learning) models. <br>
+
+                </p>
+                <p>
+                  <a class="btn btn-default btn-sm" href="#"><b>Email:</b> chohsieh@cs.ucla.edu</a>
+                  <a class="btn btn-default btn-sm" href="#"><b>Office:</b> EVI 482</a>
+                  <a class="btn btn-default btn-sm" href="http://www.cs.ucla.edu/~chohsieh/cjhsieh-cv.pdf">Curriculum Vitae</a>
+                  <a class="btn btn-default btn-sm" href="http://scholar.google.com/citations?user=Wy89g4IAAAAJ&hl=en&oi=ao">Google Scholar Profile</a>
+                </p>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+        </section>
+
+	<hr>
+               <!-- call to action sec-header -->
+
+                    <h3>News</h3>
+		   
+		<div class="row">
+            <div class="col-sm-11">
+
+					<ul>
+					<li>
+						Check out my book  <a href="https://www.elsevier.com/books/adversarial-robustness-for-machine-learning/chen/978-0-12-824020-5?utm_source=google_ads&utm_medium=paid_search&utm_campaign=usdsa&gclid=Cj0KCQjwla-hBhD7ARIsAM9tQKvJIRHg4Jj5_JrnClXQDjNU1kSrlqhPQZfj-WzQRpbDmrJsxt6RJlwaAgOcEALw_wcB&gclsrc=aw.ds">Adversarial Robustness for Machine Learning</a> co-authored with Dr. Pin-Yu Chen. 
+ 
+						</li>
+						</ul>
+					<ul>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- /.row -->
+        </section>
+        <hr>
+
+                    <h3>Selected Awards</h3>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Frontiers of Science Award, 2023
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Okawa Research Award, 2021
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Outstanding Paper Award, ICLR 2021 
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Google Research Scholar Award, 2021
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> NSF Career Award, 2021
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Samsung AI Researcher of the Year, 2020
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best paper award honorable mention, Recsys 2020
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best paper award candidate, ICDM 2019
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best student paper award finalist, SC 2019
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best paper award, ICPP 2018
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li>
+						Best paper finalist, AISec 2017
+								    </li></ul>
+            </div>
+        </div>
+
+
+
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best paper award, ICDM 2012
+				    </li></ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Best paper award, KDD 2010
+										</li></ul>
+            </div>
+        </div>
+
+	<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> IBM PhD fellowship, 2013-2015
+										</li></ul>
+            </div>
+        </div>
+
+	<hr>
+<!--        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; <strong>Rainfarmer#1655 & Yehes</strong> 2016</p>
+                </div>
+            </div>
+        </footer>
+	-->
+
+                    <h3>Slides and Tutorials</h3>
+	<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Tutorial on Neural Network Verification [<a href="https://neural-network-verification.com/">website</a>]
+										</li></ul>
+            </div>
+        </div>
+
+
+	<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> Recent Advances in Neural Architecture Search [<a href="MLSS_NAS.pdf">slides</a> and <a href="https://www.youtube.com/watch?v=s3SFeY7WtKE&t=1825s">video</a>]
+										</li></ul>
+            </div>
+        </div>
+
+
+
+		    <hr>
+
+
+                    <h3>PhD Students</h3>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Ching-Yuan Bai</a> 
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Justin Cui</a> 
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Chengdi Cao</a> (Co-advised with Jason Cong)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Lucas Tecot </a> (Co-advised with Quanquan Gu)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Jui-Nan Yen </a>
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Yuanhao Ban </a>
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Yunqi Hong </a> (Co-advised with Neil Lin)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href=""> Sohyun An </a> 
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href=""> Ramnath Kumar </a> 
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Yihang Chen </a> 
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h3>Former PhD Students</h3>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://lan-lc.github.io/">Li-Cheng Lan</a> 
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://shizhouxing.github.io/">Zhouxing Shi</a> (Assistant Professor, UC Riverside)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://yihanwang617.github.io/">Yihan Wang</a> (Mistral AI)
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://ruocwang.github.io/">Ruochen Wang</a> (OpenAI) 
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="">Yue Kang </a> (Miscrosoft) 
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://xyh97.github.io/">Yuanhao Xiong</a> (Meta) 
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="http://web.cs.ucla.edu/~xiangning/">Xiangning Chen</a> (Co-founder, Converge Lab -> OpenAI)
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="http://www.huan-zhang.com/">Huan Zhang</a> (Assistant Professor, UIUC)
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://patrick-h-chen.github.io/index.html">Patrick H. Chen</a> (Assistant Professor, Binghamton University) 
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href=""> Xuanqing Liu </a> (Amazon) 
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href=""> Lifeng Wei </a> (Amazon) 
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href=""> Qin Ding </a> (Meta)
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://cmhcbb.github.io/">Minhao Cheng</a> (Assistant Professor, Penn State University)
+					</li> </ul>
+            </div>
+        </div>
+
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="http://anson.ucdavis.edu/~liweiwu/index.html"> Liwei Wu </a> (LinedIn)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://liyao880.github.io/yaoli/"> Yao Li </a> (Assistant Professor, UNC Chapel Hill)
+					</li> </ul>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://puyudi.github.io/"> Puyudi Yang </a> (Meta)
+					</li> </ul>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-sm-11">
+				<ul>
+					<li> <a href="https://puyudi.github.io/"> Franco Liang</a> (LinkedIn)
+					</li> </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+ 
+    <!-- custom -->
+    <script src="js/custom.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

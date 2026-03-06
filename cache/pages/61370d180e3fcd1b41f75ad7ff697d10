@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<!-- Website styles inspired by Michael Bernstein https://hci.stanford.edu/msb/ -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anhong Guo">
+    <meta name="description" content="Anhong Guo is an Assistant Professor in Computer Science & Engineering at the University of Michigan. ">
+    <link rel="apple-touch-icon" href="files/anhong.jpg">
+    <meta property="og:image" content="files/anhong.jpg">
+
+    <title>Anhong Guo</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/anhong.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <base target="_blank">
+
+    <!-- javascript includes are at the bottom of the document -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZWKLB5M50"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6ZWKLB5M50');
+    </script>
+
+</head>  
+  
+<body>
+    <div id="topbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="." target="_self">Anhong Guo <p id="Chinese">é­å®é¸¿</p></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">            
+        <div class="row">             
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-9">
+                        <img src="files/anhong-sm.jpg" class="img-responsive" style="margin-bottom: 10px;" alt="Anhong Guo wearing a light blue shirt standing in front of a glass wall with drawings.">
+                    </div> <!-- /col-md-4 -->                    
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="lead"><font size="4">
+                            My research develops <i>Personal Assistive Technology</i> â a new class of assistive systems that deeply adapts to usersâ individual abilities, physical contexts, and intents, to deliver just the right information, in the right modality, at the right time.
+                        </font></p>
+                    </div> <!-- /col-md-8 -->
+                </div> <!-- row -->
+                <!-- <p><font size="4"> -->
+                    <!-- <b>ð¢ð¢ I am recruiting PhD students to join the UMich Human-AI Lab, focusing on AI & Accessibility, and multimodal AR systems. If you are interested in the type of work we do, e.g., ProgramAlly, WorldScribe, SoundShift, BrushLens, <a href="https://cse.engin.umich.edu/academics/graduate/admissions/">Please apply!</a></b> -->
+                    <!-- <b>I am looking for great people to join my team HAIL (HumanâAI Lab) at <a href="https://cse.engin.umich.edu">University of Michigan CSE!</a></b> -->
+                    <!-- <b>The Human-AI Lab (HAIL) is at <a href="https://humanailab.com/visions.html">VISIONS 2024</a> hosted by the <a href="https://aadl.org/visions">Ann Arbor District Library</a>!</b> -->
+                <!-- </font></p> -->
+
+                <div class="bio">
+                    <p>Anhong Guo is a Morris Wellman Assistant Professor in <a href="https://cse.engin.umich.edu">Computer Science & Engineering</a> at the <a href="https://umich.edu">University of Michigan</a>, also affiliated with the <a href="https://www.si.umich.edu">School of Information</a>. His research is at the intersection of HCI and AI, which leverages the synergy between human and machine intelligence to create interactive systems for accessibility, collaboration, and beyond. His research has received best paper, honorable mention, and artifact awards at CHI, UIST, ASSETS, and MobileHCI, and the 10-year impact award at ISWC on wearable technologies for warehouse order picking. He is a recipient of the <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2442243">NSF CAREER award</a>, a <a href="https://www.forbes.com/30-under-30/2021/science/">Forbes' 30 Under 30 Scientist</a>, a <a href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2022">Google Research Scholar</a>, an inaugural <a href="https://www.snap.com">Snap Inc. Research Fellow</a>, and a <a href="https://www.cmu.edu/swartz-center-for-entrepreneurship/education-and-resources/innovation-fellows/current-fellows.html">Swartz Innovation Fellow for Entrepreneurship</a>. Anhong holds a Ph.D. in Human-Computer Interaction from <a href="https://www.cmu.edu" >Carnegie Mellon University</a>, a Masterâs in HCI from <a href="https://www.gatech.edu/">Georgia Tech</a>, and a Bachelor's in Electronic Information Engineering from <a href="http://english.bupt.edu.cn/" >BUPT</a>. He has also worked in the <a href="https://www.microsoft.com/en-us/research/group/ability/">Ability</a> and Intelligent User Experiences groups in <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, the HCI group of <a href="https://www.snap.com">Snap Research</a>, and the Accessibility Engineering team at <a href="https://about.google/belonging/disability-inclusion/">Google</a>.</p>
+                </div>
+
+                <div class="row" style="margin-bottom:20px;">
+                    <div class="col-md-12">
+                        <p class="lead" style="margin-bottom:5px;">News</p>
+                        <div>
+                            <div class="date col-md-2">Sep 19, 2025</div>
+                            <div class="col-md-10">ð Honored to be named the <a href="https://cse.engin.umich.edu/stories/anhong-guo-named-morris-wellman-professor">Morris Wellman Endowed Assistant Professor</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Aug 5, 2025</div>
+                            <div class="col-md-10">ð° Excited to receive an NSF award with <a href="https://dannagurari.colorado.edu">Danna Gurari</a> on <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2516629">Collaborative Research: HCC: Small: Accounting for Focus Ambiguity in Visual Questions</a> </div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 6, 2025</div>
+                            <div class="col-md-10">ð Excited to receive the <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2442243">NSF CAREER award</a> on DIY personal assistive technology!</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">May 23, 2025</div>
+                            <div class="col-md-10">ð° Excited to receive <a href="https://sra.samsung.com/collaboration/start/">Samsung START program</a> funding with <a href="https://samsonsjarkal.github.io/KeSun/">Ke Sun</a> and <a href="https://web.eecs.umich.edu/~kgshin/">Kang G. Shin</a> to <a href="https://cse.engin.umich.edu/stories/samsung-start-funds-cse-researchers-wearable-memory-augmentation-system">develop efficient wearable memory augmentation systems</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">May 6, 2025</div>
+                            <div class="col-md-10">ð Congratulations to <a href="https://jayl.in">Jaylin Herskovitz</a>, who will join <a href="https://engineering.tufts.edu/cs/">Tufts CS</a> as an Assistant Professor in Jan 2026</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Apr 18, 2025</div>
+                            <div class="col-md-10">â We will welcome three PhD students to join us this Fall: <a href="https://yuxuanliu.me">Yuxuan Liu</a>, <a href="https://seehorne.github.io">Ellie Seehorn</a>, and <a href="https://wumuzhe.com">Muzhe Wu</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Mar 26, 2025</div>
+                            <div class="col-md-10">ð Congratulations to <a href="https://rueichechang.github.io">Ruei-Che Chang</a> on receiving the <a href="https://machinelearning.apple.com/updates/apple-scholars-aiml-2025">Apple Scholars in AI/ML PhD fellowship</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Mar 3, 2025</div>
+                            <div class="col-md-10">â New talk: <a href="https://youtu.be/-gxy0_z5oYA">Personal Assistive Technology</a> at the <a href="https://hci.stanford.edu/seminar/speaker.php?date=2025-02-07">Stanford HCI Seminar</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Feb 12, 2025</div>
+                            <div class="col-md-10">ð° Excited to be part of the <a href="https://arpa-h.gov/news-and-events/arpa-h-selects-teams-deliver-advanced-hospital-level-care-rural-areas">ARPA-H</a> Michigan team led by <a href="https://robotics.umich.edu/people/faculty/jason-corso/">Jason Corso</a> to <a href="https://news.engin.umich.edu/2025/02/bridging-gaps-in-rural-health-care-with-ai-powered-mobile-clinics/">advance AI intelligent task guidance to upskill medical professionals for rural healthcare</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Feb 10, 2025</div>
+                            <div class="col-md-10">ð Congratulations to <a href="https://jayl.in">Jaylin Herskovitz</a> on <a href="https://cse.engin.umich.edu/stories/phd-student-jaylin-herskovitz-receives-susan-lipschutz-award">Susan Lipschutz Award for Rackham graduate students</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Oct 23, 2024</div>
+                            <div class="col-md-10">ð <a href="https://seehorne.github.io">Ellie</a> and <a href="https://jayl.in">Jaylin</a> wrote <a href="papers/XRDS-Fall24-HAIL.pdf">a nice article about our lab</a>, published in the <a href="https://dl.acm.org/doi/abs/10.1145/3688091">ACM Crossroads magazine</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Oct 12, 2024</div>
+                            <div class="col-md-10">ð Our ISWC 2014 paper on <a href="http://dl.acm.org/citation.cfm?id=2634321">evaluating order picking methods</a> was awarded 10-year impact award</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Oct 8, 2024</div>
+                            <div class="col-md-10">ð Excited to receive a <a href="https://research.google/programs-and-events/society-centered-ai/">Google Academic Research Award</a> on project WorldScribe</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Oct 1, 2024</div>
+                            <div class="col-md-10">ð <a href="papers/UIST24-WorldScribe.pdf">WorldScribe</a>, led by <a href="https://rueichechang.github.io">Ruei-Che Chang</a>, awarded Best Paper Award at <a href="https://uist.acm.org/2024/">UIST 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jul 14, 2024</div>
+                            <div class="col-md-10">ð° Excited to receive an NSF award <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2406218">SCH: Multimodal Techniques to Enhance Intra- and Post-operative Learning and Coordination between Attending and Resident Surgeons</a> with PIs <a href="https://web.eecs.umich.edu/~xwanghci/">Xu Wang</a> and <a href="https://www.vitaliypopov.com">Vitaliy Popov</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 5, 2024</div>
+                            <div class="col-md-10">â The Human-AI Lab (HAIL) was at <a href="https://humanailab.com/visions.html">VISIONS 2024</a> hosted by the <a href="https://aadl.org/visions">Ann Arbor District Library</a></div>
+                        </div>
+                        <!--<div>
+                            <div class="date col-md-2">Jun 21, 2024</div>
+                            <div class="col-md-10">ð Congratulations to ð Dr. Lei Zhang on his wonderful Ph.D. defense!  Lei will join <a href="https://informatics.njit.edu/">NJIT Informatics</a> as an Assistant Professor after a one-term postdoc at Princeton</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jul 9, 2025</div>
+                            <div class="col-md-10">ð <a href='https://arxiv.org/abs/2503.10029'>HandProxy</a>, using a virtual proxy hand to expand voice control in XR accepted to <a href="https://www.ubicomp.org/ubicomp-iswc-2025/">Ubicomp 2025</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 18, 2025</div>
+                            <div class="col-md-10">ð A study <a href="papers/ASSETS25-LiveVideoAIGap.pdf">evaluating ChatGPT Live Video Mode for assistive use</a> accepted to <a href="https://assets25.sigaccess.org/">ASSETS 2025</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 18, 2025</div>
+                            <div class="col-md-10">ð <a href="papers/ASSETS25-A11yShape.pdf">A11yShape</a> on accessible 3D modeling (collab with <a href="https://www.lianghe.me">Liang He</a> et al.) accepted to <a href="https://assets25.sigaccess.org/">ASSETS 2025</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">May 8, 2025</div>
+                            <div class="col-md-10">ð <a href="https://arxiv.org/abs/2503.12619">Rubikon</a> for AR physical task learning, led by <a href="https://chrenx.github.io">Haocheng</a> and <a href="https://wumuzhe.com">Muzhe</a>, accepted to <a href="https://dis.acm.org/2025/">DIS 2025</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 29, 2024</div>
+                            <div class="col-md-10">ð ProgramAlly for end-user DIY of visual assistive technology accepted to <a href="https://uist.acm.org/2024/">UIST 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 29, 2024</div>
+                            <div class="col-md-10">ð WorldScribe for context-aware live visual descriptions accepted to <a href="https://uist.acm.org/2024/">UIST 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 29, 2024</div>
+                            <div class="col-md-10">ð VRCopilot for human-AI co-creation of 3D layouts in VR accepted to <a href="https://uist.acm.org/2024/">UIST 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 27, 2024</div>
+                            <div class="col-md-10">ð EditScribe for non-visual image editing using LLM accepted to <a href="https://assets24.sigaccess.org/">ASSETS 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jun 27, 2024</div>
+                            <div class="col-md-10">ð Our work on Audio Description Customization accepted to <a href="https://assets24.sigaccess.org/">ASSETS 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Apr 18, 2024</div>
+                            <div class="col-md-10"><a href='https://arxiv.org/abs/2401.11095'>ð SoundShift for accessible mixed-reality sound awareness</a> accepted to <a href="https://dis.acm.org/2024/">DIS 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Apr 3, 2024</div>
+                            <div class="col-md-10">ð <a href="papers/W4A2024-ImageExplorerDeployment.pdf">Deployment study</a> of our <a href="https://imageexplorer.org">ImageExplorer app</a> accepted to <a href="http://www.w4a.info/2024/">W4A 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jan 18, 2024</div>
+                            <div class="col-md-10">ð <a href='papers/CHI24-InteractOut.pdf'>InteractOut to modify touch input for reducing smartphone overuse</a> accepted to <a href="https://chi2024.acm.org">CHI 2024</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Aug 12, 2024</div>
+                            <div class="col-md-10">â Our lab will be presenting three exciting projects+demos at <a href="https://uist.acm.org/2024/">UIST</a> and two at <a href="https://assets24.sigaccess.org/">ASSETS</a>!</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Aug 9, 2023</div>
+                            <div class="col-md-10">ð <a href='papers/UIST23-BrushLens.pdf'>BrushLens for Accessible Touchscreen Interface Actuation</a> accepted to <a href="https://uist.acm.org/2023/">UIST 2023</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">May 8, 2023</div>
+                            <div class="col-md-10">ð¢ <a href="https://vizlens.org">VizLens</a> and <a href="https://imageexplorer.org">ImageExplorer</a> are released and publicly available on the iOS App Store!</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jan 13, 2023</div>
+                            <div class="col-md-10">ð Our study on <a href='papers/CHI23-DIYA11y.pdf'>DIY Assistive Technology Design by Blind People</a> accepted to <a href="https://chi2023.acm.org">CHI 2023</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-2">Jan 13, 2023</div>
+                            <div class="col-md-10">ð <a href='papers/CHI23-VRGit.pdf'>VRGit: A Version Control System for Collaborative Creation in VR</a> accepted to <a href="https://chi2023.acm.org">CHI 2023</a></div>
+                        </div>
+
+                        <div>
+                            <div class="date col-md-3">Jan 3, 2023</div>
+                            <div class="col-md-9"><a href='papers/IUI23-DeferredInference.pdf'>Human-Centered Deferred Inference for Human-AI Teams</a> accepted to <a href="https://iui.acm.org/2023/">IUI 2023</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Aug 5, 2022</div>
+                            <div class="col-md-9"><a href="https://omniscribe.org">OmniScribe for making 360Â° videos accessible</a> accepted to <a href="https://uist.acm.org/uist2022/">UIST 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 21, 2022</div>
+                            <div class="col-md-9">Received a <a href="https://research.google/outreach/research-scholar-program/">Google Research Scholar Award</a> to make collaborative AR accessible</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Mar 28, 2022</div>
+                            <div class="col-md-9">Project <a href='papers/CHI22-CollabAlly.pdf'>CollabAlly</a> awarded Best Paper Honorable Mention at <a href="https://chi2022.acm.org">CHI 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jun 10, 2022</div>
+                            <div class="col-md-9"><a href='papers/ISS22-XSpace.pdf'>XSpace for enabling spatially-aware distributed collaboration</a> accepted to <a href="https://conf.researchr.org/home/iss-2022">ISS 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 5, 2022</div>
+                            <div class="col-md-9"><a href='papers/DIS22-CustomizAR.pdf'>CustomizAR for customizing 3D adaptive designs</a> accepted to <a href="https://dis.acm.org/2022/">DIS 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Feb 10, 2022</div>
+                            <div class="col-md-9"><a href='papers/CHI22-CollabAlly.pdf'>CollabAlly for accessible collab awareness in document editing</a> accepted to <a href="https://chi2022.acm.org">CHI 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Feb 5, 2022</div>
+                            <div class="col-md-9"><a href='papers/CHI22-ImageExplorer.pdf'>ImageExplorer for multi-layered image touch exploration</a> accepted to <a href="https://chi2022.acm.org">CHI 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Dec 1, 2020</div>
+                            <div class="col-md-9">Named <a href="https://www.forbes.com/30-under-30/2021/science/">Forbes' 30 Under 30 2021 in Science</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 13, 2020</div>
+                            <div class="col-md-9">Held <a href="https://twitter.com/michinebeling/status/1314383522631692290">PhD in HCI Office Hour</a> with <a href="http://michael-nebeling.de/">Michael Nebeling</a> and <a href="https://web.eecs.umich.edu/~xwanghci/">Xu Wang</a> (<a href="https://youtu.be/lHTEyAEY0g4">recording</a>)</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 19, 2021</div>
+                            <div class="col-md-9">Two demos <a href="papers/ASSETS21demo-CollabAlly.pdf">CollabAlly</a> (<a href="https://youtu.be/hYvAZofLSjU">video</a>) and <a href="papers/ASSETS21demo-ImageExplorer.pdf">ImageExplorer</a> (<a href="https://youtu.be/XpaFC6FdU3M">video</a>) appeared at <a href="https://assets21.sigaccess.org">ASSETS 2021</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Sep 6, 2021</div>
+                            <div class="col-md-9"><a href='papers/SUI21-TutorialLens.pdf'>TutorialLens for authoring AR tutorials</a> led by <a href="https://judykong97.github.io">Judy Kong</a> accepted to <a href="https://sui.acm.org/2021/">SUI 2021</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Sep, 2021</div>
+                            <div class="col-md-9">Serving on the program committee and publications team for <a href="https://chi2022.acm.org">CHI 2022</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 7, 2021</div>
+                            <div class="col-md-9">Paper on <a href='papers/AIES21-DisaggregatedEvaluations.pdf'>designing disaggregated evaluations of AI Systems</a> accepted to <a href="https://www.aies-conference.com/2021/">AIES 2021</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jan 20, 2021</div>
+                            <div class="col-md-9">Paper on <a href='papers/CHI21-ImageDescriptions.pdf'>accessibility and representation in image descriptions</a> accepted to <a href="https://chi2021.acm.org">CHI 2021</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 26, 2020</div>
+                            <div class="col-md-9">Paper on <a href='papers/ASSETS20-SenseA11y.pdf'>Sense and Accessibility</a> awarded Best Paper Nominee at <a href="http://assets20.sigaccess.org">ASSETS 2020</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct, 2020</div>
+                            <div class="col-md-9">Serving on the program committees for <a href="https://facctconference.org">ACM FAccT 2021</a> and <a href="https://iui.acm.org/2021/">IUI 2021</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Aug 26, 2020</div>
+                            <div class="col-md-9">Officially graduated with my Ph.D. from <a href="https://www.hcii.cmu.edu">CMU HCII</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jul 6, 2020</div>
+                            <div class="col-md-9"><a href="https://www.scs.cmu.edu/calendar/mon-2020-07-06-1300/human-computer-interaction-thesis-defense">Defending my dissertation</a> on human-AI systems for visual information access</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jun 26, 2020</div>
+                            <div class="col-md-9">Three projects led by collaborators at CMU, MSR, and Apple accepted to <a href="https://assets20.sigaccess.org">ASSETS 2020</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">May-June, 2020</div>
+                            <div class="col-md-9">Serving on the program committees for <a href="https://uist.acm.org/uist2020/">UIST 2020</a> and <a href="https://assets20.sigaccess.org">ASSETS 2020</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 30, 2020</div>
+                            <div class="col-md-9">Joining <a href="https://cse.engin.umich.edu">University of Michigan CSE</a> as an Assistant Professor in January 2021</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 30, 2019</div>
+                            <div class="col-md-9"><a href='papers/ASSETS19-XRay.pdf'>X-Ray to make screenshots accessible</a> presented and won <a href="http://assets19.sigaccess.org/artifacts.html">Best Artifact Award</a> at <a href="https://assets19.sigaccess.org">ASSETS</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 21, 2019</div>
+                            <div class="col-md-9"><a href='papers/UIST19-StateLens.pdf'>StateLens to make existing dynamic touchscreens accessible</a> presented at <a href="http://uist.acm.org/uist2019/">UIST 2019</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 19, 2019</div>
+                            <div class="col-md-9"><a href='papers/SUI19-Minuet.pdf'>Minuet: Multimodal Interaction with an Internet of Things</a> presented at <a href="http://sui.acm.org/2019/">SUI 2019</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Sep 12, 2019</div>
+                            <div class="col-md-9"><a href='papers/Ubicomp19-Blocks.pdf'>Blocks: collaborative and persistent AR experiences</a> presented at <a href="http://ubicomp.org/ubicomp2019/">Ubicomp 2019</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jul 4, 2019</div>
+                            <div class="col-md-9">Position paper on <a href="https://arxiv.org/abs/1907.02227">AI fairness for people with disabilities</a> for <a href="https://assets19.sigaccess.org/ai_fairness_workshop.html">ASSETS 2019 workshop</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jul 3, 2019</div>
+                            <div class="col-md-9">Gave a <a href="https://dub.washington.edu/seminars/2019-07-03.html">UW DUB seminar</a> on human-AI systems for visual information access</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">May 28, 2019</div>
+                            <div class="col-md-9">Started summer internship in the <a href="https://www.microsoft.com/en-us/research/group/ability/">Microsoft Research Ability team</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">May 20, 2019</div>
+                            <div class="col-md-9">Passed <a href="https://www.cs.cmu.edu/calendar/mon-2019-05-20-1300/human-computer-interaction-phd-thesis-proposal"> thesis proposal</a> on human-AI systems for visual information access</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Mar 12, 2019</div>
+                            <div class="col-md-9">Project <a href="https://www.blog.google/outreach-initiatives/accessibility/lookout-discover-your-surroundings-help-ai/">Lookout</a> I worked on at Google A11y is making the world more accessible</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Feb 24, 2019</div>
+                            <div class="col-md-9">Our paper on <a href='papers/CVPR19-VizWizPrivDataset.pdf'>VizWiz-Privacy dataset</a> is accepted to <a href="http://cvpr2019.thecvf.com">CVPR 2019</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 24, 2018</div>
+                            <div class="col-md-9">Presented at <a href='papers/Ubicomp18-Zensors++.pdf'>Ubicomp</a>, <a href='papers/ASSETS18-Cursors.pdf'>ASSETS</a>, and participated in the UIST Doctoral Symposium</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Aug 1, 2018</div>
+                            <div class="col-md-9">Accepted to participate in the <a href="https://uist.acm.org/uist2018/">UIST 2018</a> Doctoral Symposium</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jul 3, 2018</div>
+                            <div class="col-md-9">Paper on <a href='papers/Ubicomp18-Zensors++.pdf'>deployments of crowd-AI camera sensing</a> accepted to <a href="http://ubicomp.org/ubicomp2018/">Ubicomp 2018</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jun 12, 2018</div>
+                            <div class="col-md-9">Invited article on <a href='papers/Pervasive-MakerTech-Facade.pdf'>making interfaces accessible</a> for <a href='https://ieeexplore.ieee.org/document/8383663/'>IEEE Pervasive Computing</a> available</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Jun 6, 2018</div>
+                            <div class="col-md-9">Paper with Google A11y Team on <a href='papers/ASSETS18-Cursors.pdf'>cursor-based interactions</a> accepted to <a href="https://assets18.sigaccess.org">ASSETS 2018</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">May 8, 2018</div>
+                            <div class="col-md-9">Project <a href="https://www.blog.google/topics/accessibility/lookout-app-help-blind-and-visually-impaired-people-learn-about-their-surroundings/">Lookout</a> I worked on at Google A11y is making the world more accessible</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 18, 2018</div>
+                            <div class="col-md-9">Awarded the <a href="https://www.cmu.edu/swartz-center-for-entrepreneurship/education-and-resources/experiential-learning/innovation-fellows/current-fellows.html">CMU Swartz Innovation Fellowship</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 15, 2018</div>
+                            <div class="col-md-9">2nd Place and Most Innovative Award in the <a href="https://cmu-summit.com/2018-competition/">CMU Summit New Venture Competition</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Mar 28, 2018</div>
+                            <div class="col-md-9">Our work on Zensors won the <a href="https://www.bizjournals.com/pittsburgh/news/2018/03/28/ai-startup-wins-mcginnis-venture-competition.html">McGinnis Venture Capital Competition</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Feb 27, 2018</div>
+                            <div class="col-md-9">Our work on creating the <a href="http://vizwiz.org/data/">VizWiz dataset</a> was covered in <a href="https://www.technologyreview.com/s/610377/a-new-data-trove-could-teach-computers-to-tell-blind-people-what-they-need-to-know/">MIT Technology Review</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Feb 18, 2018</div>
+                            <div class="col-md-9">Our paper on <a href="http://vizwiz.org/data/">VizWiz dataset</a> (VQA from blind people) accepted to <a href="http://cvpr2018.thecvf.com">CVPR 2018</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Dec 15, 2017</div>
+                            <div class="col-md-9">Awarded 2017 <a href="https://snapresearchfellowship.splashthat.com">Snap Inc. Research Fellowship</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Nov 24, 2017</div>
+                            <div class="col-md-9">Accepted to participate in the <a href="https://chi2018.acm.org">CHI 2018</a> Doctoral Consortium</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">June 23, 2017</div>
+                            <div class="col-md-9">Attended <a href='https://www.acm.org/turing-award-50'>Turing Award 50</a> event as a student scholar, representing SIGACCESS</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">May 11, 2017</div>
+                            <div class="col-md-9">Presented <a href='papers/CHI17-Facade.pdf'>Facade</a> at CHI 2017, talk available <a href='https://youtu.be/brxHdt0_EgQ'>here</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Apr 4, 2017</div>
+                            <div class="col-md-9">Awarded W4A 2017 <a href="http://www.w4a.info/2016/2017/submissions/tpg-web-accessibility-challenge/" >TPG Web Accessibility Challenge</a> Delegates Award</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Mar 13, 2017</div>
+                            <div class="col-md-9">Paper on <a href='papers/DIS17-Uncertainty.pdf' >understanding uncertainty</a> in fabrication accepted to DIS 2017</div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Oct 19, 2016</div>
+                            <div class="col-md-9">Presented <a href='papers/UIST16-VizLens.pdf'>VizLens</a> at UIST 2016, talk available <a href='https://youtu.be/kbG6ZMPPD1k'>here</a></div>
+                        </div>
+                        <div>
+                            <div class="date col-md-3">Sep 6, 2016</div>
+                            <div class="col-md-9">Awarded Best Paper Honorable Mention for MobileHCI 2016 <a href='papers/MobileHCI16-TiltSmartwatch.pdf'>paper</a></div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="lead" style="margin-bottom: 0;">Publications</p>
+                    <h6>* Equal contributors are listed in randomized order on page load.</h6>
+                  </div>
+                </div>
+
+<!-- No indent for publications -->
+<div class="papers" id="papers">
+
+<h4>2026</h4>
+<div class='row paper-row' id='2026' >
+<div class='col-md-3 col-xs-4'><a href="papers/CHI26-A11yExtensions.pdf"><img class='paperimage img img-responsive' src='paperimages/CHI26-A11yExtensions.jpg' alt="A11yExtensions are in-situ interventions that augment existing mobile AI assistive technology with add-on services."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/CHI26-A11yExtensions.pdf">A11yExtensions: Accessibility Extensions to Augment Mobile AI Assistive Technology In-Situ</a></div><div>Jaylin Herskovitz, Ellie Seehorn, Ather Jammoa, Jason Meddaugh, Anhong Guo</div><div><span class='label label-award'>Preprint</span>CHI 2026</div><div><a href="papers/CHI26-A11yExtensions.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3772318.3791559'>ACM DL</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/CHI26-TouchScribe.pdf"><img class='paperimage img img-responsive' src='paperimages/CHI26-TouchScribe.jpg' alt="TouchScribe is a system that augments hand-object interactions with automated live visual descriptions."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/CHI26-TouchScribe.pdf">TouchScribe: Augmenting Non-Visual Hand-Object Interactions with Automated Live Visual Descriptions</a></div><div>Ruei-Che Chang, Rosiana Natalie, Wenqian Xu, Jovan Zheng Feng Yap, Tiange Luo, Venkatesh Potluri, Anhong Guo</div><div><span class='label label-award'>Preprint</span>CHI 2026</div><div><a href="papers/CHI26-TouchScribe.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3772318.3791308'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2602.07802'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/-sX-9W8DD4M">video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/CHI26-A11y-CUA.pdf"><img class='paperimage img img-responsive' src='paperimages/CHI26-A11y-CUA.jpg' alt="To characterize the accessibility gap of CUAs, we present A11y-CUA, a dataset of BLVUs and SUs performing 60 everyday tasks with 40.4 hours and 158,325 events."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/CHI26-A11y-CUA.pdf">A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents</a></div><div><span class="equal-contribution"><span title="Equal contribution.">Ananya Gubbi Mohanbabu*, </span><span title="Equal contribution.">Rosiana Natalie*, </span></span>Brandon Kim, <span class="equal-contribution"><span title="Equal supervision.">Anhong Guo<sup>+</sup> </span><span title="Equal supervision.">Amy Pavel<sup>+</sup> </span></span></div><div><span class='label label-award'>Preprint</span>CHI 2026</div><div><a href="papers/CHI26-A11y-CUA.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3772318.3791896'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2602.09310'>arXiv</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/CHI26-AuditoryAgents.pdf"><img class='paperimage img img-responsive' src='paperimages/CHI26-AuditoryAgents.jpg' alt="We explore how auditory embodiment influences perceptions of conversational agents."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/CHI26-AuditoryAgents.pdf">Auditorily Embodied Conversational Agents: Effects of Spatialization and Situated Audio Cues on Presence and Social Perception</a></div><div><span class="equal-contribution"><span title="Equal contribution.">Yi Fei Cheng*, </span><span title="Equal contribution.">Jarod Bloch*, </span></span>Alexander Wang, Andrea Bianchi, Anusha Withana, Anhong Guo, Laurie M. Heller, David Lindlbauer</div><div><span class='label label-award'>Preprint</span>CHI 2026</div><div><a href="papers/CHI26-AuditoryAgents.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3772318.3791794'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2601.22082'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/KiapGkE4gCM">video</a></div></div></div>
+
+<h4>2025</h4>
+<div class='row paper-row' id='2025' >
+<div class='col-md-3 col-xs-4'><a href="papers/arXiv-A11yAgent.pdf"><img class='paperimage img img-responsive' src='paperimages/arXiv-A11yAgent.jpg' alt="An illustration showing a photo of a fluffy orange-and-brown tabby cat cuddling with a light cream-colored dog on the grass. Below the photo, there is a question, 'Is there a cat in the image?' with an arrow pointing to both a human with low vision and a VLM agent. Both the human with low vision and the VLM agent respond, 'I can see some animal shapes, but I canât tell if there is a cat,' indicating shared visual limitations."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/arXiv-A11yAgent.pdf">Not There Yet: Evaluating Vision Language Models in Simulating the Visual Perception of People with Low Vision</a></div><div>Rosiana Natalie, Wenqian Xu, Ruei-Che Chang, Rada Mihalcea, Anhong Guo</div><div><span class='label label-award'>Preprint</span></div><div><a href="papers/arXiv-A11yAgent.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2508.10972'>arXiv</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/Ubicomp25-HandProxy.pdf"><img class='paperimage img img-responsive' src='paperimages/Ubicomp25-HandProxy.jpg' alt="A figure showing an overview of the HandProxy system in 3 stages. The user starts by giving a speech command (first stage), which is used and interpreted by the HandProxy system to control a virtual proxy hand (second stage), and the proxy hand will then interact within the virtual environment to perform hand interactions on behalf of the user (third stage). "/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/Ubicomp25-HandProxy.pdf">HandProxy: Expanding the Affordances of Speech Interfaces in Immersive Environments with a Virtual Proxy Hand</a></div><div>Chen Liang, Yuxuan Liu, Martez Mott, Anhong Guo</div><div>IMWUT/Ubicomp 2025</div><div><a href="papers/Ubicomp25-HandProxy.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3749484'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2503.10029'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/urUsNBv1xlg">video</a>&nbsp;&middot;&nbsp;<a href="https://news.umich.edu/this-digital-hand-enables-hands-free-virtual-reality/">press release</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/ASSETS25-LiveVideoAIGap.pdf"><img class='paperimage img img-responsive' src='paperimages/ASSETS25-LiveVideoAIGap.jpg' alt="A blind user interacts with an AI through a live video feed on their phone. The user asks, 'Can you read the label for me?'' The AI responds, 'Could you angle it slightly to reduce the glare?' After adjusting the product, the user asks, 'Is this better?' and the AI replies, 'Yes, that's much better,' then proceeds to read the label. The image illustrates how AI assists blind users by guiding them to capture clearer visuals for reading text."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/ASSETS25-LiveVideoAIGap.pdf">Probing the Gaps in ChatGPT Live Video Chat for Real-World Assistance for People who are Blind or Visually Impaired</a></div><div>Ruei-Che Chang, Rosiana Natalie, Wenqian Xu, Jovan Zheng Feng Yap, Anhong Guo</div><div>ASSETS 2025</div><div><a href="papers/ASSETS25-LiveVideoAIGap.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3663547.3746319'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2508.03651'>arXiv</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/ASSETS25-A11yShape.pdf"><img class='paperimage img img-responsive' src='paperimages/ASSETS25-A11yShape.jpg' alt="A schematic overview of a blind or low-vision (BLV) user interacting with A11yShape to create 3-D models. Panel A shows the BLV user. Panel B illustrates the A11yShape interface, which includes three components: Code Editor panel, AI Assistant Panel providing textual descriptions, and Model Panel showing a hierarchical structure and 3-D renderings. A cross-representation highlighting mechanism links elements across these panels to support non-visual navigation in the user interface. Panel C displays examples of 3-D models created by the user."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/ASSETS25-A11yShape.pdf">A11yShape: AI-Assisted 3-D Modeling for Blind and Low-Vision Programmers</a></div><div>Zhuohao (Jerry) Zhang, Haichang Li, Chun Meng Yu, Faraz Faruqi, Junan Xie, Gene S-H Kim, Mingming Fan, Angus G. Forbes, Jacob O. Wobbrock, Anhong Guo, Liang He</div><div>ASSETS 2025</div><div><a href="papers/ASSETS25-A11yShape.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3663547.3746362'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2508.03852'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/7gFIrg-2VF0">video</a>&nbsp;&middot;&nbsp;<a href="https://news.umich.edu/new-ai-tool-opens-3d-modeling-to-blind-and-low-vision-programmers/">press release</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/VLHCC25-DeckFlow-extended.pdf"><img class='paperimage img img-responsive' src='paperimages/VLHCC25-DeckFlow.jpg' alt="DeckFlow is an infinite canvas for creating multimodal content. In this case, the user drags a Goal Card from the Hand, which generates an Action Card connected to several Text Cards representing the decomposed specification. The Action Card spawns multiple Text Cards containing the constructed prompts, and images are generated using them so the user can explore the generative space. In a subsequent iteration of the task, the user moves some of them into a Cluster, and uses one as input to the Action Card."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/VLHCC25-DeckFlow-extended.pdf">DeckFlow: Iterative Specification on a Multimodal Generative Canvas</a></div><div>Gregory Croisdale, Emily Huang, John Joon Young Chung, Anhong Guo, Xu Wang, Austin Z. Henley, Cyrus Omar</div><div>VL/HCC 2025</div><div><a href="papers/VLHCC25-DeckFlow.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2506.15873'>arXiv</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/DIS25-Rubikon.pdf"><img class='paperimage img img-responsive' src='paperimages/DIS25-Rubikon.jpg' alt="A student is learning to solve the Rubik's Cube using Rubikon, an intelligent tutoring system for Rubikâs Cube learning. It is supported by an ArUco marker AR setup that enables physical task reconfiguration."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/DIS25-Rubikon.pdf">Rubikon: Intelligent Tutoring for Rubik's Cube Learning Through AR-enabled Physical Task Reconfiguration</a></div><div><span class="equal-contribution"><span title="Both authors contributed equally to this work.">Haocheng Ren*, </span><span title="Both authors contributed equally to this work.">Muzhe Wu*, </span></span>Gregory Croisdale, Anhong Guo, Xu Wang</div><div>DIS 2025</div><div><a href="papers/DIS25-Rubikon.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3715336.3735788'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2503.12619'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/4Jes_0nd3kY">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/9yOwJlAm83Q">30s preview</a></div></div></div>
+
+<h4>2024</h4>
+<div class='row paper-row' id='2024' >
+<div class='col-md-3 col-xs-4'><a href="papers/XRDS-Fall24-HAIL.pdf"><img class='paperimage img img-responsive' src='paperimages/XRDS-Fall24-HAIL.jpg' alt="Human-AI Lab members standing in front of our booth at the VISIONS 2024 event hosted by the Ann Arbor District Library (AADL)."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/XRDS-Fall24-HAIL.pdf">VISIONS of Accessibility: Human-AI Lab (HAIL), University of Michigan</a></div><div>Ellie Seehorn, Jaylin Herskovitz</div><div>XRDS: Crossroads, The ACM Magazine for Students (Fall 2024)</div><div><a href="papers/XRDS-Fall24-HAIL.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/abs/10.1145/3688091'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://humanailab.com/visions.html'>VISIONS 2024 event</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/UIST24-ProgramAlly.pdf"><img class='paperimage img img-responsive' src='paperimages/UIST24-ProgramAlly.jpg' alt="ProgramAlly is an end-user programming tool for creating visual information filtering programs. The figure shows a diagram of how programs are run. For the example program 'find NUMBER on BUS', the app first looks for buses in the frame. Then, if a bus is found, the image is cropped to just contain the bus. In the cropped frame, text detection will be used to look for numbers."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/UIST24-ProgramAlly.pdf">ProgramAlly: Creating Custom Visual Access Programs via Multi-Modal End-User Programming</a></div><div>Jaylin Herskovitz, Andi Xu, Rahaf Alharbi, Anhong Guo</div><div>UIST 2024</div><div><a href="papers/UIST24-ProgramAlly.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3654777.3676391'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='http://arxiv.org/abs/2408.10499
+'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/NPECbf0l9-4">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/3lgh7MiaejM">30s preview</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/Ha-LEcu4svw">talk</a>&nbsp;&middot;&nbsp;<a href='https://jayl.in/programally.html'>website</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/UIST24-WorldScribe.pdf"><img class='paperimage img img-responsive' src='paperimages/UIST24-WorldScribe.jpg' alt="WorldScribe is a system that generates automated live real-world visual descriptions that are customizable and adaptive to users' contexts."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/UIST24-WorldScribe.pdf">WorldScribe: Towards Context-Aware Live Visual Descriptions</a></div><div>Ruei-Che Chang, Yuxuan Liu, Anhong Guo</div><div><span class='label label-award'>Best Paper Award</span>UIST 2024</div><div><a href="papers/UIST24-WorldScribe.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3654777.3676375'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2408.06627'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/9dRExJzyqxw">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/zpN85oFrSOE">30s preview</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/rfLYS70EKng">talk</a>&nbsp;&middot;&nbsp;<a href="https://news.engin.umich.edu/2024/10/real-time-descriptions-of-surroundings-for-people-who-are-blind/">press release</a>&nbsp;&middot;&nbsp;<a href='https://worldscribe.org'>worldscribe.org</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/UIST24-VRCopilot.pdf"><img class='paperimage img img-responsive' src='paperimages/UIST24-VRCopilot.jpg' alt="Scaffolded creation in VRCopilot: Users can create wireframes by drawing on the floor while speaking, in addition to automatically generated wireframes; They can then turn the wireframes into specific furniture."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/UIST24-VRCopilot.pdf">VRCopilot: Authoring 3D Layouts with Generative AI Models in VR</a></div><div>Lei Zhang, Jin Pan, Jacob Gettig, Steve Oney, Anhong Guo</div><div>UIST 2024</div><div><a href="papers/UIST24-VRCopilot.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3654777.3676451'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='http://arxiv.org/abs/2408.09382'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/95xd8oF3Rik">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/mryaZzTSmXw">30s preview</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/ng1Hm1_LP9k">talk</a></div></div></div>
+
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/ASSETS24-EditScribe.pdf"><img class='paperimage img img-responsive' src='paperimages/ASSETS24-EditScribe.jpg' alt="EditScribe enables non-visual image editing using natural language verification loops powered by large multimodal models."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/ASSETS24-EditScribe.pdf">EditScribe: Non-Visual Image Editing with Natural Language Verification Loops</a></div><div>Ruei-Che Chang, Yuxuan Liu, Lotus Zhang, Anhong Guo</div><div>ASSETS 2024</div><div><a href="papers/ASSETS24-EditScribe.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3663548.3675599'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2408.06632'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/x9Kk-nT-yfc">video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/ASSETS24-CustomAD.pdf"><img class='paperimage img img-responsive' src='paperimages/ASSETS24-CustomAD.jpg' alt="CustomAD interface consists of a video player (left), which allows users to play, pause, and seek the video, and a customization pane (right) where users can customize the properties of ADs. The customization properties are grouped into content settings and presentation settings. The content customization adjusts the script's content as users change the ADs length and emphasis. In presentation customization, users could adjust speed, voice, tone, gender, and grammatical syntax of the ADs to change how the ADs are read out. Users can also toggle the ADs on and off."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/ASSETS24-CustomAD.pdf">Audio Description Customization</a></div><div>Rosiana Natalie, Ruei-Che Chang, Smitha Sheshadri, Anhong Guo, Kotaro Hara</div><div>ASSETS 2024</div><div><a href="papers/ASSETS24-CustomAD.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://doi.org/10.1145/3663548.3675617'>ACM DL</a>&nbsp;&middot;&nbsp;<a href="https://arxiv.org/abs/2408.11406">arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/Ijb3QeOdkhI">video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/DIS24-SoundShift.pdf'><img class='paperimage img img-responsive' src='paperimages/DIS24-SoundShift.jpg' alt="We present SoundShift, a concept to manipulate sounds for improving mixed-reality awareness. SoundShift situates in the auditory Reality-Virtuality Continuum with full transparency and noise cancellation as two ends, and comprises six sound manipulators: Transparency Shift, Envelope Shift, Position Shift, Style Shift, Time Shift, and Sound Append."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/DIS24-SoundShift.pdf'>SoundShift: Exploring Sound Manipulations for Accessible Mixed-Reality Awareness</a></div><div>Ruei-Che Chang, Chia-Sheng Hung, Bing-Yu Chen, Dhruv Jain, Anhong Guo</div><div>DIS 2024</div><div><a href='papers/DIS24-SoundShift.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3643834.3661556'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2401.11095'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/HYtQlb__Df8">video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href="papers/W4A2024-ImageExplorerDeployment.pdf"><img class='paperimage img img-responsive' src='paperimages/W4A24-ImageExplorer.jpg' alt="App icon of ImageExplorer, which shows a hand with the index finger touching an image."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href="papers/W4A2024-ImageExplorerDeployment.pdf">ImageExplorer Deployment: Understanding Text-Based and Touch-Based Image Exploration in the Wild</a></div><div>Andi Xu, Minyu Cai, Dier Hou, Ruei-Che Chang, Anhong Guo</div><div>W4A 2024</div><div><a href="papers/W4A2024-ImageExplorerDeployment.pdf">pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3677846.3677861'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/6iSkLlNRDuo'>talk</a>&nbsp;&middot;&nbsp;<a href="https://imageexplorer.org">ImageExplorer app</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI24-InteractOut.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI24-InteractOut.jpg' alt="We present InteractOut, a suite of implicit input manipulation techniques that slightly inhibit the natural execution of common user gestures on smartphones, such as taps and swipes. These input manipulation techniques introduce interaction costs and decrease the smoothness of smartphone interaction to nudge users towards reducing usage."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI24-InteractOut.pdf'>InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies for Reducing Smartphone Overuse</a></div><div>Tao Lu, Hongxiao Zheng, Tianying Zhang, Xuhai "Orson" Xu, Anhong Guo</div><div>CHI 2024</div><div><a href='papers/CHI24-InteractOut.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3613904.3642317'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2401.16668'>arXiv</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/8kN8h8Aukio">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/CMW1eGDrBFs">30s preview</a>&nbsp;&middot;&nbsp;<a href="https://news.engin.umich.edu/2024/05/managing-screen-time-by-making-phones-slightly-more-annoying-to-use/">press release</a></div></div></div>
+
+<h4>2023</h4>
+<div class='row paper-row' id='2023' >
+<div class='col-md-3 col-xs-4'><a href='papers/UIST23-BrushLens.pdf'><img class='paperimage img img-responsive' src='paperimages/UIST23-BrushLens.jpg' alt="BrushLens is a phone case with actuators that recognize screen elements, and use actuators to touch the screen on behalf of the user. It shows a user uses BrushLens to ``Brush'' on the touchscreen, and the actuator will touch if it is precisely on top of the button."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/UIST23-BrushLens.pdf'>BrushLens: Hardware Interaction Proxies for Accessible Touchscreen Interface Actuation</a></div><div>Chen Liang, Yasha Iravantchi, Thomas Krolikowski, Ruijie Geng, Alanson Sample, Anhong Guo</div><div>UIST&nbsp;2023</div><div><a href='papers/UIST23-BrushLens.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3586183.3606730'>ACM DL</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/oRA6p8ySNj8">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/QD6SZGjEjpc">30s preview</a>&nbsp;&middot;&nbsp;<a href="https://news.engin.umich.edu/2023/10/new-phone-case-provides-workaround-for-inaccessible-touchscreens/">press release</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI23-DIYA11y.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI23-DIYAT.jpg' alt="AI-based assistive technologies tend to assume 'universal' needs of BVI people and are thus one-size-fits-all, rather than accounting for unique differences and desires. This figure shows an example where a blind user uses Seeing AI to read a letter and trying to find out about the sender name Rebecca. However, it'll read many other unnecessary and distracting details."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI23-DIYA11y.pdf'>Hacking, Switching, Combining: Understanding and Supporting DIY Assistive Technology Design by Blind People</a></div><div>Jaylin Herskovitz, Andi Xu, Rahaf Alharbi, Anhong Guo</div><div>CHI&nbsp;2023</div><div><a href='papers/CHI23-DIYA11y.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3544548.3581249'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/RsiZw46CV_A'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/isorOKTHrrg'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/qncBMbrb0rY'>talk</a>&nbsp;&middot;&nbsp;<a href='https://github.com/HumanAILab/diy-a11y'>dataset</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI23-VRGit.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI23-VRGit.jpg' alt="An illustration of VRGit. A History Graph (HG) that represents non-linear version history is anchored on the userâs left arm, where each node is a 3D miniature of that version. Inside each miniature, objects are highlighted using color coding if they are changed compared to the previous version. Mini avatars are anchored in the HG to represent which version users are in. Users can also create portals to monitor other usersâ first-person views. A shared history visualization facilitates group discussion by anchoring the HG on a surface and allowing users to preview a version and reuse objects collaboratively."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI23-VRGit.pdf'>VRGit: A Version Control System for Collaborative Content Creation in Virtual Reality</a></div><div>Lei Zhang, Ashutosh Agrawal, Steve Oney, Anhong Guo</div><div>CHI&nbsp;2023</div><div><a href='papers/CHI23-VRGit.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3544548.3581136'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/QZyglCjf5pQ'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/8f8ukSbTvVs'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/GNYh_JkGLX0'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/IUI23-DeferredInference.pdf'><img class='paperimage img img-responsive' src='paperimages/IUI23-DeferredInference.jpg' alt="This figure illustrates the scenario of a human support robot designed to perform tasks for the elderly or those with mobility impairments. The human is looking for his book, The Future of Ideas, which is the top book in the stack located on his desk, next to a computer monitor. However, 'The Future of Ideas' may be ambiguious, as the phrase is also displayed on the computer monitor. Using deferred inference, the robot may ask the human to reframe their query, 'Top Book', at which point the robot is confident what the user is referring to."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/IUI23-DeferredInference.pdf'>Human-Centered Deferred Inference: Measuring User Interactions and Setting Deferral Criteria for Human-AI Teams</a></div><div>Stephan J. Lemmer, Anhong Guo, Jason J. Corso</div><div>IUI&nbsp;2023</div><div><a href='papers/IUI23-DeferredInference.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3581641.3584092'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://github.com/lemmersj/human-centered-deferred-inference'>code</a></div></div></div>
+
+<h4>2022</h4>
+<div class='row paper-row' id='2022' >
+<div class='col-md-3 col-xs-4'><a href='papers/ISS22-XSpace.pdf'><img class='paperimage img img-responsive' src='paperimages/ISS22-XSpace.jpg' alt="As an overview of XSpace's components, this is a sketch of a person using an AR application in their living room. There is a virtual avatar on a virtual chair, showing the mesh crop and overlay method. There is shared virtual content around the space."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ISS22-XSpace.pdf'>XSpace: An Augmented Reality Toolkit for Enabling Spatially-Aware Distributed Collaboration</a></div><div>Jaylin Herskovitz, Yi Fei Cheng, Anhong Guo, Alanson Sample, Michael Nebeling</div><div>ISS&nbsp;2022</div><div><a href='papers/ISS22-XSpace.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3567721'>ACM DL</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/JIR6fydD0pc">video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/Gi1h0ptLxMU'>talk</a>&nbsp;&middot;&nbsp;<a href='https://github.com/HumanAILab/XSpace'>code</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/UIST22-OmniScribe.pdf'><img class='paperimage img img-responsive' src='paperimages/UIST22-OmniScribe.jpg' alt="OmniScribe to make 360Â° videos accessible. A describer is using the OmniScribe web authoring interface, which supports them to better understand the 360Â° content to author standard audio descriptions and create immersive labels, in order to enable BVI people to interact with 360Â° content immersively using smartphones and headphones. The picture shows a man wearing wireless headphones, holding a mouse in his right hand to operate a computer and use our OmniScribe for audio description. On the computer is the OmniScribe interface."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/UIST22-OmniScribe.pdf'>OmniScribe: Authoring Immersive Audio Descriptions for 360Â° Videos</a></div><div>Ruei-Che Chang, Chao-Hsien Ting, Chia-Sheng Hung, Wan-Chen Lee, Liang-Jin Chen, Yu-Tzu Chao, Bing-Yu Chen, Anhong Guo</div><div>UIST&nbsp;2022</div><div><a href='papers/UIST22-OmniScribe.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3526113.3545613'>ACM DL</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/BS3NhCZRDFc">video</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/k7zEz8R7jhs">30s preview</a>&nbsp;&middot;&nbsp;<a href='https://omniscribe.org'>omniscribe.org</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/DIS22-CustomizAR.pdf'><img class='paperimage img img-responsive' src='paperimages/DIS22-CustomizAR.png' alt="Screenshot of the four step CustomizAR process: Step 1: Select Object, Step 2: Select Design, Step 3: Adjust & Measure, and Step 4: Finished. Currently showing Step 3: Adjust & Measure, where the user roughly indicates the measurement location. The selected design of the bicycle water bottle cage with zip-tie attachment is displayed on the top left corner. The measurement guide is in the center of the screen. On the bottom, it's showing that bottleDiameter is the parameter that's currently being measured, as well as controls and instructions for taking a photo."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/DIS22-CustomizAR.pdf'>CustomizAR: Facilitating Interactive Exploration and Measurement of Adaptive 3D Designs</a></div><div>Chen Liang, Anhong Guo, Jeeeun Kim</div><div>DIS&nbsp;2022</div><div><a href='papers/DIS22-CustomizAR.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3532106.3533561'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/QT3wi6Y9qBQ'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/TaxxD8dva_o'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI22-CollabAlly.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI22-CollabAlly.png' alt="CollabAlly system overview: (i) Extracts visual cue information from Google Doc's HTML DOM tree, including collaborators, cursors, comments, highlighted text, and text differences; (ii) Parses this data into a readable format and display it in three pop-up dialog boxes on-demand: (a) enhanced collaborator announcements, (b) comment tracking and navigation, (c) real-time and asynchronous text changes; (iii) Conveys contextual information using audio features, including spatial audio and voice fonts. The figure shows a Google doc page and 3 interfaces of CollabAlly dialog boxes. The annotations also include different visual cues (collaborator, cursor, comment, highlighted text, and text changes) and audio features (spatial audio and voice fonts)."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI22-CollabAlly.pdf'>CollabAlly: Accessible Collaboration Awareness in Document Editing</a></div><div><span class="equal-contribution"><span title="Both authors contributed equally to this work.">Cheuk Yin Phipson Lee*, </span><span title="Both authors contributed equally to this work.">Zhuohao Zhang*, </span></span>Jaylin Herskovitz, JooYoung Seo, Anhong Guo</div><div><span class='label label-award'>Honorable Mention</span>CHI&nbsp;2022</div><div><a href='papers/CHI22-CollabAlly.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3491102.3517635'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/s5bcZQlmbzE'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/NSgFM8P9lOY'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/WK_8cPMVtuA'>talk</a>&nbsp;&middot;&nbsp;<a href='https://github.com/HumanAILab/CollabAlly'>code</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI22-ImageExplorer.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI22-ImageExplorer.jpg' alt="Left: An image of a bed with a white outline around it. A speech bubble reads: Bed. Double tap to explore. Right: The same image of the bed, now with a variety of rectangular bounding boxes around the white pillow and blue sheets. Two speech bubbles read: A white pillow and The bed is blue."/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI22-ImageExplorer.pdf'>ImageExplorer: Multi-Layered Touch Exploration to Encourage Skepticism Towards Imperfect AI-Generated Image Captions</a></div><div>Jaewook Lee, Jaylin Herskovitz, Yi-Hao Peng, Anhong Guo</div><div>CHI&nbsp;2022</div><div><a href='papers/CHI22-ImageExplorer.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3491102.3501966'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/OQkhaHgioc0'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/lgbiZmNWy50'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/BY4ODxdBaX0'>talk</a></div></div></div>
+
+<h4>2021</h4>
+<div class='row paper-row' id='2021' >
+<div class='col-md-3 col-xs-4'><a href='papers/SUI21-TutorialLens.pdf'><img class='paperimage img img-responsive' src='paperimages/SUI21-TutorialLens.png' alt='TutorialLens records the finger location relative to device marker location in 3D for authoring mode, and then reproduces that based on detected device marker location in the access mode (shown in picture).'/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/SUI21-TutorialLens.pdf'>TutorialLens: Authoring Interactive Augmented Reality Tutorials Through Narration and Demonstration</a></div><div>Junhan Kong, Dena Sabha, Jeffrey P. Bigham, Amy Pavel, Anhong Guo</div><div>SUI 2021</div><div><a href='papers/SUI21-TutorialLens.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/abs/10.1145/3485279.3485289'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='papers/SUI21-TutorialLens-supp.zip'>supplemental</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/bPFlb6IL5l8">video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/AIES21-DisaggregatedEvaluations.pdf'><img class='paperimage img img-responsive' src='paperimages/AIES21-DisaggregatedEvaluations.jpg' alt='A decision tree to predict the instances on which the Face API gender classifier is likely to make a mistake based on meta-attributes of the data. Each node of the tree is labeled by the counts of correct and wrong instances belonging to the clusters. Nodes are colored to represent the relative error rate, green shades for lower error rates and red shades for higher error rates.'/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/AIES21-DisaggregatedEvaluations.pdf'>Designing Disaggregated Evaluations of AI Systems: Choices, Considerations, and Tradeoffs</a></div><div>Solon Barocas, Anhong Guo, Ece Kamar, Jacquelyn Krones, Meredith Ringel Morris, Jennifer Wortman Vaughan, W. Duncan Wadsworth, Hanna Wallach</div><div>AIES 2021</div><div><a href='papers/AIES21-DisaggregatedEvaluations.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/abs/10.1145/3461702.3462610'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/2103.06076'>arXiv</a>&nbsp;&middot;&nbsp;<a href='papers/AIES21-DisaggregatedEvaluations-poster.pdf'>poster</a>&nbsp;&middot;&nbsp;<a href='slides/AIES21-DisaggregatedEvaluations-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/e0yUA1QSSqI">talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI21-ImageDescriptions.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI21-ImageDescriptions.jpg' alt='Leila, a black, non-binary person with a filtering face mask walks down a neighborhood street with one hand in their pocket and the other hand on their cane. They have a short mohawk and are wearing a jacket, shorts, tennis shoes, and glasses.'/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI21-ImageDescriptions.pdf'>"It's Complicated": Negotiating Accessibility and (Mis)Representation in Image Descriptions of Race, Gender, and Disability</a></div><div>Cynthia L. Bennett, Cole Gleason, Morgan Klaus Scheuerman, Jeffrey P. Bigham, Anhong Guo, Alexandra To</div><div><span class='label label-award'>Honorable Mention</span>CHI&nbsp;2021</div><div><a href='papers/CHI21-ImageDescriptions.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3411764.3445498'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='slides/CHI21-ImageDescriptions-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/By6nzFefcxs">talk</a></div><div class="attribution">Image: "<a href="https://affecttheverb.com/gallery/disabledandhere/filtermaskwalking/">Walking in neighborhood with face mask</a>", by <a href="https://affecttheverb.com/disabledandhere/">Disabled And Here</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></div>
+
+<h4>2020</h4>
+<div class='row paper-row' id='2020' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS20-AccessibleAR.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS20-AccessibleAR.png' alt='Two example prototypes for making AR apps accessible. A: Foundational Accessibility. Screenshot of a virtual chair with a voice over target around it, a speech bubble shows the app announcing "Back of chair with blue cushion". B: Scanning. Screenshot of AR grid overlaid on a coffee table. Speech bubbles show the app announcing "Found a new horizontal surface" and "Scanned 2 surfaces totaling 2.3 square meters".'/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS20-AccessibleAR.pdf'>Making Mobile Augmented Reality Applications Accessible</a></div><div>Jaylin Herskovitz, Jason Wu, Samuel White, Amy Pavel, Gabriel Reyes, Anhong Guo, Jeffrey P. Bigham</div><div>ASSETS&nbsp;2020</div><div><a href='papers/ASSETS20-AccessibleAR.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3373625.3417006'>ACM DL</a>&nbsp;&middot;&nbsp;<a href="https://youtu.be/AxKKGoD3TZk">video</a>&nbsp;&middot;&nbsp;<a href='slides/ASSETS20-AccessibleAR-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/qdy0-YfJ7-g'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS20-SenseA11y.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS20-SenseA11y.jpg' alt="Image of a person in a wheelchair in front of a swing gate" /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS20-SenseA11y.pdf'>Sense and Accessibility: Understanding People with Physical Disabilitiesâ Experiences with Sensing Systems</a></div><div>Shaun K. Kane, Anhong Guo, Meredith Ringel Morris</div><div><span class='label label-award'>Best Paper Nominee</span>ASSETS&nbsp;2020</div><div><a href='papers/ASSETS20-SenseA11y.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3373625.3416990'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='slides/ASSETS20-SenseA11y-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/mS7GPPcTAgY'>talk</a></div><div class="attribution">Image: "<a href="https://www.flickr.com/photos/automaticsystems/19304617029/in/photostream/">Swing Gate - SL 931 - Belgium</a>", by <a href="https://www.flickr.com/photos/automaticsystems/">Automatic Systems</a>, licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS20-Disability&COVID.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS20-COVID.png' alt='Screenshot of a tweet by @CDCgov from April 1, 2020 3:55pm: Actions to reduce spread of the virus, such as social distancing, are key to #FlattenTheCurve. 2 of 3 (original tweet link: https://twitter.com/CDCgov/status/1245439600472084486) The tweet contains an image of the common public health infographic about âflattening the curveâ, but the tweet did not include alt text for the image. The image shows an example of a common flatten the curve info-graphic. A tall peak indicates the height of the pandemic if left unchecked, and a shorter spread out curve depicts the effects of social distancing efforts.'/></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS20-Disability&COVID.pdf'>Disability and the COVID-19 Pandemic: Using Twitter to Understand Accessibility during Rapid Societal Transition</a></div><div><span class="equal-contribution"><span title="These authors contributed equally to this work.">Cole Gleason*, </span><span title="These authors contributed equally to this work.">Stephanie Valencia*, </span></span>Lynn Kirabo, Jason Wu, Anhong Guo, Elizabeth J. Carter, Jeffrey P. Bigham, <span class="equal-contribution"><span title="These authors contributed equally to this work.">Cynthia L. Bennett<sup>+</sup> </span><span title="These authors contributed equally to this work.">Amy Pavel<sup>+</sup> </span></span></div><div>ASSETS&nbsp;2020</div><div><a href='papers/ASSETS20-Disability&COVID.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/doi/10.1145/3373625.3417023'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='papers/ASSETS20-Disability&COVID-supp.pdf'>supplemental</a>&nbsp;&middot;&nbsp;<a href='slides/ASSETS20-Disability&COVID-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/0gAxjnYp4Mw'>talk</a></div></div></div>
+
+<h4>2019</h4>
+<div class='row paper-row' id='2019' >
+<div class='col-md-3 col-xs-4'><a href='papers/UIST19-StateLens.pdf'><img class='paperimage img img-responsive' src='paperimages/UIST19-StateLens.jpg' alt="The user is holding the phone in landscape mode with one hand, and aiming the camera towards a touchscreen coffee machine. The userâs other hand is wearing a fingercap exploring on the screen. The StateLens iOS app is providing audio guidance to the user." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/UIST19-StateLens.pdf'>StateLens: A Reverse Engineering Solution for Making Existing Dynamic Touchscreens Accessible</a></div><div>Anhong Guo, Junhan Kong, Michael Rivera, Frank F. Xu, Jeffrey P. Bigham</div><div>UIST&nbsp;2019</div><div><a href='papers/UIST19-StateLens.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3347873'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/1908.07144'>arXiv</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/Kbw9YbtJdwY'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/P127TFsQHkM'>30s preview</a>&nbsp;&middot;&nbsp;<a href='slides/UIST19-StateLens-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/UF_HxE3Ttfg'>talk</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/9iOBG3ZzS0A'>UIST live talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/Ubicomp19-Blocks.pdf'><img class='paperimage img img-responsive' src='paperimages/Ubicomp19-Blocks.jpg' alt="Two Blocks users are collaboratively creating a table in augmented reality." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/Ubicomp19-Blocks.pdf'>Blocks: Collaborative and Persistent Augmented Reality Experiences</a></div><div>Anhong Guo, Ilter Canberk, Hannah Murphy, AndrÃ©s Monroy-HernÃ¡ndez, Rajan Vaish</div><div>Ubicomp&nbsp;2019</div><div><a href='papers/Ubicomp19-Blocks.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3351241'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/1908.02409'>arXiv</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/k9PjLfFORvc'>video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS19-XRay.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS19-XRay.png' alt="On the left: a screenshot of Android App Drawer taken using X-Ray. On the right: a user holding the phone showing the same screenshot in X-Ray image viewer. Talk back cursor is visible." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS19-XRay.pdf'>X-Ray: Screenshot Accessibility via Embedded Metadata</a></div><div>Sujeath Pareddy, Anhong Guo, Jeffrey P. Bigham</div><div><span class='label label-award'>Best Artifact Award</span>ASSETS&nbsp;2019</div><div><a href='papers/ASSETS19-XRay.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3353808'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/59J0Xy7lt7s'>video</a>&nbsp;&middot;&nbsp;<a href='https://gitlab.com/sujeathpareddy/xray'>code</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS19-AIWorkshop-ResearchRoadmap.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS19-AIWorkshop-ResearchRoadmap.png' alt="A word cloud composed of words including AI fairness, accessibility, artifical intelligence, inclusion, and bias." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS19-AIWorkshop-ResearchRoadmap.pdf'>Toward Fairness in AI for People with Disabilities: A Research Roadmap</a></div><div>Anhong Guo, Ece Kamar, Jennifer Wortman Vaughan, Hanna Wallach, Meredith Ringel Morris</div><div>ASSETS&nbsp;2019&nbsp;AI&nbsp;Fairness&nbsp;Workshop</div><div><a href='papers/ASSETS19-AIWorkshop-ResearchRoadmap.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://www.sigaccess.org/newsletter/2019-10/guo.html'>SIGACCESS Newsletter</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/1907.02227'>arXiv</a>&nbsp;&middot;&nbsp;<a href='slides/ASSETS19-AIFairnessWorkshop-Slides.pdf'>slides</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/Ll9-v0y5XaY'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CVPR19-VizWizPrivDataset.pdf'><img class='paperimage img img-responsive' src='paperimages/CVPR19-VizWizPrivDataset.jpg' alt="Three images in the VizWiz-Priv dataset, including an image of a wall of photos containing faces, an image of a credit card, and an image of a pregnancy test. The private information regions in the images are highlighted and inpainted." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CVPR19-VizWizPrivDataset.pdf'>VizWiz-Priv: A Dataset for Recognizing the Presence and Purpose of Private Visual Information in Images Taken by Blind People</a></div><div>Danna Gurari, Qing Li, Chi Lin, Yinan Zhao, Anhong Guo, Abigale Stangl, Jeffrey P. Bigham</div><div>CVPR&nbsp;2019</div><div><a href='papers/CVPR19-VizWizPrivDataset.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='papers/CVPR19-VizWizPrivDataset-supp.pdf'>supplemental</a>&nbsp;&middot;&nbsp;<a href='http://openaccess.thecvf.com/content_CVPR_2019/html/Gurari_VizWiz-Priv_A_Dataset_for_Recognizing_the_Presence_and_Purpose_of_CVPR_2019_paper.html'>CVF</a>&nbsp;&middot;&nbsp;<a href='http://vizwiz.org/'>vizwiz.org</a>&nbsp;&middot;&nbsp;<a href='papers/CVPR19-VizWizPrivDataset-poster.pdf'>poster</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/SUI19-Minuet.pdf'><img class='paperimage img img-responsive' src='paperimages/SUI19-Minuet.jpg' alt="Interaction scenario of Minuet: after returning home, the user points at the Roomba and then the dirty area to ask Roomba to clean it up." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/SUI19-Minuet.pdf'>Minuet: Multimodal Interaction with an Internet of Things</a></div><div>
+Runchang Kang, Anhong Guo, Gierad Laput, Yang Li, Xiang 'Anthony' Chen</div><div>SUI&nbsp;2019</div><div><a href='papers/SUI19-Minuet.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3357581'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/sFVfGwgRP1s'>video</a></div></div></div>
+
+<h4>2018</h4>
+<div class='row paper-row'  id='2018' >
+<div class='col-md-3 col-xs-4'><a href='papers/Ubicomp18-Zensors++.pdf'><img class='paperimage img img-responsive' src='paperimages/Ubicomp18-Zensors++.jpg' alt="An example question sensor created in Zensors++ asking 'Is someone using a printer?' with a bounding box focusing on the printer area." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/Ubicomp18-Zensors++.pdf'>Crowd-AI Camera Sensing in the Real World</a></div><div>Anhong Guo, Anuraag Jain, Shomiron Ghose, Gierad Laput, Chris Harrison, Jeffrey P. Bigham</div><div>Ubicomp&nbsp;2018</div><div><a href='papers/Ubicomp18-Zensors++.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3264921'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/3T538wzrQOM'>video</a>&nbsp;&middot;&nbsp;<a href='slides/Ubicomp18-Zensors++-Slides.pdf'>slides</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ASSETS18-Cursors.pdf'><img class='paperimage img img-responsive' src='paperimages/ASSETS18-Cursors.png' alt="A table with many boxes covered with white paper showing text such as glasses, butter, jam, etc. A user is holding and targeting his phone at one object, while touching the object with the other hand. This is showcasing the window cursor interaction technique that supports non-visual attention to items within a complex visual scene, in which the user moves the device itself to scan the scene and receives information about what is in the center of the image." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ASSETS18-Cursors.pdf'>Investigating Cursor-based Interactions to Support Non-Visual Exploration in the Real World</a></div><div>Anhong Guo, Saige McVea, Xu Wang, Patrick Clary, Ken Goldman, Yang Li, Yu Zhong, Jeffrey P. Bigham</div><div>ASSETS&nbsp;2018</div><div><a href='papers/ASSETS18-Cursors.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://dl.acm.org/citation.cfm?id=3236339'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/8ZJqyz9yfx0'>video</a>&nbsp;&middot;&nbsp;<a href='slides/ASSETS18-Cursors-Slides.pdf'>slides</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/Pervasive-MakerTech-Facade.pdf'><img class='paperimage img img-responsive' src='paperimages/Pervasive-MakerTech-Facade.png' alt="Example printed overlays and legends generated by Facade. (a)-(d) demonstrate the different material combinations we tested in the design iterations (NinjaFlex with Braille, Flex+PLA Braille label, Flex+PLA Braille cover, and Flex+PLA embossed letter cover). Facade users can choose to print a legend for the abbreviations (e)." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/Pervasive-MakerTech-Facade.pdf'>Making Everyday Interfaces Accessible: Tactile Overlays by and for Blind People</a></div><div>Anhong Guo, Jeffrey P. Bigham</div><div>IEEE Pervasive Computing 17(2), 2018, Maker Tech column</div><div><a href='papers/Pervasive-MakerTech-Facade.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://ieeexplore.ieee.org/document/8383663/'>IEEE Xplore</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CVPR18-VizWizDataset.pdf'><img class='paperimage img img-responsive' src='paperimages/CVPR18-VizWizDataset.jpg' alt="Distribution of the first six words for all questions in the VizWiz dataset. The innermost ring represents the first word and each subsequent ring represents a subsequent word. The arc size is proportional to the number of questions with that word/phrase." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CVPR18-VizWizDataset.pdf'>VizWiz Grand Challenge: Answering Visual Questions from Blind People</a></div><div>Danna Gurari, Qing Li, Abigale J. Stangl, Anhong Guo, Chi Lin, Kristen Grauman, Jiebo Luo, Jeffrey P. Bigham</div><div><span class='label label-award'>Spotlight Presentation</span>CVPR&nbsp;2018</div><div><a href='papers/CVPR18-VizWizDataset.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='https://arxiv.org/abs/1802.08218'>arXiv</a>&nbsp;&middot;&nbsp;<a href='http://vizwiz.org/'>website</a>&nbsp;&middot;&nbsp;<a href='papers/CVPR18-VizWizDataset-poster.pdf'>poster</a>&nbsp;&middot;&nbsp;<a href='http://www.youtube.com/watch?v=Jl1NeziAHFY&t=75m10s'>video</a>&nbsp;&middot;&nbsp;<a href='https://www.technologyreview.com/s/610377/a-new-data-trove-could-teach-computers-to-tell-blind-people-what-they-need-to-know/'>tech review</a></div></div></div>
+
+<h4>2017</h4>
+<div class='row paper-row'  id='2017' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI17-Facade.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI17-Facade.jpg' alt="A user accessing the microwave augmented with tactile overlays generated by Facade." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI17-Facade.pdf'>Facade: Auto-generating Tactile Interfaces to Appliances</a></div><div>Anhong Guo, Jeeeun Kim, Xiang 'Anthony' Chen, Tom Yeh, Scott E. Hudson, Jennifer Mankoff, Jeffrey P. Bigham</div><div>CHI&nbsp;2017</div><div><a href='papers/CHI17-Facade.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=3025845'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/Tz1kt1gf7v4'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/J_Q-M763Egs'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/brxHdt0_EgQ'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/DIS17-Uncertainty.pdf'><img class='paperimage img img-responsive' src='paperimages/DIS17-Uncertainty.jpg' alt="A user holding a 3D-printed cup holder augmented with a flexible ring generated using our flexible buffers technique." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/DIS17-Uncertainty.pdf'>Understanding Uncertainty in Measurement and Accommodating its Impact in 3D Modeling and Printing</a></div><div>Jeeeun Kim, Anhong Guo, Tom Yeh, Scott E. Hudson, Jennifer Mankoff</div><div>DIS&nbsp;2017</div><div><a href='papers/DIS17-Uncertainty.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=3064690'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/8QPxya1Pcpc'>video</a></div></div></div>
+
+<h4>2016</h4>
+<div class='row paper-row'  id='2016' >
+<div class='col-md-3 col-xs-4'><a href='papers/UIST16-VizLens.pdf'><img class='paperimage img img-responsive' src='paperimages/UIST16-VizLens.png' alt="The user is holding the phone in portrait mode with one hand, and aiming the camera towards an inaccessible microwave control panel. The userâs other hand is exploring on the panel. The VizLens iOS app is providing audio feedback and guidance to the user." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/UIST16-VizLens.pdf'>VizLens: A Robust and Interactive Screen Reader for Interfaces in the Real World</a></div><div>Anhong Guo, Xiang 'Anthony' Chen, Haoran Qi, Samuel White, Suman Ghosh, Chieko Asakawa, Jeffrey P. Bigham</div><div>UIST&nbsp;2016</div><div><a href='papers/UIST16-VizLens.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2984518'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/Wy0656j2eig'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/9JKxcFUpUlc'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/kbG6ZMPPD1k'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/MobileHCI16-TiltSmartwatch.pdf'><img class='paperimage img img-responsive' src='paperimages/MobileHCI16-TiltSmartwatch.png' alt="Two tilt-based interaction techniques for enabling no-touch, wrist-only interactions on smartwatches. Left: AnglePoint, which directly maps the position of a virtual pointer to the tilt angle of the smartwatch. Right: ObjectPoint, which objectifies the underlying virtual pointer as an object imbued with a physics model." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/MobileHCI16-TiltSmartwatch.pdf'>Exploring Tilt for No-Touch, Wrist-Only Interactions on Smartwatches</a></div><div>Anhong Guo, Tim Paek</div><div><span class='label label-award'>Honorable Mention</span>MobileHCI&nbsp;2016</div><div><a href='papers/MobileHCI16-TiltSmartwatch.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2935345'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/PVbY70dnEz0'>video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/CHI16-WearWrite.pdf'><img class='paperimage img img-responsive' src='paperimages/CHI16-WearWrite.jpg' alt="A user working on a document on a smartwatch using WearWrite, by leveraging a crowd to help transÂ­late their ideas into text." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/CHI16-WearWrite.pdf'>WearWrite: Crowd-Assisted Writing from Smartwatches
+</a></div><div>Michael Nebeling, Alexandra To, Anhong Guo, Adrian A. de Freitas,
+Jaime Teevan, Steven P. Dow, Jeffrey P. Bigham</div><div>CHI&nbsp;2016</div><div><a href='papers/CHI16-WearWrite.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2858169'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/34jucZ7SOb8'>full video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/rXZ63Vg2qRM'>30s preview</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/PdQzi2DiG8k'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ISWC16-OrderPicking.pdf'><img class='paperimage img img-responsive' src='paperimages/ISWC16-OrderPicking.png' alt="A system architecture diagram of an order picking system augmented with weight checking error detection." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ISWC16-OrderPicking.pdf'>A Comparison of Order Picking Methods Augmented with Weight Checking Error Detection</a></div><div>Xiaolong Wu, Malcolm Haynes, Anhong Guo, Thad Starner</div><div>ISWC&nbsp;2016</div><div><a href='papers/ISWC16-OrderPicking.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2971773'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/_fUSHGrQ6qM'>video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/TiiS16-BeyondTouch.pdf'><img class='paperimage img img-responsive' src='paperimages/BeyondTouch.png' alt="Four BeyondTouch interaction techniques, including tapping on a phone in the pocket, tapping on the back of a phone while holding it with two hands, tapping and sliding on the back of the phone while holding it with one hand, as well as tapping and sliding next to the phone on the table to control the device." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/TiiS16-BeyondTouch.pdf'>Beyond the Touchscreen: An Exploration of Extending Interactions on Commodity Smartphones</a></div><div>Cheng Zhang, Anhong Guo, Dingtian Zhang, Yang Li, Caleb Southern, Rosa I. Arriaga, Gregory D. Abowd</div><div>TiiS&nbsp;6(2), 2016</div><div><a href='papers/TiiS16-BeyondTouch.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2954003'>ACM DL</a></div></div></div>
+
+<h4>2015</h4>
+<div class='row paper-row'  id='2015' >
+<div class='col-md-3 col-xs-4'><a href='papers/ITS15-CapAuth.pdf'><img class='paperimage img img-responsive' src='paperimages/ITS15-CapAuth.jpg' alt="Using CapAuth, a user can place their hand on a smartphone touchscreen for authentication. Left: initial state of CapAuth showing a handprint guide with grey background. Right: user touching the touchscreen and successfully authenticated, showing a green background." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ITS15-CapAuth.pdf'>CapAuth: Identifying and Differentiating User Handprints on Commodity Capacitive Touchscreens</a></div><div>Anhong Guo, Robert Xiao, Chris Harrison</div><div>ITS&nbsp;2015</div><div><a href='papers/ITS15-CapAuth.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2817722'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/jGH78KWH_yM'>video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/P7GMS83lBSg'>talk</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/Computer15-OrderPicking.pdf'><img class='paperimage img img-responsive' src='paperimages/Computer15-OrderPicking.jpg' alt="Pick-by-head-up display system using a Google Glass with a opaque display to show the pick order instructions." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/Computer15-OrderPicking.pdf'>Order Picking with Head-Up Displays</a></div><div>Anhong Guo, Xiaolong Wu, Zhengyang Shen, Thad Starner, Hannes Baumann, Scott Gilliland</div><div>Computer&nbsp;48(6), 2015</div><div><a href='papers/Computer15-OrderPicking.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://ieeexplore.ieee.org/document/7122182/'>IEEE Xplore</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/yUZFaCP6rP4'>video 1</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/RApBJ0U3XpI'>video 2</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/IUI15-BeyondTouch.pdf'><img class='paperimage img img-responsive' src='paperimages/BeyondTouch.png' alt="Four BeyondTouch interaction techniques, including tapping on a phone in the pocket, tapping on the back of a phone while holding it with two hands, tapping and sliding on the back of the phone while holding it with one hand, as well as tapping and sliding next to the phone on the table to control the device." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/IUI15-BeyondTouch.pdf'>BeyondTouch: Extending the Input Language with Built-in Sensors on Commodity Smartphones</a></div><div>Cheng Zhang, Anhong Guo, Dingtian Zhang, Caleb Southern, Rosa I. Arriaga, Gregory D. Abowd</div><div>IUI&nbsp;2015</div><div><a href='papers/IUI15-BeyondTouch.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2701374'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/-8GMZN4RN_w'>video</a></div></div></div>
+
+<div class='row paper-row' >
+<div class='col-md-3 col-xs-4'><a href='papers/ISWC15-OrderPicking.pdf'><img class='paperimage img img-responsive' src='paperimages/ISWC15-OrderPicking.jpg' alt="Image of a set of order picking bins with LED displays and buttons." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ISWC15-OrderPicking.pdf'>Comparing Order Picking Assisted by Head-Up Display versus Pick-by-Light with Explicit Pick Confirmation</a></div><div>Xiaolong Wu, Malcolm Haynes, Yixin Zhang, Ziyi Jiang, Zhengyang Shen, Anhong Guo, Thad Starner, Scott Gilliland</div><div>ISWC&nbsp;2015</div><div><a href='papers/ISWC15-OrderPicking.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2808408'>ACM DL</a></div></div></div>
+
+<h4>2014</h4>
+<div class='row paper-row' id='2014' >
+<div class='col-md-3 col-xs-4'><a href='papers/ISWC14-OrderPicking.pdf'><img class='paperimage img img-responsive' src='paperimages/ISWC14-OrderPicking.jpg' alt="Image of the experimental setup, including 24 pick bins (on two shelving units with four rows and three columns each) and three order bins on the right. An example pick list is annotated with superimposed labels." /></a></div>
+<div class='col-md-9 col-xs-8'><div><a href='papers/ISWC14-OrderPicking.pdf'>A Comparison of Order Picking Assisted by Head-Up Display (HUD), Cart-Mounted Display (CMD), Light, and Paper Pick List</a></div><div>Anhong Guo, Shashank Raghu, Xuwen Xie, Saad Ismail, Xiaohui Luo, Joseph Simoneau, Scott Gilliland, Hannes Baumann, Caleb Southern, Thad Starner</div><div><span class='label label-award'>10-Year Impact Award</span><span class='label label-award'>Honorable Mention</span>ISWC&nbsp;2014</div><div><a href='papers/ISWC14-OrderPicking.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='http://dl.acm.org/citation.cfm?id=2634321'>ACM DL</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/m-ftc1V_0oo'>video</a>&nbsp;&middot;&nbsp;<a href='https://youtu.be/TnEDQFzYQco'>talk</a></div></div></div>
+
+</div>
+                    
+                </div> <!-- /col-md-9 -->
+                
+                <div class="col-md-3">
+                    <div class="vital-info" style="margin-top: 0;">
+                        <div>Morris Wellman Assistant Professor</div>
+                        <div><a href="https://cse.engin.umich.edu">Computer Science & Engineering</a></div>
+                        <div><a href="https://www.engin.umich.edu">College of Engineering</a></div>
+                        <div><a href="https://umich.edu">University of Michigan</a></div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="vital-info">
+                        <div><a href="files/CV_AnhongGuo.pdf">Curriculum Vitae (CV)</a></div>
+                        <div><a href="https://scholar.google.com/citations?user=xSZXqZQAAAAJ&hl=en">Google Scholar</a></div>
+                        <div>Email: <a class="mail-link" href="mailto:anhong@umich.edu">anhong@umich.edu</a></div>
+                        <div>Twitter: <a href="https://twitter.com/AnhongGuo">@AnhongGuo</a></div>
+                        <div><a href="https://www.youtube.com/channel/UC_V6clOfirNNPx5rDsKgsAQ">YouTube Channel</a></div>
+                    </div>
+
+                    <hr>
+
+                    <div class="vital-info">
+                        <h4>Teaching</h4>
+                        <div>
+                            <div class="row">
+                                <div class="date col-md-3">Fall 2025</div>
+                                <div class="col-md-9"><a href="https://eecs493staff.github.io/eecs493.org/">EECS 493: User Interface Development</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-3">Winter 2026</div>
+                                <div class="col-md-9"><a href="https://docs.google.com/document/d/11b1dUiE-GaADqI0FmVqIYpwo-WoY_-XvvZdMCY2cNlA/edit?usp=sharing">CSE 594: Human-AI Interaction & Systems</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- <div class="vital-info people">
+                        <h4>Apps Released</h4><h4></h4>
+                        <div>
+                            <div class="row">
+                                 <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/apps/VizLens.png" alt="App icon of VizLens"></img></div>
+                              <div class="col-xs-9"><a href="https://vizlens.org">VizLens</a></div>
+                            </div>
+                            <div class="row">
+                                 <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/apps/ImageExplorer.jpg" alt="App icon of ImageExplorer, which shows a hand with the index finger touching an image."></img></div>
+                              <div class="col-xs-9"><a href="https://imageexplorer.org">ImageExplorer</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr> -->
+                    
+                    <div class="vital-info">
+                        <h4>Talks & Events</h4>
+                        <div>
+                            <div class="row">
+                                <div class="date col-md-5">Jan 21, 2025</div>
+                                <div class="col-md-7"><a href="https://cse.engin.umich.edu/event/personal-assistive-technology/">UM AI Seminar</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Feb 7, 2025</div>
+                                <div class="col-md-7"><a href="https://hci.stanford.edu/seminar/speaker.php?date=2025-02-07">Stanford</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Feb 26, 2025</div>
+                                <div class="col-md-7">UM HCC Seminar</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Mar 3, 2025</div>
+                                <div class="col-md-7">Northwestern</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Mar 5, 2025</div>
+                                <div class="col-md-7">UChicago</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Jun 11, 2025</div>
+                                <div class="col-md-7">Meta Reality Labs</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Jun 13, 2025</div>
+                                <div class="col-md-7">Microsoft Research</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Jun 16, 2025</div>
+                                <div class="col-md-7">Apple Research</div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-5">Jun 17, 2025</div>
+                                <div class="col-md-7">Adobe Research</div>
+                            </div>
+                            <!-- 
+                            <div class="row">
+                                <div class="date col-md-6">May 11-16, 2024</div>
+                                <div class="col-md-6"><a href="https://chi2024.acm.org">CHI</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">Oct 13-16, 2024</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/2024/">UIST</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">Oct 23-25, 2024</div>
+                                <div class="col-md-6"><a href="https://assets24.sigaccess.org">ASSETS</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">10/29-11/1, 2023</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/2023/">UIST</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">10/22-25, 2023</div>
+                                <div class="col-md-6"><a href="https://assets23.sigaccess.org">ASSETS</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">10/17, 2023</div>
+                                <div class="col-md-6"><a href="https://ai.engin.umich.edu/events/2023-ai-symposium/">AI Symposium</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="date col-md-6">9/18-19, 2023</div>
+                                <div class="col-md-6"><a href="https://cra.org/level-up/">CRA LEVEL UP</a></div>
+                            </div>
+                            <div class="row olddate">
+                                <div class="date col-md-6">Nov 6, 2022</div>
+                                <div class="col-md-6"><a href="https://www.humancomputation.com/submit.html#ccamp">CrowdCamp</a></div>
+                            </div>
+                            <div class="row olddate">
+                                <div class="date col-md-6">Nov 5, 2022</div>
+                                <div class="col-md-6"><a href="https://ai.engin.umich.edu/events/2022-ai-symposium/">AI Symposium</a></div>
+                            </div>
+                            <div class="row olddate">
+                                <div class="date col-md-6">10/29-11/3, 2022</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2022/">UIST</a></div>
+                            </div>
+                            <div class="row olddate">
+                                <div class="date col-md-6">9/30-10/1, 2022</div>
+                                <div class="col-md-6"><a href="https://sites.lsa.umich.edu/arw/">ARW</a></div>
+                            </div>
+                            <div class="row olddate">
+                                <div class="date col-md-6">Jun 1-5, 2022</div>
+                                <div class="col-md-6">NYC</div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May 11-15, 2022</div>
+                                <div class="col-md-6">Pittsburgh</div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May 1-5, 2022</div>
+                                <div class="col-md-6"><a href="https://chi2022.acm.org">CHI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 18-22, 2021</div>
+                                <div class="col-md-6"><a href="https://assets21.sigaccess.org">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 10-14, 2021</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2021/">UIST</a></div>
+                            </div>
+                        	
+                            <div class="row olddate">
+                                <div class="date col-md-6">Jun 20-24, 2021</div>
+                                <div class="col-md-6"><a href="https://hcic.org/hcic2021/index.phtml">HCIC</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May 19-21, 2021</div>
+                                <div class="col-md-6"><a href="https://www.aies-conference.com/2021/">AIES</a></div>
+                            </div>
+
+                        	<div class="row olddate">
+                                <div class="date col-md-6">May 10-13, 2021</div>
+                                <div class="col-md-6"><a href="https://chi2021.acm.org">CHI</a></div>
+                            </div>
+
+                        	<div class="row olddate">
+                                <div class="date col-md-6">Oct 30, 2020</div>
+                                <div class="col-md-6"><a href="https://ai.engin.umich.edu/events/2020-ai-symposium/">AI Symposium</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 26-28, 2020</div>
+                                <div class="col-md-6"><a href="http://assets20.sigaccess.org">ASSETS</a></div>
+                            </div>
+
+                        	<div class="row olddate">
+                                <div class="date col-md-6">Oct 20-23, 2020</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2020/">UIST</a></div>
+                            </div>                    
+                            
+                            <div class="row olddate">
+                                <div class="date col-md-6">Apr 7-8, 2020</div>
+                                <div class="col-md-6"><a href="https://www.cs.purdue.edu">Purdue CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Apr 6, 2020</div>
+                                <div class="col-md-6"><a href="https://www.sfu.ca/computing.html">SFU CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Apr 2-3, 2020</div>
+                                <div class="col-md-6"><a href="https://web.cs.toronto.edu">UToronto CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 30-31, 2020</div>
+                                <div class="col-md-6"><a href="https://www.cs.rochester.edu">Rochester CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 23, 2020</div>
+                                <div class="col-md-6"><a href="http://sci.pitt.edu">Pitt SCI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 11-12, 2020</div>
+                                <div class="col-md-6"><a href="https://www.eecs.mit.edu">MIT EECS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 5-6, 2020</div>
+                                <div class="col-md-6"><a href="https://crcs.seas.harvard.edu/event/workshop_ai_society">CRCS Workshop</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 3-4, 2020</div>
+                                <div class="col-md-6"><a href="https://engineering.virginia.edu/departments/computer-science">Virginia CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Feb 24-25, 2020</div>
+                                <div class="col-md-6"><a href="https://cse.engin.umich.edu">UMich CSE</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Feb 18, 2020</div>
+                                <div class="col-md-6"><a href="https://www.microsoft.com/en-us/research/">MSR Redmond</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Feb 4-5, 2020</div>
+                                <div class="col-md-6"><a href="https://www.cs.wisc.edu">UW-Madison CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Jan 28, 2020</div>
+                                <div class="col-md-6"><a href="https://cs.illinois.edu">UIUC CS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 28-30, 2019</div>
+                                <div class="col-md-6"><a href="https://assets19.sigaccess.org">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 20-23, 2019</div>
+                                <div class="col-md-6"><a href="http://uist.acm.org/uist2019/">UIST</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 1, 2019</div>
+                                <div class="col-md-6"><a href="https://www.tamu.edu">TAMU</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Sep 11-13, 2019</div>
+                                <div class="col-md-6"><a href="http://ubicomp.org/ubicomp2019/">Ubicomp</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Summer, 2019</div>
+                                <div class="col-md-6"><a href="https://www.microsoft.com/en-us/research/group/ability/">MSR Ability</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Jul 3, 2019</div>
+                                <div class="col-md-6"><a href="https://dub.washington.edu/seminars/2019-07-03.html">UW DUB</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 13-15, 2019</div>
+                                <div class="col-md-6"><a href="http://www.csun.edu/cod/conference/2019/sessions/index.php/">CSUN</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 11, 2019</div>
+                                <div class="col-md-6">UCLA</div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 22-24, 2018</div>
+                                <div class="col-md-6"><a href="https://assets18.sigaccess.org">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 14-17, 2018</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2018/">UIST</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 8-12, 2018</div>
+                                <div class="col-md-6"><a href="http://ubicomp.org/ubicomp2018/">Ubicomp</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May-Dec, 2018</div>
+                                <div class="col-md-6"><a href="https://www.snap.com/en-US/">Snap Inc.</a></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="date col-md-6">April 27-29, 2018</div>
+                                <div class="col-md-6">Toronto</div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">April 21, 2018</div>
+                                <div class="col-md-6"><a href="https://chi2018.acm.org/">CHI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">December, 2017</div>
+                                <div class="col-md-6">China</div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 30, 2017</div>
+                                <div class="col-md-6"><a href="https://assets17.sigaccess.org">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Summer, 2017</div>
+                                <div class="col-md-6"><a href="https://research.google.com">Google</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May 6-11, 2017</div>
+                                <div class="col-md-6"><a href="https://chi2017.acm.org/">CHI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 24-26, 2016</div>
+                                <div class="col-md-6"><a href="https://assets16.sigaccess.org/">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 16-19, 2016</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2016/">UIST</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Sep 6-9, 2016</div>
+                                <div class="col-md-6"><a href="https://mobilehci.acm.org/2016/">MobileHCI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Jun 26-30, 2016</div>
+                                <div class="col-md-6"><a href="http://hcic.org/hcic2016/index.phtml">HCIC</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May 7-12, 2016</div>
+                                <div class="col-md-6"><a href="https://chi2016.acm.org/">CHI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Mar 21-23, 2016</div>
+                                <div class="col-md-6"><a href="https://www.qualcomm.com/invention/research/university-relations/innovation-fellowship">Qualcomm</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Nov 15-18, 2015</div>
+                                <div class="col-md-6"><a href="http://iss.acm.org/2015/">ITS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Nov 8-11, 2015</div>
+                                <div class="col-md-6"><a href="https://uist.acm.org/uist2015/about">UIST</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">May - Aug, 2015</div>
+                                <div class="col-md-6"><a href="https://www.microsoft.com/en-us/research/">MSR</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Apr 18-23, 2015</div>
+                                <div class="col-md-6"><a href="https://chi2015.acm.org/">CHI</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Oct 20-22, 2014</div>
+                                <div class="col-md-6"><a href="http://assets14.sigaccess.org/">ASSETS</a></div>
+                            </div>
+
+                            <div class="row olddate">
+                                <div class="date col-md-6">Sep 13-17, 2014</div>
+                                <div class="col-md-6"><a href="http://www.ISWC.net/ISWC14/">ISWC</a></div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="vital-info people">
+                        <h4>People</h4>
+                        <h5>PhD Students (<a href="https://cse.engin.umich.edu/people/faculty/mentor/anhong">mentoring plan</a>)</h5>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Ruei-Che-Chang.jpg" alt="Ruei-Che Chang"></img></div>
+                          <div class="col-xs-9"><a href="https://rueichechang.github.io">Ruei-Che Chang</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Chen-Liang.jpg" alt="Chen Liang"></img></div>
+                          <div class="col-xs-9"><a href="https://liangchenlc.com">Chen Liang</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Yuxuan-Liu.jpg" alt="Yuxuan Liu"></img></div>
+                          <div class="col-xs-9"><a href="https://yuxuanliu.me">Yuxuan Liu</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Ellie-Seehorn.jpg" alt="Ellie Seehorn"></img></div>
+                          <div class="col-xs-9"><a href="https://seehorne.github.io">Ellie Seehorn</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Muzhe-Wu.jpg" alt="Muzhe Wu"></img></div>
+                          <div class="col-xs-9"><a href="https://wumuzhe.com">Muzhe Wu</a></div>
+                        </div>
+                        
+
+                        <h5>Postdoc</h5>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Rosiana-Natalie.jpg" alt="Rosiana Natalie"></img></div>
+                          <div class="col-xs-9"><a href="https://www.rosiananatalie.com">Rosiana Natalie</a></div>
+                        </div>
+
+                        <h5>PhD Graduates</h5>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Jaylin-Herskovitz.png" alt="Jaylin Herskovitz"></img></div>
+                          <div class="col-xs-9"><a href="https://jayl.in">ðJaylin Herskovitz</a> â <a href="https://engineering.tufts.edu/cs/">Tufts</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Lei-Zhang.jpg" alt="Lei Zhang"></img></div>
+                          <div class="col-xs-9"><a href="http://raynezhang.me">ðLei Zhang</a> â <a href="https://informatics.njit.edu/">NJIT</a></div>
+                        </div>
+
+                        <h5>Master's and Undergrad Students</h5>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Xirui-Jiang.jpg" alt="Xirui Jiang"></img></div>
+                          <div class="col-xs-9"><a href="https://www.linkedin.com/in/xirui-jiang/">Xirui Jiang</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Brandon-Kim.jpg" alt="Brandon Kim"></img></div>
+                          <div class="col-xs-9"><a href="https://www.linkedin.com/in/brandon-kim-2b11a1362/">Brandon Kim</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Chenglin-Li.jpg" alt="Chenglin Li"></img></div>
+                          <div class="col-xs-9"><a href="https://chenglinli.com">Chenglin Li</a></div>
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-2"><img class="peopleicon img-rounded" src="images/students/Trista-Xu.jpg" alt="Trista Xu"></img></div>
+                          <div class="col-xs-9"><a href="https://www.linkedin.com/in/tristaxu01/">Trista Xu</a></div>
+                        </div>
+                     </div>
+
+                    <hr>
+
+                    <div class="vital-info">
+                        <h4>Funding</h4>
+                        Our research is generously supported by: the National Science Foundation (NSF), the Advanced Research Projects Agency for Health (ARPA-H), and industry partners Google, Apple, Samsung, Adobe, and Snap.
+                    </div>
+
+                    <hr>
+                  
+                </div>                   
+            </div> <!-- /row -->
+            
+        </div> <!-- /container -->  
+
+        <!-- ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/anhong.js"></script>   
+    </body>
+</html>

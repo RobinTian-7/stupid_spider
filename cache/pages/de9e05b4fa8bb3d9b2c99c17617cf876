@@ -1,0 +1,175 @@
+<HTML>
+
+<HEAD>
+<title>CR's Home Page</title>
+<LINK rel="stylesheet" href="default.css" type="text/css">
+</HEAD>
+
+<BODY>
+<HR>
+<table border=0 width=100%>
+<tr>
+<td>
+<img src="cram.jpg" width=150pt align=left></td>
+<td width=20></td>
+
+<td>
+  <h1>C. R. Ramakrishnan</h1>
+  <h4 style="font-weight:normal">Professor</h4>
+  <span class="large">
+  <DL>
+    <DT>Ph.D., Computer Science, Stony Brook University</DT>
+    <DT>M.Sc.(Tech.), Computer Science, <A HREF="http://www.bits-pilani.ac.in/">BITS, Pilani</A>, India</DT>
+    <DT>M.Sc.(Hons.), Physics, BITS, Pilani, India</DT>
+  </DL>
+  </span>
+</td>
+<td align="right">
+  <span class="contactinfo">
+<A HREF="http://www.cs.stonybrook.edu">Department of Computer Science</A><br>
+233, NCS Bldg<br>
+<A HREF="http://www.stonybrook.edu">Stony Brook University (SUNY)</A><br>
+Stony Brook, NY 11794-2424<br>
+Phone: 631-632-8218<br>
+E-mail:
+<A HREF="/cgi-bin/nomail.cgi/cram/0/2">cram@cs.stonybrook.edu</A>
+</span>
+</td>
+</tr>
+</table>
+
+
+<!--- Table of contents -->
+<table width=100% class="toc">
+  <tr height="6pt"></tr>
+<tr>
+  <td width=24% align="center"><A HREF="research.html" class="toc">Research</A></td>
+    <td width=24% align="center"><A HREF="Papers/index.html" class="toc">Papers</A></td>
+    <td width=34% align="center"><A HREF="#education"
+      class="toc">Educational Activities</A></td>
+    <td width=16% align="center"><A HREF="cram_vita_Nov24.pdf" class="toc">CV</A></td>
+    <td width=2%></td>
+ </tr>
+  <tr height="6pt"></tr>
+</table>
+<H3><A NAME="research">Research:</A></H3>
+I work in quantum computing as well as knowledge representation and
+logic programming.
+<P>
+<b>Quantum computing:</b> My work is primarily in quantum networking and
+distributed quantum computing, and efficient simulation of quantum
+computation. Current projects include:
+<UL>
+  <LI><em>Entanglement distibution in quantum neworks</em> (joint with
+  Prof. Himanshu Gupta): Algorithms and protocols for efficiently
+  distributing entangled states (Bell pairs, GHZ states, Graph states)
+  across nodes of a quantum network.
+  <LI><em>Distributed quantum computing</em> (joint with Prof. Himanshu
+  Gupta): Resource-Efficient <i>distributed</i> evaluation of a quantum
+  circuit/program over a network of quantum processors.
+  <LI><em>Efficient simulation of quantum programs</em> (joint with
+  Profs. Dmitri Kharzeev/SBU Physics and Kazuki Ikeda/UMass-Boston) to evaluate ground
+  and excited states of quantum systems on classical high-performance
+  computers.
+</UL>
+<P>
+<b>Logic programming and knowledge representation:</b> I work on
+representing and reasoning over incomplete and noisy data. Towards
+this my work focuses on combining statistical and logical
+knowledge: ways to represent such knowledge, learn, and perform inference over
+such knowledge. Current projects include:
+<UL>
+  <LI><em>Robotic manipulation in human environments</em> (joint with
+  Profs. Nilanjan Chakraborty/SBU Mech. Engg. and IV Ramakrishnan),
+  where the robot needs to perform activities reliably and
+  autonomously in the presence of sensor noise, incomplete
+  understanding of the environment, and actuation errors. The current
+  application is to build assistive robots for people with locomotor
+  difficulties.
+</UL>
+<P>
+See <A HREF="research.html">here</A> for more details on my current
+and past research; and <A HREF="#news">here</A> for recent research news.
+<HR>
+<H3><A NAME="education">Educational Activities:</A></H3>
+<UL>
+  <LI><b>Recent Teaching:</b>
+  <UL>
+    <LI><em>Fall 2024:</em>
+    <UL>
+      <LI> <A HREF="http://www.cs.stonybrook.edu/~cse645/">
+      CSE 645</A>, Seminar in Programming Languages
+      (graduate, seminar)
+    </UL>
+    <LI><em>Spring 2024:</em>
+    <UL>
+      <LI> <A HREF="http://www.cs.stonybrook.edu/~cse583/">
+      CSE 583</A>, Computer Science Foundations: Programming Abstractions
+      (graduate, bridge)
+      <LI> 
+      CSE 645, Seminar in Programming Languages
+      (graduate, seminar)
+    </UL>
+    <P>
+Courses taught in the past are listed <A
+HREF="past_teaching.html">here</A>.
+  </UL>
+  <LI><b>Research Traineeship:</b> I am closely associated with an NSF
+  Research Traineeship program, <A HREF="https://www.stonybrook.edu/commcms/bias-nrt/">BIAS-NRT: Detecting and Addressing
+  Bias in Data, Humans, and Institutions</A> (Susan Brennan/SBU
+  Psychology, PI).
+  <P>
+  This traineeship for doctoral students is aimed promoting convergent research
+  combining human-centered sciences (e.g., Psychology, Political
+  Science, Sociology, Linguistics, Economics) and data/computer
+  sciences. As a part of this, it enables non-CS students from
+  human-centered sciences to take Computer Science and Data Sciene
+  graduate courses (and vice versa) to become fluent in each others'
+  disciplines.
+  <P>
+  <LI><b>Graduate Degree Programs:</b>
+  <UL>
+    <LI><A HREF="https://www.cs.stonybrook.edu/students/Graduate-Programs">MS and PhD programs in Computer Science</A>: <b>Apply
+    <A HREF="">here</A></b>; contact <A
+    href="mailto:gradadm@cs.stonybrook.edu"><tt>gradadm@cs.stonybrook.edu</tt></A>
+    for information.
+    <LI><A
+    HREF="https://www.stonybrook.edu/commcms/ams/graduate/_datascience.php">MS
+    and PhD programs in Data Science</A>: see linked page for
+    application and contact information.
+    </UL>
+    
+</UL>
+
+<HR>
+
+<H3><A NAME="news">News:</A></H3>
+<UL>
+  <LI> <b>SCY-QNet</b> is one of five projects funded in the first
+  phase of NSF National Quantum Virtual Laboratory
+  (NQVL) program (2024--2025). This project is led by Prof. Eden Figueroa/SBU
+  Physics in collaboration with SBU/CS, Columbia University, Yale
+  University, and Brookhaven National Labs. (<A href="https://news.stonybrook.edu/newsroom/press-release/general/stony-brook-leads-new-program-designed-to-further-build-and-test-quantum-networks/">more...</A>)
+  <LI> <b>Quantum Computing and Networks Protocenter</b>, led by
+  Prof. Himanshu Gupta, is funded by SBU's Presidential Innovation and
+  Excellence Fund (2023--2027). This protocenter focuses on solving
+  complex problems related to the design and development of large,
+  scalable, and reliable quantum computing systems. (<A href="https://news.stonybrook.edu/university/qist-protocenters-receive-a-piece-of-the-pie-fund/?utm_source=Stony+Brook+News&utm_campaign=3c074fc303-6-20-23&utm_medium=email&utm_term=0_f804059a85-3c074fc303-200007139">more...</A>) 
+  <LI> <b>Robotic Assistant for Aging in Place</b>, led by
+  Prof. Nilanjan Chakraborty/SBU Mech. Engg., is funded by SBU's
+  LINCATS Pilot program (2024--2025). This project is to explore the design and use
+  of a robotic manipulation system to assist the elderly continue to
+  live in their own homes. 
+  <LI> <b>Caregiving Robot Assistant (CART)</b>, led by Prof. IV
+  Ramakrishnan, is funded by U.S. Army (2023--2027).  This project is to build a
+  prototype assistive robotic system and evaluate it in its utility in
+  helping patients with ALS and their caregivers.
+  (<A href="https://news.stonybrook.edu/university/sbu-research-team-developing-a-robot-to-help-als-patients/">more...</A>)
+</UL>
+<HR>
+
+<small>
+<!-- hhmts start -->Last modified: Wed Nov 20 23:12:21 EST 2024 <!-- hhmts end -->
+</small>
+</BODY>
+</HTML>

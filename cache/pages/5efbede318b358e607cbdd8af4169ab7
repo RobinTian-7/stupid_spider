@@ -1,0 +1,744 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="artificial intelligence, machine learning, boyang li, narrative intelligence" />
+<meta name="description" content="Boyang Li's Personal Website" />  
+
+<title>Boyang "Albert" Li</title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<!-- My Style -->
+<link href="./css/style2021.css" rel="stylesheet" type="text/css"/>
+
+<script>
+$(function() {
+		$('.pop').on('click', function() {
+			var photoSrc = $(this).find("img").attr("srclarge");
+			if (photoSrc == null)
+			{
+				photoSrc = $(this).find("img").attr("src");
+			}
+			$('.imagepreview').attr('src', photoSrc);
+			$('#imagemodal').modal('show');   
+		});	
+
+		$('.poptext').on('click', function() {
+			var text = $(this).attr("button-text");
+			if (text)
+				{
+					$('#dialog-text').html(text);
+					$('#textmodal').modal('show');
+				}
+		});			
+
+});
+</script>
+
+</head>
+<body class="bg-white">
+
+<header class="section-header py-4">
+<div class="container" id="header">
+	<h2>Boyang "Albert" Li</h2>
+	<p>Nanyang Associate Professor</p>
+	<p>College of Computing and Data Science</p>
+	<p>Nanyang Technological University</p>
+	<div class="mt-1">
+	<a class="btn btn-outline-dark btn-sm" href="https://scholar.google.com/citations?user=QwL4z2UAAAAJ"><i class="bi bi-google"></i>  Scholar</a> 
+	<a class="btn btn-outline-dark btn-sm" href="https://www.youtube.com/channel/UCqSLN1NKHcVwI-GZe97jBpA/featured"><i class="bi bi-youtube"></i>  YouTube</a> 
+	<a class="btn btn-outline-dark btn-sm" href="https://twitter.com/AlbertBoyangLi"><i class="bi bi-twitter"></i>  Twitter</a>
+	</div>
+</div>
+</header> <!-- section-header.// -->
+
+<!-- ========================= SECTION CONTENT ========================= -->
+
+<div class="modal fade " id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" data-dismiss="modal">
+	<div class="modal-content">              
+	  <div class="modal-body">
+		<img src="" class="imagepreview" style="width: 100%;" >
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="modal" id="textmodal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p id="dialog-text" class="bibtext"></p>
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+		
+<div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-right sticky-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	<ul class="navbar-nav px-1">
+		<li class="nav-item active px-1 "> <a class="nav-link" href="#">Home </a> </li>
+		<li class="nav-item dropdown px-1"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Research </a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href='machine-learning.html'><span>Machine Learning</span></a></li>
+				<li><a class="dropdown-item" href='multimodal.html'><span>Multimodal Learning</span></a></li>
+				<li><a class="dropdown-item" href='data-centric.html'><span>Data-centric AI</span></a></li>
+				<li><a class="dropdown-item" href='story-understanding.html'><span>Story Understanding</span></a></li>
+				<li><a class="dropdown-item" href='openstory.html'><span>Acquiring Story Knowledge</span></a></li>
+				<li><a class="dropdown-item" href='interactive-narrative.html'><span>Interactive Narrative</span></a></li>
+				<li><a class="dropdown-item" href='story-generation.html'><span>Story Generation</span></a></li>
+				<li><a class="dropdown-item" href='story-cogsci.html'><span>Story and Cognition</span></a></li>
+		    </ul>
+		</li>
+		<li class="nav-item dropdown px-1"><a class="nav-link" href="./publications.html"> Publications </a></li>
+		<li class="nav-item px-1">	<a class="nav-link" href="./group.html">Group</a>
+		<li class="nav-item px-1">	<a class="nav-link" href="./teaching.html">Teaching</a>
+		<li class="nav-item px-1">	<a class="nav-link" href="./cv.pdf"> CV </a>
+		</li>
+	</ul>
+  </div> <!-- navbar-collapse.// -->
+</nav>
+
+<section class="section-content py-4 main-text">
+
+<div class="container">
+  <div class="row">
+  <div class="col-lg px-4">
+	<div >
+      <img src="images/face.jpg" class="float-left photo-left" />
+	</div>
+    
+	
+	
+      <p class="text-justify">I am an Associate Professor at the College of Computing and Data Science, Nanyang Technological University, Singapore. My research interests lie broadly in <a href='multimodal.html'>Multi-modal Learning</a>, <a href='data-centric.html'>Data-centric AI</a>, <a href='machine-learning.html'>Machine Learning</a>, and Computational Narrative Intelligence. </p>
+	  
+	  <p class="text-justify">Some notable works of mine in multimodal learning include <a href="./paper/InstructBLIP-2023.pdf">InstructBLIP</a>, <a href="./paper/Tiong-2022-PnPVQA.pdf">Plug-and-Play VQA</a>, and <a href="/paper/JunChen-CVPR-2021.pdf">VisualGPT</a>. My work in Data-centric AI covers the understanding of datasets (<a href="/paper/Anthony-Tiong-Junqi-Zhao-NAACL-2024.pdf">factor analysis of datasets</a>), data influence to model decisions (<a href="/paper/Yuanyuan-Chen-AAAI-2021.pdf">HyDRA</a>), selection of training data (<a href="/paper/Jaewoo-Lee-EMNLP-2024.pdf">COINCIDE</a>), and synthesis of training data from generative AI (<a href="/paper/Haoxin-Li-CVPR-2025.pdf">SPARCL</a>). </p>
+	  
+	  <p class="text-justify">Another work direction is to build AI that understands commonsense causal relations between events. Examples include "heavy sweating causes thirst" and "hearing compliments makes people happy". Such causal conditions are neither necessary nor sufficient, as they are context-dependent. However, they are indispensable to a world model that enables AI to <a href="paper/Chinchure-BlackSwanSuite-CVPR-2025.pdf">interpret the past</a> and to plan for the future. Recent representative work includes benchmarks (<a href="paper/Miaoyu-Li-NeurIPS-2025.pdf">Causal2Needle</a>, <a href="paper/Chinchure-BlackSwanSuite-CVPR-2025.pdf">BlackSwanSuite</a> and <a href="paper/Yidan-Sun-EMNLP-2024.pdf">M-SyMoN</a>) and <a href="paper/Yidan-Sun-Qin-Chao-NAACL-2024.pdf">a technique</a> to extract such knowledge from LLMs, though my work in this direction traces back to my PhD work on <a href="paper/aaai13.pdf">learning event graphs.</a></p> 
+	  
+	  <!--<p class="text-justify">Previously, I made contributions to multiple areas of Computational Narrative Intelligence, ranging from <a href="story-generation.html">story generation</a> and <a href="interactive-narrative.html">interactive narratives</a> to <a href="story-cogsci.html">human cognition</a>, from <a href="openstory.html">learning story knowledge</a> to <a href="story-understanding.html">story understanding</a>. </p>-->
+	  
+	  <p class="text-justify">Prior to NTU, I was a Senior Research Scientist at <a href='http://research.baidu.com'>Baidu Research USA</a>, and a Research Scientist and Group Leader at <a href="https://www.disneyresearch.com/">Disney Research</a>. I received my Ph.D. degree from <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>. </p>
+	  
+
+	  
+	  <p class="text-justify">I teach a PhD-level Deep Learning course, CE7454, which constantly receives student scores of 90/100 or above. You can find one slide deck <a href="./slides/7454-Chapter-6-Optimization.pdf">here</a>.</p>
+	
+	<!--<p class="text-justify">Story is a powerful tool for communication, an exhibit of creativity, and a timeless form of entertainment. <span style="font-weight:bold">Computational Narrative Intelligence</span> (CNI) aims to create intelligent machines that can understand and create stories, manage interactive narratives, and respond appropriately to stories told to them.  
+
+	<p class="text-justify">CNI is obviously a hard problem, requiring semantic understanding and powerful learning algorithms. Therefore, I am also interested in methods that learn grounded, multimodal semantics and strong machine learning algorithms. In particular, I am excited by techniques that adopt a system view of intelligence, which considers the interaction of multiple specialized components. </p>
+	-->
+	<p><span class="codedirection">gs.ude.utn@il.gnayob :<span style="font-weight:bold">liamE</span></span></p>
+	
+	<div class="p-3 mb-2 bg-info text-white">[Messages for <a class="text-warning" href="./ureca.html">undergraduate research (URECA)</a> applicants and <a class="text-warning" href="./short-term-visitors.html">applicants of short-term visiting positions</a>]</div>
+
+	<hr />
+	<h4>Selected Papers</h4>
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/FLASH-2025.gif" srclarge="./paper-diagram/FLASH-2025.gif" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+		<p>Haoxin Li, Yingchen Yu, Qilong Wu, Hanwang Zhang, Song Bai, and Boyang Li. <a href="https://arxiv.org/abs/2503.00276">Learning to Animate Images from A Few Videos to Portray Delicate Human Actions.</a> <span class="journal">Winter Conference on Applications of Computer Vision (WACV).</span> 2026.
+		</p> 
+		
+		<p><span class="bold">TL;DR:</span> We create videos from a given first frame and outperform many commercial video generation techniques on delicate actions.</p>
+		
+		<a class="btn btn-primary" href="https://arxiv.org/abs/2503.00276">Paper</a>
+		<a class="btn btn-success" href="https://lihaoxin05.github.io/human_action_animation/">Project Page</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{FLASH-2025, </br> author    = {Haoxin Li and Yingchen Yu and Qilong Wu and Hanwang Zhang and Song Bai and Boyang Li}, </br> title     = {Learning to Animate Images from A Few Videos to Portray Delicate Human Actions.}, </br> journal = {Winter Conference on Applications of Computer Vision (WACV)}, </br> year = {2026}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/SPARCL.png" srclarge="./paper-diagram/SPARCL-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+		<p>Haoxin Li and Boyang Li. <a href="./paper/Haoxin-Li-CVPR-2025.pdf">Enhancing Vision-Language Compositional Understanding with Multimodal Synthetic Data.</a> <span class="journal">The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span> 2025. 
+		</p> 
+		
+		<p><span class="bold">TL;DR:</span> Efficient and controllable synthesis of multimodal training data, which improves compositional understanding of CLIP.</p>
+		
+		<a class="btn btn-primary" href="./paper/Haoxin-Li-CVPR-2025.pdf">Paper</a>
+		<a class="btn btn-success" href="https://github.com/lihaoxin05/SPARCL">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{SPARCL-2025, </br> author    = {Haoxin Li and Boyang Li}, </br> title     = {Enhancing Vision-Language Compositional Understanding with Multimodal Synthetic Data}, </br> booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, </br> year = {2025}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/black-swan-suite.png" srclarge="./paper-diagram/black-swan-suite-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+		<p>Aditya Chinchure, Sahithya Ravi, Raymond T. Ng, Vered Shwartz, Boyang Li, and Leonid Sigal. <a href="https://arxiv.org/abs/2412.05725">Black Swan: Abductive and Defeasible Video Reasoning in Unexpected Events.</a> <span class="journal">The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span> 2025.	
+		</p> 
+		
+		<p><span class="bold">TL;DR:</span> A vision-language benchmark for abductive reasoning (inferring cause from observation) and defeasible reasoning (correcting old beliefs with new evidence) using short video stories containing surprising events. </p>
+		
+		<a class="btn btn-primary" href="https://arxiv.org/abs/2412.05725">Paper</a>
+		<a class="btn btn-success" href="https://huggingface.co/collections/UBC-ViL/black-swan-abductive-and-defeasible-reasoning-67de1a4ab7ddc22edf0b0542">Data</a>
+		<a class="btn btn-success" href="https://blackswan.cs.ubc.ca/">Project Page</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{Black-swan-suite-2025, </br> author    = {Aditya Chinchure and Sahithya Ravi and Raymond T. Ng and Vered Shwartz and Boyang Li and and Leonid Sigal}, </br> title     = {Black Swan: Abductive and Defeasible Video Reasoning in Unexpected Events}, </br> booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, </br> year = {2025}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/ConversationalExplanation.png" srclarge="./paper-diagram/ConversationalExplanation-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+		<p>Tong Zhang, Mengao Zhang, Wei Yan Low, X. Jessie Yang, and Boyang Li. <a href="./paper/Tong-Zhang-IUI-2025.pdf">Conversational Explanations: Discussing Explainable AI with Non-AI Experts.</a> <span class="journal">The ACM Conference on Intelligent User Interfaces (IUI).</span> 2025.
+		</p> 
+		
+		<p><span class="bold">TL;DR:</span> We build a conversational agent that explains four popular explanation techniques for image classifers using synthetic data.</p>
+		
+		<a class="btn btn-primary" href="./paper/Tong-Zhang-IUI-2025.pdf">Paper</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{ConvXAI-2024, </br> author = {Tong Zhang and Mengao Zhang and  Wei Yan Low and  X. Jessie Yang and Boyang Li}, </br> title = {Conversational Explanations: Discussing Explainable AI with Non-AI Experts}, </br> journal = {The ACM Conference on Intelligent User Interfaces (IUI)}, </br> year = {2025}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 	
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/ConversationalExplanation.png" srclarge="./paper-diagram/ConversationalExplanation-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+		<p>Tong Zhang, X. Jesse Yang, and Boyang Li. <a href="./paper/ZhangTong-IJHCI-2024.pdf">May I Ask a Follow-up Question? Understanding the Benefits of Conversations in Neural Network Explainability.</a> <span class="journal">International Journal of Human-Computer Interaction.</span> 2024. 
+		</p> 
+		
+		<p><span class="bold">TL;DR:</span> We empirically show that conversational explanations of machine learning, which allows users to ask follow-up questions to the explanations, is more effective than static, one-shot explanations.</p>
+		
+		<a class="btn btn-primary" href="./paper/ZhangTong-IJHCI-2024.pdf">Paper</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{ConvXAI-2024, </br> author = {Tong Zhang and X. Jesse Yang and Boyang Li}, </br> title = {May I Ask a Follow-up Question? Understanding the Benefits of Conversations in Neural Network Explainability}, </br> journal = {International Journal of Human-Computer Interaction}, </br> year = {2024}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/COINCIDE-system-small.png" srclarge="./paper-diagram/COINCIDE-system.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		
+
+
+		<p>Jaewoo Lee, Boyang Li, and Sung Ju Hwang. <a href="https://arxiv.org/abs/2406.10995">Concept-skill Transferability-based Data Selection for Large Vision-Language Models.</a> <span class="journal">EMNLP 2024.</p> 
+		
+		<p><span class="bold">TL;DR:</span> We prune vision-language instruction tuning data by (1) identifying data clusters that represent semantic concepts and skills, and (2) selecting representative data from clusters that transfer well to other clusters.</p>
+		
+		<a class="btn btn-primary" href="https://arxiv.org/pdf/2406.10995.pdf">Paper</a>
+		<a class="btn btn-success" href="https://github.com/G-JWLee/COINCIDE_code">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{Jaewoo-Lee-2024, </br> author    = {Jaewoo Lee and Boyang Li and Sung Ju Hwang}, </br> title     = {Concept-skill Transferability-based Data Selection for Large Vision-Language Models}, </br> booktitle = {The Conference on Empirical Methods in Natural Language Processing (EMNLP)}, </br> year = {2024}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/Factor-analysis-NAACL-2024-small.png" srclarge="./paper-diagram/Factor-analysis-NAACL-2024.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Anthony Tiong, Junqi Zhao, Boyang Li, Junnan Li, Steven Hoi, and Caiming Xiong. <a href="./paper/Anthony-Tiong-Junqi-Zhao-NAACL-2024.pdf">What Are We Measuring When We Evaluate Large Vision-Language Models? An Analysis of Latent Factors and Biases.</a> <span class="journal"> NAACL 2024.</p> 
+		
+		<p><span class="bold">TL;DR:</span> We identify the capabilities that vision-language datasets actually evaluate using Factor Analysis, a data-driven approach for separating intellectual capabilities. We also identify a length bias in evaluation and release a new evaluation dataset, OLIVE. </p>
+		
+		<a class="btn btn-primary" href="./paper/Anthony-Tiong-Junqi-Zhao-NAACL-2024.pdf">Paper</a>
+		<a class="btn btn-success" href="https://github.com/jq-zh/olive-dataset">Dataset</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{Tiong-Zhao-NAACL-2024, </br> author    = {Anthony Tiong and Junqi Zhao and Boyang Li and Junnan Li and Steven Hoi and Caiming Xiong}, </br> title     = {What Are We Measuring When We Evaluate Large Vision-Language Models? An Analysis of Latent Factors and Biases}, </br> booktitle = {The 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)}, </br> year = {2024}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/story-causal-graph.png" srclarge="./paper-diagram/story-causal-graph.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Yidan Sun, Qin Chao, and Boyang Li. <a href="./paper/Yidan-Sun-Qin-Chao-NAACL-2024.pdf"> Event Causality Is Key to Computational Story Understanding.</a> <span class="journal">The 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL). <span class="bold">(Oral Presentation)</span></span> 2024.  </p> 
+		
+		<p><span class="bold">TL;DR:</span> We demonstrate the value of LLM-extracted causal relations between events in story understanding tasks. </p>
+		
+		<a class="btn btn-primary" href="./paper/Yidan-Sun-Qin-Chao-NAACL-2024.pdf">Paper</a>
+		<a class="btn btn-success" href="https://github.com/insundaycathy/Event-Causality-Extraction">Code</a>	
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{Sun-Chao-Causality-2024, </br> author    = {Yidan Sun and Qin Chao and and Boyang Li}, </br> title     = {Event Causality Is Key to Computational Story Understanding}, </br> booktitle = {The 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)}, </br> year = {2024}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr /> 
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/stillmix-small.png" srclarge="./paper-diagram/stillmix-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Haoxin Li, Yuan Liu, Hanwang Zhang, and Boyang Li. <a href="./paper/HaoxinLi-2023-ICCV-oral.pdf">Mitigating and Evaluating Static Bias of Action Representations in the Background and the Foreground.</a> <span class="journal">International Conference on Computer Vision (ICCV)</span> <span class="bold">(Oral Presentation)</span>. 2023. </p> 
+		
+		<p><span class="bold">TL;DR:</span> Video classifiers often rely on static features to make biased predictions. We show that static bias is caused by not only the background, but also the foreground, such as human actor's outfit or instrument. We propose a theory-inspired method to mitigate bias without having to locate the source.</p>
+		
+		<a class="btn btn-primary" href="/paper/HaoxinLi-2023-ICCV-oral.pdf">Paper</a> 
+		<a class="btn btn-primary" href="/paper/HaoxinLi-2023-ICCV-supplemental.pdf">Supplemental</a> 
+		<a class="btn btn-success" href="https://github.com/lihaoxin05/StillMix">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{StillMix-2023, author    = {Haoxin Li and Yuan Liu and Hanwang Zhang and Boyang Li}, </br> title     = {Mitigating and Evaluating Static Bias of Action Representations in the Background and the Foreground}, </br> booktitle = {International Conference on Computer Vision (ICCV)}, 
+		</br> year = {2023}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/InstructBLIP-small.png" srclarge="./paper-diagram/InstructBLIP-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi. <a href="./paper/InstructBLIP-2023.pdf">InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning.</a> <span class="journal">NeurIPS.</span> 2023. </p> 
+		
+		<p><span class="bold">TL;DR:</span> An instruction-tuned vision-language model that achieves state-of-the-art performance on several benchmarks.</p>
+		
+		<a class="btn btn-primary" href="./paper/InstructBLIP-2023.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://github.com/salesforce/LAVIS/tree/main/projects/instructblip">Code</a>
+		<a class="btn btn-success" href="https://huggingface.co/docs/transformers/main/model_doc/instructblip"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 128 128"><path fill="#fcc21b" d="M63.8 8.7c-56.7 0-58 63.5-58 76.1c0 12.6 26 22.8 58 22.8s58-10.2 58-22.8c0-12.6-1.3-76.1-58-76.1z"/><path fill="#fcc21b" d="M101.9 82.1c-8.3 3-17.4-1.2-20.5-9.4c-3-8.2 1.3-17.2 9.5-20.2c8.3-3 17.4 1.2 20.5 9.4c3.1 8.2-1.2 17.2-9.5 20.2z"/><path fill="#fcc01c" d="M101.7 81.5c-8 2.9-16.7-1.2-19.6-9c-2.9-7.8 1.2-16.5 9.2-19.4c7.9-2.9 16.7 1.2 19.6 9c2.8 7.9-1.3 16.5-9.2 19.4z"/><path fill="#fcbe1c" d="M101.5 80.9c-7.6 2.7-16-1.1-18.8-8.6c-2.8-7.5 1.1-15.8 8.8-18.6c7.6-2.7 16 1.1 18.8 8.6c2.7 7.5-1.2 15.9-8.8 18.6z"/><path fill="#fbbb1d" d="M101.3 80.3C94 82.9 86 79.2 83.3 72c-2.6-7.2 1.1-15.1 8.4-17.7c7.3-2.6 15.3 1.1 18 8.3c2.6 7.1-1.2 15.1-8.4 17.7z"/><path fill="#fbb91e" d="M101 79.7c-6.9 2.5-14.6-1-17.1-7.9c-2.5-6.8 1-14.4 8-16.9c6.9-2.5 14.6 1 17.1 7.9c2.5 6.8-1 14.4-8 16.9z"/><path fill="#fbb71e" d="M100.8 79.1c-6.6 2.4-13.9-1-16.3-7.5c-2.4-6.5 1-13.7 7.6-16.1c6.6-2.4 13.9 1 16.3 7.5c2.4 6.5-1 13.7-7.6 16.1z"/><path fill="#fbb51f" d="M100.6 78.5c-6.3 2.2-13.2-.9-15.5-7.1c-2.3-6.2.9-13 7.2-15.3c6.2-2.2 13.2.9 15.5 7.1c2.3 6.2-.9 13-7.2 15.3z"/><path fill="#fab220" d="M100.4 77.9c-5.9 2.1-12.5-.9-14.6-6.8c-2.1-5.8.9-12.3 6.8-14.5c5.9-2.1 12.5.9 14.6 6.7c2.1 6-.9 12.4-6.8 14.6z"/><path fill="#fab020" d="M100.2 77.3c-5.6 2-11.8-.8-13.8-6.3s.8-11.6 6.4-13.6c5.6-2 11.8.8 13.8 6.3s-.9 11.6-6.4 13.6z"/><path fill="#faae21" d="M99.9 76.7c-5.3 1.9-11-.8-13-6c-1.9-5.2.8-10.9 6-12.8c5.2-1.9 11 .8 13 6c2 5.1-.7 10.9-6 12.8z"/><path fill="#faac22" d="M99.7 76.1a9.41 9.41 0 0 1-12.1-5.6c-1.8-4.8.7-10.2 5.7-12c4.9-1.8 10.3.7 12.1 5.6c1.8 4.8-.8 10.2-5.7 12z"/><path fill="#f9a922" d="M99.5 75.5c-4.6 1.6-9.6-.7-11.3-5.2c-1.7-4.5.7-9.5 5.3-11.2c4.6-1.6 9.6.7 11.3 5.2c1.6 4.5-.7 9.5-5.3 11.2z"/><path fill="#f9a723" d="M99.3 74.9c-4.2 1.5-8.9-.6-10.5-4.8c-1.5-4.2.6-8.8 4.9-10.3c4.2-1.5 8.9.6 10.5 4.8c1.5 4.1-.7 8.7-4.9 10.3z"/><path fill="#f9a524" d="M99 74.2c-3.9 1.4-8.2-.6-9.6-4.4c-1.4-3.8.6-8.1 4.5-9.5c3.9-1.4 8.2.6 9.6 4.4c1.5 3.9-.6 8.1-4.5 9.5z"/><path fill="#f9a324" d="M98.8 73.6c-3.6 1.3-7.5-.5-8.8-4c-1.3-3.5.5-7.4 4.1-8.7c3.6-1.3 7.5.5 8.8 4.1c1.3 3.5-.5 7.4-4.1 8.6z"/><path fill="#f8a025" d="M98.6 73c-3.2 1.2-6.8-.5-8-3.7c-1.2-3.2.5-6.7 3.7-7.9c3.2-1.2 6.8.5 8 3.7c1.2 3.3-.5 6.8-3.7 7.9z"/><path fill="#f89e26" d="M98.4 72.4c-2.9 1-6.1-.4-7.1-3.3s.4-6 3.3-7s6.1.4 7.1 3.3c1.1 2.9-.4 6-3.3 7z"/><path fill="#f89c26" d="M98.2 71.8c-2.6.9-5.4-.4-6.3-2.9c-.9-2.5.4-5.3 2.9-6.2c2.5-.9 5.4.4 6.3 2.9c.9 2.5-.4 5.3-2.9 6.2z"/><path fill="#f89a27" d="M97.9 71.2c-2.2.8-4.7-.3-5.5-2.5c-.8-2.2.3-4.6 2.5-5.4c2.2-.8 4.7.3 5.5 2.5c.9 2.2-.3 4.6-2.5 5.4z"/><path fill="#f79728" d="M97.7 70.6c-1.9.7-3.9-.3-4.6-2.1c-.7-1.9.3-3.9 2.2-4.6c1.9-.7 3.9.3 4.6 2.1c.7 1.9-.3 4-2.2 4.6z"/><path fill="#f79528" d="M97.5 70c-1.5.6-3.2-.2-3.8-1.7c-.6-1.5.2-3.2 1.8-3.8c1.5-.6 3.2.2 3.8 1.8c.5 1.5-.3 3.2-1.8 3.7z"/><path fill="#f79329" d="M97.3 69.4c-1.2.4-2.5-.2-3-1.4c-.4-1.2.2-2.5 1.4-2.9c1.2-.4 2.5.2 3 1.4c.4 1.2-.2 2.5-1.4 2.9z"/><path fill="#fcc21b" d="M35.4 81.5c-8.3 3-17.4-1.2-20.5-9.4c-3-8.2 1.3-17.2 9.5-20.2c8.3-3 17.4 1.2 20.5 9.4c3.1 8.2-1.2 17.2-9.5 20.2z"/><path fill="#fcc01c" d="M35.2 80.9c-8 2.9-16.7-1.2-19.6-9c-2.9-7.8 1.2-16.5 9.1-19.4c7.9-2.8 16.7 1.2 19.6 9c2.9 7.8-1.2 16.5-9.1 19.4z"/><path fill="#fcbe1c" d="M35 80.3c-7.6 2.7-16-1.1-18.8-8.6c-2.8-7.5 1.1-15.8 8.8-18.6c7.6-2.7 16 1.1 18.8 8.7c2.7 7.4-1.2 15.7-8.8 18.5z"/><path fill="#fbbb1d" d="M34.8 79.7c-7.3 2.6-15.3-1.1-18-8.3c-2.6-7.2 1.1-15.1 8.4-17.7c7.3-2.6 15.3 1.1 18 8.3c2.6 7.1-1.2 15.1-8.4 17.7z"/><path fill="#fbb91e" d="M34.5 79.1c-6.9 2.5-14.6-1-17.1-7.9c-2.5-6.8 1-14.4 8-16.9c6.9-2.5 14.6 1 17.1 7.9c2.5 6.8-1 14.4-8 16.9z"/><path fill="#fbb71e" d="M34.3 78.5c-6.6 2.4-13.9-1-16.3-7.5c-2.4-6.5 1-13.7 7.6-16.1c6.6-2.4 13.9 1 16.3 7.5c2.4 6.5-1 13.7-7.6 16.1z"/><path fill="#fbb51f" d="M34.1 77.9c-6.3 2.2-13.2-.9-15.5-7.1c-2.3-6.2.9-13 7.2-15.3c6.2-2.2 13.2.9 15.5 7.1c2.3 6.2-1 13-7.2 15.3z"/><path fill="#fab220" d="M33.9 77.3c-5.9 2.1-12.5-.9-14.6-6.7c-2.1-5.8.9-12.3 6.8-14.5c5.9-2.1 12.4.9 14.6 6.7c2.1 5.9-.9 12.3-6.8 14.5z"/><path fill="#fab020" d="M33.7 76.7c-5.6 2-11.8-.8-13.8-6.3s.8-11.6 6.4-13.6c5.6-2 11.8.8 13.8 6.4c2 5.4-.9 11.5-6.4 13.5z"/><path fill="#faae21" d="M33.4 76.1c-5.3 1.9-11-.8-13-6c-1.9-5.2.8-10.9 6-12.8c5.2-1.9 11 .8 13 6c2 5.1-.7 10.9-6 12.8z"/><path fill="#faac22" d="M33.2 75.5a9.41 9.41 0 0 1-12.1-5.6c-1.8-4.8.7-10.2 5.7-12c4.9-1.8 10.3.7 12.1 5.6c1.7 4.8-.8 10.2-5.7 12z"/><path fill="#f9a922" d="M33 74.9c-4.6 1.6-9.6-.7-11.3-5.2c-1.7-4.5.7-9.5 5.3-11.2c4.6-1.6 9.6.7 11.3 5.2c1.6 4.5-.7 9.5-5.3 11.2z"/><path fill="#f9a723" d="M32.8 74.2c-4.2 1.5-8.9-.6-10.5-4.8c-1.5-4.2.6-8.8 4.9-10.3c4.2-1.5 8.9.6 10.5 4.8c1.5 4.2-.7 8.8-4.9 10.3z"/><path fill="#f9a524" d="M32.5 73.6c-3.9 1.4-8.2-.6-9.6-4.4c-1.4-3.8.6-8.1 4.5-9.5c3.9-1.4 8.2.6 9.6 4.4c1.4 3.9-.6 8.1-4.5 9.5z"/><path fill="#f9a324" d="M32.3 73c-3.6 1.3-7.5-.5-8.8-4c-1.3-3.5.5-7.4 4.1-8.7c3.6-1.3 7.5.5 8.8 4c1.3 3.6-.5 7.5-4.1 8.7z"/><path fill="#f8a025" d="M32.1 72.4c-3.2 1.2-6.8-.5-8-3.7c-1.2-3.2.5-6.7 3.7-7.9c3.2-1.2 6.8.5 8 3.7c1.2 3.3-.5 6.8-3.7 7.9z"/><path fill="#f89e26" d="M31.9 71.8c-2.9 1-6.1-.4-7.1-3.3c-1-2.8.4-6 3.3-7s6.1.4 7.1 3.3c1 2.8-.4 6-3.3 7z"/><path fill="#f89c26" d="M31.7 71.2c-2.6.9-5.4-.4-6.3-2.9c-.9-2.5.4-5.3 2.9-6.2c2.5-.9 5.4.4 6.3 2.9c.9 2.5-.4 5.3-2.9 6.2z"/><path fill="#f89a27" d="M31.4 70.6c-2.2.8-4.7-.3-5.5-2.5c-.8-2.2.3-4.6 2.5-5.4c2.2-.8 4.7.3 5.5 2.5c.9 2.2-.3 4.6-2.5 5.4z"/><path fill="#f79728" d="M31.2 70c-1.9.7-3.9-.3-4.6-2.1c-.7-1.8.3-3.9 2.2-4.6c1.9-.7 3.9.3 4.6 2.1c.6 1.9-.3 4-2.2 4.6z"/><path fill="#f79528" d="M31 69.4c-1.5.6-3.2-.2-3.8-1.7c-.6-1.5.2-3.2 1.8-3.8c1.5-.6 3.2.2 3.8 1.7c.5 1.6-.3 3.3-1.8 3.8z"/><path fill="#f79329" d="M30.8 68.8c-1.2.4-2.5-.2-3-1.4c-.4-1.2.2-2.5 1.4-2.9c1.2-.4 2.5.2 3 1.4c.4 1.2-.2 2.5-1.4 2.9z"/><path fill="#2f2f2f" d="M33.1 57.9c-.7 1.2-2.2 1.5-3.4.8c-1.2-.7-1.6-2.2-.9-3.4c.2-.3 4.2-8 13-8c8.9 0 12.7 7.5 13 8c.7 1.2.3 2.7-.9 3.4c-.4.2-.8.3-1.3.3c-.8 0-1.7-.4-2.1-1.2c-.1-.2-2.8-5.6-8.8-5.6c-5.8.1-8.4 5.5-8.6 5.7zm65.3.8c-.4.2-.8.3-1.2.3c-.9 0-1.7-.4-2.1-1.2c-.1-.2-2.8-5.6-8.8-5.6c-6.1 0-8.8 5.5-8.8 5.6c-.7 1.2-2.2 1.6-3.4.9c-1.2-.7-1.6-2.2-.9-3.4c.4-.7 4.2-8 13-8c8.9 0 12.6 7.3 13 8c.8 1.2.4 2.7-.8 3.4zM64.1 84.3C48 84.3 40.9 74 40.6 73.6c-1-1.3-.7-3.1.6-4.1c1.3-1 3.1-.7 4.1.6c.3.4 5.7 8.4 19 8.4c12.2 0 18-7.7 18.2-8.1c.9-1.3 2.7-1.7 4.1-.8c1.3.9 1.7 2.7.8 4c-.3.5-7.4 10.7-23.3 10.7z"/><path fill="#fac036" d="M30.7 119.7c-3.5 0-6.7-1-9.5-3c-3.2-2.2-5.6-3.2-5.7-3.2c-4.1-1.7-9.2-4.6-9.2-4.6c-2.1-1.2-3.8-3.7-2.7-6.4c.5-1.2 1.3-2.1 2.4-2.5c-.9-.5-1.3-.8-1.4-.9c-1.7-1.3-3.5-4.3-1.9-6.8c.9-1.3 2.1-2.2 3.6-2.5c-1.4-1.7-2.1-4.2-.8-6.3c.9-1.4 2.6-2.3 4.2-2.3c1.2 0 2.4.5 3.4 1.3l.1.1c-.5-1.6-.2-3.3 1.2-4.7c1.1-1 2.3-1.5 3.6-1.5c.9 0 2.4.3 3.8 1.8s7.9 8.5 8.8 9.6c.6.6 2.1 2.3 2.3 2.5l.1.1c-.3-.5-.5-1-.6-1.7c-.5-1.8-.1-3.7 1-5.1c.9-1.2 2.2-1.8 3.7-1.8c3.4 0 4.7 3.2 5.3 4.8c.5 1.4 1.3 2.3 2.1 3.4c.9 1.2 1.9 2.6 2.9 4.7c1.3 3 1.6 7.3.8 11c-1.8 7.9-6.7 10.8-10.8 12.5c-1.6.9-3.9 1.5-6.7 1.5z"/><path fill="#2f2f2f" d="M18 78.6c.7 0 1.5.3 2.3 1.2c1.4 1.5 7.8 8.5 8.8 9.6c.6.7 2.3 2.5 2.3 2.6c.9.9 1.8 1.9 3 3.1c0 0 .9.9 1.8.9c.6 0 1.2-.4 1.7-1.6c-1.5-2.8-3-3.6-3.6-5.8c-.6-2.3.8-4.4 2.7-4.4c1.8 0 2.6 1.4 3.4 3.5c1.3 3.2 3.3 4.4 5 8.2c1.2 2.6 1.4 6.6.7 9.8c-1.5 6.6-5.2 9.3-9.6 11.1c-1.5.6-3.5 1.1-5.8 1.1c-2.6 0-5.6-.7-8.4-2.6c-3.4-2.4-6-3.4-6-3.4c-3.6-1.5-8.1-4-9-4.5c-1.1-.6-2.6-2.2-1.9-3.9c.4-1 1.3-1.7 2.4-1.7c.5 0 1.1.1 1.7.5c1.1.6 3.6 2.1 8 4.3c0 0 .7-.2.8-.6c.1-.3.1-.7-.4-1.3C15.3 103 6.3 98 5.7 97.5c-1-.7-2.3-2.7-1.4-4.1c.6-.9 1.6-1.6 2.7-1.6c.6 0 1.1.2 1.7.6c1.3.9 7.1 4.7 11.1 7.3c0 0 1.8-.3 1.1-1.8c-3.4-2.2-12.2-8.2-12.9-9c-.9-.9-1.9-2.7-.9-4.2c.6-.8 1.5-1.4 2.6-1.4c.7 0 1.4.2 2.1.8c1.4 1.2 9.9 8.1 12.4 10.2h.4c.5 0 1.1-.2 1-1.3c0 0-8.8-8.3-9.4-9.1c-.8-1-1.8-3-.3-4.4c.5-.5 1.3-.9 2.1-.9m0-4c-1.8 0-3.5.7-4.9 2.1c-.9.8-1.5 1.8-1.8 2.9c-.5-.1-1-.2-1.6-.2c-2.3 0-4.6 1.2-5.9 3.1c-1.4 2-1.3 4.4-.5 6.4c-.9.6-1.7 1.4-2.4 2.4c-1.9 3-.7 6.7 1.7 8.9c-.4.5-.7 1-.9 1.7c-1.5 3.7.8 7.2 3.6 8.8c.1 0 5.3 3.1 9.5 4.8c0 0 2.3 1 5.3 3c3.2 2.2 6.9 3.3 10.7 3.3c3.2 0 5.7-.8 7.3-1.4c4.5-1.8 10-5.1 12-13.9c.9-4.1.6-8.9-.9-12.3c-1-2.3-2.2-3.8-3.1-5.1c-.8-1.1-1.4-1.9-1.8-3c-.7-1.6-2.4-6-7.1-6h-.1c-2 0-4 .9-5.2 2.6c-.5.7-.9 1.5-1.2 2.3c-2.3-2.5-6.2-6.8-7.3-8c-2.1-2-4.1-2.4-5.4-2.4z"/><path fill="#fac036" d="M97.3 119.7c-2.9 0-5.1-.7-6.6-1.3c-4.1-1.7-9-4.6-10.8-12.5c-.9-3.7-.5-8 .8-11c.9-2.1 2-3.5 2.9-4.7c.8-1.1 1.5-2.1 2.1-3.4c.6-1.5 1.9-4.7 5.3-4.8c1.5 0 2.8.7 3.7 1.8c1.1 1.4 1.4 3.3 1 5.1c-.2.6-.4 1.2-.6 1.7l.2-.2c.1-.2 1.7-1.8 2.2-2.5c.9-1.1 7.4-8.1 8.8-9.6c1.4-1.5 2.8-1.8 3.8-1.8c1.3 0 2.5.5 3.6 1.5c1.4 1.3 1.7 3 1.2 4.7c.1 0 .1-.1.1-.1c1-.9 2.1-1.3 3.4-1.3c1.7 0 3.3.9 4.2 2.2c1.4 2 .7 4.6-.8 6.3c1.4.2 2.7 1.1 3.6 2.5c1.6 2.5-.1 5.5-1.9 6.8c-.2.1-.6.4-1.4.9c1.1.5 1.9 1.4 2.4 2.5c1.1 2.6-.7 5.1-2.7 6.4c-.1 0-5.1 3-9.2 4.6c0 0-2.5 1-5.7 3.2c-2.9 2-6.1 3-9.6 3z"/><path fill="#2f2f2f" d="M110 78.6c.8 0 1.6.4 2.2 1c1.5 1.4.5 3.4-.3 4.4c-.6.8-9.4 9.1-9.4 9.1c-.1 1.1.5 1.3 1 1.3h.4c2.5-2.2 11-9 12.4-10.2c.6-.6 1.4-.8 2.1-.8c1 0 2 .5 2.6 1.4c1 1.5-.1 3.4-.9 4.2c-.8.8-9.6 6.8-12.9 9c-.7 1.5 1.1 1.8 1.1 1.8c4-2.6 9.8-6.5 11.1-7.3c.6-.4 1.2-.6 1.7-.6c1.1 0 2.1.7 2.7 1.6c.9 1.5-.4 3.4-1.4 4.1c-.6.5-9.6 5.5-12.2 6.9c-.5.6-.6 1-.4 1.3c.2.5.8.6.8.6c4.4-2.2 6.9-3.7 8-4.3c.6-.3 1.2-.5 1.7-.5c1.1 0 2 .6 2.4 1.7c.7 1.7-.8 3.3-1.9 3.9c-.8.5-5.4 3-9 4.5c0 0-2.6 1.1-6 3.4c-2.8 2-5.8 2.6-8.4 2.6c-2.3 0-4.3-.5-5.8-1.1c-4.4-1.8-8.1-4.5-9.6-11.1c-.7-3.2-.5-7.1.7-9.8c1.6-3.7 3.7-5 5-8.2c.8-2.1 1.7-3.5 3.4-3.5c1.9 0 3.3 2.1 2.7 4.4c-.5 2.2-2 3-3.6 5.8c.4 1.2 1.1 1.6 1.7 1.6c.9 0 1.8-.9 1.8-.9c1.1-1.1 2.1-2.2 3-3.1c.1-.1 1.7-1.9 2.3-2.6c1-1.1 7.3-8.1 8.8-9.6c.7-.7 1.5-1 2.2-1m0-4c-1.3 0-3.3.4-5.2 2.4c-1.1 1.2-5.1 5.5-7.3 8c-.3-.8-.7-1.6-1.2-2.3c-1.3-1.7-3.2-2.6-5.3-2.6h-.1c-4.7.1-6.4 4.4-7.1 6c-.4 1.1-1 1.9-1.8 3c-.9 1.2-2.1 2.8-3.1 5.1c-1.5 3.4-1.8 8.2-.9 12.3c2 8.8 7.5 12.1 12 13.9c1.6.6 4.1 1.4 7.3 1.4c3.8 0 7.5-1.2 10.7-3.3c3-2.1 5.3-3 5.3-3c4.2-1.7 9.4-4.7 9.5-4.8c2.8-1.6 5.1-5.1 3.6-8.8c-.2-.6-.6-1.2-.9-1.7c2.4-2.2 3.6-5.9 1.7-8.9c-.6-1-1.4-1.8-2.4-2.4c.8-2 .9-4.4-.5-6.4c-1.3-1.9-3.6-3.1-5.9-3.1c-.5 0-1.1.1-1.6.2c-.3-1.1-.9-2.1-1.8-2.9c-1.5-1.4-3.2-2.1-5-2.1z"/></svg> Model Zoo</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{InstructBLIP-2023, </br> author    = {Wenliang Dai and Junnan Li and Dongxu Li and Anthony Meng Huat Tiong and Junqi Zhao and Weisheng Wang and Boyang Li and Pascale Fung and Steven Hoi}, </br> title     = {InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning.}, </br> journal = {ArXiv Preprint 2305.06500}, 
+		</br> year = {2023}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/SyMoN-large.jpg" srclarge="./paper-diagram/SyMoN-large.jpg" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Yidan Sun, Qin Chao, Yangfeng Ji, and Boyang Li. <a href="./paper/Yidan-SyMoN-2023-Apr.pdf">Synopses of Movie Narratives: a Video-Language Dataset for Story Understanding.</a> <span class="journal">ArXiv Preprint 2203.05711.</span> 2022. </p> 
+		
+		<p><span class="bold">TL;DR:</span> A large, plot-level, multimodal dataset for story understanding. The storytelling techniques of the paper create unique challenges for the current generation of multimodal networks.</p>
+		
+		<a class="btn btn-primary" href="./paper/Yidan-SyMoN-2023-Apr.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://github.com/insundaycathy/SYMON">Data</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{SyMoN, </br> author    = {Yidan Sun and Qin Chao and Yangfeng Ji and Boyang Li}, </br> title     = {Synopses of Movie Narratives: a Video-Language Dataset for Story Understanding}, </br> booktitle = {ArXiv Preprint 2203.05711}, 
+		</br> year = {2022}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/PnP-VQA-small.png" srclarge="./paper-diagram/PnP-VQA-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Anthony Meng Huat Tiong, Junnan Li, Boyang Li, Silvio Savarese, and Steven C.H. Hoi. <a href="./paper/Tiong-2022-PnPVQA.pdf">Plug-and-Play VQA: Zero-shot VQA by Conjoining Large Pretrained Models with Zero Training.</a> <span class="journal">Findings of the Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP).</span> 2022. </p> 
+		
+		<p><span class="bold">TL;DR:</span> An unexpected modular approach to visual question answering. We translate relevant portions of an image to text and rely on text-based reasoning entirely. On VQAv2, the results are better than Deepmind's Flamingo by 8.5%. This is in contrast to conventional wisdom that end-to-end learning is necessary for good performance.</p>
+		
+		<a class="btn btn-primary" href="./paper/Tiong-2022-PnPVQA.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://www.youtube.com/watch?v=zF5HyXN7MTQ">Video</a>
+		<a class="btn btn-success" href="https://github.com/salesforce/LAVIS/tree/main/projects/pnp-vqa">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{Tiong-PnPVQA-2022, </br> author    = {Anthony Meng Huat Tiong and Junnan Li and Boyang Li and Silvio Savarese and Steven C.H. Hoi}, </br> title     = {Plug-and-Play VQA: Zero-shot VQA by Conjoining Large Pretrained Models with Zero Training}, </br> booktitle = {Findings of the Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP)}, </br> month = {December},
+		</br> year = {2022}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/OPTIMA-small.png" srclarge="./paper-diagram/OPTIMA-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Xu Guo, Boyang Li, and Han Yu. <a href="./paper/XuGuo-EMNLP-2022.pdf">Improving the Sample Efficiency of Prompt Tuning with Domain Adaptation.</a> <span class="journal">Findings of the Conference on Empirical Methods in Natural Language Processing (Findings of EMNLP).</span> 2022. </p> 
+		
+		<p><span class="bold">TL;DR:</span> Prompt tuning is great for large model deployment but requires a lot of training data. To our knowledge, we are the first in using unlabeled data in the target domain to improve prompt tuning.</p>
+		
+		<a class="btn btn-primary" href="./paper/XuGuo-EMNLP-2022.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://github.com/guoxuxu/soft-prompt-transfer/tree/main/optima">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{XuGuo_2022_EMNLP, </br> author    = {Xu Guo and Boyang Li and and Han Yu}, </br> title     = {Improving the Sample Efficiency of Prompt Tuning with Domain Adaptation}, </br> booktitle = {Findings of the Conference on Empirical Methods in Natural Language Processing}, </br> month = {December},
+		</br> year = {2022}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/VisualGPT-Architecture.jpg" srclarge="./paper-diagram/VisualGPT-Architecture.jpg" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Jun Chen, Han Guo, Kai Yi, Boyang Li, and Mohamed Elhoseiny. <a href="./paper/JunChen-CVPR-2021.pdf">VisualGPT: Data-efficient Adaptation of Pretrained Language Models for Image Captioning.</a> <span class="journal">The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span> 2022. </p> 
+		
+		<p><span class="bold">TL;DR:</span> We developed a data-efficient method to adapt large-scale pretrained language models for image captioning and achieved SOTA results on X-ray image captioning.</p>
+		
+		<a class="btn btn-primary" href="./paper/JunChen-CVPR-2021.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://github.com/Vision-CAIR/VisualGPT">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@InProceedings{Chen_2022_CVPR, </br> author    = {Chen, Jun and Guo, Han and Yi, Kai and Li, Boyang and Elhoseiny, Mohamed}, </br> title     = {VisualGPT: Data-Efficient Adaptation of Pretrained Language Models for Image Captioning}, </br> booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, </br> month = {June},
+		</br> year      = {2022},</br> pages     = {18030-18040}}'>bibtex</a> 
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/KDD2021-Small.png" srclarge="./paper-diagram/KDD2021-Large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>Yinan Zhang, Boyang Li, Yong Liu, Hao Wang, Chunyan Miao. <a href="./paper/Yinan-Zhang-KDD-2021.pdf">Initialization Matters: Regularizing Manifold-informed Initialization for Neural Recommendation Systems.</a> <span class="journal">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD).</span> 2021.  </p> 
+		
+		<p><span class="bold">TL;DR:</span> If neural recommenders performed poorly (e.g., worse than well-tuned k-nearest-neighbors), it is probably because they did not use this data-dependent, manifold-informed initialization. </p>
+		
+		<a class="btn btn-primary" href="./paper/Yinan-Zhang-KDD-2021.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://www.youtube.com/watch?v=lFCFhzZbZ9A">Video</a>
+		<a class="btn btn-success" href="https://github.com/zhangynnancy/Leporid_DLR2">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{YinanZhang-BoyangLi-NAACL-2021,<br/>title={Initialization Matters: Regularizing Manifold-informed Initialization for Neural Recommendation Systems}, <br/> author={Yinan Zhang and Boyang Li and Yong Liu and Hao Wang and Chunyan Miao}, <br/> booktitle={ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)}, <br/> year=2021,  <br/> url="http://www.boyangli.org/paper/Yinan-Zhang-KDD-2021.pdf"}'>bibtex</a> 
+		</div>
+	</div>
+
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/adversarial-neural-transfer.png" srclarge="./paper-diagram/adversarial-neural-transfer-large.png" class="paper-diagram">
+			</a>
+		</div>
+		<div class="col-lg-8 align-self-center"> 
+		<p>
+		Xu Guo, Boyang Li, Han Yu, and Chunyan Miao. <a href="./paper/XuGuo-NAACL-2021.pdf">Latent-Optimized Adversarial Neural Transfer for Sarcasm Detection.</a> <span class="journal">The Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT).</span> 2021.  </p> 
+		
+		<p><span class="bold">TL;DR:</span> Sarcasm detection is an ideal problem for transfer learning. We identify the competition between losses in adversarial transfer learning and propose a modified optimization technique to solve the problem, which achieves the SOTA result on the iSarcasm dataset.</p>
+		
+		<a class="btn btn-primary paper" href="./paper/XuGuo-NAACL-2021.pdf">Paper</a> 
+		<a class="btn btn-success" href="https://github.com/guoxuxu/LOANT">Code</a> 
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{XuGuo-BoyangLi-NAACL-2021,<br/>title={Latent-Optimized Adversarial Neural Transfer for Sarcasm Detection}, <br/> author={Xu Guo and Boyang Li and Han Yu and Chunyan Miao}, <br/> booktitle={2021 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2021)}, <br/> year=2021,  <br/> url="http://www.boyangli.org/paper/XuGuo-NAACL-2021.pdf"}'>bibtex</a> 
+		</div>
+	</div>
+	<hr />
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/small-cluster-noise-thumbnail.jpg" srclarge="./paper-diagram/small-cluster-noise.jpg" class="paper-diagram">
+			</a>
+		</div>		
+		<div class="col-lg-8 align-self-center"> 
+		<p>
+		Chang Liu, Han Yu, Boyang Li, Zhiqi Shen, Zhanning Gao, Peiran Ren, Xuansong Xie, Lizhen Cui, and Chunyan Miao. <a href="./paper/ChangLiu-CVPR-2021.pdf">Noise-resistant Deep Metric Learning with Ranking-based Instance Selection.</a> <span class="journal">The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</span> 2021.  </p> 
+		
+		<p><span class="bold">TL;DR:</span> We introduce a simple, efficient, and (we believe) the first technique for deep metric learning under noisy training data; the method outperforms 12 baseline methods under both synthetic and natural noise. </p>
+		
+		<a class="btn btn-primary" href="./paper/ChangLiu-CVPR-2021.pdf">Paper</a> 
+		<a class="btn btn-primary" href="./paper/ChangLiu-CVPR-2021-Supplemental.pdf">Supplemental</a>
+		<a class="btn btn-success" href="https://www.youtube.com/watch?v=0epftZqY8kY">Video</a>
+		<a class="btn btn-success" href="https://www.bilibili.com/video/BV1D54y1j7DF">è§é¢</a>
+		<a class="btn btn-success" href="https://github.com/alibaba-edu/Ranking-based-Instance-Selection">Code</a> 
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{ChangLiu-BoyangLi-PRISM-2021,<br/>title={Noise-resistant Deep Metric Learning with Ranking-based Instance Selection}, <br/> author={Chang Liu and Han Yu and Boyang Li and Zhiqi Shen and Zhanning Gao and Peiran Ren and Xuansong Xie and Lizhen Cui and Chunyan Miao}, <br/> booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, <br/> year=2021,  <br/> url="http://www.boyangli.org/paper/ChangLiu-CVPR-2021.pdf"}'>bibtex</a> 
+		</div>
+		
+	</div>
+	<hr />
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/hydra.png" class="paper-diagram">
+			</a>
+		</div>
+		
+		<div class="col-lg-8 align-self-center"> 
+		<p>Yuanyuan Chen, Boyang Li, Han Yu, Pengcheng Wu, and Chunyan Miao. <a href="./paper/Yuanyuan-Chen-AAAI-2021.pdf">HyDRA: Hypergradient Data Relevance Analysis for Interpreting Deep Neural Networks.</a> <span class="journal">The AAAI Conference on Artificial Intelligence (AAAI).</span> 2021.  </p> 
+		
+		<p><span class="bold">TL;DR:</span> We provide an approximate hypergradient method for estimating how training data contribute to individual network predictions and a theoretical bound on the approximation error.</p>
+		
+		<a class="btn btn-primary" href="./paper/Yuanyuan-Chen-AAAI-2021.pdf">Paper</a> 
+		<a class="btn btn-primary" href="./paper/Yuanyuan-Chen-AAAI-2021-Supplemental.pdf">Supplemental</a>
+		<a class="btn btn-success" href="https://github.com/cyyever/aaai_hydra_8686">Code</a> <a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{YuanyuanChen-BoyangLi-Hydra-2021,<br/>title={HyDRA: Hypergradient Data Relevance Analysis for Interpreting Deep Neural Networks}, <br/> author={Yuanyuan Chen and Boyang Li and Han Yu and Pengcheng Wu and Chunyan Miao}, <br/> booktitle={The AAAI Conference on Artificial Intelligence (AAAI)}, <br/> year=2021,  <br/> url="http://www.boyangli.org/paper/Yuanyuan-Chen-AAAI-2021.pdf"}'>bibtex</a> 
+		</div>
+		
+	</div>
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/interpret-robust.png" srclarge="./paper-diagram/interpret-robust-large.png" class="paper-diagram">
+			</a>
+		</div>
+		
+		<div class="col-lg-8 align-self-center"> 
+		<p> Adam Noack, Isaac Ahern, Dejing Dou, and Boyang Li. <a href="https://arxiv.org/abs/1912.03430">An Empirical Study on the Relation between Network Interpretability and Adversarial Robustness</a> <span class="journal">Springer Nature Computer Science</span>. 2020. </p>
+		
+		<p><span class="bold">TL;DR:</span> Does the interpretability of neural networks imply robustness against adversarial attack? We provide some positive empirical evidence. </p>
+		
+		<a class="btn btn-primary" href="https://arxiv.org/abs/1912.03430">Paper</a>
+		<a class="btn btn-success" href="https://github.com/a1noack/interp_regularization">Code</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{AdamNoack-BoyangLi-Interpret-2020,<br/>title={Training Deep Neural Networks for Interpretability and Adversarial Robustness}, <br/> author={Adam Noack and Isaac Ahern and Dejing Dou and Boyang Li}, <br/> journal={Springer Nature Computer Science}, <br/> year=2020, <br/> url="https://arxiv.org/abs/1912.03430"}'>bibtex</a>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/character-gaussian.png" srclarge="./paper-diagram/character-gaussian-large.png" class="paper-diagram">
+			</a>
+		</div>
+		
+		<div class="col-lg-8 align-self-center"> 
+		<p> Hannah Kim, Denys Katerenchuk, Daniel Billet, Jun Huan, Haesun Park, and Boyang Li. <a href="./paper/hannahkim-aaai-2019.pdf" class="file">Understanding Actors and Evaluating Personae with Gaussian Embeddings. </a> <span class="journal">The AAAI Conference on Artificial Intelligence (AAAI).</span> 2019. </p>
+		
+		<p><span class="bold">TL;DR:</span> We computationally model movie casting decisions and actors' versatility.</p>
+		
+		<a class="btn btn-primary" href="./paper/hannahkim-aaai-2019.pdf">Paper</a>
+		<a class="btn btn-success" href="https://bitbucket.org/abyliss/actorversatility/">Code &amp; Data</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{HannahKim-BoyangLi-Actors-2019,<br/>title={Understanding Actors and Evaluating Personae with Gaussian Embeddings}, <br/> author={Hannah Kim and Denys Katerenchuk and Daniel Billet and Jun Huan and Haesun Park and Boyang Li}, <br/> booktitle={The AAAI Conference on Artificial Intelligence (AAAI)}, <br/> year=2019, <br/> url="http://www.boyangli.org/paper/hannahkim-aaai-2019.pdf"}'>bibtex</a>
+		
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/neumatch.png" srclarge="./paper-diagram/neumatch-large.png" class="paper-diagram">
+			</a>
+		</div>
+		
+		<div class="col-lg-8 align-self-center"> 
+		<p> Pelin Dogan, Boyang Li, Leonid Sigal, Markus Gross. <a href="./paper/dogan-cvpr-2018.pdf" class="file">A Neural Multi-sequence Alignment TeCHnique (NeuMATCH).</a> <span class="journal">The Conference on Computer Vision and Pattern Recognition (CVPR)</span>. 2018. </p> 
+		
+		<p><span class="bold">TL;DR:</span> We propose the first end-to-end optimizable network for aligning video and text sequences.</p>
+		
+		<a class="btn btn-primary" href="./paper/dogan-cvpr-2018.pdf">Paper</a>
+		<a class="btn btn-success" href="https://github.com/pelindogan/NeuMATCH">Data</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@inproceedings{PelinDogan-BoyangLi-NeuMATCH-2018,<br/>title={A Neural Multi-sequence Alignment TeCHnique (NeuMATCH)}, <br/> author={Pelin Dogan and Boyang Li and Leonid Sigal and Markus Gross}, <br/> booktitle={The Conference on Computer Vision and Pattern Recognition (CVPR)}, <br/> year=2018, <br/> url="http://www.boyangli.org/paper/dogan-cvpr-2018.pdf"}'>bibtex</a>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row gy-2"> 
+		<div class="col-sm-4">
+			<a href="javascript: return false" class="pop">
+			<img src="./paper-diagram/book-personality.png" srclarge="./paper-diagram/book-personality-large.png" class="paper-diagram">
+			</a>
+		</div>
+		
+		<div class="col-lg-8 align-self-center"> 
+		<p>Ng Annalyn, Maarten Bos, Leonid Sigal, Boyang Li. <a href="https://arxiv.org/abs/1707.06643" class="file">Predicting Personality from Book Preferences with User-Generated Content Labels.</a> <span class="journal">IEEE Transaction on Affective Computing</span>. 2018.</p>
+		
+		<p><span class="bold">TL;DR:</span> We can infer your personality from the books you read. </p>
+		
+		<a class="btn btn-primary" href="https://arxiv.org/abs/1707.06643">Paper</a>
+		<a class="btn btn-info poptext" href="javascript:return false;" button-text='@article{NgAnnalyn-BoyangLi-Personality-2018,<br/>title={Predicting Personality from Book Preferences with User-Generated Content Labels}, <br/> author={Ng Annalyn and Maarten Bos and Leonid Sigal and Boyang Li}, <br/> article={IEEE Transaction on Affective Computing}, <br/> year=2018, <br/> url="https://arxiv.org/abs/1707.06643"}'>bibtex</a>
+		</div>
+	</div>
+	
+
+	
+    <!--
+	<a href="#" class="pop">
+		<img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
+	</a>
+
+	<a href="#" class="pop">
+		<img src="https://cdn-images-1.medium.com/max/2600/1*694y5GwOWsqflOtu_4Lj-g.png" style="width: 400px; height: 264px;">
+	</a> -->
+
+
+
+
+	</div>
+    <div class="col-lg-3">
+      <h4>Hiring</h4> <p class="text-justify">I have multiple open positions for Ph.D. students, postdocs, and research engineers. Please send me your CV. </p>
+	  
+	  <!--<p class="text-justify">If you are an undergraduate student interested in working with me, please read <a href="./for_undergrads.html">this</a>. </p>-->
+
+	<h4>What's New</h4>
+	<ul>
+	<li>
+	Sep 2025: 2 papers accepted to NeurIPS 2025.</li>
+	<li>
+	May 2025: 1 paper accepted to ICML 2025.</li>
+	<li>
+	Mar 2025: 2 papers accepted to CVPR 2025.</li>
+	<li>
+	Feb 2025: I will serve as the General Chair of <a href="https://ssnlp-website.github.io/ssnlp25/">the Singapore Symposium on Natural Language Processing 2025</a>.</li>
+	<li>
+	Sep 2024: 4 EMNLP acceptance (1 Main, 3 Findings).</li>
+	<li>
+	Aug 2024: I was tenured.</li>
+	<li>
+	Aug 2024: I received a Young Faculty Research Award (Special Mention) from the College of Engineering, NTU.</li>
+	<li>
+	Jul 2024: 1 paper accepted to the Conference on Language Modeling (COLM).</li>
+	<li>
+	Jun 2024: 1 paper accepted to the International Journal of Human-Computer Interaction.</li>
+	<li>
+	Mar 2024: 2 papers accepted to NAACL 2024.</li>
+	<li>
+	Jan/Feb 2024: 1 AAAI paper and 1 CVPR paper accepted.</li>
+	<li>
+	Dec 2023: I presented recent work as an invited speaker at the Workshop on Effective Multimodal Perception and Interactive Learning, at the 6th Asia Conference on Cognitive Engineering and Intelligent Interaction.</li>
+	<li>
+	Nov 2023: I presented recent work as an invited speaker at the Workshop on Large Generative Models Meet Multimodal Applications, ACM Multimedia.</li>
+	<li>
+	Aug 2023: 1 paper accepted to ACM Computing Surveys.</li>
+	<li>
+	Jul 2023: 1 paper accepted to ICCV as Oral presentation (~1% of submissions) and 1 paper accepted to ACM MM.</li>
+	<li>
+	Jun 2023: Presented recent work at the University of British Columbia, Canada. <a href="./slides/Multimodal+LLM-UBC-June-26-2023.pdf">[Slides]</a> </li>
+	<li>
+	Jun 2023: Attended CVPR in Vancover, Canada. </li>
+	<li>
+	Apr 2023: Visiting University of Malaya at Kuala Lumpur, Malaysia. </li>
+	<li>
+	Mar 2023: One paper on Visual Question Answering accepted to CVPR 2023. One paper accepted to ICME 2023. </li>
+	<li>
+	Feb 2023: I presented recent work at Tsinghua University and Shandong University. </li>
+	<li>
+	Jan 2023: I served as a Senior Action Editor for ACL Rolling Review. </li>
+	<li>
+	Dec 2022: I was at EMNLP 2022 in Abu Dhabi, UAE. </li>
+	<li>
+	Oct 2022: Three papers accepted to EMNLP Findings 2022. </li>
+	<!-- <li>
+	July-Nov 2022: I served as an Area Chair (Senior Meta-reviewer) for AAAI 2022, overseeing 40+ papers. </li>
+	<li>
+	May 2022: At ACL 2022. </li>
+	<li>
+	May 2022: Gave a talk about recent work on machine learning at Microsoft Research Cambridge. </li>
+	<li>
+	Mar 2022: Multiple paper acceptance. One to CVPR 2021, one to the ACM Transactions on Intelligent Systems and Technology, and one to the <a href="https://sites.google.com/view/4thnlp4convai/">4th workshop on NLP for ConvAI</a>. </li>
+	<li>
+	Sep 2021: Presented recent work to world-renowned scientists at the WLF Young Scientist Forum. <a href="./slides/WLF-Young-Scientist-Forum-Slides.pdf">[Slides]</a> </li>
+	<li>
+	Sep 2021: Reviewing papers for WACV 2022 and AAAI 2022. </li>
+	<li>
+	Jun-Oct 2021: Serving as an area chair for Narrative Systems at <a href="https://ardin.online/conferences/icids-interactive-storytelling/icids-2021-tallinn/">ICIDS 2021</a>, a leading conference for AI and narratives. </li>
+	<li>
+	Jul 2021: One paper accepted at ICCV 2021 (acceptance rate = 25.9%). </li>
+	<li>
+	Jun 2021: Reviewing papers for ICCV 2021. </li>
+	<li>
+	May 2021: One paper accepted to KDD 2021 (acceptance rate = 15.4%). </li>
+	<li>
+	Mar 2021: One long paper accepted to NAACL 2021. </li>
+	<li> -->
+	<li> Mar 2021: Received the NRF Fellowship award with funding of 2.5M SGD. </li>
+	<!--<li>
+	Feb 2021: One paper accepted to CVPR 2021. (acceptance rate = 23.7%) </li> -->
+	<!--<li>
+	Dec 2020: Served as a reviewer for CVPR 2021. </li>
+	<li>
+	Dec 2020: <a href="./paper/Yuanyuan-Chen-AAAI-2021.pdf">Hypergradient Data Relevance Analysis (HyDRA)</a> accepted to AAAI 2021 (acceptance rate = 21%). </li>
+	<li>
+	Nov 2020: <a href="https://arxiv.org/abs/1912.03430">An Empirical Study on the Relation between Network Interpretability and Adversarial Robustness</a> accepted by Springer Nature Computer Science. </li> 
+	<li>
+	Nov 2020: Paper on <a href="./paper/jianan-wang-wacv-2021.pdf">improving data efficiency of multimodal sequence alignment</a> accepted at WACV 2021.  </li> -->
+	<!-- Dec 2019: New preprint that applies the theory of Graphon to optimize the organization of CNN layers: <a href="https://arxiv.org/abs/1912.12860">Searching for Stage-wise Neural Graphs In the Limit</a> <br />
+	May 2019: <a href="https://ieeexplore.ieee.org/abstract/document/8734870">Our paper on emotion recognition and attribution from video</a> was accepted by the IEEE Transactions on Multimedia. <br />
+	Nov 2018: <a href="./paper/hannahkim-aaai-2019.pdf">Learning Gaussian embeddings for actors </a> accepted at AAAI 2019 (16.2% acceptance rate). <br />
+	Feb 2018: <a href='./paper/dogan-cvpr-2018.pdf'>Spotlight presentation on multimodal sequence alignment</a> (6.8% acceptance rate) at CVPR 2018.<br /> -->
+	</ul>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+</div><!-- container //  -->
+
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=9379014; 
+var sc_invisible=1; 
+var sc_security="c7c6aca0"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter_xhtml.js'></"+"script>");
+//]]>
+</script>
+<noscript><div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/" class="statcounter"><img
+class="statcounter"
+src="http://c.statcounter.com/9379014/0/c7c6aca0/1/"
+alt="free web stats" /></a></div></noscript>
+</body>
+</html>

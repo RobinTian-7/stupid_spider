@@ -1,0 +1,1871 @@
+<!DOCTYPE>
+<head>
+<!-- <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" /> -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<title>Angjoo Kanazawa</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-10550309-7");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K0TTR2R65K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0TTR2R65K');
+</script>
+
+<div id="layout-content">
+<div id="toptitle">
+<h1>Angjoo Kanazawa</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="img/angjoo_photo.jpg" alt="Angjoo Kanazawa" 
+width="{&lt;article&gt;" />&nbsp;</td>
+<td align="left">
+
+  <p> I am an Assistant Professor in the <a href="https://eecs.berkeley.edu/" target="_blank">Department of Electrical Engineering and Computer Sciences</a> at the <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>. I lead the <a href="#research">Kanazawa AI Research (KAIR) lab</a> under <a href="https://bair.berkeley.edu" target="_blank">BAIR</a>. Alongside my academic work, I have served as Chief Technical Advisor for <a href="https://lumalabs.ai/" target="_blank">Luma AI</a> and on the advisory board of <a href="https://www.wonderdynamics.com/" target="_blank">Wonder Dynamics</a>. I am also an Amazon Scholar in the Frontier AI & Robotics team. <br/><br/>
+
+<!-- Previously, I was a Research Scientist at Google Research, and <a href="https://bair.berkeley.edu" target="_blank">BAIR</a> postdoc at UC Berkeley. I obtained my PhD in Computer Science at the University of Maryland, College Park. During my PhD, I had the pleasure to visit the Max Planck Institute.   -->
+
+Previously, I was a Research Scientist at Google Research, and <a href="https://bair.berkeley.edu" target="_blank">BAIR</a> postdoc at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>, <a href="https://people.eecs.berkeley.edu/~efros/" target="_blank">Alexei A. Efros</a> and <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>. I completed my PhD in Computer Science at the University of Maryland, College Park with my advisor <a href="http://www.cs.umd.edu/~djacobs/" target="_blank">David Jacobs</a>. During my PhD, I had the pleasure to visit <a href="https://ps.is.tuebingen.mpg.de/"> the Max Planck InstituteÂ in TÃ¼bingen, Germany</a> under the guidance of <a href="https://ps.is.mpg.de/~black">Michael Black</a>. <!-- Prior to that, I spent four years at NYU where I worked with <a href="http://www.cs.nyu.edu/~fergus" target="_blank">Rob Fergus</a> and completed my BA in Mathematics and Computer Science. <br /></p> -->
+
+  <p><a href="cv.pdf" target="_blank">CV</a> | <a href="https://scholar.google.com/citations?hl=en&user=Ci-_QYIAAAAJ"  target="_blank">Google Scholar</a> | <a href="https://twitter.com/akanazawa" target="_blank">twitter</a> | <a href="https://bsky.app/profile/akanazawa.bsky.social" target="_blank">bluesky</a>
+  <p><b>Email:</b> kanazawa (at) eecs.berkeley.edu<br /></p>
+<!-- </article> -->
+</td></tr></table>
+
+<br/>
+<p>
+<b> Dear prospective students</b>: Click <a href="javascript:toggleblock('notice')">here</a> for information.
+<div id="notice" style="display:none; color:#404040; font-size:.9em;">
+Thank you for your interest in joining my group! Sorry I can't respond to your email if you ask me about PhD admissions, please apply directly through the department, thank you!
+<br/>
+<b>PhD applicants:</b> I will be looking to hire one or two graduate students every year, so please apply through the <a href="https://eecs.berkeley.edu/academics/graduate/research-programs/admissions">EECS department</a>, apply for the <i>CS</i> division, and if you want to work with me, its best to apply in AI-CV or AI-ROB.
+<br/>
+<b>Graduate or undergraduate students at UCB:</b> Please send me an email with your interests, resume and your <b>transcript</b>. For undergraduates, the requirement is a solid engineering internship and CS189 or CS182/282. I prefer students who've taken some of these classes: CS184/284, CS194-26/294-26, CS280, and advanced math courses. Experience with Unity/Blender/Unreal is a plus, art/photography experience is also a plus. Here are some more information to get you started:
+<br/>
+<ul>
+  <li>If you're interested in NeRF research, use <a href="https://nerf.studio" target="_blank">nerf.studio</a> and make two cool captures! Be creative. Then, address at least two github issues. You can also look into the <a href="https://github.com/nerfstudio-project/gsplat" target="_blank">gsplat</a> library, and resolve issues there as well. Then send me an email with your results and the PRs. 
+  <li>If you're interested in research to perceive 3D people, like<a href="https://vye16.github.io/slahmr/" target="_blank"> SLAHMR</a>, run SLAHMR on two of your videos. Then send me an email with the results and your thoughts. 
+</ul>
+
+<br/><b>Interns:</b> We are not taking visitors or students who are not at UC Berkeley at this time. 
+</div>
+</p>
+ <!-- <a href="" target="_blank"></a> -->
+<h2 id="news"><a href="#news">News</a></h2>
+<div id="news" style="font-size:.9em">
+  <ul>
+    <li> April 2025: Talk at the MIT Robotics Seminar:</li>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ap5jFj04p1g?si=8JnGtZuut9oKfKta" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <li> October 2024: Gave talks at ECCV 2024 workshops:
+      <details> <summary>Details and slides</summary>
+      <ul>
+	<li><strong>9/29 Sunday 11:00am <a href="https://3dv-in-ecommerce.github.io/" target="_blank">3D Vision and Modelling Challenges in eCommerce</a></strong>: I will talk about <a href="https://research.nvidia.com/labs/toronto-ai/nerfxl/" target="_blank">how to scale NeRFs across multiple GPUs (ECCV 2024)</a>, and the latest updates on our <a href="https://github.com/nerfstudio-project/" target="_blank">opensource tools</a>: nerfstudio, gsplat, and viser: <a href="https://www.dropbox.com/scl/fi/ep5gahqdr3shg4bne9v26/ecommerce_nerfxl_nerfstudio.key?rlkey=l92l7uh27n9nib0vgyo4lp5bh&st=1ei5dl8j&dl=0"><strong>Slides</strong>
+	  </a>
+	</li>
+	<li><strong>9/30 Monday 9:45am <a href="https://venue-tutorial.github.io/" target="_blank">VENUE: Video Content Understanding and Generation</a></strong>: about our latest works in 4D reconstruction like <a href="https://shape-of-motion.github.io/" target="_blank">Shape of Motion</a>, challenges thereof, and more.
+	  <!-- : <a href="https://www.dropbox.com/scl/fi/xvbe9ocd1nw5wc2wpotom/venue_luma_som_rsrsd_agent2sim.key?rlkey=n1kmtkmugd6pkeabpsv9d660z&st=jxyjkate&dl=0"><strong>Slides</strong> -->
+	  </a>
+	</li>
+	<li><strong>9/30 Monday 11:10am <a href="https://3d-in-the-wild.github.io/" target="_blank">Wild3D: 3D Modeling, Reconstruction, and Generation in the Wild</a></strong>: about incorporating semantics  &mdash; <a href="https://www.garfield.studio/" target="_blank">grouping</a>  &mdash; in 3D, and how to use part knowledge for 4D reconstruction of objects with movable parts for robotics! <a href="https://robot-see-robot-do.github.io/" target="_blank">We just released this work</a>, to be presented at CoRL 2024 (oral).: <a href="https://www.dropbox.com/scl/fi/u6nplzvcearybasa82ejd/wild3d_garfield_rsrd.key?rlkey=7ttbzfe8lbob5897zhqpgsfrx&st=exdpjn88&dl=0"><strong>Slides</strong>
+	  </a>
+	</li>
+	<li><strong>9/30 Monday 2:35pm <a href="https://ai3dcc.github.io/index.html#schedule" targetf="_blank">AI for 3D Content Creation</a></strong>: about our <a href="https://sds-bridge.github.io/" target="_blank">new NeurIPS 2024 paper</a> that makes sense of SDS!: <Strong><a href="https://www.dropbox.com/scl/fi/ialxfc2icxn6cxhh301uz/ai4cc_sds_bridge.key?rlkey=tk5s2lpfbf7v5u0srrnha35vl&st=gde34y80&dl=0">Slides</a></Strong>
+	</li>
+	<li><strong>9/30 Monday 4:50pm <a href="https://human-foundation.github.io/workshop-eccv-2024/" target="_blank">Foundation Models for 3D Humans</a></strong>: last but not least, about hard problems that need to be solved for 3D human foundation models and our latest work<a href="https://egoallo.github.io/" target="_blank"> EgoAllo</a>: <a href="https://www.dropbox.com/scl/fi/4mpix5v00tay3jr7csp2m/hardproblems3dhumans.key?rlkey=f42ddccb1s9iz66vx7vfwxwh1&st=gogdb0ee&dl=0"><Strong>Slides</Strong>
+	  </a>
+	  . 
+	</li>
+	</details>
+    <!-- </li> -->
+ <li> June 2024: Received the PAMI Young Researcher Award, thank you!</li>
+    <li>Oct 2023: Talk on <q>Creative Horizons with 3D Capture</q> at Stanford HAI Fall Conference. <a href="https://www.youtube.com/watch?v=DIHoZEFQjII" taget="_blank">Link</a><!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/DIHoZEFQjII" frameborder="0" allowfullscreen></iframe> -->
+</li>
+  <li> March 2023: GTC talk on<a href="nerf.studio" target="_blank"> nerf.studio</a>: <a href="https://www.youtube.com/watch?v=gP3q-N80g64">Link</a>
+  <li> February 2023: Named a <a href="https://sloan.org/fellowships/2023-Fellows" target="_blank">2023 Sloan Research Fellow</a>, thank you!
+<li>October 2022: We ran a <a href="https://sites.google.com/berkeley.edu/nerf-tutorial/home" target="_blank">tutorial on NeRFs at ECCV 2022</a>, all videos<a href="https://vimeo.com/showcase/10108932" target="_blank"> here</a>. 
+<!-- <li>Winter 2020: <a href="https://www.youtube.com/watch?v=MGo_Vca29m0&ab_channel=MITxHarvardWomeninAI" target="_blank">Interview</a> with MITxHarvard Women in AI Interview Series, <a href="https://www.youtube.com/watch?v=w3LFjNSWO8k&feature=youtu.be&ab_channel=CVMPConference" target="_blank">Keynote talk</a> at CVMP 2020</li> -->
+<!-- <li>Check out our new global virtual seminar series on Geometry Processing and 3D Computer Vision @ <a href="https://3dgv.github.io/">https://3dgv.github.io </a>! </li> -->
+<!-- <li>ECCV 2020: Co-organized the <a href="https://virtualhumans.mpi-inf.mpg.de/3DPW_Challenge/" target="_blank">first 3D Poses in the Wild Challenge</a>, invited talks at  <a href="https://geometry.stanford.edu/3DReps/schedule.html" target="_blank">Learning 3D Representations for Shape and Appearance -->
+<!-- </a> and  <a href="https://taodataset.org/workshop/" target="_blank">Tracking and its many guises</a> workshops. -->
+<!-- <li>July 2020:  <a href="https://www.youtube.com/watch?v=WOuCPT0lXio", target="_blank">Invited talk</a> at NieÃner lab @ TUM</li> -->
+<!-- <li>CVPR 2020: Invited talks at <a href="https://visual.cs.brown.edu/aicc2020/" target="_blank">AI for Content Creation</a> and <a href="http://ai.stanford.edu/~jingweij/cicv/" target="_blank">Compositionality in Computer Vision</a> workshops, invited panelist at <a href="https://wimlworkshop.org/icml2020" target="_blank">Woman in Machine Learning Un-Workshop</a> at ICML2020</li> -->
+<!-- <li>I will be serving as: area chair for CVPR 2020-2022, ACCV 2020, ICCV 2021, diversity chair ACCV 2020, program committee SIGGRAPH 2021</li> -->
+<!-- </ul> -->
+</div>
+
+<h1 id="research"><a href="#research">Research</a></h1>
+My research lies at the intersection of computer vision, computer graphics, and machine learning. We live in a 3D world that is dynamic, full of life with people and animals interacting with each other and the environment. How can we build a system that can capture, perceive, and understand this complex 4D world like humans can from everyday photographs and video? More generally, how can we develop a computational system that can continually learn a model of the world from visual observations? The goal of my lab is to answer these questions.
+
+<br/>
+
+<h2 id="kair">Kanazawa AI Research (KAIR) members</a></h2>
+<h3>Postdoc</h3>
+<ul>
+<li><a href="https://tzler.github.io/" target="_blank">Dr. Tyler Bonnen</a> (with <a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a> and <a href="https://people.eecs.berkeley.edu/~efros/"> Alexei Efros</a>) </li>
+<li><a href="https://jiahuilei.com/" target="_blank">Dr. Jiahui Lei</a> (with <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>)</li>
+</ul>
+<h3>Graduate Students</h3>
+<ul>
+<li> <a href="https://people.eecs.berkeley.edu/~vongani_maluleke/" target="_blank">Vongani Maluleke</a> (with <a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik)</a></li>
+<li> <a href="https://kerrj.github.io/" target="_blank">Justin Kerr</a> (with <a href="https://goldberg.berkeley.edu/" target="_blank">Ken Goldberg)</a></li>
+<li> <a href="https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en" target="_blank">Brent Yi</a> (with <a href="https://people.eecs.berkeley.edu/~yima/" target="_blank">Yi Ma)</a></li>
+<li> <a href="https://chungmin99.github.io/" target="_blank">Chung Min Kim</a> (with <a href="https://goldberg.berkeley.edu/" target="_blank">Ken Goldberg)</a></li>
+<li><a href="https://mcallisterdavid.com/" target="_blank">David McAllister</a></li>
+<li><a href="https://hongsukchoi.github.io/" target="_blank">Hongsuk Choi</a> (with <a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik)</a></li>
+<li> Visiting PhD student: <a href="https://havenfeng.github.io/" target="_blank">Haven (Haiwen) Feng</a></li>
+<li> <a href="https://allshire.org/" target="_blank">Arthur Allshire</a> (with <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a> and  <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>)</li>
+<li> <a href="https://yukaryote.github.io/" target="_blank">Isabella Yu</a> (with <a href="https://people.eecs.berkeley.edu/~efros/" target="_blank">Alexei Efros</a>)</li>
+</ul>
+
+<h3>5th year MS students</h3>
+<ul>
+  <!-- <li>Gina Wu</li> -->
+  <li>Anthony Zhang</li>
+</ul>
+
+
+<!-- <h3>Research Assistant</h3> -->
+<!-- <ul> -->
+<!-- </ul> -->
+<h3>Alumni</h3>
+<b>Former PhD Students</b>
+<ul>
+<li> <a href="https://hangg7.com/" target="_blank">Dr. Hang Gao</a>, now at xAI</li>
+<li> <a href="https://www.liruilong.cn/" target="_blank">Dr. Ruilong Li</a>,  at NVIDIA</li>
+<li> <a href="https://ethanweber.me/" target="_blank">Dr. Ethan Weber</a>, now at Meta Reality Labs</li>
+  <li> <a href="https://people.eecs.berkeley.edu/~vye/" target="_blank">Dr. Vickie Ye</a>, now at <a href="https://www.anthropic.com/" target="_blank">Anthropic</a>
+  </li>
+  <li> <a href="http://people.eecs.berkeley.edu/~evonne_ng/" target="_blank">Dr. Evonne Ng</a> (with <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>), now at<a href="https://about.meta.com/realitylabs/" target="_blank"> Meta Reality Labs</a>
+  </li>
+<li> <a href="https://people.eecs.berkeley.edu/~shubham-goel/" target="_blank">Dr. Shubham Goel</a> (with <a href="http://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik)</a>, now at <a href="https://www.avataar.ai/" target="_blank">Avataar</a></li>
+<li> <a href="https://www.matthewtancik.com/" target="_blank">Dr. Matt Tancik</a> (with <a href="https://scholar.google.com/citations?user=6H0mhLUAAAAJ&hl=en" target="_blank">Ren Ng)</a>, now at <a href="https://lumalabs.ai/" target="_blank">Luma AI</a></li>
+</ul>
+<b>Former Postdocs</b>
+<ul>
+<li><a href="https://qianqianwang68.github.io/" target="_blank">Prof. Qianqian Wang</a>, will be starting as assistant professor at Harvard University 2026</li>
+<li><a href="https://holynski.org/" target="_blank">Prof. Aleksander Holynski</a>, now an assistant professor at Columbia University</li>
+<li> <a href="https://qianqianwang68.github.io/" target="_blank">Dr. Lea MÃ¼ller</a>, now at Meta</li>
+<li> <a href="https://geopavlakos.github.io/" target="_blank">Prof. Georgios Pavlakos</a>, now an assistant professor at UT Austin </li>
+</ul>
+<b>Former Visitors</b>
+<ul>
+<li> <a href="https://songweige.github.io/" target="_blank">Dr. Songwei Ge</a> (visiting PhD student from UMD), now at Reve</li>
+<li> <a href="https://frederikwarburg.github.io/" target="_blank">Dr. Frederik Warburg</a> (visiting PhD student from Technical University of Denmark Fall 2022 - Spring 2023), now at Tenton.ai</li>
+</ul>
+<b>Former MS/BS Students</b>
+<ul>
+<li>Jake Austin (5th yr MS), now PhD student at MIT</li>
+<li> <a href="https://alexyu.net/" target="_blank">Alex Yu</a>, (undergraduate 2020-2022) co-founder @ <a href="https://lumalabs.ai/" target="_blank">Luma AI</a>, now at OpenAI</li>
+<li> <a href="https://scholar.google.com/citations?user=TIo8yTcAAAAJ&hl=en" target="_blank">Micael Tchapmi</a>, (visitor 2020-2021) now MS student @ Stanford </li>
+<li> <a href="https://maqingyang.github.io/" target="_blank">Ze (Edward) Ma</a>, (visitor 2020-2021) now MS Student @ Columbia </li>
+<li> <a href="https://jasonyzhang.com/" target="_blank">Jason Y. Zhang</a> (undergraduate 2019-2020) PhD student @ CMU, now at Google </li>
+<li> <a href="https://xinqin23.github.io/" target="_blank">Xin Qin</a> (undergraduate 2018-2019) PhD student @ USC, now Assistant Professor at CSULB</li>
+</ul>
+
+<a id="libraries"><h2 id="lib">Libraries</h2></a>
+<!-- <table class="papers" width="100%" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!-- <tr> -->
+<a href="http://nerf.studio/" target="_blank"> <img height="50px" src="thumbs/nslogo.png"\></a> 
+<a href="https://www.nerfacc.com/" target="_blank"> <img height="40px" src="thumbs/nerfacc_logo.png"\></a> 
+<a href="https://github.com/nerfstudio-project/viser" target="_blank"><img src="thumbs/viser.svg" alt="viser" height="50px"></a> 
+<a href="https://github.com/nerfstudio-project/gsplat" target="_blank"><img src="thumbs/gsplat_logo.png" alt="gsplat" height="50px"></a>
+<a href="https://pyroki-toolkit.github.io/" target="_blank"><img src="thumbs/pyroki_logo.png" alt="PyRoki" height="50px"></a>
+
+<!-- </tr> -->
+<!-- </table> -->
+<!-- <table class="papers" width="100%" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!-- <\!-- begin entry -\-> -->
+<!-- <tr> -->
+<!-- <td class="thumbs"><p><img class="thumbs" src="thumbs/nerfstudio.png"  /></p></td> -->
+<!-- <td class="detail"><p><b id="papertitle">Learning Category-Specific Mesh Reconstruction from Image Collections</b> <img src="img/new_animated.gif"\><br /> -->
+<!-- Angjoo Kanazawa*, Shubham Tulsiani*, Alexei A. Efros, Jitendra Malik<br /> -->
+<!-- (* equal contribution) <br /> -->
+<!-- [<a href="https://akanazawa.github.io/cmr/" target="_blank">project page</a>] [<a href="https://arxiv.org/abs/1803.07549" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/cYHQKtBLI3Q" target="_blank">video</a>] [<a href="https://akanazawa.github.io/cmr/resources/bibtex.txt" target="_blank">bibtex</a>] -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- </table> -->
+
+
+
+<!-- </p> -->
+<!-- <h2>Preprints</h2> -->
+<!-- <table class="papers" width="100%" align="center" border="0" cellspacing="0" cellpadding="20"> -->
+<!-- <\!-- begin entry -\-> -->
+<!-- <tr> -->
+<!-- <td class="thumbs"><p><img class="thumbs" src="thumbs/CMR.png"  /></p></td> -->
+<!-- <td class="detail"><p><b id="papertitle">Learning Category-Specific Mesh Reconstruction from Image Collections</b> <img src="img/new_animated.gif"\><br /> -->
+<!-- Angjoo Kanazawa*, Shubham Tulsiani*, Alexei A. Efros, Jitendra Malik<br /> -->
+<!-- (* equal contribution) <br /> -->
+<!-- [<a href="https://akanazawa.github.io/cmr/" target="_blank">project page</a>] [<a href="https://arxiv.org/abs/1803.07549" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/cYHQKtBLI3Q" target="_blank">video</a>] [<a href="https://akanazawa.github.io/cmr/resources/bibtex.txt" target="_blank">bibtex</a>] -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- begin entry -->
+<!-- <tr> -->
+<!-- <td class="thumbs"><p> -->
+<!-- <a href="thumbs/buddi.mp4" target="_blank"> -->
+<!-- <video autoplay loop muted playslinline width="100%"> -->
+<!-- <source src="thumbs/buddi.mp4" type="video/mp4"> -->
+<!-- </video> -->
+<!-- </a> -->
+<!-- </p></td> -->
+<!-- <td class="detail"><p><b id="papertitle">Generative Proxemics: A Prior for 3D Social Interaction from Images -->
+<!-- </b> <br /> -->
+<!-- Lea M&uuml;ller, Vickie Ye, Georgios Pavlakos, Michael Black, Angjoo Kanazawa -->
+<!-- <br /> -->
+<!-- arXiv 2023 <img src="img/new_animated.gif"\><br /> -->
+<!-- [<a href="https://muelea.github.io/buddi/" target="_blank">project page</a>] [<a href="https://arxiv.org/abs/2306.09337" target="_blank">arXiv preprint</a>] [<a href="https://github.com/muelea/buddi" target="_blank">code</a>] [<a href="bibtex/buddi.txt" target="_blank">bibtex</a>] -->
+<!-- </td> -->
+<!-- </tr> -->
+<!-- </table> -->
+
+<h2 id="papers"><a href="#papers">Papers</a></h2>
+Please see <a href="https://scholar.google.com/citations?hl=en&user=Ci-_QYIAAAAJ" target="_blank"> google scholar</a> for latest updates.
+<table class="papers" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<!-- <\!-- ## Blank template -\-> -->
+<!-- begin entry -->
+<!-- <tr> -->
+<!-- <td class="thumbs"><p> -->
+<!-- <\!-- <img src="thumbs/coming_soon.png" width="70%"\> -\-> -->
+<!-- <a href="thumbs/.mp4" target="_blank"> -->
+<!-- <video autoplay loop muted playslinline width="70%"> -->
+<!-- <source src="thumbs/.mp4" type="video/mp4"> -->
+<!-- </video> -->
+<!-- </a> -->
+<!-- </p></td> -->
+<!-- <td class="detail"><p><b id="papertitle"> -->
+<!-- </b><br />, Angjoo Kanazawa<br /> -->
+<!-- <i>CVPR 2023</i> <img src="img/new_animated.gif"\>  <br />  -->
+<!--  [<a href="" target="_blank">Project Page</a>]  -->
+<!--  [<a href="" target="_blank">Code</a>]  -->
+<!-- [<a href="" target="_blank">Paper</a>] [<a href="bibtex/" target="_blank">bibtex</a>]<br /> -->
+<!-- </td> -->
+      <!-- </tr> -->
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/viser.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/viser_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Viser: Imperative, Web-based 3D Visualization in Python</b><br />
+      Brent Yi, Chung Min Kim, Justin Kerr, Gina Wu, Rebecca Feng, Anthony Zhang, Jonas Kulhanek, Hongsuk Choi, Yi Ma, Matthew Tancik, Angjoo Kanazawa<br />
+      <i>ArXiv 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://viser.studio/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2507.22885" target="_blank">Paper</a>]
+      [<a href="https://github.com/nerfstudio-project/viser" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#viser" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/flow_matching_policy.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/flow_matching_policy_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Flow Matching Policy Gradients</b><br />
+      David McAllister*, Songwei Ge*, Brent Yi*, Chung Min Kim, Ethan Weber, Hongsuk Choi, Haiwen Feng, Angjoo Kanazawa<br />
+      <i>ArXiv 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://flowreinforce.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2507.21053" target="_blank">Paper</a>]
+      [<a href="bibtex/allbibtex.html#flow_matching_policy" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/cameras_positional_encoding.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/cameras_positional_encoding_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Cameras as Relative Positional Encoding</b><br />
+      Ruilong Li*, Brent Yi*, Junchen Liu*, Hang Gao, Yi Ma, Angjoo Kanazawa<br />
+      <i>NeurIPS 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://www.liruilong.cn/prope/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2507.10496" target="_blank">Paper</a>]
+      [<a href="https://github.com/liruilong940607/prope" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#cameras_positional_encoding" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/eye_robot.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/eye_robot_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Eye, Robot: Learning to Look to Act with a BC-RL Perception-Action Loop</b><br />
+      Justin Kerr, Kush Hari, Ethan Weber, Chung Min Kim, Brent Yi, Tyler Bonnen, Ken Goldberg, Angjoo Kanazawa<br />
+      <i>CoRL 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://www.eyerobot.net/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2506.10968" target="_blank">Paper</a>]
+      [<a href="bibtex/allbibtex.html#eye_robot" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/videomimic.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/videomimic_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Visual Imitation Enables Contextual Humanoid Control</b><br />
+      Arthur Allshire*, Hongsuk Choi*, Junyi Zhang*, David McAllister*, Anthony Zhang, Chung Min Kim, Trevor Darrell, Pieter Abbeel, Jitendra Malik, Angjoo Kanazawa<br />
+      <i>CoRL 2025,</i> <b>Best Student Paper</b> <img src="img/new_animated.gif" /><br />
+      [<a href="https://www.videomimic.net/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2505.03729" target="_blank">Paper</a>]
+      [<a href="https://github.com/hongsukchoi/VideoMimic" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#videomimic" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/pyroki.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/pyroki.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">PyRoki: A Modular Toolkit for Robot Kinematic Optimization</b><br />
+      Chung Min Kim*, Brent Yi*, Hongsuk Choi, Yi Ma, Ken Goldberg, Angjoo Kanazawa<br />
+      <i>IROS 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://pyroki-toolkit.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2505.03728" target="_blank">Paper</a>]
+      [<a href="https://github.com/chungmin99/pyroki" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#pyroki2025" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/startrack_crop.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/startrack_crop_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">St4RTrack: Simultaneous 4D Reconstruction and Tracking in the World</b><br />
+      Haiwen Feng*, Junyi Zhang*, Qianqian Wang, Yufei Ye, Pengcheng Yu, Michael J. Black, Trevor Darrell, Angjoo Kanazawa<br />
+      <i>ICCV 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://st4rtrack.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2504.13152" target="_blank">Paper</a>]
+      [<a href="https://github.com/HavenFeng/St4RTrack" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#st4rtrack2025" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/pod.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/pod_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Predict-Optimize-Distill: A Self-Improving Cycle for 4D Object Understanding</b><br />
+      Mingxuan Wu*, Huang Huang*, Justin Kerr, Chung Min Kim, Anthony Zhang, Brent Yi, Angjoo Kanazawa<br />
+      <i>ICCV 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://predict-optimize-distill.github.io/pod.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2504.17441" target="_blank">Paper</a>]
+      [<a href="bibtex/allbibtex.html#wu2025predictoptimizedistillselfimprovingcycle4d" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/som_big.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/som_thumb_widelittle.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Shape of Motion: 4D Reconstruction from a Single Video</b><br />
+      Qianqian Wang*, Vickie Ye*, Hang Gao*, Weijia Zeng*, Jake Austin, Zhengqi Li, and Angjoo Kanazawa<br />
+      <i>ICCV 2025</i> <img src="img/new_animated.gif" /><br />
+      [<a href="https://shape-of-motion.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://github.com/vye16/shape-of-motion/" target="_blank">Code</a>]
+      [<a href="http://arxiv.org/abs/2407.13764" target="_blank">Paper</a>]
+      [<a href="https://shape-of-motion.github.io/results.html" target="_blank">Interactive Results</a>]
+      [<a href="bibtex/allbibtex.html#som2024" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/segmentanymotion.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/segmentanymotion_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Segment Any Motion in Videos</b><br />
+      Nan Huang, Wenzhao Zheng, Chenfeng Xu, Kurt Keutzer, Shanghang Zhang, Angjoo Kanazawa, Qianqian Wang<br />
+      <i>CVPR 2025</i><br />
+      [<a href="https://motion-seg.github.io/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2503.22268" target="_blank">Paper</a>]
+      [<a href="https://github.com/nnanhuang/SegAnyMo" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#huang2025segmentmotionvideos" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/cut3r.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/cut3r_thumb_crop.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Continuous 3D Perception Model with Persistent State</b><br />
+      Qianqian Wang*, Yifei Zhang*, Aleksander Holynski, Alexei A. Efros, and Angjoo Kanazawa<br />
+      <i>CVPR 2025</i><br />
+      [<a href="https://cut3r.github.io/" target="_blank">Project Page</a>] 
+      [<a href="http://arxiv.org/abs/2501.12387" target="_blank">Paper</a>] 
+      [<a href="https://cut3r.github.io/interactive.html" target="_blank">Interactive Results</a>] 
+      [<a href="bibtex/allbibtex.html#cut3r" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/ddm.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/ddm_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Decentralized Diffusion Models</b><br />
+      David McAllister, Matthew Tancik, Jiaming Song, and Angjoo Kanazawa<br />
+      <i>CVPR 2025</i><br />
+      [<a href="https://decentralizeddiffusion.github.io/" target="_blank">Blog</a>] 
+      [<a href="https://arxiv.org/abs/2501.05450" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#mcallister2025decentralized" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/hsfm.png" target="_blank">
+	<img src="thumbs/hsfm_thumb_crop.jpg" width="100%"\>   
+        <!-- <video autoplay loop muted playsinline width="70%"> -->
+        <!--   <source src="thumbs/hsfm.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Reconstructing People, Places, and Cameras</b><br />
+      Lea MÃ¼ller*, Hongsuk Choi*, Anthony Zhang, Brent Yi, Jitendra Malik, and Angjoo Kanazawa<br />
+      <i>CVPR 2025</i><br />
+      [<a href="https://muelea.github.io/hsfm/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2412.17806" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#mueller2024hsfm" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/egoallo_thumb_big.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/egoallo_thumb_coffee.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Estimating Body and Hand Motion in an Ego-Sensed World</b><br />
+      Brent Yi, Vickie Ye, Maya Zheng, Lea MÃ¼ller, Georgios Pavlakos, Yi Ma, Jitendra Malik, and Angjoo Kanazawa<br />
+      <i>CVPR 2025</i><br />
+      [<a href="https://egoallo.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/brentyi/egoallo" target="_blank">Code</a>] 
+      [<a href="https://arxiv.org/abs/2410.03665" target="_blank">Paper</a>] 
+      [<a href="https://egoallo.github.io/results.html" target="_blank">Interactive Results</a>] 
+      [<a href="bibtex/allbibtex.html#yi2024egoallo" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+    
+
+<!-- begin entry -->
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/megasam.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/megasam_wide.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">MegaSaM: Accurate, Fast and Robust Structure and Motion from Casual Dynamic Videos</b><br />
+      Zhengqi Li, Richard Tucker, Forrester Cole, Qianqian Wang, Linyi Jin, Vickie Ye, Angjoo Kanazawa, Aleksander Holynski, and Noah Snavely<br />
+      <i>CVPR 2025</i>, <b>Best Paper Honorable Mention</b><br />
+      [<a href="https://mega-sam.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://mega-sam.github.io/#demo" target="_blank">Interactive Results</a>] 
+      [<a href="https://arxiv.org/abs/2412.04463" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#li2024_MegaSaM" target="_blank">bibtex</a>]<br />
+      <p style="font-size: smaller; color: gray;">Is this video of mochi on a walk? Yes! MegaSam FTW</p>
+    </p>
+  </td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/toon3d.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/toon3d.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Toon3D: Seeing Cartoons from New Perspectives</b><br />
+      Ethan Weber*, Riley Peterlinz*, Rohan Mathur, Frederik Warburg, Alexei A. Efros, and Angjoo Kanazawa<br />
+      <i>ArXiv 2024</i><br />
+      [<a href="https://toon3d.studio/" target="_blank">Project Page</a>] 
+      [<a href="https://labeler.toon3d.studio/" target="_blank">Labeling Tool</a>] 
+      [<a href="https://arxiv.org/abs/2405.10320" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#weber2023toon3d" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/fillerbuster.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/fillerbuster.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Fillerbuster: Multi-View Scene Completion for Casual Captures</b><br />
+      Ethan Weber, Norman MÃ¼ller, Yash Kant, Vasu Agrawal, Michael ZollhÃ¶fer, Angjoo Kanazawa, Christian Richardt<br />
+      <i>ArXiv 2025</i> 
+      [<a href="https://ethanweber.me/fillerbuster/" target="_blank">Project Page</a>]
+      [<a href="https://arxiv.org/abs/2502.05175" target="_blank">Paper</a>]
+      [<a href="https://github.com/facebookresearch/fillerbuster" target="_blank">Code</a>]
+      [<a href="bibtex/allbibtex.html#fillerbuster" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/agent2sim_original.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/agent2sim_original.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Agent-to-Sim: Learning Interactive Behavior Models from Casual Longitudinal Videos</b><br />
+      Gengshan Yang, Andrea Bajcsy, Shunsuke Saito, and Angjoo Kanazawa<br />
+      <i>ICLR 2025</i><br />
+      [<a href="https://gengshan-y.github.io/agent2sim-www/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2410.16259" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#yang2024ats" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/osnom.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/osnom.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind</b><br />
+      Chiara Plizzari, Shubham Goel, Toby Perrett, Jacob Chalk, Angjoo Kanazawa, and Dima Damen<br />
+      <i>3DV 2025</i><br />
+      [<a href="https://dimadamen.github.io/OSNOM/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2404.05072" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#plizzari2025osnom" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+ <!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <img src="thumbs/gsplat_logo.png" alt="gsplat" height="80px">
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">gsplat: An Open-Source Library for Gaussian Splatting</b><br />
+      Vickie Ye, Ruilong Li, Justin Kerr, Matias Turkulainen, Brent Yi, Zhuoyang Pan, Otto Seiskari, Jianbo Ye, Jeffrey Hu, Matthew Tancik, and Angjoo Kanazawa<br />
+      <i>JMLR 2025</i><br />
+      [<a href="https://github.com/nerfstudio-project/gsplat" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2409.06765" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#gsplat" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/soar.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%">
+          <source src="thumbs/soar.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">SOAR: Self-Occluded Avatar Recovery from a Single Video in the Wild</b><br />
+      Zhuoyang Pan, Angjoo Kanazawa, and Hang Gao<br />
+      <i>ArXiv 2024</i><br />
+      [<a href="https://soar-avatar.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2410.23800" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#pan2024soar" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/syncnsync.png" target="_blank">
+        <img src="thumbs/syncnsync.png" width="90%" />
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Synergy and Synchrony in Couple Dances</b><br />
+      Vongani H. Maluleke, Lea MÃ¼ller, Jathushan Rajasegaran, Georgios Pavlakos, Shiry Ginosar, Angjoo Kanazawa, and Jitendra Malik<br />
+      <i>ArXiv 2024</i><br />
+      [<a href="https://von31.github.io/synNsync/" target="_blank">Project Page</a>] 
+      [<a href="http://arxiv.org/abs/2409.04440" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#maluleke2024synergy" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/sdsbridge.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/sdsbridge.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Rethinking Score Distillation as a Bridge Between Image Distributions</b><br />
+      David McAllister, Songwei Ge, Jia-Bin Huang, David W. Jacobs, Alexei A. Efros, Aleksander Holynski, and Angjoo Kanazawa<br />
+      <i>NeurIPS 2024</i><br />
+      [<a href="https://sds-bridge.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/davidmcall/SDS-Bridge" target="_blank">Code</a>] 
+      [<a href="https://arxiv.org/abs/2406.09417" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#mcallister2024rethinking" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/rsrd.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/rsrd_thumb_white.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction</b><br />
+      Justin Kerr*, Chung Min Kim*, Mingxuan Wu, Brent Yi, Qianqian Wang, Ken Goldberg, and Angjoo Kanazawa<br />
+      <i>CoRL 2024 (Oral)</i><br />
+      [<a href="https://robot-see-robot-do.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/kerrj/rsrd" target="_blank">Code</a>] 
+      [<a href="https://arxiv.org/abs/2409.18121" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#kerr2024rsrd" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/nerfxl.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/nerfxl_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">NeRF-XL: Scaling NeRFs with Multiple GPUs</b><br />
+      Ruilong Li, Sanja Fidler, Angjoo Kanazawa, and Francis Williams<br />
+      <i>ECCV 2024</i><br />
+      [<a href="https://research.nvidia.com/labs/toronto-ai/nerfxl/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2404.16221" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#li2024nerfxl" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+    
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/garfield.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/garfield_thumb.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Garfield: Group Anything with Radiance Fields</b><br />
+      Chung Min Kim*, Mingxuan Wu*, Justin Kerr*, Ken Goldberg, Matthew Tancik, and Angjoo Kanazawa<br />
+      <i>CVPR 2024</i><br />
+      [<a href="https://www.garfield.studio/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/chungmin99/garfield" target="_blank">Code</a>] 
+      [<a href="https://arxiv.org/abs/2401.09419" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#garfield2024" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/hamer.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/hamer.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Reconstructing Hands in 3D with Transformers</b><br />
+      Georgios Pavlakos, Dandan Shan, Ilija Radosavovic, Angjoo Kanazawa, David Fouhey, and Jitendra Malik<br />
+      <i>CVPR 2024</i><br />
+      [<a href="https://geopavlakos.github.io/hamer/" target="_blank">Project Page</a>] 
+      [<a href="https://arxiv.org/abs/2312.05251" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#pavlakos2024reconstructing" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+    
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <a href="thumbs/nerfiller.mp4" target="_blank">
+        <video autoplay loop muted playsinline width="100%" loading="lazy" preload="none">
+          <source src="thumbs/nerfiller.mp4" type="video/mp4">
+        </video>
+      </a>
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">Nerfiller: Completing Scenes via Generative 3D Inpainting</b><br />
+      Ethan Weber, Aleksander Holynski, Varun Jampani, Saurabh Saxena, Noah Snavely, Abhishek Kar, and Angjoo Kanazawa<br />
+      <i>CVPR 2024</i><br />
+      [<a href="https://ethanweber.me/nerfiller/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/ethanweber/nerfiller" target="_blank">Code</a>] 
+      [<a href="http://arxiv.org/abs/2312.04560" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#weber2024nerfiller" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/buddi.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/buddi.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Generative Proxemics: A Prior for 3D Social Interaction from Images
+</b> <br />
+Lea M&uuml;ller, Vickie Ye, Georgios Pavlakos, Michael Black, Angjoo Kanazawa
+<br />
+CVPR 2024 <br />
+[<a href="https://muelea.github.io/buddi/" target="_blank">project page</a>] [<a href="https://arxiv.org/abs/2306.09337" target="_blank">arXiv preprint</a>] [<a href="https://github.com/muelea/buddi" target="_blank">code</a>] [<a href="bibtex/buddi.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+  <td class="thumbs">
+    <p>
+      <!-- Thumbnail video (if available) -->
+      <img src="thumbs/sap3d.jpg" width="95%"\>      
+      <!-- <a href="thumbs/sap3d.mp4" target="_blank"> -->
+      <!--   <video autoplay loop muted playsinline width="70%"> -->
+      <!--     <source src="thumbs/sap3d.mp4" type="video/mp4"> -->
+      <!--   </video> -->
+      <!-- </a> -->
+    </p>
+  </td>
+  <td class="detail">
+    <p>
+      <b id="papertitle">The More You See in 2D the More You Perceive in 3D</b><br />
+      Xinyang Han*, Zelin Gao*, Angjoo Kanazawa, Shubham Goel, Yossi Gandelsman<br />
+      <i>CVPR 2024</i> <br />
+      [<a href="https://sap3d.github.io/" target="_blank">Project Page</a>] 
+      [<a href="https://github.com/sap3d/Sap3D" target="_blank">Code</a>] 
+      [<a href="https://arxiv.org/abs/2404.03652" target="_blank">Paper</a>] 
+      [<a href="bibtex/allbibtex.html#han2024more" target="_blank">bibtex</a>]<br />
+    </p>
+  </td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/lerftogo_thumb.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/lerftogo.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">LERF-TOGO: Language Embedded Radiance Fields for Zero-Shot Task-Oriented Grasping</b>
+<br />Adam Rashid*, Satvik Sharma*, Chung Min Kim, Justin Kerr, Lawrence Chen, Angjoo Kanazawa, Ken Goldberg<br />
+<i>CORL 2023</i> <b>Best Paper Finalist</b> <br />
+ [<a href="https://lerftogo.github.io/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/lerftogo/lerftogo" target="_blank">Code</a>]
+[<a href="https://arxiv.org/abs/2309.07970" target="_blank">Paper</a>] [<a href="bibtex/lerftogo.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/dbw_thumb.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/dbw_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Differentiable Blocks World:
+Qualitative 3D Decomposition by Rendering Primitives</b>
+<br />Tom Monnier, Jake Austin, Angjoo Kanazawa, Alexei A. Efros, Mathieu Aubry<br />
+<i>NeurIPS 2023</i> <br />
+ [<a href="https://www.tmonnier.com/DBW/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/monniert/differentiable-blocksworld" target="_blank">Code</a>]
+[<a href="https://arxiv.org/abs/2307.05473" target="_blank">Paper</a>] [<a href="bibtex/dbw.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/4dhumans_thumb_og.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/4dhumans_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Humans in 4D: Reconstructing and Tracking Humans with Transformers</b>
+<br />Shubham Goel, Georgios Pavlakos, Jathushan Rajasegaran, Angjoo Kanazawa*, Jitendra Malik*<br />
+<i>ICCV 2023</i>   <br />
+ [<a href="https://shubham-goel.github.io/4dhumans/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/shubham-goel/4D-Humans" target="_blank">Code</a>]
+ [<a href="https://huggingface.co/spaces/brjathu/HMR2.0" target="_blank">&#129303;Demo</a>]
+[<a href="https://arxiv.org/abs/2305.20091" target="_blank">Paper</a>] [<a href="bibtex/4dhumans.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/instructn2n.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/instructn2n_small.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Instruct-NeRF2NeRF: Editing 3D Scenes with Instructions</b>
+<br />Ayaan Haque, Matthew Tancik, Alexei A. Efros, Aleksander Holynski, Angjoo Kanazawa<br />
+<i>ICCV 2023</i>   <br />
+ [<a href="https://instruct-nerf2nerf.github.io/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/ayaanzhaque/instruct-nerf2nerf" target="_blank">Code</a>]
+[<a href="https://arxiv.org/abs/2303.12789" target="_blank">Paper</a>] [<a href="bibtex/instructn2n.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/lerf_teaser.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/lerf_small.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">LERF: Language Embedded Radiance Fields
+
+</b><br />Justin Kerr*, Chung Min Kim*, Ken Goldberg, Angjoo Kanazawa, Matthew Tancik<br />
+<i>ICCV 2023</i>   <br />
+ [<a href="https://www.lerf.io/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/kerrj/lerf" target="_blank">Code</a>]
+[<a href="https://arxiv.org/abs/2303.09553" target="_blank">Paper</a>] [<a href="bibtex/lerf.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/busters.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/busters.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">&#128123;Nerfbusters&#129529;: Removing Ghostly Artifacts from Casually Captured NeRFs</b><br />Frederik Warburg*, Ethan Weber*, Matt Tancik, Aleksander Holynski, Angjoo Kanazawa<br />
+<i>ICCV 2023</i>   <br />
+ [<a href="https://ethanweber.me/nerfbusters/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/ethanweber/nerfbusters" target="_blank">Code</a>]
+[<a href="https://arxiv.org/abs/2304.10532" target="_blank">Paper</a>] [<a href="bibtex/busters.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<img src="thumbs/nerfacc_logo.png" width="70%"\>
+</p></td>
+<td class="detail"><p><b id="papertitle">NerfAcc: Efficient Sampling Accelerates NeRFs</b>
+<br/>Ruilong Li, Hang Gao, Matthew Tancik, Angjoo Kanazawa
+<br/><i>ICCV 2023 </i> 
+ <br />
+ [<a href="https://www.nerfacc.com/" target="_blank">Documentation</a>]
+ [<a href="https://github.com/KAIR-BAIR/nerfacc" target="_blank">Github</a>]
+[<a href="https://arxiv.org/abs/2305.04966" target="_blank">Paper</a>] [<a href="bibtex/nerfacc.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/ns_thumb_original.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+  <source src="thumbs/ns_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Nerfstudio: A Modular Framework for Neural Radiance Field Development</b><br />Matthew Tancik*, Ethan Weber*, Evonne Ng*, Ruilong Li, Brent Yi, Justin Kerr, Terrance Wang, Alexander Kristoffersen, Jake Austin, Kamyar Salahi, Abhik Ahuja, David McAllister, Angjoo Kanazawa<br />
+<i>SIGGRAPH 2023 conference track</i>  <br />
+ [<a href="nerf.studio" target="_blank">Documentation</a>]
+ [<a href="https://github.com/nerfstudio-project/nerfstudio/" target="_blank">Code</a>]
+ [<a href="https://arxiv.org/abs/2302.04264" target="_blank">Paper</a>]
+ [<a href="bibtex/nerfstudio.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/slahmr.mp4" target="_blank">
+<video autoplay loop muted playslinline width="100%">
+<source src="thumbs/slahmr.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Decoupling Human and Camera Motion from Videos in the Wild
+
+</b><br />Vickie Ye, Georgios Pavlakos, Jitendra Malik, Angjoo Kanazawa<br />
+<i>CVPR 2023</i>  <br />
+ [<a href="https://vye16.github.io/slahmr/" target="_blank">Project Page</a>]
+ [<a href="https://github.com/vye16/slahmr" target="_blank">Code</a>]
+ [<a href="https://arxiv.org/abs/2302.12827" target="_blank">Paper</a>]
+ [<a href="bibtex/slahmr.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/kplanes_thumbs.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/kplanes_thumbs.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle"> K-Planes: Explicit Radiance Fields in Space, Time, and Appearance
+</b><br />Sara Fridovich-Keil*, Giacomo Meanti*, Frederik RahbÃ¦k Warburg, Benjamin Recht, Angjoo Kanazawa<br />
+<i>CVPR 2023</i>  <br /> 
+ [<a href="https://sarafridov.github.io/K-Planes/" target="_blank">Project Page</a>] 
+ [<a href="https://github.com/sarafridov/K-Planes" target="_blank">Code</a>] 
+[<a href="https://arxiv.org/abs/2301.10241" target="_blank">Paper</a>] [<a href="bibtex/kplanes.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/lart.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/lart.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">On the Benefits of 3D Pose and Tracking for Human Action Recognition
+</b><br />Jathushan Rajasegaran, Georgios Pavlakos, Angjoo Kanazawa, Christoph Feichtenhofer, Jitendra Malik<br />
+<i>CVPR 2023</i>  <br /> 
+ <!-- [<a href="" target="_blank">Project Page (coming soon)</a>]  -->
+ [<a href="https://people.eecs.berkeley.edu/~jathushan/LART/index.html">Project Page</a>] 
+<!--  [<a href="" target="_blank">Code</a>]  -->
+<!-- [<a href="" target="_blank">Paper</a>] [<a href="bibtex/action.txt" target="_blank">bibtex</a>]<br /> -->
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/dycheck_thumb.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/dycheck_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Monocular Dynamic View Synthesis: A Reality Check
+</b><br />Hang Gao, Ruilong Li, Shubham Tulsiani, Bryan Russell, Angjoo Kanazawa<br />
+<i>NeurIPS 2022</i>  <br /> 
+ [<a href="https://hangg7.com/dycheck/" target="_blank">Project Page</a>] 
+ [<a href="https://github.com/KAIR-BAIR/dycheck/" target="_blank">Code</a>] 
+[<a href="https://arxiv.org/abs/2210.13445" target="_blank">Paper</a>] [<a href="bibtex/dycheck.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/infzero_thumb_512.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/infzero_thumb_512.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">InfiniteNature-Zero: Learning Perpetual View Generation of Natural Scenes from Single Images</b><br />Zhengqi Li, Qianqian Wang, Noah Snavely, Angjoo Kanazawa<br />
+<i>ECCV 2022 (Oral)</i> <br /> 
+ [<a href="https://infinite-nature-zero.github.io/" target="_blank">Project Page</a>] [<a href="https://infinite-nature-zero.github.io/static/pdfs/InfiniteNatureZero.pdf" target="_blank">Paper</a>] [<a href="bibtex/infnatzero.txt" target="_blank">bibtex</a>]<br />
+<ul>
+<li>Featured in <a href="https://www.youtube.com/watch?v=H-pTZf1zsa8" target="_blank">two minute papers</a> 
+</li>
+</ul>
+</td>
+</tr>
+
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/friends_960.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/friends_380.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">The One Where They Reconstructed
+3D Humans and Environments in TV Shows</b><br />Georgios Pavlakos*, Ethan Weber*, Matthew Tancik, Angjoo Kanazawa<br />
+<i>ECCV 2022</i>  <br /> 
+ [<a href="https://ethanweber.me/sitcoms3D/" target="_blank">Project Page</a>] [<a href="https://github.com/ethanweber/sitcoms3D" target="_blank">Code and Data</a>]  [<a href="https://arxiv.org/abs/2207.14279" target="_blank">Paper</a>] [<a href="bibtex/sitcom3d.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/tava_thumb.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/tava_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">TAVA: Template-free Animatable Volumetric Actors</b><br />Ruilong Li, Julian Tanke, Minh Vo, Michael Zollhoefer, Jurgen Gall, Angjoo Kanazawa, Christoph Lassner<br />
+<i>ECCV 2022</i>  <br /> 
+ [<a href="https://www.liruilong.cn/projects/tava/" target="_blank">Project Page</a>] [<a href="https://github.com/facebookresearch/tava" target="_blank">Code</a>]  [<a href="https://arxiv.org/abs/2206.08929" target="_blank">Paper</a>] [<a href="bibtex/tava.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/bias_6x8_200.mp4" target="_blank">
+<video autoplay loop muted playslinline width="80%">
+<source src="thumbs/bias_6x8_200.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Studying Bias in GANs through the Lens of Race</b><br />Vongani H. Maluleke*, Neerja Thakkar*, Tim Brooks, Ethan Weber, Trevor Darrell, Alexei A. Efros, Angjoo Kanazawa, Devin Guillory <br />
+<i>ECCV 2022</i>  <br /> 
+ [<a href="https://neerja.me/bias-gans/" target="_blank">Project Page</a>] [<a href="https://github.com/ethanweber/anno" target="_blank">Code</a>]  [<a href="https://arxiv.org/abs/2209.02836" target="_blank">Paper</a>] [<a href="bibtex/bias.txt" target="_blank">bibtex</a>]<br />
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/plenoxels.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/plenoxels.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Plenoxels: Radiance Fields without Neural Networks</b><br />Alex Yu*, Sara Fridovich-Keil*, Matthew Tancik, Qinhong Chen, Ben Recht, Angjoo Kanazawa <br />
+<i>CVPR 2022 (Oral) </i> <br /> 
+[<a href="https://alexyu.net/plenoxels/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2112.05131" target="_blank">Paper</a>] [<a href="https://github.com/sxyu/svox2" target="_blank">Code</a>]
+ [<a href="bibtex/plenoxel.txt" target="_blank">bibtex</a>]<br />
+<ul>
+<li>Featured in <a href="https://www.youtube.com/watch?v=yptwRRpPEBM" target="_blank">two minute papers</a> 
+</li>
+<li><a href="https://engineering.berkeley.edu/news/2022/06/plenoxels-convert-2d-images-into-navigable-photorealistic-3d-worlds-in-minutes/" target="_blank">Article by Berkeley Engineering</a></li>
+</ul>
+
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/ds.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/ds.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Deformable Sprites for Unsupervised Video Decomposition</b><br /> Vickie Ye, Zhengqi Li, Richard Tucker, Angjoo Kanazawa, Noah Snavely<br />
+<i>CVPR 2022 (Oral) </i>  <br /> 
+[<a href="https://deformable-sprites.github.io/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2204.07151" target="_blank">Paper</a>] [<a href="https://github.com/vye16/deformable-sprites" target="_blank">Code</a>]
+ [<a href="bibtex/ds.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="80%"\> -->
+<a href="thumbs/phalp.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/phalp.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Tracking People by Predicting 3D Appearance, Location & Pose</b><br />Jathushan Rajasegaran, Georgios Pavlakos, Angjoo Kanazawa, Jitendra Malik<br />
+<i>CVPR 2022 (Oral) </i>  <br /> 
+[<a href="http://people.eecs.berkeley.edu/~jathushan/PHALP/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2112.04477" target="_blank">Paper</a>] [<a href="https://github.com/brjathu/PHALP" target="_blank">Code</a>]
+ [<a href="bibtex/phalp.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="70%"\> -->
+<a href="thumbs/listen.mp4" target="_blank">
+<!-- <video autoplay loop muted playslinline width="90%"> -->
+<video autoplay loop muted playslinline controls  width="90%">
+<source src="thumbs/listen.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Learning to Listen: Modeling Non-Deterministic Dyadic Facial Motion</b><br />Evonne Ng, Hanbyu Joo, Liwen Hu, Hao Li, Trevor Darrell, Angjoo Kanazawa, Shiry Ginosar<br />
+<i>CVPR 2022</i>  <br /> 
+[<a href="https://evonneng.github.io/learning2listen/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2204.08451" target="_blank">Paper</a>] [<a href="https://github.com/evonneng/learning2listen" target="_blank">Code</a>]
+ [<a href="bibtex/listen.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/multishot.gif" width="80%"\> -->
+<!-- <img src="thumbs/coming_soon.png" width="80%"\> -->
+<a href="thumbs/multishot_teaser.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/multishot_teaser.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Human Mesh Recovery from Multiple Shots</b><br />Georgios Pavlakos, Jitendra Malik, Angjoo Kanazawa<br />
+<i>CVPR 2022</i>  <br /> 
+[<a href="https://geopavlakos.github.io/multishot/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2012.09843" target="_blank">Paper</a>] <!-- [<a href="" target="_blank">Code</a>] -->
+ [<a href="bibtex/multishot.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/multishot.gif" width="80%"\> -->
+<!-- <img src="thumbs/coming_soon.png" width="80%"\> -->
+<a href="thumbs/dgs.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/dgs.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Differentiable Gradient Sampling for Learning Implicit 3D Scene Reconstructions from a Single Image</b><br />Shizhan Zhu, Sayna Ebrahimi, Angjoo Kanazawa, Trevor Darrell<br />
+<i>ICLR 2022</i>  <br /> 
+[<a href="https://zhusz.github.io/ICLR22-DGS-Webpage/" target="_blank">Project Page</a>] [<a href="https://zhusz.github.io/ICLR22-DGS-Webpage/pdf/iclr22-dgs.pdf" target="_blank">Paper</a>] [<a href="https://github.com/zhusz/ICLR22-DGS" target="_blank">Code</a>] [<a href="bibtex/dgs.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<!-- <img src="thumbs/coming_soon.png" width="80%"\> -->
+<a href="thumbs/t3dp_thumb.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/t3dp_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Tracking People with 3D Representations</b><br />Jathushan Rajasegaran, Georgios Pavlakos, Angjoo Kanazawa, Jitendra Malik <br />
+<i>NeurIPS 2021</i> <br /> 
+[<a href="http://people.eecs.berkeley.edu/~jathushan/T3DP/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2111.07868" target="_blank">Paper</a>] [<a href="https://github.com/brjathu/T3DP" target="_blank">Code</a>] [<a href="bibtex/t3dp.txt" target="_blank">bibtex</a>]
+
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/infinite_nature.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/infinite_nature.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image</b><br />Andrew Liu*, Richard Tucker*, Varun Jampani, Ameesh Makadia, Noah Snavely, Angjoo Kanazawa <br />
+<i>ICCV 2021 (Oral)</i> <br />
+[<a href="https://infinite-nature.github.io/" target="_blank">Project Page with <b>Demo</b></a>] [<a href="https://arxiv.org/abs/2012.09855" target="_blank">Paper</a>] [<a href="https://github.com/google-research/google-research/tree/master/infinite_nature" target="_blank">Code</a>] [<a href="bibtex/infinite_nature.txt" target="_blank">bibtex</a>]
+<ul>
+<li>Featured in <a href="https://www.youtube.com/watch?v=_Y1-KlTEmwk" target="_blank">two minute papers</a> 
+</li>
+</ul>
+
+
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/plenoctree.mp4" target="_blank">
+<video autoplay loop muted playslinline width="90%">
+<source src="thumbs/plenoctree.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">PlenOctrees for Real-time Rendering of Neural Radiance Fields
+</b><br />Alex Yu, Ruilong Li, Matthew Tancik, Hao Li, Ren Ng, Angjoo Kanazawa <br />
+<i>ICCV 2021 (Oral) </i> <br />
+[<a href="https://alexyu.net/plenoctrees/" target="_blank">Project Page with <b>Demo</b></a>] [<a href="https://arxiv.org/abs/2103.14024" target="_blank">Paper</a>] [<a href="https://github.com/sxyu/plenoctree" target="_blank">Code</a>]  [<a href="bibtex/plenoctree.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/rhoi.gif" style="" /></p></td>
+<td class="detail"><p><b id="papertitle">Reconstructing Hand-Object Interactions in the Wild
+</b><br />Zhe Cao*, Ilija Radosavovic*, Angjoo Kanazawa, Jitendra Malik<br />
+<i>ICCV 2021</i> <br />
+[<a href="https://people.eecs.berkeley.edu/~zhecao/rhoi/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2012.09856" target="_blank">Paper</a>] [<a href="https://github.com/ZheC/MOW" target="_blank">MOW Dataset</a>] [<a href="bibtex/handobj.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/dance_wide.mp4" target="_blank">
+<video autoplay loop muted playslinline controls  width="90%">
+<source src="thumbs/dance_wide.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">AI Choreographer: Music Conditioned 3D Dance Generation with AIST++</b><br />Ruilong Li*, Shan Yang*, David A. Ross, Angjoo Kanazawa <br />
+<i>ICCV 2021</i> <br />
+[<a href="https://google.github.io/aichoreographer/" target="_blank">Project Page</a>] [<a href="https://arxiv.org/abs/2101.08779" target="_blank">Paper</a>] [<a href="https://google.github.io/aistplusplus_dataset/" target="_blank">Dataset</a>] [<a href="https://github.com/google-research/mint" target="_blank">Code</a>] [<a href="bibtex/dance.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/amp_thumb.mp4" target="_blank">
+<video autoplay loop muted playsinline width="90%">
+<source src="thumbs/amp_light.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control</b><br />Xue Bin Peng*, Ze Ma*, Pieter Abbeel, Sergey Levine, Angjoo Kanazawa <br />
+<i>SIGGRAPH 2021</i> <br />
+[<a href="https://xbpeng.github.io/projects/AMP/index.html" target="_blank">Project Page</a>] [<a href="https://xbpeng.github.io/projects/AMP/2021_TOG_AMP.pdf" target="_blank">Paper</a>]  [<a href="https://github.com/xbpeng/DeepMimic" target="_blank">Code</a>] [<a href="bibtex/amp.txt" target="_blank">bibtex</a>]
+
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/keypointdeformer_guitar.mp4" target="_blank">
+<video autoplay loop muted playsinline width="70%">
+<source src="thumbs/keypointdeformer_guitar.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<!-- <td class="thumbs"><p><img class="thumbs" width="75%" src="thumbs/coming_soon"  /></p></td> -->
+<td class="detail"><p><b id="papertitle">KeypointDeformer: Unsupervised 3D Keypoint Discovery for Shape Control</b><br />Tomas Jakab, Richard Tucker, Ameesh Makadia, Jiajun Wu, Noah Snavely, Angjoo Kanazawa <br />
+<i>CVPR 2021 (Oral) </i> <br/>
+[<a href="https://tomasjakab.github.io/KeypointDeformer">Project website</a>][<a href="https://arxiv.org/abs/2104.11224">Paper</a>] [<a href="https://github.com/tomasjakab/keypoint_deformer/" target="_blank">Code</a>] [<a href="bibtex/keypointdeformer.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/pixelNeRF_thumb_cropped.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/pixelNeRF_thumb_cropped.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">pixelNeRF: Neural Radiance Fields from One or Few Images</b><br />Alex Yu, Vickie Ye, Matthew Tancik, Angjoo Kanazawa <br />
+<i>CVPR 2021</i> <br/>
+[<a href="https://alexyu.net/pixelnerf/" target="_blank">Project Page/Code</a>] [<a href="https://arxiv.org/abs/2012.02190" target="_blank">paper</a>] [<a href="bibtex/pixelNeRF.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/radar_thumb.mp4" target="_blank">
+<video autoplay loop muted playsinline width="75%">
+<source src="thumbs/radar_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">De-rendering the World's Revolutionary Artefacts</b><br />Shangzhe Wu, Ameesh Makadia, Jiajun Wu, Noah Snavely, Richard Tucker, Angjoo Kanazawa <br />
+<i>CVPR 2021</i> <br/>
+[<a href="https://sorderender.github.io/">Project website</a>] [<a href="https://arxiv.org/abs/2104.03954" target="_blank">Paper</a>] [<a href="bibtex/radar.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+
+<!-- begin entry -->
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/svd_neurips_20_thumbnail.png"  /></p></td>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">An Analysis of SVD for Deep Rotation Estimation</b><br />Jake Levinson, Carlos Esteves, Kefan Chen, Noah Snavely, Angjoo Kanazawa, Afshin Rostamizadeh, Ameesh Makadia <br />
+<i>NeurIPS 2020</i><br />
+[<a href="https://github.com/google-research/google-research/tree/master/special_orthogonalization" target="_blank">Github</a>] [<a href="https://arxiv.org/abs/2006.14616" target="_blank">paper</a>] [<a href="bibtex/svd.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/phosa_thumb_fast.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/phosa_thumb_fast.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Perceiving 3D Human-Object Spatial Arrangements from a Single Image in the Wild</b><br />Jason Y. Zhang*, Sam Pepose*, Hanbyul Joo, Deva Ramanan, Jitendra Malik, Angjoo Kanazawa <br />
+<i>ECCV 2020</i><br />
+[<a href="https://jasonyzhang.com/phosa/" target="_blank">project page</a>]
+[<a href="https://github.com/jasonyzhang/phosa/tree/master" target="_blank">Github</a>] [<a href="https://arxiv.org/abs/2007.15649" target="_blank">arXiv preprint</a>] [<a href="bibtex/phosa.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/ucmr_video.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/ucmr_video.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Shape and Viewpoint without Keypoints</b> <br />Shubham Goel, Angjoo Kanazawa, Jitendra Malik<br />
+<i>ECCV 2020</i><br />
+[<a href="https://shubham-goel.github.io/ucmr/" target="_blank">project page</a>] 
+[<a href="https://github.com/shubham-goel/ucmr" target="_blank">Github</a>] [<a href="https://arxiv.org/abs/2007.10982" target="_blank">arXiv preprint</a>] [<a href="bibtex/ucmr.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p>
+<a href="thumbs/zebra_thumb_stitch.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/zebra_thumb_stitch.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">Three-D Safari: Learning to Estimate Zebra Pose, Shape, and Texture from Images "In the Wild" </b> <br />Silvia Zuffi, Angjoo Kanazawa, Tanya Berger-Wolf, Michael J. Black<br />
+<i>ICCV 2019</i><br />
+[<a href="https://github.com/silviazuffi/smalst" target="_blank">Github</a>] [<a href="https://arxiv.org/abs/1908.07201" target="_blank">arXiv preprint</a>] [<a href="bibtex/zebra.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<!-- <td class="thumbs"><p><img class="thumbs" src="thumbs/pifu_teaser_kaitenzushi.gif"  /></p></td> -->
+<td class="thumbs"><p>
+<a href="thumbs/kaitenzushi_20sec_2x4.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/kaitenzushi_20sec_2x4_thumb.mp4" type="video/mp4">
+</video>
+</a>
+</p></td>
+<td class="detail"><p><b id="papertitle">PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization</b><br />
+Shunsuke Saito*, Zeng Huang*, Ryota Natsume*, Shigeo Morishima, Angjoo Kanazawa, Hao Li<br />
+(* equal contribution) <br />
+<i>ICCV 2019</i><br />
+[<a href="https://shunsukesaito.github.io/PIFu/" target="_blank">project page</a>] [<a href="https://arxiv.org/abs/1905.05172" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/S1FpjwKqtPs" target="_blank">video</a>] [<a href="https://shunsukesaito.github.io/PIFu/resources/bibtex.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs" style="text-align:center">
+<p><a href="thumbs/phd_teaser_fast.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/phd_teaser_fast.mp4" type="video/mp4">
+</video>
+</a>
+</p>
+</td>
+<td class="detail"><p><b id="papertitle">Predicting 3D Human Dynamics from Video</b><br />
+Jason Y. Zhang, Panna Felsen, Angjoo Kanazawa, Jitendra Malik<br />
+<i>ICCV 2019</i><br />
+[<a href="https://jasonyzhang.com/phd/" target="_blank">project page</a>] [<a href="http://arxiv.org/abs/1908.04781" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/aBKZ7HMF1SM" target="_blank">video</a>] [<a href="bibtex/phd.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<!-- <td class="thumbs" style="text-align:center"><p><img class="thumbs" src="thumbs/big_unused/comp_fencing.gif" style="" /></p></td> -->
+<td class="thumbs" style="text-align:center">
+<p><a href="thumbs/hmmr_table_tennis.mp4" target="_blank">
+<video autoplay loop muted playsinline width="100%">
+<source src="thumbs/hmmr_table_tennis_small.mp4" type="video/mp4">
+</video>
+</a>
+</p>
+</td>
+<td class="detail"><p><b id="papertitle">Learning 3D Human Dynamics from Video</b> <br />
+Angjoo Kanazawa*, Jason Y. Zhang*, Panna Felsen*, Jitendra Malik<br />
+<i>CVPR 2019</i><br />
+[<a href="https://akanazawa.github.io/human_dynamics/" target="_blank">project page</a>] [<a href="http://arxiv.org/abs/1812.01601" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/9fNKSZdsAG8" target="_blank">video</a>] [<a href="bibtex/hmmr.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<!-- begin entry -->
+<tr>
+<td class="thumbs" style="text-align:center"><p><img class="thumbs" src="thumbs/vdb_overview.png" style="" /></p></td>
+<td class="detail"><p><b id="papertitle">Variational Discriminator Bottleneck: Improving Imitation Learning, Inverse RL, and GANs by Constraining Information Flow</b><br />
+Xue Bin Peng, Angjoo Kanazawa, Sam Toyer, Pieter Abbeel, Sergey Levine<br />
+<i>ICLR 2019</i><br />
+[<a href="https://xbpeng.github.io/projects/VDB/index.html" target="_blank">project page</a>] [<a href="https://github.com/akanazawa/vgan" target="_blank">code</a>] [<a href="http://arxiv.org/abs/1810.00821" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/0qTCNx4AtJU" target="_blank">video</a>] [<a href="bibtex/vdb.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs" style="text-align:center"><p><img class="thumbs" src="thumbs/sfv_thumb.jpg" style="max-width:80%" /></p></td>
+<td class="detail"><p><b id="papertitle">SFV: Reinforcement Learning of Physical Skills from Videos </b><br/>
+Xue Bin Peng, Angjoo Kanazawa, Jitendra Malik, Pieter Abbeel, Sergey Levine<br />
+<i>ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2018)</i><br />
+[<a href="https://xbpeng.github.io/projects/SFV/index.html" target="_blank">project page</a>] [<a href="papers/2018_TOG_SFV.pdf" target="_blank">pdf</a>] [<a href="https://bair.berkeley.edu/blog/2018/10/09/sfv/" target="_blank">BAIR Blog</a>] [<a href="http://arxiv.org/abs/1810.03599" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/4Qg5I5vhX7Q" target="_blank">video</a>] [<a href="bibtex/sfv.txt" target="_blank">bibtex</a>]
+<li>Featured in <a href="https://www.youtube.com/watch?v=ozUzomVQsWc" target="_blank">two minute papers</a>
+</td>
+</tr>
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/CMR.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Learning Category-Specific Mesh Reconstruction from Image Collections</b> <br />
+Angjoo Kanazawa*, Shubham Tulsiani*, Alexei A. Efros, Jitendra Malik<br />
+(* equal contribution) <br />
+<i>ECCV 2018</i><br />
+[<a href="https://akanazawa.github.io/cmr/" target="_blank">project page</a>] [<a href="papers/cmr_camera_ready.pdf" target="_blank">pdf</a>] [<a href="https://arxiv.org/abs/1803.07549" target="_blank">arXiv preprint</a>] [<a href="https://youtu.be/cYHQKtBLI3Q" target="_blank">video</a>] [<a href="https://akanazawa.github.io/cmr/resources/bibtex.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/HMR_simple.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">End-to-end Recovery of Human Shape and Pose</b> <br/>
+Angjoo Kanazawa, Michael J. Black, David W. Jacobs, Jitendra Malik<br />
+<i>CVPR 2018</i><br />
+[<a href="https://akanazawa.github.io/hmr/" target="_blank">project page with code</a>] [<a href="papers/HMR_camera_ready.pdf" target="_blank">pdf</a>] [<a href="https://arxiv.org/abs/1712.06584" target="_blank">arXiv preprint</a>] [<a href="https://akanazawa.github.io/hmr/resources/bibtex.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/sfs.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">SfSNet : Learning Shape, Reflectance and Illuminance of Faces &lsquo;in the wild&rsquo;</b> <br/>
+Soumyadip Sengupta, Angjoo Kanazawa, Carlos D. Castillo, David W. Jacobs<br />
+<i>CVPR 2018 (Spotlight)</i><br />
+[<a href="https://senguptaumd.github.io/SfSNet/" target="_blank">project page with code</a>] [<a href="papers/sfsnet.pdf" target="_blank">pdf</a>] [<a href="https://arxiv.org/abs/1712.01261" target="_blank">arXiv preprint</a>] [<a href="https://senguptaumd.github.io/SfSNet/resources/bibtex.txt" target="_blank">bibtex</a>]</p>
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/SMALR_short.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Lions and Tigers and Bears: Capturing Non-Rigid, 3D, Articulated Shape from Images</b>  <br />
+Silvia Zuffi, Angjoo Kanazawa, Michael J. Black<br />
+<i>CVPR 2018 (Spotlight)</i><br />
+[<a href="http://smalr.is.tue.mpg.de/" target="_blank">project page with 3D models</a>] [<a href="papers/silvia2018_cameraready.pdf" target="_blank">pdf</a>]  [<a href="bibtex/smalr.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs" style="text-align:center"><p><img class="thumbs" src="thumbs/muvs.jpg"  style="max-width:80%"/></p></td>
+<td class="detail"><p><b id="papertitle">Towards Accurate Marker-less Human Shape and Pose Estimation over Time</b><br />
+Yinghao Huang, Federica Bogo, Christoph Lassner, Angjoo Kanazawa, Peter V. Gehler, Javier Romero, Ijaz Akhter, Michael J. Black<br />
+<i>International Conference on 3D Vision (3DV), 2017.</i><br />
+[<a href="papers/3DV_MuVS.pdf" target="_blank">pdf</a>] [<a href="bibtex/yinghao.txt" target="_blank">bibtex</a>]</p>
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/SMAL.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">3D Menagerie: Modeling the 3D shape and pose of animals</b><br />
+Silvia Zuffi, Angjoo Kanazawa, David W. Jacobs, Michael J. Black<br />
+<i>Computer Vision and Pattern Recognition (CVPR) 2017.</i> (Spotlight)<br />
+[<a href="http://smal.is.tue.mpg.de/" target="_blank">project page with model and demo</a>] [<a href="papers/cvpr17_menagerie_camready.pdf" target="_blank">pdf</a>] [<a href="https://arxiv.org/abs/1611.07700" target="_blank">arXiv</a>]  [<a href="bibtex/smal.txt" target="_blank">bibtex</a>]</p>
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/SMPLify.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Keep it SMPL: Automatic Estimation of 3D Human Pose and Shape from a Single Image</b><br />
+Federica Bogo*,  Angjoo Kanazawa*, Christoph Lassner, Peter Gehler,
+Javier Romero and Michael J. Black<br /> (* equal contribution)<br />
+<i>European Conference on Computer Vision (ECCV) 2016.</i> (Spotlight)<br />
+[<a href="papers/SMPLify.pdf" target="_blank">pdf</a>]
+[<a href="http://smplify.is.tue.mpg.de/" target="_blank">project page with
+  code</a>] [<a href="http://videolectures.net/eccv2016_kanazawa_single_image/"
+                target="_blank">Spotlight video</a>] [<a href="bibtex/smplify.txt" target="_blank">bibtex</a>]<br/>
+<ul>
+<li>Our work was featured in <a href="https://www.youtube.com/watch?v=NnzzSkKKoa8" target="_blank">two minute papers!</a>
+</li>
+</ul>
+
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/warpnet.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">WarpNet: Weakly Supervised Matching for Single-View Reconstruction</b><br />
+Angjoo Kanazawa, David W. Jacobs, Manmohan Chandraker<br />
+<i>Computer Vision and Pattern Recognition (CVPR) 2016.</i><br />
+[<a href="papers/kanazawa_cvpr2016_warpnet.pdf" target="_blank">pdf</a>]
+[<a href="papers/kanazawa_cvpr2016_warpnet_supplementary.pdf" target="_blank">supp</a>]
+[<a href="ftp://ftp.umiacs.umd.edu/pub/kanazawa/warpnet_evalpairs_and_results.zip" target="_blank">test set ids &amp; our curves</a>]   [<a href="bibtex/warpnet.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/cat.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Learning 3D Deformation of Animals from 2D Images</b><br />
+Angjoo Kanazawa, Shahar Kovalsky, Ronen Basri, David W. Jacobs<br />
+<i>Eurographics 2016.</i> <span class="red"><b><!-- >G&uumlnter Enderle  -->Best Paper Award</b></span><br />
+[<a href="papers/cat_eg2016.pdf" target="_blank">pdf</a>] [<a href="https://github.com/akanazawa/catdeform" target="_blank">code
+on github</a>] [<a href="https://youtu.be/CQGL7dGqSvc" target="_blank">fastforward</a>]
+[<a href="cat_results/index.html" target="_blank">See the results here</a>]  [<a href="bibtex/cat.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/sicnn2.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Locally Scale-invariant Convolutional Neural Network</b><br />
+Angjoo Kanazawa, Abhishek Sharma, David W. Jacobs<br />
+<i>Deep Learning and Representation Learning Workshop: NIPS 2014.</i><br />
+[<a href="papers/sicnn_workshop2014.pdf" target="_blank">pdf</a>]
+[<a href="https://github.com/akanazawa/si-convnet" target="_blank">code on
+  github</a>] [<a href="bibtex/sicnn.txt" target="_blank">bibtex</a>]
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/affordance.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Affordance of Object Parts from Geometric Features</b><br />
+Austin Myers, Angjoo Kanazawa, Cornelia Fermuller, Yiannis Aloimonos <br />
+<i>RGB-D: Advanced Reasoning with Depth Cameras: RSS 2014</i> <br /> [<a href="papers/affordanceRSSworkshop2014.pdf" target="_blank">pdf</a>]  [<a href="bibtex/affordance.txt" target="_blank">bibtex</a>]
+<!-- <i>Vision Meets Cognition Workshop: CVPR 2014</i> [<a href="papers/affordanceCVPRworkshop2014.pdf" target="_blank">pdf</a>]</p> -->
+[<a href="http://legacydirs.umiacs.umd.edu/~amyers/part-affordance-dataset/" target="_blank"><b>Part Affordance Dataset</b></a>]  [<a href="bibtex/affordance.txt" target="_blank">bibtex</a>]<br /> 
+</td>
+</tr>
+<!-- end entry -->
+<!-- begin entry -->
+<tr>
+<td class="thumbs"><p><img class="thumbs" src="thumbs/dog.jpg"  /></p></td>
+<td class="detail"><p><b id="papertitle">Dog Breed Classification Using Part Localization</b><br />
+Jiongxin Liu, Angjoo Kanazawa, Peter Belhumeur, David W. Jacobs <br />
+    <i>European Conference on Computer Vision (ECCV),</i> Oct. 2012. <br />
+[<a href="papers/eccv2012_dog_final.pdf" target="_blank">pdf</a>]
+    [<a href="http://www.slideshare.net/angjoo/dog-breed-classification-using-part-localization"
+        target="_blank">slides</a>]  [<a href="bibtex/dog.txt" target="_blank">bibtex</a>]<br />
+try our iPhone app:
+<a href="http://itunes.apple.com/us/app/dogsnap/id532468586?mt=8"
+   target="_blank"><b>Dogsnap</b></a> !<br/>
+<b>Columbia dogs with
+parts dataset</b> used in the
+paper: <a href="https://drive.google.com/file/d/1Ne88IIonfTCzUfOwo9dqQNRwDfrqaUNw/view?usp=sharing"
+          target="_blank">zip file (2.43GB)</a><br/>
+<ul>
+<li><p>133 breeds recognized by the American Kennel Club</p>
+</li>
+<li><p>8,351 images of dogs from Google image search, Image-net, and
+Flickr.</p>
+</li>
+<li><p>8 part locations annotated for each image</p>
+</li>
+</ul>
+</td>
+</tr>
+<!-- end entry -->
+</table>
+
+
+<h2>Thesis</h2>
+<p><b>Single-View 3D Reconstruction of Animals</b><br />
+Angjoo Kanazawa<br />
+Doctoral Thesis, University of Maryland, August 2017<br />
+[<a href="papers/thesis.pdf" target="_blank">pdf</a>]
+[<a href="https://www.dropbox.com/s/erpjzxln7qkaot9/thesis%20%5BAutosaved%5D.pptx?dl=0" target="_blank">slides</a>]
+<br /></p>
+<h2>Teaching</h2>
+<ul>
+<li>Co-Instructor: UC Berkeley <a href="https://cal-cs180.github.io/fa23/" target="_blank">CS180 Fall 2023 Introduction to Computer Vision and Computational Photography</a></li>
+<li>Instructor: UC Berkeley <a href="https://sites.google.com/berkeley.edu/learningfor3d-seminar/home" target="_blank">CS294-173 Spring 2023 Learning for 3D Vision</a></li>
+<br/>
+<li>Co-Instructor: UC Berkeley <a href="https://inst.eecs.berkeley.edu/~cs194-26/fa21/" target="_blank">CS194-26/294-26 Fall 2021 Introduction to Computer Vision and Computational Photography</a></li>
+<li>Co-Instructor: UC Berkeley <a href="https://cs184.eecs.berkeley.edu/sp21/" target="_blank">CS184/284a Spring 2021 Foundations of Computer Graphics</a></li>
+<li>Instructor: UC Berkeley <a href="https://sites.google.com/berkeley.edu/cs294-173/" target="_blank">CS294-173 Fall 2020 Learning for 3D Vision</a></li>
+<br/>
+<li><p>Teaching Assistant: UMD CMSC 421 Spring 2012 <a href="http://www.umiacs.umd.edu/~hal/courses/2012S_AI/" target="_blank">Introduction to Artificial Intelligence</a></p>
+</li>
+<li><p>Teaching Assistant: UMD CMSC 131 Fall 2011
+<a href="http://www.cs.umd.edu/class/fall2011/cmsc131/webpage/index.shtml" target="_blank">Object-Oriented Programming I</a></p>
+</li>
+<li><p>Teaching Assistant: NYU CSCI-UA.0101,0103, Fall 2008, Spring 2009
+<a href="http://cs.nyu.edu/courses/spring09/V22.0102-002/homepage.html" target="_blank">Introduction to Computer Science I, II</a></p>
+</li>
+</ul>
+<h2>Misc</h2>
+<ul>
+<li><p><a href="https://www.instagram.com/mochi_and_toro/" target="_blank">Meet my kitties Mochi and Toro</a></p>
+</li>
+<li>I grew up in Kobe, Japan. In Japanese, my name is written as: éæ²¢ å¤®ç  </li>
+</ul>
+</div>
+</body>
+</html>

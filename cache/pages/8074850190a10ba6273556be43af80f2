@@ -1,0 +1,4627 @@
+<html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12482860-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-12482860-6');
+  
+  function copyFunc(myid) {
+		alert('Copied');
+	  var copyText = document.getElementById(myid);
+	  copyText.select();
+	  copyText.setSelectionRange(0, 99999);
+	  document.execCommand("copy");
+	  
+	  var tooltip = document.getElementById("myTooltip");
+	  tooltip.innerHTML = "Copied: " + copyText.value;
+	  
+	}
+	function copyFunc2(myid) {
+	var text = document.getElementById(myid).value;
+	var textArea = document.createElement("textarea");
+
+  //
+  // *** This styling is an extra step which is likely not required. ***
+  //
+  // Why is it here? To ensure:
+  // 1. the element is able to have focus and selection.
+  // 2. if the element was to flash render it has minimal visual impact.
+  // 3. less flakyness with selection and copying which **might** occur if
+  //    the textarea element is not visible.
+  //
+  // The likelihood is the element won't even render, not even a
+  // flash, so some of these are just precautions. However in
+  // Internet Explorer the element is visible whilst the popup
+  // box asking the user for permission for the web page to
+  // copy to the clipboard.
+  //
+
+  // Place in the top-left corner of screen regardless of scroll position.
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+
+  // Ensure it has a small width and height. Setting to 1px / 1em
+  // doesn't work as this gives a negative w/h on some browsers.
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+
+  // We don't need padding, reducing the size if it does flash render.
+  textArea.style.padding = 0;
+
+  // Clean up any borders.
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+
+  // Avoid flash of the white box if rendered for any reason.
+  textArea.style.background = 'transparent';
+
+
+  textArea.value = text;
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+  }
+  
+</script>
+<script>
+
+</script>
+<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+<!--meta name="viewport" content="width=1024" #B0D3E5;-->
+<style>
+<!--illinois
+:root {
+	--gap-line-spacing:5px;
+	--gap-line-spacing-authors:2px;
+	--darkest-color-titles:#05344D;
+	--main-text-color:#0B689A;
+	--ligth-color-section-banner-bkg:#B0D3E5;;
+	--top-banner-color:#0B689A;
+	--gap-line-spacing-company:2px;
+	--page-background-color:#ffffff;
+	--table-border-color:#B0D3E5;
+	--section-banner-text-color:#05344D;
+	--font-my-theme:Helvetica;
+	--gap-right-before-links:2em;
+}
+-->
+:root {
+	--gap-line-spacing:5px;
+	--gap-line-spacing-authors:2px;
+	--darkest-color-titles:#545454;
+	--main-text-color:#003057;
+	--ligth-color-section-banner-bkg:#B3A369;;
+	--top-banner-color:#B3A369;
+	--gap-line-spacing-company:2px;
+	--page-background-color:#ffffff;
+	--table-border-color:#B3A369;
+	--section-banner-text-color:#003057;
+	--font-my-theme:Helvetica;
+	--gap-right-before-links:2em;
+}
+
+
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: var(--page-background-color);
+  padding: 0px;
+  text-align: center;
+  border-bottom:2px var(--main-text-color) solid;
+}
+
+.header {
+  padding: 0px 0px;
+  background: var(--top-banner-color);
+  color: #ffffff;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.outer-container {
+	/*margin-left:calc((100% - 980px) / 2);*/
+	width:980px;
+	background-color: var(--page-background-color);
+}
+
+.perma-header-container {
+	/*margin-left:calc((100% - 980px) / 2);*/
+	width:980px;
+	background-color: var(--top-banner-color);
+}
+
+.scroll-header {
+	color: #ffffff;
+}
+
+.top-my-name {
+	font-family:var(--font-my-theme);
+	font-size:22pt;
+	color:var(--page-background-color);
+}
+
+.my-name-contrast {
+	font-family:var(--font-my-theme);
+	font-size:20pt;
+	color:#FFFFFF;
+}
+
+
+.top-content {
+	font-family:var(--font-my-theme);
+	font-size:14pt;
+	color:var(--page-background-color);
+}
+
+.top-invert-content {
+	font-family:var(--font-my-theme);
+	font-size:14pt;
+	color:var(--main-text-color);
+}
+
+
+.section-banner {
+	background-color: var(--ligth-color-section-banner-bkg);
+	color: var(--section-banner-text-color);
+	font-size:16pt;
+	padding:4px;
+	text-align:left;
+}
+
+/*--Styles for papers--*/
+
+.paper-title {
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	font-weight:600;
+	color:var(--darkest-color-titles);
+}
+
+.paper-me-author{
+	font-weight:normal;
+}
+.award-highlight{
+	font-weight:bold;
+}
+.paper-authors{
+	font-family:var(--font-my-theme);
+	font-size:10pt;
+	color:var(--main-text-color);
+}
+
+.paper-conf {
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--main-text-color);
+	font-weight:bold;
+}
+
+.paper-conf-year {
+	font-family:var(--font-my-theme);
+	font-size:10pt;
+	color:var(--main-text-color);
+}
+
+.hyperlink-papers-brackets {
+	font-family:var(--font-my-theme);
+	font-size:10pt;
+	color:var(--main-text-color);
+}
+
+a:link, a:visited { 
+    color: var(--main-text-color);
+    text-decoration: underline;
+}
+
+a:link:active, a:visited:active { 
+    color: var(--main-text-color);
+}
+
+.contrast-url + a {
+	color: var(--page-background-color);
+}
+.pub-outer-table{
+	border:solid var(--table-border-color) 1px;
+	table-layout: fixed;
+	width:100%;
+	
+}
+.pub-table {
+	table-layout: fixed;
+	width:100%;
+}
+.pub-tr-title{
+	padding-top:var(--gap-line-spacing);
+}
+.pub-tr-authors{
+	padding-top:var(--gap-line-spacing);
+}
+.pub-tr-conf{
+	padding-top:var(--gap-line-spacing);
+}
+.pub-td-title{
+	padding-top:var(--gap-line-spacing);
+	padding-right:var(--gap-right-before-links);
+}
+.pub-td-authors{
+	padding-top:var(--gap-line-spacing-authors);
+}
+.pub-td-conf{
+	padding-top:var(--gap-line-spacing);
+	width:9em;
+}
+.pub-td-links {
+	width:11em;
+	vertical-align:middle;
+}
+.space-between-authors {
+	font-size:6pt
+}
+.awards-tr{
+	padding-top:var(--gap-line-spacing);
+}
+.awards-td{
+	padding-top:var(--gap-line-spacing);
+}
+.awards-table{
+}
+.award-line{
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--main-text-color);
+}
+.internship-table{
+	table-layout: fixed;
+	width:100%;
+}
+.company-name{
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--main-text-color);
+	font-weight:bold;
+	
+	/*font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--darkest-color-titles);*/
+}
+.company-duration {
+	font-family:var(--font-my-theme);
+	font-size:10pt;
+	color:var(--main-text-color);
+}
+.company-work{
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--main-text-color);
+}
+.company-work-long {
+	font-family:var(--font-my-theme);
+	font-size:10pt;
+	color:var(--main-text-color);
+}
+.company-designation{
+	font-family:var(--font-my-theme);
+	font-size:12pt;
+	color:var(--main-text-color);
+	font-weight:bold;
+}
+.internship-tr{
+	padding-top:var(--gap-line-spacing-company);
+}
+.internship-td{
+	padding-top:var(--gap-line-spacing-company);
+	padding-right:var(--gap-right-before-links);
+}
+.work-table{
+	table-layout: fixed;
+	width:100%;
+}
+.work-tr{
+	padding-top:var(--gap-line-spacing-company);
+}
+.work-td{
+	padding-top:var(--gap-line-spacing-company);
+	padding-right:var(--gap-right-before-links);
+}
+.company-td-links {
+	width:9em;
+	text-align:left;
+}
+.left-hr{
+	width:10%;
+	text-align:left;
+	margin-left:0;
+	border:solid 1px;
+	color:var(--main-text-color);
+}
+.center-hr{
+	width:10%;
+	text-align:center;
+	border:solid 1px;
+	color:var(--main-text-color);
+}
+.small-icons {
+	height:20pt;
+}
+.small-icons-intel {
+	height:24pt;
+}
+.small-icons-nec {
+	height:14pt;
+}
+.small-icons-university {
+	height:40pt;
+}
+.hidden-section {
+	display:none;
+}
+.dull-footnote {
+	color:#e0e0e0;
+	font-size:8pt;
+}
+
+.tooltip {
+    #position: relative;
+    #display: inline-block;
+    border-bottom: 1px dashed black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 380px;
+    background-color: white;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+	border:1px solid var(--main-text-color);
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+.tooltip_bib {
+    #position: relative;
+    #display: inline-block;
+    #border-bottom: 1px dashed black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip_bib .tooltiptext_bib {
+    visibility: hidden;
+    width: 140px;
+    background-color: white;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+	border:1px solid var(--main-text-color);
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip_bib:hover .tooltiptext_bib {
+    visibility: visible;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- margin-left:calc((100% - 980px) / 2); -->
+<table class="work-table">
+<tr>
+<td align="center" >
+<div class="outer-container" >
+<div class="top-container" id = "myBigHeader">
+	<table width="100%" background="Ashutosh_circle.jpg" style="background-position: 50% 0%; background-repeat:no-repeat;background-size:980px;table-layout: fixed">
+		<tr>
+			<td width="25%" align="right">
+				<!--img src="Ashutosh_cropped.jpg" width="100%"-->
+				<!--img src="Ashutosh_circle.png" width="40%"-->
+			</td>
+			<td>
+				<table>
+					<tr>
+						<td>
+							<div class="top-my-name">
+							Ashutosh Dhekne, <span style="font-size:12pt">Ph.D.</span>
+							</div>
+						</td>
+					</tr>
+						<td>
+							<div class="top-content">
+								<!--hr class="left-hr"-->
+								Associate Professor, BBISS Fellow, Georgia Institute of Technology<br>
+								&#9993; dhekne_at_gatech.edu<br><span style="font-size:8pt"><br></span>
+										
+								<!--
+								Advised by <a class="contrast-url"></a> <a class="contrast-url" href="http://croy.web.engr.illinois.edu/">Romit Roy Choudhury</a>, <a class="contrast-url" href="https://synrg.csl.illinois.edu/">SyNRG</a> group<br>-->
+							</div>
+						</td>
+					<tr>
+					</tr>
+					<tr>
+						<td>
+							<div class="top-content">
+								<!--hr class="left-hr"-->
+								<span style="font-size:12pt"><b>Research Interests:</b>
+								Wireless Networking, Mobile Computing, Embedded Systems, IoT<br></span><span style="font-size:8pt"><br></span>
+								<span style="font-size:12pt"><b>Teaching:</b><a class="contrast-url"></a>Fall 2025 - [CS8803] <a class="contrast-url" href="cs8803/course.html">
+								Mobile Computing and IoT<br></span><span style="font-size:8pt"><br></span>
+							</div>
+						</td>
+					</tr>
+					<!--tr>
+						<td style="border:1pt solid; padding-left:5pt; padding-top:2pt; padding-bottom:2pt;border-color:#fff;background-color:#FFF;text-align:center">
+							<div class="invert-top-content">
+								I am looking for highly motivated PhD students.<!-- <a href="https://www.gatech.edu">Georgia Tech</a>, <a href="https://scs.gatech.edu/">CS</a> from Fall 2019. --> <!--Here is my <a href="resume_AshutoshDhekne.pdf">CV</a--><br>
+							<!--/div> 
+						</td>
+					</tr-->
+				</table><a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage" tooltip="We use cookies!"> <img align="right" src="cookie.png" height="20pt"/></a>
+				<br>
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
+
+<div class="header" id="myHeader" style="display:none">
+	<div class="perma-header-container">
+		<table width="100%" style="table-layout: fixed">
+		<col style="width:70%">
+		<col style="width:30%">
+			<tr>
+				<td>
+					<div class="scroll-header">
+						<div class="my-name-contrast">Ashutosh Dhekne</div>
+						Associate Professor, BBISS Fellow, Georgia Tech<br><br>
+					</div>
+				</td>
+				<td align="right">
+					<img src="Ashutosh_circle_only.png" width="15%">
+				</td>
+			</tr>
+		
+		</table>
+		
+		
+	</div>
+</div>
+
+<div class="outer-container" id="myContent">
+<br>
+<!--div class="section-banner">Recent Updates</div>
+
+<table class="pub-outer-table"><tr><td>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">NSF NeTS</span><span class="paper-conf-year">, 2020<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">6Fit-A-Part:A Device for Physical Distancing						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div><div class="paper-authors">Panelist on Call to Arms Workshop
+Wireless & Mobile Systems In Face of COVID-19</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links"><span class="paper-authors"><span class="hyperlink-papers-brackets"><a href="6Fit-A-Part_COVID_19_NSF_workshop.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span></span>
+		</td>
+	</tr>
+</table>
+</table-->
+
+
+<div class="outer-container" id="myContent">
+<br>
+<div class="section-banner">Recent Updates</div>
+<!--Publication table follows-->
+<table class="pub-outer-table"><tr><td>
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Exhibit</span><span class="paper-conf-year">, Nov 2025<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="TechThrive">TechThrive</a> exhibition is live at Atlanta Airport
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Sept 2025<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">UWBKey accepted to IMWUT 2025
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Sept 2025<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">ObjectTrack presented at IPIN 2025
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Tenure</span><span class="paper-conf-year">, Aug 2025<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">I have received tenure and have been promoted to Associate Professor
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Posters</span><span class="paper-conf-year">, Sept 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Rahul and Haige will present 2 posters at MobiCom 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Funding</span><span class="paper-conf-year">, Aug 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Received NSF IUSE funding for exploring Hidden Curriculum in Computing
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, July 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">uFindMe accepted to IPIN 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Apr 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">UTrack3D accepted to MobiSys 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Apr 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">UWB-Auth accepted to WiSec 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Award</span><span class="paper-conf-year">, March 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Student Recognition of Excellence in Teaching Honor Roll (Spring 2024, Fall 2023, Spring 2023, Fall 2022, Fall 2021)
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Jan 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Robust Indoor Localization with Ranging-IMU Fusion accepted to ICRA 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Posters/Demos</span><span class="paper-conf-year">, Jan 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">We will present 3 posters/demos at HotMobile 2024
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Fellow</span><span class="paper-conf-year">, Oct 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Selected as a <a href="https://research.gatech.edu/sustainability">BBISS</a> Faculty Fellow
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Fellow</span><span class="paper-conf-year">, Oct 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Energy Equity, Environmental Justice & Community Engagement <a href="https://scre.research.gatech.edu/sites/default/files/2025-09/2025-26%20cesr%20faculty%20fellows_0.pdf">Faculty Fellow</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Keynote</span><span class="paper-conf-year">, Oct 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Workshop on Multiple Input Modalities and Sensations for VR/AR Interactions (MIMSVAI) <a href="keynote_MIMSVAI_2023.pptx">Talk</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Award</span><span class="paper-conf-year">, Sept 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">UnSpoof received the 3rd Place - Best Paper Award at IPIN 2023
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Sept 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="UnSpoof_IPIN_2023.pdf">UnSpoof</a> presented at IPIN 2023
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Funding</span><span class="paper-conf-year">, Nov 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Cisco Research funds our group
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Award</span><span class="paper-conf-year">, Sept 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">PnPLoc paper has won the Best Paper Award at IPIN 2022.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Exhibit</span><span class="paper-conf-year">, August 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="https://art.c21u.gatech.edu/ashutosh-dhekne">TechMyMoves</a> will be exibited at Georgia Tech Library. Artists' Talk: <a href="https://youtu.be/HlJI_bWXiPo">Full event</a>; <a href="https://youtu.be/HlJI_bWXiPo?t=1283">My talk</a>.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!--tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, July 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Our PnPLoc paper has been accepted at IPIN.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr-->
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, May 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Our PetTrack paper has been accepted at BodySys.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Funding</span><span class="paper-conf-year">, April 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Received the <a href="NSF_CAREER/NSF_CAREER.html">NSF CAREER award</a><!--https://www.nsf.gov/awardsearch/showAward?AWD_ID=2145278-->.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Mar 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="IntruSense_HotMobile2022.pdf">IntruSense</a> presented at HotMobile 2022
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Feb 2022<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="https://www.youtube.com/watch?v=q2jsKY8CNM0">Travelogue</a> accepted to CHI-LBW 2022
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Funding</span><span class="paper-conf-year">, Sept 2021<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Cisco Research funds our group 
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Mar 2021<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="https://youtu.be/mZSTrrVdLPc">ITrackU</a> accepted to MobiSys 2021
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Award</span><span class="paper-conf-year">, Feb 2021<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">HotMobile 2021 Poster awarded Best Poster Runners-Up 
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!--tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Poster</span><span class="paper-conf-year">, Feb 2021<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Look out for our Poster in HotMobile 2021 [Physical Games in K-12 despite COVID-19]! 
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr-->
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Hardware</span><span class="paper-conf-year">, Feb 2021<br></span>
+
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="UWB_Fleet.ft/">Fleet.ft: UWB Shield for Adafruit Feather M0</a></div> <!--span class="paper-authors paper-me-author">Ashutosh Dhekne</span-->
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!--tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Blog</span><span class="paper-conf-year">, Nov 2020<br></span>
+
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title"><a href="blog/">2FA is fragile, but here is a quick fix!</a></div> <span class="paper-authors">Jay Prakash,</span> <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Paper</span><span class="paper-conf-year">, Oct 2020<br></span>
+
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">6Fit-A-Part presented at ICNP 2020! 
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf">Poster</span><span class="paper-conf-year">, Oct 2020<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Homecoming presented at MobiCom 2020! 
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr-->
+</table>
+</table>
+</div>
+
+
+<div class="outer-container" id="myContent">
+<br>
+<div class="section-banner">Sustainability</div>
+<!--Publication table follows-->
+<table class="pub-outer-table"><tr><td>
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+		<span class="paper-conf"></span><span class="paper-conf-year"><br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">My work touches upon several aspects of sutainability. 
+						</div>
+						<div class="paper-authors">I am a part of Georgia Tech's <a href="https://sustain.gatech.edu/sites/default/files/2023-09/Sustainability%20Next%20Plan.pdf#page=19">Sustainability Next</a> committee.</div>
+						<div class="paper-authors">Research projects that contribute to the 17 UN SDGs are indicated using individual SDG icons.</div>
+						<div class="paper-authors">We have made research contributions in the following areas:</div>
+						<div class="paper-authors"><a href="https://sdgs.un.org/goals/goal3"><img src="sdgs/goal3-goodhealth.png" class="small-icons" ></a>
+						<a href="https://sdgs.un.org/goals/goal4"><img src="sdgs/goal4-education.png" class="small-icons" ></a>
+						<a href="https://sdgs.un.org/goals/goal6"><img src="sdgs/goal6-cleanwater.png" class="small-icons" ></a>
+						<a href="https://sdgs.un.org/goals/goal11"><img src="sdgs/goal11-sustainable-cities-communities.png" class="small-icons" ></a>
+						<a href="https://sdgs.un.org/goals/goal12"><img src="sdgs/goal12.png" class="small-icons" ></a>
+						<a href="https://sdgs.un.org/goals/goal2"><img src="sdgs/goal2.png" class="small-icons" ></a></div>
+						<div class="paper-title">I am honored to be selected <a href="https://research.gatech.edu/sustainability/fellows">BBISS Faculty Fellow</a>, 2023 - 2025</div>
+						<div class="paper-title">I am honored to be selected to the inaugural cohort of Energy Equity, Environmental Justice & Community Engagement <a href="https://scre.research.gatech.edu/sites/default/files/2025-09/2025-26%20cesr%20faculty%20fellows_0.pdf">Faculty Fellows</a>, 2023</div>
+						<br>
+						<div class="paper-title">Tiny Data</div>
+						<div class="paper-authors">Several of our projects culminate into the theme of <b>Tiny Data</b>. 
+						At a high level, it is the idea that even a miniscule amount of data of the right kind can enable important applications.
+						<br>A 10-minute presentation about Tiny Data is <a href="TinyData_LighteningTalk.pptx">here</a>. <br>A longer talk presented at BBISS seminar series is <a href="https://youtu.be/QCc7BHLzpMc">here<a>.</div> 
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</td></tr>
+</table>
+
+<div class="outer-container" id="myContent">
+<br>
+<div class="section-banner">Publications - Papers <span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('alltogether');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="alltogether" value="@ARTICLE{bulusu2025uThaw,
+author={Bulusu, Rahul and Dhekne, Ashutosh},
+journal={IEEE Sensors Letters}, 
+title={uThaw: Ultra-wideband Wireless Solid-Liquid State Transition Sensor to Detect Thawing of Food}, 
+year={2025},
+volume={},
+number={},
+pages={1-4},
+keywords={Channel impulse response;Wireless sensor networks;Wireless communication;Sensors;Permittivity;Reflection;Receivers;Ice;Microwave ovens;Microwave integrated circuits;Wireless Sensing;Ultra-Wideband (UWB);Solid-Liquid State Transitions;Food Safety Monitoring;Complex Permittivity;Channel Impulse Response (CIR);IoT Sensor Systems},
+doi={10.1109/LSENS.2025.3537922}}
+  
+@inproceedings{sethuraman2024bass,
+author = {Sethuraman, Manasvini and Sarma, Anirudh and Ghaisas, Netra and Bauskar, Adwait and Dhekne, Ashutosh and Sivasubramaniam, Anand and Ramachandran, Kishore},
+title = {BASS: A Resource Orchestrator to Account for Vagaries in Network Conditions in Community Wi-Fi Mesh},
+year = {2024},
+isbn = {9798400706233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3652892.3700754},
+doi = {10.1145/3652892.3700754},
+booktitle = {Proceedings of the 25th International Middleware Conference},
+pages = {131–144},
+numpages = {14},
+location = {Hong Kong, Hong Kong},
+series = {MIDDLEWARE '24}
+}
+
+@inproceedings{chicuFindMe2024,
+author = {Cich, Nicholas and Singhal, Rishabh and Dhekne, Ashutosh},
+title = {uFindMe: A UWB-Based Robotic Package Finder},
+year = {2024},
+booktitle={2024 IEEE 14th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6}}
+  
+@INPROCEEDINGS{jiang2024icra,
+  author={Jiang, Fan and Caruso, David and Dhekne, Ashutosh and Qu, Qi and Engel, Jakob Julian and Dong, Jing},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Robust Indoor Localization with Ranging-IMU Fusion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={11963-11969},
+  keywords={Location awareness;Wireless communication;Accuracy;Noise;Software systems;Distance measurement;Real-time systems},
+  doi={10.1109/ICRA57147.2024.10611274}}
+  
+@inproceedings{cao2024utrack3d,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {UTrack3D: 3D Tracking Using Ultra-wideband (UWB) Radios},
+year = {2024},
+isbn = {9798400705816},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643832.3661881},
+doi = {10.1145/3643832.3661881},
+booktitle = {Proceedings of the 22nd Annual International Conference on Mobile Systems, Applications and Services},
+pages = {345–358},
+numpages = {14},
+keywords = {UWB-based 3D tracking, UWB PDoA, UWB TDoA},
+location = {<conf-loc>, <city>Minato-ku, Tokyo</city>, <country>Japan</country>, </conf-loc>},
+series = {MOBISYS '24}
+}
+
+
+
+@inproceedings{alfi2024moviz,
+author = {Raj, Alfi Misha Antony Selvin and Cao, Yifeng and Li, Yunzhi and Hatolkar, Radhika and Dhekne, Ashutosh},
+title = {Position Paper: MoViz: UWB-IMU Sensors as Input to Body-Movement Visualizations},
+year = {2024},
+isbn = {9798400706660},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3662009.3662018},
+doi = {10.1145/3662009.3662018},
+booktitle = {Proceedings of the Workshop on Body-Centric Computing Systems},
+pages = {7–10},
+numpages = {4},
+keywords = {Digital Art, Generative Art, IMU, UWB, Visualization},
+location = {<conf-loc>, <city>Minato-ku</city>, <state>Tokyo</state>, <country>Japan</country>, </conf-loc>},
+series = {BodySys '24}
+}
+
+@inproceedings{cao2024ring,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {SigningRing: Signature-based Authentication using Inertial Sensors on a Ring Form-factor},
+year = {2024},
+isbn = {9798400706660},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3662009.3662019},
+doi = {10.1145/3662009.3662019},
+booktitle = {Proceedings of the Workshop on Body-Centric Computing Systems},
+pages = {11–16},
+numpages = {6},
+keywords = {Authentication, Gestures, IMU, Ring, Sign},
+location = {<conf-loc>, <city>Minato-ku</city>, <state>Tokyo</state>, <country>Japan</country>, </conf-loc>},
+series = {BodySys '24}
+}
+
+@inproceedings{cao2024uwbauth,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {UWB-Auth: A UWB-based Two Factor Authentication Platform},
+year = {2024},
+isbn = {9798400705823},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643833.3656113},
+doi = {10.1145/3643833.3656113},
+pages = {185–195},
+numpages = {11},
+keywords = {2fa iot token, uwb, wearables},
+location = {<conf-loc>, <city>Seoul</city>, <country>Republic of Korea</country>, </conf-loc>},
+series = {WiSec '24}
+}
+
+@Article{littlebeats,
+AUTHOR = {Islam, Bashima and McElwain, Nancy L. and Li, Jialu and Davila, Maria I. and Hu, Yannan and Hu, Kexin and Bodway, Jordan M. and Dhekne, Ashutosh and Roy Choudhury, Romit and Hasegawa-Johnson, Mark},
+TITLE = {Preliminary Technical Validation of LittleBeats&trade;: A Multimodal Sensing Platform to Capture Cardiac Physiology, Motion, and Vocalizations},
+JOURNAL = {Sensors},
+VOLUME = {24},
+YEAR = {2024},
+NUMBER = {3},
+ARTICLE-NUMBER = {901},
+URL = {https://www.mdpi.com/1424-8220/24/3/901},
+ISSN = {1424-8220},
+DOI = {10.3390/s24030901}
+}
+
+@ARTICLE{chen2023ieeeunspoof,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  journal={IEEE Journal of Indoor and Seamless Positioning and Navigation}, 
+  title={Spoofing Evident and Spoofing Deterrent Localization using Ultra-wideband (UWB) Active-Passive Ranging}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/JISPIN.2023.3343336}
+}
+
+@INPROCEEDINGS{chen2023unspoof,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2023 IEEE 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={UnSpoof: Distance Spoofing-Evident Localization using UWB}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/IPIN57070.2023.10332533}
+}
+
+@article{li2023privacyvsawareness,
+author = {Li, Jiachen and Zong, Bingrui and Cheng, Tingyu and Li, Yunzhi and Mynatt, Elizabeth D. and Dhekne, Ashutosh},
+title = {Privacy vs. Awareness: Relieving the Tension between Older Adults and Adult Children When Sharing In-Home Activity Data},
+year = {2023},
+issue_date = {October 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {CSCW2},
+url = {https://doi.org/10.1145/3610202},
+doi = {10.1145/3610202},
+journal = {Proc. ACM Hum.-Comput. Interact.},
+month = {oct},
+articleno = {353},
+numpages = {30},
+keywords = {smart home, indoor localization, older adults, health, surveillance, privacy}
+}
+
+@INPROCEEDINGS{chen2023unspoof,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2023 IEEE 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={UnSpoof: Distance Spoofing-Evident Localization using UWB}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-8}}
+
+@article{ViSig,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {ViSig: Automatic Interpretation of Visual Body Signals Using On-Body Sensors},
+year = {2023},
+issue_date = {March 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {1},
+url = {https://doi.org/10.1145/3580797},
+doi = {10.1145/3580797},
+journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+month = {mar},
+articleno = {4},
+numpages = {27},
+keywords = {sports automation, gestures, on-body sensors, fallback communication, IMU, body signals, visual signalling, postures, UWB}
+}
+
+@INPROCEEDINGS{sethuraman2022clairvoyantedge,
+  author={Sethuraman, Manasvini and Sarma, Anirudh and Bauskar, Adwait and Dhekne, Ashutosh and Ramachandran, Umakishore},
+  booktitle={2022 IEEE/ACM 7th Symposium on Edge Computing (SEC)}, 
+  title={ClairvoyantEdge: Prescient Prefetching of On-demand Video at the Edge of the Network}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={26-39},
+  doi={10.1109/SEC54971.2022.00010}}
+  
+  @INPROCEEDINGS{chen2022metric,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2022 IEEE 12th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={A Metric for Quantifying UWB Ranging Error Due to Clock Drifts}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IPIN54987.2022.9918104}}
+  
+  @INPROCEEDINGS{chen2022pnploc,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2022 IEEE 12th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={PnPLoc: UWB Based Plug & Play Indoor Localization}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IPIN54987.2022.9918119}}
+  
+  @inproceedings{alavala2022pettrack,
+  title={PetTrack: Tracking Pet Location and Activity Indoors},
+  author={Alavala, Neeraj and Chen, Haige and Singhal, Rishabh and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 2022 Workshop on Body-centric Computing Systems},
+  pages={1--6},
+  year={2022}
+}
+
+@inproceedings{changede2022intrusense,
+  title={IntruSense: an enhanced physical security system using UWB},
+  author={Changede, Shrenik and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 23rd Annual International Workshop on Mobile Computing Systems and Applications},
+  pages={41--47},
+  year={2022}
+}
+
+@inproceedings{10.1145/3491101.3519834,
+author = {Li, Yunzhi and Cheng, Tingyu and Dhekne, Ashutosh},
+title = {Travelogue: Representing Indoor Trajectories as Informative Art},
+year = {2022},
+isbn = {9781450391566},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3491101.3519834},
+doi = {10.1145/3491101.3519834},
+booktitle = {CHI Conference on Human Factors in Computing Systems Extended Abstracts},
+articleno = {387},
+numpages = {7},
+keywords = {personal informatics, informative art, wireless sensing},
+location = {New Orleans, LA, USA},
+series = {CHI EA '22}
+}
+
+@inproceedings{changede2022intrusense,
+  title={IntruSense: an enhanced physical security system using UWB},
+  author={Changede, Shrenik and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 23rd Annual International Workshop on Mobile Computing Systems and Applications},
+  pages={41--47},
+  year={2022}
+}
+
+
+@inproceedings{cao2021itracku,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {ITrackU: Tracking a Pen-like Instrument via UWB-IMU Fusion},
+year = {2021},
+isbn = {9781450384438},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3458864.3467885},
+doi = {10.1145/3458864.3467885},
+booktitle = {Proceedings of the 19th Annual International Conference on Mobile Systems, Applications, and Services},
+pages = {453–466},
+numpages = {14},
+location = {Virtual Event, Wisconsin},
+series = {MobiSys '21}
+}
+
+@ARTICLE{ecloud,  author={Arulraj, Joy and Chatterjee, Abhijit and Daglis, Alexandros and Dhekne, Ashutosh and Ramachandran, Umakishore},  journal={Computer},   title={eCloud: A Vision for the Evolution of the Edge-Cloud Continuum},   year={2021},  volume={54},  number={5},  pages={24-33},  doi={10.1109/MC.2021.3059737}}
+
+@inproceedings{cao20206fit,
+  title={6Fit-A-Part: A Protocol for Physical Distancing on a Custom Wearable Device},
+  author={Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+  booktitle={2020 IEEE 28th International Conference on Network Protocols (ICNP)},
+  pages={1--12},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{dhekne2019trackio,
+  title={Trackio: tracking first responders inside-out},
+  author={Dhekne, Ashutosh and Chakraborty, Ayon and Sundaresan, Karthikeyan and Rangarajan, Sampath},
+  booktitle={16th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 19)},
+  pages={751--764},
+  year={2019}
+}
+
+@inproceedings{dhekne2018liquid,
+  title={Liquid: A wireless liquid identifier},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Zhao, Yixuan and Hassanieh, Haitham and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys)},
+  pages={442--454},
+  year={2018}
+}
+
+@article{dhekne2018if,
+  title={If wifi aps could move: A measurement study},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy and Nelakuditi, Srihari},
+  journal={IEEE Transactions on Mobile Computing},
+  volume={17},
+  number={10},
+  pages={2293--2306},
+  year={2018},
+  publisher={IEEE}
+}
+
+@inproceedings{dhekne2017extending,
+  title={Extending cell tower coverage through drones},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 18th International Workshop on Mobile Computing Systems and Applications},
+  pages={7--12},
+  year={2017}
+}
+
+@inproceedings{gowda2017bringing,
+  title={Bringing IoT to sports analytics},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Shen, Sheng and Choudhury, Romit Roy and Yang, Lei and Golwalkar, Suresh and Essanian, Alexander},
+  booktitle={14th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 17)},
+  pages={499--513},
+  year={2017}
+}
+
+@inproceedings{gowda2016case,
+  title={The case for robotic wireless networks},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Roy Choudhury, Romit},
+  booktitle={Proceedings of the 25th International Conference on World Wide Web},
+  pages={1317--1327},
+  year={2016}
+}
+
+@inproceedings{gowda2016tracking,
+  title={Tracking drone orientation with multiple GPS receivers},
+  author={Gowda, Mahanth and Manweiler, Justin and Dhekne, Ashutosh and Choudhury, Romit Roy and Weisz, Justin D},
+  booktitle={Proceedings of the 22nd annual international conference on mobile computing and networking},
+  pages={280--293},
+  year={2016}
+}
+
+@article{chebrolu2012esense,
+  title={Esense: Energy sensing-based cross-technology communication},
+  author={Chebrolu, Kameswari and Dhekne, Ashutosh},
+  journal={IEEE Transactions on Mobile Computing},
+  volume={12},
+  number={11},
+  pages={2303--2316},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{dhekne2009implementation,
+  title={Implementation and evaluation of a tdma mac for wifi-based rural mesh networks},
+  author={Dhekne, Ashutosh and Uchat, Nirav and Raman, Bhaskaran},
+  journal={NSDR’09},
+  pages={23},
+  year={2009}
+}
+
+@inproceedings{chebrolu2009esense,
+  title={Esense: Communication through energy sensing},
+  author={Chebrolu, Kameswari and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 15th annual international conference on Mobile computing and networking},
+  pages={85--96},
+  year={2009}
+}
+
+@inproceedings{chen2022location,
+  title={Location-specific public broadcasts},
+  author={Chen, Haige and Yin, Zixin and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+  pages={624--625},
+  year={2022}
+}
+
+@inproceedings{cao2021physical,
+  title={Physical Games in K-12 despite COVID-19},
+  author={Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+  booktitle={Proceedings of the 22nd International Workshop on Mobile Computing Systems and Applications},
+  pages={160--162},
+  year={2021}
+}
+
+@ARTICLE{ecloud,  author={Arulraj, Joy and Chatterjee, Abhijit and Daglis, Alexandros and Dhekne, Ashutosh and Ramachandran, Umakishore},  journal={Computer},   title={eCloud: A Vision for the Evolution of the Edge-Cloud Continuum},   year={2021},  volume={54},  number={5},  pages={24-33},  doi={10.1109/MC.2021.3059737}}
+
+@inproceedings{cao2020homecoming,
+  title={Homecoming: a wireless homing device for UAVs},
+  author={Cao, Yifeng and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 26th Annual International Conference on Mobile Computing and Networking},
+  pages={1--3},
+  year={2020}
+}
+
+@article{dhekne2018p2ploc,
+  title={P2ploc: Peer-to-peer localization of fast-moving entities},
+  author={Dhekne, Ashutosh and Ravaioli, Umberto J and Choudhury, Romit Roy},
+  journal={Computer},
+  volume={51},
+  number={10},
+  pages={94--98},
+  year={2018},
+  publisher={IEEE}
+}
+
+@article{gowda2018iot,
+  title={Iot platform for sports analytics},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Shen, Sheng and Choudhury, Romit Roy and Yang, Sharon Xue and Yang, Lei and Golwalkar, Suresh and Essanian, Alexander},
+  journal={GetMobile: Mobile Computing and Communications},
+  volume={21},
+  number={4},
+  pages={8--14},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{gowda2017integrating,
+  title={Integrating glonass with gps for drone orientation tracking},
+  author={Gowda, Mahanth and Manweiler, Justin and Dhekne, Ashutosh and Choudhury, Romit Roy and Weisz, Justin D},
+  booktitle={International Conference on Communication Systems and Networks},
+  pages={77--92},
+  year={2017},
+  organization={Springer}
+}
+
+@inproceedings{dhekne2016cell,
+  title={Cell tower extension through drones: Poster},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 22nd Annual International Conference on Mobile Computing and Networking},
+  pages={456--457},
+  year={2016}
+}"/></span></div>
+<!--Publication table follows-->
+<table class="pub-outer-table"><tr><td>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IMWUT</span><span class="paper-conf-year">, 2025<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						UWBKey: Using Contrastive Learning for Efficient Secure Key Generation in UWB
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<!--span class="hyperlink-papers-brackets"><a href="IPIN2025_Presentation_ObjectTrack.m4v"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span><span class="hyperlink-papers-brackets"></span-->
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('chen2025UWBKey');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="chen2025UWBKey" value="@article{chen2025UWBKey,
+author = {Chen, Haige and Dhekne, Ashutosh},
+title = {UWBKey: Using Contrastive Learning for Efficient Secure Key Generation in UWB},
+year = {2025},
+issue_date = {December 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {4},
+url = {https://doi.org/10.1145/3770630},
+doi = {10.1145/3770630},
+journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+month = dec,
+articleno = {164},
+numpages = {31}
+}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="UWBKey_IMWUT2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			
+		
+		<!--span class="hyperlink-papers-brackets"><a href="Context_Aware_ICTD_Compass2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal8"><img src="sdgs/goal8.png" class="small-icons" ></a></span-->
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IPIN</span><span class="paper-conf-year">, 2025<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						ObjectTrack: 6DoF Object Tracking Through UWB-IMU Fusion
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Fan Jiang, Frank Dellaert, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('Jiang2025ObjectTrack');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="Jiang2025ObjectTrack" value="@inproceedings{Jiang2025ObjectTrack,
+author = {Fan Jiang and Frank Dellaert and Ashutosh Dhekne},
+title = {ObjectTrack: 6DoF Object Tracking Through UWB-IMU Fusion},
+booktitle={2025 IEEE 15th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}
+year = {2025},
+publisher = {IEEE},
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="ObjectTrack_IPIN2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="IPIN2025_Presentation_ObjectTrack.m4v"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span><span class="hyperlink-papers-brackets"></span>
+		
+		
+		
+		
+		<!--span class="hyperlink-papers-brackets"><a href="Context_Aware_ICTD_Compass2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal8"><img src="sdgs/goal8.png" class="small-icons" ></a></span-->
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">COMPASS</span><span class="paper-conf-year">, 2025<br></span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Bringing Context to the Underserved: Rethinking Context-Aware Design to Bridge the Digital Divide
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Summit Shrestha, Josiah Hester, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Umakishore Ramachandran, Alex Cabral</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('summit2025compass');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="summit2025compass" value="@inproceedings{10.1145/3715335.3735497,
+author = {Shrestha, Summit and Hester, Josiah and Dhekne, Ashutosh and Ramachandran, Umakishore and Cabral, Alex},
+title = {Bringing Context to the Underserved: Rethinking Context-Aware Design to Bridge the Digital Divide},
+year = {2025},
+isbn = {9798400714849},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715335.3735497},
+doi = {10.1145/3715335.3735497},
+abstract = {The limited and highly variable resource dynamics of underserved communities, each with their own unique needs and values, underscore the need to integrate a context-aware approach when designing for these settings. Context-aware computing has long been a fundamental aspect of ubiquitous and pervasive systems, yet its application in Information and Communication Technologies for Development (ICT4D) remains limited. Existing context-aware approaches are predominantly designed for resource-rich environments and privileged communities, often failing to account for the unique constraints and dynamics of underserved populations. In this paper, we advocate for a paradigm shift in ICT system and service design to serve not only the privileged but also the underserved. Through the lens of two real-world case studies, we illustrate the contextual challenges faced by underserved communities and validate the design goals of our proposed framework by grounding them in real-world constraints, needs, and potential outcomes. Drawing upon existing literature and insights from the case studies, we first redefine context in ICT4D as a dynamic interplay of situated location, community needs, and limited resources, emphasizing a community-centered perspective. Building upon this definition, we conceptualize a more community-context-aware ICT4D design and propose enabling technologies for integrating community-in-the-loop methodologies, efficient resource allocation mechanisms, and context-aware service resiliency and adaptability strategies to enhance ICT services in resource-limited settings. By introducing a more context-aware approach to ICT4D, this paper aims to foster inclusivity, mitigate information inequity, and contribute to bridging the digital divide. Our work lays the foundation for future research on inclusive, resource-efficient, and community-driven context-aware ICT solutions.},
+booktitle = {Proceedings of the ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies},
+pages = {647–665},
+numpages = {19},
+keywords = {Information and Communication Technologies for Development (ICT4D), Context-aware Systems, Community Networks, Resource-scarce environments},
+location = {
+},
+series = {COMPASS '25}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="Context_Aware_ICTD_Compass2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal8"><img src="sdgs/goal8.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IEEE Sensors Letters</span><span class="paper-conf-year">, 2025<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						uThaw: Ultra-wideband Wireless Solid-Liquid State Transition Sensor to Detect Thawing of Food
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Rahul Bulusu, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('bulusu2025uThaw');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="bulusu2025uThaw" value="@ARTICLE{bulusu2025uThaw,
+  author={Bulusu, Rahul and Dhekne, Ashutosh},
+  journal={IEEE Sensors Letters}, 
+  title={uThaw: Ultra-wideband Wireless Solid-Liquid State Transition Sensor to Detect Thawing of Food}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-4},
+  keywords={Channel impulse response;Wireless sensor networks;Wireless communication;Sensors;Permittivity;Reflection;Receivers;Ice;Microwave ovens;Microwave integrated circuits;Wireless Sensing;Ultra-Wideband (UWB);Solid-Liquid State Transitions;Food Safety Monitoring;Complex Permittivity;Channel Impulse Response (CIR);IoT Sensor Systems},
+  doi={10.1109/LSENS.2025.3537922}}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="uThaw_sensors_2025.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal12"><img src="sdgs/goal12.png" class="small-icons" ></a><a href="https://sdgs.un.org/goals/goal3"><img src="sdgs/goal3-goodhealth.png" class="small-icons" ></a><a href="https://sdgs.un.org/goals/goal2"><img src="sdgs/goal2.png" class="small-icons" ></a><a href="https://sdgs.un.org/goals/goal13"><img src="sdgs/goal13.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">Middleware</span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="wireless_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						BASS: A Resource Orchestrator to Account for Vagaries in Network Conditions in Community Wi-Fi Mesh
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Manasvini Sethuraman, Anirudh Sarma, Netra Ghaisas, Adwait Bauskar, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Anand Sivasubramaniam, Kishore Ramachandran</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('sethuraman2024bass');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="sethuraman2024bass" value="@inproceedings{sethuraman2024bass,
+author = {Sethuraman, Manasvini and Sarma, Anirudh and Ghaisas, Netra and Bauskar, Adwait and Dhekne, Ashutosh and Sivasubramaniam, Anand and Ramachandran, Kishore},
+title = {BASS: A Resource Orchestrator to Account for Vagaries in Network Conditions in Community Wi-Fi Mesh},
+year = {2024},
+isbn = {9798400706233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3652892.3700754},
+doi = {10.1145/3652892.3700754},
+booktitle = {Proceedings of the 25th International Middleware Conference},
+pages = {131–144},
+numpages = {14},
+location = {Hong Kong, Hong Kong},
+series = {MIDDLEWARE '24}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="BASS_middleware_2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="BASS_Middleware24_v2.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal11"><img src="sdgs/goal11-sustainable-cities-communities.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IPIN</span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						uFindMe: A UWB-Based Robotic Package Finder
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Nicholas Cich, Rishabh Singhal, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('chicuFindMe2024');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="chicuFindMe2024" value="@inproceedings{chicuFindMe2024,
+author = {Cich, Nicholas and Singhal, Rishabh and Dhekne, Ashutosh},
+title = {uFindMe: A UWB-Based Robotic Package Finder},
+year = {2024},
+booktitle={2024 IEEE 14th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6}}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="IPIN2024_uFindMe_UWB_based_robotic_package_finder.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="IPIN2024_uFindMe.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://github.com/yifeng361/UTrack3D/"><img src="data_dark.png" class="small-icons" onmouseover="this.src='data.png';" onmouseout="this.src='data_dark.png';"></a></span-->
+		<!--span class="hyperlink-papers-brackets"><a href="SEC_ClairvoyantEdge.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+		
+		
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiSys</span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						UTrack3D: 3D Tracking Using Ultra-wideband (UWB) Radios
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('cao2024utrack3d');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="cao2024utrack3d" value="@inproceedings{cao2024utrack3d,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {UTrack3D: 3D Tracking Using Ultra-wideband (UWB) Radios},
+year = {2024},
+isbn = {9798400705816},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643832.3661881},
+doi = {10.1145/3643832.3661881},
+booktitle = {Proceedings of the 22nd Annual International Conference on Mobile Systems, Applications and Services},
+pages = {345–358},
+numpages = {14},
+keywords = {UWB-based 3D tracking, UWB PDoA, UWB TDoA},
+location = {<conf-loc>, <city>Minato-ku, Tokyo</city>, <country>Japan</country>, </conf-loc>},
+series = {MOBISYS '24}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="UTrack3D_MobiSys2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="utrack3d_slides.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://github.com/yifeng361/UTrack3D/"><img src="data_dark.png" class="small-icons" onmouseover="this.src='data.png';" onmouseout="this.src='data_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="SEC_ClairvoyantEdge.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+		
+		
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">BodySys</span><span class="paper-conf-year">, 2024<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						SigningRing: Signature-based Authentication using Inertial Sensors on a Ring Form-factor
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">		
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('cao2024ring');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="cao2024ring" value="@inproceedings{cao2024ring,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {SigningRing: Signature-based Authentication using Inertial Sensors on a Ring Form-factor},
+year = {2024},
+isbn = {9798400706660},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3662009.3662019},
+doi = {10.1145/3662009.3662019},
+booktitle = {Proceedings of the Workshop on Body-Centric Computing Systems},
+pages = {11–16},
+numpages = {6},
+keywords = {Authentication, Gestures, IMU, Ring, Sign},
+location = {<conf-loc>, <city>Minato-ku</city>, <state>Tokyo</state>, <country>Japan</country>, </conf-loc>},
+series = {BodySys '24}
+}"/></span>
+		
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="SigningRing_BodySys2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>	
+		<span class="hyperlink-papers-brackets"><a href="SigninigRing_BodySys2024.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			
+		</td>		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">BodySys</span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Position Paper: MoViz: UWB-IMU Sensors as Input to Body-Movement Visualizations
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Alfi Misha Antony Selvin Raj, Yifeng Cao, Yunzhi Li, Radhika Hatolkar, Ashutosh Dhekne</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('alfi2024moviz');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="alfi2024moviz" value="@inproceedings{alfi2024moviz,
+author = {Raj, Alfi Misha Antony Selvin and Cao, Yifeng and Li, Yunzhi and Hatolkar, Radhika and Dhekne, Ashutosh},
+title = {Position Paper: MoViz: UWB-IMU Sensors as Input to Body-Movement Visualizations},
+year = {2024},
+isbn = {9798400706660},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3662009.3662018},
+doi = {10.1145/3662009.3662018},
+booktitle = {Proceedings of the Workshop on Body-Centric Computing Systems},
+pages = {7–10},
+numpages = {4},
+keywords = {Digital Art, Generative Art, IMU, UWB, Visualization},
+location = {<conf-loc>, <city>Minato-ku</city>, <state>Tokyo</state>, <country>Japan</country>, </conf-loc>},
+series = {BodySys '24}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="MoViz_BodySys2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>		
+		<span class="hyperlink-papers-brackets"><a href="MoViz_BodySys2024.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">WiSec</span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						UWB-Auth: A UWB-based Two Factor Authentication Platform
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar, <br>Presented By: Rahul Bulusu</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('cao2024uwbauth');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="cao2024uwbauth" value="@inproceedings{cao2024uwbauth,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {UWB-Auth: A UWB-based Two Factor Authentication Platform},
+year = {2024},
+isbn = {9798400705823},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643833.3656113},
+doi = {10.1145/3643833.3656113},
+pages = {185–195},
+numpages = {11},
+keywords = {2fa iot token, uwb, wearables},
+location = {<conf-loc>, <city>Seoul</city>, <country>Republic of Korea</country>, </conf-loc>},
+series = {WiSec '24}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="UWBAuth_WiSec2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="UWBAuth_Slides_WiSec2024.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf tooltip">ICRA<span class="tooltiptext">IEEE International Conference on
+Robotics and Automation</span></span><span class="paper-conf-year">, 2024<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Robust Indoor Localization with Ranging-IMU Fusion
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Fan Jiang, David Caruso, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Qi Qu, Jakob Engel, Jing Dong</div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('jiang2024icra');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="jiang2024icra" value="@INPROCEEDINGS{jiang2024icra,
+  author={Jiang, Fan and Caruso, David and Dhekne, Ashutosh and Qu, Qi and Engel, Jakob Julian and Dong, Jing},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Robust Indoor Localization with Ranging-IMU Fusion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={11963-11969},
+  keywords={Location awareness;Wireless communication;Accuracy;Noise;Software systems;Distance measurement;Real-time systems},
+  doi={10.1109/ICRA57147.2024.10611274}}"/></span>
+		
+
+		
+		
+			<span class="hyperlink-papers-brackets"><a href="Robust_Indoor_Localization_with_Ranging_IMU_Fusion_ICRA_2024.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf tooltip">Sensors<span class="tooltiptext">MDPI Sensors</span></span><span class="paper-conf-year">, 2024<br></span>
+			<div><!--img src="uwb_label.png" height="20pt"--><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Preliminary Technical Validation of LittleBeats™: A Multimodal Sensing Platform to Capture Cardiac Physiology, Motion, and Vocalizations
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Bashima Islam*, Nancy L McElwain*, Jialu Li, Maria Davila, Yannan Hu, Kexin Hu, Jordan M Bodway, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Romit Roy Choudhury, Mark Hasegawa-Johnson*  </div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('littlebeats');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="littlebeats" value="@Article{littlebeats,
+AUTHOR = {Islam, Bashima and McElwain, Nancy L. and Li, Jialu and Davila, Maria I. and Hu, Yannan and Hu, Kexin and Bodway, Jordan M. and Dhekne, Ashutosh and Roy Choudhury, Romit and Hasegawa-Johnson, Mark},
+TITLE = {Preliminary Technical Validation of LittleBeats&trade;: A Multimodal Sensing Platform to Capture Cardiac Physiology, Motion, and Vocalizations},
+JOURNAL = {Sensors},
+VOLUME = {24},
+YEAR = {2024},
+NUMBER = {3},
+ARTICLE-NUMBER = {901},
+URL = {https://www.mdpi.com/1424-8220/24/3/901},
+ISSN = {1424-8220},
+DOI = {10.3390/s24030901}
+}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="https://www.mdpi.com/1424-8220/24/3/901/pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal3"><img src="sdgs/goal3-goodhealth.png" class="small-icons" ></a></span>
+		
+		
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf tooltip">IEEE JISPN<span class="tooltiptext">IEEE Journal of Indoor and Seamless Positioning and Navigation</span></span><span class="paper-conf-year">, 2023<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Spoofing Evident and Spoofing Deterrent Localization using Ultra-wideband (UWB) Active-Passive Ranging
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span> </div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('chen2023ieeeunspoof');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="chen2023ieeeunspoof" value="@ARTICLE{chen2023ieeeunspoof,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  journal={IEEE Journal of Indoor and Seamless Positioning and Navigation}, 
+  title={Spoofing Evident and Spoofing Deterrent Localization using Ultra-wideband (UWB) Active-Passive Ranging}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/JISPIN.2023.3343336}}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="IEEE_JISPN_Unspoof.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IPIN</span><span class="paper-conf-year">, 2023<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						UnSpoof: Distance Spoofing-Evident Localization using UWB
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span> </div>
+						<div class="paper-authors award-highlight"> 3rd Place - Best Paper Award</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('chen2023unspoof');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="chen2023unspoof" value="@INPROCEEDINGS{chen2023unspoof,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2023 IEEE 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={UnSpoof: Distance Spoofing-Evident Localization using UWB}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/IPIN57070.2023.10332533}}"/></span>
+		
+		
+		<span class="hyperlink-papers-brackets"><a href="UnSpoof_IPIN_2023.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="UnSpoof_IPIN_2023.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<img src="awards.png" class="small-icons"/>
+		<!--span class="hyperlink-papers-brackets"><a href="SEC_ClairvoyantEdge.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">CSCW</span><span class="paper-conf-year">, 2023<br></span>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						Privacy vs. Awareness: Relieving the Tension between Older Adults and Adult Children When Sharing In-home Activity
+Data
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Jiachen Li, Bingrui Zong, Tingyu Cheng, Yunzhi Li, Elizabeth D Mynatt, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span> </div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('cscw2023');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="cscw2023" value="@article{li2023privacyvsawareness,
+author = {Li, Jiachen and Zong, Bingrui and Cheng, Tingyu and Li, Yunzhi and Mynatt, Elizabeth D. and Dhekne, Ashutosh},
+title = {Privacy vs. Awareness: Relieving the Tension between Older Adults and Adult Children When Sharing In-Home Activity Data},
+year = {2023},
+issue_date = {October 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {CSCW2},
+url = {https://doi.org/10.1145/3610202},
+doi = {10.1145/3610202},
+journal = {Proc. ACM Hum.-Comput. Interact.},
+month = {oct},
+articleno = {353},
+numpages = {30},
+keywords = {smart home, indoor localization, older adults, health, surveillance, privacy}
+}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="privacy_awareness_cscw_2023.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="Privacy_Awareness_CSCW_2023.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal3"><img src="sdgs/goal3-goodhealth.png" class="small-icons" ></a></span>
+		
+		<!--span class="hyperlink-papers-brackets"><a href="SEC_ClairvoyantEdge.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IMWUT</span><span class="paper-conf-year">, 2023<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						ViSig: Automatic Interpretation of Visual Body Signals using On-Body Sensors
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar </div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('visig');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="visig" value="@article{ViSig,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {ViSig: Automatic Interpretation of Visual Body Signals Using On-Body Sensors},
+year = {2023},
+issue_date = {March 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {1},
+url = {https://doi.org/10.1145/3580797},
+doi = {10.1145/3580797},
+journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+month = {mar},
+articleno = {4},
+numpages = {27},
+keywords = {sports automation, gestures, on-body sensors, body signals, UWB, postures, IMU, visual signalling, fallback communication}
+}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="ViSig_IMWUT_2023.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="visig_body_signal_data.zip"><img src="data_dark.png" class="small-icons" onmouseover="this.src='data.png';" onmouseout="this.src='data_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="visigdemo.mp4"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="visig_Ubicomp2023.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://youtu.be/3-B12de_nRc"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal11"><img src="sdgs/goal11-sustainable-cities-communities.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">SEC</span><span class="paper-conf-year">, 2022<br></span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						ClairvoyantEdge: Prescient Prefetching of On-demand Video at the Edge of the Network
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Manasvini Sethuraman*, Anirudh Sarma*, Adwait Bauskar, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Umakishore Ramachandran </div>
+						
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('clairvoyantedge');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="clairvoyantedge" value="@INPROCEEDINGS{sethuraman2022clairvoyantedge,  author={Sethuraman, Manasvini and Sarma, Anirudh and Bauskar, Adwait and Dhekne, Ashutosh and Ramachandran, Umakishore},  booktitle={2022 IEEE/ACM 7th Symposium on Edge Computing (SEC)},   title={ClairvoyantEdge: Prescient Prefetching of On-demand Video at the Edge of the Network},   year={2022},  volume={},  number={},  pages={26-39},  doi={10.1109/SEC54971.2022.00010}}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="SEC_2022_ClairvoyantEdge.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="SEC_ClairvoyantEdge.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		<!--span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+		
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IPIN</span><span class="paper-conf-year">, 2022<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						PnPLoc: UWB Based Plug & Play Indoor Localization
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+						<div class="paper-authors award-highlight"> Best Paper Award</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('pnploc22');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="pnploc22" value="@INPROCEEDINGS{chen2022pnploc,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2022 IEEE 12th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={PnPLoc: UWB Based Plug & Play Indoor Localization}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IPIN54987.2022.9918119}}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="PnPLoc_IPIN2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="IPIN_2022_PnPLoc.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+		<span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=jR1hp1XipYk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+		<img src="awards.png" class="small-icons"/>
+		<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('pettrack22');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="pettrack22" value="@inproceedings{alavala2022pettrack,
+  title={PetTrack: Tracking Pet Location and Activity Indoors},
+  author={Alavala, Neeraj and Chen, Haige and Singhal, Rishabh and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 2022 Workshop on Body-centric Computing Systems},
+  pages={1--6},
+  year={2022}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="PetTrack_BodySys2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="Bodysys_Pettrack.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+			<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/mZSTrrVdLPc"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+			
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IPIN</span><span class="paper-conf-year">, 2022<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						A Metric for Quantifying UWB Ranging Error Due to Clock Drifts
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		
+		
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('pettrack22');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="pettrack22" value="@INPROCEEDINGS{chen2022metric,
+  author={Chen, Haige and Dhekne, Ashutosh},
+  booktitle={2022 IEEE 12th International Conference on Indoor Positioning and Indoor Navigation (IPIN)}, 
+  title={A Metric for Quantifying UWB Ranging Error Due to Clock Drifts}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IPIN54987.2022.9918104}}"/></span>
+		<span class="hyperlink-papers-brackets"><a href="RangingMetric_IPIN_2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="IPIN_2022-Ranging_metric.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+		<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('pettrack22');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="pettrack22" value="@inproceedings{alavala2022pettrack,
+  title={PetTrack: Tracking Pet Location and Activity Indoors},
+  author={Alavala, Neeraj and Chen, Haige and Singhal, Rishabh and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 2022 Workshop on Body-centric Computing Systems},
+  pages={1--6},
+  year={2022}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="PetTrack_BodySys2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="IPIN_2022-Ranging_metric.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+			<span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=t5X9K5mIyFk"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">BodySys</span><span class="paper-conf-year">, 2022<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">
+						PetTrack: Tracking Pet Location and Activity Indoors
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Neeraj Alavala, Haige Chen, Rishabh Singhal, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('pettrack22');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="pettrack22" value="@inproceedings{alavala2022pettrack,
+  title={PetTrack: Tracking Pet Location and Activity Indoors},
+  author={Alavala, Neeraj and Chen, Haige and Singhal, Rishabh and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 2022 Workshop on Body-centric Computing Systems},
+  pages={1--6},
+  year={2022}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="PetTrack_BodySys2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="Bodysys_Pettrack.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+			<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/mZSTrrVdLPc"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span-->
+			
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2022<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">IntruSense: An Enhanced Physical Security System using UWB
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Shrenik Changede, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('intrusense');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="intrusense" value="@inproceedings{changede2022intrusense,
+  title={IntruSense: an enhanced physical security system using UWB},
+  author={Changede, Shrenik and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 23rd Annual International Workshop on Mobile Computing Systems and Applications},
+  pages={41--47},
+  year={2022}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="IntruSense_HotMobile2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="Intrusense_HotMobile_2022.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/BPgMUvGTrn0"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">CHI-LBW</span><span class="paper-conf-year">, 2022<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Travelogue: Representing Indoor Trajectories as Informative Art 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yunzhi Li, Tingyu Cheng, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('travelogue');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="travelogue" value="@inproceedings{10.1145/3491101.3519834,
+author = {Li, Yunzhi and Cheng, Tingyu and Dhekne, Ashutosh},
+title = {Travelogue: Representing Indoor Trajectories as Informative Art},
+year = {2022},
+isbn = {9781450391566},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3491101.3519834},
+doi = {10.1145/3491101.3519834},
+booktitle = {CHI Conference on Human Factors in Computing Systems Extended Abstracts},
+articleno = {387},
+numpages = {7},
+keywords = {personal informatics, informative art, wireless sensing},
+location = {New Orleans, LA, USA},
+series = {CHI EA '22}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="travelogue_chi_lbw_paper.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<!--span class="hyperlink-papers-brackets"><a href="ITrackU_slides.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+			<span class="hyperlink-papers-brackets"><a href="https://www.youtube.com/watch?v=q2jsKY8CNM0"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiSys</span><span class="paper-conf-year">, 2021<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">ITrackU: Tracking a Pen-like Instrument via UWB-IMU Fusion 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('itracku');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="itracku" value="@inproceedings{cao2021itracku,
+author = {Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+title = {ITrackU: Tracking a Pen-like Instrument via UWB-IMU Fusion},
+year = {2021},
+isbn = {9781450384438},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3458864.3467885},
+doi = {10.1145/3458864.3467885},
+booktitle = {Proceedings of the 19th Annual International Conference on Mobile Systems, Applications, and Services},
+pages = {453–466},
+numpages = {14},
+location = {Virtual Event, Wisconsin},
+series = {MobiSys '21}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="itracku_mobisys2021.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="ITrackU_slides.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/mZSTrrVdLPc"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal4"><img src="sdgs/goal4-education.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MMSys</span><span class="paper-conf-year">, 2021<br></span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Foresight: Planning for Spatial and Temporal Variations in Bandwidth for Streaming Services on Mobile Devices 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Manasvini Sethuraman, Anirudh Sarma, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Kishore Ramachandran</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('foresight');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="foresight" value="@inproceedings{sethuraman2021foresight,
+  title={Foresight: planning for spatial and temporal variations in bandwidth for streaming services on mobile devices},
+  author={Sethuraman, Manasvini and Sarma, Anirudh and Dhekne, Ashutosh and Ramachandran, Umakishore},
+  booktitle={Proceedings of the 12th ACM Multimedia Systems Conference},
+  pages={227--240},
+  year={2021}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="foresight_paper.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="mmsys21_foresight.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/4FM5m9jyh3Q"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			<!--<span class="hyperlink-papers-brackets"><a href="http://6FitAPart.com"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a></span>-->
+		</td>
+		
+		
+		<!--td class="pub-td-links">
+		<span class="hyperlink-papers-brackets"><a href="6fitapart/6Fit-A-Part_ICNP2020.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="6fitapart/6FitAPart_Video.mp4"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span><span class="hyperlink-papers-brackets"><a href="http://6FitAPart.com"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a></span>
+		</td-->
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">ICNP</span><span class="paper-conf-year">, 2020<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">6Fit-A-Part: A Protocol for Physical Distancing on a Custom Wearable Device 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		
+		<td class = "pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('6fit');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="6fit" value="@inproceedings{cao20206fit,
+  title={6Fit-A-Part: A Protocol for Physical Distancing on a Custom Wearable Device},
+  author={Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+  booktitle={2020 IEEE 28th International Conference on Network Protocols (ICNP)},
+  pages={1--12},
+  year={2020},
+  organization={IEEE}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="6fitapart/6Fit-A-Part_ICNP2020.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="6fitapart/6FitAPart_ICNP2020.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/FbN7uWMUdwU"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="http://6FitAPart.com"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal3"><img src="sdgs/goal3-goodhealth.png" class="small-icons" ></a></span>
+		</td>
+		
+		
+		<!--td class="pub-td-links">
+		<span class="hyperlink-papers-brackets"><a href="6fitapart/6Fit-A-Part_ICNP2020.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		<span class="hyperlink-papers-brackets"><a href="6fitapart/6FitAPart_Video.mp4"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span><span class="hyperlink-papers-brackets"><a href="http://6FitAPart.com"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a></span>
+		</td-->
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">NSDI</span><span class="paper-conf-year">, 2019<br></span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">TrackIO: Tracking First Responders Inside-Out 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Ayon Chakraborty, Karthikeyan Sundaresan, Sampath Rangarajan</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>		
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('trackio');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="trackio" value="@inproceedings{dhekne2019trackio,
+  title={Trackio: tracking first responders inside-out},
+  author={Dhekne, Ashutosh and Chakraborty, Ayon and Sundaresan, Karthikeyan and Rangarajan, Sampath},
+  booktitle={16th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 19)},
+  pages={751--764},
+  year={2019}
+}"/></span>
+		<span class="paper-authors"><span class="hyperlink-papers-brackets"><a href="trackio_nsdi2019.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span></span>
+		</td>
+	</tr>
+</table>
+
+
+
+<table class="pub-table">
+	<tr>
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiSys</span><span class="paper-conf-year">, 2018</span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">LiquID: A Wireless Liquid IDentifier 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mahanth Gowda, Yixuan Zhao, Haitham Hassanieh, Romit Roy Choudhury</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class = "pub-td-links">
+		
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('liquid');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="liquid" value="@inproceedings{dhekne2018liquid,
+  title={Liquid: A wireless liquid identifier},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Zhao, Yixuan and Hassanieh, Haitham and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys)},
+  pages={442--454},
+  year={2018}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="liquid_mobisys2018.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/liquid_mobisys18.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/XNsXXGJIGT8"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://sdgs.un.org/goals/goal6"><img src="sdgs/goal6-cleanwater.png" class="small-icons" ></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf tooltip">IEEE TMC<span class="tooltiptext">IEEE Transactions on Mobile Computing</span></span><span class="paper-conf-year">, 2018</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">If WiFi APs Could Move: A Measurement Study 
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mahanth Gowda, Romit Roy Choudhury, Srihari Nelakuditi</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		
+		<td class="pub-td-links">
+		
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('infratmc');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="infratmc" value="@article{dhekne2018if,
+  title={If wifi aps could move: A measurement study},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy and Nelakuditi, Srihari},
+  journal={IEEE Transactions on Mobile Computing},
+  volume={17},
+  number={10},
+  pages={2293--2306},
+  year={2018},
+  publisher={IEEE}}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="http://synrg.csl.illinois.edu/papers/im_tmc_cam_nc.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2017</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Extending Cell Tower Coverage through Drones 
+						
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mahanth Gowda, Romit Roy Choudhury</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('dronenet');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="dronenet" value="@inproceedings{dhekne2017extending,
+  title={Extending cell tower coverage through drones},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 18th International Workshop on Mobile Computing Systems and Applications},
+  pages={7--12},
+  year={2017}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="http://synrg.csl.illinois.edu/papers/dronenet_hotmobile2017.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/DroneNet_HotMobile17.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">NSDI</span><span class="paper-conf-year">, 2017</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Bringing IoT to Sports Analytics 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Mahanth Gowda, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Sheng Shen, Romit Roy Choudhury, Xue Yang, et. al.</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('iball');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="iball" value="@inproceedings{gowda2017bringing,
+  title={Bringing IoT to sports analytics},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Shen, Sheng and Choudhury, Romit Roy and Yang, Lei and Golwalkar, Suresh and Essanian, Alexander},
+  booktitle={14th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 17)},
+  pages={499--513},
+  year={2017}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="http://synrg.csl.illinois.edu/papers/cricket-nsdi-2017.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/cricket_nsdi_talk.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">WWW</span><span class="paper-conf-year">, 2016</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">The Case for Robotic Wireless Networks 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Mahanth Gowda, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Romit Roy Choudhury</div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('inframobwww');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="inframobwww" value="@inproceedings{gowda2016case,
+  title={The case for robotic wireless networks},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Roy Choudhury, Romit},
+  booktitle={Proceedings of the 25th International Conference on World Wide Web},
+  pages={1317--1327},
+  year={2016}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="http://synrg.csl.illinois.edu/papers/robotic_wireless.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/iMob_www.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom</span><span class="paper-conf-year">, 2016</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<td class="pub-td-title">
+						<div class="paper-title">Tracking Drone Orientation with Multiple GPS Receivers 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					
+					<td class="pub-td-authors">
+						<div class="paper-authors">Mahanth Gowda, Justin Manweiler, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Romit Roy Choudhury, Justin Weisz</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('safetynet');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="safetynet" value="@inproceedings{gowda2016tracking,
+  title={Tracking drone orientation with multiple GPS receivers},
+  author={Gowda, Mahanth and Manweiler, Justin and Dhekne, Ashutosh and Choudhury, Romit Roy and Weisz, Justin D},
+  booktitle={Proceedings of the 22nd annual international conference on mobile computing and networking},
+  pages={280--293},
+  year={2016}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="http://synrg.csl.illinois.edu/papers/drone-attitude-camera.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr>
+		<td class="pub-td-conf">
+			<span class="paper-conf tooltip">IEEE TMC<span class="tooltiptext">IEEE Transactions on Mobile Computing</span></span><span class="paper-conf-year">, 2013</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Esense: Energy Sensing-Based Cross-Technology Communication 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Kameswari Chebrolu, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('esensetmc');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="esensetmc" value="@article{chebrolu2012esense,
+  title={Esense: Energy sensing-based cross-technology communication},
+  author={Chebrolu, Kameswari and Dhekne, Ashutosh},
+  journal={IEEE Transactions on Mobile Computing},
+  volume={12},
+  number={11},
+  pages={2303--2316},
+  year={2012},
+  publisher={IEEE}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="esense_tmc.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>	
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">NSDR</span><span class="paper-conf-year">, 2009</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Implementation and Evaluation of a TDMA MAC for WiFi-based Rural Mesh Networks 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Nirav Uchat, Bhaskaran Raman </div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('tdmamac');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="tdmamac" value="@article{dhekne2009implementation,
+  title={Implementation and evaluation of a tdma mac for wifi-based rural mesh networks},
+  author={Dhekne, Ashutosh and Uchat, Nirav and Raman, Bhaskaran},
+  journal={NSDR’09},
+  pages={23},
+  year={2009}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="tdma_mac.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom</span><span class="paper-conf-year">, 2009</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<td class="pub-td-title">
+						<div class="paper-title">Esense: communication through energy sensing 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Kameswari Chebrolu, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+				
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('esense');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="esense" value="@inproceedings{chebrolu2009esense,
+  title={Esense: Communication through energy sensing},
+  author={Chebrolu, Kameswari and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 15th annual international conference on Mobile computing and networking},
+  pages={85--96},
+  year={2009}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="esense_mobicom2009.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+</td></tr></table>
+
+
+<br>
+<div class="section-banner">Articles, Posters, Demos</div>
+<!--Other Publication table follows-->
+<table class="pub-outer-table"><tr><td>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">GetMobile</span><span class="paper-conf-year">, 2025</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Ultra-wideband (UWB) Radios for Spatial Intelligence</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('dhekne-uwb-spatial-intelligence-getmobile2025');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="dhekne-uwb-spatial-intelligence-getmobile2025" value="@article{10.1145/3793236.3793239,
+author = {Dhekne, Ashutosh},
+title = {Ultra-wideband (UWB) Radios for Spatial Intelligence},
+year = {2026},
+issue_date = {December 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {29},
+number = {4},
+issn = {2375-0529},
+url = {https://doi.org/10.1145/3793236.3793239},
+doi = {10.1145/3793236.3793239},
+journal = {GetMobile: Mobile Comp. and Comm.},
+month = jan,
+pages = {11–18},
+numpages = {8}
+}"/></span>
+
+			<span class="hyperlink-papers-brackets"><a href="UWB_for_Spatial_Intelligence.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		
+		
+		
+		
+		
+		</td>
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom</span><span class="paper-conf-year">, 2024</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Poster: Helping Autonomous Vehicles Maneuver Traffic Anomalies using UWB
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Rahul Bulusu, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		
+			<span class="hyperlink-papers-brackets"><a href="Mobicom24_Poster_AV_Anomalies.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			
+			
+		</td>
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom</span><span class="paper-conf-year">, 2024</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Poster: Envisioning a UWB-based Local Human-Machine Interface
+						
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Haige Chen, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+						<div class="paper-authors award-highlight">Best Runner-up Poster</div>
+					</td>
+					
+					
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		
+			<span class="hyperlink-papers-brackets"><a href="Mobicom24_Poster_UWB_LocalControl.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a><img src="awards.png" class="small-icons"/></span>
+			
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2024</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Poster: Thaw: A UWB-based Ice-Water State Detector
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Rahul Bulusu, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('notif-hotmibile2023');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="notif-hotmibile2023" value="@inproceedings{10.1145/3572864.3581593,
+author = {Jaganathan, Vishnu and Sekar, Ajish and Dhekne, Ashutosh},
+title = {Notification Control and Reminders with UWB Indoor Localization},
+year = {2023},
+isbn = {9798400700170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3572864.3581593},
+doi = {10.1145/3572864.3581593},
+booktitle = {Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications},
+pages = {146},
+numpages = {1},
+keywords = {uwb localization, smartphone notifications},
+location = {Newport Beach, California},
+series = {HotMobile '23}
+}"/></span-->
+			<span class="hyperlink-papers-brackets"><a href="HotMobile_2024_Thaw.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2024</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Demo: uFi𝜇: An open-source integrated UWB-WiFi-IMU platform
+for localization research and beyond
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Fan Jiang, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('jiang-uwb-hw-hotmobile24');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="jiang-uwb-hw-hotmobile24" value="@inproceedings{jiang2024ufimu,
+  title={uFi$\mu$: An open-source integrated UWB-WiFi-IMU platform for localization research and beyond},
+  author={Jiang, Fan and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 25th International Workshop on Mobile Computing Systems and Applications},
+  pages={156--156},
+  year={2024}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="HotMobile_2024_uFimu.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="https://github.com/ProfFan/magic-loc-rs"><img src="data_dark.png" class="small-icons" onmouseover="this.src='data.png';" onmouseout="this.src='data_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2024</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Demo: BYOE: Bring Your Own Earphones
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Sajal Narang, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('notif-hotmibile2023');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="notif-hotmibile2023" value="@inproceedings{10.1145/3572864.3581593,
+author = {Jaganathan, Vishnu and Sekar, Ajish and Dhekne, Ashutosh},
+title = {Notification Control and Reminders with UWB Indoor Localization},
+year = {2023},
+isbn = {9798400700170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3572864.3581593},
+doi = {10.1145/3572864.3581593},
+booktitle = {Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications},
+pages = {146},
+numpages = {1},
+keywords = {uwb localization, smartphone notifications},
+location = {Newport Beach, California},
+series = {HotMobile '23}
+}"/></span-->
+			<span class="hyperlink-papers-brackets"><a href="HotMobile_2024_BYOE.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">NSF PREPARE</span><span class="paper-conf-year">, 2023</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Low Bandwidth Alternative for Online K-12 Education
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('k12edu-over-fm');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="k12edu-over-fm" value="@misc{cao2023-k12edu,
+author = {Cao, Yifeng and Dhekne, Ashutosh},
+title = {Low Bandwidth Alternative for Online K-12 Education},
+year = {2023},
+booktitle = {RP3: 3rd Annual NSF Research for Pandemic Preparedness Meeting},
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="poster_edu_pandemics.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="poster_hotmobile_k12.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			
+		</td>
+	</tr>
+</table>
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile</span><span class="paper-conf-year">, 2023</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Demo: Notification Control and Reminders with UWB Indoor Localization
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Vishnu Jaganathan, Ajish Sekar, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('notif-hotmibile2023');this.src='quote_copied.png';"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="notif-hotmibile2023" value="@inproceedings{10.1145/3572864.3581593,
+author = {Jaganathan, Vishnu and Sekar, Ajish and Dhekne, Ashutosh},
+title = {Notification Control and Reminders with UWB Indoor Localization},
+year = {2023},
+isbn = {9798400700170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3572864.3581593},
+doi = {10.1145/3572864.3581593},
+booktitle = {Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications},
+pages = {146},
+numpages = {1},
+keywords = {uwb localization, smartphone notifications},
+location = {Newport Beach, California},
+series = {HotMobile '23}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="Location_Based_Notification_Hotmobile2023.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">UbiComp</span><span class="paper-conf-year">, 2022</span>
+			<div><img src="uwb_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Demo: Bringing UWB Indoor Localization Closer to being Universal and Pervasive
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Haige Chen, Zixin Yin, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		
+			<span class="hyperlink-papers-brackets"><a href="PnPLoc_abstract_Ubicomp_2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="ubicomp2022_pnploc_demo_poster.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('locationbroadcasts22');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="locationbroadcasts22" value="@inproceedings{chen2022location,
+  title={Location-specific public broadcasts},
+  author={Chen, Haige and Yin, Zixin and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+  pages={624--625},
+  year={2022}
+}"/>
+			</span-->
+			
+		</td>
+	</tr>
+</table>
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">UbiComp</span><span class="paper-conf-year">, 2022</span>
+			<div><img src="uwb_label.png" height="20pt"><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Poster: Towards Hybrid Presence Enabled by Indoor Localization and Holograms 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Zixin Yin, Haige Chen, Jinzhi Ye, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets"><a href="HybridPresence_abstract_ubicomp2022.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="hybrid_conference_ubicomp2022_poster.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('locationbroadcasts22');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="locationbroadcasts22" value="@inproceedings{chen2022location,
+  title={Location-specific public broadcasts},
+  author={Chen, Haige and Yin, Zixin and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+  pages={624--625},
+  year={2022}
+}"/>
+			</span>
+			<span class="hyperlink-papers-brackets"><a href="Broadcast_mobisys22.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="mobisys_2022_broadcast_poster.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span-->
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiSys</span><span class="paper-conf-year">, 2022</span>
+			<div><img src="uwb_label.png" height="20pt"><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Demo: Location-Specific Public Broadcasts
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Haige Chen, Zixin Yin, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('locationbroadcasts22');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="locationbroadcasts22" value="@inproceedings{chen2022location,
+  title={Location-specific public broadcasts},
+  author={Chen, Haige and Yin, Zixin and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+  pages={624--625},
+  year={2022}
+}"/>
+			</span>
+			<span class="hyperlink-papers-brackets"><a href="Broadcast_mobisys22.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="mobisys_2022_broadcast_poster.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">CPS-IoT Week</span><span class="paper-conf-year">, 2022</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title"> 
+						<div class="paper-title">Mobility Patterns to Optimize Communication for Distributed Capture Processing Onboard Autonomous UAVs
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						The 2nd Student Design Competition on Networked Computing on the Edge
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Sam Jijina, Jun Chen, Zhen Jiang, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Hyesoon Kim</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			
+			<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('ecloud');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="ecloud" value="@ARTICLE{ecloud,  author={Arulraj, Joy and Chatterjee, Abhijit and Daglis, Alexandros and Dhekne, Ashutosh and Ramachandran, Umakishore},  journal={Computer},   title={eCloud: A Vision for the Evolution of the Edge-Cloud Continuum},   year={2021},  volume={54},  number={5},  pages={24-33},  doi={10.1109/MC.2021.3059737}}"/!-->
+			<!--/span>
+			<span class="hyperlink-papers-brackets"><a href="DynaaDCP_Paper.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span-->
+			<span class="hyperlink-papers-brackets"><a href="Jijina_CPSIoTWeek2022_Poster.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="Jijina_CPSIoTWeek2022_Video.mp4"><img src="talk_dark.png" class="small-icons" onmouseover="this.src='talk.png';" onmouseout="this.src='talk_dark.png';"></a></span>
+			<img src="awards.png" class="small-icons"/>
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">DOSSA-4</span><span class="paper-conf-year">, 2022</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">DynaaDCP: Dynamic Navigation of Autonomous Agents for Distributed Capture Processing
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+						Fourth International Workshop on Domain Specific System Architecture (DOSSA-4)
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Sam Jijina, Ramyad Hadidi, Jun Chen, Zhen Jiang, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Hyesoon Kim</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<!--Coming Soon!-->
+			<!--span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('ecloud');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="ecloud" value="@ARTICLE{ecloud,  author={Arulraj, Joy and Chatterjee, Abhijit and Daglis, Alexandros and Dhekne, Ashutosh and Ramachandran, Umakishore},  journal={Computer},   title={eCloud: A Vision for the Evolution of the Edge-Cloud Continuum},   year={2021},  volume={54},  number={5},  pages={24-33},  doi={10.1109/MC.2021.3059737}}"/!-->
+			</span>
+			<span class="hyperlink-papers-brackets"><a href="DynaaDCP_Paper.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+			<span class="hyperlink-papers-brackets"><a href="DynaaDCP_slides.pdf"><img src="ppt_dark.png" class="small-icons" onmouseover="this.src='ppt.png';" onmouseout="this.src='ppt_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IEEE Computer</span><span class="paper-conf-year">, 2021</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">eCloud: A Vision for the Evolution of the Edge-Cloud Continuum
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+
+						<div class="paper-authors">Joy Arulraj, Abhijit Chatterjee, Alexandros Daglis, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Umakishore Ramachandran</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('ecloud');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="ecloud" value="@ARTICLE{ecloud,  author={Arulraj, Joy and Chatterjee, Abhijit and Daglis, Alexandros and Dhekne, Ashutosh and Ramachandran, Umakishore},  journal={Computer},   title={eCloud: A Vision for the Evolution of the Edge-Cloud Continuum},   year={2021},  volume={54},  number={5},  pages={24-33},  doi={10.1109/MC.2021.3059737}}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="https://ieeexplore.ieee.org/document/9426992"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">HotMobile Poster</span><span class="paper-conf-year">, 2021</span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Poster: Physical Games in K-12 despite COVID-19
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mostafa Ammar</div>
+						<div class="paper-authors award-highlight">Runner's Up Best Poster</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('k12games');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="k12games" value="@inproceedings{cao2021physical,
+  title={Physical Games in K-12 despite COVID-19},
+  author={Cao, Yifeng and Dhekne, Ashutosh and Ammar, Mostafa},
+  booktitle={Proceedings of the 22nd International Workshop on Mobile Computing Systems and Applications},
+  pages={160--162},
+  year={2021}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="COVID-19_Games.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a><img src="awards.png" class="small-icons"/></span>
+		</td>
+	</tr>
+</table>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom Poster</span><span class="paper-conf-year">, 2020</span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Poster: Homecoming: A Wireless Homing Device for UAVs 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Yifeng Cao, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('homecoming');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="homecoming" value="@inproceedings{cao2020homecoming,
+  title={Homecoming: a wireless homing device for UAVs},
+  author={Cao, Yifeng and Dhekne, Ashutosh},
+  booktitle={Proceedings of the 26th Annual International Conference on Mobile Computing and Networking},
+  pages={1--3},
+  year={2020}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="Homecoming_poster.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+<div class="space-between-authors"><br></div>
+
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">IEEE Computer</span><span class="paper-conf-year">,<br>Oct 2018</span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">P2PLoc: Peer-to-Peer Localization of Fast-Moving Entities 
+						<!--span class="hyperlink-papers-brackets"><a href="http://dhekne2.web.engr.illinois.edu/esense_mobicom2009.pdf">pdf</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Umberto J. Ravaioli, Romit Roy Choudhury</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('p2ploc');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="p2ploc" value="@article{dhekne2018p2ploc,
+  title={P2ploc: Peer-to-peer localization of fast-moving entities},
+  author={Dhekne, Ashutosh and Ravaioli, Umberto J and Choudhury, Romit Roy},
+  journal={Computer},
+  volume={51},
+  number={10},
+  pages={94--98},
+  year={2018},
+  publisher={IEEE}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8519668"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+	
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">GetMobile</span><span class="paper-conf-year">, 2017 </span><span class="paper-authors paper-me-author">(Featured Cover)  </span>
+			<div><img src="uwb_label.png" height="20pt"><!--img src="wireless_label.png" height="20pt"--></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">IoT Platform for Sports Analytics 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Mahanth Gowda, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Sheng Shen, Romit Roy Choudhury, Xue Yang, et al.</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('getmobileiBall');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="getmobileiBall" value="@article{gowda2018iot,
+  title={Iot platform for sports analytics},
+  author={Gowda, Mahanth and Dhekne, Ashutosh and Shen, Sheng and Choudhury, Romit Roy and Yang, Sharon Xue and Yang, Lei and Golwalkar, Suresh and Essanian, Alexander},
+  journal={GetMobile: Mobile Computing and Communications},
+  volume={21},
+  number={4},
+  pages={8--14},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="https://www.sigmobile.org/pubs/getmobile/articles/Vol21Issue4_1.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">COMSNETS</span><span class="paper-conf-year">, 2017 (Invited Paper)</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Integrating GLONASS with GPS for drone orientation tracking 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors">Mahanth Gowda, Justin Manweiler, <span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Romit Roy Choudhury, Justin Weisz</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('safetynetcomsnet');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="safetynetcomsnet" value="@inproceedings{gowda2017integrating,
+  title={Integrating glonass with gps for drone orientation tracking},
+  author={Gowda, Mahanth and Manweiler, Justin and Dhekne, Ashutosh and Choudhury, Romit Roy and Weisz, Justin D},
+  booktitle={International Conference on Communication Systems and Networks},
+  pages={77--92},
+  year={2017},
+  organization={Springer}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="drone_orientation_glonass_gps.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MobiCom Poster</span><span class="paper-conf-year">, 2016</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Poster: Cell Tower Extension through Drones 
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span>, Mahanth Gowda, Romit Roy Choudhury</div>
+						<div class="paper-authors paper-me-author">Runner's Up at Student Research Competition (SRC)</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+		<span class="hyperlink-papers-brackets tooltip_bib"><img src="quote_dark.png" class="small-icons" onmouseover="this.src='quote.png';" onmouseout="this.src='quote_dark.png';" onclick="copyFunc2('safetynetcomsnet');this.src='quote_copied.png'"><span class="tooltiptext_bib">Click to Copy Bibtex</span><input type="hidden" id="safetynetcomsnet" value="@inproceedings{dhekne2016cell,
+  title={Cell tower extension through drones: Poster},
+  author={Dhekne, Ashutosh and Gowda, Mahanth and Choudhury, Romit Roy},
+  booktitle={Proceedings of the 22nd Annual International Conference on Mobile Computing and Networking},
+  pages={456--457},
+  year={2016}
+}"/></span>
+			<span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/papers/quadcopter.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"><img src="awards.png" class="small-icons"/></a></span>
+		</td>
+	</tr>
+</table>
+
+<div class="space-between-authors"><br></div>
+<table class="pub-table">
+	<tr class="pub-tr-title">
+		<td class="pub-td-conf">
+			<span class="paper-conf">MTech Thesis</span><span class="paper-conf-year"></span><BR><span class="paper-conf">IIT Bombay</span>, <span class="paper-conf-year">2009</span>
+			<div><!--img src="uwb_label.png" height="20pt"--><img src="wireless_label.png" height="20pt"></div>
+		</td>
+		<td>
+			<table>
+				<tr class="pub-tr-title">
+					<td class="pub-td-title">
+						<div class="paper-title">Multihop Synchronization in FRACTEL and Communication through Energy Sensing
+						
+						<!--span class="hyperlink-papers-brackets"><a href="https://synrg.csl.illinois.edu/ppts/safetynet_talk.pptx">slides</a></span-->
+						<!--span class="hyperlink-papers-brackets"><a href="https://youtu.be/ed1Lun3n2g8">talk</a></span-->
+						</div>
+					</td>
+				</tr>
+				<tr class="pub-tr-authors">
+					<td class="pub-td-authors">
+						<div class="paper-authors"><span class="paper-authors paper-me-author">Ashutosh Dhekne</span></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pub-td-links">
+			<span class="hyperlink-papers-brackets"><a href="mtech_thesis.pdf"><img src="pdf_dark.png" class="small-icons" onmouseover="this.src='pdf.png';" onmouseout="this.src='pdf_dark.png';"></a></span>
+		</td>
+	</tr>
+</table>
+</td></tr>
+</table class="pub-outer-table">
+
+<br>
+<div class="section-banner">Education</div>
+<!--Internships follows-->
+<table class="pub-outer-table"><tr><td>
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">UIUC</span><span class="company-duration">,<br>2014-2019</span>
+		</td>
+		<td>
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Doctor of Philosophy</span><br>
+						<span class="company-work-long">Computer Science</span><br>
+						<span class="company-work-long">Advisor: <a href="http://croy.web.engr.illinois.edu/">Romit Roy Choudhury</a></span><br>						
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links" style="margin-left:2em;">
+			&nbsp;&nbsp;&nbsp;<a href="http://www.illinois.edu"><img src="illinois_logo.png" class="small-icons"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">IIT Bombay</span><span class="company-duration">,<br>2007-2009</span>
+		</td>
+		<td>
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Master of Technology</span><br>
+						<span class="company-work-long">Computer Science and Engineering</span><br>
+						<span class="company-work-long">Advisors: <a href="https://rnd.iitb.ac.in/faculty/prof-kameswari-chebrolu">Kameswari Chebrolu</a>, <a href="https://www.cse.iitb.ac.in/~br/webpage/">Bhaskaran Raman</a></span><br>							
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.iitb.ac.in"><img src="iitb_logo.jpg" class="small-icons-university"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Pune University</span><span class="company-duration">,<br>2002-2006</span>
+		</td>
+		<td>
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Bachelor of Engineering</span><br>
+						<span class="company-work-long">Computer Science and Engineering</span><br>
+						<span class="company-work-long">Advisor: Madhavi Pradhan</span><br>						
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.unipune.ac.in/"><img src="uop_logo.jpg" class="small-icons-university"></a>
+		</td>
+	</tr>
+</table>
+</td></tr></table>
+
+<br>
+<div class="section-banner">Internships</div>
+<!--Internships follows-->
+<table class="pub-outer-table"><tr><td>
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">NEC Labs</span><span class="company-duration">,<br>Summer 2018</span>
+		</td>
+		<td>
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Multilateration from moving anchors</span><br>
+						<span class="company-work-long">
+						In this work we investigate if localization can be performed even when the anchors are mobile.
+						It has applications in various scenarios&mdash;military troops storming an enemy building, fire-fighters putting out fire sources inside buildings, search and rescue, etc.
+						Resulted in the <b>NSDI 2019<b> paper.
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.nec-labs.com"><img src="NEC.png" class="small-icons-nec"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Intel Labs</span><span class="company-duration">, <br>Summer 2016</span>
+		</td>
+		<td  class="internship-td">
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Tracking a game of cricket&mdash;ball and players</span><br>
+						<span class="company-work-long">A cricket ball embedded with UWB sensors was tracked using two anchors placed at the two wickets on a cricket field. 
+						The ranging protocol was improved to support about 150Hz update rate. 
+						The fast moving ball and players were tracked using a MIMO UWB device. Resulted in the <b>NSDI 2017</b> paper.</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="https://www.intel.com/content/www/us/en/research/overview.html"><img src="intel_black.png" class="small-icons-intel"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Zendrive</span><span class="company-duration">,<br>Summer 2015</span>
+		</td>
+		<td>
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Mode of commute categorization using mobile IMU data</span><br>
+						<span class="company-work-long">Zendrive enables automatic rating driving quality for all drivers of taxi-fleets. <br>
+						In this work, a mobile device's IMU data was used to distinguish between various modes of transportation. 
+						This enables tracking people's activities and provide better context to Zendrive's mobile App. 
+						Thus, a person's mountain-biking does not affect her driving record.
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.zendrive.com"><img src="zendrive.png" class="small-icons"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+
+<table class="internship-table">
+	<tr class="internship-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Avaya</span><span class="company-duration">,<br>2005-2006</span>
+		</td>
+		<td class="internship-td">
+			<table>
+				<tr class="internship-tr">
+					<td class="internship-td">
+						<span class="paper-title">Outlook plugin for automatic issue tracking</span><br>
+						<span class="company-work-long">
+							Avaya's internal teams frequently send emails about product issues to each other. 
+							The contents were eventually manually copied into an issue tracking system.
+							We automated this process using an Outlook plugin that detected issue related emails and offered to post the contents in the system.
+							This system continued to be used at Avaya for 6 years after our internship.
+						</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.avaya.com"><img src="avaya.png" class="small-icons"></a>
+		</td>
+	</tr>
+	
+</table>
+</td></tr></table>
+
+
+
+<br>
+<div class="section-banner">Work Experience</div>
+<!--Jobs follow-->
+<table class="pub-outer-table"><tr><td>
+<table class="work-table">
+	<tr class="work-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Securifi, </span><br><span class="company-duration">April 2013 - June 2014</span>
+			<!--br><span class="company-designation">Senior Member of<br>Technical Staff</span-->
+		</td>
+		<td class="work-td">
+			<table>
+				<tr class="work-tr">
+					<td class="work-td">
+						<span class="paper-title">End-to-end home automation</span><br>
+						<span class="company-work-long">Enabled home automation on <a href="https://www.securifi.com/almondplus">Almond+ routers</a> (router to cloud interface).<br>
+
+			Mentored a team of engineers for database design, handling router-to-cloud communication,<br>Android/iOS mobile Apps, and web application.<br>
+
+			This work delivered the Almond+ to thousands of <a href="https://www.kickstarter.com/projects/2037429657/almond-80211ac-touchscreen-wifi-router-smart-home">kickstarter</a> backers.</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.securifi.com"><img src="securifi_logo.png" class="small-icons"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div>
+
+<table class="work-table">
+	<tr class="work-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">Intel, </span><br><span class="company-duration">July 2009 - April 2013</span>
+			<!--br><span class="company-designation">Systems Engineer</span-->
+		</td>
+		<td>
+			<table>
+				<tr class="work-tr">
+					<td class="work-td">
+						<span class="paper-title">Wireless display and power saving for Windows graphics driver</span><br>
+						<span class="company-work-long">Selected for the prestigious Rotation Engineer program offering three rotations through various departments.<br>
+
+			Enabled key features of the Intel Graphics Driver for Windows 7, 8.<br>
+
+			Explored <a href="https://en.wikipedia.org/wiki/WiDi">Intel WiDi</a> for Clover trail, enabled <a href="https://en.wikipedia.org/wiki/Intel_Display_Power_Saving_Technology">DPST</a> for <a href="https://software.intel.com/en-us/articles/4th-generation-intel-atom-processor-based-tablet-overview">Bay trail</a> (Android).<br>
+
+			Awarded GRA award for 100% Microsoft WHQL certification of Intel's graphics driver.</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.intel.com"><img src="intel_black.png" class="small-icons-intel"></a>
+		</td>
+	</tr>
+	
+	
+</table>
+<div class="space-between-authors"><br></div>
+
+
+<!--table class="work-table">
+	<tr class="work-tr">
+		<td class="pub-td-conf">
+			<span class="company-name">TechMahindra, </span><br><span class="company-duration">July 2006 - July 2007</span>
+			
+		</td>
+		<td class="work-td">
+			<table>
+				<tr class="work-tr">
+					<td class="work-td">
+						<span class="paper-title">Automation of telecom orders fulfillment</span><br>
+						<span class="company-work-long">Responsible for the routing component of Order Fulfillment System for British Telecom.<br>
+						Enabled the interfaces that handle machine-machine communication of customer orders.
+						<br>Work involved dynamically creating XML documents in Java, queuing requests on IBM WebSphere, 
+						<br>and triggering down-stream services for completion of customer orders.
+						</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="company-td-links">
+			<a href="http://www.techmahindra.com"><img src="techmahindra.png" class="small-icons"></a>
+		</td>
+	</tr>
+</table>
+<div class="space-between-authors"><br></div-->
+</td></tr></table>
+
+<br>
+<div class="section-banner">Blogs</div>
+<table class="pub-outer-table">
+	<tr>
+	<td>
+		<table class="work-table">
+			<tr>
+			<td class="pub-td-conf">
+				<span class="paper-conf">Ultra-Wideband Radio Technology,</span><br>
+				<span class="conf-year">2021</span>
+			</td>
+			<td class="pub-td-title">
+				<span class="paper-title">Exploring UWB</span><br>
+				<span class="paper-authors">This blog describes some of the important aspects of UWB. If you are interested in UWB research, this blog is a good starting point. </span>
+			</td>
+			<td class="pub-td-links">
+				<table><tr><td>
+					<a href="https://www.uwbtechnologies.com/"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a> 
+				</td>
+				<td>
+					<span class="paper-authors">10000+ hits</span>
+				</td>
+				</tr>
+				</table>
+			</td>
+		</table>
+		<div class="space-between-authors"><br></div><table class="work-table">
+			<tr>
+			<td class="pub-td-conf">
+				<span class="paper-conf">Madwifi,</span><br>
+				<span class="conf-year">2009</span>
+			</td>
+			<td class="pub-td-title">
+				<span class="paper-title">Enabling TDMA on the Madwifi wireless driver</span><br>
+				<span class="paper-authors">During our work on long-distance wireless networks, we performed significant changes to the open source 
+				<a href="http://madwifi-project.org/">Madwifi</a> driver to disable usual CSMA capability and instead send and receive wireless packets at exact intervals. 
+				Most of these ideas remain applicable even in the latest Atheros drivers and the blog is a good starting point for understanding wireless buffer flow inside the driver.
+			</td>
+			<td class="pub-td-links">
+				<table><tr><td>
+					<a href="https://madwifi.wordpress.com/"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a> 
+				</td>
+				<td>
+					<span class="paper-authors">13900+ hits</span>
+				</td>
+				</tr>
+				</table>
+			</td>
+		</table>
+		<div class="space-between-authors"><br></div>
+		<table class="work-table">
+			<tr>
+			<td class="pub-td-conf">
+				<span class="paper-conf">Miscellaneous Experiments of a PhD Student,</span><br>
+				<span class="conf-year">2015</span>
+			</td>
+			<td class="pub-td-title">
+				<span class="paper-title">Titbits on wireless drivers, sensing, and ranging</span><br>
+				<span class="paper-authors">
+					Details about a project's engineering aspects sometimes do not find a place in publications. 
+					Yet, engineering is indeed required to build full working systems that demonstrate the underlying principles.
+					This blog is a catch-all that attempts to bring such experiences under one roof.
+				</span>
+			</td>
+			<td class="pub-td-links">
+				<table><tr><td>
+					<a href="https://miscphdexpt.blogspot.com//"><img src="web_dark.png" class="small-icons" onmouseover="this.src='web.png';" onmouseout="this.src='web_dark.png';"></a> 
+				</td>
+				<td>
+					<span class="paper-authors">8100+ hits</span>
+				</td>
+				</tr>
+				</table>
+			</td>
+		</table>
+	</td>
+	
+	<!--a href="https://madwifi.wordpress.com/">Madwifi</a></td>
+	<td><a href="https://miscphdexpt.blogspot.com/">Miscellaneous Experiments of a PhD Student</a></td-->
+	</tr>
+</table>
+
+
+<br>
+<div class="section-banner">Awards</div>
+<!--Awards follows-->
+<table class="awards-table pub-outer-table">
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; Score (EE, EJ & CE) Faculty Fellow</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; <a href="https://research.gatech.edu/sustainability">BBISS</a> Faculty Fellow</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; NSF Career Award</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; Runners Up at Student Research Competition, Mobicom, 2016</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; Richard T. Cheng Fellowship, Computer Science Department, University of Illinois at Urbana-Champaign, 2014</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; Group Recognition Award, Intel, 2012</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; First Rank in Computer Science, AISSMS College of Engineering, 2004</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; First Rank (all engineering branches), AISSMS College of Engineering, 2003</span>
+		</td>
+	</tr>
+	<tr class="awards-tr">
+		<td class="awards-td">
+			<span class="award-line">&#9733; National Talent Search Scholarship - 1000 awardees among 500,000+ students, 2000</span>
+		</td>
+	</tr>
+</table>
+
+
+
+<br>
+<div class="hidden-section">
+<div class="section-banner">Media Coverage</div>
+<table class="pub-outer-table">
+	<tr>
+		<td width="100%" align="center">
+			<a href="https://www.sciencedaily.com/releases/2017/02/170216094506.htm"><img src="sd-logo.png" width="20%"></a> <a href="https://www.innovatorsmag.com/bringing-iot-to-sports-analytics/"><img src="InnovatorsMag_LogoGif_Fade_V3.gif" width="15%"></a> <a href="https://www.rdmag.com/article/2017/02/sports-equipment-sensors-send-data-directly-coachs-smartphones"><img src="r_n_d_logo.svg" width="10%"></a>
+		</td>
+	</tr>
+</table>
+</div
+<br>
+<hr class="center-hr">
+<div align="center">
+&copy; 2025 Ashutosh Dhekne
+<br>
+<span class="dull-footnote">Some icons are from www.flaticon.com | Company logos are properties of the respective companies </span>
+</div>
+<br>
+</div><!--End of content-->
+</td>
+</tr>
+</table>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var myBigHeader = document.getElementById("myBigHeader");
+var myContent = document.getElementById("myContent");
+var sticky =  myContent.offsetTop/2;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+	header.style.display = "block";
+	
+  } else {
+    header.classList.remove("sticky");
+	header.style.display = "none";
+  }
+}
+</script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,295 @@
+<TITLE>AnHai Doan's HomePage</TITLE>
+
+<table>
+<tr>
+<td>
+<IMG src=http://pages.cs.wisc.edu/~anhai/pictures/AnHaiDoan.png alt="AnHai's picture" border=0 height=180>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font size=+2>AnHai Doan</font></strong><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Vilas Distinguished Achievement Professor</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Gurindar S. Sohi Professor</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Computer Science, University of Wisconsin<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room 4355, 1210 W. Dayton St, Madison WI 53706<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;anhai@cs.wisc.edu, (608) 262 9759<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=./bio.html>Bio/Personal</a>&nbsp;&nbsp;&nbsp;
+<a href=https://database.cs.wisc.edu>Database Group</a>&nbsp;&nbsp;&nbsp;<a href=./misc/wisc/>UW, CS, Living in Madison</a><br>
+</td>
+</tr>
+</table>
+<hr>
+
+<font size=+1><strong>News</strong></font>
+<table>
+<tr>
+<td width=1000>
+  <ul><font color=C70707>
+    <li>Aug 2020: This homepage and project pages have been seriously
+    out of date as way too much stuff happened in the past two years
+        <ul>
+          <li>I was heavily involved in the effort to set up the
+          <a href=https://cdis.wisc.edu>School of Computer, Data, and Information Sciences at
+          UW-Madison<a> (for which I received the CS Department's Service
+          Award, jointly with two colleagues).
+         <li>I co-chaired
+         <a href=http://sigmod2020.org>SIGMOD-2020</a> (with
+         Wang-Chiew Tan), a full-time job itself for a year. 
+         <li>I co-founded GreenBay Technologies to commercialize
+         Magellan. GreenBay <a href=https://www.informatica.com/about-us/news/news-releases/2020/08/20200818-informatica-acquires-greenbay-technologies-to-advance-ai-and-machine-learning-capabilities.html>has been acquired</a> by Informatica. 
+       </ul></font>
+    <li>Jun 2018: The DeepMatcher package, which applies deep learning to EM, is released as a part of Magellan. See
+      <a href=http://deepmatcher.ml>deepmatcher.ml</a> for the code (and
+      <a href=http://pages.cs.wisc.edu/~anhai/papers1/deepmatcher-sigmod18.pdf>here</a> for the paper).
+    <li>Jun 2018: Our CloudMatcher/Magellan code is
+      <a href=https://ocr.wisc.edu/news/american-family-uw-madison-team-up-in-data-science>
+						       being deployed at American Family Insurance</a>,
+      a Fortune 500 company.
+    <li>Jun 2018: <a href=http://pages.cs.wisc.edu/~anhai/papers1/agenda-ieee-deb18.pdf>A short paper</a>
+      on a system building agenda for data integration and data science. Invited to IEEE DEB Special Issue on Large-Scale Data Integration.
+      (<a href=http://pages.cs.wisc.edu/~anhai/papers1/biggorilla-ieee-deb18.pdf>Another invited paper</a> discusses BigGorilla.)
+    <li>May 2018: <a href=http://pages.cs.wisc.edu/~anhai/papers/magellan-vldb16.pdf>
+	The Magellan VLDB paper</a> received a SIGMOD Research Highlight Award. Here's a <a href=http://pages.cs.wisc.edu/~anhai/papers1/magellan-sigmodrec18.pdf>shortened version</a> of that paper. 
+    <li>Dec 2017: Discussed misc issues about <a href=./misc/wisc/>UW, CS, and living in Madison</a>.
+    <li>Sep 2017: Revised homepage to reflect recent work on data cleaning/integration and data science. 
+    <li>Oct 2016: <a href=./talks/di-agenda-talk.pptx>A talk</a> on a system building agenda for data integration (and data science). 
+    The Magellan system described below is an example of realizing this agenda for entity matching.
+    <li>Jul 2016: Launching <a href=https://sites.google.com/site/anhaidgroup/projects/magellan>Magellan</a>,
+    a new project to build an end-to-end entity matching system.
+    <li> <a href=./old-news.html>Old news</a>
+  </ul>
+</td>
+<td>
+<IMG src=http://pages.cs.wisc.edu/~anhai/pictures/magellan_md.gif alt="Magellan's ship image" border=0 height=80>
+</td>
+</tr>
+</table>
+<hr>
+
+<font size=+1><strong>Research</strong></font>&nbsp;&nbsp; (<a href=https://sites.google.com/site/anhaidgroup/home>Group's Homepage</a>)<p>
+
+My work has charted new directions or bet on emerging directions that
+I believe would become fundamental for data management. Solving
+problems in these directions often requires a combination of machine
+learning, scalable data management, effective human-data interaction,
+and cloud technologies. 
+Current directions:
+<ul>
+  <li> <a href=https://sites.google.com/site/anhaidgroup/projects/system-agenda>Data cleaning & integration:</a>
+    I build <font color=C70707>end-to-end data integration systems</font> as parts of the Python ecosystem of open-source data tools. I also leverage these systems to build <font color=C70707>cloud/crowd data integration services</font> for lay users.
+    
+  <li>
+  <a href=https://sites.google.com/site/anhaidgroup/projects/data-science>Data
+  science:</a> This direction is increasingly critical to the data
+  management community, yet no clear agenda exists today. I'm working
+  on <font color=C70707>an agenda that integrates research, system
+  building, education, and outreach</font>. This agenda currently focuses
+  on <font color=C70707>data quality</font> and builds on the above
+  work in data cleaning/integration.<p>
+
+ <li><font size=-2><font color=C70707>Quick links:</font> <a href=http://arxiv.org/abs/1710.00027>DI agenda paper</a> and <a href=./talks/di-agenda-talk.pptx>talk</a>, <a href=https://sites.google.com/site/anhaidgroup/projects/magellan>Magellan homepage</a> and <a href=http://pages.cs.wisc.edu/~anhai/papers/magellan-vldb16.pdf>paper</a>,
+code (<a href=https://sites.google.com/site/anhaidgroup/projects/magellan/py_entitymatching>py_entitymatching</a>,
+<a href=https://sites.google.com/site/anhaidgroup/projects/magellan/py_stringsimjoin>py_stringsimjoin</a>,
+<a href=https://sites.google.com/site/anhaidgroup/projects/magellan/py_stringmatching>py_stringmatching</a>),
+<a href=https://sites.google.com/site/anhaidgroup/useful-stuff/data>data sets</a>,
+<a href=https://sites.google.com/site/anhaidgroup/courses/cs-838-spring-2017>data science course</a>,
+<a href=http://www.biggorilla.org>BigGorilla repository of DI tools</a>,
+<a href=http://research.cs.wisc.edu/dibook>DI textbook</a>
+<p></font>
+</ul>
+Past directions:
+<a href=https://sites.google.com/site/anhaidgroup/past-projects/knowledge-bases-graphs>knowledge bases/graphs</a> (2004-2012),
+<a href=https://sites.google.com/site/anhaidgroup/past-projects/crowdsourcing>crowdsourcing</a> (2002-2015),
+<a href=https://sites.google.com/site/anhaidgroup/past-projects/schema-ontology-matching>schema/ontology matching</a> (2000-2010).
+
+In between, from 2010-2014 I
+<a href=https://sites.google.com/site/anhaidgroup/past-projects/silicon-valley-intermission>spent
+some time</a> in Silicon Valley, putting my work in these directions
+to use, and learning a ton about doing things "in the wild".<p>
+
+<strong>Selected Recent Publications</strong>&nbsp;&nbsp; 
+<font>(<a href=http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/d/Doan:AnHai.html>DBLP Entry</a>&nbsp;&nbsp;
+<a href=http://scholar.google.com/citations?hl=en&user=Qa_TAw4AAAAJ&view_op=list_works&gmla=AJsN-F4ZXIrp_KncIdJICyr5iInrLBWsQ6iD7D_tkTL3cRFa6Mrjn7MYZ1mzHJitjJmoh2hTWkML62omCAadXFXaKshqXZ1oAosVhg0xgjl_nfkfDbQrFICDrOPuf0IatR6YWj9_Jj30>Google Scholar Entry</a>)</font>
+
+<ul>
+  <li>Magellan: toward building ecosystems of entity matching
+  solutions, AnHai Doan, Pradap Konda, Paul Suganthan G. C., Yash
+  Govind, Derek Paulsen, Kaushik Chandrasekhar, Philip Martinkus,
+  Matthew Christie, <em>Communications of the ACM</em>, 2020. 
+
+  <li>Deep Entity Matching with Pre-Trained Language Models, Yuliang
+  Li, Jinfeng Li, Yoshihiko Suhara, AnHai Doan, Wang-Chiew
+  Tan, <em>VLDB-21</em>
+
+  <li>Data Curation with Deep Learning, Saravanan Thirumuruganathan,
+  Nan Tang, Mourad Ouzzani, AnHai Doan, <em>EDBT-20</em>
+
+ <li>Manually Detecting Errors for Data Cleaning Using Adaptive
+   Crowdsourcing Strategies, Haojun Zhang, Chengliang Chai, AnHai
+   Doan, Paris Koutris, Esteban Arcaute, <em>EDBT-2020</em>
+
+<li> <a href=./papers1/magellan-sigmod19.pdf>Entity Matching Meets Data Science: A Progress Report from the Magellan Project</a>,
+    Y. Govind, P. Konda, and others.
+    <em>SIGMOD-19</em>. Industrial paper.
+
+    <li> <a href=./papers1/umetrics-edbt19.pdf>Executing Entity Matching End to End: A Case Study</a>,
+    P. Konda, S. Seshadri, E. Segarra, B. Hueth, A. Doan.
+    <em>EDBT-19</em>. Industrial paper.
+
+  <li> <a href=./papers1/smurf-vldb19.pdf>Smurf: Self-Service String Matching Using Random Forests</a>,
+    P. Suganthan G.C., A. Ardalan, A. Doan, A. Akella.
+    <em>VLDB-19</em>.
+
+  <li> <a href=./papers1/cloudmatcher-demo-vldb18.pdf>CloudMatcher: A
+  Hands-Off Cloud/Crowd Service for Entity Matching</a>, Y. Govind,
+  E. Paulson, P. Nagarajan, P. Suganthan G.C., A. Doan, Y. Park,
+  G. Fung, D. Conanthan, M. Carter, M. Sun. <em>VLDB-18</em>. Demo
+  paper. 
+
+  <li> <a href=./papers1/agenda-ieee-deb18.pdf>Toward a System Building Agenda for Data Integration (and Data Science)</a>,
+    A. Doan, P. Konda, P. Suganthan G.C., A. Ardalan, J. Ballard, S. Das,
+    Y. Govind, H. Li, P. Martinkus, S. Mudgal, E. Paulson, H. Zhang. <em>IEEE Data Engineering Bulletin, Special Issue
+      on Large-Scale Data Integration, 2018</em>. Invited paper. 
+
+  <li> <a href=./papers1/biggorilla-ieee-deb18.pdf>BigGorilla: An Open-Source Ecosystem for Data Preparation and Integration</a>,
+    C. Chen, B. Golshan, A. Halevy, W. Tan, A. Doan.
+      <em>IEEE Data Engineering Bulletin, Special Issue
+      on Large-Scale Data Integration, 2018</em>. Invited paper.
+      
+  <li> <a href=./papers1/deepmatcher-sigmod18.pdf>Deep Learning for
+  Entity Matching: A Design Space Exploration</a>, S. Mudgal, H. Li,
+  T. Rekatsinas, A. Doan, Y. Park, G. Krishnan, R. Deep, E. Arcaute,
+  V. Raghavendra. <em>SIGMOD-18</em>. <a href=./papers1/deepmatcher-tr.pdf>extended
+      version</a>.
+
+  <li> <a href=./papers1/matchcatcher-edbt18.pdf>MatchCatcher: A
+  Debugger for Blocking in Entity Matching</a>, H. Li, P. Konda,
+  P. Suganthan G.C., A. Doan, B. Snyder, Y. Park, G. Krishnan,
+  R. Deep,
+  V. Raghavendra. <em>EDBT-18</em>. <a href=./papers1/matchcatcher-tr.pdf>extended
+      version</a>, <a href=./papers1/matchcatcher-edbt18.pptx>slides</a>.
+
+  <li> <a href=./papers1/hilda18.pdf>Human-in-the-Loop Data Analysis: A Personal Perspective</a>, A. Doan.
+    <em>HILDA Workshop @ SIGMOD-18</em>. 
+
+  <li> <a href=./papers1/magellan-sigmodrec18.pdf>Magellan: Toward
+  Building Entity Matching Management Systems</a>, P. Konda, S. Das,
+  P. Suganthan G.C., P. Martinkus, A. Doan, A. Ardalan, J. R. Ballard,
+  Y. Govind, H. Li, F. Panahi, H. Zhang, J. Naughton, S. Prasad,
+    G. Krishnan, R. Deep, V. Raghavendra. <em>SIGMOD Record, 2018</em>.
+    <font color=C70707 size=-2>8-page version summarizing the progress on the Magellan system
+      by Dec 2017.</font>
+    <ul>
+
+  <li> <a href=./papers/magellan-vldb16.pdf>Magellan: Toward Building
+  Entity Matching Management Systems</a>, P. Konda, S. Das,
+  P. Suganthan G.C., A. Doan, A. Ardalan, J. R. Ballard, H. Li,
+  F. Panahi, H. Zhang, J. Naughton, S. Prasad, G. Krishnan, R. Deep,
+    V. Raghavendra. <em>VLDB-16</em>. <a href=./papers/magellan-tr.pdf>extended version</a>,
+    <a href=./papers1/magellan-vldb16.pptx>slides</a>. <font color=C70707 size=-2>the conference and tech report versions.</font>
+
+  <li> <a href=./papers/magellan-demo-vldb16.pdf>Magellan: Toward
+  Building Entity Matching Management Systems over Data Science
+  Stacks</a>, P. Konda, S. Das, P. Suganthan G.C., A. Doan,
+  A. Ardalan, J. R. Ballard, H. Li, F. Panahi, H. Zhang, J. Naughton,
+  S. Prasad, G. Krishnan, R. Deep, V. Raghavendra. <em>VLDB-16</em>,
+    demo paper. <a href=./papers1/vldb_demo.tar.gz>Jupyter notebook & datasets for demo</a>.
+    <font color=C70707 size=-2>the demo proposal.</font>
+  </ul>
+        
+  <li> <a href=./papers1/cloudmatcher-bigdas17.pdf>CloudMatcher: A Cloud/Crowd Service for Entity Matching</a>,
+    Y. Govind, E. Paulson, M. Ashok, P. Suganthan G.C., A. Hitawala, A. Doan, Y. Park, P. Peissig, E. LaRose, J. Badger.
+    <em>BIGDAS Workshop @ KDD-17</em>. <a href=./papers1/cloudmatcher-bigdas17.pptx>slides</a>
+
+<li> <a href=./papers1/hil-in-em-hilda17.pdf>Human-in-the-Loop Challenges for Entity Matching: A Midterm Report</a>,
+    A. Doan, A. Ardalan, J. Ballard, S. Das, Y. Govind, P. Konda, H. Li, S. Mudgal, E. Paulson, P. Suganthan G.C., H. Zhang.
+    <em>HILDA Workshop @ SIGMOD-17</em>. 
+  
+  <li> <a href=./papers/falcon-sigmod17.pdf>Falcon: Scaling Up Hands-Off Crowdsourced Entity Matching to Build Cloud Services</a>,
+    S. Das, P. Suganthan G.C., A. Doan, J. Naughton, G. Krishnan, R. Deep, E. Arcaute, V. Raghavendra, Y. Park.
+    <em>SIGMOD-17</em>. <a href=./papers/falcon-tr.pdf>extended version</a>, <a href=./papers1/falcon-sigmod17.pptx>slides</a>
+
+  <li> <a href=./papers/debug-em-rules-edbt17.pdf>Towards Interactive
+  Debugging of Rule-Based Entity Matching</a>, F. Panahi, W. Wu,
+  A. Doan, J. Naughton, <em>EDBT-17</em>.
+    
+  <li> <a href=./papers/beckman-cacm16.pdf>The Beckman Report on Database Research</a>,
+  with many authors. <em>Communications of the ACM, 2016</em>. <a href=http://beckman.cs.wisc.edu>extended version</a>
+
+  <li> <a href=./papers/chimera-vldb14.pdf>Chimera: Large-Scale Classification using Machine Learning, Rules, and Crowdsourcing</a>, 
+  C. Sun, N. Rampalli, F. Yang, A. Doan. <em>VLDB-14</em>, industrial paper. <a href=./papers/chimera-talk-vldb14.pptx>slides</a>
+
+  <li> <a href=./papers/corleone-sigmod14.pdf>Corleone: Hands-off Crowdsourcing for Entity Matching</a>, 
+  C. Gokhale, S. Das, A. Doan, J. Naughton, N. Rampalli, J. Shavlik, J. Zhu. 
+  <em>SIGMOD-14</em>. <a href=./papers/corleone-talk-sigmod14.pptx>slides</a>, <a href=./papers/corleone-tr.pdf>extended report</a>
+</ul>
+
+<strong>Selected Awards and Honors</strong>
+<ul>
+<li> Gurindar S. Sohi Professorship, 2020
+<li> Vilas Distinguished Achievement Professorship, 2018
+<li> SIGMOD Research Highlight Award, 2017
+<li> Vilas Associate, UW-Madison, 2016
+<li> Alfred P. Sloan Research Fellowship, 2007
+<li> IBM Faculty Award, 2007, 2008
+<li> NSF CAREER Award, 2004
+<li> <a href=./misc/acm/news.html>ACM Doctoral Dissertation Award</a>, 2003
+<li> <a href=http://www.cs.washington.edu/education/grad/current/Chan.html>
+     William Chan Memorial Dissertation Award</a>, Univ. of Washington, 2003
+</ul>
+<hr>
+
+<font size=+1><strong>Teaching</strong></font><p> 
+
+Recent classes include data science at the <a href=https://sites.google.com/site/anhaidgroup/courses/cs-638-ds>undergrad</a>
+and <a href=https://sites.google.com/site/anhaidgroup/courses/cs-774>grad</a>
+levels, and <a href=https://sites.google.com/site/anhaidgroup/courses/cs-564>CS 564</a> (Introduction to RDBMSs).<p>
+<hr>
+
+<font size=+1><strong>Service</strong></font><p>
+  <ul>
+    <li> Selected recent service for the data management community:
+    <ul> 
+    <li> member, SIGMOD Advisory Board, 
+    <li> member, ICDE 10-Year Most Influential Paper Award Committee, 
+    <li> associate editor, VLDB-16,
+    <li> co-chair, industrial program, VLDB-15,
+    <li> co-chair, <a href=http://beckman.cs.wisc.edu>Beckman meeting</a> (with Mike Carey), 2013.
+    <li> chair, industrial program, SIGMOD-12
+    <li> <a href=http://research.cs.wisc.edu/dibook>data integration textbook</a> (with Alon Halevy and Zack Ives), 2012.
+    </ul>
+
+
+<li> I spent 3 years (2011-2014) setting up a
+<a href=http://www.cs.wisc.edu/academics/graduate-programs/professional-masters>
+professional MS program</a> and a
+<a href=http://www.cs.wisc.edu/academics/graduate-programs/pcp>certificate
+program</a> in CS at UW-Madison (with help from Karu Sankaralingam,
+Jeff Naughton, and Suman Banerjee). These programs have been highly
+successful, enrolling hundreds of students.
+
+<li> I've participated in or led several important strategic
+  initiatives for CS at UW-Madison. These include growth to 50
+  (tenure-track faculty), a re-organization of the department's
+  governance structure, and data science initiatives. I serve as an
+  associate chair since 2017. I've also worked on several strategic
+  initiatives for UW-Madison, including serving on the steering
+  committees of several data science centers and initiatives, and
+  serving on the 2017-2018 campus
+  <a href=https://news.wisc.edu/computer-sciences-working-group-to-advise-on-growth-strategies>task
+  force</a> for growth strategies for computing at UW-Madison.
+</ul>
+
+<hr>
+<font size=+1><strong>Misc</strong></font>
+<ul>
+<li> For advice on research, communication, job hunt, and more, see the <a href=http://web.engr.illinois.edu/~taoxie/advice/index.html>mother of all advice collections</a> by Tao Xie at Illinois. 
+
+<li> My <a href=http://pages.cs.wisc.edu/~anhai/misc/anhai-app.html>academic job application package (in 2002)</a>, 
+<a href=http://pages.cs.wisc.edu/~anhai/talks/uiuc-talk.ppt>academic job talk slides (in 2003)</a>.
+</ul>
+<hr>
+
+
+
+
+

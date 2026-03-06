@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bill Howe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/billhowe/">
+
+    <title>Bill Howe: Academic Homepage</title>
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Bill Howe's News" href="rss.xml" />
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="static/billhowe.css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'TODO']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <style>
+      body {
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+
+      h1 { font-size: 30px; line-height: 135%;}
+      h2 { font-size: 24px; line-height: 135%;}
+      h3 { font-size: 20px; line-height: 135%;}
+      h4 { font-size: 16px; }
+      h5 { font-size: 15px; }
+      h6 { font-size: 13px; }
+
+      hr {
+        border-top: 2px solid #e5e5e5;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .navbar {
+        margin-bottom: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li  class="active"  >
+              <a class="navbar-brand" href="index.html">Bill Howe</a>
+            </li>
+            <li  >
+              <a href="projects">projects</a>
+            </li>
+            <li  >
+              <a href="students">students</a>
+            </li>
+            <li  >
+              <a href="publications">publications</a>
+            </li>
+            <li  >
+              <a href="service">teaching/service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+  <div class="col-sm-3">
+    <img src="images/billhowe.png" class="img" width="180px"
+    style="margin-top: 30px; margin-bottom: 10px">
+  </div>
+  <div class="col-sm-9">
+    <h1>Bill Howe</h1>
+    <p>
+      Associate Professor, Information School<br>
+      Adjunct Associate Professor, Computer Science &amp; Engineering<br>
+      Adjunct Associate Professor, Electrical Engineering<br>
+      Co-Founding Faculty Director, Center for Responsible AI Systems and Experiences<br>
+      Director, Urbanalytics Lab<br>
+      Founding Program Director and Faculty Chair, UW Data Science Masters Degree<br>
+      Founding Associate Director and Senior Data Science Fellow, UW eScience Institute<br>
+      University of Washington<br>
+      <a href="bio.html">Short Bio</a> |
+      <a href="cv/billhowe_cv.pdf">Curriculum Vitae</a> | 
+      <a href="cv/nsf_biosketch/biosketch.pdf">NSF-style biosketch</a> |
+      <a href="cv/bill_howe_nih_biosketch.docx">NIH-style biosketch</a> 
+      <br>
+      billhowe at uw.edu | Office: MGH 310 in the <a href="https://datalab.ischool.uw.edu/">iSchool DataLab</a>
+      <br>
+      <br>
+    </p>
+  </div>
+</div>
+
+
+<p>
+I am an Associate Professor in the Information School, Adjunct Associate Professor in Computer Science &amp; Engineering and Electrical Engineering.  I was Founding Associate Director of the <a href="http://escience.washington.edu">UW eScience Institute</a> where I remain a Senior Data Science Fellow. I currently serve as Faculty Director and Co-Founder of the <a href="https://www.raise.uw.edu/">Center for Responsible AI Systems and Experiences</a> and Director of the <a href="https://urbanalytics.uw.edu/">Urbanalytics group</a>.  I am a co-founder of <a href="http://urban.uw.edu/">Urban@UW</a>. I created a <a href="https://www.coursera.org/course/datasci">first MOOC on Data Science</a> through Coursera, and I led the creation of the <a href="http://datasciencemasters.uw.edu/">UW Data Science Masters Degree</a>, where I serve as its first Program Director and Faculty Chair. I serve on the Steering Committee of the Center for Statistics in the Social Sciences.
+</p>
+<p>
+My current research is in the epistemological foundations of AI, where we apply empirical methods and develop new algorithms to make AI safer for use in applications underserved by market forces, especially in the public sector and in the physical, life, and social sciences. My prior research was in developing systems and algorithms to make the techniques and technologies of data science broadly accessible especially in contexts where issues of equity, privacy, and compliance are paramount.  Our methods and publications span three communities: AI, data management, and visualization, and my students have achieved recognition in all three fields.  We are an applied, systems-oriented group, frequently sourcing projects through collaborations across campus and with local and state governments.
+</p>
+
+<hr>
+
+<h2>News</h2>
+<div class="news">
+<ul>
+  <li>July, 2025: Our paper <a href="https://aclanthology.org/2025.findings-acl.1316/">Do Language Models Mirror Human Confidence? Exploring Psychological Insights to Address Overconfidence in LLMs</a> led by Chenjun Xu was accepted to <a href="https://2025.aclweb.org/">ACL 2025 (Findings)</a>.</li>
+
+ <li>June, 2025: Our paper <a href="https://aclanthology.org/2025.tacl-1.26/">The Art of Refusal: A Survey of Abstention in Large Language Models</a> led by Bingbing Wen was accepted to <a href="https://direct.mit.edu/tacl">Transactions of the Association for Computational Linguistics (TACL) 2025</a>.</li>
+
+
+  <li>May, 2025: Our paper <a href="https://arxiv.org/abs/2505.13819">Fragments to Facts: Partial-Information Fragment Inference from LLMs</a> led by Lucas Rosenblatt was accepted to <a href="https://icml.cc/">ICML 2025</a>.</li>
+
+  <li>July, 2025: Two papers accepted to <a href="https://colmweb.org/">COLM 2025</a>: <a href="https://arxiv.org/abs/2504.01205">Epistemic Alignment: A Mediating Framework for User-LLM Knowledge Delivery</a> led by Nicholas Clark and <a href="https://arxiv.org/abs/2508.05009">Can Large Language Models Integrate Spatial Data? Empirical Insights into Reasoning Strengths and Computational Weaknesses</a> led by Bin Han.</li>
+
+  <li>June, 2025: Our preprint <a href="https://arxiv.org/abs/2506.18322">Escaping the SpuriVerse: Can Large Vision-Language Models Generalize Beyond Seen Spurious Correlations?</a> led by Yiwei Yang was posted and submitted to <a href="https://neurips.cc/">NeurIPS 2025</a>.</li>
+
+  <li>August, 2024: Our paper <a href="https://arxiv.org/abs/2408.00932">Towards Zero-Shot Annotation of the Built Environment with Vision-Language Models</a> led by Bin Han was accepted to <a href="https://sigspatial2024.sigspatial.org/">ACM SIGSPATIAL 2024</a> (<a href="https://dl.acm.org/doi/10.1145/3678717.3691296">ACM DL</a>).</li>
+
+  <li>August, 2024: Our paper <a href="https://arxiv.org/abs/2306.07292">SARN: Structurally-Aware Recurrent Network for Spatio-Temporal Disaggregation</a> led by Bin Han was accepted to <a href="https://sigspatial2024.sigspatial.org/">ACM SIGSPATIAL 2024</a> (<a href="https://dl.acm.org/doi/10.1145/3678717.3691295">ACM DL</a>).</li>
+
+  <li>July, 2024: Our paper <a href="https://ojs.aaai.org/index.php/AIES/article/view/31753">Dataset Scale and Societal Consistency Mediate Facial Impression Bias in Vision-Language AI</a> led by Robert Wolfe was accepted to <a href="https://aies-conference.org/2024/">AIES 2024</a>.</li>
+
+  <li>July, 2024: Our paper <a href="https://ojs.aaai.org/index.php/AIES/article/view/31751">ML-EAT: A Multilevel Embedding Association Test for Interpretable and Transparent Social Science</a> led by Robert Wolfe was accepted to <a href="https://aies-conference.org/2024/">AIES 2024</a>.</li>
+
+  <li>July, 2024: Our paper <a href="https://ojs.aaai.org/index.php/AIES/article/view/31752">Representation Bias of Adolescents in AI: A Bilingual, Bicultural Study</a> led by Robert Wolfe was accepted to <a href="https://aies-conference.org/2024/">AIES 2024</a>.</li>
+
+  <li>July, 2024: Our preprint <a href="https://arxiv.org/abs/2407.18418">A Survey of the Fundamental Role of Abstention in Building Reliable Large Language Models</a> led by Bingbing Wen was submitted to <a href="https://direct.mit.edu/tacl">TACL</a> (later published as the TACL 2025 survey above).</li>
+
+  <li>September, 2024: Our preprint <a href="https://arxiv.org/abs/2407.16875">PathwayBench: Assessing Routability of Pedestrian Pathway Networks Inferred from Multi-City Imagery</a> led by Yuxiang Zhang was submitted to the <a href="https://neurips.cc/">NeurIPS 2024</a> Datasets & Benchmarks track.</li>
+
+  <li>March, 2024: Our paper <a href="https://dl.acm.org/doi/fullHtml/10.1145/3630106.3658966">Laboratory-Scale AI: Open-Weight Models are Competitive with ChatGPT Even in Low-Resource Settings</a> led by Robert Wolfe was accepted to <a href="https://facctconference.org/2024/">ACM FAccT 2024</a> (<a href="https://arxiv.org/abs/2405.16820">arXiv</a>).</li>
+
+  <li>February, 2024: Our paper <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Label-Efficient_Group_Robustness_via_Out-of-Distribution_Concept_Curation_CVPR_2024_paper.html">Label-Efficient Group Robustness via Out-of-Distribution Concept Curation</a> led by Yiwei Yang was accepted to <a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a> (<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_Label-Efficient_Group_Robustness_via_Out-of-Distribution_Concept_Curation_CVPR_2024_paper.pdf">PDF</a>).</li>
+
+<li>August, 2023: Our <a href="https://arxiv.org/abs/2208.12700">paper on Epistemic Parity</a> received a <a href="https://vldb.org/2023/?conference-awards" style="color:red">runner-up Best Paper award</a> at <a href="https://vldb.org/2023/">VLDB 2023</a>! This work was a collaboration with NYU, led by Lucas Rosenblatt, and involved the use of a large team of Ukrainian undergraduate researchers who are all co-authors.  Congrats to the team!</li>
+<li>August, 2023: We had two applied papers accepted to HICCS. :)</li>
+<li>June, 2023: I gave a <a href="https://www.slideshare.net/domoritz/hilda-2023-keynote-bill-howe">keynote</a> at <a href="https://hilda.io/2023/">Human-in-the-Loop Data Analytics workshop (HILDA)</a> co-located with SIGMOD 2023.</li>
+<li>May, 2023: I gave a <a href="https://amw2023.org/keynotes.html">keynote</a> at <a href="https://amw2023.org/">Alberto Mendelzon International Workshop on Foundations of Data Management (AMW2023</a> in Santiago Chile.</li>
+<li>May, 2023: Our <a href="https://arxiv.org/abs/2208.12700">paper on Epistemic Parity, an approach to evaluating differentially private synthetic data using the scientific literature</a>, was accepted to <a href="https://vldb.org/2023/">VLDB 2023</a>.</li>
+<li>long break in updating due to COVID, family emergencies, and sabbatical...</li>
+<li>July, 2021: I gave the <a href="https://iitdbgroup.github.io/ProvenanceWeek2020/provviz.html">keynote</a> at the fantastic <a href="https://iitdbgroup.github.io/ProvenanceWeek2021/provviz.html">ProvViz workshop</a>.</li>
+<li>March, 2021: <a href="https://dl.acm.org/doi/10.1145/3440889">Our paper</a> on data equity in relationship to COVID-19 has been released in DG.o.</li>
+<li>February, 2021: <a href="http://ceur-ws.org/Vol-2841/PIE+Q_6.pdf">Our short paper</a> describing data equity and data equity systems was published in EDBT</a></li>
+<li>February, 2021: My student An Yan's <a href="https://dl.acm.org/doi/abs/10.1145/3448016.3452777">Equitensors paper</a> has been accepted to SIGMOD 21.</li>
+<li>January, 2021: My student Sean Yang's <a href="https://ieeexplore.ieee.org/document/9412667">JECL paper</a> showing new state-of-the-art results for joint embeddings of image-text pairs has been accpted to ICPR.</li>
+<li>August, 2020: I'm pleased to be a co-author on Julia Stoyanovich's <a href="https://dl.acm.org/doi/abs/10.14778/3415478.3415570">invited keynote paper on Responsible Data Management</a> at VLDB 2020.</li>
+<li>July, 2020: Shana Hutchison's <a href="http://www.vldb.org/pvldb/vol13/p1919-wang.pdf">paper on optimizing linear algebra queries using relational algebra</a> was published in VLDB 2020.</li> 
+<li>April, 2020: My student An Yan's <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5458">paper on fairness metrics for urban mobility applications</a> has been accepted to AAAI.</li>
+<li>November, 2019: My student An Yan's <a href="https://dl.acm.org/doi/abs/10.1145/3347146.3359380">short paper on fairness metrics in spatio-temporal settings (FairST)</a> has been published at SIGSPATIAL.</li>
+<li>April, 2020: <a href="https://ojs.aaai.org//index.php/AAAI/article/view/5458">Our survey paper on algorithmic fairness and urban mobility</a> (with my student An Yan) was published in a special issue of the Data Engineering Bullletin</li>
+Our summary paper on the relationship between database repair and fairness is <a href="https://dl.acm.org/doi/10.1145/3422648.3422657">available in SIGMOD Record</a></li>
+<li>March, 2020: Our summary paper on the relationship between database repair and fairness is <a href="https://dl.acm.org/doi/10.1145/3422648.3422657">available in SIGMOD Record</a></li>
+<li>August, 2019: My student Sean Yang's i<a href="https://arxiv.org/abs/1908.07465">paper quantifying how the use of visualizations varies across scienific disciplines</a> has been released</li>
+<li>June, 2019: <a href="https://dl.acm.org/doi/10.1145/3299869.3319901">Our paper</a> on algorithmic fairness (with Babak Salimi, Luke Rodriguez, and Dan Suciu) received the <strong style="color:red;">Best paper award</strong> at SIGMOD 2019!</li>
+<li>May, 2019: My student <a href="https://www.domoritz.de/">Dominik Moritz's</a> (now at CMU!) <a href="https://dl.acm.org/doi/abs/10.1145/3290605.3300924">paper on Falcon</a>, demonstrating in-browser, interactive speeds for cross-linked visualizations on billion-tuple datasets received the <strong style="color:red;">Best paper award</strong> at VIs 2019!</li>
+<li>January, 2019: <a href="https://dl.acm.org/doi/abs/10.1145/3287560.3287577">Our paper on data governance, privacy, and synthetic data</a> was published at FAT 2019 (now FAccT)</li>
+<li>January, 2019: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0966692318305726">Our paper on the equity of dockless bikeshare systems</a>, led by Stephen Mooney, was published in the Journal of Transport Geography</li>
+<li>August, 2018: My student Shrainik Jain's <a href="https://faculty.washington.edu/billhowe//publications/pdfs/jain_cidr_2019.pdf">paper on using deep learning for vendor-agnostic workload management</a> was accepted to CIDR 2019.</li>
+<li>July 26, 2018: I'm giving an invited talk at NSF on our work on algorithmic curation of science data repositories.
+<li>July 21, 2018: <strong style="color:red;">Best paper award</strong> Our paper on <a href="https://www.domoritz.de/papers/2018-Draco-InfoVis.pdf">DRACO</a> using answer set programming to model visualization recommendation rules won best paper at InfoVis 2018!  Congratulations to Dominik and the whole team!</li>
+<li>July 18, 2018: I presented our paper on <a href="https://arxiv.org/pdf/1709.08600.pdf">EZLearn</a> at IJCAI 2018 in Stockholm. EZLearn combines distant supervision and co-learning to avoid the need for training data in applications that have access to noisy free-text descriptions of data, especially in science.</li>
+<li>July 10, 2018: Congratulation to Kanit (Ham) Wongsuphasawat for defending his thesis on visualization recommendation systems! Ham is joining Apple as a Research Scientist.</li>
+<li>July 2, 2018:  New <a href="pdfs/rodriguezmobilitybidu2018vldb.pdf">workshop paper on removing bias from transportation data</a> at <a href="https://sites.google.com/view/bidu2018/">BiDU - Workshop on Big Social Data and Urban Computing</a> co-located with VLDB 2018</li>
+<li>June 21, 2018: I represented our BIGDATA grant on <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740996">Foundations of Responsible Data Science</a> and the West Big Data Hub at the combined BIGDATA PI meeting and Big Data Hubs meeting at NSF this week.</li>
+<li>June 14, 2018: New workshop paper accepted at <a href="http://wikicfp.com/cfp/servlet/event.showcfp?eventid=74902&copyownerid=83849">DSDAH 2018</a>, co-located with KDD, on <a href="">Classifying Digitized Art by Type and Time Period</a>
+<li>June 14, 2018: Great discussion at our <a href="https://sigmod2018.org/sigmod_special_session.shtml">session on Responsible Data Science at SIGMOD 2018</a> in Houston</li>
+<li>June 11, 2018: New workshop paper accepted at <a href="http://thealphalab.org/bigscholar/2018/">BigScholar 2018</a>, co-located with KDD, on <a href="">Central Figure Identification</a> for scientific papers.
+<li>May 3, 2018: New blog post on <a href="https://freedom-to-tinker.com/2018/05/03/refining-the-concept-of-a-nutritional-label-for-data-and-models/">nutritional labels for datasets and models</a> is up at Freedom to Tinker.  This post expands on our SIGMOD 2018 demo on <a href="https://arxiv.org/abs/1804.07890">Nutritional Labels for Rankings</a> at SIGMOD 2018</li>
+<li>April, 2018: Congratulations to Maxim Grechkin for defending his thesis on algorithmic curation.  Max joined facebook's integrity team working on claim verification as a research scientist.</li>
+</ul>
+</div>
+
+<h2>Projects</h2>
+<div class="container">
+
+  
+
+  
+  
+    <div class="row">
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2017/10/20/Verifying-Science.html" title="EZLearn+Automatic Claim Validation" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/claimverification.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2017/10/20/Verifying-Science.html">EZLearn+Automatic Claim Validation</a></div>
+    <div class="post-excerpt" itemprop="description">We are developing an end-to-end system for validating scientific claims against open data repositories using NLP, machine learning, and data integration techniques.</div>
+  </div>
+</article>
+
+
+  
+
+  
+
+  
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2017/07/20/Data-Synthesizer.html" title="Privacy-Preserving Synthetic Data" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/datasynth.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2017/07/20/Data-Synthesizer.html">Privacy-Preserving Synthetic Data</a></div>
+    <div class="post-excerpt" itemprop="description">We are developing usable, general tools to generate shareable synthetic datasets with strong privacy guarantees from any input dataset.</div>
+  </div>
+</article>
+
+
+  
+    </div>
+  
+
+  
+
+  
+  
+    <div class="row">
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2015/03/22/Data-Science-for-Social-Good.html" title="Data Science for Social Good" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/incubator.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2015/03/22/Data-Science-for-Social-Good.html">Data Science for Social Good</a></div>
+    <div class="post-excerpt" itemprop="description">Building on our data science incubator program and the University of Chicago's Data Science for Social Good program, we ran an interdisciplinary summer program for...</div>
+  </div>
+</article>
+
+
+  
+
+  
+
+  
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2015/01/15/Viziometrics.html" title="Viziometrics" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/viziometrics.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2015/01/15/Viziometrics.html">Viziometrics</a></div>
+    <div class="post-excerpt" itemprop="description">Machine vision, machine learning, and bibliometric analysis to understand how visualization is used to convey ideas in the scientific literature.</div>
+  </div>
+</article>
+
+
+  
+    </div>
+  
+
+  
+
+  
+  
+    <div class="row">
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2014/08/22/RACO-Big-Data-Middleware.html" title="Myria Middleware for Polystores" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/raco.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2014/08/22/RACO-Big-Data-Middleware.html">Myria Middleware for Polystores</a></div>
+    <div class="post-excerpt" itemprop="description">Part of the Myria project, RACO (the Relational Algebra COmpiler) is a polystore middleware system that provides query translation, optimization, and orchestration across complex multi-system...</div>
+  </div>
+</article>
+
+
+  
+
+  
+
+  
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2014/08/11/Graph-Clustering.html" title="Clustering Billion-Edge Graphs" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/gossipmap.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2014/08/11/Graph-Clustering.html">Clustering Billion-Edge Graphs</a></div>
+    <div class="post-excerpt" itemprop="description">Working at the intersection of network science, databases, and high-performance computing, we developed a series of novel parallel algorithms based on Infomap serial graph clustering...</div>
+  </div>
+</article>
+
+
+  
+    </div>
+  
+
+  
+
+  
+  
+    <div class="row">
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2014/04/20/Scalable-Flow-Cytometry.html" title="Scalable Flow Cytometry" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/seaflow.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2014/04/20/Scalable-Flow-Cytometry.html">Scalable Flow Cytometry</a></div>
+    <div class="post-excerpt" itemprop="description">We have developed algorithms, methods, systems, and applications in support of the Seaflow project in the Armbrust Lab in the UW department of Oceanography.</div>
+  </div>
+</article>
+
+
+  
+
+  
+
+  
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2014/03/22/SQLShare.html" title="SQLShare: DB-as-a-Service" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/sqlshare.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2014/03/22/SQLShare.html">SQLShare: DB-as-a-Service</a></div>
+    <div class="post-excerpt" itemprop="description">SQLShare aims to increase uptake of databases in data science and shed light on how data scientists work with data</div>
+  </div>
+</article>
+
+
+  
+    </div>
+  
+
+  
+
+  
+  
+    <div class="row">
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2013/11/04/VizDeck.html" title="VizDeck + Visualization Recommenders" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/vizdeck.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2013/11/04/VizDeck.html">VizDeck + Visualization Recommenders</a></div>
+    <div class="post-excerpt" itemprop="description">VizDeck recommends visualizations based on the statistical properties of the data tempered by perception heuristics.  Dashboards are assembled through a card-game UI.</div>
+  </div>
+</article>
+
+
+  
+
+  
+
+  
+  
+
+  <article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="/billhowe//projects/2013/04/23/Big-Data-Visualization.html" title="Scalable Visualization meets Relational Algebra" class="post-teaser">
+  <img class="col-md-4 img-responsive"  src="/billhowe//images/scalablevis.png"  alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="/billhowe//projects/2013/04/23/Big-Data-Visualization.html">Scalable Visualization meets Relational Algebra</a></div>
+    <div class="post-excerpt" itemprop="description">With funding from EMC and NSF, we explore new approaches to scalable visualization making use of large-scale database and dataflow engines.</div>
+  </div>
+</article>
+
+
+  
+    </div>
+  
+
+    
+</div>
+<br>
+<a href="/billhowe//projects">See all projects...</a>
+
+<!--
+<h2>Service and Recognition</h2>
+<hr>
+
+<ul>
+
+<li>Executive Committee, eScience Institute</li>
+<li>Steering Committee, Urban@UW</li>
+<li>Advisory Board, Analysis in Motion Initiative, PNNL</li>
+</ul>
+-->
+
+
+      <hr>
+      <small>
+        This webpage was built with
+        <a href="http://twitter.github.com/bootstrap">Bootstrap</a> and 
+        <a href="https://github.com/mojombo/jekyll">Jekyll</a>. 
+        You can find the source code 
+        <a href="https://github.com/billhowe/homepage">here</a>.
+        Last updated: Sep 10, 2018
+      </small>
+    </div>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="static/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
+

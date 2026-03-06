@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="1; URL=https://lorr1.github.io/" />
+<title>Laurel Orr's Home Page</title>
+<link href="bootstrap.css" rel="stylesheet">
+<!-- <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,400i,700" rel="stylesheet">
+<style>
+  /*a:hover.image{
+    opacity:0.7;
+  }*/
+  body { 
+    font: 400 16px/1.5 Oxygen; 
+  }
+  .nav.nav-pills {
+    background-color: #ffffff;
+  }
+  .nav.nav-pills >li > a {
+    color: rgb(69, 66, 66);
+    font-size: 14px;
+  }
+  .nav.nav-pills > li > a:hover {
+    background-color: #ffffff;
+    color: #428bca;
+  }
+</style>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="container-fluid" style="margin-top:15px; text-align:center;">
+        <h1 style>Laurel Orr</h1>
+        <address>
+          <div>
+          </div>
+          <div>
+            <a>lorr1@cs.stanford.edu</a>
+          </div>
+        </address>
+        <img src="Laurel_Orr_Photo.jpeg" alt="Laurel Orr" style="width: 85%; border: 2px solid black;">
+      </div>
+    </div>
+    <div class="col-md-7 offset4">
+      <div class="container-fluid" style="margin-top:20px;">
+        <ul class="nav nav-pills">
+          <li><a href="#Pubs">Publications</a></li>
+          <li><a href="#Blogs">Blogs</a></li>
+          <li><a href="#Research">Research and Work Experience</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+        </ul>
+      </div>
+      <div class="container-fluid">
+        <h2 id="AboutMe">About Me</h2>
+        <p>I am currently a PostDoc at Stanford working with <a href="https://cs.stanford.edu/people/chrismre/">Chris RÃ©</a> in the <a href="https://hazyresearch.stanford.edu/">Hazy Research Lab</a>. In August of 2019, I graduated with a PhD from Paul G Allen School for Computer Science and Engineering at the University of Washington in Seattle. I was part of the <a href="http://db.cs.washington.edu/"/>Database Group</a> and advised by <a href="https://homes.cs.washington.edu/~suciu/">Dan Suciu</a> and <a href="https://homes.cs.washington.edu/~magda/">Magdalena Balazinska</a>.
+
+        <p>For my undergraduate degree, I went to Carleton College in Northfield, MN, where the city's motto is "Cows, Colleges, and Contentment" and graduated in 2013 as a Computer Science and Mathematics double major.</p>
+          
+        <h2 id="Research">Research and Work Experience</h2>
+        <p>My research interests are broadly at the intersection of machine learning and data management. I focus on how to manage the end-to-end lifecycle of self-supervised embedding pipelines. This includes problems of how to better train, maintain, monitor, and patch the embedding models and their use downstream.</p>
+        
+        <p>I am a 2020 winner of the IC Postdoc Research Fellowship Program and am one of the 2015 winners of the NSF GRFP in Computer Science. In the summer of 2016 and 2017, I interned at Microsoft Research as a PhD research intern, and in the summer of 2015, I interned at Tableau as a software developer. From the summer of 2012 to the spring of 2015, I interned at Sandia National Laboratories working on high performance computing and image reconstruction.</p>
+
+        <h2 id="Blogs">Blogs</h2>
+          <p>
+            <em>Misral-A Journey Torwards Reproducible Language Model Training.</em> <strong>Laurel Orr*</strong> and Siddharth Karamcheti*.<br>
+            <em>Team:</em> Jason Bolton, Tianyi Zhang, Karan Goel, Avanika Narayan, Rishi Bommasani, Deepak Narayanan<br>
+            <em>Advisors</em>: Tatsunori Hashimoto, Dan Jurafsky, Christopher D. Manning, Christopher Potts, Christopher RÃ©, Percy Liang<br>
+            <a href="https://crfm.stanford.edu/2021/08/26/mistral.html">[blog]</a>, <a href="https://youtu.be/du1YiytHwXs?t=3294">[talk]</a>
+          </p>
+          <p>
+            <em>Bootleg: Chasing the Tail with Self-Supervised Named Entity Disambiguation.</em> <strong>Laurel Orr</strong>, Megan Leszczynski, Simran Arora, Neel Guha, Xiao Ling, Sen Wu, and Christopher RÃ©<br>
+            <a href="https://hazyresearch.stanford.edu/blog/2020-11-10-bootleg">[blog]</a>
+          </p>
+        
+        <h2 id="Pubs">Publications</h2>
+          <p class="pub">
+          <em>Ask Me Anything: A simple strategy for prompting language models.</em> Simran Arora, Avanika Narayan, Mayee F. Chen, <strong>Laurel Orr</strong>, Neel Guha, Kush Bhatia, Ines Chami, Frederic Sala, Christopher RÃ©. arXiv 2022.<br>
+            <a href="https://arxiv.org/pdf/2210.02441.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Can Foundation Models Wrangle Your Data?</em> Avanika Narayan, Ines Chami, <strong>Laurel Orr</strong>, Christopher RÃ©.
+            arXiv 2022.<br>
+            <a href="https://arxiv.org/pdf/2205.09911.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Data Management Opportunities for Foundation Models.</em> <strong>Laurel Orr</strong>, Karan Goel, Christopher RÃ©. CIDR 2022.<br>
+            <a href="http://cidrdb.org/cidr2022/papers/p51-orr.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>On the Opportunities and Risks of Foundation Models (Lead of Data Section).</em> <strong>Laurel Orr</strong>, Simran Arora, Karan Goel, Avanika Narayan, Michael Zhang, Christopher RÃ©. arXiv 2021.<br>
+            <a href="https://arxiv.org/abs/2108.07258">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Cross-Domain Data Integration for Named Entity Disambiguation in Biomedical Text.</em> Maya Varma, <strong>Laurel Orr</strong>, Sen Wu, Megan Leszczynski, Xiao Ling, Christopher RÃ©. EMNLP 2021.<br>
+            <a href="https://aclanthology.org/2021.findings-emnlp.388/">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Managing ML Pipelines: Feature Stores and the Coming Wave of Embedding Ecosystems (Tutorial).</em> <strong>Laurel Orr</strong>, Atindriyo Sanyal, Xiao Ling, Karan Goel, Megan Leszczynski. VLDB 2021.<br>
+            <a href="https://arxiv.org/abs/2108.05053">[paper]</a>, <a href="https://vldb.org/2021/files/slides/tutorial/tutorial4.pdf">[slides]</a>
+          </p>
+          <p class="pub">
+            <em>Goodwill Hunting: Analyzing and Repurposing Off-the-Shelf Named Entity Linking Systems.</em> Karan Goel, <strong>Laurel Orr</strong>, Nazneen Fatema Rajani, Jesse Vig, Christopher RÃ©. NAACL Industry 2021.<br>
+            <a href="https://aclanthology.org/2021.naacl-industry.26.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Bootleg: Chasing the Tail with Self-Supervised Named Entity Disambiguation.</em> <strong>Laurel Orr*</strong>, Megan Leszczynski*, Simran Arora, Sen Wu, Neel Guha, Xiao Ling, Christopher RÃ©. CIDR 2021.<br>
+            <a href="https://arxiv.org/abs/2010.10363">[paper]</a>, <a href="https://www.youtube.com/watch?v=dO7nVXTvepg">[talk]</a>
+          </p>
+          <p class="pub">
+            <em>Mosaic: A Sample-Based Database System for Open World Query Processing.</em> <strong>Laurel Orr</strong>, Samuel Ainsworth, Walter Cai, Kevin Jamieson, Magda Balazinska, Dan Suciu. CIDR 2020.<br>
+            <a href="https://arxiv.org/abs/1912.07777">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Sample Debiasing in the Themis Open World Database System.</em> <strong>Laurel Orr</strong>, Magdalena Balazinska, and Dan Suciu. SIGMOD 2020.<br>
+            <a href="https://arxiv.org/abs/2002.09799">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Pushing Data-Induced Predicates Through Joins in Big-Data Clusters.</em> Srikanth Kandula, <strong>Laurel Orr</strong>, and Surajit Chaudhuri. VLDB 2019.<br>
+            <a href="http://www.vldb.org/pvldb/vol13/p252-orr.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>EntropyDB: A Probabilistic Approach to Approximate Query Processing.</em> <strong>Laurel Orr</strong>, Magdalena Balazinska, and Dan Suciu. VLDB Journal 2019.<br>
+            <a href="https://arxiv.org/abs/1911.04948">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Probabilistic Database Summarization for Interactive Data Exploration.</em> <strong>Laurel Orr</strong>, Magdalena Balazinska, and Dan Suciu. VLDB 2017.<br>
+            <a href="https://arxiv.org/abs/1703.03856">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Explaining Query Answers with Explanation-Ready Databases.</em> Sudeepa Roy, <strong>Laurel Orr</strong>, and Dan Suciu. VLDB 2015.<br>
+            <a href="https://www.vldb.org/pvldb/vol9/p348-roy.pdf">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Big-Data Management Use-Case: A Cloud Service for Creating and Analyzing Galactic Merger Trees.</em> S. Loebman, J. Ortiz, L. Choo, L. Orr, L. Anderson, D. Halperin, M. Balazinska, T. Quinn, F. Governato. SIGMOD Workshop on Data Analytics in the Cloud (DanaC) 2014.<br>
+            <a href="https://dl.acm.org/doi/pdf/10.1145/2627770.2627774">[paper]</a>
+          </p>
+          <p class="pub">
+            <em>Cluster-Based Approach to a Multi-GPU CT Reconstruction Algorithm.</em> <strong>Laurel J. Orr</strong>, Edward S. Jimenez, Kyle R. Thompson. Conference Proceedings for the IEEE Nuclear Science Symposium and Medical Imaging Conference 2014.
+          </p>
+          <p class="pub">
+            <em>Preparing for the 100-Megapixel Detector: Reconstruction a Multi-Terabyte Computed Tomography Dataset.</em> <strong>Laurel J. Orr</strong>, and Edward S. Jimenez. Conference Proceedings for the Penetrating Radiation Systems and Applications XIV Workshop at the SPIE International Symposium on SPIE Optical Engineering+Applications 2013.
+          </p>
+      </div>
+    </div> 
+  </div>     
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="style-icml.css">
+  <meta charset="utf-8" />
+  <title>Aditi @ ICMLÂ 2025</title>
+  <style>
+    /* ----------  Base layout  ----------- */
+    :root {
+      --accent: #3f6cad;   /* tweak to lab colors if desired */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      max-width: 120ch;
+      margin-inline: auto;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* ----------  Headings  ----------- */
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-block: 0 2rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-block: 1rem 1rem;
+      display: inline-block;
+      padding-bottom: 0.0rem;
+    }
+
+    /* ----------  Paper cards  ----------- */
+    .paper-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .paper {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      padding: 0.4rem;
+    }
+
+    .paper img {
+      inline-size: 160px;
+      aspect-ratio: 4 / 3.5;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0.5;
+      object-fit: contain;      /* never cropâshrink   */
+      object-position: center; 
+    }
+
+    .paper-content {
+      flex: 1;
+    }
+    .paper-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-block: 0 0.4rem;
+    }
+
+    .paper-authors {
+	font-style: italic;
+	font-size: 1 rem;
+	margin-block: 0 0.4rem;
+    }
+
+    .paper-meta {
+      font-size: 1.1rem;
+      color: #555;
+      margin-block-end: 0.6rem;
+    }
+
+    .paper-abstract {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    
+    .hl {
+	color: #e24a36;      /* pick your highlight color */
+	font-weight: 700;    /* optional â keeps it bold */
+    }
+    /* 1Â . Neutral link colour */
+    a, a:visited {               /* pick a soft blueâgrey */
+	color: #415A77;
+	text-decoration: none;
+    }
+    a:hover {
+	color: #2C3E55;            /* slightly darker on hover */
+	text-decoration: underline;
+    }
+    /* ----------  Responsive tweaks  ----------- */
+    @media (max-width: 600px) {
+      body {
+        padding-inline: 1rem;
+      }
+      .paper {
+        flex-direction: column;
+      }
+      .paper img {
+        inline-size: 100%;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+  <body>
+    <header class="conf-header">
+      <img src="images/CMU-logo.png"  alt="CMU logo"  class="logo left">
+      <h1 class="conf-title">Aditiâ¯Raghunathanâs GroupÂ @Â ICMLÂ 2025</h1>
+      <img src="images/ICML-logo.svg" alt="ICML logo" class="logo right">
+    </header>
+    
+  <section class="paper-list">
+    <!-- ====== Paper card template â duplicate & fill ====== -->
+    <div class="paper">
+      <img src="images/paper1.png" alt="PaperÂ 1 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"> <a href = "https://arxiv.org/pdf/2504.15266" > Roll the dice & look before you leap: Going beyond the creative limits of next-token prediction </a> 	<span class = "badge award"> Outstanding Paper Award </span> </div> 
+        <div class="paper-authors">Vaishnavh Nagarajan*, Chen Henry Wu*, Charles Ding, Aditi Raghunathan</div>
+        <div class="paper-meta"> <span class="hl"> Oral </span> â¢ Wednesday, Jul 16 â¢ 10 am â¢ West Exhibition Hall C </div>
+	
+<!-- <p class="paper-abstract"> We design a suite of <i> minimal </i> to study how well language models can solve creative open-ended tasks that require a far-sighted leap of thought. We argue that multi-token approaches outperform next-token learning, and injecting noise at the inputs layer works better than temperature sampling from the output layer. </p> -->
+      </div>
+    </div>
+
+    <div class="paper">
+      <img src="images/paper2.png" alt="PaperÂ 2 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"> <a href = "https://arxiv.org/pdf/2503.19206"> Overtrained language models are harder to fine-tune </a> </div>
+        <div class="paper-authors">Jacob Mitchell Springer, Sachin Goyal, Kaiyue Wen, Tanishq Kumar, Xiang Yue, Sadhika Malladi, Graham Neubig, Aditi Raghunathan</div>
+        <div class="paper-meta">Poster â¢ Thursday Jul 17 â¢ 4.30pm  â¢ East Exhibition Hall A-B #E-2508</div>
+        <!-- <p class="paper-abstract">Brief description of the contribution.</p> -->
+      </div>
+    </div>
+
+    <div class="paper">
+      <img src="images/paper3.png" alt="PaperÂ 2 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"> <a href = "https://arxiv.org/pdf/2507.09937"> Memorization sinks: isolating memorization during LLM training </a> </div>
+        <div class="paper-authors">Gaurav Ghosal, Pratyush Maini, Aditi Raghunathan</div>
+        <div class="paper-meta">Poster â¢ Thursday Jul 17 â¢ 11am  â¢ East Exhibition Hall A-B #E-1300</div>
+        <!-- <p class="paper-abstract">Brief description of the contribution.</p> -->
+      </div>
+    </div>
+
+    <div class="paper">
+      <img src="images/ICML-logo.svg" alt="PaperÂ 2 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"></div>
+        <div class="paper-authors">Aditi Raghunathan</div>
+        <div class="paper-meta"> Panel â¢ Thu Jul 17 â¢ 7pm  â¢ <a href = "https://icml.cc/virtual/2025/49700">AI Safety Social</a> </div>
+        <!-- <p class="paper-abstract">Brief description of the contribution.</p> -->
+      </div>
+    </div>
+
+
+
+    <div class="paper">
+      <img src="images/talk1.png" alt="PaperÂ 2 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"> Beyond benchmarks: the case for spherical cows in LLM research</div>
+        <div class="paper-authors">Aditi Raghunathan</div>
+        <div class="paper-meta"> <span class = "hl"> Invited Talk </span> â¢ Sat Jul 19 â¢ 9am  â¢ <a href = "https://sites.google.com/view/moss2025/home?authuser=0">MOSS workshop</a> </div>
+        <!-- <p class="paper-abstract">Brief description of the contribution.</p> -->
+      </div>
+    </div>
+
+    
+    <div class="paper">
+      <img src="images/talk2.png" alt="PaperÂ 2 figure placeholder" />
+      <div class="paper-content">
+        <div class="paper-title"> When âgoodâ data backfires: questioning common wisdom in data curation</div>
+        <div class="paper-authors">Aditi Raghunathan</div>
+        <div class="paper-meta"> <span class = "hl"> Invited Talk </span> â¢ Sat Jul 19 â¢ 1.30pm  â¢ <a href = "https://dataworldicml2025.github.io/index.html"> DataWorld workshop </a> </div>
+        <!-- <p class="paper-abstract">Brief description of the contribution.</p> -->
+      </div>
+    </div>
+
+  <h1 class="conf-title">Our research perspectives: the ICML 2025 edition</h1>
+<p class = "paper-abstract">
+
+Our ICML papers share a unifying message: <span class = "hl"> it is time to rethink LLM preâtraining </span>. Scaling autoregressive models on ever-larger datasets has driven impressive benchmark gains and real-world deployments, yet these models stumble when asked for more: precise control, safe steering, targeted unlearning, rapid domain adaptation, or the creation of truly novel content. 
+
+I summarize the limitations we identify, through large-scale empirical studies and clear conceptual examples. <p> 
+
+      <h2 class="lim-header"> Limitationâ¯1 â More pre-training tokens can make downstream performance worse</h2>
+      
+<p class = "paper-abstract"> It is appealing to think that we can keep improving our models by scaling up on more data, and if we run out of internet data, we can now fall back on synthetic data. However, the mantra that <q> more data is always better </q> breaks down in the foundation model setting, where a pre-trained network is almost always <i> adapted </i> before deployment. Beyond a certain point, additional tokens make the model brittle: it fine-tunes more slowly, forgets more easily, and delivers worse downstream accuracy, a phenomenon we call <span class = "hl"> catastrophic overtraining. </span> <br><br>
+
+  A helpful analogy from Vince Conitzer: <i> imagine building card towers on a rock-solid table. As your skill improves, you construct taller, more delicate towers. But when the table is placed on a moving train, those fragile structures topple, whereas simpler early towers survive. </i> Likewise, a heavily overtrained model provides good zero-shot performance on static benchmarks yet collapses when the ``table'' shifts: when adapting to new domains, steering for safety, or unlearning. <br> <br>
+
+  Our large scale experiments confirm that we already hit this catastrophic overtraining with our most latest 1B-parameter models. For example, the instruction-tuned OLMo-1B model pre-trained on 3T tokens leads to over 2% worse performance on multiple standard LLM benchmarks than its 2.3T token counterpart. Check out <a href = "https://arxiv.org/pdf/2503.19206"> our paper </a> for more details. <br><br>
+
+<i> Note: </i> this finding is conceptually similar to a finding from our work on <a href = "https://arxiv.org/pdf/2411.04330"> scaling laws for precision. </a> The degradation introduced by post-training quantization increases as models are trained on more data, eventually making additional pretraining data actively harmful. </p>
+    
+<h2 class="lim-header"> Limitationâ¯2 - Standard pre-training resists unlearning </h2>
+
+    <p class = "paper-abstract"> Dozens of methods promise to erase private or harmful content from LLMs, yet results lag behind effort. Even after <q> unlearning, </q> the supposedly purged information can often be extracted with a clever attack. <br> <br>
+
+  <i> Why is it so hard? </i> <br> <br> 
+
+Our empirical and theoretical analysis in <a href = "https://arxiv.org/pdf/2507.09937"> our paper </a> suggests a deeper answer: <span class= "hl"> perfect unlearning might be impossible under todayâs pre-training paradigm </span>. The inductive bias of standard training encourages the same neurons and circuits to carry both generalization and memorization. Because memorized and generalized representations are entangled, there is no clean âmemorization subspaceâ to target. Any attempt to prune or overwrite it either (i) leaves some memorized facts intact or (ii) damages the model so severely that it is no longer useful.
+  
+    </p>
+
+    <h2 class="lim-header"> Limitationâ¯3? Can current approaches empower models to find creative solutions to open-ended tasks? </h2>
+    <p class = "paper-abstract">
+ Intelligence isn&#39;t just about getting the <q> right </q> answer. What also matters is imaginative problem solving: finding novel, unexpected connections to meet loosely defined requests. For example, a request such as <i> Generate a challenging high-school word
+      problem involving the Pythagoras Theorem </i>. It is messy and challenging to measure this on real-world datasets, and there are already interesting debates and contradictory findings within the community about whether LLMs can generate novel research ideas or write novel content. <br> <br>
+
+To get to the bottom of this and tease out whether the underlying creative ability can emerge, we design and study minimal and controllable tasks that are loose abstractions of creativity, drawing inspiration from <span class="hl"> cognitive science literature (Boden, 2003) </span>. Check out our extensive experiments and findings in <a href = "https://arxiv.org/pdf/2504.15266"> our paper </a>. Key takeaways: <span class = "hl"> next-token learning is too myopic </span> to optimally learn how to generate open-ended solutions when the structure (plan) is latent, and the de facto approach of eliciting randomness, <span class = "hl"> temperature sampling might struggle to elicit structured diversity </span>. <br> <br> </p> 
+
+    <p class = "paper-abstract"> So what can we do differently? Are there <span class = "hl"> scalable practical alternatives </span> that can address the limitations we identify above? We list a few ideas that we are excited about below! </p> 
+
+    <h2 class="app-header"> Promising architectural change -  memorization sinks </h2>
+    <p class = "paper-abstract"> We propose a method that can isolate memorization by design. The key idea is to have <span class = "hl"> designated memorization sinks </span> that accumulate all the memorization, leaving generalization to the remaining neurons. But how do we prevent leakage between these memorization sinks and other neurons? But how do we prevent information from leaking out of these sinks? By consistently activating the same unique set of sinks for each document (or topic) every time it appears in the training data, we keep memorization safely contained. We can then perform close-top-perfect unlearning by simply dropping out these memorization sinks. Read <a href = "https://arxiv.org/pdf/2504.15266"> our paper </a> for implementation details, more analysis on why this works, and scaling properties. We believe memorization sinks could pave the way for models that are intrinsically capable of unlearning. </p> 
+      
+      <h2 class="app-header"> Promising learning objective - seed conditioning </h2>
+
+    <p class = "paper-abstract"> Creative solutions to our open-ended tasks require diversity in the <i> latent </i> plan or leap-of-thought. Intuitively, maximizing diversity at the output-token-level, like in the case of temperature sampling, is computationally burdensome: it requires simultaneously processing a diverse set of leaps of thoughts to compute a marginalized token distribution. It is perhaps easier (and more natural) to first sample single latent leap and then compute the tokens conditioned on that one leap. We instantiate a very simple version of this via <span class = "hl"> seed-conditioning </span> where we train with a random prefix string per example. We find that seed-conditioning achieves algorithmic creativity comparable to and sometimes outperforming temperature sampling.  <br><br>
+
+    Note that these random seeds are in fact meaningless, and it should seem surprising that this works at all! While we do not fully unerstand why this method works, we will elaborate on our intuition and conjectures in a future post. In the meantime, please read <a href = "https://arxiv.org/pdf/2504.15266"> our paper </a> for more results, analysis and discussion on this. 
+
+      
+   <h2 class="app-header"> Promising learning objective - multi token learning </h2>
+    <p class = "paper-abstract">
+    We advocate multi-token learning approaches such as teacherless training or diffusion as they avoid the <i> Clever hans cheat </i> (Bachman and Nagarajan, 2024) that next-token prediction is susceptible to. We show how this makes multi-token approaches achieve higher algorithmic creativity on our testbed. Furthermore, we identify natural structures where no re-ordering of tokens is friendly towards next-token prediction. These tasks cast doubt on whether recent proposals of fixing the myopia of next-token prediction via pertumations of tokens or partial lookahead can truly enable models to capture the <i> implicit </i> global structure that underlies many creative tasks. Again, we have a forthcoming blog post that dives into this, but for now please check out <a href = "https://arxiv.org/pdf/2504.15266"> our paper </a> for various nuanced comparisons between next-token and multi-token learning across tasks and model scales. 
+
+      
+      <h2 class = "app-header"> Come chat with us at ICML! </h2> 
+    <p class = "paper-abstract"> While continuing to squeeze performance from todayâs best practices makes sense, genuine progress will require <span class="hl"> fresh architectures and training paradigms </span> that tackle the root shortcomings we have surfaced. To that end, we invite you to experiment with our spherical cow benchmarks, stress test your ideas, and refine the promising approaches sketched in our papers. 
+    
+    <!-- Add more .paper blocks as needed -->
+  </section>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aleksandar Kuzmanovic</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="styles/style-b.css" media="screen" />
+<link rel="stylesheet" href="styles/media-queries.css" />
+<link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
+<link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./flex-slider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="scripts/jquery.tipsy.js" type="text/javascript"></script>
+<script src="scripts/jquery.knob.js" type="text/javascript"></script>
+<script type="text/javascript" src="./scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="./scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="./scripts/setup.js"></script>
+<script type="text/javascript" src="./scripts/kaleido_b.js"></script>
+<script type="text/javascript" src="./scripts/kaleido_expand-b.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+  <!-- wrapper -->
+  <div class="collapse navbar-collapse">
+  <div id="sidebar">
+    <!-- the  sidebar -->
+    <!-- logo -->
+    <a href="#" id="logo"> <img
+src="./images/ka.jpg" alt="" /></a>
+
+
+    <!-- navigation menu -->
+    <ul id="navigation">
+      <li><a href="http://networks.cs.northwestern.edu/" target="_blank">Northwestern Networks Group</a></li>
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#publications">Selected Publications</a></li>
+      <li><a href="#presentations">Selected Talks</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><a href="#activities">Professional Activities</a></li>
+      <li><a href="#industrial">Industrial Impact</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#curriculumvitae">Curriculum Vitae</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
+</div>
+  <div id="container">
+    <!-- page container -->
+    <div class="page" id="about">
+      <div class="one">
+      <h3 class="page_title">About <a
+href="https://www.mccormick.northwestern.edu/" target="_blank"><img
+src="images/NU_LOGO.png"
+class="nulogo" /></a></h3>
+      </div>
+      <!-- page home -->
+      <div class="page_content" id="about_content">
+        <p>
+          Aleksandar Kuzmanovic is a Professor in the <a href="http://www.mccormick.northwestern.edu/computer-science/" target="_blank">Department of Computer Science</a> at <a href="http://www.northwestern.edu/" target="_blank">Northwestern University</a>, where he leads the <a href="http://networks.cs.northwestern.edu/" target="_blank">Northwestern Networks Group</a>. His research interests are in the area of computer networking with emphasis on design, measurements, analysis, denial-of-service resiliency, content distribution, and prototype implementation of protocols and algorithms for the Internet.
+        </p>
+      </div>
+      <h3 class="aboutexpand">➥Expand</h3>
+
+    </div>
+    <div class="page" id="publications">
+      <!-- page about -->
+      <h3 class="page_title">Selected Publications</h3>
+      <div class="page_content">
+        <ul class="sublist">
+
+
+
+
+          <li><a href="publications/ring-sigmetrics22.pdf" target="_blank">
+              <b>Monetizing Spare Bandwidth: the Case of Distributed VPNs</b></a><br>
+            Y. Xiao, M. Varvello, and A. Kuzmanovic<br>
+            <em>In ACM SIGMETRICS '22, </em>
+            Mumbai, India 2022. <br>
+            </li><br>
+	  
+
+          <li><a href="publications/dekodi.pdf" target="_blank">
+	      <b>De-Kodi: Understanding the Kodi Ecosystem</b></a><br>
+	    M. Warrior, Y. Xiao, M. Varvello, and A. Kuzmanovic<br>
+	    <em>In the Web Conference (WWW '20), </em>
+	    Taipei, Taiwan, April 2020. <br>
+	    </li><br>
+
+
+	  
+	  <li><a href="publications/webcoin/conext18-final22.pdf" target="_blank">
+	      <b>Mining the Web with Webcoin</b></a><br>
+      U. Klarman, M. Flores, and A. Kuzmanovic<br>
+      <em>In ACM CoNEXT '18, </em>
+      Heraklion/Crete, Greece, December 2018. <br>
+      </li><br>
+
+           <li><a href="publications/drongo/drongo_conext17.pdf" target="_blank"><b>Drongo: Speeding Up CDNs with Subnet Assimilation from the Client</b></a><br>
+      M. Warrior, U. Klarman, M. Flores, and A. Kuzmanovic<br>
+      <em>In ACM CoNEXT '17, </em>
+      Seoul, South Korea, December 2017. <br>
+      </li><br>
+
+       <li><a href="publications/wifm/icnp2015-flores.pdf"><b>Wi-FM: Resolving Neighborhood Wireless Network Affairs by Listening to Music</b></a><br>
+          M. Flores, U. Klarman, and A. Kuzmanovic<br>
+          <em>In IEEE ICNP '15, </em>
+            San Francisco, California, November 2015. <br>
+         </li><br>
+
+        <li><a href="publications/a8-su.pdf"><b>How to Improve Your Search Engine Ranking: Myths and Reality</b></a><br>
+          A.-J. Su, Y. C. Hu, A. Kuzmanovic, and C.-K. Koh<br>
+        <em>In ACM Transactions on the Web, </em> March 2014. <br>
+        </li><br>
+
+        <li>
+           <a href="                                                                                                                                                                               publications/comm064-xia.pdf"                                                                                                                                                                                target="                                                                                                                                                                               _blank"                                                                                                                                                                               ><b>Mosaic: Quantifying Privacy Leakage in Mobile Networks</b></a><br>
+           N. Xia, H. Song, Y. Liao, M. Iliofotou, A. Nucci, Z. Zhang, and A. Kuzmanovic <br>
+           <em>In Proceedings of ACM SIGCOMM 2013,</em> Hong Kong, China, August 2013.<br>
+           </li><br>
+
+     <li>
+            <a href="                                                                                                                                                                               publications/geo.pdf"                                                                                                                                                                                target="                                                                                                                                                                               _blank"                                                                                                                                                                               ><b>Towards Street-Level Client-Independent IP Geolocation</b></a><br>
+            Y. Wang, D. Burgener, M. Flores, A. Kuzmanovic, and C. Huang<br>
+            <em>In Proceedings of USENIX NSDI 2011,</em>
+            Boston, MA, March 2011.<br>
+
+            </li><br>
+
+        <div id="pubid"></div>
+        <h3 class="pubexpand">➥Expand</h3>
+        <br>
+        <br>
+        <a href="fullpub.html" class="morepubs" target="_blank">A full list of publications is here.</a>
+
+        </ul>
+
+        <br>
+        <br>
+        <!-- <a href="http://www.cs.northwestern.edu/~akuzma/doc/akuzma/cv-kuzmanovic.pdf" class="morepubs" target="_blank">CV link</a> -->
+      </div>
+    </div>
+
+    <div class="page" id="presentations">
+      <h3 class="page_title">Selected Talks</h3>
+      <div class="page_content">
+
+      <div style="width:100%; display:table; margin-top: 8px;">
+    <div style="width:100%; display:table-row;">
+      <div style="width:290; display:table-cell;">
+        <h4>Usenix NSDI</h4>
+        <iframe src="https://www.youtube.com/embed/oet32BJ_-Jo" allowfullscreen="" width="280" height="170" frameborder="0"></iframe>
+      </div>
+      <div style="width:290; display:table-cell;">
+        <h4>Northwestern Seminar</h4>
+        <iframe src="http://www.youtube.com/embed/pksjF5DNbrU?enablejsapi=1" allowfullscreen="" width="280" height="170" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+      <ul class="sublist">
+        <div id="prescontent">
+       </div>
+         <h3 class="presexpand">➥Expand</h3>
+      </ul>
+    </div>
+    </div>
+
+    <div class="page" id="press">
+      <!-- page clients -->
+      <h3 class="page_title">Press</h3>
+      <div class="page_content">
+      <!-- <h4>Wi-FM (ICNP '15):</h4> -->
+         <div style="width:100%; display:table; margin-top: 8px;">
+    <div style="width:100%; display:table-row;">
+      <div style="width:290; display:table-cell;">
+        <h4>BBC News</h4>
+        <iframe src="https://www.youtube.com/embed/peet8iBjd3M" allowfullscreen="" width="280" height="170" frameborder="0"></iframe>
+      </div>
+      <div style="width:290; display:table-cell;">
+        <h4>RCR Wireless News</h4>
+        <iframe src="https://www.youtube.com/embed/j5knxG61DNU?feature=oembed" allowfullscreen="" width="280" height="170" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+      <div id="pressid"></div>
+      <h3 class="pressexpand">➥Expand</h3>
+      </div>
+    </div>
+
+    <div class="page" id="activities">
+      <!-- page skills -->
+      <h3 class="page_title">Professional Activities</h3>
+      <div class="page_content">
+        <h4 class="blue">Chair</h4>
+        <ul class="sublist">
+              <li>Posters Chair <a href="https://conferences.sigcomm.org/sigcomm/2018/">ACM Sigcomm 2018</a></li>
+              <li>PC Chair <a href="http://pam2014.cs.unm.edu/" target="_blank">PAM 2014</a><br>
+      <li>PC Chair, Web-based Systems and Applications <a href="http://www.temple.edu/cis/icdcs2013/" target="_blank">ICDCS 2013</a><br>
+      <li>Posters co-chair <a href="http://www.ieee-icnp.org/" target="_blank">ICNP 2012</a><br>
+      <li>Workshop chair <a href="http://conferences.sigcomm.org/co-next/2010/" target="_blank">CoNEXT 2010</a><br>
+      <li>Local arrangements co-chair <a href="http://conferences.sigcomm.org/imc/2009/" target="_blank">IMC 2009</a><br>
+        </ul>
+
+          <h4 class="blue">Steering Committee Member</h4>
+          <ul class="sublist">
+            <li><a href="http://www.measurementlab.net/" target="_blank">Measurement Lab</a><br>
+            <li><a href="http://pamconf.info/" target="_blank">Passive and Active Measurement Conference</a><br>
+          </ul>
+
+          <h4 class="blue">Editorial Board Member</h4>
+          <ul class="sublist">
+            <ul class="sublist">
+            <li><a href="http://www.ifp.illinois.edu/ton/" target="_blank">IEEE/ACM Transactions on Networking</a><br>
+            </ul>
+          </ul>
+
+          <div id="profactivity"></div>
+          <h3 class="profexpand">➥Expand</h3>
+      </div>
+    </div>
+
+    <div class="page" id="industrial">
+      <!-- page industries -->
+      <h3 class="page_title">Industrial Impact</h3>
+      <div class="page_content">
+        <ul class="sublist">
+
+
+         <li> <h4>Wi-FM (ICNP '15):</h4> The Wi-FM system is currently licenced for experimental evaluation.</li><br>
+
+
+         <li> <h4>GeoEcho (WI '14, best paper award):</h4> The GeoEcho system has been deployed by Narus Inc. (now Symantec).</li><br>
+
+         <li> <h4>MOSAIC (Sigcomm '13):</h4> The Mosaic system has been deployed by Narus Inc. (now Symantec).</li><br>
+
+         <li> <h4>Street-Level IP Geolocation (NSDI '11):</h4> This work led to <a href = "http://www.nanjee.net/" target="_blank">Nanjee, Inc.</a>, co-founded in 2011 by (then PhD student) Yong Wang and prof. Aleksandar Kuzmanovic.</li><br>
+
+         <div id="indid"></div>
+         <h3 class="indexpand">➥Expand</h3>
+       </ul>
+
+      </div>
+    </div>
+
+
+    <div class="page" id="teaching">
+      <!-- page clients -->
+      <h3 class="page_title">Teaching</h3>
+      <div class="page_content">
+        <ul class="sublist">
+          <a href = "http://networks.cs.northwestern.edu/EECS110-s18/" target="_blank">
+            EECS 110: Introduction to Computer Programming
+          </a>
+        </ul>
+	<ul class="sublist">
+	  <a href = "https://piazza.com/northwestern/spring2018/eecs395495" target="_blank">
+	    EECS 397/497: IoT Networks Seminar
+	  </a>
+	</ul>
+      </div>
+    </div>
+
+    <div class="page" id="curriculumvitae">
+      <h3 class="page_title">CV</h3>
+      <div class="page_content">
+        <a href="http://www.cs.northwestern.edu/~akuzma/doc/akuzma/cv-kuzmanovic.pdf" target="_blank">CV Link</a>
+      </div>
+    </div>
+
+    <div class="page" id="contact">
+      <!-- page contact -->
+      <h3 class="page_title">Contact</h3>
+      <div class="page_content">
+        <b>Office:</b> 3519 Seeley Mudd <br>
+        <b>Phone:</b> (847) 467-5519 (no voicemail messages, please) <br>
+        <b>Fax:</b> (847) 491-4455 <br>
+        <b>Mailing Address:</b> <br>
+	Computer Science & Engineering <br>
+        2233 Tech Drive <br>
+	Seeley Mudd -- 3rd floor <br>
+        Evanston, IL 60208 <br>
+        <b>Email:</b> <a href="mailto:akuzma@northwestern.edu">akuzma @ northwestern . edu </a><br>
+        <img src="./images/nu-vertical.gif" />
+      </div>
+    </div>
+    <!-- <div class="footer">
+      <p> &copy; 2012 . Some Rights Reserved.</p>
+      <p> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    </div> -->
+  </div>
+</div>
+<a class="gotop" href="#top">Top</a>
+</body>
+</html>

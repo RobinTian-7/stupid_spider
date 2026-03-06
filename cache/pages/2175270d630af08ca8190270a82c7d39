@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bryan Parno</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="Bryan Parno">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <meta name="description" content="Bryan Parno's home page" />
+        <meta name="keywords" content="Bryan Parno computer science security research" />
+
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+
+        
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+
+
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
+            <div id="sidebar">
+                <div id="sidebar-wrapper">
+                    <div id="sidebar-inner">
+                        <!-- Profile/logo section-->
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Bryan Parno</h2>
+                                <h3>Carnegie Mellon University</h3>
+                            </div>   
+                        </div>
+                        <!-- /Profile/logo section-->
+
+                        <!-- Main navigation-->
+                        <div id="main-nav">
+                            <ul id="navigation">
+                                <li class="currentmenu">
+                                  <a href="index.html">
+                                    <i class="fa fa-home"></i>
+                                    <div class="text">Home</div>
+                                  </a>
+                                </li>  
+                                
+                                <li>
+                                  <a href="research.html">
+                                    <i class="fa fa-flask"></i>
+                                    <div class="text">Research</div>
+                                  </a>
+                                </li> 
+                                
+                                <li>
+                                  <a href="publication.html">
+                                    <i class="fa fa-book"></i>
+                                    <div class="text">Publications</div>
+                                  </a>
+                                </li> 
+
+                                <li>
+                                  <a href="teaching.html">
+                                    <i class="fa fa-clock-o"></i>
+                                    <!-- <i class="fa fa-graduation-cap"></i> -->
+                                    <div class="text">Teaching</div>
+                                  </a>
+                                </li>
+<!--          
+                                <li>
+                                  <a href="gallery.html">
+                                    <i class="fa fa-picture-o"></i>
+                                    <div class="text">Gallery</div>
+                                  </a>
+                                </li>
+-->
+                                <li>
+                                  <a href="service.html">
+                                    <i class="fa fa-pencil"></i>
+                                    <div class="text">Service</div>
+                                  </a>
+                                </li>
+<!--
+                                <li>
+                                  <a href="biography.html">
+                                      <i class="fa fa-user"></i>
+                                      <div class="text">About Me</div>
+                                  </a>
+                                </li>
+-->
+                                <li class="external">
+                                  <a href="cv.pdf">
+                                      <i class="fa fa-download"></i>
+                                      <div class="text">CV</div>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Main navigation-->
+                        <!-- Sidebar footer -->
+                        <div id="sidebar-footer">
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="https://github.com/parno"><i class="fa fa-github"></i></a></li>
+                                    <!--
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    -->
+                                </ul>
+                            </div>
+
+        
+                            <div id="copyright">&copy; 2017 Bryan Parno.</div>
+                    
+                        </div>
+                        <!-- /Sidebar footer -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="main">
+            
+                <div id="biography" class="page home" data-pos="home">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <div class="row">
+                                    <div class="col-sm-2 visible-sm"></div>
+                                    <div class="col-sm-8 col-md-4">
+                                        <div class="biothumb">
+                                            <img alt="image" src="img/personal/personal-big.jpg" class="img-responsive">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="clearfix visible-sm visible-xs"></div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <h3 class="title">Bryan Parno</h3>
+                                        <p>My research is primarily focused on investigating long-term, fundamental improvements in how to design and build secure systems.  As a result, my work combines theory and practice to provide formal, rigorous security guarantees about concrete systems, with an emphasis on creating solid foundations for practical solutions.  
+                                        <!-- In the past, I have worked on topics such as network and system security, applied cryptography, usable security, and data privacy.-->
+                                        </p>
+                                        <p>
+                                        I am <a href='http://www.cmu.edu/'>CMU</a>'s KavÄiÄ-Moura Professor of 
+                                        <a href='http://ece.cmu.edu/'>Electrical &amp; Computer Engineering</a>
+                                        and  
+                                        <a href='http://www.csd.cs.cmu.edu/'>Computer Science</a>.
+                                        </p>
+                                        <p>
+                                        <a href='biography.html'>More details</a>
+                                        </p>
+
+                                    </div>  
+                                    
+                                </div>
+                            </div>        
+<!--
+                            <div class="section-container">
+                                
+                                <h2 class="title">Contact</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>Email is by far the best way to contact me, as I rarely check voicemail messages.</p>                              
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <strong><i class="fa fa-envelope"></i>&nbsp;&nbsp;</strong>
+                                                <span><img src='img/personal/email.png' alt='firstname <at> institution <dot> edu' width=120></span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-phone"></i>&nbsp;&nbsp;</strong>
+                                                <span> office: 412-268-2033</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-building"></i>&nbsp;&nbsp;</strong>
+                                                <span><a href='https://www.cylab.cmu.edu/about/visiting.html'>CIC</a> 2121</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-skype"></i>&nbsp;&nbsp;</strong>
+                                                <span>bparno</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-github"></i>&nbsp;&nbsp;</strong>
+                                                <span>parno</span>
+                                            </li>
+                                            <li>
+                                                Other options: map-marker, location-arrow 
+                                                <strong><i class="fa fa-map"></i>&nbsp;&nbsp;</strong>
+                                                <span>
+                                                  Computer Science Dept.<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnegie Mellon University<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5000 Forbes Ave<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pittsburgh, PA 15213-3891<br>
+                                                </span>
+                                            </li>
+                                        </ul>    
+
+                                    </div>
+                                </div>
+                            </div>
+-->
+
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        <!-- 
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-5 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Academic Positions</h3>
+                                        </div>
+                                        <ul class="ul-dates">
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Present</span>
+                                                    <span>2005</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>General Atlantic Professor</h4>
+                                                    <p><em>Carnegie Mellon University</em>, Graduate School of Business</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2005</span>
+                                                    <span>2004</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Full Professor</h4>
+                                                    <p><em>Carnegie Mellon University</em>, Graduate School of Business</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2004</span>
+                                                    <span>2001</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Assistant Professor</h4>
+                                                    <p><em>UCLA</em>, Anderson Graduate School of Management</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2001</span>
+                                                    <span>1999</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Visiting Assistant Professor</h4>
+                                                    <p><em>Columbia University</em>, Graduate School of Business</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="title text-center">
+                                            <h3>Education & Training</h3>
+                                        </div>
+                                        <ul class="ul-card">
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">Ph.D.</span>
+                                                    <span class="year">1995</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Ph.D. in Marketing</p>
+                                                    <p class="where">Carnegie Mellon University Graduate School of Business</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">M.B.A.</span><span class="year">1993</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Master of Business Administration</p>
+                                                    <p class="where">Boston University</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">B.A.</span><span class="year">1989</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Bachelor of Arts in Psychology</p>
+                                                    <p class="where">University of California, Berkeley</p>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+
+                                    </div>    
+                                </div>    
+                            </div>
+                        </div>
+                        -->
+
+                        <!-- <div class="section color-2"> -->
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+
+                                    <div class="col-md-4 ">
+                                      <div class="title text-center">
+                                          <h3>Contact</h3>
+                                      </div>
+                                      <ul class="list-unstyled">
+                                            <li>
+                                                <strong><i class="fa fa-envelope"></i>&nbsp;&nbsp;</strong>
+                                                <span><img src='img/personal/email.png' alt='firstname <at> institution <dot> edu' width=120></span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-phone"></i>&nbsp;&nbsp;</strong>
+                                                <span> office: 412-268-2033</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-building"></i>&nbsp;&nbsp;</strong>
+                                                <span><a href='https://www.cylab.cmu.edu/about/visiting.html'>CIC</a> 2121</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-skype"></i>&nbsp;&nbsp;</strong>
+                                                <span>bparno</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fa fa-github"></i>&nbsp;&nbsp;</strong>
+                                                <span>parno</span>
+                                            </li>
+                                            <li>
+                                                <!-- Other options: map-marker, location-arrow -->
+                                                <strong><i class="fa fa-map"></i>&nbsp;&nbsp;</strong>
+                                                <span>
+                                                  Collaborative Innovation Center<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4720 Forbes Avenue<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pittsburgh, PA 15213-3891<br>
+                                                  <!--
+                                                  Computer Science Dept.<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnegie Mellon University<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5000 Forbes Ave<br>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pittsburgh, PA 15213-3891<br>
+                                                  -->
+                                                </span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+
+                                    <div class="col-md-6 col-md-offset-1">
+                                        <div class="title text-center">
+                                          <!--<h3>Honors, Awards and Grants</h3>-->
+                                            <h3>News</h3>
+                                        </div>
+                                        <ul class="timeline">
+
+<!--
+      TODO: Add a link to the official announcement page
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">IEEE Cybersecurity Award for Practice </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          October, 2024 â I was honored and humbled to receive the 
+                                                          <a href='https://secdev.ieee.org/2024/awards/'>IEEE Cybersecurity Award for Practice</a>
+                                                          for my "contributions to the theory and practice of end-to-end secure systems".
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+-->
+
+
+
+                                          <!-- Begin news -->
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Artifact Award at USENIX Security
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August 13, 2025 - We were honored when our paper, <a href='./papers/owlc.pdf'>OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries</a>, received a Distinguished Artifact Award at the <a href='https://www.usenix.org/conference/usenixsecurity25'>USENIX Security Symposium 2025</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Jay Lepreau Best Paper Award at OSDI
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July 7, 2025 - We were honored when our paper, <a href='./papers/basilisk.pdf'>Basilisk: Using Provenance Invariants to Automate Proofs of Undecidable Protocols</a>, received the Jay Lepreau Best Paper Award at <a href='https://www.usenix.org/conference/osdi25/'>OSDI 2025</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">News</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/newspaper-icon"> <img alt="Newspaper icon from Vecteezy.com" src="img/icons/newspaper.jpg"/> </a>
+                                                      Amazon Scholar
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          March 17, 2025 - As part of my sabbatical work, I recently joined Amazon Web Services as an Amazon Scholar.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Artifact Award at SOSP
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          November 4, 2024 - We were <a href='https://www.cylab.cmu.edu/news/2024/11/15-sosp-award.html'>honored</a> when our paper, <a href='./papers/verus-sys.pdf'>Verus: A Practical Foundation for Systems Verification</a>, received a Distinguished Artifact Award at <a href='https://sigops.org/s/conferences/sosp/2024/index.html'>SOSP 2024</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      IEEE Cybersecurity Award for Practice
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          October 9, 2024 - I was <a href='https://www.cylab.cmu.edu/news/2024/10/11-parno-ieee-cybersecurity-award-for-practice.html'>honored and humbled</a> to receive the <a href='https://secdev.ieee.org/2024/awards/'>IEEE Cybersecurity Award for Practice</a> for my 'contributions to the theory and practice of end-to-end secure systems.'
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Keynote Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      ACM Workshop on Principles of Secure Compilation
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          October, 2024 - I've been invited to give a keynote talk at the <a href='https://popl25.sigplan.org/home/prisc-2025'>ACM Workshop on Principles of Secure Compilation</a>, which will be held in Denver on January 20th, 2025. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Intel's Hardware Security Academic Test-of-Time Award
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August, 2024 - We were <a href='https://www.cylab.cmu.edu/news/2024/08/20-cylab-researchers-win-two-test-of-time-awards-at-usenix-2024.html'>deeply honored</a> when our paper, <a href='./papers/flicker.pdf'>Flicker: An Execution Infrastructure for TCB Minimization</a>, received <a href='https://www.intel.com/content/www/us/en/security/security-practices/security-research/hardware-security-academic-award.html'>Intel's Hardware Security Academic Test-of-Time Award</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Paper Award at CAV
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July, 2024 - We were honored when our paper, <a href='./papers/proof-plumber.pdf'>A Framework for Debugging Automated Program Verification Proofs via Proof Actions</a>, received a Distinguished Paper Award at <a href='https://i-cav.org/2024/'>CAV</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Chair</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/chair"> <img alt="Chair icon from Vecteezy.com" src="img/icons/chair.jpg"/> </a>
+                                                      Endowed Chair
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          April, 2024 - I was honored and humbled to receive the KavÄiÄ-Moura Chair of <a href='http://ece.cmu.edu/'>Electrical &amp; Computer Engineering</a> and <a href='http://www.csd.cs.cmu.edu/'>Computer Science</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">News</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/newspaper-icon"> <img alt="Newspaper icon from Vecteezy.com" src="img/icons/newspaper.jpg"/> </a>
+                                                      White House Report from the Office of the National Cyber Director
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          February, 2024 - A recent <a href='https://web.archive.org/web/20240315034137/https://www.whitehouse.gov/oncd/briefing-room/2024/02/26/press-release-technical-report/'>report</a> makes a compelling case for using memory-safe programming languages and for using formal methods to prove code is correct and secure. We were gratified to see a call out of our work on <a href='https://project-everest.github.io/'>Project Everest</a>, which developed verified components of the HTTPS ecosystem.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Test-of-Time Award at IEEE S&amp;P
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2023 - We were greatly honored when our paper, <a href='./papers/pinocchio.pdf'>Pinocchio: Nearly Practical Verifiable Computation</a>, received a <a href='https://www.ieee-security.org/TC/SP2023/awards.html'>Test-of-Time Award</a> at the <a href='https://www.ieee-security.org/TC/SP2023/index.html'>IEEE Symposium on Security and Privacy</a>. Learn more from this <a href='https://www.cylab.cmu.edu/news/2023/05/23-test-of-time.html'>article</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      IEEE Golden Core
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          March, 2023 - I was honored to receive the <a href='https://www.computer.org/volunteering/awards/golden-core'>IEEE Computer Society's Golden Core Recognition</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Paper Award at OOPSLA
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          December, 2022 - We were honored when our paper, <a href='./papers/linear-dafny.pdf'>Linear Types for Large-Scale Systems Verification</a>, received a Distinguished Paper Award at <a href='https://2022.splashcon.org/track/splash-2022-oopsla'>OOPSLA</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Aymeric Fromherz receives the ACM SIGSAC Doctoral Dissertation Award
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          November, 2022 - Congratulations to <a href='https://users.ece.cmu.edu/~afromher/'>Aymeric</a>, whose <a href='./papers/fromherz_thesis.pdf'>thesis</a> received the <a href='https://www.sigsac.org/award/diss-awards.html'>ACM SIGSAC Doctoral Dissertation Award</a>. See <a href='https://www.cylab.cmu.edu/news/2022/11/10-fromherz-wins-dissertation-award.html'>more details</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Best Paper Honorable Mention at CCS
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          November, 2022 - We were honored when our paper, <a href='./papers/hammurabi.pdf'>Hammurabi: A Framework for Pluggable, Logic-based X.509 Certificate Validation Policies</a>, received a Best Paper Honorable Mention at ACM's CCS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Paper Award + Internet Defense Prize
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August, 2022 - Our work on <a href="https://www.andrew.cmu.edu/user/bparno/papers/wasm-sandboxing.pdf">provably safe multilingual sandboxing via WebAssembly</a> received a <a href='https://www.cylab.cmu.edu/news/2022/10/11-provably-safe-sandboxing.html'>Distinguished Paper Award, as well as the Second Prize in the Internet Defense Prize competition</a>, at USENIX Security.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Jay Bosamiya Awarded a CyLab Presidential Fellowship
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August, 2022 - Congratulations to <a href='https://www.jaybosamiya.com/'>Jay</a> for being named a CyLab Presidential Fellow!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Aymeric Fromherz receives the A.G. Milnes Thesis Award
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2022 - Congratulations to <a href='https://users.ece.cmu.edu/~afromher/'>Aymeric</a>, whose <a href='./papers/fromherz_thesis.pdf'>thesis</a> received the ECE department's <a href='https://www.ece.cmu.edu/student-resources/commencement-awards.html'>A.G. Milnes Award</a>, which is "awarded to a graduating ECE Ph.D. student for the Ph.D. thesis work judged to be of the highest quality and which has had, or is likely to have, significant impact in his or her field."
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Test-of-Time Award at IEEE S&amp;P
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2020 - We were greatly honored when our paper, <a href='./papers/replication.pdf'>Distributed Detection of Node Replication Attacks in Sensor Networks</a>, received a <a href='https://www.ieee-security.org/TC/SP2020/awards.html'>Test-of-Time Award</a> at the <a href='https://www.ieee-security.org/TC/SP2020/index.html'>IEEE Symposium on Security and Privacy</a>. It was the first paper I wrote in graduate school. Learn more from our <a href='https://www.youtube.com/watch?v=EwT1tnyin1M&t=21m01s'>acceptance video</a> or this <a href='https://www.cylab.cmu.edu/news/2020/05/18-test-of-time.html'>article</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Joel &amp; Ruth Spira Excellence in Teaching Award
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2020 - I was very honored to receive the Joel and Ruth Spira Excellence in Teaching Award for 2019-2020.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Distinguished Paper Award at PLDI
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2020 - Our paper, <a href='./papers/armada.pdf'>Armada: Low-Effort Verification of High-Performance Concurrent Programs</a>, received a <a href='https://twitter.com/PLDI/status/1260451013221384192'>Distinguished Paper Award</a> at the <a href='https://pldi20.sigplan.org/'>ACM PLDI Conference</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Keynote Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      IEEE Workshop on Foundations of Computer Security (FCS)
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May, 2020 - Iâve been invited to give a keynote talk at the <a href='https://owenarden.github.io/fcs2020/'>IEEE Workshop on Foundations of Computer Security</a>, which will be held online in June. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Code</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <i class="fa fa-github"></i>
+                                                      EverCrypt Code in Linux
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          April 1, 2020 - Code from our <a href='http://www.andrew.cmu.edu/user/bparno/papers/evercrypt.pdf'>EverCrypt cryptographic provider</a>, developed using <a href='http://www.andrew.cmu.edu/user/bparno/papers/vale.pdf'>Vale</a>, our tool for verified assembly language, now appears in the <a href='https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=72f35423e8a6a2451c202f52cb8adb92b08592ec'>Linux kernel</a> (<a href='https://www.cylab.cmu.edu/news/2020/04/29-parno-evercrypt.html'>more details</a>).
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Aymeric Fromherz Awarded a CyLab Presidential Fellowship
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          September, 2019 - Congratulations to <a href='https://users.ece.cmu.edu/~afromher/'>Aymeric</a> for being named a CyLab Presidential Fellow!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      IACR Conference on Cryptographic Hardware and Embedded Systems (CHES)
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July, 2019 - Iâve been invited to give a talk at the <a href='https://ches.iacr.org/2019/'>Conference on Cryptographic Hardware and Embedded Systems</a>, which is located in Atlanta in August. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">News</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/newspaper-icon"> <img alt="Newspaper icon from Vecteezy.com" src="img/icons/newspaper.jpg"/> </a>
+                                                      Algorand Foundation
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          June 11, 2019 - I recently joined the <a href='https://algorand.foundation/technical-advisory-committee'>Technical Advisory Committee of the Algorand Foundation</a>, along with Dan Boneh.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">News</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/newspaper-icon"> <img alt="Newspaper icon from Vecteezy.com" src="img/icons/newspaper.jpg"/> </a>
+                                                      EverCrypt alpha release
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          April 2, 2019 - We just posted an alpha release of <a href='https://hacl-star.github.io/HaclValeEverCrypt.html'>EverCrypt</a>, a verified, industrial-strength cryptographic provider. Read more in <a href='https://www.quantamagazine.org/how-the-evercrypt-library-creates-hacker-proof-cryptography-20190402/'>Quanta Magazine</a>, our <a href='https://www.microsoft.com/en-us/research/blog/evercrypt-cryptographic-provider-offers-developers-greater-security-assurances/'>blog post</a>, or our upcoming <a href='http://www.andrew.cmu.edu/user/bparno/papers/evercrypt.pdf'>paper</a> at IEEE S&amp;P 2020.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Sloan Fellowship
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          February 15, 2018 - I was very honored to receive a <a href='https://sloan.org/fellowships'>Sloan Research Fellowship</a>. Congratulations to all of the <a href='https://sloan.org/fellowships/2018-Fellows'>other recipients</a> as well!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Best Paper Award at the USENIX Security Symposium
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August 16, 2017 - Our paper, <a href='./papers/vale.pdf'>Vale: Verifying High-Performance Cryptographic Assembly Code</a>, received a Distinguished Paper Award at the USENIX Security Symposium. Ashay and I <a href='https://twitter.com/USENIXSecurity/status/897872658892771328'>accepted the award</a> on behalf of all of our coauthors.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Steve Matsumoto Awarded a CyLab Presidential Fellowship
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July, 2017 - Congratulations to <a href='http://www.stevematsumoto.net/'>Steve</a> for being named a CyLab Presidential Fellow!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Senior Member of ACM and IEEE
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July, 2017 - I recently became a Senior Member of ACM and IEEE.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Research Highlight in the CACM
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July, 2017 - Our paper, <a href='http://www.andrew.cmu.edu/user/bparno/papers/ironfleet-cacm.pdf'><i>IronFleet: Proving Practical Distributed Systems Correct</i></a>, appears in this month's CACM as a <a href='https://cacm.acm.org/magazines/2017/7/218876-ironfleet/abstract'>Research Highlight</a>, along with a short <a href='https://vimeo.com/220332220'>explanatory video</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      DIMACS Workshop on Outsourcing Computation Securely
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          June, 2017 - Iâve been invited to give a talk at the <a href='http://dimacs.rutgers.edu/Workshops/Outsourcing/index.html'>DIMACS Workshop on Outsourcing Computation Securely</a>, which is located at Rutgers in July. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      Formal Methods for Security (FMS) Workshop
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          February 2, 2016 - Iâve been invited to give a talk at the <a href='http://conf.researchr.org/track/pldi-2016/FMS-2016-papers'>Formal Methods for Security (FMS) Workshop</a>, which is co-located with PLDI in June. Please consider attending!.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      Layered Assurance Workshop
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          December 15, 2015 - Iâve been invited to give a talk at the <a href='https://www.acsac.org/2016/workshops/law/'>Layered Assurance Workshop</a> in Los Angeles, on December 5-6, 2016. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      Stanford Security Seminar
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          December 10, 2015 - I <a href='https://crypto.stanford.edu/seclab/sem-15-16/parno.html'>gave a talk</a> at the Stanford Security Seminar.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Code</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <i class="fa fa-github"></i>
+                                                      Source code for IronFleet released
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          October 4, 2015 - The <a href='https://github.com/Microsoft/Ironclad'>source code</a> for <a href='./papers/ironfleet.pdf'>IronFleet</a>, our system for verifying the safety and liveness of complex distributed systems, is now on GitHub.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI)
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          September 9, 2015 - Iâve been invited to give a talk at the <a href='http://conf.researchr.org/home/VMCAI-2016'>Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI)</a> in January. Iâll be discussing our Ironclad project and some of the interesting research questions weâve uncovered in trying to verify large, complex systems. Please consider attending!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Code</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <i class="fa fa-github"></i>
+                                                      Source code for Geppetto released
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July 22, 2015 - The <a href='https://vc.codeplex.com/'>source code</a> for <a href='./papers/geppetto.pdf'>Geppetto</a>, our system for improving the versatility and performance of verifiable computations, is now online.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Book</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <i class="fa fa-book"></i>
+                                                      New Book: Trust Extension as a Mechanism for Secure Code Execution on Commodity Computers
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          July 24, 2014 - ACM published my book, <a href='http://dl.acm.org/citation.cfm?id=2611399'>Trust Extension as a Mechanism for Secure Code Execution on Commodity Computers</a>, as part of their new ACM Books series.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Best Paper Award at the IEEE Symposium on Security and Privacy
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May 21, 2013 - Our paper, <a href='./papers/pinocchio.pdf'>Pinocchio: Nearly Practical Verifiable Computation</a>, received the Best Paper Award at the IEEE Symposium on Security and Privacy.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Best Paper Award at the USENIX Symposium on Networked Systems Design and Implementation (NSDI)
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          April 3, 2013 - Our paper, <a href='./papers/embassies.pdf'>Embassies: Radically Refactoring the Web</a>, received the Best Paper Award at the USENIX Symposium on Networked Systems Design and Implementation (NSDI).
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Invited Talk</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/presentation-icon"> <img alt="Presentation icon from Vecteezy.com" src="img/icons/talk.jpg"/> </a>
+                                                      Conference on Applied Cryptography and Network Security (ACNS)
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          March 12, 2013 - Iâll be giving a plenary talk at <a href='http://acns2013.cpsc.ucalgary.ca/'>Conference on Applied Cryptography and Network Security (ACNS)</a> this summer â please consider attending.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Best Paper Award at the IEEE Symposium on Security and Privacy
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May 22, 2012 - Our paper, <a href='./papers/user-driven.pdf'>User-Driven Access Control: Rethinking Permission Granting in Modern Operating Systems</a>, received the Best Practical Paper Award at the IEEE Symposium on Security and Privacy.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      Forbes 30-Under-30
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          December 19, 2011 - I was selected for <a href='http://www.forbes.com/pictures/mkg45giif/bryan-parno-researcher-microsoft-29/'>Forbesâ 30-Under-30: Science list</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Book</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <i class="fa fa-book"></i>
+                                                      New Book: Bootstrapping Trust in Modern Computers
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          August 30, 2011 - Our book, <i>Bootstrapping Trust in Modern Computers</i>, has been <a href='http://www.cylab.cmu.edu/news_events/news/2011/researchers-publish-book-bootstrapping-trust-in-modern-computing.html'>published</a>. It can be purchased from <a href='http://www.springerlink.com/content/k16537/'>Springer</a> or <a href='http://www.amazon.com/Bootstrapping-Computers-SpringerBriefs-Computer-Science/dp/1461414598/'>Amazon</a>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="date">Award</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">
+                                                      <a href="https://www.vecteezy.com/free-vector/award-symbol"> <img alt="Award icon from Vecteezy.com" src="img/icons/award.jpg"/> </a>
+                                                      ACM Doctoral Dissertation Award
+                                                    </div>
+                                                    <div class="text row">
+                                                        <div class="col-md-12">
+                                                          May 11, 2011 - My <a href='./papers/phd-thesis-parno.pdf'>dissertation</a> won the 2010 <a href='http://www.acm.org/press-room/news-releases/2011/dd-award-2010'>ACM Doctoral Dissertation Award</a>!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                          <!-- End news -->
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,938 @@
+Cynthia Rudin
+Gilbert, Louis, and Edward Lehrman Distinguished Professor of Computer Science, Electrical and Computer Engineering,
+Statistical Science, Mathematics, and Biostatistics & Bioinformatics
+Duke University
+cynthia@cs.duke.edu
+https://users.cs.duke.edu/∼cynthia/
+My work focuses on interpretable machine learning, which is crucial for responsible and trustworthy AI. My goals are
+to: (1) design interpretable machine learning methods that are as accurate as black box methods, including sparse decision
+trees, scoring systems and interpretable neural networks, (2) apply interpretable machine learning to important societal
+problems, focusing on healthcare, criminal justice, and scientiﬁc discovery, (3) provide a theoretical foundation for why
+interpretable-yet-accurate models exist for a vast set of problems in supervised learning, (4) assist with regulation of AI,
+and (5) provide educational tools on interpretable machine learning (via online course materials).
+I am the winner of the 2022 Squirrel AI Award for Artiﬁcial Intelligence for the Beneﬁt of Humanity from the Asso-
+ciation for the Advancement of Artiﬁcial Intelligence (AAAI) Similar only to world-renowned recognitions, it carried a
+monetary reward at the million-dollar level. I am the recipient of the 2025 John McCarthy award from the International
+Joint Conference on Artiﬁcial Intelligence (IJCAI), the 2024 INFORMS Society on Data Mining Prize, and a 2022 Guggen-
+heim fellowship. My team won 2nd in the prestigious 2023 Bell Labs Prize. I won the INFORMS Innovative Applications
+in Analytics Award three times (2013, 2016, 2019) based on applied work with domain experts. Some accomplishments:
+• The Rashomon Set paradigm: My team introduced a new paradigm for interpretable machine learning – instead of the
+algorithm providing one model (as usual), we return all low-error models, allowing the user to choose between them.
+This eliminates the interaction bottleneck to users. It allows fairness and monotonicity constraints to be handled
+instantly – by taking a simple loop over the models and ﬁltering out models that do not obey the constraints. We are
+developing this for sparse decision trees, sparse generalized additive models (GAMs), and scoring systems.
+• Why interpretable models are accurate: My collaborators and I established a mathematical framework for why interpretable
+models are as accurate as deep learning or other black box models for most tabular data sets.
+• Risk scores: Our algorithms for sparse risk scores were applied to important healthcare and criminal justice applications:
+our risk score for seizure prediction in ICU patients allows for better allocation of patient monitoring resources. This
+work won the 2019 INFORMS Innovative Applications in Analytics Award. It helps to prevent severe brain damage
+in critically ill patients, and is the only AI model widely used in critical care brain monitoring (the 2HELPS2B score).
+• Breast cancer prediction: Our AsymMirai algorithm is the ﬁrst accurate, interpretable model that predicts breast cancer up
+to 5 years in advance. We found subtle asymmetries that radiologists did not know about previously.
+• Dimension reduction for data visualization: The useful and award-winning PaCMAP algorithm was designed by my lab.
+We used it to discover clusters of people with HIV that seem to have different types of immune system characteristics.
+• I work heavily on AI regulation. I am on the National AI Advisory Committee’s Subcommittee on Law Enforcement. I
+was on the National Academies Committee on Facial Recognition Technology that released a 2024 report.
+• Energy reliability: I led the ﬁrst major effort to maintain an underground electrical distribution network using ML, in work
+with Con Edison in NYC. This won the 2013 INFORMS Innovative Applications in Analytics Award.
+• Crime series analysis: My collaborators and I developed code for detecting crime series in cities. Our Series Finder
+algorithm was adapted by the NYPD into their Patternizr algorithm, which has been running live in NYC since 2016
+for determining whether each new crime is related to past crimes.
+• I have served or chaired important committees for INFORMS, the American Statistical Association, AAAI, SIGKDD,
+DARPA, and the National Academy of Science, Engineering and Medicine. I participated in the U.S. Senate AI
+Insight Forum on transparency, explainability, intellectual property and copyright.
+• I have given invited/keynote/plenary talks at INFORMS, KDD (2014 & 2019), IJCAI, AISTATS, ECML-PKDD, ML in
+Healthcare, FAT-ML (Fairness, Accountability, and Transparency), SIAM International Conference on Data Mining
+(SDM), and the Nobel Conference. My work appears in the NY Times, Washington Post, Boston Globe, Wall Street
+Journal, MSNBC, Fox, National Public Radio, STAT, the Times of London, Businessweek, and the News & Observer.
+• I am writing an e-book on introductory machine learning called “Intuition for the Algorithms of Machine Learning,” which
+teaches interpretable machine learning as part of the basic ML curriculum, linked on my website.
+• Margins for AdaBoost: I solved a well-known (previously open) theoretical problem in machine learning as a PhD student,
+which is whether AdaBoost maximizes the ℓ1- margin. Subsequent work solved a COLT open problem.
+
+Cynthia Rudin
+2
+Education
+• Ph.D.: Princeton University. Program in Applied and Computational Mathematics. Title: Boosting, Margins, and
+Dynamics. Advisors: Ingrid Daubechies and Robert Schapire.
+• BS/BA: University at Buffalo (SUNY), Honors Program. Outstanding Senior Award in the Arts and Sciences (one
+awarded per year university-wide), separate outstanding senior awards from the Physics Department, Mathematics
+Department, and Music Department (one awarded per department per year), BS Mathematical Physics, BA Music
+Theory, Minor in Computer Science, Summa Cum Laude, 1999
+Employment History
+• Duke University, Computer Science Department (50%), Electrical and Computer Engineering Department (50%), Sec-
+ondary appointments in Statistical Science, Biostatistics & Bioinformatics, and Mathematics. Associate Professor
+2016-2019, Professor 2019-2024, Distinguished Professor 2024-present.
+• Massachusetts Institute of Technology, MIT Computer Science and Artiﬁcial Intelligence Laboratory and Sloan School
+of Management, Associate Professor of Statistics 2013-2016, Assistant Professor of Statistics 2009-2013.
+• Columbia University, Center for Computational Learning Systems, Associate Research Scientist, 2007-2009.
+• NSF Postdoctoral Research Fellow, New York University, 2004-2007.
+Peer-Reviewed Publications
+Papers associated with major awards (winner and ﬁnalist)
+1. Yiyang Sun, Zhi Chen, Vittorio Orlandi, Tong Wang and Cynthia Rudin. Sparse and Faithful Explanations without
+Sparse Models. Winner of Data Mining Best Paper Award, INFORMS 2023, AISTATS, 2024.
+2. Edwin Agnew, Michelle Qiu, Lily Zhu, Sam Wiseman and Cynthia Rudin. The Mechanical Bard: An Interpretable Ma-
+chine Learning Approach to Shakespearean Sonnet Generation, Meeting of the Association for Computational
+Linguistics (ACL), 2023. Outstanding Paper Award.
+3. Yingfan Wang, Haiyang Huang, Cynthia Rudin, and Yaron Shaposhnik. Understanding How Dimension Reduction
+Tools Work: An Empirical Approach to Deciphering t-SNE, UMAP, TriMAP, and PaCMAP for Data Visual-
+ization, Journal of Machine Learning Research, 2021.
+• Our PaCMAP software is the winner of the 2023 John M. Chambers Statistical Software Award from the Amer-
+ican Statistical Association and the 2024 Award for Innovation in Statistical Programming and Analytics (AIS-
+PAA) from the American Statistical Association.
+4. Gah-Yi Ban and Cynthia Rudin. MSOM Best OM paper in OR Award, 2021, INFORMS. (Awarded to the best paper in
+Operations Research within the last 3 years, awarded by Manufacturing and Service Operations Management Society
+of INFORMS.) The Big Data Newsvendor: Practical Insights from Machine Learning, Operations Research, Vol.
+67, No. 1, pages 90-108, 2019.
+5. Aaron F. Struck, Berk Ustun, Andres Rodriguez Ruiz, Jong Woo Lee, Suzette LaRoche, Lawrence J. Hirsch, Emily J
+Gilmore, Jan Vlachy, Hiba Arif Haider, Cynthia Rudin, M Brandon Westover. 2019 INFORMS Innovative Applica-
+tions in Analytics Award (shared with paper below). Association of an Electroencephalography-Based Risk Score
+With Seizure Probability in Hospitalized Patients, JAMA Neurology, 74 (12), 1419-1424, 2017.
+6. Berk Ustun and Cynthia Rudin. 2019 INFORMS Innovative Applications in Analytics Award, also 2017 INFORMS Com-
+puting Society Student Paper Prize. Learning Optimized Risk Scores. Journal of Machine Learning Research, 2019.
+Shorter version Learning Optimized Risk Scores from Large-Scale Datasets. Knowledge Discovery in Databases
+(KDD), 2017.
+7. Chaofan Chen, Kangcheng Lin, Cynthia Rudin, Yaron Shaposhnik, Sijia Wang, Tong Wang. A Holistic Approach to
+Interpretability in Financial Lending: Models, Visualizations, and Summary-Explanations. Decision Support
+Systems, 2021.
+Preliminary work:
+
+Cynthia Rudin
+3
+• Chaofan Chen, Kangcheng Lin, Cynthia Rudin, Yaron Shaposhnik, Sijia Wang, Tong Wang. Winner of the FICO
+Recognition Award for the Explainable Machine Learning Challenge, 2018. An Interpretable Model with
+Globally Consistent Explanations for Credit Risk. NIPS 2018 Workshop on Challenges and Opportunities
+for AI in Financial Services: the Impact of Fairness, Explainability, Accuracy, and Privacy, 2018.
+8. Cynthia Rudin and Berk Ustun. Finalist for 2017 Daniel H. Wagner Prize for Excellence in Operations Research, Institute
+for Operations Research and Management Science (INFORMS). Optimized Scoring Systems: Towards Trust in
+Machine Learning for Healthcare and Criminal Justice. INFORMS Journal on Applied Analytics, Special Issue:
+2017 Daniel H. Wagner Prize for Excellence in Operations Research Practice, 48(5), pages 399–486, September-
+October, 2018.
+9. William Souillard-Mandar, Randall Davis, Cynthia Rudin, Rhoda Au, David J. Libon, Rodney Swenson, Catherine C.
+Price, Melissa Lamar, Dana L. Penney. 2016 INFORMS Innovative Applications in Analytics Award (shared with
+paper below). Learning Classiﬁcation Models of Cognitive Conditions from Subtle Behaviors in the Digital
+Clock Drawing Test. Machine Learning, volume 102, number 3, 2016.
+10. Berk Ustun and Cynthia Rudin. 2016 INFORMS Innovative Applications in Analytics Award and also Runner up, Invenia
+Labs SEE Award 2018 - Supporting Machine Learning Research with a Positive Impact on Social, Economic, or
+Environmental (SEE) Challenges. Supersparse Linear Integer Models for Optimized Medical Scoring Systems.
+Machine Learning, volume 102, number 3, 2016.
+11. Cynthia Rudin, S¸eyda Ertekin, Rebecca Passonneau, Axinia Radeva, Ashish Tomar, Boyi Xie, Stanley Lewis, Mark Riddle,
+Debbie Pangsrivinij, Tyler McCormick. 2013 INFORMS Innovative Applications in Analytics Award Analytics for
+Power Grid Distribution Reliability in New York City. INFORMS Journal on Applied Analytics, volume 44, issue
+4, pages 364-383, 2014.
+12. Indraneel Mukherjee, Cynthia Rudin, and Robert E. Schapire. This paper answered an open question published in COLT
+2010. The Rate of Convergence of AdaBoost, Journal of Machine Learning Research, volume 14, pages 2315-2347,
+August 2013.
+Preliminary work:
+• Indraneel Mukherjee, Cynthia Rudin, and Robert E. Schapire. The Rate of Convergence of AdaBoost, Proceedings
+of the 24th Annual Conference on Learning Theory (COLT), 2011.
+Publications and other best paper awards (not including those above)
+2026
+13. Anish Karpurapu, Zhicheng Guo, Xiao Hu, and Cynthia Rudin. Data Hugging Allows Proprietary Models To Convince
+Us We Are Aafe While Strangling Academic Research That Can Prove Otherwise, Minor revision at npj Artiﬁcial
+Intelligence, 2026.
+14. Jon Donnelly, Srikar Katta, Emanuele Borgonovo, Cynthia Rudin. Doctor Rashomon and the UNIVERSE of Madness:
+Variable Importance with Unobserved Confounding and the Rashomon Effect, AISTATS, 2026. Honorable
+Mention, Best Student Paper, Risk Analysis Section, American Statistical Association, 2026
+15. Yiyang Sun, Haiyang Huang, Gaurav Rajesh Parikh, Cynthia Rudin. Rashomon Effect for Visualizing High-Dimensional
+Data, AISTATS 2026.
+16. Luke Moffett, Frank Willard, Maximillian Machado, Emmanuel Mokel, Jon Donnelly, Zhicheng Guo, Adam Costarino,
+Julia Yang, Giyoung Kim, Alina Jade Barnett, Cynthia Rudin. Cosine Distance is Almost All You Need (for
+Prototypical-Part Models), WACV 2026 (Oral presentation)
+17. Stephen Ni-Hahn, Rico Zhu, Jerry Yin, Yue Jiang, Cynthia Rudin, Simon Mak. AutoSchA: Automatic Hierarchical
+Music Representations via Multi-Relational Node Isolation, AAAI, 2026.
+18. Parian Haghighat, Hadis Anahideh, Cynthia Rudin. AdaRocile: Bridging Local and Global Accuracy to Resolve
+Predictive Multiplicity, AAAI, 2026.
+2025
+
+Cynthia Rudin
+4
+19. Marco Morucci and Cynthia Rudin. Matching Bounds: How Choice of Matching Algorithm Impacts Treatment
+Effects Estimates and What to Do About It. The Journal of Politics, accepted, 2025.
+20. Ruixin Zhang, Jon Donnelly, Zhicheng Guo, Ghazal Khalighinejad, Haiyang Huang, Alina Jade Barnett, Cynthia Rudin.
+It’s LIT! LLMs with Inspectable Tools, NeurIPS Workshop on Multi-Turn Interactions in Large Language Models,
+2025.
+21. Stephen Ni-Hahn, Chao Peter Yang, Mingchen Ma, Cynthia Rudin, Simon Mak, Yue Jiang. ProGress: Structured Music
+Generation via Graph Diffusion and Hierarchical Music Analysis, NeurIPS Creative AI Track, 2025.
+22. Mingchen Ma, Stephen Ni-Hahn, Simon Mak, Yue Jiang, Cynthia Rudin. E-Motion Baton: Human-in-the-Loop Music
+Generation via Expression and Gesture, NeurIPS AI for Music Workshop, oral presentation, 2025. Best Demo
+Award of AI4Music 2025.
+23. Zakk Heile, Varun Babbar, Hayden McTavish, Cynthia Rudin. Efﬁcient Rashomon Set Approximation for Decision
+Trees, NeurIPS workshop on MLxOR: Mathematical Foundations and Operational Integration of Machine Learning
+for Uncertainty-Aware Decision-Making, 2025.
+24. Ziyao Cui, Erick Jiang, Nicholas Sortisio, Haiyan Wang, Eric Chen, Cynthia Rudin. Revisiting Broken Windows Theory,
+Submitted, 2025. Runner up for ASA Data Expo Challenge (professional track), 2024
+25. Quinn Lanners, Cynthia Rudin, Alexander Volfovsky, Harsh Parikh. Data Fusion for Partial Identiﬁcation of Causal
+Effects, Neural Information Processing Systems, 2025.
+26. Harsh Parikh, Marco Morucci, Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, Alexander Volfovsky. A Double Machine
+Learning Approach for Combining Experimental and Observational Studies, Observational Studies, accepted,
+2025.
+27. Varun Babbar*, Zhicheng Guo*, Cynthia Rudin. “What is Different Between These Datasets?” A Framework for
+Explaining Data Distribution Shifts, Journal of Machine Learning Research, 2025.
+28. Hayden McTavish*, Zachery Boner*, Jon Donnelly*, Margo Seltzer, Cynthia Rudin. Leveraging Predictive Equivalence
+in Decision Trees, ICML, 2025.
+29. Varun Babbar*, Hayden McTavish*, Cynthia Rudin, Margo Seltzer. Near-Optimal Decision Trees in a SPLIT Second,
+ICML (Oral presentation), 2025.
+30. Rayehe Karimi Mahabadi, Doksoo Lee, Alexander C. Ogren, Chiara Daraio, Wei Chen, Cynthia Rudin, and Cate Brin-
+son. A Computational Framework to Design 3D Stiffness-Gradient Acoustic Metamaterials for Impedance
+Matching, Computer Methods in Applied Mechanics and Engineering, 2025.
+31. Rayehe Karimi Mahabadi, Zhi Chen, Alexander C. Ogren, Han Zhang, Chiara Daraio, Cynthia Rudin, and Cate Brinson.
+Graph-Based Design of Random Metamaterials, International Journal of Mechanical Sciences, 2025.
+32. Jon Donnelly, Zhicheng Guo, Alina Jade Barnett, Hayden McTavish, Chaofan Chen, Cynthia Rudin. Rashomon Sets for
+Prototypical-Part Models: Editing Accurate Interpretable Models in Real-Time, CVPR, 2025.
+33. Chudi Zhong, Panyu Chen, Cynthia Rudin. Models That Are Interpretable But Not Transparent, AISTATS, 2025.
+34. Yingfan Wang, Yiyang Sun, Haiyang Huang, Cynthia Rudin. Dimension Reduction with Locally Adjusted Graphs,
+AAAI, 2025.
+35. Ishaan Maitra*, Raymond Lin*, Eric Chen, Jon Donnelly, Sanja ˇS´cepanovi´c, Cynthia Rudin. How Your Location Re-
+lates to Health: Variable Importance and Interpretable Machine Learning for Environmental and Sociodemo-
+graphic Data, AAAI (Oral presentation), 2025.
+36. Neha R. Gupta, Vittorio Orlandi, Chia-Rui Chang, Tianyu Wang, Marco Morucci, Pritam Dey, Thomas J. Howell, Xian
+Sun, Angikar Ghosal, Sudeepa Roy, Cynthia Rudin, Alexander Volfovsky. dame-ﬂame: A Python Library Provid-
+ing Fast Interpretable Matching for Causal Inference. Journal of Statistical Software, 2025.
+• Software for FLAME by our students Vittorio Orlandi and Neha Gupta was the Honorable Mention for the 2022
+John M. Chambers Statistical Software Award from the American Statistical Association.
+37. Abraham Meltzer, Cynthia Rudin, and Brandon Garrett. Applying a Cost-Beneﬁt Analysis to Geofence Searches, Juri-
+metrics, accepted, 2025.
+
+Cynthia Rudin
+5
+38. Anish Karpurapu, Ayman Ali, Eden Singh, Hana Shaﬁque, Young Kim, Leila Mureebe, Cynthia Rudin, Adam P Johnson.
+Interpretable Machine Learning for Predicting Risk of Groin Surgical Site Infection in Patients Undergoing
+Revascularization for Peripheral Artery Disease. Journal of Vascular Surgery, 2025.
+39. Dennis Tang, Jon Donnelly, Alina Jade Barnett, Lesia Semenova, Jin Jing, Peter Hadar, Ioannis Karakis, Olga Selioutski,
+Kehan Zhao, Brandon Westover, Cynthia Rudin. This EEG Looks Like These EEGs: Interpretable Interictal
+Epileptiform Discharge Detection With ProtoEEG-kNN, MICCAI, 2025.
+40. Chloe Qinyu Zhu, Muhang Tian, Lesia Semenova, Jiachang Liu, Jack Xu, Joseph Scarpa, Cynthia Rudin. Fast and
+Interpretable Mortality Risk Scores for Critical Care Patients. Journal of the American Medical Informatics
+Association, 2025.
+41. Mary V. Bastawrous, Zhi Chen, Alexander C. Ogren, Chiara Daraio, Cynthia Rudin, L. Catherine Brinson. A Multiscale
+Design Method Using Interpretable Machine Learning for Phononic Materials with Closely Interacting Scales,
+Computer Methods in Applied Mechanics and Engineering, 2025.
+42. Luke Moffett, Alina Jade Barnett, Jon Donnelly, Fides Regina Schwartz, Hari Trivedi, Joseph Lo, and Cynthia Rudin.
+Multi-Site Validation of an Interpretable Model to Analyze Breast Masses, PLOS One, accepted, 2025.
+43. Vaibhav Sharma, Alina Barnett, Julia Yang, Sangwook Cheon, Giyoung Kim, Fides Schwartz, Avivah Wang, Neal Hall,
+Largs Grimm, Chaofan Chen, Joseph Y. Lo, and Cynthia Rudin. Improving Annotation Efﬁciency for Fully La-
+belling a Breast Mass Segmentation Dataset, Journal of Medical Imaging, 2025.
+44. Eleftheria Roumeli, Sourena Azidhak, Ana F. Costa, Anlan Chen, Io Saito, Yiyang Sun, L. Cate Brinson, Cynthia Rudin,
+Linda S. Schadler, Kayla Sprenger. From Biomatter to Bioplastics: A Perspective on Modeling, Structure, and
+Data-Driven Design, MRS Bulletin, 2025.
+2024
+45. Jon Donnelly, Jon, Luke Moffett, Alina Jade Barnett, Hari Trivedi, Fides Regina Schwartz, Joseph Lo, Cynthia Rudin.
+AsymMirai: Interpretable Mammography-Based Deep Learning Model for 1- to 5-year Breast Cancer Risk
+Prediction, Radiology, 2024.
+46. Chiyu Ma, Jon Donnelly, Wenjun Liu, Soroush Vosoughi, Cynthia Rudin, Chaofan Chen. Interpretable Image Classiﬁ-
+cation with Adaptive Prototype-based Vision Transformers, NeurIPS, 2024.
+47. Zachery Boner, Lesia Semenova, Harry Chen, Cynthia Rudin, Ronald Parr. Using Noise to Infer Aspects of Simplicity
+Without Learning, NeurIPS 2024.
+48. Yiyang Sun, Tong Wang, Cynthia Rudin. Improving Decision Sparsity, NeurIPS, 2024.
+49. Hayden McTavish, Jon Donnelly, Margo Seltzer, Cynthia Rudin.
+Interpretable Generalized Additive Models for
+Datasets with Missing Values, NeurIPS, 2024.
+50. Haiyang Huang, Yingfan Wang, Cynthia Rudin. Navigating the Effect of Parametrization for Dimensionality Reduc-
+tion, NeurIPS, 2024.
+51. Jiachang Liu, Rui Zhang, Cynthia Rudin. FastSurvival: Hidden Computational Blessings in Training Cox Propor-
+tional Hazards Models, NeurIPS, 2024. Data Mining Society DMDA Workshop Best Paper Second Place (Theoret-
+ical Track), INFORMS 2024.
+52. Xuefei Lu, Emanuele Borogonovo, and Cynthia Rudin. Trustworthy Feature Importance Avoids Unrestricted Permu-
+tations. Runner Up for Data Mining Best Paper Award, INFORMS 2024, in preparation, 2024.
+53. Cynthia Rudin, Chudi Zhong, Lesia Semenova, Margo Seltzer, Ronald Parr, Jiachang Liu, Srikar Katta, Jon Donnelly,
+Harry Chen, Zachery Boner. Amazing Things Come From Having Many Good Models. ICML (Spotlight), 2024.
+54. Alina Jade Barnett, Zhicheng Guo, Jin Jing, Wendong Ge, Cynthia Rudin, M. Brandon Westover. Improving Clinician
+Performance in Classiﬁcation of EEG Patterns on the Ictal-Interictal-Injury Continuum using Interpretable
+Machine Learning, New England Journal of Medicine AI (NEJM AI), 2024.
+55. Sully F. Chen, Zhicheng Guo, Cheng Ding, Xiao Hu, Cynthia Rudin. Learned Kernels for Sparse, Interpretable, and
+Efﬁcient Medical Time Series Processing. Nature Machine Intelligence, 2024.
+
+Cynthia Rudin
+6
+56. Lesia Semenova, Yingfan Wang, Shane Falcinelli, Nancie Archin, Alicia D Cooper-Volkheimer, David M Margolis, Nilu
+Goonetilleke, David M Murdoch, Cynthia D Rudin, and Edward P Browne. Machine Learning Approaches Identify
+Immunologic Signatures of Total and Intact HIV DNA During Long-Term Antiretroviral Therapy, eLife, 2024.
+57. Travis Seale-Carlisle, Saksham Jain, Courtney Lee, Caroline Levenson, Swathi Ramprasad, Brandon Garrett, Sudeepa
+Roy, Cynthia Rudin, Alexander Volfovsky Evaluating Pre-trial Programs Using Machine Learning Matching
+Algorithms, AAAI (Oral Presentation), 2024.
+58. Siong Thye Goh, Lesia Semenova, and Cynthia Rudin. Sparse Density Trees and Lists: An Interpretable Alternative
+to High-Dimensional Histograms, INFORMS Journal on Data Science, 2024.
+59. Srikar Katta, Harsh Parikh, Cynthia Rudin, Alexander Volfovsky. Interpretable Causal Inference for Analyzing Wear-
+able, Sensor, and Distributional Data. ASA Biometrics Section Early Career Paper Award, American Statistical
+Association, AISTATS, 2024.
+60. Rui Zhang, Rui Xin, Margo Seltzer, and Cynthia Rudin. Optimal Sparse Survival Trees, AISTATS, 2024.
+61. Harsh Parikh, Quinn Lanners, Zade Akras, Sahar Zafar, M Brandon Westover, Cynthia Rudin, Alexander Volfovsky, Safe
+and Interpretable Estimation of Optimal Treatment Regimes, AISTATS, 2024.
+62. Stephen Ni-Hahn, Jerry Yin, Rico Zhu, Weihan Xu, Yue Jiang, Simon Mak, Cynthia Rudin. SentHYMNent: An Inter-
+pretable and Sentiment-Driven Model for Algorithmic Melody Harmonization, KDD, 2024.
+63. Brandon L. Garrett and Cynthia Rudin. The Right to a Glass Box: Rethinking the Use of Artiﬁcial Intelligence in
+Criminal Justice, Cornell Law Review, 2024.
+64. Cheng Ding, Zhicheng Guo, Cynthia Rudin, Ran Xiao, Amit Shah, Duc H. Do, Randall J Lee, Gari Clifford, Fadi B Nahab,
+Xiao Hu. Learning From Alarms: A Robust Learning Approach for Accurate Photoplethysmography-Based
+Atrial Fibrillation Detection using Eight Million Samples Labeled with Imprecise Arrhythmia Alarms, IEEE
+Journal of Biomedical and Health Informatics (JBHI), 2024.
+65. Pranay Jain, Cheng Ding, Cynthia Rudin, and Xiao Hu. A Self-Supervised Algorithm for Denoising Photoplethysmog-
+raphy Signals for Heart Rate Estimation from Wearables, Harvard Data Science Review, 2024.
+66. Cheng Ding, Zhicheng Guo, Zhaoliang Chen, Randall J Lee, Cynthia Rudin, Xiao Hu. SiamQuality: a ConvNet-based
+foundation model for photoplethysmography signals. Physiological Measurement, 2024.
+67. Ashokkumar Manickam, Jackson J Peterson, Yuriko Harigaya, David M Murdoch, David M Margolis, Alex Oesterling,
+Zhicheng Guo, Cynthia D Rudin, Yuchao Jiang, and Edward P Browne. Integrated single-cell multiomic analysis
+of HIV latency reversal reveals novel regulators of viral reactivation, Genomics, Proteomics, and Bioinformatics,
+2024.
+68. Harsh Parikh, Haoqi Sun, Rajesh Amerineni, Eric S. Rosenthal, Alexander Volfovsky, Cynthia Rudin, M. Brandon West-
+over, Sahar F. Zafar. How Many Patients Do You Need? Investigating Trial Designs for Anti-Seizure Treatment
+in Acute Brain Injury Patients, Annals of Clinical and Translational Neurology, 2024.
+69. Julia Yang, Alina Barnett, Jonathan Donnelly, Satvik Kishore, Jerry Fang, Fides Schwartz, Chaofan Chen, Joseph Lo,
+Cynthia Rudin. FPN-IAIA-BL: A Multi-Scale Interpretable Deep Learning Model for Classiﬁcation of Mass
+Margins in Digital Mammography CVPR 2024 Workshop on Domain adaptation, Explainability, Fairness in AI for
+Medical Image Analysis (DEF-AI-MIA), (Oral presentation), 2024.
+70. Stephen Ni-Hahn, Weihan Xu, Zirui Yin, Rico Zhu, Simon Mak, Yue Jiang, Cynthia Rudin. A New Dataset, Nota-
+tion Software, and Representation for Computational Schenkerian Analysis. International Society for Music
+Information Retrieval (ISMIR) Conference, 2024.
+71. Han Zhang, Rayehe Karimi Mahabadi, Cynthia Rudin, Johann Guilleminot, L. Catherine Brinson. Uncertainty Quantiﬁ-
+cation of Acoustic Metamaterial Bandgaps with Stochastic Material Properties and Geometric Defects, Com-
+puters and Structures, 2024.
+72. Rayehe Karimi Mahabadi, Zhi Chen, Chiara Daraio, Cynthia Rudin, and L. Catherine Brinson. A Robust Framework
+for the Generation of Random Metamaterials Based on a Graph Algorithm, Proc. SPIE 13109, Metamaterials,
+Metadevices, and Metasystems 2024.
+73. Zachery Boner, Harry Chen, Michal Moshkovitz, Ron Parr, Cynthia Rudin, and Lesia Semenova. Transition Noise
+Facilitates Interpretability. Workshop on Interpretable Policies in Reinforcement Learning (InterpPol)@RLC-2024,
+2024. (Oral presentation).
+
+Cynthia Rudin
+7
+2023
+74. Brandon L. Garrett and Cynthia Rudin. Interpretable Algorithmic Forensics, The Proceedings of the National Academy
+of Sciences (PNAS), 2023.
+75. Lesia Semenova, Harry Chen, Ronald Parr, Cynthia Rudin. A Path to Simpler Models Starts With Noise, NeurIPS,
+2023.
+76. Zhi Chen, Chudi Zhong, Margo Seltzer, Cynthia Rudin. Exploring and Interacting with the Set of Good Sparse
+Generalized Additive Models, NeurIPS, 2023.
+77. Chiyu Ma, Brandon Zhao, Chaofan Chen, Cynthia Rudin. This Looks Like Those: Illuminating Prototypical Concepts
+Using Multiple Visualizations, NeurIPS, 2023.
+78. Jiachang Liu, Sam Rosen, Chudi Zhong, Cynthia Rudin. OKRidge: Scalable Optimal k-Sparse Ridge Regression for
+Learning Dynamical Systems, NeurIPS (Spotlight Paper), 2023.
+• 2024 INFORMS Computing Society Student Paper Award Runner Up, 2024
+79. Jon Donnelly, Srikar Katta, Cynthia Rudin, Edward P Browne. The Rashomon Importance Distribution: Getting RID
+of Unstable, Single Model-based Variable Importance, NeurIPS (Spotlight Paper), 2023.
+80. Stephen Ni-Hahn, Rico Zhu, Yue Jiang, Simon Mak, and Cynthia Rudin. New Orleans: An Adventure in Music,
+NeurIPS Creative AI track. (demo) 2023.
+81. Stephen Ni-Hahn, Rico Zhu, Simon Mak, Cynthia Rudin, Yue Jiang. An Interpretable, Flexible, and Interactive Prob-
+abilistic Framework for Melody Generation, KDD 2023.
+82. Dennis Tang, Frank Willard, Ronan Tegerdine, Luke Triplett, Jon Donnelly, Luke Moffett, Lesia Semenova, Alina Jade
+Barnett, Jin Jing, Cynthia Rudin, and M. Brandon Westover. ProtoEEGNet: An Interpretable Approach for
+Detecting Interictal Epileptiform Discharges, Medical Imaging meets NeurIPS Workshop (MedNeurIPS), (Oral
+presentation), 2023.
+83. Samantha M. McDonald, Emily K. Augustine, Quinn Lanners, Cynthia Rudin, L. Catherine Brinson, and Matthew L.
+Becker. Applied Machine Learning as a Driver for Polymeric Biomaterials Design, Nature Communications,
+2023.
+84. Jacob Peloquin, Alina Kirillova, Cynthia Rudin, L.C. Brinson, Ken Gall. Prediction of tensile performance for 3D
+printed photopolymer gyroid lattices using structural porosity, base material properties, and machine learning,
+Materials & Design, 2023.
+85. Jacob Peloquin, Alina Kirillova, Elizabeth Mathey, Cynthia Rudin, L. Catherine Brinson, Ken Gall. Tensile performance
+data of 3D printed photopolymer gyroid lattices, Data in Brief, 2023.
+86. Quinn Lanners, Harsh Parikh, Alexander Volfovsky, Cynthia Rudin, David Page. Variable Importance Matching for
+Causal Inference, UAI, 2023.
+A shorter version appears at this workshop:
+• Quinn Lanners, Harsh Parikh, Alexander Volfovsky, Cynthia Rudin, and David Page. Matching Using Feature
+Importance: An Auditable Approach to Causal Inference, 9th International Conference on Computational
+Social Science IC2S2, 2023
+87. Harsh Parikh, Kentaro Hoffman, Haoqi Sun, Wendong Ge, Jin Jing, Rajesh Amerineni, Lin Liu, Jimeng Sun, Sahar Zafar,
+Aaron Struck, Alexander Volfovsky, Cynthia Rudin, M. Brandon Westover. Effects of Epileptiform Activity on
+Discharge Outcome in Critically Ill Patients: A Retrospective Cross-Sectional Study, The Lancet Digital Health,
+2023.
+88. Rui Zhang, Rui Xin, Margo Seltzer, and Cynthia Rudin. Optimal Sparse Regression Trees, AAAI, 2023.
+89. Cynthia Rudin and Yaron Shaposhnik. Globally-Consistent Rule-Based Summary-Explanations for Machine Learn-
+ing Models: Application to Credit-Risk Evaluation, Journal of Machine Learning Research, 2023.
+• An earlier version appeared at the Conference on Information Systems and Technology (CIST), 2019.
+90. Fernanda Bravo, Cynthia Rudin, Yuting Yuan and Yaron Shaposhnik. Interpretable Prediction Rules for Congestion
+Risk in ICUs. Stochastic Systems, 2023.
+
+Cynthia Rudin
+8
+• Conference version: Fernanda Bravo, Cynthia Rudin, Yuting Yuan and Yaron Shaposhnik. Simple Rules for
+Predicting Congestion Risk in Queueing Systems: Application to ICUs, 2019 INFORMS Workshop on Data
+Science (DS 2019), (Oral presentation).
+91. Shane D Falcinelli, Alicia Volkheimer, Lesia Semenova, Ethan Wu, Alexander Richardson, Manickam Ashokkumar, David
+M Margolis, Nancie M Archin, Cynthia D Rudin, David Murdoch, Edward P Browne. Impact of cannabis use on
+immune cell populations and the viral reservoir in people with HIV on suppressive antiretroviral therapy, The
+Journal of Infectious Disease (JID), 2023.
+92. Yanchen Jessie Ou*, Alina Jade Barnett*, Anika Mitra*, Fides Regina Schwartz, Chaofan Chen, Lars Grimm, Joseph Y.
+Lo, Cynthia Rudin. A User Interface to Communicate Interpretable AI Decisions to Radiologists. Proceedings
+of SPIE Medical Imaging, 2023.
+93. Edward W. Felten, Jennifer Mnookin, Thomas D. Albright, Ricardo Baeza-Yates, Bob Blakey, Patrick Grother, Marvin B.
+Haiman, Aziz Z. Huq, Anil K. Jain, Elizabeth E. Joh, Michael C. King, Nicol Turner Lee, Ira S. Reese, and Cynthia
+Rudin. Facial Recognition Technology: Current Capabilities, Future Prospects, and Governance, National
+Academies Press, 2024. (Consensus study report of the National Academies of Sciences Engineering, and Medicine)
+2022
+94. Rui Xin, Chudi Zhong, Zhi Chen, Takuya Takagi, Margo Seltzer, Cynthia Rudin. Exploring the Whole Rashomon Set
+of Sparse Decision Trees, Finalist for INFORMS 2022 Data Mining Best Paper Competition Award, Student Track,
+NeurIPS (Oral presentation), 2022.
+95. Jiachang Liu, Chudi Zhong, Boxuan Li, Margo Seltzer, Cynthia Rudin. FasterRisk: Fast and Accurate Interpretable
+Risk Scores, NeurIPS, 2022.
+96. Zijie Wang, Chudi Zhong, Rui Xin, Takuya Takagi, Zhi Chen, Duen Horng Chau, Cynthia Rudin and Margo Seltzer.
+TimberTrek: Exploring and Curating Trustworthy Decision Trees with Interactive Visualization, IEEE VIS:
+Visualization & Visual Analytics, 2022.
+97. Harsh Parikh, Cynthia Rudin, Alexander Volfovsky. MALTS: Matching After Learning to Stretch. Journal of Machine
+Learning Research, 2022
+98. Haiyang Huang, Yingfan Wang, Cynthia Rudin, and Edward Browne. Towards a Comprehensive Evaluation of Dimen-
+sion Reduction Methods for Transcriptomic Data Visualization. Communications Biology (Nature), 2022.
+99. Vaishali Jain, Ted Enamorado, and Cynthia Rudin. The Importance of being Ernest, Ekundayo, or Eswari: An In-
+terpretable Machine Learning Approach to Name-based Ethnicity Classiﬁcation, Harvard Data Science Review,
+2022.
+100. Elita Lobo, Harvineet Singh, Marek Petrik, Cynthia Rudin, Himabindu Lakkaraju. Data Poisoning Attacks on Off-Policy
+Policy Evaluation Methods, (Oral presentation – top 5%), UAI, 2022.
+101. Lesia Semenova, Cynthia Rudin, and Ron Parr. On the Existence of Simpler Machine Learning Models. ACM Confer-
+ence on Fairness, Accountability, and Transparency (ACM FAccT), 2022.
+102. Cynthia Rudin. Why Black Box Machine Learning Should be Avoided for High Stakes Decisions, in Brief, Nature
+Reviews Methods Primers, 2022.
+103. Jiachang Liu, Chudi Zhong, Margo Seltzer, and Cynthia Rudin. Fast Sparse Classiﬁcation for Generalized Linear and
+Additive Models, AISTATS, 2022.
+104. Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, Chudi Zhong. Interpretable Machine
+Learning: Fundamental Principles and 10 Grand Challenges, Statistics Surveys, 2022.
+105. Hayden McTavish, Chudi Zhong, Reto Achermann, Ilias Karimalis, Jacques Chen, Cynthia Rudin, Margo Seltzer. Fast
+Sparse Decision Tree Optimization via Reference Ensembles, AAAI, 2022.
+106. Zhi Chen, Alexander Ogren, Chiara Daraio, L. Catherine Brinson, Cynthia Rudin. Winner of the 2022 Physical and
+Engineering Sciences (SPES) and the Quality and Productivity (Q&P) Student Paper Competition of the American
+Statistical Association. How to See Hidden Patterns in Metamaterials with Interpretable Machine Learning.
+Extreme Mechanics Letters, 2022.
+
+Cynthia Rudin
+9
+107. Tong Wang and Cynthia Rudin. Subgroup Identiﬁcation for Enhanced Treatment Effect with Decision Rules, IN-
+FORMS Journal on Computing, 2022.
+108. Caroline Wang, Bin Han, Bhrij Patel, Feroze Mohideen, Cynthia Rudin. In Pursuit of Interpretable, Fair and Accurate
+Machine Learning for Criminal Recidivism Prediction. Journal of Quantitative Criminology, 2022.
+109. Masoud Afnan, Michael Anis Mihdi Afnan, Yanhe Liu, Julian Savulescu, Abhishek Mishra, Vincent Conitzer, Cynthia
+Rudin. Data solidarity for machine learning for embryo selection; a call for the creation of an open access
+repository of embryo data. Reproductive BioMedicine Online, 2022.
+110. Chunxiao Li, Cynthia Rudin, and Tyler McCormick. Rethinking Nonlinear Instrumental Variable Models through
+Prediction Validity, Journal of Machine Learning Research, 2022.
+111. Marco Morucci, Md. Noor-E-Alam, and Cynthia Rudin. A Robust Approach to Quantifying Uncertainty in Matching
+Problems of Causal Inference, INFORMS Journal on Data Science, 2022.
+112. Edwin Agnew, Lily Zhu, Sam Wiseman, and Cynthia Rudin. Can a Computer Really Write Poetry? Harvard Data
+Science Review, 2022.
+113. Ali Behrouz, Mathias L´ecuyer, Cynthia Rudin and Margo Seltzer. Fast Optimization of Weighted Sparse Decision
+Trees for use in Optimal Treatment Regimes and Optimal Policy Design, Workshop on Advances in Interpretable
+Machine Learning and Artiﬁcial Intelligence (AIMLAI) at CIKM, 2022.
+114. Gaurav Rajesh Parikh, Jenny Huang, Albert Sun, Lesia Semenova, Cynthia Rudin. Winner of the American Statistical
+Association Data Challenge Expo (Student Winners), 2022, Making the World More Equal, One Ride at a Time:
+Studying Public Transportation Initiatives Using Interpretable Causal Inference. NeurIPS 2022 Workshop on
+Causality for Real-world Impact (CML4Impact), 2022.
+115. Haoning Jiang, Thomas Howell, Neha R. Gupta, Vittorio Orlandi, Marco Morucci, Harsh Parikh, Sudeepa Roy, Cynthia
+Rudin, Alexander Volfovsky. AME: Interpretable Almost Exact Matching for Causal Inference. Proceedings of
+the NeurIPS 2021 Competitions and Demonstrations Track, 2022.
+2021
+116. Cynthia Rudin and Shawn Bushway. A Truth Serum for your Personal Perspective on Facial Recognition Software in
+Law Enforcement, Translational Criminology, Fall 2021
+117. Tianyu Wang and Cynthia Rudin. Best Paper Second Prize for INFORMS Data Mining Best Paper Competition - General
+Track 2021, Bandit Learning for Proportionally Fair Allocations, 2021.
+118. Tianyu Wang, Marco Morucci, M. Usaid Awan, Yameng Liu, Sudeepa Roy, Cynthia Rudin, Alexander Volfovsky. FLAME:
+A Fast Large-scale Almost Matching Exactly Approach to Causal Inference. Journal of Machine Learning Re-
+search, 2021.
+• Software for FLAME by our students Vittorio Orlandi and Neha Gupta was the Honorable Mention for the 2022
+John M. Chambers Statistical Software Award from the American Statistical Association.
+119. Stefano Trac`a, Cynthia Rudin, Weiyu Yan. Best paper award, INFORMS 2016 Data Mining & Decision Analytics Work-
+shop, also Finalist for 2015 IBM Service Science Best Paper Award. Regulating Greed over Time in Multi-Armed
+Bandits. Journal of Machine Learning Research, 2021.
+120. Jianyou Wang, Xiaoxuan Zhang, Yuren Zhou, Christopher Suh, Cynthia Rudin. There Once Was a Really Bad Poet, It
+Was Automated But You Didn’t Know It. Transactions of the Association for Computational Linguistics (TACL),
+2021. (Presented at ACL, 2021)
+121. Divya Koyyalagunta, Anna Sun, Rachel Lea Draelos, Cynthia Rudin. Playing Codenames with Language Graphs and
+Word Embeddings. Journal of Artiﬁcial Intelligence Research (JAIR), 2021.
+122. Michael Anis Mihdi Afnan, Cynthia Rudin, Vincent Conitzer, Julian Savulescu, Abhishek Mishra, Yanhe Liu and Masoud
+Afnan. Ethical Implementation of Artiﬁcial Intelligence to Select Embryos in In Vitro Fertilization. Fourth
+AAAI/ACM Conference on AI, Ethics, and Society (AIES), 2021. (Our related work “Embryo selection using Ar-
+tiﬁcial Intelligence (AI): Epistemic and ethical considerations” accepted for oral presentation at European Society
+of Human Reproduction and Embryology, ESHRE, 2021, and our related work “Embryo selection by “black-box”
+
+Cynthia Rudin
+10
+artiﬁcial intelligence: The ethical and epistemic considerations” accepted for oral presentation at Fertility Society of
+Australia and New Zealand Annual Conference, 2021)
+123. Michael Anis Mihdi Afnan, Yanhe Liu, Vincent Conitzer, Cynthia Rudin, Abhishek Mishra, Julian Savulescu, Masoud
+Afnan. Interpretable, Not Black-Box, Artiﬁcial Intelligence Should be Used for Embryo Selection, Human
+Reproduction Open, 2021.
+124. Alina Jade Barnett, Fides Regina Schwartz, Chaofan Tao, Chaofan Chen, Yinhao Ren, Joseph Y. Lo, Cynthia Rudin. IAIA-
+BL: A Case-based Interpretable Deep Learning Model for Classiﬁcation of Mass Lesions in Digital Mammog-
+raphy, Nature Machine Intelligence, 2021. Conference papers related to this project:
+• Alina Jade Barnett, Fides Regina Schwartz, Chaofan Tao, Chaofan Chen, Yinhao Ren, Joseph Y. Lo, and Cyn-
+thia Rudin. Interpretable Mammographic Image Classiﬁcation using Cased-Based Reasoning and Deep
+Learning, IJCAI-21 Workshop on Deep Learning, Case-Based Reasoning, and AutoML: Present and Future
+Synergies (Oral presentation), 2021.
+• Alina Jade Barnett, Vaibhav Sharma, Neel Gajjar, Jerry Fang, Fides Schwartz M.D., Chaofan Chen, Joseph
+Y. Lo, Cynthia Rudin. Interpretable Deep Learning Models for Better Clinician-AI Communication in
+Clinical Mammography. SPIE Medical Imaging, 2022.
+125. Zhicheng Guo, Cheng Ding, Xiao Hu, and Cynthia Rudin. A Supervised Machine Learning Semantic Segmentation
+Approach for Detecting Artifacts in Plethysmography Signals from Wearables. Physiological Measurement,
+2021.
+126. Alex Oesterling, Angikar Ghosal, Haoyang Yu, Rui Xin, Yasa Baig, Lesia Semenova, and Cynthia Rudin. Duke Data
+Science 3C Citation Classiﬁcation Task B, (Outlines our strategy for our third-place competition entry in the 2021
+3C Shared Task Citation Context Classiﬁcation based on Purpose competition), Oral Presentation, Second Workshop
+on Scholarly Document Processing (SDP) Workshop, NAACL, 2021
+2020
+127. Zhi Chen, Yijie Bei and Cynthia Rudin. Concept Whitening for Interpretable Image Recognition. Nature Machine
+Intelligence, 2020.
+128. Jiayun Dong and Cynthia Rudin. Variable Importance Clouds: A Way to Explore Variable Importance for the Set of
+Good Models, Nature Machine Intelligence, 2020
+129. Beau Coker, Cynthia Rudin and Gary King. A Theory of Statistical Inference for Ensuring the Robustness of Scientiﬁc
+Results. Management Science, 2020.
+130. Jimmy Lin, Chudi Zhong, Diane Hu, Cynthia Rudin, Margo Seltzer. Generalized and Scalable Optimal Sparse Decision
+Trees. ICML, 2020.
+131. Tianyu Wang and Cynthia Rudin. Bandits for BMO Functions. ICML, 2020.
+132. Marco Morucci, Vittorio Orlandi, Sudeepa Roy, Cynthia Rudin, Alexander Volfovsky. Adaptive Hyper-box Matching
+for Interpretable Individualized Treatment Effect Estimation. UAI, 2020.
+133. Cynthia Rudin, Caroline Wang and Beau Coker. The Age of Secrecy and Unfairness in Recidivism Prediction. Harvard
+Data Science Review, 2020.
+• Broader Issues Surrounding Model Transparency in Criminal Justice Risk Scoring. (Rejoinder) Harvard Data
+Science Review, 2020.
+134. Sachit Menon, Alexandru Damian, Nikhil Ravi, Shijia Hu, Cynthia Rudin. PULSE: Self-Supervised Photo Upsampling
+via Latent Space Exploration of Generative Models. CVPR, 2020.
+135. Marco Morucci, Vittorio Orlandi, Sudeepa Roy, Alexander Volfovsky. Almost-Matching-Exactly for Treatment Effect
+Estimation under Network Interference. AISTATS, 2020.
+136. Tianyu Wang, Weicheng Ye, Dawei Geng and Cynthia Rudin. Towards Practical Lipschitz Bandits. Foundations of
+Data Science (FODS), 2020.
+
+Cynthia Rudin
+11
+137. Jerry Liu, Nathan O’Hara, Alexander Rubin, Rachel Draelos, Cynthia Rudin. Metaphor Detection Using Contextual
+Word Embeddings from Transformers. Proceedings of the Second Workshop on Figurative Language Processing,
+pages 250-255, 2020.
+138. Hunter Gregory, Steven Li, Pouya Mohammadi, Natalie Tarn, Rachel Draelos, Cynthia Rudin. A Transformer Approach
+to Contextual Sarcasm Detection in Twitter. Proceedings of the Second Workshop on Figurative Language Pro-
+cessing, pages 270-275, 2020.
+139. Qinwen Huang, Ye Zhou, Xiaochen Du, Reed Chen, Jianyou Wang, Cynthia Rudin, Alberto Bartesaghi. Cryo-ZSSR:
+Multiple-Image Super-Resolution Based on Deep Internal Learning. Machine Learning for Structural Biology
+Workshop at the 34th Conference on Neural Information Processing Systems, 2020.
+2019
+140. Cynthia Rudin and Joanna Radin. Why Are We Using Black Box Models in AI When We Don’t Need To? A Lesson
+From an Explainable AI Competition. Harvard Data Science Review, 2019.
+141. Aaron Fisher, Cynthia Rudin, Francesca Dominici. All Models are Wrong, but Many are Useful: Learning a Variable’s
+Importance by Studying an Entire Class of Prediction Models Simultaneously. Journal of Machine Learning
+Research, 2019.
+142. Harsh Parikh, Cynthia Rudin, and Alexander Volfovsky. An Application of Matching After Learning To Stretch
+(MALTS) to the ACIC 2018 Causal Inference Challenge Data. Observational Studies, Issue 5, pages 118-130,
+2019.
+143. Chaofan Chen, Oscar Li, Chaofan Tao, Alina Jade Barnett, Jonathan Su, Cynthia Rudin. This Looks Like That: Deep
+Learning for Interpretable Image Recognition. NeurIPS (Spotlight), 2019.
+144. Xiyang Hu, Cynthia Rudin, and Margo Seltzer. Optimal Sparse Decision Trees. NeurIPS (Spotlight), 2019.
+145. Peter Hase, Chaofan Chen, Oscar Li, Cynthia Rudin. Interpretable Image Recognition with Hierarchical Prototypes.
+AAAI Human Computation (AAAI-HCOMP), 2019.
+146. Cynthia Rudin. Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Inter-
+pretable Models Instead. Nature Machine Intelligence, 2019.
+• Shorter version called Please Stop Explaining Black Box Machine Learning Models for High Stakes De-
+cisions appeared at NIPS 2018 Workshop on Critiquing and Correcting Trends in Machine Learning, 2018.
+Shorter version called Why Black Box Machine Learning Should be Avoided for High Stakes Decisions, in
+Brief appeared in Nature Reviews Methods Primers, 2022.
+147. Stefano Trac`a, Weiyu Yan, and Cynthia Rudin. Reducing Exploration of Dying Arms in Mortal Bandits. UAI, 2019
+148. Usaid Awan, Yameng Liu, Marco Morucci, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky.
+Interpretable
+Almost-Exact Matching With Instrumental Variables. UAI, 2019
+149. Awa Dieng, Yameng Liu, Sudeepa Roy, Cynthia Rudin, and Alexander Volfovsky. Interpretable Almost-Exact Matching
+For Causal Inference. AISTATS, 2019.
+2018
+150. Fulton Wang, Tyler McCormick, Cynthia Rudin, and John Gore. Best Poster Award, Conference of the ASA Section on
+Statistical Learning and Data Mining, 2014. Modeling Recovery Curves With Application to Prostatectomy.
+Biostatistics, 2018.
+151. Cynthia Rudin and Yining Wang. Finalist for 2017 QSR (Quality, Reliability and Statistics) best refereed paper competi-
+tion, INFORMS 2017. On Direct Learning to Rank and Rerank. Artiﬁcial Intelligence and Statistics (AISTATS),
+2018.
+152. John Benhardt, Tianlin Duan, Peter Hase, Liuyi Zhu, Cynthia Rudin. Winner of the 2018 PoetiX Literary Turing Test
+Award for computer-generated poetry. Shall I Compare Thee to a Machine-Written Sonnet? An Approach to
+Algorithmic Sonnet Generation, 2018.
+
+Cynthia Rudin
+12
+153. Yijie Bei, Alex Damian, Shijia Hu, Sachit Menon, Nikhil Ravi, and Cynthia Rudin. NTIRE-CVPR 2018 Image Super-
+Resolution Challenge: winner for Track 1 (classic bicubic), honorable mention for Track 2 (realistic mild adverse
+conditions). New Techniques for Preserving Global Structure and Denoising with Low Information Loss in
+Single-Image Super-Resolution, New Trends in Image Restoration and Enhancement Workshop and Challenges on
+Super-Resolution, Dehazing, and Spectral Reconstruction, NTIRE-CVPR, 2018.
+154. Cynthia Rudin and S¸eyda Ertekin. Learning Customized and Optimized Lists of Rules with Mathematical Program-
+ming. Mathematical Programming C (Computation), Mathematical Programming Computation, Volume 10, Number
+4, pages 659-702, 2018.
+155. Elaine Angelino, Nicholas Larus-Stone, Daniel Alabi, Margo Seltzer, and Cynthia Rudin. Learning Certiﬁably Optimal
+Rule Lists for Categorical Data, Journal of Machine Learning Research, volume 18, no. 234, pages 1-78, 2018.
+156. Nicholas Larus-Stone, Elaine Angelino, Daniel Alabi, Margo Seltzer, Vassilios Kaxiras, Aditya Saligrama and Cynthia
+Rudin. Systems Optimizations for Learning Certiﬁably Optimal Rule Lists. Conference on Machine Learning
+and Systems (MLSys), 2018.
+157. Oscar Li, Hao Liu, Chaofan Chen, and Cynthia Rudin. Deep Learning for Case-based Reasoning through Proto-
+types: A Neural Network that Explains its Predictions. Association for the Advancement of Artiﬁcial Intelligence
+(AAAI), 2018.
+158. Chaofan Chen and Cynthia Rudin. An Optimization Approach to Learning Falling Rule Lists. Artiﬁcial Intelligence
+and Statistics (AISTATS), 2018.
+2017
+159. Elaine Angelino, Nicholas Larus-Stone, Daniel Alabi, Margo Seltzer, and Cynthia Rudin. Certiﬁably Optimal Rule Lists
+for Categorical Data, Knowledge Discovery in Databases (KDD - oral presentation), 2017.
+160. Berk Ustun, Lenard A. Adler, Cynthia Rudin, Stephen V. Faraone, Thomas J. Spencer, Patricia Berglund, Michael J.
+Gruber, Ronald C. Kessler. The World Health Organization Adult Attention-Deﬁcit/Hyperactivity Disorder
+Self-Report Screening Scale for DSM-5. JAMA Psychiatry, April 2017.
+161. Tong Wang, Cynthia Rudin, Finale Doshi, Yimin Liu, Erica Klampﬂ, and Perry MacNeille. Bayesian Rule Sets for
+Interpretable Classiﬁcation, with Application to Context-Aware Recommender Systems. Journal of Machine
+Learning Research (JMLR), volume 18, number 70, pages 1-37, 2017.
+162. Fulton Wang and Cynthia Rudin. Causal Falling Rule Lists, Fairness, Accountability, and Transparency (FATML), 2017
+(longer version on ArXiv).
+163. Hongyu Yang, Cynthia Rudin, and Margo Seltzer. Winner of Student Paper Competition sponsored by the Statistical
+Learning and Data Mining section (SLDM) of the American Statistical Association, 2016. Scalable Bayesian Rule
+Lists. International Conference on Machine Learning (ICML), 2017.
+164. Himabindu Lakkaraju and Cynthia Rudin. Finalist for 2017 INFORMS Data Mining Best Paper Competition. Learning
+Cost-Effective and Interpretable Treatment Regimes. Artiﬁcial Intelligence and Statistics (AISTATS), 2017.
+• Shorter versions accepted to workshops: NIPS Machine Learning for Healthcare (ML4HC), NIPS Workshop on
+Interpretable Machine Learning in Complex Systems, and NIPS Workshop on ML and the Law, NIPS 2016.
+2016
+165. Jiaming Zeng, Berk Ustun, and Cynthia Rudin. Winner of 2015 Undergraduate Statistics Research Project Competition
+(USRESP) sponsored by the American Statistical Association (ASA) and the Consortium for Advancement of Under-
+graduate Statistics Education (CAUSE). Interpretable Classiﬁcation Models for Recidivism Prediction. Journal
+of the Royal Statistical Society Series A, volume 180, issue 3, 2016.
+166. Tong Wang, Cynthia Rudin, Finale Doshi, Yimin Liu, Erica Klampﬂ, and Perry MacNeille. Bayesian Rule Sets for
+Interpretable Classiﬁcation. IEEE International Conference on Data Mining (ICDM), 2016.
+
+Cynthia Rudin
+13
+167. Ramin Moghaddass, Cynthia Rudin, and David Madigan. The Factorized Self-Controlled Case Series Method: An
+Approach for Estimating the Effects of Many Drugs on Many Outcomes. Journal of Machine Learning Research,
+17(185):1-24, 2016.
+168. Berk Ustun, M. Brandon Westover, Cynthia Rudin, and Matt T. Bianchi. Clinical Prediction Models for Sleep Apnea:
+The Importance of Medical History over Symptoms. Journal of Clinical Sleep Medicine, volume 12, number 2,
+2016.
+169. Vikas Garg, Cynthia Rudin, and Tommi Jaakola. CRAFT: ClusteR-speciﬁc Assorted Feature selecTion, Artiﬁcial
+Intelligence and Statistics (AISTATS), 2016.
+170. Benjamin Letham, Portia A. Letham, Cynthia Rudin, Edward P. Browne. Prediction Uncertainty and Optimal Experi-
+mental Design for Learning Dynamical Systems. Chaos, volume 26, number 6, 2016.
+171. Benjamin Letham, Lydia M. Letham and Cynthia Rudin. Bayesian Inference of Arrival Rate and Substitution Behavior
+from Sales Transaction Data with Stockouts. Knowledge Discovery in Databases (KDD), 2016
+172. Edward P. Browne, Benjamin Letham, and Cynthia Rudin. A Computational Model of Inhibition of HIV-1 by Interferon-
+Alpha. PLoS ONE, vol 11, no 3, pages 1–16, March, 2016.
+173. S¸eyda Ertekin and Cynthia Rudin. A Bayesian Approach to Learning Scoring Systems. Big Data, volume 3, number 4,
+2016.
+174. John Guckenheimer, Thomas Overbye (Co-chairs), and committee: Daniel Bienstock, Anjan Bose, Terry Boston, Jef-
+fery Dagle, Marija D. Ilic, Christopher K. Jones, Frank P. Kelly, Yannis G. Kevrekidis, Ralph D. Masiello, Juan C.
+Meza, Cynthia Rudin, Robert J. Thomas, and Margaret H. Wright. Analytic Research Foundations for the Next-
+Generation Electric Grid. The National Academies Press, 2016. (Consensus study report of the National Academies
+of Sciences Engineering, and Medicine)
+2015
+175. Fulton Wang and Cynthia Rudin. Winner of Best Student Paper Competition, Statistical Learning and Data Mining section
+(SLDM) of the American Statistical Association, 2015, also Finalist for INFORMS Data Mining Section Best Student
+Paper Award, 2015. Falling Rule Lists. Proceedings of the 18th International Conference on Artiﬁcial Intelligence
+and Statistics (AISTATS), 2015.
+176. Benjamin Letham, Cynthia Rudin, Tyler H. McCormick, and David Madigan. Winner of Data Mining Best Student Paper
+Competition, INFORMS 2013, also Winner of Student Paper Competition sponsored by the Statistical Learning and
+Data Mining section (SLDM) of the American Statistical Association, 2014. Building Interpretable Classiﬁers with
+Rules using Bayesian Analysis: Building a Better Stroke Prediction Model. Annals of Applied Statistics, volume
+9, number 3, pages 1350-1371, 2015.
+Shorter version:
+• Benjamin Letham, Cynthia Rudin, Tyler McCormick, and David Madigan. An Interpretable Model for Stroke
+Prediction Using Rules and Bayesian Analysis. Proceedings of 2014 KDD Workshop on Data Science for
+Social Good, 2014
+177. Tong Wang, Cynthia Rudin, Daniel Wagner and Rich Sevieri. Second place in INFORMS 2015 Doing Good with Good
+OR Paper Competition. Finding Patterns with a Rotten Core: Data Mining for Crime Series with Core Sets. Big
+Data. volume 3, issue 1, 2015. (Special issue on Data for Social Good)
+178. Ramin Moghaddass and Cynthia Rudin. The Latent State Hazard Model, with Application to Wind Turbine Reliabil-
+ity. Annals of Applied Statistics, volume 9, number 4, pages 1823–1863, 2015.
+179. S¸eyda Ertekin, Cynthia Rudin, and Tyler McCormick. Reactive Point Processes: A New Approach to Predicting Power
+Failures in Underground Electrical Systems. Annals of Applied Statistics, volume 9, No 1, pages 122–144, 2015.
+2014
+180. Theja Tulabandhula and Cynthia Rudin. Tire Changes, Fresh Air and Yellow Flags: Challenges in Predictive Analytics
+for Professional Racing. Big Data, vol 2 issue 2, pages 97-112, June 20, 2014.
+
+Cynthia Rudin
+14
+181. S¸eyda Ertekin, Cynthia Rudin and Haym Hirsh. Approximating the Crowd. Data Mining and Knowledge Discovery,
+volume 28 issue 5-6, pages 1189-1221, September 2014.
+• Shorter versions appeared at NIPS Workshop on Computational Social Science and the Wisdom of Crowds,
+2011, Proceedings of Collective Intelligence (CI) 2012, and Proceedings of the 2012 AAAI Fall Symposium on
+Machine Aggregation of Human Judgment, MAGG-2012.
+182. Been Kim, Cynthia Rudin, and Julie Shah. The Bayesian Case Model: A Generative Approach for Case-Based Rea-
+soning and Prototype Classiﬁcation. Neural Information Processing Systems (NIPS), 2014.
+183. Theja Tulabandhula, Cynthia Rudin. On Combining Machine Learning with Decision Making. Machine Learning
+(ECML-PKDD journal track), volume 93, Pages 33-64, 2014
+184. Siong Thye Goh and Cynthia Rudin. Box Drawings for Learning with Imbalanced Data. Proceedings of 20th ACM
+SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2014.
+185. Theja Tulabandhula and Cynthia Rudin. Generalization Bounds for Learning with Linear, Polygonal, Quadratic and
+Conic Side Knowledge. Machine Learning (ECML-PKDD journal track), December, 2014, pages 1-34.
+• Shorter version: Theja Tulabandhula, Cynthia Rudin. Generalization Bounds for Learning with Linear and
+Quadratic Side Knowledge. Proceedings of ISAIM 2014.
+186. Jonathan Huggins and Cynthia Rudin. A Statistical Learning Theory Framework for Supervised Pattern Discovery
+Proceedings of SIAM Conference on Data Mining (SDM) 2014.
+187. Been Kim and Cynthia Rudin. Learning About Meetings, Data Mining and Knowledge Discovery, (ECML-PKDD
+Journal track), volume 28 issue 5-6, pages 1134-1157, September 2014.
+2013
+188. Benjamin Letham, Cynthia Rudin and Katherine Heller. Growing a List. Data Mining and Knowledge Discovery (DAMI),
+ECML-PKDD journal track. volume 27, pages 372-395, 2013.
+189. Tong Wang, Cynthia Rudin, Daniel Wagner, Richard Sevieri. Learning to Detect Patterns of Crime, Proceedings of Eu-
+ropean Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-
+PKDD), 2013.
+• Ideas from this work were implemented by the NYPD by Alex Chohlas-Wood and E.S. Levine in their algorithm
+Patternizr, which operates live in New York City.
+190. Cynthia Rudin, Benjamin Letham, and David Madigan. Learning Theory Analysis for Association Rules and Sequen-
+tial Event Prediction. Journal of Machine Learning Research (JMLR), volume 14, pages 3385-3436, 2013.
+• Shorter version: Cynthia Rudin, Ben Letham, Ansaf Salleb-Aouissi, Eugene Kogan, and David Madigan. Se-
+quential Event Prediction with Association Rules, Proceedings of the 24th Annual Conference on Learning
+Theory (COLT), 2011.
+191. Benjamin Letham, Cynthia Rudin and David Madigan. Sequential Event Prediction. Machine Learning, volume 93,
+pages 357-380, 2013
+192. Theja Tulabandhula and Cynthia Rudin. Finalist, Data Mining Best Student Paper Competition, INFORMS 2012. Ma-
+chine Learning with Operational Costs. Journal of Machine Learning Research (JMLR), volume 14, pages 1989-
+2028, July 2013. Preliminary work is in the following conference paper.
+• Theja Tulabandhula and Cynthia Rudin. The Inﬂuence of Operational Costs on Estimation, Proceedings of
+the International Symposium on Artiﬁcial Intelligence and Mathematics (ISAIM), 2012.
+2012
+193. Tyler McCormick, Cynthia Rudin, and David Madigan. Hierarchical Models for Association Rule Mining: A New
+Approach for Adverse Event Prediction in Clinical Trials, Annals of Applied Statistics, volume 6, No. 2, pages
+652–668, 2012.
+
+Cynthia Rudin
+15
+194. Cynthia Rudin, David Waltz, Roger N. Anderson, Albert Boulanger, Ansaf Salleb-Aouissi, Maggie Chow, Haimonti Dutta,
+Philip Gross, Bert Huang, Steve Ierome, Delﬁne Isaac, Arthur Kressner, Rebecca J. Passonneau, Axinia Radeva, Leon
+Wu. Machine Learning for the New York City Power Grid, IEEE Transactions on Pattern Analysis and Machine
+Intelligence, Vol 34, No 2, February 2012. Spotlight Paper for the February 2012 Issue.
+195. Allison Chang, Cynthia Rudin, Mike Cavaretta, Robert Thomas and Gloria Chou. Reverse-Engineering Quality Ratings,
+Machine Learning: volume 88, issue 3, pages 369-398, 2012.
+2011
+196. Cynthia Rudin, Rebecca J. Passonneau, Axinia Radeva, Steve Ierome, and Delﬁna Isaac. 21st-Century Data Miners
+Meet 19th-Century Electrical Cables, IEEE Computer, volume 44 no. 6, pages 103-105, June 2011.
+(One of three articles featured on the cover of the magazine.)
+197. S¸eyda Ertekin and Cynthia Rudin. On Equivalence Relationships Between Classiﬁcation and Ranking Algorithms,
+Journal of Machine Learning Research, volume 12, pages 2905–2929, 2011.
+2010
+198. Cynthia Rudin, Rebecca J. Passonneau, Axinia Radeva, Haimonti Dutta, Steve Ierome, and Delﬁna Isaac. A Process for
+Predicting Manhole Events in Manhattan. Machine Learning, volume 80, pages 1–31, 2010.
+• Also oral presentation at ICML 2012
+The following conference papers are also related to my projects on grid reliability.
+• Rebecca J. Passonneau, Cynthia Rudin, Axinia Radeva, Ashish Tomar, Boyi Xie. Treatment Effect of Repairs
+to an Electrical Grid: Leveraging a Machine Learned Model of Structure Vulnerability, Proceedings of
+the KDD Applications in Sustainability (SustKDD) Workshop on Data Mining, 17th Annual ACM SIGKDD
+Conference on Knowledge Discovery and Data Mining, 2011.
+• Dingquan Wang, Rebecca Passonneau, Michael Collins and Cynthia Rudin. Modeling Weather Impact on
+a Secondary Electrical Grid, 4th International Conference on Sustainable Energy Information Technology
+(SEIT-2014), 2014.
+• Leon Wu, Timothy Ter¨av¨ainen, Gail Kaiser, Roger Anderson, Albert Boulanger, and Cynthia Rudin. Estimation
+of System Reliability Using a Semiparametric Model, Proceedings of IEEE EnergyTech, 2011.
+• Leon Wu, Gail Kaiser, Cynthia Rudin, and Roger Anderson. Data Quality Assurance and Performance Mea-
+surement of Data Mining for Preventive Maintenance of Power Grid, Proceedings of the KDD Workshop
+on Data Mining for Service and Maintenance (KDD4Service), 17th Annual ACM SIGKDD Conference on
+Knowledge Discovery and Data Mining, 2011.
+• Leon Wu, Gail Kaiser, Cynthia Rudin, David Waltz, Roger Anderson, Albert Boulanger, Ansaf Salleb-Aouissi,
+Haimonti Dutta, and Manoj Poolery. Evaluating Machine Learning for Improving Power Grid Reliability,
+Proceedings of the ICML 2011 workshop on Machine Learning for Global Challenges, International Conference
+on Machine Learning, 2011.
+• Axinia Radeva, Cynthia Rudin, Rebecca Passonneau and Delﬁna Isaac. Report Cards for Manholes, Pro-
+ceedings of the International Conference on Machine Learning and Applications (ICMLA), 2009. Best Poster
+Award.
+• Rebecca Passonneau, Cynthia Rudin, Axinia Radeva and Zhi An Liu. Reducing Noise in Labels and Fea-
+tures for a Real World Dataset: Application of NLP Corpus Annotation Methods, Proceedings of the 10th
+International Conference on Computational Linguistics and Intelligent Text Processing (CICLing), 2009.
+• Haimonti Dutta, Cynthia Rudin, Becky Passonneau, Fred Seibel, Nandini Bhardwaj, Axinia Radeva, Zhi An
+Liu, Steve Ierome, Delﬁna Isaac. Visualization of Manhole and Precursor-Type Events for the Manhattan
+Electrical Distribution System, Workshop on GeoVisualization of Dynamics, Movement and Change, 11th
+AGILE International Conference on Geographic Information Science, 2008.
+
+Cynthia Rudin
+16
+• Boyi Xie, Rebecca J. Passonneau, Haimonti Dutta, Jing-Yeu Miaw, Axinia Radeva, Ashish Tomar, Cynthia
+Rudin. Progressive Clustering with Learned Seeds: An Event Categorization System for Power Grid.
+24th International Conference on Software Engineering and Knowledge Engineering (SEKE 2012). Redwood
+City, CA. July 1-3, 2012.
+2009
+199. Cynthia Rudin. The P-Norm Push: A Simple Convex Ranking Algorithm that Concentrates at the Top of the List,
+Journal of Machine Learning Research, volume 10, pages 2233–2271, 2009.
+• Shorter version: Cynthia Rudin. Ranking with a P-Norm Push. Proceedings of the Nineteenth Annual Con-
+ference on Learning Theory (COLT), pages 589 - 604, 2006.
+An application of the P-Norm Push is described in this conference paper:
+• Heng Ji, Cynthia Rudin, and Ralph Grishman. Re-ranking Algorithms for Name Tagging. In Proc. Human
+Language Technology conference - North American chapter of the Association for Computational Linguistics
+annual meeting (HLT-NAACL) Workshop on Computationally Hard Problems and Joint Inference in Speech
+and Language Processing, 2006.
+200. Cynthia Rudin and Robert E. Schapire. Margin-Based Ranking and an Equivalence Between AdaBoost and Rank-
+Boost. Journal of Machine Learning Research, volume 10, pages 2193–2232, 2009.
+• Preliminary version: Cynthia Rudin, Corinna Cortes, Mehryar Mohri, and Robert E. Schapire. Margin Based
+Ranking Meets Boosting in the Middle. Proceedings of the Eighteenth Annual Conference on Learning The-
+ory (COLT), pages 63 - 78, 2005.
+2008 and before
+201. Cynthia Rudin, Robert E. Schapire and Ingrid Daubechies. Analysis of Boosting Algorithms Using the Smooth Margin
+Function. Annals of Statistics, volume 35, number 6, pages 2723-2768, 2007.
+Preliminary material:
+• Cynthia Rudin, Robert E. Schapire, and Ingrid Daubechies. (2007) Precise Statements of Convergence for
+AdaBoost and arc-gv. In Proc. AMS-IMS-SIAM Joint Summer Research Conference: Machine Learning,
+Statistics, and Discovery, pages 131-145, 2007.
+• Cynthia Rudin, Robert E. Schapire, and Ingrid Daubechies. Boosting Based on a Smooth Margin. Proceedings
+of the Seventeenth Annual Conference on Computational Learning Theory, (COLT), pages 502-517, 2004.
+• Cynthia Rudin, Ingrid Daubechies, and Robert E. Schapire. On the Dynamics of Boosting. Advances in Neural
+Information Processing Systems (NIPS) 16, 2003.
+202. Cynthia Rudin, Ingrid Daubechies, and Robert E. Schapire. The Dynamics of AdaBoost: Cyclic Behavior and Conver-
+gence of Margins. Journal of Machine Learning Research, 5 (Dec): 1557–1595, 2004.
+Preliminary material for this work appears partly within the NIPS paper below, and the open problem in COLT is
+from the JMLR paper:
+• Cynthia Rudin, Ingrid Daubechies, and Robert E. Schapire. On the Dynamics of Boosting. Advances in Neural
+Information Processing Systems (NIPS) 16, 2003.
+• Cynthia Rudin, Robert E. Schapire and Ingrid Daubechies. Does AdaBoost Always Cycle? JMLR: Workshop
+and Conference Proceedings, Published as a COLT Open problem, 2012.
+203. Ryan Roth, Owen Rambow, Nizar Habash, Mona Diab, and Cynthia Rudin. Arabic Morphological Tagging, Diacritiza-
+tion, and Lemmatization Using Lexeme Models and Feature Ranking, The 46th Annual Meeting of the Associa-
+tion for Computational Linguistics: Human Language Technologies (ACL/HLT), 2008.
+
+Cynthia Rudin
+17
+204. Cynthia Rudin and Brian Spencer. Equilibrium Ridge Arrays in Strained Solid Films. Journal of Applied Physics, vol
+86, pp 5530-5536, 1999.
+Non-Peer-Reviewed Publications
+205. Jiachang Liu and Cynthia Rudin. User-Guided Interpretable Models: Rashomon Effect, Interaction, and Computa-
+tion, Harvard Data Science Review (invited commentary), 2025.
+206. Ezra Miller, Cynthia Rudin and Ingrid Daubechies. Response to Letter to AMS Notices: Boycott collaboration with
+police, September issue, AMS Notices, 2020. We urge the mathematical community not to boycott interactions with
+police, but instead to work together to improve society.
+207. Matthew J Salganik, Lauren Maffeo and Cynthia Rudin. Prediction, Machine Learning, and Individual Lives: an
+Interview with Matthew Salganik. Harvard Data Science Review, 2020
+208. Sarah Desmarais, Brandon Garrett, and Cynthia Rudin. Risk Assessment Tools Are Not A Failed ‘Minority Report’.
+Perspectives, Law360, July 19, 2019, 5:50 PM EDT
+209. Cynthia Rudin and David Carlson. The Secrets of Machine Learning: Ten Things You Wish You Had Known Earlier
+to be More Effective at Data Analysis. INFORMS TutORial, 2019.
+210. Cynthia Rudin (with credit to Robin Smith). Algorithms and Justice: Scrapping the Black Box. The Crime Report,
+2018.
+211. Cynthia Rudin, David Dunson, Rafael Irizarry, Hongkai Ji, Eric Laber, Jeffrey Leek, Tyler McCormick, Sherri Rose,
+Chad Schafer, Mark van der Laan, Larry Wasserman, Lingzhou Xue. Discovery with Data: Leveraging Statis-
+tics with Computer Science to Transform Science and Society. American Statistical Association whitepaper,
+http://www.amstat.org/policy/pdfs/BigDataStatisticsJune2014.pdf, 2014.
+212. Cynthia Rudin and Kiri Wagstaff. Machine Learning for Science and Society, Machine Learning, (Introduction to the
+Special Issue on Machine Learning for Science and Society), volume 95, issue 1, April 2014, pp 1-9.
+213. Cynthia Rudin. Teaching “Prediction: Machine Learning and Statistics”, Proceedings of the ICML Workshop on
+Teaching ML, 2012.
+214. Peter Qian, Yilu Zhou, and Cynthia Rudin, Proceedings of the 6th INFORMS Workshop on Data Mining and Health
+Informatics (DM-HI), editors, 2011.
+Book
+Intuition for the Algorithms of Machine Learning, Multimedia textbook, including videos, in progress, 2022. Free and
+publicly available. Introduces interpretable ML as part of introductory graduate ML.
+https://users.cs.duke.edu/∼cynthia/teaching.html
+Grants
+SCH: Interpretable Machine Learning and Discovery in Medical Images, National Institute of Biomedical Imaging
+and Bioengineering (NIBIB) of the National Institutes of Health, PI (with multi-PI Joseph Lo), 08/01/2025-07/31/2029.
+Amount of Award: $1092470
+Data Science and Epidemiology to Improve Health of People with HIV, National Institute Of Allergy And Infectious
+Diseases (NAIAD) of the National Institutes of Health, PI Sonia Napravnik, UNC, 11/12/2024-10/31/2029. Amount of
+Subaward: $650,109
+Comparative Effectiveness of EEG Guided Anti-Seizure Treatment in Acute Brain Injury, NIH, PI Sahar Zafar, MGH,
+12/1/2023-11/30/2028. Amount of Subaward: $206,989
+Computer-Aided Triage of Body CT Scans with Deep Learning, National Cancer Institute, co-investigator with PI
+Joseph Lo, 08/16/2023-07/31/2027. Amount of Award: $2,299,749
+
+Cynthia Rudin
+18
+Machine Learning the Hidden Frontiers of Biological Function, Simons Foundation, Presidential Discretionary-Pivot
+Fellowship, awarded to Albert Keung, NC State, 2024. Amount of Subaward: $72,000
+DMREF/Collaborative Research: Accelerated Discovery of Sustainable Bioplastics: Automated, Tunable, Integrated
+Design, Processing and Modeling, NSF, co-PI. 10/01/2023-09/30/2027. Amount of Award: $790,000 (with Cate Brinson,
+Eleftheria Roumeli, Linda Schadler, and Kayla Sprenger).
+Novel Algorithm and Data Strategies to Detect and Predict Atrial Fibrillation for Poststroke Patients (NADSP), NIH
+(DHHS). co-PI, with PI Xiao Hu (Emory). 3/10/2023-2/29/2024. Amount of Subaward: $551,830
+Exploring the Whole Set of Sparse Explanations, DOE. PI. 09/01/2022-08/31/2024. Amount of Award: $400,000
+FW-HTF-R: Interpretable Machine Learning for Human-Machine Collaboration in High Stakes Decisions in Mam-
+mography, NSF. PI, with co-PI Joseph Lo. 09/01/2022-08/31/2026. Amount of Award: $1,800,000
+Patient-Focused Collaborative Hospital Repository Uniting Standards (CHoRUS) for Equitable AI, National Insti-
+tutes of Health, co-PI, with PI Eric Rosenthal and several other co-PIs. 09/01/2022 - 08/31/2026. Amount of Award:
+$5,880,300
+FAI: An Interpretable AI Framework for Care of Critically Ill Patients Involving Matching and Decision Trees, NSF
+& Amazon. PI, with co-PIs Alex Volfovsky and Sudeepa Roy. 07/01/2022-06/30/2025. Amount of Award: $1,000,000
+Center for Virtual Imaging Trials. NIH/NIBIB. Co-lead for Project 3, with PIs Ehsan Samei and Joseph Lo. 4/01/21-
+12/31/25. Technology Research and Development (TR&D) Project 3. Amount of Award: $6,371,435 (total) $2,620,393
+(Project 3).
+MedX: Interpretable Deep Learning Models for Better Clinician-AI Communication in Clinical Mammography,
+11/1/2021-10/31/2022. Internal Duke Award, with Joseph Lo, Amount of Award: $50,000
+A Machine Learning Framework for Understanding Impacts on the HIV Latent Reservoir Size, Including Drugs of
+Abuse, National Institute on Drug Abuse (NIDA), PI, with co-I’s David Murdoch, Nilu Goonetilleke and Nancie Archin.
+9/30/2021-9/30/2026. Amount of Award: $2,284,375
+Research on Explainable AI on Multiple Models, Fujitsu, PI, 07/16/2021-7/16/2024. Amount of Award: $272,307
+EAGER: Creating an Unsupervised Interpretable Representation of the World Through Concept Disentanglement,
+NSF, PI, 11/01/2021-10/31/2024. Amount of Award: $169, 345
+NSF Workshop on Seamless/Seamful Human-Technology Interaction, NSF, PI, 09/01/2021-08/31/2022. Amount of
+Award: $49, 777
+FAIR Data and Interpretable AI Framework for Architectured Metamaterials, DOE, co-PI, with PI Cate Brinson, and
+co-PI Chiara Daraio, 9/1/2020-8/31/2023. Amount of Award: $870, 580
+NRT-HDR Harnessing AI for Understanding & Designing Materials (aiM), NSF, co-PI, with PI Cate Brinson, co-PIs
+David Banks, Stafano Curtarolo, Johann Guilleminot, 09/01/2020-08/31/2025. Amount of Award: $2,252,971
+NSF-HDR TRIPODS: Innovations in Data Science, CCF-1934964 co-PI, with PI Sayan Mukherjee, co-PI’s Robert
+Calderbank, Rong Ge, and Jianfeng Liu, 10/1/2019-9/30/23. Amount of Award: $1.5 million
+Utilizing Key Past Experiences from Large Datasets to Make Better Prediction in Multi-Class Settings, co-PI with
+Ramin Moghaddass, Amazon AWS Machine Learning Research Awards program, 2018. Amount of Award: $20,000
+An Integrated Nonparametric Bayesian and Deep Neural Network Framework for Biologically-Inspired Lifelong
+Learning (co-PI, with PI Katherine Heller, and other co-PI’s Lawrence Carin, David Dunson, Nicolas Brunel, Tamara
+
+Cynthia Rudin
+19
+Broderick, Joshua Tenenbaum, Michael Jordan, Thomas Grifﬁths), DARPA, 2017-2020. Amount of Award: $4,388,119
+Collaborative Research Framework: Data: HDR: Nanocomposites to Metamaterials: A Knowledge Graph Frame-
+work, OAC-1835782 (co-PI, with PI Cate Brinson, and other co-PI’s Chiara Daraio, Linda Schadler, Deborah McGuinness,
+and Wei Chen), NSF, 11/1/2018-10/31/2023. Amount of Award: $2,590,810
+Lord Foundation “Duke’s Super Superresolution Team (Continued)” (Single PI) 2019-2020. Amount of Award: $24, 000
+Lord Foundation “Duke’s Super Superresolution Team” (Single PI) 2018-2019. Amount of Award: $32, 000
+Duke Energy Initiative “Enabling Better Energy Decisions Through Better Interpretable Causal Inference Methods for
+Personalized Treatment Effects” Duke University Energy Initiative Energy Research Seed Fund (ERSF). (PI, with co-PI’s
+Alex Volfovsky and Sudeepa Roy), 2018-2021. Amount of Award: $40, 500 Stage I, $40, 500 Stage II
+QuBBD: Collaborative Research: Matching Methods for Causal Inference: Big Data and Networks, 1R01EB025021-
+01, sponsored by DHHS, PHS, NIH, NIBI&B“ (co-Investigator, with PI Alexander Volfovsky, co-Investigators Sudeepa
+Roy and Allison Aiello). 2017-2020. Amount of Award: $849K($514K to Duke)
+Alfred P. Sloan Foundation “Interdisciplinary Energy Data Analytics Ph.D. Fellows Program,” (co-PI, with Brian Murray,
+William Pizer, and Kyle Bradbury). 2018-2020. Amount of Award: $225,000
+Laura and John Arnold Foundation “Interpretable Machine Learning for Pre-Trial Risk Analysis,” 2017-2020. (Single
+PI) Amount of Award: $87,507
+Duke Institute for Health Innovation “Pallialytics: Using analytics to inform a palliative care population health manage-
+ment intervention” (co-PI with Jonathan Fischer, Leslie Alabi, Eugenie Komives from Duke Medical). 2017-2018. Amount
+of award: $55,500
+2016 Adobe Digital Marketing Research Award, “Compute-intensive causal machine learning models for ﬁnding cus-
+tomer segments” (Single PI). 2016. Amount of Award: $50K
+MIT-Lincoln Labs “Adaptable, Interpretable, Machine Learning” (co-PI with Jonathan Su from MIT-LL), 2016-2019.
+Amount of Subaward: $542K
+Xerox Research “Causal Inference-related Research Threads in the Prediction Analysis Lab, continued” (co-PI with Theja
+Tulabandhula), 2016. Amount of Award: $30K
+DARPA “Foundations of Sequential Learning” (co-PI with Ron Parr and Kamesh Munagala), April 2016 - Jan 2017.
+Amount of Award: $242K
+Philips “Algorithms for Interpretable Risk-Scoring” (Single PI), July 2017-December 2017. Amount of Award: $122K
+Xerox Research “Causal Inference-related Research Threads in the Prediction Analysis Lab” (co-PI with Theja Tulaband-
+hula), 2015. Amount of Award: $30K
+Philips “Self-Learning Systems and User-Behavior Modeling” (Single PI), June 2015-May 2016. Amount of Award: $240K
+Army Research Ofﬁce “Uncertainty Quantiﬁcation for Unobserved Variables in Dynamical Systems and Optimal Experi-
+mental Design” (Single PI), Spring 2015. Amount of Award: $50K
+Big Data Seed Grant, MIT Big Data Initiative “Interpretable, Scalable and Causal Models from Machine Learning” (Sin-
+gle PI), Spring 2015. Amount of award: 1 semester RA
+Accenture and MIT Alliance in Business Analytics “Creating a Model of the Usual State of a Machine” (Single PI),
+March 20 2015 - March 20 2016. Amount of award: $100,000
+
+Cynthia Rudin
+20
+Wistron Corporation “Interpretable Predictive Models from Machine Learning” (Single PI), September 4, 2014 - August
+31, 2016.
+Amount of award $ 300,000
+Accenture and MIT Alliance in Business Analytics “Big Data Analysis for Plant and Commercial Optimization,” June
+15 2013 - June 14 2014. Amount of award: $ 100,000
+Ford Racing “Predictive Analytics for Racing” (Single PI),
+September 1 2012 - August 31 2013. Amount of award: $75,000
+September 1 2013 - December 31 2014. Amount of award: $75,000
+December 31 2014 - December 31 2015. Amount of award: $157,000
+Siemens Energy, CKI University Innovation Initiative. “CKI Proposal: Augmented Data-Driven Diagnosis using Phys-
+ical Models” (Single MIT PI with co-PIs at Siemens), June 1, 2013 - May 31, 2016
+Amount of award: $350,000
+Siemens Energy, CKI University Innovation Initiative. “CKI Proposal: Incorporating Prediction Analysis into XHQ”
+(Single MIT PI with co-PIs at Siemens), June 1 2013 - May 31 2015.
+Amount of award: 150,000 euro ≈$200,000
+Ford - MIT Alliance. “Develop advanced in-vehicle SYNC advertisement features to target drivers based on their context
+information, system interaction and past choices” (Single PI), July 1 2012 - August 31 2014.
+Amount of award: $298,000
+MIT Sloan Research Fund. “Predictive Models for Highly Imbalanced data,” (Single PI), Amount of award: $20,000
+Solomon Buchsbaum Research Fund. “A New Foundation for Statistical Decision-Making,” June 2 2011-present. (Single
+PI), Amount of award: $50,000
+NSF-CAREER IIS-1053407. “New Approaches for Ranking in Machine Learning,” September 1 2011 – August 31 2018.
+Amount of award: $480,000
+MIT Lincoln Labs. “A Knowledge Discovery Framework for Threat Identiﬁcation (Phase III)” (co-PI with Shirish Ranjit
+from MIT-LL) 7/1/2013-6/30/2014.
+Amount of award: $100,000
+MIT Lincoln Labs. “A Knowledge Discovery Framework for Threat Identiﬁcation (Phase II)” (co-PI with Shirish Ranjit
+from MIT-LL) 7/1/2012-6/30/2013.
+Amount of award: $100,000
+MIT Lincoln Labs. “A Knowledge Discovery Framework for Threat Identiﬁcation” (co-PI with Shirish Ranjit from MIT-
+LL and Regina Barzilay from MIT), 6/1/2011- 5/31/2012.
+Amount of award: $83,000
+MIT Intelligence Initiative.
+“Combining human and machine predictions using “boosting” algorithms” (co-PI with
+Thomas Malone and Patrick Winston) November 1 2010 - October 1 2011.
+Amount of award: 0.5 postdoctoral research fellowship
+MIT Energy Initiative (MITEI) Seed Fund Program. “A Novel Framework for Electrical Grid Maintenance” (Single PI)
+May 17 2010 - May 16 2012.
+Amount of award: $150,000
+Ford - MIT Alliance. “Achieving Top Quality Ratings with Minimal Cost” (Single PI) July 1 2010 - June 20 2011.
+Amount of award: $106,013

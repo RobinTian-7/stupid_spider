@@ -1,0 +1,1125 @@
+<html>
+	<head>
+	<title>Brighten Godfrey's Papers</title>
+<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+<div id="content" style="width:600px">
+<h1><a href="../">Brighten Godfrey</a>'s Papers</h1>
+<br>
+		<style type="text/css">
+			div.bibtexbtn {display:none; color:white; background:#800; float:right; cursor:pointer; padding-left:5px; padding-right:5px;}
+			div.bibtex {display:none; border:1px solid #800; width:400; margin-left:auto;}
+			textarea.bibtextext {width:100%; height:140px; font:10px monospace; background-color: #eee;}
+			:target { background-color:#ffc; border-color:#ff0; border-top-style:solid; border-bottom-style:solid; }
+		</style>
+		<script type="text/javascript">
+			function el(id) {return document.getElementById(id);}
+			function bibtexButtonClick(id) {
+				var x = document.getElementById(id + '-bibtex');
+				x.style.display = (x.style.display == 'block') ? 'none' : 'block';
+				}
+			function bibtexButtonOver(id) {
+				el(id + '-bibtexbtn').style.display = 'inline';
+				}
+			function bibtexButtonOut(id) {
+				if (el(id+'-bibtex').style.display != 'block') {
+					el(id + '-bibtexbtn').style.display = 'none';
+					}
+				}
+		</script>
+<h3>2026</h3>
+<ul>
+<li id="zhou26starfish" onMouseOver="bibtexButtonOver('zhou26starfish');" onMouseOut="bibtexButtonOut('zhou26starfish');"> <b>Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers</b> <div id='zhou26starfish-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('zhou26starfish');">BibTeX</div><br><div id='zhou26starfish-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{zhou26starfish,
+  author    = {Anchengcheng Zhou and Vipul Harsh and Sangeetha Abdu Jyothi and Maria Apostolaki and P. Brighten Godfrey},
+  title     = {Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers},
+  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {May},
+  year      = {2026},
+}
+</textarea></div>Anchengcheng Zhou, Vipul Harsh, Sangeetha Abdu Jyothi, Maria Apostolaki, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/nsdi26/">23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, May 2026. </li><br>
+
+<li id="lim26slate" onMouseOver="bibtexButtonOver('lim26slate');" onMouseOut="bibtexButtonOut('lim26slate');"> <b><a  href="lim26slate.pdf">SLATE: Service Layer Traffic Engineering</a></b> <div id='lim26slate-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('lim26slate');">BibTeX</div><br><div id='lim26slate-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{lim26slate,
+  author    = {Gangmuk Lim and Aditya Prerepa and P. Brighten Godfrey and Radhika Mittal},
+  title     = {SLATE: Service Layer Traffic Engineering},
+  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {May},
+  year      = {2026},
+}
+</textarea></div>Gangmuk Lim, Aditya Prerepa, P. Brighten Godfrey, and Radhika Mittal. <a class=quiet href="https://www.usenix.org/conference/nsdi26/">23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, May 2026. <ul><li>Lim and Prerepa are co-first authors</li></ul></li><br>
+
+<li id="zhou26titrate" onMouseOver="bibtexButtonOver('zhou26titrate');" onMouseOut="bibtexButtonOut('zhou26titrate');"> <b><a  href="zhou26titrate.pdf">Controlling Arbitrary Internet Queues with Titrate</a></b> <div id='zhou26titrate-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('zhou26titrate');">BibTeX</div><br><div id='zhou26titrate-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{zhou26titrate,
+  author    = {Anchengcheng Zhou and Joshua Lau and P. Brighten Godfrey and Maria Apostolaki},
+  title     = {Controlling Arbitrary Internet Queues with Titrate},
+  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {May},
+  year      = {2026},
+}
+</textarea></div>Anchengcheng Zhou, Joshua Lau, P. Brighten Godfrey, and Maria Apostolaki. <a class=quiet href="https://www.usenix.org/conference/nsdi26/">23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, May 2026. </li><br>
+
+</ul><h3>2025</h3>
+<ul>
+<li id="grewal25safetree" onMouseOver="bibtexButtonOver('grewal25safetree');" onMouseOut="bibtexButtonOut('grewal25safetree');"> <b><a  href="grewal25safetree.pdf">SafeTree: Expressive Tree Policies for Microservices</a></b> <div id='grewal25safetree-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('grewal25safetree');">BibTeX</div><br><div id='grewal25safetree-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{grewal25safetree,
+  author    = {Karuna Grewal and P. Brighten Godfrey and Justin Hsu},
+  title     = {SafeTree: Expressive Tree Policies for Microservices},
+  booktitle = {Object-oriented Programming, Systems, Languages, and Applications (OOPSLA)},
+  month     = {October},
+  year      = {2025},
+}
+</textarea></div>Karuna Grewal, P. Brighten Godfrey, and Justin Hsu. Object-oriented Programming, Systems, Languages, and Applications (OOPSLA), October 2025. </li><br>
+
+<li id="kamboj25petrinets" onMouseOver="bibtexButtonOver('kamboj25petrinets');" onMouseOut="bibtexButtonOut('kamboj25petrinets');"> <b><a  href="kamboj25petrinets.pdf">Leveraging Petri Nets for Workflow Anomaly Detection in Microservice Architectures</a></b> <div id='kamboj25petrinets-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('kamboj25petrinets');">BibTeX</div><br><div id='kamboj25petrinets-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{kamboj25petrinets,
+  author    = {Priyanka Kamboj and Cyrille Artho and Roberto Guanciale and Reyhaneh Jabbarvand and P. Brighten Godfrey},
+  title     = {Leveraging Petri Nets for Workflow Anomaly Detection in Microservice Architectures},
+  booktitle = {46th International Conference on Application and Theory of Petri Nets and Concurrency},
+  month     = {June},
+  year      = {2025},
+}
+</textarea></div>Priyanka Kamboj, Cyrille Artho, Roberto Guanciale, Reyhaneh Jabbarvand, and P. Brighten Godfrey. 46th International Conference on Application and Theory of Petri Nets and Concurrency, June 2025. </li><br>
+
+<li id="sentosa25cellreplay" onMouseOver="bibtexButtonOver('sentosa25cellreplay');" onMouseOut="bibtexButtonOut('sentosa25cellreplay');"> <b><a  href="sentosa25cellreplay.pdf">CellReplay: Towards accurate record-and-replay for cellular networks</a></b> <div id='sentosa25cellreplay-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('sentosa25cellreplay');">BibTeX</div><br><div id='sentosa25cellreplay-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{sentosa25cellreplay,
+  author    = {William Sentosa and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Haitham Hassanieh},
+  title     = {CellReplay: Towards accurate record-and-replay for cellular networks},
+  booktitle = {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2025},
+}
+</textarea></div>William Sentosa, Balakrishnan Chandrasekaran, P. Brighten Godfrey, and Haitham Hassanieh. <a class=quiet href="https://www.usenix.org/conference/nsdi25/">22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2025. <ul><li><b>Community Award</b></li><li><a href="https://github.com/williamsentosa95/cellreplay">Code and data</a></li></ul></li><br>
+
+<li id="gao25XRgo" onMouseOver="bibtexButtonOver('gao25XRgo');" onMouseOut="bibtexButtonOut('gao25XRgo');"> <b><a  href="gao25XRgo.pdf">XRgo: Design and Evaluation of Rendering Offload for Low-Power Extended Reality Devices</a></b> <div id='gao25XRgo-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('gao25XRgo');">BibTeX</div><br><div id='gao25XRgo-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{gao25XRgo,
+  author    = {Steven Gao and Jeffrey Liu and Qinjun Jiang and Finn Sinclair and William Sentosa and P. Brighten Godfrey and Sarita Adve},
+  title     = {XRgo: Design and Evaluation of Rendering Offload for Low-Power Extended Reality Devices},
+  booktitle = {16th ACM Multimedia Systems Conference},
+  month     = {April},
+  year      = {2025},
+}
+</textarea></div>Steven Gao, Jeffrey Liu, Qinjun Jiang, Finn Sinclair, William Sentosa, P. Brighten Godfrey, and Sarita Adve. 16th ACM Multimedia Systems Conference, April 2025. </li><br>
+
+<li id="jiang25RemoteVIO" onMouseOver="bibtexButtonOver('jiang25RemoteVIO');" onMouseOut="bibtexButtonOut('jiang25RemoteVIO');"> <b><a  href="jiang25RemoteVIO.pdf">RemoteVIO: Offloading Head Tracking in an End-to-End XR System</a></b> <div id='jiang25RemoteVIO-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jiang25RemoteVIO');">BibTeX</div><br><div id='jiang25RemoteVIO-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jiang25RemoteVIO,
+  author    = {Qinjun Jiang and Yihan Pang and William Sentosa and Steven Gao and Muhammad Huzaifa and Jeffrey Zhang and Javier Perez-Ramirez and Dibakar Das and David Gonzalez-Aguirre and P. Brighten Godfrey and Sarita Adve},
+  title     = {RemoteVIO: Offloading Head Tracking in an End-to-End XR System},
+  booktitle = {16th ACM Multimedia Systems Conference},
+  month     = {April},
+  year      = {2025},
+}
+</textarea></div>Qinjun Jiang, Yihan Pang, William Sentosa, Steven Gao, Muhammad Huzaifa, Jeffrey Zhang, Javier Perez-Ramirez, Dibakar Das, David Gonzalez-Aguirre, P. Brighten Godfrey, and Sarita Adve. 16th ACM Multimedia Systems Conference, April 2025. </li><br>
+
+<li id="vaddiraju25wtsn" onMouseOver="bibtexButtonOver('vaddiraju25wtsn');" onMouseOut="bibtexButtonOut('vaddiraju25wtsn');"> <b><a  href="vaddiraju25wtsn.pdf">Is WTSN the missing piece for low latency in general-purpose Wi-Fi?</a></b> <div id='vaddiraju25wtsn-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vaddiraju25wtsn');">BibTeX</div><br><div id='vaddiraju25wtsn-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vaddiraju25wtsn,
+  author    = {Milind Kumar Vaddiraju and William Sentosa and Qinjun Jiang and Sarita Adve and Dave Cavalcanti and Dibakar Das and P. Brighten Godfrey and Javier Perez-Ramirez and Deepak Vasisht},
+  title     = {Is WTSN the missing piece for low latency in general-purpose Wi-Fi?},
+  booktitle = {26th International Workshop on Mobile Computing Systems and Applications (HotMobile)},
+  month     = {February},
+  year      = {2025},
+}
+</textarea></div>Milind Kumar Vaddiraju, William Sentosa, Qinjun Jiang, Sarita Adve, Dave Cavalcanti, Dibakar Das, P. Brighten Godfrey, Javier Perez-Ramirez, and Deepak Vasisht. 26th International Workshop on Mobile Computing Systems and Applications (HotMobile), February 2025. </li><br>
+
+</ul><h3>2024</h3>
+<ul>
+<li id="lim24slate" onMouseOver="bibtexButtonOver('lim24slate');" onMouseOut="bibtexButtonOut('lim24slate');"> <b><a  href="lim24slate.pdf">Opportunities and Challenges in Service Layer Traffic Engineering</a></b> <div id='lim24slate-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('lim24slate');">BibTeX</div><br><div id='lim24slate-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{lim24slate,
+  author    = {Gangmuk Lim and Aditya Prerepa and P. Brighten Godfrey and Radhika Mittal},
+  title     = {Opportunities and Challenges in Service Layer Traffic Engineering},
+  booktitle = {Twenty-third ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2024},
+}
+</textarea></div>Gangmuk Lim, Aditya Prerepa, P. Brighten Godfrey, and Radhika Mittal. Twenty-third ACM Workshop on Hot Topics in Networks (HotNets), November 2024. <ul><li>Lim and Prerepa are co-first author</li><li><a href="https://www.youtube.com/watch?v=iBQaaGBQVMA">EnvoyCon 2023 talk</a></li></ul></li><br>
+
+<li id="bothra24archie" onMouseOver="bibtexButtonOver('bothra24archie');" onMouseOut="bibtexButtonOut('bothra24archie');"> <b><a  href="bothra24archie.pdf">Lightweight Automated Reasoning for Network Architectures</a></b> <div id='bothra24archie-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('bothra24archie');">BibTeX</div><br><div id='bothra24archie-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{bothra24archie,
+  author    = {Rahul Bothra and Venkat Arun and P. Brighten Godfrey and Akshay Narayan and Ahmed Saeed},
+  title     = {Lightweight Automated Reasoning for Network Architectures},
+  booktitle = {Twenty-third ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2024},
+}
+</textarea></div>Rahul Bothra, Venkat Arun, P. Brighten Godfrey, Akshay Narayan, and Ahmed Saeed. Twenty-third ACM Workshop on Hot Topics in Networks (HotNets), November 2024. </li><br>
+
+<li id="ashok24traceweaver" onMouseOver="bibtexButtonOver('ashok24traceweaver');" onMouseOut="bibtexButtonOut('ashok24traceweaver');"> <b><a  href="ashok24traceweaver.pdf">TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification</a></b> <div id='ashok24traceweaver-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ashok24traceweaver');">BibTeX</div><br><div id='ashok24traceweaver-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ashok24traceweaver,
+  author    = {Sachin Ashok and Vipul Harsh and P. Brighten Godfrey and Radhika Mittal and Srinivasan Parthasarathy and Larisa Shwartz},
+  title     = {TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2024},
+}
+</textarea></div>Sachin Ashok, Vipul Harsh, P. Brighten Godfrey, Radhika Mittal, Srinivasan Parthasarathy, and Larisa Shwartz. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2024/">ACM SIGCOMM</a>, August 2024. <ul><li><a href="https://www.youtube.com/watch?v=aQnrwPMURwA">SIGCOMM 2024 talk</a></li><li><a href="https://youtu.be/xSoF5XRx8l8">KubeCon 2022 talk</a></li></ul></li><br>
+
+<li id="liu24kivi" onMouseOver="bibtexButtonOver('liu24kivi');" onMouseOut="bibtexButtonOut('liu24kivi');"> <b><a  href="liu24kivi.pdf">Kivi: Verifying Cluster Management Systems</a></b> <div id='liu24kivi-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('liu24kivi');">BibTeX</div><br><div id='liu24kivi-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{liu24kivi,
+  author    = {Bingzhe Liu and Gangmuk Lim and Ryan Beckett and P. Brighten Godfrey},
+  title     = {Kivi: Verifying Cluster Management Systems},
+  booktitle = {USENIX ATC},
+  month     = {July},
+  year      = {2024},
+}
+</textarea></div>Bingzhe Liu, Gangmuk Lim, Ryan Beckett, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/atc24">USENIX ATC</a>, July 2024. <ul><li><a href="https://www.youtube.com/watch?v=WxSGRkOtVV4">Talk video</a></li></ul></li><br>
+
+<li id="liu24capa" onMouseOver="bibtexButtonOver('liu24capa');" onMouseOut="bibtexButtonOut('liu24capa');"> <b><a  href="liu24capa.pdf">CAPA: An Architecture For Operating Cluster Networks With High Availability</a></b> <div id='liu24capa-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('liu24capa');">BibTeX</div><br><div id='liu24capa-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{liu24capa,
+  author    = {Bingzhe Liu and Colin Scott and Mukarram Tariq and Andrew Ferguson and Phillipa Gill and Richard Alimi and Omid Alipourfard and Deepak Arulkannan and Virginia Jean Beauregard and Patrick Conner and P. Brighten Godfrey and Xander Lin and Joon Ong and Mayur Patel and Amr Sabaa and Arjun Singh and Alex Smirnov and Manish Verma and Prerepa V Viswanadham and Amin Vahdat},
+  title     = {CAPA: An Architecture For Operating Cluster Networks With High Availability},
+  booktitle = {21st USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2024},
+}
+</textarea></div>Bingzhe Liu, Colin Scott, Mukarram Tariq, Andrew Ferguson, Phillipa Gill, Richard Alimi, Omid Alipourfard, Deepak Arulkannan, Virginia Jean Beauregard, Patrick Conner, P. Brighten Godfrey, Xander Lin, Joon Ong, Mayur Patel, Amr Sabaa, Arjun Singh, Alex Smirnov, Manish Verma, Prerepa V Viswanadham, and Amin Vahdat. <a class=quiet href="https://www.usenix.org/conference/nsdi24/">21st USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2024. </li><br>
+
+</ul><h3>2023</h3>
+<ul>
+<li id="saxena23foundation" onMouseOver="bibtexButtonOver('saxena23foundation');" onMouseOut="bibtexButtonOut('saxena23foundation');"> <b><a  href="https://arxiv.org/abs/2312.07813">On a Foundation Model for Operating Systems</a></b> <div id='saxena23foundation-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('saxena23foundation');">BibTeX</div><br><div id='saxena23foundation-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{saxena23foundation,
+  author    = {Divyanshu Saxena and Nihal Sharma and Donghyun Kim and Rohit Dwivedula and Jiayi Chen and Chenxi Yang and Sriram Ravula and Zichao Hu and Aditya Akella and Sebastian Angel and Joydeep Biswas and Swarat Chaudhuri and Isil Dillig and Alex Dimakis and P. Brighten Godfrey and Daehyeok Kim and Christopher J. Rossbach and Gang Wang},
+  title     = {On a Foundation Model for Operating Systems},
+  booktitle = {arXiv:2312.07813},
+  month     = {December},
+  year      = {2023},
+}
+</textarea></div>Divyanshu Saxena, Nihal Sharma, Donghyun Kim, Rohit Dwivedula, Jiayi Chen, Chenxi Yang, Sriram Ravula, Zichao Hu, Aditya Akella, Sebastian Angel, Joydeep Biswas, Swarat Chaudhuri, Isil Dillig, Alex Dimakis, P. Brighten Godfrey, Daehyeok Kim, Christopher J. Rossbach, and Gang Wang. <a class=quiet href="https://arxiv.org/abs/2312.07813">arXiv:2312.07813</a>, December 2023. </li><br>
+
+<li id="harsh23flock" onMouseOver="bibtexButtonOver('harsh23flock');" onMouseOut="bibtexButtonOut('harsh23flock');"> <b><a  href="harsh23flock.pdf">Flock: Accurate network fault localization at scale</a></b> <div id='harsh23flock-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('harsh23flock');">BibTeX</div><br><div id='harsh23flock-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{harsh23flock,
+  author    = {Vipul Harsh and Tong Meng and Kapil Agrawal and P. Brighten Godfrey},
+  title     = {Flock: Accurate network fault localization at scale},
+  booktitle = {International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2023},
+}
+</textarea></div>Vipul Harsh, Tong Meng, Kapil Agrawal, and P. Brighten Godfrey. International Conference on emerging Networking EXperiments and Technologies (CoNEXT), December 2023. </li><br>
+
+<li id="grewal23microservice-policies" onMouseOver="bibtexButtonOver('grewal23microservice-policies');" onMouseOut="bibtexButtonOut('grewal23microservice-policies');"> <b><a  href="grewal23microservice-policies.pdf">Expressive Policies For Microservice Networks</a></b> <div id='grewal23microservice-policies-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('grewal23microservice-policies');">BibTeX</div><br><div id='grewal23microservice-policies-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{grewal23microservice-policies,
+  author    = {Karuna Grewal and P. Brighten Godfrey and Justin Hsu},
+  title     = {Expressive Policies For Microservice Networks},
+  booktitle = {Twenty-second ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2023},
+}
+</textarea></div>Karuna Grewal, P. Brighten Godfrey, and Justin Hsu. Twenty-second ACM Workshop on Hot Topics in Networks (HotNets), November 2023. </li><br>
+
+<li id="touseef23hvc" onMouseOver="bibtexButtonOver('touseef23hvc');" onMouseOut="bibtexButtonOut('touseef23hvc');"> <b><a  href="touseef23hvc.pdf">Boosting Application Performance using Heterogeneous Virtual Channels: Challenges and Opportunities</a></b> <div id='touseef23hvc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('touseef23hvc');">BibTeX</div><br><div id='touseef23hvc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{touseef23hvc,
+  author    = {Talal Touseef and William Sentosa and Milind Kumar Vaddiraju and Debopam Bhattacherjee and Bala Chandrasekaran and P. Brighten Godfrey and Shubham Tiwari},
+  title     = {Boosting Application Performance using Heterogeneous Virtual Channels: Challenges and Opportunities},
+  booktitle = {Twenty-second ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2023},
+}
+</textarea></div>Talal Touseef, William Sentosa, Milind Kumar Vaddiraju, Debopam Bhattacherjee, Bala Chandrasekaran, P. Brighten Godfrey, and Shubham Tiwari. Twenty-second ACM Workshop on Hot Topics in Networks (HotNets), November 2023. </li><br>
+
+<li id="harsh23murphy" onMouseOver="bibtexButtonOver('harsh23murphy');" onMouseOut="bibtexButtonOut('harsh23murphy');"> <b><a  href="harsh23murphy.pdf">Murphy: Performance Diagnosis of Distributed Cloud Applications</a></b> <div id='harsh23murphy-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('harsh23murphy');">BibTeX</div><br><div id='harsh23murphy-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{harsh23murphy,
+  author    = {Vipul Harsh and Wenxuan Zhou and Sachin Ashok and Radhika Niranjan Mysore and P. Brighten Godfrey and Sujata Banerjee},
+  title     = {Murphy: Performance Diagnosis of Distributed Cloud Applications},
+  booktitle = {ACM SIGCOMM},
+  month     = {September},
+  year      = {2023},
+}
+</textarea></div>Vipul Harsh, Wenxuan Zhou, Sachin Ashok, Radhika Niranjan Mysore, P. Brighten Godfrey, and Sujata Banerjee. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2023/">ACM SIGCOMM</a>, September 2023. </li><br>
+
+<li id="sentosa23dchannel" onMouseOver="bibtexButtonOver('sentosa23dchannel');" onMouseOut="bibtexButtonOut('sentosa23dchannel');"> <b><a  href="sentosa23dchannel.pdf">DChannel: Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels</a></b> <div id='sentosa23dchannel-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('sentosa23dchannel');">BibTeX</div><br><div id='sentosa23dchannel-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{sentosa23dchannel,
+  author    = {William Sentosa and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Haitham Hassanieh and Bruce Maggs},
+  title     = {DChannel: Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels},
+  booktitle = {20th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2023},
+}
+</textarea></div>William Sentosa, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Haitham Hassanieh, and Bruce Maggs. <a class=quiet href="https://www.usenix.org/conference/nsdi23/">20th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2023. </li><br>
+
+</ul><h3>2022</h3>
+<ul>
+<li id="aditi22catan" onMouseOver="bibtexButtonOver('aditi22catan');" onMouseOut="bibtexButtonOut('aditi22catan');"> <b><a  href="aditi22catan.pdf">On-Device CPU Scheduling for Robot Systems</a></b> <div id='aditi22catan-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('aditi22catan');">BibTeX</div><br><div id='aditi22catan-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{aditi22catan,
+  author    = {Aditi Partap and Samuel Grayson and Muhammad Huzaifa and Sarita Adve and P. Brighten Godfrey and Saurabh Gupta and Kris Hauser and Radhika Mittal},
+  title     = {On-Device CPU Scheduling for Robot Systems},
+  booktitle = {2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  month     = {October},
+  year      = {2022},
+}
+</textarea></div>Aditi Partap, Samuel Grayson, Muhammad Huzaifa, Sarita Adve, P. Brighten Godfrey, Saurabh Gupta, Kris Hauser, and Radhika Mittal. <a class=quiet href="https://iros2022.org">2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>, October 2022. </li><br>
+
+<li id="cisp" onMouseOver="bibtexButtonOver('cisp');" onMouseOut="bibtexButtonOut('cisp');"> <b><a  href="bhattacherjee22cisp.pdf">cISP: A Speed-of-Light Internet Service Provider</a></b> <div id='cisp-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('cisp');">BibTeX</div><br><div id='cisp-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{cisp,
+  author    = {Debopam Bhattacherjee and Waqar Aqeel and Sangeetha Abdu Jyothi and Ilker Nadi Bozkurt and William Sentosa and Muhammad Tirmazi and Anthony Aguirre and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Gregory Laughlin and Bruce Maggs and Ankit Singla},
+  title     = {cISP: A Speed-of-Light Internet Service Provider},
+  booktitle = {19th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2022},
+}
+</textarea></div>Debopam Bhattacherjee, Waqar Aqeel, Sangeetha Abdu Jyothi, Ilker Nadi Bozkurt, William Sentosa, Muhammad Tirmazi, Anthony Aguirre, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Gregory Laughlin, Bruce Maggs, and Ankit Singla. <a class=quiet href="https://www.usenix.org/conference/nsdi22/">19th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2022. </li><br>
+
+</ul><h3>2021</h3>
+<ul>
+<li id="ashok21servicemeshes" onMouseOver="bibtexButtonOver('ashok21servicemeshes');" onMouseOut="bibtexButtonOut('ashok21servicemeshes');"> <b><a  href="ashok21servicemeshes.pdf">Leveraging Service Meshes as a New Network Layer</a></b> <div id='ashok21servicemeshes-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ashok21servicemeshes');">BibTeX</div><br><div id='ashok21servicemeshes-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ashok21servicemeshes,
+  author    = {Sachin Ashok and P. Brighten Godfrey and Radhika Mittal},
+  title     = {Leveraging Service Meshes as a New Network Layer},
+  booktitle = {Twentieth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2021},
+}
+</textarea></div>Sachin Ashok, P. Brighten Godfrey, and Radhika Mittal. Twentieth ACM Workshop on Hot Topics in Networks (HotNets), November 2021. <ul><li><a href="https://www.youtube.com/watch?v=ajkQNjXP5Zs">10-minute talk video</a></li></ul></li><br>
+
+<li id="liu21automation" onMouseOver="bibtexButtonOver('liu21automation');" onMouseOut="bibtexButtonOut('liu21automation');"> <b><a  href="liu21automation.pdf">Practical Automation for Management Planes of Service Provider Infrastructure</a></b> <div id='liu21automation-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('liu21automation');">BibTeX</div><br><div id='liu21automation-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{liu21automation,
+  author    = {Bingzhe Liu and Kuan-Yen Chou and Pramod Jamkhedkar and Bilal Anwer and Rakesh Sinha and Kostas Oikonomou and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Practical Automation for Management Planes of Service Provider Infrastructure},
+  booktitle = {ACM SIGCOMM FlexNets Workshop},
+  month     = {August},
+  year      = {2021},
+}
+</textarea></div>Bingzhe Liu, Kuan-Yen Chou, Pramod Jamkhedkar, Bilal Anwer, Rakesh Sinha, Kostas Oikonomou, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="https://conferences.sigcomm.org/sigcomm/2021/workshop-flexnets.html">ACM SIGCOMM FlexNets Workshop</a>, August 2021. </li><br>
+
+<li id="meng21scavenger" onMouseOver="bibtexButtonOver('meng21scavenger');" onMouseOut="bibtexButtonOut('meng21scavenger');"> <b><a  href="meng21scavenger.pdf">Toward Greater Scavenger Congestion Control Deployment: Implementations and Interfaces</a></b> <div id='meng21scavenger-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('meng21scavenger');">BibTeX</div><br><div id='meng21scavenger-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{meng21scavenger,
+  author    = {Tong Meng and Christopher Cai and P. Brighten Godfrey and Michael Schapira},
+  title     = {Toward Greater Scavenger Congestion Control Deployment: Implementations and Interfaces},
+  booktitle = {ACM/IRTF Applied Networking Research Workshop (ANRW)},
+  month     = {July},
+  year      = {2021},
+}
+</textarea></div>Tong Meng, Christopher Cai, P. Brighten Godfrey, and Michael Schapira. <a class=quiet href="https://irtf.org/anrw/2021/">ACM/IRTF Applied Networking Research Workshop (ANRW)</a>, July 2021. <ul><li>Talk video available at the <a href="https://irtf.org/anrw/2021/program.html">workshop site</a></li></ul></li><br>
+
+<li id="sentosa21parallelChannels" onMouseOver="bibtexButtonOver('sentosa21parallelChannels');" onMouseOut="bibtexButtonOut('sentosa21parallelChannels');"> <b><a  href="sentosa21parallelChannels.pdf">Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels</a></b> <div id='sentosa21parallelChannels-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('sentosa21parallelChannels');">BibTeX</div><br><div id='sentosa21parallelChannels-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{sentosa21parallelChannels,
+  author    = {William Sentosa and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Haitham Hassanieh and Bruce Maggs and Ankit Singla},
+  title     = {Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels},
+  booktitle = {22nd International Workshop on Mobile Computing Systems and Applications (HotMobile)},
+  month     = {February},
+  year      = {2021},
+}
+</textarea></div>William Sentosa, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Haitham Hassanieh, Bruce Maggs, and Ankit Singla. <a class=quiet href="http://www.hotmobile.org/2021/">22nd International Workshop on Mobile Computing Systems and Applications (HotMobile)</a>, February 2021. <ul><li><a href="https://www.youtube.com/watch?v=HifNZjmK2eM">Talk video</a></li></ul></li><br>
+
+</ul><h3>2020</h3>
+<ul>
+<li id="gilad20mpcc" onMouseOver="bibtexButtonOver('gilad20mpcc');" onMouseOut="bibtexButtonOut('gilad20mpcc');"> <b><a  href="gilad20mpcc.pdf">Online Learning Multipath Transport</a></b> <div id='gilad20mpcc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('gilad20mpcc');">BibTeX</div><br><div id='gilad20mpcc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{gilad20mpcc,
+  author    = {Tomer Gilad and Neta Rozen Schiff and P. Brighten Godfrey and Costin Raiciu and Michael Schapira},
+  title     = {Online Learning Multipath Transport},
+  booktitle = {International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2020},
+}
+</textarea></div>Tomer Gilad, Neta Rozen Schiff, P. Brighten Godfrey, Costin Raiciu, and Michael Schapira. International Conference on emerging Networking EXperiments and Technologies (CoNEXT), December 2020. </li><br>
+
+<li id="harsh20spineless" onMouseOver="bibtexButtonOver('harsh20spineless');" onMouseOut="bibtexButtonOut('harsh20spineless');"> <b><a  href="harsh20spineless.pdf">Spineless Data Centers</a></b> <div id='harsh20spineless-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('harsh20spineless');">BibTeX</div><br><div id='harsh20spineless-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{harsh20spineless,
+  author    = {Vipul Harsh and Sangeetha Abdu Jyothi and P. Brighten Godfrey},
+  title     = {Spineless Data Centers},
+  booktitle = {Nineteenth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2020},
+}
+</textarea></div>Vipul Harsh, Sangeetha Abdu Jyothi, and P. Brighten Godfrey. Nineteenth ACM Workshop on Hot Topics in Networks (HotNets), November 2020. </li><br>
+
+<li id="liu-kheradmand20selfdriving" onMouseOver="bibtexButtonOver('liu-kheradmand20selfdriving');" onMouseOut="bibtexButtonOut('liu-kheradmand20selfdriving');"> <b><a  href="liu-kheradmand20selfdriving.pdf">Towards Verified Self-Driving Infrastructure</a></b> <div id='liu-kheradmand20selfdriving-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('liu-kheradmand20selfdriving');">BibTeX</div><br><div id='liu-kheradmand20selfdriving-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{liu-kheradmand20selfdriving,
+  author    = {Bingzhe Liu and Ali Kheradmand and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Towards Verified Self-Driving Infrastructure},
+  booktitle = {Nineteenth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2020},
+}
+</textarea></div>Bingzhe Liu, Ali Kheradmand, Matthew Caesar, and P. Brighten Godfrey. Nineteenth ACM Workshop on Hot Topics in Networks (HotNets), November 2020. <ul><li>The first two authors contributed equally.</li></ul></li><br>
+
+<li id="meng20pcc-proteus" onMouseOver="bibtexButtonOver('meng20pcc-proteus');" onMouseOut="bibtexButtonOut('meng20pcc-proteus');"> <b><a  href="meng20pcc-proteus.pdf">Proteus: Scavenger Transport And Beyond</a></b> <div id='meng20pcc-proteus-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('meng20pcc-proteus');">BibTeX</div><br><div id='meng20pcc-proteus-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{meng20pcc-proteus,
+  author    = {Tong Meng and Neta Rozen Schiff and P. Brighten Godfrey and Michael Schapira},
+  title     = {Proteus: Scavenger Transport And Beyond},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2020},
+}
+</textarea></div>Tong Meng, Neta Rozen Schiff, P. Brighten Godfrey, and Michael Schapira. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2020/">ACM SIGCOMM</a>, August 2020. </li><br>
+
+<li id="jyothi20cadentflow" onMouseOver="bibtexButtonOver('jyothi20cadentflow');" onMouseOut="bibtexButtonOut('jyothi20cadentflow');"> <b><a  href="jyothi20cadentflow.pdf">Towards An Application Objective-Aware Network Interface</a></b> <div id='jyothi20cadentflow-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jyothi20cadentflow');">BibTeX</div><br><div id='jyothi20cadentflow-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jyothi20cadentflow,
+  author    = {Sangeetha Abdu Jyothi and Sayed Hadi Hashemi and Roy H. Campbell and P. Brighten Godfrey},
+  title     = {Towards An Application Objective-Aware Network Interface},
+  booktitle = {12th USENIX Workshop on Hot Topics in Cloud Computing},
+  month     = {July},
+  year      = {2020},
+}
+</textarea></div>Sangeetha Abdu Jyothi, Sayed Hadi Hashemi, Roy H. Campbell, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/hotcloud20">12th USENIX Workshop on Hot Topics in Cloud Computing</a>, July 2020. </li><br>
+
+<li id="aqeel20header" onMouseOver="bibtexButtonOver('aqeel20header');" onMouseOut="bibtexButtonOut('aqeel20header');"> <b><a  href="aqeel20headerbidding.pdf">Untangling Header Bidding Lore</a></b> <div id='aqeel20header-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('aqeel20header');">BibTeX</div><br><div id='aqeel20header-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{aqeel20header,
+  author    = {Waqar Aqeel and Debopam Bhattacherjee and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Gregory Laughlin and Bruce Maggs and Ankit Singla},
+  title     = {Untangling Header Bidding Lore},
+  booktitle = {Passive and Active Measurement Conference (PAM)},
+  month     = {March},
+  year      = {2020},
+}
+</textarea></div>Waqar Aqeel, Debopam Bhattacherjee, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Gregory Laughlin, Bruce Maggs, and Ankit Singla. <a class=quiet href="https://pam2020.cs.uoregon.edu/">Passive and Active Measurement Conference (PAM)</a>, March 2020. <ul><li><b>Best Dataset Award</b></li><li><a href="https://myadprice.github.io/#measurements">Dataset</a></li></ul></li><br>
+
+<li id="prabhu20plankton" onMouseOver="bibtexButtonOver('prabhu20plankton');" onMouseOut="bibtexButtonOut('prabhu20plankton');"> <b><a  href="prabhu20plankton.pdf">Plankton: Scalable network configuration verification through model checking</a></b> <div id='prabhu20plankton-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('prabhu20plankton');">BibTeX</div><br><div id='prabhu20plankton-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{prabhu20plankton,
+  author    = {Santhosh Prabhu and Kuan Yen Chou and Ali Kheradmand and P. Brighten Godfrey and Matthew Caesar},
+  title     = {Plankton: Scalable network configuration verification through model checking},
+  booktitle = {17th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {February},
+  year      = {2020},
+}
+</textarea></div>Santhosh Prabhu, Kuan Yen Chou, Ali Kheradmand, P. Brighten Godfrey, and Matthew Caesar. <a class=quiet href="https://www.usenix.org/conference/nsdi20/">17th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, February 2020. </li><br>
+
+</ul><h3>2019</h3>
+<ul>
+<li id="gilad19robustifying" onMouseOver="bibtexButtonOver('gilad19robustifying');" onMouseOut="bibtexButtonOut('gilad19robustifying');"> <b><a  href="gilad19robustifying.pdf">Robustifying Network Protocols with Adversarial Examples</a></b> <div id='gilad19robustifying-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('gilad19robustifying');">BibTeX</div><br><div id='gilad19robustifying-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{gilad19robustifying,
+  author    = {Tomer Gilad and Nathan H. Jay and Michael Shnaiderman and P. Brighten Godfrey and Michael Schapira},
+  title     = {Robustifying Network Protocols with Adversarial Examples},
+  booktitle = {Eighteenth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2019},
+}
+</textarea></div>Tomer Gilad, Nathan H. Jay, Michael Shnaiderman, P. Brighten Godfrey, and Michael Schapira. Eighteenth ACM Workshop on Hot Topics in Networks (HotNets), November 2019. </li><br>
+
+<li id="jay19aurora" onMouseOver="bibtexButtonOver('jay19aurora');" onMouseOut="bibtexButtonOut('jay19aurora');"> <b><a  href="jay19aurora.pdf">A Deep Reinforcement Learning Perspective on Internet Congestion Control</a></b> <div id='jay19aurora-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jay19aurora');">BibTeX</div><br><div id='jay19aurora-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jay19aurora,
+  author    = {Nathan Jay and Noga H. Rotman and P. Brighten Godfrey and Michael Schapira and Aviv Tamar},
+  title     = {A Deep Reinforcement Learning Perspective on Internet Congestion Control},
+  booktitle = {Thirty-sixth International Conference on Machine Learning},
+  month     = {June},
+  year      = {2019},
+}
+</textarea></div>Nathan Jay, Noga H. Rotman, P. Brighten Godfrey, Michael Schapira, and Aviv Tamar. <a class=quiet href="https://icml.cc/Conferences/2019">Thirty-sixth International Conference on Machine Learning</a>, June 2019. </li><br>
+
+</ul><h3>2018</h3>
+<ul>
+<li id="bhattacherjee18space" onMouseOver="bibtexButtonOver('bhattacherjee18space');" onMouseOut="bibtexButtonOut('bhattacherjee18space');"> <b><a  href="hotnets18-satnet.pdf">Gearing up for the 21st century space race</a></b> <div id='bhattacherjee18space-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('bhattacherjee18space');">BibTeX</div><br><div id='bhattacherjee18space-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{bhattacherjee18space,
+  author    = {Debopam Bhattacherjee and Waqar Aqeel and Ilker Nadi Bozkurt and Anthony Aguirre and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Gregory P. Laughlin and Bruce M. Maggs and Ankit Singla},
+  title     = {Gearing up for the 21st century space race},
+  booktitle = {Seventeeth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2018},
+}
+</textarea></div>Debopam Bhattacherjee, Waqar Aqeel, Ilker Nadi Bozkurt, Anthony Aguirre, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Gregory P. Laughlin, Bruce M. Maggs, and Ankit Singla. Seventeeth ACM Workshop on Hot Topics in Networks (HotNets), November 2018. </li><br>
+
+<li id="bhattacherjee18cISP" onMouseOver="bibtexButtonOver('bhattacherjee18cISP');" onMouseOut="bibtexButtonOut('bhattacherjee18cISP');"> <b><a  href="https://arxiv.org/abs/1809.10897">cISP: A Speed-of-Light Internet Service Provider</a></b> <div id='bhattacherjee18cISP-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('bhattacherjee18cISP');">BibTeX</div><br><div id='bhattacherjee18cISP-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{bhattacherjee18cISP,
+  author    = {Debopam Bhattacherjee and Sangeetha Abdu Jyothi and Ilker Nadi Bozkurt and Muhammad Tirmazi and Waqar Aqeel and Anthony Aguirre and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Gregory P. Laughlin and Bruce M. Maggs and Ankit Singla},
+  title     = {cISP: A Speed-of-Light Internet Service Provider},
+  booktitle = {arXiv:1809.10897},
+  month     = {October},
+  year      = {2018},
+}
+</textarea></div>Debopam Bhattacherjee, Sangeetha Abdu Jyothi, Ilker Nadi Bozkurt, Muhammad Tirmazi, Waqar Aqeel, Anthony Aguirre, Balakrishnan Chandrasekaran, P. Brighten Godfrey, Gregory P. Laughlin, Bruce M. Maggs, and Ankit Singla. <a class=quiet href="https://arxiv.org/abs/1809.10897">arXiv:1809.10897</a>, October 2018. </li><br>
+
+<li id="mangiante18morc" onMouseOver="bibtexButtonOver('mangiante18morc');" onMouseOut="bibtexButtonOut('mangiante18morc');"> <b><a  href="mangiante18morc.pdf">Congestion Control for Future Mobile Networks</a></b> <div id='mangiante18morc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('mangiante18morc');">BibTeX</div><br><div id='mangiante18morc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{mangiante18morc,
+  author    = {Simone Mangiante and Michael Schapira and Amit Navon and Marco Dias Silva and P. Brighten Godfrey and Weiguang Wang and Kevin Smith and Itzcak Pechtalt},
+  title     = {Congestion Control for Future Mobile Networks},
+  booktitle = {Proceedings of the 13th Workshop on Challenged Networks},
+  month     = {October},
+  year      = {2018},
+}
+</textarea></div>Simone Mangiante, Michael Schapira, Amit Navon, Marco Dias Silva, P. Brighten Godfrey, Weiguang Wang, Kevin Smith, and Itzcak Pechtalt. <a class=quiet href="https://dl.acm.org/doi/proceedings/10.1145/3264844">Proceedings of the 13th Workshop on Challenged Networks</a>, October 2018. </li><br>
+
+<li id="jay18deepRL-cc" onMouseOver="bibtexButtonOver('jay18deepRL-cc');" onMouseOut="bibtexButtonOut('jay18deepRL-cc');"> <b><a  href="jay18deepRL-cc.pdf">Internet Congestion Control via Deep Reinforcement Learning</a></b> <div id='jay18deepRL-cc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jay18deepRL-cc');">BibTeX</div><br><div id='jay18deepRL-cc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jay18deepRL-cc,
+  author    = {Nathan Jay and Noga H. Rotman and P. Brighten Godfrey and Michael Schapira and Aviv Tamar},
+  title     = {Internet Congestion Control via Deep Reinforcement Learning},
+  booktitle = {NeurIPS Deep Reinforcement Learning Workshop},
+  month     = {October},
+  year      = {2018},
+}
+</textarea></div>Nathan Jay, Noga H. Rotman, P. Brighten Godfrey, Michael Schapira, and Aviv Tamar. <a class=quiet href="https://sites.google.com/view/deep-rl-workshop-nips-2018/home">NeurIPS Deep Reinforcement Learning Workshop</a>, October 2018. </li><br>
+
+<li id="prabhu18plankton-neo" onMouseOver="bibtexButtonOver('prabhu18plankton-neo');" onMouseOut="bibtexButtonOut('prabhu18plankton-neo');"> <b><a  href="prabhu18plankton-neo.pdf">High Coverage Testing of Softwarized Networks</a></b> <div id='prabhu18plankton-neo-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('prabhu18plankton-neo');">BibTeX</div><br><div id='prabhu18plankton-neo-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{prabhu18plankton-neo,
+  author    = {Santhosh Prabhu and Gohar Irfan Chaudhry and P. Brighten Godfrey and Matthew Caesar},
+  title     = {High Coverage Testing of Softwarized Networks},
+  booktitle = {ACM SIGCOMM 2018 Workshop on Security in Softwarized Networks: Prospects and Challenges},
+  month     = {August},
+  year      = {2018},
+}
+</textarea></div>Santhosh Prabhu, Gohar Irfan Chaudhry, P. Brighten Godfrey, and Matthew Caesar. <a class=quiet href="https://conferences.sigcomm.org/sigcomm/2018/workshop-secson.html">ACM SIGCOMM 2018 Workshop on Security in Softwarized Networks: Prospects and Challenges</a>, August 2018. </li><br>
+
+<li id="jay18pcc-kernel" onMouseOver="bibtexButtonOver('jay18pcc-kernel');" onMouseOut="bibtexButtonOut('jay18pcc-kernel');"> <b><a  href="jay18pcc-kernel.pdf">A PCC-Vivace Kernel Module for Congestion Control</a></b> <div id='jay18pcc-kernel-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jay18pcc-kernel');">BibTeX</div><br><div id='jay18pcc-kernel-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jay18pcc-kernel,
+  author    = {Nathan Jay and Tong Meng and Tomer Gilad and P. Brighten Godfrey and Michael Schapira and Jamal Hadi Salim and Jae Won Chung and Vikram Siwach},
+  title     = {A PCC-Vivace Kernel Module for Congestion Control},
+  booktitle = {Netdev 0x12: The Technical Conference on Linux Networking},
+  month     = {July},
+  year      = {2018},
+}
+</textarea></div>Nathan Jay, Tong Meng, Tomer Gilad, P. Brighten Godfrey, Michael Schapira, Jamal Hadi Salim, Jae Won Chung, and Vikram Siwach. <a class=quiet href="https://netdevconf.org/0x12/session.html?a-pcc-vivace-kernel-module-for-congestion-control">Netdev 0x12: The Technical Conference on Linux Networking</a>, July 2018. <ul><li><a href="https://www.youtube.com/watch?v=tx6zjv_RgMQ">Talk video</a></li>
+            <li><a href="jay18pcc-kernel-slides.pdf">Slides</a></li></a></ul></li><br>
+
+<li id="dong18pcc-vivace" onMouseOver="bibtexButtonOver('dong18pcc-vivace');" onMouseOut="bibtexButtonOut('dong18pcc-vivace');"> <b><a  href="dong18pcc-vivace.pdf">PCC Vivace: Online-Learning Congestion Control</a></b> <div id='dong18pcc-vivace-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('dong18pcc-vivace');">BibTeX</div><br><div id='dong18pcc-vivace-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{dong18pcc-vivace,
+  author    = {Mo Dong and Tong Meng and Doron Zarchy and Engin Arslan and Yossi Gilad and P. Brighten Godfrey and Michael Schapira},
+  title     = {PCC Vivace: Online-Learning Congestion Control},
+  booktitle = {15th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2018},
+}
+</textarea></div>Mo Dong, Tong Meng, Doron Zarchy, Engin Arslan, Yossi Gilad, P. Brighten Godfrey, and Michael Schapira. <a class=quiet href="https://www.usenix.org/conference/nsdi18/">15th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2018. <ul><li><a href="http://pccproject.net">Project site</a></li></ul></li><br>
+
+</ul><h3>2017</h3>
+<ul>
+<li id="ghorbani17drill" onMouseOver="bibtexButtonOver('ghorbani17drill');" onMouseOut="bibtexButtonOut('ghorbani17drill');"> <b><a  href="ghorbani17drill.pdf">DRILL: Micro Load Balancing for Low-latency Data Center Neworks</a></b> <div id='ghorbani17drill-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ghorbani17drill');">BibTeX</div><br><div id='ghorbani17drill-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ghorbani17drill,
+  author    = {Soudeh Ghorbani and Zibin Yang and P. Brighten Godfrey and Yashar Ganjali and Amin Firoozshahian},
+  title     = {DRILL: Micro Load Balancing for Low-latency Data Center Neworks},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2017},
+}
+</textarea></div>Soudeh Ghorbani, Zibin Yang, P. Brighten Godfrey, Yashar Ganjali, and Amin Firoozshahian. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2017/">ACM SIGCOMM</a>, August 2017. </li><br>
+
+<li id="prabhu17plankton" onMouseOver="bibtexButtonOver('prabhu17plankton');" onMouseOut="bibtexButtonOut('prabhu17plankton');"> <b><a  href="prabhu17plankton.pdf">Predicting Network Futures with Plankton</a></b> <div id='prabhu17plankton-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('prabhu17plankton');">BibTeX</div><br><div id='prabhu17plankton-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{prabhu17plankton,
+  author    = {Santhosh Prabhu and Ali Kheradmand and P. Brighten Godfrey and Matthew Caesar},
+  title     = {Predicting Network Futures with Plankton},
+  booktitle = {1st Asia-Pacific Workshop on Networking (APNet)},
+  month     = {August},
+  year      = {2017},
+}
+</textarea></div>Santhosh Prabhu, Ali Kheradmand, P. Brighten Godfrey, and Matthew Caesar. <a class=quiet href="http://conferences.sigcomm.org/events/apnet2017/">1st Asia-Pacific Workshop on Networking (APNet)</a>, August 2017. </li><br>
+
+<li id="ghorbani17coconut" onMouseOver="bibtexButtonOver('ghorbani17coconut');" onMouseOut="bibtexButtonOut('ghorbani17coconut');"> <b><a  href="ghorbani17coconut.pdf">COCONUT: Seamless Scale-out of Network Elements</a></b> <div id='ghorbani17coconut-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ghorbani17coconut');">BibTeX</div><br><div id='ghorbani17coconut-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ghorbani17coconut,
+  author    = {Soudeh Ghorbani and P. Brighten Godfrey},
+  title     = {COCONUT: Seamless Scale-out of Network Elements},
+  booktitle = {European Conference on Computer Systems (EuroSys)},
+  month     = {April},
+  year      = {2017},
+}
+</textarea></div>Soudeh Ghorbani and P. Brighten Godfrey. <a class=quiet href="http://eurosys2017.org">European Conference on Computer Systems (EuroSys)</a>, April 2017. </li><br>
+
+<li id="prabhu17oreo" onMouseOver="bibtexButtonOver('prabhu17oreo');" onMouseOut="bibtexButtonOut('prabhu17oreo');"> <b><a  href="prabhu17oreo.pdf">Let me rephrase that: Transparent optimization in SDNs</a></b> <div id='prabhu17oreo-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('prabhu17oreo');">BibTeX</div><br><div id='prabhu17oreo-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{prabhu17oreo,
+  author    = {Santhosh Prabhu and Mo Dong and Tong Meng and P. Brighten Godfrey and Matthew Caesar},
+  title     = {Let me rephrase that: Transparent optimization in SDNs},
+  booktitle = {ACM SIGCOMM Symposium on SDN Research (SOSR)},
+  month     = {April},
+  year      = {2017},
+}
+</textarea></div>Santhosh Prabhu, Mo Dong, Tong Meng, P. Brighten Godfrey, and Matthew Caesar. <a class=quiet href="http://conferences.sigcomm.org/sosr/2017/">ACM SIGCOMM Symposium on SDN Research (SOSR)</a>, April 2017. </li><br>
+
+<li id="bozkurt17why" onMouseOver="bibtexButtonOver('bozkurt17why');" onMouseOut="bibtexButtonOut('bozkurt17why');"> <b><a  href="bozkurt17why.pdf">Why is the Internet so slow?!</a></b> <div id='bozkurt17why-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('bozkurt17why');">BibTeX</div><br><div id='bozkurt17why-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{bozkurt17why,
+  author    = {Ilker Nadi Bozkurt and Balakrishnan Chandrasekaran and Anthony Aguirre and P. Brighten Godfrey and Gregory Laughlin and Bruce Maggs and Ankit Singla},
+  title     = {Why is the Internet so slow?!},
+  booktitle = {Passive and Active Measurement Conference},
+  month     = {March},
+  year      = {2017},
+}
+</textarea></div>Ilker Nadi Bozkurt, Balakrishnan Chandrasekaran, Anthony Aguirre, P. Brighten Godfrey, Gregory Laughlin, Bruce Maggs, and Ankit Singla. <a class=quiet href="https://research.csiro.au/pam2017/">Passive and Active Measurement Conference</a>, March 2017. <ul><li><b>Best Dataset Award</b></li><li><a href="http://cgi.cs.duke.edu/~ilker/cspeed/pam2017-data/">Dataset</a></li></ul></li><br>
+
+</ul><h3>2016</h3>
+<ul>
+<li id="jyothi16throughput" onMouseOver="bibtexButtonOver('jyothi16throughput');" onMouseOut="bibtexButtonOut('jyothi16throughput');"> <b><a  href="jyothi16throughput.pdf">Measuring and Understanding Throughput of Network Topologies</a></b> <div id='jyothi16throughput-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jyothi16throughput');">BibTeX</div><br><div id='jyothi16throughput-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jyothi16throughput,
+  author    = {Sangeetha Abdu Jyothi and Ankit Singla and P. Brighten Godfrey and Alexandra Kolla},
+  title     = {Measuring and Understanding Throughput of Network Topologies},
+  booktitle = {ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)},
+  month     = {November},
+  year      = {2016},
+}
+</textarea></div>Sangeetha Abdu Jyothi, Ankit Singla, P. Brighten Godfrey, and Alexandra Kolla. <a class=quiet href="http://sc16.supercomputing.org">ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC)</a>, November 2016. <ul><li><a href="https://arxiv.org/abs/1402.2531">Technical Report</a></li><li><a href="https://github.com/netarch/topobench/">Code</a></li></ul></li><br>
+
+<li id="wang16ravel" onMouseOver="bibtexButtonOver('wang16ravel');" onMouseOut="bibtexButtonOut('wang16ravel');"> <b><a  href="wang16ravel.pdf">Ravel: A Database-Defined Network</a></b> <div id='wang16ravel-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('wang16ravel');">BibTeX</div><br><div id='wang16ravel-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{wang16ravel,
+  author    = {Anduo Wang and Xueyuan Mei and Jason Croft and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Ravel: A Database-Defined Network},
+  booktitle = {ACM SIGCOMM Symposium on SDN Research (SOSR)},
+  month     = {March},
+  year      = {2016},
+}
+</textarea></div>Anduo Wang, Xueyuan Mei, Jason Croft, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://conferences.sigcomm.org/sosr/2016/">ACM SIGCOMM Symposium on SDN Research (SOSR)</a>, March 2016. </li><br>
+
+</ul><h3>2015</h3>
+<ul>
+<li id="li15halfback" onMouseOver="bibtexButtonOver('li15halfback');" onMouseOut="bibtexButtonOut('li15halfback');"> <b><a  href="li15halfback.pdf">Halfback: Running Short Flows Quickly and Safely</a></b> <div id='li15halfback-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('li15halfback');">BibTeX</div><br><div id='li15halfback-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{li15halfback,
+  author    = {Qingxi Li and Mo Dong and P. Brighten Godfrey},
+  title     = {Halfback: Running Short Flows Quickly and Safely},
+  booktitle = {International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2015},
+}
+</textarea></div>Qingxi Li, Mo Dong, and P. Brighten Godfrey. International Conference on emerging Networking EXperiments and Technologies (CoNEXT), December 2015. </li><br>
+
+<li id="ghorbani15drill" onMouseOver="bibtexButtonOver('ghorbani15drill');" onMouseOut="bibtexButtonOut('ghorbani15drill');"> <b><a  href="ghorbani15drill.pdf">Micro Load Balancing in Data Centers with DRILL</a></b> <div id='ghorbani15drill-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ghorbani15drill');">BibTeX</div><br><div id='ghorbani15drill-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ghorbani15drill,
+  author    = {Soudeh Ghorbani and P. Brighten Godfrey and Yashar Ganjali and Amin Firoozshahian},
+  title     = {Micro Load Balancing in Data Centers with DRILL},
+  booktitle = {Fourteenth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {November},
+  year      = {2015},
+}
+</textarea></div>Soudeh Ghorbani, P. Brighten Godfrey, Yashar Ganjali, and Amin Firoozshahian. Fourteenth ACM Workshop on Hot Topics in Networks (HotNets), November 2015. </li><br>
+
+<li id="bjorner15dagstuhl" onMouseOver="bibtexButtonOver('bjorner15dagstuhl');" onMouseOut="bibtexButtonOut('bjorner15dagstuhl');"> <b><a  href="bjorner15dagstuhl.pdf">Report from Dagstuhl Seminar 15071: Formal Foundations for Networking</a></b> <div id='bjorner15dagstuhl-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('bjorner15dagstuhl');">BibTeX</div><br><div id='bjorner15dagstuhl-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{bjorner15dagstuhl,
+  author    = {Nikolaj Bjorner and Nate Foster and P. Brighten Godfrey and Pamela Zave},
+  title     = {Report from Dagstuhl Seminar 15071: Formal Foundations for Networking},
+  booktitle = {Dagstuhl Reports},
+  month     = {July},
+  year      = {2015},
+}
+</textarea></div>Nikolaj Bjorner, Nate Foster, P. Brighten Godfrey, and Pamela Zave. <a class=quiet href="http://drops.dagstuhl.de/opus/volltexte/2015/5044">Dagstuhl Reports</a>, July 2015. </li><br>
+
+<li id="jyothi15fabric" onMouseOver="bibtexButtonOver('jyothi15fabric');" onMouseOut="bibtexButtonOut('jyothi15fabric');"> <b><a  href="jyothi15fabric.pdf">Towards a Flexible Data Center Fabric with Source Routing</a></b> <div id='jyothi15fabric-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('jyothi15fabric');">BibTeX</div><br><div id='jyothi15fabric-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{jyothi15fabric,
+  author    = {Sangeetha Abdu Jyothi and Mo Dong and P. Brighten Godfrey},
+  title     = {Towards a Flexible Data Center Fabric with Source Routing},
+  booktitle = {ACM SIGCOMM Symposium on SDN Research (SOSR)},
+  month     = {June},
+  year      = {2015},
+}
+</textarea></div>Sangeetha Abdu Jyothi, Mo Dong, and P. Brighten Godfrey. ACM SIGCOMM Symposium on SDN Research (SOSR), June 2015. </li><br>
+
+<li id="vulimiri15wanalytics" onMouseOver="bibtexButtonOver('vulimiri15wanalytics');" onMouseOut="bibtexButtonOut('vulimiri15wanalytics');"> <b><a  href="vulimiri15wanalytics-demo.pdf">WANalytics: Geo-Distributed Analytics for a Data Intensive World</a></b> <div id='vulimiri15wanalytics-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri15wanalytics');">BibTeX</div><br><div id='vulimiri15wanalytics-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri15wanalytics,
+  author    = {Ashish Vulimiri and Carlo Curino and P. Brighten Godfrey and Thomas Jungblut and Konstantinos Karanasos and Jitu Padhye and George Varghese},
+  title     = {WANalytics: Geo-Distributed Analytics for a Data Intensive World},
+  booktitle = {Demo at ACM SIGMOD International Conference on Management of Data (SIGMOD)},
+  month     = {May},
+  year      = {2015},
+}
+</textarea></div>Ashish Vulimiri, Carlo Curino, P. Brighten Godfrey, Thomas Jungblut, Konstantinos Karanasos, Jitu Padhye, and George Varghese. <a class=quiet href="http://www.sigmod2015.org">Demo at ACM SIGMOD International Conference on Management of Data (SIGMOD)</a>, May 2015. </li><br>
+
+<li id="dong15pcc" onMouseOver="bibtexButtonOver('dong15pcc');" onMouseOut="bibtexButtonOut('dong15pcc');"> <b><a  href="dong15pcc.pdf">PCC: Re-architecting Congestion Control for Consistent High Performance</a></b> <div id='dong15pcc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('dong15pcc');">BibTeX</div><br><div id='dong15pcc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{dong15pcc,
+  author    = {Mo Dong and Qingxi Li and Doron Zarchy and P. Brighten Godfrey and Michael Schapira},
+  title     = {PCC: Re-architecting Congestion Control for Consistent High Performance},
+  booktitle = {12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2015},
+}
+</textarea></div>Mo Dong, Qingxi Li, Doron Zarchy, P. Brighten Godfrey, and Michael Schapira. <a class=quiet href="https://www.usenix.org/conference/nsdi15/">12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2015. <ul><li><a href="http://speedier.net/pcc/">Project site</a></li><li><a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/dong">Slides</a></ul></li><br>
+
+<li id="zhou15ccg" onMouseOver="bibtexButtonOver('zhou15ccg');" onMouseOut="bibtexButtonOut('zhou15ccg');"> <b><a  href="zhou15ccg.pdf">Enforcing Customizable Consistency Properties in Software-Defined Networks</a></b> <div id='zhou15ccg-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('zhou15ccg');">BibTeX</div><br><div id='zhou15ccg-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{zhou15ccg,
+  author    = {Wenxuan Zhou and Dong Jin and Jason Croft and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Enforcing Customizable Consistency Properties in Software-Defined Networks},
+  booktitle = {12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2015},
+}
+</textarea></div>Wenxuan Zhou, Dong Jin, Jason Croft, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/nsdi15/">12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2015. <ul><li><a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/zhou">Slides</a></li></ul></li><br>
+
+<li id="vulimiri15geode" onMouseOver="bibtexButtonOver('vulimiri15geode');" onMouseOut="bibtexButtonOut('vulimiri15geode');"> <b><a  href="vulimiri15geode.pdf">Global analytics in the face of bandwidth and regulatory constraints</a></b> <div id='vulimiri15geode-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri15geode');">BibTeX</div><br><div id='vulimiri15geode-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri15geode,
+  author    = {Ashish Vulimiri and Carlo Curino and P. Brighten Godfrey and Thomas Jungblut and Jitu Padhye and George Varghese},
+  title     = {Global analytics in the face of bandwidth and regulatory constraints},
+  booktitle = {12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2015},
+}
+</textarea></div>Ashish Vulimiri, Carlo Curino, P. Brighten Godfrey, Thomas Jungblut, Jitu Padhye, and George Varghese. <a class=quiet href="https://www.usenix.org/conference/nsdi15/">12th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2015. <ul><li><a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/vulimiri">Slides</a></li></ul></li><br>
+
+<li id="vulimiri15wanalytics" onMouseOver="bibtexButtonOver('vulimiri15wanalytics');" onMouseOut="bibtexButtonOut('vulimiri15wanalytics');"> <b><a  href="vulimiri15wanalytics.pdf">WANalytics: Analytics for a Geo-Distributed Data-Intensive World</a></b> <div id='vulimiri15wanalytics-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri15wanalytics');">BibTeX</div><br><div id='vulimiri15wanalytics-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri15wanalytics,
+  author    = {Ashish Vulimiri and Carlo Curino and P. Brighten Godfrey and Konstantinos Karanasos and George Varghese},
+  title     = {WANalytics: Analytics for a Geo-Distributed Data-Intensive World},
+  booktitle = {Conference on Innovative Data Systems Research (CIDR 2015)},
+  month     = {January},
+  year      = {2015},
+}
+</textarea></div>Ashish Vulimiri, Carlo Curino, P. Brighten Godfrey, Konstantinos Karanasos, and George Varghese. <a class=quiet href="http://www.cidrdb.org/cidr2015/">Conference on Innovative Data Systems Research (CIDR 2015)</a>, January 2015. </li><br>
+
+</ul><h3>2014</h3>
+<ul>
+<li id="singla14cspeed" onMouseOver="bibtexButtonOver('singla14cspeed');" onMouseOut="bibtexButtonOut('singla14cspeed');"> <b><a  href="singla14cspeed.pdf">The Internet at the Speed of Light</a></b> <div id='singla14cspeed-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('singla14cspeed');">BibTeX</div><br><div id='singla14cspeed-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{singla14cspeed,
+  author    = {Ankit Singla and Balakrishnan Chandrasekaran and P. Brighten Godfrey and Bruce Maggs},
+  title     = {The Internet at the Speed of Light},
+  booktitle = {Thirteenth ACM Workshop on Hot Topics in Networks (HotNets 2014)},
+  month     = {October},
+  year      = {2014},
+}
+</textarea></div>Ankit Singla, Balakrishnan Chandrasekaran, P. Brighten Godfrey, and Bruce Maggs. <a class=quiet href="http://conferences.sigcomm.org/hotnets/2014/">Thirteenth ACM Workshop on Hot Topics in Networks (HotNets 2014)</a>, October 2014. </li><br>
+
+<li id="ghorbani14correct" onMouseOver="bibtexButtonOver('ghorbani14correct');" onMouseOut="bibtexButtonOut('ghorbani14correct');"> <b><a  href="ghorbani14correct.pdf">Towards Correct Network Virtualization</a></b> <div id='ghorbani14correct-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ghorbani14correct');">BibTeX</div><br><div id='ghorbani14correct-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ghorbani14correct,
+  author    = {Soudeh Ghorbani and P. Brighten Godfrey},
+  title     = {Towards Correct Network Virtualization},
+  booktitle = {Workshop on Hot Topics in Software Defined Networking (HotSDN)},
+  month     = {August},
+  year      = {2014},
+}
+</textarea></div>Soudeh Ghorbani and P. Brighten Godfrey. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2014/hotsdn.php">Workshop on Hot Topics in Software Defined Networking (HotSDN)</a>, August 2014. <ul><li>Best paper award</li><li><a href="http://conferences.sigcomm.org/sigcomm/2014/doc/slides/202.pdf">Slides</a></li></ul></li><br>
+
+<li id="singla14throughput" onMouseOver="bibtexButtonOver('singla14throughput');" onMouseOut="bibtexButtonOut('singla14throughput');"> <b><a  href="http://arxiv.org/abs/1309.7066">High Throughput Data Center Topology Design</a></b> <div id='singla14throughput-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('singla14throughput');">BibTeX</div><br><div id='singla14throughput-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{singla14throughput,
+  author    = {Ankit Singla and P. Brighten Godfrey and Alexandra Kolla},
+  title     = {High Throughput Data Center Topology Design},
+  booktitle = {11th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2014},
+}
+</textarea></div>Ankit Singla, P. Brighten Godfrey, and Alexandra Kolla. <a class=quiet href="https://www.usenix.org/conference/nsdi14/">11th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2014. </li><br>
+
+<li id="hong14sdt" onMouseOver="bibtexButtonOver('hong14sdt');" onMouseOut="bibtexButtonOut('hong14sdt');"> <b><a  href="hong14sdt.pdf">Software Defined Transport: Flexible and Deployable Flow Rate Control</a></b> <div id='hong14sdt-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('hong14sdt');">BibTeX</div><br><div id='hong14sdt-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{hong14sdt,
+  author    = {Chi-Yao Hong and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Software Defined Transport: Flexible and Deployable Flow Rate Control},
+  booktitle = {Open Networking Summit (ONS)},
+  month     = {March},
+  year      = {2014},
+}
+</textarea></div>Chi-Yao Hong, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://www.opennetsummit.org/research-track.html">Open Networking Summit (ONS)</a>, March 2014. </li><br>
+
+<li id="wang14sdndb" onMouseOver="bibtexButtonOver('wang14sdndb');" onMouseOut="bibtexButtonOut('wang14sdndb');"> <b><a  href="wang14sdndb.pdf">Software-Defined Networks as Databases</a></b> <div id='wang14sdndb-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('wang14sdndb');">BibTeX</div><br><div id='wang14sdndb-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{wang14sdndb,
+  author    = {Anduo Wang and Wenchao Zhou and P. Brighten Godfrey and Matthew Caesar},
+  title     = {Software-Defined Networks as Databases},
+  booktitle = {Open Networking Summit (ONS)},
+  month     = {March},
+  year      = {2014},
+}
+</textarea></div>Anduo Wang, Wenchao Zhou, P. Brighten Godfrey, and Matthew Caesar. <a class=quiet href="http://www.opennetsummit.org/research-track.html">Open Networking Summit (ONS)</a>, March 2014. </li><br>
+
+<li id="abdujyothi14throughput" onMouseOver="bibtexButtonOver('abdujyothi14throughput');" onMouseOut="bibtexButtonOut('abdujyothi14throughput');"> <b><a  href="http://arxiv.org/abs/1402.2531">Measuring and Understanding Throughput of Network Topologies</a></b> <div id='abdujyothi14throughput-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('abdujyothi14throughput');">BibTeX</div><br><div id='abdujyothi14throughput-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{abdujyothi14throughput,
+  author    = {Sangeetha Abdu Jyothi and Ankit Singla and P. Brighten Godfrey and Alexandra Kolla},
+  title     = {Measuring and Understanding Throughput of Network Topologies},
+  booktitle = {arXiv:1402.2531},
+  month     = {February},
+  year      = {2014},
+}
+</textarea></div>Sangeetha Abdu Jyothi, Ankit Singla, P. Brighten Godfrey, and Alexandra Kolla. <a class=quiet href="http://arxiv.org/abs/1402.2531">arXiv:1402.2531</a>, February 2014. </li><br>
+
+<li id="godfrey14srs" onMouseOver="bibtexButtonOver('godfrey14srs');" onMouseOut="bibtexButtonOut('godfrey14srs');"> <b><a  href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6732975">Stabilizing Route Selection in BGP</a></b> <div id='godfrey14srs-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey14srs');">BibTeX</div><br><div id='godfrey14srs-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey14srs,
+  author    = {P. Brighten Godfrey and Matthew Caesar and Ian Haken and Yaron Singer and Scott Shenker and Ion Stoica},
+  title     = {Stabilizing Route Selection in BGP},
+  booktitle = {IEEE/ACM Transactions on Networking},
+  month     = {February},
+  year      = {2014},
+}
+</textarea></div>P. Brighten Godfrey, Matthew Caesar, Ian Haken, Yaron Singer, Scott Shenker, and Ion Stoica. IEEE/ACM Transactions on Networking, February 2014. </li><br>
+
+</ul><h3>2013</h3>
+<ul>
+<li id="vulimiri13latency" onMouseOver="bibtexButtonOver('vulimiri13latency');" onMouseOut="bibtexButtonOut('vulimiri13latency');"> <b><a  href="vulimiri13latency.pdf">Low Latency via Redundancy</a></b> <div id='vulimiri13latency-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri13latency');">BibTeX</div><br><div id='vulimiri13latency-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri13latency,
+  author    = {Ashish Vulimiri and P. Brighten Godfrey and Radhika Mittal and Justine Sherry and Sylvia Ratnasamy and Scott Shenker},
+  title     = {Low Latency via Redundancy},
+  booktitle = {9th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2013},
+}
+</textarea></div>Ashish Vulimiri, P. Brighten Godfrey, Radhika Mittal, Justine Sherry, Sylvia Ratnasamy, and Scott Shenker. <a class=quiet href="http://conferences.sigcomm.org/co-next/2013/">9th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)</a>, December 2013. </li><br>
+
+<li id="agarwal13shortest" onMouseOver="bibtexButtonOver('agarwal13shortest');" onMouseOut="bibtexButtonOut('agarwal13shortest');"> <b><a  href="agarwal13shortest.pdf">Shortest Paths in Microseconds</a></b> <div id='agarwal13shortest-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal13shortest');">BibTeX</div><br><div id='agarwal13shortest-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal13shortest,
+  author    = {Rachit Agarwal and Matthew Caesar and P. Brighten Godfrey and Ben Y. Zhao},
+  title     = {Shortest Paths in Microseconds},
+  booktitle = {arXiv:1309.0874},
+  month     = {September},
+  year      = {2013},
+}
+</textarea></div>Rachit Agarwal, Matthew Caesar, P. Brighten Godfrey, and Ben Y. Zhao. <a class=quiet href="http://arxiv.org/abs/1309.0874">arXiv:1309.0874</a>, September 2013. <ul><li>Newer, faster, longer version of the <a href="#agarwal12shortest">WOSN 2012 version</a></li></ul></li><br>
+
+<li id="agarwal13stretch2" onMouseOver="bibtexButtonOver('agarwal13stretch2');" onMouseOut="bibtexButtonOut('agarwal13stretch2');"> <b><a  href="agarwal13stretch2.pdf">A Simple Stretch 2 Distance Oracle</a></b> <div id='agarwal13stretch2-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal13stretch2');">BibTeX</div><br><div id='agarwal13stretch2-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal13stretch2,
+  author    = {Rachit Agarwal and P. Brighten Godfrey},
+  title     = {A Simple Stretch 2 Distance Oracle},
+  booktitle = {Brief announcement, 32nd Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC)},
+  month     = {July},
+  year      = {2013},
+}
+</textarea></div>Rachit Agarwal and P. Brighten Godfrey. <a class=quiet href="http://www.podc.org/podc2013/">Brief announcement, 32nd Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC)</a>, July 2013. </li><br>
+
+<li id="khurshid13veriflow" onMouseOver="bibtexButtonOver('khurshid13veriflow');" onMouseOut="bibtexButtonOut('khurshid13veriflow');"> <b><a  href="khurshid13veriflow.pdf">VeriFlow: Verifying Network-Wide Invariants in Real Time</a></b> <div id='khurshid13veriflow-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('khurshid13veriflow');">BibTeX</div><br><div id='khurshid13veriflow-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{khurshid13veriflow,
+  author    = {Ahmed Khurshid and Xuan Zou and Wenxuan Zhou and Matthew Caesar and P. Brighten Godfrey},
+  title     = {VeriFlow: Verifying Network-Wide Invariants in Real Time},
+  booktitle = {10th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2013},
+}
+</textarea></div>Ahmed Khurshid, Xuan Zou, Wenxuan Zhou, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/nsdi13/">10th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2013. </li><br>
+
+<li id="liu13ddc" onMouseOver="bibtexButtonOver('liu13ddc');" onMouseOut="bibtexButtonOut('liu13ddc');"> <b><a  href="liu13ddc.pdf">Ensuring Connectivity via Data Plane Mechanisms</a></b> <div id='liu13ddc-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('liu13ddc');">BibTeX</div><br><div id='liu13ddc-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{liu13ddc,
+  author    = {Junda Liu and Aurojit Panda and Ankit Singla and P. Brighten Godfrey and Michael Schapira and Scott Shenker},
+  title     = {Ensuring Connectivity via Data Plane Mechanisms},
+  booktitle = {10th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2013},
+}
+</textarea></div>Junda Liu, Aurojit Panda, Ankit Singla, P. Brighten Godfrey, Michael Schapira, and Scott Shenker. <a class=quiet href="https://www.usenix.org/conference/nsdi13/">10th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2013. </li><br>
+
+<li id="godfrey13hotnets" onMouseOver="bibtexButtonOver('godfrey13hotnets');" onMouseOut="bibtexButtonOut('godfrey13hotnets');"> <b><a  href="godfrey13hotnets.pdf">HotNets 2012 Highlights</a></b> <div id='godfrey13hotnets-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey13hotnets');">BibTeX</div><br><div id='godfrey13hotnets-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey13hotnets,
+  author    = {P. Brighten Godfrey},
+  title     = {HotNets 2012 Highlights},
+  booktitle = {ACM SIGCOMM Computer Communication Review, Vol. 43, No. 1},
+  month     = {January},
+  year      = {2013},
+}
+</textarea></div>P. Brighten Godfrey. ACM SIGCOMM Computer Communication Review, Vol. 43, No. 1, January 2013. </li><br>
+
+<li id="agarwal13distance" onMouseOver="bibtexButtonOver('agarwal13distance');" onMouseOut="bibtexButtonOut('agarwal13distance');"> <b><a  href="agarwal13distance.pdf">Distance Oracles for Stretch Less Than 2</a></b> <div id='agarwal13distance-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal13distance');">BibTeX</div><br><div id='agarwal13distance-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal13distance,
+  author    = {Rachit Agarwal and P. Brighten Godfrey},
+  title     = {Distance Oracles for Stretch Less Than 2},
+  booktitle = {ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  month     = {January},
+  year      = {2013},
+}
+</textarea></div>Rachit Agarwal and P. Brighten Godfrey. <a class=quiet href="http://www.siam.org/meetings/da13/">ACM-SIAM Symposium on Discrete Algorithms (SODA)</a>, January 2013. </li><br>
+
+</ul><h3>2012</h3>
+<ul>
+<li id="vulimiri12latency" onMouseOver="bibtexButtonOver('vulimiri12latency');" onMouseOut="bibtexButtonOut('vulimiri12latency');"> <b><a  href="vulimiri12latency.pdf">More is Less: Reducing Latency via Redundancy</a></b> <div id='vulimiri12latency-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri12latency');">BibTeX</div><br><div id='vulimiri12latency-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri12latency,
+  author    = {Ashish Vulimiri and Oliver Michel and P. Brighten Godfrey and Scott Shenker},
+  title     = {More is Less: Reducing Latency via Redundancy},
+  booktitle = {Eleventh ACM Workshop on Hot Topics in Networks (HotNets-XI)},
+  month     = {October},
+  year      = {2012},
+}
+</textarea></div>Ashish Vulimiri, Oliver Michel, P. Brighten Godfrey, and Scott Shenker. <a class=quiet href="http://conferences.sigcomm.org/hotnets/2012/">Eleventh ACM Workshop on Hot Topics in Networks (HotNets-XI)</a>, October 2012. </li><br>
+
+<li id="khurshid12veriflow" onMouseOver="bibtexButtonOver('khurshid12veriflow');" onMouseOut="bibtexButtonOut('khurshid12veriflow');"> <b><a  href="khurshid12veriflow.pdf">VeriFlow: Verifying Network-Wide Invariants in Real Time</a></b> <div id='khurshid12veriflow-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('khurshid12veriflow');">BibTeX</div><br><div id='khurshid12veriflow-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{khurshid12veriflow,
+  author    = {Ahmed Khurshid and Wenxuan Zhou and Matthew Caesar and P. Brighten Godfrey},
+  title     = {VeriFlow: Verifying Network-Wide Invariants in Real Time},
+  booktitle = {First Workshop on Hot Topics in Software Defined Networking (HotSDN)},
+  month     = {August},
+  year      = {2012},
+}
+</textarea></div>Ahmed Khurshid, Wenxuan Zhou, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2012/hotsdn.php">First Workshop on Hot Topics in Software Defined Networking (HotSDN)</a>, August 2012. <ul><li>Best paper award; republished in ACM SIGCOMM Computer Communication Review, Volume 42, Number 4, October 2012</li></ul></li><br>
+
+<li id="hong12pdq" onMouseOver="bibtexButtonOver('hong12pdq');" onMouseOut="bibtexButtonOut('hong12pdq');"> <b><a  href="hong12pdq.pdf">Finishing Flows Quickly with Preemptive Scheduling</a></b> <div id='hong12pdq-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('hong12pdq');">BibTeX</div><br><div id='hong12pdq-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{hong12pdq,
+  author    = {Chi-Yao Hong and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Finishing Flows Quickly with Preemptive Scheduling},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2012},
+}
+</textarea></div>Chi-Yao Hong, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2012/">ACM SIGCOMM</a>, August 2012. <ul><li>Full version at <a href="http://arxiv.org/abs/1206.2057">http://arxiv.org/abs/1206.2057</a></li></ul></li><br>
+
+<li id="agarwal12shortest" onMouseOver="bibtexButtonOver('agarwal12shortest');" onMouseOut="bibtexButtonOut('agarwal12shortest');"> <b><a  href="agarwal12shortest.pdf">Shortest Paths in Less Than a Millisecond</a></b> <div id='agarwal12shortest-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal12shortest');">BibTeX</div><br><div id='agarwal12shortest-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal12shortest,
+  author    = {Rachit Agarwal and Matthew Caesar and P. Brighten Godfrey and Ben Y. Zhao},
+  title     = {Shortest Paths in Less Than a Millisecond},
+  booktitle = {Workshop on Online Social Networks (WOSN)},
+  month     = {August},
+  year      = {2012},
+}
+</textarea></div>Rachit Agarwal, Matthew Caesar, P. Brighten Godfrey, and Ben Y. Zhao. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2012/wosn12.php">Workshop on Online Social Networks (WOSN)</a>, August 2012. <ul><li><a href="#agarwal13shortest">Newer, faster, longer version</a></li></ul></li><br>
+
+<li id="feigenbaum12resilience" onMouseOver="bibtexButtonOver('feigenbaum12resilience');" onMouseOut="bibtexButtonOut('feigenbaum12resilience');"> <b><a  href="feigenbaum12resilience.pdf">On the Resilience of Routing Tables</a></b> <div id='feigenbaum12resilience-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('feigenbaum12resilience');">BibTeX</div><br><div id='feigenbaum12resilience-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{feigenbaum12resilience,
+  author    = {Joan Feigenbaum and P. Brighten Godfrey and Aurojit Panda and Michael Schapira and Scott Shenker and Ankit Singla},
+  title     = {On the Resilience of Routing Tables},
+  booktitle = {Brief announcement, 31st Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC)},
+  month     = {July},
+  year      = {2012},
+}
+</textarea></div>Joan Feigenbaum, P. Brighten Godfrey, Aurojit Panda, Michael Schapira, Scott Shenker, and Ankit Singla. <a class=quiet href="http://www.podc.org/podc2012/">Brief announcement, 31st Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC)</a>, July 2012. <ul><li><a href="http://arxiv.org/abs/1207.3732">Tech report with proofs</a></li></ul></li><br>
+
+<li id="vulimiri12congestion" onMouseOver="bibtexButtonOver('vulimiri12congestion');" onMouseOut="bibtexButtonOut('vulimiri12congestion');"> <b><a  href="vulimiri12congestion.pdf">How well can congestion pricing neutralize denial-of-service attacks?</a></b> <div id='vulimiri12congestion-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('vulimiri12congestion');">BibTeX</div><br><div id='vulimiri12congestion-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{vulimiri12congestion,
+  author    = {Ashish Vulimiri and P. Brighten Godfrey and Karthik Lakshminarayanan and Gul Agha},
+  title     = {How well can congestion pricing neutralize denial-of-service attacks?},
+  booktitle = {ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)},
+  month     = {June},
+  year      = {2012},
+}
+</textarea></div>Ashish Vulimiri, P. Brighten Godfrey, Karthik Lakshminarayanan, and Gul Agha. <a class=quiet href="http://www.sigmetrics.org/sigmetrics2012/">ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)</a>, June 2012. </li><br>
+
+<li id="singla12jellyfish" onMouseOver="bibtexButtonOver('singla12jellyfish');" onMouseOut="bibtexButtonOut('singla12jellyfish');"> <b><a  href="jellyfish-nsdi12.pdf">Jellyfish: Networking Data Centers Randomly</a></b> <div id='singla12jellyfish-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('singla12jellyfish');">BibTeX</div><br><div id='singla12jellyfish-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{singla12jellyfish,
+  author    = {Ankit Singla and Chi-Yao Hong and Lucian Popa and P. Brighten Godfrey},
+  title     = {Jellyfish: Networking Data Centers Randomly},
+  booktitle = {9th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  month     = {April},
+  year      = {2012},
+}
+</textarea></div>Ankit Singla, Chi-Yao Hong, Lucian Popa, and P. Brighten Godfrey. <a class=quiet href="https://www.usenix.org/conference/nsdi12/">9th USENIX Symposium on Networked Systems Design and Implementation (NSDI)</a>, April 2012. <ul>
+			<li><a href="http://youinfinitesnake.blogspot.com/2012/04/jellyfish-networking-data-centers.html">Blog post</a></li>
+			<li><a href="https://www.youtube.com/watch?v=BBD6XLYpvhc">Video of talk at Caltech</a>, April 2013</li>
+			<li><a href="jellyfish-presentation-2013.09.12.pdf">Presentation</a> at Cisco, September 2013</li>
+			<li><a href="jellyfish-dimacs11.pdf">Presentation</a> at <a href="http://dimacs.rutgers.edu/Workshops/CloudComputing/">DIMACS Workshop on Systems and Networking Advances in Cloud Computing</a>, December 2011 (outdated results)</li>
+			<li><a href="#singla11jellyfish">Workshop version</a> in HotCloud 2011</li>
+			<li>Also at <a href="http://arxiv.org/abs/1110.1687">arXiv:1110.1687</a></li>
+			</ul></li><br>
+
+</ul><h3>2011</h3>
+<ul>
+<li id="zhou11asap" onMouseOver="bibtexButtonOver('zhou11asap');" onMouseOut="bibtexButtonOut('zhou11asap');"> <b><a  href="asap.pdf">ASAP: A Low-Latency Transport Layer</a></b> <div id='zhou11asap-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('zhou11asap');">BibTeX</div><br><div id='zhou11asap-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{zhou11asap,
+  author    = {Wenxuan Zhou and Qingxi Li and Matthew Caesar and P. Brighten Godfrey},
+  title     = {ASAP: A Low-Latency Transport Layer},
+  booktitle = {7th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2011},
+}
+</textarea></div>Wenxuan Zhou, Qingxi Li, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://conferences.sigcomm.org/co-next/2011/">7th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)</a>, December 2011. </li><br>
+
+<li id="mai11anteater" onMouseOver="bibtexButtonOver('mai11anteater');" onMouseOut="bibtexButtonOut('mai11anteater');"> <b><a  href="anteater-sigcomm2011.pdf">Debugging the Data Plane with Anteater</a></b> <div id='mai11anteater-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('mai11anteater');">BibTeX</div><br><div id='mai11anteater-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{mai11anteater,
+  author    = {Haohui Mai and Ahmed Khurshid and Rachit Agarwal and Matthew Caesar and P. Brighten Godfrey and Samuel T. King},
+  title     = {Debugging the Data Plane with Anteater},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2011},
+}
+</textarea></div>Haohui Mai, Ahmed Khurshid, Rachit Agarwal, Matthew Caesar, P. Brighten Godfrey, and Samuel T. King. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2011/">ACM SIGCOMM</a>, August 2011. <ul><li><a href="http://code.google.com/p/anteater">Code</a></li></ul></li><br>
+
+<li id="godfrey11precarious" onMouseOver="bibtexButtonOver('godfrey11precarious');" onMouseOut="bibtexButtonOut('godfrey11precarious');"> <b><a  href="precarious.pdf">BGP Stability is Precarious</a></b> <div id='godfrey11precarious-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey11precarious');">BibTeX</div><br><div id='godfrey11precarious-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey11precarious,
+  author    = {P. Brighten Godfrey},
+  title     = {BGP Stability is Precarious},
+  booktitle = {arXiv:1108.0192},
+  month     = {August},
+  year      = {2011},
+}
+</textarea></div>P. Brighten Godfrey. <a class=quiet href="http://arxiv.org/abs/1108.0192">arXiv:1108.0192</a>, August 2011. </li><br>
+
+<li id="koponen11fii" onMouseOver="bibtexButtonOver('koponen11fii');" onMouseOut="bibtexButtonOut('koponen11fii');"> <b><a  href="architecting_for_innovation-ccr.pdf">Architecting for Innovation</a></b> <div id='koponen11fii-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('koponen11fii');">BibTeX</div><br><div id='koponen11fii-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{koponen11fii,
+  author    = {Teemu Koponen and Scott Shenker and Hari Balakrishnan and Nick Feamster and Igor Ganichev and Ali Ghodsi and P. Brighten Godfrey and Nick McKeown and Guru Parulkar and Barath Raghavan and Jennifer Rexford and Somaya Arianfar and Dmitriy Kuptsov},
+  title     = {Architecting for Innovation},
+  booktitle = {ACM SIGCOMM Computer Communication Review, Vol. 41, No. 2},
+  month     = {July},
+  year      = {2011},
+}
+</textarea></div>Teemu Koponen, Scott Shenker, Hari Balakrishnan, Nick Feamster, Igor Ganichev, Ali Ghodsi, P. Brighten Godfrey, Nick McKeown, Guru Parulkar, Barath Raghavan, Jennifer Rexford, Somaya Arianfar, and Dmitriy Kuptsov. <a class=quiet href="http://ccr.sigcomm.org/drupal/?q=node/682">ACM SIGCOMM Computer Communication Review, Vol. 41, No. 2</a>, July 2011. </li><br>
+
+<li id="singla11jellyfish" onMouseOver="bibtexButtonOver('singla11jellyfish');" onMouseOut="bibtexButtonOut('singla11jellyfish');"> <b><a  href="jellyfish-hotcloud11.pdf">Jellyfish: Networking Data Centers Randomly</a></b> <div id='singla11jellyfish-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('singla11jellyfish');">BibTeX</div><br><div id='singla11jellyfish-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{singla11jellyfish,
+  author    = {Ankit Singla and Chi-Yao Hong and Lucian Popa and P. Brighten Godfrey},
+  title     = {Jellyfish: Networking Data Centers Randomly},
+  booktitle = {3rd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud)},
+  month     = {June},
+  year      = {2011},
+}
+</textarea></div>Ankit Singla, Chi-Yao Hong, Lucian Popa, and P. Brighten Godfrey. <a class=quiet href="http://www.usenix.org/event/hotcloud11/">3rd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud)</a>, June 2011. <ul><li>See the <a href="#singla12jellyfish">conference version</a> in NSDI 2012</li></ul></li><br>
+
+<li id="nguyen11slickpackets" onMouseOver="bibtexButtonOver('nguyen11slickpackets');" onMouseOut="bibtexButtonOut('nguyen11slickpackets');"> <b><a  href="SlickPackets.pdf">Slick Packets</a></b> <div id='nguyen11slickpackets-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('nguyen11slickpackets');">BibTeX</div><br><div id='nguyen11slickpackets-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{nguyen11slickpackets,
+  author    = {Giang Nguyen and Rachit Agarwal and Junda Liu and Matthew Caesar and P. Brighten Godfrey and Scott Shenker},
+  title     = {Slick Packets},
+  booktitle = {ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)},
+  month     = {June},
+  year      = {2011},
+}
+</textarea></div>Giang Nguyen, Rachit Agarwal, Junda Liu, Matthew Caesar, P. Brighten Godfrey, and Scott Shenker. <a class=quiet href="http://www.sigmetrics.org/sigmetrics2011/">ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)</a>, June 2011. <ul>
+			<li>Full version: <a href="http://arxiv.org/abs/1201.1661">arXiv:1201.1661</a></li>
+			<li><a href="http://code.google.com/p/slick-packets/">Code</a></li></ul></li><br>
+
+<li id="agarwal11sparse" onMouseOver="bibtexButtonOver('agarwal11sparse');" onMouseOut="bibtexButtonOut('agarwal11sparse');"> <b><a  href="compact_routing_in_sparse_graphs.pdf">Approximate Distance Queries and Compact Routing in Sparse Graphs</a></b> <div id='agarwal11sparse-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal11sparse');">BibTeX</div><br><div id='agarwal11sparse-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal11sparse,
+  author    = {Rachit Agarwal and P. Brighten Godfrey and Sariel Har-Peled},
+  title     = {Approximate Distance Queries and Compact Routing in Sparse Graphs},
+  booktitle = {30th Annual IEEE Conference on Computer Communications (INFOCOM), Shanghai, China},
+  month     = {April},
+  year      = {2011},
+}
+</textarea></div>Rachit Agarwal, P. Brighten Godfrey, and Sariel Har-Peled. <a class=quiet href="http://www.ieee-infocom.org/2011">30th Annual IEEE Conference on Computer Communications (INFOCOM), Shanghai, China</a>, April 2011. </li><br>
+
+</ul><h3>2010</h3>
+<ul>
+<li id="singla10disco" onMouseOver="bibtexButtonOver('singla10disco');" onMouseOut="bibtexButtonOut('singla10disco');"> <b><a  href="Scalable_Routing_on_Flat_Names.pdf">Scalable Routing on Flat Names</a></b> <div id='singla10disco-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('singla10disco');">BibTeX</div><br><div id='singla10disco-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{singla10disco,
+  author    = {Ankit Singla and P. Brighten Godfrey and Kevin Fall and Gianluca Iannaccone and Sylvia Ratnasamy},
+  title     = {Scalable Routing on Flat Names},
+  booktitle = {6th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)},
+  month     = {December},
+  year      = {2010},
+}
+</textarea></div>Ankit Singla, P. Brighten Godfrey, Kevin Fall, Gianluca Iannaccone, and Sylvia Ratnasamy. <a class=quiet href="http://conferences.sigcomm.org/co-next/2010/">6th ACM International Conference on emerging Networking Experiments and Technologies (CoNEXT)</a>, December 2010. </li><br>
+
+<li id="ganichev10yamr" onMouseOver="bibtexButtonOver('ganichev10yamr');" onMouseOut="bibtexButtonOut('ganichev10yamr');"> <b><a  href="yamr.pdf">YAMR: Yet Another Multipath Routing Protocol</a></b> <div id='ganichev10yamr-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('ganichev10yamr');">BibTeX</div><br><div id='ganichev10yamr-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{ganichev10yamr,
+  author    = {Igor Ganichev and Bin Dai and P. Brighten Godfrey and Scott Shenker},
+  title     = {YAMR: Yet Another Multipath Routing Protocol},
+  booktitle = {ACM SIGCOMM Computer Communication Review, Vol. 40, No. 5},
+  month     = {October},
+  year      = {2010},
+}
+</textarea></div>Igor Ganichev, Bin Dai, P. Brighten Godfrey, and Scott Shenker. <a class=quiet href="http://ccr.sigcomm.org/drupal/?q=node/682">ACM SIGCOMM Computer Communication Review, Vol. 40, No. 5</a>, October 2010. 
+			<ul>
+			<li><a href="http://ccr.sigcomm.org/drupal/?q=node/686">Public review</a>
+			<li><a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-150.html">Technical report</a></li>
+			</ul></li><br>
+
+<li id="uddin10relics" onMouseOver="bibtexButtonOver('uddin10relics');" onMouseOut="bibtexButtonOut('uddin10relics');"> <b><a  href="uddin10relics.pdf">RELICS: In-network Realization of Incentives to Combat Selfishness in DTNs</a></b> <div id='uddin10relics-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('uddin10relics');">BibTeX</div><br><div id='uddin10relics-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{uddin10relics,
+  author    = {Md. Yusuf Sarwar Uddin and P. Brighten Godfrey and Tarek Abdelzaher},
+  title     = {RELICS: In-network Realization of Incentives to Combat Selfishness in DTNs},
+  booktitle = {18th IEEE International Conference on Network Protocols (ICNP)},
+  month     = {October},
+  year      = {2010},
+}
+</textarea></div>Md. Yusuf Sarwar Uddin, P. Brighten Godfrey, and Tarek Abdelzaher. <a class=quiet href="http://web.njit.edu/~gwang/ICNP10/">18th IEEE International Conference on Network Protocols (ICNP)</a>, October 2010. </li><br>
+
+<li id="dimakis10coding" onMouseOver="bibtexButtonOver('dimakis10coding');" onMouseOut="bibtexButtonOut('dimakis10coding');"> <b><a  href="coding-journal.pdf">Network Coding for Distributed Storage Systems</a></b> <div id='dimakis10coding-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('dimakis10coding');">BibTeX</div><br><div id='dimakis10coding-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{dimakis10coding,
+  author    = {Alexandros G. Dimakis and P. Brighten Godfrey and Yunnan Wu and Martin J. Wainwright and Kannan Ramchandran},
+  title     = {Network Coding for Distributed Storage Systems},
+  booktitle = {IEEE Transactions on Information Theory, vol. 56, no. 9},
+  month     = {September},
+  year      = {2010},
+}
+</textarea></div>Alexandros G. Dimakis, P. Brighten Godfrey, Yunnan Wu, Martin J. Wainwright, and Kannan Ramchandran. <a class=quiet href="http://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=5550275">IEEE Transactions on Information Theory, vol. 56, no. 9</a>, September 2010. <ul><li><a href="http://www.comsoc.org/about/memberprograms/comsoc-awards/joint">IEEE Communications Society &amp; Information Theory Society Joint Paper Award, 2012</a></li><li>IEEE Communications Society Data Storage Technical Committee 2010 <a href="http://committees.comsoc.org/spfs/news.html">Best Paper Award</a> winner</li></ul></li><br>
+
+<li id="agarwal10stability" onMouseOver="bibtexButtonOver('agarwal10stability');" onMouseOut="bibtexButtonOut('agarwal10stability');"> <b><a  href="a_few_extra_paths.pdf">Guaranteeing BGP Stability With a Few Extra Paths</a></b> <div id='agarwal10stability-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('agarwal10stability');">BibTeX</div><br><div id='agarwal10stability-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{agarwal10stability,
+  author    = {Rachit Agarwal and Virajith Jalaparti and Matthew Caesar and P. Brighten Godfrey},
+  title     = {Guaranteeing BGP Stability With a Few Extra Paths},
+  booktitle = {30th IEEE International Conference on Distributed Computing Systems (ICDCS)},
+  month     = {June},
+  year      = {2010},
+}
+</textarea></div>Rachit Agarwal, Virajith Jalaparti, Matthew Caesar, and P. Brighten Godfrey. <a class=quiet href="http://icdcs2010.cnit.it/">30th IEEE International Conference on Distributed Computing Systems (ICDCS)</a>, June 2010. </li><br>
+
+<li id="schapira10incentive" onMouseOver="bibtexButtonOver('schapira10incentive');" onMouseOut="bibtexButtonOut('schapira10incentive');"> <b><a  href="congestion.pdf">Incentive Compatibility and Dynamics of Congestion Control</a></b> <div id='schapira10incentive-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('schapira10incentive');">BibTeX</div><br><div id='schapira10incentive-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{schapira10incentive,
+  author    = {P. Brighten Godfrey and Michael Schapira and Aviv Zohar and Scott Shenker},
+  title     = {Incentive Compatibility and Dynamics of Congestion Control},
+  booktitle = {ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)},
+  month     = {June},
+  year      = {2010},
+}
+</textarea></div>P. Brighten Godfrey, Michael Schapira, Aviv Zohar, and Scott Shenker. <a class=quiet href="http://www.sigmetrics.org/sigmetrics2010/">ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)</a>, June 2010. </li><br>
+
+</ul><h3>2009</h3>
+<ul>
+<li id="fall09routing" onMouseOver="bibtexButtonOver('fall09routing');" onMouseOut="bibtexButtonOut('fall09routing');"> <b><a  href="hotnets2009-final156.pdf">Routing Tables: Is Smaller Really Much Better?</a></b> <div id='fall09routing-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('fall09routing');">BibTeX</div><br><div id='fall09routing-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{fall09routing,
+  author    = {Kevin Fall and P. Brighten Godfrey and Gianluca Iannaccone and Sylvia Ratnasamy},
+  title     = {Routing Tables: Is Smaller Really Much Better?},
+  booktitle = {Eighth ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {October},
+  year      = {2009},
+}
+</textarea></div>Kevin Fall, P. Brighten Godfrey, Gianluca Iannaccone, and Sylvia Ratnasamy. <a class=quiet href="http://conferences.sigcomm.org/hotnets/2009/">Eighth ACM Workshop on Hot Topics in Networks (HotNets)</a>, October 2009. </li><br>
+
+<li id="godfrey09pathlet" onMouseOver="bibtexButtonOver('godfrey09pathlet');" onMouseOut="bibtexButtonOut('godfrey09pathlet');"> <b><a  href="../pathlets/pathlet_routing-sigcomm09.pdf">Pathlet Routing</a></b> <div id='godfrey09pathlet-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey09pathlet');">BibTeX</div><br><div id='godfrey09pathlet-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey09pathlet,
+  author    = {P. Brighten Godfrey and Igor Ganichev and Scott Shenker and Ion Stoica},
+  title     = {Pathlet Routing},
+  booktitle = {Proc. ACM SIGCOMM, Barcelona, Spain},
+  month     = {August},
+  year      = {2009},
+}
+</textarea></div>P. Brighten Godfrey, Igor Ganichev, Scott Shenker, and Ion Stoica. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2009/">Proc. ACM SIGCOMM, Barcelona, Spain</a>, August 2009. 
+			<ul>
+			<li><a href="../pathlets">Project web site</a> (Presentations, FAQ, etc.)</li>
+			<li><a href="#godfrey08pathlet">Workshop version</a> in HotNets 2008</li>
+			</ul>
+			</li><br>
+
+<li id="godfrey09heterogeneity" onMouseOver="bibtexButtonOver('godfrey09heterogeneity');" onMouseOut="bibtexButtonOut('godfrey09heterogeneity');"> <b><a  href="heterogeneity-journal.pdf">On the Price of Heterogeneity in Parallel Systems</a></b> <div id='godfrey09heterogeneity-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey09heterogeneity');">BibTeX</div><br><div id='godfrey09heterogeneity-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey09heterogeneity,
+  author    = {P. Brighten Godfrey and Richard Karp},
+  title     = {On the Price of Heterogeneity in Parallel Systems},
+  booktitle = {Theory of Computing Systems, Volume 45, Number 2, pps. 280-301},
+  month     = {August},
+  year      = {2009},
+}
+</textarea></div>P. Brighten Godfrey and Richard Karp. <a class=quiet href="http://www.springerlink.com/content/h4630v528587/?p=bff3b05c97b2421b80a4a352b75afb62&pi=2">Theory of Computing Systems, Volume 45, Number 2, pps. 280-301</a>, August 2009. <ul><li><a href="#godfrey06heterogeneity">Conference version</a> in SPAA 2006; one of seven papers invited to special journal issue.</ul></li><br>
+
+<li id="godfrey09phd" onMouseOver="bibtexButtonOver('godfrey09phd');" onMouseOut="bibtexButtonOut('godfrey09phd');"> <b><a  href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-82.html">Designing Distributed Systems for Heterogeneity</a></b> <div id='godfrey09phd-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey09phd');">BibTeX</div><br><div id='godfrey09phd-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey09phd,
+  author    = {P. Brighten Godfrey},
+  title     = {Designing Distributed Systems for Heterogeneity},
+  booktitle = {Ph.D. Thesis, EECS Department, University of California, Berkeley, Technical Report No. UCB/EECS-2009-82},
+  month     = {May},
+  year      = {2009},
+}
+</textarea></div>P. Brighten Godfrey. Ph.D. Thesis, EECS Department, University of California, Berkeley, Technical Report No. UCB/EECS-2009-82, May 2009. </li><br>
+
+</ul><h3>2008</h3>
+<ul>
+<li id="godfrey08pathlet" onMouseOver="bibtexButtonOver('godfrey08pathlet');" onMouseOut="bibtexButtonOut('godfrey08pathlet');"> <b><a  href="../pathlets/pathlet_routing-hotnets08.pdf">Pathlet Routing</a></b> <div id='godfrey08pathlet-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey08pathlet');">BibTeX</div><br><div id='godfrey08pathlet-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey08pathlet,
+  author    = {P. Brighten Godfrey and Scott Shenker and Ion Stoica},
+  title     = {Pathlet Routing},
+  booktitle = {Seventh ACM Workshop on Hot Topics in Networks (HotNets)},
+  month     = {October},
+  year      = {2008},
+}
+</textarea></div>P. Brighten Godfrey, Scott Shenker, and Ion Stoica. <a class=quiet href="http://conferences.sigcomm.org/hotnets/2008/">Seventh ACM Workshop on Hot Topics in Networks (HotNets)</a>, October 2008. 
+			<ul>
+			<li>Obsoleted by the <a href="#godfrey09pathlet">conference version</a></li>
+			<li><a href="../pathlets">Project web site</a>
+				(Presentations, FAQ, etc.)</li>
+			</ul>
+			</li><br>
+
+<li id="godfrey08balls" onMouseOver="bibtexButtonOver('godfrey08balls');" onMouseOut="bibtexButtonOut('godfrey08balls');"> <b><a  href="ballsnbins.pdf">Balls and Bins with Structure: Balanced Allocations on Hypergraphs</a></b> <div id='godfrey08balls-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey08balls');">BibTeX</div><br><div id='godfrey08balls-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey08balls,
+  author    = {P. Brighten Godfrey},
+  title     = {Balls and Bins with Structure: Balanced Allocations on Hypergraphs},
+  booktitle = {ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  month     = {January},
+  year      = {2008},
+}
+</textarea></div>P. Brighten Godfrey. <a class=quiet href="http://www.siam.org/meetings/da08/">ACM-SIAM Symposium on Discrete Algorithms (SODA)</a>, January 2008. <ul><li><a href="ballsnbins-presentation.pdf">Talk</a> [<a href="ballsnbins-presentation.pdf">pdf</a> | <a href="ballsnbins-presentation.zip">keynote</a>]</ul></li><br>
+
+</ul><h3>2007</h3>
+<ul>
+<li id="godfrey07srs" onMouseOver="bibtexButtonOver('godfrey07srs');" onMouseOut="bibtexButtonOut('godfrey07srs');"> <b><a  href="srs-nanog40.pdf">Stable Internet Route Selection</a></b> <div id='godfrey07srs-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey07srs');">BibTeX</div><br><div id='godfrey07srs-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey07srs,
+  author    = {P. Brighten Godfrey and Matthew Caesar and Ian Haken and Scott Shenker and Ion Stoica},
+  title     = {Stable Internet Route Selection},
+  booktitle = {NANOG 40},
+  month     = {June},
+  year      = {2007},
+}
+</textarea></div>P. Brighten Godfrey, Matthew Caesar, Ian Haken, Scott Shenker, and Ion Stoica. <a class=quiet href="http://www.nanog.org/mtg-0706/">NANOG 40</a>, June 2007. <ul>
+			<li>Updated version in <a href="http://hdl.handle.net/2142/14841">the tech report</a></ul></li><br>
+
+<li id="dimakis07coding" onMouseOver="bibtexButtonOver('dimakis07coding');" onMouseOut="bibtexButtonOut('dimakis07coding');"> <b><a  href="coding-infocom07.pdf">Network Coding for Distributed Storage Systems</a></b> <div id='dimakis07coding-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('dimakis07coding');">BibTeX</div><br><div id='dimakis07coding-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{dimakis07coding,
+  author    = {Alexandros G. Dimakis and P. Brighten Godfrey and Martin J. Wainwright and Kannan Ramchandran},
+  title     = {Network Coding for Distributed Storage Systems},
+  booktitle = {26th Annual IEEE Conference on Computer Communications (INFOCOM), Anchorage, Alaska},
+  month     = {May},
+  year      = {2007},
+}
+</textarea></div>Alexandros G. Dimakis, P. Brighten Godfrey, Martin J. Wainwright, and Kannan Ramchandran. <a class=quiet href="http://www.ieee-infocom.org/2007/">26th Annual IEEE Conference on Computer Communications (INFOCOM), Anchorage, Alaska</a>, May 2007. <ul><li>Obsoleted by the <a href="#dimakis10coding">journal version</a>.</li></ul></li><br>
+
+<li id="dimakis07benefits" onMouseOver="bibtexButtonOver('dimakis07benefits');" onMouseOut="bibtexButtonOut('dimakis07benefits');"> <b><a  href="coding-netcod07.pdf">The Benefits of Network Coding for Peer-to-Peer Storage Systems</a></b> <div id='dimakis07benefits-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('dimakis07benefits');">BibTeX</div><br><div id='dimakis07benefits-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{dimakis07benefits,
+  author    = {Alexandros G. Dimakis and P. Brighten Godfrey and Martin J. Wainwright and Kannan Ramchandran},
+  title     = {The Benefits of Network Coding for Peer-to-Peer Storage Systems},
+  booktitle = {Third Workshop on Network Coding, Theory, and Applications (NETCOD)},
+  month     = {January},
+  year      = {2007},
+}
+</textarea></div>Alexandros G. Dimakis, P. Brighten Godfrey, Martin J. Wainwright, and Kannan Ramchandran. <a class=quiet href="http://code.ucsd.edu/netcod07/">Third Workshop on Network Coding, Theory, and Applications (NETCOD)</a>, January 2007. <ul><li>Obsoleted by the <a href="#dimakis10coding">journal version</a>.</li></ul></li><br>
+
+</ul><h3>2006</h3>
+<ul>
+<li id="godfrey06churn-thesis" onMouseOver="bibtexButtonOver('godfrey06churn-thesis');" onMouseOut="bibtexButtonOut('godfrey06churn-thesis');"> <b>Minimizing Churn in Distributed Systems</b> <div id='godfrey06churn-thesis-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey06churn-thesis');">BibTeX</div><br><div id='godfrey06churn-thesis-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey06churn-thesis,
+  author    = {P. Brighten Godfrey},
+  title     = {Minimizing Churn in Distributed Systems},
+  booktitle = {M.S. Thesis, EECS Department, University of California, Berkeley},
+  month     = {December},
+  year      = {2006},
+}
+</textarea></div>P. Brighten Godfrey. M.S. Thesis, EECS Department, University of California, Berkeley, December 2006. </li><br>
+
+<li id="godfrey06churn" onMouseOver="bibtexButtonOver('godfrey06churn');" onMouseOut="bibtexButtonOut('godfrey06churn');"> <b><a  href="churn.pdf">Minimizing Churn in Distributed Systems</a></b> <div id='godfrey06churn-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey06churn');">BibTeX</div><br><div id='godfrey06churn-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey06churn,
+  author    = {P. Brighten Godfrey and Scott Shenker and Ion Stoica},
+  title     = {Minimizing Churn in Distributed Systems},
+  booktitle = {ACM SIGCOMM},
+  month     = {September},
+  year      = {2006},
+}
+</textarea></div>P. Brighten Godfrey, Scott Shenker, and Ion Stoica. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2006/">ACM SIGCOMM</a>, September 2006. 	<ul>
+			<li>Complete version with proofs in <a href="#godfrey09phd">my dissertation</a></li>
+			<li><a href="churn-techrep.pdf">Older tech report version</a>:
+        	Technical Report No. EECS-2006-25, EECS Department,
+        	University of California, Berkeley, 2006.
+			<li><a href="churn-presentation.pdf">Talk</a> [<a href="churn-presentation.pdf">pdf</a> | <a href="churn-presentation.zip">keynote</a>]</li>
+			<li><a href="http://conferences.sigcomm.org/sigcomm/2006/discussion/showpaper.php?paper_id=16">Public review and comments</a></li>
+			<li><a href="../availability/">Data sets</a></li>
+			</ul></li><br>
+
+<li id="godfrey06heterogeneity" onMouseOver="bibtexButtonOver('godfrey06heterogeneity');" onMouseOut="bibtexButtonOut('godfrey06heterogeneity');"> <b><a  href="heterogeneity.pdf">On the Price of Heterogeneity in Parallel Systems</a></b> <div id='godfrey06heterogeneity-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey06heterogeneity');">BibTeX</div><br><div id='godfrey06heterogeneity-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey06heterogeneity,
+  author    = {P. Brighten Godfrey and Richard Karp},
+  title     = {On the Price of Heterogeneity in Parallel Systems},
+  booktitle = {18th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA), Cambridge, MA},
+  month     = {July},
+  year      = {2006},
+}
+</textarea></div>P. Brighten Godfrey and Richard Karp. <a class=quiet href="http://www.cs.jhu.edu/~spaa/2006/">18th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA), Cambridge, MA</a>, July 2006. <ul>
+			<li>Invited to <a href="#godfrey09heterogeneity">special journal issue</a></li>
+			<li><a href="heterogeneity-presentation.pdf">Talk</a> [<a href="heterogeneity-presentation.pdf">pdf</a> | <a href="heterogeneity-presentation.zip">keynote</a>]</li></ul></li><br>
+
+<li id="surana06load" onMouseOver="bibtexButtonOver('surana06load');" onMouseOut="bibtexButtonOut('surana06load');"> <b><a  href="surana06load.pdf">Load Balancing in Dynamic Structured P2P Systems</a></b> <div id='surana06load-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('surana06load');">BibTeX</div><br><div id='surana06load-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{surana06load,
+  author    = {Sonesh Surana and P. Brighten Godfrey and Karthik Lakshminarayanan and Richard Karp and Ion Stoica},
+  title     = {Load Balancing in Dynamic Structured P2P Systems},
+  booktitle = {Performance Evaluation, Vol. 63, no. 6, pps. 217-240},
+  month     = {March},
+  year      = {2006},
+}
+</textarea></div>Sonesh Surana, P. Brighten Godfrey, Karthik Lakshminarayanan, Richard Karp, and Ion Stoica. <a class=quiet href="http://www1.cs.columbia.edu/~danr/p2p-e2e.html">Performance Evaluation, Vol. 63, no. 6, pps. 217-240</a>, March 2006. <ul><li><a href="#surana04load">Conference version</a> in INFOCOM 2004</li></ul></li><br>
+
+</ul><h3>2005</h3>
+<ul>
+<li id="rhea05opendht" onMouseOver="bibtexButtonOver('rhea05opendht');" onMouseOut="bibtexButtonOut('rhea05opendht');"> <b><a  href="opendht.pdf">OpenDHT: A Public DHT Service and Its Uses</a></b> <div id='rhea05opendht-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('rhea05opendht');">BibTeX</div><br><div id='rhea05opendht-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{rhea05opendht,
+  author    = {Sean Rhea and P. Brighten Godfrey and Brad Karp and John Kubiatowicz and Sylvia Ratnasamy and Scott Shenker and Ion Stoica and Harlan Yu},
+  title     = {OpenDHT: A Public DHT Service and Its Uses},
+  booktitle = {ACM SIGCOMM},
+  month     = {August},
+  year      = {2005},
+}
+</textarea></div>Sean Rhea, P. Brighten Godfrey, Brad Karp, John Kubiatowicz, Sylvia Ratnasamy, Scott Shenker, Ion Stoica, and Harlan Yu. <a class=quiet href="http://conferences.sigcomm.org/sigcomm/2005/">ACM SIGCOMM</a>, August 2005. </li><br>
+
+<li id="godfrey05y0" onMouseOver="bibtexButtonOver('godfrey05y0');" onMouseOut="bibtexButtonOut('godfrey05y0');"> <b><a  href="y0.pdf">Heterogeneity and Load Balance in Distributed Hash Tables</a></b> <div id='godfrey05y0-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey05y0');">BibTeX</div><br><div id='godfrey05y0-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey05y0,
+  author    = {P. Brighten Godfrey and Ion Stoica},
+  title     = {Heterogeneity and Load Balance in Distributed Hash Tables},
+  booktitle = {24th Annual IEEE Conference on Computer Communications (INFOCOM), Miami, FL},
+  month     = {March},
+  year      = {2005},
+}
+</textarea></div>P. Brighten Godfrey and Ion Stoica. <a class=quiet href="http://www.ieee-infocom.org/2005/">24th Annual IEEE Conference on Computer Communications (INFOCOM), Miami, FL</a>, March 2005. <ul>
+			<li>Complete version with proofs in <a href="#godfrey09phd">my dissertation</a>
+			<li><a href="y0-presentation.pdf">Talk</a></ul></li><br>
+
+</ul><h3>2004</h3>
+<ul>
+<li id="godfrey04naps" onMouseOver="bibtexButtonOver('godfrey04naps');" onMouseOut="bibtexButtonOut('godfrey04naps');"> <b><a  href="naps.pdf">Naps: Scalable, Robust Topology Management in Wireless Ad Hoc Networks</a></b> <div id='godfrey04naps-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('godfrey04naps');">BibTeX</div><br><div id='godfrey04naps-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{godfrey04naps,
+  author    = {P. Brighten Godfrey and David Ratajczak},
+  title     = {Naps: Scalable, Robust Topology Management in Wireless Ad Hoc Networks},
+  booktitle = {Third IEEE/ACM International Symposium on Information Processing in Sensor Networks (IPSN)},
+  month     = {April},
+  year      = {2004},
+}
+</textarea></div>P. Brighten Godfrey and David Ratajczak. <a class=quiet href="http://ipsn04.cs.uiuc.edu/">Third IEEE/ACM International Symposium on Information Processing in Sensor Networks (IPSN)</a>, April 2004. <ul><li><a href="naps-presentation.pdf">Talk</a></ul></li><br>
+
+<li id="surana04load" onMouseOver="bibtexButtonOver('surana04load');" onMouseOut="bibtexButtonOut('surana04load');"> <b><a  href="load_balancing.pdf">Load Balancing in Dynamic Structured P2P Systems</a></b> <div id='surana04load-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('surana04load');">BibTeX</div><br><div id='surana04load-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{surana04load,
+  author    = {Sonesh Surana and P. Brighten Godfrey and Karthik Lakshminarayanan and Richard Karp and Ion Stoica},
+  title     = {Load Balancing in Dynamic Structured P2P Systems},
+  booktitle = {23rd Annual IEEE Conference on Computer Communications (INFOCOM), Hong Kong},
+  month     = {March},
+  year      = {2004},
+}
+</textarea></div>Sonesh Surana, P. Brighten Godfrey, Karthik Lakshminarayanan, Richard Karp, and Ion Stoica. <a class=quiet href="http://www.ieee-infocom.org/2004/">23rd Annual IEEE Conference on Computer Communications (INFOCOM), Hong Kong</a>, March 2004. <ul><li>Obsoleted by the <a href="#surana06load">journal version</a></li></ul></li><br>
+
+</ul><h3>2003</h3>
+<ul>
+<li id="chaudhuri03paths" onMouseOver="bibtexButtonOver('chaudhuri03paths');" onMouseOut="bibtexButtonOut('chaudhuri03paths');"> <b><a  href="mlt.ps">Paths, Trees and Minimum Latency Tours</a></b> <div id='chaudhuri03paths-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('chaudhuri03paths');">BibTeX</div><br><div id='chaudhuri03paths-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{chaudhuri03paths,
+  author    = {Kamalika Chaudhuri and P. Brighten Godfrey and Satish Rao and Kunal Talwar},
+  title     = {Paths, Trees and Minimum Latency Tours},
+  booktitle = {44th Annual IEEE Symposium on Foundations of Computer Science (FOCS)},
+  month     = {October},
+  year      = {2003},
+}
+</textarea></div>Kamalika Chaudhuri, P. Brighten Godfrey, Satish Rao, and Kunal Talwar. <a class=quiet href="http://theory.csail.mit.edu/FOCS03/">44th Annual IEEE Symposium on Foundations of Computer Science (FOCS)</a>, October 2003. </li><br>
+
+<li id="chaudhuri03set" onMouseOver="bibtexButtonOver('chaudhuri03set');" onMouseOut="bibtexButtonOut('chaudhuri03set');"> <b><a  href="set.pdf">On the Complexity of the Game of Set</a></b> <div id='chaudhuri03set-bibtexbtn' class='bibtexbtn' onClick="bibtexButtonClick('chaudhuri03set');">BibTeX</div><br><div id='chaudhuri03set-bibtex' class='bibtex'><textarea readonly class='bibtextext'>@inproceedings{chaudhuri03set,
+  author    = {Kamalika Chaudhuri and P. Brighten Godfrey and David Ratajczak and Hoeteck Wee},
+  title     = {On the Complexity of the Game of Set},
+  booktitle = {Manuscript},
+  month     = {June},
+  year      = {2003},
+}
+</textarea></div>Kamalika Chaudhuri, P. Brighten Godfrey, David Ratajczak, and Hoeteck Wee. Manuscript, June 2003. </li><br>
+
+</ul>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-413282-1";
+urchinTracker();
+</script>
+</div>
+	</body>
+</html>

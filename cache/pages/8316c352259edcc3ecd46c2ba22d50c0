@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Thanks to James Dolezal for designing this website -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aditi Raghunathan - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="name">Aditi Raghunathan</div>
+      <br />
+      <div class="subtitle">Assistant Professor <br/>
+        Computer Science Department, CMU
+      </div>
+      <img src="photo_new.jpeg" width="275px" />
+    </div>
+
+    <div class="topbar">
+      <ul class="navigation_list">
+        <li>about</li>
+        <li>publications</li>
+        <li>honors</li>
+        <li>group</li>
+        <li>teaching</li>
+	<li>contact</li>
+      </ul>
+    </div>
+
+    <div class="maintext target" id="about_place">
+      <font size="4">
+      <p>I am an Assistant Professor in the Computer Science Department at Carnegie Mellon University. I am also affiliated with the Machine Learning Department.</p>
+      <div class="highlight-card">
+        <p>
+          We just launched a dedicated group website! Explore ongoing projects, people, and updates here:
+          <a href="https://ar-forum.github.io" target="_blank" rel="noopener">
+            AI Reliability @ CMU led by Aditi Raghunathan
+          </a>.
+        </p>
+      </div>
+
+	      <p><strong class="research-label">Research focus:</strong> I aim to advance our scientific understanding of frontier models by uncovering why they fail and how to build systems that remain reliable under pressure. Recent projects in my group expose hidden bottlenecks in data curation and quantization pipelines, develop new evaluations for agent safety and distribution shift, and highlight failure modes in post-training defenses such as jailbreaks and context fidelity.</p>
+
+	      <div class="highlight-card">
+        <p>
+          I wrote a short post about our groupâs recent work presented at <strong>ICML 2025</strong> sharing what we explored,
+          what we learned, and a bit of behind-the-scenes context. Read it here:
+          <a href="https://www.cs.cmu.edu/~aditirag/icml2025.html" target="_blank" rel="noopener">
+            Aditi Raghunathan's group at ICML 2025
+          </a>.
+        </p>
+      </div>
+      <p>I received my PhD from Stanford University in 2021 where I was fortunate to be advised by <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>. Previously, I obtained my BTech in Computer Science from IIT Madras in 2016.</p>
+
+      <p><strong>If you are a current CMU undergraduate or masters student interested in working with my group, please <a href="https://forms.gle/fEqrzuAVepGxviYo8">apply here</a></strong>.</p>
+    </div>
+
+    <!--
+    <div class="maintext" id="research_place">
+      <font size="4">
+      <p>I aim to advance our scientific understanding of frontier models. I am particularly interested in uncovering the root causes of their failures and designing principled approaches to improve their reliability and safety.</p>
+      <p>Our recent results have revealed important blind spots that impede the efficiency of <a href="https://arxiv.org/pdf/2404.07177"><strong>data curation</strong></a> and <a href="https://arxiv.org/pdf/2411.04330"><strong>quantization</strong></a>. We developed new frameworks to evaluate <a href="https://arxiv.org/pdf/2406.12814"><strong>AI agent safety</strong></a>, <a href="https://arxiv.org/pdf/2206.13089"><strong>distribution shifts</strong></a>, and identified pitfalls in post-training defenses against <a href="https://arxiv.org/pdf/2403.14725"><strong>jailbreaks</strong></a> and <a href="https://arxiv.org/pdf/2410.10796"><strong>context fidelity</strong></a>.</p>
+      <p><i>Current focus:</i> Checkout research highlights from my group at ICML 2025. My group is actively studying the interplay between pre-training and post-training, uncovering surprising <a href="https://arxiv.org/pdf/2503.19206">limits to scaling</a>, improved <a href="https://arxiv.org/pdf/2504.10478">reasoning</a>, <a href="https://arxiv.org/pdf/2504.15266">creativity</a> and privacy.</p>
+
+      <div id="preprints-container" class="research_list"></div>
+      <h1>Publications</h1>
+      <div id="publications-container" class="research_list"></div>
+</div>
+    -->
+    
+    <!--
+    <div class="maintext" id="group_place">
+
+    <h1> PhD advisees </h1>
+    <ul>
+      <li> <a href = 'https://sprin.xyz/'> Jacob Springer </a></li>
+      <li> <a href = 'https://kebaek.github.io/'> Christina Baek </a>(co-advised with Zico Kolter)</li>
+      <li> <a href = 'https://grghosal.github.io/'> Gaurav Rohit Ghosal </a> </li>
+      <li> <a href = 'https://chenwu.io/'> Chen Wu </a></li>
+      <li> <a href = 'https://fjzzq2002.github.io/'> Ziqian Zhong </a></li>
+    </ul>
+    
+    <h1>Undergraduate and Master's advisees</h1>
+    <ul>
+      <li> Taeyoun Kim </li>
+      <li> Charles Ding </li>
+      <li> Rishi Shah </li>
+      <li> Jerick Shi (co-advised with Vince Conitzer) </li>
+    </ul>
+    
+    I am fortunate to also collaborate with several masters students and PhD students at CMU who I do not directly advise.
+
+    <h1>Alumni</h1>
+    <ul>
+      <li> Xingyu Dang (visiting student, now PhD student at Princeton) </li>
+      <li> Tanishq Kumar (now PhD student at Stanford) </li>
+      <li> <a href = 'https://www.andrew.cmu.edu/user/suhask/'> Suhas Kotha </a> (MS 2024, now PhD student at Stanford) </li> 
+      <li> Janet Hsieh (MS 2024, now software engineer at Syllo) </li> 
+      <li> Aman Mehra (MS 2024, will be PhD student at MILA) </li>
+      <li> <a href = 'https://people.eecs.berkeley.edu/~erjones/'> Erik Jones </a> (MS 2020, now PhD student at Berkeley) </li>
+    </ul>
+</div>
+    -->
+
+    <div class="maintext" id="honors_place">
+      <h1>Selected honors</h1>
+      <ul>
+	<li>NSF CAREER award</li>
+        <li>Okawa Research Award</li>
+        <li>Google Research Scholar</li>
+        <li>Forbes 30 under 30 in Science</li>
+        <li>Schmidt AI 2050 Early Career Fellow</li>
+        <li>Arthur Samuel Best Thesis Award at Stanford</li>
+        <li>Rising Stars in EECS</li>
+        <li>Open Philanthropy Project AI Fellowship</li>
+        <li>Google PhD Fellowship in Machine Learning</li>
+        <li>Stanford School of Engineering Fellowship</li>
+        <li>Google Anita Borg Memorial Scholarship</li>
+      </ul>
+    </div>
+
+    <div class="maintext" id="teaching_place">
+      <b>Spring 2026:</b> <a href="https://www.cs.cmu.edu/~aditirag/teaching/15-780S26.html">Graduate Artificial Intelligence</a><br/><br/>
+      <b>Fall 2025:</b> <a href="https://www.cs.cmu.edu/~aditirag/teaching/15-783F25.html">Trustworthy AI: Theory and Practice</a><br/><br/>
+      <b>Spring 2025:</b> <a href="https://www.cs.cmu.edu/~15780/">Graduate Artificial Intelligence</a><br/><br/>
+      <b>Fall 2024:</b> <a href="https://www.cs.cmu.edu/~aditirag/teaching/15-789F24.html">Theoretical and Empirical Foundations of Modern Machine Learning</a><br/><br/>
+      <b>Fall 2023:</b> <a href="https://www.cs.cmu.edu/~15281/">Artificial Intelligence: Representation and Problem Solving</a><br/><br/>
+      <b>Spring 2023:</b> <a href="https://www.cs.cmu.edu/~15780-s23/">Graduate Artificial Intelligence</a><br/><br/>
+      <b>Fall 2022:</b> <a href="https://www.cs.cmu.edu/~aditirag/teaching/15-884F22.html">Theoretical and Empirical Foundations of Modern Machine Learning</a>
+    </div>
+
+    <div class="maintext" id="contact_place">
+      Email: raditi at cmu dot edu <p>
+	Office: GHC 7005
+      
+    </div>
+    <!-- other sections unchanged -->
+
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="publications.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37398010-2', 'cmu.edu');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

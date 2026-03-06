@@ -1,0 +1,411 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="nexus-font-support">
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="google" content="nositelinkssearchbox"/>
+    <meta name="tdm-reservation" content="0">
+    <title>
+        Cookies
+      -  CityUHK Scholars</title>
+    
+    <meta name="robots" content="noindex" />
+    
+
+
+
+<meta property="og:site_name" content="CityUHK Scholars">
+
+
+
+<meta property="og:url" content="https://scholars.cityu.edu.hk/en/about/cookies/">
+<meta property="og:locale" content="en_GB">
+
+
+    <meta property="og:type" content="website">
+
+
+
+    
+        <meta property="og:image" content="https://scholars.cityu.edu.hk/skin/headerImage/">
+    
+
+
+
+
+
+    <link rel="stylesheet" href="/assets/application-bbadabf14375775985ecfd59655b0569.css" />
+    
+    
+        <link rel="shortcut icon" href="/skin/favIcon/"/>
+    
+    <link href="/skin/css/" rel="stylesheet"/>
+    
+    <script src="/skin/script/" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/application-c9812d1ef516be20094e6491b18de745.js" ></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/html5shiv.min-ca5300beead9a4a9d2c9c584a9016410.js" ></script>
+    <script type="text/javascript" src="/assets/respond.min-678d372b349e434d9923e1b591f14a1e.js" ></script>
+    <![endif]-->
+    
+        
+        
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.googletagmanager.com/gtag/js?id=G-ETKF41RWWH" async=""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ETKF41RWWH', {'cookie_domain' : document.location.hostname, 'anonymize_ip': true });
+</script>
+    <script src="//assets.adobedtm.com/4a848ae9611a/ea83f870454d/launch-af020409b299.min.js" async=""></script>
+    
+    
+</head>
+
+<body class="webkit" data-page="about">
+
+<div id="aria-polite" aria-live="polite"></div>
+
+<div id="aria-assertive" aria-live="assertive"></div>
+
+<nav aria-label="Skip to content" class="skip-content">
+    <ul>
+        <li>
+            <a href="#main-navigation" class="sr-only sr-only-focusable">Skip to main navigation</a>
+        </li>
+        
+            <li>
+                <a href="#main-search" class="sr-only sr-only-focusable">Skip to search</a>
+            </li>
+        
+        <li>
+            <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+            
+        </li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+    <header class="header" id="page-header">
+        <div class="primary  ">
+            <div class="container">
+                
+                <a href="/en/" class="logo">
+                    
+                        <span class="sr-only">CityUHK Scholars Home</span>
+                        <img src="/skin/headerImage/" alt="CityUHK Scholars Logo"/>
+                    
+                </a>
+                
+                    <ul class="header-tools ">
+                        
+                            <li class="help-and-faq">
+                                <a href="https://libguides.library.cityu.edu.hk/cityuscholars1/home" target="_blank">
+                                    <i class="icon icon-lifebuoy" aria-hidden="true"></i>
+                                    <span class="label">Researcher Login</span>
+                                    <span class="sr-only">&nbsp; Link opens in a new tab</span>
+                                </a>
+                            </li>
+                        
+                        
+                    </ul>
+                
+                
+                
+            </div>
+        </div>
+
+        
+            <div class="header-search">
+                
+<form action="/en/searchAll/index/" method="get"
+      class="search-form" id="search-everything">
+
+    <div class="global-search-wrapper">
+        <div class="global-search mini">
+            <div class="field-button-wrapper">
+                <div class="search-cell search-field">
+                    <label for="main-search" class="sr-only">Search content at CityUHK Scholars</label>
+                    <input id="main-search" class="search-field" value="" name="search"
+                           placeholder="Search..."/>
+                </div>
+
+                <div class="search-submit">
+                    <button type="submit" aria-label="Search">
+                        <i class="icon icon-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    $(function () {
+        var searchForm = $("#search-everything");
+        var searchField = $(".search-field", searchForm);
+        searchForm.on("submit", function () {
+            var field = searchField.find("input");
+            var searchString = field.val();
+
+            // No enter key submit nothing :-)
+            if (!searchString) return false;
+
+            if (searchString.length >= 200) {
+                searchForm.attr("method", "post");
+                searchForm.attr("action", "/en/concepts/copypaste/");
+                field.attr("name", "text");
+            }
+        });
+    });
+</script>
+            </div>
+        
+
+
+        
+        
+            <div class="subMenu">
+                <div class="secondary">
+                    <div class="container">
+                        <nav id="main-navigation" aria-label="Main navigation" class="content-navigation three-third">
+                            <ul data-value="More" role="menubar">
+                                <li class="" role="none">
+                                    <a href="/en/" role="menuitem" tabindex="-1">Home</a>
+                                </li>
+
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/persons/"><span>Researchers</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/organisations/"><span>Research units</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/publications/"><span>Research output</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/projects/"><span>Projects</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/activities/"><span>Activities</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/prizes/"><span>Prizes</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/studentTheses/"><span>Student theses</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/datasets/"><span>Datasets</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/impacts/"><span>Impacts</span></a>
+                                    </li>
+                                
+                                    <li class="" role="none">
+                                        <a class="portal_link" tabindex="-1" role="menuitem" href="/en/clippings/"><span>Press/Media</span></a>
+                                    </li>
+                                
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        
+    </header>
+
+    <main id="page-content">
+        
+    <div class="page-section page-section-about page-section-about-cookies ">
+
+        
+        
+        
+        
+        <section
+                class="page-section-header page-section-header-about page-section-header-about-cookies
+                 no-backdrop-image"
+                data-stickyheader=""
+                style="">
+            
+            
+        </section>
+
+        <div id="main-content"
+             class="page-section-content page-section-content-about page-section-content-about-cookies   ">
+            
+        <div class="container">
+            <h1>Cookies</h1>
+            <p><p>As explained in our <a href="https://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a>, the Service collects information through the use of "cookies" or similar technologies. Cookies are widely used in order to make websites and applications work, or work more efficiently, and help them remember certain information about you, either for the duration of your visit (using a "session" cookie) or for repeat visits (using a "persistent" cookie).</p></p>
+            <p>The cookies used on this website are as follows:</p>
+
+            <ul>
+                <li><p><strong>Strictly necessarry cookies.</strong> These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. For example, authentication and security cookies are used to identify and recognize registered users and to enable them to gain access to requested content or features. Without these cookies, services you have asked for cannot be provided.</p></li>
+                <li><p><strong>Functionality cookies.</strong> These cookies allow our websites to remember the choices you make and your account preferences and to provide enhanced, more personal features. For example, these cookies will remember your log-in details.</p></li>
+                <li><p><strong>Performance cookies.</strong> These are analytics and research cookies that allow us to collect information about how visitors use a website, for instance which pages visitors go to most often, and if they get error messages from web pages. This helps us to improve the way the website works and allows us to test different ideas on the site.</p></li>
+            </ul>
+
+            <p>The table below explains performance and functionality cookies from our suppliers and their purpose. Please note that the cookies and other technologies may change over time.</p>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>More Info</th>
+                </tr>
+
+                </thead>
+
+                <tbody>
+                    
+                        <tr>
+                            <td>Google Analytics</td>
+                            <td>These web analytics cookies, provided by Google Inc., are used to collect information about how visitors use our site. We use the information to compile reports and to help us improve the site. In addition, we use first-party cookies (such as the Google Analytics cookie) to help us measure and optimise the effectiveness of our online marketing campaigns.</td>
+                            <td>See <a href="https://www.google.com/analytics/learn/privacy.html" target="_blank">Google Analytics Cookies and Privacy Controls</a></td>
+                        </tr>
+                    
+                    
+                        <tr>
+                            <td>Adobe Analytics</td>
+                            <td>These web analytics cookies, provided by Adobe Systems Inc., are used to differentiate requests from different browsers and to store helpful information that an application can use later. They may also be used to associate browsing information to customer records. In particular, Analytics uses cookies to anonymously define new visitors, help analyze clickstream data, and track historical activity on the website, such as response to particular campaigns or the length of the sales cycle.</td>
+                            <td>See <a href="https://www.adobe.com/privacy/cookies.html" target="_blank">Adobe Analytics Cookies Controls</a></td>
+                        </tr>
+                    
+                    
+                    
+                    <tr>
+                        <td>Pure User Cookie</td>
+                        <td>This cookie is created by Pure and used to store profile information. When a user first logs into Pure, a cookie is stored on their browser. This is used to identify the user and provide access to the user&#39;s profile editor directly from their Person profile page.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h4>How to refuse the use of cookies</h4>
+            <p>You can prevent your browser from accepting certain cookies, have the browser require your consent before a new cookie is placed in your browser, or block cookies altogether by selecting the appropriate settings on your browser&#39;s privacy preferences menu. To avoid receiving cookies on the browser of your mobile device, you will need to refer to its user manual. For information on how to opt-out of cookies set by our suppliers, please visit the applicable links listed in the tables above.</p>
+            <p>The links below will help you find the settings for some common browsers:</p>
+
+            <ul>
+                <li><p>Manage cookie settings in <a href="https://support.google.com/chrome/answer/95647?hl=en" target="_blank">Chrome</a> and <a href="https://support.google.com/chrome/answer/95647?hl=en&&co=GENIE.Platform=Android&&oco=1" target="_blank">Chrome Android</a> and <a href="https://support.google.com/chrome/answer/95647?hl=en&&co=GENIE.Platform=iOS&&oco=1" target="_blank">Chrome iOS</a></p></li>
+                <li><p>Manage cookie settings in <a href="https://support.apple.com/kb/PH19214?locale=en_US" target="_blank">Safari</a> and <a href="https://support.apple.com/en-gb/HT201265" target="_blank">Safari iOS</a></p></li>
+                <li><p>Manage cookie settings in <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Firefox</a></p></li>
+                <li><p>Manage cookie settings in <a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Internet Explorer</a></p></li>
+                <li><p>Manage cookie settings in <a href="http://www.opera.com/help/tutorials/security/privacy/" target="_blank">Opera</a></p></li>
+            </ul>
+
+        </div>
+    
+        </div>
+    </div>
+
+    <div id="new-modal-overlay"></div>
+    
+    </main>
+
+    <footer id="page-footer" class="main-footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="content-navigation three-third">
+                    <div dir="ltr" class="footer-columns">
+                        
+                            <div class="footer-column">
+                                <div class="footer-icon">
+                                    <img src="/skin/footerIcon/" alt="CityUHK Scholars Logo"/>
+                                </div>
+                            </div>
+                        
+                        <div class="footer-column">
+                            <p>
+                                Powered by <a href="http://www.elsevier.com/online-tools/research-intelligence/products-and-services/pure" target="_blank">Pure <span class="sr-only">Link opens in a new tab</span></a>, <a href="http://www.scopus.com/" target="_blank">Scopus <span class="sr-only">Link opens in a new tab</span></a> & <a href="https://www.elsevier.com/products/elsevier-fingerprint-engine" target="_blank">Elsevier Fingerprint Engine&trade; <span class="sr-only">Link opens in a new tab</span></a> 
+                            </p>
+
+                            <p>
+                                All content on this site: Copyright &copy; 2026 CityUHK Scholars, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+                            </p>
+
+                            <p>We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the <a href="/en/about/cookies/">use of cookies</a></p>
+                            
+                            
+                                <p><a href="https://scholars.cityu.edu.hk/admin/workspace.xhtml" rel="nofollow" target="_blank">Log in to CityUHK Scholars <span class="sr-only">&nbsp; Link opens in a new tab</span></a></p>
+                            
+                            <p></p>
+                        </div>
+
+                        <div class="footer-column">
+                            
+                                <p><a href="https://www.cityu.edu.hk/fo/dataprotection/index.htm" target="_blank">CityUHK Scholars data protection policy <span class="sr-only">&nbsp; Link opens in a new tab</span></a></p>
+                            
+                            
+                            
+                                <p><a href="https://www.cityu.edu.hk/www-info/accessibility/" target="_blank" rel="nofollow">About web accessibility <span class="sr-only">&nbsp; Link opens in a new tab</span></a></p>
+                            
+
+                            <p>
+                                
+                            </p>
+
+                            <p>
+                                
+                            </p>
+
+                            <p>
+                                <a href="https://elsevier.responsibledisclosure.com/hc/en-us/requests/new" target="_blank" rel="nofollow">Report vulnerability <span class="sr-only">&nbsp; Link opens in a new tab</span></a>
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top">
+            <a href="#" class="back-to-top" aria-label="Go to top"><i class="icon icon-up-open"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="//d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+
+    
+
+    
+
+
+<script>window.appData = window.appData || [];</script><script type="text/javascript">
+try {(function() {
+appData.push({...{"page":{"businessUnit":"ELS:RP:ST","cmsName":"Pure Portal","environment":"prod","language":"en","loadTime":"20","loadTimestamp":"1772810866934","name":"pure portal:about:cookies","noTracking":"false","productName":"PR","type":"NP-GP"},"visitor":{"accountId":"","accountName":"pr:City University of Hong Kong - CityU Scholars","ipAddress":"","accessType":"pr:ANON_GUEST","loginStatus":"anonymous"}}, event: "pageLoad"});})();} catch(e) {if(console) { console.log(e) } }</script>
+<script>try {(function() {
+window.appData = window.appData || [];
+})();} catch(e) {if(console) { console.log(e) } }</script>
+
+</body>
+</html>
+

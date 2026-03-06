@@ -1,0 +1,396 @@
+ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Adams Kong</title>
+
+<style type="text/css">	
+body {background-color:#C0C0C0;}
+.style2 {
+				color: #FFFFFF;
+}
+.style3 {
+				font-size: x-large;
+								font-family: "Franklin Gothic Medium Cond";
+}
+.style4 {
+				color: #000066;
+}
+.style5 {
+				text-align: justify;
+				font-size: 12.0pt;
+				font-family: "Times New Roman", serif;
+				margin-left: 0in;
+				margin-right: 0in;
+				margin-top: 0in;
+				margin-bottom: .0001pt;
+}
+.style6 {
+				font-family: "Franklin Gothic Medium Cond";
+}
+.style8 {
+				font-size: small;
+}
+.style9 {
+				color: #000066;
+				font-family: "Franklin Gothic Medium Cond";
+				font-size: x-large;
+}
+.style11 {
+				text-align: left;
+}
+.style12 {
+				text-align: left;
+				font-size: medium;
+				font-family: "Franklin Gothic Medium Cond";
+				color: #000066;
+}
+.style17 {
+				font-size: medium;
+				font-family: "Franklin Gothic Medium Cond";
+				color: #000066;
+}
+.style18 {
+				color: #880000;
+}
+.auto-style1 {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0in;
+}
+</style>
+
+<link href="Adams_NTU/layout.css" rel="stylesheet" type="text/css">
+<link href="dynamicmnue2.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript">
+
+var menuids=["suckertree1"] //Enter id(s) of SuckerTree UL menus, separated by commas
+
+function buildsubmenus(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className="subfolderstyle"
+		if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+			ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+		else //else if this is a sub level submenu (ul)
+		  ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+		for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+		ultags[t].style.visibility="visible"
+		ultags[t].style.display="none"
+		}
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", buildsubmenus, false)
+else if (window.attachEvent)
+window.attachEvent("onload", buildsubmenus)
+
+</script>
+
+
+
+</head>
+<body>
+<div id="wrapper">
+<!--------------------------------------------------------------------------------------------------------------------------------->
+  <div id="header">
+     <div id="uw" align="right" class="style2"><strong><span class="style3">
+					Nanyang Technological University</span></strong> </div>
+  </div><!--header div -->
+<!--------------------------------------------------------------------------------------------------------------------------------->
+  <div id="left">
+     <div id="picRaouf"></div>
+     <p><img alt="Face" src="Publication_photo.jpg" width="150" height="181" /></p>
+     <div class="style11">
+     <div id="leftMnue">
+     <div class="suckerdiv">
+        <p><span class="style12"><a href="Index.html">Home</a></span></p>
+		<hr />
+		<p><a href="Education.html">Education</a></p>
+		<hr />
+		<p><a href="Employment_History.html">Employment History</a></p>
+		<hr />
+		<p><a href="Media_Coverage_Showcases.html">Media 
+		Coverage &amp; Showcases</a></p>
+		<hr /><span class="style17">
+		<p><a href="Awards_and_Honors.html">Awards and Honors</a></p>
+		<hr />
+		<p><a href="Professional_Activities.html">Professional Activities</a></p>
+		<hr />
+		<p><a href="Research_Team.html">Research Team</a></p>
+		<hr />
+		<p><a href="Publications_and_Patents.html">Publications and Patents&nbsp;</a>&nbsp; </p>
+		<hr />
+		<p><a href="Acknowledgment.html">Acknowledgement&nbsp; </a> </p>
+		 <hr />
+		 <p><a href="Resources.html">Databases &amp; Codes</a></p>
+		 <hr />
+		 <p><a href="Videos.html">Videos</a></p>
+		<hr /></span>
+		<p><a href="On_line_Course.html">On-line Courses</a></p>
+		 <span class="style17">
+		<hr /></span>
+        </div>    
+    </div>  <span class="style17">  <br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<!-- Left mneu -->
+  					<br />
+  					</span>
+					<br />
+		</div>
+  </div>  <!-- left div-->
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+  <div id="right"> 
+   <div id="Whatsnew" align="left">
+    <p></p>
+	<p class="style9">Adams Wai Kin Kong</p>
+  </div>  
+  <div id="TextArea2">
+    <p align="left"><span class="style6">Associate Professor</p>
+	<p align="left"></span></p>   
+  </div>
+  <p align="left" class="style6">&nbsp;</p>
+  <div id="TextArea2" class="style6">
+    <p align="left"><span class="style8">College of Computing and Data Science</span></p>
+	<p align="left"><span class="style8">Nanyang Technological University</span></p>
+	<p align="left"><span class="style8">Nanyang Avenue,</span></p>
+	<p align="left"><span class="style8">Singapore, 639798</p>
+    </span>   
+    <p align="left">&nbsp;</p>
+    <p align="left" class="style8">Office: N4-02a-017</p>   
+    <p align="left" class="style8">Tel: 65-6513-8041</p>   
+    <p align="left" class="style8">Fax: 65-6792-6559</p>   
+    <p align="left"><font size="1px" class="style8">  E-mails: adamskong AT ntu.edu.sg&nbsp; / 
+	adamskong AT ieee.org </font></p>
+    </div>
+    <p align="left">&nbsp;</p>
+    <!----- Research Interests -----------------------------------------------------------------------------------------------------------------> 
+    <div id="Whatsnew">
+        <p align="left" class="style4">Biography</p>
+    </div>      
+    <div id="TextArea">
+      <p class="style5"><span lang="EN-GB" class="style6">Dr. Adams Wai-Kin Kong received the Ph.D. degree from the University of Waterloo, Canada. Currently, he is an associate professor at the Nanyang Technological University, Singapore and the director of Master of Science in Artificial Intelligence programme. His research works have been published in major AI conferences and journals. One of his papers was selected as a spotlight paper by IEEE Transactions on Pattern Analysis and Machine Intelligence and another one was selected as Honorable Mention by Pattern Recognition. He is listed in Stanford University's Top 2% Scientistsâ Study. His PhD students received Best Student Paper Awards in The IEEE Fifth International Conference on Biometrics: Theory, Applications and Systems (BTAS), 2012 and IEEE International Conference on Bioinformatics and Bioengineering, 2013. In 2016, he received the best reviewer award from BTAS. </span>
+	  <span lang="EN-GB">In the summer of 2008, he served 
+		as an expert witness to the U.S. Department of Justice for </span>the<span lang="EN-GB"> </span>
+	  c<span lang="EN-GB">hild sexual abuse</span>
+	  <span lang="EN-GB">case</span>,
+	  <a href="http://abcnews.go.com/International/inside-world-cambodias-child-sex-trade-told-eyes/story?id=45990734">
+	  United <span lang="EN-GB">&nbsp;</span>States v, Michael Pepe</a><span lang="EN-GB">. </span>
+	  He also serves as a consultant for other legal cases in Singapore and as 
+	  an associate editor for IEEE Transactions on Information Forensics and Security. </span><span lang="EN-GB">
+	  <span class="style6">In 2022, Dr. Kong was nominated for the MSc in Business Analytics Teacher of the Year Award and received faculty award from his school. His recent research interests include pattern recognition, deep learning and their applications on power systems, healthcare, and biometrics.
+	 </span><span><o:p></o:p></span></span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <p align="left">&nbsp;</p>
+    <!----- What's New ----------------------------------------------------------------------------------------------------------------->  
+    <div id="Whatsnew">
+      <p align="left" class="style4">What&#39;s New</p>
+    </div>      
+    <div id="TextArea">
+    <ul id="Flist">
+	
+	  <li class="style8"> <span class="style18"><strong>Want to study PhD at NTU</strong></span> Please <a href="Opening.html"> click</a></li>
+	  <li class="style8"><strong>&nbsp;<a href="Research fellow and Research Associate Openings.pdf">Research fellow and Research Associate Openings</a></strong></li>
+      <li class="style8">Zihan Zhou, Shilin Lu, Shuli Leng, Shaocong Zhang, Zhuming Lian, Xinlei Yu and Adams Wai-Kin Kong,<a href="https://arxiv.org/abs/2510.02253"> DragFlow: Unleashing DiT Priors with Region-Based Supervision for Drag Editing</a>, ICLR, 2026</li>
+<li class="style8">Shilin Lu, Zhuming Lian, Zihan Zhou, Shaocong Zhang, Chen Zhao, and Adams Wai-Kin Kong, <a href="https://arxiv.org/pdf/2509.21278">Does FLUX Already Know How to Perform Physically Plausible Image Composition?</a> ICLR, 2026</li>
+<li class="style8">Ran Ren, Shilin Lu, and Adams Wai-Kin Kong, <a href="https://arxiv.org/abs/2503.07191">All That Glitters Is Not Gold: Key-Secured 3D Secrets within 3D Gaussian Splatting</a>, ICLR, 2026&nbsp;</li>
+<li class="style8">Wei Xian Lim, Loh Sher En Jessica, Zenong Li, Thant Zin Oo, Wai Lee Chan, and Adams Wai-Kin Kong, <a href="https://openreview.net/pdf?id=4Z0P4Nbosn">TandemFoilSet: Datasets for Flow Field Prediction of Tandem-Airfoil Through the Reuse of Single Airfoils</a>, ICLR 2026</li>
+<li class="style8">Yiming Yang, Zhiyuan Zhou, Yueming Yin, Hoi-Yeung Li, Adams Wai-Kin Kong, Test-Time Adaptation without Source Data for Out-of-Domain Bioactivity Prediction, ICLR, 2026</li>
+<li class="style8">Yang Li and Adams Kong, Exploiting the Properties of an Adaptive Black-Box Attack against Federated Learning, ICASSP, 2026</li>
+<li class="style8">Luyi Qiu, Tristan Till, Min Dang, and Adams Kong, SPC-Seg: A Sam-Guided Progressive Consistency Framework with Anatomical Priors for Scribble-Supervised Segmentation, ICASSP, 2026</li>
+<li class="style8">Luyi Qiu, Min Dang, and Adams Kong, Frequency-Aware Mamba: Exploiting Frequency-Domain Priors to Alleviate Class Imbalance in Medical Image Segmentation, ICASSP, 2026</li>
+<li class="style8">Yang Li and Adams Kong, Fedon: Black-Box Untargeted Model Poisoning Via Multi-Objective Reinforcement Learning, ICASSP, 2026</li>
+<li class="style8">Yang Li and Adams Kong, Turn the Black-Box White: Inferring Aggregation Rules in Federated Learning through Multi-Trigger Geometry-Aware Backdoors, ICASSP, 2026</li>
+<li class="style8">Shifeng Xu, Yanzhu Liu and Adams Wai-Kin Kong, Improving Few-Step Generation of Rectified Flow Models with Consistent Gradients, ICASSP, 2026</li>
+<li class="style8">Hao Zhou, Xiaobao Guo, Yuzhe Zhu, and Adams Wai-Kin Kong, âMACS: Multi-source Audio-to-image Generation with Contextual Significance and Semantic Alignmentâ, AAAI, 2026</li>
+<li class="style8">Zhiyuan Zhou, Yueming Yin, Yiming Yang, Yuguang Mu, Hoi-Yeung Li, and Adams Wai Kin Kong âEnhancing Bioactivity Prediction via Spatial Emptiness Representation of Protein-ligand Complex and Union of Multiple Pocketsâ, NeurIPS, 2025</li>
+<li class="style8">Leyang Li, Shilin Lu, Yan Ren, Adams Wai-Kin Kong, âSet You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Conceptsâ, ACM MM 2025</li>
+<li class="style8">Min Dang, Gang Liu, Jingqi Zhao, Adams Wai-Kin Kong, Nan Luo, Di Wang, â DDFD: Diffusion-Based Denoising Fusion for Object Detection in Infrared-Visible Imagesâ, ACM MM 2025</li>
+ <li class="style8"> Jeremy Andrew Styborski, Mingzhi Lyu, Jiayou Lu, Nupur Kapur, and Adams Wai Kin Kong, âWhen and where do data poisons attack texture inversionâ ICCV, 2025</li>
+<li class="style8">Wei Xian Lim, Jessica Sher En Loh, Lv Yu, Adams Wai Kin Kong, and Wai Lee Chan, â<a href="https://www.sciencedirect.com/science/article/pii/S1270963825004857?via%3Dihub">Accelerating Fluid Simulations with Graph Convolution Network Predicted Flow Fields</a>â, Aerospace Science and Technology, 2025</li>
+<li class="style8">Ernest Chew, Adams Kong, and Joo Hwee Lim, âA Unified Model for Paragraph and Line-level Handwritten Text Recognitionâ, ICDAR. 2025 (oral)</li>
+<li class="style8">Yew Lee Tan, Ernest Yu Kai Chew, Jung-jae Kim and Adams Wai-Kin Kong, âDual Downsample Vision Transformer for Handwritten Text Recognitionâ, ICDAR. 2025 (Oral)</li>		
+<li class="style8">Shifeng Xu, Yanzhu Liu and Adams Wai Kin Kong, âVariance-Reduction Guidance: Sampling Trajectory Optimization for Diffusion Modelsâ ICME, 2025 (oral)</li>
+<li class="style8">Mingzhi Lyu, Yi Huang,&nbsp;Jun Xie, Zhiao Zhao, Hong Xu and Adams Wai Kin Kong, âTransferable Attack against Face Swapping in an Extended Spaceâ, ICME, 2025&nbsp;(oral) </li>
+<li class="style8">Shilin Lu, Zihan Zhou, Jiayou Lu, Yuanzhi Zhu and Adams Wai Kin Kong, â<a href="https://openreview.net/pdf/2699ab7d94d1914b72c3c505cd4d056b8eaa2b1c.pdf">Robust Watermarking Using Generative Priors Against Image Editing: From Benchmarking to Advances</a>â ICLR, 2025 &nbsp;</li>
+<li class="style8">Shifeng Xu, Yanzhu Liu and Adams Wai-Kin Kong, â<a href="https://openreview.net/forum?id=RaR3ETzyKp">Easing Training Process of Rectified Flow Models Via Lengthening Inter-Path Distance</a>â, ICR, 2025&nbsp;(spotlight)</li>
+<li class="style8">Ernest Yu Kai Chew, Adams Kong and Joo-Hwee Lim, âImproving Word Error Rates in Paragraph Handwritten Text Recognition with Synthetic Dataâ, ICASSP 2025</li>
+<li class="style8">Zhiyuan Zhou, Yueming Yin, Hao Han, Yiping Jia, Jun Hong Koh, Adams, Wai-Kin Kong and Mu, Yuguang, "<a href="https://pubs.acs.org/doi/10.1021/acs.jcim.4c01850">ProAffinity-GNN: A Novel Approach to Structure-based Protein-Protein Binding Affinity Prediction via a Curated Dataset and Graph Neural Networks</a>" Journal of Chemical Information and Modeling, 2024.</li>
+<li class="style8">Yueming Yin, Hilbert Yuen In Lam, Yuguang Mu, Hoi Yeung Li, and Adams Wai Kin Kong, â<a href="https://ieeexplore.ieee.org/document/10645211">Advancing Bioactivity Prediction through Molecular Docking and Self-Attention</a>, IEEE Journal of Biomedical and Health Informatics, 2024</li>
+<li class="style8">Yi Huang, Mingzhi Lyu, Jeremy Andrew Styborski and Adams Kong, <a href="https://eccv.ecva.net/virtual/2024/poster/1216">Leveraging Imperfect Restoration for Data Availability Attack</a>, ECCV, 2024</li>
+<li class="style8">Jeremy Andrew Styborski, Mingzhi Lyu, Yi Huang and Adams Kong, <a href="https://eccv.ecva.net/virtual/2024/poster/477">Exploiting Supervised Poison Vulnerability to Strengthen Self-Supervised Defense</a>, ECCV, 2024</li>
+    <li class="style8">Yan Ren, Yanling Li and Adams Kong, A<a href="https://eccv.ecva.net/virtual/2024/poster/1155">daptive Multi-task Learning for Few-shot Object Detection</a>, ECCV, 2024</li>
+<li class="style8">Jessica Sher En Loh, Naheed Anjum Arafat, Wei Xian Lim, Wai Lee Chan and Adams Kong â<a href="https://arxiv.org/abs/2311.14464">Finite Volume Features, Global Geometry Representations, and Residual Training for Deep Learning-based CFD Simulation</a>â, ICML, 2024&nbsp; (spotlight)</li>
+<li class="style8">Yueming Yin, Haifeng Hu, Jitao Yang, Chun Ye, Wilson Wen Bin Goh, Adams Wai-Kin Kong and Jiansheng Wu, â<a href="https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btae365/7695868?utm_source=advanceaccess&utm_campaign=bioinformatics&utm_medium=email">OLB-AC: Towards Optimizing Ligand Bioactivities Through Deep Graph Learning and Activity Cliffs</a>, Bioinformatics, 2024 </li>
+<li class="style8">Wei Xian Lim, Naheed Anjum Arafat, Wai Lee Chan and Adams Kong, âMulti-Order Loss Functions for Accelerating Unsteady Flow Simulations with Physics-Based AIâ, IEEE CAI 2024</li>
+<li class="style8">Shilin Lu, Zilan Wang, Leyang Li, Yanzhu Liu, and Adams Kong, â<a href="https://github.com/Shilin-LU/MACE">MACE: Mass Concept Erasure in Diffusion Models</a>â, CVPR 2024</li>
+<li class="style8">Wenwei Song, Wenxiong Kang, Adams Wai Kin Kong, Yufeng Zhang, Yitao Qiao, â<a href="https://link.springer.com/article/10.1007/s11263-024-02068-w?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=nonoa_20240506&utm_content=10.1007/s11263-024-02068-w">Linear Adaptive Additive Angular Margin Loss for Video-based Hand Gesture Authentication</a>â, International Journal of Computer Vision, 2024</li>
+<li class="style8"> Yanling Li, Steven Thng, and Adams Wai Kin Kong, "<a href="https://ieeexplore.ieee.org/document/10361527">Bridging the Gap between Vitiligo Segmentation and Clinical Scores</a>", IEEE Journal of Biomedical and Health Informatics, 2024 </li>
+<li class="style8"> Bingzhi Chen, Yishu Liu, Zheng Zhang, Guangming Lu and Adams Wai Kin Kong, â<a href="https://ieeexplore.ieee.org/abstract/document/10244199"> TransAttUnet: Multi-Level Attention-Guided U-Net With Transformer for Medical Image Segmentation </a>" IEEE Transactions on Emerging Topics in Computational Intelligence, 2024
+</li>
+		
+		<li class="style8"> Mingzhi Lyu, Huang Yi and Adams Kong, â<a href="https://dl.acm.org/doi/10.1145/3581783.3612034">Adversarial Attack for Robust Watermark Protection Against Inpainting-based and Blind Watermark Removers</a>â, ACM MM, 2023 </li>
+		
+		<li class="style8">  Shilin Lu, Yanzhu Liu, and Adams Kong, â<a href="https://arxiv.org/pdf/2307.12493v2.pdf">TF-ICON: Diffusion-Based Training-Free Cross-Domain Image Composition </a>â, ICCV 2023
+		</li>
+		
+		<li class="style8"> Xiaobao Guo, Nithish Muthuchamy Selvaraj, Zitong Yu, Adams Kong, Bingquan Shen and Alex Kot, ââ<a href="https://arxiv.org/abs/2303.12745">Audio-Visual Deception Detection: DOLOS Dataset and Parameter-Efficient Crossmodal Learning</a>â, ICCV, 2023
+		</li>
+		
+		<li class="style8"> 
+		<p><span lang="EN-US">Nithish</span><span> Muthuchamy Selvaraj, Xiaobao 
+		Guo, Adams Kong, Bingquan Shen</span> and Alex Kot<span>, "<span style="color: rgb(40, 40, 40); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(249, 249, 249); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><a href="https://arxiv.org/abs/2302.14314">Adapter 
+		Incremental Continual Learning of Efficient Audio Spectrogram 
+		Transformers</a></span>" INTERSPEECH 2023<o:p></o:p></span></p>
+		</li>
+	
+		<li class="style8">
+		<p><span>Fan Wang and Adams Kong, â<a href="https://arxiv.org/abs/2303.00340">A Practical Upper Bound for the 
+		Worst-Case Attribution Deviations</a>â, CVPR, 2023<o:p> </o:p>
+		</span></p>
+		</li>
+		<li class="style8">
+		<p>
+		<o:p> Xiao<span>bao Guo, Alex Kot and Adams Kong, "<a href="https://ieeexplore.ieee.org/document/10058603">Pace-adaptive and 
+		Noise-resistant Contrastive Learning for Multimodal Feature Fusion</a>". <span lang="EN-US"><em> 
+		IEEE Transactions on Multimedia</em>, 2023 (accepted)</span></span></o:p></p>
+		</li>
+	
+		<li class="style8">
+	    Yan Ren received HSE Champion award from Rolls-Royce@NTU Corporate 	
+		</li>
+		<li class="style8">
+		<p>Fan Wang received <span lang="EN-US">NeurIPS 2022 Scholar Award.</span></p>
+		</li>
+		<li class="style8">
+		<p>Adams received 2022 SCSE Faculty Award</p>
+		</li>
+		<li class="style8">
+		<p>Fan Wang and Adams Kong, "<span><a href="https://arxiv.org/pdf/2205.07279.pdf">Exploiting 
+		the Relationship Between Kendall's Rank Correlation and Cosine 
+		Similarity for Attribution Protection</a></span>", <span><em>NeurIPS</em> 
+		2022</span></p>
+		</li>
+		<li class="style8">
+		<p>Yew Lee Tan,&nbsp; Adams Kong, and Jung-jae Kim, "<span lang="EN-US"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136880476.pdf">Pure 
+		Transformer with Integrated Experts for Scene Text Recognition</a></span>",
+		<em>ECCV</em> 2022</p>
+		</li>
+		<li class="style8">
+		<p><span>Yi Huang and Adams Kong, â<a href="https://openreview.net/forum?id=DesNW4-5ai9">Transferable Adversarial Attack based 
+		on Integrated Gradients</a>â <em>ICLR</em>, 2022<o:p></o:p></span></p>
+		</li>
+		<li class="style8">
+		<p>
+		<o:p><span lang="EN-US">Xiaobao Guo, Adams Wai-Kin Kong, and Alex Kot
+		<a href="https://ieeexplore.ieee.org/document/9681296">Deep Multimodal 
+		Sequence Fusion by Regularized Expressive Representation Distillation</a>,<em> 
+		IEEE Transactions on Multimedia</em>, 2022</span></o:p></p>
+		</li>
+		<li>
+		<p>
+		<o:p>Yan Ren, Adams Kong, and Yi Wang, "<a href="https://ieeexplore.ieee.org/document/9891786">Real-time Shipboard Power 
+		Management based on Monte-Carlo Tree Search</a>" <em>IEEE Transactions on 
+		Power Systems, 2022</em></o:p></p>
+		</li>
+		<li>
+		<p>
+		<o:p></o:p>
+		</p>
+		<p>
+		<o:p><span lang="EN-US">Yanzhu Liu, Shreya Datta, Adams Wai-Kin Kong and 
+		Chai Kiat Yeo, â<a href="https://ieeexplore.ieee.org/document/9735291">An Image Inpainting Approach to Short-term Load 
+		Forecasting</a>â, <em>IEEE Transactions on Power Systems</em>, 2022 </span></o:p>
+		</p>
+		</li>
+		<li class="style8">
+		<p>
+		<o:p>
+		<o:p>
+		<o:p><span lang="EN-US">T</span></o:p><o:p><span lang="EN-US">hant Zin 
+		Oo and Adams Wai-Kin Kong, "</span></o:p></o:p><span lang="EN-US"><a href="https://ieeexplore.ieee.org/document/9921351">Real-time 
+		Energy Management for Marine Applications using Markov Approximation</a></span><o:p><o:p><span lang="EN-US">"
+		<o:p> <em>IEEE Transactions on Power Systems</em>, 2022 </o:p>
+		</span></o:p>
+		</o:p>
+		</o:p>
+		</p>
+		</li>
+		<li class="style8">
+		<p>
+		<o:p><span lang="EN-US">T</span></o:p><o:p><span lang="EN-US">hant Zin Oo, Yan Ren, Adams Wai-Kin Kong, Yi 
+		Wang, and Xiong Liu, â<a href="https://ieeexplore.ieee.org/document/9616405">Power 
+		System Design Optimization for a Hybrid-Shaft Generator Ferry</a>â, <i>IEEE Transactions on Power Systems</i>, 2022</span></o:p></p>
+		</li>
+		<li class="style8">
+		<p>
+		<o:p><span lang="EN-US">Xingpeng Xu, Shitala Prasad, Kuanhong Cheng and 
+		Adams Wai Kin Kong, â<a href="http://doi.org/10.1049/bme2.12071">Using Double Attention for Text Tattoo 
+		Localization</a>â, <i>IET Biometrics</i>, 2022</span></o:p></p>
+		</li>
+		<li>
+		<p class="auto-style1">Yew Lee Tan, Ernest 
+		Chew, Adams Kong, Jung-jae Kim, Joo-Hwee Lim<o:p>, "<span><a href="https://arxiv.org/abs/2211.05036">Portmanteauing 
+		Features for Scene Text Recognition</a></span>", <em>ICPR</em>, 2022.</o:p></p>
+		</li>
+		<li>
+		<p class="MsoNormal"><span lang="DE">Zechen Wang, Liangzhen Zheng, Sheng 
+		Wang, Mingzhi Lin, Zhihao Wang, Adams Wai-Kin Kong, Yuguang Mu, Yanjie 
+		Wei, Weifeng Li, â<span><a href="https://arxiv.org/abs/2206.13345">A fully differentiable ligand pose optimization 
+		framework guided by deep learning and a traditional scoring function</a></span>'', 
+		Briefings in Bioinformatics, 2022<o:p></o:p></span></p>
+		<p class="auto-style1">
+		<o:p></o:p></p>
+		</li>
+		<li>
+		<p>
+		<o:p></o:p>
+		<span lang="DE">Hai Tao Xue, Michael Stanley-Baker, Adams Wai Kin Kong, 
+		Hoi Leung Li, Wilson Wen Bin Goh, â<a href="https://www.sciencedirect.com/science/article/abs/pii/S1359644622001982?CMX_ID=&amp;SIS_ID=&amp;dgcid=STMJ_AUTH_SERV_PUBLISHED&amp;utm_acid=107510312&amp;utm_campaign=STMJ_AUTH_SERV_PUBLISHED&amp;utm_in=DM258621&amp;utm_medium=email&amp;utm_source=AC_">Data considerations for predictive 
+		modelling applied to the discovery of bioactive natural products</a>â , <em>
+		Drug Discovery Today</em>, 2022<o:p></o:p></span></p>
+		<p>
+		<o:p></o:p>
+		</p>
+		</li>
+
+            
+</ul>
+    </div>
+    <p align="left">&nbsp;</p>
+
+</div> <!-- right div-->
+
+ 
+<!-------------------------------------------------------------------------------------------------------->                       
+  <div id="footer"></div><!--footer div -->
+<!-------------------------------------------------------------------------------------------------------->                       
+
+</div><!--Wrapper -->
+
+
+
+</body></html>

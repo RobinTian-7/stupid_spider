@@ -1,0 +1,2871 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew Head</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Andrew Head | Andrew is an Assistant Professor of computer science at the University of Pennsylvania. He studies the use of computers as comprehension aids for some of the most complex information artifacts, like code, science papers, medical notes, and mechanized proofs.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Andrew Head" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Andrew is an Assistant Professor of computer science at the University of Pennsylvania. He studies the use of computers as comprehension aids for some of the most complex information artifacts, like code, science papers, medical notes, and mechanized proofs." />
+<meta property="og:description" content="Andrew is an Assistant Professor of computer science at the University of Pennsylvania. He studies the use of computers as comprehension aids for some of the most complex information artifacts, like code, science papers, medical notes, and mechanized proofs." />
+<link rel="canonical" href="https://andrewhead.info/" />
+<meta property="og:url" content="https://andrewhead.info/" />
+<meta property="og:site_name" content="Andrew Head" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Andrew Head" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Andrew is an Assistant Professor of computer science at the University of Pennsylvania. He studies the use of computers as comprehension aids for some of the most complex information artifacts, like code, science papers, medical notes, and mechanized proofs.","headline":"Andrew Head","name":"Andrew Head","url":"https://andrewhead.info/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="icon" 
+      type="image/png" 
+      href="/assets/img/favicon.png"><link type="application/atom+xml" rel="alternate" href="https://andrewhead.info/feed.xml" title="Andrew Head" /></head>
+<body class="">
+
+    
+
+    <main class="page-content " aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Andrew Head</a>
+
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z" />
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="#publications">Publications</a>
+          <a class="page-link" href="#teaching">Teaching</a>
+          <a class="page-link" href="#news">News</a>
+          <a class="page-link" href="/cv">CV</a>
+        </div>
+      </nav>
+  </div>
+</header>
+
+<div class="intro">
+    <div class="intro-text">
+        <div class="intro-image">
+            <img src="/assets/img/andrew5.png" />
+            <div class="intro-contact">
+
+              <div class="intro-name">
+                Andrew Head
+              </div>
+              <div class="intro-title">
+                Assistant Professor @ UPenn<br />
+                Computer Science
+              </div>
+
+              <div class="intro-links-long">
+                
+                  
+                    <div class="social-link">
+  <a href="mailto:head@seas.upenn.edu">
+      <img class="social-thumbnail" src="assets/img/email.jpg" /> head@seas.upenn.edu
+  </a>
+</div>
+
+                  
+                
+                  
+                    <div class="social-link">
+  <a href="https://www.linkedin.com/in/andrew-head-a3670b1a/">
+      <img class="social-thumbnail" src="assets/img/linkedin.svg" /> Follow my updates on LinkedIn
+  </a>
+</div>
+
+                  
+                
+              </div>
+              <div class="intro-links-short">
+                
+                  
+                
+                  
+                
+              </div>
+            </div>
+        </div>
+        
+        <p><u>Areas of interest</u>: Human-computer interaction · Programming · Reading.</p>
+
+<p>Welcome to my home page! I am Andrew Head, an assistant professor at
+the University of Pennsylvania. My group specializes in developing
+technology for <span style="font-weight: 500">interactive reading and reasoning</span>. My current goals are to:</p>
+
+<ul>
+  <li>Help scientists get more out of their readings in less time</li>
+  <li>Make math notation everywhere inviting and understandable</li>
+  <li>Help programmers comprehend code using AI</li>
+  <li>Accelerate programmers in writing, maintaining, and understanding proofs of
+correctness about their programs</li>
+</ul>
+
+<p>Our projects follow a systems-centric HCI approach. We do in-depth
+user studies to understand what people need from their tools. Then, we build
+working interactive systems, imbuing them with powerful new interaction design ideas.
+We publish our work at ACM CHI and UIST, and other venues focused on information
+presentation and programming support.</p>
+
+<!--
+This research begins with the design of innovative interactions, continues to the implementation of working systems, and incorporates techniques from program and text analysis. It has culminated in the design of widely-deployed, innovative tools maintained by leading industry and foundation software companies, including Microsoft's [nbgather](https://marketplace.visualstudio.com/items?itemName=ms-python.gather) tool for data scientists and AI2's [Semantic Reader](https://www.semanticscholar.org/product/semantic-reader) application for scientific reading. 
+-->
+
+
+    </div>
+</div>
+
+<div class="body">
+
+<h2 id="students">👥 &nbsp;Our group</h2>
+
+
+<p>I advise Ph.D. students <a href="https://alyssahwang.com/">Alyssa Hwang</a>, <a href="https://yanlitao.github.io/">Litao Yan</a>, <a href="https://hita-k.github.io/">Hita Kambhamettu</a>,
+<a href="https://www.speculative.tech/">Jeff Tao</a>, <a href="https://jwshii.github.io/">Jessica Shi</a>, and Xiaorui Liu.
+I co-lead our Penn Human-Computer Interaction (Penn HCI) alongside <a href="https://metaxa.net">Danaé
+Metaxa</a>. Our group works closely with <a href="https://www.cis.upenn.edu/~bcpierce/">Benjamin Pierce</a> from <a href="https://www.cis.upenn.edu/~plclub/">PLClub</a> and <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a> from <a href="https://nlp.cis.upenn.edu/">PennNLP</a>. I am also a faculty affiliate for Penn’s <a href="https://mindcore.sas.upenn.edu/">MindCORE</a> center.</p>
+
+<p class="note">
+<span style="font-weight: 500">Prospective Ph.D. applicants</span>: I will not
+be taking on incoming Ph.D. students in fall 2026.
+</p>
+
+<p class="note">
+<span style="font-weight: 500">Penn master's and bachelor's students</span>:
+If you want to do research with our group, take
+Penn's class in human-computer interaction—CIS 4120/5120—and then apply to do research with
+our group <a href="https://forms.gle/X2UmEs1P5vd3ZPpAA">here</a>. You may also want to
+keep an eye
+out for special topics courses (7000-level) that I and Professor Metaxa teach,
+which frequently offer hands-on research experiences.
+</p>
+
+
+<h2 id="news">📰 &nbsp;Our latest news</h2>
+
+<div class="news">
+<script></script>
+
+<p><span class="date">October 2025</span>:
+<span class="description">Litao Yan presented his <a href="/assets/pdf/trailblazer.pdf">paper on Trailblazer</a> at UIST '25. The paper describes the design and evaluation of a tool for answering developer questions with agent-discovered program traces.</span></p>
+
+<p><span class="date">July 2025</span>:
+<span class="description">Congratulations Harry Goldstein, Penn HCI alum, on receiving one of SIGPLAN's two <a href="https://www.sigplan.org/Awards/Dissertation/">oustanding dissertation awards</a>. Congratulations as well on beginning your assistant professor position at UBuffalo.</span></p>
+
+<p><span class="date">March 2025</span>:
+<span class="description">Two projects from our group will appear at CHI! The first is Jeffrey Tao's <i>Freeform</i> editor for embellishing math notation with explanations, accepted as a <a href="/assets/pdf/freeform.pdf">full paper</a>. The second is Hita Kambhamettu's study of the effect of source-summary links on the reading of AI-generated text, which will appear as <a href="/assets/pdf/traceable-text.pdf">late-breaking work</a>.</span></p>
+
+<p><span class="date">February 2025</span>:
+<span class="description">Jessica Shi's <i>QED in Context</i> will appear in OOPSLA '25. The paper highlights strategies and obstacles proof assistant users face with their tools. Read the pre-print <a href="/assets/pdf/qed-in-context.pdf">here</a>.</span></p>
+
+<p><span class="date">September 2024</span>:
+<span class="description">This semester, I am teaching a new research seminar on <i>Interactive Reading</i>. Our goal is to develop technology that deepens, accelerates, and enlivens reading. Check out the <a href="https://youtu.be/R5nAhe7HTqc">course teaser</a> and <a href="https://docs.google.com/document/d/137dy6c1fimszDBp74LH3e_aKo1H8VqsN6PP1cy2ZQX4/edit?usp=sharing">syllabus</a>.</span></p>
+
+<p><span class="date">August 2024</span>:
+<span class="description">Harry Goldstein has had a paper accepted to UIST '24 on <i>Tyche</i>, a in-editor UI that helps programmers understand the comprehensiveness of their property-based tests. Read the paper <a href="/assets/pdf/tyche.pdf">here</a>.</span></p>
+
+</div>
+
+<h2 id="publications">🧪 &nbsp;Publications</h2>
+
+<p>Our projects contribute novel interactions for <span class="span-code">programming (•)</span>,
+<span class="span-reading">reading (•)</span>, and working with <span class="span-notation">notation (•)</span>.</p>
+
+<!--
+This list of publications represents some research
+directions I have been thinking about a lot lately. A
+full, up-to-date list of my publications and
+accompanying resources appears in the <a
+href="/cv#publications">publications
+section of my CV</a>.
+-->
+
+
+
+<div class="publication" id="trailblazer">
+  <div class="publication-description" id="trailblazer">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Answering Developer Questions with Annotated Agent-Discovered Program Traces
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/trailblazer.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Lydia Chilton</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Lydia Chilton</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM User Interfaces Software and Technology Symposium
+          (UIST),
+      </span>
+      <span class="year">
+          2025
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="publication" id="qed-in-context">
+  <div class="publication-description" id="qed-in-context">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          QED in Context: An Observation Study of Proof Assistant Users
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/qed-in-context.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Jessica Shi</span>,
+  <span class="">
+    Cassia Torczon</span>,
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Jessica Shi</span>,
+  <span class="">
+    Cassia Torczon</span>,
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          Proceedings of the ACM on Programming Languages
+          (OOPSLA),
+      </span>
+      <span class="year">
+          2025
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="freeform">
+  <div class="publication-description" id="freeform">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+              <span class="tag-notation">•</span>
+            
+            </span>
+          
+          FreeForm: Flexibly Augmenting Formulas with Synchronized Markup and Graphical Edits
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/freeform.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Jessica Shi</span>,
+  <span class="">
+    Mia Ginsberg</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Jessica Shi</span>,
+  <span class="">
+    Mia Ginsberg</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2025
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="publication" id="tyche">
+  <div class="publication-description" id="tyche">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Tyche: Making Sense of Property-Based Testing Effectiveness
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/tyche.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Zac Hatfield-Dodds</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Jeffrey Tao</span>,
+  <span class="">
+    Zac Hatfield-Dodds</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM User Interfaces Software and Technology Symposium
+          (UIST),
+      </span>
+      <span class="year">
+          2024
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="semantic-reader">
+  <div class="publication-description" id="semantic-reader">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          The Semantic Reader Project: Augmenting scholarly documents through AI-powered interactive reading interfaces
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/semantic-reader.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Joseph Chee Chang</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Amy X. Zhang</span>,
+  <span class="">
+    Cassidy Trier</span>,
+  <span class="">
+    <i>47 others</i></span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span> -->
+        
+
+
+
+
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Joseph Chee Chang</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Amy X. Zhang</span>,
+  <span class="">
+    Cassidy Trier</span>,
+  <span class="">
+    <i>47 others</i></span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span>
+      </span>
+      <br />
+      <span class="venue">
+          Communications of the ACM
+          (CACM),
+      </span>
+      <span class="year">
+          2024
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="ivie">
+  <div class="publication-description" id="ivie">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Ivie: Lightweight Anchored Explanations of Just-Generated Code
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/ivie.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Alyssa Hwang</span>,
+  <span class="">
+    Zhiyuan Wu</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Litao Yan</span>,
+  <span class="">
+    Alyssa Hwang</span>,
+  <span class="">
+    Zhiyuan Wu</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2024
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="explainable-notes">
+  <div class="publication-description" id="explainable-notes">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          Explainable Notes: Examining How to Unlock Meaning in Medical Notes with Interactivity and Artificial Intelligence
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/explainable-notes.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Hita Kambhamettu</span>,
+  <span class="">
+    Danaé Metaxa</span>,
+  <span class="">
+    Kevin Johnson</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Hita Kambhamettu</span>,
+  <span class="">
+    Danaé Metaxa</span>,
+  <span class="">
+    Kevin Johnson</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2024
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="pbt-in-practice">
+  <div class="publication-description" id="pbt-in-practice">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Property-Based Testing in Practice
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/pbt-in-practice.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Joseph W. Cutler</span>,
+  <span class="">
+    Daniel Dickstein</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Harrison Goldstein</span>,
+  <span class="">
+    Joseph W. Cutler</span>,
+  <span class="">
+    Daniel Dickstein</span>,
+  <span class="">
+    Benjamin C. Pierce</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              ACM/IEEE International Conference on Software Engineering,
+          
+          (ICSE),
+      </span>
+      <span class="year">
+          2024
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/trophy.jpg'/>--> <i>Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="ffl">
+  <div class="publication-description" id="ffl">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+              <span class="tag-notation">•</span>
+            
+            </span>
+          
+          FFL: A Language and Live Runtime for Styling and Labeling Typeset Math Formulas
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/ffl.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Zhiyuan Wu</span>,
+  <span class="">
+    Jiening Li</span>,
+  <span class="">
+    Kevin Ma</span>,
+  <span class="">
+    Hita Kambhamettu</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Zhiyuan Wu</span>,
+  <span class="">
+    Jiening Li</span>,
+  <span class="">
+    Kevin Ma</span>,
+  <span class="">
+    Hita Kambhamettu</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM User Interfaces Software and Technology Symposium
+          (UIST),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="calypso">
+  <div class="publication-description" id="calypso">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          CALYPSO: LLMs as Dungeon Master's Assistants
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/calypso.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Andrew Zhu</span>,
+  <span class="">
+    Lara Martin</span>,
+  <span class="special">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Chris Callison-Burch</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Zhu</span>,
+  <span class="">
+    Lara Martin</span>,
+  <span class="">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Chris Callison-Burch</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment,
+          
+          (AIIDE),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="rewriting-the-script">
+  <div class="publication-description" id="rewriting-the-script">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          Rewriting the Script: Adapting Text Instructions for Voice Interaction
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/rewriting-the-script.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Alyssa Hwang</span>,
+  <span class="">
+    Natasha Oza</span>,
+  <span class="">
+    Chris Callison-Burch</span>,
+    and
+  
+  <span class="special">
+    Andrew Head</span> -->
+        
+
+
+
+
+  <span class="">
+    Alyssa Hwang</span>,
+  <span class="">
+    Natasha Oza</span>,
+  <span class="">
+    Chris Callison-Burch</span>,
+    and
+  
+  <span class="">
+    Andrew Head</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Designing Interactive Systems
+          (DIS),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="publication" id="scim">
+  <div class="publication-description" id="scim">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          Scim: Intelligent Skimming Support for Scientific Papers
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/scim.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Raymond Fok</span>,
+  <span class="">
+    Hita Kambhamettu</span>,
+  <span class="">
+    Luca Soldaini</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+  <span class="special">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span> -->
+        
+
+
+
+
+  <span class="">
+    Raymond Fok</span>,
+  <span class="">
+    Hita Kambhamettu</span>,
+  <span class="">
+    Luca Soldaini</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+  <span class="">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Intelligent User Interfaces
+          (IUI),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="paper-plain">
+  <div class="publication-description" id="paper-plain">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/paper-plain.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Tal August</span>,
+  <span class="">
+    Lucy Lu Wang</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+  <span class="special">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Kyle Lo</span> -->
+        
+
+
+
+
+  <span class="">
+    Tal August</span>,
+  <span class="">
+    Lucy Lu Wang</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+  <span class="">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Kyle Lo</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              ACM Transactions on Computer-Human Interaction,
+          
+          (TOCHI),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="citesee">
+  <div class="publication-description" id="citesee">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/citesee.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Joseph Chee Chang</span>,
+  <span class="">
+    Amy X. Zhang</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Doug Downey</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span> -->
+        
+
+
+
+
+  <span class="">
+    Joseph Chee Chang</span>,
+  <span class="">
+    Amy X. Zhang</span>,
+  <span class="">
+    Jonathan Bragg</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Doug Downey</span>,
+    and
+  
+  <span class="">
+    Daniel S. Weld</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/trophy.jpg'/>--> <i>Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="colaroid">
+  <div class="publication-description" id="colaroid">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/colaroid.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    April Yi Wang</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Ashley Zhang</span>,
+  <span class="">
+    Steve Oney</span>,
+    and
+  
+  <span class="">
+    Christopher Brooks</span> -->
+        
+
+
+
+
+  <span class="">
+    April Yi Wang</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Ashley Zhang</span>,
+  <span class="">
+    Steve Oney</span>,
+    and
+  
+  <span class="">
+    Christopher Brooks</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/ribbon.jpg'/>--> <i>Nominated for Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="bolt-on-slicing">
+  <div class="publication-description" id="bolt-on-slicing">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Bolt-on, Compact, and Rapid Program Slicing for Notebooks
+      </span>
+      <span class="home-publication-goodies">
+        
+          
+          <a href="/assets/pdf/bolt-on-slicing.pdf">[pdf]</a>
+          
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Shreya Shankar</span>,
+  <span class="">
+    Stephen Macke</span>,
+  <span class="">
+    Sarah Chasins</span>,
+  <span class="special">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Aditya Parameswaran</span> -->
+        
+
+
+
+
+  <span class="">
+    Shreya Shankar</span>,
+  <span class="">
+    Stephen Macke</span>,
+  <span class="">
+    Sarah Chasins</span>,
+  <span class="">
+    Andrew Head</span>,
+    and
+  
+  <span class="">
+    Aditya Parameswaran</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              International Conference on Very Large Data Bases,
+          
+          (VLDB),
+      </span>
+      <span class="year">
+          2023
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="math-augmentation">
+  <div class="publication-description" id="math-augmentation">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+              <span class="tag-notation">•</span>
+            
+            </span>
+          
+          Math Augmentation: How Authors Enhance the Readability of Formulas using Novel Visual Design Practices
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/augmented-formulas.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://youtu.be/KH8z1IbXelk">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Amber Xie</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Amber Xie</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2022
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/trophy.jpg'/>--> <i>Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="scholarly-recommendations">
+  <div class="publication-description" id="scholarly-recommendations">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          From Who You Know to What You Read: Augmenting Scientific Recommendations with Implicit Social Networks
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/scholarly-recommendations.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://www.youtube.com/watch?v=1QeoBkAGZ3Y">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Hyeonsu B. Kang</span>,
+  <span class="">
+    Rafal Kocielnik</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Jiangjiang Yang</span>,
+  <span class="">
+    Matt Latzke</span>,
+  <span class="">
+    Aniket Kittur</span>,
+  <span class="">
+    Daniel S. Weld</span>,
+  <span class="">
+    Doug Downey</span>,
+    and
+  
+  <span class="">
+    Jonathan Bragg</span> -->
+        
+
+
+
+
+  <span class="">
+    Hyeonsu B. Kang</span>,
+  <span class="">
+    Rafal Kocielnik</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Jiangjiang Yang</span>,
+  <span class="">
+    Matt Latzke</span>,
+  <span class="">
+    Aniket Kittur</span>,
+  <span class="">
+    Daniel S. Weld</span>,
+  <span class="">
+    Doug Downey</span>,
+    and
+  
+  <span class="">
+    Jonathan Bragg</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2022
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="notebook-lineage-analysis">
+  <div class="publication-description" id="notebook-lineage-analysis">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Fine-Grained Lineage for Safer Notebook Interactions
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/notebook-lineage-analysis.pdf">[pdf]</a>
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Stephen Macke</span>,
+  <span class="">
+    Hongpu Gong</span>,
+  <span class="">
+    Doris Jung-Lin Lee</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Doris Xin</span>,
+    and
+  
+  <span class="">
+    Aditya Parameswaran</span> -->
+        
+
+
+
+
+  <span class="">
+    Stephen Macke</span>,
+  <span class="">
+    Hongpu Gong</span>,
+  <span class="">
+    Doris Jung-Lin Lee</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Doris Xin</span>,
+    and
+  
+  <span class="">
+    Aditya Parameswaran</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              International Conference on Very Large Data Bases,
+          
+          (VLDB),
+      </span>
+      <span class="year">
+          2021
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="scholarphi">
+  <div class="publication-description" id="scholarphi">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-reading">•</span>
+            
+              <span class="tag-notation">•</span>
+            
+            </span>
+          
+          Augmenting Scientific Papers with Just-in-Time, Position-Sensitive Definitions of Terms and Symbols
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/augmenting-scientific-papers.pdf">[pdf]</a>
+        
+        
+        
+        <a href="https://github.com/allenai/scholarphi">[code]</a>
+        
+        
+        <a href="https://youtu.be/yYcQf-Yq8B0">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Dongyeop Kang</span>,
+  <span class="">
+    Raymond Fok</span>,
+  <span class="">
+    Sam Skjonsberg</span>,
+  <span class="">
+    Daniel S. Weld</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Kyle Lo</span>,
+  <span class="">
+    Dongyeop Kang</span>,
+  <span class="">
+    Raymond Fok</span>,
+  <span class="">
+    Sam Skjonsberg</span>,
+  <span class="">
+    Daniel S. Weld</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2021
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="publication" id="tutorial-authoring">
+  <div class="publication-description" id="tutorial-authoring">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Composing Flexibly-Organized Step-by-Step Tutorials from Linked Source Code, Snippets, and Outputs
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/tutorial-authoring.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://youtu.be/tTzrBds7Nns">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Jason Jiang</span>,
+  <span class="">
+    James Smith</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Jason Jiang</span>,
+  <span class="">
+    James Smith</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2020
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/ribbon.jpg'/>--> <i>Nominated for Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="notebook-gathering">
+  <div class="publication-description" id="notebook-gathering">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Managing Messes in Computational Notebooks
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/notebook-gathering.pdf">[pdf]</a>
+        
+        
+        
+        <a href="https://github.com/Microsoft/gather">[code]</a>
+        
+        
+        <a href="https://youtu.be/cpADNWjNvkU">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Fred Hohman</span>,
+  <span class="">
+    Titus Barik</span>,
+  <span class="">
+    Steven M. Drucker</span>,
+    and
+  
+  <span class="">
+    Robert DeLine</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Fred Hohman</span>,
+  <span class="">
+    Titus Barik</span>,
+  <span class="">
+    Steven M. Drucker</span>,
+    and
+  
+  <span class="">
+    Robert DeLine</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2019
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/trophy.jpg'/>--> <i>Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="gamut">
+  <div class="publication-description" id="gamut">
+      <span class="publication-title">
+          
+          Gamut: A Design Probe to Understand How Data Scientists Understand Machine Learning Models
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/gamut.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://youtu.be/R-amW_yNX6I">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Fred Hohman</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Rich Caruana</span>,
+  <span class="">
+    Robert DeLine</span>,
+    and
+  
+  <span class="">
+    Steven M. Drucker</span> -->
+        
+
+
+
+
+  <span class="">
+    Fred Hohman</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Rich Caruana</span>,
+  <span class="">
+    Robert DeLine</span>,
+    and
+  
+  <span class="">
+    Steven M. Drucker</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2019
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="scooping-examples">
+  <div class="publication-description" id="scooping-examples">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Interactive Extraction of Examples from Existing Code
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/scooping-examples.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://www.youtube.com/watch?v=RYbhnRDbvyY">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Elena L. Glassman</span>,
+  <span class="">
+    Björn Hartmann</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Elena L. Glassman</span>,
+  <span class="">
+    Björn Hartmann</span>,
+    and
+  
+  <span class="">
+    Marti A. Hearst</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2018
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/ribbon.jpg'/>--> <i>Nominated for Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="embedded-debugging">
+  <div class="publication-description" id="embedded-debugging">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          WiFröst: Bridging the Information Gap for Debugging of Networked Embedded Systems
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/embedded-debugging.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://www.youtube.com/watch?v=4fzYWxuV_hw">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Will McGrath</span>,
+  <span class="">
+    Jeremy Warner</span>,
+  <span class="">
+    Mitchell Karchemsky</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Daniel Drew</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Will McGrath</span>,
+  <span class="">
+    Jeremy Warner</span>,
+  <span class="">
+    Mitchell Karchemsky</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Daniel Drew</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM User Interfaces Software and Technology Symposium
+          (UIST),
+      </span>
+      <span class="year">
+          2018
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="when-not-to-comment">
+  <div class="publication-description" id="when-not-to-comment">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/when-not-to-comment.pdf">[pdf]</a>
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Caitlin Sadowski</span>,
+  <span class="">
+    Emerson Murphy-Hill</span>,
+    and
+  
+  <span class="">
+    Andrea Knight</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Caitlin Sadowski</span>,
+  <span class="">
+    Emerson Murphy-Hill</span>,
+    and
+  
+  <span class="">
+    Andrea Knight</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              ACM International Conference on Software Engineering,
+          
+          (ICSE),
+      </span>
+      <span class="year">
+          2018
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="publication" id="synthesis-and-feedback">
+  <div class="publication-description" id="synthesis-and-feedback">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/synthesis-and-feedback.pdf">[pdf]</a>
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head*</span>,
+  <span class="">
+    Elena Glassman*</span>,
+  <span class="">
+    Gustavo Soares*</span>,
+  <span class="">
+    Ryo Suzuki</span>,
+  <span class="">
+    Lucas Figueredo</span>,
+  <span class="">
+    Loris D'Antoni</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head*</span>,
+  <span class="">
+    Elena Glassman*</span>,
+  <span class="">
+    Gustavo Soares*</span>,
+  <span class="">
+    Ryo Suzuki</span>,
+  <span class="">
+    Lucas Figueredo</span>,
+  <span class="">
+    Loris D'Antoni</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              ACM Conference on Learning at Scale,
+          
+          (L@S),
+      </span>
+      <span class="year">
+          2017
+      </span>
+      
+      
+      <br />
+      <span class="equal-contribution">
+          '*' denotes equal contribution.
+      </span>
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="satellites-and-development">
+  <div class="publication-description" id="satellites-and-development">
+      <span class="publication-title">
+          
+          Can Human Development be Measured with Satellite Imagery?
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/satellites-and-development.pdf">[pdf]</a>
+        
+        
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Mélanie Manguin</span>,
+  <span class="">
+    Nhat Tran</span>,
+    and
+  
+  <span class="">
+    Joshua E. Blumenstock</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Mélanie Manguin</span>,
+  <span class="">
+    Nhat Tran</span>,
+    and
+  
+  <span class="">
+    Joshua E. Blumenstock</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              International Conference on Information and Communication Technologies and Development,
+          
+          (ICTD),
+      </span>
+      <span class="year">
+          2017
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="synthesis-and-debugging">
+  <div class="publication-description" id="synthesis-and-debugging">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+            </span>
+          
+          TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/synthesis-and-debugging.pdf">[pdf]</a>
+        
+        
+        
+        <a href="https://github.com/ryosuzuki/trace-diff">[code]</a>
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Ryo Suzuki</span>,
+  <span class="">
+    Gustavo Soares</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Elena Glassman</span>,
+  <span class="">
+    Ruan Reis</span>,
+  <span class="">
+    Melina Mongiovi</span>,
+  <span class="">
+    Loris D'Antoni</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Ryo Suzuki</span>,
+  <span class="">
+    Gustavo Soares</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Elena Glassman</span>,
+  <span class="">
+    Ruan Reis</span>,
+  <span class="">
+    Melina Mongiovi</span>,
+  <span class="">
+    Loris D'Antoni</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          IEEE Symposium on Visual Languages and Human-Centric Computing
+          (VL/HCC),
+      </span>
+      <span class="year">
+          2017
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="publication" id="context-relevant-explanations">
+  <div class="publication-description" id="context-relevant-explanations">
+      <span class="publication-title">
+          
+            <span class="tags">
+            
+              <span class="tag-code">•</span>
+            
+              <span class="tag-reading">•</span>
+            
+            </span>
+          
+          Tutorons: Generating Context-Relevant, On-Demand Explanations and Demonstrations of Online Code
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/context-relevant-explanations.pdf">[pdf]</a>
+        
+        
+        
+        <a href="https://github.com/andrewhead/tutorons-base">[code]</a>
+        
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Codanda Appachu</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Codanda Appachu</span>,
+  <span class="">
+    Marti A. Hearst</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          IEEE Symposium on Visual Languages and Human-Centric Computing
+          (VL/HCC),
+      </span>
+      <span class="year">
+          2015
+      </span>
+      
+          <br />
+          
+          <span class="award"><!--<img class='award' src='/assets/img/ribbon.jpg'/>--> <i>Nominated for Best Paper Award</i></span>
+          
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="sensing-3d-printed-acoustics">
+  <div class="publication-description" id="sensing-3d-printed-acoustics">
+      <span class="publication-title">
+          
+          Lamello: Passive Acoustic Sensing for Tangible Input Components
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/sensing-3d-printed-acoustics.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://www.youtube.com/watch?v=695ke7P6HM4">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="">
+    Valkyie Savage</span>,
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Wilmot Li</span>,
+  <span class="">
+    Gautham Mysore</span>,
+  <span class="">
+    Dan B Goldman</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span> -->
+        
+
+
+
+
+  <span class="">
+    Valkyie Savage</span>,
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Wilmot Li</span>,
+  <span class="">
+    Gautham Mysore</span>,
+  <span class="">
+    Dan B Goldman</span>,
+    and
+  
+  <span class="">
+    Björn Hartmann</span>
+      </span>
+      <br />
+      <span class="venue">
+          ACM Conference on Human Factors in Computing Systems
+          (CHI),
+      </span>
+      <span class="year">
+          2015
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+
+<div class="publication" id="collaborative-language-learning">
+  <div class="publication-description" id="collaborative-language-learning">
+      <span class="publication-title">
+          
+          ToneWars: Connecting Language Learners and Native Speakers through Collaborative Mobile Games
+      </span>
+      <span class="home-publication-goodies">
+        
+        <a href="/assets/pdf/collaborative-language-learning.pdf">[pdf]</a>
+        
+        
+        
+        
+        <a href="https://www.youtube.com/watch?v=l85vPhEX1DY">[video]</a>
+        
+      </span>
+      <br />
+      <span class="authors">
+        <!-- 
+
+
+
+
+  <span class="special">
+    Andrew Head</span>,
+  <span class="">
+    Yi Xu</span>,
+    and
+  
+  <span class="">
+    Jingtao Wang</span> -->
+        
+
+
+
+
+  <span class="">
+    Andrew Head</span>,
+  <span class="">
+    Yi Xu</span>,
+    and
+  
+  <span class="">
+    Jingtao Wang</span>
+      </span>
+      <br />
+      <span class="venue">
+          
+              International Conference on Intelligent Tutoring Systems,
+          
+          (ITS),
+      </span>
+      <span class="year">
+          2014
+      </span>
+      
+      
+      
+  </div>
+
+</div>
+
+
+
+
+<h2 id="teaching">🧑‍🏫 &nbsp;Teaching</h2>
+
+<div class="teaching">
+
+<p><strong>Spring 2025</strong>: CIS 4120/5120: Introduction to Human-Computer Interaction (<a href="https://docs.google.com/document/d/1mPdqZ9tb9vfiB-Fai0ebset8WttTPkyAcIsQ24EKuFY/edit?usp=sharing">syllabus</a>)</p>
+
+<p><strong>Fall 2024</strong>: CIS 7000: Interactive Reading (<a href="https://docs.google.com/document/d/137dy6c1fimszDBp74LH3e_aKo1H8VqsN6PP1cy2ZQX4/edit?usp=sharing">syllabus</a>)</p>
+
+<p><strong>Spring 2024</strong>: CIS 4120/5120: Introduction to Human-Computer Interaction
+(<a href="https://docs.google.com/document/d/1JJVBhL-0phVS-ScFh920VXO2XiOTQe5SuL-aqVhj2s0/edit?usp=sharing">syllabus</a>)</p>
+
+<p><strong>Spring 2023</strong>: CIS 3990: Introduction to Human-Computer
+Interaction (<a href="https://docs.google.com/document/d/1fPKdiA33jGlUTg6-nCpXovWq1N-QOgqZWQ9qFYcRnHc/edit#">syllabus</a>)</p>
+
+<p><strong>Fall 2022</strong>: CIS 7000-001: Designing Programming
+Environments: Live and Literate Programming
+(<a href="https://docs.google.com/document/d/19icrT54F4fFdTCL7GFnjp6B3uQiIbcZwCH26IRnZWkc/edit#">syllabus</a>)</p>
+
+<p><strong>Spring 2022</strong>: CIS 700-003: Human-Computer Interaction.</p>
+
+<p><strong>Summer 2019</strong>: CS160, User Interface Design and
+Development (co-taught with Sarah Sterman, @UC Berkeley)</p>
+
+<!--
+**Computer Science 160**: In the summer of 2019, Andrew co-taught [Computer 
+Science 160](https://cs160summer2019.com), UC Berkeley’s undergraduate course on 
+human-computer interaction. His co-instructor was [Sarah 
+Sterman](https://people.eecs.berkeley.edu/~ssterman/). The theme for the student 
+design project was authoring tools. 76 students designed and implemented 
+interactive authoring tools in groups, for user groups including choreographers, 
+screenwriters, beat-boxers on the go.
+
+All course materials are [online and public](https://cs160summer2019.com). Learn 
+more about the course by perusing the 
+[syllabus](https://cs160summer2019.com/syllabus) and the 
+[showcase](https://cs160summer2019.com/showcase) of authoring tools that student 
+groups designed.
+
+**EECS Peers**: From fall 2018 through summer 2020, Andrew served as the CS area 
+coordinator for [EECS Peers](https://www2.eecs.berkeley.edu/eecs-peers/), a 
+graduate student peer support group. The group was founded in 2013 by [Kristin 
+Stephens-Martinez](https://users.cs.duke.edu/~ksm/) to help grad students 
+navigate the tricky issues they encounter during grad school, from barriers 
+encountered in research to the many stresses experienced inside and outside the 
+lab.  EECS Peers is still active today, and always looking for caring members of 
+the EECS community to join the next cohort of Peers.
+-->
+
+</div>
+
+</div>
+
+
+  
+
+</div>
+
+      </div>
+    </main>
+
+    
+
+  </body>
+
+</html>

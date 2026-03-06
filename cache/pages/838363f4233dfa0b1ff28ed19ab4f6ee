@@ -1,0 +1,523 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>The Team</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+        <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+        <style>
+            #map {
+                width: 100%;
+                height: 500px;
+            }
+
+            @media screen and (max-width: 736px) {
+                #map {
+                width: 100%;
+                height: 200px;
+            }
+                }
+            </style>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+
+		<!-- Header Wrapper -->
+			<div class="wrapper style1">
+
+			<!-- Header -->
+				<div id="header">
+
+						<!-- Logo -->
+				<h1><a id="logo">Goldenberg Lab</a></h1>
+
+					<div class="container">
+
+					<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="current.html">Current Research</a>
+                                        </li>
+									<li><a href="people.html">The Team</a>
+                                        </li>
+									<li><a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?hl=en&user=cEepZOEAAAAJ&view_op=list_works&sortby=pubdate">Publications</a></li>
+                                     <li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+
+
+		<!-- Main -->
+
+                <!-- Section Three -->
+			<div class="wrapper style4">
+				<section class="container">
+					<header class="major">
+						<h2>The Team</h2>
+                    </header>
+
+                    <div class="row">
+						<div class="12u">
+                            <div class="imgWrap">
+                                  <a class="image" href="#openModalAnna"><img src="images/team/1_resized.png"><p class="imgDescription">About Anna</p></a>
+                            <div id="openModalAnna" class="modalDialog">
+                                            <div>
+                                                <a href="#close" title="Close" class="close">X</a>
+                                                <h2>Anna Goldenberg</h2>
+                                                <p>Dr. Anna Goldenberg is a professor in the Departments of Computer Science and the Laboratory Medicine and Pathobiology at the University of Toronto. She is a Varma Family Chair in Biomedical Informatics and Artificial Intelligence at SickKids Research Institute as well as a CIFAR AI chair at the Vector Institute. She co-chairs the research arm of the Temerty Centre for AI at UofT and co-leads SickKids AI Services. Additionally, Dr. Goldenberg is a director of an AI in Healthcare Master’s concentration under the Master's of Applied Computer Science umbrella jointly between DCS and LMP.  Dr Goldenberg trained in machine learning at Carnegie Mellon University, with a postdoctoral focus in computational biology and medicine. The current focus of her lab is on developing and deploying machine learning models to healthcare. Dr Goldenberg’s lab is strongly committed to creating responsible AI to benefit patients across a variety of conditions. 
+</p>
+                                            </div>
+                                            </div>
+                            <h7>Anna Goldenberg</h7>
+                             <p1>Principal Investigator</p1>
+                            </div>
+
+                        </div>
+
+                         </div>
+
+                    <div class="row">
+
+                        <!-- PhDs -->
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalAbhishekM"><img src="images/team/abhi.png" alt=""><p class="imgDescription">About Abhishek</p></a>
+                                <div id="openModalAbhishekM" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Abhishek</h2>
+                                        <p>Abhishek Moturu is a PhD candidate in the Department of Computer Science at the University of Toronto, affiliated with the Vector Institute, SickKids, and UHN KITE. He also received both his HBSc from Trinity College at U of T and his MSc from U of T. His past projects include pediatric cancer detection and facial pain detection in people with dementia. His research interests lie in using deep learning for healthcare and medicine - specifically in learning effectively with mislabeled, noisy, or difficult data. Abhishek is an Education Trainee Co-Lead at the Temerty Centre for AI Education & Research in Medicine and a Junior Fellow at Massey College. He is also interested in AI pedagogy, governance, and ethics. In his free time, he loves films, drives, racquet sports, jazz/soul/house/disco music, and exploring Toronto's food scene (ask him about his favourite restaurants!).<br>
+										Awards: OGS (2023, 2024, 2025), Trinity College Chancellor William C. Graham Award (2022), QEII-GSST (2021), CGS-M (2020), NSERC USRA (2018, 2019)<br>
+                                        Projects:<br>
+                                        LiLAW: Lightweight Learnable Adaptive Weighting to Meta-Learn Sample Difficulty and Improve Noisy Training<br>
+                                       	LiNC: Lightweight Noise Correction via Adaptive Label Refinement<br>
+										Sample Reweighting to Effectively Use Synthetic Data during Model Training<br>
+																				Github: <a href="https://github.com/moturuab">https://github.com/moturuab</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/abhishek-moturu">https://www.linkedin.com/in/abhishek-moturu</a><br>
+																				Google Scholar: <a href="https://scholar.google.com/citations?user=pr333dYAAAAJ">https://scholar.google.com/citations?user=pr333dYAAAAJ</a></p>
+																				</div>
+                                </div>
+                                <h7>Abhishek Moturu</h7>
+                                <p1>PhD Student</p1>
+                            </div>
+                        </div>
+
+						<div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalJerryJ"><img src="images/team/jerry.jpg" alt=""><p class="imgDescription">About Jerry</p></a>
+                                <div id="openModalJerryJ" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Jerry</h2>
+                                        <p>Zongliang (Jerry) Ji is a PhD student who began his studies in the fall of 2022. He focuses on biomedical machine learning, particularly with multi-modality and ICU datasets, and creating conversational agents for clinical assistive tools. He earned his undergraduate degree from Union College and a master’s degree from the University of Waterloo. His research experience includes developing an ambient assistant that helps primary care physicians with evidence-based medicine , and a framework that recommends ICU lab tests to reduce unnecessary procedures while maintaining patient safety. He also created a method that uses unpaired multimodal learning to link biological datasets and built computational pathology systems in previous roles. His work emphasizes translating methods into practical clinical tools by focusing on interpretable objectives, rigorous evaluation, and practical guidance.<br>
+										Awards: OGS 2023<br>
+                                        Projects:<br>
+                                       	Lab test ordering for ICU patient<br>
+										Towards Developing Medical Guideline Agent<br>
+										Explore Unpair Mutilmodal Learning for Biological Dataset<br>
+																				Google Scholar: <a href="https://scholar.google.com/citations?user=eyyWQqAAAAAJ">https://scholar.google.com/citations?user=eyyWQqAAAAAJ</a><br>
+																				Website: <a href="https://jerryji007.github.io">https://jerryji007.github.io</a></p>
+																				</div>
+                                </div>
+                                <h7>Zongliang (Jerry) Ji</h7>
+                                <p1>PhD Student</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalJingyiZ"><img src="images/team/jingyi.jpg" alt=""><p class="imgDescription">About Jingyi</p></a>
+                                <div id="openModalJingyiZ" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Jingyi Zhao</h2>
+                                        <p>Jingyi am a PhD student in Computer Science at the University of Toronto, advised by Professor Anna Goldenberg. Her research focuses on machine learning for healthcare and biomedical applications. Before joining U of T, she completed her MPhil in Machine Learning and Machine Intelligence at the University of Cambridge. Prior to that, she earned her B.Sc. from NYU Shanghai, double-majoring in Computer Science and Mathematics.<br>
+                                        Projects:<br>
+                                       	Foundation models for wearable times series data<br>
+																				
+																				LinkedIn: <a href="https://www.linkedin.com/in/jingyi-zhao-688873283/">https://www.linkedin.com/in/jingyi-zhao-688873283/</a><br>
+																				Google Scholar: <a href="https://scholar.google.ca/citations?user=R7Rb2x4AAAAJ">https://scholar.google.ca/citations?user=R7Rb2x4AAAAJ</a></p>
+																				</div>
+                                </div>
+                                <h7>Jingyi Zhao</h7>
+                                <p1>PhD Student</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalKadenM"><img src="images/team/kaden.png" alt=""><p class="imgDescription">About Kaden</p></a>
+                                <div id="openModalKadenM" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Tina</h2>
+                                        <p>As a doctoral candidate supervised by Dr. Anna Goldenberg and co-supervised by Dr. Bo Wang, Kaden conducts translational machine learning research for digital health—building knowledge‑enhanced foundation models & multimodal LLMs fusing physiological time‑series, EHR data, and clinical text. From in‑hospital monitors to consumer wearables, he aims to engineer & deploy AI that delivers measurable clinical impact, bridging academic innovation, MedTech entrepreneurship, and frontline care!<br>
+                                        Affiliations: Univeristy of Toronto, SickKids, UHN<br>
+                                        Projects:<br>
+                                       	ECG-FM: An Open Electrocardiogram Foundation Model<br>
+										ECG-CRED: ECG-powered Cross-modal Robust Evidence-driven Diagnosis<br>
+																				Github: <a href="https://github.com/KadenMc">https://github.com/KadenMc</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/kadenmckeen/">https://www.linkedin.com/in/kadenmckeen/</a><br>
+																				Google Scholar: <a href="https://scholar.google.ca/citations?user=LGPnpjYAAAAJ">https://scholar.google.ca/citations?user=LGPnpjYAAAAJ</a></p>
+																				</div>
+                                </div>
+                                <h7>Kaden McKeen</h7>
+                                <p1>PhD Student</p1>
+                            </div>
+                        </div>
+
+						<div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalTinaB"><img src="images/team/tina.jpg" alt=""><p class="imgDescription">About Tina</p></a>
+                                <div id="openModalTinaB" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Tina</h2>
+                                        <p>Tina is a 3rd-year PhD student in Computer Science at the University of Toronto, supervised by Anna Goldenberg. Her research focuses on the intersection of AI and healthcare, with experience in healthcare trajectory prediction, out-of-distribution detection, representation learning for digital pathology, time-series anomaly detection, and biometric identification. She is passionate about solving challenging problems in generative ML, time-series analysis, computer vision, and graph learning. Outside of research, she loves playing tennis, reading, painting, and heading out for camping adventures.<br>
+										Awards: NSERC PGS-D 2025<br>
+                                        Projects:<br>
+                                       	Dynamic Out-of-Distribution Detection<br>
+										Discharge Readiness Prediction<br>
+										LLM-Based Information Retrieval from Wearable and Survey Data<br>
+																				Github: <a href="https://github.com/Tinbeh97">https://github.com/Tinbeh97</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/tinbeh97">https://www.linkedin.com/in/tinbeh97</a><br>
+																				Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=a67z4YIAAAAJ">https://scholar.google.com/citations?hl=en&user=a67z4YIAAAAJ</a><br>
+																				Website: <a href="https://tinbeh97.github.io/tinabehrouzi.github.io/">https://tinbeh97.github.io/tinabehrouzi.github.io/</a></p>
+																				</div>
+                                </div>
+                                <h7>Tina Behrouzi</h7>
+                                <p1>PhD Student</p1>
+                            </div>
+                        </div>
+
+                        
+
+
+                        <!-- MScs -->
+                        
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalAndrewZ"><img src="images/team/andrew.png" alt=""><p class="imgDescription">About Andrew</p></a>
+                                <div id="openModalAndrewZ" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Andrew</h2>
+                                        <p>Andrew is a Computer Science MSc-PhD student advised by Prof. Anna Goldenberg at the Vector Institute for Artificial Intelligence and the University of Toronto, from which he graduated with an HBSc triple-majoring in Computer Science, Cognitive Science, and Physics. He is broadly interested in the synergy between computational and biological problem-solving. His research focuses on AI and ML methods for solving problems in medical bio-physics, while he is symmetrically also excited by bio-inspired computation. Thus far, he has mostly worked on bio-signal processing (clinical time-series & transcriptomics) with deep learning. In the interim, he also took an excursion to work with LLMs trained on the world’s largest computer chip during his co-op internship at Cerebras Systems.<br>
+										Awards: University of Toronto Scholar (2020), Trinity College 6T5 Scholarship (2021), Dean's List Scholar (2020-2024)<br>
+                                        Past Projects:<br>
+										Mamba-based Deep Learning Approach for Sleep Staging on a Wireless Multimodal Wearable System without Electroencephalography<br>
+										scGPT-spatial: Continual Pretraining of Single-cell Foundation Model for Spatial Transcriptomics<br>
+										Speculative decoding for LLMs with unstructured sparsity<br>
+										Current Projects:<br>
+										Forecasting patient deterioration in the Paediatric ICU<br>
+										Prescreening neurodegenerative diseases with wearable device signals<br>
+										Causal discovery for time series<br>
+																				Github: <a href="https://github.com/a663E-36z1120">https://github.com/a663E-36z1120</a><br>
+																				Twitter: <a href="https://twitter.com/a663e_36z1120">https://twitter.com/a663e_36z1120</a><br>
+																				Google Scholar: <a href="https://scholar.google.com/citations?user=rW_3XVUAAAAJ">https://scholar.google.com/citations?user=rW_3XVUAAAAJ</a><br>
+																				Website: <a href="https://a663e-36z1120.github.io/">https://a663e-36z1120.github.io//</a></p>
+																				</div>
+                                </div>
+                                <h7>Andrew Hanzhuo Zhang</h7>
+                                <p1>MSc Student</p1>
+                            </div>
+                        </div>
+
+					<!-- Undergrads -->
+
+						<div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalAdityaK"><img src="images/team/aditya.jpg" alt=""><p class="imgDescription">About Aditya</p></a>
+                                <div id="openModalAdityaK" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Aditya</h2>
+                                        <p>Aditya is an undergraduate student at the University of Toronto studying data science and statistics. His research interests and background are primarily in mathematical statistics, techniques for correlated data, and sampling algorithms. Aditya's goal is to develop robust methods for doing inference, in the service of being able to make actionable decisions from data. He occasionally also dabbles in other fields and applications (e.g. computational linguistics). At the Goldenberg Lab, he is currently studying machine learning methods for lab tests ordering, particularly in the presence of distribution shifts. In his free time, you’ll find him reading a book or (more likely) annoying his friends.<br>
+										Awards: DCS Engagement Award (2025), Dean's List Scholar (2022-2024), NSERC USRA (2024), Samuel Beatty Scholarship (2023), Chancellor’s Scholarship (2022), University of Toronto Scholars Award (2021)<br>
+                                        Projects:<br>
+                                       	ICU patient forecasting<br>
+																				Github: <a href="https://github.com/AdK0101">https://github.com/AdK0101</a><br>
+																				Google Scholar: <a href="https://scholar.google.com/citations?user=uI9I9qYAAAAJ">https://scholar.google.com/citations?user=uI9I9qYAAAAJ</a><br>
+																				Website: <a href="https://adk0101.github.io/">https://adk0101.github.io</a></p>
+																				</div>
+                                </div>
+                                <h7>Aditya Khan</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalHaochenD"><img src="images/team/haochen.png" alt=""><p class="imgDescription">About Haochen</p></a>
+                                <div id="openModalHaochenD" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Haochen</h2>
+                                        <p>Haochen is a 4th-year undergraduate at the University of Toronto, in Data Science Specialist & Computer Science Major. His research interests focus on machine learning applications, like healthcare. He is currently developing a multi-modal model that predicts in-hospital discharge readiness at the Vector Institute. He is also conducting research on fairness in machine learning in the statistical sciences department. Outside of academics, he enjoys playing badminton and guitar.<br>
+										Awards: NSERC USRA (2022, 2025)<br>
+                                        Projects:<br>
+                                       	In-hospital Discharge Readiness Prediction<br>
+																				Github: <a href="https://github.com/Dennis-Ding1">https://github.com/Dennis-Ding1</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/haochen-ding-17039a295/">https://www.linkedin.com/in/haochen-ding-17039a295/</a></p>
+																				</div>
+                                </div>
+                                <h7>Haochen Ding</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalKaiL"><img src="images/team/kai.png" alt=""><p class="imgDescription">About Kai</p></a>
+                                <div id="openModalKaiL" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Kai</h2>
+                                        <p>Kai is a 4th year undergraduate student studying Engineering Science at UofT, majoring in machine intelligence. His research interests include machine learning for healthcare, spanning multiple disciplines including histology, radiology, physiology, and more. Past research topics include computational pathology, remote heartrate detection (rPPG), surgical scene reconstruction, and radiological segmentation. In his free time, Kai enjoys spending time with family and friends, travelling, and exploring.<br>
+										Awards: NSERC USRA (2022, 2025)<br>
+                                        Projects:<br>
+                                       	Foundation Models for Wearables<br>
+																				Github: <a href="https://github.com/kailathan">https://github.com/kailathan</a><br>
+																				Google Scholar: <a href="https://scholar.google.ca/citations?user=peirP6sAAAAJ">https://scholar.google.ca/citations?user=peirP6sAAAAJ</a></p>
+																				</div>
+                                </div>
+                                <h7>Kai Li</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalPhoebeC"><img src="images/team/phoebe.jpg" alt=""><p class="imgDescription">About Phoebe</p></a>
+                                <div id="openModalPhoebeC" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Phoebe</h2>
+                                        <p>Phoebe is a fourth-year Computer Science Specialist student at the University of Toronto with a minor in Statistics. Her research interests lie at the intersection of AI/ML and healthcare. She is currently working on an LLM-based data querying system for the 4YouandMe BUMP study. Beyond academics, she loves dancing and playing guitar!<br>
+                                        Projects:<br>
+                                       	Natural Language Querying System for BUMP Data<br>
+																				Github: <a href="https://github.com/ShihHsin0723">https://github.com/ShihHsin0723</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/shih-hsin-chuang/">https://www.linkedin.com/in/shih-hsin-chuang/</a></p>
+																				</div>
+                                </div>
+                                <h7>Phoebe (Shih-Hsin) Chuang</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalSabrinaX"><img src="images/team/sabrina.jpg" alt=""><p class="imgDescription">About Sabrina</p></a>
+                                <div id="openModalSabrinaX" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Sabrina</h2>
+                                        <p>Sabrina is a 4th year undergraduate student at University of Toronto in Bioinformatics and Computational Biology and Computer Science. She is interested in using technological tools to solve biological problems and her current project involves leveraging machine learning to predict patient discharge. Outside of the lab, you can find her reading the latest fantasy novel or at the pool.<br>
+                                        Projects:<br>
+                                       	Predicting In-Hospital Discharge Readiness from Multi-Model EHR Data<br></p>
+																				</div>
+                                </div>
+                                <h7>Sabrina Xi</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                        <div class="3u">
+                            <div class="imgWrap">
+                                <a class="image" href="#openModalYuchenW"><img src="images/team/yuchen.jpg" alt=""><p class="imgDescription">About Yuchen</p></a>
+                                <div id="openModalYuchenW" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Yuchen</h2>
+                                        <p>Yuchen is an undergraduate student majoring in Computer Science and Statistics at the University of Toronto. He is working with Anna and Jerry on optimizing laboratory test utilization for ICU patients using deep learning methods, aiming to minimize resource overuse and alleviate patient discomfort. His research interests include deep learning, reinforcement learning, and their applications in healthcare and data-driven decision making. Outside of academics, he enjoys playing badminton.<br>
+										Awards: University of Toronto Scholar (2025), The Charles P. McTague Scholarship (2024)<br>
+                                        Projects:<br>
+                                       	ICU patient forecasting<br>
+																				Github: <a href="https://github.com/richardwang1236">https://github.com/richardwang1236</a><br>
+																				LinkedIn: <a href="https://www.linkedin.com/in/yuchen-wang1236/">https://www.linkedin.com/in/yuchen-wang1236/</a></p>
+																				</div>
+                                </div>
+                                <h7>Yuchen Wang</h7>
+                                <p1>Undergraduate Researcher</p1>
+                            </div>
+                        </div>
+
+                    </div>
+
+				</section>
+
+				<section class="container1">
+                    <div class = "row">
+                    <div class="6u">
+					<header class="major" style="padding-bottom: 1em;">
+						<h3>Past Lab Members</h3>
+                    </header>
+                    <div>
+                        <ul>
+                           <li type="square"> Sujay Nagaraj (University of Toronto) </li>
+                           <li type="square"> Sana Tonekaboni (Broad Institute, MIT and Harvard) </li>
+                           <li type="square"> Jennifer Yu (Tri-I Institution, Weill Cornell Medicine, Memorial Sloan Kettering Cancer Center) </li>
+                           <li type="square"> Lauren Erdman (Cincinnati Children's Hospital Medical Center, University of Cincinnati) </li>
+                           <li type="square"> Alex Adam (GPTZero) </li>
+                           <li type="square"> Bret Nestor (Harvard School of Public Health) </li>
+                           <li type="square"> Kopal Garg (Cartography Biosciences) </li>
+                           <li type="square"> Gabriela Morgenshtern (University of Zurich) </li>
+                           <li type="square"> Soren Sarvestany (Tradera) </li>
+                           <!--<li type="square"> Aslesha Pokhrel </li>-->
+                           <li type="square"> Addison Weatherhead (SurveyMonkey) </li>
+                           <li type="square"> Erik Drysdale (Boston Consulting Group GAMMA) </li>
+                           <li type="square"> Jaryd Hunter (UHN) </li>
+                           <li type="square"> Chun-Hao (Kingsley) Chang </li>
+                           <li type="square"> Sulagshan Raveendrakumar (Google)</li>
+                           <li type="square"> Alex Chang (Medical student at the University of Montreal)</li>
+                           <li type="square"> Vinith M. Suriyakumar (PhD MIT)</li>
+                           <li type="square"> Melissa McCradden (Bioethicist at Sickkids)</li>
+                           <li type="square"> Daniel Hidru</li>
+                           <li type="square"> Julyan Keller-Baruch </li>
+                            <li type="square">Farnush Farhadi (Layer 6)</li>
+                            <li type="square">Carson McLean (Georgian partners)</li>
+                            <li type="square">Ladislav Rampasek (Postdoc at MILA)</li>
+                            <li type="square">Shalmali Joshi (Harvard)</li>
+                            <li type="square">Angeline Yasodhara (Georgian partners)</li>
+                    	<li type="square">Jennifer Guo (University of Toronto)</li>
+
+                    	<li type="square">Aziz Mezlini (PhD, now PostDoc at Harvard Medical School/MassGen)</li>
+			<li type="square">Lebohang Radebe (Masters, now in South Africa)</li>
+			<li type="square">Walter Nelson (Undergrad, now McMaster Health System)</li>
+			<!--  <li type="square">Soren Sarvestany (Undergrad, now startup Waterloo)</li> -->
+			<li type="square">Hannah Li (Undergrad, now grad student at Stanford)</li>
+                        <li type="square">Yasaman Mahdaviyeh (Undergrad, PhD University of Toronto)</li>
+                        <li type="square"> Shems Saleh (Masters, now Vector)</li>
+                        <li type="square"> Daniel Cole (Undergrad, now Shopify)</li>
+                        <li type="square"> Won June (Undergrad, now Shopify)</li>
+                        <li type="square"> Tal Friedman (Undergrad, now PhD candidate at UCLA).</li>
+                        <li type="square"> Ekansh Sharma (Undergrad, PhD at University of Toronto).</li>
+                        <li type="square">Hareem Naveed (Masters, now at Data Science for Social Good).</li>
+                        <li type="square">Cheng Zhao (Masters, now at Google)</li>
+                        <li type="square">Bo Wang (Illumina)</li>
+                        <li type="square">Feyyaz Saigin Demir (Masters, now at Google)</li>
+                        <li type="square">Ying Li (bioinformatician)</li>
+                        <li type="square">Beyrem Khalfaoui (Now PhD student with JP Vert)</li>
+                        <li type="square">Anne Keller (Masters, now Masters in epidemiology)</li>
+                        <li type="square">Mohsen Hajiloo (Amazon)</li>
+                            </ul>
+                    </div>
+                        </div>
+                    <div class="6u">
+                    <header class="major" style="padding-bottom: 1em;">
+						<h3>Past Visitors</h3>
+                    </header>
+                    <div>
+                        <ul>
+                        <li type="square">Vanessa Lima (Brazil)</li>
+                        <li type="square">Xin Wang (China)</li>
+                        <li type="square">Seunghak Lee (CMU)</li>
+                        <li type="square">Lloyd Elliot (Oxford Stats)</li>
+                        </ul>
+
+                    </div>
+                   </div>
+                  </div>
+                    <h2>Our global lab!</h2>
+                </section>
+
+            </div>
+
+   <!-- Map -->
+            <div id="map"></div>
+
+                <script>
+
+                    var map = L.map('map',{scrollWheelZoom:false, zoomControl: false}).setView([30, -30], 2);
+
+                    // listen for screen resize events i.e, when mobile screen, zoom out of map
+                    window.addEventListener('resize', function(event){
+                        // get the width of the screen after the resize event
+                        var width = document.documentElement.clientWidth;
+                        // tablets are between 768 and 922 pixels wide
+                        // phones are less than 768 pixels wide
+                        if (width < 736) {
+                            // set the zoom level to 1
+                            map.setZoom(1);
+                        }  else {
+                            // set the zoom level to 2
+                            map.setZoom(2);
+                        }
+                    });
+
+                    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+
+                    var pinIcon = L.icon({
+                    iconUrl: 'images/pin.png',
+
+                    iconSize:     [20, 20], // size of the icon
+                    iconAnchor: [10, 18], // point of the icon which will correspond to marker's location
+                    popupAnchor:  [0, -15] // point from which the popup should open relative to the iconAnchor
+                    });
+
+                    // North America
+                    var marker = L.marker([43.653226, -79.383184], {icon: pinIcon}).bindPopup('Dustin Sokolowski, Daniel Hidru, Jennifer Guo').addTo(map); // Toronto, Ontario
+                    var marker = L.marker([49.166590, -123.133569], {icon: pinIcon}).bindPopup('Jaryd Hunter').addTo(map); // Richmond, British Columbia
+                    var marker = L.marker([45.5017, -73.5673], {icon: pinIcon}).bindPopup('Julyan Keller-Baruch').addTo(map); // Montreal, Quebec
+                    var marker = L.marker([53.5461, -113.4938], {icon: pinIcon}).bindPopup('Carson McLean').addTo(map); // Edmonton, Alberta
+
+                    var marker = L.marker([29.6516, -82.3248], {icon: pinIcon}).bindPopup('Ben Brew').addTo(map); // Gainesville, Florida
+                    var marker = L.marker([46.732387, -117.000165], {icon: pinIcon}).bindPopup('Lauren Erdman').addTo(map); // Moscow, Idaho
+                    var marker = L.marker([42.360082, -71.058880], {icon: pinIcon}).bindPopup('Walter Nelson').addTo(map); // Boston, Massachusetts
+                    var marker = L.marker([37.3382, -121.8863], {icon: pinIcon}).bindPopup('Hannah Li').addTo(map); // San Jose, California
+
+                    // Europe
+                    var marker = L.marker([51.675497, 39.208882], {icon: pinIcon}).bindPopup('Anna Goldenberg').addTo(map); // Voronezh, Russia
+                    var marker = L.marker([63.430515, 10.395053], {icon: pinIcon}).bindPopup('Valli Subasri').addTo(map); // Trondheim, Norway
+                    var marker = L.marker([32.427908, 53.688046], {icon: pinIcon}).bindPopup('Sana Tonekaboni, Farnush Farhadi, Soren Sabet Sarvestany').addTo(map); // Iran
+                    var marker = L.marker([48.148596, 17.107748], {icon: pinIcon}).bindPopup('Ladislav Rampasek').addTo(map); // Bratislava, Slovakia
+                    var marker = L.marker([46.771210, 23.623635], {icon: pinIcon}).bindPopup('Alex Adam').addTo(map); // Cluj-Napoca, Romania
+
+                    // Asia
+                    var marker = L.marker([23.697810, 120.960515], {icon: pinIcon}).bindPopup('Chun-Hao Chang (Kingsley)').addTo(map); // Taiwan
+                    var marker = L.marker([23.1288, 113.29], {icon: pinIcon}).bindPopup('Mingjie Mai').addTo(map); // Guangzhou, China
+                    var marker = L.marker([-6.186758, 106.832252], {icon: pinIcon}).bindPopup('Angeline Yasodhara, Erik Drysdale').addTo(map); // Jakarta, Indonesia
+                    var marker = L.marker([33.312806, 44.361488], {icon: pinIcon}).bindPopup('Shems Saleh').addTo(map); // Baghdad, Iraq
+                    var marker = L.marker([17.6868, 83.2185], {icon: pinIcon}).bindPopup('Abhishek Moturu').addTo(map); // Visakhapatnam, India
+                    var marker = L.marker([32.0853, 34.7818], {icon: pinIcon}).bindPopup('Gabriela Morgenshtern').addTo(map); // Tel Aviv, Israel
+
+                    // Africa
+                    var marker = L.marker([-25.747868, 28.229271], {icon: pinIcon}).bindPopup('Lebohang Radebe').addTo(map); // Pretoria, South Africa
+                    var marker = L.marker([36.806495, 10.181532], {icon: pinIcon}).bindPopup('Aziz Mezlini').addTo(map); // Tunis, Tunisia
+
+                </script>
+
+	<!-- Footer -->
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h3><a href="contact.html">Contact Us</a></h3>
+				</header>
+			</section>
+		</div>
+    </div>
+</html>

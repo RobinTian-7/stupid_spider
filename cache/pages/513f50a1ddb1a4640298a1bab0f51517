@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alex Mariakakis</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Alex Mariakakis' personal webpage">
+    <meta property="og:description" content="Alex Mariakakis' personal webpage" />
+    
+    <meta name="author" content="Alex Mariakakis" />
+
+    
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-migrate/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105342327-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="Alex Mariakakis - Alex Mariakakis' personal webpage" href="/feed.xml" />
+    
+    
+    <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-chrome-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon/android-chrome-icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <meta name="theme-color" content="#ffffff">
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/publications">Publications</a></li>
+            <li><a href="/cv/mariakakis_cv.pdf">Curriculum Vitae</a></li>
+            <li><a href="/teaching">Teaching</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/travelmap">Travel</a></li>
+            <li><a href="/funfacts">Fun Facts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="main" role="main" class="container">
+      
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Alex Mariakakis</h1>
+    <p>
+      I primarily use this website to provide my bio and CV, as well as some archival information about my PhD research. For the most up-to-date information about my ongoing work and potential opportunities at the University of Toronto, please go to my research group's <a href="https://chai.cs.toronto.edu/" target="_blank">webpage</a>.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="bxslider">
+      <!-- note: imgs can have links around them -->
+      <!-- <li><img src="/images/slider/sage.jpg" title=""/></li> -->
+      <li><img src="/images/slider/biliscreen_glasses.jpg" title=""/></li>
+      <li><img src="/images/slider/boards_demo.png" title=""/></li>
+      <li><img src="/images/slider/lab_discussion.jpg" title=""/></li>
+      <li><img src="/images/slider/shwetak_discussion.jpg" title=""/></li>
+    </ul>
+  </div>
+  <div class="col-md-6 news">
+    <h2>Contact Info</h2>
+    <p><b>Email:</b> mariakakis at cs dot toronto dot edu</p>
+    <h2>News</h2>
+    <!-- Compute number of items to show -->
+
+
+
+<!-- Generate the news list -->
+
+  
+
+<ul>
+
+  <li>
+    Oct 16, 2025:
+    
+    <a href="https://research.gatech.edu/embracing-ubiquitous-technology-complement-scale-and-extend-traditional-healthcare">Delivered a talk for Georgia Tech's IPaT GVU Lunch Lecture Series</a>
+    
+  </li>
+
+  <li>
+    Oct 1, 2025:
+    
+    <a href="https://designlab.ucsd.edu/about/index.html">Delivered a talk for the University of California San Diego's Design Lab Research Meeting</a>
+    
+  </li>
+
+  <li>
+    Sep 26, 2025:
+    
+    <a href="https://cse.engin.umich.edu/event/embracing-ubiquitous-technology-to-complement-scale-and-extend-traditional-healthcare">Delivered a talk for the University of Michigan's Human Computer Interaction Seminar</a>
+    
+  </li>
+
+  <li>
+    Sep 23, 2025:
+    
+    <a href="https://tech.cornell.edu/">Delivered a guest lecture for Dr. Rajalakshmi Nandkumar's course at Cornell Tech</a>
+    
+  </li>
+
+  <li>
+    Sep 22, 2025:
+    
+    <a href="https://www.dbmi.columbia.edu/">Delivered a talk for Columbia University's Department of Biomedical Informatics</a>
+    
+  </li>
+
+</ul>
+
+    <a href="/news/">(More news...)</a>
+    <br/><br/>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Current Roles</h2>
+    <p>
+      I am an Assistant Professor in the <a href="https://web.cs.toronto.edu/" target="_blank">Department of Computer Science</a> at the <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>. 
+      I run the <a href="https://chai-toronto.github.io/" target="_blank">Computational Health and Interaction (CHAI)</a> lab, which leverages ubiquitous technologies like smartphones and wearables to address problems related to people’s health.
+      Using sensor data collected from momentary assessments or passive recordings, I employ signal processing and machine learning to generate digital biomarkers related to a person's physiology, context, and behavior. 
+      My work also spans other topics at the intersection of ubiquitous computing and human-computer interaction such as mobile interaction, user-centered design, and novel sensing techniques.
+    </p>
+    <p>
+      Beyond my primary academic role, I am also an Affiliate Scientist at <a href="https://kite-uhn.com/" target="_blank">KITE@UHN</a> and an Education Faculty Affiliate for <a href="https://tcairem.utoronto.ca/" target="_blank">T-CAIREM</a>, which has enabled my passion for digital health research to influence the clinical landscape in the Greater Toronto Area.
+      I am also a Faculty Fellow at <a href="https://axl.vc/" target="_blank">AXL</a>, which is a Toronto-based venture studio seeking to accelerate Canadian innovation in human-centric AI.
+    </p>
+
+    <h2>Career Path</h2>
+    <p>
+      Before joining the University of Toronto, I completed a joint postdoctoral role under <a href="https://www.linkedin.com/in/larsson-omberg-75912610/">Larsson Omberg</a> and <a href="https://ischool.uw.edu/people/faculty/profile/anind">Anind Dey</a>, where I split my time between the <a href="https://sagebionetworks.org/">Sage Bionetworks</a> and the <a href="http://www.cs.washington.edu/">School of Computer Science and Engineering</a> at the <a href="http://www.washington.edu/">University of Washington</a>.
+      I completed my PhD at the University of Washington under the supervision of <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a> and <a href="http://faculty.washington.edu/wobbrock/">Jacob O. Wobbrock</a>. 
+      I completed my undergraduate studies at <a href="http://www.duke.edu/">Duke University</a> with a double major in <a href="http://www.ece.duke.edu/">Electrical and Computer Engineering</a> and <a href="http://www.cs.duke.edu/">Computer Science</a>.
+      During that time, I conducted research under <a href="http://croy.web.engr.illinois.edu/">Romit Roy Choudhury</a>.
+    </p>
+    
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+  $('.bxslider').bxSlider({
+    adaptiveHeight: false,
+    speed: 500,
+    captions: true,
+    auto: true,
+    pause: 5000,
+    autoControls: true
+    });
+});
+</script>
+
+    </div>
+
+    <div class="wrapper-footer container">
+      <!-- <footer class="footer">
+        <div class="row">
+          <div class="col-xs-4 text-left"><a href="http://cs.washington.edu" target="_blank"><img src="/images/cse.png"/></a></div>
+          <div class="col-xs-4 text-center"><a href="http://dub.washington.edu" target="_blank"><img src="/images/dub.png"/></a></div>
+          <div class="col-xs-4 text-right"><a href="http://ee.washington.edu" target="_blank"><img src="/images/ee.gif"/></a></div>
+        </div>
+      </footer> -->
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H41MGLWZ1T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H41MGLWZ1T');
+</script>
+    
+  </body>
+</html>

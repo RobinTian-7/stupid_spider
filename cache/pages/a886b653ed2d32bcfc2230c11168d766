@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Andrew Gordon Wilson</title>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81945202-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <meta id="viewport" name="viewport" content="width=500">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="base.css" type="text/css">
+    <link rel="stylesheet" href="code.css" type="text/css">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="940x1641">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="32x32">
+  </head>
+  <body>
+    <div class="content">
+      <header> <img src="andrewcropfast.jpg" alt="andrewphoto"
+          height="1471" width="1094"><br>
+        <h1><a href="https://cims.nyu.edu/~andrewgw">Andrew
+            Gordon Wilson<br>
+          </a></h1>
+        <ul>
+          <li><a href="andrewcv.pdf">CV</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/bio">Bio</a></li>
+          <!--  <li><a href="#thesis">PhD Thesis</a></li> -->
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/talks">Talks</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/group">Group</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/join">Join</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/teaching">Teaching</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/code">Code<br>
+            </a></li>
+          <!--   <li><a href="mailto:%20andrew@cornell.edu">Contact</a></li> -->
+        </ul>
+      </header>
+      <section id="bio">
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        <div align="justify"> 
+
+<!--
+<b>I <a
+              href="https://cims.nyu.edu/~andrewgw/group">lead a
+              machine learning group</a> at NYU. You
+            can check out some of <a
+              href="https://cims.nyu.edu/~andrewgw/code">our
+              work here</a>. I also <a
+              href="https://cims.nyu.edu/~andrewgw/teaching">teach
+
+
+              classes</a> on Bayesian machine learning and information
+            theory.&nbsp; I presented an ICML 2020 tutorial on <a
+              href="https://www.youtube.com/watch?v=E1qhGw8QxqY">Bayesian Deep Learning</a>. The PyTorch blog <a href="https://pytorch.org/blog/pytorch-1.6-now-includes-stochastic-weight-averaging/">featured some of our work</a> developing geometrically inspired methods for predictive distributions, uncertainty representation, and better generalization in deep learning.</b><br>
+          <b> </b><br>
+-->
+
+<b>Note to prospective PhD students: in the upcoming application cycle (admission for 2026-2027), I am primarily interested in the theory and empirical science of deep learning. The following papers are representative of these interests: (1) <a href="https://arxiv.org/abs/2601.03220">epiplexity, a new measure of information for data selection</a>; (2) <a href="https://arxiv.org/abs/2504.15208">generalization bounds for understanding scaling laws</a>; (3) <a href="https://arxiv.org/abs/2507.02119">the science of scaling</a>; (4) <a href="https://arxiv.org/abs/2410.02117">numerical methods for deep learning</a>. A rigorous mathematics or physics training is typically the best fit for research with me.</b><br><br>
+
+I aim to develop a prescriptive approach to building autonomous intelligent systems. This effort involves a variety of different research initiatives, which cumulatively work together towards achieving this vision. A major theme that unifies many of these initiatives is a desire for an actionable understanding, so that we can select for particular properties aligned with our goals.  These areas, and some example papers, include:
+<br>
+• <i>Understanding deep learning models, including LLMs and vision models, generalization theory, and reasoning</i> [e.g., <a href="https://arxiv.org/abs/2002.08791">1</a>, <a href="https://arxiv.org/abs/1802.10026">2</a>, <a href="https://arxiv.org/abs/2211.13609">3</a>, <a href="https://arxiv.org/abs/2310.07820">4</a>, <a href="https://arxiv.org/abs/2304.05366">29</a>, <a href="https://arxiv.org/abs/2311.15990">30</a>, <a href="https://arxiv.org/abs/2106.05945">31</a>]  <br>
+• <i>Uncertainty representation, Bayesian methods, online decision making</i>
+<br>
+[e.g., <a href="https://arxiv.org/abs/2002.08791">1</a>, <a href="https://arxiv.org/abs/2104.14421">5</a>, <a href="https://arxiv.org/abs/1910.06403">6</a>, <a href="https://arxiv.org/abs/2202.11678">7</a>]
+  <br>
+• <i>Distribution shifts, spurious correlations</i>
+[e.g., <a href="https://arxiv.org/abs/2204.02937">8</a>, <a href="https://arxiv.org/abs/2210.11369">9</a>, <a href="https://arxiv.org/abs/2306.11074">10</a>, <a href="https://arxiv.org/abs/2106.11905">11</a>] <br>
+• <i>Encoding and learning inductive biases (e.g., equivariances)</i> [e.g., <a href="https://arxiv.org/abs/2104.09459">12</a>, <a href="https://arxiv.org/abs/2002.12880">13</a>, <a href="https://arxiv.org/abs/2010.11882">14</a>, <a href="https://arxiv.org/abs/2112.01388">15</a>]
+  <br>
+  • <i>Linear algebra as a foundation for ML</i> [e.g., <a href="https://arxiv.org/abs/2309.03060">16</a>, <a href= "https://arxiv.org/abs/2406.06248">33</a>, <a href = "https://arxiv.org/abs/2410.02117">34</a>, <a href="https://arxiv.org/abs/1809.11165">17</a>, <a href="https://arxiv.org/abs/1903.08114">18</a>, <a href="http://proceedings.mlr.press/v37/wilson15.pdf">19</a>, <a href="https://arxiv.org/abs/2304.14994">20</a>]  <br>
+• <i>Machine learning for physics, and physics for ML</i> [e.g., <a href="https://arxiv.org/abs/2010.13581">21</a>, <a href="https://arxiv.org/abs/2202.04836">22</a>, <a href="https://arxiv.org/abs/2002.12880">13</a>, <a href="https://arxiv.org/abs/2304.14994">20</a>, <a href="https://arxiv.org/abs/2112.01388">15</a>] <br>
+• <i>Simple practical methods</i> [e.g., <a href="https://arxiv.org/abs/1803.05407">23</a>, <a href="https://arxiv.org/abs/1902.02476">24</a>, <a href="https://arxiv.org/abs/1905.07121">25</a>, <a href="https://arxiv.org/abs/2204.02937">26</a>, <a href="https://arxiv.org/abs/2310.07820">4</a>] <br>
+• <i>Scientific discovery (protein engineering, materials design)</i> [e.g., <a href="https://arxiv.org/abs/2203.12742">27</a>, <a href="https://arxiv.org/abs/2305.20009">28</a>, <a href="https://arxiv.org/abs/2402.04379">32</a>] <br>
+<br>
+
+
+<!--
+          <b> </b>I am interested in developing flexible,
+          interpretable, and scalable machine learning models, often
+          involving deep learning, Gaussian
+          processes,  and kernel learning. I care about developing practically impactful methods, while at the same understanding why the methods work, and the foundations for building models that learn and generalize.
+ I am particularly excited about loss surfaces, generalization, probabilistic generative models, physics inspired methods, and Bayesian methods in deep learning. My work has been applied to time series, vision,
+          NLP, spatial statistics, public policy, medicine, and physics.<br>
+          &nbsp;<br>
+
+-->
+          Outside of work, I am a classical pianist who particularly
+          enjoys Glenn Gould's playing of Bach.<br>
+        </div>
+        <!-- <b>I have recently moved to Cornell University as an assistant
+          professor.&nbsp; <br> --> <br>
+        I can be reached at <a href="mailto:andrewgw@cims.nyu.edu">andrewgw@cims.nyu.edu</a>,
+	and on <a href="https://bsky.app/profile/andrewgwils.bsky.social">Bluesky</a> and <a href="https://twitter.com/andrewgwils">Twitter</a> as @andrewgwils.<br>
+        <br>
+        Andrew Gordon Wilson<br>
+        Professor<br>
+        Courant Institute of Mathematical Sciences and Center for Data Science<br>
+        60 Fifth Ave<br>
+        New York University<br>
+      </section>
+ <!--     <section id="highlights">
+        <div align="center"><big><b>News</b></big><br>
+        </div>
+        </b><br>
+        <br> I have received an NSF CAREER Award to develop new foundations in Bayesian deep learning! I'm grateful to my students, collaborators, and everyone who has supported our work over the years. Stay tuned for updates on research under this award!
+<br><br>
+       <a href="https://pytorch.org/blog/pytorch-1.6-now-includes-stochastic-weight-averaging/">SWA is now natively implemented in PyTorch 1.6!</a> SWA exploits the geometric structure of loss surfaces to significantly improve the generalization of many optimizers, including SGD and Adam, at no additional costs. SWA has also found many applications, including semi-supervised learning, deep RL, uncertainty representation, Bayesian deep learning, calibration, low precision training... I encourage you try it out! It's easy, and also works on pre-trained models.<br><br> 
+
+<a href="https://www.youtube.com/watch?v=E1qhGw8QxqY">I presented an ICML 2020 tutorial on Bayesian deep learning!</a>
+ -->
+        <!-- </div> -->
+        <!-- <br>
+        A video overviewing some of my research interests:<br>
+        <a href="https://slideshot.epfl.ch/play/k5FuJcUA0L0c">Scalable
+          Gaussian Processes for Scientific Discovery</a><br>
+        EPFL, Lausanne, Swizterland, February 2016<br>
+        <br>
+        A video to watch for a succinct introduction to some of my
+        research interests:<br>
+        <a
+          href="http://videolectures.net/icml2015_wilson_kernel_interpolation/">Video
+          lecture on KISS-GP (Scalable Gaussian Processes)</a>, Lille,
+        France, July 2015<br>
+        <br> --> </section>
+
+<!--
+      <section id="thesis">
+        <div align="center"><big><b>Thesis</b></big><br>
+          <br>
+        </div>
+        <div align="justify"> My thesis provides an introduction to
+          probabilistic non-parametric model construction, Gaussian
+          processes and kernel design, and a vision for scalable and
+          automatic kernel learning, with ideas for future directions.<br>
+        </div>
+        <br>
+        <b>Covariance kernels for fast automatic pattern discovery and
+          extrapolation with Gaussian processes</b><br>
+        Andrew Gordon Wilson<br>
+        PhD Thesis, January 2014.<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/andrewgwthesis.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/agwthesis.bib">BibTeX</a>]<br>
+    
+  </section>
+-->
+      <section id="papers">
+        <div align="center"><big><b>Papers<br>
+              <br>
+            </b></big></div>
+        <b><b><a
+href="https://scholar.google.com/citations?user=twWX2LIAAAAJ&amp;hl=en&amp;oi=ao">Google scholar page</a><br>
+            <br>
+          </b></b>
+<br>
+<br>
+<big><b>This listing of papers is out of date. Please see <a href="https://cims.nyu.edu/~andrewgw/andrewcv.pdf">my CV</a> for an updated list.</b><br><br>
+</big>
+
+<b>PAC-Bayes Compression Bounds So Tight That They Can Explain Generalization</b><br>
+Sanae Lotfi, Marc Finzi, Sanyam Kapoor, Andres Potapczynski, Micah Goldblum, Andrew Gordon Wilson<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2022. <br>
+[<a href="">PDF (Coming Soon!)</a>, <a href"">arXiv (Coming Soon!)</a>, <a href="">code (Coming Soon!)</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Pre-Train Your Loss: Easy Bayesian Transfer Learning with Informative Priors</b><br>
+Ravid Shwartz-Ziv, Micah Goldblum, Hossein Souri, Sanyam Kapoor, Chen Zhu, Yann LeCun, Andrew Gordon Wilson<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2022. <br>
+[<a href="https://arxiv.org/pdf/2205.10279.pdf">PDF</a>, <a href"https://arxiv.org/abs/2205.10279">arXiv</a>, <a href="https://github.com/hsouri/BayesianTransferLearning">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>On Feature Learning in the Presence of Spurious Correlations</b><br>
+Pavel Izmailov, Polina Kirichenko, Nate Gruver, Andrew Gordon Wilson<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2022. <br>
+[<a href="https://arxiv.org/pdf/2210.11369.pdf">PDF</a>, <a href"https://arxiv.org/abs/2210.11369">arXiv</a>, <a href="https://github.com/izmailovpavel/spurious_feature_learning">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>On Uncertainty, Tempering, and Data Augmentation in Bayesian Classification</b><br>
+Sanyam Kapoor, Wesley Maddox, Pavel Izmailov, Andrew Gordon Wilson<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2022. <br>
+[<a href="https://arxiv.org/pdf/2203.16481.pdf">PDF</a>, <a href"https://arxiv.org/abs/2203.16481">arXiv</a>, <a href="https://github.com/activatedgeek/understanding-bayesian-classification">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+
+<b>Chroma-VAE: Mitigating Shortcut Learning with Generative Classifiers</b><br>
+Wanqian Yang, Polina Kirichenko, Micah Goldblum, Andrew Gordon Wilson<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2022. <br>
+[<a href="">PDF (Coming Soon)</a>, <a href"">arXiv (Coming soon)</a>, <a href="">code (Coming Soon)</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Bayesian Model Selection, the Marginal Likelihood, and Generalization</b><br>
+Sanae Lotfi, Pavel Izmailov, Gregory Benton, Micah Goldblum, Andrew Gordon Wilson<br>
+<i>International Conference on Machine Learning</i> (ICML), 2022. <br><b>Outstanding Paper Award</b> <br>
+[<a href="https://arxiv.org/pdf/2202.11678.pdf">PDF</a>, <a href="https://arxiv.org/abs/2202.11678">arXiv</a>, <a href="https://github.com/Sanaelotfi/Bayesian_model_comparison">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Accelerating Bayesian Optimization for Biological Sequence Design with Denoising Autoencoders</b><br>
+Samuel Stanton, Wesley Maddox, Nate Gruver, Phil Maffettone, Emily Delaney, Peyton Greenside, Andrew Gordon Wilson <br>
+<i>International Conference on Machine Learning</i> (ICML), 2022 <br>
+[<a href="https://arxiv.org/pdf/2203.12742.pdf">PDF</a>, <a href="https://arxiv.org/abs/2203.12742">arXiv</a>, <a href="https://github.com/samuelstanton/lambo">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Low-Precision Stochastic Gradient Langevin Dynamics</b><br>
+Ruqi Zhang, Andrew Gordon Wilson, Christopher De Sa <br>
+<i>International Conference on Machine Learning</i> (ICML), 2022 <br>
+[<a href="https://arxiv.org/pdf/2206.09909.pdf">PDF</a>, <a href="https://arxiv.org/abs/2206.09909">arXiv</a>, <a href="https://github.com/ruqizhang/low-precision-sgld">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Volatility Based Kernels and Moving Average Means for Accurate Forecasting with Gaussian Processes</b><br>
+Gregory Benton, Wesley Maddox, Andrew Gordon Wilson <br>
+<i>International Conference on Machine Learning</i> (ICML), 2022 <br>
+[<a href="https://arxiv.org/pdf/2207.06544.pdf">PDF</a>, <a href="https://arxiv.org/abs/2207.06544">arXiv</a>, <a href="https://github.com/g-benton/Volt">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Low Precision Arithmetic for Fast Gaussian Processes</b><br>
+Wesley Maddox, Andres Potapczynski, Andrew Gordon Wilson <br>
+<i>Uncertainty in Artificial Intelligence</i> (UAI), 2022 <br>
+[<a href="https://arxiv.org/pdf/2207.06856.pdf">PDF</a>, <a href="https://arxiv.org/abs/2207.06856">arXiv</a>, <a href="https://github.com/AndPotap/halfpres_gps">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+
+<b>Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data from Modern X-ray Diffraction</b><br>
+Jordan Venderley et. al <br>
+<i>Proceedings of the National Academy of Sciences</i> (PNAS), 2022 <br>
+[<a href="https://www.pnas.org/doi/epdf/10.1073/pnas.2109665119">PDF</a>, <a href="https://arxiv.org/abs/2008.03275">arXiv</a>, <a href="https://github.com/KimGroup/XTEC">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Deconstructing the Inductive Biases of Hamiltonian Neural Networks</b><br>
+Nate Gruver, Marc Finzi, Andrew Gordon Wilson<br>
+<i>International Conference on Learning Representations</i> (ICLR), 2022<br>
+[<a href="https://arxiv.org/pdf/2202.04836.pdf">PDF</a>, <a href="https://arxiv.org/abs/2202.04836">arXiv</a>, <a href="https://github.com/ngruver/decon-hnn">code</a>,  <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+
+<b>Dangers of Bayesian Model Averaging under Covariate Shift</b><br>
+Pavel Izmailov, Patrick Nicholson, Sanae Lotfi, Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2021<br>
+[<a href="https://arxiv.org/pdf/2106.11905.pdf">PDF</a>, <a href="https://arxiv.org/abs/2106.11905">arXiv</a>, <a href="https://github.com/izmailovpavel/bnn_covariate_shift">code</a>, <a href="https://cims.nyu.edu/~andrewgw/bmashift.bib">BibTeX</a>]<br><br>
+
+<b>Bayesian Optimization with High-Dimensional Outputs</b><br>
+Wesley Maddox, Max Balandat, Andrew Gordon Wilson, Eytan Bakshy.<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2021<br>
+[<a href="https://arxiv.org/pdf/2106.12997.pdf">PDF</a>, <a href="https://arxiv.org/abs/2106.12997">arXiv</a>, <a href="https://github.com/pytorch/botorch">code</a>, <a href="https://cims.nyu.edu/~andrewgw/hbo.bib">BibTeX</a>]<br><br>
+
+<b>Does Knowledge Distillation Really Work?</b><br>Samuel Stanton, Pavel Izmailov, Polina Kirichenko, Alexander Alemi,<br> Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2021<br>
+[<a href="https://arxiv.org/pdf/2106.05945.pdf">PDF</a>, <a href="https://arxiv.org/abs/2106.05945">arXiv</a>, <a href="https://cims.nyu.edu/~andrewgw/kd.bib">BibTeX</a>]<br><br>
+
+<b>Residual Pathway Priors for Soft Equivariance Constraints</b><br>
+Marc Finzi, Gregory Benton, Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2021<br>
+[<a href="https://arxiv.org/pdf/2106.11905.pdf">PDF (Coming Soon)</a>, <a href="https://arxiv.org/abs/2106.11905">arXiv (Coming Soon)</a>, <a href="https://github.com/izmailovpavel/bnn_covariate_shift">code (Coming Soon)</a>, <a href="https://cims.nyu.edu/~andrewgw/rpp.bib">BibTeX</a>]<br><br>
+
+<b>Conditioning Sparse Variational Gaussian Processes for Online Decision-making</b><br>
+Samuel Stanton, Pavel Izmailov, Polina Kirichenko,  Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2021<br>
+[<a href="https://arxiv.org/pdf/2106.11905.pdf">PDF (Coming Soon)</a>, <a href="https://arxiv.org/abs/2106.11905">arXiv (Coming Soon)</a>, <a href="https://github.com/izmailovpavel/bnn_covariate_shift">code (Coming Soon)</a>, <a href="https://cims.nyu.edu/~andrewgw/svogp.bib">BibTeX</a>]<br><br>
+
+
+
+<b>What Are Bayesian Neural Network Posteriors Really Like?</b><br>Pavel Izmailov, Sharad Vikram, Matthew D. Hoffman, Andrew Gordon Wilson<br><i>International conference on Machine Learning</i> (ICML), 2021<br><b>Long oral presentation</b><br>
+[<a href="https://arxiv.org/pdf/2104.14421.pdf">PDF</a>, <a href="https://arxiv.org/abs/2104.14421">arXiv</a>, <a href="https://github.com/google-research/google-research/tree/master/bnn_hmc">code</a>, <a href="https://cims.nyu.edu/~andrewgw/bnnhmc.bib">BibTeX</a>]<br><br>
+
+
+<b>A Practical Method for Constructing Equivariant Multilayer Perceptrons for Arbitrary Matrix Groups</b><br>Marc Finzi, Max Welling, Andrew Gordon Wilson<br><i>International Conference on Machine Learning</i> (ICML), 2021<br><b>Long oral presentation</b><br>
+[<a href="https://arxiv.org/pdf/2104.09459.pdf">PDF</a>, <a href="https://arxiv.org/abs/2104.09459">arXiv</a>, <a href="https://github.com/mfinzi/equivariant-MLP">code</a>, <a href="https://emlp.readthedocs.io/en/latest/">documentation</a>, <a href="https://colab.research.google.com/github/mfinzi/equivariant-MLP/blob/master/docs/notebooks/colabs/all.ipynb">examples</a>, <a href="https://cims.nyu.edu/~andrewgw/emlp.bib">BibTeX</a>]<br><br>
+
+<b>SKIing on Simplices: Kernel Interpolation on the Permutohedral Lattice for Scalable Gaussian Processes</b><br>Sanyam Kapoor, Marc Finzi, Alex Wang, Andrew Gordon Wilson<br><i>International Conference on Machine Learning</i> (ICML), 2021<br><b>Long oral presentation</b><br>
+[<a href="https://arxiv.org/pdf/2106.06695.pdf">PDF</a>, <a href="https://arxiv.org/abs/2106.06695">arXiv</a>, <a href="https://github.com/activatedgeek/simplex-gp">code</a>, <a href="https://cims.nyu.edu/~andrewgw/simplexgp.bib">BibTeX</a>]<br><br>
+
+<b>Loss Surface Simplexes for Mode Connecting Volumes and Fast Ensembling</b><br>Greg Benton, Wesley Maddox, Sanae Lotfi, Andrew Gordon Wilson<br><i>International Conference on Machine Learning</i> (ICML), 2021<br>[<a href="https://arxiv.org/pdf/2102.13042.pdf">PDF</a>, <a href="https://arxiv.org/abs/2102.13042">arXiv</a>, <a href="https://github.com/g-benton/loss-surface-simplexes">code</a>, <a href="https://cims.nyu.edu/~andrewgw/spro.bib">BibTeX</a>]<br><br>
+
+<b>Scalable Variational Gaussian Processes via Harmonic Kernel Decomposition</b><br>Shengyang Sun, Jiaxin Shi, Andrew Gordon Wilson, Roger Grosse<br><i>International Conference on Machine Learning</i> (ICML), 2021<br>[<a href="https://arxiv.org/pdf/2106.05992.pdf">PDF</a>, <a href="https://arxiv.org/abs/2106.05992">arXiv</a>, <a href="https://github.com/ssydasheng/Harmonic-Kernel-Decomposition">code</a>, <a href="https://cims.nyu.edu/~andrewgw/svgpharmonic.bib">BibTeX</a>]<br><br>
+
+<b>On the model-based stochastic value gradient for continuous reinforcement learning</b><br> Brandon Amos, Sam Stanton, Denis Yarats, Andrew Gordon Wilson<br><i>Learning for Dynamics and Control</i> (L4DC), 2021<br>[<a href="https://arxiv.org/pdf/2008.12775.pdf">PDF</a>, <a href="https://arxiv.org/abs/2008.12775>arXiv</a>, <a href="https://github.com/facebookresearch/svg">code</a>, <a href="https://cims.nyu.edu/~andrewgw/svg.bib">BibTeX</a>]<br><br>
+
+
+<b>Kernel Interpolation for Scalable Online Gaussian Processes</b><br>Sam Stanton, Wesley Maddox, Ian Delbridge, Andrew Gordon Wilson<br><i>Artificial Intelligence and Statistics</i> (AISTATS), 2021<br>[<a href="https://arxiv.org/pdf/2103.01454.pdf">PDF</a>, <a href="https://arxiv.org/abs/2103.01454">arXiv</a>, <a href="https://github.com/wjmaddox/online_gp">code</a>, <a href="https://cims.nyu.edu/~andrewgw/wiski.bib">BibTeX</a>]<br><br>
+
+<b>Fast Adaptation with Linearized Neural Networks</b><br>Wesley Maddox, Shuai Tang, Pablo Moreno, Andrew Gordon Wilson,<br> Andreas Damianou<br><i>Artificial Intelligence and Statistics</i> (AISTATS), 2021<br>[<a href="https://arxiv.org/pdf/2103.01439.pdf">PDF</a>, <a href="https://arxiv.org/abs/2103.01439">arXiv</a>, <a href="https://github.com/amzn/xfer/tree/master/finite_ntk">code</a>, <a href="https://cims.nyu.edu/~andrewgw/ntkxfer.bib">BibTeX</a>]<br><br>
+
+<b>Bayesian Deep Learning and a Probabilistic Perspective of Generalization</b><br>Andrew Gordon Wilson, Pavel Izmailov<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/2002.08791.pdf">PDF</a>, <a href="https://arxiv.org/abs/2002.08791">arXiv</a>, <a href="https://github.com/izmailovpavel/understandingbdl">code</a>, <a href="https://cims.nyu.edu/~andrewgw/understandingbdl.bib">BibTeX</a>]<br><br>
+
+<b>Why Normalizing Flows Fail to Detect Out-of-Distribution Data</b><br>Polina Kirichenko, Pavel Izmailov, Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/2006.08545.pdf">PDF</a>, <a href="https://arxiv.org/abs/2006.08545">arXiv</a>, <a href="https://github.com/PolinaKirichenko/flows_ood">code</a>, <a href="https://cims.nyu.edu/~andrewgw/flowood.bib">BibTeX</a>]<br><br>
+
+<b>Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints</b><br>Marc Finzi, Ke Alexander Wang, Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/2010.13581.pdf">PDF</a>, <a href="https://arxiv.org/abs/2010.13581">arXiv</a>, <a href="https://github.com/mfinzi/constrained-hamiltonian-neural-networks">code</a>, <a href="https://cims.nyu.edu/~andrewgw/chnn.bib">BibTeX</a>]<br><br>
+
+<b>Learning Invariances in Neural Networks</b><br>Greg Benton, Marc Finzi, Pavel Izmailov, Andrew Gordon Wilson<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/2010.11882.pdf">PDF</a>, <a href="https://arxiv.org/abs/2010.11882">arXiv</a>, <a href="https://github.com/g-benton/learning-invariances">code</a>, <a href="https://cims.nyu.edu/~andrewgw/augerino.bib">BibTeX</a>]<br><br>
+
+<b>BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization</b><br>Maximilian Balandat, Brian Karrer, Daniel Jiang, Samuel Daulton, Ben Letham, Andrew Gordon Wilson, Eytan Bakshy<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/1910.06403.pdf">PDF</a>, <a href="https://arxiv.org/abs/1910.06403">arXiv</a>, <a href="https://github.com/pytorch/botorch">code</a>, <a href="https://cims.nyu.edu/~andrewgw/botorch.bib">BibTeX</a>]<br><br>
+
+<b>Improving GAN Training with Probability Ratio Clipping and Sample Reweighting</b><br>Yue Wu, Pan Zhou, Andrew Gordon Wilson, Eric Xing, Zhiting Hu<br><i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2020<br>[<a href="https://arxiv.org/pdf/2006.06900.pdf">PDF</a>, <a href="https://arxiv.org/abs/2006.06900">arXiv</a>, <a href="https://github.com/Holmeswww/PPOGAN">code</a>, <a href="https://cims.nyu.edu/~andrewgw/ppogan.bib">BibTeX</a>]<br><br>
+
+
+<b>Generalizing Convolutional Networks for Equivariance to Lie Groups on Arbitrary Continuous Data</b><br>
+Marc Finzi, Samuel Stanton, Pavel Izmailov, Andrew Gordon Wilson<br><i>International Conference on Machine Learning</i> (ICML), 2020<br>[<a href="https://arxiv.org/pdf/2002.12880.pdf">PDF</a>, <a href="https://arxiv.org/abs/2002.12880">arXiv</a>, <a href="https://github.com/mfinzi/LieConv">code</a>, <a href="https://cims.nyu.edu/~andrewgw/lieconv.bib">BibTeX</a>]<br><br>
+
+<b>Semi-Supervised Learning with Normalizing Flows</b><br>
+Pavel Izmailov, Polina Kirichenko, Marc Finzi, Andrew Gordon Wilson<br>
+<i>International Conference on Machine Learning</i> (ICML), 2020<br>[<a href="https://arxiv.org/pdf/1912.13025">PDF</a>, <a href="https://arxiv.org/abs/1912.13025">arXiv</a>, <a href="https://github.com/izmailovpavel/flowgmm">code</a>, <a href="https://cims.nyu.edu/~andrewgw/flowgmm.bib">BibTeX</a>]<br><br>
+
+<b>Randomly Projected Additive Gaussian Processes for Regression</b><br>
+Ian Delbridge, David S. Bindel, Andrew Gordon Wilson<br>
+<i>International Conference on Machine Learning</i> (ICML), 2020<br>[<a href="https://arxiv.org/pdf/1912.12834">PDF</a>, <a href="https://arxiv.org/abs/1912.12834">arXiv</a>, <a href="https://github.com/idelbrid/Randomly-Projected-Additive-GPs">code</a>, <a href="https://cims.nyu.edu/~andrewgw/dpagp.bib">BibTeX</a>]<br><br>
+
+<b>Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning</b><br>
+Ruqi Zhang, Chunyuan Li, Jianyi Zhang, Changyou Chen, Andrew Gordon Wilson<br>
+<i>International Conference on Learning Representations</i> (ICLR), 2020<br>
+[<a href="https://arxiv.org/pdf/1902.03932">PDF</a>, <a href="https://arxiv.org/abs/1902.03932">arXiv</a>, <a href="https://github.com/ruqizhang/csgmcmc">code</a>, <a href="https://cims.nyu.edu/~andrewgw/csgmcmc.bib">BibTeX</a>]<br>     
+<br>
+<b>Rethinking Parameter Counting in Deep Models: Effective Dimensionality Revisited</b><br>
+Wesley J. Maddox, Gregory Benton, Andrew Gordon Wilson<br>
+<i>arXiv pre-print</i>, 2020<br>[<a href="https://arxiv.org/pdf/2003.02139">PDF</a>, <a href="https://arxiv.org/abs/2003.02139">arXiv</a>, <a href="https://github.com/g-benton/hessian-eff-dim">code</a>, <a href="https://cims.nyu.edu/~andrewgw/parameter.bib">BibTeX</a>]<br><br>
+
+<b>The Case for Bayesian Deep Learning</b><br>
+Andrew Gordon Wilson<br><i>Technical Report, NYU Courant</i>, 2019<br>[<a href="https://cims.nyu.edu/~andrewgw/caseforbdl.pdf">PDF</a>, <a href="https://cims.nyu.edu/~andrewgw/caseforbdl">Web Version</a>, <a href="https://cims.nyu.edu/~andrewgw/caseforbdl.bib">BibTeX</a>]<br><br>
+
+<b>A Simple Baseline for Bayesian Uncertainty in Deep Learning</b><br>
+        Wesley Maddox, Timur Garipov, Pavel Izmailov, Andrew Gordon Wilson<br>
+        To appear in <i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2019<br>
+        [<a href="https://arxiv.org/pdf/1902.02476">PDF</a>, <a
+          href="https://arxiv.org/abs/1902.02476">arXiv</a>, <a
+          href="https://github.com/wjmaddox/swa_gaussian">code</a>, <a href="swag.bib">BibTeX</a>]<br>
+<br>
+
+<b>Function-Space Distributions over Kernels</b>
+<br>
+Greg Benton, Jayson Salkey, Wesley Maddox, Julio Albinati, Andrew Gordon Wilson
+<br>
+<i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2019.<br> 
+[<a href="https://arxiv.org/pdf/1910.13565">PDF</a>,<a href="https://arxiv.org/abs/1910.13565"> arXiv</a>, <a href="https://github.com/wjmaddox/spectralgp">code</a>, <a href="https://cims.nyu.edu/~andrewgw/fkl.bib">BibTeX</a>] <br>
+<br>
+
+
+<b>Exact Gaussian Processes on a Million Data Points</b><br>
+Ke Alexander Wang, Geoff Pleiss, Jake Gardner, Stephen Tyree, Kilian Weinberger, Andrew Gordon Wilson<br>
+To appear in <i>Advances in Neural Information Processing Systems</i> (NeurIPS), 2019<br>[<a href="https://arxiv.org/pdf/1903.08114">PDF</a>, <a href="https://arxiv.org/abs/1903.08114">arXiv</a>, <a href="https://gpytorch.ai">code</a>, <a href="https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb">example 
+notebook</a>, <a href="https://cims.nyu.edu/~andrewgw/amillion.bib">BibTeX</a>]<br><br>
+
+
+<b>Subspace Inference for Bayesian Deep Learning</b><br>
+Pavel Izmailov*, Wesley Maddox*, Polina Kirichenko*, Timur Garipov*, Dmitry Vetrov, Andrew Gordon Wilson<br>
+<i>Uncertainty in Artificial Intelligence</i> (UAI), 2019<br>
+[<a href="https://arxiv.org/pdf/1907.07504.pdf">PDF</a>, <a href="https://arxiv.org/abs/1907.07504">arXiv</a>, <a href="https://github.com/wjmaddox/drbayes">code</a>, <a href="https://cims.nyu.edu/~andrewgw/subspace.bib">BibTeX</a>]<br><br>
+
+<b>Practical Multi-fidelity Bayesian Optimization for Hyperparameter Tuning</b><br>
+Jian Wu, Saul Toscano-Palmerin, Peter I. Frazier, Andrew Gordon Wilson<br>
+<i>Uncertainty in Artificial Intelligence</i> (UAI), 2019<br>
+[<a href="https://arxiv.org/pdf/1903.04703">PDF</a>, <a href="https://arxiv.org/abs/1903.04703">arXiv</a>, <a href="https://cims.nyu.edu/~andrewgw/takg.bib">BibTeX</a>]<br><br>
+
+
+<b>SWALP: Stochastic Weight Averaging in Low Precision Training</b><br>
+Guandao Yang, Tianyi Zhang, Polina Kirichenko, Junwen Bai, Andrew Gordon Wilson, Christopher De Sa<br>
+<i>International Conference on Machine Learning</i> (ICML), 2019<br>
+[<a href="https://arxiv.org/pdf/1904.11943.pdf">PDF</a>, <a href="https://arxiv.org/abs/1904.11943">arXiv</a>, <a href="https://github.com/stevenygd/SWALP">code</a>, <a href="https://cims.nyu.edu/~andrewgw/swalp.bib">BibTeX</a>]<br><br>
+<b>SysML: The New Frontier of Machine Learning Systems</b><br>
+A. Ratner et. al, 2019 <br>
+[<a href="https://arxiv.org/pdf/1904.03257.pdf">PDF</a>, <a href="https://arxiv.org/abs/1904.03257">arXiv</a>, <a href="https://cims.nyu.edu/~andrewgw/sysml.bib">BibTeX</a>]<br><br>
+<b>There Are Many Consistent Explanations of Unlabeled Data:<br> Why You Should Average<br>
+        </b>Ben Athiwaratkun, Marc Finzi, Pavel Izmailov, Andrew Gordon
+        Wilson<br>
+        <i>International Conference on Learning Representations</i> (ICLR), 2019<br>
+        [<a href="https://arxiv.org/pdf/1806.05594.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1806.05594">arXiv</a>, <a
+          href="https://github.com/benathi/fastswa-semi-sup">code</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/fastswa.bib">BibTeX</a>]<br><br>
+<b>Change Surfaces for Expressive Multidimensional Changepoints and Counterfactual Prediction</b><br>
+William Herlands, Daniel B. Neill, Hannes Nickisch, Andrew Gordon Wilson<br>
+<i>To appear in the Journal of Machine Learning Research</i> (JMLR), 2019<br>
+[<a href="https://arxiv.org/pdf/1810.11861">PDF</a>, <a href="https://arxiv.org/abs/1810.11861">arXiv</a>, <a href="https://cims.nyu.edu/~andrewgw/gpcs.bib">BibTeX</a>]<br><br>
+        <b>GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference
+          with GPU Acceleration</b><br>
+        Jake Gardner, Geoff Pleiss, David Bindel, Kilian Weinberger,
+        Andrew Gordon Wilson<br>
+        <i>Neural Information Processing Systems</i> (NIPS), 2018<br>
+        <b>Spotlight</b><br>
+        [<a href="https://arxiv.org/pdf/1809.11165.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1809.11165">arXiv</a>, <a
+          href="https://gpytorch.ai/">GPyTorch website</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">GPyTorch
+          repository</a>, <a href="gpytorch.bib">BibTeX</a>]<br>
+        <br>
+        <b><b>Loss Surfaces, Mode Connectivity, and Fast Ensembling of
+            DNNs<br>
+          </b></b>Timur Garipov*, Pavel Izmailov*, Dmitrii Podoprikhin*,
+        Dmitry Vetrov, Andrew Gordon Wilson<br>
+        <i>Neural Information Processing Systems</i> (NIPS), 2018<br>
+        <b>Spotlight</b><br>
+        [<a href="https://arxiv.org/pdf/1802.10026.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1802.10026">arXiv</a>, <a href="https://github.com/timgaripov/dnn-mode-connectivity">code</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/fge.bib">BibTeX</a>]<br>
+        <br>
+         <b>Scaling Gaussian Process Regression with Derivatives<br>
+        </b>
+        <meta charset="utf-8">
+        David Eriksson, Kun Dong, Eric Lee, David Bindel, Andrew Gordon
+        Wilson<br>
+        <i>Neural Information Processing Systems</i> (NIPS), 2018<br>
+        [<a href="https://arxiv.org/pdf/1810.12283.pdf">PDF</a>, <a href="https://arxiv.org/abs/1810.12283">arXiv</a>, <a href="https://github.com/ericlee0803/GP_Derivatives">code</a>, <a href="https://cims.nyu.edu/~andrewgw/sgpderiv.bib">BibTeX</a>]<br>
+        <br>
+        <!-- <b>Change Surfaces for Expressive Multidimensional Changepoints
+          and Counterfactual Prediction</b><br>
+        William Herlands, Daniel B. Neill, Hannes Nickisch, Andrew
+        Gordon Wilson<br>
+        <i>arXiv pre-print, </i>2018<br>
+        [PDF, arXiv, BibTeX]
+        <title></title>
+        <br>
+        <br>--> <b>Probabilistic FastText for Multisense Word
+          Embeddings<br>
+        </b>Ben Athiwaratkun, Andrew Gordon Wilson, Anima Anandkumar<br>
+        <i>Association for Computational Linguistics</i> (ACL), 2018<br>
+        <b>Oral presentation</b><br>
+        [<a href="https://arxiv.org/pdf/1806.02901.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1806.02901">arXiv</a>, <a
+          href="https://github.com/benathi/multisense-prob-fasttext">code</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/pfast.bib">BibTeX</a>]<br>
+        <b><b><br>
+          </b>Averaging Weights Leads to Wider Optima and Better
+          Generalization<br>
+        </b>Pavel Izmailov*, Dmitrii Podoprikhin*, Timur Garipov*,
+        Dmitry Vetrov, Andrew Gordon Wilson<br>
+        <i>Uncertainty in Artificial Intelligence </i>(UAI), 2018.<br>
+        <b>Oral presentation</b><br>
+        [<a href="https://arxiv.org/pdf/1803.05407.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1803.05407">arXiv</a>, <a
+          href="https://github.com/timgaripov/swa/">code</a>, <a
+          href="swa.bib">BibTeX</a>]<br>
+        <br>
+        <b>Automated Local Regression Discontinuity Design Discovery</b><br>
+        William Herlands, Ed McFowland III, Andrew Gordon Wilson, Daniel
+        B. Neill<br>
+        <i>Knowledge Discovery and Data Mining</i> (KDD), 2018<br>
+        [<a href="https://cims.nyu.edu/~andrewgw/p1512-herlands.pdf">PDF</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/rddvideo.mp4">Video</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/arddd.bib">BibTeX</a>]<br>
+        <br>
+        <b>Constant-Time Predictive Distributions for Gaussian Processes<br>
+        </b>Geoff Pleiss, Jacob Gardner, Kilian Q. Weinberger, Andrew
+        Gordon Wilson<br>
+        <i>International Conference on Machine Learning </i>(ICML),
+        2018<br>
+        [<a href="https://arxiv.org/pdf/1803.06058.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1803.06058">arXiv</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">code</a>, <a
+          href="love.bib">BibTeX</a>]<br>
+        <b><b><br>
+          </b></b><b>Hierarchical Density Order Embeddings<br>
+        </b>Ben Athiwaratkun, Andrew Gordon Wilson<br>
+        <i>International Conference on Learning Representations </i>(ICLR),
+
+        2018.<br>
+        [<a href="https://arxiv.org/pdf/1804.09843.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1804.09843">arXiv</a>, <a
+          href="https://github.com/benathi/density-order-emb">code</a>,
+        <a href="hdoe.bib">BibTeX</a>]<b><b><br>
+            <br>
+            Product Kernel Interpolation for Scalable Gaussian Processes<br>
+          </b></b>Jacob Gardner, Geoff Pleiss, Ruihan Wu, Kilian
+        Weinberger, Andrew Gordon Wilson<b><br>
+        </b><i>Artificial Intelligence and Statistics </i>(AISTATS),
+        2018.<br>
+        [<a href="https://arxiv.org/pdf/1802.08903.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1802.08903">arXiv</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">code</a>, <a
+          href="skip.bib">BibTeX</a>]<br>
+        <br>
+        <b><b>Gaussian Process Subset Scanning for Anomalous Pattern
+            Detection in Non-iid Data<br>
+          </b></b>William Herlands, Ed McFowland, Andrew Gordon Wilson,
+        Daniel B. Neill<br>
+        <i>Artificial Intelligence and Statistics </i>(AISTATS), 2018.<br>
+        [<a href="https://arxiv.org/pdf/1804.01466.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1804.01466">arXiv</a>, <a
+          href="gpss.bib">BibTeX</a>]<b><br>
+          <br>
+          Bayesian GAN<br>
+        </b>Yunus Saatchi and Andrew Gordon Wilson<br>
+        <i>Neural Information Processing Systems</i> (NIPS), 2017 <br>
+        <b>Spotlight</b><br>
+        [<a
+          href="https://cims.nyu.edu/~andrewgw/bayesganready.pdf">PDF,</a>
+        <a href="https://arxiv.org/abs/1705.09558">arXiv</a>, <a
+          href="https://github.com/andrewgordonwilson/bayesgan">code</a>,
+        <a href="https://www.youtube.com/watch?v=24A8tWs6aug">Short
+          Video</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/bayesgan.bib">BibTeX</a>]<br>
+        <br>
+        <b>Bayesian Optimization with Gradients<br>
+        </b>Jian Wu, Matthias Poloczek, Andrew Gordon Wilson, Peter I
+        Frazier<br>
+        <i>Neural Information Processing Systems </i>(NIPS), 2017<i><br>
+        </i> <b>Oral Presentation</b><br>
+        [<a href="https://arxiv.org/pdf/1703.04389.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1703.04389">arXiv</a>, <a
+          href="https://github.com/wujian16/Cornell-MOE">Code</a>, <a
+          href="https://www.youtube.com/watch?v=mpIlAl_pw_k">NIPS Oral
+          Presentation</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/bayesoptgrad.bib">BibTeX</a>]<br>
+        <br>
+        <b>Scalable Log Determinants for Gaussian Process Kernel
+          Learning</b><br>
+        Kun Dong, David Eriksson, Hannes Nickisch, David Bindel, Andrew
+        Gordon Wilson<br>
+        <i>Neural Information Processing Systems </i>(NIPS), 2017<i><br>
+        </i>[<a
+href="https://papers.nips.cc/paper/7212-scalable-log-determinants-for-gaussian-process-kernel-learning.pdf">PDF</a>,
+        <a href="https://arxiv.org/abs/1711.03481">arXiv</a>, <a
+          href="https://github.com/jrg365/gpytorch">Code</a>, <a
+          href="https://www.youtube.com/watch?v=Y9U_nlu7-og">Video (from
+          David E)</a>, <a href="logdet.bib">BibTeX</a>]<br>
+        <br>
+        <b>Scalable Levy Process Priors for Spectral Kernel Learning</b><br>
+        Andrew Loeb, Phillip Jang, Matthew Davidow, and Andrew Gordon
+        Wilson<br>
+        <i>Neural Information Processing Systems </i>(NIPS), 2017<i><br>
+        </i>[<a
+href="https://papers.nips.cc/paper/6983-scalable-levy-process-priors-for-spectral-kernel-learning.pdf">PDF,</a>
+        <a href="https://arxiv.org/abs/1802.00530">arXiv</a>, <a
+          href="https://github.com/pjang23/levy-spectral-kernel-learning">Code</a>,
+        <a href="https://www.youtube.com/watch?v=C4ZLupAbszM">Video
+          (from Phillip J)</a>, <a href="levy.bib">BibTeX</a>]<br>
+        <b><br>
+          Multimodal Word Distributions<br>
+        </b>Ben Athiwaratkun and Andrew Gordon Wilson<br>
+        <i>Association for Computational Linguistics</i> (ACL), 2017<br>
+        [<a href="https://arxiv.org/pdf/1704.08424.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1704.08424">arXiv</a>, <a
+          href="https://github.com/benathi/word2gm">Code</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/multimodal.bib">BibTeX</a>]
+        <br>
+        <br>
+        <b><b>Learning Scalable Deep Kernels with Recurrent Structure<br>
+          </b></b>Maruan Al-Shedivat, Andrew Gordon Wilson, Yunus
+        Saatchi, Zhiting Hu, Eric P. Xing<b><br>
+        </b> To appear in the <i>Journal of Machine</i> <i>Learning
+          Research </i>(JMLR)<i>, </i>2017.<b><br>
+        </b>[<a href="http://jmlr.org/papers/volume18/16-498/16-498.pdf">PDF</a>,
+        <a href="https://arxiv.org/abs/1610.08936">arXiv</a>, <a
+          href="https://github.com/alshedivat/kgp">code</a> [PyTorch,
+        more recent], <a href="https://github.com/alshedivat/kgp">code</a>
+        [Keras+Matlab], <a
+          href="https://cims.nyu.edu/~andrewgw/gplstm.bib">BibTeX</a>]<b><br>
+          <br>
+          Stochastic Variational Deep Kernel Learning<br>
+        </b>Andrew Gordon Wilson*, Zhiting Hu*, Ruslan Salakhutdinov,
+        and Eric P. Xing<br>
+        <i>Neural Information Processing Systems</i> (NIPS), 2016<br>
+        [<a href="https://arxiv.org/pdf/1611.00336v2.pdf">PDF</a>, <a
+          href="https://arxiv.org/abs/1611.00336">arXiv</a>, <a
+          href="https://www.youtube.com/watch?v=dZQ82qBW7tk">Video</a>,
+        <a href="https://github.com/cornellius-gp/gpytorch">code</a>
+        (GPyTorch, more recent), <a
+          href="https://cims.nyu.edu/~andrewgw/pattern">code</a>
+        (Caffe+Matlab), <a
+          href="https://cims.nyu.edu/~andrewgw/svdkl.bib">BibTeX</a>]<br>
+        <br>
+        <b> Deep Kernel Learning<br>
+        </b>Andrew Gordon Wilson*, Zhiting Hu*, Ruslan Salakhutdinov,
+        and Eric P. Xing<br>
+        <i>Artificial Intelligence</i> <i>and Statistics</i> (AISTATS),
+        2016<br>
+        [<a href="http://jmlr.org/proceedings/papers/v51/wilson16.pdf">PDF</a>,
+        <a href="https://arxiv.org/abs/1511.02222">arXiv</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">code</a>
+        (GPyTorch, more recent), <a
+          href="https://github.com/alshedivat/kgp">code</a>
+        (Keras+Matlab), <a
+          href="https://cims.nyu.edu/~andrewgw/pattern">code</a>
+        (Caffe+Matlab), <a
+          href="https://cims.nyu.edu/~andrewgw/dkl.bib">BibTeX</a>]<br>
+        <br>
+        <b>Thoughts on Massively Scalable Gaussian Processes<br>
+        </b>Andrew Gordon Wilson, Christoph Dann, and Hannes Nickisch<br>
+        arXiv pre-print, 2015<br>
+        (See <a
+          href="http://jmlr.org/proceedings/papers/v37/wilson15.pdf">KISS-GP</a>
+        and <a href="http://arxiv.org/abs/1511.02222">Deep Kernel
+          Learning</a> for more empirical demonstrations).<br>
+        [<a href="http://arxiv.org/pdf/1511.01870v1.pdf">PDF</a>, <a
+          href="http://arxiv.org/abs/1511.01870">arXiv</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">code</a>
+        (GPyTorch, more recent), <a
+          href="https://cims.nyu.edu/~andrewgw/pattern">code</a>
+        (older tutorials), <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/msgp.bib">BibTeX</a>,
+        <a href="https://www.youtube.com/watch?v=aSiU1T_w0-8">Music</a>]<br>
+        <b><br>
+          Scalable Gaussian Processes for Characterizing
+          Multidimensional Change Surfaces</b><br>
+        William Herlands, Andrew Gordon Wilson, Seth Flaxman, Daniel
+        Neill, Wilbert van Panhuis, and Eric P. Xing<br>
+        <i>Artificial Intelligence</i> <i>and Statistics</i> (AISTATS),
+        2016<br>
+        [<a href="http://jmlr.org/proceedings/papers/v51/herlands16.pdf">PDF</a>,
+        <a
+          href="https://cims.nyu.edu/~andrewgw/changesurface.bib">BibTeX</a>]<br>
+        <br>
+        <b>Bayesian nonparametric kernel learning</b><br>
+        Junier Oliva*, Avinava Dubey*, Andrew Gordon Wilson, Barnabas
+        Poczos, Jeff Schneider, and Eric P. Xing.&nbsp; <br>
+        <i>Artificial Intelligence and Statistics</i> (AISTATS), 2016<br>
+        [<a href="http://jmlr.org/proceedings/papers/v51/oliva16.pdf">PDF</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/bnpkernel.bib">BibTeX</a>]<br>
+        <br>
+        <b>The human kernel<br>
+        </b>Andrew Gordon Wilson, Christoph Dann, Christopher G. Lucas,
+        and Eric P. Xing<br>
+        <i>Neural Information Processing Systems </i>(NIPS), 2015<br>
+        <i><b>Spotlight</b></i><br>
+        [<a
+          href="https://papers.nips.cc/paper/5765-the-human-kernel.pdf">PDF</a>,
+        <a href="http://arxiv.org/abs/1510.07389">arXiv</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/humansupp.pdf">Supplement</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/human.bib">BibTeX</a>]<br>
+        <b><br>
+          Kernel interpolation for scalable structured Gaussian
+          processes (KISS-GP)<br>
+        </b>Andrew Gordon Wilson and Hannes Nickisch<br>
+        <i>International Conference on Machine Learning </i>(ICML),
+        2015<br>
+        <i><b>Oral Presentation</b></i><br>
+        [<a href="http://jmlr.org/proceedings/papers/v37/wilson15.pdf">PDF</a>,
+        <a
+          href="http://jmlr.org/proceedings/papers/v37/wilson15-supp.pdf">Supplement</a>,
+        <a href="http://arxiv.org/abs/1503.01057">arXiv</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">code</a>
+        (GPyTorch, newer), <a
+          href="https://cims.nyu.edu/~andrewgw/pattern">code</a>
+        (tutorials, older), <a
+          href="https://cims.nyu.edu/~andrewgw/kiss.bib">BibTeX</a>,
+        <a href="https://www.youtube.com/watch?v=U7NmUS7UWNQ">Theme Song</a>,
+        <a
+          href="http://videolectures.net/icml2015_wilson_kernel_interpolation/">Video
+
+          Lecture</a>]<br>
+        <b><br>
+          Fast kronecker inference in Gaussian processes with
+          non-Gaussian likelihoods<br>
+        </b>Seth Flaxman, Andrew Gordon Wilson, Daniel Neill, Hannes
+        Nickisch, and Alexander J. Smola<b><br>
+        </b><i>International Conference on Machine Learning </i>(ICML),
+        2015<br>
+        <i><b>Oral Presentation</b></i><br>
+        [<a href="http://jmlr.org/proceedings/papers/v37/flaxman15.pdf">PDF</a>,
+        <a
+          href="http://jmlr.org/proceedings/papers/v37/flaxman15-supp.pdf">Supplement</a>,
+        <a
+          href="https://cims.nyu.edu/~andrewgw/kroneckergeneral.bib">BibTeX</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/pattern">Code</a>,
+        <a
+href="http://videolectures.net/icml2015_flaxman_fast_kronecker_inference/">Video
+
+          Lecture</a>]<br>
+        <b><br>
+        </b><b>À la carte - learning fast kernels<br>
+        </b>Zichao Yang, Alexander J. Smola, Le Song, and Andrew Gordon
+        Wilson<br>
+        <i>Artificial Intelligence and Statistics </i>(AISTATS), 2015<br>
+        <b><i>Oral Presentation</i></b><br>
+        [<a href="http://arxiv.org/abs/1412.6493">PDF</a>, <a
+          href="https://cims.nyu.edu/~andrewgw/alacarte.bib">BibTeX</a>]<br>
+        <b><br>
+          Fast kernel learning for multidimensional pattern
+          extrapolation <br>
+        </b>Andrew Gordon Wilson*, Elad Gilboa*, Arye Nehorai, and John
+        P. Cunningham<br>
+        <i>Advances in Neural Information Processing Systems </i>(NIPS)
+        2014<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/manet.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/manet.bib">BibTeX</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/pattern">Code</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/manetslides.pdf">Slides</a>]<br>
+        <b> <br>
+          Variational inference for latent variable modelling of
+          correlation structure<br>
+        </b>Mark van der Wilk, Andrew Gordon Wilson, Carl Edward
+        Rasmussen<br>
+        <i>NIPS Workshop on </i><i>Advances in Variational Inference, </i>2014<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/wplvm.pdf">PDF</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/wplvm.bib">BibTeX</a>]<br>
+        <b><br>
+          A Bayesian method to quantifying chemical composition using
+          NMR: application to porous media systems<br>
+        </b>Yuting Wu, Daniel J. Holland, Mick D. Mantle, Andrew Gordon
+        Wilson, Sebastian Nowozin, Andrew Blake, and Lynn F. Gladden<br>
+        European Signal Processing Conference (EUSIPCO), 2014<br>
+        [<a
+          href="http://www.nowozin.net/sebastian/papers/wu2014porousmedia.pdf">PDF</a>]<br>
+        <b> <br>
+          Bayesian inference for NMR spectroscopy with applications to
+          chemical quantification<br>
+        </b>Andrew Gordon Wilson, Yuting Wu, Daniel J. Holland,
+        Sebastian Nowozin, Mick D. Mantle, Lynn F. Gladden, and Andrew
+        Blake<i><br>
+          In Submission</i>. February 14, 2014<br>
+        [<a href="http://arxiv.org/abs/1402.3580">arXiv</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/nmrspectroscopy.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/nmrspectroscopy.bib">BibTeX</a>]<br>
+        <br>
+        <b>Covariance kernels for fast automatic pattern discovery and
+          extrapolation with Gaussian processes</b><br>
+        Andrew Gordon Wilson<br>
+        PhD Thesis, January 2014<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/andrewgwthesis.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/agwthesis.bib">BibTeX</a>]<br>
+        <b><br>
+          Student-<i>t</i></b><i> </i><b>processes as alternatives to
+          Gaussian processes</b><br>
+        Amar Shah, Andrew Gordon Wilson, and Zoubin Ghahramani<br>
+        <i>Artificial Intelligence and Statistics</i>, 2014<br>
+        [<a href="http://arxiv.org/abs/1402.4306">arXiv</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/tprocess.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/tprocsupp.pdf">Supplementary</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/tproc.bib">BibTeX</a>]<br>
+        <br>
+        <b>The change point kernel<br>
+        </b>Andrew Gordon Wilson<br>
+        Technical Report (Note), University of Cambridge.<br>
+        November 2013.<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/changepoints.pdf">PDF,</a>
+        <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/wilsonchangepoints.bib">BibTeX</a>]<br>
+        <br>
+        <b><b>GPatt: Fast multidimensional pattern extrapolation with
+            Gaussian processes<br>
+          </b></b>Andrew Gordon Wilson, Elad Gilboa, Arye Nehorai, and
+        John P. Cunningham<br>
+        October 21, 2013.&nbsp;&nbsp; <i>In Submission</i>.<br>
+        [<a href="http://arxiv.org/abs/1310.5288">arXiv</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/GPatt.pdf">PDF</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/gpatt.bib">BibTeX</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/pattern">Resources
+
+
+
+          and Tutorial</a>]<b><br>
+          <br>
+          Bayesian optimization using Student-<i>t</i> processes<br>
+        </b>Amar Shah, Andrew Gordon Wilson, and Zoubin Ghahramani<br>
+        <i>NIPS Workshop on Bayesian Optimisation</i>, 2013.<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/tpoptimisation.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/tprocop.bib">BibTeX</a>]<br>
+        <b><br>
+          Gaussian process kernels for pattern discovery and
+          extrapolation<br>
+        </b>Andrew Gordon Wilson and Ryan Prescott Adams<br>
+        <i>International Conference on Machine Learning </i>(ICML),
+        2013.<br>
+        <b><i>Oral Presentation</i></b><br>
+        [<a href="http://arxiv.org/abs/1302.4245">arXiv</a>, <a
+          href="http://jmlr.org/proceedings/papers/v28/wilson13.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/typo.pdf">Correction</a>,
+        <a
+          href="http://jmlr.org/proceedings/papers/v28/wilson13-supp.pdf">Supplementary</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/smkernel.bib">BibTeX</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/patternwilson.pdf">Slides</a>,
+        <a href="https://cims.nyu.edu/~andrewgw/pattern">Resources
+
+
+
+          and Tutorial</a>, <a
+          href="https://github.com/cornellius-gp/gpytorch">GPyTorch
+          implementation</a>, <a
+href="http://techtalks.tv/talks/gaussian-process-kernels-for-pattern-discovery-and-extrapolation/58204/">Video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Lecture</a>]<br>
+        <br>
+        <b>Modelling input varying correlations between multiple
+          responses<br>
+        </b>Andrew Gordon Wilson and Zoubin Ghahramani<br>
+        <i>European Conference on Machine Learning</i> (ECML), 2012<br>
+        <a
+          href="http://www.ecmlpkdd2012.net/calls/call-for-nectar-talks"><i><b>Nectar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Track</b></i></a>&nbsp; <i>for "significant machine
+          learning results"<br>
+          <b>Oral Presentation</b></i><br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/agwnectarecml.pdf">PDF</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/agwnectar.bib">BibTeX</a>]<br>
+        <br>
+        <b>A process over all stationary covariance kernels<br>
+        </b>Andrew Gordon Wilson<br>
+        Technical Report, University of Cambridge.<br>
+        June 2012.<br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/spectralkernel.pdf">PDF,</a>
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/spectralkernel.bib">BibTeX</a>]<br>
+        <br>
+        <b>Gaussian process regression networks</b><br>
+        Andrew Gordon Wilson, David A. Knowles, and Zoubin Ghahramani<br>
+        <i>International Conference on Machine Learning</i> (ICML),
+        2012.<br>
+        <i><b>Oral Presentation</b></i><br>
+        [<a href="http://icml.cc/2012/papers/329.pdf">PDF</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/gprn.bib">BibTeX</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/gprnslidesicml.pdf">Slides</a>,
+        <a href="http://www.cs.cmu.edu/%7Eandrewgw/gprnsupp.pdf">Supplementary</a>,
+        <a
+href="http://techtalks.tv/talks/gaussian-process-regression-networks/57326/">Video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Lecture</a>, <a href="https://github.com/davidaknowles/gprn">Original
+
+
+
+
+
+
+
+
+
+
+
+
+          Code</a>, <a href="https://github.com/trungngv/gprn">New Code</a>]<br>
+        <br>
+        <b>Generalised Wishart processes</b><br>
+        Andrew Gordon Wilson and Zoubin Ghahramani<br>
+        <i>Uncertainty in Artificial Intelligence</i> (UAI), 2011.<br>
+        <b><i>Best Student Paper Award</i></b><br>
+        [<a href="http://www.cs.cmu.edu/%7Eandrewgw/gwp.pdf">PDF</a>, <a
+          href="http://mlg.eng.cam.ac.uk/andrew/gwp/gwp.bib">BibTeX</a>]<br>
+        <br>
+        <b>Copula processes<br>
+        </b>Andrew Gordon Wilson and Zoubin Ghahramani<br>
+        <i>Advances in Neural Information Processing Systems</i> (NIPS),
+        2010.<i><b><br>
+            Spotlight</b></i><br>
+        [<a href="http://papers.nips.cc/paper/4082-copula-processes">PDF</a>,
+        <a href="http://papers.nips.cc/paper/4082-copula-processes">
+          BibTeX</a>, <a
+          href="http://www.cs.cmu.edu/%7Eandrewgw/cpslides.pdf"> Slides</a>,
+        <a href="http://videolectures.net/nips2010_wilson_cp">Video
+          Lecture</a>]</section>
+      <footer> Find me on <a href="https://twitter.com/andrewgwils">Twitter</a>
+        <br>
+        Theme Inspired by Dan Foreman-Mackey<br>
+      </footer>
+    </div>
+  </body>
+</html>

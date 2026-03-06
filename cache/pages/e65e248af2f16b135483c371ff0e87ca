@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Jian Zhang's Homepage</title>
+	<meta name="description" content="Homepage 2015">
+	<meta name="author" content="Jian Zhang">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/academicons/css/academicons.min.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav" style="font-size:15px">
+            <li class="current";><a class="smoothscroll" href="#home">Home</a></li>
+	        <li><a href="./docs/CV_JianZhang.pdf">CV</a></li>
+	        <li><a class="smoothscroll" href="#research">Research Interests</a></li>
+			<li><a class="smoothscroll" href="#publication">Papers</a></li>
+			<li><a class="smoothscroll" href="#teaching">Teaching</a></li>
+			<!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <!-- <div class="banner-text">
+            <h1 class="responsive-headline">I'm Jonathan Doe.</h1>
+            <h3>I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div> -->
+		<div class="banner-text", align=left>
+			<br>
+			<div class="row">
+				<div class="five columns">
+					<br>
+					<img width=300 src="images/ProfileSydney.JPG">
+				</div>
+
+				<div class="seven columns", align="center">
+					<h1 class="responsive-headline">Jian Zhang</h1>
+					<h3> Ph.D. Candidate in Computer Science</h3>
+					<h3> Stanford University</h3>
+					<h3> Advisor: Christopher RÃ©</h3>
+					<br>
+					<h3> Email: zjian [at] stanford [dot] edu </h3>
+					<br>
+					<ul class="social", align="center">
+			   			<li><a href="https://scholar.google.com/citations?user=wm2BrUcAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></li>
+			   			<li><a href="https://twitter.com/JianZhangCS"><i class="fa fa-twitter"></i></a></li>
+			   			<li><a href="https://www.linkedin.com/pub/jian-zhang/98/83a/103"><i class="fa fa-linkedin"></i></a></li>
+	            	</ul>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h2 style="color:white">
+					Short Bio
+				</h2>
+				<br>
+				<h3>
+	 				<p> I am a fourth year Ph.D. student in machine learning system at <a target="_blank" href="http://www-cs.stanford.edu/"><span><i>Stanford University</i></span></a> advised by <a target="_blank" href="http://cs.stanford.edu/people/chrismre/"><span><i> Prof. Christopher RÃ©</i></span></a>. 
+	 				My current research focuses on algorithm and system co-design for machine learning in hardware-constrained settings.
+					Prior to joining Stanford, I got my Master's degree in Computer Science at <a target="_blank" href="http://www.inf.ethz.ch/"><span><i>ETH Zurich</i></span></a> in 2015 and Bachelor's degree in Electrical Engineering at <a target="_blank" href="http://www.tsinghua.edu.cn/publish/eeaen/"><span><i>Tsinghua University</i></span></a> in 2013. In my earlier research projects, I also worked closely with <a target="_blank" href="https://cs.stanford.edu/~pliang/"><span><i>Prof. Percy Liang</i></span></a>, <a target="_blank" href="http://las.ethz.ch/krausea.html"><span><i>Prof. Andreas Krause</i></span></a> and <a target="_blank" href="http://www.cs.toronto.edu/~urtasun/index.html"><span><i>Prof. Raquel Urtasun</i></span></a>. </p>
+				</h3>
+			</div>
+		</div>
+
+<!-- 		<div class="banner-text", align=left>
+			<div class="row">
+ 				<p> I am a fourth year Ph.D. student in machine learning system at <a target="_blank" href="http://www-cs.stanford.edu/"><span><i>Stanford University</i></span></a> advised by <a target="_blank" href="http://cs.stanford.edu/people/chrismre/"><span><i> Prof. Christopher RÃ©</i></span></a>. 
+				Prior to joining Stanford, I got my Master's degree in Computer Science at <a target="_blank" href="http://www.inf.ethz.ch/"><span><i>ETH Zurich</i></span></a> in 2015 and Bachelor's degree in Electrical Engineering at <a target="_blank" href="http://www.tsinghua.edu.cn/publish/eeaen/"><span><i>Tsinghua University</i></span></a> in 2013. In my earlier research projects, I also worked closely with <a target="_blank" href="https://cs.stanford.edu/~pliang/"><span><i>Prof. Percy Liang</i></span></a>, <a target="_blank" href="http://las.ethz.ch/krausea.html"><span><i>Prof. Andreas Krause</i></span></a> and <a target="_blank" href="http://www.cs.toronto.edu/~urtasun/index.html"><span><i>Prof. Raquel Urtasun</i></span></a>. </p>
+			</div>
+		</div> -->
+	  </div>
+
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#research"><i class="icon-down-circle"></i></a>
+      </p>
+
+	</header> 
+	<!-- Header End -->
+   
+	<!-- Bio
+	================================================== -->
+	<section id="research" style="padding: 90px 0 72px; background: #fff;">
+	<div class="row teaching">
+		<h2> Research Interests </h2>
+			<br>
+			<p style="color:black;font-size:18px;">
+	   			My research interests focus on algorithm and system design for machine learning in memory-constrained settings. Modern machine learning / deep learning models are memory-intensive for the deployment in datacenters and on edge devices. To enable memory-efficient training and inference with strong statistical performance, I develop and analyze algorithm/system for memory-efficient compressed ML. I recently worked on training and inference using <a target="_blank" href="#"><span><i>compressed word embeddings</i></span></a>, <a target="_blank" href="https://arxiv.org/pdf/1811.00155.pdf"><span><i>low precision kernel approximation features</i></span></a> and <a target="_blank" href="https://arxiv.org/abs/1904.10631"><span><i>model sparsity</i></span></a>.
+			 </p>
+			<p style="color:black;font-size:18px;">
+	   			My previous works also cover large-scale machine learning systems, such as asynchronous deep neural network training systems at supercomputer scale (<a target="_blank" href="https://arxiv.org/abs/1708.05256"><span><i>DL on the Cori Supercomputer</i></span></a>). On the application side of machine learning, I am interested in and have been working on NLP and computer vision topics, including machine reading comprehension (<a target="_blank" href="https://arxiv.org/abs/1606.05250"><span><i>the SQuAD dataset</i></span></a>) and visual scene understanding.
+			 </p>
+		<!-- </h4> -->
+	</div>
+
+
+	<!-- Preprints
+	================================================== -->
+	<section id="Preprints" style="padding: 25px 0 72px; background: #fff;">
+	<div class="row publication">
+        <!-- <div class="three columns header-col"> -->
+        <h2>Preprints</h2>
+        <br>
+        <!-- </div> -->
+		<!-- <div class="nine columns main-col"> -->
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1803.03383">
+        <span style="font-weight:bold;font-size:125%;color:black">PipeMare: Asynchronous Pipeline Parallel DNN Training<span></a><br>
+        Bowen Yang, <span style="font-weight:bold;">Jian Zhang</span>, Jonathan Li, Chris Aberger, Chris De Sa, and Chris RÃ©.<br>
+        <em>arXiv preprint arXiv:1910.05124, Sepetember 2019.</em><br>
+        <a href="https://arxiv.org/pdf/1910.05124.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1803.03383">
+        <span style="font-weight:bold;font-size:125%;color:black">High-accuracy Low-precision Training<span></a><br>
+        Chris De Sa, Megan Leszczynski, <span style="font-weight:bold;">Jian Zhang</span>, Alana Marzoev, Chris Aberger, Kunle Olukotun, and Chris RÃ©.<br>
+        <em>arXiv preprint arXiv:1803.03383, March 2018.</em><br>
+        <a href="https://arxiv.org/pdf/1803.03383.pdf">[PDF]</a>
+        <a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[Blog]</a>
+        </div>
+      </div>
+      <br>
+    <!-- </div> -->
+	<!-- </section> -->
+   
+	<!-- publication section
+	================================================== -->
+	<!-- <section id="publication" style="padding: 25px 0 72px; background: #fff;"> -->
+	<!-- <div class="row publication"> -->
+        <!-- <div class="three columns header-col"> -->
+        <h2>Publications</h2>
+        <br>
+        <!-- </div> -->
+		<!-- <div class="nine columns main-col"> -->
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1811.00155">
+        <span style="font-weight:bold;font-size:125%;color:black">On the Downstream Performance of Compressed Word Embeddings<span></a><br>
+        Avner May, <span style="font-weight:bold;">Jian Zhang<sup></sup></span>, Tri Dao, Christopher RÃ©. <br>
+        <em>Neural Information Processing Systems (<strong>NeurIPS</strong>), Vancouver, Canada, December 2019. (<strong>Spotlight, 3% acceptance</strong>)</em><br>
+        <a href="https://arxiv.org/pdf/1909.01264.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1811.00155">
+        <span style="font-weight:bold;font-size:125%;color:black">Low-precision Random Fourier Features for Memory-constrained Kernel Approximation<span></a><br>
+        <span style="font-weight:bold;">Jian Zhang<sup>*</sup></span>, Avner May<sup>*</sup>, Tri Dao, Christopher RÃ©. (* equal contribution)<br>
+        <em>International Conference on Artificial Intelligence and Statistics (<strong>AISTATS</strong>), Naha, Japan, April 2019</em><br>
+        <a href="https://arxiv.org/pdf/1811.00155.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1706.03471">
+        <span style="font-weight:bold;font-size:125%;color:black">YellowFin and the Art of Momentum Tuning<span></a><br>
+        <span style="font-weight:bold;">Jian Zhang</span>, Ioannis Mitliagkas.<br>
+        <em>SysML Conference (<strong>SysML</strong>), Stanford, USA, April 2019</em><br>
+        <a href="https://arxiv.org/abs/1706.03471">[PDF]</a>
+        <a href="http://dawn.cs.stanford.edu/2017/07/05/yellowfin/">[Blog]</a>
+        <a href="https://www.youtube.com/watch?v=Kef2tLXuGy0">[Talk]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="http://learningsys.org/nips18/assets/papers/78CameraReadySubmissionlp_training_final_v3.pdf">
+        <span style="font-weight:bold;font-size:125%;color:black">Training with Low-precision Embedding Tables<span></a><br>
+        <span style="font-weight:bold;">Jian Zhang</span>, Jiyan Yang, Hector Yuen.<br>
+        <em> Workshop on Systems for ML and Open Source Software at NeurIPS, Montreal, Canada, December 2018</em><br>
+        <a href="http://learningsys.org/nips18/assets/papers/78CameraReadySubmissionlp_training_final_v3.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="http://www.codycoleman.com/public/papers/mlsys_dawnbench_analysis.pdf">
+        <span style="font-weight:bold;font-size:125%;color:black">Analysis of the Time-to-accuracy Metric and Entries in the DAWNBench Deep Learning Benchmark<span></a><br>
+        Cody Coleman, Daniel Kang, Deepak Narayanan, Luigi Nardi, Tian Zhao, <span style="font-weight:bold;">Jian Zhang</span>, Peter Bailis, Kunle Olukotun, Chris RÃ©, Matei Zahari.<br>
+        <em> Workshop on Systems for ML and Open Source Software at NeurIPS, Montreal, Canada, December 2018</em><br>
+        <a href="http://www.codycoleman.com/public/papers/mlsys_dawnbench_analysis.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="./project/DEEM2018LOGSEARCH/logsearch.pdf">
+        <span style="font-weight:bold;font-size:125%;color:black">Exploring the Utility of Developer Exhaust<span></a><br>
+        <span style="font-weight:bold;">Jian Zhang</span>, Max Lam, Stephanie Wang, Paroma Varma, Luigi Nardi, Kunle Olukotun, Christopher RÃ©.<br>
+        <em>Workshop on Data Management for End-to-End Machine Learning (<strong>DEEM</strong>), Houston, USA, June 2018</em><br>
+        <a href="./project/DEEM2018LOGSEARCH/logsearch.pdf">[PDF]</a>
+        <!-- <a href="https://dawn.cs.stanford.edu/2018/03/09/low-precision/">[Blog]</a>-->
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="http://www.sysml.cc/doc/2018/159.pdf">
+        <span style="font-weight:bold;font-size:125%;color:black">DAWNBench: An End-to-end Deep Learning Benchmark and Competition<span></a><br>
+        Cody Coleman, Deepak Narayanan, Daniel Kang, Tian Zhao, <span style="font-weight:bold;">Jian Zhang</span>, Luigi Nardi, Peter Bailis, Kunle Olukotun, Chris RÃ©, Matei Zahari.<br>
+        <em> SysML Conference (<strong>SysML</strong>), Stanford, US, February 2018</em><br>
+        <a href="http://www.sysml.cc/doc/2018/159.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1708.05256">
+        <span style="font-weight:bold;font-size:125%;color:black">Peta-scale Deep Learning: Supervised and Semi-supervised classification for scientific data<span></a><br>
+        Thorsten Kurth, <span style="font-weight:bold;">Jian Zhang</span>, Nadathur Satish, Ioannis Mitliagkas, Evan Racah, Md. Mostofa Ali Patwary, Tareq Malas, Narayanan Sundaram, Wahid Bhimji, Mikhail Smorkalov, Jack Deslippe, Mikhail Shiryaev, Srinivas Shridharan, Prabhat, Pradeep Dubey.<br>
+        <em>Supercomputing (<strong>SC</strong>), Denver, USA, November 2017.</em><br>
+        <a href="https://arxiv.org/pdf/1708.05256.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/abs/1606.05250">
+        <span style="font-weight:bold;font-size:125%;color:black">SQuAD: 100,000+ Questions for Machine Comprehension of Text<span></a><br>
+        Pranav Rajpurkar, <span style="font-weight:bold;">Jian Zhang</span>, Konstantin Lopyrev, Percy Liang.<br>
+        <em>Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>), Austin, USA, November 2016.</em><br>
+        <em><strong>Best resource paper award.</strong></em><br>
+        <!-- <a href="./project/ICCV15HighOrderSub/ICCV15HighOrderSub.pdf">[PDF]</a> -->
+        <!-- <a href="./project/ICCV15HighOrderSub/ICCV15HighOrderSub.html">[Project Page]</a> -->
+        <a href="https://arxiv.org/abs/1606.05250">[PDF]</a>
+        <a href="https://rajpurkar.github.io/SQuAD-explorer/">[Project Page]</a>
+        </div>
+      </div>
+      <br>
+
+      <div class="row item">
+        <div class="twelve columns">
+        <a id="list" href="https://arxiv.org/pdf/1606.07365.pdf">
+        <span style="font-weight:bold;font-size:125%;color:black">Parallel SGD: When does averaging Help?<span></a><br>
+        <span style="font-weight:bold;">Jian Zhang</span>, Christopher De Sa, Ioannis Mitliagkas, Chris RÃ©.<br>
+        <em> OptML Workshop at ICML, New York, US, June 2016</em><br>
+        <a href="https://arxiv.org/pdf/1606.07365.pdf">[PDF]</a>
+        </div>
+      </div>
+      <br>
+
+		<div class="row item">
+			<div class="twelve columns">
+			<a id="list" href="./project/ICCV15HighOrderSub/ICCV15HighOrderSub.pdf">
+			<span style="font-weight:bold;font-size:125%;color:black">Higher-order Inference for Multi-class Log-supermodular Models<span></a><br>
+			<span style="font-weight:bold;">Jian Zhang</span>, Josip Djolonga, Andreas Krause.<br>
+			<em>International Conference on Computer Vision (<strong>ICCV</strong>), Santiago, Chile, December 2015.</em><br>
+        	<a href="./project/ICCV15HighOrderSub/ICCV15HighOrderSub.pdf">[PDF]</a>
+			</div>
+		</div>
+		<br>
+	
+		<div class="row item">
+			<div class="twelve columns">
+			<a id="list" href="./project/NIPS14HighOrderMP/NIPS14HighOrderMP.pdf">
+			<span style="font-weight:bold;font-size:125%;color:black">Message Passing Inference for Large Scale Graphical Models with High Order Potentials<span></a><br>
+			<span style="font-weight:bold">J. Zhang</span>, Alexander G. Schwing, Raquel Urtasun.<br>
+			<em>Neural Information Processing Systems (<strong>NIPS</strong>), Montreal, Quebec, Canada, December 2014.</em><br>
+			<a href="./project/NIPS14HighOrderMP/NIPS14HighOrderMP.pdf">[PDF]</a>
+			<a href="./project/NIPS14HighOrderMP/NIPS14HighOrderMP.html">[Project Page]</a>
+			</div>
+		</div> <!-- item end -->
+		<br>
+		
+		<div class="row item">
+			<div class="twelve columns">
+			<a id="list" href="./project/ICCV13DepthLayout/ICCV13DepthLayout.pdf">
+			<span style="font-weight:bold; font-size:125%;color:black">Estimating the 3D Layout of Indoor Scenes and Its Clutter from Depth Sensors<span></a><br>
+			<span style="font-weight: bold;">Jian Zhang</span>, Kan Chen, Alexander G. Schwing, Raquel Urtasun.<br>
+			<em>International Conference on Computer Vision (<strong>ICCV</strong>), Sydney, Australia, December 2013.</em><br>
+			<a href="./project/ICCV13DepthLayout/ICCV13DepthLayout.pdf">[PDF]</a>
+			<a href="./project/ICCV13DepthLayout/ICCV13DepthLayout.html">[Project Page]</a>
+			</div>
+		</div>
+		<br>
+		
+		<div class="row item">
+			<div class="twelve columns">
+			<a id="list" href="./project/EI13NonIter/EI13NonIter.pdf">
+			<span style="font-weight:bold; font-size:125%;color:black">Non-iterative Normalized Feature Extraction in Large Viewpoint Variances Based on PCA of Gradient<span></a><br>
+			<span style="font-weight: bold;">J. Zhang</span>, C. Song, D. Wen.<br>
+			<em>IS&T/SPIE Electronic Imaging (<strong>EI</strong>), Burlingame, California, USA, February 2013.</em><br>
+			<a href="./project/EI13NonIter/EI13NonIter.pdf">[PDF]</a>
+			</div>
+		</div>
+		<!-- </div> -->
+    </div>
+	</section>
+   
+	<!-- teaching section
+	================================================== -->
+	<section id="teaching" style="padding: 25px 0 72px; background: #fff;">
+	<div class="row teaching">
+		<div class="three columns header-col">
+			<h2>Teaching</h2>
+		</div>
+		<div class="nine columns main-col">
+			<div class="row item">
+				<div class="twelve columns">
+				<a id="list" href="http://cs229.stanford.edu/">
+				<span style="font-weight:bold; font-size:125%">Machine Learning<span></a><br>
+				Stanford University, Fall 2018 / Summer 2019, CS 229
+				<a href="http://cs229.stanford.edu/"></a>
+				</div>
+			</div>
+			<br>
+
+			<div class="row item">
+				<div class="twelve columns">
+				<a id="list" href="http://www.syssec.ethz.ch/education/Digitaltechnik_14">
+				<span style="font-weight:bold; font-size:125%">Digital Circuits<span></a><br>
+				ETH Zurich, Spring 2015, 252-0014-00L
+				<a href="http://www.syssec.ethz.ch/education/Digitaltechnik_14"></a>
+				</div>
+			</div>
+			<br>
+			
+			<div class="row item">
+				<div class="twelve columns">
+				<a id="list" href="http://www.math.ethz.ch/education/bachelor/lectures/hs2014/other/linalg_INFK">
+				<span style="font-weight:bold; font-size:125%">Linear Algebra<span></a><br>
+				ETH Zurich, Fall 2014, 401-0131-00L
+				<a href="http://www.math.ethz.ch/education/bachelor/lectures/hs2014/other/linalg_INFK"></a>
+				</div>
+			</div>
+			<br>
+			
+			<div class="row item">
+				<div class="twelve columns">
+				<a id="list" href="http://www.syssec.ethz.ch/education/Digitaltechnik_14">
+				<span style="font-weight:bold; font-size:125%">Digital Circuits<span></a><br>
+				ETH Zurich, Spring 2014, 252-0014-00L
+				<a href="http://www.syssec.ethz.ch/education/Digitaltechnik_14"></a>
+				</div>
+			</div>
+			<br>
+			
+			<div class="row item">
+				<div class="twelve columns">
+				<a id="list" href="http://www.ti.inf.ethz.ch/ew/courses/Info1_13/">
+				<span style="font-weight:bold; font-size:125%">Computer Science I<span></a><br>
+				ETH Zurich, Fall 2013, 252-0847-00L
+				<a href="http://www.ti.inf.ethz.ch/ew/courses/Info1_13/"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+
+   <!-- footer
+   ================================================== -->
+<!--    <footer>
+
+      <div class="row">
+		<div class="three columns header-col">
+			<h2>Contact</h2>
+		</div>
+		<div class="nine columns main-col">
+			<div class="row item">
+				<div class="twelve columns">
+			
+				<h6>
+					<p align=left style="font-size:125%; color:#fff">
+					Computer Science Department<br>
+					353 Serra Mall<br>
+					Stanford University<br>
+					Stanford, CA 94305-9025, USA
+					</p>
+				</h6>
+			
+				</div>
+			</div>
+
+         </div>
+		
+		<ul class="social-links">
+		   <li><a href="https://twitter.com/JianZhangCS"><i class="fa fa-google-scholar"></i></a></li>
+		   <li><a href="https://twitter.com/JianZhangCS"><i class="fa fa-twitter"></i></a></li>
+		   <li><a href="https://www.linkedin.com/pub/jian-zhang/98/83a/103"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+		
+
+		<ul class="copyright">
+		   <li>&copy; Copyright 2015 Jian Zhang</li>
+		   <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+		</ul>
+		
+		
+         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> --> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/spin.js"></script>
+
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

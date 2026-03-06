@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <basefont size="10">
+    <meta charset="utf-8">
+    <title>Alan Ritter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      img.responsive { 
+          max-width: 100%; 
+          max-height: 320px; 
+          display: block; 
+          margin: auto; 
+      }
+    </style>
+    <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./bootstrap/ico/apple-touch-icon-144-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body onload="randomizeLists()">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Alan Ritter</a>
+
+          <ul class="nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!-- <li><a href="projects.html">Research</a></li> -->
+            <li><a href="publications.html">Publications</a></li>
+            <!-- <li><a href="software.html">Software</a></li> -->
+            <li><a href="advice.html">Advice</a></li>
+            <!-- <li><a href="application.html">Job Application Materials</a></li> -->
+            <li><a href="application_materials/alan_ritter_CV.pdf">C.V.</a></li>
+          </ul>
+
+          <div class="nav-collapse">
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+<big>
+<div id="Content">
+<table width="100%">
+<tr>
+<td width="70%">
+<p>
+<h1>Alan Ritter</h1>
+<i>Associate Professor</i> <br>
+<a href="https://www.ic.gatech.edu/">School of Interactive Computing</a><br>
+<a href="https://www.cc.gatech.edu/">College of Computing</a><br>
+<a href="https://www.gatech.edu/">Georgia Institute of Technology</a><br>
+Office: <a href='https://codatechsquare.com/'>Coda</a> 1157B <br>
+Email: alan.ritter@cc.gatech.edu <br>
+Google Scholar: <a href='https://scholar.google.com/citations?hl=en&user=unXtH3IAAAAJ'>https://scholar.google.com/citations?hl=en&user=unXtH3IAAAAJ</a> <br>
+Semantic Scholar: <a href='https://www.semanticscholar.org/author/Alan-Ritter/4655992'>https://www.semanticscholar.org/author/Alan-Ritter/4655992</a> <br>
+<a href="https://twitter.com/alan_ritter" class="twitter-follow-button" data-show-count="false">Follow @alan_ritter</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
+</p>
+
+<br>
+<p>
+  I am an Associate Professor in the School of Interactive Computing at Georgia Tech (also affiliated with the Machine Learning Center).  I do research on natural language processing.  My research group investigates questions regarding robust models that work across many domains and languages, while requiring <a href='https://arxiv.org/abs/2305.14592'>fewer</a> <a href='https://arxiv.org/pdf/2210.03690.pdf'>labels</a>, and making <a href='https://arxiv.org/pdf/2109.04711.pdf'>efficient</a> use of computational <a href='https://arxiv.org/pdf/2305.01645.pdf'>resources</a>.  I am also interested in <a href='https://aclanthology.org/D11-1054/'>data-driven</a> <a href='https://www.aclweb.org/anthology/D16-1127/'>dialogue</a> <a href='https://www.aclweb.org/anthology/D17-1230'>agents</a> that <a href='https://arxiv.org/abs/2407.04952'>safely</a> and naturally converse on any <a href='https://arxiv.org/abs/2305.17280'>topic</a>.
+</p>
+<!--
+<p>
+Before joining Georgia Tech, I received my Ph.D. from the University of Washington, did a postdoc in the Machine Learning Department at Carnegie Mellon, and was an Assistant/Associate professor in the department of Computer Science and Engineering at Ohio State.
+</p>
+-->
+<!--
+<p>
+Here is a <a href="http://ec2-54-170-89-29.eu-west-1.compute.amazonaws.com:8000/"'>demo</a> of one of my research projects, that automatically extracts a calendar of popular events in the near future from Twitter.
+</p>
+-->
+
+I am always looking for strong students to work with.  I advise students in both our <a href='https://ml.gatech.edu/phd'>ML</a> and <a href='https://www.cc.gatech.edu/degree-programs/phd-computer-science'>CS</a> Ph.D. programs.  For current Georgia Tech students interested in research: please email me a copy of your resume, transcript, and a description on what you would like to work on together.
+
+<!--
+<br>
+<b>There is a postdoc position available in my group.  Please contact me directly, if interested.</b>
+</td>
+-->
+<td>
+<!-- <p align="right"><img border="0" src="edinburgh.jpg" height="274"> <br/> -->
+<!-- <p align="right"><a href='http://scholar.google.com/citations?hl=en&user=unXtH3IAAAAJ&oi=sra'><img border="0" src="TGIF-7318.jpg" height="317" width="477"></a> <br/> -->
+<!-- <p align="right"><a href='http://scholar.google.com/citations?hl=en&user=unXtH3IAAAAJ&oi=sra'><img border="0" src="TGIF-7318.jpg" width="400"></a> <br/> -->
+<!-- <p align="center"><a href='http://scholar.google.com/citations?hl=en&user=unXtH3IAAAAJ&oi=sra'><img border="0" src="me.png"></a> <br/> -->
+<!-- <p align="center"><img border="0" src="images/IMG_3400.JPG"><br/> -->
+<p align="center"><img border="0" src="images/2X6A9220.jpeg" class="responsive"><br/>
+</td>
+</tr>
+<tr><td>
+</td><td height=40></td></tr>
+</table>
+
+<div class='well'>
+<b>Recent Activities:</b>
+<ul>
+  <li>Talk at Google Research, December 2025</li>    
+  <li>Talk at Sungkyunkwan University, May 2025</li>  
+  <li>Speaking at the University of Tokyo, October 2024</li>
+  <li>Shonan Seminar on <a href='https://shonan.nii.ac.jp/seminars/209/'>Empowering Local Open Source LLMs</a></li>
+  <li>Congrats to <a href='https://x.com/ychenNLP/status/1812132371409297634/'>Yang Chen</a> on successfully defending his Ph.D. thesis! Yang will join NVIDIA as a Research Scientist.</li>  
+  <li>5/2024 Talk at University of California San Diego</li>
+  <li>3/2024 Talk at University of California Irvine</li>
+  <li>12/2023 Speaking at <a href='https://sites.google.com/g.skku.edu/brainlink2023'>BrainLink</a>
+  <li>11/2023 Talk at the <a href='https://cs.uchicago.edu/events/event/alan-ritter-georgia-tech-towards-cost-efficient-use-of-pre-trained-models/'>University of Chicago / TTIC</a></li>
+  <li>10/2023 Talk at <a href='https://youtu.be/NTD6f-GVAgI?si=HoeyXvZePVe5jPMV'>AI2</a></li>
+  <li>10/2023 Talk at the University of Washington</li>
+  <li>7/2023 Speaking at the <a href='https://megagon.ai/matching-2023/'>Matching Workshop @ ACL 2023</a></li>
+  <li>2/2023 Talk at the <a href='https://nlp.cis.upenn.edu/clunch.html'>University of Pennsylvania</a></li>  
+  <li>10/2022 Talk at Princeton University</li>
+  <li>10/2022 Talk at <a href='http://www.cs.columbia.edu/nlp/nlp_seminar.html'>Columbia University</a></li>
+  <li>10/2022 Talk at <a href='https://cds.nyu.edu/text-data-speaker-series/'>New York University</a></li>
+  <li>10/2022 Talk at Google New York</li>  
+  <li>5/2022 Talk at Johns Hopkins University</li>  
+  <li>1/2022 Talk at <a href='https://megagon.ai/speakers/'>Megagon Labs</a></li>
+  <li>9/2021 Talk at the University of Notre Dame NLP Seminar</li>  
+  <li>12/2019, Speaking at the <a href="http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Main.html">NeurIPS workshop on Conversational AI</a> [<a href='https://slideslive.com/38922311/invited-talk-towards-datadriven-conversational-ai'>video</a>]</li>
+  <li><a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=2052498&HistoricalAwards=false'>NSF CAREER Award</a>
+  <li>5th Workshop on NLP in noisy user-generated text (<a href='http://noisy-text.github.io/'>W-NUT</a>) at EMNLP 2019.  Consider submitting an abstract or paper!</li>
+  <li>6/2019 Talk at <a href='https://twitter.com/naz_erkan/status/1141465136659484673'>Twitter</a></li>
+  <li>5/2019 Visiting Faculty, <a href='https://www.lti.cs.cmu.edu/'>Language Technologies Institute</a>, Carnegie Mellon University</li>
+  <li>1/2019 <a href='https://ara.amazon-ml.com/recipients/#2018'>Amazon Research Award</a></li>
+  <li>5/2018 Speaking at the <a href='https://nlp.stanford.edu/seminar/'>Stanford NLP Seminar</a></li>
+  <li>12/2017, Talk at the <a href="https://lld-workshop.github.io/2017/">NeurIPS workshop on Learning with Limited Labeled Data</a></li>
+  <li>7/2017 Interview on <a href='https://www.microsoft.com/en-us/research/video/research-focus-conversational-agents/'>Data-Driven Conversational Agents</a></li>
+  <li>7/2017 Talk at the <a href='https://www.microsoft.com/en-us/research/video/conversational-systems-era-deep-learning-big-data/'>Microsoft Research Faculty Summit</a></li>
+  <li>6/2017 Speaking at the <a href='http://mjt.web.engr.illinois.edu/mmls_17/'>Midwest Machine Learning Symposium</a></li>
+  <!-- <li><a href='https://sites.google.com/site/osunlpcl/announcement'>NLP Speaker Series</a> at OSU.</li> -->
+  <li>Visiting researcher, <a href='http://research.microsoft.com/en-us/groups/nlp/'>Microsoft Research NLP Group</a> August 2015.</li>  
+  <li>Talk at <a href='http://www.cs.cmu.edu/afs/.cs.cmu.edu/Web/Posters/SCSLecture-Ritter15.pdf'>Carnegie Mellon University</a>.</li>
+  <!-- <li><a href='http://www.transacl.org/'>TACL</a> paper on <a href='https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/download/498/64'>Extracting Paraphrases from Twitter</a>.  Congrats to <a href='http://www.cis.upenn.edu/~xwe/'>Wei</a>!</li> -->
+</ul>
+</div>
+
+<div class='well'>
+<b>Media Coverage:</b>
+<ul>
+  <li>Our work measuring cultural biases in LLMs was covered by <a href='https://venturebeat.com/ai/large-language-models-exhibit-significant-western-cultural-bias-study-finds/'>Venture Beat</a>.</li>
+  <li>Quoted on the costs of large language models by <a href='https://www.bloomberg.com/news/newsletters/2023-03-03/bing-ai-chatbot-vs-google-bard-will-end-up-as-a-costly-war'>Bloomberg</a>.</li>
+  <li>Our <a href='https://arxiv.org/abs/2108.11830'>EMNLP paper</a> investigating neural chatbots' stance towards toxic comments was covered by <a href='https://thenextweb.com/news/gpt-3-and-humans-twice-as-likely-agree-with-offensive-reddit-comments-chatbots/'>TNW</a>.</li>
+  <li><a href='https://www.wired.com/story/machine-learning-tweets-critical-security-flaws/'>WIRED article</a> covering our <a href='https://www.aclweb.org/anthology/N19-1140/'>NAACL paper</a> on analyzing percieved servierity of software vulerabilities reported on social media.</a></li>
+</ul>
+</div>
+
+<!--
+<div class='well'>
+<b>Teaching:</b>
+<ul>
+<li><a href='https://aritter.github.io/CS-4650-au23/'>CS 4650: Natural Language Processing</a> (Fall 2023)</li>
+<li><a href='https://aritter.github.io/CS-7650-sp23/'>CS 7650: Natural Language Processing</a> (Spring 2023)</li>
+<li><a href='https://aritter.github.io/CS-4650-au22/'>CS 4650: Natural Language Processing</a> (Fall 2022)</li>
+<li><a href='https://aritter.github.io/CS-7650-sp22/'>CS 7650: Natural Language Processing</a> (Spring 2022)</li>  
+<li><a href='https://aritter.github.io/CS-4641/'>CS 4641: Machine Learning</a> (Fall 2021)</li>
+<li><a href='http://socialmedia-class.org/'>CSE 5539: Social Media and Text Analytics</a> (Spring 2020)</li>
+<li><a href='http://aritter.github.io/courses/5525_fall19.html'>CSE 5525: Speech and Language Processing</a> (Fall 2019)</li>
+<li><a href='http://aritter.github.io/courses/5525_spring19.html'>CSE 5525: Speech and Language Processing</a> (Spring 2019)</li>
+<li><a href='http://aritter.github.io/courses/5523_fall18.html'>CSE 5523: Machine Learning and Statistical Pattern Recognition</a> (Fall 2018)</li>
+<li><a href='http://socialmedia-class.org/'>CSE 5539: Social Media and Text Analytics</a> (Spring 2018)</li>
+<li><a href='http://aritter.github.io/courses/5522_fall17.html'>CSE 5522: Survey of Artificial Intelligence II: Advanced Techniques</a> (Fall 2017)</li>  
+<li><a href='http://aritter.github.io/courses/5523_spring17.html'>CSE 5523: Machine Learning and Statistical Pattern Recognition</a> (Spring 2017)</li>  
+<li><a href='http://aritter.github.io/courses/5525_spring16.html'>CSE 5525: Speech and Language Processing</a> (Spring 2016)</li>  
+<li><a href='http://aritter.github.io/courses/5539_fall15.html'>CSE 5539: Web Information Extraction</a> (Fall 2015)</li>
+<li><a href='http://aritter.github.io/courses/5522.html'>CSE 5522: Survey of Artificial Intelligence II: Advanced Techniques</a> (Spring 2015)</li>
+<li><a href='http://aritter.github.io/courses/5539.html'>CSE 5539: NLP and IE for the Social Web</a> (Fall 2014)</li>
+</ul>
+</div>
+-->
+
+<div class='well'>
+<b>Recent Service:</b>
+<ul>
+  <li>Area Chair, <a href='https://colmweb.org/'>COLM 2026</a></li>  
+  <li>Senior Area Chair, <a href='https://2026.aclweb.org/'>ACL 2026</a></li>  
+  <li>Area Chair, <a href='https://colmweb.org/'>COLM 2025</a></li>
+  <li>Program Chair, <a href='https://2025.naacl.org/'>NAACL 2025</a></li>
+  <li>Best Paper Awards Committee, EACL 2024</li>
+  <li>Area Chair, <a href='https://2023.emnlp.org/'>EMNLP 2023</a>, Information Extraction</li>  
+  <li>Demo Chair, <a href='https://2023.aclweb.org/'>ACL 2023</a></li>
+  <li>Area Chair, <a href='https://2023.aclweb.org/'>ACL 2023</a>, Information Extraction</li>
+  <li>Senior Area Chair, <a href='https://2022.emnlp.org/'>EMNLP 2022</a>, Information Extraction</li>
+  <li>Senior Program Committee, <a href='https://aaai.org/Conferences/AAAI-22/'>AAAI 2022</a></li>    
+  <li>Senior Area Chair, <a href='https://www.2022.aclweb.org/'>ACL 2022</a>, Information Extraction</li>  
+  <li>Senior Area Chair, <a href='https://2021.emnlp.org/'>EMNLP 2021</a>, Computational Social Science</li>
+  <li>Area chair, <a href='https://2021.aclweb.org/'>ACL 2021</a>, Information Extraction</li>    
+  <li>Senior Area Chair, <a href='https://2021.naacl.org/'>NAACL 2021</a>, Machine Learning for NLP: Classification and Structured Prediction Models</li>
+  <li>Senior Area Chair, <a href='https://2020.emnlp.org/'>EMNLP 2020</a>, Information Extraction</li>
+  <li>Area chair, <a href='https://acl2020.org/'>ACL 2020</a>, Information Extraction</li>  
+  <li>Area chair, <a href='https://www.emnlp-ijcnlp2019.org/'>EMNLP 2019</a>, Social Media and Computational Social Science</li>
+  <li>Area chair, <a href="http://www.acl2019.org/EN/index.xhtml">ACL 2019</a>, Information Extraction and Text Mining</li>
+</ul>
+</div>
+
+<div class='well'>
+<b>Postdoctoral Researcher:</b>
+<ul id="phd">
+  <li><a href='https://zhenduow.github.io/'>Zhenduo Wang</a></li>
+</ul>
+<b>Ph.D. Students:</b>
+<ul id="phd">
+  <li><a href='https://hyungjoo-homepage.netlify.app/'>Hyungjoo Chae</a></li>
+  <li><a href='https://ruohaog.netlify.app/'>Ruohao Guo</a></li>
+  <li><a href='https://jm-kang.github.io/'>Junmo Kang</a></li>
+  <li><a href='https://duonglm38.github.io/'>Duong Minh Le</a></li>
+  <li><a href='https://jjumssu.github.io/'>Jungsoo Park</a></li>
+  <li><a href='https://ethanm88.github.io/'>Ethan Mendes</a></li>
+  <li><a href='https://guochry.github.io/'>Geyang Guo</a></li>    
+  <li><a href='https://nle18.github.io'>Nghia (Max) Le</a></li>
+  <li><a href='https://jonathanqzheng.github.io/'>Jonathan Zheng</a></li>  
+</ul>
+
+<b>Undergraduate and M.S. Researchers:</b>
+<ul id='undergrad'>
+  <li><a href='https://99starman.github.io/'>Ruixin Yang</a></li>  
+  <li><a href=''>Jiayi (Ivy) He</a></li>
+</ul>
+</div>
+
+<div class='well'>
+<b>Alumni:</b>
+<ul id='alumni'>
+  <li><a href='https://mohit-raghavendra.github.io/'>Mohit Raghavendra</a> (M.S. - 2025 Georgia Institute of Technology)</li>
+  <li><a href='https://bflashcp3f.github.io/'>Fan Bai</a> (Ph.D. 2023, Georgia Institute of Technology, M.S. 2020, Ohio State University)</li>
+  <li><a href='https://edchengg.github.io/'>Yang Chen</a> (Ph.D. 2024, Georgia Institute of Technology)</li>  
+  <li><a href='http://sandeshs.github.io/'>Sandesh Swamy</a>  (M.S. - 2017, Ohio State University)</li>
+  <li><a href='https://sites.google.com/view/jeniyat/'>Jeniya Tabassum</a> (Ph.D. - 2020, Ohio State University)</li>
+  <li><a href='https://s4zong.github.io/'>Shi Zong</a> (Ph.D. - 2020, Ohio State University)</li>
+  <li>Vedaant Shah (M.S. - 2024, Georgia Institute of Technology)</li>
+  <li>Andrew Li (M.S. - 2024, Georgia Institute of Technology)</li>  
+</ul>
+</div>
+
+</big>
+
+<!--
+I am a Postdoctoral Fellow in the <a href="http://www.ml.cmu.edu/index.html">Machine Learning Department</a> at Carnegie Mellon University working with
+<a href="http://www.cs.cmu.edu/~tom/">Tom Mitchell</a>.
+<br>
+-->
+
+<!--
+<div class="navbar navbar-fixed-bottom">
+<div class="alert alert-success">
+<center>
+Consider submitting a paper to <a href='http://naacl.org/naacl-hlt-2015/'>NAACL HLT 2015</a>!
+</center>
+</div>
+</div>
+-->
+
+<!--
+<div class="navbar navbar-fixed-bottom">
+<div class="alert alert-success">
+<center>
+<b>News:</b> I will be joining the department of <a href="http://www.cse.ohio-state.edu/">Computer Science and Engineering</a> at The Ohio State University as an assistant professor in Fall 2014.
+</center>
+</div>
+</div>
+-->
+
+
+
+<!--
+Much of humanity's collective knowledge is encoded in text.
+Broadly I am interested in getting computers to better <a href="http://en.wikipedia.org/wiki/Natural_language_understanding">understand natural language</a>, and new applications this will enable.
+I enjoy working with large quantities of text which is not restricted to a narrow domain, such as that found on the <b>Web</b> or in <b>Social Media</b>.
+
+Specifically my work focuses on <a href="http://en.wikipedia.org/wiki/Information_extraction">Information Extraction</a>, <a href="http://www.siglex.org/">Computational Lexical Semantics</a>, <a href="http://en.wikipedia.org/wiki/Latent_variable">Latent Variable Models</a>, <a href="http://research.microsoft.com/en-us/events/lsm2011/">Language Processing in Social Media</a> and <a href="http://iuiconf.org/">Intelligent Interfaces</a>.
+-->
+<p>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    -->
+    <script src="./bootstrap/js/bootstrap-min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-2879579-2', 'auto');
+      ga('send', 'pageview');
+
+      function randomizeItems(items)
+      {
+	  var cached = items.slice(0), temp, i = cached.length, rand;
+	  while(--i)
+	  {
+              rand = Math.floor(i * Math.random());
+              temp = cached[rand];
+              cached[rand] = cached[i];
+              cached[i] = temp;
+	  }
+	  return cached;
+      }
+      
+      function randomizeList(id)
+      {
+	  var list = document.getElementById(id);
+	  var nodes = list.children, i = 0;
+	  nodes = Array.prototype.slice.call(nodes);
+	  nodes = randomizeItems(nodes);
+	  while(i < nodes.length)
+	  {
+              list.appendChild(nodes[i]);
+              ++i;
+	  }
+	  list.style.display="block";
+      }
+      
+      function randomizeLists()
+      {
+	  randomizeList("phd");
+	  randomizeList("undergrad");
+	  randomizeList("alumni");
+      }
+    </script>
+
+  </body>
+</html>

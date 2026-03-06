@@ -1,0 +1,9360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <title>People - The Stanford Natural Language Processing Group </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap-markdown.min.css" type="text/css">
+
+    <!-- LayerSlider styles -->
+    <link rel="stylesheet" href="/static/css/vendor/layerslider/layerslider.css" type="text/css">
+
+    <!-- twitter -->
+    <meta property="twitter:account_id" content="118263124">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@stanfordnlp">
+    <meta name="twitter:title" content="The Stanford NLP Group">
+    <meta name="twitter:description" content="Performing groundbreaking Natural Language Processing research since 1999.">
+    <meta name="twitter:image" content="https://nlp.stanford.edu/img/Stanford-NLP-stack-small-465-400px.jpg">
+    <meta name="twitter:url" content="https://nlp.stanford.edu/">
+     <!-- Google analytics -->
+    <script type="text/javascript">
+       var _gaq = _gaq || [];
+           _gaq.push(['_setAccount', 'UA-23880590-1']);
+           _gaq.push(['_trackPageview']);
+       (function() {
+         var ga = document.createElement('script');
+             ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ?
+               'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="/static/css/styles-cleanred.css" id="grove-styles">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css" type="text/css">
+
+    <!-- table highlighting -->
+    <!--<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.css">-->
+
+    <!-- site-wide custom css -->
+    <link rel="stylesheet" href="/static/css/nlp.css" id="nlp-styles">
+
+    
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    <!-- jQuery with jQuery Easing, and jQuery Transit JS -->
+
+    <!-- LayerSlider from Kreatura Media with Transitions -->
+    <script src="/static/js/vendor/layerslider/greensock.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Markdown for Blog editing-->
+    <script src="/static/js/markdown.js" type="text/javascript"></script>
+    <script src="/static/js/to-markdown.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap-markdown.js" type="text/javascript"></script>
+
+    <!-- Grove Layerslider initiation script -->
+    <script src="/static/js/grove-slider.js" type="text/javascript"></script>
+
+    <!-- DataTables.net for publications -->
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- highlighting for tables -->
+    <script src="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+    <script src="//bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+
+    <!-- fancy select boxes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+</head>
+<body>
+
+  <!-- navigation -->
+  <header>
+    <nav class="navbar navbar-default grove-navbar">
+      <div class="container">
+	<div class="navbar-header">
+          <a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+          <img class="navbar-brand navbar-left hidden-xs" width="144" height="72" src="/static/img/logos/Stanford-NLP-icon-144x72.gif" alt="">
+          <a class="navbar-brand navbar-left" href="/"><h3 class="hidden-xs">The Stanford Natural Language Processing Group</h3><h3 class="hidden-sm hidden-md hidden-lg hidden-xl">The Stanford NLP Group</h3></a>
+	</div>
+
+	<div class="navbar-collapse grove-nav collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/people/">people</a>
+            </li>
+            <!-- <li> -->
+            <!--   <a href="/pubs/">publications</a> -->
+            <!-- </li> -->
+            <li>
+              <!-- old url: /blog/ -->
+              <a href="https://ai.stanford.edu/blog/nlp/">research blog</a>
+            </li>
+            <li>
+              <a href="/software/">software</a>
+            </li>
+            <!-- <li> -->
+            <!--   <a href="/teaching/">teaching</a> -->
+            <!-- </li> -->
+	    <li>
+              <a href="/seminar/">seminar</a>
+            </li>
+	    <li>
+              <a href="/prospective/">join</a>
+            </li>
+	    <li>
+              <a href="/support.shtml">donate</a>
+            </li>
+            <li>
+              <a href="/new_local/">local</a>
+	      <!--<a href="http://nlp.stanford.edu/local/">local</a>-->
+            </li>
+            
+          </ul>
+	</div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="widewrapper">
+    <div id="body_content">
+      
+<div class="widewrapper pagetitle">
+  <div class="container">
+    <h1>People</h1>
+  </div>
+</div>
+
+
+<div class="widewrapper weak-highlight">
+  <div class="container content">
+    <!--<div class="headline top">People</div>-->
+
+    <!--<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-right: 1px solid #ccc;">-->
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <!--<img src="/static/img/group-photo.jpg" class="img-responsive img-rounded">-->
+
+      <div class="showroom-controls">
+        <div class="links">Professors</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 team-member">
+	  <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/manning.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px">
+	    <a href="http://nlp.stanford.edu/~manning/"><h4>Chris Manning</h4></a>
+	    <p class="clean">
+	      Linguistics &amp; Computer Science
+	    </p>
+	  </div>
+	</div>
+
+        <div class="col-sm-3 team-member">
+          <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/jurafsky.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="http://web.stanford.edu/~jurafsky/"><h4>Dan Jurafsky</h4></a>
+            <p class="clean">
+	      Linguistics &amp; Computer Science
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-3 team-member">
+          <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/liang.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="http://cs.stanford.edu/~pliang/"><h4>Percy Liang</h4></a>
+            <p class="clean">
+	      Computer Science
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-3 team-member">
+          <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/potts.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="http://web.stanford.edu/~cgpotts/"><h4>Chris Potts</h4></a>
+            <p class="clean">
+	      Linguistics
+            </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+          <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/hashimoto.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="https://thashim.github.io"><h4>Tatsunori Hashimoto</h4></a>
+            <p class="clean">
+	      Computer Science
+            </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/lam.png" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+	    <a href="https://suif.stanford.edu/~lam/"><h4>Monica Lam</h4></a>
+	    <p class="clean">
+	      Computer Science
+	    </p>
+	  </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+          <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/yang.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="https://cs.stanford.edu/~diyiy/"><h4>Diyi Yang</h4></a>
+            <p class="clean">
+	      Computer Science
+            </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+          <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px;" src="/static/img/people/choi.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="https://homes.cs.washington.edu/~yejin/"><h4>Yejin Choi</h4></a>
+            <p class="clean">
+	      Computer Science &amp; HAI
+            </p>
+          </div>
+	</div>
+
+      </div>
+
+      <br>
+      <div class="showroom-controls">
+	<div class="links">Affiliated Professors</div>
+      </div>
+
+      <div class="row">
+
+	<div class="col-sm-3 team-member">
+	  <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/goodman.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+	    <a href="https://cocolab.stanford.edu/ndg.html"><h4>Noah Goodman</h4></a>
+	    <p class="clean">
+	      Psychology &amp; Computer Science
+	    </p>
+	  </div>
+	</div>
+
+
+	<div class="col-sm-3 team-member">
+	  <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/kiela.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+	    <a href="https://douwekiela.github.io"><h4>Douwe Kiela</h4></a>
+	    <p class="clean">
+	      Symbolic Systems
+	    </p>
+      	  </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/demszky.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://www.dorademszky.com"><h4>Dora Demszky</h4></a>
+  	    <p class="clean">
+  	      Graduate School of Education
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/tengyu.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://ai.stanford.edu/~tengyuma/"><h4>Tengyu Ma</h4></a>
+  	    <p class="clean">
+  	      Computer Science
+  	    </p>
+          </div>
+	</div>
+
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/mirhoseini.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="http://www.azaliamirhoseini.com"><h4>Azalia Mirhoseini</h4></a>
+  	    <p class="clean">
+  	      Computer Science
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/gwilliams.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://lauragwilliams.github.io"><h4>Laura Gwilliams</h4></a>
+  	    <p class="clean">
+  	      Psychology
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/shain.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://coryshain.github.io"><h4>Cory Shain</h4></a>
+  	    <p class="clean">
+  	      Linguistics
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/hawkins.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://rdhawkins.com"><h4>Robert Hawkins</h4></a>
+  	    <p class="clean">
+  	      Linguistics
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+  	  <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/ludwig.jpg" class="img-responsive img-rounded">
+	  <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+  	    <a href="https://people.csail.mit.edu/ludwigs/"><h4>Ludwig Schmidt</h4></a>
+  	    <p class="clean">
+  	      Computer Science
+  	    </p>
+          </div>
+	</div>
+
+	<div class="col-sm-3 team-member">
+          <img style="margin-top:12px;margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:150px" src="/static/img/people/cychosz.jpg" class="img-responsive img-rounded">
+          <div class="description" style="border-radius: 10px; text-align: center; margin-top: 8px;">
+            <a href="https://megseekosh.github.io"><h4>Meg Cychsoz</h4></a>
+            <p class="clean">
+              Linguistics
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">Postdocs</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://martijnbartelds.nl">
+	    
+	    <b>Martijn Bartelds</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sophiahan6.github.io/">
+	    
+	    <b>Sophia Han</b>
+	    
+            </a>
+            
+            <br/>
+            Stanford Law School
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://peterbhase.github.io/">
+	    
+	    <b>Peter Hase</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics and Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://youralien.github.io/">
+	    
+	    <b>Ryan Louie</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://lupantech.github.io/">
+	    
+	    <b>Pan Lu</b>
+	    
+            </a>
+            
+            <br/>
+            Biomedical Data Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://jiaxin-pei.github.io">
+	    
+	    <b>Jiaxin Pei</b>
+	    
+            </a>
+            
+            <br/>
+            HAI
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sites.google.com/mail.huji.ac.il/dr-chen-shani/bio?authuser=0">
+	    
+	    <b>Chen Shani</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://yueatsprograms.github.io/">
+	    
+	    <b>Yu Sun</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://yuqingwangcs.github.io/">
+	    
+	    <b>Yuqing Wang</b>
+	    
+            </a>
+            
+            <br/>
+            Biomedical Informatics
+          </div>
+          <br/>
+	</div>
+	
+	
+      </div>
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">PhD Students</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://aryaman.io/">
+	    
+	    <b>Aryaman Arora</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://lukebailey181.github.io./">
+	    
+	    <b>Luke Bailey</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://nband.github.io/">
+	    
+	    <b>Neil Band</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="">
+	    
+	    <b>Bradley Brown</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://brunborg.com/">
+	    
+	    <b>Herman Brunborg</b>
+	    
+            </a>
+            
+            <br/>
+            ICME
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://stevenxcao.github.io">
+	    
+	    <b>Steven Cao</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cliangyu.com">
+	    
+	    <b>Liangyu Chen</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://myracheng.github.io/">
+	    
+	    <b>Myra Cheng</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://mdoumbouya.github.io/">
+	    
+	    <b>Moussa Doumbouya</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://styfeng.github.io/">
+	    
+	    <b>Steven Feng</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Antón de la Fuente</b>
+	    
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.kanishkgandhi.com">
+	    
+	    <b>Kanishk Gandhi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://emilygoodwin.github.io/">
+	    
+	    <b>Emily Goodwin</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="www.etash.me">
+	    
+	    <b>Etash Guha</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://seungjuhan.me">
+	    
+	    <b>Seungju Han</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Saminul Haque</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://adolfohermosillo.github.io/">
+	    
+	    <b>Adolfo Hermosillo</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://abehou.com">
+	    
+	    <b>Abe Hou</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://explanare.github.io">
+	    
+	    <b>Jing Huang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://q-hwang.github.io/">
+	    
+	    <b>Qian Huang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://ahmad-jabbar.github.io/">
+	    
+	    <b>Ahmad Jabbar</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sarangjeong.github.io/">
+	    
+	    <b>Sarang Jeong</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="jasperjian.ca">
+	    
+	    <b>Jasper Jian</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/~yuchengj/">
+	    
+	    <b>Yucheng Jiang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://harshitjoshi.com">
+	    
+	    <b>Harshit Joshi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://juliekallini.com">
+	    
+	    <b>Julie Kallini</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.siddkaramcheti.com/">
+	    
+	    <b>Siddharth Karamcheti</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://akazemian.github.io/personal_profile/">
+	    
+	    <b>Atlas Kazemian</b>
+	    
+            </a>
+            
+            <br/>
+            Psychology
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://konwoo.kim/">
+	    
+	    <b>Konwoo Kim</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://moojink.com">
+	    
+	    <b>Moo Jin Kim</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://kothasuhas.github.io/">
+	    
+	    <b>Suhas Kotha</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://web.stanford.edu/~rohithk/">
+	    
+	    <b>Rohith Kuditipudi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://tanishqkumar.github.io">
+	    
+	    <b>Tanishq Kumar</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://michaelyli.github.io/">
+	    
+	    <b>Michael Li</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://ai.stanford.edu/~kzliu">
+	    
+	    <b>Ken Ziyu Liu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://george1459.github.io/">
+	    
+	    <b>Shicheng (George) Liu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Arvind Mahankali</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://busramarsan.com/">
+	    
+	    <b>Büşra Marşan</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="nicolemeister.github.io">
+	    
+	    <b>Nicole Meister</b>
+	    
+            </a>
+            
+            <br/>
+            Electrical Engineering
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="">
+	    
+	    <b>Christopher Mohri</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://muennighoff.github.io/">
+	    
+	    <b>Niklas Muennighoff</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://tolulope.ai/">
+	    
+	    <b>Tolúlọpẹ́ Ògúnrẹ̀mí</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://www.joonsungpark.com/">
+	    
+	    <b>Joon Sung Park</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/jaylenpittman/">
+	    
+	    <b>Jaylen Pittman</b>
+	    
+            </a>
+            
+            <br/>
+            Graduate School of Education
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://benprystawski.com/">
+	    
+	    <b>Ben Prystawski</b>
+	    
+            </a>
+            
+            <br/>
+            Psychology
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://nroll.su.domains">
+	    
+	    <b>Nathan Roll</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Josh Rozner</b>
+	    
+            <br/>
+            Management Science and Engineering
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.michryan.com/">
+	    
+	    <b>Michael Ryan</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://jonsaadfalcon.com">
+	    
+	    <b>Jon Saad-Falcon</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://s-jse.com">
+	    
+	    <b>Sina Semnani</b>
+	    
+            </a>
+            
+            <br/>
+            Electrical Engineering
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://oshaikh.com">
+	    
+	    <b>Omar Shaikh</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/~shaoyj/">
+	    
+	    <b>Yijia Shao</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://selenashe.github.io/">
+	    
+	    <b>Selena She</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://noviscl.github.io/">
+	    
+	    <b>Chenglei Si</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://asap7772.github.io">
+	    
+	    <b>Anikait Singh</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Dilara Soylu</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://web.stanford.edu/~meghas/">
+	    
+	    <b>Megha Srivastava</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Sheridan Stewart</b>
+	    
+            <br/>
+            Sociology
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sites.google.com/view/msuzgun">
+	    
+	    <b>Mirac Suzgun</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://mariemmanue.github.io">
+	    
+	    <b>Marie-Emanuelle Tano</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.alexatartaglini.com/">
+	    
+	    <b>Alexa Tartaglini</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sites.google.com/view/yuka-tatsumi">
+	    
+	    <b>Yuka Tatsumi</b>
+	    
+            </a>
+            
+            <br/>
+            Linguistics 
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://web.stanford.edu/~thomasat/">
+	    
+	    <b>Anna Thomas</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://www.tristanthrush.com">
+	    
+	    <b>Tristan Thrush</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://omriuz.github.io/">
+	    
+	    <b>Omri Uzan</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://whenwen.github.io/">
+	    
+	    <b>Kaiyue Wen</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://smiles724.github.io/">
+	    
+	    <b>Fang  Wu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://zen-wu.social/">
+	    
+	    <b>Zhengxuan Wu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Daniel Wurgaft</b>
+	    
+            <br/>
+            Psychology
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://taka-yamakoshi.github.io/">
+	    
+	    <b>Takateru Yamakoshi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://john-b-yang.github.io/">
+	    
+	    <b>John Yang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://zitongyang.github.io/">
+	    
+	    <b>Zitong Yang</b>
+	    
+            </a>
+            
+            <br/>
+            Statistics
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://yuqinan.github.io/">
+	    
+	    <b>Qinan Yu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://wanjiazhao1203.github.io/">
+	    
+	    <b>Wanjia Zhao</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science 
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://zlucia.github.io/">
+	    
+	    <b>Lucia Zheng</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/cyruszhou/">
+	    
+	    <b>Cyrus (Zikai) Zhou</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://tonyzhaozh.github.io/">
+	    
+	    <b>Tony Z. Zhou</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://calebziems.com/">
+	    
+	    <b>Caleb Ziems</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+      </div>
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">Masters Students</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://davidanugraha.github.io/">
+	    
+	    <b>David Anugraha</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/thanawan-atc">
+	    
+	    <b>Thanawan (Ly-Ly) Atchariyachanvanit</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/~npbecker">
+	    
+	    <b>Nic Becker</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Eli Browne</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Gordon Chi</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/advitdeepak/">
+	    
+	    <b>Advit Deepak</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://nickjiang.me">
+	    
+	    <b>Nick Jiang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://hgkang02.github.io/">
+	    
+	    <b>Hangoo Kang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.parthsarthi.com">
+	    
+	    <b>Parth Sarthi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://statistics.stanford.edu/people/dat-tran">
+	    
+	    <b>Dat Tran</b>
+	    
+            </a>
+            
+            <br/>
+            Statistics
+          </div>
+          <br/>
+	</div>
+	
+	
+      </div>
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">Undergraduate Students</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/~suzeva/">
+	    
+	    <b>Suze van Adrichem</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://aditi-bhaskar.github.io/">
+	    
+	    <b>Aditi Bhaskar</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href=" https://www.linkedin.com/in/tanvir-bhathal?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios">
+	    
+	    <b>Tanvir Bhathal</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Sarah Chen</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/nathan-chi/">
+	    
+	    <b>Nathan Chi</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/jasmine-gonzalez-aab18115b/">
+	    
+	    <b>Jasmine Gonzalez</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.linkedin.com/in/taekyukim ">
+	    
+	    <b>Tae Kyu Kim</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/people/houjun/">
+	    
+	    <b>Houjun Liu</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Alberto Mancarella</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="www.linkedin.com/in/kelvinknguyen27/">
+	    
+	    <b>Kelvin  Nguyen</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Raj Palleti</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://cs.stanford.edu/~rathi/">
+	    
+	    <b>Neil Rathi</b>
+	    
+            </a>
+            
+            <br/>
+            Mathematics
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://kushalthaman.github.io/">
+	    
+	    <b>Kushal Thaman</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://christine8888.github.io/">
+	    
+	    <b>Christine Ye</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://sunnyych.github.io/">
+	    
+	    <b>Sunny Yu</b>
+	    
+            </a>
+            
+            <br/>
+            Symbolic Systems and Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+      </div>
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">Visiting Scholars</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://people.kth.se/~dbro/">
+	    
+	    <b>David Broman</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science and Psychology
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://williamheld.com">
+	    
+	    <b>William Held</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>Gaku Morio</b>
+	    
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://niklaus.ai">
+	    
+	    <b>Joel Niklaus</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://www.cs.toronto.edu/~yjruan/">
+	    
+	    <b>Yangjun Ruan</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://stevenyzzhang.github.io/website/">
+	    
+	    <b>Yanzhe Zhang</b>
+	    
+            </a>
+            
+            <br/>
+            Computer Science
+          </div>
+          <br/>
+	</div>
+	
+	
+      </div>
+      
+      <br/>
+      <div class="showroom-controls">
+	<div class="links">Staff</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+	    <b>John Bauer</b>
+	    
+            <br/>
+            Research Programmer
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://www.abhinavgarg.net/">
+	    
+	    <b>Abhinav Garg</b>
+	    
+            </a>
+            
+            <br/>
+            Research Engineer, CRFM
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="https://jinyoungjo.com">
+	    
+	    <b>Jinyoung Jo</b>
+	    
+            </a>
+            
+            <br/>
+            Research and Laboratory Coordinator
+          </div>
+          <br/>
+	</div>
+	
+	
+	<div class="col-sm-3 team-member">
+          <!--<img style="margin-left:auto;margin-right:auto;width:150px;height:150px;" src="/static/img/people/placeholder.jpg" class="img-responsive img-rounded">-->
+          <div style="text-align:left">
+            
+            <a href="http://yifanmai.com/">
+	    
+	    <b>Yifan Mai</b>
+	    
+            </a>
+            
+            <br/>
+            Research Engineer / Research Programmer
+          </div>
+          <br/>
+	</div>
+	
+      </div>
+      <div class="row">
+	
+	
+      </div>
+      
+
+      <br>
+      <div class="showroom-controls">
+	<div class="links">Alumni</div>
+      </div>
+
+      <div class="row">
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Research Scientists</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www-nlp.stanford.edu/~mgalley">
+	    
+	      Michel Galley</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Microsoft Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.stanford.edu/~nmramesh/">
+	    
+	      Ramesh Nallapati</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Amazon
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.surdeanu.info/mihai/">
+	    
+	      Mihai Surdeanu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, School of Information: Science, Technology and the Arts (SISTA), the University of Arizona
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>PhD Students</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~angeli/">
+	    
+	      Gabor Angeli</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Resolve.ai
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://rishibommasani.github.io/">
+	    
+	      Rishi Bommasani</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Senior Research Scholar, HAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.nyu.edu/projects/bowman/">
+	    
+	      Sam Bowman</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic and Associate Professor, NYU
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="">
+	    
+	      Jason Brenier</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Groundtruth Systems
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://gcampax.com">
+	    
+	      Giovanni Campagna</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Bardeen
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://hanchengcao.me/">
+	    
+	      Hancheng Cao</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Emory University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://arun.chagantys.org/">
+	    
+	      Arun Tejasvi Chaganty</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.usna.edu/Users/cs/nchamber/">
+	    
+	      Nate Chambers</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor in Computer Science, the United States Naval Academy
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://angelxuanchang.github.io">
+	    
+	      Angel Chang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Simon Fraser University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://research.google/people/pi-chuan-chang/">
+	    
+	      Pi-Chuan Chang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.cs.princeton.edu/~danqic/">
+	    
+	      Danqi Chen</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Princeton University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jcchuang/">
+	    
+	      Jason Chuang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Mozilla
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~kevclark">
+	    
+	      Kevin Clark</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Google AI, Canada
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.dorademszky.com/">
+	    
+	      Dora Demszky</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor of Education Data Science, School of Education, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kfdong.github.io/">
+	    
+	      Kefan Dong</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/timothy-dozat-982770198">
+	    
+	      Timothy Dozat</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://yanndubs.github.io/">
+	    
+	      Yann Dubois</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kawine.github.io/">
+	    
+	      Kawin Ethayarajh</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, University of Chicago
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~rfrostig/">
+	    
+	      Roy Frostig</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://atticusg.github.io">
+	    
+	      Atticus Geiger</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Postdoctoral Researcher, Practical AI Alignment and Interpretability Research Group
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.annagoldie.com/">
+	    
+	      Anna Goldie</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.spencegreen.com/">
+	    
+	      Spence Green</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    CEO of Lilt
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://demiguo.org/">
+	    
+	      Demi Guo</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.stanford.edu/people/sonal/">
+	    
+	      Sonal Gupta</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Microsoft AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://kelvinguu.com/">
+	    
+	      Kelvin Guu</a>,
+            <i>Statistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.mhahn.info/">
+	    
+	      Michael Hahn</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Tenure-Track Professor (W2) at Saarland Informatics Campus at Saarland University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://williamleif.github.io/">
+	    
+	      Will Hamilton</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Adjunct Professor of Computer Science at McGill, Senior Quantitative Researcher at Citadel LLC
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.bradenhancock.com">
+	    
+	      Braden Hancock</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Cofounder, Snorkel AI; Partner, Laude Institute
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.hanshanley.com/">
+	    
+	      Hans Hanley</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/michael-hardy-education/">
+	    
+	      Mike Hardy</a>,
+            <i>Graduate School of Education</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Atypical AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.peterhenderson.co/">
+	    
+	      Peter Henderson</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Princeton
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~johnhew">
+	    
+	      John Hewitt</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Visiting Researcher, Google DeepMind; Assistant Professor of Computer Science, Columbia University (2025-)
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://jennyhong.github.io/">
+	    
+	      Jenny Hong</a>,
+            <i>Management Science and Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Responsible AI at Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/people/dorarad">
+	    
+	      Drew Arad Hudson</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/daniter/">
+	    
+	      Dan Iter</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Fastino
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://stanford.edu/~robinjia/">
+	    
+	      Robin Jia</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor at USC
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://riakalluri.com/">
+	    
+	      Pratyusha (Ria) Kalluri</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/sdk12345/">
+	    
+	      Sepandar Kamvar</a>,
+            <i>SCCM</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Celo
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://urvashik.github.io/">
+	    
+	      Urvashi Khandelwal</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://fereshte-khani.github.io">
+	    
+	      Fereshte Khani</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://omarkhattab.com">
+	    
+	      Omar Khattab</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Databricks, and incoming Assistant Professor, MIT
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://people.eecs.berkeley.edu/~klein/">
+	    
+	      Dan Klein</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, Berkeley EECS
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://koh.pw">
+	    
+	      Pang Wei Koh</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Senior Research Scientist, Google Seattle
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.coalas-lab.com/elisakreiss">
+	    
+	      Elisa Kreiss</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of Communication, UCLA
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://ananyakumar.wordpress.com/">
+	    
+	      Ananya Kumar</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Matthew Lamm,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/heeyoung-lee-7a2ab723/">
+	    
+	      Heeyoung Lee</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://minalee-research.github.io/">
+	    
+	      Mina Lee</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Computer Science, University of Chicago
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.mit.edu/~rplevy/">
+	    
+	      Roger Levy</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, MIT BCS
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~bdlijiwei/">
+	    
+	      Jiwei Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    DeepReinforce.ai
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://xiangli1999.github.io">
+	    
+	      Xiang (Lisa) Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, University of Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.lxuechen.com/">
+	    
+	      Xuechen Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~nfliu/">
+	    
+	      Nelson Liu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://liuhong99.github.io">
+	    
+	      Hong Liu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://yiweiluo.github.io">
+	    
+	      Yiwei Luo</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~lmthang/">
+	    
+	      Thang Luong</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Principal Scientist and Director of Research, Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://nlp.stanford.edu/~wcmac/">
+	    
+	      Bill MacCartney</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Consulting Professor of Computer Science, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.ling.ohio-state.edu/~mcdm/">
+	    
+	      Marie-Catherine de Marneffe</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, Université Catholique de Louvain, Belgium
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/ignacio-cases/">
+	    
+	      Juan Ignacio Cases Martin</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist at Orby AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://nlp.stanford.edu/jrfinkel/">
+	    
+	      Jenny Rose Finkel Mason</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Landscape Capital Management
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://eric-mitchell.github.io">
+	    
+	      Eric Mitchell</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.robertmunro.com/">
+	    
+	      Rob Monarch</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://wmonroeiv.github.io/">
+	    
+	      Will Monroe</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Duolingo
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/mehradmoradshahi/">
+	    
+	      Mehrad Moradshahi</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Moveworks
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~muj/">
+	    
+	      Jesse Mu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Alignment Team, Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.shikharmurty.com/">
+	    
+	      Shikhar Murty</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~isabelvp/">
+	    
+	      Isabel Papadimitriou</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor of Linguistics, University of British Columbia
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://ashwinparanjape.github.io">
+	    
+	      Ashwin Paranjape</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Samaya AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~ppasupat/">
+	    
+	      Panupong Pasupat</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://gpoesia.com/">
+	    
+	      Gabriel Poesia</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, University of Michigan
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://evaportelance.github.io/">
+	    
+	      Eva Portelance</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of decision sciences, HEC Montréal
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://blogs.brown.edu/ucohenpr/">
+	    
+	      Uriel Cohen Priva</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor of Cognitive, Linguistic, and Psychological Sciences, Brown University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/rpryzant/">
+	    
+	      Reid Pryzant</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Freestone Grove Partners
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://qipeng.me/">
+	    
+	      Peng Qi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Uniphore
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.linkedin.com/profile/view?id=13798079">
+	    
+	      Daniel Ramage</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/chetanyarastogi">
+	    
+	      Chetanya Rastogi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Brevian
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~ssagawa/">
+	    
+	      Shiori Sagawa</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.resunay.com/">
+	    
+	      Nay San</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Rime
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://sebschu.com/">
+	    
+	      Sebastian Schuster</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Lecturer (~assistant professor),  University College London
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/people/abisee/">
+	    
+	      Abi See</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Daniel Selsam,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://web.stanford.edu/~natalias/">
+	    
+	      Natalia Silveira</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ai.stanford.edu/~rion/">
+	    
+	      Rion Snow</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.socher.org">
+	    
+	      Richard Socher</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    CEO, You.com
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://dansosa.me/">
+	    
+	      Dan Sosa</a>,
+            <i>Biomedical Informatics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Co-Founder, Parsnip
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~valentin/">
+	    
+	      Valentin Spitkovsky</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://jsteinhardt.stat.berkeley.edu">
+	    
+	      Jacob Steinhardt</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, UC Berkeley and CEO, Transluce
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://research.google.com/pubs/author37810.html">
+	    
+	      Yun-Hsuan Sung</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://alextamkin.com">
+	    
+	      Alex Tamkin</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.rohantaori.com/">
+	    
+	      Rohan Taori</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://nlp.stanford.edu/kristina/">
+	    
+	      Kristina Toutanova</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/huihsintseng">
+	    
+	      Huihsin Tseng</a>,
+            <i>Linguistics (CU Boulder)</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/adamvogel/">
+	    
+	      Adam Vogel</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://robvoigt.faculty.ucdavis.edu/">
+	    
+	      Rob Voigt</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor of Linguistics, UC Davis
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://rosewang2008.github.io/">
+	    
+	      Rose E. Wang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/people/mengqiu/">
+	    
+	      Mengqiu Wang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Zero Zero Robotics
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.sidaw.xyz">
+	    
+	      Sida Wang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Meta FAIR
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/julia-isabel-white">
+	    
+	      Julia White</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Senior NLP Engineer, Samsung Research America
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~eix/">
+	    
+	      Sang Michael Xie</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~zxie/">
+	    
+	      Ziang Xie</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Sapling
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://web.stanford.edu/~silei/">
+	    
+	      Silei Xu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Zoom
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~myasu">
+	    
+	      Michihiro Yasunaga</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://tiiiger.github.io/">
+	    
+	      Tianyi Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Thinking Machines
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://yuhao.im/">
+	    
+	      Yuhao Zhang</a>,
+            <i>Biomedical Informatics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Scientist, AWS AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~katezhou/">
+	    
+	      Kaitlyn Zhou</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Incoming Assistant Professor at Cornell Information Science
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Masters Students</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://github.com/vadam5">
+	    
+	      Virginia  Adams</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/ananthagarwal/">
+	    
+	      Ananth Agarwal</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://scholar.google.com/citations?user=TNWwJ-UAAAAJ&amp;hl=en">
+	    
+	      Galen Andrew</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://ruth-ann.github.io/">
+	    
+	      Ruth-Ann Armstrong</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD Student, University of Southern California
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/steven-bills/">
+	    
+	      Steven Bills</a>,
+            <i>Symbolic Systems and Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Paul Chen,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/heather-pei-chun-chen-58a31a50/">
+	    
+	      Pei-Chun (Heather) Chen</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Twitch
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://ryanachi.com/">
+	    
+	      Ryan Chi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.ethanachi.com">
+	    
+	      Ethan A. Chi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Hudson River Trading
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/bryan-chia/">
+	    
+	      Bryan Chia</a>,
+            <i>Statistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Pinterist
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/schopra8/">
+	    
+	      Sahil Chopra</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Co-Founder, Linum
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/david-clausen-04992b28/">
+	    
+	      David Clausen</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/miriam-connor-719b6b63/">
+	    
+	      Miriam Connor</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Kismet Health
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/nathandass/">
+	    
+	      Nathan Dass</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    MS/MBA Candidate at Harvard
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/naomieigbe/">
+	    
+	      Naomi Eigbe</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Inflection.ai
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.mihaileric.com/">
+	    
+	      Mihail Eric</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Monaco
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/mganjoo/">
+	    
+	      Milind Ganjoo</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Resolve AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.abhinavgarg.net/">
+	    
+	      Abhinav Garg</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/grenager">
+	    
+	      Teg Grenager</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Basebase
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/chenchen-gu/">
+	    
+	      Chenchen Gu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD Student, CMU
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/raghav-gupta-59777b59/">
+	    
+	      Raghav Gupta</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    EvolutionaryScale
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/surbs/">
+	    
+	      Surabhi Gupta</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    CTO at Klaviyo, Board Member at GetYourGuide
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~agusev">
+	    
+	      Andrey Gusev</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Pinterest
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/dlwhall">
+	    
+	      David Hall</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Engineering Lead at Stanford CRFM / Stanford HAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Amelia Hardy,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Raine Hoover,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Twitter
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ai.stanford.edu/~ehhuang">
+	    
+	      Eric H. Huang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Facebook
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kailihuang.com/">
+	    
+	      Kaili Huang</a>,
+            <i>Computer Science </i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Microsoft Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/thad-hughes/?originalSubdomain=ca">
+	    
+	      Thad Hughes</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Imbue
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Alexander Iyabor,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/contactpranavjain/">
+	    
+	      Pranav Jain</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Applied Intuition
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://hjian42.github.io">
+	    
+	      Hang Jiang</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor at Northeastern University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~yuchengj/">
+	    
+	      Yucheng Jiang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Stanford Computer Science
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Nikhil Johri,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Engineering Manager, Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~kamatha/">
+	    
+	      Amita Kamath</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Pre-doctoral Young Investigator, Allen Institute for AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="">
+	    
+	      Mike Kayser</a>,
+            <i>ICME</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Amazon
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Kathleen Kenealy,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.akeppler.com/">
+	    
+	      Adam Keppler</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    CEO, Algo Works
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/samin-khan/">
+	    
+	      Samin Khan</a>,
+            <i>Education Data Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Kiddom
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/people/stefank/">
+	    
+	      Stefan Krawczyk</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Salesforce
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/vijay0/">
+	    
+	      Vijay Krishnan</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Founder and CTO, Turing.com
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/andrew-lee-b43259167/">
+	    
+	      Andrew Lee</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Need.AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://risujin.org/">
+	    
+	      Michael Levin</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://lucy3.github.io/">
+	    
+	      Lucy Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD Student, UC Berkeley
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://siyan-sylvia-li.com/">
+	    
+	      Siyan Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Columbia University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://madelineliao.com">
+	    
+	      Madeline Liao</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/chih-ying-liu/">
+	    
+	      Chih-Ying Liu</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    TSMC
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.linkedin.com/in/klopyrev">
+	    
+	      Konstantin Lopyrev</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://linkedin.com/in/hansonhxlu">
+	    
+	      Hanson Lu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/praneeth-medepalli/">
+	    
+	      Praneeth Medepalli</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Zyphra
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Julia Mendelsohn,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    postdoc U Chicago and incoming Assistant Professor, University of Maryland
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.mikemintz.com/">
+	    
+	      Mike Mintz</a>,
+            <i>Symbolic Systems, Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    IMC Financial Markets
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Candice (Penelton) Morgan,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Johns Hopkins
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.stanford.edu/~wmorgan/">
+	    
+	      William Morgan</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    CEO of Buoyant
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://muzny.github.io/">
+	    
+	      Felix Muzny</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Instructor at Northeastern University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/ananjan-nandi-968386201/">
+	    
+	      Ananjan Nandi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    NowPilot
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="">
+	    
+	      Neha Nayak</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/julia-neidert/overlay/about-this-profile/">
+	    
+	      Julia (Neidert) Neizonek</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Cambly, Inc.
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://blnewman.com">
+	    
+	      Benjamin Newman</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, University of Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.jamienicolson.com/">
+	    
+	      Jamie Nicolson</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Krista Opsahl-Ong,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Engineer, Databricks
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/alex-perelygin-59091040/">
+	    
+	      Alex Perelygin</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Plaid
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://cs.stanford.edu/~hyhieu/">
+	    
+	      Hieu Pham</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Melvin Johnson Premkumar,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://nlp.stanford.edu/~rkarthik">
+	    
+	      Karthik Raghunathan</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Microsoft
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/anjali-ragupathi-a70306154/">
+	    
+	      Anjali Ragupathi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Platflow.ai
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/abhi-rast/">
+	    
+	      Abhinav Rastogi</a>,
+            <i>Electrical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/kevin-reschke-0497a111/">
+	    
+	      Kevin Reschke</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    BigPi.ai
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.michryan.com/">
+	    
+	      Michael Ryan</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Stanford
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/kaushik95">
+	    
+	      Kaushik Ram Sadagopan</a>,
+            <i>Mechanical Engineering</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Pramaana Labs
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kamyar.io/">
+	    
+	      Kamyar Salahi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/conalsathi/">
+	    
+	      Conal Sathi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Infinitus Systems
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kendrickshen.com">
+	    
+	      Kendrick Shen</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://vshrivas.github.io/">
+	    
+	      Vaish Shrivastava</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.tgsido.com">
+	    
+	      TG Sido</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jsmarr/">
+	    
+	      Joseph Smarr</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Shopify
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/sudhof/">
+	    
+	      Moritz Sudhof</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Bigspin AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://kaishengtai.github.io">
+	    
+	      Kai Sheng Tai</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Meta AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://jilliantang.com/">
+	    
+	      Jillian Tang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/julie-tibshirani/">
+	    
+	      Julie Tibshirani</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Sourcegraph
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/connortoups">
+	    
+	      Connor Toups</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/danny-tse/">
+	    
+	      Danny Tse</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Jump Trading
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/catalinvoss">
+	    
+	      Catalin Voss</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/ji-hun-wang/">
+	    
+	      Ji Hun Wang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Amazon
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~zijwang">
+	    
+	      Zijian Wang</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist Manager, Meta Superintelligence Labs
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jeanwu/">
+	    
+	      Jean Wu</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://zen-wu.social/">
+	    
+	      Zhengxuan Wu</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD Student, Stanford
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://violetyao.github.io/">
+	    
+	      Violet Yao</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.ai.sri.com/~yeh/">
+	    
+	      Eric Yeh</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    SRI International
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/akhilayerukola/">
+	    
+	      Akhila Yerukola</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Carnegie Mellon University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.stevenyoo.com/">
+	    
+	      Steven Woonyeon Yoo</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Atlassian
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://zelikman.me/">
+	    
+	      Erik Zelikman</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Humans&amp;amp;
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Andy Zhang,
+            <i>Law School</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, UC Berkeley
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Hugh Zhang,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/williamxz/">
+	    
+	      William Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://xikunzhang.github.io">
+	    
+	      Xikun Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://yianzhang.github.io/">
+	    
+	      Yian Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~yuhuiz/">
+	    
+	      Yuhui Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Stanford
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/chenyu-heidi-zhang-jhu/">
+	    
+	      Heidi Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://colinzhaoust.github.io/">
+	    
+	      Xinran Zhao</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student at CMU LTI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.victorzhong.com">
+	    
+	      Victor Zhong</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, University of Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Amir Zur,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Stanford Linguistics
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Postdocs</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www-nlp.stanford.edu/joberant/">
+	    
+	      Jonathan Berant</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Tel-Aviv University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://bethard.faculty.arizona.edu/">
+	    
+	      Steven Bethard</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, University of Arizona College of Information Science
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://federicobianchi.io/">
+	    
+	      Federico Bianchi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Senior ML Scientist, TogetherAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://atcbosselut.github.io/">
+	    
+	      Antoine Bosselut</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, School of Computer and Communication Sciences, EPFL
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://dallascard.github.io/">
+	    
+	      Dallas Card</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, School of Information, University of Michigan
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://shcen.github.io">
+	    
+	      Sarah H. Cen</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Carnegie Mellon University 
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://dmcer.net/">
+	    
+	      Daniel Cer</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Google Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://niladri-chatterji.github.io/">
+	    
+	      Niladri Chatterji</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Meta
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://iancovert.com/">
+	    
+	      Ian Covert</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://robertcsordas.github.io">
+	    
+	      Róbert Csordás</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.cs.cornell.edu/~cristian/">
+	    
+	      Cristian Danescu-Niculescu-Mizil</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Cornell University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/mona-diab-55946614/">
+	    
+	      Mona Diab</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor &amp; Director of Language Technologies Institute, Carnegie Mellon University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://chrisdonahue.com">
+	    
+	      Chris Donahue</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://esdurmus.github.io">
+	    
+	      Esin Durmus</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Anthropic (Social Impacts Team)
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://anjalief.github.io/">
+	    
+	      Anjalie Field</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of Computer Science, Johns Hopkins University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://janphilippfranken.github.io/">
+	    
+	      Jan-Philipp Fränken</a>,
+            <i>Psychology</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google DeepMind
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://matthias.gerstgrasser.net/">
+	    
+	      Matthias Gerstgrasser</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kristinagligoric.github.io/">
+	    
+	      Kristina Gligoric</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of Computer Science, Johns Hopkins University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://homepages.inf.ed.ac.uk/sgwater/">
+	    
+	      Sharon Goldwater</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, Department of Informatics, University of Edinburgh
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://thashim.github.io/">
+	    
+	      Tatsunori Hashimoto</a>,
+            <i>Computer Science and Statistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of Computer Science, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://hhexiy.github.io/">
+	    
+	      He He</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, New York University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kheafield.com/">
+	    
+	      Kenneth Heafield</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Reader (Associate Professor), University of Edinburgh
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://faculty.cse.tamu.edu/huangrh/">
+	    
+	      Ruihong Huang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Texas A&amp;M University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://jurgens.people.si.umich.edu/">
+	    
+	      David Jurgens</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, University of Michigan School of Information
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.ims.uni-stuttgart.de/institut/mitarbeiter/jonas/">
+	    
+	      Jonas Kuhn</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor of Computational Linguistics, University of Stuttgart
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://viveksck.github.io">
+	    
+	      Vivek Kulkarni</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Samsung Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://yoavlevine.com/">
+	    
+	      Yoav Levine</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Tel Aviv University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://mahowak.github.io">
+	    
+	      Kyle Mahowald</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Department of Linguistics, UT Austin
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://nlp.stanford.edu/~mcclosky/">
+	    
+	      David McClosky</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Staff Data Scientist, QuantAQ, Inc.
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/ani-nenkova-6223b9212/">
+	    
+	      Ani Nenkova</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Principal Scientist at Adobe Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.nlpado.de/~sebastian">
+	    
+	      Sebastian Padó</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor of Computational Linguistics, University of Stuttgart
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://perswww.kuleuven.be/~u0042527/">
+	    
+	      Yves Peirsman</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Deontic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://nlp.stanford.edu/~jpennin/">
+	    
+	      Jeffrey Pennington</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Research Scientist, Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.stanford.edu/~vinod/">
+	    
+	      Vinodkumar Prabhakaran</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Senior Research Scientist, Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://clic.ub.edu/en/users/marta-recasens">
+	    
+	      Marta Recasens</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://sivareddy.in">
+	    
+	      Siva Reddy</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, McGill University and Mila
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://eugeniarho.com/">
+	    
+	      Eugenia H. Rho</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor of Computer Science, Virginia Tech
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://shibanisanturkar.com/">
+	    
+	      Shibani Santurkar</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://wyshi.github.io/">
+	    
+	      Weiyan Shi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Northeastern University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://sites.google.com/site/shixiaolin/">
+	    
+	      Xiaolin Shi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Snap Inc.
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://svivek.com/">
+	    
+	      Vivek Srikumar</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, University of Utah
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://homes.cs.washington.edu/~thickstn/">
+	    
+	      John Thickstun</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Cornell University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://people.csail.mit.edu/tsipras/">
+	    
+	      Dimitris Tsipras</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    OpenAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://homes.cs.washington.edu/~yuliats/">
+	    
+	      Yulia Tsvetkov</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, University of Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://peterwestai.notion.site">
+	    
+	      Peter West</a>,
+            <i>HAI</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor of Computer Science, University of British Columbia
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://yuhuaiwu.github.io">
+	    
+	      Yuhuai (Tony) Wu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Co-Founder, xAI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jiahong-yuan-79046715/">
+	    
+	      Jiahong Yuan</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, University of Science and Technology of China
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://tisjune.github.io/">
+	    
+	      Justine Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, School of Information, University of Michigan
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Undergraduate Students</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Michelle Bao,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://x.com/jekbradbury">
+	    
+	      James Bradbury</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Anthropic
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Hung Bui,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/riley-carlson">
+	    
+	      Riley Carlson</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ryanachi.com/">
+	    
+	      Ryan Chi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Masters student, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/rohan-davidi/">
+	    
+	      Rohan Davidi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://i-gao.github.io/">
+	    
+	      Irene Gao</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.foldl.me">
+	    
+	      Jon Gauthier</a>,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Postdoc, University of California, San Francisco
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Sam Ginn,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/chenchen-gu/">
+	    
+	      Chenchen Gu</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.aria42.com/">
+	    
+	      Aria Haghighi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.washington.edu/homes/chloe/">
+	    
+	      Chloe Kiddon</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google Research
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Nathan Kim,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/katherine-li-1a8606237/">
+	    
+	      Katherine Li</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jiayi-li-54307617b">
+	    
+	      Jiayi Li</a>,
+            <i>Mathematics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://github.com/tinglinn">
+	    
+	      Ting Lin</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="">
+	    
+	      Reginald Long</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Anwesha Mukherjee,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/julia-neidert/overlay/about-this-profile/">
+	    
+	      Julia (Neidert) Neizonek</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Cambly, Inc.
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www1.cs.columbia.edu/~kristen/">
+	    
+	      Kristen Parton</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Instagram
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://elipugh.github.io/">
+	    
+	      Eli Pugh</a>,
+            <i>Mathematics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/prady-saligram/">
+	    
+	      Prady Saligram</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Harry Shin,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Avash Shrestha,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://abhaysinghal.com/">
+	    
+	      Abhay Singhal</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://web.stanford.edu/~meghas/">
+	    
+	      Megha Srivastava</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student in the Computer Science Department, Stanford
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Hoang Ngoc Vy Thai,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Graham Todd,
+            <i>Symbolic Systems</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, New York University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/keenon-werling-aa068bb0">
+	    
+	      Keenon Werling</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD Student, Computer Science, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/pawan-wirawarn">
+	    
+	      Pawan Wirawarn</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/loraxie/">
+	    
+	      Lora Xie</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/jason-zhang-6860361b8/">
+	    
+	      Jason Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.linkedin.com/in/marilynmzhang/">
+	    
+	      Marilyn Zhang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Google Search
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Staff</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Jason Bolton,
+            <i>Research Programmer</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.facebook.com/chris.cox">
+	    
+	      Chris(topher) Cox</a>,
+            <i>Symbolic Systems. 2004-2005</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Chief Product Officer, Facebook
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://candicegjing.github.io">
+	    
+	      Jing Ge</a>,
+            <i>Computer Science. 2019-2020</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://sites.google.com/site/annanrafferty/">
+	    
+	      Anna Rafferty</a>,
+            <i>Computer Science. 2006-2008</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Profesor of Computer Science, Carleton College
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Visiting Professors</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ixa2.si.ehu.es/eneko/">
+	    
+	      Eneko Agirre</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, University of the Basque Country
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cse.iitb.ac.in/~pb/">
+	    
+	      Pushpak Bhattacharyya</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, IIT Bombay
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.cl.cam.ac.uk/~pjb48/">
+	    
+	      Paula Buttery</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, University of Cambridge
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ir.hit.edu.cn/~car/">
+	    
+	      Wanxiang Che</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, Harbin Institute of Technology
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.cs.washington.edu/homes/pedrod/">
+	    
+	      Pedro Domingos</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, University of Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://ling.franklin.uga.edu/directory/people/john-hale">
+	    
+	      John Hale</a>,
+            <i>Linguistics and Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, University of Georgia
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.lingvi.st/">
+	    
+	      Jussi Karlgren</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Principal Research Scientist, Spotify, and Docent (Adjunct Professor) of Language Technology, Helsinki University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://ttic.edu/livescu">
+	    
+	      Karen Livescu</a>,
+            <i>Computer Science and Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Professor, TTI Chicago
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://clcl.unige.ch">
+	    
+	      Paula Merlo</a>,
+            <i>Linguistics and Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, University of Geneva
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://sites.google.com/site/oyamasatoshi/">
+	    
+	      Satoshi Oyama</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Hokkaido University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://www.usfca.edu/Faculty/Cindi_Thompson/">
+	    
+	      Cindi Thompson</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Apple
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+	<div class="col-sm-12 team-member" style="margin-bottom: 10px">
+	<u>Other Visitors</u>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://martijnbartelds.nl/">
+	    
+	      Martijn Bartelds</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Computational Linguistics, University of Groningen
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Emrah Budur,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Amazon
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Jiaao Chen,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    PhD student, Georgia Tech
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      YoungJoo Chung,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Rakuten
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://kareldo.github.io">
+	    
+	      Karel D&#39;Oosterlinck</a>,
+            <i>Linguistics and CSLI</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Contextual AI
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://valentinhofmann.github.io/">
+	    
+	      Valentin Hofmann</a>,
+            <i>Linguistics</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Postdoc, Allen Institute and U Washington
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="http://drjinghuang.com/">
+	    
+	      Jing Huang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Amazon
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.cse.iitb.ac.in/~pjyothi/">
+	    
+	      Preethi Jyothi</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, Department of Computer Science and Engineering, IIT Bombay
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Yuta Koreeda,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Haejun Lee,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Samsung
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Juncen Li,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Tencent
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Yasuhide Miura,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Fujifilm
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://www.seanre.com/">
+	    
+	      Xiang Ren</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Associate Professor, University of Southern California
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Raghu Subramanian,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Nonadoo
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+	      Mitsunori Toma,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+	<div class="col-sm-12 team-member">
+	  <div class="row">
+
+	    <div class="col-sm-5">
+	    
+            <a href="https://cs.stanford.edu/~diyiy/">
+	    
+	      Diyi Yang</a>,
+            <i>Computer Science</i>
+	    </div>
+	    
+	    <div class="col-sm-7">
+	    Assistant Professor, Stanford University
+	    </div>
+	  
+	  </div>
+
+
+	</div>
+	<br/>
+	
+        </div>
+	<br/>
+	
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+    <!--
+    <div class="widewrapper strong-highlight">
+      <div class="container calltoaction">
+        <span>Click on this button to offer us high-paying and world-changing jobs.</span>
+        <a href="#" class="btn btn-grove-one btn-xlg btn-bold">IT'S THE RIGHT CHOICE</a>
+      </div>
+    </div>
+    -->
+
+
+    </div>
+  </div>
+
+  <footer class="widewrapper footer">
+  <div class="container">
+    
+    <div class="row footer">
+      
+      <div class="col-sm-3">
+        <h4>Stanford NLP Group</h4>
+	Gates Computer Science Building<br>
+	353 Jane Stanford Way<br>
+	Stanford, CA 94305-9020<br>
+	<a href="http://forum.stanford.edu/visitors/directions/gates.php">Directions and Parking</a>
+      </div>
+      
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+          <h4>Affiliated Groups</h4>
+          <ul class="grove-list">
+            <li><a href="http://ai.stanford.edu/">Stanford AI Lab</a></li>
+            <li><a href="http://infolab.stanford.edu/">Stanford InfoLab</a></li>
+            <li><a href="https://www-csli.stanford.edu/">CSLI</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!--
+	 <div class="col-sm-3">
+	 </div> -->
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+          <h4>Connect</h4>
+	  
+	  <!-- <div class="row"> -->
+	  <ul class="grove-list">
+	    <li><a href="http://stackoverflow.com/tags/stanford-nlp">Stack Overflow</a></li>
+	    <li><a href="https://github.com/stanfordnlp/CoreNLP">Github</a></li>
+	    <li><a href="https://twitter.com/stanfordnlp">Twitter</a></li>
+	  </ul>
+	</div>
+      </div>
+      <!--
+	 <div class="row center-block">
+           <a href="https://github.com/stanfordnlp/CoreNLP" class="social github"></a>
+           <a href="https://twitter.com/stanfordnlp" class="social twitter"></a>
+	 </div>
+	 -->
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+	  <h4>Local links</h4>
+	  <div class="small" style="text-align:left">
+	    <a href="/local/nlp_lunch.shtml">NLP Lunch</a> &middot; 
+            <a href="http://nlp.stanford.edu/read/">NLP Reading Group</a> <br>
+            <a href="http://nlp.stanford.edu/seminar/">NLP Seminar</a> &middot;
+            <a href="/local/calendar.shtml">Calendar</a> <br>
+            <a href="https://nlp.stanford.edu/local/cluster-info/index.html">Cluster Info</a> <br>
+	    <a href="https://docs.google.com/document/d/1WmdhdR_-uigbtHHcINz7sTB-vlFasTp8pQ0Y6L4eCm4">Cluster Onboarding</a> <br>
+            <a href="http://ai.stanford.edu/portfolio-view/distinguished-speaker-series">AI Speakers</a> &middot;
+            <a href="/local/qa/">Q&amp;A</a>
+	  </div>
+	</div>
+	
+	
+      </div>      
+      
+    </div>
+  </div>
+</footer>
+
+  <script src="/static/js/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/static/js/vendor/modernizr/modernizr.js"></script>
+
+
+  <script>
+    $('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Brad A. Myers's Home Page</title>
+<link rel="shortcut icon" href="hcii.ico" type="image/x-icon" />
+
+
+<!-- css for everything except the menu -->
+<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+
+<!-- fix for IE, so that any element can have hover effect. MUST be put inline in this html; cannot be linked -->
+<style type="text/css">
+body {behavior: url(scripts/csshover.htc);}
+
+</style>
+
+<!-- css for menu -->
+<style type="text/css">
+div#nav { font-family: Verdana, Arial, Helvetica, sans-serif; height:25px; background-image:url(images/menu_bg.gif); background-repeat:repeat-x; background-color:#bc934b;}
+div#nav img {border:0px;}
+ul.lv1_menu { padding:0; margin:0; border:0;	padding-left:35px; /* first menu item positioned at 35px from the left */ }
+
+	img.more{ margin-left:4px;}
+
+	li.lv1_item {position: relative; list-style: none; margin: 0; float: left; line-height: 1em; white-space:nowrap; height:25px; }
+	li.lv1_item:hover {background-image:url(images/menu_item_hover_bg.gif); background-repeat:repeat-x;}
+
+		a.lv1_link,
+		a.lv1_link:visited { display:block; color:#fff; padding: 3px 15px; font-size:13px; width:0.1em; text-decoration: none; }
+		html>body a.lv1_link,
+		html>body a.lv1_link:visited {width: auto;}
+
+li.lv1_item:hover ul.lv2_menu {display:block;}
+
+ul.lv2_menu {margin: 0; padding: 0; border:solid 1px #b5ac9f; border-top:none;}
+ul.lv2_menu {top: 25px; left: 0px;}
+ul.lv2_menu {position: absolute;  display: none;}
+
+	li.lv2_item {position: relative; list-style: none; margin: 0; line-height: 1em; clear:both;}
+
+		a.lv2_link,
+		a.lv2_link:visited,
+		span.lv2_link, /* special case for courses, where one of the courses has no website */
+		a.lv2_link_separator_above,
+		a.lv2_link_separator_above:visited {font-size:13px; color:#8a5e20; display: block; background-color:#f9f5f0; padding: 7px 15px 5px 15px; margin: 0px; text-decoration: none; width: 250px;}
+
+		a.lv2_link_separator_above {border-top: 1px solid #b5ac9f;}
+
+		a.lv2_link:hover, a.lv2_link_separator_above:hover {background: #efdfca;}
+
+span.former{ font-size: 11px; color:#666; font-family:Arial, Helvetica, sans-serif; padding-right: 4px; font-style: italic;}
+span.comment{ font-size: 12px; color:#666; font-family:Arial, Helvetica, sans-serif;}
+
+span.course_no{ display:block; font-weight: bold; font-size: 12px;}
+span.course_date{ display:block; font-size: 12px; }
+span.course_name{ display:block;  white-space:normal; font-size: 12px; color:#666; padding: 2px 0px 0px 0px;}
+
+span.inside_link { font-style:italic; padding: 0px 3px; text-decoration: underline; }
+span.inside_link:hover, span.inside_link_over { color:#fff; background-color:#e0c3a0; }
+</style>
+
+
+
+<!-- javascript to handle special links inside menu items. E.g., EdgeWrite link -->
+<script>
+function cancelEvent(e) {
+    if (!e) e = window.event;
+    if (e.preventDefault) {
+        e.preventDefault();
+    } else {
+        e.returnValue = false;
+    }
+}
+</script>
+
+</head>
+
+
+
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+
+
+<div id="purple_container">
+<table border="0" cellpadding="0" cellspacing="0">
+   <tr>
+
+   	<!-- column 1: picture-->
+      <td><a href="https://www.cs.cmu.edu/~bam/myers_brad 2015 high res.jpg"><img src="https://www.cs.cmu.edu/~bam/myers_brad_2015_head_small.jpg" width="131" height="215" id="my_picture" alt="Brad Myers photo"/></a></td>
+
+		<!-- column 2: name, title and affiliation-->
+      <td>
+         <div id="name_title_affiliation">
+            <span id="name">Brad A. Myers</span>
+            <span id="title">Charles M. Geschke Director &<br/>
+            Professor
+            </span>
+            <span id="affiliation">
+	            <a href="https://www.hcii.cmu.edu/">Human Computer Interaction Institute</a><br />
+                <a href="https://s3d.cmu.edu/">Software and Societal Systems Department</a> <em>(affiliated faculty)</em><br/>
+   	         <a href="https://www.cs.cmu.edu/">School of Computer Science</a><br />
+      	      <a href="https://www.cmu.edu/">Carnegie Mellon University</a> </span>
+            <span id="address">5000 Forbes Avenue, 
+            Pittsburgh, PA 15213-3891 USA</span>
+			</div>
+
+			<div id="resume_publication_links">
+				<a href="https://www.cs.cmu.edu/~bam/resume.html">Resume</a>
+				&amp;
+				<a href="https://www.cs.cmu.edu/~bam/resume.html#publications">publication list</a> &nbsp;&nbsp;&nbsp; <a href="https://orcid.org/0000-0002-4769-0219">ORCID=0000-0002-4769-0219</a>
+                <!--Threads: <a href="https://www.threads.net/@bradamyers4">bradamyers4</a> -->
+                <br />
+                <a href="https://scholar.google.com/citations?user=E1cp_aYAAAAJ&amp;hl=en">Google Scholar</a>
+			<!--	<a href="https://twitter.com/bradamyers" class="twitter-follow-button" data-show-count="false" target="_blank">Twitter: @bradamyers</a>
+          -->      
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>   
+                &nbsp;
+                <a href="https://www.linkedin.com/in/bradamyers" target="_blank">
+      
+           <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Brad Myers's profile on LinkedIn"></a>
+           
+           <a href="https://www.youtube.com/playlist?list=PL3856C8FlIWfr_tX8CMUhOJvl34ylClgb">YouTube channel</a>
+<!--    <a href="https://carnegie-mellon.academia.edu/BradMyers" id="academia-button">Follow me on Academia.edu</a><script src="//a.academia-assets.com/javascripts/social.js"></script>--> </div>
+      </td>
+
+      <!-- column 3: contact info, and Sue's info-->
+      <td>
+      	<div id="contact_info">
+            <table>
+               <tr>
+                  <td>Phone:</td>
+                  <td>412-268-5150</td>
+               </tr>
+               <tr>
+                  <td>Fax:</td>
+                  <td>412-268-1266</td>
+               </tr>
+               <tr>
+                  <td>Email:</td>
+                  <td><a href="mailto:bam@cs.cmu.edu">bam@cs.cmu.edu</a></td>
+               </tr>
+               <tr>
+                  <td>Office:</td>
+                  <td>NSH 3513<br />(Newell-Simon Hall)</td>
+               </tr>
+					<tr>
+               	<td colspan="2"><hr/></td>
+               </tr>
+               <tr>
+                  <td>Admin Support:</td>
+
+                   <td>
+                    Carolyn Buzzelli-Stumpf<br/>
+                    NSH 3519<br/>
+                    cbstumpf@andrew.cmu.edu
+      <!-- old - Rosemary Peta-Eizenhafer<br />
+                     NSH 3526
+                     
+                     <br />  -->
+                     <!--412-268-6162
+                     <br />
+                    rpetaeiz@andrew.cmu.edu
+                    -->
+                    </p></td>
+              </tr>
+            </table>
+			</div>
+		</td>
+
+      <!-- column 4: logos -->
+      <td>
+      	<div id="logos">
+                          <a href="ixtbook/index.html"><img src="ixtbook/ixticon.png" alt="" width="74" height="74" hspace="5" vspace="5" /></a>
+
+
+         	<a href="https://www.cs.cmu.edu/~NatProg/"><img src="https://www.cs.cmu.edu/afs/cs/user/bam/www/natural_programming_logo-tiny.png" width="74" height="74" hspace="5" vspace="5" /></a>
+<!--            <a href="https://www.pebbles.hcii.cmu.edu/"><img src="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/pebbles/www/pebbleslogo.gif" width="74" height="74" hspace="5" vspace="5" /></a> 
+            -->    
+            <a href="https://www.hcii.cmu.edu/"><img src="images/hcii_logo.gif" alt="" width="74" height="74" hspace="5" vspace="5" /></a>
+                  <a href="https://www.cmu.edu/"><img src="images/CMU_logo_stack_cmyk-red.gif" alt="" width="74" height="48" hspace="5" vspace="5" /></a>
+			</div>
+		</td>
+	</tr>
+</table>
+</div>
+
+
+
+
+
+<div id="nav">
+<ul class="lv1_menu">
+
+   <li class="lv1_item"><a class="lv1_link" href="#projects">Projects<img class="more" src="images/more.gif" alt="" /></a>
+      <ul class="lv2_menu">
+		 <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/amulet-pane/NatProg/www/index.html">Natural Programming<br /><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See 
+		 also </span><span id="euses_link" class="inside_link">EUSES consortium</span></a></li>
+         
+         <li class="lv2_item"><a class="lv2_link_separator_above" href="http://www.pebbles.hcii.cmu.edu/"><span class="former">Former</span> Pebbles <br /><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See also </span><span id="edgewrite_link" class="inside_link">EdgeWrite</span></a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.qolt.org/"><span class="former">Former</span> QoLT</a></li>
+         
+         <li class="lv2_item"><a class="lv2_link" href="https://www.radar.cs.cmu.edu/"><span class="former">Former</span> RADAR</a></li>
+         
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/silver/www/index.html"><span class="former">Former</span> The Silver Video Editor</a></li>
+         
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cpie/www/index.html"><span class="former">Former</span> Command Post of the Future</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/amulet/www/amulet-home.html"><span class="former">Former</span> Amulet</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/garnet/www/pbd-group/pbd.html"><span class="former">Former</span> Demonstrational Interfaces</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/garnet/www/garnet-home.html"><span class="former">Former</span> Garnet</a></li>
+         <li class="lv2_item"><a class="lv2_link_separator_above" href="#projects"><strong>&raquo; All Projects</strong></a></li>
+		</ul>
+	</li>
+
+   <li class="lv1_item"><a class="lv1_link" href="#students">Students<img class="more" src="images/more.gif" alt="" /></a>
+      <ul class="lv2_menu" style="position: absolute; left: 0px; top: 22px">
+         
+         		 <li class="lv2_item"><a class="lv2_link" href="https://jennyliang.me/">Jenny Liang</a></li>
+
+         		 <li class="lv2_item"><a class="lv2_link" href="https://cmumatt.github.io/">Matthew C. Davis</a></li>
+
+         		 <li class="lv2_item"><a class="lv2_link" href="https://horvathaa.github.io/">Amber Horvath</a></li>
+
+         		 <li class="lv2_item"><a class="lv2_link_separator_above" href="https://dayenam.com/"><span class="former">Former</span> Daye Nam</a></li>
+
+         		 <li class="lv2_item"><a class="lv2_link" href="https://lxieyang.github.io"><span class="former">Former</span> Michael Xieyang Liu</a></li>
+
+                  <li class="lv2_item"><a class="lv2_link" class="lv2_link" href="https://marybethkery.com/"><span class="former">Former</span> Mary Beth Kery</a></li>
+
+         		 <li class="lv2_item"><a class="lv2_link" href="https://toby.li/"><span class="former">Former</span> Toby Jia-Jun Li</a></li>
+
+
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~mcoblenz/"><span class="former">Former</span> Michael Coblenz</a></li>
+         
+         <li class="lv2_item"><a class="lv2_link" href=
+"https://www.cs.cmu.edu/~shihpinc/"><span class="former">Former</span> Kerry Shih-Ping Chang</a></li>
+
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~yyoon1/"><span class="former">Former</span> YoungSeok Yoon</a></li>
+         
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~faulring/"><span class="former">Former Staff</span> Andrew Faulring</a></li>
+
+         
+          <li class="lv2_item"><a class="lv2_link" href="https://from.so/"><span class="former">Former</span> Stephen Oney</a></li>
+        <li class="lv2_item"><a class="lv2_link" href="https://www.ics.uci.edu/~tlatoza/"><span class="former">Former</span> Thomas LaToza</a></li>
+        <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~cdoerner"><span class="former">Former Postdoc</span> Christian Doerner</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~jsstylos/"><span class="former">Former</span> Jeff Stylos</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://web.engr.oregonstate.edu/~cscaffid/"><span class="former">Former</span> Christopher Scaffidi</a></li> <!--  <span class="comment">(unofficial co-advisor)</span> -->
+         <li class="lv2_item"><a class="lv2_link" href="https://faculty.washington.edu/ajko/"><span class="former">Former</span> Amy Ko</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://www.jeffreynichols.com/"><span class="former">Former</span> Jeff Nichols</a></li>
+         <li class="lv2_item"><a class="lv2_link" href="https://faculty.washington.edu/wobbrock/"><span class="former">Former</span> Jake Wobbrock</a></li>
+         <li class="lv2_item"><a class="lv2_link_separator_above" href="#students"><strong>&raquo; All Students</strong></a></li>
+		</ul>
+	</li>
+
+   <li class="lv1_item"><a class="lv1_link" href="#courses">Courses<img class="more" src="images/more.gif" alt="" /></a>
+      <ul class="lv2_menu">
+      
+      <a href="/">
+      
+
+                        <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2025/"><span class="course_no">05-440 / 05-640</span><span class="course_date">Spring, 2025</span>
+           <span class="course_name">Interaction Techniques</span></li></a>
+
+
+      
+    <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
+           <span class="course_no">05-431 / 05-631</span><span class="course_date">Fall, 2022.</span>
+           <span class="course_name">Software Structures for User Interfaces (SSUI).</span></li></a>
+
+
+  
+    <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/~bam/uicourse/csmini2021/">
+           <span class="course_no">05-773A4</span><span class="course_date">Spring, 2021, Mini 4.</span>
+           <span class="course_name">Computer Science Perspectives in HCI, 
+(CS Mini).</span></li></a>
+  
+       <li class="lv2_item"><a class="lv2_link" href="https://www.cs.cmu.edu/%7Ebam/uicourse/830spring20/">
+           <span class="course_no">05-830</span><span class="course_date">Spring, 2020.</span>
+           <span class="course_name">Advanced User Interface Software.</span></li></a>
+
+      
+   
+
+
+                               
+        
+         <li class="lv2_item"><a class="lv2_link_separator_above" href="#courses"><strong>&raquo; All Courses</strong></a></li>
+		</ul>
+	</li>
+
+
+	<li class="lv1_item"><a class="lv1_link" href="#shortbio">Bio</a></li>
+	<li class="lv1_item"><a class="lv1_link" href="#editorial">Editorial Boards</a></li>
+   <li class="lv1_item"><a class="lv1_link" href="#personal">Family</a></li>
+   <li class="lv1_item"><a class="lv1_link" href="#links">Links</a></li>
+
+</ul>
+</div>
+
+
+
+<!-- javascript to handle special links inside menu items. E.g., EdgeWrite link -->
+<script language="javascript" type="text/javascript" defer>
+<!--
+	var edgewrite_link = document.getElementById("edgewrite_link");
+
+	edgewrite_link.onclick = function(e) {
+		cancelEvent(e);
+		location = "http://depts.washington.edu/ewrite/";
+	}
+
+	var euses_link = document.getElementById("euses_link");
+
+	euses_link.onclick = function(e) {
+		cancelEvent(e);
+		location = "https://eusesconsortium.org/";
+	}
+-->
+</script>
+
+
+
+
+
+<div id="content_below_menu">
+
+<div style="clear:both"></div>
+
+<div id="quick_links_container">
+
+   <div class="roundtop">
+	 <img src="images/tl.gif" alt=""
+	 width="10" height="10" class="corner"
+	 style="display: none" />   </div>
+
+    <div id="quick_links_content">
+
+	<ul>
+   
+<li>See my <strong> book</strong>: <em>Pick, Click, Flick! The Story of Interaction Techniques</em> at <a href="https://www.cs.cmu.edu/~bam/ixtbook/">ixtbook.com</a>. It  won a <a href="https://cse.umn.edu/cbi/news/myers-awarded-2025-cbi-human-computer-interaction-history-prize">2025 CBI Human-Computer Interaction History Prize</a>.
+</li>
+<li>I gave a talk at Stanford on October 21, 2025 based on a few stories from the book: <em>&quot;Pick, Click, Flick! Some Stories about Interaction Techniques,&quot;</em> which you can watch on <a href="https://www.youtube.com/watch?v=y585jH4xTiM">YouTube</a>.</li>
+
+<li>I taught a course at <a href="https://chi2025.acm.org/">CHI'25</a>: <a href="https://www.cs.cmu.edu/~bam/ixtshortcourse/">Interaction Techniques - History, Design and Evaluation</a></li>
+
+<li>In Spring, 2025, I taught: <a href="http://www.cs.cmu.edu/~bam/uicourse/05440inter2025/index.html">05-440 / 05-640  Interaction Techniques</a> using my <a href="https://www.cs.cmu.edu/~bam/ixtbook/">new book</a>!  <font size="1">(Jump right to the &nbsp;<a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2025/schedule.html">schedule</a> or 
+  <a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2025/homeworks.html">homeworks</a>).</font>
+ </li>
+
+   
+
+<li>I became the Director (Department Head) of the HCII on February 1, 2023.</li>
+<li>In Fall, 2022, I taught: <a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">05-431/631 Software Structures for User Interfaces (SSUI)</a>. </li>
+
+ 
+  
+  <li>I was interviewed for the
+ <em>99% Invisible</em>, podcast, episode 369, titled  &quot;Wait Wait&hellip;Tell Me!&quot; aired September 3, 2019. <a href="https://99percentinvisible.org/episode/wait-wait-tell-me/">html</a> and <a href="https://99percentinvisible.org/episode/wait-wait-tell-me/#play">audio</a>.</li>
+  <li>My Lifetime Research award talk at CHI'2017: <a href="https://www.youtube.com/watch?v=IVoovFR5nUY&index=4&list=PLqhXYFYmZ-VdN5HgctBjq-w8npaCY17E1">video</a> (1:18:12), <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/MyersCHI-AwardTalk2017slides.pdf">slides</a>, <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/2023-tree.pdf">2023 tree pdf</a>, <a href="https://tinyurl.com/myersadviseetree">advisee tree,</a> <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/ea10-myers-CHI-AwardTalk2017paper.pdf">abstract</a>, <a href="https://sigchi.org/awards/sigchi-award-recipients/2017-sigchi-awards/#brad-a-myers">SIGCHI&rsquo;s citation</a>, <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/skf-2017BradMyers-LifetimeResearchAwardBlurb.pdf">Steven Feiner's introduction</a>, and <a href="https://www.nicolaimarquardt.com/">Nicolai Marquardt</a>'s &quot;<a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/Nicolai Marquardt Myers talk Sketchnote CHI 2017.jpg">Sketchnote</a>&quot;.</li>
+  
+   <li><strong><a href="https://www.cs.cmu.edu/%7Ebam/acronyms.html">List of systems and  their acronyms</a></strong></li>
+   
+      <li><strong><a href="https://www.hcii.cmu.edu/seminar-series"> HCII Current Seminar Series</a></strong> </li>
+
+ <li>&quot;<strong>Human-Centered Methods for Improving API Usability</strong>.&quot; Stanford University Human-Computer Interaction Seminar on
+ People, Computers, and Design, 27 October, 2017, Palo Alto,
+ CA. <a href="https://www.youtube.com/watch?v=6meyYnrCQ5o&amp;index=1&amp;list=PLoROMvodv4rMyupDF2O00r19JsmolyXdD">YouTube video of talk</a>.</li>
+
+ <li><strong>Keynote address</strong> at WAPI: 1st International Workshop on API Usage and Evolution (<a href="https://w-api.github.io/">https://w-api.github.io/</a>), May, 2017. &quot;Human-Centered Methods for Improving API Usability&quot;.&nbsp;<a href="https://www.cs.cmu.edu/~NatProg/papers/Myers-WAPI-keynote%20submitted.pdf">local pdf</a>&nbsp;and&nbsp;<a href="https://www.cs.cmu.edu/~NatProg/papers/Myers%20WAPI%202017%20talk.pdf">slides</a>.</li>
+	
+	  <li>Co-Chair for the <a href="https://www.hcii.cmu.edu/hcii20">HCII 20th Anniversary Celebration</a>! November 1416, 2014.</li>
+	  </ul>
+    </div>
+
+   <div class="roundbottom">
+	 <img src="images/bl.gif" alt=""
+	 width="10" height="10" class="corner"
+	 style="display: none" />   </div>
+</div>
+
+
+
+
+<h2>Research Projects</h2>
+<ul>
+<li><a href="/afs/cs.cmu.edu/project/amulet-pane/NatProg/www/index.html">
+  Natural Programming</a>
+  <ul>
+    <li> Please try the <a dir="ltr" href="https://t.co/Mdw1hxoasy?amp=1" rel="noopener noreferrer" target="_blank" role="link">Adamite.net</a> Chrome extension - Exciting new research system for annotating documentation to help programmers collaborate and learn APIs with each other.</li>
+    <li>Try <a href="https://unakite.info/">Unakite</a>, our plugin for Chrome to help programmers organize information: <a href="https://unakite.info/">https://unakite.info/</a>.</li>
+    <li>Try our  toolkit for JavaScript: <a href="https://soney.github.io/constraintjs/ ">ConstraintJS</a></li>
+    <li>Collaboration on <a href="https://www.cs.cmu.edu/~NatProg/analysisengineering/">Analysis Engineering</a></li>
+  </ul>
+</li>
+</ul>
+<h3>Former Projects</h3>
+<ul>
+<li><a href="http://www.pebbles.hcii.cmu.edu/"> Pebbles Hand-Held Computer Project</a> including the
+  EdgeWrite text entry method (patented: U.S. Pat. No. 7,729,542
+  
+    [<a href="https://www.cs.cmu.edu/~pebbles/papers/US7729542.pdf">Patent</a>]).
+<li><a href="https://www.exploratoryprogramming.org">Variations to Support Exploratory Programming</a>, affliated with the former
+  <a href="https://eusesconsortium.org/">EUSES Consortium</a>
+<li>The <a href="https://www.etc.cmu.edu/engage/">ENGAGE Project on 
+  Educational Video Games</a>, sponsored by
+  <a href="https://www.darpa.mil/Our_Work/I2O/Programs/ENGAGE.aspx">DARPA</a>
+<li><a href="https://www.qolt.org/">Quality of Life Technology
+(QoLT)</a> Engineering Research Center.
+
+</li><li><a href="https://www.radar.cs.cmu.edu/">RADAR</a>:
+Reflective Agents with Distributed Adaptive Reasoning, which is part
+of: PAL program: Perceptive Assistant that Learns, which is part
+of: EPCA Enduring Personal Cognitive Agent.
+<i>includes</i>
+<a href="https://www.cs.cmu.edu/%7Ecitrine">Citrine Smart Clipboard</a>
+</li><li><a href="/afs/cs.cmu.edu/project/silver/www/index.html">
+The Silver Video Editor</a>
+
+</li><li><a href="/afs/cs.cmu.edu/project/cpie/www/index.html">Command Post of the Future</a>
+
+
+</li><li><a href="/afs/cs.cmu.edu/project/amulet/www/amulet-home.html">Amulet</a></li><li><a href="/afs/cs.cmu.edu/project/garnet/www/pbd-group/pbd.html">Demonstrational
+Interfaces</a></li><li><a href="/afs/cs.cmu.edu/project/garnet/www/garnet-home.html">Garnet</a>
+</li></ul>
+
+
+
+
+
+<hr size="1" noshade="noshade" />
+<!-- shortbio; short bio -->
+<h2>Biography<a name="shortbio"></a></h2>
+
+<B>(See also my <A HREF="resume.html">complete resume and publication list</A>).</b>
+
+<P>
+  Brad A. Myers is the Charles M. Geschke (SCS 1973) Director of the Human-Computer Interaction Institute and Professor  in the School of Computer Science at Carnegie Mellon
+University, with an affiliated faculty appointment in the Software and Societal Systems Department. He was chosen to receive the ACM SIGCHI Lifetime Achievement Award in Research in 2017, for outstanding fundamental and influential research contributions to the study of human-computer interaction, and his most recent book,  &quot;Pick, Click, Flick! The Story of Interaction Techniques&quot; won a 2025 CBI Human-Computer Interaction History Prize. He was awarded the 2022 Alan J. Perlis Award for Imagination in Computer Science &quot;for pioneering human-centered methods to democratize programming&quot;, from the School of Computer Science, Carnegie Mellon University. He is an IEEE Life Fellow, ACM Fellow, member of the CHI Academy, and winner of 19 Best Paper
+  type awards 
+  <!-- through CSCW'21 -->
+  and 6 Most Influential Paper Awards. He is the author or editor of over 550 publications, including three books,  and he has been on the editorial board of 8 journals. He has been a consultant on user interface design and implementation to over 90 companies, and regularly teaches courses on user interface design and software. Myers received a PhD in computer science at the University of Toronto where he developed the Peridot user interface tool. He received the MS and BSc degrees from the Massachusetts Institute of Technology during which time he was a research intern at Xerox PARC. From 1980 until 1983, he worked at PERQ Systems Corporation. His research interests include user interfaces,  programming environments, programming language design, end-user software engineering (EUSE), API usability, developer experience (DevX or DX), interaction techniques, programming by example, mobile computing, and visual programming.
+  
+  He belongs to ACM, SIGCHI, IEEE, and the
+  IEEE Computer Society.</P>
+<hr />
+<h2>Advisee Students <span class="description">(PhD, MS, BS, <i>in</i> CS, HCII, ISRI <i>
+at </i>CMU)</span><a name="students"></a></h2>
+
+<h3>Current Students</h3>
+<ul>
+         		 <li ><a href="https://jennyliang.me/">Jenny Liang</a>, PhD student, S3D</li>
+         		 <li><a href="https://cmumatt.github.io/">Matthew C. Davis</a>, PhD student, S3D</li>
+         		
+
+         
+</ul>
+
+
+<h3>Former Students &amp; PostDocs</h3>
+<ul>
+	 <li><a href="https://horvathaa.github.io/">Amber Horvath</a>,  PhD, HCII, August, 2024. <em>Meta-Information to Support
+Sensemaking by Developers</em>, CMU-HCII-24-103. <a href="https://doi.org/10.1184/R1/26880229.v1">doi.org/10.1184/R1/26880229.v1</a> Currently, Postdoc at MIT.</li>
+	 <li><a href="https://dayenam.com/">Daye Nam</a>, PhD, S3D, May, 2024, <em>User-centered Intelligent Information Support for Programmers</em>, CMU-S3D-24-101. <a href="http://reports-archive.adm.cs.cmu.edu/anon/s3d2024/CMU-S3D-24-101.pdf">pdf</a>. Currently, visiting researcher at Google. Next, Assistant Professor at University of California, Irvine.</li>
+
+	 <li><a href="https://lxieyang.github.io">Michael Xieyang Liu</a>, PhD, HCII, August, 2023. <em>Tool Support for Knowledge Foraging, Structuring, and Transfer During Online Sensemaking</em>. CMU-HCII-23-105. <a href="https://lxieyang.github.io/assets/files/thesis/defense/mxl-dissertation.pdf">pdf</a>. Currently at Google.</li>
+		 <li><a href="https://marybethkery.com/">Mary Beth Kery</a>, PhD, HCII, August, 2021. 
+          <em>Designing Effective History Support for Exploratory Programming Data Work</em>. CMU-HCII-21-106. <a href="http://reports-archive.adm.cs.cmu.edu/anon/hcii/CMU-HCII-21-106.pdf">pdf</a>. Currently, at Apple.</li>
+      <li ><a href="https://toby.li/">Toby Jia-Jun Li</a>, PhD, HCII, August, 2021. <em>A Multi-Modal Intelligent Agent that Learns from Demonstrations and Natural Language Instructions</em>. CMU-HCII-21-102. <a href="http://toby.li/files/TobyLi_Thesis.pdf.">pdf</a>. Currently, Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame.</li>
+      <li ><a href="https://www.cs.cmu.edu/~mcoblenz/">Michael Coblenz</a>, PhD, CSD, August, 2020. <em>User-Centered Design of Principled
+        Programming Languages</em>. CMU-CS-20-127. <a href="http://reports-archive.adm.cs.cmu.edu/anon/2020/CMU-CS-20-127.pdf">pdf</a>. Currently, Victor Basili Fellow in the Department of Computer Science at the University of Maryland.</li>
+      <li ><a href="https://www.cs.cmu.edu/~faulring/">Andrew Faulring</a>, Staff, Deceased.</li>
+      <li ><a href="https://www.cs.cmu.edu/~shihpinc/">Kerry Shih-Ping Chang</a>, PhD, HCII, May, 2016. <em>A Spreadsheet Model for Using Web Services and Creating Data-Driven Applications</em>. CMU-HCII-16-100. <a href="https://www.cs.cmu.edu/~shihpinc/pdf/Thesis_Kerry_Chang.pdf">pdf</a>. Currently, Senior Research Scientist at Instabase.</li>
+        <li><a href="https://www.cs.cmu.edu/~yyoon1/">YoungSeok Yoon</a>, PhD, ISR, May, 2015. 
+	      <em>Backtracking Support in Code Editing. </em><a href="https://reports-archive.adm.cs.cmu.edu/anon/anon/isr2015/CMU-ISR-15-103.pdf">pdf</a>. CMU-ISR-15-103. Currently at Google.</li>
+        <li><a href="https://from.so/">Stephen Oney</a>, PhD, HCII  May, 2015, <em>Expressing Interactivity with States and Constraints</em>. <a href="https://from.so/papers/soney_hcii_2015.pdf">pdf</a>. CMU-HCII-150-100. Currently, Assistant Professor at the University of Michigan School of Information.</li>
+        <li><a href="https://cs.gmu.edu/~tlatoza/">Thomas LaToza</a>, PhD  ISR, May, 2012, <em>Answering
+          Reachability
+          Questions</em>. CMU-ISR-12-104. <a href="https://reports-archive.adm.cs.cmu.edu/anon/isr2012/CMU-ISR-12-104.pdf">pdf</a>. Currently, Assistant Professor at Department of Computer Science, 
+Volgenau School of Engineering, George Mason University.</li>
+         <li> <a href="https://www.cs.cmu.edu/~cdoerner/">Christian Doerner</a>, 
+           PostDoc, 2010-2011, currently, Build Manager at BMW Group</li>
+<li><a href="https://www.cs.cmu.edu/%7Ejsstylos/">Jeff Stylos</a>, PhD CSD, May, 
+2009, <i>Making APIs More Usable with Improved API Designs, Documentation and Tools</i>, CMU-CS-09-130. 
+<a href="https://www.cs.cmu.edu/~natprog/papers/Stylos%20-%20Dissertation%20CMU-CS-09-130.pdf">pdf</a>. Currently, at SAS.</li>
+<li><a href="https://web.engr.oregonstate.edu/~scaffidc/">Christopher Scaffidi</a>, PhD 
+ISR, May, 2009, <i>Topes: Enabling End-User Programmers to Validate and Reformat 
+Data</i>, 
+CMU-ISR-09-105.
+<a href="https://web.engr.oregonstate.edu/~cscaffid/papers/eu_20090507_dissertation.pdf">
+pdf</a>. Currently, launching a startup.</li>
+<li><a href="https://faculty.washington.edu/ajko/">Amy J. Ko</a>, PhD, May, 2008, <i>
+Asking and Answering Questions about the Causes of Software Behavior</i>.
+CMU-HCII-08-106 and CMU-CS-08-122.
+<a href="https://faculty.washington.edu/ajko/papers/Ko2008Dissertation.pdf">pdf</a>. 
+Currently, Professor &amp; Informatics Program Chair at University of Washington.</li>
+<li><a href="https://www.jeffreynichols.com/">Jeff Nichols</a>, PhD, December, 2006, <i>Automatically Generating High-Quality User Interfaces for Appliances</i>.
+<a href="https://www.jeffreynichols.com/papers/dissertation-final-highres.pdf">pdf</a>. CMU-HCII-06-109.
+Currently, Research Scientist at Apple.
+</li>
+<li><a href="https://faculty.washington.edu/wobbrock/">Jake Wobbrock</a>.
+PhD, August, 2006, <i>EdgeWrite: A Versatile Design for
+Text Entry and Control</i>.  <a href="http://reports-archive.adm.cs.cmu.edu/anon/hcii/abstracts/06-104.html">Abstract
+ and pdf</a>. Currently, Professor in the Information School and, Adjunct Professor, Paul G. Allen School of Computer Science & Engineering,
+ at the University of Washington.</li>
+<li><a href="https://www.cs.cmu.edu/~mcoblenz/">Michael Coblenz</a>, MS CSD, 2006. <i>JASPER: Facilitating Software Maintenance Activities With Explicit Task Representations</i>. Currently, Victor Basili Fellow in the Department of Computer Science at the University of Maryland.</li>
+<li>Iván Eduardo González,
+BS CSD, 2006. <i>Thumb Based Interaction Techniques for Input on a Steering Wheel</i>. 
+Currently, at Amazon.</li><li>
+<a href="https://www.cs.cmu.edu/%7Efaulring/">
+Andrew Faulring</a>, BS in Computer Science, 1999.
+<i>Gold: Charting by Demonstration</i>.
+MS, 2005.
+Deceased.</li><li><a href="https://www.andrew.cmu.edu/%7Erseenich">Rajesh Seenichamy</a>, MS, <a href="https://www.ini.cmu.edu">
+Information Networking Institute</a>, August, 2003, <i>Communicating With X-10
+And Vehicle Functions To Enable Two-Way Remote Control.</i></li><li><a href="https://people.csail.mit.edu/rcm/">Rob Miller</a>, PhD,
+May, 2002, <a href="https://www.cs.cmu.edu/%7Ercm/papers/thesis/"><i>Lightweight
+Structure in Text.</i></a> Currently, Distinguished Professor of Computer Science at MIT.</li>
+<li><a href="https://www.cs.cmu.edu/%7Epane">John Pane</a>, PhD, May,
+2002, <a href="https://www.cs.cmu.edu/%7Epane/thesis/"><i>A Programming System for Children that is Designed for Usability</i></a>, 
+Currently at RAND</li><li> <!-- <A href="https://www.pitt.edu/~sgp3/"> -->
+Sailesh Panchang,
+MS,
+August, 2002, from the
+<a href="https://www.shrs.pitt.edu/rst/index.html">Dept. of
+Rehabilitation Science and Technology</a>, University of
+Pittsburgh. <i>Assessing Web Page Usability For Users Of Text To
+Speech Assistive Technology</i>.
+
+</li><li><a href="https://www.linkedin.com/in/juancasaresux">Juan Casares</a>, MS HCI, 2001. Currently, at Datrium.</li><li><a href="/afs/cs.cmu.edu/user/richm/public/www/whois-richm.html">Rich
+McDaniel</a>, PhD, May, 1999, <i>Creating Whole Applications Using
+Only Programming-by-Demonstration</i>. Currently at Siemens Corporate Research.</li>
+<li><a href="https://www.cs.ucr.edu/~ratana/">Chotirat ("Ann") Ratanamahatana</a>, BS in Computer Science, 1998.
+<i>A Textual Programming Language and Environment for Beginners</i>.
+
+<!-- <A href="/afs/cs.cmu.edu/user/landay/pub/www/whois-landay.html">-->
+Currently, Assistant Professor at Chulalongkorn University.
+</li>
+<li><a href="https://profiles.stanford.edu/james-landay">
+James Landay</a>, PhD, Dec. 1996, <i>Interactive Sketching for the Early
+Stages of User Interface Design</i>.  Currently, Professor, Stanford University. 
+
+</li>
+<li>
+<a href="https://obgyn.pitt.edu/people/francesmary-modugno-ms-phd-mph">Francesmary Modugno</a>, PhD, 1995. <a href="/afs/cs.cmu.edu/user/fmm/public/www/modugno-home.html">(old CMU web page)</a>
+<i>Extending End-User Programming in
+a Visual Shell With Programming by Demonstration and Graphical
+Language Techniques.</i> Currently, Professor, Department of Obstetrics, Gynecology and Reproductive Sciences.</li>
+
+<li>Nobuhisa Yoda, MS INI, Dec, 1994, <i>An Architectural Design of A
+Toolkit for Synchronous Groupware Applications</i>   
+</li><li>
+<!-- <A href="https://www.cnet.com/Community/Welcome/About/Staff/Technology/andreww.html"> -->
+Andrew Werth, MS INI, Oct. 1992, <i>Tourmaline: Formatting
+Document Headings by Example </i>
+</li><li>
+<!-- <A href="https://ns.redbaron.com/~rajan/"> -->
+Rajan Parthasarathy, BS CS, May, 1994,
+<i>Garnette: An Interactive User Interface Tool </i>
+
+</li>
+<li>
+<!-- <A href="https://www.research.microsoft.com/research/ui/dkosbie/">-->
+<a href="https://www.kosbie.net/">David Kosbie</a>. Co-Founder and Director, CMU CS Academy
+Associate Teaching Professor, CMU.</li></ul>
+
+<hr />
+<h2>Courses<a name="courses"></a></h2>
+<ul>
+
+ <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2025">05-440/05-640.  Interaction Techniques</a>, Spring, 2025. 34 students.</li>
+ <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">05-431 /  05-631 Software Structures for User Interfaces (SSUI)</a>. Fall'2022. 23 students</li>
+ <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2022">05-440/05-640.  Interaction Techniques</a>, Spring, 2022. 22 students + 1 audit.</li>
+ <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2021/">05-431 /  05-631 Software Structures for User Interfaces (SSUI)</a>. Fall'2021. 15 students.</li>
+ 
+   <li><a href="https://www.cs.cmu.edu/~bam/uicourse/csmini2021/"> 05-773A4: Computer Science Perspectives in HCI</a>, (CS Mini), Spring, 2021, Mini 4. 22 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2020/">05-431 /  05-631 Software Structures for User Interfaces (SSUI)</a>. Fall'2020. 17 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/830spring20/">05-830: Advanced User Interface Software</a>. Spring, 2020. 10 students.</li>
+  <li> <a href="https://www.cs.cmu.edu/~bam/uicourse/csmini2019/">05-773A4: Computer Science Perspectives in HCI</a>, (CS Mini), Spring, 2019, Mini 4. 26 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2019">05-440/05-640.  Interaction Techniques</a>, Spring, 2019. 28 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/05863fall18/">05-863/45-888: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2018, Mini-2. 72 students.</li>
+
+
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2018/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2018. (For the Heinz Executive Ed program). 9 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/05863fall17/">05-863/45-888: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2017, Mini-2. 75 students.</li>
+<li> 08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2017. 74 students.</li>
+
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2017/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2017. (For the Heinz Executive Ed program). 12 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/csmini2017/">05-773A3: Computer Science Perspectives in HCI</a>, 
+  (CS Mini), Spring, 2017, Mini 3. 31 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/830spring17/">05-830: Advanced User Interface Software</a>. Spring, 2017. 7 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall16/">05-863/08-763/45-888: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2016, Mini-2. 73 students.</li>
+<li>08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2016. 56 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2016/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2016. (For the Heinz Executive Ed program). 12 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/05440inter2016/">05-440/05-640  Interaction Techniques</a>, Spring, 2016. 30 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall15/">05-863/08-763/45-888: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2015, Mini-2.  70 students.</li>
+  <li> 08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2015. 76 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2015/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2015. (For the Heinz Executive Ed program). 11 students</li>
+  <li><a href="https://csmini15.hciresearch.org/">05-773A3: Computer Science Perspectives in HCI</a>, 
+    (CS Mini), Spring, 2015, Mini 3. 12 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall14/">05-863/08-763/45-888: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2014, Mini-2. 72 students</li>
+  <li> 08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2014. 78 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2014/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2014. (For the Heinz Executive Ed program). 17 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/2014inter/">05-899A/05-499A: Interaction Techniques,</a> Spring, 2014. <em>New Course!</em> 26 students</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall13/"> 05-863/08-763/46-863: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2013, Mini-2. 70 students</li>
+  <li>08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+  MSIT eBusiness program, Fall, 2013. 65 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2013/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2013. (For the Heinz Executive Ed program). 14 students.</li>
+  <li><a href="https://csmini13.hciresearch.org/">05-773A4: Computer Science Perspectives in  HCI</a>, Spring, 2013, Mini 4. 14 students.</li>
+  <li><a href="https://www.cs.cmu.edu/~bam/uicourse/830spring13/">05-830: Advanced User Interface Software</a>. Spring, 2013. 15 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall12/">
+  05-863/08-763/46-863: Introduction to Human Computer Interaction for Technology Executives</a>, Fall, 2012, Mini-2. 60 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2012/">08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+  MSIT eBusiness program,</a> Fall, 2012. 47 students.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/95763Z5summer2012/">95-763 Z5: Introduction to Human Computer Interaction for Technology Executives</a>, Summer, Mini-5, 2012. (For the Heinz Executive Ed program). 11 students</li>
+
+<li><a href="https://www.hcii.cmu.edu/capstone-project">05-671: Masters HCI Project</a>, Spring, 2012. 51 students</li>
+
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall11/">
+          05-863/08-763/46-863: Introduction to Human Computer Interaction for Technology Executives, </a>Fall, 2011, Mini-2. 58 students</li>
+
+<li >08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2011. 48 students</li>
+<li ><a href="https://www.cs.cmu.edu/~bam/uicourse/2011hasd/">
+  05-899D: Human Aspects of Software Development (HASD)</a>, Spring, 2011. 
+  7 students for credit, plus 5 audit.</li>
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall10/">05-863/08-763/46-863: Introduction to Human Computer Interaction for Technology Executives.</a> 
+Fall, 2010, Mini-2. 65 students.</li>
+
+<LI>08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2010. 47 students.</li>
+
+<li>05-671/672: <a href="https://www.hcii.cmu.edu/capstone-project">Masters HCI Project</a>. Spring/Summer, 2010. 12/48 units. 50 students.</li>
+
+<li><a href="https://www.cs.cmu.edu/~bam/uicourse/08763fall09/">
+05-863/08-763/46-863: Introduction to Human Computer Interaction for Technology Executives</a>. Fall, 2009, Mini-2. 32 students.</li>
+
+<LI>08-702, 08-703: Contextual Design, User Interface Design and Testing. For 
+MSIT eBusiness program, Fall, 2009. 24 students.</li>
+
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/830spring09/">
+05-830: Advanced User Interface Software</a>. Spring, 2009. 6 students.</li>
+
+</li>
+<li>08-702, 08-703: Contextual Design, User Interface Design and Testing. For
+MSIT eBusiness program, Fall, 2008. 38 students.</li>
+
+<li><a href="uicourse/08763fall08/index.html">05-863 / 08-763 / 46-863: Introduction to Human Computer Interaction for
+Technology Executives</a>. Fall, Mini 2, 2008. 
+
+<li>08-702, 08-703: Contextual Design, User Interface Design and Testing. For
+MSIT eBusiness program, Fall, 2007. 27 students.
+<a href="https://ebiz.isri.cmu.edu/ft2008/">web site</a> (requires login)</li>
+
+<li><a href="uicourse/08763fall07/index.html">05-863 / 08-763 / 46-863: Introduction to Human Computer Interaction for
+Technology Executives</a>. Fall, Mini 2, 2007. 39 students.</li>
+<!-- 08-xxx is ISR and 46-xxx is Tepper -->
+
+<li>05-671/672: <a href="https://www.hcii.cmu.edu/mhci/mhci_projects">Masters HCI Project</a>. Spring/Summer, 2007. 12/48 units. 29/28 students.
+
+</li>
+<li>08-702, 08-703: Contextual Design, User Interface Design and Testing. For
+MSIT eBusiness program, Fall, 2006. 32 students.
+<a href="https://ebiz.isri.cmu.edu/ft2006/">web site</a> (requires login)</li>
+
+<li><a href="uicourse/17770/index.html">17-770: Human Computer Interaction for
+Technology Executives</a>. (For
+the Tepper School of Business, Technology Leadership Track). Fall, 2006.
+12 students. </li>
+<li>05-671/672: <a href="https://www.hcii.cmu.edu/mhci/mhci_projects">Masters HCI Project</a>. Spring/Summer, 2006. 12/48 units. 29/28 students.
+</li>
+<li>96-766, 96-768: Contextual Design, User Interface Design
+and Testing. For MSIT eBusiness program, Fall, 2005. 6/6 units. 28 students.
+<a href="https://ebiz.isri.cmu.edu/ft2005/">web site</a> (requires login)
+
+
+</li>
+<li>96-766, 96-768: Contextual Design, User Interface Design
+and Testing. For MSIT eBusiness program, Fall, 2004. 6/6 units. 40 students.
+<a href="https://ebiz.isri.cmu.edu/ft2004/">web site</a> (requires login)
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/830fall04/">05-830: Advanced User Interface Software</a>. Fall, 2004.
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/20790utc04/">20-790: Human-Computer Interaction for eCommerce</a>.
+Mini-6, Summer Session Two, 2004. (Taught for the
+<a href="https://www.ecom.cmu.edu/progr_flex.htm">UTC Flex-Mode distance-ed program</a>)
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/20790summer04/">20-790: Human-Computer Interaction for eCommerce</a>.
+Mini-6, Summer Session Two, 2004.
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/630spring04/">05-630 / 05-430, Programming Usable Interfaces</a>. Spring, 2004.
+
+
+</li>
+<li><a href="uicourse/830spring03/index.html">05-830, Advanced User Interface Software</a>. Spring, 2003.
+
+</li>
+<li>20-790: Human-Computer Interaction for eCommerce. Spring, first mini,
+2003. (Taught for the
+<a href="https://www.ecom.cmu.edu/progr_flex.htm">UTC Flex-Mode distance-ed program</a>)
+
+</li>
+<li>96-766, 96-768, 96-771: CMU West Campus -
+<a href="https://west.cmu.edu/masters/ebus/index.htm">Information Technology Masters of eBusiness Technology</a>,
+Contextual Design, Fall, 2002 and Spring 2003.
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/20790fall02/">20-790: Human-Computer Interaction for eCommerce</a>. Fall, second mini, 2002.
+
+</li>
+<li><a href="uicourse/eComHCI02/index.html">Human-Computer Interaction in eCommerce</a>. June 26 - August 9, 2002.
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/631fall01/">05-631 Software Architecture for User Interfaces</a>, Fall, 2001.
+
+</li>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/uicourse/20790fall01/">20-790: Human-Computer Interaction for eCommerce</a>. Fall, second mini, 2001.
+
+</li>
+<li><a href="uicourse/eComHCI01/index.html">Human-Computer Interaction in eCommerce</a>. Summer, 2001. 45
+students.
+</li>
+<li>One Week Short Course:
+<a href="https://www.cs.cmu.edu/%7Ehcii/Education/OneWeekCourse/">"User Interface Design and Implementation"</a>. Taught with
+Bonnie John, Randy Pausch, Ken Koedinger, Jodi Forlizzi and Len Bass.
+July 17-21, 2000.
+</li>
+<li>05-830,
+<a href="/afs/cs/user/bam/www/uicourse/2001spring/index.html"><b>User Interface Software</b></a>,
+Spring, 2001.
+
+</li>
+<li>05-830,
+<a href="/afs/cs/user/bam/www/uicourse/2000spring/index.html"><b>User Interface Software</b></a>,
+Spring, 2000.
+</li>
+<li>05-830,
+<a href="/afs/cs/user/bam/www/uicourse/1999spring/index.html"><b>User Interface Software</b></a>,
+Spring, 1999.
+</li>
+<li>05-830,
+<a href="/afs/cs/user/bam/www/uicourse/1998spring/uisoftwarecourse98.html"><b>User Interface Software</b></a>,
+Spring, 1998.
+</li>
+<li>05-830,
+<a href="/afs/cs/user/bam/www/uicourse/1997spring/uisoftwarecourse97.html"><b>User Interface Software</b></a>,
+Spring, 1997.
+</li>
+<li>15-621 and 15-499(A),
+
+<b>Intro to User Interface Programming</b>,
+taught with
+<a href="https://icie.cs.byu.edu/dan.html">Dan Olsen</a>,
+Fall, 1996.
+</li>
+<li>HCI2: HCI Software Tools - A one day short course in the
+Carnegie Mellon Summer School of Computer Science, 1996
+</li>
+<li>15-820 (B) <a href="/afs/cs/user/bam/www/uicourse/uisoftwarecourse96.html">
+<b>Advanced Topics in HCI: User Interface Software</b></a>,
+Spring, 1996.
+</li>
+<li>17-698B or 15-499A
+<a href="/afs/cs/project/amulet/www/15499a-fall95.html"><b>Introduction to User Interface Programming</b></a>, taught with
+<a href="https://www.cs.cmu.edu/%7Ejhm/">Jim Morris</a>,
+Fall, 1995.
+</li>
+<li>15-820(C) or 15-499(B), <b>Advanced Topics in HCI: User
+Interface Software</b>,  Spring, 1994.
+
+</li>
+<li><a href="/afs/cs.cmu.edu/user/bam/www/uicourse/special/index.html">Special 1.5 hour lecture on User Interfaces</a>
+</li></ul>
+
+
+
+
+<HR>
+<H2><a name="editorial"></a>Member of the Editorial Board of:</H2>
+<UL>
+<LI><a href="https://www.journals.elsevier.com/journal-of-computer-languages"><em>Journal of Computer Languages</em></a> (COLA)</LI>
+
+<LI>KSI Research Inc.'s <a href="https://ksiresearch.org/jvlc/">Journal of Visual Languages and Computing</a>
+</UL>
+
+<h3>Formerly</H3>
+<UL>
+<LI>Elsevier's <A href="https://www.journals.elsevier.com/journal-of-visual-languages-and-computing/"><I>Journal of Visual
+  Languages and Computing</I></A>
+<LI><A href="https://iwc.oxfordjournals.org/"><I>Interacting with Computers</I></A>
+</LI>
+  <LI><em><a href="https://hci-journal.com"><i>Human-Computer Interaction</i> Journal</a></em></LI>
+  <LI><em><a href="https://ksiresearchorg.ipage.com/vlss/">Journal of Visual Languages and Sentient Systems</a></em></LI>
+  <LI><A href="https://www.acm.org/tochi">ACM
+  <I>Transactions on Computer-Human
+    Interaction</I></A></LI>
+  <LI>ACM <A HREF="https://www.acm.org/interactions">
+<I>interactions</I></A> magazine</LI>
+</UL>
+
+<hr />
+<a name="personal" id="personal"></a>
+<h2>Family</h2>
+<ul>
+<li>See our
+   <a href="MyersHolidayCard2020.pdf"> 2020 Holiday Greeting Card (pdf)</a>
+   
+<font size="1">(and <a href="card97.jpeg">1997</a>, <a href="family98card.jpeg">
+1998</a>, <a href="MyersCard2004.JPG">2004</a>, <a href="MyersHoliday2005.jpeg">
+2005</a>, <a href="Myers2006HolidayCard.JPG">2006</a>,
+<a href="MyersHolidayCard2008.JPG">2008</a>, 
+<a href="myersholidaycard2009.jpg">2009</a>, <a href="MyersHolidayCard2012.pdf">2012</a>,
+<a href="Myers-card 2014.pdf">2014</a>,
+<a href="MyersHolidayCard2016.pdf">2016</a>,
+ <a href="MyersHolidayCard2017.pdf">2017</a>)</font></li>
+<!-- <A href="https://www.cs.cmu.edu/~bam/ryanm/">Ryan</A> and   <A href="/afs/cs/user/bam/www/reid/reidm.html">Reid</a>  have their own pages, as does my Dad: -->
+<li>Here is my Father's page: <a href="https://www.bmyersphoto.com/"> Bert Myers</a>. </li>
+<li>One of my sons, Ryan Myers, works for <a href="https://www.industryweapon.com/">Industry Weapon</a> in Pittsburgh.</li>
+<li>My parent's collection of historical papers: <a href="https://specialcollections.tulane.edu/archon/?p=collections/findingaid&id=465&q=&rootcontentid=90163">Grossman and Myers families papers</a>, Manuscripts Collection 909, Louisiana Research Collection, Howard-Tilton Memorial Library, Tulane University, New Orleans, LA 70118.</li>
+<li>My sister, <a href="https://www.linkedin.com/in/melaniebronfin">Melanie Bronfin</a>, was the Executive Director, <a href="https://www.policyinstitutela.org/">Louisiana Policy Institute for Children</a>.</li>
+<li>My brother-in-law <a href="https://www.linkedin.com/in/jonathan-herman-14b85262">Jonathan Herman</a>, has his own boutique law firm: <a href="https://www.herman-lawfirm.com/">Herman Law Firm</a> and writes a <a href="https://www.managedcarelitigationupdate.com/">newsletter</a>.</li>
+</ul>
+
+<hr />
+
+<h2>Links<a name="links" id="links"></a></h2>
+<ul>
+
+<li>My entry at:
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Brad_A._Myers">A page about me in Wikipedia</a>
+<li><a href="https://scholar.google.com/citations?user=E1cp_aYAAAAJ&amp;hl=en"> My 
+  citations page on Google Scholar</a> (38,089 total citations, h-index 99 as of 7/10/2024)</li>
+<li><a href="https://portal.acm.org/author_page.cfm?id=81100013136">My "Author Profile Page" at ACM</a></li>
+<li><a href="https://orcid.org/0000-0002-4769-0219">My Orcid ID: 0000-0002-4769-0219</a>
+
+<li><a href="https://dblp.uni-trier.de/pers/hd/m/Myers:Brad_A=">My page in dblp computer science bibliography</a></li>
+<li><a href="https://carnegie-mellon.academia.edu/BradMyers">Academia.edu</a> <a href="https://carnegie-mellon.academia.edu/BradMyers" id="academia-button">Follow me on Academia.edu</a><script src="//a.academia-assets.com/javascripts/social.js"></script></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/myncbi/1HcobDslQ7kczt/bibliography/public/">My Bibliography at the U.S. National Library of Medicine</a>.</li>
+<li><a href="https://www.researchgate.net/profile/Brad_Myers">My ResearchGate profile</a></li>
+<li> <a href="https://www.interaction-design.org/references/authors/brad_a__myers.html">Interaction-Design.org</a>
+<li><a href="https://hcipioneers.wordpress.com/portfolio/myers-brad/">Listed as an HCI Pioneer</a> in "Encounters with HCI Pioneers: A Personal Photo Journal" by Ben Shneiderman
+<li> <a href="https://academic.research.microsoft.com/Author/134086/brad-a-myers">Microsoft Academic Search (MAS)</a></li>
+<li><a href="https://genealogy.impa.br/id.php?id=13817">On the Mathematics Genealogy Project</a>
+<li><a href="https://www.linkedin.com/in/bradamyers">My LinkedIn profile</a>
+ <a href="https://www.linkedin.com/in/bradamyers" target="_blank">
+      
+           <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Brad Myers's profile on LinkedIn"></a>
+<li>Follow me on <a href="https://twitter.com/bradamyers">X (Twitter)</a>. <a href="https://twitter.com/bradamyers" class="twitter-follow-button" data-show-count="false">Follow @bradamyers</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<li><a href="https://www.youtube.com/user/myersbrada">My YouTube channel</a> and the <a href="https://www.youtube.com/playlist?list=PL3856C8FlIWfr_tX8CMUhOJvl34ylClgb">playlist of my group's videos</a>.
+</ul>
+</li>
+
+<li>My place in listings:
+  <ul>
+<li>SIGCHI <strong>Lifetime Achievement Award in Research</strong>, 2017. <a href="https://www.sigchi.org/about/awards/2017-sigchi-awards#brad-a-myers">Citation</a>, <a href="https://www.youtube.com/watch?v=IVoovFR5nUY&amp;index=4&amp;list=PLqhXYFYmZ-VdN5HgctBjq-w8npaCY17E1">video</a> (1:18:12), <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/MyersCHI-AwardTalk2017slides.pdf">slides</a>,  <a href="https://tinyurl.com/myersadviseetree">advisee tree</a>, <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/ea10-myers-CHI-AwardTalk2017paper.pdf">abstract</a>, <a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/skf-2017BradMyers-LifetimeResearchAwardBlurb.pdf">Steven Feiner's introduction</a>, and <a href="https://www.nicolaimarquardt.com/">Nicolai Marquardt</a>'s &quot;<a href="https://www.cs.cmu.edu/~bam/CHI-award-talk/Nicolai Marquardt Myers talk Sketchnote CHI 2017.jpg">Sketchnote</a>&quot;.</li>
+<!-- no longer being updated
+<li>About 7th most published author in HCI, according to 
+  <a href="https://hcibib.org/authors.html">hcibib.org</a></li>
+<li>Ranked 
+4th overall in all years  in <a href="https://academic.research.microsoft.com/RankList?entitytype=2&topDomainID=2&subDomainID=12&last=0&start=1&end=100">Microsoft's Academic Search for HCI</a> 
+based on "Field Rating&quot; </li>
+-->
+<li>Listed in 
+<a href="https://www.cs.ucla.edu/~palsberg/h-number.html">
+The h Index for Computer Science</a>: Computer Science researchers who
+have an h index of 40 or higher according to Google Scholar</li>
+<!-- 
+<li>11th by h-index and 6th by i10-index in HCI by <a href="https://lintool.github.io/scholar-scraper/index-hci.html">scholar-scraper</a>.</li>
+<li>
+<a href="https://academic.research.microsoft.com/Conference/789/chi-computer-human-interaction">Most published author at the CHI conference</a>, according to Microsoft's Academic Search (with 72)</li> -->
+<li>
+<a href="https://dl.acm.org/conference/chi/authors">7th most published author at the CHI conference</a>, according to ACM Digital Library (with 100)</li>
+<li>In the top 105 <a href="https://dl.acm.org/event.cfm?id=RE228&CFID=600759304&CFTOKEN=52689922">most published authors at the ICSE conference</a>, according to ACM Digital Library (with 29)</li>
+<li>In <a href="https://www.guide2research.com/scientists/page-4">Guide2Research's ranking of &quot;Best Computer Science Scientists&quot;</a> for 2024, ranked 383  in world and 227 in the US.</li>
+
+
+<li>Fellow of the IEEE:  <a href="https://www.ieee.org/documents/fellows_class_2013.pdf">IEEE 2013 List</a></li>
+
+<li>Fellow of the ACM:
+  <a href="https://awards.acm.org/award_winners/myers_1692086">My citation at ACM</a></li>
+<li>Elected to the
+  <a href="https://archive.sigchi.org/awards/sigchi-award-recipients/2004-sigchi-awards/">CHI Academy</a>, 2004, as one of the top 25
+  "principal
+  leaders of the field" of HCI.
+  <a href="https://archive.sigchi.org/awards/sigchi-award-recipients/2004-sigchi-awards/#bradmyers"><img title="Visit the SIGCHI Home Page" alt="SIGCHI - Special Interest Group on Computer Human Interaction" src="https://www.cs.cmu.edu/~bam/sigchi-logo-only.png" border="0" align="right" width="64" height="64">My citation at ACM</a>, and 
+  <a href="http://www.chi2004.org/program/prog_awards.html">my citation at CHI'04</a></li>
+<li>Ranked <a href="https://research.com/scientists-rankings/computer-science">277 in the world</a> ranking and <a href="https://research.com/scientists-rankings/computer-science/us">156 in United States</a> by D-index (Discipline H-index) in Computer Science by Research.Com. (as of May, 2025)</li>
+
+
+  </ul>
+</li>
+   <li> <a href="https://www.cs.cmu.edu/%7Ebam/chibadges/">Badges and ribbons from all previous SIGCHI Conferences</a> </li>
+   <li><a href="http://www.apiusability.org">API Usability web site.</a>
+<li><a href="https://www.cs.cmu.edu/%7Ebam/acronyms.html">List of our systems and their
+  acronyms</a></li>
+	<li><a href="hcii-lobby.html">New NSH HCII Lobby</a>
+	<li>
+<a href="https://www.cs.cmu.edu/%7Ebam/2019_house_concert_flier_James_Lee_Stanley.pdf">Concert with James Lee Stanley, Friday, April 12, 2019, 8:00 PM</a>. 
+<font size="1">(See also previous concerts: <a href="https://www.cs.cmu.edu/%7Ebam/House-concert-james-and-john-6-7-09.html">June 7th, 
+2009 with John Batorf</a>,  <a href="https://www.cs.cmu.edu/%7Ebam/JamesLeeStanleyConcert.html">June 21st, 2008</a>,
+<a href="https://www.cs.cmu.edu/%7Ebam/JamesLeeStanleyConcert-April07.html">April 28, 2007</a>,
+
+<a href="https://www.cs.cmu.edu/%7Ebam/JamesLeeStanleyConcert-Oct2005.html">Oct 23, 2005 with John Batdorf</a>,
+<a href="https://www.cs.cmu.edu/%7Ebam/JamesLeeStanleyConcert-Feb2005.html">Feb 5, 2005</a>, and
+
+<a href="https://www.cs.cmu.edu/%7Ebam/PeterTorkJamesLeeStanleyConcert.html">Peter Tork and James Lee Stanley, Feb 1, 2004</a>.)</font></li>
+<li><a href="testimony.html">My Legal Intellectual Property Testimony work</a></li>
+	<li> General Conference Chair, <a href="https://www.cs.cmu.edu/~vlhcc2011/">IEEE VL/HCC'2011 Conference</a> </li>
+	<li> Was Co-Chair for <a href="https://www.sei.cmu.edu/isis/workshops/seeup-2009/">SEEUP'09 Workshop at ICSE</a></li>
+<li><a href="worldusabilityday2006/index.html">Pictures of Brad as a "Celebrity
+Judge" of the Pittsburgh World Usability Game Show</a></li>
+<li><a href="https://eusesconsortium.org/weuse/">WEUSE II: Workshop on End-User Software Engineering</a>
+</li>
+	<li>Committee to plan the
+	<a href="https://www.hcii.cmu.edu/HCII_Anniversary/">HCII Twelfth Anniversary Celebration</a></li>
+	<li>Former CubMaster of <a href="https://trfn.clpgh.org/pack109/">Cub Scout Pack 109</a>
+	</li>
+	<li>Conference Co-Chair for <a href="https://www.hcic.org/hcic2004/">HCIC'04</a></li>
+	
+	<li>Editor, <a href="https://www.teco.edu/hc/">IEEE Computer Special Issue on Handhelds</a></li>
+	<li>My talk at Stanford on Pebbles from 2002:
+	<a href="https://stanford-online.stanford.edu/courses/cs547/021122-cs547-100.asx">streaming video of the full talk</a> (1hr26min).</li>
+	<li><a href="https://www.cs.cmu.edu/%7ENatProg/ICFP02/index.html">My ICFP'02 Talk on Natural Programming</a>
+	</li>
+	<li><a href="https://www.cs.orst.edu/%7Eburnett/vl2000/">IEEE Symposium on Visual Languages</a>, VL'2000, Seattle, Washington,
+where I gave the opening keynote.</li>
+	<li>The <a href="https://www.cs.brown.edu/people/ifc/hci.html">Human Computer Interaction Working Group</a> of the
+	  ACM Workshop on Strategic Directions in Computing Research,
+	  Cambridge, Massachusetts, June 14-15, 1996, of which I was co-chair.
+	  
+</li>
+	<li><a href="/afs/cs/user/bam/www/mm97.html">Keynote address at the ACM Multimedia'97 Conference</a>
+	</li>
+	<li><a href="/afs/cs/user/bam/www/toolnames.html">Old list of User Interface
+Software Tools</a> and (<a href="https://docs.google.com/document/d/1hQbMwK_iyjX-wpu_Xw_H-3zLIgcHxWViyMvYO7mDuFg/edit">updated list from class in 2013</a>)</li>
+	<li><a href="https://www.hcii.cmu.edu/">Human Computer Interaction
+Institute<img src="https://www.cs.cmu.edu/afs/cs/user/bam/www/hcii_vsmall_dot_only.gif" align="middle" height="50" width="44"></a>
+	</li>
+	<li><a href="https://www.acm.org/sigchi/">ACM SIGCHI's main page</a> </li>
+	<li><a href="https://www.cc.gatech.edu/gvu/UIST95/uist95top.html">UIST'95<img src="uist/UIST95logocolortiny.gif" align="middle"></a> that
+I was the chair for.
+</li>
+	<li><a href="https://web.media.mit.edu/%7Elieber/PBE/">PBD Home
+page</a> </li>
+	<li><a href="/afs/cs/user/bam/www/langbook.html">Languages for Developing
+User Interfaces</a> </li>
+	<li><a href="https://www.arneberg.com/rqb/">Racketball FAQ</a>
+and
+<a href="http://usra.org/Rulebook/tabid/839/Default.aspx">Official Rules</a>
+	</li>
+	<li><a href="numbers.html">Computer Almanac (numbers)</a>
+<!-- <LI><A href="https://community-1.webtv.net/otherbox/YouaMyers/">
+A site for people named "Myers" (none related to me!)</A>
+-->
+
+	<li>Our <a href="https://www.cs.cmu.edu/%7Ebam/dogpics/">former dog, Oreo</a> (2001-2013)</li>
+
+<!-- gone --	<li><a href="https://www.fatcow.com/edu/bam-cs-bl/">This page translated into Bulgarian</a> by Albert Ward 
+	(as of 9/14/2011)</li>
+    -->
+    
+	</ul>
+
+
+<!-- copyright -->
+<hr />
+	Copyright © 2023 - Brad Myers. Designed by <a href="https://www.cc.gatech.edu/~dchau/">Duen Horng ("Polo") Chau</a>
+
+</div>
+
+
+
+
+
+</td></tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+</html>
+
+
+</td></tr></table>
+</body>
+</html>
+</html>

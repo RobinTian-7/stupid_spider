@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+        <title>Arvind Narayanan &mdash; Princeton</title>
+        <link rel="stylesheet" type="text/css" 
+                href="https://www.cs.princeton.edu/~arvindn/css/base.css" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="me" href="https://mastodon.social/@randomwalker"></a>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        
+    <style>
+
+@media (max-width: 600px) {
+  h1 {
+	  width: 980px;
+  }
+}
+
+    div.innercontainer{
+        width: 980px;
+    }
+
+    div.top{
+  display: flex;          /* turn on flex layout   */
+  flex-direction: row;    /* left-to-right columns */
+  gap: 0.75rem;           /* optional gutter       */
+    max-width: 980px;      /* cap total width */
+  width: 100%;           /* use full width if <980px */
+  margin: 0 auto;        /* center horizontally if narrower than viewport */
+        margin-top: 35px;
+    }
+
+    div.main{
+        margin: 0;
+	flex 1 1 75%;
+
+    }
+
+    div.topmiddle{
+        margin-right: 0px;
+        margin-left: 0px;
+        /*padding-left: 60px;
+	width: 250px;*/
+	text-align: right;
+	width: 30%;
+    }
+
+    div.widget{
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.widget.left{
+        width: 460px;
+        padding-right: 60px;
+    }
+
+    div.widget.right{
+        padding-right: 0px;
+        width: 460px;
+    }
+
+    div.widget p{
+        font-size: 90%;
+    }
+
+    p.lead{
+        font-size: 144%;;
+        line-height:150%;
+    }
+
+    p.indepth{
+        text-align: right;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    h3 a{
+        font-weight: 600;
+        font-family: "Open Sans";
+        font-size: 90%;
+    }
+
+    #navbar {
+        text-align: justify;
+        margin-left:auto;
+        margin-right:auto;
+        width:980px;
+    }
+
+    #navbar a {
+      display: inline-block;
+    }
+    #navbar:after {
+      content: '';
+      width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+      display: inline-block;
+    }
+
+    </style>
+
+</head>
+<body>
+
+<div class="outercontainer home-page">
+<h1>Arvind Narayanan &mdash; Princeton </h1>
+
+
+<p id='navbar'>
+<a href="https://www.cs.princeton.edu/~arvindn/publications">Publications</a>  
+&nbsp; &nbsp; &nbsp; &nbsp;
+<!--a href="https://www.cs.princeton.edu/~arvindn/advising">Advising</a>  
+	&nbsp; &nbsp; &nbsp; &nbsp;-->
+<a href="https://www.cs.princeton.edu/~arvindn/teaching">Teaching</a>  
+&nbsp; &nbsp; &nbsp; &nbsp;
+<a href="https://www.cs.princeton.edu/~arvindn/talks">Talks</a>  
+&nbsp; &nbsp; &nbsp; &nbsp;
+<!--a href="https://www.cs.princeton.edu/~arvindn/media">Press</a>  
+	&nbsp; &nbsp; &nbsp; &nbsp;-->
+<a href="https://www.cs.princeton.edu/~arvindn/bio">Bio</a>
+
+</p>
+
+<div class="innercontainer">
+
+
+
+<div class="top" >
+
+<div class="main" style="float:left">
+<p class="lead">
+Professor of computer science, Princeton University <br/>
+Director, <a href="https://citp.princeton.edu/">Center for Information Technology Policy</a>
+</p> 
+<p class="lead">
+I study the societal impact of digital technologies, especially AI. </p>
+
+</div>
+
+<div class="topmiddle" style="margin-top:0.25em; float:right; line-height: 2">
+<!--Office: <a href="https://maps.google.com/maps?q=sherrerd+hall+princeton+nj&sll=40.348313,-74.669842">308 Sherrerd</a>
+<br/>
+
+609-258-9302<br/> 
+-->
+
+<a href="mailto:arvindn@cs.princeton.edu">arvindn@cs.princeton.edu</a>
+<!--br/>
+Newsletter: <a href="https://normaltech.ai/">AI as Normal Technology</a-->
+<br/>
+LinkedIn: <a href="https://linkedin.com/in/randomwalker">@randomwalker</a>
+<br/>
+Twitter/X: <a href="https://twitter.com/random_walker">@random_walker</a>
+<br/>
+YouTube: <a href="https://www.youtube.com/@ArvindOnAI">Arvind on AI</a>
+
+
+
+</div>
+
+
+
+</div>
+
+<div class="bottom" style="clear:both;">
+<div class="widget">
+	<h3 class="header" style="margin-bottom:15px">AI as normal technology</h3>
+
+	<p><em>AI as Normal Technology</em> is an <a href="https://knightcolumbia.org/content/ai-as-normal-technology">essay</a>, an ongoing book project, and a <a href="https://normaltech.ai">newsletter</a> in collaboration with <a ref="https://www.cs.princeton.edu/~sayashk/">Sayash Kapoor</a>. It is a framework for thinking about AI and its future impacts, and has become the leading intellectual alternative to the view of AI as impending superintelligence. The essay has been reviewed or covered in depth by <a href="https://www.economist.com/finance-and-economics/2025/09/04/what-if-artificial-intelligence-is-just-a-normal-technology">the Economist</a>, <a href="https://www.newyorker.com/culture/open-questions/two-paths-for-ai">the New Yorker</a>, <a href="https://www.nytimes.com/2025/08/24/opinion/chat-gpt5-open-ai-future.html">several</a> <a href="https://www.nytimes.com/2025/08/20/opinion/ai-technology-chatgpt.html">times</a> by <a href="https://www.nytimes.com/2025/08/19/opinion/artificial-general-intelligence-superintelligence.html">the NYT</a>, by <a href="https://www.technologyreview.com/2025/04/29/1115928/is-ai-normal/">MIT Tech Review</a>, and many other outlets.</p>
+
+<p>The <a href="https://normaltech.ai/">newsletter</a> (previously named AI Snake Oil) is read by 70,000 researchers, policy makers, journalists, and AI enthusiasts. <b>Subscribe <a href="https://normaltech.ai/">here</a></b>. We were recognized for the newsletter on the inaugural <a href="https://time.com/collection/time100-ai/6308266/arvind-narayanan-sayash-kapoor/">TIME 100 AI</a> list. </p>
+</div>
+
+<div class="widget">
+	<h3 class="header" style="margin-bottom:15px">AI snake oil<a style="float:right" href="https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil#preview">Read the first chapter online &raquo;&nbsp;&nbsp;</a> </h3>
+
+<a href="https://www.amazon.com/Snake-Oil-Artificial-Intelligence-Difference/dp/069124913X"><img src="img/AI-snake-oil-cover-3D.png" height=300 style="float: left; padding-right:15px"></img></a>
+<a href="https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil#preview"><img src="img/AISO-intro.png" height=300 style="float: right; padding-left:10px"></img></a>
+
+<iframe width="500" height="300" src="https://www.youtube.com/embed/C3TqcUEFR58?si=Fz2CLARqUWKRiqqg&amp;start=345" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div style="margin-top:20px">
+
+<p>My <a href="https://www.amazon.com/Snake-Oil-Artificial-Intelligence-Difference/dp/069124913X">book</a> with <a ref="https://www.cs.princeton.edu/~sayashk/">Sayash Kapoor</a> cuts through AI hype and gives you an essential understanding of how AI works and why it often doesn’t. Get it from <a href="https://www.amazon.com/Snake-Oil-Artificial-Intelligence-Difference/dp/069124913X">Amazon</a>, <a href="https://bookshop.org/p/books/ai-snake-oil-what-artificial-intelligence-can-do-what-it-can-t-and-how-to-tell-the-difference-arvind-narayanan/21324674">Bookshop</a>, etc. It is one of <b>Nature's 10 best books of 2024</b> and one of Forbes's 10 must-read tech books of 2024.</p> 
+
+<p>The book is based on years of research on <a href="https://msalganik.github.io/soc555-cos598J_s2024/readings.html">limits to prediction</a>, the <a href="https://predictive-optimization.cs.princeton.edu/">dangers of predictive decision making</a>, the <a href="https://reproducible.cs.princeton.edu/">reproducibility crisis</a> in machine learning based science, the <a href="https://www.cs.princeton.edu/~sayashk/papers/crcl-kapoor-henderson-narayanan.pdf">limits of large language models</a>, and the risks of <a href="https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms">social media algorithms</a>.</p> 
+
+
+</div>
+
+</div>
+
+
+<div class="widget" style="clear:both">
+<h3 class="header">Algorithmic amplification on social media</h3>
+
+
+<p>For 2022-23 I was a <a href="https://knightcolumbia.org/content/arvind-narayanan-and-j-nathan-matias-to-join-knight-institute-as-visiting-researchers">visiting senior researcher</a> at Columbia's Knight First Amendment Institute, studying how social media algorithms <a href="https://knightcolumbia.org/blog/an-introduction-to-my-project-algorithmic-amplification-and-society-1">amplify</a> some speech and suppress others. My capstone essay: <b><a href="https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms">Understanding Social Media Recommendation Algorithms</a>.</b></p>
+
+<p>I co-organized a <a href="https://knightcolumbia.org/events/optimizing-for-what-algorithmic-amplification-and-society">symposium on algorithmic amplification</a> in April 2022 at Columbia University. Watch the videos <a href="https://knightcolumbia.org/events/optimizing-for-what-algorithmic-amplification-and-society">here</a>.
+</p> 
+
+</div>
+
+<div class="widget left">
+<h3 class="header">Fairness and ethics in computing  <a style="float:right" href="fairness-ethics/">&raquo; see more</a></h3>
+<p>
+I coauthored a <a href="https://fairmlbook.org">textbook</a> on fairness and machine learning, available online.
+My work was among the first to rigorously <a href="https://www.science.org/doi/10.1126/science.aal4230">show</a> how machine learning reflects racial, gender, and other cultural biases.  I've also worked on exposing <a href="https://webtransparency.cs.princeton.edu/dark-patterns/">dark patterns</a> online.
+</p>
+</div>
+
+<div class="widget right">
+<h3 class="header">Web privacy <a style="float:right;" href="web-privacy/">&raquo; see more</a></h3>
+<p>I led Princeton's <A href="https://web.archive.org/web/20230512145159/https://webtap.princeton.edu/">Web Transparency and Accountability Project</a>. Through large-scale, automated web measurement, we uncovered how companies collect and use our personal information. Our open-source tool <a href="https://web.archive.org/web/20230515232849/https://webtap.princeton.edu/software/">OpenWPM</a> has enabled over 100 studies of web privacy. </p>
+
+
+
+
+</div>
+<br/>
+
+<div class="widget left">
+<h3 class="header">Cryptocurrencies and blockchains  <a style="float:right" href="cryptocurrency/">&raquo; see more</a></h3>
+<p>I led the creation of an <A href="https://www.coursera.org/learn/cryptocurrency/">online course</a> / <a href="http://bitcoinbook.cs.princeton.edu/">textbook</a> on cryptocurrencies which has been used in over 150 courses worldwide.
+<!--, as well as a <a href="http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf">systematization&#8203;-&#8203;of-knowledge paper</a>.-->
+</p>
+
+<p>
+My main interest these days is helping shape public policy to counter the harms of cryptocurrency.
+</p>
+
+
+</div>
+
+<div class="widget right">
+<h3 class="header">De-anonymization  <a style="float:right" href="de-anonymization/">&raquo; see more</a></h3>
+<p>
+I've shown how sensitive information can be inferred from seemingly innocuous "anonymized" data, ranging from browsing histories to genomes. See this <a href="http://www.cs.utexas.edu/users/shmat/shmat_cacm10.pdf">primer</a> of the research and this <a href="publications/precautionary.pdf">policy piece</a> on what it  means for privacy.
+</p>
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<a rel="me" href="https://mastodon.social/@randomwalker"></a>
+
+</div></div>
+</body></html>

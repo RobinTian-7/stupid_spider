@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Chenfanfu Jiang</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./asset/bootstrap.min.css">
+    <script src="./asset/jquery.min.js.download"></script>
+    <script src="./asset/bootstrap.min.js.download"></script>
+    <link href="./asset/css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                <a href="./index.html" class="navbar-brand">Chenfanfu Jiang</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="https://multiples-lab.github.io/">Lab</a></li>
+                    <li><a href="https://multiples-lab.github.io/publication/">Publications</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->
+            <div class="col-md-4" style="height">
+
+                <!-- Main Image -->
+                <img class="img-responsive" height="310" width="310" src="./asset/profile.jpg" alt=""><br>
+
+                <!--                <div style="margin-top:3%; text-align:justify;">
+                </div> -->
+            </div>
+
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-9">
+                <div style="font-family: &#39;Oswald&#39;, sans-serif; font-size: 28px;"><b>Chenfanfu Jiang</b></div>
+
+                <br>
+
+
+                <p>Professor<br>Department of Mathematics<br>
+                    <!-- (affil.) Penn Institute for Computational Science (PICS) <br> Applied Mathematics and Computational Science (AMCS) <br> SIG Center for Computer Graphics <br> General -->
+                    <!-- Robotics, Automation, Sensing & Perception (GRASP) <br> -->
+                    University of California, Los Angeles
+                    <br>
+                    </p>
+                    <p>
+                    Lab: Slichter Hall 3860<br>
+                    Office: MS 7619E<br>                    
+                    chenfanfu.jiang-at-gmail.com    
+                    <!-- chenfanfu.jiang-at-gmail.com  | <a href="./cv.pdf">CV</a>   <br> -->
+
+
+                    <!-- Email: cffjiang@ucla.edu  |  <a href="./cv.pdf">CV</a>   <br> -->
+                    <!-- <a href="https://www.math.ucla.edu/multiples/">UCLA MultiPLES Laboratory</a> -->
+                    
+
+                    
+
+                </p>
+               
+
+
+                <p>
+
+                <a href="https://www.math.ucla.edu/aivc">UCLA Artificial intelligence & Visual Computing Laboratory</a> <br>
+                    Research interest: visual computing, physical AI, 3D generative AI, embodied AI, robotics. 
+                
+                <br>
+
+
+            </p>
+            <p>
+                <a href="https://www.math.ucla.edu/aivc/publication/">Publications</a> | <a href="./cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=jTivVMEAAAAJ">Google Scholar</a>  | <a href="https://phys-sim-book.github.io">Physics-Based Simulation (Book)</a> 
+                <br><br>
+                <!-- Web MPM: <a href="https://www.math.ucla.edu/~cffjiang/mpm.html">Solid</a> | <a href="https://www.math.ucla.edu/~cffjiang/fluid.html">Fluid</a> -->
+            </p>
+                
+                
+
+                <p>
+            <!-- <img class="img-responsive" height="300" src="./jls.gif" alt=""><br> Yup, we "jigglified" static images of me using our <a href="https://yingjiang96.github.io/VR-GS/">recent work</a> on interactive 3D Gaussian Splatting. It runs in real-time in VR!  -->
+                
+                </p>
+
+
+                <!-- <p style="color:#851e1e">
+                    <b>
+                    News:<br>
+                    </b>
+                </p> -->
+            </div>
+
+
+<!-- ===== Physical AI section (paste above the Bio block) ===== -->
+<style>
+  /* bullet icons for the 3-item list */
+  #physical-ai .pi-bullets { list-style: none; margin: 0; padding: 0; }
+  #physical-ai .pi-bullets > li { position: relative; padding-left: 1.2em; margin-bottom: 12px; }
+  #physical-ai .pi-bullets > li::before { content: "â¢"; position: absolute; left: 0; top: 0.1em; font-size: 1.2em; line-height: 1; }
+  #physical-ai small a { white-space: nowrap; }
+</style>
+
+<div class="col-md-8" id="physical-ai" style="margin-bottom: 10px;">
+                  <div style="background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 20px; border: 1px solid #f0f0f0;">
+
+  <h4 style="margin-top:0;"><strong>My current research centers on the intersection of physical AI and visual computing.</strong></h4>
+  <p style="text-align:justify;">
+    My <a href="https://www.math.ucla.edu/aivc/people" target="_blank" rel="noopener">group</a> builds the algorithms, simulators, and learning systems that let intelligent agents
+    <strong>perceive, reason, and act</strong> in the physical world. We extend generative AI with
+    <strong>spatial, temporal, and physical understanding</strong>, so models handle contact and
+    deformation, obey physical constraints, and transfer to real embodied systems.
+  </p>
+
+  <ul class="pi-bullets" style="margin-bottom:0;">
+    <li>
+      <strong>Simulation.</strong>
+      Robust, accurate, and scalable 3D dynamics&mdash;contact, deformation, fracture, grains&mdash;on GPUs;
+      differentiable pipelines and digitalâtwin environments.
+      <br>
+      <small>
+        <a href="https://ipc-sim.github.io/" target="_blank" rel="noopener">IPC</a> &middot;
+        <a href="https://sites.google.com/view/embedded-ipc" target="_blank" rel="noopener">Embedded&nbsp;IPC</a> &middot;
+        <a href="https://arxiv.org/abs/2506.06494" target="_blank" rel="noopener">JGS2</a> &middot;
+        <a href="https://dl.acm.org/doi/abs/10.1145/3528223.3530064" target="_blank" rel="noopener">ABD</a> &middot;
+        <a href="https://yzhu.io/publication/mpmmls2018siggraph/" target="_blank" rel="noopener">MLSâMPM</a> &middot;
+        <a href="https://joshuahwolper.com/anisompm" target="_blank" rel="noopener">AnisoMPM</a> &middot;
+        <a href="https://sites.google.com/view/siggraph2020-multigpu" target="_blank" rel="noopener">MultiâGPU&nbsp;MPM</a> &middot;
+        <a href="https://arxiv.org/abs/2405.11694" target="_blank" rel="noopener">XPBI</a>
+      </small>
+    </li>
+
+    <li>
+      <strong>Generation.</strong>
+      Multimodal generative models, neural rendering, and physically grounded world models that produce largeâscale
+      3D/4D synthetic data for training and evaluation.
+      <br>
+      <small>
+        <a href="https://yingjiang96.github.io/DiffPaintWebsite/" target="_blank" rel="noopener">Painting</a> &middot;
+        <a href="https://dress-1-to-3.github.io/" target="_blank" rel="noopener">Dressâ1âtoâ3</a> &middot;
+        <a href="https://arm-aigc.github.io/" target="_blank" rel="noopener">ARM</a> &middot;
+        <a href="https://xpandora.github.io/PhysGaussian/" target="_blank" rel="noopener">PhysGaussian</a> &middot;
+        <a href="https://yunuoch.github.io/Atlas3D/" target="_blank" rel="noopener">Atlas3D</a> &middot;
+        <a href="https://yingjiang96.github.io/VR-GS/" target="_blank" rel="noopener">VRâGS</a> &middot;
+        <a href="https://xpandora.github.io/PhysAnimator/" target="_blank" rel="noopener">PhysAnimator</a> &middot;
+        <a href="https://anunrulybunny.github.io/elastogen/" target="_blank" rel="noopener">ElastoGen</a> &middot;
+        <a href="https://supertan0204.github.io/physmotion_website/" target="_blank" rel="noopener">PhysMotion</a>
+      </small>
+    </li>
+
+    <li>
+      <strong>Robot Learning.</strong>
+      Training and validation stacks for contactâ and tactileârich robot policies, with principled
+      simâtoâreal transfer and closedâloop benchmarks.
+      <br>
+      <small>
+        <a href="https://taccel-simulator.github.io/" target="_blank" rel="noopener">Taccel</a> &middot;
+        <a href="https://bell0o.github.io/GRIP/" target="_blank" rel="noopener">GRIP</a> &middot;
+        <a href="https://right-side-out.github.io/" target="_blank" rel="noopener">RightâSideâOut</a> &middot;
+        <a href="https://sites.google.com/view/engr-glove" target="_blank" rel="noopener">Data&nbsp;Glove</a> &middot;
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4804" target="_blank" rel="noopener">Mirroring</a> &middot;
+        <a href="https://asmedigitalcollection.asme.org/mechanismsrobotics/article/16/7/071016/1198861/Bistable-Aerial-Transformer-BAT-A-Quadrotor-Fixed-Wing" target="_blank" rel="noopener">BAT</a>
+        <a href="https://arxiv.org/abs/2011.00426" target="_blank" rel="noopener">UAV</a> &middot;
+        <a href="https://ieeexplore.ieee.org/abstract/document/8653969?casa_token=K9idxqHuRvEAAAAA:axarR0BTWhSISo5SNoYDlV5Bz4TYi_9DP98aUb7Xum8Cavkd3X0iw00V4rG6P8Ai6UMczhqGfA" target="_blank" rel="noopener">Pouring</a> &middot;
+        <a href="https://drive.google.com/file/d/1HWtbPRc3awbHUM_ksVMRyAlMwqlqo_WT/preview" target="_blank" rel="noopener">VR Platform</a>
+      </small>
+    </li>
+  </ul>
+
+  <p>Goal: close the loop between pixels, physics, and policy.</p>
+</div>
+
+</div>
+<!-- ===== /Physical AI section ===== -->
+
+            
+            <div class="col-md-8" style="height">
+                  <div style="background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 20px; border: 1px solid #f0f0f0;">
+
+                
+                <strong>Bio:</strong> Chenfanfu Jiang is a Professor of Mathematics and the director of the Artificial Intelligence and Visual Computing (AIVC) Lab at UCLA. He primarily works on 3D visual computing, physical AI, 3D generative AI and embodied AI. He has developed well-known physics simulators such as APIC, MLS-MPM, and IPC. His research has been supported by NSF, DOE, Toyota, Amazon, Style3D, Sony, Adobe, and Snap. He has received Ph.D. dissertation award from UCLA, CAREER award from NSF, faculty awards from Amazon, Style3D, and Sony, as well as best paper awards/honorable mentions at SIGGRAPH, SCA, MIG, ICRA, and IROS. He received his Ph.D. from UCLA in 2015, co-advised by <a href="https://web.cs.ucla.edu/~dt/">Demetri Terzopoulos</a> and <a href="https://math.ucdavis.edu/~jteran/">Joseph Teran</a>. He was an Assistant Professor of CIS at UPenn from 2017 to 2021.
+            </div>
+
+                 <!-- Chenfanfu Jiang is an Associate Professor of Mathematics and the director of the Artificial Intelligence and Visual Computing (AIVC) Lab at the University of California, Los Angeles (UCLA). He has co-authored over 110 papers in disciplines spanning computer graphics, computer vision, computational physics, embodied artificial intelligence, and robotics, including more than 45 in ACM SIGGRAPH/SIGGRAPH Asia/Transactions on Graphics. He has developed  well-known algorithms such as the Affine Particle-In-Cell (APIC) method for fluid dynamics, the Moving Least Squares Material Point Method (MLS-MPM) for versatile materials, and the Incremental Potential Contact (IPC) method for contact mechanics. His research has received funding from the NSF, the DOE, and industrial partners including Toyota, Amazon, Style3D, Sony, Adobe, and Snap. His awards include the UCLA Engineering Outstanding Doctoral Student Award (2015), the NSF CISE CRII Award (2018), the NSF CAREER Award (2020), the Amazon Science Award (2023), the Sony Faculty Innovation Award (2023), the Style3D Faculty Research Award (2024), and Best Paper Awards at the Symposium on Computer Animation (SCA), Motion in Games (MIG), and the International Conference on Robotics and Automation (ICRA). He received his Ph.D. in Computer Science from UCLA in 2015, co-advised by Professors Demetri Terzopoulos and Joseph Teran. He was an Assistant Professor of Computer and Information Science at the University of Pennsylvania from 2017 to 2021.
+
+                 Chenfanfu Jiang is an associate professor of Mathematics at UCLA. He received his Ph.D. from UCLA in 2015 co-advised by Demetri Terzopoulos and Joseph Teran. He works on 3D visual computing (computer graphics and vision) and AI. His research specializes in creating, representing, understanding, and optimizing digital 2D/3D content and embodied AI. His research has been supported by NSF, DOE, and industrial partners including Toyota, Amazon, Sony, and Adobe. He was awarded  UCLA Edward K. Rice Outstanding Doctoral Student Award (2015),  NSF CRII award (2018), NSF CAREER award (2020), Amazon Science Hub Award (2023), Sony Faculty Innovation Award (2023), as well as SCA, MIG and ICRA best paper awards.  -->
+            </div>
+
+
+          <!-- <div class="col-md-12" style="margin-top: 4px; margin-bottom: 10px;">
+                <iframe src="https://www.math.ucla.edu/aivc/publication/" 
+                        style="width: 100%; height: 20000px; border: 4px solid #e7e7e7;">
+                </iframe>
+          </div> -->
+
+
+  <div class="col-md-12" style="margin-top: 4px; margin-bottom: 10px;">
+    <div style="background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 20px; border: 1px solid #f0f0f0;">
+    <script>
+      function resizeIframe(obj) {
+        try {
+          // 1. Reset height to shrink if content got smaller
+          obj.style.height = '0px';
+          
+          // 2. Set height to the internal scroll height of the child page
+          // Note: This only works if both pages are on the SAME domain (math.ucla.edu)
+          obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        } catch (e) {
+          // Fallback if security blocks us (e.g., testing locally)
+          console.log("Auto-resize failed due to security restrictions (CORS).");
+          obj.style.height = '100vh'; // Default to full screen height
+        }
+      }
+    </script>
+
+    <iframe src="https://www.math.ucla.edu/aivc/publication/" 
+            id="pubFrame"
+            onload="resizeIframe(this)"
+            style="width: 100%; border: none; display:block; overflow:hidden;"
+            scrolling="no">
+    </iframe>
+    </div>
+</div>
+
+
+        </div>
+
+        <!-- Other people may like it too! -->
+        <!-- <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">HTML: Plain Academic</a> -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+
+</body>
+
+</html>

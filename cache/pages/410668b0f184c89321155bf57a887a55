@@ -1,0 +1,1140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Chenyu You</title>
+<link rel="icon" sizes="228x228" href="/figure/stonybrooklogo.png" type="image/png">
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Chenyu You</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="bio.html">Bio</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="research.html">Topics</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<!-- <div class="menu-item"><a href="talks.html">Talks</a></div> -->
+<!-- <div class="menu-item"><a href="research.html">Topics</a></div> -->
+<div class="menu-item"><a href="new_students.html">Prospective<br>Students</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="teaching.html">Courses</a></div>
+<div class="menu-category">Service</div>
+<div class="menu-item"><a href="service.html">Recent</a></div>
+<!-- <div class="menu-item"><a href="cv/cv.pdf">CV</a></div> -->
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Chenyu You</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="figure/headshot.jpg" alt="alt text" width="200px" />&nbsp;</td>
+<td align="left"><p>
+<span style="font-size: 20px;"><b>Chenyu You</b></span>
+
+<br/>
+<br/>
+Assistant Professor
+<br/>
+<a target="_blank" rel="noopener noreferrer" href="https://www.stonybrook.edu/commcms/ams/">Department of Applied Mathematics & Statistics</a>
+<br/>
+<a target="_blank" rel="noopener noreferrer" href="https://www.cs.stonybrook.edu/">Department of Computer Science</a>
+<br/>
+<a target="_blank" rel="noopener noreferrer" href="https://www.stonybrook.edu/">Stony Brook University</a>
+</p>
+<!-- <br/>
+ -->
+<br/>
+<p>
+<span><a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=hy_wB7cAAAAJ&amp;hl=en">Google Scholar</a></span> /
+<span><a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/">GitHub</a></span> /
+<span><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chenyu-you-b07475a4/">LinkedIn</a></span>
+</p>
+<!--   <span><a target="_blank" rel="noopener noreferrer" href="https://dblp.org/pid/191/9432.html">DPLB</a></span> | 
+ -->
+<!-- <a target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/chenyuyou.bsky.social/">Social media</a>   ]</p>
+ -->
+</td></tr></table>
+<h2>Introduction</h2>
+<p>
+Chenyu You is an Assistant Professor in the Department of Applied Mathematics & Statistics and Department of Computer Science at Stony Brook University. 
+He is also the core faculty member of the <a target="_blank" rel="noopener noreferrer" href="https://www3.cs.stonybrook.edu/~cvl/">CVLab</a>, 
+<a target="_blank" rel="noopener noreferrer" href="https://ai.stonybrook.edu/">AI institute</a>,
+and affiliated with the <a target="_blank" rel="noopener noreferrer" href="https://iacs.stonybrook.edu/">Institute for Advanced Computational Science</a>.
+Previously, he received his Ph.D. in 2024 from Yale University under the advisement of <a target="_blank" rel="noopener noreferrer" href="https://seas.yale.edu/faculty-research/faculty-directory/james-duncan">James S. Duncan</a>, 
+his M.S. in 2019 from Stanford University under the advisement of <a target="_blank" rel="noopener noreferrer" href="https://profiles.stanford.edu/daniel-rubin">Daniel Rubin</a>, 
+and his B.S. in 2017 from Rensselaer Polytechnic Institute under the advisement of <a target="_blank" rel="noopener noreferrer" href="https://faculty.rpi.edu/ge-wang/">Ge Wang</a>, all in electrical engineering.
+He has also spent wonderful time at <a target="_blank" rel="noopener noreferrer" href="https://ai.facebook.com/">Facebook AI Research (FAIR)</a>, 
+as well as <a target="_blank" rel="noopener noreferrer" href="https://research.google/">Google Research</a>.
+</p>
+
+<h2>Research</h2>
+<p style="margin-bottom: 1.2em;">
+My group studies focuses on fundamental and applied problems in <span style="font-weight:bold;">computer vision</span> and <span style="font-weight:bold;">machine learning</span>, with a focus on <span style="color: #990000; font-weight: bold;">AI for health</span>.
+We build intelligent systems that learn from complex data, reason about and interact with the real world, and drive meaningful impact on healthcare.
+Besides learning algorithms, we ask: how AI should represent knowledge across imaging, text, and multi-omics data; what principles ensure robustness, trustworthy, and clinical reliability; and how algorithmic advances can translate into real-world healthcare domains. 
+Our research aims to answer these questions by advancing machine learning methods in close collaboration with biomedical and clinical science.
+</p>
+
+<ul>
+<li class="spaced-li">
+<span style="font-weight:bold;">Foundation:</span> How do we build world foundation models that generalize across diverse clinical tasks?<br/>
+<div style="margin-top: 0.5em;">
+<span style="background-color: #F0EEE5; padding: 4px 8px; border-radius: 6px; display: inline-block; margin-right: 6px; font-size: 1.0em;">
+  Representative projects
+</span>:&nbsp;
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2304.12306">MedSAM</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2209.13476">MONA</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2302.01735">ARCO</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2111.04318">KGAE</a> / 
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2410.20163">UniHGKR</a>
+</div>
+</span>
+</li>
+
+<li class="spaced-li">
+<span style="font-weight:bold;">Reliability:</span> How can we build complex AI systems that clinicians can trust and rely on?<br/>
+<div style="margin-top: 0.5em;">
+<span style="background-color: #F0EEE5; padding: 4px 8px; border-radius: 6px; display: inline-block; margin-right: 6px; font-size: 1.0em;">
+  Representative projects
+</span>:&nbsp;
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2501.00961">SpuriousMemorization</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2403.07241">CFR</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2201.10737">CASTformer</a>
+</div>
+</span>
+</li>
+
+<li class="spaced-li">
+<span style="font-weight:bold;">Access:</span> How can we turn advances in AI into efficient, deployable tools that improve healthcare and advance scientific discovery?<br/>
+<div style="margin-top: 0.5em;">
+<span style="background-color: #F0EEE5; padding: 4px 8px; border-radius: 6px; display: inline-block; margin-right: 6px; font-size: 1.0em;">
+  Representative projects
+</span>:&nbsp;
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2503.01776">CSR</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2602.05735">CSRv2</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2506.20741">OTSurv</a> /
+<a class="abt_a-medium" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2304.03209">MORSE</a>
+</div>
+</span>
+</li>
+</ul>
+
+<p style="margin-top: 1.5em; line-height: 1.6;">
+  <a href="new_students.html">Here is some information for prospective students and visitors.</a>
+</p>
+
+<h2>News</h2>
+<div style="height: 480px; overflow: auto;">
+<ul class="news-list">
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IEEE TAI</span>
+  </p></li>
+  
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Four paper accepted at CVPR 2026.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MIDL 2026.</span>
+  </p></li>
+  
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.02]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive the Excellence in Teaching Award for Fall 2025.</span>
+  </p></li>
+  
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers on <a target="_blank" rel="noopener noreferrer" href="https://y-research-sbu.github.io/CSRv2/">ultra-sparse embeddings</a> and <a target="_blank" rel="noopener noreferrer" href="https://openreview.net/forum?id=UspMJlGusi">sparse feature attention</a> accepted at ICLR 2026.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.01]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive CPAL Rising Stars Award 2026. Many thanks for the acknowledgment!</span>
+  </p></li>
+  
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.01]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair MICCAI 2026.</span>
+  </p></li>
+  
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2026.01]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive Tinker Research Grant Award from Thinking Machines Lab!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.12]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive IEEE Transactions on Medical Imaging Distinguished Associate Editor Certificate of Excellence!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.12]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair MIDL 2026.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.11]</span>
+      <span class="news-tag tag-editor">EDITOR</span>
+    </span>
+    <span class="news-text">Thrilled to serve as Associate Editor for Medical Image Analysis!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.11]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2412.07320">CoMA</a>, a multi-agent complex human motion generation framework, is accepted at AAAI 2026. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/Siwensun/CoMA">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.11]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive AAAI New Faculty Highlights 2026. Many thanks for the acknowledgment!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.11]</span>
+      <span class="news-tag tag-editor">EDITOR</span>
+    </span>
+    <span class="news-text">Thrilled to serve as Associate Editor for Transactions on Machine Learning Research.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IEEE TMI (Impact Factor 9.8).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.10]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">
+      Thrilled to serve on the <a target="_blank" rel="noopener noreferrer" href="https://www.stonybrook.edu/commcms/ai_symposium/Planning%20Committee.php">SUNY AI Symposium Planning Committee</a>!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2507.07978">Martian World Model</a> accepted at NeurIPS 2025. [<a target="_blank" rel="noopener noreferrer" href="https://news.stonybrook.edu/university/sbu-researchers-use-ai-to-reconstruct-physically-accurate-models-of-mars/">News</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at RSNA 2025 <span style="color:#990000; font-weight:bold;">(Oral)</span>.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.09]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair CVPR 2026.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.08]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at EMNLP 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.07]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to receive the Excellence in Teaching Award for Spring 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.07]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Congratulations to my Ph.D. student, Qin Ren, on winning the MICCAI 2025 NIH Registration Grant!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2508.14461">Ouroboros</a> on cycle-consistent rendering via diffusion models is accepted at ICCV 2025. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/Y-Research-SBU/Ouroboros">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2506.20741">OTSurv</a>, leveraging Optimal Transport for survival analysis, is accepted at MICCAI 2025. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/Y-Research-SBU/OTSurv">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2501.00961">Uncovering Memorization Effect in the Presence of Spurious Correlations</a>&rdquo; has been formally accepted by Nature Communications. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/Y-Research-SBU/Silent-Majority" target="_blank">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at ACL 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2503.01776">contrastive sparse representations (CSR)</a> accepted at ICML 2025 <span style="color:#990000; font-weight:bold;">(Oral, Top ~1%)</span>. [ <a target="_blank" rel="noopener noreferrer" href="https://github.com/neilwen987/CSR_Adaptive_Rep">Code</a> | <a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/blog/train-sparse-encoder">Hugging Face Blog</a> ]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.04]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair NeurIPS 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.04]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at AIME 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.04]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at EMBC 2025 <span style="color:#990000; font-weight:bold;">(Oral, Top Paper Award)</span>.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.03]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at ACM TKDD.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.03]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our work <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2410.20163">UniHGKR</a>, a universal retrieval-augmented generation framework, is accept at NAACL 2025 <span style="color:#990000; font-weight:bold;">(Oral)</span>. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/ZhishanQ/UniHGKR">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.02]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair EMNLP 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.02]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair COLM 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.02]</span>
+      <span class="news-tag tag-talk">TALK</span>
+    </span>
+    <span class="news-text">Invited as panel speaker at the AAAI Bridge: AI for Medicine and Healthcare.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.02]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve on scientific committee for the 11th Workshop on Medical Computer Vision at CVPR 2025.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Nature Reviews Bioengineering.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.01]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Invited to serve as Area Chair MICCAI 2025!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2025.01]</span>
+      <span class="news-tag tag-editor">EDITOR</span>
+    </span>
+    <span class="news-text">Thrilled to serve as Guest Associate Editor for IEEE Transactions on Medical Imaging!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.12]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MedIA (Impact Factor 10.9).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.12]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IEEE TMI (Impact Factor 8.9).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Computerized Medical Imaging and Graphics.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.10]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">
+      Thrilled to be recognized as IEEE Transactions on Medical Imaging (TMI) Platinum Distinguished Reviewer (Highest award).
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MedIA (Impact Factor 10.9).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.09]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">World’s Top 2% Scientists by Stanford University.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2209.13476">MONA</a> has been formally accepted by
+      <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE-TPAMI</a>
+      (Impact Factor 20.8). [<a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/MONA" target="_blank">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      One paper accepted at BMVC 2024 <span style="color:#990000; font-weight:bold;">(Oral)</span>.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/S1361841524001749">Medical image registration via neural fields</a>&rdquo; accepted by Medical Image Analysis (MedIA) (Impact Factor 10.9). Congrats to Shanlin, and all collaborators!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI 2024.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.04]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at UAI 2024.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.04]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">
+      Privileged to be elected into <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Sigma_Xi">Sigma Xi</a>!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.03]</span>
+      <span class="news-tag tag-service">SERVICE</span>
+    </span>
+    <span class="news-text">Thrilled to serve as Area Chair MICCAI 2024!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2403.07241">Calibrating Multi-modal Representations: A Pursuit of Group Robustness without Annotations</a>&rdquo; has been accepted at CVPR 2024.
+      [<a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/CFR" target="_blank">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at CVPR 2024.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at ICLR 2024.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.01]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Thrilled to be recognized as WACV 2024 Outstanding Reviewer.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2024.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Imaging Neuroscience.</span>
+  </p></li>
+
+    <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.12]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IEEE SaTML 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.11]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2304.12306">Segment Anything in Medical Images</a>&rdquo; has been formally accepted by Nature Communications.
+      [<a target="_blank" rel="noopener noreferrer" href="https://github.com/bowang-lab/MedSAM">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at WACV 2024.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IEEE BIBM 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.10]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">
+      Thrilled to be recognized as IEEE Transactions on Medical Imaging (TMI) Platinum Distinguished Reviewer.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2302.01735">Rethinking Semi-Supervised Medical Image Segmentation: A Variance-Reduction Perspective</a>&rdquo; has been accepted at NeurIPS 2023!
+      [<a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/ARCO">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at NeurIPS 2023!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at npj Digital Medicine (Impact Factor 15.357).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Physics in Medicine and Biology.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI-MLCN 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Four papers accepted at IEEE NSS-MIC-RTSD 2023 (1 Oral).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Six papers accepted at MICCAI 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Investigative Radiology (Impact Factor: 10.065).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Three papers <span style="color:#990000; font-weight:bold;">early accepted</span> at MICCAI 2023!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at ACL 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2206.02307">ACTION</a> has been accepted at IPMI 2023.
+      [<a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/ACTION">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.02]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IPMI 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2023.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at Medical Physics.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at WACV 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2201.10737">CASTformer</a> has been accepted at NeurIPS 2022!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at NeurIPS 2022!</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.08]</span>
+      <span class="news-tag tag-talk">TALK</span>
+    </span>
+    <span class="news-text">
+      Gave a talk at <a target="_blank" rel="noopener noreferrer" href="https://ai.facebook.com/">Meta AI Research (FAIR)</a> Eastcoast Vision Group about Contrastive Learning.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.08]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">
+      Very honored to be recognized as IEEE Transactions on Medical Imaging (TMI) Platinum Distinguished Reviewer.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.08]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at WACV 2023.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI-STACOM 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI-DeCaF 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI-DGM4MICCAI 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at MICCAI 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.05]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      One paper <span style="color:#990000; font-weight:bold;">early accepted</span> at MICCAI 2022!
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.04]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at NAACL 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.03]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2108.06227">SimCVD</a> has been formally accepted by
+      <a target="_blank" rel="noopener noreferrer" href="https://www.embs.org/tmi/">IEEE-TMI</a> (Impact Factor: 10.048).
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.03]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at ICLR-PAIR2Struct 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.03]</span>
+      <span class="news-tag tag-status">STATUS</span>
+    </span>
+    <span class="news-text">
+      I will be interning at <a target="_blank" rel="noopener noreferrer" href="https://ai.facebook.com/">Facebook AI Research (FAIR)</a>, New York, starting from June 2022.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2022.02]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">
+      Very proud to be recognized as a <a target="_blank" rel="noopener noreferrer" href="https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15511">Distinguished Referee</a> for Medical Physics.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.12]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Awarded 2021 - 2022 Yale Fellowship.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.12]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at AAAI 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.11]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      One paper has been formally accepted by
+      <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">
+        IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE-TPAMI)
+      </a>
+      (Impact Factor 17.861).
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.10]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at WACV 2022.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at NeurIPS 2021.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.08]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at EMNLP 2021.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Three papers accepted at Interspeech 2021.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.05]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Glad to be recognized as CVPR 2021 outstanding reviewer.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.04]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at IJCAI 2021 (Acceptance Rate: 13.9%).</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.03]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Very proud to be recognized as Medical Physics Journal Distinguished Reviewer.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.02]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Very honored to be recognized as IEEE Transactions on Medical Imaging (TMI) Distinguished Reviewer.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Two papers accepted at IEEE-ICASSP 2021.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2021.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      One paper accepted at ICLR 2021 <span style="color:#990000; font-weight:bold;">(Spotlight)</span>.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2020.11]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Awarded 2020 - 2021 Yale Fellowship.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2020.10]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Proud to be an Outstanding Reviewer for MICCAI 2020.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2020.08]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One paper accepted at MICCAI-MIL3ID 2020.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2020.07]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Our work <a target="_blank" rel="noopener noreferrer" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008193">NuSeT</a>, a high quality tool box for cell segmentation and analysis, accepted at PLOS Computational Biology. [<a target="_blank" rel="noopener noreferrer" href="https://github.com/yanglf1121/NuSeT">Code</a>]</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2019.10]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class="news-text">Awarded 2019 - 2020 Yale Fellowship.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2019.09]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">Three full papers accepted at Proceedings of SPIE.</span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2019.06]</span>
+      <span class="news-tag tag-award">AWARD</span>
+    </span>
+    <span class class="news-text">
+      Our paper &ldquo;Recovery of Latent Vectors and Exploration of Latent Space from StyleGAN&rdquo; received the
+      <a target="_blank" rel="noopener noreferrer" href="http://cs230.stanford.edu/past-projects/#final-project-prize-winners/">
+        Stanford CS230 Final Project Prize
+      </a>,
+      mentored by <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Andrew_Ng">Prof. Andrew Ng</a>.
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2019.06]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">
+      Our paper &ldquo;<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/1808.04256">CT Super-resolution GAN Constrained by the Identical, Residual, and Cycle Learning Ensemble(GAN-CIRCLE)</a>&rdquo;
+      has been formally accepted by
+      <a target="_blank" rel="noopener noreferrer" href="https://www.embs.org/tmi/">IEEE Transactions on Medical Imaging (IEEE-TMI)</a>
+      (Impact Factor: 10.048). [<a target="_blank" rel="noopener noreferrer" href="https://github.com/charlesyou999648/GAN-CIRCLE">Code</a>]
+    </span>
+  </p></li>
+
+  <li><p>
+    <span class="news-prefix">
+      <span class="news-date">[2019.01]</span>
+      <span class="news-tag tag-paper">PAPER</span>
+    </span>
+    <span class="news-text">One papers accepted at Medical Physics.</span>
+  </p></li>
+
+</ul>
+</div>
+
+
+<h2>Contact</h2>
+<ul>
+<li><p>Email: chenyu.you [AT] stonybrook [DOT] edu
+</p>
+</li>
+<li><p>Address: Math Tower 1-A148, Stony Brook, NY 11794
+
+<br /></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1317 @@
+<style type="text/css">
+body {
+    font: normal 15px Verdana, Arial, sans-serif;
+    background-color: black;
+}
+
+.class1 A:visited {color: white}
+.class1 A:link {color: white;}
+.class1 A:hover {color: orange;}
+
+div.break {
+	width:90%;
+	text-align:right;
+	font-size:20px; 
+	color:navy;
+}
+
+/* Color Highlight for keyboard navigation */
+
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+
+</style>
+
+<html>
+<a name="top"></a>
+<head>
+<title>Anshul Gandhi</title>
+</head>
+
+<script language="javascript" type="text/javascript">
+function showHide(obj) {
+	var el = document.getElementById(obj);
+	if ( el.style.display != 'block' ) {
+		el.style.display = 'block';
+	}
+	else {
+		el.style.display = 'none';
+	}
+}
+</script>
+
+
+<body style="padding:5px; margin:5px;">
+<basefont face="arial, verdana, courier">
+
+<div style="margin: 20px 10px; padding-left:20px; background-color:black; position:relative; height:230px;">
+
+<!--
+<div style="position:absolute; left: 1100px; top: 0px;">
+<p style="border:5px solid orange; font-size:18; background-color: navy; color:white; line-height:150%; float: right; padding-right:0.5in; padding-left:0.1in; width=2in;">
+<span class="class1">
+[<a href="#news">News</a>]<br>
+[<a href="#background">Background</a>]<br>
+[<a href="#research">Research Interests</a>]<br>
+[<a href="#publications">Publications</a>]<br>
+[<a href="#funding">Funding</a>]<br>
+[<a href="#patents">Patents</a>]<br>
+[<a href="#service">Service</a>]<br>
+</span>
+</p>
+</div>
+-->
+
+
+<img style="position:absolute; left: 0px; top: 20px;" src="profile.jpg" width="200" height="200">	
+
+<div align="right" style="padding-right:20px; float:right; width:300px;">
+<br>
+<a href="http://www.stonybrook.edu"><img src="sbu_black.png" width="100"></a>	
+&nbsp;&nbsp;
+<a href="http://www.cs.stonybrook.edu"><img src="sbucs_black.gif" width="100"></a><br><br><br>
+<a href="http://www.watson.ibm.com"><img style="padding-bottom:22px;" src="ibm_gif.gif" width="80"></a>	
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.cmu.edu"><img src="cmu.png" width="80"></a>
+&nbsp;&nbsp;
+<a href="http://www.cse.iitk.ac.in"><img top: 150px; style="padding-bottom:2px;" src="iitk_gif.gif" width="80"></a>	
+</div>
+
+
+
+<div style="position:absolute; left: 230px; top: -5px;">
+<span class="class1">
+<font size="5" color="white">Anshul Gandhi</font><br><br>
+<font color="white">Associate Professor<br> 
+<a href="http://www.cs.stonybrook.edu">Department of Computer Science</a><br> 
+<a href="http://www.ams.sunysb.edu">Department of Applied Mathematics & Statistics</a> (affiliate appointment)<br> 
+<a href="http://www.stonybrook.edu">Stony Brook University</a><br><br>
+Office: 347, Computer Science. &nbsp;Phone: (631) 632-8475.<br>
+Email: anshul (at) cs (dot) stonybrook (dot) edu<br>
+Lab: 336, Computer Science. &nbsp;<a href="http://www.pace.cs.stonybrook.edu" target="blank">PACE Lab</a>.<br>
+Twitter: <a href="https://twitter.com/PACELab_SBU" target="blank">@PACELab_SBU</a>.
+<br><br>
+
+CV: [<a href="cv.pdf">pdf</a>] (updated: April 2025)<br>
+</font>
+</span>
+</div>
+
+</div>
+
+
+<div style="position:relative; padding-left:20px;margin: 20px 10px; background-color:navy;">
+<p style="background-color: navy; color:white; line-height:200%; font-size:16;">
+<span class="class1">
+[<a href="#news">News</a>] &nbsp;&nbsp;[<a href="#background">Background</a>]  &nbsp;&nbsp;[<a href="#research">Research Interests</a>] &nbsp;&nbsp;[<a href="#awards">Awards</a>] &nbsp;&nbsp;[<a href="#publications">Publications</a>] &nbsp;&nbsp;[<a href="#funding">Funding</a>] &nbsp;&nbsp;[<a href="#patents">Patents</a>] &nbsp;&nbsp;[<a href="#teaching">Teaching</a>] &nbsp;&nbsp;[<a href="#service">Service</a>] &nbsp;&nbsp;[<a href="http://www.pace.cs.stonybrook.edu" target="blank">PACE Lab</a>] &nbsp;&nbsp;[<a href="http://www.pace.cs.stonybrook.edu/#gallery" target="blank">Gallery</a>]<br>
+</span>
+</p>
+</div>
+
+<p style="margin-top:0px; font-size:16px; color:white; margin-left:20px">
+<span class="class1">
+I am an Associate Professor in the <a href="http://www.cs.stonybrook.edu">Department of Computer Science</a> at <a href="http://www.stonybrook.edu">Stony Brook University</a>, where I lead the <a href="http://www.pace.cs.stonybrook.edu" target="blank">PACE Lab</a>.<br>
+I am broadly interested in systems and performance modeling. My research aims to improve system performance via analytical tools.<br>
+My recent projects include interference-aware performance modeling and management and dynamic provisioning of cloud-deployed applications. <br>
+Please see my <a href="#research">research interests</a> and <a href="#publications">publications</a> below for more information.<br>
+Feel free to email me if you want to learn more about my research and are interested in joining my group.<br><br>
+
+<a href="#" onclick="showHide('bio'); return false;">[Brief (third-person) bio]</a>
+<div id="bio" style="display: none; padding-left:20px;">
+<p style="background-color: black; color:white; line-height:100%; font-size:16; ">
+Anshul Gandhi is an Associate Professor in the Computer Science Department at Stony Brook University. He received his Ph.D. from Carnegie Mellon University in 2013 and then spent a year as a postdoc at the IBM T. J. Watson Research Center. His current research focuses on performance modeling in distributed systems, and is funded by an NSF Career award, an IBM Faculty award, and a Google Research award. His contributions to performance modeling were recently recognized by an ACM Sigmetrics Rising Star Award.
+</p>
+</div>
+
+</span>
+</p>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:yellow; position:relative;">
+
+<p style="float:left"><a name=news></a><b>News: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+<p style="margin-top:0px">
+August 2025: Pramodh's collaborative work with AT&T on resource pooling in radio access networks is accepted to <a href="https://mascots25.iitis.pl">MASCOTS 2025</a>. Congrats, Pramodh!<br>
+March 2025: Anurag's work on GNN-based incident detection for microservices is accepted to <a href="https://icdcs2025.icdcs.org">ICDCS 2025</a> (industry track). Congrats, Anurag!<br>
+January 2025: Received a <b>Millionaires Club Award</b> from the SBU College of Engineering and Applied Sciences!<br>
+January 2025: Received a <b>TREES award</b> (Teachers Rated Excellent Educators by their Students) from the SBU College of Engineering and Applied Sciences!<br>
+December 2024: Awarded the Department of Computer Science <b>Graduate Education Award</b>!<br>
+October 2024: On the Program Committee for the industry track of <a href="https://conferences.computer.org/IC2E/2025">IC2E 2025</a>.<br>
+October 2024: Rebecca's work on using BBR for WebRTC is accepted to <a href="https://www.comsnets.org/" target="blank">COMSNETS 2025</a>. Congratulations, Rebecca!<br>
+September 2024: Bing's work on interference-aware GPU colocation is accepted to <a href="https://acmsocc.org/2024" target="blank"><b>SOCC 2024</b></a>. Congratulations, Bing!<br>
+September 2024: Pramodh's work on sustainable DNN inference on edge is accepted to <a href="https://acm-ieee-sec.org/2024/" target="blank">SEC 2024</a>. Congrats, Pramodh!<br>
+September 2024: Our collaborative work on distributed edge resource management is accepted to <a href="https://acm-ieee-sec.org/2024/" target="blank">SEC 2024</a>. Congrats, Manav and Pramodh!<br>
+September 2024: Received a conference funding seed grant from <a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program/special-initiative-seed-grant-programs/Research_Conference_Workshop_Seed_Grant_Program" target="blank">OVPR</a>. Thanks, SBU!<br>
+July 2024: Our proposed work on sustainable LLM deployments received an <a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program/" target="blank">OVPR Seed Grant</a> Award. Thanks, SBU!<br>
+June 2024: Serving as <b>General Co-Chair for <a href="https://sigmetrics.org/sigmetrics2025" target="blank">ACM Sigmetrics 2025</a></b>, to be held at Stony Brook University!<br>
+May 2024: Our collaborative work with the Business School on sustainable data centers was awarded an <a href="https://www.businessofgovernment.org/content/research-stipends" target="blank">IBM Center for The Business of Government research grant</a>.<br>
+March 2024: Deb's work on evaluating ML models for per-job power prediction is accepted at the <a href="https://hotcloudperf.spec.org" target="blank">HotCloudPerf 2024</a> workshop. Congratulations, Deb!<br>
+March 2024: Our collaborative work with <a href="https://www.fsl.cs.stonybrook.edu/" target="blank">FSL</a> on accelerating storage system simulations is accepted to appear in the <a href="https://www.journals.elsevier.com/performance-evaluation" target="blank">Performance Evaluation</a> journal.<br>
+March 2024: Our work on detecting multiple bottlenecks in microservices applications is accepted (oral presentation) to <a href="https://www2024.thewebconf.org" target="blank"><b>WWW 2024</b></a>. Congratulations to Gagan and Anurag!<br>
+January 2024: Our proposed work on reducing the energy consumption of DNNs received an <a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program/" target="blank">OVPR Seed Grant</a> Award. Thanks, SBU!<br>
+February 2024: Our collaborative work on verifiable sustainability in data centers will appear in the <a href="https://www.computer.org/csdl/magazine/sp" target="blank">IEEE Security & Privacy Magazine</a>.<br>
+January 2024: Serving on the TPC for <a href="https://usenix.org/conference/atc24" target=blank>USENIX ATC 2024</a>.<br>
+January 2024: Serving on the TPC for <a href="https://mascots24.iitis.pl" target=blank>MASCOTS 2024</a>.<br>
+<a href="#" onclick="showHide('more_news'); return false;">[more]</a>
+<div id="more_news" style="display: none;"> 
+November 2023: Rebecca's BBR vs. BBR2 work is accepted to <a href="https://www.comsnets.org/" target="blank">COMSNETS 2024</a>. Congratulations, Rebecca!<br>
+October 2023: Our sustainability metrics HotCarbon'22 paper will also appear in <a href="https://energy.acm.org/eir/" target="blank">ACM SIGEnergy Energy Informatics Review (Volume 3, Issue 3)</a>.<br>
+September 2023: Serving as lead guest editor for the PEVA SI on <a href="https://www.sciencedirect.com/journal/performance-evaluation/about/call-for-papers#performance-analysis-and-evaluation-of-systems-for-artificial-intelligence" target="blank">Performance Analysis and Evaluation of Systems for Artificial Intelligence</a>.<br>
+September 2023: Our preliminary work with <a href="https://www.fsl.cs.stonybrook.edu/" target="blank">FSL</a> on persistent memory research is accepted at the <a href="https://dimes.ws/" target="blank">DIMES 2023</a> workshop.<br>
+September 2023: <b>NSF</b> funds our sustainable computing efforts on <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2324859" target="blank">extending the lifetime of computer systems</a>. Thanks NSF!<br>
+August 2023: Our preliminary work on sustainable DNN deployment on the edge is accepted as a WIP to <a href="https://www.igscc.org/" target="blank">IGSC 2023</a>. Congrats to Anurag and Pramodh!<br>
+August 2023: Our collaborative work with <a href="https://www.fsl.cs.stonybrook.edu/" target="blank">FSL</a> on multi-tier caches is accepted to <a href="https://mascots.iitis.pl/" target="blank">MASCOTS 2023</a>.<br>
+August 2023: Gagan's work on truncating Markov chains is accepted to appear in the <a href="https://www.journals.elsevier.com/performance-evaluation" target="blank">Performance Evaluation</a> journal. Congratulations, Gagan!<br>
+July 2023: Our collaborative work with MSR India on configuration tuning is accepted to <a href="https://www.usenix.org/conference/nsdi24" target="blank"><b>NSDI 2024</b></a>! Congratulations to Gagan!<br>
+July 2023: Serving on the TPC for <a href="https://sigmetrics.org/sigmetrics2024/" target=blank>Sigmetrics 2024</a>.<br>
+June 2023: Excited to serve as <a href="https://www.acm.org/elections/sigs/2023-sig-election/sigmetrics-2023-results" target="blank">Secretary-Treasurer</a> for <b>SIGMETRICS</b>!.<br>
+April 2023: Serving as General Co-Chair for <a href="https://ieee-cybermatics.org/2023/greencom" target="blank">IEEE GreenCom 2023</a>.<br>
+February 2023: Elevated to IEEE Senior Member grade.<br>
+January 2023: Excited to serve as <b>PC Co-Chair</b> for <b><a href="https://mascots.iitis.pl/" target="blank">MASCOTS 2023</a></b>, to be held at Stony Brook University!<br>
+November 2022: Gave a colloquium talk about our serverless computing performance management work at Penn State.<br>
+October 2022: Joint work with <a href="https://www.fsl.cs.stonybrook.edu">FSL</a> and <a href="http://netsys.cs.stonybrook.edu">NetSys lab</a> on applying ML to improve network performance accepted to <a href="http://mlforsystems.org/" target="blank">ML for Systems</a> workshop at NeurIPS 2022. Congrats to Umit and Santiago!<br>
+October 2022: Ubaid's early work on GPU sharing for DNN workloads will appear as a poster at <a href="http://acmsocc.org/2022" target="blank">SOCC 2022</a>. Congrats, Ubaid!<br>
+October 2022: On the Program Committee for <a href="https://middleware-conf.github.io/post/middleware2023">Middleware 2023</a>.<br>
+September 2022: Gave invited talks about our performance modeling and resource management works at TU-Berlin and INRIA, Grenoble.<br>
+August 2022: Our joint work with the <a href="http://netsys.cs.stonybrook.edu">NetSys lab</a> on analyzing BBR's performance on mobile devices is accepted to <a href="https://conferences.sigcomm.org/imc/2022" target="blank"><b>IMC 2022</b></a>. Congrats to Santiago!<br>
+August 2022: Gagan's theoretical work on truncating Markov chains with probability guarantees is accepted to <a href="https://mascots.iitis.pl" target="blank">MASCOTS 2022</a>. Congratulations to Gagan!<br>
+August 2022: Excited to announce that the multi-institution effort I led on <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2214980" target="blank"><b>sustainable data centers</b></a> was awarded an <b>NSF Large</b> grant. Thanks NSF!<br>
+August 2022: Our collaborative project with <a href="http://picasso.cs.stonybrook.edu/">PiCASSo Lab</a> on video analytics systems received an <a href="https://research.stonybrook.edu/ovprseedgrantprogram" target="blank">OVPR Seed Grant</a> Award. Thanks, SBU!<br>
+July 2022: Gagan's work on configuration tuning of microservices is accepted to <a href="https://2022.acsos.org" target="blank">ACSOS 2022</a>. Congratulations to Gagan!<br>
+June 2022: Our collaborative work on sustainability metrics in data centers is accepted to <a href="https://hotcarbon.org" target="blank">HotCarbon 2022</a>!<br>
+May 2022: On the Program Committee for <a href="https://sigmetrics.org/sigmetrics2023/">Sigmetrics 2023</a>.<br>
+April 2022: Pramodh's work on near-data processing for Spark is accepted to <a href="https://icdcs2022.icdcs.org" target="blank"><b>ICDCS 2022</b></a>. Congratulations to Pramodh!<br>
+March 2022: Gagan's work on using GNNs to detect bottlenecks in microservices applications is accepted to the WIP track of <a href="https://icpe2022.spec.org" target="blank"><b>ICPE 2022</b></a>. Congratulations to Gagan!<br>
+August 2021: Amogha's work on opportunistic execution of serverless functions in the cloud is accepted to <a href="http://acmsocc.org/2021" target="blank"><b>SOCC 2021</b></a>. Congratulations to Amogha!<br>
+May 2021: Thank you to <a href="https://openinfralabs.org/" target="blank">OpenInfra Labs</a> for supporting our research!<br>
+May 2021: Ubaid's work on placement and scheduling of TensorFlow operations is accepted to <a href="https://middleware-conf.github.io/2021/" target="blank">Middleware 2021</a>. Congratulations to Ubaid and Xiao!<br>
+May 2021: <b>NSF</b> funds our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2106434" target="blank">multi-tier cache modeling</a> work. Thanks NSF!<br>
+March 2021: Our preliminary work on optimizing the configuration of microservices applications is accepted to the <a href="https://www.euromlsys.eu" target="blank">EuroMLSys 2021</a> workshop. Congrats to Gagan!<br>
+January 2021: Our joint work with the <a href="http://netsys.cs.stonybrook.edu">NetSys lab</a> on DASH video performance under BBR is accepted to <a href="https://www2021.thewebconf.org" target="blank"><b>WWW 2021</b></a>. Congrats to Santiago and Rebecca!<br>
+August 2020: Promoted to <b>Associate Professor</b> with tenure!<br>
+August 2020: One paper accepted to <a href="http://www.iiswc.org/iiswc2020" target="blank">IISWC 2020</a>. Congrats, Ubaid!<br>
+June 2020: Two papers accepted to <a href="https://2020.acsos.org/" target="blank">ACSOS 2020</a>. Congratulations to Amogha, Wajahat, and Gagan!<br>
+May 2020: One paper accepted to appear in the <a href="https://www.journals.elsevier.com/performance-evaluation" target="blank">Performance Evaluation</a> journal. Congrats, Wajahat!<br>
+February 2020: Honored and excited to serve as <b>PC Co-Chair</b> for <b><a href="http://sigmetrics.org/" target="blank">Sigmetrics 2021</a></b>!
+<br>
+December 2019: On the Program Committee for <a href="http://mascots.iitis.pl" target="blank">MASCOTS 2020</a>.<br>
+December 2019: Awarded the Department of Computer Science <b>Research Excellence Award</b> for 2017-19!<br>
+November 2019: Check out the <a href="#gallery">gallery</a> to see what <a href="http://www.pace.cs.stonybrook.edu"><b>PACE Lab</b></a> is up to!<br>
+November 2019: Amogha and I will present a tutorial on leveraging queueing theory to improve application latency at <a href="http://2019.middleware-conference.org" target="blank">Middleware 2019</a>.<br>
+November 2019: On the Program Committee for <a href="http://acsos.org/" target="blank">ACSOS 2020</a>, the joint conference of ICAC and SASO.<br>
+October 2019: Our paper won the <b>Best Paper Award</b> at <a href="https://sites.google.com/view/mascots-2019" target=blank>MASCOTS 2019</a>!! Congratulations to Wajahat!<br>
+October 2019: One paper accepted to <a href="https://www.serverlesscomputing.org/wosc5">Workshop on Serverless Computing (WoSC)</a>. Congrats, Amogha!<br>
+September 2019: One paper accepted to appear in <a href="https://www.computer.org/web/tcc"><b>IEEE Transactions on Cloud Computing</b></a>. Congrats, Ahmad!<br>
+September 2019: One paper accepted to <a href="https://acmsocc.github.io/2019" target="blank"><b>SOCC 2019</b></a>. Congrats, Ahmad, Amogha, and Wajahat!<br>
+August 2019: <b>NSF</b> funds our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1909356" target="blank">network performance modeling</a> work. Thanks NSF!<br>
+August 2019: On the Program Committee for <a href="https://www.ispass.org/ispass2020/" target="blank">ISPASS 2020</a>.<br>
+July 2019: Two of our papers on congestion control modeling and analysis are accepted to <a href="https://conferences.sigcomm.org/imc/2019" target=blank><b>IMC 2019</b></a>. Congrats, Yi!<br>
+July 2019: Our collaborative work with IBM is accepted to appear at <a href="https://icsoc-laas.fr" target=blank>ICSOC 2019</a>. Congrats, Ubaid!<br>
+July 2019: Two papers accepted to <a href="https://sites.google.com/view/mascots-2019" target=blank><b>MASCOTS 2019</b></a>. Congratulations to Wajahat, Scott, and Amogha!<br>
+July 2019: On the Organizing Committee (<b>Workshops Chair</b>) and Program Committee for <a href="https://www.sigmetrics.org/sigmetrics2020" target=blank>Sigmetrics 2020</a>!<br>
+June 2019: Our work on truncating Markov chains with probability mass guarantees is accepted to <a href="https://www.sigmetrics.org/mama" target=blank>MAMA 2019</a>. Congrats, Gagan!<br>
+May 2019: Honored to receive the 2019 <a href="https://www.sigmetrics.org/risingstar-2019.shtml" target=blank><b>Sigmetrics Rising Star Award</b></a>!!<br>
+April 2019: Awarded AWS credits as part of the <a href="https://aws.amazon.com/research-credits" target=blank>AWS Cloud Credits for Research</a> program award. Thanks, AWS!<br>
+April 2019: Our collaborative work with IBM on leveraging GPUs to accelerate data analytics applications is accepted at <b><a href="http://icac2019.cs.umu.se/" target=blank>ICAC 2019</a></b>.<br>
+March 2019: Serving as <b>Track Co-Chair</b> for the Intelligent Systems and Infrastructure track for <a href="https://www2020.thewebconf.org/" target=blank><b>WWW 2020</b></a>!<br>
+January 2019: Our work on variability reduction is accepted (as oral presentation) at <a href="https://www2019.thewebconf.org" target=blank><b>WWW 2019</b></a>. Congrats, Amogha!<br>
+January 2019: One paper accepted to appear at <a href="https://conferences.sigcomm.org/sosr/2019/index.html" target=blank>SOSR 2019</a>. Congrats, Vasu!<br>
+November 2018: Received an <a href="https://research.stonybrook.edu/ovprseedgrantprogram" target="blank">OVPR Seed Grant</a> Award. Thanks, SBU!<br>
+October 2018: I will serve as the <b>Industry and Sponsorship Chair</b> for <a href="http://icac2019.cs.umu.se/" target=blank>ICAC 2019</a>!<br>
+September 2018: On the Program Committee for <a href="http://www.hpdc.org/2019/" target="blank">HPDC 2019</a>.<br>
+September 2018: One poster accepted at <a href="https://acmsocc.github.io/2018/" target="blank">SOCC 2018</a>. Congrats, Ahmad and Wajahat!<br>
+August 2018: I will serve as the <b>Student Activities Chair</b> for <a href="https://www.sigmetrics.org/sigmetrics2019/">Sigmetrics 2019</a>!<br>
+August 2018: On the Program Committee for <a href="https://www.sigmetrics.org/sigmetrics2019/">Sigmetrics 2019</a> and <a href="https://www2019.thewebconf.org/" target=blank>WWW 2019</a>!<br>
+July 2018: One poster accepted at <a href="http://ieeevis.org/year/2018/welcome">IEEE VIS 2018</a>. Congratulations, Anjul!<br>
+July 2018: Our ElMem work won the <b>Best Student Paper Award</b> at <a href="http://icdcs2018.ocg.at">ICDCS 2018</a>! Congratulations, Ubaid and Wajahat!!<br>
+June 2018: Our collaborative work with AT&T will appear as a short paper at <a href="http://www.mscs.mu.edu/~mascots/"><b>MASCOTS 2018</b></a>, congrats Wajahat!<br>
+May 2018: Our GPU resource sharing patent with IBM was granted!<br>
+April 2018: One short paper accepted to appear at <a href="http://icdcs2018.ocg.at"><b>ICDCS 2018</b></a>. Congrats to Ahmad, Harsh, Robin, and Shweta!<br>
+March 2018: One paper accepted to appear at <a href="http://icdcs2018.ocg.at"><b>ICDCS 2018</b></a>. Congrats Ubaid and Wajahat!<br>
+February 2018: On the program committee for <a href="http://2018.middleware-conference.org">Middleware 2018</a>.<br>
+January 2018: Received the <b><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750109" target="blank">NSF Career Award</a></b>! Thanks NSF.<br>
+December 2017: Serving on the editorial board of <a href="https://www.journals.elsevier.com/performance-evaluation">Performance Evaluation</a> starting 2018.<br>
+December 2017: On the program committee for <a href="http://icac2018.informatik.uni-wuerzburg.de">ICAC 2018</a> and <a href="https://www.usenix.org/conference/hotcloud18">HotCloud 2018</a>.<br>
+November 2017: One paper accepted to appear in <a href="https://www.computer.org/web/tcc"><b>IEEE Transactions on Cloud Computing</b></a>!<br>
+October 2017: Two posters accepted at <a href="http://2017.middleware-conference.org/">Middleware 2017</a>. Congrats Ahmad et al. and Ubaid et al.<br>
+October 2017: One paper accepted to appear in the <a href="https://www.journals.elsevier.com/sustainable-computing" target="blank">Sustainable Computing</a> journal. Congrats Wajahat!<br>
+August 2017: On the program committee for <a href="http://icdcs2018.ocg.at">ICDCS 2018</a> and <a href="http://conferences.computer.org/IC2E/2018">IC2E 2018</a>.<br>
+August 2017: One paper accepted at <a href="http://igsc.eecs.wsu.edu"><b>IGSC 2017</b></a>. Congrats Wajahat, Abhinav, and Salman!<br>
+July 2017: <b>NSF</b> funds our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1717588" target="blank">prediction error modeling</a> work. Thanks NSF!<br>
+June 2017: One poster accepted at <a href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM 2017</a>. Congrats Yi!<br>
+June 2017: One paper accepted at <a href="http://mascots2017.cs.ucalgary.ca"><b>MASCOTS 2017</b></a>. Congrats Scott and Ahmad!<br>
+June 2017: <b>NSF</b> funds our <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1730128" target="blank">sustainable computing infrastructure</a> work, led by Rutgers. Thanks NSF!<br>
+April 2017: One paper accepted at <a href="http://icac2017.ece.ohio-state.edu" target="blank"><b>ICAC 2017</b></a>. Congrats Ahmad!<br>
+March 2017: On the program committee for <a href="https://www.sigmetrics.org/sigmetrics2018">Sigmetrics 2018</a>.<br>
+January 2017: One paper accepted to appear in the <a href="http://link.springer.com/journal/10270" target="blank">Software & Systems Modeling</a> journal.<br>
+January 2017: One paper accepted at <a href="http://www.sigmetrics.org/sigmetrics2017/" target="blank"><b>Sigmetrics 2017</b></a>. Congrats Yi!
+<br>
+December 2016: On the program committee for <a href="http://icac2017.ece.ohio-state.edu", target=blank>ICAC 2017</a>, <a href="http://autonomic-conference.org/iccac-2017", target=blank>ICCAC 2017</a>, and <a href="http://www.thecloudcomputing.org/2017", target=blank>IEEE Cloud 2017</a>.<br>
+September 2016: <b>Program Vice Chair</b> (Co-Chair of Cloud Computing and Data Centers track) for <a href="http://icdcs2017.gatech.edu/" target="blank">ICDCS 2017</a>!<br>
+September 2016: Received a <a href="https://www.microsoft.com/en-us/research/academic-program/microsoft-azure-for-research/" target="blank"><b>Microsoft Azure Research Award</b></a>. Thanks Microsoft!<br>
+September 2016: <b>NSF</b> funds our <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1617046" target="blank">heterogeneity-aware load balancing</a> work. Thanks NSF!<br>
+August 2016: <b>General Co-Chair</b> for MIDDLEWARE 2017! Conference website is now <a href="http://2017.middleware-conference.org" target="blank">live</a>.
+August 2016: <b>Publicity Co-Chair</b> for <a href="http://icac2017.ece.ohio-state.edu/" target="_blank">ICAC 2017</a>.<br>
+August 2016: One poster accepted at <a href="http://acmsocc.github.io/2016/" target=blank>SOCC 2016</a>. Congrats Ahmad!<br>
+July 2016: Two papers accepted at <a href="http://igsc.eecs.wsu.edu/" target=blank>IGSC 2016</a>. Congrats Wajahat!<br>
+July 2016: I will be <b>co-chairing tutorials</b> for <a href="http://www.sigmetrics.org/sigmetrics2017/" target="blank">Sigmetrics 2017</a>! Please let me know if you are interested in contributing.<br>
+June 2016: On the program committee for <a href="http://conferences.computer.org/IC2E/2017/" target=blank>IC2E 2017</a>.<br>
+June 2016: <a href="http://www.pace.cs.stonybrook.edu" target="blank">PACE Lab</a> website is now up.<br>
+May 2016: <b>NSF</b> funds our <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1622832" target="blank">elastic memory caching tiers</a> work. Thanks NSF!<br>
+April 2016: <a href="#patents">Patent</a> on cloud autoscaling with IBM issued!<br>
+April 2016: On the program committee for <a href="http://iccac2016.se.rit.edu", target=blank>ICCAC 2016</a>, <a href="http://igsc.eecs.wsu.edu", target=blank>IGSC 2016</a>, and <a href="http://cs.txstate.edu/~zz11/cfp/gpcdp", target=blank>GPCDP 2016</a>.<br>
+March 2016: On the program committee for <a href="http://icccn.org/icccn16/" target="blank">ICCCN 2016</a>, <a href="https://sites.google.com/site/scscxvi/" target=blank>SummerSim 2016</a>, and <a href="http://www.rci.rutgers.edu/~ey108/didc2016/home.html" target="blank">DIDC 2016</a>.<br>
+February 2016: One paper and one poster accepted at <a href="http://sigmetrics.org/sigmetrics2016/" target=blank><b>Sigmetrics 2016</b></a>!<br>
+February 2016: Received a <a href="http://googleresearch.blogspot.com/2016/02/google-research-awards-fall-2015.html" target="blank"><b>Google Research Award</b></a> (Co-PI). Thanks Google!<br>
+January 2016: On the program committee for <a href="http://www.podc.org/dcc2016/" target="blank">DCC 2016</a> and <a href="http://www.qest.org/qest2016/" target=blank>QEST 2016</a>.<br>
+December 2015: Two papers accepted at <a href="http://conferences.computer.org/IC2E/2016"><b>IC2E 2016</b></a>. Congrats to Ahmad, Bharath, Sagar, and Sidhartha!<br>
+November 2015: Granted an affiliate faculty appointment in the <a href="http://www.ams.sunysb.edu/" target=blank>AMS</a> department at SBU!<br>
+November 2015: On the program committee for <a href="http://san.ee.ic.ac.uk/mascots2016/" target=blank>MASCOTS 2016</a></a>.<br>
+October 2015: On the program committee for <a href="http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/" target=blank>ICDCS 2016</a> (Energy Management and Green Distributed Computing track).<br>
+August 2015: On the program committee for <a href="http://sigmetrics.org/sigmetrics2016/" target=blank>Sigmetrics 2016</a>!<br>
+July 2015: One poster accepted at <a href="http://acmsocc.github.io/2015/" target=blank><b>SOCC 2015</b></a>.<br>
+July 2015: One paper accepted at <a href="http://www.autonomic-conference.org" target=blank><b>ICCAC 2015</b></a>. Congrats to Harsha!<br>
+May 2015: One paper accepted at <a href="http://wordpress.cs.vt.edu/mascots2015" target=blank><b>MASCOTS 2015</b></a>. Congrats to Xi and Naman!<br>
+May 2015: One poster accepted at <a href="http://icac2015.imag.fr" target=blank><b>ICAC 2015</b></a>.<br>
+April 2015: One paper and one poster accepted at the <a href="https://sites.google.com/site/sigmetricsdcc2015" target=blank><b>Distributed Cloud Computing</b></a> workshop at Sigmetrics 2015. Congrats to Justin, Naman, and Xi! <br>
+March 2015: Awarded an <a href="http://www.research.ibm.com/university/awards/faculty_innovation_2015.shtml"><b>IBM 2015 Faculty Award</b></a>. Thanks IBM! <br>
+March 2015: Received the <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1464151"><b>NSF CRII</b></a> grant. Thanks NSF!<br>
+</div>
+
+<!--
+August 2015: On the program committee for <a href="http://sigmetrics.org/sigmetrics2016/" target=blank>Sigmetrics 2016</a>!<br>
+July 2015: One poster accepted at <a href="http://acmsocc.github.io/2015/" target=blank><b>SOCC 2015</b></a>.<br>
+July 2015: One paper accepted at <a href="http://www.autonomic-conference.org" target=blank><b>ICCAC 2015</b></a>. Congrats to Harsha!<br>
+May 2015: One paper accepted at <a href="http://wordpress.cs.vt.edu/mascots2015" target=blank><b>MASCOTS 2015</b></a>. Congrats to Xi and Naman!<br>
+May 2015: One poster accepted at <a href="http://icac2015.imag.fr" target=blank><b>ICAC 2015</b></a>.<br>
+April 2015: One paper and one poster accepted at the <a href="https://sites.google.com/site/sigmetricsdcc2015" target=blank><b>Distributed Cloud Computing</b></a> workshop at Sigmetrics 2015. Congrats to Justin, Naman, and Xi! <br>
+March 2015: Awarded an <a href="http://www.research.ibm.com/university/awards/faculty_innovation_2015.shtml"><b>IBM 2015 Faculty Award</b></a>. Thanks IBM! <br>
+March 2015: Received the <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1464151"><b>NSF CRII</b></a> grant. Thanks NSF!<br>
+-->
+</p>
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=background></a><b>Background: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+<p style="margin-top:0px">
+I was a <b>Post Doctoral Researcher</b> in the Cloud Optimization and Analytics group at the <a href="http://www.research.ibm.com/labs/watson" target="blank"><b>IBM T. J.  Watson Research Center</b></a> from 2013 to 2014. 
+<br>
+<a href="http://www.cs.cmu.edu/~anshulg" target="blank">I completed</a> my <b>Ph.D.</b> in 2013 from the <a href="http://www.cs.cmu.edu/" target="blank">Computer Science Department</a> at <a href="http://www.cmu.edu/"><b>Carnegie Mellon University</b></a> where I was advised by <a href="http://www.cs.cmu.edu/~harchol" target="blank">Prof. Mor Harchol-Balter</a>.
+<br>
+<a name="#thesis">My Ph.D. thesis</a>, <a href="http://reports-archive.adm.cs.cmu.edu/anon/2013/abstracts/13-110.html" target="blank">Dynamic Server Provisioning for Data Center Power Management</a>, was awarded the <a href="http://research.spec.org/news/single-view/article/winner-of-the-spec-distinguished-dissertation-award-2013.html" target="blank">2013 SPEC Distinguished Dissertation Award</a>.<br>
+I completed my <b>undergraduate</b> studies in 2007 from the <a href="http://www.cse.iitk.ac.in" target="blank">Department of Computer Science and Engineering</a> at <a href="http://www.iitk.ac.in" target="blank"><b>Indian Institute of Technology, Kanpur</b><a>.<br>
+</p>
+
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=research></a><b>Research Interests: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+<p style="margin-top:0px">
+I am interested in applying theory to systems. In particular, my research aims to leverage mathematical tools such as {Performance Modeling, Queueing Theory, Machine Learning, Control Theory} to analyze the behavior of systems such as {Distributed Systems, Cloud, Data Centers, ML Systems} and to optimize metrics of interest such as {Performance, Energy}.<br><br>
+<!--
+I am currently working with IBM Research on applying queueing theory and control theory to provide performance guarantees for cloud-deployed applications (via scale-out and scale-up in OpenStack).<br><br>
+-->
+Some of my current projects include: 
+<ul>
+
+<li>Sustainable computing (<a href="#carbonmetrics25_replacements">CarbonMetrics '25 (a)</a>, <a href="#carbonmetrics25_edge">CarbonMetrics '25 (b)</a>, <a href="#carbonmetrics25_aging">CarbonMetrics '25 (c)</a>, <a href="#sec24_ecogd">SEC '24</a>, <a href="#hcp24_mlpred">HotCloudPerf '24</a>, <a href="#sp24mag_sassy">S&P Magazine '24</a>, <a href="#igsc23_dnnedge">IGSC '23</a>, <a href="#eir23_sassy">EIR '23</a>, <a href="#hotcarbon22_sassy">HotCarbon '22</a>)</li>
+
+<li>Performance management for ML systems such as TensorFlow and PyTorch (<a href="#aicrossroads25_gpusm">AI Crossroads '25</a>, <a href="#socc24_kace">SOCC '24</a>, <a href="#socc22_poster">SOCC' 22</a>, <a href="#middleware21_pesto">Middleware '21</a>, <a href="#iiswc20_ceer">IISWC '20</a>)</li>
+
+<li>Performance optimization for microservices applications (<a href="#icdcs25_guide">ICDCS '25</a>, <a href="#www24_gamma">WWW '24</a>, <a href="#nsdi24_oppertune">NSDI '24</a>, <a href="#acsos22_tuning">ACSOS '22</a>, <a href="#icpe22_bmeg">ICPE '22</a>, <a href="#euromlsys21_opt">EuroMLSys '21</a>)</li>
+
+<li>Resource management and scheduling in serverless environments (<a href="#socc21_servermore">SOCC '21</a>, <a href="#acsos20_ensure">ACSOS '20</a>)</li>
+
+<li>Storage performance modeling (<a href="#softwarex25_kneeliverse">SoftwareX '25</a>, <a href="#peva24_mtc">Performance Evaluation '24</a>, <a href="#mascots23_mtc">MASCOTS '23</a>, <a href="#dimes23_pmem">DIMES '23</a>, <a href="#mascots19_h2">MASCOTS '19</a>, <a href="#peva20_h2">Performance Evaluation '20</a>)</li>
+
+<li>Network performance modeling (<a href="#comsnets24_bbrbbrv2">COMSNETS '24</a>, <a href="#imc22_bbr">IMC '22</a>, <a href="#www21_bbr">WWW '21</a>, <a href="#imc19_econ">IMC '19</a>, <a href="#imc19_bbr">IMC '19</a>, <a href="#sigcomm17">Sigcomm '17</a>, <a href="#sigm17_recon">Sigmetrics '17</a>, <a href="#sigm16_recon">Sigmetrics '16</a>)</li>
+
+<li>Interference-aware performance modeling and management (<a href="#socc22_poster">SOCC' 22</a>, <a href="#socc19_scavenger">SOCC '19</a>, <a href="#mascots19_mdp">MASCOTS '19</a>, <a href="#middleware17_poster_spark">Middleware '17</a>, <a href="#mascots17">MASCOTS '17</a>, <a href="#icac17_dial">ICAC '17</a>, <a href="#socc16_dial">SOCC '16</a>, <a href="#ic2e16_uie">IC2E '16</a>, <a href="#iccac15">ICCAC '15</a>)</li>
+
+<li>Resource scaling for cloud applications (<a href="#icdcs22_ndpspark">ICDCS '22</a>, <a href="#icdcs18_elmem">ICDCS '18</a>, <a href="#tcc17">TCC '17</a>, <a href="#middleware17_poster_memscale">Middleware '17</a>, <a href="#suscom17">SUSCOM '17</a>, <a href="#sosym17">SoSyM '17</a>, <a href="#igsc16_mlscale">IGSC '16</a>, <a href="#ic2e16_hadoop">IC2E '16</a>, <a href="#iccac15">ICCAC '15</a>, <a href="#icac14">ICAC '14</a>, <a href="#sbac14">SBAC '14</a>)</li>
+
+
+<a href="#" onclick="showHide('more_projects'); return false;">[older projects]</a>
+<div id="more_projects" style="display: none;"> 
+<li>Improving application latency by reducing system variability (<a href="#www19_variability">WWW '19</a>)</li>
+<li>Rehoming VNF service chains (<a href="#mascots18_graybox">MASCOTS '18</a>, <a href="#acsos20_merit">ACSOS '20</a>)</li>
+<li>Load balancing for heterogeneous systems (<a href="#sosr19_mmlite">SOSR '19</a>, <a href="#icdcs18_easy">ICDCS '18</a>, <a href="#icac17_dial">ICAC '17</a>, <a href="#socc16_dial">SOCC '16</a>, <a href="#mascots15">MASCOTS '15</a>, <a href="#dcc15_optlb">DCC '15</a>)</li>
+<li>Scaling multi-tier applications in response to unpredictable workload demand (<a href="#tocs12">TOCS '12</a>, <a href="#perf10_opt">Performance '10 (a)</a>, <a href="#ocs11">OpenCirrus Summit '11</a>)</li>
+<li>Dynamically provisioning the caching tier (<a href="#icpe14">ICPE '14</a>, <a href="#middleware12">Middleware '12</a>, <a href="#hotcloud12">HotCloud '12</a>)</li>
+<li>A hybrid (predictive-reactive) resource provisioning approach for data centers with partial workload forecast (<a href="#suscom12">Sustainable Computing '12</a>, <a href="#igcc11">IGCC '11</a>)</li>
+<li>Analysis of multi-server systems with setup costs (provisioning/boot times) (<a href="#questa14">QUESTA '14</a>, <a href="#sigm13">Sigmetrics '13</a>, <a href="#orl13">OR Letters '13</a>, <a href="#perf10_setup">Performance '10 (b)</a>, <a href="#mcqt10">MCQT '10</a>, <a href="#mama10">MAMA '10</a>)</li>
+<li>Sensitivity analysis of sleep states in servers (<a href="#igcc12">IGCC '12</a>, <a href="#hotpower11">HotPower '11</a>)</li>
+<li>Impact of scaling (size of the data center) on performance and power consumption (<a href="#allerton11">Allerton '11</a>)</li>
+<li>Optimal allocation of data center power budget among servers (<a href="#sigm09">Sigmetrics '09</a>)</li>
+</ul>
+
+<!--
+A detailed description of current projects can be found <a href="http://www.pace.cs.stonybrook.edu/projects.html">here</a>.
+-->
+</p>
+</div>
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=awards></a><b>Selected Awards and Honors: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+<li>Millionaires Club Award, College of Engineering and Applied Sciences, Stony Brook University, 2025</li>
+<li>TREES (Teachers Rated Excellent Educators by their Students) Award, College of Engineering and Applied Sciences, Stony Brook University, 2025</li>
+<li>Graduate Education Award, Department of Computer Science, Stony Brook University, 2024</li>
+<li>Research Excellence Award, Department of Computer Science, Stony Brook University, 2019</li>
+<li>Best Paper Award, 27th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS), 2019</li>
+<li>ACM Sigmetrics Rising Star Research Award, 2019</li>
+<li>Best Student Paper Award, 38th IEEE International Conference on Distributed Computing Systems (ICDCS), 2018</li>
+<li>NSF Career Award, 2018</li>
+<li>Google Faculty Research Award, 2015</li>
+<li>IBM Faculty Award, 2015</li>
+<li>SPEC Distinguished Dissertation Award, 2013</li>
+<li>Best Paper Award, 2nd IEEE International Green Computing Conference (IGCC), 2011</li>
+
+
+</ul>
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=publications></a><b>Publications: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<a href="http://scholar.google.com/citations?user=XNSodwIAAAAJ&hl=en" target="blank">Google Scholar<a>]&nbsp;&nbsp;[<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/g/Gandhi:Anshul" target="blank">DBLP<a>]&nbsp;&nbsp;[<a href="http://www.researchgate.net/profile/Anshul_Gandhi" target="blank">ResearchGate</a>]</p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+
+
+<div class="break">2025</div>
+
+<li><a name="mascots25_pooling">Constellate: Establishing the opportunity for Distributed Unit pooling in real-world 5G Radio Access Networks</a><br>Sri Pramodh Rachuri, Anshul Gandhi, Gueyoung Jung, Shankar Narayanan, Alex Zelezniak<br>
+<i><a href="https://mascots25.iitis.pl">MASCOTS 2025</a></i> 
+[<a href="mascots25_pooling.pdf">pdf</a>]
+</li>
+<br>
+
+
+
+<li><a name="carbonmetrics25_replacements">Toward Optimal Carbon-Aware Scheduling of Server Replacements</a><br>Ankur Sharma, Rishabh Tamhane, Anshul Gandhi<br>
+<i><a href="https://noman-bashir.github.io/CarbonMetrics">CarbonMetrics 2025</a></i> [<a href="carbonmetrics25_replacements.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="carbonmetrics25_edge">How Carbon Metrics Impact Device Selection</a><br>Debajyoti Halder, Deboparna Banerjee, Akash Mani, Anshul Gandhi, Erez Zadok<br>
+<i><a href="https://noman-bashir.github.io/CarbonMetrics">CarbonMetrics 2025</a></i> [<a href="carbonmetrics25_edge.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="carbonmetrics25_aging">The case for accurate lifetime accounting in carbon metrics</a><br>Yujin Huang, Timothy Zhu, Anshul Gandhi<br>
+<i><a href="https://noman-bashir.github.io/CarbonMetrics">CarbonMetrics 2025</a></i> [<a href="carbonmetrics25_aging.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="aicrossroads25_gpusm">Energy-efficient GPU SM allocation</a><br>Bing-Shiun Han, Kunaal Parekh, Wan-Chu Lin, Tathagata Paul, Anshul Gandhi, Zhenhua Liu<br>
+<i><a href="https://ai-crossroads.github.io">AI Crossroads 2025</a></i> 
+[<a href="aicrossroads25_gpusm.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="softwarex25_kneeliverse">Kneeliverse: A universal knee-detection library for performance curves</a><br>Mário Antunes, Tyler Estro, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, Yifei Liu, Carl Waldspurger, Avani Wildani, Erez Zadok<br>
+<i><a href="https://www.sciencedirect.com/journal/softwarex">SoftwareX</a></i> [<a href="softwarex25_kneeliverse.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="icdcs25_guide">GUIDE: GNN-based Unified Incident Detection for Microservices Application Deployments</a><br>Anurag Dutt, Doseok Jang, Joao Nadkarni, Kai Su, Anshul Gandhi<br>
+<i><a href="https://icdcs2025.icdcs.org">ICDCS 2025</a></i>  
+[<a href="icdcs25_guide.pdf">pdf</a>]	&nbsp;&nbsp;&nbsp;(industry track)
+</li>
+<br>
+
+
+<li><a name="comsnets25_webrtcbbr">Investigating WebRTC BBR as an alternative to GCC for live video streaming</a><br>Rebecca Drucker, Anshul Gandhi, Aruna Balasubramanian<br>
+<i><a href="https://www.comsnets.org">COMSNETS 2025</a></i> [<a href="comsnets25_webrtcbbr.pdf">pdf</a>]
+</li>
+<br>
+
+
+
+<div class="break">2024</div>
+
+
+<li><a name="socc24_kace">KACE: Kernel-Aware Colocation for Efficient GPU Sharing</a><br>
+Bing-Shiun Han, Tathagata Paul, Zhenhua Liu, Anshul Gandhi<br>
+<i><a href="http://acmsocc.org/2024">SOCC 2024</a></i> [<a href="socc24_kace.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="sec24_ecogd">EcoEdgeInfer: Dynamically Optimizing Latency and Sustainability for Inference on Edge Devices</a><br>
+Sri Pramodh Rachuri, Nazeer Shaik, Mehul Choksi, Anshul Gandhi<br>
+<i><a href="https://acm-ieee-sec.org/2024/">SEC 2024</a></i> [<a href="sec24_ecogd.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="sec24_ovida">OVIDA: Orchestrator for Video analytics on Disaggregated Architecture</a><br>
+Manavjeet Singh, Sri Pramodh Rachuri, Bryan Bo Cao, Abhinav Sharma, Venkata Bhumireddy, Francesco Bronzino, Samir Das, Anshul Gandhi, Shubham Jain<br>
+<i><a href="https://acm-ieee-sec.org/2024/">SEC 2024</a></i> [<a href="sec24_ovida.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="s324_dnnsimilarity">Representation Similarity: A Better Guidance of DNN Layer Sharing for Edge Computing without Training</a><br>Bo Cao, Abhinav Sharma, Manavjeet Singh, Anshul Gandhi, Samir Das, Shubham Jain<br>
+<i><a href="https://s32024.smartnets.yale.edu/index.html">S3 2024</a></i>  [<a href="s324_dnnsimilarity.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="hcp24_mlpred">Empirical Evaluation of ML Models for Per-Job Power Prediction</a><br>Debajyoti Halder, Manas Acharya, Aniket Malsane, Anshul Gandhi, Erez Zadok<br>
+<i><a href="https://hotcloudperf.spec.org">HotCloudPerf 2024</a></i>  [<a href="hcp24_mlpred.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="peva24_mtc">Accelerating Multi-Tier Storage Cache Simulations Using Knee Detection</a><br>Tyler Estro, Mário Antunes, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, Yifei Liu, Carl Waldspurger, Avani Wildani, Erez Zadok<br>
+<i><a href="https://www.journals.elsevier.com/performance-evaluation">Performance Evaluation</a></i> [<a href="https://authors.elsevier.com/c/1ikLAbtMgIjgQ", target="blank">link</a>]
+</li>
+<br>
+
+
+<li><a name="www24_gamma">GAMMA: Graph Neural Network-Based Multi-Bottleneck Localization for Microservices Applications</a><br>Gagan Somashekar, Anurag Dutt, Mainak Adak, Tania Lorido Botran, Anshul Gandhi<br>
+<i><a href="https://www2024.thewebconf.org">WWW 2024</a></i>  [<a href="www24_gamma.pdf">pdf</a>]&nbsp;&nbsp;&nbsp;(Oral)&nbsp;&nbsp;&nbsp;(<a href="https://www.kaggle.com/datasets/gagansomashekar/microservices-bottleneck-detection-dataset" target="blank">Artifact Available</a>)
+</li>
+<br>
+
+
+<li><a name="sp24mag_sassy">Verifiable Sustainability in Data Centers</a><br>
+Syed Rafiul Hussain, Patrick McDaniel, Anshul Gandhi, Kanad Ghose, Kartik Gopalan, Dongyoon Lee, Yu David Liu, Zhenhua Liu, Shuai Mu, Erez Zadok<br>
+<i><a href="https://www.computer.org/csdl/magazine/sp">IEEE Security & Privacy Magazine</a></i> [<a href="sp24mag_sassy.pdf">pdf</a>]
+</li>
+<br>
+
+<li><a name="comsnets24_bbrbbrv2">BBR vs. BBRv2: A Performance Evaluation</a><br>Rebecca Drucker, Gauri Baraskar, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="https://www.comsnets.org">COMSNETS 2024</a></i> [<a href="comsnets24_bbrbbrv2.pdf">pdf</a>]
+</li>
+<br>
+
+
+<li><a name="nsdi24_oppertune">OpperTune: Post-Deployment Configuration Tuning of Services Made Easy</a><br>Gagan Somashekar, Karan Tandon, Anush Kini, Ranjita Bhagwan, Anshul Gandhi, Mayukh Das, Nagarajan Natarajan, Petr Husak, Chieh-Chun Chang<br>
+<i><a href="https://www.usenix.org/conference/nsdi24">NSDI 2024</a></i> [<a href="nsdi24_oppertune.pdf">pdf</a>]
+</li>
+<br>
+
+
+<div class="break">2023</div>
+
+
+<li><a name="eir23_sassy">Metrics for Sustainability in Data Centers</a><br>
+Anshul Gandhi, Kanad Ghose, Kartik Gopalan, Syed Rafiul Hussain, Dongyoon Lee, Yu David Liu, Zhenhua Liu, Patrick McDaniel, Shuai Mu, Erez Zadok<br>
+<i><a href="https://energy.acm.org/eir">ACM SIGEnergy Energy Informatics Review</a></i> [<a href="eir23_sassy.pdf">pdf</a>]</li>
+<br>
+
+
+
+<li><a name="igsc23_dnnedge">Evaluating the energy impact of device parameters for DNN inference on edge</a><br>Anurag Dutt, Sri Pramodh Rachuri, Ashley Lobo, Nazeer Shaik, Anshul Gandhi, 
+Zhenhua Liu<br>
+<i><a href="https://www.igscc.org">IGSC 2023</a></i>  
+[<a href="igsc23-dnnedge.pdf">pdf</a>]
+</li>
+<br>
+
+
+
+<li><a name="dimes23_pmem">Persistent Memory Research in the Post-Optane Era</a><br>Peter Desnoyers, Andy Rudoff, Ian Adams, Tyler Estro, Anshul Gandhi, Geoff Kuenning, Mike Mesnier, Carl Waldspurger, Avani Wildani, Erez Zadok<br>
+<i><a href="https://dimes.ws">DIMES 2023</a></i>  
+[<a href="dimes23-pmem.pdf">pdf</a>]
+</li>
+<br>
+
+
+
+
+<li><a name="mascots23_mtc">Guiding Simulations of Multi-Tier Storage Caches Using Knee Detection</a><br>Tyler Estro, Mário Antunes, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, Yifei Liu, Carl Waldspurger, Avani Wildani, Erez Zadok<br>
+<i><a href="https://mascots.iitis.pl">MASCOTS 2023</a></i>  
+[<a href="mascots23-mtc.pdf">pdf</a>]
+</li>
+<br>
+
+
+
+<li><a name="peva23_truncation">Efficient and Accurate Lyapunov function-based Truncation Technique for Multi-Dimensional Markov Chains <br>with Applications to Discriminatory Processor Sharing and Priority Queues</a><br>Gagan Somashekar, Mohammad Delasay, Anshul Gandhi<br>
+<i><a href="https://www.journals.elsevier.com/performance-evaluation">Performance Evaluation</a></i>  
+[<a href="https://authors.elsevier.com/c/1hddObtMgEvZ7", target="blank">link</a>]
+</li>
+<br>
+
+
+
+
+<div class="break">2022</div>
+
+<li><a name="mlforsystems22_kml">Predicting Network Buffer Capacity for BBR Fairness</a><br>Umit Akgun, Santiago Vargas, Michael Arkhangelskiy, Andrew Burford, Michael McNeill, Aruna Balasubramanian, Anshul Gandhi, Erez Zadok<br>
+<i><a href="http://mlforsystems.org/">ML for Systems 2022</a></i> 
+[<a href="mlforsystems22_kml.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="socc22_poster">SLO-Aware Space-Time GPU Sharing for DL Workloads</a><br>
+Ubaid Ullah Hafeez, Anshul Gandhi<br>
+<i>Poster @ <a href="https://acmsocc.org/2022">SOCC 2022</a></i> 
+[<a href="socc22_poster.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="imc22_bbr">Are Mobiles ready for BBR?</a><br>
+Santiago Vargas, Gautham Gunapati, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="https://conferences.sigcomm.org/imc/2022">IMC 2022</a></i> [<a href="imc22_bbr.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="mascots22_truncation">Truncating Multi-Dimensional Markov Chains with Accuracy Guarantee</a><br>
+Gagan Somashekar, Mohammad Delasay, Anshul Gandhi<br>
+<i><a href="https://mascots.iitis.pl">MASCOTS 2022</a></i> [<a href="mascots22_truncation.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="acsos22_tuning">Reducing the Tail Latency of Microservices Applications via Optimal Configuration Tuning</a><br>
+Gagan Somashekar, Amoghavarsha Suresh, Saurabh Tyagi, Vikas Dhyani, Krishna Donkada, Anurag Pradhan, Anshul Gandhi<br>
+<i><a href="https://2022.acsos.org/">ACSOS 2022</a></i> [<a href="acsos22_tuning.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="hotcarbon22_sassy">Metrics for Sustainability in Data Centers</a><br>
+Anshul Gandhi, Kanad Ghose, Kartik Gopalan, Syed Rafiul Hussain, Dongyoon Lee, Yu David Liu, Zhenhua Liu, Patrick McDaniel, Shuai Mu, Erez Zadok<br>
+<i><a href="https://hotcarbon.org">HotCarbon 2022</a></i> [<a href="hotcarbon22_sassy.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icdcs22_ndpspark">Optimizing Near-Data Processing for Spark</a><br>
+Sri Pramodh Rachuri, Arun Gantasala, Prajeeth Emanuel, Anshul Gandhi, Robert Foley, Peter Puhov, Theodoros Gkountouvas, Hui Lei<br>
+<i><a href="https://icdcs2022.icdcs.org">ICDCS 2022</a></i> [<a href="icdcs22_ndpspark.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icpe22_bmeg">B-MEG: Bottlenecked-Microservices Extraction Using Graph Neural Networks</a><br>
+Gagan Somashekar, Anurag Dutt, Rohith Vaddavalli, Sai Bhargav Varanasi, Anshul Gandhi<br>
+<i><a href="https://icpe2022.spec.org/">ICPE 2022</a></i> 
+[<a href="icpe22_bmeg.pdf">pdf</a>]
+<!--
+[<a href="socc21_servermore.pdf">pdf</a>] [<a href="https://youtu.be/9Or99BsLEcA" target="blank">talk</a>]
+-->
+</li>
+<br>
+
+
+
+<div class="break">2021</div>
+
+<li><a name="socc21_servermore">ServerMore: Opportunistic Execution of Serverless Functions in the Cloud</a><br>
+Amoghavarsha Suresh, Anshul Gandhi<br>
+<i><a href="http://acmsocc.org/2021">SOCC 2021</a></i> [<a href="socc21_servermore.pdf">pdf</a>] [<a href="https://youtu.be/9Or99BsLEcA" target="blank">talk</a>]</li>
+<br>
+
+
+<li><a name="middleware21_pesto">Towards Optimal Placement and Scheduling of DNN Operations with Pesto</a><br>
+Ubaid Ullah Hafeez, Xiao Sun, Anshul Gandhi, Zhenhua Liu<br>
+<i><a href="https://middleware-conf.github.io/2021/">Middleware 2021</a></i>  [<a href="middleware21_pesto.pdf">pdf</a>] [<a href="https://www.youtube.com/watch?v=-Vh7DxkPcBQ" target="blank">talk</a>]</li>
+<br>
+
+
+<li><a name="euromlsys21_opt">Towards Optimal Configuration of Microservices</a><br>
+Gagan Somashekar, Anshul Gandhi<br>
+<i><a href="https://www.euromlsys.eu">EuroMLSys 2021</a></i>  [<a href="euromlsys21_opt.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="www21_bbr">BBR Bufferbloat in DASH Video</a><br>
+Santiago Vargas, Rebecca Drucker, Aiswarya Renganathan, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="https://www2021.thewebconf.org">WWW 2021</a></i>  [<a href="www21_bbr.pdf">pdf</a>]</li>
+<br>
+
+
+
+
+<div class="break">2020</div>
+
+<li><a name="iiswc20_ceer">Empirical Analysis and Modeling of Compute Times of CNN Operations on AWS Cloud</a><br>
+Ubaid Ullah Hafeez, Anshul Gandhi<br>
+<i><a href="http://www.iiswc.org/iiswc2020">IISWC 2020</a></i>  [<a href="iiswc20.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="acsos20_ensure">ENSURE: Efficient Scheduling and Autonomous Resource Management in Serverless Environments</a><br>
+Amoghavarsha Suresh, Gagan Somashekar, Anandh Varadarajan, Veerendra Ramesh Kakarla, Hima Upadhyay, Anshul Gandhi<br>
+<i><a href="https://2020.acsos.org/">ACSOS 2020</a></i>  [<a href="acsos20_ensure.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="acsos20_merit">MERIT: Model-driven Rehoming for VNF Chains</a><br>
+Muhammad Wajahat, Bharath Balasubramanian, Anshul Gandhi, Gueyoung Jung, Shankar Narayanan<br>
+<i><a href="https://2020.acsos.org/">ACSOS 2020</a></i>  [<a href="acsos20_merit.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="peva20_h2">Analyzing the Distribution Fit for Storage Workload and Internet Traffic Traces</a><br>
+Muhammad Wajahat, Aditya Yele, Tyler Estro, Anshul Gandhi, Erez Zadok<br>
+<i><a href="https://www.journals.elsevier.com/performance-evaluation">Performance Evaluation</a></i>  [<a href="peva20_h2.pdf">pdf</a>]</li>
+<br>
+
+
+<div class="break">2019</div>
+
+<li><a name="mw19_tut">Leveraging Queueing Theory and OS Profiling to Reduce Application Latency</a><br>
+Anshul Gandhi, Amoghavarsha Suresh<br>
+<i>Tutorial (invited) @ <a href="http://2019.middleware-conference.org">Middleware 2019</a></i>  [<a href="mw19_tutorial.pdf">pdf</a>, <a href="mw19_tutorial_slides.pdf">slides</a>]</li>
+<br>
+
+<li><a name="wosc19">FnSched: An Efficient Scheduler for Serverless Functions</a><br>
+Amoghavarsha Suresh, Anshul Gandhi<br>
+<i><a href="https://www.serverlesscomputing.org/wosc5">WoSC 2019</a></i>  [<a href="wosc19.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="tcc19_dial">User-Centric Interference-Aware Load Balancing for Cloud-Deployed Applications</a><br>
+Seyyed Ahmad Javadi, Anshul Gandhi<br>
+<i><a href="https://www.computer.org/web/tcc">Transactions on Cloud Computing</a></i>  [<a href="https://ieeexplore.ieee.org/abstract/document/8847413" target="blank">link</a>]</li>
+<br>
+
+<li><a name="socc19_scavenger">Scavenger: A black-box batch workload resource manager for improving utilization in cloud environments</a><br>
+Seyyed Ahmad Javadi, Muhammad Wajahat, Amoghavarsha Suresh, Anshul Gandhi<br>
+<i><a href="socc.github.io/2019">SOCC 2019</a></i>  [<a href="socc19.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="imc19_econ">ECON: Modeling the network to improve application performance</a><br>
+Yi Cao, Javad Nejati, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="https://conferences.sigcomm.org/imc/2019">IMC 2019</a></i>  [<a href="imc19_econ.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="imc19_bbr">When to use and when not to use BBR: An empirical analysis and evaluation study</a><br>
+Yi Cao, Arpit Jain, Kriti Sharma, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="https://conferences.sigcomm.org/imc/2019">IMC 2019</a></i>  [<a href="imc19_bbr.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icsoc19_patching">Towards Automated Patch Management in a Hybrid Cloud</a><br>
+Ubaid Ullah Hafeez, Alexei Karve, Braulio Dumba, Anshul Gandhi, Sai Zeng<br>
+<i><a href="https://icsoc-laas.fr">ICSOC 2019</a></i>  [<a href="icsoc19.pdf">pdf</a>]</li>
+<br>	
+
+<li><a name="mascots19_h2">Distribution Fitting and Performance Modeling for Storage Traces</a><br>
+Muhammad Wajahat, Aditya Yele, Tyler Estro, Anshul Gandhi, Erez Zadok<br>
+<i><a href="https://sites.google.com/view/mascots-2019">MASCOTS 2019</a></i>  [<a href="mascots19_h2.pdf">pdf</a>]&nbsp;&nbsp;&nbsp;(<b>Best Paper Award</b>)</li>
+<br>
+
+<li><a name="mascots19_mdp">Optimal Markovian Dynamic Control of Interference-Prone Server Farms</a><br>
+Scott Votke, Jazeem Abdul Jaleel, Amoghavarsha Suresh, Mohammad Delasay, Sherwin Doroudi, Anshul Gandhi<br>
+<i><a href="https://sites.google.com/view/mascots-2019">MASCOTS 2019</a></i>  [<a href="mascots19_mdp.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="mama19">Tighter Lyapunov Truncation for Multi-Dimensional Continuous Time Markov Chains with Known Moments</a><br>
+Gagan Somashekar, Mohammad Delasay, Anshul Gandhi<br>
+<i><a href="https://www.sigmetrics.org/mama">MAMA 2019</a></i>  [<a href="mama19.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icac19_gpu">Adaptively Accelerating Map-Reduce/Spark with
+GPUs: A Case Study</a><br>
+K. R. Jayaram, Anshul Gandhi, Hongyi Xin, Shu Tao<br>
+<i><a href="https://icac2019.cs.umu.se">ICAC 2019</a></i>  [<a href="icac19_gpu.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="www19_variability">Using Variability as a Guiding Principle to Reduce Latency in Web Applications via OS Profiling</a><br>
+Amoghavarsha Suresh, Anshul Gandhi<br>
+<i><a href="https://www2019.thewebconf.org">WWW 2019</a></i>  [<a href="www19_var.pdf">pdf</a>]&nbsp;&nbsp;&nbsp;(Oral)
+</li>
+<br>
+
+<li><a name="nsdi19_mmlite_poster">5GCoreLite: Scalable and Resource Efficient Next Generation Cellular Packet Core</a><br>
+Vasudevan Nagendra, Arani Bhattacharya, Anshul Gandhi, Samir Das<br>
+<i>Poster @ <a href="https://www.usenix.org/conference/nsdi19">NSDI 2019</a></i>  [<a href="nsdi19_poster_mmlite.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="sosr19_mmlite">Scalable and Resource Efficient Control Plane for Next Generation Cellular Packet Core</a><br>
+Vasudevan Nagendra, Arani Bhattacharya, Anshul Gandhi, Samir Das<br>
+<i><a href="https://conferences.sigcomm.org/sosr/2019">SOSR 2019</a></i>  [<a href="sosr19_mmlite.pdf">pdf</a>]</li>
+<br>
+
+
+<div class="break">2018</div>
+
+<li><a name="socc18_poster">Application-Agnostic Batch Workload Management in Cloud Environments</a><br>
+Seyyed Ahmad Javadi, Shalini Bhaskara, Rahul Doshi, Prashanth Soundarapandian, Muhammad Wajahat, Anshul Gandhi<br>
+<i>Poster @ <a href="https://acmsocc.github.io/2018/">SOCC 2018</a></i>  [<a href="socc18_poster.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="mascots18_graybox">A Graybox Approach to Rehoming Service Chains</a><br>
+Muhammad Wajahat, Bharath Balasubramanian, Anshul Gandhi, Gueyoung Jung, Shankaranarayanan Puzhavakath Narayanan<br>
+<i><a href="http://www.mscs.mu.edu/~mascots">MASCOTS 2018</a></i>  [<a href="mascots18_graybox.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="vis18_poster">Analysis and Visualization of Road Accidents in the UK</a><br>
+Anjul Tyagi, Ayush Kumar, Anshul Gandhi, Klaus Mueller<br>
+<i>Poster @ <a href="http://ieeevis.org/year/2018/welcome">IEEE VIS 2018</a></i>  [<a href="vis18_poster.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="icdcs18_easy">EASY: Efficient segment assignment strategy for reducing tail latencies in Pinot</a><br>
+Seyyed Ahmad Javadi, Harsh Gupta, Robin Manhas, Shweta Sahu, Anshul Gandhi<br>
+<i><a href="http://icdcs2018.ocg.at">ICDCS 2018</a></i>  [<a href="icdcs18_easy.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="icdcs18_elmem">ElMem: Towards an Elastic Memcached System</a><br>
+Ubaid Ullah Hafeez, Muhammad Wajahat, Anshul Gandhi<br>
+<i><a href="http://icdcs2018.ocg.at">ICDCS 2018</a></i>  [<a href="icdcs18_elmem.pdf">pdf</a>]&nbsp;&nbsp;&nbsp;(<b>Best Student Paper Award</b>)</li>
+<br>
+
+
+<div class="break">2017</div>
+
+<li><a name="tcc17">Providing Performance Guarantees for Cloud-deployed Applications</a><br>
+Anshul Gandhi, Parijat Dube, Alexei Karve, Andrzej Kochut, Li Zhang<br>
+<i><a href="https://www.computer.org/web/tcc">Transactions on Cloud Computing</a></i>  [<a href="http://ieeexplore.ieee.org/document/8103799/" target="blank">link</a>]</li>
+<br>
+
+
+<li><a name="middleware17_poster_memscale">Realizing an Elastic Memcached via Cached Data Migration</a><br>
+Ubaid Ullah Hafeez, Deepthi Male, Sharath Kumar Naeni, Muhammad Wajahat, Anshul Gandhi<br>
+<i>Poster @ <a href="http://2017.middleware-conference.org/">Middleware 2017</a></i>  [<a href="mw17_memscale.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="middleware17_poster_spark">Improving server utilization via resource-adaptive batch VMs</a><br>
+Seyyed Ahmad Javadi, Piyush Shyam Banginwar, Vaishali Chanana, Rashmi Narvekar, Mitesh Kumar Savita, Anshul Gandhi<br>
+<i>Poster @ <a href="http://2017.middleware-conference.org/">Middleware 2017</a></i>  [<a href="mw17_batch.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="suscom17">MLscale: A Machine Learning based Application-Agnostic Autoscaler</a><br>
+Muhammad Wajahat, Alexei Karve, Andrzej Kochut, Anshul Gandhi<br>
+<i><a href="https://www.journals.elsevier.com/sustainable-computing/">Sustainable Computing, Informatics and Systems</a></i>  [<a href="suscom17.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="igsc17">Lessons Learnt from Software Tuning of a Memcached-Backed, Multi-Tier, Web Cloud Application</a><br>
+Muhammad Wajahat, Salman Masood, Abhinav Sau, Anshul Gandhi<br>
+<i><a href="http://igsc.eecs.wsu.edu">IGSC 2017</a></i>  [<a href="igsc17.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="sigcomm17">Rethinking TCP Throughput and Latency Modeling</a><br>
+Yi Cao, Aruna Balasubramanian, Anshul Gandhi<br>
+<i>Poster @ <a href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM 2017</a></i>  [<a href="sigcomm17_tcp.pdf">pdf</a>]</li>
+<br>
+
+
+<li><a name="mascots17">Modeling and Analysis of Performance under Interference in the Cloud</a><br>
+Scott Votke, Seyyed Ahmad Javadi, Anshul Gandhi<br>
+<i><a href="http://mascots2017.cs.ucalgary.ca">MASCOTS 2017</a></i>  [<a href="mascots17.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icac17_dial">DIAL: Reducing Tail Latencies for Cloud Applications via Dynamic Interference-aware Load Balancing</a><br>
+Seyyed Ahmad Javadi, Anshul Gandhi<br>
+<i><a href="http://icac2017.ece.ohio-state.edu/">ICAC 2017</a></i>  [<a href="icac17.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="sosym17">Model-driven optimal resource scaling in cloud</a><br>
+Anshul Gandhi, Parijat Dube, Alexei Karve, Andrzej Kochut, Li Zhang<br>
+<i><a href="http://www.sosym.org/">Software and Systems Modeling</a></i>  [<a href="http://rdcu.be/o203" target="blank">link</a>]</li>
+<br>
+
+<li><a name="sigm17_recon">Deconstructing the Energy Consumption of the Mobile Page Load</a><br>
+Yi Cao, Javad Nejati, Muhammad Wajahat, Aruna Balasubramanian, Anshul Gandhi<br>
+<i><a href="http://sigmetrics.org/sigmetrics2017/">SIGMETRICS 2017</a></i>  [<a href="sigm17_recon.pdf">pdf</a>]</li>
+<br>
+
+<div class="break">2016</div>
+
+<li><a name="socc16_dial">Dynamic Interference-Aware Load Balancing</a><br>
+Seyyed Ahmad Javadi, Himanshu Rajput, Anshul Gandhi<br>
+<i>Poster @ <a href="http://acmsocc.github.io/2016/">SOCC 2016</a></i>  [<a href="socc16_poster.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="igsc16_mlscale">Using Machine Learning for Black-Box Autoscaling</a><br>
+Muhammad Wajahat, Alexei Karve, Andrzej Kochut, Anshul Gandhi<br>
+<i><a href="http://igsc.eecs.wsu.edu/">IGSC 2016</a></i>  [<a href="igsc16_mlscale.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="igsc16_mctail">Minimizing Electricity Cost for Geo-Distributed Interactive Services with Tail Latency Constraint</a><br>
+Mohammad Islam, Anshul Gandhi, Shaolei Ren<br>
+<i><a href="http://igsc.eecs.wsu.edu/">IGSC 2016</a></i>  [<a href="igsc16_mctail.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="sigm16_recon">Analyzing the Power Consumption of the Mobile Page Load</a><br>
+Yi Cao, Javad Nejati, Pavan, Maguluri, Aruna Balasubramanian, Anshul Gandhi<br>
+<i>Poster @ <a href="http://sigmetrics.org/sigmetrics2016/">SIGMETRICS 2016</a></i>  [<a href="sigm16_mobile.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="sigm16_online">Using predictions in online optimization: looking forward with an eye on the past</a><br>
+Niangjun Chen, Joshua Comden, Zhenhua Liu, Anshul Gandhi, Adam Wierman<br>
+<i><a href="http://sigmetrics.org/sigmetrics2016/">SIGMETRICS 2016</a></i>  [<a href="sigm16_online.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="ic2e16_uie">UIE: User-centric Interference Estimation for Cloud Applications</a><br>
+Seyyed Ahmad Javadi, Sagar Mehra, Bharath Kumar Reddy Vangoor, Anshul Gandhi<br>
+<i><a href="http://conferences.computer.org/IC2E/2016">IC2E 2016</a></i>  [<a href="ic2e16_uie.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="ic2e16_hadoop">Autoscaling for Hadoop Clusters</a><br>
+Anshul Gandhi, Parijat Dube, Andrzej Kochut, Li Zhang, Sidhartha Thota<br>
+<i><a href="http://conferences.computer.org/IC2E/2016">IC2E 2016</a></i>  [<a href="ic2e16_hadoop.pdf">pdf</a>]&nbsp;&nbsp;&nbsp;(also, <i>Poster @ <a href="http://acmsocc.github.io/2015/">SOCC 2015</a></i> and <i>Poster @ <a href="http://icac2015.imag.fr">ICAC 2015</a></i> [<a href="icac15.pdf">pdf</a>])</li>
+<br>
+
+<div class="break">2015</div>
+
+<li><a name="iccac15">The Unobservability Problem in Clouds</a><br>
+Anshul Gandhi, Parijat Dube, Alexei Karve, Andrzej Kochut, Harsha Ellanti<br>
+<i><a href="http://www.autonomic-conference.org">ICCAC 2015</a></i> [<a href="iccac15.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="mascots15">HALO: Heterogeneity-Aware Load Balancing</a><br>
+Anshul Gandhi, Xi Zhang, Naman Mittal<br>
+<i><a href="http://wordpress.cs.vt.edu/mascots2015">MASCOTS 2015</a></i> [<a href="mascots15.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="dcc15_optlb">Optimal Load-Balancing for Heterogeneous Clusters</a><br>
+Anshul Gandhi, Naman Mittal, Xi Zhang<br>
+<i>Poster @ <a href="https://sites.google.com/site/sigmetricsdcc2015">DCC 2015</a></i> [<a href="dcc15_optlb.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="dcc15_aws">Analyzing the Network for AWS Distributed Cloud Computing</a><br>
+Anshul Gandhi, Justin Chan<br>
+<i><a href="https://sites.google.com/site/sigmetricsdcc2015">DCC 2015</a></i> [<a href="dcc15_aws.pdf">pdf</a>]</li>
+<br>
+
+<div class="break">2014</div>
+
+<li><a name="sbac14">Modeling the Impact of Workload on Cloud Resource Scaling</a><br>
+Anshul Gandhi, Parijat Dube, Alexei Karve, Andrzej Kochut, Li Zhang<br>
+<i><a href="http://sbac.lip6.fr/2014/index.php">SBAC 2014</a></i> [<a href="sbac14.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icac14">Adaptive, Model-driven Autoscaling for Cloud Applications</a><br>
+Anshul Gandhi, Parijat Dube, Alexei Karve, Andrzej Kochut, Li Zhang<br>
+<i><a href="http://www.usenix.org/conference/icac14">ICAC 2014</a></i> [<a href="icac14.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="questa14">Exact analysis of the M/M/k/setup class of Markov chains via recursive renewal reward</a><br>
+Anshul Gandhi, Sherwin Doroudi, Mor Harchol-Balter and Alan Scheller-Wolf<br>
+<i><a href="http://link.springer.com/article/10.1007/s11134-014-9409-7">Queueing Systems, Volume 77, Issue 2, pp. 177-209</a></i> [<a href="questa14.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="icpe14">Dynamic Management of Caching Tiers</a><br>
+Anshul Gandhi<br>
+<i><a href="http://icpe2014.ipd.kit.edu">ICPE 2014</a></i> [<a href="icpe14.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(invited abstract)</li>
+<br>
+
+<div class="break">2013</div>
+
+<li><a name="sigm13">Exact Analysis of the M/M/k/setup Class of Markov Chains via Recursive Renewal Reward</a><br>
+Anshul Gandhi, Sherwin Doroudi, Mor Harchol-Balter and Alan Scheller-Wolf<br>
+<i><a href="http://www.sigmetrics.org/sigmetrics2013">SIGMETRICS 2013</a></i> [<a href="sigm13.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(also, <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/2013/abstracts/13-105.html">Technical Report CMU-CS-13-105</a></i> [<a href="RRR_2013_tech.pdf">pdf</a>])</li>
+<br>
+
+<li><a name="orl13">M/G/k with Staggered Setup</a><br>
+Anshul Gandhi and Mor Harchol-Balter<br>
+<i><a href="http://www.sciencedirect.com/science/article/pii/S0167637713000357">OR Letters, Volume 41, Issue 4, pp. 317-320</a></i> [<a href="orletters.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(extended version, <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/2009/abstracts/09-166.html">Technical Report CMU-CS-09-166</a></i> [<a href="perf_mmk_2010_tech.pdf">pdf</a>])</li>
+<br>
+
+<div class="break">2012</div>
+
+<li><a name="tocs12">AutoScale: Dynamic, Robust Capacity Management for Multi-Tier Data Centers</a><br>
+Anshul Gandhi, Mor Harchol-Balter, Ram Raghunathan and Michael Kozuch<br>
+<i><a href="http://dl.acm.org/citation.cfm?doid=2382553.2382556">Transactions on Computer Systems, Volume 30, Issue 4, Article 14</a></i> [<a href="tocs12.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(also, 
+<i><a href="http://reports-archive.adm.cs.cmu.edu/anon/2012/abstracts/12-109.html">Technical Report CMU-CS-12-109</a></i> [<a href="autoscale_2012_tech.pdf">pdf</a>])</li>
+<br>
+
+<li><a name="middleware12">SOFTScale: Stealing Opportunistically For Transient Scaling</a><br>
+Anshul Gandhi, Timothy Zhu, Mor Harchol-Balter and Michael Kozuch<br>
+<i><a href="http://middleware2012.cs.mcgill.ca/doku.php">Middleware 2012</a></i> [<a href="middleware12.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(extended version, <i><a
+href="http://reports-archive.adm.cs.cmu.edu/anon/2012/abstracts/12-111.html">Technical Report CMU-CS-12-111</a></i> [<a href="softscale_2012_tech.pdf">pdf</a>])</li>
+<br>
+
+<li><a name="hotcloud12">Saving Cash by Using Less Cache</a><br>
+Timothy Zhu, Anshul Gandhi, Mor Harchol-Balter and Michael Kozuch<br>
+<i><a href="https://www.usenix.org/conference/hotcloud12">HotCloud 2012</a></i> [<a href="hotcloud_2012.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="igcc12">Are sleep states effective in data centers?</a><br>
+Anshul Gandhi, Mor Harchol-Balter and Michael Kozuch<br>
+<i><a href="http://www.green-conf.org/2012/">IGCC 2012</a></i> [<a href="igcc_2012.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="suscom12">Hybrid Resource Provisioning for Minimizing Data Center SLA Violations and Power Consumption</a><br>
+Anshul Gandhi, Yuan Chen, Daniel Gmach, Martin Arlitt and Manish Marwah<br>
+<i><a href="http://www.journals.elsevier.com/sustainable-computing/">Sustainable Computing, Informatics and Systems, Volume 2, Issue 2, pp. 91-104</a></i> [<a href="suscom.pdf">pdf</a>]</li>
+<br>
+
+<div class="break">2011</div>
+
+<li><a name="hotpower11">The case for sleep states in servers</a><br>
+Anshul Gandhi, Mor Harchol-Balter and Michael Kozuch<br>
+<i><a href="http://sosp2011.gsd.inesc-id.pt/workshops/hotpower/">HotPower 2011</a></i> [<a href="hotpower_2011.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="igcc11">Minimizing Data Center SLA Violations and Power Consumption via Hybrid Resource Provisioning</a><br>
+Anshul Gandhi, Yuan Chen, Daniel Gmach, Martin Arlitt and Manish Marwah<br>
+<i><a href="http://www.green-conf.org/2011/">IGCC 2011</a></i> [<a href="igcc_2011.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(<b>Best Paper Award</b>)<br>
+(<a href="https://343317088115394029-a-ieee-net-s-sites.googlegroups.com/a/ieee.net/stc-sustainable-computing/files/mar2011_web.pdf"><b>Pick of the Month</b></a> for March 2012 in the IEEE STC on Sustainable Computing)</li>
+<br>
+
+<li><a name="ocs11">Distributed, Robust Auto-Scaling Policies for Power Management in Compute Intensive Server Farms</a><br>
+Anshul Gandhi, Mor Harchol-Balter, Ram Raghunathan and Michael Kozuch<br>
+<i><a href="http://www.cercs.gatech.edu/opencirrus/OCsummit11/index.shtml">Open Cirrus Summit 2011</a></i> [<a href="opencirrus_2011.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="allerton11">How Data Center Size Impacts the Effectiveness of Dynamic Power Management</a><br>
+Anshul Gandhi and Mor Harchol-Balter<br>
+<i><a href="http://www.csl.uiuc.edu/allerton/">49th Annual Allerton Conference on Communication, Control, and Computing</a></i> [<a href="allerton_2011.pdf">pdf</a>]</li>
+<br>
+
+<div class="break">2010</div>
+
+<li><a name="perf10_setup">Server farms with setup costs</a><br>
+Anshul Gandhi, Mor Harchol-Balter and Ivo Adan<br>
+<i><a href="http://performa.ulb.ac.be/">PERFORMANCE 2010</a></i> [<a href="perf_mmk_2010.pdf">pdf</a>]<br>
+<i><a href="http://www.sciencedirect.com/science/article/pii/S0166531610000957">Performance Evaluation, Volume 67, Issue 11, pp. 1123-1138</a></i></li>
+<br>
+
+<li><a name="perf10_opt">Optimality Analysis of Energy-Performance Trade-off for Server Farm Management</a><br>
+Anshul Gandhi, Varun Gupta, Mor Harchol-Balter and Michael Kozuch<br>
+<i><a href="http://performa.ulb.ac.be/">PERFORMANCE 2010</a></i> [<a href="perf_power_2010.pdf">pdf</a>] &nbsp;&nbsp;&nbsp;(extended version, <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/2010/abstracts/10-108.html">Technical Report CMU-CS-10-108</a></i> [<a href="perf_power_2010_tech.pdf">pdf</a>])<br>
+<i><a href="http://www.sciencedirect.com/science/article/pii/S0166531610001069">Performance Evaluation, Volume 67, Issue 11, pp. 1155-1171</a></i></li>
+<br>
+
+<li><a name="mama10">Decomposition Results for an M/M/k with Staggered Setup</a><br>
+Anshul Gandhi, Mor Harchol-Balter and Ivo Adan<br>
+<i><a href="http://www.sigmetrics.org/sigmetrics2010/mama_schedule.shtml">MAMA 2010</a></i> [<a href="mama_2010.pdf">pdf</a>]<br>
+<i><a href="http://dl.acm.org/citation.cfm?id=1870178.1870195">Performance Evaluation Review, Volume 38, Issue 2, pp. 48-50</a></i></li>
+<br>
+
+<li><a name="mcqt10">Analysis of an M/M/k system with exponential setup times under staggered boot up</a><br>
+Anshul Gandhi, Mor Harchol-Balter and Ivo Adan<br>
+<i><a href="http://www.mat.ucm.es/%7Emcqt/confe10/conf10.html">MCQT 2010</a></i></li>
+<br>
+
+<div class="break">2009</div>
+
+<li><a name="weed09">Power Capping Via Forced Idleness</a><br>
+Anshul Gandhi, Mor Harchol-Balter, Rajarshi Das, Jeffrey Kephart and Charles Lefurgy<br>
+<i><a href="http://research.ihost.com/weed2009/">WEED 2009</a></i> [<a href="weed_2009.pdf">pdf</a>]</li>
+<br>
+
+<li><a name="sigm09">Optimal Power Allocation in Server Farms</a><br>
+Anshul Gandhi, Mor Harchol-Balter, Rajarshi Das and Charles Lefurgy<br>
+<i><a href="http://conferences.sigmetrics.org/sigmetrics/2009/">SIGMETRICS 2009</a></i> [<a href="sigmetrics_2009.pdf">pdf</span></a>] &nbsp;&nbsp;&nbsp;(extended version, <i><a href="http://reports-archive.adm.cs.cmu.edu/anon/2009/abstracts/09-113.html">Technical Report CMU-CS-09-113</a></i> [<a href="sigmetrics_2009_tech.pdf">pdf</a>])</li>
+<br>
+
+<div class="break">2008 and earlier</div>
+
+<li>Inducing Optimal Scheduling with Selfish Users<br>
+Paul Enders, Anshul Gandhi, Varun Gupta, Laurens Debo, Mor Harchol-Balter and Alan Scheller-Wolf<br>
+<i>CMU GSIA Working Paper #2008-E23</i> [<a href="dg_2008_tech.pdf">pdf</a>]</li>
+<br>
+<li>Database Summarization and Publishing in Wireless Environments<br>
+Anshul Gandhi and R.K.Ghosh<br>
+<i><a href="http://www.iitg.ac.in/icdcn2006/">ICDCN 2006</a></i> [<a href="icdcn_2006.pdf">pdf</a>]</li>
+</ul>
+
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=funding></a><b>Funding: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+
+<li><a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program/" target="blank">SBU OVPR Seed Grant| Towards Efficient and Sustainable LLM Deployments</a><br><br>
+
+<li><a href="https://www.businessofgovernment.org/content/research-stipends" target="blank">IBM Center for The Business of Government Research Grant| Towards Sustainable Data Centers: Evaluating Policies for Energy Efficiency and Environmental Responsibility</a><br><br>
+
+<li><a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program" target="blank">SBU OVPR Seed Grant| Significantly reducing energy consumption of Deep Neural Networks</a><br><br>
+
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2324859" target="blank">NSF CCF-2324859| Collaborative Research: DESC: Type I: Extending lifetimes of partially broken machines to repurpose e-waste</a><br><br>
+
+<li><a href="https://www.stonybrook.edu/commcms/proposal-development/funding/OVPR_Seed_Grant_Program" target="blank">SBU OVPR Seed Grant| Enabling Live Video Analytics for Mobile Cameras</a><br><br>
+
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2214980" target="blank">NSF CNS-2214980| Collaborative Research: CNS Core: Large: Systems and Verifiable Metrics for Sustainable Data Centers</a><br><br>
+
+
+<li><a href="https://openinfralabs.org" target="blank">OpenInfra Labs Gift| Near Data Processing</a><br><br>
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2106434" target="blank">NSF CNS-2106434| Collaborative Research: CNS Core: Medium: Optimizing Storage Caches via Adaptive and Reconfigurable Tiering</a><br><br>
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1909356" target="blank">NSF CNS-1909356| CNS Core: Small: Significantly Improving Networked Applications using Congestion-Aware Transport Modeling</a><br><br>
+<li><a href="https://aws.amazon.com/research-credits" target="blank">AWS Cloud Credits for Research Award</a><br><br>
+<li><a href="https://research.stonybrook.edu/ovprseedgrantprogram" target="blank">SBU OVPR Seed Grant| Exploiting Analytical Models to Realize the Full Performance and Parallelization Potential of Modern Storage Architectures for Big Data Applications</a><br><br>
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750109" target="blank">NSF CNS-1750109| CAREER: Enabling Predictable Performance in Cloud Computing</a><br><br>
+<li><a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1730128" target="blank">NSF CNS-1730128| II-EN: Collaborative Research: Enhancing the Parasol Experimental Testbed for Sustainable Computing</a><br><br>
+<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1717588" target="blank">NSF CNS-1717588| NeTS: Small: Demystifying the Role of Prediction Models: Bridging Prediction Algorithms and Resource Provisioning</a><br><br>
+<li><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1622832" target="blank">NSF CNS-1622832| EAGER: Elastic Multi-layer Memcached Tiers</a><br><br>
+<li><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1617046" target="blank">NSF CNS-1617046| CSR: Small: Scalable, heterogeneity-aware load balancing</a><br><br>
+<li><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1464151" target="blank">NSF CNS-1464151| CRII: CSR: Online Performance Modeling of Opaque Cloud Applications</a><br><br>
+<li><a href="http://googleresearch.blogspot.com/2016/02/google-research-awards-fall-2015.html" target="blank">Google Research Grant R2-2015-839| The effect of Web optimizations on mobile browser performance and power</a><br><br>
+<li><a href="http://www.research.ibm.com/university/awards/faculty_innovation_2015.shtml" target="blank">IBM 2015 Faculty Award| AutoScaling for Cloud Applications</a><br><br>
+<li><a href="https://www.microsoft.com/en-us/research/academic-program/microsoft-azure-for-research/" target="blank">Microsoft Azure Research Award</a><br><br>
+<li><a href="https://aws.amazon.com/education/awseducate" target="blank">AWS in Education Grant Award</a><br><br>
+</ul>
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=patents></a><b>Patents: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+<li>Model-Driven Technique for Virtual Network Function Rehoming for Service Chains (<b>Issued</b>; US Patent # 11,212,173)</li>
+
+<li>Graphics Processing Unit Resource Sharing (<b>Issued</b>; US Patent # 9,830,677)</li>
+
+<li>Systems and Methods for Scaling a Cloud Infrastructure (<b>Issued</b>; US Patent # 9,300,553)</li>
+
+<li>Power Budget Allocation in Multi-Processor Systems (<b>Issued</b>; US Patent # 9,052,895)</li>
+
+<li>Dynamic Capacity Management of Multiple Parallel Connected Computing Resources (<b>Issued</b>; US Patent # 8,806,018)</li>
+
+<li>Systems and Methods for Managing Power Consumption and Performance of a Processor (<b>Issued</b>; US Patent # 8,589,709)</li>
+
+<li>Provisioning Data Center Resources (filed 4/14/2011)</li>
+
+</ul>
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=teaching></a><b>Teaching: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+<li>Fall 2025: <a href="courses/cse357_f25/index.html">CSE 357 Statistical Methods for Data Science</a></li>
+<li>Spring 2025: <a href="courses/cse544_s25/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Spring 2025: CSE 694 Seminar in Sustainable Computing</li>
+<li>Fall 2024: <a href="courses/cse357_f24/index.html">CSE 357 Statistical Methods for Data Science</a></li>
+<li>Spring 2024: <a href="courses/cse544_s24/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Fall 2023: <a href="courses/cse357_f23/index.html">CSE 357 Statistical Methods for Data Science</a></li>
+<li>Spring 2023: <a href="courses/cse544_s23/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Spring 2022: <a href="courses/cse544_s22/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Spring 2021: <a href="courses/cse544_s21/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Fall 2020: <a href="courses/cse357_f20/index.html">CSE 357 Statistical Methods for Data Science</a></li>
+<li>Spring 2020: <a href="courses/cse544_s20/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Fall 2019: <a href="courses/cse357_f19/index.html">CSE 357 Statistical Methods for Data Science</a></li>
+<li>Spring 2019: <a href="courses/cse391_s19/index.html">CSE 391 Probability & Statistics for Data Science</a></li>
+<li>Fall 2018: <a href="courses/cse544_f18/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Spring 2018: <a href="courses/cse544_s18/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Fall 2017: <a href="courses/cse390_f17/index.html">CSE 390 Probability & Statistics for Data Science</a></li>
+<li>Spring 2017: <a href="courses/cse544_s17/index.html">CSE 544 Probability and Statistics for Data Science</a></li>
+<li>Spring 2016: <a href="courses/cse591_s16/index.html">CSE 591 Energy-Efficient Computing</a></li>
+<li>Spring 2015: <a href="courses/cse531_s15/index.html">CSE 531 Performance Analysis of Systems</a></li>
+<li>Fall 2014: CSE 691 Energy-Efficient Computing</li>
+<br>
+
+<li><a href="courses/cse523524">CSE 523/524 Masters Projects</a></li>
+</il>
+
+</div>
+
+
+
+<div style="border:5px solid orange; margin: 20px 10px; padding-left:20px; background-color:white; position:relative;">
+
+<p style="float:left"><a name=service></a><b>Service: </b></p>
+<p style="float: right; padding-right:0.2in;">
+[<a href="#top">Top</a>]
+</p>
+<div style="clear: both;"></div>
+
+<ul>
+
+<li>SIG Board:<br>
+Secretary/Treasurer for <a href="https://sigmetrics.org/committees.shtml">ACM SIGMETRICS</a> (2023 onwards)
+</li>
+<br>
+
+
+<li>Steering/Executive Committee:<br>
+<a href="https://sigmetrics.org/">SIGMETRICS</a> (2023 onwards)<br>
+<a href="http://www.middleware-conference.org/steering.html">Middleware</a> (2017 onwards)
+</li>
+<br>
+
+<li>Editorial Board:<br>
+Lead Guest Editor, PEVA SI on <a href="https://www.sciencedirect.com/journal/performance-evaluation/about/call-for-papers#performance-analysis-and-evaluation-of-systems-for-artificial-intelligence" target="blank">Performance Analysis and Evaluation of Systems for Artificial Intelligence</a> (2023-24)<br>
+<a href="https://www.journals.elsevier.com/performance-evaluation">Performance Evaluation</a> (2018 onwards)
+</li>
+<br>
+
+<li>Organizing Committee: <br>
+General Co-Chair, <a href="https://sigmetrics.org/sigmetrics2025" target="blank">Sigmetrics 2025</a><br>
+General Co-Chair, <a href="https://ieee-cybermatics.org/2023/greencom" target="blank">GreenCom 2023</a><br>
+Program Co-Chair, <a href="https://mascots.iitis.pl/">MASCOTS 2023</a>
+<br>
+Program Co-Chair, <a href="https://www.sigmetrics.org/sigmetrics2021">Sigmetrics 2021</a>
+<br>
+Workshops Chair, <a href="https://www.sigmetrics.org/sigmetrics2020">Sigmetrics 2020</a>
+<br>
+Track Co-Chair (for Intelligent Systems and Infrastructure track), <a href="https://www2020.thewebconf.org" target="blank">WWW 2020</a>
+<br>
+Industry and Sponsorship Chair, <a href="http://icac2019.cs.umu.se">ICAC 2019</a>
+<br>
+Student Activities Chair, <a href="https://www.sigmetrics.org/sigmetrics2019">Sigmetrics 2019</a>
+<br>
+General Co-Chair, <a href="https://middleware2017.github.io/middleware2017/">Middleware 2017</a>
+<br>
+Program Vice Chair (Co-Chair of Cloud Computing and Data Centers track), <a href="http://icdcs2017.gatech.edu/" target="blank">ICDCS 2017</a>
+<br>
+Tutorials Co-Chair, <a href="http://sigmetrics.org/sigmetrics2017/" target="blank">Sigmetrics 2017</a>
+<br>
+Publicity Co-Chair, <a href="icac2017.ece.ohio-state.edu" target="blank">ICAC 2017</a>
+<br>
+Web Chair, <a href="http://sigmetrics.org/sigmetrics2013/" target="blank">Sigmetrics 2013</a>
+</li>
+<br>
+
+<li>Program Committee: <br>
+2025: 
+<a href="https://conferences.computer.org/IC2E/2025">IC2E</a> (industry track)<br>
+
+2024: 
+<a href="https://sigmetrics.org/sigmetrics2024/">Sigmetrics</a>, <a href="https://usenix.org/conference/atc24">ATC</a>, <a href="https://mascots24.iitis.pl">MASCOTS</a> <br>
+
+
+2023: 
+<a href="https://sigmetrics.org/sigmetrics2023/">Sigmetrics</a>, <a href="https://middleware-conf.github.io/post/middleware2023/">Middleware</a>
+<br>
+
+
+2020: 
+<a href="https://2020.acsos.org/">ICAC</a>,
+<a href="https://www.ispass.org/ispass2020/">ISPASS</a>,
+<a href="https://www.sigmetrics.org/sigmetrics2020">Sigmetrics</a>, <a href="https://mascots.iitis.pl/">MASCOTS</a>
+<br>
+
+2019: 
+<a href="http://www.hpdc.org/2019/">HPDC</a>,
+<a href="https://www.sigmetrics.org/sigmetrics2019">Sigmetrics</a>,
+<a href="https://www2019.thewebconf.org">WWW</a>
+<br>
+
+2018: 
+<a href="https://www.sigmetrics.org/sigmetrics2018">Sigmetrics</a>,
+<a href="http://icdcs2018.ocg.at">ICDCS</a>,
+<a href="http://2018.middleware-conference.org">Middleware</a>,
+<a href="http://conferences.computer.org/IC2E/2018">IC2E</a>,
+<a href="http://icac2018.informatik.uni-wuerzburg.de">ICAC</a>,
+<a href="https://www.usenix.org/conference/hotcloud18">HotCloud</a>
+<br>
+2017: 
+<a href="http://icac2017.ece.ohio-state.edu">ICAC</a>, 
+<a href="http://autonomic-conference.org/iccac-2017">ICCAC</a>, 
+<a href="http://www.thecloudcomputing.org/2017">IEEE Cloud</a>,
+<a href="http://conferences.computer.org/IC2E/2017/">IC2E</a>
+<br>
+2016: 
+<a href="http://sigmetrics.org/sigmetrics2016/" target=blank>Sigmetrics</a>, 
+<a href="http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/" target=blank>ICDCS</a>, 
+<a href="http://san.ee.ic.ac.uk/mascots2016/" target=blank>MASCOTS</a>,
+<a href="http://igsc.eecs.wsu.edu">IGSC</a>, 
+<a href="http://iccac2016.se.rit.edu">ICCAC</a>,
+<a href="http://icccn.org/icccn16/">ICCCN</a>,
+<a href="http://www.qest.org/qest2016">QEST</a>,
+<a href="http://www.podc.org/dcc2016">DCC</a>,
+<a href="http://cs.txstate.edu/~zz11/cfp/gpcdp">GPCDP</a>,
+<a href="http://www.rci.rutgers.edu/~ey108/didc2016/home.html">DIDC</a>
+<br>
+2015: 
+<a href="http://wordpress.cs.vt.edu/mascots2015">MASCOTS</a>, 
+<a href="http://2015.middleware-conference.org">Middleware</a> (industry track), 
+<a href="http://igsc.eecs.wsu.edu">IGSC</a>, 
+<a href="http://cs.txstate.edu/~zz11/cfp/gpcdp">GPCDP</a>
+<br>
+2014: 
+<a href="http://www.sigmetrics.org/sigmetrics2014">Sigmetrics</a>, 
+<a href="https://www.usenix.org/conference/hotcloud14">HotCloud</a>, 
+<a href="http://icpp.cs.umn.edu">ICPP</a>, 
+<a href="http://cloudresearch.org/workshops/6th">CCWS</a>
+<br>
+2010: 
+<a href="http://www.sigmetrics.org/sigmetrics2010">Sigmetrics</a> (Shadow PC)
+</li>
+<br>
+
+<li>Referee: 
+ACM Transactions on Computer Systems,
+IEEE Transactions on Computers, 
+IEEE Transactions on Cloud Computing, 
+ACM/IEEE Transactions on Networking, 
+Performance Evaluation, 
+Annals of Operations Research, 
+Operations Research Letters,
+IEEE Transactions on Parallel and Distributed Systems, 
+ACM Transactions on Modeling and Performance Evaluation of Computing Systems, 
+ACM Transactions on Autonomous and Adaptive Systems, 
+IEEE Internet Computing,
+IEEE Transactions on Services Computing, 
+IEEE Communications Letters,
+IEEE Transactions on Network and Service Management, 
+IEEE Transactions on Dependable and Secure Computing,
+Journal of Parallel and Distributed Computing, 
+Canadian Operations Research Journal, 
+Computing, 
+Parallel Computing,
+Sustainable Computing, 
+International Journal of Parallel Programming, 
+Simulation Modeling Practice and Theory
+</li>
+<br>
+
+<!--
+<li>External Reviewer: ISCA 2013, HotPower 2012
+</li>
+<br>
+-->
+
+<li>Professional Memberships: IEEE Senior Member, ACM Senior Member
+</li>
+</ul>
+
+</div>
+
+
+</body>
+</html>

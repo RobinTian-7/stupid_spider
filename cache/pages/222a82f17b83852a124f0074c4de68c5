@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Akshay Narayan</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recursive:slnt,CASL,MONO@-1,0.75,0.25&amp;display=swap" /><link rel="stylesheet" href="main.css" /></head>
+<body><h1>Akshay Narayan</h1>
+<div style="text-align:left;"><p>I am an assistant professor at Brown University.
+My research is in computer systems and networking, and focuses on ways to make specialization for network environments accessible. Toward this goal, I develop new abstractions to help applications cope with both unpredictable bandwidth allocations in the modern Internet, as well as with modern dynamic network environments as software and hardware trends drive increased network variability and complexity.</p>
+
+<p>Before this, I was a postdoctoral researcher at UC Berkeley/ICSI in the <a href="https://netsys.cs.berkeley.edu">NetSys lab</a>,
+and before that I was a graduate student at MIT working with <a href="http://nms.csail.mit.edu/~hari/">Hari Balakrishnan</a> and <a href="https://people.csail.mit.edu/alizadeh/">Mohammad Alizadeh</a>.
+My <a href="https://dspace.mit.edu/handle/1721.1/144577">thesis</a> described new abstractions to help applications cope with modern dynamic network environments as software and hardware trends drive increased network variability and complexity.
+During graduate school, I was supported by an <a href="https://www.nsfgrfp.org">NSF Graduate Research Fellowship</a>.
+I previously received a <a href="http://news.mit.edu/2007/jacobs-1019">Irwin Mark Jacobs and Joan Klein Jacobs Presidential Fellowship</a>.
+Prior to graduate school, I was a research assistant at NetSys working with
+<a href="https://www.eecs.berkeley.edu/~sylvia/">Sylvia Ratnasamy</a> and
+<a href="https://www.eecs.berkeley.edu/Faculty/Homepages/shenker.html">Scott Shenker</a>.
+Before that, I was an undergrad at UC Berkeley, from which I graduated with High Honors in 2015.</p>
+
+<p>These are links to my
+<a href="./res/akshay-narayan-cv.pdf">CV</a>,
+<a href="https://github.com/akshayknarayan">GitHub page</a>, and
+<a href="./res/akshayn-ssh.txt">SSH Public Key</a>.
+If you want to contact me, you can do so via
+<a href="https://keybase.io/akshayn">Keybase</a>,
+<a rel="me" href="https://discuss.systems/@akshayn">Mastodon</a>, or
+<a href="/cdn-cgi/l/email-protection#6d0c061e050c14032d0f1f021a0343080918">Email</a> (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="26474d554e475f4866445449514808434253">[email&#160;protected]</a>).</p>
+
+<p> ★ I maintain a <a href="./coffee.html">list of some good coffee places</a>.  </p></div>
+
+<div style="text-align:left;"><h4>Working With Me</h4>
+<p>I am currently recruiting PhD students, though I am usually interested in working with students at all levels and postdocs.
+If you are already at Brown, please email me. Otherwise, I unfortunately cannot respond to most emails.
+For prospective Brown students, I recommend simply submitting an application and mentioning me in it.
+For prospective postdocs, please email me, though I tend to have narrow research area requirements for postdoc positions.
+Note that using the email address listed above is more likely to elicit a response.</p></div>
+
+<hr />
+
+<div style="text-align:left;"><h2>Teaching</h2>
+<h4>CSCI 1675: Designing High-Performance Network Systems</h4>
+<p style="padding-left: 10px"><a href="https://cs.brown.edu/courses/csci1675/fall2025/">Fall 2025</a>,
+<a href="https://cs.brown.edu/courses/csci1675/spring2025/">Spring 2025</a></p>
+<h4>CSCI 2680: Computer Networks and the Internet</h4>
+<p style="padding-left: 10px"><a href="https://cs.brown.edu/courses/csci2680/spring2026">Spring 2026</a>,
+<a href="https://cs.brown.edu/courses/csci2680/fall2024/">Fall 2024</a></p></div>
+
+<div style="text-align:left;"><h2>Publications</h2>
+<p>&quot;Kernel Extension DSLs Should Be Verifier-Safe!&quot;
+<br />
+Franco Solleza, Justus Adam, <b>Akshay Narayan</b>, Malte Schwarzkopf, Andrew Crotty, Nesime Tatbul
+<br />
+<i>eBPF</i> 2025
+<br />
+
+[<a href="./res/bql_sigcomm_2025.pdf">Paper</a>][<a href="https://conferences.sigcomm.org/sigcomm/2025/workshop/ebpf/">Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{bql,
+  title = {{ Kernel Extension DSLs Should Be Verifier-Safe! }},
+  author = { Franco Solleza and Justus Adam and Akshay Narayan and Malte Schwarzkopf and Andrew Crotty and Nesime Tatbul },
+  year = { 2025 },
+  booktitle = { eBPF },
+  doi = { 10.1145/3748355.3748368 },
+}</span></label></p><p>&quot;Lightweight Automated Reasoning for Network Architectures&quot;
+<br />
+Rahul Bothra, Venkat Arun, Brighten Godfrey, <b>Akshay Narayan</b>, Ahmed Saeed
+<br />
+<i>HotNets</i> 2024
+<br />
+
+[<a href="./res/archie.pdf">Paper</a>][<a href="https://conferences.sigcomm.org/hotnets/2024/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{bothra-2024,
+  title = {{ Lightweight Automated Reasoning for Network Architectures }},
+  author = { Rahul Bothra and Venkat Arun and Brighten Godfrey and Akshay Narayan and Ahmed Saeed },
+  year = { 2024 },
+  booktitle = { HotNets },
+  doi = { 10.1145/3696348.3696865 },
+}</span></label></p><p>&quot;Reverse-Engineering Congestion Control Algorithm Behavior&quot;
+<br />
+Margarida Ferreira, Ranysha Ware, Yash Kothari, Inês Lynce, Ruben Martins, <b>Akshay Narayan</b>, Justine Sherry
+<br />
+<i>IMC</i> 2024
+<br />
+
+[<a href="./res/Abagnale.pdf">Paper</a>][<a href="https://conferences.sigcomm.org/imc/2024/program/">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{abagnale,
+  title = {{ Reverse-Engineering Congestion Control Algorithm Behavior }},
+  author = { Margarida Ferreira and Ranysha Ware and Yash Kothari and Inês Lynce and Ruben Martins and Akshay Narayan and Justine Sherry },
+  year = { 2024 },
+  booktitle = { IMC },
+  doi = { 10.1145/3646547.3688443 },
+}</span></label></p><p>&quot;Principles for Internet Congestion Management&quot;
+<br />
+Lloyd Brown, Albert Gran Alcoz, Frank Cangialosi, <b>Akshay Narayan</b>, Mohammad Alizadeh, Hari Balakrishnan, Eric Friedman, Ethan Katz-Bassett, Arvind Krishnamurthy, Michael Schapira, Scott Shenker
+<br />
+<i>SIGCOMM</i> 2024
+<br />
+
+[<a href="./res/rcs.pdf">Paper</a>][<a href="./res/rcs-slides.pdf">Slides</a>][<a href="https://conferences.sigcomm.org/sigcomm/2024/program/#sharing-the-network">Conference Program</a>][<a href="https://datatracker.ietf.org/meeting/121/materials/agenda-121-iccrg-04">IETF 121 ICCRG</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{rcs,
+  title = {{ Principles for Internet Congestion Management }},
+  author = { Lloyd Brown and Albert Gran Alcoz and Frank Cangialosi and Akshay Narayan and Mohammad Alizadeh and Hari Balakrishnan and Eric Friedman and Ethan Katz-Bassett and Arvind Krishnamurthy and Michael Schapira and Scott Shenker },
+  year = { 2024 },
+  booktitle = { SIGCOMM },
+  doi = { 10.1145/3651890.3672247 },
+}</span></label></p><p>&quot;How I Learned to Stop Worrying About CCA Contention&quot;
+<br />
+Lloyd Brown, Yash Kothari, <b>Akshay Narayan</b>, Arvind Krishnamurthy, Aurojit Panda, Justine Sherry, Scott Shenker
+<br />
+<i>Hotnets</i> 2023
+<br />
+
+[<a href="./res/cca-contention.pdf">Paper</a>][<a href="./res/ccfairness-hotnets23.pdf">Slides</a>][<a href="https://conferences.sigcomm.org/hotnets/2023/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{cca-contention,
+  title = {{ How I Learned to Stop Worrying About CCA Contention }},
+  author = { Lloyd Brown and Yash Kothari and Akshay Narayan and Arvind Krishnamurthy and Aurojit Panda and Justine Sherry and Scott Shenker },
+  year = { 2023 },
+  booktitle = { Hotnets },
+  doi = { 10.1145/3626111.3628204 },
+}</span></label></p><p>&quot;The Case for an Internet Primitive for Fault Localization&quot;
+<br />
+William Sussman, Emily Marx, Venkat Arun, <b>Akshay Narayan</b>, Mohammad Alizadeh, Hari Balakrishnan, Aurojit Panda, Scott Shenker
+<br />
+<i>Hotnets</i> 2022
+<br />
+
+[<a href="./res/wtf-hotnets22.pdf">Paper</a>][<a href="https://conferences.sigcomm.org/hotnets/2022/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{wtf,
+  title = {{ The Case for an Internet Primitive for Fault Localization }},
+  author = { William Sussman and Emily Marx and Venkat Arun and Akshay Narayan and Mohammad Alizadeh and Hari Balakrishnan and Aurojit Panda and Scott Shenker },
+  year = { 2022 },
+  booktitle = { Hotnets },
+  doi = { 10.1145/3563766.3564105 },
+}</span></label></p><p>&quot;Elasticity Detection: A Building Block for Internet Congestion Control&quot;
+<br />
+Prateesh Goyal, <b>Akshay Narayan</b>, Frank Cangialosi, Srinivas Narayana, Mohammad Alizadeh, Hari Balakrishnan
+<br />
+<i>SIGCOMM</i> 2022
+<br />
+
+[<a href="./res/Nimbus_SIGCOMM2022_Camera_Ready.pdf">Paper</a>][<a href="https://dl.acm.org/doi/10.1145/3544216.3544221">ACM DL</a>][<a href="https://conferences.sigcomm.org/sigcomm/2022/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{nimbus,
+  title = {{ Elasticity Detection: A Building Block for Internet Congestion Control }},
+  author = { Prateesh Goyal and Akshay Narayan and Frank Cangialosi and Srinivas Narayana and Mohammad Alizadeh and Hari Balakrishnan },
+  year = { 2022 },
+  booktitle = { SIGCOMM },
+  doi = { 10.1145/3544216.3544221 },
+}</span></label></p><p>&quot;Counterfeiting Congestion Control Algorithms&quot;
+<br />
+Margarida Ferreira, <b>Akshay Narayan</b>, Inês Lynce, Ruben Martins, Justine Sherry
+<br />
+<i>Hotnets</i> 2021
+<br />
+
+[<a href="./res/CCA_Synthesis_HotNets21.pdf">Paper</a>][<a href="https://www.youtube.com/watch?v=QQuV5QnwzxE">Talk</a>][<a href="https://conferences.sigcomm.org/hotnets/2021/">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{mr880,
+  title = {{ Counterfeiting Congestion Control Algorithms }},
+  author = { Margarida Ferreira and Akshay Narayan and Inês Lynce and Ruben Martins and Justine Sherry },
+  year = { 2021 },
+  booktitle = { Hotnets },
+  doi = { 10.1145/3484266.3487381 },
+}</span></label></p><p>&quot;Site-to-Site Internet Traffic Control&quot;
+<br />
+Frank Cangialosi, <b>Akshay Narayan</b>, Prateesh Goyal, Radhika Mittal, Mohammad Alizadeh, Hari Balakrishnan
+<br />
+<i>EuroSys</i> 2021
+<br />
+<font color="#6c71c4">Awarded Best Artifact!</font><br />
+[<a href="./res/bundler.pdf">Paper</a>][<a href="https://www.youtube.com/watch?v=H3aJQjiEH7I&amp;list=PLzDuHU-z7gNjuSbEYCFXZtWAl3nAdNF2f&amp;index=23">Long Talk</a>][<a href="https://www.youtube.com/watch?v=c1UiQKACQ6I&amp;list=PLzDuHU-z7gNghxOWGcdLK_xWtqHjxaYTm&amp;index=23">Short Talk</a>][<a href="https://2021.eurosys.org/conf-prog.html#program">Conference Program</a>][<a href="https://www.sigops.org/2021/reproducible-experiments-for-useful-internet-systems/">SIGOPS Blog Post</a>][<a href="https://dl.acm.org/doi/10.1145/3526062.3536355">P-RECS 2022</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{bundler,
+  title = {{ Site-to-Site Internet Traffic Control }},
+  author = { Frank Cangialosi and Akshay Narayan and Prateesh Goyal and Radhika Mittal and Mohammad Alizadeh and Hari Balakrishnan },
+  year = { 2021 },
+  booktitle = { EuroSys },
+  doi = { 10.1145/3447786.3456260 },
+}</span></label></p><p>&quot;Bertha: Tunneling through the Network API&quot;
+<br />
+<b>Akshay Narayan</b>, Aurojit Panda, Mohammad Alizadeh, Hari Balakrishnan, Arvind Krishnamurthy, Scott Shenker
+<br />
+<i>Hotnets</i> 2020
+<br />
+
+[<a href="./res/bertha-hotnets20.pdf">Paper</a>][<a href="./res/bertha-hotnets-slides.pdf">Slides</a>][<a href="https://youtu.be/gkz-A9BDlqU?t=12155">Talk Video</a>][<a href="https://conferences.sigcomm.org/hotnets/2020/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{bertha-hotnets,
+  title = {{ Bertha: Tunneling through the Network API }},
+  author = { Akshay Narayan and Aurojit Panda and Mohammad Alizadeh and Hari Balakrishnan and Arvind Krishnamurthy and Scott Shenker },
+  year = { 2020 },
+  booktitle = { Hotnets },
+  doi = { 10.1145/3422604.3425927 },
+}</span></label></p><p>&quot;Park: An Open Platform for Learning-Augmented Computer Systems&quot;
+<br />
+Hongzi Mao, Parimarjan Negi, <b>Akshay Narayan</b>, Hanrui Wang, Jiacheng Yang, Haonan Wang, Ryan Marcus, Ravichandra Addanki, Mehrdad Khani Shirkoohi, Songtao He, Vikram Nathan, Frank Cangialosi, Shaileshh Venkatakrishnan, Wei-Hung Weng, Song Han, Tim Kraska, Mohammad Alizadeh
+<br />
+<i>NeurIPS</i> 2019
+<br />
+
+[<a href="https://dl.acm.org/doi/10.5555/3454287.3454511">Paper</a>][<a href="https://openreview.net/forum?id=BkgfRbEPsE">ICML 2019 RL4RL Workshop</a>][<a href="https://neurips.cc/Conferences/2019/Schedule?showEvent=13442">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{park,
+  title = {{ Park: An Open Platform for Learning-Augmented Computer Systems }},
+  author = { Hongzi Mao and Parimarjan Negi and Akshay Narayan and Hanrui Wang and Jiacheng Yang and Haonan Wang and Ryan Marcus and Ravichandra Addanki and Mehrdad Khani Shirkoohi and Songtao He and Vikram Nathan and Frank Cangialosi and Shaileshh Venkatakrishnan and Wei-Hung Weng and Song Han and Tim Kraska and Mohammad Alizadeh },
+  year = { 2019 },
+  booktitle = { NeurIPS },
+  doi = { 10.5555/3454287.3454511 },
+}</span></label></p><p>&quot;Restructuring Endpoint Congestion Control&quot;
+<br />
+<b>Akshay Narayan</b>, Frank Cangialosi, Deepti Raghavan, Prateesh Goyal, Srinivas Narayana, Radhika Mittal, Mohammad Alizadeh, Hari Balakrishnan
+<br />
+<i>SIGCOMM</i> 2018
+<br />
+<font color="#6c71c4">[<a href="https://github.com/torvalds/linux/commit/0baf26b0fcd74bbfcef53c5d5e8bad2b99c8d0d2">Cited as motivation for congestion control support in eBPF!</a>]</font><br />
+[<a href="./res/ccp-sigcomm18.pdf">Paper</a>][<a href="./res/ccp-sigcomm18-slides.pdf">Slides PDF</a>][<a href="https://youtu.be/t_5__v6CNYE?t=14759">Session Video</a>][<a href="https://conferences.sigcomm.org/sigcomm/2018/program.html">Conference Program</a>][<a href="https://netdevconf.org/0x12/session.html?restructuring-endpoint-congestion-control">Linux NetDev 0x12</a>][<a href="./res/ccp-poster.pdf">ANRW 2018 Poster</a>][<a href="https://irtf.org/anrw/2018/posters.html">Poster Listing</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{ccp,
+  title = {{ Restructuring Endpoint Congestion Control }},
+  author = { Akshay Narayan and Frank Cangialosi and Deepti Raghavan and Prateesh Goyal and Srinivas Narayana and Radhika Mittal and Mohammad Alizadeh and Hari Balakrishnan },
+  year = { 2018 },
+  booktitle = { SIGCOMM },
+  doi = { 10.1145/3230543.3230553 },
+}</span></label></p><p>&quot;Sincronia: Near-Optimal Network Design for Coflows&quot;
+<br />
+Saksham Agarwal, Shijin Rajakrishnan, <b>Akshay Narayan</b>, Rachit Agarwal, David Shmoys, Amin Vahdat
+<br />
+<i>SIGCOMM</i> 2018
+<br />
+<font color="#6c71c4">Awarded Best Student Paper!</font><br />
+[<a href="./res/sincronia.pdf">Paper</a>][<a href="https://conferences.sigcomm.org/sigcomm/2018/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{sincronia,
+  title = {{ Sincronia: Near-Optimal Network Design for Coflows }},
+  author = { Saksham Agarwal and Shijin Rajakrishnan and Akshay Narayan and Rachit Agarwal and David Shmoys and Amin Vahdat },
+  year = { 2018 },
+  booktitle = { SIGCOMM },
+  doi = { 10.1145/3230543.3230569 },
+}</span></label></p><p>&quot;The Case for Moving Congestion Control Out of the Datapath&quot;
+<br />
+<b>Akshay Narayan</b>, Frank Cangialosi, Prateesh Goyal, Srinivas Narayana, Mohammad Alizadeh, Hari Balakrishnan
+<br />
+<i>HotNets</i> 2017
+<br />
+
+[<a href="./res/ccp-hotnets.pdf">Paper</a>][<a href="./res/ccp-hotnets-slides-12012017-final.pdf">Slides PDF</a>][<a href="http://conferences.sigcomm.org/hotnets/2017/program.html">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{ccp-hotnets,
+  title = {{ The Case for Moving Congestion Control Out of the Datapath }},
+  author = { Akshay Narayan and Frank Cangialosi and Prateesh Goyal and Srinivas Narayana and Mohammad Alizadeh and Hari Balakrishnan },
+  year = { 2017 },
+  booktitle = { HotNets },
+  doi = { 10.1145/3152434.3152438 },
+}</span></label></p><p>&quot;Network Requirements for Resource Disaggregation&quot;
+<br />
+Peter Gao, <b>Akshay Narayan</b>, Sagar Karandikar, Joao Carreira, Sangjin Han, Rachit Agarwal, Sylvia Ratnasamy, Scott Shenker
+<br />
+<i>OSDI</i> 2016
+<br />
+
+[<a href="./res/disaggregation_osdi_2016.pdf">Paper</a>][<a href="https://www.usenix.org/sites/default/files/conference/protected-files/osdi16_slides_gao.pdf">Slides</a>][<a href="./res/osdi16posters-paper1.pdf">Poster</a>][<a href="https://www.usenix.org/conference/osdi16/program">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{gao-2016,
+  title = {{ Network Requirements for Resource Disaggregation }},
+  author = { Peter Gao and Akshay Narayan and Sagar Karandikar and Joao Carreira and Sangjin Han and Rachit Agarwal and Sylvia Ratnasamy and Scott Shenker },
+  year = { 2016 },
+  booktitle = { OSDI },
+  doi = { 10.5555/3026877.3026897 },
+}</span></label></p><p>&quot;pHost: Distributed Near-Optimal Datacenter Transport Over Commodity Network Fabric.&quot;
+<br />
+Peter Gao, <b>Akshay Narayan</b>, Gautam Kumar, Rachit Agarwal, Sylvia Ratnasamy, Scott Shenker
+<br />
+<i>CoNEXT</i> 2015
+<br />
+
+[<a href="./res/phost.pdf">Paper</a>][<a href="https://conferences2.sigcomm.org/co-next/2015/img/papers/phost.pdf">Slides</a>][<a href="https://conferences2.sigcomm.org/co-next/2015/#!/program">Conference Program</a>]
+<label><input type="checkbox" class="bibtex-sel" />
+<span style="cursor:pointer; text-decoration:underline;">[BibTex ✎]</span>
+<span class="bibtex-body"><br />
+@inproceedings{phost,
+  title = {{ pHost: Distributed Near-Optimal Datacenter Transport Over Commodity Network Fabric. }},
+  author = { Peter Gao and Akshay Narayan and Gautam Kumar and Rachit Agarwal and Sylvia Ratnasamy and Scott Shenker },
+  year = { 2015 },
+  booktitle = { CoNEXT },
+  doi = { 10.1145/2716281.2836086 },
+}</span></label></p></div>
+
+<div style="text-align:left;"><h2>Service</h2>
+<h3>Conference and Workshop Program Committees</h3>
+<ul><li>EuroSys:
+<a href="https://2027.eurosys.org/">2027</a></li><li>APNet:
+<a href="https://conferences.sigcomm.org/events/apnet2026/pc.php">2026</a>, <a href="https://conferences.sigcomm.org/events/apnet2024/pc.php">2024</a></li><li>SIGCOMM:
+<a href="https://conferences.sigcomm.org/sigcomm/2026/tpc/">2026</a>, <a href="https://conferences.sigcomm.org/sigcomm/2025/tpc/">2025</a></li><li>CoNEXT:
+<a href="https://conferences.sigcomm.org/co-next/2026/#!/pc">2026</a>, <a href="https://conferences.sigcomm.org/co-next/2025/#!/pc">2025</a></li><li>NSDI:
+<a href="https://www.usenix.org/conference/nsdi26/call-for-papers">2026</a>, <a href="https://www.usenix.org/conference/nsdi24/call-for-papers">2024</a></li><li>eBPF:
+<a href="https://conferences.sigcomm.org/sigcomm/2025/workshop/ebpf/">2025</a></li><li>SysDW:
+<a href="https://sysdw24.github.io/">2024</a></li><li>HotNets:
+<a href="https://conferences.sigcomm.org/hotnets/2024/program-committee/">2024</a></li><li>ANRW:
+<a href="https://www.irtf.org/anrw/2024/committees.html">2024</a>, <a href="https://www.irtf.org/anrw/2023/committees.html">2023</a></li></ul><h3>Journal Reviewer</h3>
+<ul><li>SIGCOMM CCR:
+<a href="https://ccronline.sigcomm.org/editorial-board/">2025</a>, <a href="https://ccronline.sigcomm.org/editorial-board/">2024</a></li></ul><h3>Artifact Evaluation Committee</h3>
+<ul><li>SIGCOMM:
+<a href="https://conferences.sigcomm.org/sigcomm/2021/cf-artifacts.html">2021</a></li></ul></div>
+
+<div style="text-align:left;"><h2>Talks</h2>
+
+<p>&quot;Preview: Networking&quot;
+
+<br />
+<i>OSDI/ATC Topic Preview Session</i> 2021
+<br />
+
+[<a href="./res/osdi21_slides_narayan.pdf">Slides PDF</a>][<a href="https://www.usenix.org/conference/osdi21/presentation/preview-networking">Video</a>]
+</p>
+
+<p>&quot;Modern Network Hardware&quot;
+
+<br />
+<i>NSDI Topic Preview Session</i> 2019
+<br />
+
+[<a href="./res/nsdi19-modernnetworkhardware-topicpreview.pdf">Slides PDF</a>][<a href="https://www.usenix.org/conference/nsdi19/presentation/preview">Video</a>]
+</p></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>

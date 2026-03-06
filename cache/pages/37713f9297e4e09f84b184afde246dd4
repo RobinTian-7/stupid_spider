@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tao Yu (余涛) | Home</title>
+  <meta name="description" content="Homepage of Tao Yu, Assistant Professor at The University of Hong Kong (HKU), Postdoc at UW NLP. Yale PhD working on Natural Language Processing (NLP).">
+  <meta name="author" content="Tao Yu">
+  <meta property="og:title" content="Tao Yu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taoyds.github.io/" />
+  <meta property="og:site_name" content="Tao Yu" />
+  <link rel="canonical" href="https://taoyds.github.io/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/libs/external/timeline.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/"><img class="u-max-full-width" src='/assets/pics/tao_yu.jpeg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Tao Yu (余涛)</h1>
+            <p>Assistant Professor <br/> Department of Computer Science <br/> Musketeers Foundation Institute of Data Science <br/> The University of Hong Kong</p>
+            <p>tao.yu.nlp [AT] gmail.com</p>
+            <p>
+              <span onclick="window.open('https://twitter.com/taoyds')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/tao-yu-b9b551a5/')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/taoyds')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://scholar.google.com/citations?user=5_Fn5CIAAAAJ&hl')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+     <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#talks>Talks</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#students>students</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#service>Service</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Resume</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="https://www.xlang.ai/">Group (Join Us!)</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  Tao Yu is an Assistant Professor of <a href="https://www.cs.hku.hk/" target="_blank">Computer Science</a> at <a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a> and a director of the <a href="https://www.xlang.ai/" target="_blank">XLANG Lab</a> (as part of the <a href="https://hkunlp.github.io/" target="_blank">HKU NLP Group</a>).
+  He spent one year in the <a href="https://www.cs.washington.edu/research/nlp" target="_blank">UW NLP Group</a> working with <a href="https://nasmith.github.io/" target="_blank">Noah Smith</a>, <a href="https://www.cs.washington.edu/people/faculty/lsz" target="_blank">Luke Zettlemoyer</a>, and <a href="https://people.ece.uw.edu/ostendorf/" target="_blank">Mari Ostendorf</a>.
+  He completed his Ph.D. in Computer Science from <a href="https://www.yale.edu/">Yale University</a>, advised by <a href="http://www.cs.yale.edu/homes/radev/">Dragomir Radev</a> and master's at <a href="https://www.columbia.edu/">Columbia University</a> advised by <a href="https://owenrambow.com/">Owen Rambow</a> and <a href="http://www.cs.columbia.edu/~kathy/">Kathleen McKeown</a>.
+  </p>
+
+  <p>
+  Tao has received the Google and Amazon faculty research awards (<a href="https://research.google/outreach/research-scholar-program/" target="_blank">Google Research Scholar Award 2023</a>, <a href="https://www.amazon.science/research-awards/program-updates/fall-2021-and-winter-2022-amazon-research-awards-recipients-announced" target="_blank">Amazon Research Award 2022</a>). 
+  His main research interest is in Natural Language Processing. His research aims to develop <b>embodied AI agents</b> that empower users to use language to interact with digital and physical environments to carry out real-world tasks. Such systems need to ground language and perception into code and actions executable in the corresponding embodied environment, helping people perform data science, control computers, and collaborate with robots. The research spans three core areas:
+    <ul>
+      <li><b>Code Generation for Data Science</b>: building coding agents that let non-experts query and interact with data using language without technical expertise, democratizing access to data science capabilities (<a href="https://spider2-sql.github.io">Spider 2.0 (ICLR'25)</a>, <a href="https://spider2-v.github.io">Spider2-V (NeurIPS'24)</a>, <a href="https://lm-code-binder.github.io/">Binder (ICLR'23)</a>, <a href="https://ds1000-code-gen.github.io/">DS-1000 (ICML'23)</a>, <a href="https://arxiv.org/abs/2211.16490">Coder-Reviewer (ICML'23)</a>, <a href="https://github.com/HKUNLP/UnifiedSKG">UnifiedSKG (EMNLP'22)</a>, <a href="https://yale-lily.github.io/spider">Spider (EMNLP'18)</a>)</li>
+      <li><b>Grounding Language in the Digital World</b>: creating computer use agents that interact with software just as humans do - by perceiving screens, clicking, and typing, making complex digital tools more accessible (<a href="https://opencua.xlang.ai">OpenCUA (NeurIPS'25)</a>, <a href="https://os-world.github.io">OSWorld (NeurIPS'24)</a>, <a href="https://aguvis-project.github.io">Aguvis (ICML'25)</a>, <a href="https://brightbenchmark.github.io/">BRIGHT (ICLR'25)</a>,,<a href="https://arxiv.org/abs/2411.02391">Pop-up Attack (ACL'25)</a>, <a href="https://github.com/xlang-ai/OpenAgents">OpenAgents (COLM'24)</a>, <a href="https://instructor-embedding.github.io/">Instructor embedding (ACL'23)</a>)</li>
+      <li><b>Grounding Language in the Physical World</b>: exploring LLM/VLMs for robotic learning to enable natural human-robot communication and ground language in physical actions (<a href="http://text-to-reward.github.io">Text2Reward (ICLR'24)</a>, <a href="https://arxiv.org/abs/2310.06830">Lemur (ICLR'24)</a>)</li>
+    </ul>
+  </p>
+  
+  <p>
+  <font color="red">We are actively looking for strong and motivated students to join our group!</font> If you are interested in working with us, please read recent papers, fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8BQxcIVGj8ET1-hc588xGPYuPu4txbuncbb5D855Mya8_qQ/viewform">the form</a> with thoughts on extensions. Sorry, I'm afraid I generally can't respond to all individual emails.
+  </p>
+
+</div>
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="https://scholar.google.com/citations?user=5_Fn5CIAAAAJ&hl" target="_blank">Google Scholar</a>.<br/>
+  <sup>*</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      
+      
+        <div class="paper">
+          <p class="title"><b>OpenCUA: Open Foundations for Computer-Use Agents</b></p>
+          <p>Xinyuan Wang*, Bowen Wang*, Dunjie Lu*, Junlin Yang*, Tianbao Xie*, Junli Wang*, Jiaqi Deng, Xiaole Guo, Yiheng Xu, Chen Henry Wu, Zhennan Shen, Zhuokai Li, Ryan Li, Xiaochuan Li, Junda Chen, Boyuan Zheng, Peihang Li, Fangyu Lei, Ruisheng Cao, Yeqiao Fu, Dongchan Shin, Martin Shin, Jiarui Hu, Yuyan Wang, Jixuan Chen, Yuxiao Ye, Danyang Zhang, Dikang Du, Hao Hu, Huarong Chen, Zaida Zhou, Haotian Yao, Ziwei Chen, Qizheng Gu, Yipu Wang, Heng Wang, Diyi Yang, Victor Zhong, Flood Sung, Y.Charles, Zhilin Yang, <b>Tao Yu</b></p>
+          <p><i><b>NeurIPS 2025</b> <font color="red">(Spotlight, top 3%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2508.09123" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://opencua.xlang.ai/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OpenCUA" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction</b></p>
+          <p>Yiheng Xu*, Zekun Wang*, Junli Wang*, Dunjie Lu, Tianbao Xie, Amrita Saha, Doyen Sahoo, <b>Tao Yu</b>, Caiming Xiong</p>
+          <p><i><b>ICML 2025</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2412.04454" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://aguvis-project.github.io" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/aguvis" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows</b></p>
+          <p>Fangyu Lei*, Jixuan Chen*, Yuxiao Ye, Ruisheng Cao, Dongchan Shin, Hongjin Su, Zhaoqing Suo, Hongcheng Gao, Wenjing Hu, Pengcheng Yin, Victor Zhong, Caiming Xiong, Ruoxi Sun, Qian Liu, Sida Wang, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2025 </b> <font color="red">(Oral, top 2%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://www.arxiv.org/abs/2411.07763" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://spider2-sql.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/Spider2" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval</b></p>
+          <p>Hongjin Su*, Howard Yen*, Mengzhou Xia*, Weijia Shi, Niklas Muennighoff, Han-yu Wang, Haisu Liu, Quan Shi, Zachary S. Siegel, Michael Tang, Ruoxi Sun, Jinsung Yoon, Sercan O. Arik, Danqi Chen, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2025 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2407.12883" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://brightbenchmark.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/BRIGHT" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments</b></p>
+          <p>Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua, Zhoujun Cheng, Dongchan Shin, Fangyu Lei, Yitao Liu, Yiheng Xu, Shuyan Zhou, Silvio Savarese, Caiming Xiong, Victor Zhong, <b>Tao Yu</b></p>
+          <p><i><b>NeurIPS 2024, </b> <font color="red">followed and used by OpenAI & Anthropic, ~2k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2404.07972" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://os-world.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OSWorld" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>OpenAgents: An Open Platform for Language Agents in the Wild</b></p>
+          <p>Tianbao Xie*, Fan Zhou*, Zhoujun Cheng*, Peng Shi*, Luoxuan Weng*, Yitao Liu*, Toh Jing Hua, Junning Zhao, Qian Liu, Che Liu, Leo Z. Liu, Yiheng Xu, Hongjin Su, Dongchan Shin, Caiming Xiong, <b>Tao Yu</b></p>
+          <p><i><b>COLM 2024, </b> <font color="red">~4k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2310.10634" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://www.xlang.ai/blog/xlang-intro" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OpenAgents" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Lemur: Harmonizing Natural Language and Code for Language Agents</b></p>
+          <p>Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, Binyuan Hui, Fan Zhou, Yitao Liu, Tianbao Xie, Zhoujun Cheng, Siheng Zhao, Lingpeng Kong, Bailin Wang, Caiming Xiong, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2024 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2310.06830" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://www.xlang.ai/blog/openlemur" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/OpenLemur/lemur" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning</b></p>
+          <p>Tianbao Xie*, Siheng Zhao*, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2024 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2309.11489" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://text-to-reward.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/text2reward" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>One Embedder, Any Task: Instruction-Finetuned Text Embeddings</b></p>
+          <p>Hongjin Su*, Weijia Shi*, Jungo Kasai, Yizhong Wang, Yushi Hu, Mari Ostendorf, Wen-tau Yih, Noah A Smith, Luke Zettlemoyer, <b>Tao Yu</b></p>
+          <p><i><b>ACL Findings 2023, </b> <font color="red">~6M downloads on HuggingFace, ~2k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2212.09741" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://instructor-embedding.github.io" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/instructor-embedding" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://huggingface.co/hkunlp/instructor-large" target="_blank">Data</a>
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation</b></p>
+          <p>Yuhang Lai*, Chengxi Li*, Yiming Wang*, Tianyi Zhang*, Ruiqi Zhong*, Luke Zettlemoyer, Scott Wen-tau Yih, Daniel Fried, Sida Wang, <b>Tao Yu</b></p>
+          <p><i><b>ICML 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2211.11501" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://ds1000-code-gen.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/DS-1000" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/DS-1000/tree/main/ds1000_example" target="_blank">Data</a>
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Binding Language Models in Symbolic Languages</b></p>
+          <p>Zhoujun Cheng*, Tianbao Xie*, Peng Shi, Chengzu Li, Rahul Nadkarni, Yushi Hu, Caiming Xiong, Dragomir Radev, Mari Ostendorf, Luke Zettlemoyer, Noah A Smith, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2023 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2210.02875" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://lm-code-binder.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://lm-code-binder.github.io/" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Selective Annotation Makes Language Models Better Few-Shot Learners</b></p>
+          <p>Hongjin Su, Jungo Kasai, Chen Henry Wu, Weijia Shi, Tianlu Wang, Jiayi Xin, Rui Zhang, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2209.01975" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://twitter.com/wittgen_ball/status/1568302230490730497" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/icl-selective-annotation" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>UnifiedSKG: Unifying and Multi-Tasking Structured Knowledge Grounding with Text-to-Text Language Models</b></p>
+          <p>Tianbao Xie*, Chen Henry Wu*, Peng Shi, Ruiqi Zhong, Torsten Scholak, Michihiro Yasunaga, Chien-Sheng Wu, Ming Zhong, Pengcheng Yin, Sida Wang, Victor Zhong, Bailin Wang, Chengzu Li, Connor Boyle, Ansong Ni, Ziyu Yao, Dragomir Radev, Caiming Xiong, Lingpeng Kong, Rui Zhang, Noah A. Smith, Luke Zettlemoyer, <b>Tao Yu</b></p>
+          <p><i><b>EMNLP 2022</b> <font color="red">(Oral, top 4%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2201.05966" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://unifiedskg.com/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/hkunlp/unifiedskg" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>ZeroGen: Efficient Zero-shot Learning via Dataset Generation</b></p>
+          <p>Jiacheng Ye*, Jiahui Gao*, Qintong Li, Hang Xu, Jiangtao Feng, Zhiyong Wu, <b>Tao Yu</b>, Lingpeng Kong</p>
+          <p><i><b>EMNLP 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2202.07922" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/jiacheng-ye/ZeroGen" target="_blank">Code</a>
+            
+
+            
+
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>Spider</i>: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task</b></p>
+          <p><b>Tao Yu</b>, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</p>
+          <p><i><b>EMNLP 2018, </b> <font color="red">~300 submissions, ~1k Github stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1809.08887" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://medium.com/@tao.yu/spider-one-more-step-towards-natural-language-interfaces-to-databases-62298dc6df3c" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/spider" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://yale-lily.github.io/spider" target="_blank">Data</a>
+            
+
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      
+        <div class="paper">
+          <p class="title"><b>OpenCUA: Open Foundations for Computer-Use Agents</b></p>
+          <p>Xinyuan Wang*, Bowen Wang*, Dunjie Lu*, Junlin Yang*, Tianbao Xie*, Junli Wang*, Jiaqi Deng, Xiaole Guo, Yiheng Xu, Chen Henry Wu, Zhennan Shen, Zhuokai Li, Ryan Li, Xiaochuan Li, Junda Chen, Boyuan Zheng, Peihang Li, Fangyu Lei, Ruisheng Cao, Yeqiao Fu, Dongchan Shin, Martin Shin, Jiarui Hu, Yuyan Wang, Jixuan Chen, Yuxiao Ye, Danyang Zhang, Dikang Du, Hao Hu, Huarong Chen, Zaida Zhou, Haotian Yao, Ziwei Chen, Qizheng Gu, Yipu Wang, Heng Wang, Diyi Yang, Victor Zhong, Flood Sung, Y.Charles, Zhilin Yang, <b>Tao Yu</b></p>
+          <p><i><b>NeurIPS 2025</b> <font color="red">(Spotlight, top 3%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2508.09123" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://opencua.xlang.ai/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OpenCUA" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Scaling Computer-Use Grounding via User Interface Decomposition and Synthesis</b></p>
+          <p>Tianbao Xie*, Jiaqi Deng*, Xiaochuan Li*, Junlin Yang*, Haoyuan Wu, Jixuan Chen, Wenjing Hu, Xinyuan Wang, Yuhui Xu, Zekun Wang, Yiheng Xu, Junli Wang, Doyen Sahoo, <b>Tao Yu</b>, Caiming Xiong</p>
+          <p><i><b>NeurIPS 2025</b> <font color="red">(Spotlight, top 3%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2505.13227" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://osworld-grounding.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OSWorld-G" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction</b></p>
+          <p>Yiheng Xu*, Zekun Wang*, Junli Wang*, Dunjie Lu, Tianbao Xie, Amrita Saha, Doyen Sahoo, <b>Tao Yu</b>, Caiming Xiong</p>
+          <p><i><b>ICML 2025</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2412.04454" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://aguvis-project.github.io" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/aguvis" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows</b></p>
+          <p>Fangyu Lei*, Jixuan Chen*, Yuxiao Ye, Ruisheng Cao, Dongchan Shin, Hongjin Su, Zhaoqing Suo, Hongcheng Gao, Wenjing Hu, Pengcheng Yin, Victor Zhong, Caiming Xiong, Ruoxi Sun, Qian Liu, Sida Wang, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2025 </b> <font color="red">(Oral, top 2%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://www.arxiv.org/abs/2411.07763" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://spider2-sql.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/Spider2" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials</b></p>
+          <p>Yiheng Xu*, Dunjie Lu*, Zhennan Shen*, Junli Wang, Zekun Wang, Yuchen Mao, Caiming Xiong, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2025 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2412.09605" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://agenttrek.github.io" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/AgentTrek" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval</b></p>
+          <p>Hongjin Su*, Howard Yen*, Mengzhou Xia*, Weijia Shi, Niklas Muennighoff, Han-yu Wang, Haisu Liu, Quan Shi, Zachary S. Siegel, Michael Tang, Ruoxi Sun, Jinsung Yoon, Sercan O. Arik, Danqi Chen, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2025 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2407.12883" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://brightbenchmark.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/BRIGHT" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments</b></p>
+          <p>Hongjin Su, Ruoxi Sun, Jinsung Yoon, Pengcheng Yin, <b>Tao Yu</b>, Sercan Ö. Arık</p>
+          <p><i><b>ICLR 2025</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2501.10893" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Generative Representational Instruction Tuning</b></p>
+          <p>Niklas Muennighoff, Hongjin Su, Liang Wang, Nan Yang, Furu Wei, <b>Tao Yu</b>, Amanpreet Singh, Douwe Kiela</p>
+          <p><i><b>ICLR 2025</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2402.09906" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/ContextualAI/gritlm" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Attacking Vision-Language Computer Agents via Pop-ups</b></p>
+          <p>Yanzhe Zhang, <b>Tao Yu</b>, Diyi Yang</p>
+          <p><i><b>ACL 2025</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2411.02391" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/SALT-NLP/PopupAttack" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments</b></p>
+          <p>Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua, Zhoujun Cheng, Dongchan Shin, Fangyu Lei, Yitao Liu, Yiheng Xu, Shuyan Zhou, Silvio Savarese, Caiming Xiong, Victor Zhong, <b>Tao Yu</b></p>
+          <p><i><b>NeurIPS 2024, </b> <font color="red">followed and used by OpenAI & Anthropic, ~2k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2404.07972" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://os-world.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OSWorld" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?</b></p>
+          <p>Ruisheng Cao, Fangyu Lei, Haoyuan Wu, Jixuan Chen, Yeqiao Fu, Hongcheng Gao, Xinzhuang Xiong, Hanchong Zhang, Yuchen Mao, Wenjing Hu, Tianbao Xie, Hongshen Xu, Danyang Zhang, Sida Wang, Ruoxi Sun, Pengcheng Yin, Caiming Xiong, Ansong Ni, Qian Liu, Victor Zhong, Lu Chen, Kai Yu, <b>Tao Yu</b></p>
+          <p><i><b>NeurIPS 2024 </b> <font color="red">(Spotlight, top 3%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2407.10956" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://spider2-v.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/Spider2-V" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>OpenAgents: An Open Platform for Language Agents in the Wild</b></p>
+          <p>Tianbao Xie*, Fan Zhou*, Zhoujun Cheng*, Peng Shi*, Luoxuan Weng*, Yitao Liu*, Toh Jing Hua, Junning Zhao, Qian Liu, Che Liu, Leo Z. Liu, Yiheng Xu, Hongjin Su, Dongchan Shin, Caiming Xiong, <b>Tao Yu</b></p>
+          <p><i><b>COLM 2024, </b> <font color="red">~4k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2310.10634" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://www.xlang.ai/blog/xlang-intro" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/OpenAgents" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Does Collaborative Human-LM Dialogue Generation Help Information Extraction from Human Dialogues?</b></p>
+          <p>Bo-Ru Lu, Nikita Haduong, Chia-Hsuan Lee, Zeqiu Wu, Hao Cheng, Paul Koester, Jean Utke, <b>Tao Yu</b>, Noah A. Smith, Mari Ostendorf</p>
+          <p><i><b>COLM 2024</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2402.12317" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Lemur: Harmonizing Natural Language and Code for Language Agents</b></p>
+          <p>Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, Binyuan Hui, Fan Zhou, Yitao Liu, Tianbao Xie, Zhoujun Cheng, Siheng Zhao, Lingpeng Kong, Bailin Wang, Caiming Xiong, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2024 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2310.06830" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://www.xlang.ai/blog/openlemur" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/OpenLemur/lemur" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning</b></p>
+          <p>Tianbao Xie*, Siheng Zhao*, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2024 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2309.11489" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://text-to-reward.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/text2reward" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>EvoR: Evolving Retrieval for Code Generation</b></p>
+          <p>Hongjin Su, Shuyang Jiang, Yuhang Lai, Haoyuan Wu, Boao Shi, Che Liu, Qian Liu, <b>Tao Yu</b></p>
+          <p><i><b>EMNLP Findings 2024</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2307.07047" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://arks-codegen.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/arks" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>FOLIO: Natural Language Reasoning with First-Order Logic</b></p>
+          <p>with Simeng Han, Rui Zhang, Alexander R Fabbri, Xi Victoria Lin, Caiming Xiong, Dragomir Radev and many authors</p>
+          <p><i>EMNLP, 2024</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2209.00840" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Yale-LILY/FOLIO" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models</b></p>
+          <p>The BIG-bench Team</p>
+          <p><i><b>Transactions on Machine Learning Research 2024 </b> <font color="red">(Outstanding Award Finalist)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2206.04615" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/google/BIG-bench" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>One Embedder, Any Task: Instruction-Finetuned Text Embeddings</b></p>
+          <p>Hongjin Su*, Weijia Shi*, Jungo Kasai, Yizhong Wang, Yushi Hu, Mari Ostendorf, Wen-tau Yih, Noah A Smith, Luke Zettlemoyer, <b>Tao Yu</b></p>
+          <p><i><b>ACL Findings 2023, </b> <font color="red">~6M downloads on HuggingFace, ~2k GitHub stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2212.09741" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://instructor-embedding.github.io" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/xlang-ai/instructor-embedding" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://huggingface.co/hkunlp/instructor-large" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Coder Reviewer Reranking for Code Generation</b></p>
+          <p>Tianyi Zhang, <b>Tao Yu</b>, Tatsunori B Hashimoto, Mike Lewis, Wen-tau Yih, Daniel Fried, Sida I Wang</p>
+          <p><i><b>ICML 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2211.16490" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/facebookresearch/coder_reviewer_reranking" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>DS-1000: A Natural and Reliable Benchmark for Data Science Code Generation</b></p>
+          <p>Yuhang Lai*, Chengxi Li*, Yiming Wang*, Tianyi Zhang*, Ruiqi Zhong*, Luke Zettlemoyer, Scott Wen-tau Yih, Daniel Fried, Sida Wang, <b>Tao Yu</b></p>
+          <p><i><b>ICML 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2211.11501" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://ds1000-code-gen.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/DS-1000" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/DS-1000/tree/main/ds1000_example" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Compositional Exemplars for In-context Learning</b></p>
+          <p>Jiacheng Ye, Zhiyong Wu, Jiangtao Feng, <b>Tao Yu</b>, and Lingpeng Kong</p>
+          <p><i><b>ICML 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2302.05698" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/icl-ceil" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Binding Language Models in Symbolic Languages</b></p>
+          <p>Zhoujun Cheng*, Tianbao Xie*, Peng Shi, Chengzu Li, Rahul Nadkarni, Yushi Hu, Caiming Xiong, Dragomir Radev, Mari Ostendorf, Luke Zettlemoyer, Noah A Smith, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2023 </b> <font color="red">(Spotlight, top 5%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2210.02875" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://lm-code-binder.github.io/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://lm-code-binder.github.io/" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Selective Annotation Makes Language Models Better Few-Shot Learners</b></p>
+          <p>Hongjin Su, Jungo Kasai, Chen Henry Wu, Weijia Shi, Tianlu Wang, Jiayi Xin, Rui Zhang, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, <b>Tao Yu</b></p>
+          <p><i><b>ICLR 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2209.01975" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://twitter.com/wittgen_ball/status/1568302230490730497" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/icl-selective-annotation" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Automated Self-Supervised Learning for Recommendation</b></p>
+          <p>Lianghao Xia, Chao Huang, Chunzhen Huang, Kangyi Lin, <b>Tao Yu</b>, Ben Kao</p>
+          <p><i><b>WWW 2023</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2303.07797" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUDS/AutoCF" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>UnifiedSKG: Unifying and Multi-Tasking Structured Knowledge Grounding with Text-to-Text Language Models</b></p>
+          <p>Tianbao Xie*, Chen Henry Wu*, Peng Shi, Ruiqi Zhong, Torsten Scholak, Michihiro Yasunaga, Chien-Sheng Wu, Ming Zhong, Pengcheng Yin, Sida Wang, Victor Zhong, Bailin Wang, Chengzu Li, Connor Boyle, Ansong Ni, Ziyu Yao, Dragomir Radev, Caiming Xiong, Lingpeng Kong, Rui Zhang, Noah A. Smith, Luke Zettlemoyer, <b>Tao Yu</b></p>
+          <p><i><b>EMNLP 2022</b> <font color="red">(Oral, top 4%)</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2201.05966" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://unifiedskg.com/" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/hkunlp/unifiedskg" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>In-Context Learning for Few-Shot Dialogue State Tracking</b></p>
+          <p>Yushi Hu, Chia-Hsuan Lee, Tianbao Xie, <b>Tao Yu</b>, Noah A. Smith, Mari Ostendorf</p>
+          <p><i><b>EMNLP Findings 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2203.08568" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Yushi-Hu/IC-DST" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>ZeroGen: Efficient Zero-shot Learning via Dataset Generation</b></p>
+          <p>Jiacheng Ye*, Jiahui Gao*, Qintong Li, Hang Xu, Jiangtao Feng, Zhiyong Wu, <b>Tao Yu</b>, Lingpeng Kong</p>
+          <p><i><b>EMNLP 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2202.07922" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/jiacheng-ye/ZeroGen" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>ProGen: Progressive Zero-shot Dataset Generation via In-context Feedback</b></p>
+          <p>Jiacheng Ye, Jiahui Gao, Zhiyong Wu, Jiangtao Feng, <b>Tao Yu</b>, and Lingpeng Kong</p>
+          <p><i><b>EMNLP Findings 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2210.12329" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/HKUNLP/ProGen" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Augmenting Multi-Turn Text-to-SQL Datasets with Self-Play</b></p>
+          <p>Qi Liu, Zihuiwen Ye, <b>Tao Yu</b>, Phil Blunsom, Linfeng Song</p>
+          <p><i><b>EMNLP Findings 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2210.12096" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/leuchine/self_play_picard" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>NL2INTERFACE: Interactive Visualization Interface Generation from Natural Language Queries</b></p>
+          <p>Yiru Chen, Ryan Li, Austin Mac, Tianbao Xie, <b>Tao Yu</b>, Eugene Wu</p>
+          <p><i>IEEE Visualization Conference NLVIZ Workshop, 2022</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2209.08834" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>DYLE: Dynamic Latent Extraction for Abstractive Long-Input Summarization</b></p>
+          <p>Ziming Mao*, Chen Henry Wu*, Ansong Ni, Yusen Zhang, Rui Zhang, <b>Tao Yu</b>, Budhaditya Deb, Chenguang Zhu, Ahmed H Awadallah, Dragomir Radev</p>
+          <p><i><b>ACL 2022</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2110.08168" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/yale-lily/dyle" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>An Exploratory Study on Long Dialogue Summarization: What Works and What's Next</b></p>
+          <p>Yusen Zhang*, Ansong Ni*, <b>Tao Yu</b>, Rui Zhang, Chenguang Zhu, Budhaditya Deb, Asli Celikyilmaz, Ahmed Hassan Awadallah, Dragomir Radev</p>
+          <p><i><b>EMNLP Findings 2021</b>, Short Paper</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2109.04609" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/chatc/LongDialSumm" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>SummerTime: Text Summarization Toolkit for Non-experts</b></p>
+          <p>Ansong Ni, Zhangir Azerbayev, Mutethia Mutuma, Troy Feng, Yusen Zhang, <b>Tao Yu</b>, Ahmed Hassan Awadallah, Dragomir Radev</p>
+          <p><i><b>EMNLP 2021</b>. Demo Track</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2108.12738" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Yale-LILY/SummerTime" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Testing Cross-Database Semantic Parsers Using Canonical Utterances</b></p>
+          <p>Heather Lent, Semih Yavuz, <b>Tao Yu</b>, Tong Niu, Yingbo Zhou, Dragomir Radev, Xi Victoria Lin</p>
+          <p><i>EMNLP 2021 Workshop: Evaluation & Comparison of NLP Systems. <b>Best Paper Award</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://aclanthology.org/2021.eval4nlp-1.8.pdf" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/hclent/BehaviorCheckingSemPar" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Logic-Consistency Text Generation from Semantic Parses</b></p>
+          <p>Chang Shu, Yusen Zhang, Xiangyu Dong, Peng Shi, <b>Tao Yu</b>, Rui Zhang</p>
+          <p><i><b>ACL Findings 2021</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2108.00577" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Ciaranshu/relogic" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization</b></p>
+          <p>Ming Zhong*, Da Yin*, <b>Tao Yu</b>, Ahmad Zaidi, Mutethia Mutuma, Rahul Jha, Ahmed Hassan Awadallah, Asli Celikyilmaz, Yang Liu, Xipeng Qiu and Dragomir Radev</p>
+          <p><i><b>NAACL 2021</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2104.05938" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Yale-LILY/QMSum" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>DART: Open-Domain Structured Data Record to Text Generation</b></p>
+          <p>with Linyong Nan, Dragomir Radev, Rui Zhang, Neha Verma, Xi Victoria Lin, Caiming Xiong, Richard Socher and many authors.</p>
+          <p><i><b>NAACL 2021</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2007.02871" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/Yale-LILY/dart" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>SCoRe: Pre-Training for Context Representation in Conversational Semantic Parsing</b></p>
+          <p><b>Tao Yu</b>, Rui Zhang, Alex Polozov, Christopher Meek, Ahmed Hassan Awadallah</p>
+          <p><i><b>ICLR 2021</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://openreview.net/forum?id=oyZxhRI2RiE" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/microsoft/SCoRE" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>GraPPa: Grammar-Augmented Pre-Training for Table Semantic Parsing</b></p>
+          <p><b>Tao Yu</b>, Chien-Sheng Wu, Xi Victoria Lin, Bailin Wang, Yi Chern Tan, Xinyi Yang, Dragomir Radev, Richard Socher, Caiming Xiong</p>
+          <p><i><b>ICLR 2021</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2009.13845" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/grappa" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Semantic Evaluation for Text-to-SQL with Distilled Test Suites</b></p>
+          <p>Ruiqi Zhong, <b>Tao Yu</b>, Dan Klein</p>
+          <p><i><b>EMNLP 2020</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2010.02840" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/ruiqi-zhong/TestSuiteEval" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Did You Ask a Good Question? A Cross-Domain Question Intention Classification Benchmark for Text-to-SQL</b></p>
+          <p>Yusen Zhang, Xiangyu Dong, Shuaichen Chang, <b>Tao Yu</b>, Peng Shi, Rui Zhang</p>
+          <p><i><b>EMNLP 2020</b> Workshop on Interactive and Executable Semantic Parsing. Short Paper</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/2010.12634" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/chatc/TriageSQL" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>CoSQL</i>: A Conversational Text-to-SQL Challenge Towards Cross-Domain Natural Language Interfaces to Databases</b></p>
+          <p><b>Tao Yu</b>, Rui Zhang He Yang Er, Suyi Li, Eric Xue, Bo Pang, Xi Victoria Lin, Yi Chern Tan, Tianze Shi, Zihan Li, Youxuan Jiang, Michihiro Yasunaga, Sungrok Shim, Tao Chen, Alexander Fabbri, Zifan Li, Luyao Chen, Yuwen Zhang, Shreya Dixit, Vincent Zhang, Caiming Xiong, Richard Socher, Walter Lasecki, Dragomir Radev</p>
+          <p><i><b>EMNLP 2019</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1909.05378" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://yale-lily.github.io/cosql" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Editing-Based SQL Query Generation for Cross-Domain Context-Dependent Questions</b></p>
+          <p>Rui Zhang, <b>Tao Yu</b>, He Yang Er, Sungrok Shim, Eric Xue, Xi Victoria Lin, Tianze Shi, Caiming Xiong, Richard Socher, Dragomir Radev</p>
+          <p><i><b>EMNLP 2019</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1909.00786" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/ryanzhumich/editsql" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>SParC</i>: Cross-Domain Semantic Parsing in Context</b></p>
+          <p><b>Tao Yu</b>, Rui Zhang, Michihiro Yasunaga, Yi Chern Tan, Xi Victoria Lin, Suyi Li, Heyang Er, Irene Li, Bo Pang, Tao Chen, Emily Ji, Shreya Dixit, David Proctor, Sungrok Shim, Jonathan Kraft, Vincent Zhang, Caiming Xiong, Richard Socher and Dragomir Radev</p>
+          <p><i><b>ACL 2019</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1906.02285" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/sparc" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://yale-lily.github.io/sparc" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Twitter Sentiment in New York City Parks as Measure of Well-being</b></p>
+          <p>Richard A Plunz, Yijia Zhou, Maria Isabel Carrasco Vintimilla, Kathleen Mckeown, <b>Tao Yu</b>, Laura Uguccioni, Maria Paola Sutto</p>
+          <p><i><b>Landscape and Urban Planning 2019</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://www.sciencedirect.com/science/article/pii/S0169204618305863" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/nbsvm_pos" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="http://www.cs.columbia.edu/~kathy/Data/TwitterParks/" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>Spider</i>: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task</b></p>
+          <p><b>Tao Yu</b>, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning Yao, Shanelle Roman, Zilin Zhang and Dragomir Radev</p>
+          <p><i><b>EMNLP 2018, </b> <font color="red">~300 submissions, ~1k Github stars</font></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1809.08887" target="_blank">Paper</a>
+            
+
+            
+
+            
+              <a class="button" href="https://medium.com/@tao.yu/spider-one-more-step-towards-natural-language-interfaces-to-databases-62298dc6df3c" target="_blank">Poster</a>
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/spider" target="_blank">Code</a>
+            
+
+            
+              <a class="button" href="https://yale-lily.github.io/spider" target="_blank">Data</a>
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>SyntaxSQLNet</i>: Syntax Tree Networks for Complex and Cross-Domain Text-to-SQL Task</b></p>
+          <p><b>Tao Yu</b>, Michihiro Yasunaga, Kai Yang, Rui Zhang, Dongxu Wang, Zifan Li and Dragomir Radev</p>
+          <p><i><b>EMNLP 2018</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1810.05237" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/syntaxSQL" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b><i>TypeSQL</i>: Knowledge-based Type-Aware Neural Text-to-SQL Generation</b></p>
+          <p><b>Tao Yu</b>, Zifan Li, Zilin Zhang, Rui Zhang, Dragomir Radev</p>
+          <p><i><b>NAACL 2018</b>, Short Paper</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://arxiv.org/abs/1804.09769" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/taoyds/typesql" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>Cross-lingual Sentiment Transfer with Limited Resources</b></p>
+          <p>Mohammad Sadegh Rasooli, Noura Farra, Axinia Radeva, <b>Tao Yu</b>, and Kathleen McKeown</p>
+          <p><i><b>Machine Translation 2017</b></i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://link.springer.com/article/10.1007/s10590-017-9202-6" target="_blank">Paper</a>
+            
+
+            
+
+            
+
+            
+
+            
+              <a class="button" href="https://github.com/rasoolims/senti-lstm" target="_blank">Code</a>
+            
+
+            
+          </div>
+        </div>
+      
+        <div class="paper">
+          <p class="title"><b>The Columbia-GWU System at the 2016 TAC KBP BeSt Evaluation</b></p>
+          <p>Owen Rambow, <b>Tao Yu</b>, Axinia Radeva, Sardar Hamidian, Alexander R. Fabbri, Debanjan Ghosh, Christopher Hidey, Tianrui Peng, Mona Diab, Kathleen McKeown, Smaranda Muresan</p>
+          <p><i><b>NIST TAC</b> KBP Workshop, 2016</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="https://tac.nist.gov/publications/2016/participant.papers/TAC2016.Columbia_GWU.proceedings.pdf" target="_blank">Paper</a>
+            
+
+            
+              <a class="button" href="https://tac.nist.gov/publications/2016/presentations/TAC2016.KBP.BEST.Columbia_GWU.presentation.pdf" target="_blank">Slides</a>
+            
+
+            
+
+            
+
+            
+
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- ========== PROJECTS ==========
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+      
+      
+        
+        
+          <div class="row">
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2016_network-ab-testing.html">
+                    <img src="assets/projects/2016_network-ab/thumbnail.jpg" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Detecting Network Effects</b> <br/>
+                  Randomizing Over Randomized Experiments
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2016_human-atlas.html">
+                    <img src="assets/projects/2016_human-atlas/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Human Atlas</b> <br/>
+                  Tool for Mapping Social Networks
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2015_jun.html">
+                    <img src="assets/projects/2015_jun/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Responsive Communities</b> <br/>
+                  Pilot project in Jun, Spain
+                </div>
+
+            </div>
+          </div>
+
+        
+          </div>
+        
+      
+    </div>
+
+    <div class="tab-pane" id="projects-all">
+      
+        
+        
+          <div class="row">
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2016_network-ab-testing.html">
+                    <img src="assets/projects/2016_network-ab/thumbnail.jpg" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Detecting Network Effects</b> <br/>
+                  Randomizing Over Randomized Experiments
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2016_human-atlas.html">
+                    <img src="assets/projects/2016_human-atlas/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Human Atlas</b> <br/>
+                  Tool for Mapping Social Networks
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2015_jun.html">
+                    <img src="assets/projects/2015_jun/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Responsive Communities</b> <br/>
+                  Pilot project in Jun, Spain
+                </div>
+
+            </div>
+          </div>
+
+        
+          </div>
+        
+      
+        
+        
+          <div class="row">
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2014_item-cold-start.html">
+                    <img src="assets/projects/2014_item-cold-start/thumbnail.jpg" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Cold-Start Recommendations</b> <br/>
+                  Learning Local Collective Embeddings
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2013_iterative-hybrid-algorithm.html">
+                    <img src="assets/projects/2013_iterative-hybrid-algorithm/thumbnail.jpg" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Semi-supervised Learning</b> <br/>
+                  Iterative Hybrid Algorithm
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2011_twitter-sentiment-analysis.html">
+                    <img src="assets/projects/2011_twitter-sentiment-analysis/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Twitter Sentiment Analysis</b> <br/>
+                  Analyzing Financial Tweets
+                </div>
+
+            </div>
+          </div>
+
+        
+          </div>
+        
+      
+        
+        
+          <div class="row">
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2010_wordnet-contruction.html">
+                    <img src="assets/projects/2010_wordnet-construction/thumbnail.jpg" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Wordnet Construction</b> <br/>
+                  Automatic Wordnet Construction using Language Models
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2010_fingerprint-verification.html">
+                    <img src="assets/projects/2010_fingerprint-verification/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Fingerprint Verification</b> <br/>
+                  Image processing class project
+                </div>
+
+            </div>
+          </div>
+
+        
+      
+        
+        
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="projects/2009_connect-four.html">
+                    <img src="assets/projects/2009_connect-four/thumbnail.png" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>Connect Four AI Agent</b> <br/>
+                  Iterative deepening and alpha-beta pruning
+                </div>
+
+            </div>
+          </div>
+
+        
+          </div>
+        
+      
+    </div>
+  </div>
+
+</div>
+-->
+
+<!-- ========== TALKS ========== -->
+<div class="docs-section" id="talks">
+  <h4>Talks and Presentations</h4>
+  
+  
+  <div class="talk">
+    <p class="title"> <a href=https://ivado.ca/en/events/1st-workshop-assessing-and-improving-the-capabilities-and-safety-of-agents/ target="_blank">Invited talk, Workshop on Autonomous LLM Agents</a>,  <br/> IVADO Thematic Semester 2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href= target="_blank">Invited talk, Workshop on Reasoning and Planning</a>,  <br/> Apple 2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://dl4c.github.io/ target="_blank">Invited talk, Deep Learning for Code Workshop</a>,  <br/> ICLR 2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://realm-workshop.github.io target="_blank">Invited talks, LLM Agents Workshop</a>,  <br/> ACL 2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://table-representation-learning.github.io/ACL2025/ target="_blank">Invited talk, Table Representation Learning Workshop"</a>,  <br/> ACL 2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://nlp.stanford.edu/seminar/ target="_blank">Stanford NLP Seminar</a>,  <br/> 01/2025 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://owa-workshop.github.io/ target="_blank">Invited talk, Workshop on Open-World Agents</a>,  <br/> NeurIPS 2024 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://language-agent-tutorial.github.io/ target="_blank">Tutorial on Language Agents: Foundations, Prospects, and Risks</a>,  <br/> EMNLP 2024 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://llmagents.github.io/ target="_blank">Panelist, Workshop on LLM Agents</a>,  <br/> ICLR 2024 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://table-representation-learning.github.io target="_blank">Invited talk, Table Representation Learning Workshop</a>,  <br/> NeurIPS 2023 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://haixun.github.io/llmdb target="_blank">Invited talk, Databases and Large Language Models Workshop</a>,  <br/> VLDB 2023 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://wenting-zhao.github.io/complex-reasoning-tutorial target="_blank">Tutorial on Complex Reasoning over Natural Language</a>,  <br/> ACL 2023 </p>
+  </div>
+  
+  <div class="talk">
+    <p class="title"> <a href=https://docs.google.com/presentation/d/1wiEMUclKUjxhcPhFigqwOwyA8GacNc9eHIuRXa2nxQw/edit?usp=sharing target="_blank">Advancing Natural Language Interfaces with Language Models as Agents</a>,  <br/> Google Research, Apr. 2021 <br/> ServiceNow Research, Feb. 2022 <br/> AllState Tech Talks, June 2022 <br/> Amazon AWS, Nov. 2022 <br/> Columbia NLP seminar, April 2023 <br/> Cornell DB seminar, May 2023 <br/> Microsoft Research Asia, May 2023 <br/> Apple KP Tech Talks, June 2023 <br/> Morgan Stanley ML Speaker Seminar, Dec. 2023 <br/> MILA ML4Code Seminar, Dec. 2023 <br/> Instacart Distinguished Speaker Series, Jan. 2024 </p>
+  </div>
+  
+</div>
+
+
+<!-- ========== STUDENTS ========== -->
+<div class="docs-section" id="students">
+  <h4>Students</h4>
+  
+  
+  <div class="student">
+    <p class="title"> <a href=https://chendl02.github.io/ target="_blank">Delin Chen</a>, Ph.D. student, 2025 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://yitaoliu17.com/ target="_blank">Yitao Liu</a>, Ph.D. student, 2025 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://ludunjie1219.github.io/ target="_blank">Dunjie Lu</a>, Ph.D. student, 2025 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://yuanmengqi.github.io/ target="_blank">Mengqi Yuan</a>, Ph.D. student, 2025 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://bowenbryanwang.github.io target="_blank">Bowen Wang</a>, Ph.D. student, 2024 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://xinyuanwangcs.github.io target="_blank">Xinyuan Wang</a>, Ph.D. student, 2024 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://hongjin-su.github.io target="_blank">Hongjin Su</a>, Ph.D. student, 2022 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://tianbaoxie.com target="_blank">Tianbao Xie</a>, Ph.D. student, 2022 </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://yihengxu.com/ target="_blank">Yiheng Xu</a>, Ph.D. student, 2022, co-advised with Lingpeng Kong </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://jiacheng-ye.github.io/ target="_blank">Jiacheng Ye</a>, Ph.D. student, 2022, co-advised with Lingpeng Kong </p>
+  </div>
+  
+  <div class="student">
+    <p class="title"> <a href=https://xlang.ai/team target="_blank">More Students</a>, Interns/vistors, XLANG Lab </p>
+  </div>
+  
+</div>
+
+<!-- ========== TEACHING ========== -->
+<div class="docs-section" id="teaching">
+  <h4>Teaching</h4>
+  
+  <div class="teaching">
+    <p class="title">
+      <a href="/courses/data8005.html">DATA8005: Advanced NLP</a>, Fall 2023, Fall 2024
+    </p>
+  </div>
+
+  <div class="teaching">
+    <p class="title">
+      <a href="/courses/comp3361.html">COMP3361: Natural Language Processing</a>, Spring 2024, Spring 2025
+    </p>
+  </div>
+</div>
+
+
+<!-- ========== SERVICE ========== -->
+<div class="docs-section" id="service">
+  <h4>Service</h4>
+  
+  
+  <div class="service">
+    <p class="title"> <b>Organizing Committee</b> <br/> Best Paper Committee, ICLR 2025 <br/> Demonstration Chair, ACL 2025 <br/> Agentic AI for Enterprise Workshop @ KDD 2025 <br/> AI Verification in the Wild Workshop @ ICLR 2025 <br/> Multi-Agent Workshop @ AAAI 2025 <br/> Student Volunteer Chair, ACL 2023 <br/> Structured and Unstructured Knowledge Integration Workshop @ NAACL 2022 <br/> Interactive and Executable Semantic Parsing Workshop @ EMNLP 2020 </p>
+  </div>
+  
+  <div class="service">
+    <p class="title"> <b>Area Chair/Reviewer</b> <br/> Nature <br/> COLM 2024, 2025 <br/> ICLR: 2022, 2023, 2024 <br/> ICML: 2023, 2024 <br/> NeurIPS: 2022, 2023  <br/> TACL <br/> ACL: 2020, 2021, 2022 <br/> EMNLP: 2019, 2020, 2021, 2022 <br/> NAACL: 2019, 2021 <br/> COLING: 2020, 2022 <br/> AACL-IJCNLP: 2020 </p>
+  </div>
+  
+</div>
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Resume</h4>
+
+  <p>Full Resume in <a href=/assets/cv/tao_yu_cv.pdf target="_blank">PDF</a>.</p>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">The University of Hong Kong</span>
+          <span class="time-wrapper"><span class="time">08/2021 - now</span></span>
+        </div>
+        <div class="desc"><b>Assistant Professor, CS</b> <br/> XLANG Lab, HKU NLP group</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">University of Washington</span>
+          <span class="time-wrapper"><span class="time">09/2021 - 08/2022</span></span>
+        </div>
+        <div class="desc"><b>Postdoc in UW NLP group</b> <br/> Host: Noah Smith, also working with Luke Zettlemoyer and Mari Ostendorf</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Yale University</span>
+          <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+        </div>
+        <div class="desc"><b>Ph.D. Student</b> <br/> Computer Science - Natural Language Processing <br/> Advisors: Dragomir R. Radev</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Microsoft Research</span>
+          <span class="time-wrapper"><span class="time">Summer 2020</span></span>
+        </div>
+        <div class="desc"><b>NLP Research, Intern</b> <br/> Mentors: Ahmed Hassan Awadallah, Oleksandr Polozov, and Chris Meek</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Salesforce Research</span>
+          <span class="time-wrapper"><span class="time">Summer 2019</span></span>
+        </div>
+        <div class="desc"><b>NLP Research, Intern</b> <br/> Mentors: Victoria Lin and Caiming Xiong</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Samsung Research America</span>
+          <span class="time-wrapper"><span class="time">Summer 2018</span></span>
+        </div>
+        <div class="desc"><b>NLP Research, Intern</b> <br/> </div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Columbia CCLS & NLP Group</span>
+          <span class="time-wrapper"><span class="time">05-10/2016</span></span>
+        </div>
+        <div class="desc"><b>Research Assistant</b> <br/> Advised by Owen Rambow and Kathleen McKeown</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Columbia University</span>
+          <span class="time-wrapper"><span class="time">2015 – 2017</span></span>
+        </div>
+        <div class="desc"><b>M.S. Student</b> <br/> Data Science</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">University of Utah</span>
+          <span class="time-wrapper"><span class="time">2012 - 2015</span></span>
+        </div>
+        <div class="desc"><b>B.S. Student</b> <br/> Mathematics <br/> Economics</div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+
+<div class="docs-section" id="misc">
+    <h4>Misc.</h4>
+    <p>
+    I did a <a href="/assets/pics/cycliing.jpeg">cycling tour</a> (~2 weeks) at the top of the world, <a href="/assets/pics/tibet.jpeg">Tibet</a> (avg elevation: ~4500 meters). I am also a <a href="/assets/pics/pilot.jpeg">student pilot</a>.
+    I enjoy <a href="/assets/pics/hiking.jpeg">hiking</a>, <a href="/assets/pics/nyc_pilot.jpeg">travelling</a>, and <a href="/assets/pics/food_dinner.JPG">cooking</a>. I ski and skate, and I am learning tennis.
+    <p>
+
+    <p>
+    I am from <a href="/assets/pics/ningdu.jpeg">Ningdu</a> (a less developed but beautiful county), Jiangxi Province in China. I’ve lived in (stay for over 3 months) about 20 cities including Zhongshan, Beijing, Shanghai, Salt Lake City, New York City, San Francisco, New Haven, Columbus, Honolulu, San Diego, Seattle, and Hong Kong etc. I've also visited over 60 cities around the world.
+    <p>
+</div>
+
+
+<div class="docs-section" id="template">
+    <h4>Acknowledgement</h4>
+    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
+</div>
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Tao Yu (余涛)
+        </div>
+        <div class="four columns">
+          tao.yu.nlp [AT] gmail.com
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/taoyds')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/tao-yu-b9b551a5/')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/taoyds')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://scholar.google.com/citations?user=5_Fn5CIAAAAJ&hl')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-204806507-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <!-- do not remove
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+   -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

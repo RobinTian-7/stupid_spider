@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+    <style>
+        header {
+            width: 100%;
+            background-color: rgb(122, 0, 25);
+            display: flex;
+            align-items: center;
+            padding: 0px;
+        }
+        body {
+            background-color: #FFF5E1;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+        }
+        .top-image {
+            margin-right: 20px;
+            height: 80px;
+            width: 170px;
+            background: none;
+        }
+        #metaslider_1321 .flex-control-thumbs li {
+            max-width: 150px;
+            min-width: 100px;
+        }
+        #metaslider_1321 ~ .nivo-controlNav.nivo-thumbs-enabled a {
+            max-width: 150px;
+            min-width: 100px;
+        }
+        #metaslider-id-1321 {
+            width: 40% !important;
+            margin: 0 auto;
+        }
+        .entry-title {
+            text-align: center;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        .person-about p {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .flex-caption {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .flexslider .slides img {
+            display: block;
+            max-width: 100%;
+            position: center;
+            height: auto;
+        }
+        .flexslider {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        @media (max-width: 1024px) {
+            header {
+                flex-direction: column; /* 将header变为竖直方向 */
+                align-items: center; /* 居中对齐 */
+            }
+            .navbar {
+                flex-direction: column; /* 将导航栏变为竖直方向 */
+                align-items: center;
+                width: 100%; /* 使导航栏在窄屏幕时占满整个宽度 */
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%; /* 使链接在窄屏幕时占满整个宽度 */
+                box-sizing: border-box;
+            }
+            .top-image {
+                height: 60px;
+                width: 130px;
+                margin-right: 0; /* 去掉右边距 */
+                margin-bottom: 10px; /* 添加底部间距 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <!--
+            <a href="https://twin-cities.umn.edu/">
+                <img src="university-of-minnesota.png" alt="Image 1" class="top-image">
+            </a>
+            -->
+        </div>
+        <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="publication.html">Publications</a>
+        <a href="Awards_Activities.html">Awards &amp; Activities</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="news.html">News</a>
+    </div>
+    </header>
+    
+    <div id="content" class="site-content">
+        <div class="container">
+            <div id="page-userlist">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="primary" class="content-area">
+                            <main id="main" class="site-main" role="main">
+                                <article id="post-856" class="clearfix post-856 page type-page status-publish hentry">
+                                    
+                                    <h1 class="entry-title" style="color: red;">Team</h1>
+                                    
+                                    <div class="entry-content">
+                                        <h2>Team Achievements</h2>
+                                        <div id="metaslider-id-1321" class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="achievement/LAD225.jpg" alt="ICLAD 2025: Best paper award" />
+                                                    <div class="flex-caption">ICLAD 2025: Best paper award</div>
+                                                </li>
+                                                <li>
+                                                    <img src="achievement/best-paper-2023.png" alt="best paper AAAI 2023" />
+                                                    <div class="flex-caption">AAAI 2023 workshop: Best paper award</div>
+                                                </li>
+                                                <li>
+                                                    <img src="achievement/ICCAD_2022_TinyML_Certificate_accuracy.jpg" alt="ICCAD 2022 TinyML Certificate" />
+                                                    <div class="flex-caption">Certificate: 2022 ACM/IEEE TinyML Design Contest First Place Winner in Accuracy</div>
+                                                </li>
+                                                <li>
+                                                    <img src="achievement/ICCAD_2022_TinyML_Certificate_4th.jpg" alt="ICCAD 2022 TinyML Certificate" />
+                                                    <div class="flex-caption">Certificate: 2022 ACM/IEEE TinyML Design Contest Fourth Place Winner</div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <footer class="entry-footer"></footer>
+                                        <h2 class="group-title">Current Members</h2>
+                                        
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Post-doc</h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                            
+                                                                <th>Name</th>
+                                                                <!--
+                                                                    <th>Title</th>
+                                                                    -->
+                                                                
+                                                                <th>Reaserch Area</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!--
+                                                       
+                                                            -->
+                                                            <tr class="person-1218">
+                                                                
+                                                                <td class="person-name">Nuo xu</td>
+                                                                
+                                                                <td class="person-about"><strong>Research Area, Privacy Preserving Machine Learning<br> Efficient Machine Learning</strong></td>
+                                                            </tr>
+                                                            
+                                                           
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="uc-people-group">
+                                                
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Ph.D. </h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                            
+                                                                <th>Name</th>
+                                                                <!--
+                                                                    <th>Title</th>
+                                                                    -->
+                                                                
+                                                                <th>Reaserch Area</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!--
+                                                       
+                                                            -->
+                                                            <tr class="person-1280">
+                                                                
+                                                                <td class="person-name">Winson Chen</td>
+                                                                
+                                                                <td class="person-about"><strong>LLM-based agent system</strong></td>
+                                                            </tr>
+
+                                                            <tr class="person-1281">
+                                                                
+                                                                <td class="person-name">Dunzhi Zhou</td>
+                                                                
+                                                                <td class="person-about"><strong>LLM-based agent system</strong></td>
+                                                            </tr>
+
+                                                             <tr class="person-1282">
+                                                                
+                                                                <td class="person-name">Shiyang Li</td>
+                                                                
+                                                                <td class="person-about"><strong>Machine Learning system</strong></td>
+                                                            </tr>
+        
+                                                            
+                                                            <tr class="person-1279">
+                                                                
+                                                                <td class="person-name">Peijun Li</td>
+                                                                
+                                                                <td class="person-about"><strong>ML for hardware design</strong></td>
+                                                            </tr>
+
+                                                            <tr class="person-1283">
+                                                                
+                                                                <td class="person-name">Pengju Liu</td>
+                                                                
+                                                                <td class="person-about"><strong>ML for hardware design</strong></td>
+                                                            </tr>
+
+
+                                                            
+                                                            <tr class="person-1218">
+                                                                
+                                                                <td class="person-name">Ronak Sahu</td>
+                                                                
+                                                                <td class="person-about"><strong>Adversial machine learning</strong></td>
+                                                            </tr>
+                                                            <tr class="person-1219">
+                                                                
+                                                                <td class="person-name">Amit Hasan</td>
+                                                     
+                                                                <td class="person-about"><strong>Model Compression, Computer Vision, Co-designing<br>NN Architecture and Hardware</strong></td>
+                                                            </tr>
+                                                            
+                                                            <tr class="person-1272">
+                                                                
+                                                                <td class="person-name">Bin Lei</td>
+                                                          
+                                                                <td class="person-about"><strong>Machine Learning, LLM</strong></td>
+                                                            </tr>
+                                                
+                                                     
+                                                            <tr class="person-1275">
+                                                                
+                                                                <td class="person-name">Yuebo Luo</td>
+                                                           
+                                                                <td class="person-about"><strong>GPU, Graph Neural Networks, SW-HW Co-design</strong></td>
+                                                            </tr>
+
+                                                             <tr class="person-1275">
+                                                                
+                                                                <td class="person-name">Jinwei Tang</td>
+                                                  
+                                                                <td class="person-about"><strong>LLM-based Agent System</strong></td>
+                                                            </tr>
+                                                 
+                                                           
+                                        
+                                                            <tr class="person-1580">
+                                                                
+                                                                <td class="person-name">Kiran Thorat</td>
+                                                
+                                                                <td class="person-about"><strong>Machine Learning for EDA, Graph Neural Networks</strong></td>
+                                                            </tr>
+                                                            <tr class="person-1269">
+                                                                
+                                                                <td class="person-name">Xi Xie</td>
+                                                 
+                                                                <td class="person-about"><strong>GPU, FPGA</strong></td>
+                                                            </tr>
+                                                            
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Master</h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                             
+                                                                <th>Name</th>
+                                                                <!--
+                                                                <th>Title</th>
+                                                                -->
+                                                                <th>Reaserch Area</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                                <tr class="person-1595">
+                                                                <td class="person-name">Nicole Meng</td>
+                                                      
+                                                                <td class="person-about"><strong>Adversarial Machine Learning, Computer Vision</strong></td>
+                                                            </tr>
+                                                            <tr class="person-1593">
+                                                                
+                                                                <td class="person-name">Matthew Li</td>
+                                                 
+                                                                <td class="person-about"><strong>Machine Learning, Frontend development, Backend development</strong></td>
+                                                            </tr>
+                                                            <tr class="person-1594">
+                                                                
+                                                                <td class="person-name">Vishal Kancharla </td>
+                                                      
+                                                                <td class="person-about"><strong>Graph Neural Networks</strong></td>
+                                                            </tr>
+                                                            <!--
+                                                             <tr class="person-1094">
+                                                                
+                                                                <td class="person-name">Charitarth Chugh</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant </strong></td>
+                                                                <td class="person-about"><p>Self-driving Cars, Reinforcement Learning</p></td>
+                                                            </tr>
+                                                            <tr class="person-1591">
+                                                                
+                                                                <td class="person-name">Kim Jiwon</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant </strong></td>
+                                                                <td class="person-about"><p>Machine learning</p></td>
+                                                            </tr>
+                                                            <tr class="person-1592">
+                                                                
+                                                                <td class="person-name">Jiannan Ouyang</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant</strong></td>
+                                                                <td class="person-about"><p>GPU</p></td>
+                                                            </tr>
+                                                            -->
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </br>
+                                            <h2 class="group-title">Alumni</h2>
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Ph.D.</h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+
+
+                                                            <tr>
+                                            
+                                                                <th>Name</th>
+                                                                <th>First Employment</th>
+                                                                <!--
+                                                                <th>Reaserch Area</th>
+                                                                -->
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr class="person-616">
+                                                                
+                                                                <td class="person-name">Hongwu Peng</td>
+                                                    
+                                                                <td class="person-title"><strong>Research Scientist at Adobe Research</strong></td>
+                                                            </tr>
+
+                                                            <tr class="person-948">
+                                                                
+                                                                <td class="person-name">Shanglin Zhou</td>
+                                                                <td class="person-title"><strong>Senior Data Scientist at Walmart AI Lab</strong></td>
+
+                                                                <!--
+                                                                <td class="person-about"><p>Model Compression, Computer Vision, Machine Learning</p></td>
+                                                                -->
+                                                                
+                                                            </tr>
+                                                            <tr class="person-583">
+                                                                
+                                                                <td class="person-name">Shaoyi Huang</td>
+                                                                <td class="person-title"><strong>Tenure track assistant professor at Stevens Institute of Technology</strong></td>
+                                                                <!--
+                                                                <td class="person-about">    <p>Algorithm/hardware co-design for ML systems</p></td>
+                                                                -->
+                                                            </tr>
+
+                                                            <tr class="person-1675">
+                                                                
+                                                                <td class="person-name">Deniz Gurevin</td>
+                                                                <td class="person-title"><strong>Co-supervision with Prof. Omer Khan<br> Synopsys</strong></td>
+                                                                <!--
+                                                                <td class="person-about"><p>GPU, Machine Learning Acceleration</p></td>
+                                                                -->
+                                                                
+                                                            </tr>
+                                                            
+                                                            
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Post-doc & Visiting Scholar & Master</h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                            
+                                                                <th>Name</th>
+                                                                <th>First Employment</th>
+                                                                <!--
+                                                                <th>Reaserch Area</th>
+                                                                -->
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="person-1088">
+                                                                
+                                                                <td class="person-name">Ya-Sine Agrignan</td>
+                                                                <td class="person-title"><strong>Research Assistant</br>(Master)</strong></td>
+                                                                <!--
+                                                                <td class="person-about"><p>Machine learning, hardware</p></td>
+                                                                -->
+                                                                
+                                                            </tr>
+                                                            <tr class="person-1717">
+                                                                <td class="person-name">Stepan Gordeev</td>
+                                                                <td class="person-title"><strong>Postdoctoral Research Associate</br>(Tenure track assistant professor at Texas Christian University)</strong></td>
+                                                                <!--
+                                                                <td class="person-about"><p>Macro Development Economist</p></td>
+                                                                -->
+                                                                
+                                                            </tr>
+                                                            <tr class="person-310">
+                                                               
+                                                                <td class="person-name">Yanjun Lyu</td>
+                                                                <td class="person-title"><strong>Visiting Scholar <br>(Ph.D. Student at UT Arlington)</strong></td>
+                                                                <!--
+                                                                <td class="person-about"><p>NLP, model compression, graph similarity search</p></td>
+                                                                -->
+                                                    
+                                                            </tr>
+                                                            
+                                                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!--
+                                            
+                                            <div class="uc-people-group">
+                                                <h3 class="group-title">Undergraduate</h3>
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                            
+                                                                <th>Name</th>
+                                                                <th>First Employment</th>
+                                                                <th>About</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="person-1679">
+                                                                
+                                                                <td class="person-name">Alison Menezes</td>
+                                                                <td class="person-title"><strong>REU student (Summer 2023)</strong></td>
+                                                                <td class="person-about"></td>
+                                                            </tr>
+                                                            <tr class="person-1677">
+                                                                
+                                                                <td class="person-name">Maryam Abuissa</td>
+                                                                <td class="person-title"><strong>REU student (Summer 2023)</strong></td>
+                                                                <td class="person-about"></td>
+                                                            </tr>
+                                                            <tr class="person-394">
+                                                                
+                                                                <td class="person-name">Alexander Chandy</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant</br>(First employment at Capital One)</strong></td>
+                                                                <td class="person-about"><p>Machine learning</p></td>
+                                                            </tr>
+
+                                                            <tr class="person-390">
+                                                                
+                                                                <td class="person-name">Nathan Choi</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant <br>(First employment CS graduate student in UC Berkeley)</strong></td>
+                                                                <td class="person-about"><p>Machine learning</p></td>
+                                                            </tr>
+
+                                                           
+                                                            
+                                                            <tr class="person-348">
+                                                                
+                                                                <td class="person-name">Aditya Kulkarni</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant <br>(First employment M.S. Student at Columbia University)</strong></td>
+                                                                <td class="person-about"><p>Machine learning, food image classification</p></td>
+                                                            </tr>
+
+
+                                                            <tr class="person-1589">
+                                                                
+                                                                <td class="person-name">Kelsey Mitchell</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant <br>(First employment at Raytheon Technologies)</strong></td>
+                                                                <td class="person-about"><p>Machine learning</p></td>
+                                                            </tr>
+                                                            <tr class="person-1336">
+                                                                
+                                                                <td class="person-name">Yifan Shan</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant<br>(First employment CS graduate student in Cornell Tech)</strong></td>
+                                                                <td class="person-about"><p>Computer Vision, Natural Language Processing</p></td>
+                                                            </tr>
+                                                            <tr class="person-1096">
+                                                               
+                                                                <td class="person-name">Andy Trinh</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant <br>(First employment BAE Systems)</strong></td>
+                                                                <td class="person-about"><p>System, Machine learning</p></td>
+                                                            </tr>
+                                                            <tr class="person-790">
+                                                                
+                                                                <td class="person-name">Kiera Wolfe</td>
+                                                                <td class="person-title"><strong>Undergraduate Research Assistant <br>(First employment at Raytheon Technologies)</strong></td>
+                                                                <td class="person-about"><p>Machine Learning, Cloud computing</p></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </article>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: true,
+                directionNav: true,
+                prevText: "&#10094;",
+                nextText: "&#10095;",
+                start: function(slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

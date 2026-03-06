@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Ang Chen</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="description" content="Associate Professor">
+  <meta name="keywords" content="Ang Chen"> 
+</head>
+
+
+
+
+
+<body bgcolor=white link=blue vlink=blue topmargin="30" leftmargin="40"  rightmargin="40" bottommargin="30"> 
+  <table border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td align="center" valign="middle">
+      <img src="images/IMG_6260.jpg" width="215.888" height="260" alt="Ang
+      Chen">
+    </td>
+    <td>
+      <b>Ang Chen</b><br>
+      Associate Professor<br>
+      Computer Science and Engineering<br>
+      University of Michigan<br>
+      Office: 4753 Beyster building <br>
+      E-mail: chenang (at) umich (dot) edu<br>
+      <br><br>
+    
+    </td>
+  </tr>
+  </table><p>
+
+  <hr>
+  <center>
+  <large>
+  <a href="#Research">Research</a> | <a href="#Teaching">Teaching</a> | <a href="#Group">Group</a> | <a href="pubs.html">Publications</a> | <a href="#Service">Service</a> 
+  </center></large>
+
+<!--
+
+   <h3><a name="News">Recent news</h3>
+
+   2022-09: Congrats to <a href="https://jxing.me/">Jiarong Xing</a> on the 2022 <a href="https://csweb.rice.edu/news/rices-first-google-phd-fellowship-awarded-jiarong-xing-computer-science">Google PhD Fellowship!</a><br>
+   2022-08: FlexNet <a href="https://flexnet-project.org/">kickoff</a>, with 45 attendees from 13 industry organizations. <br>
+   2022-07: Runtime programmable networks funded by a <a href="https://csweb.rice.edu/news/next-generation-networks-fast-changes-and-increased-security">$3M NSF Large grant.</a><br>
+   2022-06: I'm thankful for the VMware Early Career Faculty grant. <br>
+   2022-05: Congratulations to <a href="https://kuofeng.blogs.rice.edu/">Kuo-Feng Hsu</a> for defending his PhD thesis!
+
+-->
+
+
+  <h3><a name="Research">Research</h3>
+
+  Our work focuses on systems, networking, and security, with the following projects: 
+
+
+  <ul><li> <b>Digital transformation (DX):</b> 
+		  DX is the art and science of devising and applying computing techniques, tools, theories, and principles for industrial systems (e.g., power/water grids, datacenters, agriculture). We are planning a new SIG in ACM on Digital Transformation (SIGDX), with an Emerging Interest Group up and running. The mission of SIGDX is two-fold: to identify and translate the latest computing techniques to impact societal infrastructures, and to enrich and extend computing techniques to address real-world issues in infrastructure sectors which are a golden source of research problems.
+		  See the SIGDX <a href="https://dl.acm.org/doi/full/10.1145/3736713">vision statement</a> and <a href="https://services.acm.org/public/qj/eigqj/qjeig_control.cfm?promo=WEB&form_type=EIG&offering=EIG5">join us</a> to build it together!
+  </ul>
+
+  <ul><li> <b>Cloud AIOps:</b> Cloud DevOps is an essential yet difficult task; fortunately, the extensive cloud documentation makes an agentic approach an ideal fit. Our vision is to enable high velocity DevOps with AI. 
+  We've curated an <a href="https://neurips.cc/virtual/2024/poster/97835">IaC dataset and benchmark</a>, and developed systems for <a href="https://dl.acm.org/doi/10.1145/3694715.3695974">generating IaC checks</a>, cloud program <a href="https://www.computer.org/csdl/proceedings-article/aiops/2025/263800a004/27ueAr2EZaw">lifting</a>, debugging <a href="https://ieeexplore.ieee.org/abstract/document/11029328">IaC updates</a>. Two vision papers on <a href="https://dl.acm.org/doi/10.1145/3626111.3628206">cloudless computing</a> and <a href="https://dl.acm.org/doi/10.1145/3759441.3759443">general-purpose DevOps agents</a>. 
+  </ul>
+
+
+
+
+  <ul><li> <b>Runtime programmable networks:</b> 
+  The goal is to make end-to-end network infrastructure, vertically from the host kernels to the NICs, and horizontally extending across switches to the other end of the network, 
+  runtime reprogrammable on-the-fly without packet loss, and with strong consistency guarantees. See our <a href="papers/hotnets-2021-flexnet.pdf">vision paper</a>, <a href="slides/flexnet.mp4">joint talk</a>, 
+  the <a href="https://www.usenix.org/system/files/nsdi22-paper-xing.pdf">runtime programmable switch</a> project which implements runtime reconfiguration for silicon switch ASICs, performance optimization of <a href="https://dl.acm.org/doi/10.1145/3603269.3604882">SmartNICs</a>, <a href="https://www.usenix.org/conference/nsdi23">a program synthesis tool</a> that generates runtime update plans, our <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2535540">$3M NSF Large project</a>. Also see NVIDIA's hightlight on these projects in a <a href="https://www.computer.org/csdl/proceedings/hcs/2023/1QKTmw2YhXO">HotChips'23</a> talk.
+  </ul>
+
+ 
+  <i>Older projects</i>:
+
+ <ul><li> <b>Programmable in-network security:</b>
+  Our vision is to transform a programmable network into a "programmable defense infrastructure," which supports security as naturally as it does routing. In this design, a switch not only forwards traffic, 
+  but also applies to it a wide range of defenses. The network not only routes traffic end-to-end, but also swaps defenses along the paths in and out as needed to mitigate attacks. 
+  Recent projects include: 
+  <a href="papers/poise-sec2020.pdf">Poise</a>, 
+  <a href="papers/netwarden-sec2020.pdf">NetWarden</a>,
+  <a href="papers/ripple-sec21.pdf">Ripple</a>,
+  <a href="papers/p4wn-asplos21.pdf">P4wn</a>,
+   <a href="papers/security-2022.pdf">Bedrock</a>,
+   <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/liu-hongyi">RDMI</a>,
+   <a href="https://www.computer.org/csdl/proceedings-article/sp/2024/313000a036/1RjEabCelaM">NetShuffle</a>,
+   <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/kon">SpotProxy</a>,
+  </ul>
+
+
+
+
+ 
+  <ul><li> <b>ML for systems software:</b>
+  Systems software (e.g., OS kernels) needs to support different applications and multiplex different types of hardware platforms; no one-size-fits-all optimizations exist. 
+  Neural networks are effective at generalizing to unseen scenarios, but their blackbox nature is a poor fit for low-level systems software, which must make safety-critical decisions.
+  In this project, we are pursuing two approaches: a) creating systems-level mechanisms that are constrained by symbolic logic while making them reconfigurable with learning-derived policies, 
+  and b) applying learning to analyze systems-level code to identify optimization opportunities. 
+  See examples at <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s09-qiu.pdf">this paper</a> 
+  and the <a href="papers/sosp-2021.pdf">Clara</a> project.
+  </ul>
+
+  <ul><li> <b>Causality in distributed systems:</b>
+  Diagnosing problems in large systems has always been a challenging problem due to their complexity. Our project uses data provenance to track causal relationships 
+  between system states and their changes. It further uses them to enable automated reasoning for fault diagnosis, repair, and prevention, e.g., using a Datalog-like logical model. 
+  See the individual projects: 
+  <a href="https://www.usenix.org/system/files/nsdi22-paper-wang_weitao_spidermon.pdf">Spidermon</a>,
+  <a href="https://www.usenix.org/system/files/nsdi20-paper-zhai.pdf">CloudCanary</a>,
+  <a href="papers/nsdi-2019.pdf">Zeno</a>,
+  <a href="papers/sigcomm-2016.pdf">DiffProv</a>,
+  <a href="papers/eurosys-2017.pdf">SPP</a>,
+  <a href="papers/nsdi-2017.pdf">MetaProv</a>. 
+  </ul>
+
+
+  <ul><li> <b>Infrastructure optimizations for data-intensive systems:</b>
+  This project aims at a tighter vertical integration between data-intensive systems and the cloud infrastructure to improve their performance, 
+  by whole-stack optimizations from the network layer to the OS, and to distributed frameworks and the applications themselves. 
+  One overarching theme for these optimizations is to reconfigure or rearchitect various parts of the infrastructure for data-intensive workloads, as further 
+  informed by modern hardware technologies available in the cloud. 
+  Projects include: 
+  <a href="papers/vldb-2020.pdf">DDCs</a>,
+  <a href="papers/sigmod-2019.pdf">GraphRex</a>,
+  <a href="papers/contra-nsdi-2020.pdf">Contra</a>, 
+  <a href="papers/vldb-2022.pdf">Lightning</a>,
+  <a href="papers/sigmod-2022.pdf">TELEPORT</a>, 
+  <a href="https://www.usenix.org/system/files/nsdi22-paper-wang_weitao_rdc.pdf">RDC</a>.
+  </ul>
+		  
+
+<!--  I am interested in designing secure, efficient, and reliable networked systems. 
+  One direction I've been working on is <a href="poise.html">Programmable In-network Security (Poise)</a>, 
+  where we're rethinking how future networks should support security architecturally. 
+  Another direction we're looking at is network support for data-intensive applications, 
+  which aims to optimize the interaction between data-processing tasks and the underlying network. 
+  In addition, we're working to make large-scale systems more reliable, 
+  where we develop new primitives for failure prevention, diagnosis, and repair. 
+-->
+  <a name="group"></a><h3>Group</h3>
+
+  <i>Current PhD students</i>: 
+  <li><a href="https://www.cs-pk.com/">Patrick Kon</a> (2021-) <br>
+  <li><a href="https://archit-bhatnagar.github.io/">Archit Bhatnagar</a> (2024-) <br>
+  <li><a href="https://lry89757.github.io/">Runyu Lu</a> (2024-) w/ <a href="https://mosharaf.com/">Mosharaf Chowdhury</a><br>
+  <li><a href="https://mushtari-sadia.github.io/">Mushtari Sadia</a> (2024-) w/ <a href="https://sites.google.com/wisc.edu/amrita-roy-chowdhury/">Amrita Roy Chowdhury <a><br>
+  <li><a href="https://zyang37.github.io/">Zhenning Yang</a> (2024-) <br>
+  <br>
+
+
+  <i>Current postdoc</i>: 
+  <li><a href="https://huangyibo.github.io/">Yibo Huang</a> <br>
+  <br><br>
+
+  
+  <i>Postdoc+ PhD Alumni</i>: <br>
+  <li><a href="https://yimingqiu.me/">Yiming Qiu</a> (PhD 2020-2024, Postdoc 2025 Spring w/ <a href="https://people.eecs.berkeley.edu/~sylvia/">Sylvia Ratnasamy</a>), Assistant Professor at the University of Hong Kong<br>
+  <li><a href="https://yunmingxiao.github.io/">Yunming Xiao</a> (Postdoc 2024-2025), Assistant Professor at Chinese University of Hong Kong, Shenzhen<br>
+  <li><a href="https://jxing.me/">Jiarong Xing</a> (PhD 2018-2023), Assistant Professor at Rice University <br>
+  <li><a href="https://kuofeng.blogs.rice.edu/">Kuo-Feng Hsu</a> (PhD 2017-2022), Research Scientist at Meta/Facebook<br>  
+  <li><a href="https://cs.uwaterloo.ca/~dbarrada/">Diogo Barradas</a> (Postdoc 2021 Fall), Assistant Professor at University of Waterloo <br>
+  <br>
+
+
+
+<!--
+  <i>MS+BS Alumni</i>: <br>
+
+  <li><a href="https://hsezhiyan.github.io/">Hari Sezhiyan</a> (MS) 
+  <li>Wenqing Arthur Wu (BS) -> UChicago -> Amazon <br>
+  <li>Qiao Kang</a> (MS) <br>
+  <li>Adam Morrison (BS+MS), now at Arista Networks <br>
+  <li>Mitch Belmer (BS), now at Accenture <br>
+  <li>Yujian Ou (BS) <br>
+-->
+
+ 
+  <a name="service"></a><h3>Service</h3>
+  Program Committee: Oakland 2026, ASPLOS 2026 (ERC), OSDI 2025, NSDI 2025, CCS 2025, Oakland 2025, HotNets 2024, Oakland 2024, EuroSys 2024, PoPETS 2024, APNet 2024, CCS 2023, NSDI 2023, Oakland 2023, SIGCOMM 2022, CCS 2022, APSys 2022, NSDI 2021, CoNEXT 2021, SOSR 2021, ICNP 2021, ICDCS 2018, NDSS 2018, CIKM 2017 
+  <br>
+
+  Program Co-chair: <a href="https://sites.google.com/tamu.edu/nsf-nets-resource-site/events/nets-early-career-investigator-eci-workshop">NeTS Early Investigator Workshop 2021</a>, <a href="https://conferences.sigcomm.org/sigcomm/2020/workshop-spin.html">SIGCOMM SPIN'20</a>
+  <br>
+
+<!-- 
+ 
+  <a name="grants"></a><h3>Grants</h3>
+
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2214272">CNS-2214272</a>, 
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2106751&HistoricalAwards=false">CNS-2106751</a>, 
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2106388&HistoricalAwards=false">CNS-2106388</a>, 
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2016727&HistoricalAwards=false">CCRI-2016727</a>, 
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1942219&HistoricalAwards=false">CAREER</a>, 
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1801884&HistoricalAwards=false">CNS-1801884</a>
+  <br>
+-->
+
+
+  <a name="teaching"></a><h3>Teaching</h3>
+  I teach the following courses on a regular basis: 
+  <ul>
+     <li> <a href="">Introduction to Computer Security</a>: 2024 Fall</li> 
+     <li> <a href="">Computer and Network Security</a>: 2024 Winter</li> 
+     <li> <a href="">Advanced Distributed Systems</a>: 2023 Fall</li> 
+     <li> <a href="https://www.clear.rice.edu/comp321/html/index.html">Introduction to Computer Systems</a>: 2022 Fall</li> 
+     <li> <a href="classes/COMP436536.html">Secure and Cloud Computing</a>: 2018-2021 Fall, 2023 Spring</li> 
+     <li> <a href="classes/COMP645-Spring2021.html">Advanced Topics in Distributed Systems</a>: 2018-2022 Spring 
+  </ul>
+   
+  <br>
+
+
+  
+  
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89001113-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+

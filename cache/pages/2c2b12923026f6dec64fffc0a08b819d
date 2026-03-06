@@ -1,0 +1,1661 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Carl Vondrick - Columbia University</title><!-- SEO Meta Tags --><meta
+name="description"
+content="Carl Vondrick is a Professor of Computer Science at Columbia University, researching computer vision, machine learning, and AI applications." /><meta name="author" content="Carl Vondrick" /><!-- Open Graph / Facebook --><meta property="og:type" content="website" /><meta property="og:url" content="https://www.cs.columbia.edu/~vondrick/" /><meta property="og:title" content="Carl Vondrick - Columbia University" /><meta
+property="og:description"
+content="Professor of Computer Science at Columbia University, researching computer vision, machine learning, and AI applications." /><meta property="og:image" content="https://www.cs.columbia.edu/~vondrick/img/photo-me.webp" /><!-- Twitter --><meta property="twitter:card" content="summary_large_image" /><meta property="twitter:url" content="https://www.cs.columbia.edu/~vondrick/" /><meta property="twitter:title" content="Carl Vondrick - Columbia University" /><meta
+property="twitter:description"
+content="Professor of Computer Science at Columbia University, researching computer vision, machine learning, and AI applications." /><meta
+property="twitter:image"
+content="https://www.cs.columbia.edu/~vondrick/img/photo-me.webp" /><!-- Schema.org structured data --><script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "Carl Vondrick",
+"jobTitle": "Professor of Computer Science",
+"affiliation": {
+"@type": "Organization",
+"name": "Columbia University"
+},
+"image": "https://www.cs.columbia.edu/~vondrick/img/photo-me.webp",
+"url": "https://www.cs.columbia.edu/~vondrick/",
+"sameAs": ["https://scholar.google.com/citations?user=3MzhkFIAAAAJ"],
+"knowsAbout": ["Computer Vision", "Machine Learning", "Artificial Intelligence"],
+}
+</script><!-- Canonical URL --><link rel="canonical" href="https://www.cs.columbia.edu/~vondrick/" /><!-- Additional meta tags --><meta name="keywords" content="Carl Vondrick, Computer Vision, Machine Learning, AI, Columbia University, Computer Science, Research" /><meta name="robots" content="index, follow" /><link
+href="assets/bootstrap.min.css"
+rel="stylesheet" /><link
+rel="stylesheet"
+href="assets/bootstrap-icons.min.css" /><link rel="stylesheet" href="assets/style.css" /></head><body><div id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</div><!-- Navigation Bar --><nav class="navbar navbar-expand-sm navbar-light" style="background-color: var(--color-bg-primary)"><div class="container"><div class="ms-auto"><button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav"
+aria-label="Toggle navigation"
+aria-expanded="false"
+aria-controls="navbarNav"><span class="navbar-toggler-icon"></span></button></div><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="navbar-link" href="#bio">Bio</a></li><li class="nav-item"><a class="navbar-link" href="#students">Lab</a></li><li class="nav-item"><a class="navbar-link" href="#papers">Papers</a></li><li class="nav-item"><a class="navbar-link" href="#teaching">Teaching</a></li></ul></div></div></nav><header class="topbar" id="home"><div class="container"><div class="row mt-0"><div class="col-6 col-sm-6 col-md-4 col-lg-3 ps-4 py-4 ms-md-auto"><a href="img/photo-me2.webp"><img
+alt="Carl Vondrick - Professor of Computer Science at Columbia University"
+src="img/photo-me.webp"
+id="me"
+class="float-start img-fluid rounded" /></a></div><div class="col-12 col-sm-12 col-md-7 col-lg-5 ps-4 pb-4 py-0 py-md-1 me-auto nameplate"><h1>Carl Vondrick</h1><p class="mb-0">
+YM Associate Professor of Computer Science
+<br />
+Columbia University
+<br /><br /><i class="bi bi-building me-2"></i>618 Schapiro CEPSR
+<br /><i class="bi bi-geo-alt me-2"></i><a href="assets/directions.pdf">530 West 120th St, New York, NY 10027</a><br /><i class="bi bi-envelope me-2"></i>vondrick at cs dot columbia dot edu
+</p></div></div></div></header><main><section class="container" id="bio"><div class="row pb-4"><div class="col-lg-6 order-lg-0 col-12 px-4"><h2 class="paperhi">Brief Bio</h2><p>
+I am a professor in the
+<a href="https://www.cs.columbia.edu">computer science department</a>
+at
+<a href="https://www.columbia.edu">Columbia</a>, and I am also a researcher at Apple. My research studies computer vision, machine learning, and their applications.
+</p><p>
+Previously, I was a research scientist at Google and a visiting researcher at Cruise. I
+completed my PhD at MIT in 2017 advised by Antonio Torralba and my BS at UC Irvine in
+2011, where I got my start working with Deva Ramanan.
+I received the <a href="https://www.thecvf.com/?page_id=413#YRA">2024 PAMI Young Researcher Award</a> and the 2021 NSF CAREER Award. I am also
+the Senior Program Chair for <a href="https://iclr.cc/Conferences/2025">ICLR 2025</a>, and General Chair for <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a>.
+</p></div><div class="col-lg-6 order-lg-0 col-12 px-4"><h2 class="paperhi">Research</h2><p>
+By training machines to observe and interact with their surroundings, our research aims
+to create robust and versatile models for perception. Our lab often investigates visual
+models that capitalize on large amounts of unlabeled data and transfer across tasks and
+modalities. Other interests include scene dynamics, sound and language and beyond,
+interpretable models, and perception for robotics.
+<!--Our group is part of the <a href="https://vigr.cs.columbia.edu">Visual Computing</a> and <a href="https://ml.cs.columbia.edu">Machine Learning</a> ecosystem at Columbia.--></p><p>
+The lab recruits one or two PhD students each year. Prospective PhD students should
+apply to the
+<a href="https://www.gradengineering.columbia.edu/graduate-admissions/apply">
+PhD program</a>.
+Due to the volume of email we receive, we unfortunately cannot respond to emails about
+applications.
+</p></div></div></section><section class="darker" id="students"><div class="container"><div class="row pb-4"><div class="col-12 px-4"><h2 class="paperhi pb-1">PhD Students and Postdocs</h2></div><div class="col-12 px-4 student-grid"><div class="student text-center"><a href="https://arjun-mani.github.io"><img
+alt="Photo of Arjun Mani, PhD student at Columbia University"
+src="lab/optimized/arjun.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://arjun-mani.github.io">Arjun Mani</a></div></div><div class="student text-center"><a href="https://www.cs.columbia.edu/~egeozguroglu/"><img
+alt="Photo of Ege Ozguroglu, PhD student at Columbia University"
+src="lab/optimized/ege.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://www.cs.columbia.edu/~egeozguroglu/">Ege Ozguroglu</a></div></div><div class="student text-center"><a href="https://junbangliang.github.io"><img
+alt="Photo of Junbang Liang, PhD student at Columbia University"
+src="lab/optimized/junbang.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://junbangliang.github.io">Junbang Liang</a></div></div><div class="student text-center"><a href="https://lennartschulze.com/"><img
+alt="Photo of Lennart Schulze, PhD student at Columbia University"
+src="lab/optimized/lennart.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://lennartschulze.com/">Lennart Schulze</a></div></div><div class="student text-center"><a href="https://sachit-menon.github.io"><img
+alt="Photo of Sachit Menon, PhD student at Columbia University"
+src="lab/optimized/sachit.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://sachit-menon.github.io">Sachit Menon</a></div></div><div class="student text-center"><a href="https://sreeharirammohan.com"><img
+alt="Photo of Sreehari Rammohan, PhD student at Columbia University"
+src="lab/optimized/sree.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://sreeharirammohan.com">Sreehari Rammohan</a></div></div><div class="student text-center"><a href="https://sruthisudhakar.github.io"><img
+alt="Photo of Sruthi Sudhakar, PhD student at Columbia University"
+src="lab/optimized/sruthi.webp"
+class="img-fluid rounded" /></a><div class="mt-2 student-name-container"><a href="https://sruthisudhakar.github.io">Sruthi Sudhakar</a></div></div></div><div class="col-12 px-4 pb-1 alumni-list"><h3 class="paperhi pt-4">Graduated PhD Students and Former Postdocs</h3></div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="http://www.cs.columbia.edu/~mia.chiquier/"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/mia.webp&quot; alt=&quot;Mia Chiquier&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;PhD Thesis&lt;/div&gt;&lt;a href=&quot;https://doi.org/10.7916/cktp-0w09&quot; target=&quot;_blank&quot;&gt;Discovery Through Bottlenecks in Multimodal Models&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;Fellowship&lt;/div&gt;Amazon PhD Fellowship&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Mia Chiquier (2025), Research Scientist at Mistral
+</div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="https://utkarshmall.com"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/utkarsh.webp&quot; alt=&quot;Utkarsh Mall&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;Role&lt;/div&gt;Postdoctoral Researcher&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Utkarsh Mall (2025), Assistant Professor at MBZUAI
+</div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="https://ruoshiliu.github.io"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/ruoshi.webp&quot; alt=&quot;Ruoshi Liu&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;PhD Thesis&lt;/div&gt;&lt;a href=&quot;https://doi.org/10.7916/r0xt-a322&quot; target=&quot;_blank&quot;&gt;Generative Computer Vision for Physical Intelligence&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Ruoshi Liu (2025), Assistant Professor at UMD
+</div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="https://basile.be"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/basile.webp&quot; alt=&quot;Basile Van Hoorick&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;PhD Thesis&lt;/div&gt;&lt;a href=&quot;https://doi.org/10.7916/3aph-dg81&quot; target=&quot;_blank&quot;&gt;Spatial Reasoning in Dynamic Scenes&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Basile Van Hoorick (2024), Research Scientist at TRI
+</div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="http://www.didacsuris.com"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/didac.webp&quot; alt=&quot;Didac Suris&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;PhD Thesis&lt;/div&gt;&lt;a href=&quot;https://doi.org/10.7916/a90w-t724&quot; target=&quot;_blank&quot;&gt;Multimodal Representations for Video&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;Fellowship&lt;/div&gt;Microsoft PhD Fellowship&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Didac Suris (2024), Research Scientist at Meta
+</div><div class="col-12 col-xl-6 col-xxl-4 align-top alumni-student"
+data-alumni-url="https://chengzhi-mao.github.io"
+data-alumni-popover="&lt;div class=&quot;alumni-popover-layout&quot;&gt;&lt;div class=&quot;alumni-photo&quot;&gt;&lt;img src=&quot;lab/optimized/chengzhi.webp&quot; alt=&quot;Chengzhi Mao&quot;&gt;&lt;/div&gt;&lt;div class=&quot;alumni-info&quot;&gt;&lt;div class=&quot;alumni-section&quot;&gt;&lt;div class=&quot;alumni-section-title&quot;&gt;PhD Thesis&lt;/div&gt;&lt;a href=&quot;https://doi.org/10.7916/jdqf-a249&quot; target=&quot;_blank&quot;&gt;Robust Machine Learning by Integrating Context&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"
+>
+Chengzhi Mao (2023), Assistant Professor at Rutgers
+</div></div></div></section><div class="modal" id="moreModal" tabindex="-1" aria-labelledby="moreModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="moreModalLabel">Portfolio</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><nav class="nav flex-column nav-pills" role="navigation" aria-label="Paper categories"><button class="nav-link text-start"><i class="pe-2 bi bi-list"></i><span>All</span>
+Papers
+</button><button class="nav-link text-start active"><i class="pe-2 bi bi-stars"></i><span>Representative</span></button><button class="nav-link text-start"><span>Learning from Video</span></button><button class="nav-link text-start"><span>Interpretability</span></button><button class="nav-link text-start"><span>Multimodal</span></button><button class="nav-link text-start"><span>3D</span></button><button class="nav-link text-start"><span>Robotics</span></button><button class="nav-link text-start"><span>AI4Science</span></button><button class="nav-link text-start"><span>People and Behavior</span></button><button class="nav-link text-start"><span>Neuro symbolic</span></button><button class="nav-link text-start"><span>Robustness</span></button><hr class="mx-3" /><button class="nav-link text-start"><span>Google Scholar</span></button></nav></div></div></div></div><section class="container" id="papers"><div id="paper-scroll-spot"></div><div class="row"><aside class="col-lg-3 col-12 order-first order-lg-last pt-4 pt-lg-0 d-none d-lg-block"><nav class="nav flex-lg-column nav-pills ms-lg-4 mb-lg-4" role="navigation" aria-label="Paper categories"><h4 class="ms-3 d-none d-lg-block">&nbsp;</h4><button class="nav-link text-start"><i class="pe-2 bi bi-list"></i><span>All</span>
+Papers
+</button><button class="nav-link text-start active"><i class="pe-2 bi bi-stars"></i><span>Representative</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://smell.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/smell.webp&quot; alt=&quot;New York Smells: A Large Multimodal Dataset for Olfaction&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2508.00795&quot;&gt;&lt;img src=&quot;img/optimized/videopolicy.mp4&quot; alt=&quot;Video Generators are Robot Policies&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://dreamitate.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/dreamitate.mp4&quot; alt=&quot;Dreamitate: Real-World Visuomotor Policy Learning via Video Generation&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/2101.01600.pdf&quot;&gt;&lt;img src=&quot;img/optimized/predictability.mp4&quot; alt=&quot;Learning the Predictability of the Future&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/1904.01766&quot;&gt;&lt;img src=&quot;img/optimized/videobert.webp&quot; alt=&quot;VideoBERT: A Joint Model for Video and Language Representation Learning&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/1806.09594.pdf&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/colorization.mp4&quot; alt=&quot;Tracking Emerges by Colorizing Videos&quot;&gt;&lt;span&gt;+18&lt;/span&gt;&lt;/a&gt;"
+><span>Learning from Video</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://diff-usion.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/diff.mp4&quot; alt=&quot;Teaching Humans Subtle Differences with DIFF-usion&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://llm-mutate.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/llmmutate.mp4&quot; alt=&quot;Evolving Interpretable Visual Classifiers with Large Language Models&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://selfie.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/selfie.webp&quot; alt=&quot;SelfIE: Self-Interpretation of Large Language Model Embeddings&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://viper.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/viper.mp4&quot; alt=&quot;ViperGPT: Visual Inference via Python Execution for Reasoning&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2210.07183&quot;&gt;&lt;img src=&quot;img/optimized/cfd.webp&quot; alt=&quot;Visual Classification via Description from Large Language Models&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/1806.09594.pdf&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/colorization.mp4&quot; alt=&quot;Tracking Emerges by Colorizing Videos&quot;&gt;&lt;span&gt;+5&lt;/span&gt;&lt;/a&gt;"
+><span>Interpretability</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://smell.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/smell.webp&quot; alt=&quot;New York Smells: A Large Multimodal Dataset for Olfaction&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://voicecamo.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/camo.mp4&quot; alt=&quot;Real-Time Neural Voice Camouflage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2105.08052&quot;&gt;&lt;img src=&quot;img/optimized/boombox.mp4&quot; alt=&quot;The Boombox: Visual Reconstruction from Acoustic Vibrations&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/1804.03160&quot;&gt;&lt;img src=&quot;img/optimized/soundofpixels.webp&quot; alt=&quot;The Sound of Pixels&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://projects.csail.mit.edu/soundnet/&quot;&gt;&lt;img src=&quot;img/optimized/soundnet.webp&quot; alt=&quot;SoundNet: Learning Sound Representations from Unlabeled Video&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/2206.07148.pdf&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/music.webp&quot; alt=&quot;It&#39;s Time for Artistic Correspondence in Music and Video&quot;&gt;&lt;span&gt;+2&lt;/span&gt;&lt;/a&gt;"
+><span>Multimodal</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://zero123.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/zero123.mp4&quot; alt=&quot;Zero-1-to-3: Zero-shot One Image to 3D Object&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://thermal.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/thermal.webp&quot; alt=&quot;Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://gcd.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/gcd.mp4&quot; alt=&quot;Generative Camera Dolly: Extreme Monocular Dynamic Novel View Synthesis&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://gestalt.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/gestalt.mp4&quot; alt=&quot;pix2gestalt: Amodal Segmentation by Synthesizing Wholes&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://sin3dm.github.io&quot;&gt;&lt;img src=&quot;img/optimized/Sin3DM.webp&quot; alt=&quot;Sin3DM: Learning a Diffusion Model from a Single 3D Textured Shape&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://objaverse.allenai.org/objaverse-xl-paper.pdf&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/objaverse-xl.webp&quot; alt=&quot;Objaverse-XL: A Universe of 10M+ 3D Objects&quot;&gt;&lt;span&gt;+5&lt;/span&gt;&lt;/a&gt;"
+><span>3D</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://designopt.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/designopt.webp&quot; alt=&quot;Few-Shot Design Optimization by Exploiting Auxiliary Information&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2508.00795&quot;&gt;&lt;img src=&quot;img/optimized/videopolicy.mp4&quot; alt=&quot;Video Generators are Robot Policies&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://aquabot.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/aquabot.mp4&quot; alt=&quot;Self-Improving Autonomous Underwater Manipulation&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://drrobot.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/drrobot.webp&quot; alt=&quot;Differentiable Robot Rendering&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://dreamitate.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/dreamitate.mp4&quot; alt=&quot;Dreamitate: Real-World Visuomotor Policy Learning via Video Generation&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://paperbot.cs.columbia.edu&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/paperbot.mp4&quot; alt=&quot;PaperBot: Learning to Design Real-World Tools Using Paper&quot;&gt;&lt;span&gt;+2&lt;/span&gt;&lt;/a&gt;"
+><span>Robotics</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://diff-usion.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/diff.mp4&quot; alt=&quot;Teaching Humans Subtle Differences with DIFF-usion&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://disciple.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/disciple.webp&quot; alt=&quot;DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2504.12110&quot;&gt;&lt;img src=&quot;img/optimized/univearth.webp&quot; alt=&quot;Towards LLM Agents for Earth Observation&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/2312.06960.pdf&quot;&gt;&lt;img src=&quot;img/optimized/graft.webp&quot; alt=&quot;Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment&quot;&gt;&lt;/a&gt;"
+><span>AI4Science</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://thermal.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/thermal.webp&quot; alt=&quot;Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/2101.01600.pdf&quot;&gt;&lt;img src=&quot;img/optimized/predictability.mp4&quot; alt=&quot;Learning the Predictability of the Future&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://facet.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/facet.mp4&quot; alt=&quot;How Video Meetings Change Your Expression&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2212.02978&quot;&gt;&lt;img src=&quot;img/optimized/muscles.mp4&quot; alt=&quot;Muscles in Action&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://flex.cs.columbia.edu/&quot;&gt;&lt;img src=&quot;img/optimized/flex.webp&quot; alt=&quot;FLEX: Full-Body Grasping Without Full-Body Grasps&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2301.10939&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/realtalk.mp4&quot; alt=&quot;Affective Faces for Goal-Driven Dyadic Communication&quot;&gt;&lt;span&gt;+9&lt;/span&gt;&lt;/a&gt;"
+><span>People and Behavior</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://whiteboard.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/whiteboard.webp&quot; alt=&quot;Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://llm-mutate.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/llmmutate.mp4&quot; alt=&quot;Evolving Interpretable Visual Classifiers with Large Language Models&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://viper.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/viper.mp4&quot; alt=&quot;ViperGPT: Visual Inference via Python Execution for Reasoning&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2210.07183&quot;&gt;&lt;img src=&quot;img/optimized/cfd.webp&quot; alt=&quot;Visual Classification via Description from Large Language Models&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/pdf/2012.04631.pdf&quot;&gt;&lt;img src=&quot;img/optimized/globetrotter.webp&quot; alt=&quot;Globetrotter: Connecting Languages by Connecting Images&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/1904.01766&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/videobert.webp&quot; alt=&quot;VideoBERT: A Joint Model for Video and Language Representation Learning&quot;&gt;&lt;span&gt;+10&lt;/span&gt;&lt;/a&gt;"
+><span>Neuro symbolic</span></button><button class="nav-link text-start category-pill"
+data-category-preview="&lt;a href=&quot;https://arxiv.org/pdf/2401.12970.pdf&quot;&gt;&lt;img src=&quot;img/optimized/raider.webp&quot; alt=&quot;Raidar: geneRative AI Detection viA Rewriting&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://voicecamo.cs.columbia.edu&quot;&gt;&lt;img src=&quot;img/optimized/camo.mp4&quot; alt=&quot;Real-Time Neural Voice Camouflage&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2103.14222&quot;&gt;&lt;img src=&quot;img/optimized/reverse.webp&quot; alt=&quot;Adversarial Attacks are Reversible with Natural Supervision&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2502.01980&quot;&gt;&lt;img src=&quot;img/optimized/longtail-guidance.webp&quot; alt=&quot;Generative Data Mining with Longtail-Guided Diffusion&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://arxiv.org/abs/2206.09027&quot;&gt;&lt;img src=&quot;img/optimized/landscape3.mp4&quot; alt=&quot;Landscape Learning for Neural Network Inversion&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_SHIFT3D_Synthesizing_Hard_Inputs_For_Tricking_3D_Detectors_ICCV_2023_paper.pdf&quot; class=&quot;preview-more&quot;&gt;&lt;img src=&quot;img/optimized/shift3d.mp4&quot; alt=&quot;SHIFT3D: Synthesizing Hard Inputs For Tricking 3D Detectors&quot;&gt;&lt;span&gt;+8&lt;/span&gt;&lt;/a&gt;"
+><span>Robustness</span></button><hr class="mx-3 d-none d-lg-block" /><button class="nav-link text-start d-none d-lg-block"><span>Google Scholar</span></button></nav></aside><div class="order-0 col-12 col-lg-9 px-4 papers-container"><div class="paperhi"><h2><span id="paper-heading">Representative Papers</span><span class="mobile-inline-button d-lg-none mt-2 ms-2"><button
+class="btn btn-primary d-inline-block d-lg-none"
+type="button"
+data-bs-toggle="modal"
+data-bs-target="#moreModal"
+aria-controls="moreModal">
+More
+</button></span></h2></div><p class="abstract abstract-Representative">
+Our research creates perception systems with diverse skills, including spatial,
+physical, logical, and reasoning abilities, for flexibly analyzing visual data. Our
+multimodal approach provides versatile representations for tasks like 3D reconstruction,
+visual question answering, and robot manipulation, while offering inherent
+explainability and excellent zero-shot generalization. The below papers highlight key
+examples of these capabilities.
+</p><p class="abstract abstract-Learning-from-Video">Machine perception is challenging because most knowledge about our world, such as physical commonsense, is not written down. Through large amounts of unlabeled video and interaction with the natural world, we create algorithms that learn perceptual skills without manual supervision.</p><p class="abstract abstract-Interpretability">We create interpretable machine learning methods for perception that allow people to audit decisions and reprogram representations. Unlike black-box neural networks, we develop methods that are explainable by construction while still offering excellent performance.</p><p class="abstract abstract-Multimodal">Central to our research is forming an integrative perspective on perception to build accurate and robust models. Our research exploits the natural synchronization between vision, sound, and other modalities to learn cross-modal representations for tasks like recognition, source localization, and artistic correspondence.</p><p class="abstract abstract-3D">We create new representations for spatial awareness, allowing vision systems to reconstruct scenes in 3D and anticipate object dynamics in the future. We often tightly integrate geometry, physics, and generative models in order to equip 3D vision systems with intuitive, and sometimes un-intuitive, physical skills.</p><p class="abstract abstract-Robotics">We develop multi-modal learning methods for robotics, integrating vision, sound, interaction, and other modalities together in order to learn representations for perception, design, and action.</p><p class="abstract abstract-AI4Science">We leverage visual data to accelerate scientific discovery, developing methods that can identify patterns, make hypotheses, and generate insights across diverse scientific domains.</p><p class="abstract abstract-People-and-Behavior">Our research creates visual representations that learn the human behavior continuum, capturing the goals underlying human action. We aim to create computer vision systems that can assist people at their activities, thereby enabling new opportunities for human-computer interaction.</p><p class="abstract abstract-Neuro-symbolic">We harness language to learn neuro-symbolic methods for computer vision, establishing methods that rapidly generalize to open world tasks while offering inherent explainability too.</p><p class="abstract abstract-Robustness">Critical applications require systems that are trustworthy and reliable. Our research demonstrates that predictive models have intrinsic empirical and theoretical advantages for improving robustness and generalization.</p><!-- Group publications by year --><h3 class="year pt-2 pb-1">2026</h3><div
+class="publication paperhi d-flex align-items-start paper-Robotics"><a href="https://designopt.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Few-Shot Design Optimization by Exploiting Auxiliary Information"
+src="img/optimized/designopt.webp"
+alt="Teaser for Few-Shot Design Optimization by Exploiting Auxiliary Information"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://designopt.cs.columbia.edu">Few-Shot Design Optimization by Exploiting Auxiliary Information</a></strong><br />
+Arjun Mani, Carl Vondrick, Richard Zemel
+<br />
+arXiv 2026
+<br /><span class="links"><a href="https://arxiv.org/abs/2602.12112">Paper</a><a href="https://designopt.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{mani2026fewshot,&#10;&#160;&#160;title={Few-Shot Design Optimization by Exploiting Auxiliary Information},&#10;&#160;&#160;author={Arjun Mani and Carl Vondrick and Richard Zemel},&#10;&#160;&#160;journal={arXiv 2026},&#10;&#160;&#160;year={2026},&#10;&#160;&#160;url={https://designopt.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2025</h3><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-Multimodal"><a href="https://smell.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for New York Smells: A Large Multimodal Dataset for Olfaction"
+src="img/optimized/smell.webp"
+alt="Teaser for New York Smells: A Large Multimodal Dataset for Olfaction"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://smell.cs.columbia.edu">New York Smells: A Large Multimodal Dataset for Olfaction</a></strong><br />
+Ege Ozguroglu, Junbang Liang, Ruoshi Liu, Mia Chiquier, Michael DeTienne, Wesley Wei Qian, Alexandra Horowitz, Andrew Owens, Carl Vondrick
+<br />
+arXiv 2025
+<br /><span class="links"><a href="https://arxiv.org/abs/2511.20544">Paper</a><a href="https://smell.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{ozguroglu2025new,&#10;&#160;&#160;title={New York Smells: A Large Multimodal Dataset for Olfaction},&#10;&#160;&#160;author={Ege Ozguroglu and Junbang Liang and Ruoshi Liu and Mia Chiquier and Michael DeTienne and Wesley Wei Qian and Alexandra Horowitz and Andrew Owens and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://smell.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robotics paper-Learning-from-Video"><a href="https://arxiv.org/abs/2508.00795" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Video Generators are Robot Policies"
+src="img/optimized/videopolicy.mp4"
+alt="Teaser for Video Generators are Robot Policies"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2508.00795">Video Generators are Robot Policies</a></strong><br />
+Junbang Liang, Pavel Tokmakov, Ruoshi Liu, Sruthi Sudhakar, Paarth Shah, Rares Ambrus, Carl Vondrick
+<br />
+arXiv 2025
+<br /><span class="links"><a href="https://arxiv.org/pdf/2508.00795">Paper</a><a href="https://videopolicy.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{liang2025video,&#10;&#160;&#160;title={Video Generators are Robot Policies},&#10;&#160;&#160;author={Junbang Liang and Pavel Tokmakov and Ruoshi Liu and Sruthi Sudhakar and Paarth Shah and Rares Ambrus and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://arxiv.org/abs/2508.00795}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2505.00681" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><div class="publogo publication-placeholder float-start rounded g d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-text"></i></div></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2505.00681">MINERVA: Evaluating Complex Video Reasoning</a></strong><br />
+Arsha Nagrani, Sachit Menon, Ahmet Iscen, Shyamal Buch, Ramin Mehran, Nilpa Jha, Anja Hauth, Yukun Zhu, Carl Vondrick, Mikhail Sirotenko, Cordelia Schmid, Tobias Weyand
+<br />
+ICCV 2025
+<br /><span class="links"><a href="https://arxiv.org/pdf/2505.00681">Paper</a><a href="https://github.com/google-deepmind/neptune">Dataset</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{nagrani2025minerva,&#10;&#160;&#160;title={MINERVA: Evaluating Complex Video Reasoning},&#10;&#160;&#160;author={Arsha Nagrani and Sachit Menon and Ahmet Iscen and Shyamal Buch and Ramin Mehran and Nilpa Jha and Anja Hauth and Yukun Zhu and Carl Vondrick and Mikhail Sirotenko and Cordelia Schmid and Tobias Weyand},&#10;&#160;&#160;booktitle={ICCV 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://arxiv.org/abs/2505.00681}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-AI4Science paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2504.12110" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Towards LLM Agents for Earth Observation"
+data-src="img/optimized/univearth.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2504.12110">Towards LLM Agents for Earth Observation</a></strong><br />
+Chia Hsiang Kao, Wenting Zhao, Shreelekha Revankar, Samuel Speas, Snehal Bhagat, Rajeev Datta, Cheng Perng Phoo, Utkarsh Mall, Carl Vondrick, Kavita Bala, Bharath Hariharan
+<br />
+arXiv 2025
+<br /><span class="links"><a href="https://arxiv.org/pdf/2504.12110">Paper</a><a href="https://iandrover.github.io/UnivEarth/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{kao2025towards,&#10;&#160;&#160;title={Towards LLM Agents for Earth Observation},&#10;&#160;&#160;author={Chia Hsiang Kao and Wenting Zhao and Shreelekha Revankar and Samuel Speas and Snehal Bhagat and Rajeev Datta and Cheng Perng Phoo and Utkarsh Mall and Carl Vondrick and Kavita Bala and Bharath Hariharan},&#10;&#160;&#160;journal={arXiv 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://arxiv.org/abs/2504.12110}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Interpretability paper-AI4Science"><a href="https://diff-usion.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Teaching Humans Subtle Differences with DIFF-usion"
+src="img/optimized/diff.mp4"
+alt="Teaser for Teaching Humans Subtle Differences with DIFF-usion"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://diff-usion.cs.columbia.edu">Teaching Humans Subtle Differences with DIFF-usion</a></strong><br />
+Mia Chiquier<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Orr Avrech<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Yossi Gandelsman, Berthy Feng, Katherine Bouman, Carl Vondrick
+<br />
+arXiv 2025
+<br /><span class="links"><a href="https://arxiv.org/pdf/2504.08046">Paper</a><a href="https://diff-usion.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{chiquier2025teaching,&#10;&#160;&#160;title={Teaching Humans Subtle Differences with DIFF-usion},&#10;&#160;&#160;author={Mia Chiquier and Orr Avrech and Yossi Gandelsman and Berthy Feng and Katherine Bouman and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://diff-usion.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2502.01980" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Generative Data Mining with Longtail-Guided Diffusion"
+data-src="img/optimized/longtail-guidance.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2502.01980">Generative Data Mining with Longtail-Guided Diffusion</a></strong><br />
+David S. Hayden, Mao Ye, Timur Garipov, Gregory P. Meyer, Carl Vondrick, Zhao Chen, Yuning Chai, Eric Wolff, Siddhartha S. Srinivasa
+<br />
+ICML 2025
+<br /><span class="links"><a href="https://arxiv.org/pdf/2502.01980">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{hayden2025generative,&#10;&#160;&#160;title={Generative Data Mining with Longtail-Guided Diffusion},&#10;&#160;&#160;author={David S. Hayden and Mao Ye and Timur Garipov and Gregory P. Meyer and Carl Vondrick and Zhao Chen and Yuning Chai and Eric Wolff and Siddhartha S. Srinivasa},&#10;&#160;&#160;booktitle={ICML 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://arxiv.org/abs/2502.01980}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-interpretability paper-neuro-symbolic paper-AI4Science"><a href="https://disciple.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery"
+src="img/optimized/disciple.webp"
+alt="Teaser for DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://disciple.cs.columbia.edu">DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery</a></strong><br />
+Utkarsh Mall, Cheng Perng Phoo, Mia Chiquier, Bharath Hariharan, Kavita Bala, Carl Vondrick
+<br />
+CVPR 2025
+<br /><span class="links"><a href="https://arxiv.org/abs/2502.10060">Paper</a><a href="https://disciple.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mall2025disciple,&#10;&#160;&#160;title={DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery},&#10;&#160;&#160;author={Utkarsh Mall and Cheng Perng Phoo and Mia Chiquier and Bharath Hariharan and Kavita Bala and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://disciple.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robotics"><a href="https://aquabot.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Self-Improving Autonomous Underwater Manipulation"
+src="img/optimized/aquabot.mp4"
+alt="Teaser for Self-Improving Autonomous Underwater Manipulation"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://aquabot.cs.columbia.edu">Self-Improving Autonomous Underwater Manipulation</a></strong><br />
+Ruoshi Liu, Huy Ha, Mengxue Hou, Shuran Song, Carl Vondrick
+<br />
+ICRA 2025
+<br /><span class="links"><a href="https://arxiv.org/abs/2410.18969">Paper</a><a href="https://aquabot.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{liu2025selfimproving,&#10;&#160;&#160;title={Self-Improving Autonomous Underwater Manipulation},&#10;&#160;&#160;author={Ruoshi Liu and Huy Ha and Mengxue Hou and Shuran Song and Carl Vondrick},&#10;&#160;&#160;journal={ICRA 2025},&#10;&#160;&#160;year={2025},&#10;&#160;&#160;url={https://aquabot.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2024</h3><div
+class="publication paperhi d-flex align-items-start paper-Robotics"><a href="https://drrobot.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Differentiable Robot Rendering"
+src="img/optimized/drrobot.webp"
+alt="Teaser for Differentiable Robot Rendering"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://drrobot.cs.columbia.edu">Differentiable Robot Rendering</a></strong><br />
+Ruoshi Liu, Alper Canberk, Shuran Song, Carl Vondrick
+<br />
+CoRL 2024 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/abs/2410.13851">Paper</a><a href="https://drrobot.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liu2024differentiable,&#10;&#160;&#160;title={Differentiable Robot Rendering},&#10;&#160;&#160;author={Ruoshi Liu and Alper Canberk and Shuran Song and Carl Vondrick},&#10;&#160;&#160;booktitle={CoRL 2024 (Oral)},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://drrobot.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robotics paper-Learning-from-Video"><a href="https://dreamitate.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Dreamitate: Real-World Visuomotor Policy Learning via Video Generation"
+src="img/optimized/dreamitate.mp4"
+alt="Teaser for Dreamitate: Real-World Visuomotor Policy Learning via Video Generation"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://dreamitate.cs.columbia.edu">Dreamitate: Real-World Visuomotor Policy Learning via Video Generation</a></strong><br />
+Junbang Liang<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Ruoshi Liu<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Ege Ozguroglu, Sruthi Sudhakar, Achal Dave, Pavel Tokmakov, Shuran Song, Carl Vondrick
+<br />
+CoRL 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2406.16862">Paper</a><a href="https://dreamitate.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liang2024dreamitate,&#10;&#160;&#160;title={Dreamitate: Real-World Visuomotor Policy Learning via Video Generation},&#10;&#160;&#160;author={Junbang Liang and Ruoshi Liu and Ege Ozguroglu and Sruthi Sudhakar and Achal Dave and Pavel Tokmakov and Shuran Song and Carl Vondrick},&#10;&#160;&#160;booktitle={CoRL 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://dreamitate.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Neuro-symbolic"><a href="https://whiteboard.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities"
+src="img/optimized/whiteboard.webp"
+alt="Teaser for Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://whiteboard.cs.columbia.edu">Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities</a></strong><br />
+Sachit Menon, Richard Zemel, Carl Vondrick
+<br />
+EMNLP 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2406.14562">Paper</a><a href="https://whiteboard.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{menon2024whiteboardofthought,&#10;&#160;&#160;title={Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities},&#10;&#160;&#160;author={Sachit Menon and Richard Zemel and Carl Vondrick},&#10;&#160;&#160;booktitle={EMNLP 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://whiteboard.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video"><a href="https://erasedraw.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for EraseDraw: Learning to Draw Step-by-Step via Erasing Objects from Images"
+data-src="img/optimized/erasedraw.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://erasedraw.cs.columbia.edu">EraseDraw: Learning to Draw Step-by-Step via Erasing Objects from Images</a></strong><br />
+Alper Canberk, Maksym Bondarenko, Ege Ozguroglu, Ruoshi Liu, Carl Vondrick
+<br />
+ECCV 2024
+<br /><span class="links"><a href="https://erasedraw.cs.columbia.edu/static/files/erasedraw_arxiv.pdf">Paper</a><a href="https://erasedraw.cs.columbia.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{canberk2024erasedraw,&#10;&#160;&#160;title={EraseDraw: Learning to Draw Step-by-Step via Erasing Objects from Images},&#10;&#160;&#160;author={Alper Canberk and Maksym Bondarenko and Ege Ozguroglu and Ruoshi Liu and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://erasedraw.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://facet.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for How Video Meetings Change Your Expression"
+data-src="img/optimized/facet.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://facet.cs.columbia.edu">How Video Meetings Change Your Expression</a></strong><br />
+Sumit Sarin, Utkarsh Mall, Purva Tendulkar, Carl Vondrick
+<br />
+ECCV 2024
+<br /><span class="links"><a href="https://arxiv.org/abs/2406.00955">Paper</a><a href="https://facet.cs.columbia.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{sarin2024how,&#10;&#160;&#160;title={How Video Meetings Change Your Expression},&#10;&#160;&#160;author={Sumit Sarin and Utkarsh Mall and Purva Tendulkar and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://facet.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video"><a href="https://arxiv.org/pdf/2408.07147" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Controlling the World by Sleight of Hand"
+data-src="img/optimized/coshand.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2408.07147">Controlling the World by Sleight of Hand</a></strong><br />
+Sruthi Sudhakar, Ruoshi Liu, Basile Van Hoorick, Carl Vondrick, and Richard Zemel
+<br />
+ECCV 2024 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/pdf/2408.07147">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{sudhakar2024controlling,&#10;&#160;&#160;title={Controlling the World by Sleight of Hand},&#10;&#160;&#160;author={Sruthi Sudhakar and Ruoshi Liu and Basile Van Hoorick and Carl Vondrick and and Richard Zemel},&#10;&#160;&#160;booktitle={ECCV 2024 (Oral)},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://arxiv.org/pdf/2408.07147}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-3D"><a href="https://gcd.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Generative Camera Dolly: Extreme Monocular Dynamic Novel View Synthesis"
+data-src="img/optimized/gcd.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://gcd.cs.columbia.edu">Generative Camera Dolly: Extreme Monocular Dynamic Novel View Synthesis</a></strong><br />
+Basile Van Hoorick, Rundi Wu, Ege Ozguroglu, Kyle Sargent, Ruoshi Liu, Pavel Tokmakov, Achal Dave, Changxi Zheng, Carl Vondrick
+<br />
+ECCV 2024 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/abs/2405.14868">Paper</a><a href="https://gcd.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{hoorick2024generative,&#10;&#160;&#160;title={Generative Camera Dolly: Extreme Monocular Dynamic Novel View Synthesis},&#10;&#160;&#160;author={Basile Van Hoorick and Rundi Wu and Ege Ozguroglu and Kyle Sargent and Ruoshi Liu and Pavel Tokmakov and Achal Dave and Changxi Zheng and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2024 (Oral)},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://gcd.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Interpretability paper-Neuro-symbolic"><a href="https://llm-mutate.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Evolving Interpretable Visual Classifiers with Large Language Models"
+src="img/optimized/llmmutate.mp4"
+alt="Teaser for Evolving Interpretable Visual Classifiers with Large Language Models"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://llm-mutate.cs.columbia.edu">Evolving Interpretable Visual Classifiers with Large Language Models</a></strong><br />
+Mia Chiquier, Utkarsh Mall, Carl Vondrick
+<br />
+ECCV 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2404.09941">Paper</a><a href="https://llm-mutate.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chiquier2024evolving,&#10;&#160;&#160;title={Evolving Interpretable Visual Classifiers with Large Language Models},&#10;&#160;&#160;author={Mia Chiquier and Utkarsh Mall and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://llm-mutate.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Interpretability"><a href="https://selfie.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for SelfIE: Self-Interpretation of Large Language Model Embeddings"
+src="img/optimized/selfie.webp"
+alt="Teaser for SelfIE: Self-Interpretation of Large Language Model Embeddings"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://selfie.cs.columbia.edu">SelfIE: Self-Interpretation of Large Language Model Embeddings</a></strong><br />
+Haozhe Chen, Carl Vondrick, Chengzhi Mao
+<br />
+ICML 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2403.10949">Paper</a><a href="https://selfie.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chen2024selfie,&#10;&#160;&#160;title={SelfIE: Self-Interpretation of Large Language Model Embeddings},&#10;&#160;&#160;author={Haozhe Chen and Carl Vondrick and Chengzhi Mao},&#10;&#160;&#160;booktitle={ICML 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://selfie.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robotics"><a href="https://paperbot.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for PaperBot: Learning to Design Real-World Tools Using Paper"
+src="img/optimized/paperbot.mp4"
+alt="Teaser for PaperBot: Learning to Design Real-World Tools Using Paper"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://paperbot.cs.columbia.edu">PaperBot: Learning to Design Real-World Tools Using Paper</a></strong><br />
+Ruoshi Liu, Junbang Liang, Sruthi Sudhakar, Huy Ha, Cheng Chi, Shuran Song, Carl Vondrick
+<br />
+arXiv 2024
+<br /><span class="links"><a href="https://paperbot.cs.columbia.edu/assets/paperbot.pdf">Paper</a><a href="https://paperbot.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{liu2024paperbot,&#10;&#160;&#160;title={PaperBot: Learning to Design Real-World Tools Using Paper},&#10;&#160;&#160;author={Ruoshi Liu and Junbang Liang and Sruthi Sudhakar and Huy Ha and Cheng Chi and Shuran Song and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://paperbot.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D"><a href="https://gestalt.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for pix2gestalt: Amodal Segmentation by Synthesizing Wholes"
+data-src="img/optimized/gestalt.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://gestalt.cs.columbia.edu">pix2gestalt: Amodal Segmentation by Synthesizing Wholes</a></strong><br />
+Ege Ozguroglu, Ruoshi Liu, DÃ­dac SurÃ­s, Dian Chen, Achal Dave, Pavel Tokmakov, Carl Vondrick
+<br />
+CVPR 2024
+<br /><span class="links"><a href="https://gestalt.cs.columbia.edu/static/pix2gestalt.pdf">Paper</a><a href="https://gestalt.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{ozguroglu2024pixgestalt,&#10;&#160;&#160;title={pix2gestalt: Amodal Segmentation by Synthesizing Wholes},&#10;&#160;&#160;author={Ege Ozguroglu and Ruoshi Liu and DÃ­dac SurÃ­s and Dian Chen and Achal Dave and Pavel Tokmakov and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://gestalt.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/pdf/2401.12970.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Raidar: geneRative AI Detection viA Rewriting"
+src="img/optimized/raider.webp"
+alt="Teaser for Raidar: geneRative AI Detection viA Rewriting"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2401.12970.pdf">Raidar: geneRative AI Detection viA Rewriting</a></strong><br />
+Chengzhi Mao, Carl Vondrick, Hao Wang, Junfeng Yang
+<br />
+ICLR 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2401.12970.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2024raidar,&#10;&#160;&#160;title={Raidar: geneRative AI Detection viA Rewriting},&#10;&#160;&#160;author={Chengzhi Mao and Carl Vondrick and Hao Wang and Junfeng Yang},&#10;&#160;&#160;booktitle={ICLR 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://arxiv.org/pdf/2401.12970.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Interpretability"><a href="https://arxiv.org/abs/2310.10591" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Interpreting and Controlling Vision Foundation Models via Text Explanations"
+data-src="img/optimized/text-iclr2024.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2310.10591">Interpreting and Controlling Vision Foundation Models via Text Explanations</a></strong><br />
+Haozhe Chen, Junfeng Yang, Carl Vondrick, Chengzhi Mao
+<br />
+ICLR 2024
+<br /><span class="links"><a href="https://arxiv.org/abs/2310.10591">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chen2024interpreting,&#10;&#160;&#160;title={Interpreting and Controlling Vision Foundation Models via Text Explanations},&#10;&#160;&#160;author={Haozhe Chen and Junfeng Yang and Carl Vondrick and Chengzhi Mao},&#10;&#160;&#160;booktitle={ICLR 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://arxiv.org/abs/2310.10591}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D"><a href="https://sin3dm.github.io" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Sin3DM: Learning a Diffusion Model from a Single 3D Textured Shape"
+data-src="img/optimized/Sin3DM.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://sin3dm.github.io">Sin3DM: Learning a Diffusion Model from a Single 3D Textured Shape</a></strong><br />
+Rundi Wu, Ruoshi Liu, Carl Vondrick, Changxi Zheng
+<br />
+ICLR 2024
+<br /><span class="links"><a href="https://arxiv.org/abs/2305.15399">Paper</a><a href="https://sin3dm.github.io">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{wu2024sindm,&#10;&#160;&#160;title={Sin3DM: Learning a Diffusion Model from a Single 3D Textured Shape},&#10;&#160;&#160;author={Rundi Wu and Ruoshi Liu and Carl Vondrick and Changxi Zheng},&#10;&#160;&#160;booktitle={ICLR 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://sin3dm.github.io}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Neuro-symbolic paper-AI4Science"><a href="https://arxiv.org/pdf/2312.06960.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment"
+data-src="img/optimized/graft.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2312.06960.pdf">Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment</a></strong><br />
+Utkarsh Mall, Cheng Perng Phoo, Meilin Liu, Carl Vondrick, Bharath Hariharan, Kavita Bala
+<br />
+ICLR 2024
+<br /><span class="links"><a href="https://arxiv.org/pdf/2312.06960.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mall2024remote,&#10;&#160;&#160;title={Remote Sensing Vision-Language Foundation Models without Annotations via Ground Remote Alignment},&#10;&#160;&#160;author={Utkarsh Mall and Cheng Perng Phoo and Meilin Liu and Carl Vondrick and Bharath Hariharan and Kavita Bala},&#10;&#160;&#160;booktitle={ICLR 2024},&#10;&#160;&#160;year={2024},&#10;&#160;&#160;url={https://arxiv.org/pdf/2312.06960.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2023</h3><div
+class="publication d-flex align-items-start paper-3D"><a href="https://objaverse.allenai.org/objaverse-xl-paper.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Objaverse-XL: A Universe of 10M+ 3D Objects"
+data-src="img/optimized/objaverse-xl.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://objaverse.allenai.org/objaverse-xl-paper.pdf">Objaverse-XL: A Universe of 10M+ 3D Objects</a></strong><br />
+Matt Deitke, et al.
+<br />
+NeurIPS 2023
+<br /><span class="links"><a href="https://objaverse.allenai.org/objaverse-xl-paper.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{deitke2023objaversexl,&#10;&#160;&#160;title={Objaverse-XL: A Universe of 10M+ 3D Objects},&#10;&#160;&#160;author={Matt Deitke and et al.},&#10;&#160;&#160;booktitle={NeurIPS 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://objaverse.allenai.org/objaverse-xl-paper.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Interpretability paper-Neuro-symbolic"><a href="https://viper.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for ViperGPT: Visual Inference via Python Execution for Reasoning"
+src="img/optimized/viper.mp4"
+alt="Teaser for ViperGPT: Visual Inference via Python Execution for Reasoning"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://viper.cs.columbia.edu">ViperGPT: Visual Inference via Python Execution for Reasoning</a></strong><br />
+DÃ­dac SurÃ­s<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Sachit Menon<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick
+<br />
+ICCV 2023 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/pdf/2303.08128.pdf">Paper</a><a href="https://viper.cs.columbia.edu">Project Page</a><a href="https://github.com/cvlab-columbia/viper">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2023vipergpt,&#10;&#160;&#160;title={ViperGPT: Visual Inference via Python Execution for Reasoning},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Sachit Menon and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2023 (Oral)},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://viper.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-3D"><a href="https://zero123.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Zero-1-to-3: Zero-shot One Image to 3D Object"
+src="img/optimized/zero123.mp4"
+alt="Teaser for Zero-1-to-3: Zero-shot One Image to 3D Object"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://zero123.cs.columbia.edu">Zero-1-to-3: Zero-shot One Image to 3D Object</a></strong><br />
+Ruoshi Liu, Rundi Wu, Basile Van Hoorick, Pavel Tokmakov, Sergey Zakharov, Carl Vondrick
+<br />
+ICCV 2023 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/pdf/2303.11328.pdf">Paper</a><a href="https://zero123.cs.columbia.edu">Project Page</a><a href="https://github.com/cvlab-columbia/zero123">Code</a><a href="https://huggingface.co/spaces/cvlab/zero123-live">Demo</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liu2023zeroto,&#10;&#160;&#160;title={Zero-1-to-3: Zero-shot One Image to 3D Object},&#10;&#160;&#160;author={Ruoshi Liu and Rundi Wu and Basile Van Hoorick and Pavel Tokmakov and Sergey Zakharov and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2023 (Oral)},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://zero123.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-People-and-Behavior paper-Learning-from-Video"><a href="https://arxiv.org/abs/2212.02978" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Muscles in Action"
+data-src="img/optimized/muscles.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.02978">Muscles in Action</a></strong><br />
+Mia Chiquier, Carl Vondrick
+<br />
+ICCV 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.02978">Paper</a><a href="https://musclesinaction.cs.columbia.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chiquier2023muscles,&#10;&#160;&#160;title={Muscles in Action},&#10;&#160;&#160;author={Mia Chiquier and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.02978}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D"><a href="https://surfsup.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for SurfsUp: Learning Fluid Simulation for Novel Surfaces"
+data-src="img/optimized/surfsup.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://surfsup.cs.columbia.edu">SurfsUp: Learning Fluid Simulation for Novel Surfaces</a></strong><br />
+Arjun Mani<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Ishaan Preetam Chandratreya<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Elliot Creager, Carl Vondrick, Richard Zemel
+<br />
+ICCV 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2304.06197">Paper</a><a href="https://surfsup.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mani2023surfsup,&#10;&#160;&#160;title={SurfsUp: Learning Fluid Simulation for Novel Surfaces},&#10;&#160;&#160;author={Arjun Mani and Ishaan Preetam Chandratreya and Elliot Creager and Carl Vondrick and Richard Zemel},&#10;&#160;&#160;booktitle={ICCV 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://surfsup.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2206.09027" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Landscape Learning for Neural Network Inversion"
+data-src="img/optimized/landscape3.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2206.09027">Landscape Learning for Neural Network Inversion</a></strong><br />
+Ruoshi Liu, Chengzhi Mao, Purva Tendulkar, Hao Wang, Carl Vondrick
+<br />
+ICCV 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2206.09027">Paper</a><a href="https://medium.com/@ruoshi.liu/landscape-learning-for-neural-network-inversion-252b39120776">Blog Post</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liu2023landscape,&#10;&#160;&#160;title={Landscape Learning for Neural Network Inversion},&#10;&#160;&#160;author={Ruoshi Liu and Chengzhi Mao and Purva Tendulkar and Hao Wang and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2206.09027}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D paper-Robustness"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_SHIFT3D_Synthesizing_Hard_Inputs_For_Tricking_3D_Detectors_ICCV_2023_paper.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for SHIFT3D: Synthesizing Hard Inputs For Tricking 3D Detectors"
+data-src="img/optimized/shift3d.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_SHIFT3D_Synthesizing_Hard_Inputs_For_Tricking_3D_Detectors_ICCV_2023_paper.pdf">SHIFT3D: Synthesizing Hard Inputs For Tricking 3D Detectors</a></strong><br />
+Hongge Chen, Zhao Chen, Greg Meyer, Dennis Park, Carl Vondrick, Ashish Shrivastava, Yuning Chai
+<br />
+ICCV 2023
+<br /><span class="links"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_SHIFT3D_Synthesizing_Hard_Inputs_For_Tricking_3D_Detectors_ICCV_2023_paper.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chen2023shiftd,&#10;&#160;&#160;title={SHIFT3D: Synthesizing Hard Inputs For Tricking 3D Detectors},&#10;&#160;&#160;author={Hongge Chen and Zhao Chen and Greg Meyer and Dennis Park and Carl Vondrick and Ashish Shrivastava and Yuning Chai},&#10;&#160;&#160;booktitle={ICCV 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_SHIFT3D_Synthesizing_Hard_Inputs_For_Tricking_3D_Detectors_ICCV_2023_paper.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2212.06079" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Robust Perception through Equivariance"
+data-src="img/optimized/equivariance.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.06079">Robust Perception through Equivariance</a></strong><br />
+Chengzhi Mao, Lingyu Zhang, Abhishek Joshi, Junfeng Yang, Hao Wang, Carl Vondrick
+<br />
+ICML 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.06079">Paper</a><a href="https://equi4robust.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2023robust,&#10;&#160;&#160;title={Robust Perception through Equivariance},&#10;&#160;&#160;author={Chengzhi Mao and Lingyu Zhang and Abhishek Joshi and Junfeng Yang and Hao Wang and Carl Vondrick},&#10;&#160;&#160;booktitle={ICML 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.06079}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-3D paper-People-and-Behavior"><a href="https://thermal.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection"
+src="img/optimized/thermal.webp"
+alt="Teaser for Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://thermal.cs.columbia.edu">Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection</a></strong><br />
+Ruoshi Liu, Carl Vondrick
+<br />
+CVPR 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2305.01652">Paper</a><a href="https://thermal.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liu2023humans,&#10;&#160;&#160;title={Humans as Light Bulbs: 3D Human Reconstruction from Thermal Reflection},&#10;&#160;&#160;author={Ruoshi Liu and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://thermal.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D"><a href="https://openaccess.thecvf.com//content/CVPR2023/papers/Liu_What_You_Can_Reconstruct_From_a_Shadow_CVPR_2023_paper.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for What You Can Reconstruct from a Shadow"
+data-src="img/optimized/shadow.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://openaccess.thecvf.com//content/CVPR2023/papers/Liu_What_You_Can_Reconstruct_From_a_Shadow_CVPR_2023_paper.pdf">What You Can Reconstruct from a Shadow</a></strong><br />
+Ruoshi Liu, Sachit Menon, Chengzhi Mao, Dennis Park, Simon Stent, Carl Vondrick
+<br />
+CVPR 2023
+<br /><span class="links"><a href="https://openaccess.thecvf.com//content/CVPR2023/papers/Liu_What_You_Can_Reconstruct_From_a_Shadow_CVPR_2023_paper.pdf">Paper</a><a href="https://medium.com/@ruoshi.liu/6cf475cbc840">Blog Post</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{liu2023what,&#10;&#160;&#160;title={What You Can Reconstruct from a Shadow},&#10;&#160;&#160;author={Ruoshi Liu and Sachit Menon and Chengzhi Mao and Dennis Park and Simon Stent and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://openaccess.thecvf.com//content/CVPR2023/papers/Liu_What_You_Can_Reconstruct_From_a_Shadow_CVPR_2023_paper.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video"><a href="https://tcow.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Tracking through Containers and Occluders in the Wild"
+data-src="img/optimized/rubric.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://tcow.cs.columbia.edu">Tracking through Containers and Occluders in the Wild</a></strong><br />
+Basile Van Hoorick, Pavel Tokmakov, Simon Stent, Jie Li, Carl Vondrick
+<br />
+CVPR 2023
+<br /><span class="links"><a href="https://tcow.cs.columbia.edu/TCOW_v3.pdf">Paper</a><a href="https://tcow.cs.columbia.edu">Project Page</a><a href=" https://tcow.cs.columbia.edu/#datasets">Datasets</a><a href="https://github.com/basilevh/tcow">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{hoorick2023tracking,&#10;&#160;&#160;title={Tracking through Containers and Occluders in the Wild},&#10;&#160;&#160;author={Basile Van Hoorick and Pavel Tokmakov and Simon Stent and Jie Li and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://tcow.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D paper-People-and-Behavior"><a href="https://flex.cs.columbia.edu/" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for FLEX: Full-Body Grasping Without Full-Body Grasps"
+data-src="img/optimized/flex.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://flex.cs.columbia.edu/">FLEX: Full-Body Grasping Without Full-Body Grasps</a></strong><br />
+Purva Tendulkar, DÃ­dac SurÃ­s, Carl Vondrick
+<br />
+CVPR 2023
+<br /><span class="links"><a href="https://flex.cs.columbia.edu/files/flex.pdf">Paper</a><a href="https://flex.cs.columbia.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{tendulkar2023flex,&#10;&#160;&#160;title={FLEX: Full-Body Grasping Without Full-Body Grasps},&#10;&#160;&#160;author={Purva Tendulkar and DÃ­dac SurÃ­s and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://flex.cs.columbia.edu/}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/abs/2212.06202" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Doubly Right Object Recognition: A Why Prompt for Visual Rationales"
+data-src="img/optimized/doubleright.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.06202">Doubly Right Object Recognition: A Why Prompt for Visual Rationales</a></strong><br />
+Chengzhi Mao, Revant Teotia, Amrutha Sundar, Sachit Menon, Junfeng Yang, Xin Wang, Carl Vondrick
+<br />
+CVPR 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.06202">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2023doubly,&#10;&#160;&#160;title={Doubly Right Object Recognition: A Why Prompt for Visual Rationales},&#10;&#160;&#160;author={Chengzhi Mao and Revant Teotia and Amrutha Sundar and Sachit Menon and Junfeng Yang and Xin Wang and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.06202}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-People-and-Behavior paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2301.10939" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Affective Faces for Goal-Driven Dyadic Communication"
+data-src="img/optimized/realtalk.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2301.10939">Affective Faces for Goal-Driven Dyadic Communication</a></strong><br />
+Scott Geng<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Revant Teotia<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Purva Tendulkar, Sachit Menon, Carl Vondrick
+<br />
+arXiv 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2301.10939">Paper</a><a href="https://realtalk.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{geng2023affective,&#10;&#160;&#160;title={Affective Faces for Goal-Driven Dyadic Communication},&#10;&#160;&#160;author={Scott Geng and Revant Teotia and Purva Tendulkar and Sachit Menon and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2301.10939}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Interpretability paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2210.07183" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Visual Classification via Description from Large Language Models"
+src="img/optimized/cfd.webp"
+alt="Teaser for Visual Classification via Description from Large Language Models"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2210.07183">Visual Classification via Description from Large Language Models</a></strong><br />
+Sachit Menon, Carl Vondrick
+<br />
+ICLR 2023 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/abs/2210.07183">Paper</a><a href="https://cv.cs.columbia.edu/sachit/classviadescr/">Project Page</a><a href="https://github.com/sachit-menon/classify_by_description_release/">Code</a><a href="https://huggingface.co/spaces/sachit-menon/classification_via_description">Demo</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{menon2023visual,&#10;&#160;&#160;title={Visual Classification via Description from Large Language Models},&#10;&#160;&#160;author={Sachit Menon and Carl Vondrick},&#10;&#160;&#160;booktitle={ICLR 2023 (Oral)},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2210.07183}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2212.07016" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Understanding Zero-Shot Adversarial Robustness for Large-Scale Models"
+data-src="img/optimized/largeadv.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.07016">Understanding Zero-Shot Adversarial Robustness for Large-Scale Models</a></strong><br />
+Chengzhi Mao, Scott Geng, Junfeng Yang, Xin Wang, Carl Vondrick
+<br />
+ICLR 2023
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.07016">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2023understanding,&#10;&#160;&#160;title={Understanding Zero-Shot Adversarial Robustness for Large-Scale Models},&#10;&#160;&#160;author={Chengzhi Mao and Scott Geng and Junfeng Yang and Xin Wang and Carl Vondrick},&#10;&#160;&#160;booktitle={ICLR 2023},&#10;&#160;&#160;year={2023},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.07016}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2022</h3><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2212.07815" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Adversarially Robust Video Perception by Seeing Motion"
+data-src="img/optimized/robustmotion2.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.07815">Adversarially Robust Video Perception by Seeing Motion</a></strong><br />
+Lingyu Zhang<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Chengzhi Mao<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Junfeng Yang, Carl Vondrick
+<br />
+arXiv 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.07815">Paper</a><a href="https://motion4robust.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{zhang2022adversarially,&#10;&#160;&#160;title={Adversarially Robust Video Perception by Seeing Motion},&#10;&#160;&#160;author={Lingyu Zhang and Chengzhi Mao and Junfeng Yang and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.07815}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Neuro-symbolic"><a href="https://arxiv.org/pdf/2212.04412.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Task Bias in Vision-Language Models"
+data-src="img/optimized/taskbias.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2212.04412.pdf">Task Bias in Vision-Language Models</a></strong><br />
+Sachit Menon<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Ishaan Preetam Chandratreya<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick
+<br />
+arXiv 2022
+<br /><span class="links"><a href="https://arxiv.org/pdf/2212.04412.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{menon2022task,&#10;&#160;&#160;title={Task Bias in Vision-Language Models},&#10;&#160;&#160;author={Sachit Menon and Ishaan Preetam Chandratreya and Carl Vondrick},&#10;&#160;&#160;journal={arXiv 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/pdf/2212.04412.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Safety"><a href="https://arxiv.org/abs/2212.00912" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Private Multiparty Perception for Navigation"
+src="img/optimized/mpc.webp"
+alt="Teaser for Private Multiparty Perception for Navigation"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2212.00912">Private Multiparty Perception for Navigation</a></strong><br />
+Hui Lu, Mia Chiquier, Carl Vondrick
+<br />
+NeurIPS 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2212.00912">Paper</a><a href="https://visualmpc.cs.columbia.edu">Project Page</a><a href="https://github.com/AbbyLuHui/visualmpc">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{lu2022private,&#10;&#160;&#160;title={Private Multiparty Perception for Navigation},&#10;&#160;&#160;author={Hui Lu and Mia Chiquier and Carl Vondrick},&#10;&#160;&#160;booktitle={NeurIPS 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2212.00912}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://trajectories.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Representing Spatial Trajectories as Distributions"
+data-src="img/optimized/trajectories.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://trajectories.cs.columbia.edu">Representing Spatial Trajectories as Distributions</a></strong><br />
+DÃ­dac SurÃ­s, Carl Vondrick
+<br />
+NeurIPS 2022
+<br /><span class="links"><a href="https://arxiv.org/pdf/2210.01322.pdf">Paper</a><a href="https://trajectories.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2022representing,&#10;&#160;&#160;title={Representing Spatial Trajectories as Distributions},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Carl Vondrick},&#10;&#160;&#160;booktitle={NeurIPS 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://trajectories.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://openreview.net/pdf?id=SrgIkwLjql9" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Forget-me-not! Contrastive Critics for Mitigating Posterior Collapse"
+data-src="img/optimized/forgetmenot2.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://openreview.net/pdf?id=SrgIkwLjql9">Forget-me-not! Contrastive Critics for Mitigating Posterior Collapse</a></strong><br />
+Sachit Menon, David Blei, Carl Vondrick
+<br />
+UAI 2022
+<br /><span class="links"><a href="https://openreview.net/pdf?id=SrgIkwLjql9">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{menon2022forgetmenot,&#10;&#160;&#160;title={Forget-me-not! Contrastive Critics for Mitigating Posterior Collapse},&#10;&#160;&#160;author={Sachit Menon and David Blei and Carl Vondrick},&#10;&#160;&#160;booktitle={UAI 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://openreview.net/pdf?id=SrgIkwLjql9}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-3D paper-Learning-from-Video"><a href="https://arxiv.org/pdf/2204.10916.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Revealing Occlusions with 4D Neural Fields"
+data-src="img/optimized/occlusion.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2204.10916.pdf">Revealing Occlusions with 4D Neural Fields</a></strong><br />
+Basile Van Hoorick, Purva Tendulkar, DÃ­dac SurÃ­s, Dennis Park, Simon Stent, Carl Vondrick
+<br />
+CVPR 2022
+<br /><span class="links"><a href="https://arxiv.org/pdf/2204.10916.pdf">Paper</a><a href="https://occlusions.cs.columbia.edu">Project Page</a><a href="https://www.youtube.com/watch?v=Q2S-ogGjcHo">Talk</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{hoorick2022revealing,&#10;&#160;&#160;title={Revealing Occlusions with 4D Neural Fields},&#10;&#160;&#160;author={Basile Van Hoorick and Purva Tendulkar and DÃ­dac SurÃ­s and Dennis Park and Simon Stent and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/pdf/2204.10916.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Neuro-symbolic"><a href="https://arxiv.org/pdf/2012.04631.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Globetrotter: Connecting Languages by Connecting Images"
+src="img/optimized/globetrotter.webp"
+alt="Teaser for Globetrotter: Connecting Languages by Connecting Images"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2012.04631.pdf">Globetrotter: Connecting Languages by Connecting Images</a></strong><br />
+DÃ­dac SurÃ­s, Dave Epstein, Carl Vondrick
+<br />
+CVPR 2022 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/pdf/2012.04631.pdf">Paper</a><a href="https://globetrotter.cs.columbia.edu">Project Page</a><a href="https://github.com/cvlab-columbia/globetrotter">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2022globetrotter,&#10;&#160;&#160;title={Globetrotter: Connecting Languages by Connecting Images},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Dave Epstein and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2022 (Oral)},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/pdf/2012.04631.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2204.12363" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Causal Transportability for Visual Recognition"
+data-src="img/optimized/causal.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2204.12363">Causal Transportability for Visual Recognition</a></strong><br />
+Chengzhi Mao<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Kevin Xia<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, James Wang, Hao Wang, Junfeng Yang, Elias Bareinboim, Carl Vondrick
+<br />
+CVPR 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2204.12363">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2022causal,&#10;&#160;&#160;title={Causal Transportability for Visual Recognition},&#10;&#160;&#160;author={Chengzhi Mao and Kevin Xia and James Wang and Hao Wang and Junfeng Yang and Elias Bareinboim and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2204.12363}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Multimodal"><a href="https://arxiv.org/pdf/2206.07148.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for It&#39;s Time for Artistic Correspondence in Music and Video"
+data-src="img/optimized/music.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2206.07148.pdf">It&#39;s Time for Artistic Correspondence in Music and Video</a></strong><br />
+DÃ­dac SurÃ­s, Carl Vondrick, Bryan Russell, Justin Salamon
+<br />
+CVPR 2022
+<br /><span class="links"><a href="https://arxiv.org/pdf/2206.07148.pdf">Paper</a><a href="https://musicforvideo.cs.columbia.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2022its,&#10;&#160;&#160;title={It&#x27;s Time for Artistic Correspondence in Music and Video},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Carl Vondrick and Bryan Russell and Justin Salamon},&#10;&#160;&#160;booktitle={CVPR 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/pdf/2206.07148.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/abs/2112.10194" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for UnweaveNet: Unweaving Activity Stories"
+data-src="img/optimized/unweavenet.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2112.10194">UnweaveNet: Unweaving Activity Stories</a></strong><br />
+Will Price, Carl Vondrick, Dima Damen
+<br />
+CVPR 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2112.10194">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{price2022unweavenet,&#10;&#160;&#160;title={UnweaveNet: Unweaving Activity Stories},&#10;&#160;&#160;author={Will Price and Carl Vondrick and Dima Damen},&#10;&#160;&#160;booktitle={CVPR 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2112.10194}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Neuro-symbolic"><a href="https://arxiv.org/abs/2203.00758" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for There is a Time and Place for Reasoning Beyond the Image"
+data-src="img/optimized/timereasoning.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2203.00758">There is a Time and Place for Reasoning Beyond the Image</a></strong><br />
+Xingyu Fu, Ben Zhou, Ishaan Preetam Chandratreya, Carl Vondrick, Dan Roth
+<br />
+ACL 2022 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/abs/2203.00758">Paper</a><a href="https://github.com/zeyofu/TARA">Code + Data</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{fu2022there,&#10;&#160;&#160;title={There is a Time and Place for Reasoning Beyond the Image},&#10;&#160;&#160;author={Xingyu Fu and Ben Zhou and Ishaan Preetam Chandratreya and Carl Vondrick and Dan Roth},&#10;&#160;&#160;booktitle={ACL 2022 (Oral)},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2203.00758}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Multimodal paper-Safety paper-Robustness"><a href="https://voicecamo.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Real-Time Neural Voice Camouflage"
+src="img/optimized/camo.mp4"
+alt="Teaser for Real-Time Neural Voice Camouflage"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://voicecamo.cs.columbia.edu">Real-Time Neural Voice Camouflage</a></strong><br />
+Mia Chiquier, Chengzhi Mao, Carl Vondrick
+<br />
+ICLR 2022 (Oral)
+<br /><span class="links"><a href="https://arxiv.org/abs/2112.07076">Paper</a><a href="https://voicecamo.cs.columbia.edu">Project Page</a><a href="https://www.science.org/content/article/technology-spying-you-new-ai-could-prevent-eavesdropping">Science</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chiquier2022realtime,&#10;&#160;&#160;title={Real-Time Neural Voice Camouflage},&#10;&#160;&#160;author={Mia Chiquier and Chengzhi Mao and Carl Vondrick},&#10;&#160;&#160;booktitle={ICLR 2022 (Oral)},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://voicecamo.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2111.10493" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Discrete Representations Strengthen Vision Transformer Robustness"
+data-src="img/optimized/discrete.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2111.10493">Discrete Representations Strengthen Vision Transformer Robustness</a></strong><br />
+Chengzhi Mao, Lu Jiang, Mostafa Dehghani, Carl Vondrick, Rahul Sukthankar, Irfan Essa
+<br />
+ICLR 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2111.10493">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2022discrete,&#10;&#160;&#160;title={Discrete Representations Strengthen Vision Transformer Robustness},&#10;&#160;&#160;author={Chengzhi Mao and Lu Jiang and Mostafa Dehghani and Carl Vondrick and Rahul Sukthankar and Irfan Essa},&#10;&#160;&#160;booktitle={ICLR 2022},&#10;&#160;&#160;year={2022},&#10;&#160;&#160;url={https://arxiv.org/abs/2111.10493}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2021</h3><div
+class="publication d-flex align-items-start paper-Robotics"><a href="https://robot-morphology.cs.columbia.edu" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Full-Body Visual Self-Modeling of Robot Morphologies"
+data-src="img/optimized/morphology.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://robot-morphology.cs.columbia.edu">Full-Body Visual Self-Modeling of Robot Morphologies</a></strong><br />
+Boyuan Chen, Robert Kwiatkowski, Carl Vondrick, Hod Lipson
+<br />
+Science Robotics 2022
+<br /><span class="links"><a href="https://arxiv.org/abs/2111.06389">Paper</a><a href="https://robot-morphology.cs.columbia.edu">Project Page</a><a href="https://github.com/BoyuanChen/visual-selfmodeling">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{chen2021fullbody,&#10;&#160;&#160;title={Full-Body Visual Self-Modeling of Robot Morphologies},&#10;&#160;&#160;author={Boyuan Chen and Robert Kwiatkowski and Carl Vondrick and Hod Lipson},&#10;&#160;&#160;journal={Science Robotics 2022},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://robot-morphology.cs.columbia.edu}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Multimodal paper-Robotics"><a href="https://arxiv.org/abs/2105.08052" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for The Boombox: Visual Reconstruction from Acoustic Vibrations"
+src="img/optimized/boombox.mp4"
+alt="Teaser for The Boombox: Visual Reconstruction from Acoustic Vibrations"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2105.08052">The Boombox: Visual Reconstruction from Acoustic Vibrations</a></strong><br />
+Boyuan Chen, Mia Chiquier, Hod Lipson, Carl Vondrick
+<br />
+CoRL 2021
+<br /><span class="links"><a href="https://arxiv.org/abs/2105.08052">Paper</a><a href="https://boombox.cs.columbia.edu">Project Page</a><a href="https://www.youtube.com/watch?v=fZn-PIlrxRc">Video Overview</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{chen2021the,&#10;&#160;&#160;title={The Boombox: Visual Reconstruction from Acoustic Vibrations},&#10;&#160;&#160;author={Boyuan Chen and Mia Chiquier and Hod Lipson and Carl Vondrick},&#10;&#160;&#160;booktitle={CoRL 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/abs/2105.08052}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2103.14222" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Adversarial Attacks are Reversible with Natural Supervision"
+src="img/optimized/reverse.webp"
+alt="Teaser for Adversarial Attacks are Reversible with Natural Supervision"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2103.14222">Adversarial Attacks are Reversible with Natural Supervision</a></strong><br />
+Chengzhi Mao, Mia Chiquier, Hao Wang, Junfeng Yang, Carl Vondrick
+<br />
+ICCV 2021
+<br /><span class="links"><a href="https://arxiv.org/abs/2103.14222">Paper</a><a href="https://github.com/cvlab-columbia/SelfSupDefense">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2021adversarial,&#10;&#160;&#160;title={Adversarial Attacks are Reversible with Natural Supervision},&#10;&#160;&#160;author={Chengzhi Mao and Mia Chiquier and Hao Wang and Junfeng Yang and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/abs/2103.14222}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/pdf/2011.11831.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Dissecting Image Crops"
+data-src="img/optimized/crop.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2011.11831.pdf">Dissecting Image Crops</a></strong><br />
+Basile Van Hoorick, Carl Vondrick
+<br />
+ICCV 2021
+<br /><span class="links"><a href="https://arxiv.org/pdf/2011.11831.pdf">Paper</a><a href="https://github.com/basilevh/dissecting-image-crops">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{hoorick2021dissecting,&#10;&#160;&#160;title={Dissecting Image Crops},&#10;&#160;&#160;author={Basile Van Hoorick and Carl Vondrick},&#10;&#160;&#160;booktitle={ICCV 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/pdf/2011.11831.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://arxiv.org/pdf/2101.01600.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Learning the Predictability of the Future"
+src="img/optimized/predictability.mp4"
+alt="Teaser for Learning the Predictability of the Future"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2101.01600.pdf">Learning the Predictability of the Future</a></strong><br />
+DÃ­dac SurÃ­s<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Ruoshi Liu<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick
+<br />
+CVPR 2021
+<br /><span class="links"><a href="https://arxiv.org/pdf/2101.01600.pdf">Paper</a><a href="http://hyperfuture.cs.columbia.edu">Project Page</a><a href="https://github.com/cvlab-columbia/hyperfuture">Code</a><a href="https://github.com/cvlab-columbia/hyperfuture#pretrained-models">Models</a><a href="https://www.youtube.com/watch?v=-Uy92jvT_90">Talk</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2021learning,&#10;&#160;&#160;title={Learning the Predictability of the Future},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Ruoshi Liu and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/pdf/2101.01600.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/2012.12265" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Generative Interventions for Causal Learning"
+data-src="img/optimized/generative2.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2012.12265">Generative Interventions for Causal Learning</a></strong><br />
+Chengzhi Mao, Amogh Gupta, Augustine Cha, Hao Wang, Junfeng Yang, Carl Vondrick
+<br />
+CVPR 2021
+<br /><span class="links"><a href="https://arxiv.org/abs/2012.12265">Paper</a><a href="https://github.com/cvlab-columbia/GenInt">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2021generative,&#10;&#160;&#160;title={Generative Interventions for Causal Learning},&#10;&#160;&#160;author={Chengzhi Mao and Amogh Gupta and Augustine Cha and Hao Wang and Junfeng Yang and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/abs/2012.12265}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/pdf/2006.15657.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Learning Goals from Failure"
+data-src="img/optimized/aha.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2006.15657.pdf">Learning Goals from Failure</a></strong><br />
+Dave Epstein, Carl Vondrick
+<br />
+CVPR 2021
+<br /><span class="links"><a href="https://arxiv.org/pdf/2006.15657.pdf">Paper</a><a href="http://aha.cs.columbia.edu">Project Page</a><a href="https://oops.cs.columbia.edu/data/">Data</a><a href="https://github.com/cvlab-columbia/aha">Code</a><a href="https://www.youtube.com/watch?v=DRdPZYp7tT4">Talk</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{epstein2021learning,&#10;&#160;&#160;title={Learning Goals from Failure},&#10;&#160;&#160;author={Dave Epstein and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://arxiv.org/pdf/2006.15657.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://www.nature.com/articles/s41598-020-77918-x" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Visual Behavior Modelling for Robotic Theory of Mind"
+data-src="img/optimized/rtob.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://www.nature.com/articles/s41598-020-77918-x">Visual Behavior Modelling for Robotic Theory of Mind</a></strong><br />
+Boyuan Chen, Carl Vondrick, Hod Lipson
+<br />
+Scientific Reports 2021
+<br /><span class="links"><a href="https://www.nature.com/articles/s41598-020-77918-x">Paper</a><a href="https://www.creativemachineslab.com/robot-visual-behavior-modeling.html">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{chen2021visual,&#10;&#160;&#160;title={Visual Behavior Modelling for Robotic Theory of Mind},&#10;&#160;&#160;author={Boyuan Chen and Carl Vondrick and Hod Lipson},&#10;&#160;&#160;journal={Scientific Reports 2021},&#10;&#160;&#160;year={2021},&#10;&#160;&#160;url={https://www.nature.com/articles/s41598-020-77918-x}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2020</h3><div
+class="publication d-flex align-items-start paper-Multimodal"><a href="http://www.cs.columbia.edu/cg/listen_to_the_silence/paper.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Listening to Sounds of Silence for Speech Denoising"
+data-src="img/optimized/silence.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="http://www.cs.columbia.edu/cg/listen_to_the_silence/paper.pdf">Listening to Sounds of Silence for Speech Denoising</a></strong><br />
+Ruilin Xu, Rundi Wu, Yuko Ishiwaka, Carl Vondrick, Changxi Zheng
+<br />
+NeurIPS 2020
+<br /><span class="links"><a href="http://www.cs.columbia.edu/cg/listen_to_the_silence/paper.pdf">Paper</a><a href="http://www.cs.columbia.edu/cg/listen_to_the_silence">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{xu2020listening,&#10;&#160;&#160;title={Listening to Sounds of Silence for Speech Denoising},&#10;&#160;&#160;author={Ruilin Xu and Rundi Wu and Yuko Ishiwaka and Carl Vondrick and Changxi Zheng},&#10;&#160;&#160;booktitle={NeurIPS 2020},&#10;&#160;&#160;year={2020},&#10;&#160;&#160;url={http://www.cs.columbia.edu/cg/listen_to_the_silence/paper.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/pdf/2007.07236.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Multitask Learning Strengthens Adversarial Robustness"
+data-src="img/optimized/multitask.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/2007.07236.pdf">Multitask Learning Strengthens Adversarial Robustness</a></strong><br />
+Chengzhi Mao, Amogh Gupta, Vikram Nitin, Baishakhi Ray, Shuran Song, Junfeng Yang, Carl Vondrick
+<br />
+ECCV 2020
+<br /><span class="links"><a href="https://arxiv.org/pdf/2007.07236.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2020multitask,&#10;&#160;&#160;title={Multitask Learning Strengthens Adversarial Robustness},&#10;&#160;&#160;author={Chengzhi Mao and Amogh Gupta and Vikram Nitin and Baishakhi Ray and Shuran Song and Junfeng Yang and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2020},&#10;&#160;&#160;year={2020},&#10;&#160;&#160;url={https://arxiv.org/pdf/2007.07236.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/abs/2008.05596" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><div class="publogo publication-placeholder float-start rounded g d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-text"></i></div></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/2008.05596">We Have So Much In Common: Modeling Semantic Relational Set Abstractions in Videos</a></strong><br />
+Alex Andonian, Camilo Fosco, Mathew Monfort, Allen Lee, Carl Vondrick, Rogerio Feris
+<br />
+ECCV 2020
+<br /><span class="links"><a href="https://arxiv.org/abs/2008.05596">Paper</a><a href="http://abstraction.csail.mit.edu">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{andonian2020we,&#10;&#160;&#160;title={We Have So Much In Common: Modeling Semantic Relational Set Abstractions in Videos},&#10;&#160;&#160;author={Alex Andonian and Camilo Fosco and Mathew Monfort and Allen Lee and Carl Vondrick and Rogerio Feris},&#10;&#160;&#160;booktitle={ECCV 2020},&#10;&#160;&#160;year={2020},&#10;&#160;&#160;url={https://arxiv.org/abs/2008.05596}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Neuro-symbolic"><a href="https://arxiv.org/pdf/1911.11237.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Learning to Learn Words from Visual Scenes"
+data-src="img/optimized/expert.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/1911.11237.pdf">Learning to Learn Words from Visual Scenes</a></strong><br />
+DÃ­dac SurÃ­s<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Dave Epstein<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Heng Ji, Shih-Fu Chang, Carl Vondrick
+<br />
+ECCV 2020
+<br /><span class="links"><a href="https://arxiv.org/pdf/1911.11237.pdf">Paper</a><a href="https://expert.cs.columbia.edu">Project Page</a><a href="https://github.com/cvlab-columbia/expert">Code</a><a href="https://www.youtube.com/watch?v=jou4-qbOCrY&amp;feature=youtu.be">Talk</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{surÃ­s2020learning,&#10;&#160;&#160;title={Learning to Learn Words from Visual Scenes},&#10;&#160;&#160;author={DÃ­dac SurÃ­s and Dave Epstein and Heng Ji and Shih-Fu Chang and Carl Vondrick},&#10;&#160;&#160;booktitle={ECCV 2020},&#10;&#160;&#160;year={2020},&#10;&#160;&#160;url={https://arxiv.org/pdf/1911.11237.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://arxiv.org/pdf/1911.11206.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Oops! Predicting Unintentional Action in Video"
+data-src="img/optimized/oops.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/1911.11206.pdf">Oops! Predicting Unintentional Action in Video</a></strong><br />
+Dave Epstein, Boyuan Chen, Carl Vondrick
+<br />
+CVPR 2020
+<br /><span class="links"><a href="https://arxiv.org/pdf/1911.11206.pdf">Paper</a><a href="https://oops.cs.columbia.edu">Project Page</a><a href="https://oops.cs.columbia.edu/data/">Data</a><a href="https://github.com/cvlab-columbia/oops">Code</a><a href="https://www.youtube.com/watch?v=VeL3crQIV6g">Talk</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{epstein2020oops,&#10;&#160;&#160;title={Oops! Predicting Unintentional Action in Video},&#10;&#160;&#160;author={Dave Epstein and Boyuan Chen and Carl Vondrick},&#10;&#160;&#160;booktitle={CVPR 2020},&#10;&#160;&#160;year={2020},&#10;&#160;&#160;url={https://arxiv.org/pdf/1911.11206.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2019</h3><div
+class="publication d-flex align-items-start paper-Robustness"><a href="https://arxiv.org/abs/1909.00900" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Metric Learning for Adversarial Robustness"
+data-src="img/optimized/tla.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/1909.00900">Metric Learning for Adversarial Robustness</a></strong><br />
+Chengzhi Mao, Ziyuan Zhong, Junfeng Yang, Carl Vondrick, Baishakhi Ray
+<br />
+NeurIPS 2019
+<br /><span class="links"><a href="https://arxiv.org/abs/1909.00900">Paper</a><a href="https://github.com/columbia/Metric_Learning_Adversarial_Robustness">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{mao2019metric,&#10;&#160;&#160;title={Metric Learning for Adversarial Robustness},&#10;&#160;&#160;author={Chengzhi Mao and Ziyuan Zhong and Junfeng Yang and Carl Vondrick and Baishakhi Ray},&#10;&#160;&#160;booktitle={NeurIPS 2019},&#10;&#160;&#160;year={2019},&#10;&#160;&#160;url={https://arxiv.org/abs/1909.00900}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-Neuro-symbolic"><a href="https://arxiv.org/abs/1904.01766" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for VideoBERT: A Joint Model for Video and Language Representation Learning"
+src="img/optimized/videobert.webp"
+alt="Teaser for VideoBERT: A Joint Model for Video and Language Representation Learning"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/1904.01766">VideoBERT: A Joint Model for Video and Language Representation Learning</a></strong><br />
+Chen Sun, Austin Myers, Carl Vondrick, Kevin Murphy, Cordelia Schmid
+<br />
+ICCV 2019
+<br /><span class="links"><a href="https://arxiv.org/abs/1904.01766">Paper</a><a href="https://ai.googleblog.com/2019/09/learning-cross-modal-temporal.html">Blog</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{sun2019videobert,&#10;&#160;&#160;title={VideoBERT: A Joint Model for Video and Language Representation Learning},&#10;&#160;&#160;author={Chen Sun and Austin Myers and Carl Vondrick and Kevin Murphy and Cordelia Schmid},&#10;&#160;&#160;booktitle={ICCV 2019},&#10;&#160;&#160;year={2019},&#10;&#160;&#160;url={https://arxiv.org/abs/1904.01766}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/pdf/1811.11683.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Multi-level Multimodal Common Semantic Space for Image-Phrase Grounding"
+data-src="img/optimized/multi.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/1811.11683.pdf">Multi-level Multimodal Common Semantic Space for Image-Phrase Grounding</a></strong><br />
+Hassan Akbari, Svebor Karaman, Surabhi Bhargava, Brian Chen, Carl Vondrick, Shih-Fu Chang
+<br />
+CVPR 2019
+<br /><span class="links"><a href="https://arxiv.org/pdf/1811.11683.pdf">Paper</a><a href="https://github.com/hassanhub/MultiGrounding">Code</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{akbari2019multilevel,&#10;&#160;&#160;title={Multi-level Multimodal Common Semantic Space for Image-Phrase Grounding},&#10;&#160;&#160;author={Hassan Akbari and Svebor Karaman and Surabhi Bhargava and Brian Chen and Carl Vondrick and Shih-Fu Chang},&#10;&#160;&#160;booktitle={CVPR 2019},&#10;&#160;&#160;year={2019},&#10;&#160;&#160;url={https://arxiv.org/pdf/1811.11683.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://arxiv.org/abs/1904.04231" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Relational Action Forecasting"
+data-src="img/optimized/relationalforecast.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/1904.04231">Relational Action Forecasting</a></strong><br />
+Chen Sun, Abhinav Shrivastava, Carl Vondrick, Rahul Sukthankar, Kevin Murphy, Cordelia Schmid
+<br />
+CVPR 2019
+<br /><span class="links"><a href="https://arxiv.org/abs/1904.04231">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{sun2019relational,&#10;&#160;&#160;title={Relational Action Forecasting},&#10;&#160;&#160;author={Chen Sun and Abhinav Shrivastava and Carl Vondrick and Rahul Sukthankar and Kevin Murphy and Cordelia Schmid},&#10;&#160;&#160;booktitle={CVPR 2019},&#10;&#160;&#160;year={2019},&#10;&#160;&#160;url={https://arxiv.org/abs/1904.04231}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video"><a href="http://moments.csail.mit.edu/" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Moments in Time Dataset: one million videos for event understanding"
+data-src="img/optimized/moments.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="http://moments.csail.mit.edu/">Moments in Time Dataset: one million videos for event understanding</a></strong><br />
+Mathew Monfort et al
+<br />
+PAMI 2019
+<br /><span class="links"><a href="https://arxiv.org/pdf/1801.03150.pdf">Paper</a><a href="http://moments.csail.mit.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{al2019moments,&#10;&#160;&#160;title={Moments in Time Dataset: one million videos for event understanding},&#10;&#160;&#160;author={Mathew Monfort et al},&#10;&#160;&#160;journal={PAMI 2019},&#10;&#160;&#160;year={2019},&#10;&#160;&#160;url={http://moments.csail.mit.edu/}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2018</h3><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-Interpretability"><a href="https://arxiv.org/pdf/1806.09594.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Tracking Emerges by Colorizing Videos"
+src="img/optimized/colorization.mp4"
+alt="Teaser for Tracking Emerges by Colorizing Videos"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/1806.09594.pdf">Tracking Emerges by Colorizing Videos</a></strong><br />
+Carl Vondrick, Abhinav Shrivastava, Alireza Fathi, Sergio Guadarrama, Kevin Murphy
+<br />
+ECCV 2018
+<br /><span class="links"><a href="https://arxiv.org/pdf/1806.09594.pdf">Paper</a><a href="https://ai.googleblog.com/2018/06/self-supervised-tracking-via-video.html">Blog</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2018tracking,&#10;&#160;&#160;title={Tracking Emerges by Colorizing Videos},&#10;&#160;&#160;author={Carl Vondrick and Abhinav Shrivastava and Alireza Fathi and Sergio Guadarrama and Kevin Murphy},&#10;&#160;&#160;booktitle={ECCV 2018},&#10;&#160;&#160;year={2018},&#10;&#160;&#160;url={https://arxiv.org/pdf/1806.09594.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Multimodal"><a href="https://arxiv.org/abs/1804.03160" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for The Sound of Pixels"
+src="img/optimized/soundofpixels.webp"
+alt="Teaser for The Sound of Pixels"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/1804.03160">The Sound of Pixels</a></strong><br />
+Hang Zhao, Chuang Gan, Andrew Rouditchenko, Carl Vondrick, Josh McDermott, Antonio Torralba
+<br />
+ECCV 2018
+<br /><span class="links"><a href="https://arxiv.org/abs/1804.03160">Paper</a><a href="http://sound-of-pixels.csail.mit.edu/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{zhao2018the,&#10;&#160;&#160;title={The Sound of Pixels},&#10;&#160;&#160;author={Hang Zhao and Chuang Gan and Andrew Rouditchenko and Carl Vondrick and Josh McDermott and Antonio Torralba},&#10;&#160;&#160;booktitle={ECCV 2018},&#10;&#160;&#160;year={2018},&#10;&#160;&#160;url={https://arxiv.org/abs/1804.03160}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="https://arxiv.org/pdf/1807.10982.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Actor-centric Relation Network"
+data-src="img/optimized/actioncontext.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/pdf/1807.10982.pdf">Actor-centric Relation Network</a></strong><br />
+Chen Sun, Abhinav Shrivastava, Carl Vondrick, Kevin Murphy, Rahul Sukthankar, Cordelia Schmid
+<br />
+ECCV 2018
+<br /><span class="links"><a href="https://arxiv.org/pdf/1807.10982.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{sun2018actorcentric,&#10;&#160;&#160;title={Actor-centric Relation Network},&#10;&#160;&#160;author={Chen Sun and Abhinav Shrivastava and Carl Vondrick and Kevin Murphy and Rahul Sukthankar and Cordelia Schmid},&#10;&#160;&#160;booktitle={ECCV 2018},&#10;&#160;&#160;year={2018},&#10;&#160;&#160;url={https://arxiv.org/pdf/1807.10982.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="https://arxiv.org/abs/1705.08421" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for AVA: A Video Dataset of Spatio-temporally Localized Atomic Visual Actions"
+data-src="img/optimized/ava.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="https://arxiv.org/abs/1705.08421">AVA: A Video Dataset of Spatio-temporally Localized Atomic Visual Actions</a></strong><br />
+Chunhui Gu et al
+<br />
+CVPR 2018 (Spotlight)
+<br /><span class="links"><a href="https://arxiv.org/abs/1705.08421">Paper</a><a href="https://research.google.com/ava/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{al2018ava,&#10;&#160;&#160;title={AVA: A Video Dataset of Spatio-temporally Localized Atomic Visual Actions},&#10;&#160;&#160;author={Chunhui Gu et al},&#10;&#160;&#160;booktitle={CVPR 2018 (Spotlight)},&#10;&#160;&#160;year={2018},&#10;&#160;&#160;url={https://arxiv.org/abs/1705.08421}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2017</h3><div
+class="publication d-flex align-items-start paper-People-and-Behavior"><a href="videogaze.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Following Gaze in Video"
+data-src="img/optimized/videogaze.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="videogaze.pdf">Following Gaze in Video</a></strong><br />
+Adria Recasens, Carl Vondrick, Aditya Khosla, Antonio Torralba
+<br />
+ICCV 2017
+<br /><span class="links"><a href="videogaze.pdf">Paper</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{recasens2017following,&#10;&#160;&#160;title={Following Gaze in Video},&#10;&#160;&#160;author={Adria Recasens and Carl Vondrick and Aditya Khosla and Antonio Torralba},&#10;&#160;&#160;booktitle={ICCV 2017},&#10;&#160;&#160;year={2017},&#10;&#160;&#160;url={videogaze.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video"><a href="transformer.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Generating the Future with Adversarial Transformers"
+data-src="img/optimized/transformer.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="transformer.pdf">Generating the Future with Adversarial Transformers</a></strong><br />
+Carl Vondrick, Antonio Torralba
+<br />
+CVPR 2017
+<br /><span class="links"><a href="transformer.pdf">Paper</a><a href="transformer">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2017generating,&#10;&#160;&#160;title={Generating the Future with Adversarial Transformers},&#10;&#160;&#160;author={Carl Vondrick and Antonio Torralba},&#10;&#160;&#160;booktitle={CVPR 2017},&#10;&#160;&#160;year={2017},&#10;&#160;&#160;url={transformer.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="cmplaces_pami.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Cross-Modal Scene Networks"
+data-src="img/optimized/adapt.mp4"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="cmplaces_pami.pdf">Cross-Modal Scene Networks</a></strong><br />
+Yusuf Aytar<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Lluis Castrejon<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
+<br />
+PAMI 2017
+<br /><span class="links"><a href="cmplaces_pami.pdf">Paper</a><a href="http://projects.csail.mit.edu/cmplaces/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{aytar2017crossmodal,&#10;&#160;&#160;title={Cross-Modal Scene Networks},&#10;&#160;&#160;author={Yusuf Aytar and Lluis Castrejon and Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},&#10;&#160;&#160;journal={PAMI 2017},&#10;&#160;&#160;year={2017},&#10;&#160;&#160;url={cmplaces_pami.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Multimodal paper-Neuro-symbolic"><a href="see-hear-read/" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for See, Hear, and Read: Deep Aligned Representations"
+data-src="img/optimized/seereadhear.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="see-hear-read/">See, Hear, and Read: Deep Aligned Representations</a></strong><br />
+Yusuf Aytar, Carl Vondrick, Antonio Torralba
+<br />
+arXiv 2017
+<br /><span class="links"><a href="see-hear-read/paper.pdf">Paper</a><a href="http://people.csail.mit.edu/yusuf/see-hear-read/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{aytar2017see,&#10;&#160;&#160;title={See, Hear, and Read: Deep Aligned Representations},&#10;&#160;&#160;author={Yusuf Aytar and Carl Vondrick and Antonio Torralba},&#10;&#160;&#160;journal={arXiv 2017},&#10;&#160;&#160;year={2017},&#10;&#160;&#160;url={see-hear-read/}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2016</h3><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-Interpretability"><a href="tinyvideo/" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><video
+data-alt="Teaser for Generating Videos with Scene Dynamics"
+src="img/optimized/tinyvideo.mp4"
+alt="Teaser for Generating Videos with Scene Dynamics"
+class="publogo float-start rounded g"
+width="100"
+autoplay
+loop
+muted
+playsinline></video></div></a><div class="flex-grow-1"><p><strong
+><a href="tinyvideo/">Generating Videos with Scene Dynamics</a></strong><br />
+Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
+<br />
+NeurIPS 2016
+<br /><span class="links"><a href="tinyvideo/paper.pdf">Paper</a><a href="tinyvideo">Project Page</a><a href="https://github.com/cvondrick/videogan">Code</a><a href="http://www.nbcnews.com/mach/technology/deep-learning-predicts-future-n690851">NBC</a><a href="https://www.scientificamerican.com/article/spoiler-alert-artificial-intelligence-can-predict-how-scenes-will-play-out/">Scientific American</a><a href="https://www.newscientist.com/article/mg23231020-100-ai-learns-to-predict-the-future-by-watching-2-million-videos/">New Scientist</a><a href="http://news.mit.edu/2016/creating-videos-of-the-future-1129">MIT News</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2016generating,&#10;&#160;&#160;title={Generating Videos with Scene Dynamics},&#10;&#160;&#160;author={Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},&#10;&#160;&#160;booktitle={NeurIPS 2016},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={tinyvideo/}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication paperhi d-flex align-items-start paper-Learning-from-Video paper-Interpretability paper-Multimodal"><a href="http://projects.csail.mit.edu/soundnet/" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for SoundNet: Learning Sound Representations from Unlabeled Video"
+src="img/optimized/soundnet.webp"
+alt="Teaser for SoundNet: Learning Sound Representations from Unlabeled Video"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="http://projects.csail.mit.edu/soundnet/">SoundNet: Learning Sound Representations from Unlabeled Video</a></strong><br />
+Yusuf Aytar<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Antonio Torralba
+<br />
+NeurIPS 2016
+<br /><span class="links"><a href="soundnet.pdf">Paper</a><a href="http://projects.csail.mit.edu/soundnet/">Project Page</a><a href="https://github.com/cvondrick/soundnet">Code</a><a href="http://www.marketplace.org/shows/marketplace-tech/marketplace-tech-monday-december-5-2016">NPR</a><a href="https://www.newscientist.com/article/2111363-binge-watching-videos-teaches-computers-to-recognise-sounds/">New Scientist</a><a href="weekjunior.pdf">Week Junior</a><a href="http://news.mit.edu/2016/computer-learns-recognize-sounds-video-1202">MIT News</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{aytar2016soundnet,&#10;&#160;&#160;title={SoundNet: Learning Sound Representations from Unlabeled Video},&#10;&#160;&#160;author={Yusuf Aytar and Carl Vondrick and Antonio Torralba},&#10;&#160;&#160;booktitle={NeurIPS 2016},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={http://projects.csail.mit.edu/soundnet/}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="prediction" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Anticipating Visual Representations with Unlabeled Video"
+data-src="img/optimized/predictionlogo.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="prediction">Anticipating Visual Representations with Unlabeled Video</a></strong><br />
+Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
+<br />
+CVPR 2016 (Spotlight)
+<br /><span class="links"><a href="prediction.pdf">Paper</a><a href="http://web.mit.edu/vondrick/prediction/">Project Page</a><a href="http://www.npr.org/sections/alltechconsidered/2016/07/12/485144229/a-computer-binge-watched-tv-and-learned-to-predict-what-happens-next">NPR</a><a href="http://money.cnn.com/2016/06/21/technology/ai-kissing/">CNN</a><a href="http://bigstory.ap.org/article/7ec97c70223e49b98fbc7df2ff824d59/how-do-you-teach-human-interaction-robot-lots-tv">AP</a><a href="http://www.wired.com/2016/06/mit-algorithm-predicts-future-watching-tv/">Wired</a><a href="https://www.facebook.com/colbertlateshow/videos/889597367851682/">Stephen Colbert</a><a href="https://www.csail.mit.edu/teaching_machines_to_predict_the_future">MIT News</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2016anticipating,&#10;&#160;&#160;title={Anticipating Visual Representations with Unlabeled Video},&#10;&#160;&#160;author={Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},&#10;&#160;&#160;booktitle={CVPR 2016 (Spotlight)},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={prediction}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-People-and-Behavior paper-Neuro-symbolic"><a href="intention.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Predicting Motivations of Actions by Leveraging Text"
+data-src="img/optimized/why-logo.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="intention.pdf">Predicting Motivations of Actions by Leveraging Text</a></strong><br />
+Carl Vondrick, Deniz Oktay, Hamed Pirsiavash, Antonio Torralba
+<br />
+CVPR 2016
+<br /><span class="links"><a href="intention.pdf">Paper</a><a href="motivations_clean.zip">dataset</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2016predicting,&#10;&#160;&#160;title={Predicting Motivations of Actions by Leveraging Text},&#10;&#160;&#160;author={Carl Vondrick and Deniz Oktay and Hamed Pirsiavash and Antonio Torralba},&#10;&#160;&#160;booktitle={CVPR 2016},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={intention.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="adaptation.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Learning Aligned Cross-Modal Representations from Weakly Aligned Data"
+data-src="img/optimized/cmplaces.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="adaptation.pdf">Learning Aligned Cross-Modal Representations from Weakly Aligned Data</a></strong><br />
+Lluis Castrejon<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Yusuf Aytar<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick, Hamed Pirsiavash, Antonio Torralba
+<br />
+CVPR 2016
+<br /><span class="links"><a href="adaptation.pdf">Paper</a><a href="http://projects.csail.mit.edu/cmplaces/">Project Page</a><a href="http://monday.csail.mit.edu/cmr/demo.php">Demo</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{castrejon2016learning,&#10;&#160;&#160;title={Learning Aligned Cross-Modal Representations from Weakly Aligned Data},&#10;&#160;&#160;author={Lluis Castrejon and Yusuf Aytar and Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},&#10;&#160;&#160;booktitle={CVPR 2016},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={adaptation.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="ihog" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Visualizing Object Detection Features"
+data-src="img/optimized/ihogduck.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="ihog">Visualizing Object Detection Features</a></strong><br />
+Carl Vondrick, Aditya Khosla, Hamed Pirsiavash, Tomasz Malisiewicz, Antonio Torralba
+<br />
+IJCV 2016
+<br /><span class="links"><a href="ihog/ijcv.pdf">Paper</a><a href="ihog/">Project Page</a><a href="ihog/slides.pdf">Slides</a><a href="http://web.mit.edu/newsoffice/2013/teaching-computers-to-see-by-learning-to-see-like-computers-0919.html">MIT News</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{vondrick2016visualizing,&#10;&#160;&#160;title={Visualizing Object Detection Features},&#10;&#160;&#160;author={Carl Vondrick and Aditya Khosla and Hamed Pirsiavash and Tomasz Malisiewicz and Antonio Torralba},&#10;&#160;&#160;journal={IJCV 2016},&#10;&#160;&#160;year={2016},&#10;&#160;&#160;url={ihog}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2015</h3><div
+class="publication d-flex align-items-start"><a href="bigdata.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Do We Need More Training Data?"
+data-src="img/optimized/moredata.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="bigdata.pdf">Do We Need More Training Data?</a></strong><br />
+Xiangxin Zhu, Carl Vondrick, Charless C. Fowlkes, Deva Ramanan
+<br />
+IJCV 2015
+<br /><span class="links"><a href="bigdata.pdf">Paper</a><a href="http://vision.ics.uci.edu/datasets/data_10X_release.tar">dataset</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{zhu2015do,&#10;&#160;&#160;title={Do We Need More Training Data?},&#10;&#160;&#160;author={Xiangxin Zhu and Carl Vondrick and Charless C. Fowlkes and Deva Ramanan},&#10;&#160;&#160;journal={IJCV 2015},&#10;&#160;&#160;year={2015},&#10;&#160;&#160;url={bigdata.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-Interpretability"><a href="imagination/paper.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Learning Visual Biases from Human Imagination"
+data-src="img/optimized/cihead.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="imagination/paper.pdf">Learning Visual Biases from Human Imagination</a></strong><br />
+Carl Vondrick, Hamed Pirsiavash, Aude Oliva, Antonio Torralba
+<br />
+NeurIPS 2015
+<br /><span class="links"><a href="imagination/paper.pdf">Paper</a><a href="imagination/">Project Page</a><a href="http://www.technologyreview.com/view/532231/random-image-experiment-reveals-the-building-blocks-of-human-imagination/">Technology Review</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2015learning,&#10;&#160;&#160;title={Learning Visual Biases from Human Imagination},&#10;&#160;&#160;author={Carl Vondrick and Hamed Pirsiavash and Aude Oliva and Antonio Torralba},&#10;&#160;&#160;booktitle={NeurIPS 2015},&#10;&#160;&#160;year={2015},&#10;&#160;&#160;url={imagination/paper.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start paper-People-and-Behavior"><a href="gaze.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Where are they looking?"
+data-src="img/optimized/gaze.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="gaze.pdf">Where are they looking?</a></strong><br />
+Adria Recasens<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Aditya Khosla<span style="margin-left: 0.15em"><i class="bi bi-asterisk" style="font-size: 0.5em; vertical-align: middle"></i></span>, Carl Vondrick, Antonio Torralba
+<br />
+NeurIPS 2015
+<br /><span class="links"><a href="gaze.pdf">Paper</a><a href="http://gazefollow.csail.mit.edu/">Project Page</a><a href="http://gazefollow.csail.mit.edu/demo.html">Demo</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{recasens2015where,&#10;&#160;&#160;title={Where are they looking?},&#10;&#160;&#160;author={Adria Recasens and Aditya Khosla and Carl Vondrick and Antonio Torralba},&#10;&#160;&#160;booktitle={NeurIPS 2015},&#10;&#160;&#160;year={2015},&#10;&#160;&#160;url={gaze.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2014</h3><div
+class="publication d-flex align-items-start paper-Learning-from-Video paper-People-and-Behavior"><a href="quality.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Assessing the Quality of Actions"
+data-src="img/optimized/action.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="quality.pdf">Assessing the Quality of Actions</a></strong><br />
+Hamed Pirsiavash, Carl Vondrick, Antonio Torralba
+<br />
+ECCV 2014
+<br /><span class="links"><a href="quality.pdf">Paper</a><a href="http://www.csee.umbc.edu/~hpirsiav/quality.html">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{pirsiavash2014assessing,&#10;&#160;&#160;title={Assessing the Quality of Actions},&#10;&#160;&#160;author={Hamed Pirsiavash and Carl Vondrick and Antonio Torralba},&#10;&#160;&#160;booktitle={ECCV 2014},&#10;&#160;&#160;year={2014},&#10;&#160;&#160;url={quality.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2013</h3><div
+class="publication d-flex align-items-start paper-Interpretability"><a href="ihog" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for HOGgles: Visualizing Object Detection Features"
+data-src="img/optimized/ihogduck.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="ihog">HOGgles: Visualizing Object Detection Features</a></strong><br />
+Carl Vondrick, Aditya Khosla, Tomasz Malisiewicz, Antonio Torralba
+<br />
+ICCV 2013 (Oral)
+<br /><span class="links"><a href="ihog/iccv.pdf">Paper</a><a href="ihog/">Project Page</a><a href="ihog/slides.pdf">slides</a><a href="http://web.mit.edu/newsoffice/2013/teaching-computers-to-see-by-learning-to-see-like-computers-0919.html">MIT News</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2013hoggles,&#10;&#160;&#160;title={HOGgles: Visualizing Object Detection Features},&#10;&#160;&#160;author={Carl Vondrick and Aditya Khosla and Tomasz Malisiewicz and Antonio Torralba},&#10;&#160;&#160;booktitle={ICCV 2013 (Oral)},&#10;&#160;&#160;year={2013},&#10;&#160;&#160;url={ihog}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2012</h3><div
+class="publication d-flex align-items-start"><a href="largetrain.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Do We Need More Training Data or Better Models for Object Detection?"
+data-src="img/optimized/moredata.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="largetrain.pdf">Do We Need More Training Data or Better Models for Object Detection?</a></strong><br />
+Xiangxin Zhu, Carl Vondrick, Deva Ramanan, Charless C. Fowlkes
+<br />
+BMVC 2012
+<br /><span class="links"><a href="largetrain.pdf">Paper</a><a href="http://vision.ics.uci.edu/datasets/data_10X_release.tar">Dataset</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{zhu2012do,&#10;&#160;&#160;title={Do We Need More Training Data or Better Models for Object Detection?},&#10;&#160;&#160;author={Xiangxin Zhu and Carl Vondrick and Deva Ramanan and Charless C. Fowlkes},&#10;&#160;&#160;booktitle={BMVC 2012},&#10;&#160;&#160;year={2012},&#10;&#160;&#160;url={largetrain.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="vatic/ijcv.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Efficiently Scaling Up Crowdsourced Video Annotation"
+data-src="img/optimized/vatic-logo2.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="vatic/ijcv.pdf">Efficiently Scaling Up Crowdsourced Video Annotation</a></strong><br />
+Carl Vondrick, Donald Patterson, Deva Ramanan
+<br />
+IJCV 2012
+<br /><span class="links"><a href="vatic/ijcv.pdf">Paper</a><a href="vatic/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@article{vondrick2012efficiently,&#10;&#160;&#160;title={Efficiently Scaling Up Crowdsourced Video Annotation},&#10;&#160;&#160;author={Carl Vondrick and Donald Patterson and Deva Ramanan},&#10;&#160;&#160;journal={IJCV 2012},&#10;&#160;&#160;year={2012},&#10;&#160;&#160;url={vatic/ijcv.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2011</h3><div
+class="publication d-flex align-items-start"><a href="vatic/videoalearn.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Video Annotation and Tracking with Active Learning"
+data-src="img/optimized/alearn.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="vatic/videoalearn.pdf">Video Annotation and Tracking with Active Learning</a></strong><br />
+Carl Vondrick, Deva Ramanan
+<br />
+NeurIPS 2011
+<br /><span class="links"><a href="vatic/videoalearn.pdf">Paper</a><a href="active/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2011video,&#10;&#160;&#160;title={Video Annotation and Tracking with Active Learning},&#10;&#160;&#160;author={Carl Vondrick and Deva Ramanan},&#10;&#160;&#160;booktitle={NeurIPS 2011},&#10;&#160;&#160;year={2011},&#10;&#160;&#160;url={vatic/videoalearn.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><div
+class="publication d-flex align-items-start"><a href="vatic/virat.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for A Large-scale Benchmark Dataset for Event Recognition"
+data-src="img/optimized/virat.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="vatic/virat.pdf">A Large-scale Benchmark Dataset for Event Recognition</a></strong><br />
+Sangmin Oh, et al.
+<br />
+CVPR 2011
+<br /><span class="links"><a href="vatic/virat.pdf">Paper</a><a href="http://www.viratdata.org/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{oh2011a,&#10;&#160;&#160;title={A Large-scale Benchmark Dataset for Event Recognition},&#10;&#160;&#160;author={Sangmin Oh and et al.},&#10;&#160;&#160;booktitle={CVPR 2011},&#10;&#160;&#160;year={2011},&#10;&#160;&#160;url={vatic/virat.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div><h3 class="year pt-2 pb-1">2010</h3><div
+class="publication d-flex align-items-start"><a href="vatic/scalingup.pdf" class="flex-shrink-0"><div class="media-container"><div class="media-placeholder"><div class="spinner-border spinner-border-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div></div><img
+data-alt="Teaser for Efficiently Scaling Up Video Annotation with Crowdsourced Marketplaces"
+data-src="img/optimized/vatic-logo.webp"
+class="publogo float-start rounded g"
+width="100" /></div></a><div class="flex-grow-1"><p><strong
+><a href="vatic/scalingup.pdf">Efficiently Scaling Up Video Annotation with Crowdsourced Marketplaces</a></strong><br />
+Carl Vondrick, Deva Ramanan, Donald Patterson
+<br />
+ECCV 2010
+<br /><span class="links"><a href="vatic/scalingup.pdf">Paper</a><a href="vatic/">Project Page</a><a
+href="#"
+class="bibtex-link d-none d-lg-inline"
+data-bibtex="@inproceedings{vondrick2010efficiently,&#10;&#160;&#160;title={Efficiently Scaling Up Video Annotation with Crowdsourced Marketplaces},&#10;&#160;&#160;author={Carl Vondrick and Deva Ramanan and Donald Patterson},&#10;&#160;&#160;booktitle={ECCV 2010},&#10;&#160;&#160;year={2010},&#10;&#160;&#160;url={vatic/scalingup.pdf}&#10;}"
+onclick="return false;">BibTeX</a></span></p></div></div></div></div></section><section class="darker" id="teaching"><div class="container"><div class="row"><div class="col-lg-6 col-12 px-4 order-1"><h2>Teaching</h2><ul><li>
+Computer Vision II
+<small>(Summer 2021, Spring 2022-2025)</small></li><li>
+Computer Vision I
+<small>(Fall 2018-2019)</small></li><li>
+Advanced Computer Vision
+<small>(Spring 2019)</small></li><li>
+Machine Learning Frontiers
+<small>(Fall 2024-2025)</small></li><li>
+Representation Learning
+<small>(Fall 2020-2022)</small></li></ul><h2>Funding</h2><ul><li>National Science Foundation</li><li>Defense Advanced Research Projects Agency</li><li>Toyota Research Institute</li><li>Amazon Research</li><li>Google</li></ul></div><div class="col-lg-6 col-12 px-4 order-1 pb-4"><h2>Press</h2><ul><li><a href="https://www.science.org/content/article/technology-spying-you-new-ai-could-prevent-eavesdropping">Science</a></li><li><a href="http://www.npr.org/sections/alltechconsidered/2016/07/12/485144229/a-computer-binge-watched-tv-and-learned-to-predict-what-happens-next">NPR</a></li><li><a href="http://money.cnn.com/2016/06/21/technology/ai-kissing/">CNN</a></li><li><a href="https://www.apnews.com/7ec97c70223e49b98fbc7df2ff824d59">Associated Press (AP)</a></li><li><a href="http://www.nbcnews.com/mach/technology/deep-learning-predicts-future-n690851">NBC News</a></li><li><a href="https://www.wired.com/2016/06/mit-algorithm-predicts-future-watching-tv/">Wired</a></li><li><a href="https://www.scientificamerican.com/article/spoiler-alert-artificial-intelligence-can-predict-how-scenes-will-play-out/">Scientific American</a></li><li><a href="https://www.newscientist.com/article/2111363-binge-watching-videos-teaches-computers-to-recognise-sounds/">New Scientist</a></li><li><a href="weekjunior.pdf">Week Junior</a></li><li><a href="https://www.youtube.com/watch?v=pGrNwtHxMqs">Late Show with Stephen Colbert</a></li><li><a href="http://www.forbes.com/sites/janetwburns/2016/06/22/mit-computers-binge-watch-desperate-housewives-the-office-to-learn-about-hugs/#7adca64a3892">Forbes</a></li><li><a href="http://www.newsweek.com/artificial-intelligence-algorithm-predicts-future-473118">Newsweek</a></li><li><a href="http://www.marketplace.org/shows/marketplace-tech/marketplace-tech-monday-december-5-2016">NPR Marketplace</a></li></ul></div></div></div></section></main><script>
+window.addEventListener('scroll', function() {
+document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 400);
+});
+</script><script
+src="assets/bootstrap.bundle.min.js"></script><script src="assets/script.js"></script></body></html>

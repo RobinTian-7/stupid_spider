@@ -1,0 +1,658 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175824318-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-175824318-1');
+		</script>
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Asap|Signika+Negative" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js"></script>
+  		<script src="js/popper.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Qingchuan Zhao's Homepage</title>
+
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+		  <a class="navbar-brand" href="#">Qingchuan Zhao</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		  	<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+		      <!-- <li class="nav-item">
+		        <a class="nav-link" href="#news">News</a>
+		      </li> -->
+		      <!-- <li class="nav-item">
+		        <a class="nav-link" href="#awards">Awards</a>
+		      </li>  -->
+		      <li class="nav-item">
+		        <a class="nav-link" href="#pub">Publication</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#service">Service</a>
+		      </li> 
+		     <li class="nav-item">
+		        <a class="nav-link" href="#grants">Grant</a>
+		      </li> 
+		      <li class="nav-item">
+		        <a class="nav-link" href="#teach">Teaching</a>
+		      </li> 
+		    </ul>
+		  </div>  
+		</nav>
+		<div class="container" id="wrapper">
+
+			<div id="intro" class="row">
+				<div id="photo" class="col-sm-3">
+					<a href="photo/avatar.jpg">
+						<img src="photo/avatar.jpg" class="img-rounded" alt="Photo" width=220>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<br>
+					<h1 id="name">
+					Qingchuan Zhao 
+					</h1>
+					<br>
+					<h5>
+						Assistant Professor <br>
+						Department of Computer Science <br>
+						City University of Hong Kong
+					</h5>
+					<br>
+					<div id="contact">
+					<p>
+						Office: <b>Y6427, Yeung Kin Man Academic Building (AC1)</b><br>
+						Phone: <b>+852 3442 8617</b><br>
+						Email: <b>cs DOT qczhao AT cityu DOT edu.hk</b>
+					</p>
+					</div>
+				</div>
+			
+			</div>
+
+			<div id="content">
+				<div>
+					<span class="anchor" id="about"></span>
+					<h2 class="bg-light h2color">About Me</h2>
+					<p>I am an Assistant Professor at the <a href="https://www.cs.cityu.edu.hk/" target=_blank>Department of Computer Science</a> at the <a href="https://www.cityu.edu.hk/" target=_blank>City University of Hong Kong</a>. I received my Ph.D. degree from <a href="https://www.osu.edu" target=_blank>The Ohio State University</a> supervised by Professor <a href="http://web.cse.ohio-state.edu/~lin.3021/" target=_blank>Zhiqiang Lin</a>, Master's degree from <a href="http://www.ufl.edu/" target="_blank"> the University of Florida</a>, and Bachelor's degree from <a href="https://www.scut.edu.cn/" target="_blank"> South China University of Technology</a>. My primary research interests are on vulnerability discovery (in mobile apps, cloud, and IoT) and automated reverse engineering. </p>
+
+					<p class="text-danger"><b>RA/Ph.D./Postdoc Positions Available:</b> I am seeking self-motivated students with strong interests in security and privacy. If interested, please email me your CV and study plan. <i>Those with no prior research experience or papers published/accepted are highly recommended to apply for the RA position</i>.</p>
+					<!-- <p>
+					I am interested in different areas of security and privacy, including mobile security, IoT security, BLE security, Vehicle security, etc.
+					</p> -->
+				</div>
+
+				<div>
+					<span class="anchor" id="awards"></span>
+					<h2 class="bg-light h2color">Selected Awards</h2>
+					<ul>
+						<li><span class="text-danger">ACM SIGSOFT Distinguished Paper Award</span>, 46th International Conference on Software Engineering (<b>ICSE</b>) <span style="float:right">2024</span></li>
+					</ul>
+				</div>
+
+					
+
+				<div>
+					<span class="anchor" id="pub"></span>
+					<h2 class="bg-light  h2color">Publications</h2>
+					<i>Authors with "_" is the student under my supervision; ˆ indicates equal contribution; * indicates the corresponding author.</i>
+					<br>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2026</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[Security'26] Adversarial Patch EXterminator: Zero-Shot and Patch-Agnostic Defense Framework Against Adversarial Patch Attacks</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br><u>Jiayimei Wang</u>, <u>Tao Ni</u>, Guowen Xu, <b>Qingchuan Zhao</b>, Cong Wang
+							<br><i>In Proceedings of the 35th USENIX Security Symposium</i>, Baltimore, MD, USA, August 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[NDSS'26] ProtocolGuard: Detecting Protocol Non-compliance Bugs via LLM-guided Static Analysis and Dynamic Verification</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiangpu Song, Longjia Pei, Jianliang Wu, Yingpei Zeng, Gaoshuo He, Chaoshun Zuo, Xiaofeng Liu, <b>Qingchuan Zhao</b>, and Shanqing Guo
+							<br><i>In Proceedings of the 33rd ISOC Network and Distributed System Security Symposium</i>, San Diego, CA, USA, Feb 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[AAAI'26] ConfGuard: A Simple and Effective Backdoor Detection for Large Language Models</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Zihan Wang, Rui Zhang, Hongwei Li, Wenshu Fan, Wenbo Jiang, <b>Qingchuan Zhao</b>, and Guowen Xu
+							<br><i>In Proceedings of the 40th AAAI Conference on Artificial Intelligence</i>, Singapore, Jan 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[AAAI'26] MPMA: Preference Manipulation Attack Against Model Context Protocol</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Zihan Wang, Rui Zhang, Yu Liu, Wenshu Fan, Wenbo Jiang, <b>Qingchuan Zhao</b>, Hongwei Li, and Guowen Xu
+							<br><i>In Proceedings of the 40th AAAI Conference on Artificial Intelligence</i>, Singapore, Jan 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[AAAI'26] MartDE: A Privacy-Preserving and Cost-Efficient Evaluation Framework for Data Marketplaces</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xinyuan Qian, Haoyong wang, Hangcheng Cao, Shuai Yuan, Senkang Hu, <b>Qingchuan Zhao</b>, Hongwei Li, and Guowen Xu
+							<br><i>In Proceedings of the 40th AAAI Conference on Artificial Intelligence</i>, Singapore, Jan 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TDSC'26] Your Copied Data is Under Monitoring: A Study of Clipboard Usage in Android Applications</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br><u>Yongliang Chen</u>, <u>Jiayimei Wang</u>, <u>Ruoqin Tang</u>, Chaoshun Zuo, Lei Xue, Weitao Xu, Xiapu Luo, and <b>Qingchuan Zhao</b>
+							<br><i>IEEE Transactions on Dependable and Secure Computing</i>, 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TDSC'26] FIGhost: Fluorescent Ink-based Stealthy and Flexible Backdoor Attacks on Physical Traffic Sign Recognition</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Shuai Yuan, Guowen Xu, Hongwei Li, Rui Zhang, Xinyuan Qian, Hangcheng Cao, and <b>Qingchuan Zhao</b>
+							<br><i>IEEE Transactions on Dependable and Secure Computing</i>, 2026.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TDSC'26] An Advanced Gradient Leakage Attack Against Duplicate Labels Via Model Outputs Reconstruction</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Kunlan Xiang, Haomiao Yang, Meng Hao, Zikang Ding, Hongwei Li, <b>Qingchuan Zhao</b>, and Tianwei Zhang 
+							<br><i>IEEE Transactions on Dependable and Secure Computing</i>, 2026.
+						</li>
+					</ul>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2025</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[NeurIPS'25] The Fluorescent Veil: A Stealthy and Effective Physical Adversarial Patch Against Traffic Sign Recognition</b> 
+<!-- 							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Shuai Yuan, Xingshuo Han, Hongwei Li, Guowen Xu, Wenbo Jiang, <u>Tao Ni</u>, <b>Qingchuan Zhao</b>, and Yuguang Fang 
+							<br><i>In Proceedings of the 39th Annual Conference on Neural Information Processing Systems</i>, San Diego, CA, Dec 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[ICML'25] Omni-Angle Assault: An Invisible and Powerful Physical Adversarial Attack on Face Recognition</b> 
+<!-- 							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Shuai Yuan, Hongwei Li, Rui Zhang, Hangcheng Cao, Wenbo Jiang, <u>Tao Ni</u>, Wenshu Fan, <b>Qingchuan Zhao</b>, and Guowen Xu
+							<br><i>In Proceedings of the 42nd International Conference on Machine Learning</i>, Vancouver, July 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Security'25] A Thorough Security Analysis of BLE Proximity Tracking Protocols</b> 
+<!-- 							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiaofeng Liu, Chaoshun Zuo, Qinsheng Hou, Pengcheng Ren, Jianliang Wu, <b>Qingchuan Zhao*</b>, and Shanqing Guo*
+							<br><i>In Proceedings of the 34th USENIX Security Symposium</i>, Seattle, WA, USA, Aug. 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Security'25] THEMIS: Towards Practical Intellectual Property Protection for Post-Deployment On-Device Deep Learning Models</b> 
+<!-- 							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Yujin Huang, Zhi Zhang, <b>Qingchuan Zhao</b>, Xingliang Yuan, and Chunyang Chen
+							<br><i>In Proceedings of the 34th USENIX Security Symposium</i>, Seattle, WA, USA, Aug. 2025.
+						</li>
+						<br>
+							<li>
+							<font size="4"><b>[Security'25] MBFuzzer: A Multi-Party Protocol Fuzzer for MQTT Brokers</b> 
+<!-- 							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiangpu Song, Jianliang Wu, Yingpei Zeng, Hao Pan, Chaoshun Zuo, <b>Qingchuan Zhao</b>, and Shanqing Guo
+							<br><i>In Proceedings of the 34th USENIX Security Symposium</i>, Seattle, WA, USA, Aug. 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[NDSS'25] Non-intrusive and Unconstrained Keystroke Inference in VR Platforms via Infrared Side Channel</b>
+<!-- 							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br><u>Tao Ni</u>, Yuefeng Du, <b>Qingchuan Zhao*</b>, and Cong Wang*
+							<br><i>In Proceedings of the 32nd ISOC Network and Distributed System Security Symposium</i>, San Diego, CA, USA, Feb 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TDSC'25] Characterizing Contactless Side-channel Eavesdropping on Wireless Chargers</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br><u>Tao Ni</u>, Chaoshun Zuo, Jianfeng Li, Wubing Wang, Weitao Xu, Xiapu Luo,and <b>Qingchuan Zhao</b>
+							<br><i>IEEE Transactions on Dependable and Secure Computing</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TDSC'25] No Trespassing: Ground-view Adversarial Patches for Privacy-aware Management in COTS Robot Vacuum Cleaner</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Shuai Yuan, Guowen Xu*, Hongwei Li, Rui Zhang, Hangcheng Cao, Xinyuan Qian, <u>Tao Ni</u>, <b>Qingchuan Zhao</b>,and Yuguang Fang
+							<br><i>IEEE Transactions on Dependable and Secure Computing</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TIFS'25] Privacy-preserving Universal Adversarial Defense for Black-box Models</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Qiao Li, Cong Wu, Jing Chen, Zijun Zhang, Kun He, Ruiying Du, Xinxin Wang, <b>Qingchuan Zhao</b>, and Yang Liu
+							<br><i>IEEE Transactions on Information Forensics and Security</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TIFS'25] SCR-Auth: Secure Call Receiver Authentication on Smartphones Using Outer Ear Echoes</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiping Sun, Jing Chen, Kun He, Zhixiang He, Ruiying Du, Yebo Feng, <b>Qingchuan Zhao</b>,and Cong Wu 
+							<br><i>IEEE Transactions on Information Forensics and Security</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TMC'25] When Good Becomes Evil: Exploring Crosstalk Attack Surfaces on Multi-Port USB Chargers</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br><u>Tao Ni</u>, Zehua Sun, <u>Yongliang Chen</u>, <u>Yihe Zhou</u>, <u>Jiayimei Wang</u>, Weitao Xu,<b>Qingchuan Zhao</b>, Cong Wang
+							<br><i>IEEE Transactions on Mobile Computing</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TMC'25] HeadSonic: Usable Bone Conduction Earphone Authentication via Head-conducted Sounds</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Zhixiang He, Jing Chen, Kun He, Yangyang Gu, Qiyi Deng, Zijian Zhang, Ruiying Du, <b>Qingchuan Zhao</b>, Cong Wu 
+							<br><i>IEEE Transactions on Mobile Computing</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TOSEM'25] Towards Effective Detection of Ponzi Schemes on Ethereum with Contract Runtime Behavior Graph</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Ruichao Liang, Jing Chen, Cong Wu, Kun He, Yueming Wu, Weisong Sun, Ruiying Du, <b>Qingchuan Zhao</b>, Yang Liu 
+							<br><i>ACM Transactions on Software Engineering and Methodology</i>, 2025.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Computer&Security'25] CSFuzzer: A grey-box fuzzer for network protocol using context-aware state feedback</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiangpu Song, Yingpei Zeng, Jianliang Wu, Hao Li, Chaoshun Zuo, <b>Qingchuan Zhao</b>, Shanqing Guo
+							<br><i>Computer&Security</i>, 2025.
+						</li>
+					</ul>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2024</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[IMWUT/Ubicomp'24] mmSpyVR: Exploiting mmWave Radar for Penetrating Obstacles to Uncover Privacy Vulnerability of Virtual Reality</b> 
+<!-- 							<a class="text-important" href="assets/sp23/sp23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/sp23/sp23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Luoyu Men, Ruofeng Liu, <b>Qingchuan Zhao</b>, Wenchao Jiang, Shuai Wang, Shuai Wang, Kangjie Lu, and Tian He 
+							<br><i>In Proceedings of the 2024 ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</i>, Melbourne, Australia, October 2024.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[IEEE S&P'24] AVA: Inconspicuous Attribute Variation-based Adversarial Attack bypassing DeepFake Detection</b> 
+<!-- 							<a class="text-important" href="assets/sp23/sp23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/sp23/sp23.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Xiangtao Meng, Li Wang, Shanqing Guo, Lei Ju, <b>Qingchuan Zhao</b> 
+							<br><i>In Proceedings of the 45th IEEE Symposium on Security and Privacy</i>, San Francisco, CA, USA, May 2024.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[ICSE'24] Attention! Your Copied Data is Under Monitoring: A Systematic Study of Clipboard Usage in Android Apps</b>  
+              						<a class="text-important" href="assets/icse24/ICSE24a.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Yongliang Chen</u>, Ruoqin Tang, Chaoshun Zuo, Xiaokuan Zhang, Lei Xue, Xiapu Luo, <b>Qingchuan Zhao</b> 
+							<br><i>In Proceedings of 46th ACM/IEEE International Conference on Software Engineering</i>, Lisbon, Portugal, April 2024.
+<!-- 							<!-- <i>(Acceptance rate: 157/977=16.1%)</i> -->
+							<br><span class="text-danger">ACM SIGSOFT Distinguished Paper Award</span>
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[ICSE'24] DEMISTIFY: Identifying On-device Machine Learning Models Stealing and Reuse Vulnerabilities in Mobile Apps</b>  
+              						<a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Pengcheng Ren, Chaoshun Zuo, Xiaofeng Liu, Wenrui Diao, <b>Qingchuan Zhao*</b>, Shanqing Guo*
+							<br><i>In Proceedings of 46th ACM/IEEE International Conference on Software Engineering</i>, Lisbon, Portugal, April 2024.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[TIFS'24] Stealthiness Assessment of Adversarial Perturbation: From A Visual Perspective</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Hangcheng Liu, Yuan Zhou, Ying Yang, <b>Qingchuan Zhao</b>, Tianwei Zhang, and Tao Xiang 
+							<br><i>IEEE Transactions on Information Forensics and Security</i>, 2024.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Network'24] Deploying Intrusion Detection on In-Vehicle Networks: Challenges and Opportunities</b>  
+              						<!-- <a class="text-important" href="assets/icse24/ICSE24b.pdf" target="_blank">[pdf]</a>  
+							<a class="text-success" href="assets/icse24/icse24b.bib" target="_blank">[bib]</a> -->
+							</font>
+							<br>Longxiang Wang, <b>Qingchuan Zhao</b>, Wei-Bin Lee, and Cong Wang
+							<br><i>IEEE Network</i>, 2024.
+						</li>
+					</ul>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2023</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[CCS'23] Recovering Fingerprints from In-Display Fingerprint Sensors via Electromagnetic Side Channel</b>  
+              						<a class="text-important" href="assets/ccs23/ccs23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ccs23/ccs23.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Tao Ni</u>, Xiaokuan Zhang, <b>Qingchuan Zhao*</b> 
+							<br><i>In Proceedings of the 30th ACM Conference on Computer and Communications Security</i>, Copenhagen, Denmark, Nov. 2023.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[MobiCom'23] XPorter: A Study of the Multi-Port Charger Security on Privacy Leakage and Voice Injection</b>  
+              						<a class="text-important" href="assets/mobicom23/mobiCom23b.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/mobicom23/mobicom23b.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Tao Ni</u>, <u>Yongliang Chen</u>, Weitao Xu, Lei Xue, <b>Qingchuan Zhao*</b> 
+<!-- 							<br><b>Mobicom'23</b> -->
+							<br><i>In Proceedings of the 29th Annual International Conference on Mobile Computing and Networking</i>, Madrid, Spain, Oct. 2023.
+							<!-- <i>(Acceptance rate: 157/977=16.1%)</i> -->
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[MobiCom'23] Exploiting Contactless Side Channels in Wireless Charging Power Banks for User Privacy Inference via Few-shot Learning</b>  
+              						<a class="text-important" href="assets/mobicom23/mobiCom23a.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/mobicom23/mobicom23a.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Tao Ni</u>, Jianfeng Li, Xiaokuan Zhang, Chaoshun Zuo, Wubing Wang, Weitao Xu, Xiapu Luo, <b>Qingchuan Zhao*</b> 
+<!-- 							<br><b>Mobicom'23</b> -->
+							<br><i>In Proceedings of the 29th Annual International Conference on Mobile Computing and Networking</i>, Madrid, Spain, Oct. 2023.
+							<!-- <i>(Acceptance rate: 157/977=16.1%)</i> -->
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Security'23] Eavesdropping Mobile App Activity via Radio Frequency Energy Harvesting</b> 
+							<a class="text-important" href="assets/usenix23/usenix23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/usenix23/usenix23.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Tao Ni</u>, Guohao Lan, Jia Zhang, <b>Qingchuan Zhao</b>, and Weitao Xu* 
+							<br><i>In Proceedings of the 32nd USENIX Security Symposium</i>, Anaheim, CA, USA, Aug. 2023.
+							
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[SIGMETRICS'23] Detecting and Measuring Aggressive Location Harvesting in Mobile Apps via Data-flow Path Embedding</b> 
+							<a class="text-important" href="assets/sigmetric23/sigmetric23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/sigmetric23/sigmetric23.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Haoran Lu^, <b>Qingchuan Zhao^</b>, <u>Yongliang Chen</u>, Xiaojing Liao, and Zhiqiang Lin 
+							<br><i>In Proceedings of the ACM on Measurement and Analysis of Computing Systems (POMACS)</i>, Orlando, FL, USA, June 2023.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[IEEE S&P'23] Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels </b> 
+							<a class="text-important" href="assets/sp23/sp23.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/sp23/sp23.bib" target="_blank">[bib]</a>
+							</font>
+							<br><u>Tao Ni</u>, Xiaokuan Zhang, Chaoshun Zuo, Jianfeng Li, Zhenyu Yan, Wubing Wang, Weitao Xu, Xiapu Luo, and <b>Qingchuan Zhao</b> 
+							<br><i>In Proceedings of the 44th IEEE Symposium on Security and Privacy</i>, San Francisco, CA, USA, May 2023.
+						</li>
+					</ul>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2022</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[SecureComm'22] No-Fuzz: Efficient Anti-fuzzing Techniques</b>
+							<a class="text-important" href="assets/securecomm22/securecomm22.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/securecomm22/securecomm22.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Zhengxiang Zhou, Cong Wang, <b>Qingchuan Zhao</b>
+							<br><i>In Proceedings of the 18th International Conference on Security and Privacy in Communication Networks</i>, Kansas City, Missouri, USA, Oct 2022.
+							
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[AsiaCCS'22] PeriScope: Comprehensive Vulnerability Analysis of Mobile App-defined Bluetooth Peripherals</b>
+							<a class="text-important" href="assets/aisaccs22/ASIACCS22.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/aisaccs22/asiaccs22.bib" target="_blank">[bib]</a>
+							</font>
+							<br><b>Qingchuan Zhao</b>, Chaoshun Zuo, Jorge Blasco, Zhiqiang Lin 
+							<br><i>In Proceedings of the 17th ACM Asia Conference on Computer and Communications Security</i>, Nagasaki, Japan, June 2022.
+						</li>
+					</ul>
+					<font size="5" color="#289BE6"  style="font-family:verdana"><b>2021 and before</b></font>
+					<ul>
+						<li>
+							<font size="4"><b>[SecureComm'20] On the Accuracy of Measured Proximity of Bluetooth-based Contact Tracing Apps</b> (short paper)  
+							<a class="text-important" href="assets/securecomm20/SECURECOMM20a.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/securecomm20/securecomm20a.bib" target="_blank">[bib]</a>
+							</font>
+							<br><b>Qingchuan Zhao</b>, Haohuang Wen, Zhiqiang Lin, Dong Xuan, Ness Shroff 
+							<br><i>In Proceedings of the 16th International Conference on Security and Privacy in Communication Networks</i>, Washington DC, USA, Oct 2020.
+							
+						</li>
+						<br>
+						<li>
+                            				<font size="4"><b>[SecureComm'20] A Study of the Privacy of COVID-19 Contact Tracing Apps</b> 
+                            				<a class="text-important" href="assets/securecomm20/SECURECOMM20b.pdf" target="_blank">[pdf]</a>
+			                            	<a class="text-success" href="assets/securecomm20/securecomm20b.bib" target="_blank">[bib]</a>
+			                            	</font>
+			                            	<br>Haohuang Wen, <b>Qingchuan Zhao</b>, Zhiqiang Lin, Dong Xuan, Ness Shroff 
+							<br><i>In Proceedings of the 16th International Conference on Security and Privacy in Communication Networks</i>, Washington DC, USA, Oct 2020.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[Security'20] FirmScope: Automatic Uncovering of Privilege-Escalation Vulnerabilitiesin Pre-Installed Apps in Android Firmware</b> 
+							<a class="text-important" href="assets/usenix20/SEC20.pdf" target="_blank">[pdf]</a>
+							<a class="text-success" href="assets/usenix20/sec20.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Mohamed Elsabagh, Ryan Johnson, Angelos Stavrou, Chaoshun Zuo, <b>Qingchuan Zhao</b>, and Zhiqiang Lin
+							<br><i>In Proceedings of the 29th USENIX Security Symposium</i>, Santa Clara, CA, USA, August 2020.
+							
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[IEEE S&P'20] Automatic Uncovering of Hidden Behaviors From Input Validation in Mobile Apps</b> 
+							<a class="text-important" href="assets/sp20/SP20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/sp20/sp20.bib" target="_blank">[bib]</a>
+							</font>
+							<br><b>Qingchuan Zhao</b>, Chaoshun Zuo, Dolan-Gavitt Brendan, Giancarlo Pellegrino, Zhiqiang Lin 
+							<br><i>In Proceedings of the 41st IEEE Symposium on Security and Privacy</i>, San Francisco, CA, USA, May 2020.
+							
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[NDSS'20] Automated Cross-Platform Reverse Engineering of CAN Bus Commands from Mobile Apps</b>
+							<a class="text-important" href="assets/ndss20/NDSS20.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss20/ndss20.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Haohuang Wen, <b>Qingchuan Zhao</b>, Qi Alfred Chen, Zhiqiang Lin
+							<br><i>In Proceedings of the 27th ISOC Network and Distributed System Security Symposium</i>, San Diego, CA, USA, Feb 2020.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[DSN'19] Your IoTs Are (Not) Mine: On the Remote Binding Between IoT Devices and Users</b> 
+							<a class="text-important" href="assets/dsn19/DSN19.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/dsn19/dsn19.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Jiongyi Chen, Chaoshun Zuo, Wenrui Diao, Shuaike Dong, <b>Qingchuan Zhao</b>, Menghan Sun, Zhiqiang Lin, Yinqian Zhang, Kehuan Zhang
+                            				<br><i>In Proceedings of the 49th Annual IEEE/IFIP International Conference on Dependable Systems and Networks</i>, Portland, Oregon, USA, Jun 2019.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[NDSS'19] Geo-locating Drivers: A Study of Sensitive Data Leakage in Ride-Hailing Services</b> 
+							<a class="text-important" href="assets/ndss19/NDSS19.pdf" target="_blank">[pdf]</a> 
+							 <a class="text-success" href="assets/ndss19/ndss19.bib" target="_blank">[bib]</a>
+							</font> 
+							<br><b>Qingchuan Zhao</b>, Chaoshun Zuo, Giancarlo Pellegrino, Zhiqiang Lin
+				                        <br><i>In Proceedings of the 26th ISOC Network and Distributed System Security Symposium</i>, San Diego, CA, USA, Feb 2019.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[NDSS'18] IoTFuzzer: Discovering Memory Corruptions in IoT Through App-based Fuzzing</b> 
+							<a class="text-important" href="assets/ndss18/NDSS18.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ndss18/ndss18.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Jiongyi Chen, Wenrui Diao, <b>Qingchuan Zhao</b>, Chaoshun Zuo, Zhiqiang Lin, XiaoFeng Wang, Wing Cheong Lau, Menghan Sun, Ronghai Yang, Kehuan Zhang
+                            				<br><i>In Proceedings of the 25th ISOC Network and Distributed System Security Symposium</i>, San Diego, CA, USA, Feb 2018. 
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[CCS'17] AuthScope: Towards Automatic Discovery of Vulnerable Authorizations in Online Services</b> 
+							<a class="text-important" href="assets/ccs17/CCS17.pdf" target="_blank">[pdf]</a> 
+							<a class="text-success" href="assets/ccs17/ccs17.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Chaoshun Zuo, <b>Qingchuan Zhao</b>, Zhiqiang Lin
+                            				<br><i>In Proceedings of the 24th ACM Conference on Computer and Communications Security</i>, Dallas, Texas, USA, Oct 2017.
+						</li>
+						<br>
+						<li>
+							<font size="4"><b>[CODASPY'17] PT-CFI: Transparent Backward-Edge Control Flow Violation Detection Using Intel Processor Trace</b> 
+							<a class="text-important" href="assets/codaspy17/CODASPY17.pdf" target="_blank">[pdf]</a> 
+							<!-- <a class="text-danger" href="assets/codaspy17/" target="_blank">[slides]</a> -->
+							<a class="text-success" href="assets/codaspy17/codaspy17.bib" target="_blank">[bib]</a>
+							</font>
+							<br>Guofei Gu, <b>Qingchuan Zhao</b>, Yinqian Zhang, Zhiqiang Lin
+                            				<br><i>In Proceedings of the 7th ACM Conference on Data and Application Security and Privacy</i>, Scottsdale, Arizona. March 2017
+						</li>
+						<br>						
+					</ul>					
+				</div>
+
+				<div>
+					<span class="anchor" id="service"></span>	
+					<h2 class="bg-light h2color">Professional Services</h2>
+						<h5>Editorial Board</h5>
+						<ul>
+                        			<li>IEEE Transactions on Information Forensics and Security (TIFS), Associate Editor <span style="float:right">2024-Present</span></li>
+						</ul>
+						<h5>Conference Organization</h5>
+						<ul>
+						<li>Local organization co-chair: International Symposium on Research in Attacks, Intrusions and Defenses (RAID) <span style="float:right">2023</span></li>
+						</ul>
+					
+						<h5>Technical Program Committee (TPC) Member</h5>
+						<ul>
+                        <li>ISOC Network and Distributed System Security Symposium (NDSS)<span style="float:right">2025</span></li>
+						</ul>
+						<ul>
+                        <li>ACM Conference on Computer and Communications Security (CCS) <span style="float:right">2024-25</span></li>
+						</ul>
+						<ul>
+                        <li>USENIX Security Symposium (Security) <span style="float:right">2024-26</span></li>
+						</ul>
+						<ul>
+                        <li>IEEE European Symposium on Security and Privacy (Euro S&P) <span style="float:right">2024</span></li>
+						</ul>
+						<ul>
+                        <li>International Symposium on Research in Attacks, Intrusions and Defenses (RAID) <span style="float:right">2023-24</span></li>
+						</ul>
+						<ul>
+                        <li>IEEE International Conference on Distributed Computing Systems (ICDSC) <span style="float:right">2022-24</span></li>
+						</ul>
+						<ul>
+                        <li>EAI International Conference on Security and Privacy in Communication Networks (SecureComm) <span style="float:right">2022-24</span></li>
+						</ul>
+						<ul>
+                        <li>ACM ASIA Conference on Computer and Communications Security (ASIACCS) <span style="float:right">2021</span></li>
+						</ul>
+						<ul>
+						<li>International Conference on Information and Communications Security (ICICS) <span style="float:right">2021-24</span></li>
+						</ul>
+						<h5>Reviewer</h5>
+						<ul>
+                        			<li>ACM The Web Conference (TheWebConf, formerly WWW) <span style="float:right">2024</span></li>
+						</ul>
+						<ul>
+						<li>IEEE Transactions on Dependable and Secure Computing (TDSC) <span style="float:right">2020-23</span></li>
+						</ul>		
+					
+				</div>
+
+				<div>
+					<span class="anchor" id="grants"></span>
+					<h2 class="bg-light h2color">Grant</h2>
+					<ul>
+					<li>"Contactless Side Channels on Mobile Wireless Charging: Exploration and Mitigation", ECS, PI <span style="float:right">2023.09-2026.08</span>
+					</ul>
+					<ul>
+					<li>"Enabling Metadata-private and Accountable Networks at Scale", CRF, Co-PI <span style="float:right">2023.06-2026.05</span>
+					</ul>
+					<ul>
+					<li>"Identifying Vulnerability and Privacy Violation in Mobile Apps via Code Embedding", Start-up, PI <span style="float:right">2022.02-2024.02</span>
+					</ul>
+				</div>
+				
+				<div>
+					<span class="anchor" id="teach"></span>
+					<h2 class="bg-light h2color">Teaching</h2>
+					<ul>
+					<li>CS 4293: Topics in Cybersecurity <span style="float:right">Semester B, 2021-24</span>
+					</ul>
+					<ul>
+					<li>CS 4394: Information Security and Management <span style="float:right">Semester A, 2021-24</span>
+					</ul>
+					<ul>
+					<li>CS 5293: Topics on Information Security <span style="float:right">Semester B, 2021-22,24</span>
+					</ul>
+					<ul>
+					<li>CS 5294: Information Security Technology Management <span style="float:right">Semester A, 2022-23</span>
+					</ul>
+<!-- 					<ul>
+					<li>CS 4293: Topics in Cybersecurity <span style="float:right">Semester B, 2021-22</span>
+					</ul> -->
+<!-- 					<ul>
+					<li>CS 4394: Information Security and Management <span style="float:right">Semester A, 2021-22</span>
+					</ul> -->
+				</div>
+
+				<footer>
+					<span id="updated" style="float:right"></span>
+					<script>
+    				var d = document.lastModified.split(" ")[0];
+    				document.getElementById("updated").innerHTML = "<small>Last Updated: " + d + "</small>";
+  					</script>
+				</footer>
+				
+			</div>
+		</div>
+	</body>	
+</html>

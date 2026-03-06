@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Battle Lab @ JHU</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="splash_styles.css">
+    <link href="./public/Images/Icon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- DATA & POPULATING FUNCTIONS -->
+    <script type="text/javascript" src="./json-references/ref_landing.html"></script>
+    <script type="text/javascript" src="./json-references/ref_people.json"></script>
+    <script type="text/javascript" src="./json-references/ref_papers.json"></script>
+    <script type="text/javascript" src="./json-references/ref_software.json"></script>
+    <script type="text/javascript" src="./json-references/ref_patents.json"></script>
+    <script type="text/javascript" src="./json-references/ref_join.html"></script>
+    <script type="text/javascript" src="./json-references/ref_contact.json"></script>
+    <script type="text/javascript" src="./json-references/ref_links.json"></script>
+    <script type="text/javascript" src="global_functions.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_landing.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_pubs.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_software.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_people.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_join.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_contact.js"></script>
+    <script type="text/javascript" src="./populating-functions/pop_links.js"></script>
+
+    <!-- GLOBAL JAVASCRIPT -->
+    <script type="text/javascript" src="splash.js"></script>
+    
+    <!-- FONTS & ICONS -->
+    <script src="https://kit.fontawesome.com/95412af412.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+    <main>
+      <aside>
+        <span id="logoIcon"><a href="/"><img src="./public/Images/logo.svg"></span></a>
+        <div id="linkWrapper">
+          <div id="landing" class="navButton"><div class="iconWrapper"><i class="fas fa-dna"></i></div>Battle Lab</div>
+          <div id="publications" class="navButton"><div class="iconWrapper"><i class="fas fa-book-open"></i></div>Publications</div>
+          <div id="software" class="navButton"><div class="iconWrapper"><i class="fas fa-code"></i></div>Software</div>
+          <div id="people" class="navButton"><div class="iconWrapper"><i class="fas fa-users"></i></div>People</div>
+          <div id="join" class="navButton"><div class="iconWrapper"><i class="fas fa-child"></i></div>Join Us</div>
+          <div id="contact" class="navButton"><div class="iconWrapper"><i class="fas fa-paper-plane"></i></div>Contact</div>
+          <div id="links" class="navButton"><div class="iconWrapper"><i class="fas fa-link"></i></div>Links</div>
+        </div>
+      </aside>
+      <section>
+        <div id="sectionContent">
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="copyright">© 2014 - 2026 Alexis Battle</div>
+    </footer>
+  </body>
+</html>

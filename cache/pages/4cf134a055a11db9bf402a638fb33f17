@@ -1,0 +1,200 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sara Pohland</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Sara, Pohland, sarapohland, spohland, ucb, berkeley, umd, maryland, robotics, vision, explainable" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="index.html">Sara Pohland</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">About Me</span></a></li>
+							<li class="menu__item"><a href="research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item"><a href="teaching.html" class="menu__link"><span class="menu__helper">Teaching</span></a></li>
+							<li class="menu__item"><a href="files/CV.pdf" class="menu__link" target="_blank"><span class="menu__helper">CV</span></a></li>
+							<li class="menu__item"><a href="https://scholar.google.com/citations?hl=en&user=Kx5jc44AAAAJ&view_op=list_works&gmla=AJsN-F4x-loT4JXJpQflGpP9k9J6RzNj8zwrkCOQYXE2abykmfh4Q-iY-22JzWWTSOsQYznV_DiqeNqnZ41lRhCVz5lKIESmOZGF_V9NGfSNlq1FODBvZus" class="menu__link" target="_blank"><span class="menu__helper">Publications</span></a></li>
+							<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft"><a <b><span style="color:#000">About Me</span></b> </a></h2>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <div class="about-grids">
+            <div class="col-md-6 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body panel_text">
+                                <p>
+																	<span style="color:#000">
+																	I am a final year Electrical Engineering and Computer Sciences (EECS) PhD student at University of California, Berkeley advised by Professor <a target=â_blankâ href="https://people.eecs.berkeley.edu/~tomlin">Claire Tomlin</a>.
+																	I work in the <a target=â_blankâ href="http://hybrid.eecs.berkeley.edu">Hybrid Systems Lab</a>,
+																	which is a part of the <a target=â_blankâ href="https://bair.berkeley.edu">Berkeley Artificial Intelligence Research (BAIR) Lab</a>.
+																	I am broadly interested in robotics, computer vision, and explainable AI, 
+																	but most of my work has focused on the practical and safe deployment of learning-enabled robotics.
+																	<!-- I am graciously supported by the NSF Graduate Research Fellowship and the Chancellorâs Fellowship for Graduate Study. -->
+																  	Throughout my PhD, I have worked closely with the <a target=â_blankâ href="https://www.jhuapl.edu/ISC">Intelligent Systems Center (ISC)</a> at the <a target=â_blankâ href="https://www.jhuapl.edu">Johns Hopkins Applied Physics Lab (APL)</a> 
+																	and am currently collaborating with research scientists and engineers in the <a target=â_blankâ href="https://www.microsoft.com/en-us/research/group/ins/">Intelligent Networked Systems (INS)</a> group at  <a target=â_blankâ href="https://www.microsoft.com/en-us/research/">Microsoft Research (MSR)</a>.
+																	You can learn more about my research projects on my <a target=â_blankâ href="https://people.eecs.berkeley.edu/~spohland/research.html">Research</a> page.
+																	</span>
+																</p>
+																<br>
+																<p>
+																	<!-- <span style="color:#000">
+																	I graduated summa cum laude from University of Maryland, College Park with a B.S. in Electrical Engineering.
+																	While at Maryland, I worked with Professor <a target=â_blankâ href="https://user.eng.umd.edu/~krishna/">P. S. Krishnaprasad</a> in the <a target=â_blankâ href="https://isr.umd.edu/Labs/ISL/isl.html">Intelligent Servosystems Lab</a>,
+																	which is a part of the <a target=â_blankâ href="https://robotics.umd.edu">Maryland Robotics Center</a>.
+																	Within this lab, I primarily worked on characterizing human movement for safe human robot interaction.
+																	Additionally, I was a part of the <a target=â_blankâ href="https://www.gemstone.umd.edu">Gemstone Honors Program</a>, conducting research on tactile feedback systems for robotic surgical applications.
+																	</span> -->
+																	<span style="color:#000">
+																	In addition to research, I am passionate about improving the inclusivity and accessibility of AI education.
+																	While at Berkeley, I have served on the course staff for 
+																	Linear System Theory (<a target=â_blankâ href="https://www2.eecs.berkeley.edu/Courses/EE221A/">EE 221A</a>),
+																	Optimization Models in Engineering (<a target=â_blankâ href="https://www2.eecs.berkeley.edu/Courses/EECS127/">EECS 127</a>/<a target=â_blankâ href="https://www2.eecs.berkeley.edu/Courses/EECS227AT/">EECS 227AT</a>), and
+																	Introduction to Machine Learning (<a target=â_blankâ href="https://www2.eecs.berkeley.edu/Courses/CS189/">CS 189</a>/<a target=â_blankâ href="https://www2.eecs.berkeley.edu/Courses/CS289A/">CS 289A</a>).
+																	I am currently the head TA for Berkeley's Intro to ML class and am working to update the course to meet the needs of students in this new era of AI.
+																	During my time at Berkeley, I have also had the privilege of mentoring a number of high school students and introducing them to various aspects of AI.
+																	You can learn more about my teaching endeavors on my <a target=â_blankâ href="https://people.eecs.berkeley.edu/~spohland/teaching.html">Teaching</a> page.
+																	</span>
+																</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/profile-1.jpg" alt="Me" width="450" height="450" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+<!-- footer -->
+<div class="footer"><a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:spohland@berkeley.edu">spohland@berkeley.edu</a></p>
+                    <p>Office: Sutardja Dai Hall, Berkeley, CA</p>
+										<a target=â_blankâ href="https://github.com/sarapohland"><img alt="My GitHub" src="images/GH.png"width=30" height="30"></a>
+										&nbsp;
+										<a target=â_blankâ href="https://www.linkedin.com/in/sara-pohland"><img alt="My LinkedIn" src="images/LI.png"width=30" height="30"></a>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                    <br><br><br>
+                </div>
+                <div class="clearfix"> </div>
+			</div>
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+                    <ul>
+						<li class="active"><a href="index.html">About Me</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="teaching.html">Teaching</a></li>
+						<li><a target=â_blankâ href="files/CV.pdf">CV</a></li>
+						<li><a target=â_blankâ href="https://scholar.google.com/citations?hl=en&user=Kx5jc44AAAAJ&view_op=list_works&gmla=AJsN-F4x-loT4JXJpQflGpP9k9J6RzNj8zwrkCOQYXE2abykmfh4Q-iY-22JzWWTSOsQYznV_DiqeNqnZ41lRhCVz5lKIESmOZGF_V9NGfSNlq1FODBvZus">Publications</a></li>
+						<li><a href="#CONTACT">Contact</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aaron Roth - Henry Salvatori Professor of Computer and Cognitive Science at the University of Pennsylvania. Research in differential privacy, algorithmic fairness, machine learning, and game theory.">
+  <title>Aaron Roth</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1751406-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-1751406-1');
+  </script>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#students">Students</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#presentations">Presentations</a></li>
+    <li><a href="#media">Media</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<header>
+  <h1>Aaron Roth</h1>
+</header>
+
+<section id="about" class="profile">
+  <div class="profile-content">
+    <h2>About Me</h2>
+    <p>I am the Henry Salvatori Professor of Computer and Cognitive Science at the <a href="http://www.upenn.edu">University of Pennsylvania</a> <a href="http://www.cis.upenn.edu">computer science department</a>. I also hold a secondary appointment at the <a href="https://statistics.wharton.upenn.edu/">Department of Statistics and Data Science</a> at the <a href="https://www.wharton.upenn.edu/">Wharton School</a>, and I am associated with <a href="http://theory.cis.upenn.edu/">the theory group</a>, <a href="https://priml.upenn.edu/">PRiML (Penn Research in Machine Learning)</a> the <a href="http://www.warrencenter.upenn.edu/">Warren Center for Network and Data Sciences</a>, and am co-director of our program in <a href="http://www.nets.upenn.edu">Networked and Social Systems Engineering</a>. I am also affiliated with the <a href="http://www.amcs.upenn.edu/">AMCS</a> program (Applied Mathematics and Computational Science). I spent a year as a postdoc at <a href ="http://research.microsoft.com/en-us/labs/newengland/default.aspx">Microsoft Research New England</a>. Before that, I received my PhD from <a href="http://theory.cs.cmu.edu">Carnegie Mellon University</a>, where I was fortunate to have been advised by <a href="http://www.cs.cmu.edu/%7Eavrim">Avrim Blum</a>.
+My main interests are in algorithms and machine learning,
+and specifically in the areas of private data analysis, fairness in machine learning, game theory and mechanism design, and learning theory.
+ I am the recipient of the <a href="https://www.uniaktuell.unibe.ch/2023/aaron_roth_pioneer_of_fair_algorithms/index_eng.html">Hans Sigrist Prize</a>, a <a href="https://www.whitehouse.gov/the-press-office/2016/02/18/president-obama-honors-extraordinary-early-career-scientists">Presidential Early Career Award for Scientists and Engineers</a> (<a href="http://www.nsf.gov/news/news_summ.jsp?cntn_id=137709">PECASE</a>), an <a href="http://www.sloan.org/fileadmin/media/files/srf/APS_2015_Research_Fellowships_ad_FINAL.pdf">Alfred P. Sloan Research Fellowship</a>, an NSF CAREER award, a Google Faculty Research Award, an Amazon Research Award, and a Yahoo Academic Career Enhancement award. I am also an Amazon Scholar at Amazon Web Services (AWS).
+
+Previously, I was involved in advisory and consulting work related to differential privacy, algorithmic fairness, and machine learning, including with Apple and Facebook. I was also a scientific advisor for <a href="https://leapyear.io/">Leapyear</a> and <a href="https://www.getspectrum.io/">Spectrum Labs</a>.</p>
+    <p class="text-center">For more information, see my <a href="CV.pdf">CV</a>, <a href="research.pdf">Research Statement</a>, and those of <a href="https://www.youtube.com/playlist?list=PLlIlhe_rS4U2IB6bd3BFS2mlPuHQgrbMP">my talks</a> that appear on YouTube.</p>
+  </div>
+  <img id="profile-pic" class="profile-pic" alt="Photo of Aaron Roth" src="">
+</section>
+
+<script>
+  const images = ['Goggles.jpg', 'CartoonGoggles.jpg', 'TmntGoggles.jpg', 'BatmanGoggles.jpg', 'GnGoggles.jpg', '50sGoggles.jpg', 'AtGoggles.jpg','SuGoggles.jpg', 'ToyGoggles.jpg','MarbleGoggles.jpg','8bitGoggles.jpg', 'MarGoggles.jpg', 'GobGoggles.jpeg', 'IceGoggles.jpg', 'WoodGoggles.jpg', 'GuGoggles.jpg', 'BrGoggles.jpg', 'ReGoggles.jpg', 'HoGoggles.jpg', 'CloGoggles.jpg', 'CiGoggles.jpg', 'MiGoggles.jpg', 'MaGoggles.jpg', 'GoGoggles.jpg', 'FloGoggles.jpg', 'FiGoggles.jpg', 'MoGoggles.jpg', 'SwGoggles.jpg', 'KhGoggles.jpg', 'GrGoggles.jpg', 'GumGoggles.jpg', 'WaGoggles.jpg', 'MbGoggles.jpg', 'WfGoggles.jpg', 'CoGoggles.jpg', 'PpGoggles.jpg', 'StGoggles.jpg', 'PeGoggles.jpg', 'CrGoggles.jpg', 'RevGoggles.jpg', 'UwGoggles.jpg', 'MedGoggles.jpg', 'CaGoggles.jpg', 'GreGoggles.jpg', 'WbGoggles.jpg', 'SoGoggles.jpg', 'MasGoggles.jpg', 'PaGoggles.jpg', 'SqGoggles.jpg', 'AfGoggles.jpg', 'SlGoggles.jpg', 'CooGoggles.jpg', 'ClGoggles.jpg', 'WavGoggles.jpg', 'RoGoggles.jpg', 'ThGoggles.jpg', 'DiGoggles.jpg', 'SaGoggles.jpg', 'NyGoggles.jpg', 'RepGoggles.jpg', 'NycGoggles.jpg'];
+  const randomIndex = Math.floor(Math.random() * images.length);
+  document.getElementById('profile-pic').src = images[randomIndex];
+</script>
+
+<section id="contact">
+  <h2>Contact Information</h2>
+  <div class="contact-info">
+    <p><strong>Office:</strong> 511 Amy Gutmann Hall</p>
+    <p><strong>Email:</strong> aaroth@cis.upenn.edu</p>
+  </div>
+</section>
+
+
+<section id="teaching">
+<h2>Teaching</h2>
+<p>In Spring 2026 I am teaching NETS 4120 <a href="https://www.cis.upenn.edu/~aaroth/courses/agtS26.html">Algorithmic Game Theory</a></p>
+<h3>Previous courses:</h3>
+<ul>
+<li>Fall 2024: CIS 6200 -- <a href="https://uncertaintyclass.com">Advanced Topics in Machine Learning: Learning with Conditional Guarantees</a></li>
+<li>Fall 2023, Fall 2025: CIS 6200 ---  <a href="http://www.mlgametheory.com">Learning in Games (and Games in Learning)</a>.</li>
+<li>Fall 2022: CIS 7000 --- <a href="https://uncertaintyclass.com/">Uncertain: Modern Topics in Uncertainty Estimation.</a></li>
+<li>Fall 2021: CIS 320 -- <a href="https://www.seas.upenn.edu/~cis320/">Introduction to Algorithms</a></li>
+<li>Fall 2017: CIS 700 -- <a href="https://adaptivedataanalysis.com/">The Algorithmic Foundations of Adaptive Data Analysis</a>.</li> 
+<li>Spring 2025, Spring 2024, Spring 2023, Spring 2022, Spring 2021, Spring 2020, Fall 2018, Spring 2017, Spring 2015, Fall 2013, Spring 2012: NETS 4120 -- <a href="https://www.cis.upenn.edu/~aaroth/courses/agtS24.html">Algorithmic Game Theory</a>.</li>
+<li>Spring 2019, Fall 2016, 2014, 2012: CIS 262 -- <a href="http://www.seas.upenn.edu/~cse262/">Automata, Computability, and Complexity</a>.</li>
+<li> Spring 2014: CIS 700 -- <a href="http://www.cis.upenn.edu/~aaroth/courses/gametheoryprivacyS14.html">a seminar on the applications of Differential Privacy to Game Theory and Mechanism Design</a></li>
+<li> Spring 2013: CIS 700 -- <a href="http://www.cis.upenn.edu/~aaroth/courses/noregrets.html">No Regrets in Game Theory and Learning</a></li>
+<li> Spring 2013: MKSE 150 -- <a href="http://www.cis.upenn.edu/~mkse150/">Market and Social Systems on the Internet</a></li>
+<li> Fall 2011: CIS 800 -- <a href = "http://www.cis.upenn.edu/~aaroth/courses/privacyF11.html">The Algorithmic Foundations of Data Privacy</a></li>
+</ul>
+</section>
+
+<section id="students">
+<h2>Students and Postdocs</h2>
+<p>I'm fortunate to be able to work with several excellent graduate students and postdocs.</p>
+<h3>Current:</h3>
+<ul>
+  <li> <a href="https://yahavbe.github.io/">Yahav Bechavod</a> (Postdoc) </li>
+  <li> <a href="http://noarov.com/">Georgy Noarov</a> (co-advised by Michael Kearns)</li>
+  <li> <a href="https://nataliecollina.com/">Natalie Collina</a> (co-advised by Michael Kearns)</li>
+  <li> <a href="https://www.seas.upenn.edu/~ramya23/">Ramya Ramalingam</a> (co-advised by Osbert Bastani)</li>
+  <li> <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a> (co-advised by Michael Kearns)</li>
+  <li> <a href="https://psamathe50.github.io/sikatasengupta/">Sikata Sengupta</a> (co-advised by Michael Kearns and Duncan Watts)</li>
+  <li> <a href="https://statistics.wharton.upenn.edu/profile/jiuyaolu/">Jiuyau Lu</a> (co-Advised by Michael Kearns)</li>.
+</ul>
+<h3>Alumni:</h3>
+<ul>
+  <li> <a href="https://emilyryu.github.io/">Emily Ryu</a> (Visiting PhD Student).</li>
+  <li> <a href="https://guptavarun.com/">Varun Gupta</a> (PhD Student). Postdoc at the Vector Institute</li>
+  <li> <a href="https://globusharris.github.io/">Ira Globus-Harris</a> (PhD Student). Postdoc at Cornell (Hosts: Nikhil Garg and danah boyd).</li>
+  <li> <a href="https://jlsorrell.github.io/">Jessica Sorrel</a> (Postdoc). Johns Hopkins Computer Science.</li>
+  <li> <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/foundations-of-machine-learning-systems/people/rabanus-derr/">Rabanus Derr</a>. (Visiting PhD Student). PhD student at Tubingen</li>
+  <li> <a href="https://stephofx.github.io/">Stephan Xie</a> (BSE Student). PhD Student at CMU.</li>
+    <li> <a href="https://sites.google.com/view/hanshao">Han Shao</a> (Visiting PhD Student). University of Maryland Computer Science.</li>
+    <li> <a href="https://www.emilyruthdiana.com/">Emily Diana</a> (PhD Student). Carnegie Mellon Operations Research.</li>
+    <li><a href="https://www.linkedin.com/in/daniel-z-lee/">Daniel Z. Lee</a> (BA/MS student). MIT PhD.</li>
+    <li> <a href="https://sites.google.com/view/saeedsh/home">Saeed Sharifi-Malvajerdi</a> (PhD student). Research Assistant Professor, TTIC</li>
+    <li> <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a> (PhD student). Postdoc at Stanford (Host: Omer Reingold).</li>
+    <li> <a href="https://travisbarrydick.github.io/">Travis Dick</a> (Warren Center Postdoctoral Fellow). Research Scientist, Google AI.</li>
+    <li> <a href="https://www.seas.upenn.edu/~jziani/">Juba Ziani</a> (Warren Center Postdoctoral Fellow). Georgia Tech ISYE</li>
+    <li> <a href="https://zachschutzman.com/">Zachary Schutzman</a> (PhD student). Postdoc at MIT IDSS</li>
+    <li> <a href="https://www.majos.net/">Matthew Joseph</a> (PhD student). Research Scientist, Google AI. (Morris and Dorothy Rubinoff Award for Best Thesis)</li>
+    <li> <a href="https://sethneel.com/">Seth Neel</a> (PhD student co-advised by Michael Kearns). Harvard Business School. </li>
+    <li> <a href="https://www.math.upenn.edu/~jinshuo/">Jinshuo Dong</a> (PhD student). Tsinghua Mathematics Department.</li>
+    <li> <a href="https://sites.google.com/seas.upenn.edu/jiemingmao/">Jieming Mao</a> (Warren Center Postdoctoral Fellow). Research Scientist, Google AI. </li>
+    <li> <a href="https://wibrown.github.io/">William Brown</a> (BS/MS student). Columbia PhD.</li>
+    <li> <a href="http://www.bowaggoner.com/index.html">Bo Waggoner</a> (Warren Center Postdoctoral Fellow). University of Colorado Boulder CS</li>
+    <li> <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a> (Warren Center Postdoctoral Fellow). University of Washington CS</li>
+    <li> <a href="https://justinh.su/">Justin Hsu</a> (PhD student co-advised with Benjamin Pierce). Cornell CS (John C. Reynolds Doctoral Dissertation Award)</li> 
+    <li> <a href="https://zstevenwu.com/">Steven Wu</a> (PhD student co-advised with Michael Kearns). Carnegie Mellon University SCS (Morris and Dorothy Rubinoff Award for Best Thesis)</li>
+    <li> <a href="http://hans.math.upenn.edu/~ryrogers/">Ryan Rogers</a> (PhD student co-advised with Michael Kearns). Apple.</li>
+    <li> <a href="http://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a> (PhD student co-advised with Sampath Kannan). University of Hong Kong. (Morris and Dorothy Rubinoff Award for Best Thesis)</li>
+    <li> <a href="https://cse.umn.edu/isye/krishnamurthy-iyer">Kris Iyer</a> (Postdoc, jointly hosted with Michael Kearns and Mallesh Pai). University of Minnesota ISE.</li>
+    <li>Yang Jiao (BS/MS student). CMU PhD</li>
+    <li> <a href="http://pwp.gatech.edu/rachel-cummings/">Rachel Cummings</a> (Visiting PhD student) Columbia IEOR </li>
+</ul>
+</section>
+
+<section id="books">
+<h2>Books and Notes</h2>
+<ol>
+  <li><a href="https://www.cis.upenn.edu/~aaroth/GamesInLearning.pdf">Learning in Games and Games in Learning</a>. (DRAFT -- WORK IN PROGRESS).</li>
+  <li><a href="https://www.cis.upenn.edu/~aaroth/uncertain.html">Uncertain: Modern Topics in Uncertainty Estimation</a>. (DRAFT -- WORK IN PROGRESS).</li>
+  <li><a href="https://www.amazon.com/Ethical-Algorithm-Science-Socially-Design/dp/0190948205">The Ethical Algorithm</a>. Joint with <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>. Oxford University Press. November 2019. </li>
+  <li><a href="privacybook.html">The Algorithmic Foundations of Differential Privacy</a>. Joint with <a href="https://dwork.seas.harvard.edu/">Cynthia Dwork</a>. Foundations and Trends in Theoretical Computer Science, NOW Publishers. 2014.</li>
+</ol>
+</section>
+
+<section id="publications">
+<h2>Recent and Selected Publications</h2>
+<p>(See <a href="publications.html">here</a> for all publications, or my <a href="https://scholar.google.com/citations?user=kLUQrrYAAAAJ&hl=en">Google Scholar profile</a>)</p>
+<p><em>Click for abstract/informal discussion of results</em></p>
+<ol>
+<li><a href="https://arxiv.org/abs/2602.23360">Model Agreement via Anchoring</a>. Joint work with <a href="https://www.seas.upenn.edu/~eeaton/">Eric Eaton</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, <a href="https://marcelhussing.github.io/">Marcel Hussing</a>, <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, <a href="https://psamathe50.github.io/sikatasengupta/">Sikata Sengupta</a>, and <a href="https://jlsorrell.github.io/">Jessica Sorrell</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2602.20465">Prior-Agnostic Incentive-Compatible Exploration</a>. Joint work with <a href="https://www.seas.upenn.edu/~ramya23/">Ramya Ramalingam</a> and <a href="https://obastani.github.io/">Osbert Bastani</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2602.13451">Personalization Aids Pluralistic Alignment Under Competition</a>.  Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a> and <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2601.05245">Optimal Lower Bounds for Online Multicalibration</a>. Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://statistics.wharton.upenn.edu/profile/jiuyaolu/">Jiuyao Lu</a>, and  <a href="http://noarov.com/">Georgy Noarov</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2509.15090">Emergent Alignment via Competition</a>. Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, <a href="https://emilyryu.github.io/">Emily Ryu</a>, and <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2509.11357">Online Omniprediction with Long-Term Constraints</a>. Joint work with <a href="https://yahavbe.github.io/">Yahav Bechavod</a> and <a href="https://statistics.wharton.upenn.edu/profile/jiuyaolu/">Jiuyao Lu</a>. Manuscript.</li>
+
+<li><a href="ambiguous.html">The Value of Ambiguous Commitments in Multi-Follower Games</a>. Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a> and <a href="https://fm.ls/rabanus-derr">Rabanus Derr</a>. Manuscript.</li>
+
+<li><a href="https://arxiv.org/abs/2510.23471">Robust Decision Making with Partially Calibrated Forecasts</a>. Joint work with <a href="https://scholar.google.com/citations?user=R1oEJ0YAAAAJ&hl=en">Shayan Kiyani</a>, <a href="https://www.georgejpappas.org/">George Pappas</a>, and <a href="https://www.seas.upenn.edu/~hassani/">Hamed Hassani</a>. In the Proceedings of ICLR 2026.</li>
+
+<li><a href="netlearn.html">Networked Information Aggregation via Machine Learning</a>. Joint work with <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a> and <a href="https://emilyryu.github.io/">Emily Ryu</a>. In the Proceedings of SODA 2026.</li>
+
+<li><a href="collaboration.html">Collaborative Prediction: Tractable Information Aggregation via Agreement</a>. Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://globusharris.github.io/">Ira Globus-Harris</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, <a href="https://guptavarun.com/">Varun Gupta</a>, and <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. In the Proceedings of SODA 2026.</li>
+
+<li><a href="https://arxiv.org/abs/2502.12564">Sample Efficient Omniprediction and Downstream Swap Regret for Non-Linear Losses</a>. Joint work with <a href="https://statistics.wharton.upenn.edu/profile/jiuyaolu/">Jiuyao Lu</a> and <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. In the Proceedings of COLT 2025.</li>
+
+<li><a href="https://arxiv.org/abs/2502.17427">Stronger Neyman Regret Guarantees for Adaptive Experimental Design</a>. Joint work with <a href="http://noarov.com/">Georgy Noarov</a>, <a href="https://www.stat.cmu.edu/~rfogliat/">Riccardo Fogliato</a>, and <a href="https://scholar.google.com/citations?user=1kki_voAAAAJ&hl=en">Martin Bertran</a>. In the Proceedings of ICML 2025.</li>
+
+<li><a href="https://arxiv.org/abs/2502.02561">Decision Theoretic Foundations for Conformal Prediction: Optimal Uncertainty Quantification for Risk-Averse Agents
+</a>. Joint work with <a href="https://scholar.google.com/citations?user=R1oEJ0YAAAAJ&hl=en">Shayan Kiyani</a>, <a href="https://www.georgejpappas.org/">George Pappas</a>, and <a href="https://www.seas.upenn.edu/~hassani/">Hamed Hassani</a>. In the Proceedings of ICML 2025.</li>
+
+<li><a href="prediction4action.html">High-Dimensional Prediction for Sequential Decision Making</a>. Joint work with  <a href="http://noarov.com/">Georgy Noarov</a>, <a href="https://www.seas.upenn.edu/~ramya23/">Ramya Ramalingam</a>, and <a href="https://stephofx.github.io/">Stephan Xie</a>. In the Proceedings of ICML 2025.</li>
+
+<li><a href="referenceclass.pdf">Resolving the Reference Class Problem at Scale</a>. Joint work with <a href="https://www.alexanderwilliamstolbert.com/">Alexander Tolbert</a>. Philosophy of Science, 2025. </li>
+
+<li><a href="agreement.html">Tractable Agreement Protocols</a>. Joint work with <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, and <a href="https://guptavarun.com/">Varun Gupta</a>. In the Proceedings of STOC 2025.</li>
+
+
+<li><a href="collusion.html">Algorithmic Collusion Without Threats</a>. Joint work with <a href="https://eshwarshomepage.wordpress.com/">Eshwar Ram Arunachaleswaran</a>, <a href="https://nataliecollina.com/">Natalie Collina</a>, <a href="https://www.cis.upenn.edu/~kannan/">Sampath Kannan</a>, and <a href="https://www.juba-ziani.com/">Juba Ziani</a>. In the Proceedings of ITCS 2025.</li>
+
+
+<li><a href="d2c.html">An Elementary Predictor Obtaining 2&radic;<span style="text-decoration: overline;">T</span>
+ Distance to Calibration</a>. Joint work with <a href="https://eshwarshomepage.wordpress.com/">Eshwar Ram Arunachaleswaran</a>, <a href="https://nataliecollina.com/">Natalie Collina</a>, and <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. In the Proceedings of SODA 2025.</li>
+
+
+<li><a href="Uswap.html">Forecasting for Swap Regret for All Downstream Agents</a>. Joint work with <a href="https://www.seas.upenn.edu/~mirahshi/">Mirah Shi</a>. In the Proceedings of EC 2024.</li>
+
+<li><a href="oracleomni.html">Oracle Efficient Online Multicalibration and Omniprediction</a>. Joint work with <a href="https://sites.google.com/view/sumegha-garg/home">Sumegha Garg</a>, <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, and <a href="https://omereingold.wordpress.com/">Omer Reingold</a>. In the Proceedings of SODA 2024.</li>
+
+<li><a href="QMIA.html">Scalable Membership Inference Attacks via Quantile Regression</a>. Joint work with <a href="https://scholar.google.com/citations?user=1kki_voAAAAJ&hl=en">Martin Bertran</a>, <a href="https://www.linkedin.com/in/shuai-tang-92b054106/">Shuai Tang</a>, <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>, and <a href="https://zstevenwu.com/">Steven Wu</a>. In the Proceedings of NeurIPS 2023.</li>
+
+<li><a href="elicitation.html">The Scope of Multicalibration: Characterizing Multicalibration via Property Elicitation</a>. Joint work with <a href="http://noarov.com/">Georgy Noarov</a>. In the Proceedings of ICML 2023.</li>
+
+<li><a href="boosting.html">Multicalibration as Boosting for Regression</a>. Joint work with  <a href="https://globusharris.github.io/">Ira Globus-Harris</a>, <a href="https://www.linkedin.com/in/declan-harrison-3812a6200/">Declan Harrison</a>, <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, and <a href="https://jlsorrell.github.io/">Jessica Sorrell</a>. In the Proceedings of ICML 2023. (Also presented at FORC 2023). <b>Selected as an oral presentation</b></li>
+
+
+<li><a href="reconciling.html">Reconciling Individual Probability Forecasts</a>. Joint work with <a href="https://www.alexanderwilliamstolbert.com/">Alexander Tolbert</a> and <a href="https://philosophy.sas.upenn.edu/people/scott-weinstein">Scott Weinstein</a>. In the Proceedings of FAccT 2023. </li>
+
+<li><a href="watchdog.html">Confidence-Ranked Reconstruction of Census Microdata from Published Statistics</a>. Joint work with <a href="https://travisbarrydick.github.io/">Travis Dick</a>, <a href="https://dwork.seas.harvard.edu/">Cynthia Dwork</a>, <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, <a href="https://terranceliu.github.io/">Terrance Liu</a>, <a href="https://www.giuseppevietri.com/">Giuseppe Vietri</a>, and <a href="https://zstevenwu.com/">Steven Wu</a>. Proceedings of the National Academy of Sciences (PNAS), 2023.</li>
+
+
+<li><a href="batchmultivalid.html">Batch Multivalid Conformal Prediction</a>. Joint work with  <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="http://noarov.com/">Georgy Noarov</a>, and <a href="https://www.seas.upenn.edu/~ramya23/">Ramya Ramalingam</a>. In the Proceedings of ICLR 2023.</li>
+
+
+<li><a href="multiconformal.html">Practical Adversarial Multivalid Conformal Prediction</a>. Joint work with <a href="https://obastani.github.io/">Osbert Bastani</a>, <a href="https://guptavarun.com/">Varun Gupta</a>, <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="http://noarov.com/">Georgy Noarov</a>, and <a href="https://www.seas.upenn.edu/~ramya23/">Ramya Ramalingam</a>. In the Proceedings of NeurIPS 2022. <b>Selected as an oral presenation</b></li>
+
+
+<li><a href="biasbounties.html">An Algorithmic Framework for Bias Bounties</a>. Joint work with <a href="https://globusharris.github.io/">Ira Globus-Harris</a> and <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>. In the Proceedings of FAccT 2022.</li>
+
+
+
+<li><a href="multivalid.html">Online Multivalid Learning: Means, Moments, and  Prediction Intervals</a>. Joint work with <a href="https://guptavarun.com/">Varun Gupta</a>, <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="http://noarov.com/">Georgy Noarov</a>, and <a href="https://sites.google.com/view/malleshpai/">Mallesh Pai</a>. In the Proceedings of ITCS 2022. </li>
+
+<li><a href="adaptiveunlearning.html">Adaptive Machine Unlearning</a>. Joint work with <a href="https://guptavarun.com/">Varun Gupta</a>, <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="https://sethstatistics.wordpress.com/">Seth Neel</a>, <a href="https://statistics.wharton.upenn.edu/profile/saeedsh">Saeed Sharifi-Malvajerdi</a>, and <a href="https://chriswaites.com/">Chris Waites</a>. In the Proceedings of NeurIPS 2021.</li>
+
+
+<li><a href="multimoment.html">Moment Multicalibration for Uncertainty Estimation</a>. Joint work with <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="https://economics.sas.upenn.edu/people/changhwa-lee">Changhwa Lee</a>, <a href="https://sites.google.com/view/malleshpai/">Mallesh Pai</a>, and <a href="https://economics.sas.upenn.edu/faculty/rakesh-vohra">Rakesh Vohra</a>. In the Proceedings of COLT 2021.</li>
+
+
+<li><a href="gaussianDP.html">Gaussian Differential Privacy</a>. Joint work with <a href="https://www.math.upenn.edu/~jinshuo/">Jinshuo Dong</a> and <a href="http://stat.wharton.upenn.edu/~suw/">Weijie Su</a>. In the Journal of the Royal Statistical Society, Series B. 2020.</li>
+
+
+<li><a href="newtransfer.html">A New Analysis of Differential Privacy's Generalization Guarantees</a>. Joint work with <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, <a href="http://www.cs.huji.ac.il/~katrina/">Katrina Ligett</a>, <a href="https://sethstatistics.wordpress.com/">Seth Neel</a>, <a href="https://statistics.wharton.upenn.edu/profile/saeedsh">Saeed Sharifi-Malvajerdi</a>, and <a href="https://simons.berkeley.edu/people/moshe-shenfeld">Moshe Shenfeld</a>. In the Proceedings of ITCS 2020.</li>
+
+<li><a href="localseparation.html">Exponential Separations in Local Differential Privacy Through Communication Complexity</a>. Joint work with <a href="http://www.cis.upenn.edu/~majos">Matthew Joseph</a> and <a href="https://sites.google.com/seas.upenn.edu/jiemingmao/">Jieming Mao</a>. In the Proceedings of SODA 2020.<br>
+Invited to ACM Transactions on Algorithms Special Issue.</li>
+
+
+<li><a href="localinteraction.html">The Role of Interactivity in Local Differential Privacy</a>. Joint work with <a href="http://www.cis.upenn.edu/~majos">Matthew Joseph</a>, <a href="https://sites.google.com/seas.upenn.edu/jiemingmao/">Jieming Mao</a>, and  <a href="https://sethstatistics.wordpress.com/">Seth Neel</a>. In the Proceedings of FOCS 2019.</li>
+
+<li><a href="oracleprivacy.html">How to Use Heuristics for Differential Privacy</a>. Joint with <a href="https://sethstatistics.wordpress.com/">Seth Neel</a> and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the Proceedings of FOCS 2019.</li>
+
+
+<li><a href="unknownmetric.html">Online Learning with an Unknown Fairness Metric</a>. Joint with <a href="https://www.math.upenn.edu/people/stephen-gillen">Stephen Gillen</a>, <a href="http://www.cis.upenn.edu/~chrjung/">Christopher Jung</a>, and  <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>. In the proceedings of NeurIPS 2018.</li>
+
+<li><a href="greedybandits.html">A Smoothed Analysis of the Greedy Algorithm for the Linear Contextual Bandit Problem</a>. Joint with <a href="https://www.cis.upenn.edu/~kannan/">Sampath Kannan</a>, <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>, <a href="http://www.bowaggoner.com/index.html">Bo Waggoner</a>, and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of NeurIPS 2018.</li>
+ 
+<li><a href="fairnessgerrymandering.html">Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness</a>. Joint with <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, <a href="https://sethstatistics.wordpress.com/">Seth Neel</a>, and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of ICML 2018.</li>
+
+<li><a href="fairbandits.html">Fairness in Learning: Classic and Contextual Bandits</a>. Joint with <a href="http://www.cis.upenn.edu/~majos">Matthew Joseph</a>, <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>, and <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>. In the proceedings of NIPS 2016.</li>
+
+ <li><a href="robustmediators.html">Robust Mediators in Large Games</a>. Joint with <a href="http://www.cis.upenn.edu/~mkearns/">Michael Kearns</a>, <a href="https://sites.google.com/view/malleshpai/">Mallesh Pai</a>, <a href="http://hans.math.upenn.edu/~ryrogers/">Ryan Rogers</a>, and <a href="http://people.seas.harvard.edu/~jullman/">Jon Ullman</a>. Manuscript. (This paper subsumes both "Mechanism Design in Large Games: Incentives and Privacy" which appeared in ITCS 2014, and "Asymptotically Truthful Equilibrium Selection" which appeared in EC 2014).</li>
+
+<li><a href="postselection.html">Max-Information, Differential Privacy, and Post-Selection Hypothesis Testing</a>. Joint with <a href="http://hans.math.upenn.edu/~ryrogers/">Ryan Rogers</a>, <a href="http://www.cse.psu.edu/~ads22/">Adam Smith</a>, and <a href="http://www.cse.psu.edu/~odt100/">Om Thakkar</a>. In the proceedings of FOCS 2016. </li>
+
+
+<li><a href="pricesmarkets.html">Do Prices Coordinate Markets?</a>. Joint work with <a href="http://www.cis.upenn.edu/~justhsu/">Justin Hsu</a>, <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>, <a href="http://hans.math.upenn.edu/~ryrogers/">Ryan Rogers</a>, and <a href="https://economics.sas.upenn.edu/faculty/rakesh-vohra">Rakesh Vohra</a>. In the proceedings of STOC 2016.</li>
+
+<li><a href="watchlearn.html">Watch and Learn: Optimizing from Revealed Preferences Feedback</a>. Joint with <a href="http://www.ccs.neu.edu/home/jullman/">Jon Ullman</a> and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of STOC 2016.</li>
+
+
+<li><a href="jointlyconvex.html">Jointly Private Convex Programming</a>. Joint work with <a href="http://www.cis.upenn.edu/~justhsu/">Justin Hsu</a>, <a href="http://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>, and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of SODA 2016.</li>
+
+<li><a href="reusable.html">The Reusable Holdout: Preserving Validity in Adaptive Data Analysis</a>. Joint work with <a href="http://research.microsoft.com/en-us/people/dwork/">Cynthia Dwork</a>, <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-vitaly">Vitaly Feldman</a>, <a href="http://www.moritzhardt.com/">Moritz Hardt</a>, <a href="http://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, and <a href="http://omereingold.wordpress.com/">Omer Reingold</a>. In <i>Science</i>, August 7 2015.</li> 
+ 
+<li><a href="statisticalvalidity.html">Preserving Statistical Validity in Adaptive Data Analysis</a>. Joint work with <a href="http://research.microsoft.com/en-us/people/dwork/">Cynthia Dwork</a>, <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-vitaly">Vitaly Feldman</a>, <a href="http://www.moritzhardt.com/">Moritz Hardt</a>, <a href="http://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, and <a href="http://omereingold.wordpress.com/">Omer Reingold</a>. In the proceedings of STOC 2015.</a>
+
+ <li><a href="stablematching.html">Approximately Stable, School Optimal, and Student-Truthful Many-to-One Matchings (via Differential Privacy)</a>. Joint with <a href="http://www.cis.upenn.edu/~kannan/">Sampath Kannan</a>, <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>, and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of SODA 2015.</li>
+
+  <li><a href="privateallocation.html">Private Matchings and Allocations</a>. Joint work with <a href="http://www.cis.upenn.edu/~justhsu/">Justin Hsu</a>, <a href="http://i.cs.hku.hk/~zhiyi/">Zhiyi Huang</a>, <a href="http://theory.stanford.edu/%7Etim/">Tim Roughgarden</a>, and <a href="https://www-users.cs.umn.edu/~zsw/">Steven Wu</a>. In the proceedings of STOC 2014.</li>
+
+ <li><a href="analystprivacy.html">Differential Privacy for the Analyst via Private Equilibrium Computation</a>. Joint with <a href="http://www.cis.upenn.edu/~justhsu/">Justin Hsu</a> and <a href="http://people.seas.harvard.edu/~jullman/">Jon Ullman</a>. In the proceedings of STOC 2013.</li>
+
+
+  <li><a href="SQconjunctions.html">Privately Releasing Conjunctions and the Statistical Query Barrier</a>. Joint with <a href="http://www.cs.cmu.edu/%7Eanupamg/">Anupam
+Gupta</a>, <a href="http://www.cs.princeton.edu/%7Emhardt/">Moritz Hardt</a>, and <a href="http://people.seas.harvard.edu/%7Ejullman/">Jonathan Ullman</a>. In the proceedings of STOC 2011.<br> Full version appears in SIAM Journal on Computing (SICOMP) 2013.</li>
+
+  <li><a href="privacyauction.html">Selling Privacy at Auction</a>. Joint work with <a href="http://www.arpitaghosh.com/">Arpita Ghosh</a>. In the proceedings of EC 2011. <br>Invited to a special issue of Games and Economic Behavior (GEB) 2013. 
+  </li>
+ 
+<li><a href="onlineprivacy.html">Interactive Privacy via the Median Mechanism</a>.
+Joint with <a href="http://theory.stanford.edu/%7Etim/">Tim
+Roughgarden</a>. In the proceedings of STOC 2010.</li>
+
+
+  <li><a href="learningprivacy.html">A Learning
+Theory Approach to Non-Interactive Database
+Privacy</a>. Joint with <a href="http://www.cs.cmu.edu/%7Eavrim/">Avrim
+Blum</a>
+and <a href="http://users.cms.caltech.edu/~katrina/">Katrina
+Ligett</a>. In the proceedings
+of STOC 2008: The 40th ACM Symposium on the Theory of Computing.<br> Full version appears in Journal of the ACM (JACM) 2013.</li>
+
+  <li><a href="regretminimization.html">Regret
+Minimization and the Price of Total Anarchy</a>. Joint
+with <a href="http://www.cs.cmu.edu/%7Eavrim/">Avrim Blum</a>, <a href="http://www.mit.edu/%7Ehajiagha/">MohammadTaghi
+Hajiaghayi</a>, and<a href="http://users.cms.caltech.edu/~katrina/">
+Katrina Ligett</a>. In the
+proceedings of STOC 2008: The 40th ACM Symposium on the Theory of
+Computing.</li>
+</ol>
+</section>
+
+<section class="book-section">
+<img src="cover.jpg" alt="The Ethical Algorithm book cover">
+<div class="book-content">
+<p><a href="https://www.cis.upenn.edu/~mkearns">Michael Kearns</a> and I have written a <a href="https://www.amazon.com/Ethical-Algorithm-Science-Socially-Design/dp/0190948205">general-audience book</a> about the science of designing algorithms that embed social values like privacy and fairness. You can read a <a href="https://www.nature.com/articles/s41567-019-0768-1.epdf?shared_access_token=PLLHPNTn5pByQUPaJ-n_KdRgN0jAjWel9jnR3ZoTv0OmI9hygrW1-UKQon3ZVGlMNsZowBl_5psAIvdU-Dic4gtf_j0e7S_897lCTN3vdbqv3cbSQwUtbHG78r5ycJNB2VKFndoPOT_8w0OYjS-pjQ%3D%3D">review in Nature</a> and an <a href="https://penntoday.upenn.edu/news/improve-algorithms-embed-human-principles-code">excerpt from the introduction</a> in Penn Today. We've given a number of recorded talks about the book, including one on <a href="https://www.c-span.org/video/?467020-1/the-ethical-algorithm">CSPAN's BookTV</a>. We wrote a related <a href="https://www.brookings.edu/research/ethical-algorithm-design-should-guide-technology-regulation/">policy brief</a> for the Brookings Institution.</p>
+<em>Over the course of a generation, algorithms have gone from mathematical abstractions to powerful mediators of daily life. Algorithms have made our lives more efficient, more entertaining, and, sometimes, better informed. At the same time, complex algorithms are increasingly violating the basic rights of individual citizens. Allegedly anonymized datasets routinely leak our most sensitive personal information; statistical models for everything from mortgages to college admissions reflect racial and gender bias. Meanwhile, users manipulate algorithms to "game" search engines, spam filters, online reviewing services, and navigation apps.</em>
+<em>Understanding and improving the science behind the algorithms that run our lives is rapidly becoming one of the most pressing issues of this century. Traditional fixes, such as laws, regulations and watchdog groups, have proven woefully inadequate. Reporting from the cutting edge of scientific research, The Ethical Algorithm offers a new approach: a set of principled solutions based on the emerging and exciting science of socially aware algorithm design. Michael Kearns and Aaron Roth explain how we can better embed human principles into machine code - without halting the advance of data-driven scientific exploration. Weaving together innovative research with stories of citizens, scientists, and activists on the front lines, The Ethical Algorithm offers a compelling vision for a future, one in which we can better protect humans from the unintended impacts of algorithms while continuing to inspire wondrous advances in technology.</em>
+</div>
+</section>
+
+
+
+<section id="activities">
+<h2>Professional Activities</h2>
+<h3>Workshops, Tutorials, Interviews, and Panels:</h3>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=BIPc4gtrGO4&t=12s">Panel Discussion: Strategies for Securing Early Career Awards</a>. January 2025.</li>
+  <li><a href="https://neurips.cc/virtual/2023/competition/66581">NeurIPS 2023 Machine Unlearning Challenge Panel</a>. December 15, 2023.</li>
+  <li><a href="https://www.sigecom.org/meetings/winter22/">The Second Annual SIGecom Winter Meeting (Algorithmic Fairness and Economics)</a>. Virtual. February 23, 2022. (Co-organizer: Mallesh Pai)</li>
+  <li><a href="https://www.ima.umn.edu/2018-2019/W6.18-21.19">IMA Workshop: Recent Themes in Resource Tradeoffs: Privacy, Fairness, and Robustness,</a> Minneapolis, MN. June 18-21, 2019. (Co-organizers: Rina Foygel Barger, Gilad Lerman, and Nati Srebro)</li>
+  <li><a href="https://remars.amazon.com/">Amazon re:MARS Panel: "AI For Everyone: Promoting Fairness in Ethical AI."</a>, Las Vegas, NV. June 7, 2019.</li>
+  <li><a href="https://simons.berkeley.edu/privacy2019-3">Simons Institute Workshop: "Beyond Differential Privacy"</a>, Berkeley, CA. May 6-10, 2019. (Co-organizers: Katrina Ligett, Kobbi Nissim, and Omer Reingold)</li>
+  <li><a href="https://aaas.confex.com/aaas/2019/meetingapp.cgi/Session/21805">An Abridged Introduction to Differential Privacy</a> February 17, 2019. The Annual Meeting of the American Association for the Advancement of Science (AAAS) (Tutorial)</li>
+  <li><a href="https://symposia.research.upenn.edu/">Philadelphia Symposium on Research Credibility, Panel on Data Interpretation and Credibility.</a></li>
+  <li><a href="https://simons.berkeley.edu/workshops/schedule/10312">Simons Institute Adaptive Data Analysis Workshop</a>, Berkeley, CA. July 24-25, 2018. (Co-organizers Cynthia Dwork, Adam Smith, Weijie Su, James Zou). Tutorial Videos: <a href = "https://www.youtube.com/watch?v=pWUgFHkfOO0">Part 1 (Aaron)</a>, <a href="https://www.youtube.com/watch?v=3EpNKI2l-20">Part 2 (Adam)</a></li>
+  <li><a href="http://www.ifi.uzh.ch/en/studies/phd/summer-schools/summerschool2018.html">6 hour mini-course on (un)fairness in machine learning</a>, as part of the University of Zurich Machine Learning Summer School. June 29, 2018. <a href="http://cis.upenn.edu/~aaroth/FairnessZurich.pptx">Slides here.</a></li>
+  <li><a href="https://theory.eecs.northwestern.edu/events/algorithmic-fairness/">Northwestern Quarterly Theory Workshop: Algorithmic Fairness</a>. June 8, 2018. (Co-organizer: Jason Hartline)</li>
+  <li><a href="https://rosenbach.org/events/flash-focus/">In Conversation with the Rosenbach: Flash Focus on Privacy and the Internet</a>. May 17, 2018.</li>
+  <li><a href="https://twimlai.com/twiml-talk-132-differential-privacy-theory-practice-with-aaron-roth/">Differential Privacy Interview with ``This Week in Machine Learning'' (TWIML)</a>. (Click for audio).  April 30, 2018. </li>
+  <li><a href="http://www.upenn.edu/teachin/">Penn Teach In Panel: "The Future of Technology: Artificial Intelligence and Society"</a>. Video <a href="https://youtu.be/z57RtypE68w?t=1h33m39s">here</a>. Philadelphia, March 20 2018. </li>
+  <li><a href="https://cra.org/ccc/events/fair-representations-fair-interactive-learning/">CCC Workshop on Fair Representations and Fair Interactive Learning</a>. Philadelphia, March 18-19 2018. (Co-organizer Alexandra Chouldechova)</li>
+  <li><a href="https://sites.google.com/view/fairnessconfererencepenn">Fairness for Digital infrastructure</a>. University of Pennsylvania, January 19-20, 2017.</li>
+  <li><a href="https://www.law.upenn.edu/newsevents/calendar.php#event_id/53309/view/event">Tutorial on Machine Learning and Unfairness</a> (Part of the <a href="https://www.law.upenn.edu/institutes/ppr/optimizing-government-project/">Optimizing Government</a> series). September 22, 2016. (<a href="https://www.law.upenn.edu/institutes/ppr/optimizing-government-project/media.php">video</a>.)</li>
+  <li><a href="http://wadapt.org/">NIPS 2016 Workshop on Adaptive Data Analysis</a>, held in conjunction with NIPS 2016. (Co-organizers: Adam Smith, Vitaly Feldman, Aaditya Ramdas)</li>
+  <li><a href="http://icml.cc/2016/?page_id=97">Invited ICML 2016 Tutorial: Rigorous Data Dredging: Theory and Tools for Adaptive Data Analysis</a>. June 19, 2016. (<a href="Papers/icmltutorial.pptx">Slides (Powerpoint)</a> and <a href="http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/">video</a>.)</li>
+  <li><a href="http://csnexus.info/secrecy.html">Nexus of Information and Computation: Security and Privacy</a> March 21-April 1 2016. (Co-organizers: Prakash Narayan, Anand Sarwate,Vinod Vaikuntanathan, Salil Vadhan). </li> 
+  <li><a href="http://wadapt.org/">NIPS 2015 Workshop on Adaptive Data Analysis</a>, held in conjunction with NIPS 2015. (Co-organizers: Adam Smith, Vitaly Feldman, Moritz Hardt)</li>
+  <li><a href="https://sites.google.com/site/agtanddatascienceworkshop2015/">The First Workshop on Algorithmic Game Theory and Data Science</a>, held in conjunction with EC, June 15, 2015. (Co-organizers: Shuchi Chawla, Hu Fu, Jason Hartline, Denis Nekipelov, Kane Sweeney)</li>
+  <li><a href="https://aaas.confex.com/aaas/2015/webprogram/Session9556.html">An Introduction to Differential Privacy</a> February 14, 2015. The Annual Meeting of the American Association for the Advancement of Science (AAAS) (Tutorial)</li>
+  <li><a href="http://www.sigecom.org/ec14/schedule_workshops.html">Tutorial on Privacy, Information Economics, and Mechanism Design</a>, held in conjunction with EC, June 9, 2014. (Co-tutors: Cynthia Dwork and Mallesh Pai)</li>
+  <li><a href="http://www.cis.upenn.edu/~aaroth/privacyeconec13.html">Workshop on Privacy and Economics, held in Conjunction with EC</a> June 16, 2013. (Organized together with Katrina Ligett)</li>
+  <li><a href="http://econandsocialsciences.eventbrite.com/">Differential Privacy and Economics and the Social Sciences</a> March 7, 2013. Open to the public! (Tutorial)</li>
+  <li> <a href="http://dimacs.rutgers.edu/Workshops/DifferentialPrivacy/">DIMACS Workshop on Recent Work on Differential Privacy across Computer Science</a> Oct. 24-26, 2012. (Organized together with Adam Smith)</li>
+  <li> <a href="https://sites.google.com/site/nyce1212/">New York Computer Science and Economics Day V</a>: The Economics of Big Data, Information, and Privacy. (Organized together with Dirk Bergemann, Sham Kakade, and Nitish Korula)</li>
+</ul>
+<h3>Program Committee Member For:</h3>
+<ul>
+  <li><a href="https://algorithmiclearningtheory.org/alt2026/">ALT 2026: The 37th International Conference on Algorithmic Learning Theory.</a></li>
+  <li><a href="https://ec25.sigecom.org/">EC 2025: The Twenty-Sixth ACM Conference on Economics and Computation, 2025.</a> (PC Co-Chair)</a></li>
+  <li><a href="https://learningtheory.org/colt2024/">COLT 2024: The 37th Annual Conference on Learning Theory, 2024.</a> (PC Co-Chair)</a></li>
+  <li><a href="https://responsiblecomputing.org/forc-2020-call-for-paper/">Symposium on the Foundations of Responsible Computing (FORC), 2020. (PC Chair)</a></li>
+  <li><a href="acm-cslaw.pdf">ACM Symposium on Computer Science and Law, 2019.</a></li>
+  <li><a href="http://acm-stoc.org/stoc2019/">STOC 2019</a></li>
+  <li>AAAI 2019 (Senior Program Committee)</li>
+  <li><a href="https://nips.cc/Conferences/2018/AreaChairs">NeuriPS 2018</a> (Area Chair), 2021 (Area Chair) </li>
+  <li><a href="https://icml.cc/Conferences/2018/AreaChairs">ICML 2018</a> (Area Chair)</li>
+  <li><a href="http://www.fatml.org/schedule/2017/organizers">FATML 2017</a>, <a href="https://fatconference.org/2018/cfp.html">FAT* 2018</a> (Theory and Security Track Chair), <a href="https://fatconference.org/2019/committees.html">FAT* 2019</a> (Theory and Security Track Chair).</li>
+  <li><a href="https://www2018.thewebconf.org/call-for-papers/research-tracks-cfp/web-economics/">WWW 2018 ``Economics and Markets''</a> (Track Chair)</li>
+  <li><a href="http://www.mlandthelaw.org/">NIPS Symposium on Machine Learning and the Law 2016</a></li>
+  <li><a href="http://www.learningtheory.org/colt2016/the-conference/committee/">COLT 2016</a>, <a href="http://www.learningtheory.org/colt2017/the-conference/organizers/">COLT 2017</a>, COLT 2024 (PC chair)</li>
+  <li><a href="http://theory.csail.mit.edu/ITCS2016/">ITCS 2016</a></li>
+  <li><a href="http://cui.unige.ch/tcs/random-approx/2015/index.php">Random 2015</a></li>
+  <li><a href="http://netecon.eurecom.fr/NetEcon2015/">NetEcon 2015</a> (PC chair)</li>
+  <li><a href="http://tpdp.computing.dundee.ac.uk/">TPDP 2015</a> (Organizing Committee), <a href="http://tpdp16.cse.buffalo.edu/">TPDP 2016</a>, <a href="https://tpdp.journalprivacyconfidentiality.org/2023/">TPDP 2023</a> </li>
+  <li> <a href="http://wine13.seas.harvard.edu/">WINE 2013</a>, <a href="http://wine2014.amss.ac.cn/dct/page/70007">WINE 2014</a></li>
+  <li> <a href="http://www.sigmod.org/2013/org_pods_pc.shtml">PODS 2013</a></li>
+  <li> <a href="http://www.siam.org/meetings/da13/">SODA 2013</a>, <a href="https://www.siam.org/conferences/cm/conference/soda21">SODA 2021</a></li>
+  <li> <a href="http://www.gamesec-conf.org/cfp2012.php">GameSec 2012</a></li>
+  <li> <a href="http://theory.stanford.edu/~tim/focs12/">FOCS 2012</a>, <a href="http://www.boazbarak.org/focs14/">FOCS 2014</a>, FOCS 2026</li>
+  <li> EC 2011, 2012, 2013, 2014, 2015, 2016 (SPC), 2017, 2018, 2019 (SPC), 2021 (SPC), 2022 (Theory Track Chair), 2023, 2025 (PC Chair)</li>
+</ul>
+</section>
+
+<section id="presentations">
+<h2>Presentations</h2>
+<p><em>(Slides Available Upon Request)</em></p>
+<ul>
+
+<li>Agreement and Alignment for Human-AI Collaboration</li>
+<ul>
+    <li>Yale Quantitative Research Methods Speaker Series. October 2025.</li>
+    <li>Johns Hopkins Gerald M. Masson Distinguished Lecture Series. October 2025. <a href="https://www.youtube.com/watch?v=peug7VVL7iU">Video here</a>.</li>
+    <li>Berkeley Statistics Neyman Seminar. October 2025.</li>
+    <li>Simons Workshop on Bridging Prediction and Intervention Problems. January, 2026. <a href="https://www.youtube.com/live/gLoJ4RI1DX4">Video here</a>.</li>
+    <li>ALT 2026 Keynote/Plenary Talk. February 2026</li>
+</ul> 
+
+<li>Networked Information Aggregation via Machine Learning</li>
+<ul>
+    <li>Symposium on Discrete Algorithms (SODA) 2026. January, 2026. <a href="https://youtu.be/fWE-dJ90R6k?si=vtKZDR-tY8_fCFS7">Video here</a>.</li>
+</ul>
+
+<li>Tractable Agreement Protocols</li>
+<ul>
+<li>NSF Workshop on the Science of Safe AI (Invited Keynote). February 2025.</li>
+<li>AAAI workshop on the Economics of Modern ML: Markets, Incentives, and Generative AI. (Invited Keynote) March 2025.</li>
+<li>Apple PPML (Privacy Preserving Machine Learning) Workshop. March 2025.</li>
+<li>Vector Institute Distinguished Lecture Series. April 2025. <a href="https://youtu.be/8KxhKYXeDFw?si=0TtQx4svQ7ObLAul">Video here</a>.</li>
+<li>MIT Stochastics and Statistics Seminar. May 2025.</li>
+<li>Stanford Econometrics Seminar. May 2025.</li>
+</ul>
+
+<li>Conditional Calibration for Task-Specific Uncertainty Quantification</li>
+<ul>
+<li>Penn Optimization Seminar. January 2025.</li>
+<li>Princeton CS Theory Seminar. February 2025.</li>
+</ul>
+
+<li>Algorithmic Collusion Without Threats</li>
+<ul>
+<li>CS+Law Research Workshop. March 2025.</li>
+</ul>
+
+<li>High Dimensional Calibration for Rational Decision Making</li>
+<ul>
+<li> Simons Laufer Mathematical Sciences Institute Workshop on the Mathematics and Computer Science of Market and Mechanism Design. September, 2023. <a href="https://vimeo.com/865676618">Video here</a>.</li>
+<li> Penn CIS Theory Seminar. September, 2023.</li>
+<li> Simons Institute Workshop on Online and Matching Based Market Design. October, 2023. <a href="https://www.youtube.com/watch?v=1z_tvBwfPyI">Video here</a>.</li>
+<li> The 2023 Hans Sigrist Symposium ("Data Science: The Power of the Human Mind for the Sake of Humankind"). December, 2023.</li>
+<li> NSF/Amazon Fairness in AI PI Meeting (Invited Keynote). January, 2024.</li>
+<li> Simons Foundation Collaboration on the Theory of Algorithmic Fairness Annual Meeting. February, 2024. <a href="https://youtu.be/0IEonrWYSFg">Video here</a>.</li>
+<li> Penn ASSET Seminar. April, 2024.</li>
+<li> Penn State Economics Theory Seminar. April, 2024.</li>
+<li> EC 2024 Workshop on Information Elicitation. July, 2024.</li>
+<li> Open Mined Privacy Tech Talk. January, 2025</li>
+<li>PPAI-25: The 6th AAAI Workshop on Privacy-Preserving Artificial Intelligence. (Invited Keynote) March 2025.</li>
+</ul>
+
+<li>Iteratively Updating Models for Accuracy (An Algorithmic Framework for Bias Bounties)</li>
+<ul>
+<li> Updatable Machine Learning (ICML Workshop Invited Talk). July 2022. <a href="https://slideslive.com/38988556">Video here</a>. </li>
+</ul>
+
+<li>Individual Probabilities, The Reference Class Problem, Model Multiplicity, and Reconciling Beliefs</li>
+<ul>
+<li> Penn CIS Theory Seminar. September 2022.</li>
+<li> Amazon AWS Responsible AI Seminar. September 2022.</li>
+<li> Who Counts? Sex and Gender Bias in Data (IPAM workshop). July 2022. <a href="https://www.youtube.com/watch?v=cEoYauwgS-4">Video here</a>. </li>
+</ul>
+
+<li>Robust Multivalid Conformal Prediction</li>
+<ul>
+<li> Keynote at the DeepMath Conference. November 2023.</li>
+<li> Distinguished Lecture at the Max-Planck Institute for Software Systems (MPI-SWS). September 2023.</li>
+<li> Third Penn Conference on Big Data in Biomedical and Population Health Sciences. September 2023.</li>
+<li> Cowles 2023 Econometrics Workshop. June 2023.</li>
+<li> Yale CS/Econ Colloquium. April 2023.</li>
+<li> Princeton CS Theory Seminar. March 2023.</li>
+<li> Berkeley CLIMB Evergreen Seminar. February 2023. <a href="https://www.youtube.com/live/gTTxrsvtq5U?feature=share">Video here</a>.</li>
+<li> Goldman Sachs SQAA Research Colloquium. January 2023. </li>
+<li> Northeastern University Special Seminar. December 2022.</li>
+<li> University of Virginia Computer Science Department Colloquium. November 2022. </li>
+<li> Emory University AI.Humanity Seminar. November 2022. </li>
+<li> Open Data Science Conference (ODSC) West. November 2022. </li>
+<li> UCSD/TILOS (The Institute for Learning-Enabled Optimization at Scale) Seminar. October 2022.</li>
+<li> National Academies ``AI and Justified Confidence'' Workshop. September 2022.</li>
+<li> NSF TRIPODS PI meeting. September 2022.</li>
+<li> Penn ASSET seminar. <a href="https://upenn.zoom.us/rec/play/Lr9k9oWFtJdari-Lepo3We-Uw8HYfeA0LUeRVf66VsApOj-OJod6VWyezOkdEqtB0pg3TF3peExnrMA.bUtRt0xx1OBk9Gux">Video here</a>. September 2022.</li>
+<li> Responsible Decision Making in Dynamic Environments (ICML Workshop Invited Talk). <a href="https://slideslive.com/38988543/robust-and-equitable-uncertainty-estimation">Video here</a>. July 2022.</li>
+<li> Simons Foundation Presidential Lecture. May 2022. <a href="https://www.simonsfoundation.org/event/robust-and-equitable-uncertainty-estimation/">Video here</a>.</li>
+<li> META AI Lunch and Learn. April 2022.</li>
+<li> STATML Oxford Imperial ML Workshop Keynote. April 2022.</li>
+</ul>
+
+<li>Differential Privacy and Machine Unlearning</li>
+<ul>
+<li>SystemX Trustworthy AI Day. July 2022.</li>
+<li>Boston Area Privacy Seminar. December 2021. <a href="https://www.youtube.com/watch?v=34Xrv6FZEOQ">Video here</a>.</li>
+<li>Privacy in Machine Learning (PriML) Workshop at Neurips 2021, Invited Talk. December 2021. </li>
+</ul>
+
+<li>A User Friendly Power Tool for Deriving Online Learning Algorithms</li>
+<ul>
+<li>Harvard Economics Opportunity Insights Seminar. March 2022.</li>
+<li>Simons Workshop on Adversarial Approaches to Machine Learning. February 2022. <a href="https://www.youtube.com/watch?v=Kgur4xkHdNo">Video here</a>.</li>
+<li>ESA 2021 Keynote Talk. September 2021.</li>
+</ul>
+
+<li>A New Analysis of Differential Privacy's Generalization Guarantees</li>
+<ul>
+<li>STOC 2021 Mini Plenary Talk. June 2021.</li>
+</ul>
+
+<li>The Promise of Differentially Private Synthetic Data</li>
+<ul>
+<li> IBM Joint Security and Privacy Seminar. September 2021.</li>
+<li> Google's 3rd annual Ads Future of Technology Conference (FACT) Expert Talk. June 2021. </li>
+</ul>
+
+<li>Differentially Private Synthetic Data via Relaxed Adaptive Projection</li>
+<ul>
+<li> Google Differential Privacy Workshop. February 2021.</li>
+</ul>
+
+<li>Online Multivalid Learning</li>
+<ul>
+<li>Fairness and Transparency in Human Robot Interaction (Workshop as part of HRI 2022). March 2022. </li>
+<li>Cornell CS Department Colloquium. November 2021.</li>
+<li>Texas A&M University Institute of Data Science Seminar. October 2021.</li>
+<li>Rutgers CS Theory Seminar. October 2021.</li>
+<li>CCC Artificial Intelligence/Operations Research Workshop. September 2021.</li>
+<li>ICML Workshop on Socially Responsible Machine Learning. July 2021.</li>
+<li>Israel Algorithmic Game Theory Seminar. June 2021. <a href="https://www.youtube.com/watch?v=b5UpJ1HybeI">Video here</a>.</li>
+<li>Ben Taskar Memorial Distinguished Lecture, University of Washington. May 2021.</li>
+<li>"Fairness in Statistics and Machine Learning for Equitable Decision-making" Session at ENAR 2021 Spring Meeting. March 2021.</li>
+<li>Foundations of Algorithmic Fairness Workshop. March 2021.</li>
+<li> Games, Decisions, and Networks Seminar. February 2021. <a href="https://www.youtube.com/watch?v=8Hy09Ot2tDw">Video here</a>.</li>
+<li> Simons Collaboration TOC4Fairness Seminar. January 2021.</li>
+</ul>
+
+<li>Moment Multicalibration and Uncertainty Estimation</li>
+<ul>
+<li>Amazon Scholars Tech Talk. November 2020.</li>
+<li>Berkeley Statistics Department Neyman Seminar. October 2020.</li>
+<li>Duke Computer Science Theory Seminar. October 2020.</li>
+<li>Columbia Economics Theory Seminar. October 2020.</li>
+<li>Google Brain Research Seminar. October 2020. <a href="https://www.youtube.com/watch?v=PaRcxbpUdJM">Video here</a>.</li>
+<li>Wharton Statistics Department Seminar. September 2020. <a href="https://youtu.be/PfQ9vfAKkFM">Video here</a>.</li>
+</ul>
+
+<li>The Frontiers of Fairness in Machine Learning</li>
+<ul>
+  <li> Amazon AWS Machine Learning Tech Talk. May 2020.</li>
+</ul>
+
+<li>Eliciting and Enforcing Subjective Individual Fairness.</li>
+<ul>
+  <li>NeurIPS Workshop on "Human Centered Machine Learning" Keynote. December 2019. </li>
+  <li>Simons Institute Workshop: "Recent Developments in Research on Fairness". July 2019. <a href="https://www.youtube.com/watch?v=25qFdZ9HZ9Y">Video here</a>.</li>
+</ul>
+
+<li>Towards Actionable Notions of Individual Fairness.</li>
+<ul>
+  <li> IMA Workshop: "Recent Themes in Resource Tradeoffs: Privacy, Fairness and Robustness". June 2019.</li>
+  <li> 10th Annual Workshop in Decisions, Games, and Logic. Keynote Talk. June 2019.</li>
+</ul>
+
+<li>Individual Statistical Fairness.</li>
+<ul>
+  <li>NeurIPS Workshop on "Machine Learning with Guarantees". December 2019. <a href="https://slideslive.com/38922036/machine-learning-with-guarantees-4">Video here</a>.</li>
+  <li>NeurIPS Oral Presentation. December 2019. <a href="https://slideslive.com/38921799/track-1-session-6">Video here</a>.</li>
+  <li>Johns Hopkins Behavioral Science Forum on Artificial Intelligence. September 2019.</li>
+  <li>Keynote Talk at TTIC Workshop ``Recent Trends in Clustering and Classification''. September 2019.</li>
+  <li>Simons Institute Workshop: "Beyond Differential Privacy". May 2019. <a href="https://youtu.be/jvcLkBSPid0">Video here</a>.</li>
+  <li>Columbia CS Theory Seminar. May 2019.</li>
+</ul>
+
+<li>The Role of Interactivity in Local Differential Privacy.</li>
+<ul>
+  <li>Simons Institute Workshop on Privacy and the Science of Data Analysis. April 2019. <a href="https://www.youtube.com/watch?v=PzJBw-7LErw">Video here</a>.</li>
+</ul>
+
+<li>The Ethical Algorithm.</li>
+<ul>
+  <li>Emory University AI.Humanity Public Lecture. November 2022.</li>
+  <li>Netflix Machine Learning Seminar. October 2021.</li>
+  <li>Oak Ridge National Laboratory Mathematics in Computation Seminar. March 2021.</li>
+  <li>Indian Institute of Management, Ahmedabad ``Privacy Paradox'' Seminar. February 2021.</li>
+  <li>Johns Hopkins Institute for Assured Autonomy Speaker Series. December 2020. </li>
+  <li>AARP Staff Seminar. November 2020.</li>
+  <li>DE Shaw Tech Talk Series. November 2020.</li>
+  <li>Fairness and Bias in AI Keynote, Amazon Machine Learning Conference. October 2020. </li>
+  <li>Mellon Digital Humanities Seminar, at the Price Lab for Digital Humanities. October 2020. </li>
+  <li>SBE Federal Interagency Conference on Big Data and Social Science. September, 2020.</li>
+  <li>Yale Computation and Society Colloquium. September, 2020.</li>
+  <li>Penn Society for Healthcare Innovation Edge of Innovation Series. August, 2020. </li>
+  <li>Facebook NYC Special Seminar. February, 2020.</li>
+  <li>In-Q-Tel Special Seminar. February, 2020.</li>
+  <li>The Center for Technology, Innovation and Competition and the Penn Program on Regulation, Penn Law School. January, 2020. </li>
+  <li>The University of Edinburgh, AI And Algorithms Lecture Series. January 2020.</li>
+  <li>The Brookings Institution. January 2020. <a href="https://www.brookings.edu/events/the-ethical-algorithm/">Video here</a>. (See also related policy brief <a href="https://www.brookings.edu/research/ethical-algorithm-design-should-guide-technology-regulation/">here</a>.)</li>
+  <li>International Symposium on Artificial Intelligence and Mathematics (ISAIM) Keynote Address. January 2020. </li>
+  <li>Keystone Strategy, NYC and CSPAN BookTV. November 2019. <a href="https://www.c-span.org/video/?467020-1/the-ethical-algorithm">Video here</a>.</li>
+  <li>Google, NY Author Series. November, 2019. <a href="https://www.youtube.com/watch?v=tmC9JdKc3sA">Video here</a>.</li>
+  <li>Philadelphia Association for Critical Thinking (PhACT). November, 2019.</li>
+  <li>LinkedIn Author Series. November, 2019.</li>
+  <li>Facebook Author Series. November, 2019.</li>
+  <li>AI and Faith Special Seminar. November, 2019.</li>
+  <li>Town Hall, Seattle (with Moderator Eric Horvitz). November, 2019. <a href="https://townhallseattle.org/event/michaels-kearns-and-aaron-roth/">Audio here</a>.</li>
+  <li>Zillow Authors Series. November 2019.</li>
+  <li>Machine Learning and Public Policy Workshop Keynote. November 2019.</li>
+  <li>National Association of Business Economics TEC2019 Conference Keynote. November 2019.</li>
+  <li>Harvard Book Store Author Series. November, 2019.</li>
+  <li>Columbia Data Science Institute "Trustworthy AI Symposium" Keynote. October 2019.</li>
+  <li>Philadelphia Federal Reserve. October 2019.</li>
+  <li>Rotman School of Business, "Machine Learning and the Market for Intelligence". October 2019. <a href="https://www.youtube.com/watch?v=JyGgjxIVsHQ">Video here</a>.</li>
+  <li>IBM TJ Watson. October 2019.</li>
+  <li>Carnegie Mellon University (Special Seminar). October 2019.</li>
+  <li>Harvard Center for Mathematical Sciences (CMSA) Big Data Conference. August 2019. <a href="https://www.youtube.com/watch?v=Al_ofxb2ejE">Video here</a>.</li>
+  <li>AI Nextcon NYC 2019. Plenary Talk. July 2019.</li>
+  <li>MIT Statistics and Data Science Conference. April 2019. <a href="https://www.youtube.com/watch?v=BFJJL49WnCc">Video here</a>.</li>
+  <li>The New York Academy of Sciences 13th Annual Machine Learning Day. Keynote Address. March 2019. <a href="https://livestream.com/newyorkacademyofsciences/ml2019-1">Video here</a>.</li>
+</ul>
+
+<li>Ethical Algorithms.</li>
+<ul>
+  <li> Wharton Research Advisory Group. November 2018.</li>
+  <li> Warren Center Symposium: The "FATE" Of Technology. October 2018. </li>
+  <li> Distinguished Guest Lecture at the 8th Annual FDIC Consumer Research Symposium. October 2018. </li>
+  <li> Wharton Conference on Digitization of Human Resources. September 2018.</li>
+  <li>``AI With the Best'' Developer Conference. September 2018. <a href="https://www.youtube.com/watch?v=byLJT-us8Ho">Video here.</a></li>
+</ul>
+
+<li>How to Use Heuristics for Differential Privacy.</li>
+<ul>
+  <li>PrivateNLP 2020 (EMNLP 2020 Workshop) Keynote. November 2020.</li>
+  <li>Princeton Computer Science Theory Seminar. March 2019. <a href="https://youtu.be/eJ0F6vVqUDQ">Video here.</a></li>
+  <li>Wharton Statistics Student Seminar. December 2018.</li>
+  <li>Keller Colloquium in Computing and Mathematical Sciences, Caltech. November 2018. </li>
+  <li>Harvard Theory of Computation Seminar. November, 2018.</li>
+  <li>Google AI NYC Theory Seminar. October 2018.</li>
+  <li>Simons Workshop on Adaptive Data Analysis. July 2018. </li>
+</ul>
+
+<li>Algorithmic Approaches to Preventing Overfitting in Adaptive Data Analysis.</li>
+<ul>
+  <li>Simons Workshop on Adaptive Data Analysis. July 2018. <a href="https://www.youtube.com/watch?v=pWUgFHkfOO0">Video here</a>, and <a href="http://www.cis.upenn.edu/~aaroth/simonsada.pptx">slides here</a>.</li>
+</ul>
+
+<li>(Un)fairness in Machine Learning. 6 hour version.</li>
+<ul>
+  <li>University of Zurich Machine Learning Summer School. June, 2018. <a href="http://cis.upenn.edu/~aaroth/FairnessZurich.pptx">Slides here.</a></li>
+</ul>
+
+
+<li>Preventing Fairness Gerrymandering in Machine Learning.</li>
+<ul>
+  <li> Purdue CS Department Colloquium ("CS Excellence Series"). November, 2018.</li>
+  <li> Google ML Fairness Workshop. September, 2018.</li>
+  <li> Facebook. September, 2018.</li>
+  <li> Northwestern Quarterly Theory Workshop: Algorithmic Fairness. June, 2018.</li>
+  <li> 6th Annual Computer Science and Law Roundtable, Penn Law School. May, 2018.</li>
+</ul>
+
+<li>Computational Perspectives on Biology and the Scientific Method.</li>
+  <ul>
+    <li>"Towards a New Theoretical Biology" Workshop, University of Pennsylvania. April, 2018.</li>
+  </ul>
+
+<li>Privacy and Fairness: Explaining Problems and Technical Solutions.</li>
+  <ul>
+    <li>National Academy of Science,  Roundtable on Integrating Ethics and Privacy Concerns into Data Science Education. December, 2017. </li>
+  </ul>
+
+<li>A Smoothed Analysis of the Greedy Algorithm for Linear Contextual Bandits.</li>
+  <ul>
+    <li>Microsoft Research, New York City. July, 2017.</li>
+  </ul>
+
+<li>Weakly Meritocratic Fairness in Machine Learning</li>
+  <ul>
+    <li>GREAT: Greece Workshop on Economic and Algorithmic Theory. July, 2017.</li>
+    <li>Simons Differential Privacy Planning Workshop. May, 2017.</li>
+  </ul>
+
+<li>Approximately Stable, School Optimal, Student-Truthful Many-to-One Matchings (via Differential Privacy)</li>
+  <ul>
+    <li>University of Wisconsin Economics Department Theory Seminar. November, 2017.</li>
+    <li>Simons Differential Privacy Planning Workshop. May, 2017.</li>
+    <li>MATCH-UP 2017. April, 2017.</li>
+  </ul>
+
+<li>Fairness in Learning: Classic and Contextual Bandits.</li>
+  <ul>
+    <li>Stanford RAIN Seminar. April, 2017.</li>
+    <li>MIT EECS Theory of Computation Colloquium. February, 2017.</li>
+    <li>Institute for Advanced Study Computer Science and Discrete Math Seminar. January, 2017. (<a href="https://www.youtube.com/watch?v=tBpd4Ix4BYM">video</a>.)</li>
+  </ul>
+
+<li>Tradeoffs Between Fairness and Accuracy in Machine Learning</li>
+   <ul>
+     <li>NIPS Symposium on Machine Learning and the Law 2016. December, 2016.</li>
+     <li>Harvard Law School, "Defining Fairness" Workshop. November, 2016.</li>
+     <li>Yale Econ/CS Seminar ("Designing the Digital Economy") (<a href="Papers/fairtradeoffs.pptx">Slides</a>)</li>
+   </ul>
+
+<li>What is Machine Learning (And Why Might it be Unfair?)</li>
+  <ul>
+    <li>Penn Law School. September, 2016. (<a href="https://www.law.upenn.edu/institutes/ppr/optimizing-government-project/media.php">video</a>)</li>
+    <li>Department of Defense/Department of Veterans Affairs Predictive Analytics and Suicide Risk Research Roundtable. February, 2018. </li>
+  </ul>
+
+  <li>Rigorous Data Dredging: Theory and Tools for Adaptive Data Analysis</li>
+
+  <ul>
+    <li>Joint Statistical Meetings: Session on the Stability Principle. August, 2017.</li>
+    <li>Goldman Sachs Engineering Insights Series. February, 2017.</li>
+    <li>NIPS 2016 Workshop on Adaptive Data Analysis. December, 2016.</li>
+    <li>Institute for Advanced Study: Four Facets of Differential Privacy. November, 2016. (<a href="https://www.youtube.com/watch?v=9mqXjdnZA18">video here</a>)</li>
+    <li>Universite Laval Big Data Colloqium. October, 2016.</li>
+    <li>Penn Statistics Department Seminar. September, 2016.</li>
+    <li>PCMI Graduate Summer School: The Mathematics of Data. Park City, Utah. July 2016.</li>
+    <li>Data Linkage and Anonymization Kickoff Event, Isaac Newton Center, Cambridge UK. July 2016.</li>
+    <li>ICML 2016 Tutorial (<a href="Papers/icmltutorial.pptx">Slides (Powerpoint)</a> and <a href="http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/">video</a>)</li>
+  </ul>
+
+  <li>A Whirlwind Tour of Differential Privacy (With Applications to Generalization and Game Theory)</li>
+  <ul>
+    <li>Google Research, New York, 2016.
+  </ul>
+
+  <li>When do Prices Coordinate Markets?</li>
+  <ul>
+    <li>Penn State Theory Seminar, 2015.</li>
+    <li>Workshop on Complexity and Simplicity in Economics, Simons Institute for the Theory of Computing, 2015. (<a href="https://youtu.be/ZP5GeQx6QRE">video here</a>)</li>
+    <li>Harvard CRCS (Center for Research on Computation and Society) Seminar, 2015. (<a href="https://www.youtube.com/watch?v=Jk_vt3tNGcQ">video here</a>)</li>
+  </ul>
+  <li>Privacy as a Tool for Robust Mechanism Design in Large Markets</li>
+  <ul>
+    <li>PCMI Graduate Summer School: The Mathematics of Data. Park City, Utah. July 2016.</li>
+    <li>Caltech Workshop on the Theory of Bringing Privacy into Practice, 2015. (<a href="https://youtu.be/WKvyQHYCJHc?t=2h7m55s">video here</a>)</li>
+  </ul>
+  <li>Private Convex Optimization (Yields Asymptotically Truthful Combinatorial Auctions)</li>
+  <ul>
+    <li> Cornell Joint Microeconomics and Computer Science Theory Seminar, 2014.</li>
+    <li> Penn State Department Colloquium, 2014.</li>
+    <li> NIPS Workshop on Transactional Machine Learning, 2014.</li>
+    <li> ISMP 2015 Invited Speaker, 2015.</li>
+  </ul>
+  <li>Preserving Statistical Validity in Adaptive Data Analysis</li>
+  <ul>
+    <li> MIT/MSR Theory Day, 2014.</li>
+    <li> Yahoo Research NYC Theory Seminar, 2014.</li>
+    <li> Johns Hopkins Theory Seminar, 2014.</li>
+    <li> TCS+ seminar, 2015. (<a href="https://www.youtube.com/watch?v=sTKHAuAkuv8">video here</a>)</li>
+    <li> Bloomberg Research, Princeton Campus, 2015.</li>
+    <li> BICOD 2015 Invited Lecture, 2015.</li>
+    <li> Clinical Epidemiology/Health Services Research Seminar, Penn Medical School, 2015.</li> 
+    <li> Penn Applied Mathematics and Computational Science (AMCS) Colloquium. 2015.</li>
+  </ul>
+  <li>Private Matchings and Allocations</li>
+  <ul>
+    <li>Allerton 2013</li>
+    <li>Charles River Privacy Day 2013</li>
+    <li>Princeton Theory Lunch 2013</li>
+    <li>Rutgers Theory Seminar 2014</li>
+  </ul>
+  <li>Tutorial on Differential Privacy</li>
+  <ul>
+    <li>Simons Workshop on the Science of Differential Privacy 2013</li>
+    <li>American Association for the Advancement of Science (AAAS) Annual Meeting 2015 (see <a href="http://www.upenn.edu/pennnews/news/introduction-differential-privacy-penn-professor-aaron-roth">coverage</a>)</li>
+    <li>MLConf NYC 2017. (<a href="https://youtu.be/JHH5Azv3bl4">video here</a>.)</li>
+    <li>Hot Topics on the Science of Security (HoTSoS 2017) Keynote Talk.</li>
+    <li>High Confidence Software and Systems Conference (HCSS 2017) Keynote Talk.</li>
+    <li>MIT LIDS Smart Urban Infrastructures Workshop. 2017.</li>
+    <li>Comcast Security Guild. December 2018.</li>
+    <li>Security by the Schuylkill 2019 (Plenary Talk). April 2019.</li>
+  </ul>
+  <li>Tutorial on Game Theory and Differential Privacy</li>
+  <ul>
+    <li>WPin+NetEcon 2014</li>
+    <li>EC 2014 Tutorial on Differential Privacy, Mechanism Design, and Information Economics</li>
+    <li>EC 2013 Workshop on Differential Privacy and Mechanism Design</li>
+    <li>DIMACS Differential Privacy Workshop 2012. (<a href="https://youtu.be/kqQ2qv0fYtQ">video here</a>)</li>
+  </ul>
+  <li>Mechanism Design in Large Games: Privacy and Incentives</li>
+  <ul>
+    <li>FOCS 2012 PC Workshop</li>
+    <li>USC Theory Seminar</li>
+    <li>IBM TJ Watson Theory Seminar</li>
+    <li>University of Maryland Capital Area Theory Seminar</li>
+    <li>DIMACS Differential Privacy Workshop</li>
+    <li>Stanford Market Design Seminar</li>
+    <li>DIMACS Workshop on the Economics of Information Sharing</li>
+    <li>Dagstuhl Workshop on the Frontiers of Mechanism Design.</li>
+    <li>Caltech Workshop on Differential Privacy and Economics</li>
+  </ul>
+  <li>Exploiting Metric Structure for Efficient Private Query Release</li>
+  <ul>
+    <li>UCSD IDASH Differential Privacy Workshop</li>
+  </ul>
+  <li>Privately Releasing Conjunctions and the Statistical Query Barrier</li>
+  <ul>
+    <li> Microsoft Research Silicon Valley</li>
+    <li> Penn State Theory Seminar</li>
+    <li> MIT Theory Seminar</li>
+  </ul> 
+  <li> Selling Privacy at Auction</li>
+  <ul>
+    <li>Northwestern EECS Theory Seminar</li>
+    <li>Boston University Theory Seminar</li>
+  </ul>
+  <li>Interactive Privacy via the Median Mechanism</li>
+  <ul>
+    <li> STOC 2010 </li>
+    <li> Dartmouth Theory Seminar</li>
+  </ul>
+  <li>Efficient Computation Under the Constraints of Privacy And Incentives</li>
+  <ul>
+    <li>CMU Theory Seminar 2010</li>
+    <li>UPenn Market and Social Systems Engineering Lecture Series 2010</li>
+    <li>Yahoo Research, Santa Clara 2010</li>
+  </ul>
+  <li>On the Equilibria of Asynchronous Games</li>
+  <ul>
+    <li>Microsoft Research SVC</li>
+    <li>CMU Theory Lunch</li>
+    <li>China Theory Week 2009</li>
+    <li>SODA 2010</li>
+  </ul>
+  <li>Differentially Private Approximation Algorithms</li>
+  <ul>
+    <li>Microsoft Research New England</li>
+    <li>CMU Theory Lunch</li>
+    <li>Princeton Theory Lunch</li>
+    <li>SODA 2010</li>
+  </ul>
+  <li>Auctions with Online Supply</li>
+  <ul>
+    <li>EC 2010</li>
+    <li>Ad Auctions Workshop 2009</li>
+    <li>CMU Theory Lunch</li>
+    <li>Microsoft Research SVC</li>
+  </ul>
+  <li>A Learning Theory Approach to Non-Interactive Database
+Privacy</li>
+  <ul>
+    <li>Microsoft Live Labs Tech Talk</li>
+    <li>STOC 2008</li>
+    <li>Capital Area Theory Seminar (University of Maryland)</li>
+    <li>CMU/Microsoft Privacy Mindswap (Poster)</li>
+  </ul>
+  <li>Regret Minimization and the Price of Total Anarchy</li>
+  <ul>
+    <li>CMU Theory lunch</li>
+    <li>GAMES 2008: 3rd World Congress of the Game Theory Society</li>
+    <li>Harvard EconCS seminar</li>
+    <li>ISMP 2009<br>
+    </li>
+  </ul>
+</ul>
+</section>
+
+<section id="media">
+<h2>Podcast, Radio, TV, and Other Media Appearances</h2>
+<ul>
+<li> <a href="https://podcasts.apple.com/us/podcast/the-quanta-podcast/id1021340531?i=1000738312590">Quanta Podcast</a> 10/25/25</li>
+<li> <a href="https://youtu.be/ht4IrvMhNtU">Artful Science</a> 5/4/21</li>
+<li> <a href="https://podcasts.apple.com/us/podcast/aaron-roth-on-the-ethical-algorithm/id1547074274?i=1000514344267">Technology and Prose</a> 3/5/21</li>
+<li> <a href="https://shows.acast.com/ipse-dixit/episodes/aaron-roth-michael-kearns-on-ethical-algorithms">Ipse Dixit</a> 3/3/20</li>
+<li> <a href="https://www.podomatic.com/podcasts/technation/episodes/2020-01-25T10_03_14-08_00">Tech Nation Radio</a> 1/25/20</li>
+<li> <a href="https://www.stitcher.com/podcast/data-skeptic-podcast/the-data-skeptic-podcast/e/66542895">Data Skeptic</a> 1/13/20</li>
+<li> <a href="https://podcasts.apple.com/us/podcast/aaron-roth-co-author-the-ethical-algorithm-from-jan-13-2020/id1285537944?i=1000462424701">Techtonic</a> 1/13/20</li>
+<li> <a href="https://www.c-span.org/video/?467020-1/the-ethical-algorithm">CSPAN BookTV</a> 12/28/19</li>
+<li> <a href="https://www.stitcher.com/podcast/sara-kryder/steptoe-cyberlaw-podcast/e/65817161?autoplay=true">The Cyberlaw Podcast</a> 12/5/19</li>
+<li> <a href="https://knowledge.wharton.upenn.edu/article/who-is-responsible-for-biased-and-intrusive-algorithms/">Knowledge@Wharton</a> 12/2/19</li>
+<li> <a href="https://omny.fm/shows/the-candy-mike-and-todd-show/november-18-2019-hour-4">The Candy Mike and Todd Show</a> 11/18/19</li>
+<li> <a href="https://penntoday.upenn.edu/news/programming-ethos-artificial-intelligence-podcast">The Programming Ethos</a> 09/19/19</li>
+<li> <a href="https://twimlai.com/twiml-talk-132-differential-privacy-theory-practice-with-aaron-roth/">TWiML AI</a> 4/30/18</li>
+</ul>
+<h3>Web and Print Media:</h3>
+<p> <a href="https://www.quantamagazine.org/the-game-theory-of-how-algorithms-can-drive-up-prices-20251022/">Quanta</a>, <a href="https://ai.seas.upenn.edu/news/the-science-of-designing-ethical-algorithms-michael-kearns-and-aaron-roth-on-ethical-ai/">Penn Engineering Blog</a>, <a href="https://www.amazon.science/blog/responsible-ai-in-the-wild-lessons-learned-at-aws">Amazon Science</a>, <a href="https://penntoday.upenn.edu/news/penn-engineering-us-census-data-vulnerable-attack-without-enhanced-privacy-measures">Penn News Today</a>, <a href="https://cacm.acm.org/magazines/2022/8/262911-formalizing-fairness/fulltext">Communications of the ACM</a>, <a href="https://www.theguardian.com/technology/2022/jun/18/is-fake-data-the-real-deal-when-training-algorithms">The Guardian</a>, <a href="https://cacm.acm.org/magazines/2022/4/259391-can-ai-learn-to-forget/fulltext">Communications of the ACM</a>, <a href="https://www.simonsfoundation.org/2021/11/30/new-simons-collaboration-aims-to-provide-a-mathematical-language-for-fairness/">Simons Foundation</a>, <a href="https://www.wired.com/story/machines-can-learn-can-they-unlearn/">Wired</a>, <a href="https://www.bloomberg.com/news/articles/2021-08-12/data-scientists-ask-can-we-trust-the-2020-census">Bloomberg</a>, <a href="https://www.amazon.science/latest-news/amazon-scholars-michael-kearns-and-aaron-roth-win-2021-prose-award">Amazon Science</a>, <a href="https://www.amazon.science/latest-news/amazon-scholars-michael-kearns-and-aaron-roth-discuss-the-ethics-of-machine-learning">Amazon Science</a>, <a href="https://www.zdnet.com/article/time-to-re-evaluate-ai-algorithms-right-from-the-design-stage-experts-urge/">ZDnet</a>, <a href="https://www.adexchanger.com/privacy/why-every-ad-tech-company-must-understand-differential-privacy/">Adexchanger</a>, <a href="https://www.agenciasinc.es/Entrevistas/Los-algoritmos-pueden-disenarse-para-respetar-principios-eticos-pero-esto-no-es-gratis">SINC</a>, <a href=" <a href="https://www.nature.com/articles/s41567-019-0768-1.epdf?shared_access_token=PLLHPNTn5pByQUPaJ-n_KdRgN0jAjWel9jnR3ZoTv0OmI9hygrW1-UKQon3ZVGlMNsZowBl_5psAIvdU-Dic4gtf_j0e7S_897lCTN3vdbqv3cbSQwUtbHG78r5ycJNB2VKFndoPOT_8w0OYjS-pjQ%3D%3D">Nature</a>, <a href="https://www.nytimes.com/2019/10/23/health/brain-scans-personal-identity.html">The New York Times</a>, <a href="https://blogs.scientificamerican.com/observations/socially-aware-algorithms-are-ready-to-help/">Scientific American</a>, <a href="https://knowledge.wharton.upenn.edu/article/data-privacy-real-dont-bet/">Knowledge@Wharton</a>, <a href="https://www.strategy-business.com/article/The-algorithmic-trade-off-between-accuracy-and-ethics?gko=c7017">Strategy+Business</a>, <a href="https://www.theregreview.org/2017/10/02/schlabs-usefulness-dangers-machine-learning/">The Regulatory Review</a>, <a href="https://www.marketplace.org/2016/06/21/apple-grabs-more-user-data-without-reducing-privacy/">Marketplace</a>, <a href="https://www.technologyreview.com/2016/08/03/158510/apples-new-privacy-technology-may-pressure-competitors-to-better-protect-our-data/">MIT Technology Review</a>, <a href="https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/">Wired</a>, <a href="https://psmag.com/news/the-nsa-has-your-data-is-there-a-way-to-use-it-that-wont-further-violate-your-privacy">Pacific Standard</a>
+
+
+
+</section>
+
+</div><!-- end container -->
+
+</body>
+</html>

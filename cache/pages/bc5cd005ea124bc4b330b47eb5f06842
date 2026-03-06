@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jacob.css" type="text/css" />
+<title>Hanrui Zhang's Homepage</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LL4DYWNT2W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LL4DYWNT2W');
+</script>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Hanrui Zhang's Homepage</h1>
+<div id="subtitle">Contact: hanrui at cse dot cuhk dot edu dot hk (preferred), or hanruizha at gmail (backup)<br />
+Office: SHB 1014
+</div>
+</div>
+<img src="pic.png" height="180">
+<p><br />
+Hello!  I am an Assistant Professor of Computer Science and Engineering at the Chinese University of Hong Kong.  Prior to that, I:
+</p>
+<ul>
+<li><p>was a visiting faculty researcher at Google Research NYC, working with the OMEGA Market Algorithms team led by Vahab Mirrokni;
+</p>
+</li>
+<li><p>was a postdoctoral fellow at Simons Laufer Mathematical Sciences Institute (SLMath, formerly MSRI), affiliated with UC Berkeley;
+</p>
+</li>
+<li><p>got my PhD in Computer Science from Carnegie Mellon University, advised by Vincent Conitzer;
+</p>
+</li>
+<li><p>did my undergraduate in Yao Class, Tsinghua University, where I worked closely with Wei Chen and Pingzhong Tang.
+</p>
+</li>
+</ul>
+<p>I am interested in Economics and Computation &ndash; problems with economic motivations that can be approached using techniques from computer science.  My recent research focuses on learning and decision making in complex environments, in the presence of strategic behavior, with limited means of interaction, under uncertainty of the future.  I also work extensively on mechanism / information design problems related to online platforms and data markets (<a href="https://sigecom.org/exchanges/volume_22/1/AGGARWAL.pdf" target=&ldquo;blank&rdquo;>here</a> is a survey on ad auctions and autobidding that I coauthored during my time at Google).  Technically, most of my research can be characterized as &ldquo;applied theory&rdquo;: I use tools (and sometimes craft new ones) in various branches of Theoretical Computer Science, Microeconomic Theory, and Machine Learning Theory to solve problems that are both practically motivated and mathematically well-defined.  Accordingly, I publish in a wide range of venues, whose themes cover all these areas.
+</p>
+<p><b>I am constantly looking for students</b> interested in developing algorithmic solutions for / theoretical understanding of problems with economic or social motivations.  Applicants are expected to <b>enjoy (and ideally, be good at) discovering and proving mathematical facts</b> (because this constitutes 80%-100% of the research conducted in our group).  Feel free to drop me an email if you are interested.  (I try to be responsive, although that is becoming increasingly hard given the number of such inquiries.  To increase your chance of getting a response, you may want to mention any relevant research experience or awards, including OI, MO, ICPC, etc.)
+</p>
+<h2>Publications and (Some) Manuscripts</h2>
+<p>*: alphabetical order
+</p>
+<h3>2025+</h3>
+<ol>
+<li><p>Nonbossy Mechanisms: Mechanism Design Robust to Secondary Goals. <a href="https://arxiv.org/abs/2307.11967" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Renato Paes Leme*, Jon Schneider*, <b>Hanrui Zhang</b>*.<br />
+Manuscript.
+</p>
+</li>
+<li><p>No-Regret Online Autobidding Algorithms in First-price Auctions.<br />
+Yilin Li, Yuan Deng, Wei Tang, <b>Hanrui Zhang</b>.<br />
+Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025).
+</p>
+</li>
+<li><p>Clock Auctions: Allocation-Based Characterization, Computational Complexity, and Economic Efficiency. <a href="papers/clock.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>.<br />
+Twenty-Sixth ACM Conference on Economics and Computation (EC 2025).
+</p>
+</li>
+</ol>
+<h3>2024</h3>
+<ol>
+<li><p>Strategic Littlestone Dimension: Improved Bounds on Online Strategic Classification. <a href="https://arxiv.org/abs/2407.11619" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Saba Ahmadi*, Kunhe Yang*, <b>Hanrui Zhang</b>*.<br />
+Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+</p>
+</li>
+<li><p>Computational Aspects of Bayesian Persuasion under Approximate Best Response. <a href="https://arxiv.org/abs/2402.07426" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Kunhe Yang*, <b>Hanrui Zhang</b>*.<br />
+Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+</p>
+</li>
+<li><p>Efficiency of the First-Price Auction in the Autobidding World. <a href="https://arxiv.org/abs/2208.10650" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Yuan Deng*, Jieming Mao*, Vahab Mirrokni*, <b>Hanrui Zhang</b>*, Song Zuo*.<br />
+Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+</p>
+</li>
+<li><p>Autobidder's Dilemma: Why More Sophisticated Autobidders Lead to Worse Auction Efficiency. <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/e9b0ae84d6879b30c78cb8537466a4e0-Paper-Conference.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yuan Deng*, Jieming Mao*, Vahab Mirrokni*, <b>Hanrui Zhang</b>*, Song Zuo*.<br />
+Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+</p>
+</li>
+<li><p>Aggregating Quantitative Relative Judgments: From Social Choice to Ranking Prediction. <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/2375085c9e5afdfcab8c564e42ec0019-Paper-Conference.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yixuan Even Xu, <b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024).
+</p>
+</li>
+<li><p>Auto-bidding and Auctions in Online Advertising: A Survey. <a href="https://sigecom.org/exchanges/volume_22/1/AGGARWAL.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Gagan Aggarwal et al. (20+ authors, alphabetically ordered).<br />
+SIGecom Exchanges 22.1.
+</p>
+</li>
+<li><p>Efficiency of the Generalized Second-Price Auction for Value Maximizers. <a href="https://arxiv.org/abs/2310.03105" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Yuan Deng*, Mohammad Mahdian*, Jieming Mao*, Vahab Mirrokni*, <b>Hanrui Zhang</b>*, Song Zuo*.<br />
+The 2024 ACM Web Conference (WWW 2024).
+</p>
+</li>
+<li><p>Non-Excludable Bilateral Trade Between Groups. <a href="https://arxiv.org/abs/2312.11800" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Yixuan Even Xu, <b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+38th AAAI Conference on Artificial Intelligence (AAAI 2024).
+</p>
+</li>
+</ol>
+<h3>2023</h3>
+<ol>
+<li><p>Efficiently Solving Turn-Taking Stochastic Games with Extensive-Form Correlation. <a href="papers/extensive-form_correlation.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Twenty-Fourth ACM Conference on Economics and Computation (EC 2023).
+</p>
+</li>
+<li><p>Autobidding Auctions in the Presence of User Costs. <a href="papers/autobidding_costs.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yuan Deng*, Jieming Mao*, Vahab Mirrokni*, <b>Hanrui Zhang</b>*, Song Zuo*.<br />
+The 2023 ACM Web Conference (WWW 2023).
+</p>
+</li>
+<li><p>Eligibility Mechanisms: Auctions Meet Information Retrieval. <a href="papers/stochastic_probing.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Gagan Goel*, Renato Paes Leme*, Jon Schneider*, David Thompson*, <b>Hanrui Zhang</b>*.<br />
+The 2023 ACM Web Conference (WWW 2023).
+</p>
+</li>
+</ol>
+<h3>2022</h3>
+<ol>
+<li><p>Posted Pricing and Dynamic Prior-independent Mechanisms with Value Maximizers. <a href="papers/posted-pricing_roi.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yuan Deng*, Vahab Mirrokni*, <b>Hanrui Zhang</b>*.<br />
+36th Conference on Neural Information Processing Systems (NeurIPS 2022).
+</p>
+</li>
+<li><p>Near-Optimal Reviewer Splitting in Two-Phase Paper Reviewing and Conference Experiment Design. <a href="https://arxiv.org/abs/2108.06371" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Steven Jecmen, <b>Hanrui Zhang</b>, Ryan Liu, Fei Fang, Vincent Conitzer, Nihar B. Shah.<br />
+10th AAAI Conference on Human Computation and Crowdsourcing (HCOMP 2022), <b>Honorable Mention for Best Paper</b>.
+</p>
+</li>
+<li><p>Efficient Algorithms for Planning with Participation Constraints. <a href="https://arxiv.org/abs/2205.07767" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Twenty-Third ACM Conference on Economics and Computation (EC 2022).
+</p>
+</li>
+<li><p>Planning with Participation Constraints. <a href="papers/ir_planning.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+36th AAAI Conference on Artificial Intelligence (AAAI 2022).
+</p>
+</li>
+<li><p>Learning Influence Adoption in Heterogeneous Networks. <a href="papers/heterogeneous_networks.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Vincent Conitzer*, Debmalya Panigrahi*, <b>Hanrui Zhang</b>*.<br />
+36th AAAI Conference on Artificial Intelligence (AAAI 2022).
+</p>
+</li>
+</ol>
+<h3>2021</h3>
+<ol>
+<li><p>Automated Dynamic Mechanism Design. <a href="https://arxiv.org/abs/2105.06008" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+<b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021).
+</p>
+</li>
+<li><p>Prior-independent Dynamic Auctions for a Value-maximizing Buyer. <a href="papers/dynamic_roi.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yuan Deng*, <b>Hanrui Zhang</b>*.<br />
+Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021).
+</p>
+</li>
+<li><p>Automated Mechanism Design for Classification with Partial Verification. <a href="papers/amd_partial_verification.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI 2021).
+</p>
+</li>
+<li><p>Incentive-Aware PAC Learning. <a href="papers/incentive-aware_learning.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI 2021).
+</p>
+</li>
+<li><p>Classification with Few Tests through Self-Selection. <a href="papers/self-selection.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI 2021).
+</p>
+</li>
+<li><p>Classification with Strategically Withheld Data. <a href="https://arxiv.org/abs/2012.10203" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Anilesh Krishnaswamy*, Haoming Li*, David Rein*, <b>Hanrui Zhang</b>*, Vincent Conitzer.<br />
+Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI 2021).
+</p>
+</li>
+<li><p>Online Combinatorial Auctions. <a href="papers/online_CA.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Yuan Deng*, Debmalya Panigrahi*, <b>Hanrui Zhang</b>*.<br />
+Thirty-second Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021).
+</p>
+</li>
+</ol>
+<h3>2020</h3>
+<ol>
+<li><p>Mitigating Manipulation in Peer Review via Randomized Reviewer Assignments. <a href="https://arxiv.org/abs/2006.16437" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Steven Jecmen, <b>Hanrui Zhang</b>, Ryan Liu, Nihar B. Shah, Vincent Conitzer, Fei Fang.<br />
+Thirty-fourth Conference on Neural Information Processing Systems (NeurIPS 2020).
+</p>
+</li>
+<li><p>A Generic Truthful Mechanism for Combinatorial Auctions. <a href="papers/generic_CA.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>.<br />
+16th Conference on Web and Internet Economics (WINE 2020).
+</p>
+</li>
+<li><p>Improved Prophet Inequalities for Combinatorial Welfare Maximization with (Approximately) Subadditive Agents. <a href="papers/subadd_prophet.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>.<br />
+28th Annual European Symposium on Algorithms (ESA 2020), <b>Best Student Paper</b>.
+</p>
+</li>
+<li><p>Learning the Valuations of a \(k\)-demand Agent. <a href="papers/k-demand.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+Thirty-seventh International Conference on Machine Learning (ICML 2020).
+</p>
+</li>
+<li><p>Learning Opinions in Social Networks. <a href="papers/learning_opinions.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Vincent Conitzer*, Debmalya Panigrahi*, <b>Hanrui Zhang</b>*.<br />
+Thirty-seventh International Conference on Machine Learning (ICML 2020).
+</p>
+</li>
+<li><p>Nearly Linear Row Sampling Algorithm for Quantile Regression. <a href="https://arxiv.org/abs/2006.08397" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Yi Li*, Ruosong Wang*, Lin F. Yang*, <b>Hanrui Zhang</b>*.<br />
+Thirty-seventh International Conference on Machine Learning (ICML 2020).
+</p>
+</li>
+<li><p>Combinatorial Ski Rental and Online Bipartite Matching. <a href="papers/combinatorial_ski_rental.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+Twenty-First ACM Conference on Economics and Computation (EC 2020).
+</p>
+</li>
+<li><p>A Graph-Theoretical Basis of Stochastic-Cascading Network Influence: Characterizations of Influence-Based Centrality. <a href="https://arxiv.org/abs/1810.09981" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Wei Chen*, Shang-Hua Teng*, <b>Hanrui Zhang</b>*.<br />
+Theoretical Computer Science (TCS).
+</p>
+</li>
+</ol>
+<h3>2019</h3>
+<ol>
+<li><p>Distinguishing Distributions When Samples Are Strategically Transformed. <a href="papers/transformed_samples.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-third Conference on Neural Information Processing Systems (NeurIPS 2019).
+</p>
+</li>
+<li><p>Provably Efficient Q-learning with Function Approximation via Distribution Shift Error Checking Oracle. <a href="https://arxiv.org/abs/1906.06321" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Simon S. Du*, Yuping Luo*, Ruosong Wang*, <b>Hanrui Zhang</b>*.<br />
+Thirty-third Conference on Neural Information Processing Systems (NeurIPS 2019).
+</p>
+</li>
+<li><p>When Samples Are Strategically Selected. <a href="papers/strategic_samples.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-Sixth International Conference on Machine Learning (ICML 2019).
+</p>
+</li>
+<li><p>A PAC Framework for Aggregating Agents&rsquo; Judgments. <a href="papers/PAC_aggregation.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Vincent Conitzer.<br />
+Thirty-Third AAAI Conference on Artificial Intelligence (AAAI 2019).
+</p>
+</li>
+<li><p>Learning Set Functions with Limited Complementarity. <a href="papers/learning_limited_complementarity.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>.<br />
+Thirty-Third AAAI Conference on Artificial Intelligence (AAAI 2019).
+</p>
+</li>
+<li><p>A Better Algorithm for Societal Tradeoffs. <a href="papers/better_algorithm_ST.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+<b>Hanrui Zhang</b>, Yu Cheng, Vincent Conitzer.<br />
+Thirty-Third AAAI Conference on Artificial Intelligence (AAAI 2019).
+</p>
+</li>
+<li><p>Capturing Complementarity in Set Functions by Going Beyond Submodularity/Subadditivity. <a href="https://arxiv.org/abs/1805.04436" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Wei Chen*, Shang-Hua Teng*, <b>Hanrui Zhang</b>*.<br />
+10th Innovations in Theoretical Computer Science Conference (ITCS 2019).
+</p>
+</li>
+</ol>
+<h3>2018</h3>
+<ol>
+<li><p>An Improved Algorithm for Incremental DFS Tree in Undirected Graphs. <a href="https://arxiv.org/abs/1607.04913" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Lijie Chen*, Ran Duan*, Ruosong Wang*, <b>Hanrui Zhang</b>*, Tianyi Zhang*.<br />
+16th Scandinavian Symposium and Workshops on Algorithm Theory (SWAT 2018).
+</p>
+</li>
+<li><p>Approximation-Variance Tradeoffs in Facility Location Games. <a href="papers/approx-var.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Ariel Procaccia*, David Wajc*, <b>Hanrui Zhang</b>*.<br />
+Thirty-Second AAAI Conference on Artificial Intelligence (AAAI 2018).
+</p>
+</li>
+<li><p>Complete Submodularity Characterization in the Comparative Independent Cascade Model. <a href="https://arxiv.org/abs/1702.05218" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Wei Chen*, <b>Hanrui Zhang</b>*.<br />
+Theoretical Computer Science (TCS).
+</p>
+</li>
+</ol>
+<h3>2017</h3>
+<ol>
+<li><p>Efficient Near-Optimal Algorithms for Barter Exchange. <a href="papers/approximate_barter_exchange.pdf" target=&ldquo;blank&rdquo;>[pdf]</a><br />
+Zhipeng Jia*, Pingzhong Tang*, Ruosong Wang*, <b>Hanrui Zhang</b>*.<br />
+16th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2017).
+</p>
+</li>
+<li><p>Unit-Sphere Games. <a href="https://arxiv.org/abs/1509.05480" target=&ldquo;blank&rdquo;>[arXiv]</a><br />
+Pingzhong Tang*, <b>Hanrui Zhang</b>*.<br />
+International Journal of Game Theory (IJGT).
+</p>
+</li>
+</ol>
+<h2>Mentoring</h2>
+<ul>
+<li><p>Yilin Li (PhD, 2025-)
+</p>
+</li>
+<li><p>Chenran Yang (PhD, 2025-)
+</p>
+</li>
+</ul>
+<h2>Teaching</h2>
+<ul>
+<li><p>CSCI3190: Introduction to Discrete Mathematics and Algorithms (Fall 2025)
+</p>
+</li>
+<li><p>CSCI5350: Advanced Topics in Game Theory (Spring 2025)
+</p>
+</li>
+</ul>
+<h2>Professional Services</h2>
+<ul>
+<li><p>Conference Reviewing: AAAI (2020, 2021, 2022, 2023, 2024), AAMAS (2020), AISTATS (2019, 2021), EC (2020, 2021, 2022, 2024, 2025), FOCS (2019, 2025), ICALP (2020), ICLR (2022), ICML (2020, 2021, 2022, 2024, 2025 AC), IJCAI (2021), ITCS (2022, 2025), NeurIPS (2020, 2021, 2022, 2023, 2024, 2025 AC), PODS (2021), SAGT (2022, 2025), SoCG (2020), SODA (2024, 2025), STOC (2023), WINE (2016, 2021, 2022, 2024, 2025 SPC), WWW (2021, 2022, 2023, 2024).
+</p>
+</li>
+<li><p>Journal Reviewing: Algorithmica, Artificial Intelligence, Autonomous Agents and Multi-Agent Systems, Games and Economic Behavior, Journal of Machine Learning Research, Management Science, Operations Research, SIAM Journal on Computing, Transactions on Machine Learning Research.
+</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2025-09-25 21:32:48 HKT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Breadth 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140331
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Brian Neil Levine</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=1450">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<script>
+/* Smooth scrolling
+   Changes links that link to other parts of this page to scroll
+   smoothly to those links rather than jump to them directly, which
+   can be a little disorienting.
+   
+   sil, http://www.kryogenix.org/
+   
+   v1.0 2003-11-11
+   v1.1 2005-06-16 wrap it up in an object
+*/
+
+var ss = {
+  fixAllLinks: function() {
+    // Get a list of all links in the page
+    var allLinks = document.getElementsByTagName('a');
+    // Walk through the list
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if ((lnk.href && lnk.href.indexOf('#') != -1) && 
+          ( (lnk.pathname == location.pathname) ||
+	    ('/'+lnk.pathname == location.pathname) ) && 
+          (lnk.search == location.search)) {
+        // If the link is internal to the page (begins in #)
+        // then attach the smoothScroll function as an onclick
+        // event handler
+        ss.addEvent(lnk,'click',ss.smoothScroll);
+      }
+    }
+  },
+
+  smoothScroll: function(e) {
+    // This is an event handler; get the clicked on element,
+    // in a cross-browser fashion
+    if (window.event) {
+      target = window.event.srcElement;
+    } else if (e) {
+      target = e.target;
+    } else return;
+
+    // Make sure that the target is an element, not a text node
+    // within an element
+    if (target.nodeName.toLowerCase() != 'a') {
+      target = target.parentNode;
+    }
+  
+    // Paranoia; check this is an A tag
+    if (target.nodeName.toLowerCase() != 'a') return;
+  
+    // Find the <a name> tag corresponding to this href
+    // First strip off the hash (first character)
+    anchor = target.hash.substr(1);
+    // Now loop all A tags until we find one with that name
+    var allLinks = document.getElementsByTagName('a');
+    var destinationLink = null;
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if (lnk.name && (lnk.name == anchor)) {
+        destinationLink = lnk;
+        break;
+      }
+    }
+    if (!destinationLink) destinationLink = document.getElementById(anchor);
+
+    // If we didn't find a destination, give up and let the browser do
+    // its thing
+    if (!destinationLink) return true;
+  
+    // Find the destination's position
+    var destx = destinationLink.offsetLeft; 
+    var desty = destinationLink.offsetTop;
+    var thisNode = destinationLink;
+    while (thisNode.offsetParent && 
+          (thisNode.offsetParent != document.body)) {
+      thisNode = thisNode.offsetParent;
+      destx += thisNode.offsetLeft;
+      desty += thisNode.offsetTop;
+    }
+  
+    // Stop any current scrolling
+    clearInterval(ss.INTERVAL);
+  
+    cypos = ss.getCurrentYPos();
+  
+    ss_stepsize = parseInt((desty-cypos)/ss.STEPS);
+    ss.INTERVAL =
+setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
+  
+    // And stop the actual click happening
+    if (window.event) {
+      window.event.cancelBubble = true;
+      window.event.returnValue = false;
+    }
+    if (e && e.preventDefault && e.stopPropagation) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  },
+
+  scrollWindow: function(scramount,dest,anchor) {
+    wascypos = ss.getCurrentYPos();
+    isAbove = (wascypos < dest);
+    window.scrollTo(0,wascypos + scramount);
+    iscypos = ss.getCurrentYPos();
+    isAboveNow = (iscypos < dest);
+    if ((isAbove != isAboveNow) || (wascypos == iscypos)) {
+      // if we've just scrolled past the destination, or
+      // we haven't moved from the last scroll (i.e., we're at the
+      // bottom of the page) then scroll exactly to the link
+      window.scrollTo(0,dest);
+      // cancel the repeating timer
+      clearInterval(ss.INTERVAL);
+      // and jump to the link directly so the URL's right
+      location.hash = anchor;
+    }
+  },
+
+  getCurrentYPos: function() {
+    if (document.body && document.body.scrollTop)
+      return document.body.scrollTop;
+    if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+    if (window.pageYOffset)
+      return window.pageYOffset;
+    return 0;
+  },
+
+  addEvent: function(elm, evType, fn, useCapture) {
+    // addEvent and removeEvent
+    // cross-browser event handling for IE5+,  NS6 and Mozilla
+    // By Scott Andrew
+    if (elm.addEventListener){
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent){
+      var r = elm.attachEvent("on"+evType, fn);
+      return r;
+    } else {
+      alert("Handler could not be removed");
+    }
+  } 
+}
+
+ss.STEPS = 25;
+
+ss.addEvent(window,"load",ss.fixAllLinks);
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="886da39a-2f2f-4611-aaa8-73c3e979992c"></script>
+
+</head>
+<body>
+
+
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="https://www.cs.umass.edu/~brian">Brian Neil Levine</a> </h1>
+<Br>
+    </div>
+    <div id="menu">
+
+<ul>
+        <li class="current_page_item"><a href="https://www.cs.umass.edu/~brian"
+        accesskey="1" title="">Homepage</a></li>
+        <li><a href="https://people.cs.umass.edu/~brian/pubs.php"
+        accesskey="2" title="">Pubs</a></li>
+        <li><a href="teaching.php" accesskey="3" title="">Teaching</a></li>
+      </ul>
+<br>
+<li><a href="index.php#news">NEWS </a>
+<li><a href="students.php"  accesskey="5" title="">   STUDENTS</a>
+<li><a href="service.php" accesskey="4" title="">SERVICE</a>
+<li><a href="bio.php" accesskey="6" title="">BIO</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- <div id="header-featured"> 008060;"  -->
+
+<div id="extra">
+
+<h3>
+  Distinguished Professor <br>
+  Associate Dean, IT & Facilities <br>
+  Director, UMass Cybersecurity Institute<br>
+ ACM Fellow<br><br>
+<a style="text-decoration: none; color:#FBAC31;"
+href="https://www.cs.umass.edu">Manning College of Information & Computer
+Sciences</a> <br> University of Massachusetts Amherst</h3>
+
+
+<table style="text-align: left;">
+<tr>
+<Td style="background:#777; padding:1ex;">
+    <span style='color: #FFF;text-align: justify;'> <p><br> <b>
+  My research and outreach efforts are mostly focused on child rescue (thwarting internet-based child
+  sexual exploitation), an important nonpartisan issue. More broadly, I work in the areas of
+  security, privacy, and forensics applied to networking. </b></p>
+
+
+<p>I have been named an <b><a style="font-weight:bold;" href="https://www.umass.edu/news/article/allan-levine-named-2020-association">ACM Fellow</a></b> <i> "For contributions to network forensics, security, and privacy, and for thwarting crimes against children"</i>.</p>
+
+<p>You can see a list of all of my <a style="color:#FFF;"
+  href="https://people.cs.umass.edu/~brian/pubs.php">publications</a>
+  online. More information can be found on the <a
+  style="color:#FFF;"
+  href="https://www.rescue-lab.org">UMass
+  Amherst Rescue Lab</a> website.</p>
+
+
+    <p> I am the founding Director of the <a style="color:#FFF;"
+href="https://infosec.cs.umass.edu/">UMass Amherst Cybersecurity
+Institute</a>.  And I am Co-Director of the UMass Accelerator for Responsible Technology, which transitions research into practice.</p>
+
+<p>Per guidance, my disclosure of collaborators appears on my <a href="https://rescue-lab.org">lab page</a>.</p>
+
+</td> <td style="background:#AAA;"><a
+href="https://rescue-lab.org"><img
+height="120px" src="rl.png"></a></td> </tr> </table>
+
+
+<table style="border: 1px solid black; background: #DDD;text-align: left;">
+<tr>
+<Td><br><br><iframe width="540" height="315"
+src="https://www.youtube.com/embed/A6v4xI7yqFs?start=06"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+</td>
+<td style="width:20px;"></td>
+<td >
+
+<p>I am passionate about drawing attention to the harms to children that take place on Tor (and Freenet) and on mobile apps. Visit my sites focused on 
+  <li>the <a href="https://csam-bib.github.io">dangers to children on Tor</a> and the blind-eyes of academia; and </li>
+  <li>the <a href="https://app-danger.org">dangers to children on mobile apps</a>. </li>
+</p>
+<p>Or watch the invited talk I gave at Usenix Security on Tor and child sexual exploitation. I gave the talk in 2019 and sadly not a thing has changed.</p>
+</td></tr>
+</table>
+
+
+
+ <span style='color: #FFF;text-align: justify;'>     
+
+</span>
+</div>
+
+<div id="extra" class="container">
+
+<table style="width: 100%; background: #EEE; font-size:.9em;">
+<tr><td>
+
+<table style="width: 90%;padding: 1em 0em 1em 1em; font-size: 1.2em"> <tr><td>
+
+<span>
+
+<a id="news"> 
+<h2>Latest News</h2></a> <br>
+
+<ul> 
+  <li> Read my 2025 posts on LinkedIn regarding <b>child sexual exploitation and the Tor Project</b>: <a href="https://www.linkedin.com/pulse/funders-tor-project-have-heads-sand-brian-levine-9ebxe">[1]</a> <a href="https://www.linkedin.com/pulse/acm-ieee-usenix-peer-review-papers-have-failed-admit-child-levine-f8rde/">[2]</a>, and 
+  <a href="https://www.linkedin.com/pulse/tor-offers-weak-security-used-extensively-csam-its-lose-lose-levine-zu96e">[3]</a>.</li>
+<li>Quoted in an August 2025 news articles on <b>child sexual exploitation and the Tor Project</b>:
+  <ul><li>  The Guardian: <a href="https://www.theguardian.com/technology/2025/aug/25/tor-network-child-sexual-abuse">Privacy at a Cost: the dark web’s main browser helps pedophile networks flourish, experts say</a> (<a href=https://archive.ph/6qMDX>free version</a>) by <a href="https://katiemcque.com">Katie McQue</a>.</li> 
+    <li> Globe and Mail: <a href="https://www.theglobeandmail.com/politics/article-child-protection-advocates-dark-web-child-abuse-images/">Canada’s child protection advocates urge dark-web administrators to block millions of child-abuse images</a> (<a href=https://archive.ph/Xbj63>free version</a>) by Marie Woolfe. </li>
+    </ul>
+
+<li> Proud to have spoken on a February 2025 panel organized and attended by <b>Senator Coons (D-DE) and Senator Cornyn (R-TX)</b> on the threats posed by AI-generated CSAM and how lawmakers and law enforcement can work together to combat current instances and prevent future ones. [<a href="https://www.youtube.com/watch?v=-mN3jZx1Flg">video</a>] </li>
+<li> I'm grateful to be part of an article in the <a href="https://www.nytimes.com/2024/12/07/us/child-abuse-apple-google-apps.html?unlocked_article_code=1.fk4.xiUY.V8dw8YkKMe8a&smid=nytcore-ios-share&referringSource=articleShare"><b>New York Times</b></a> by Michael Keller (Dec. 7, 2024) on apps and the sexual abuse of children. Keller used our project as part of his reporting on apps where parents sell sex shows involving their children. </li>
+<li> I've been named a UMass <b><a href="https://www.cics.umass.edu/news/levine-appointed-distinguished-professor">Distinguished Professor</a></b>. 
+<li> Our <a href="https://app-danger.org">App Danger</a> work has been featured in an article in the <a href="https://www.nytimes.com/2023/08/10/business/sextortion-ai-app-danger-project-safety-reviews.html"><b>New York Times</b></a> by Tripp Mickle (Aug. 17, 2023, Section B, Page 1). We are grateful for the coverage! Apple dropped ten apps from its App Store as a result. More coverage from <a href="https://technews.acm.org/archives.cfm/archives.cfm%253Ffo%253D2014-07-jul/archives.cfm%3Ffo%3D2015-05-may/archives.cfm?fo=2023-08-aug/aug-16-2023.html">ACM TechNews</a> and <a href="https://9to5mac.com/2023/08/10/app-danger-project-app-store/">9to5Mac</a>. 
+<li> Proud to be a part of <a href="https://www.jeffhorwitz.com/articles">Jeff Horwitz's</a> reporting from the <b>Wall Street Journal</b>: <a href=https://www.wsj.com/amp/articles/instagram-vast-pedophile-network-4ab7189>
+Instagram Connects Vast Pedophile Network</a> <a href=https://archive.ph/2023.06.07-110733/https://www.wsj.com/amp/articles/instagram-vast-pedophile-network-4ab7189>(free version)</a> from June 2023. See further reporting from 
+<a href="https://www.bnnbloomberg.ca/video/instagram-connects-perpetrators-easier-than-other-platforms-regulation-needed-researcher~2708201">BNN Bloomberg TV</a>, 
+<a href=https://www.audacy.com/podcast/kcbs-radio-on-demand-011f4/episodes/instagram-algorithms-connect-pedophiles-with-underage-sex-content-investigation-shows-8a3dd>KCBS Radio San Francisco</a>, and 
+<a 
+href=https://arstechnica.com/tech-policy/2023/06/damning-probes-find-instagram-is-key-link-connecting-pedophile-rings/>Ars 
+Technica</a>.
+The article inspired actions by the <a href="https://www.commerce.senate.gov/services/files/1CEAE1E3-2AA0-44F7-B54F-FB9F9B79FC1D">US Senate's Committee on Commerce, Science, and Transportation</a>. Additionally, <a href="https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-and-blackburn-demand-meta-answer-for-instagrams-failures-to-protect-children-from-predators_exploitation">U.S. Senators Richard Blumenthal (D-CT) and Marsha Blackburn (R-TN)</a> requested information from Meta.
+
+</ul>
+<b>Here's my <a href="news-archive.php">archive  of older news</a> and milestones.</b>
+
+<div style="text-align: center;">
+<img  height="50px" src="flower.png">
+</div>
+
+<ul>
+
+</div> 
+</div>
+<div id="footer" class="smallgraytext" align="center">
+
+
+</table>
+</table>
+<div>Icons: 
+<a style="color:#000;" href="http://www.freepik.com" title="Freepik">Freepik</a>/
+<a style="color:#000;" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>/
+<a style="color:#000;" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+</div>
+
+
+<p>&copy; BNL including drawing/photo | Design by <a style="color:#000;" href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+
+
+
+</body>
+</html>
+

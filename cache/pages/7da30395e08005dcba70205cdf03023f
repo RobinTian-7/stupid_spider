@@ -1,0 +1,271 @@
+<blockquote>
+<h1>Yangqiu Song</h1>
+
+<p><a href="http://www.cse.ust.hk/~yqsong/YangqiuSong.jpg"><img class="left" src="http://www.cse.ust.hk/~yqsong/YangqiuSong.jpg" style="float:left; height:214px; margin:10px; width:170px" /></a>I am now an associate professor at Department of CSE at HKUST and the associate director of HKUST-WeBank Joint Lab. I was an assistant professor at Lane Department of CSEE at WVU (2015-2016); a post-doc researcher at UIUC (2013-2015), a post-doc researcher at HKUST and visiting researcher at Huawei Noah&#39;s Ark Lab, Hong Kong (2012-2013); an associate researcher at Microsoft Research Asia (2010-2012); a staff researcher at IBM Research-China (2009-2010). I received my B.E. and PhD degree from Tsinghua University, China, in July 2003 and January 2009. I also worked as interns at Google in 2007-2008 and at IBM Research-China in 2006-2007.</p>
+
+<p>I am currently the PG coordinator of CSE and associate director of BSc in Data Science and Technology (DSCT)</p>
+
+<p>I am now also a visiting academic scholar at Amazon Rufus Team (Jan. 2022 - present).</p>
+
+<p>Office: Room 3518</p>
+
+<p>HKUST, Clearwater Bay, Kowloon, Hong Kong</p>
+
+<p>Email: yqsong # cse dot ust dot hk</p>
+
+<p>Research Interests: Machine Learning, Data Mining, Natural Language Processing, Knowledge Graph and Information Networks.</p>
+
+<hr />
+<p><a href="http://scholar.google.com/citations?user=MdQZ-q8AAAAJ&amp;hl=en">Google scholar</a> <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/s/Song:Yangqiu.html">DBLP</a> <a href="http://hk.linkedin.com/in/yqsong">LinkedIn</a></p>
+
+<hr />
+<h2>Recent Research Topics (<a href="https://dblp.uni-trier.de/pid/86/2159.html">Full Publications (DBLP)</a> and <a href="https://github.com/HKUST-KnowComp">KnowComp Group Code</a>):</h2>
+My research goal is to use machines to understand human languages and eventually facilitate natural human language interaction and communication. Our current approach is to extract useful knowledge from existing resources to construct knowledge graphs and use knowledge graphs to do reasoning and inference for understanding. When meeting downstream applications, we also need to care about privacy, security, and fairness issues to build trustworthy real-world systems.
+
+<ul>
+	<li><strong>Knowledge graph/base construction (<a href="http://home.cse.ust.hk/~yqsong/papers/WWW-Tutorial-Part4.pdf">New Trends</a>)</strong>
+
+	<ul>
+		<li><a href="https://haixun.github.io/probase.html">ProBase</a>: A concept knowledge graph extracted from billions of Web pages (<a href="https://concept.research.microsoft.com/">latest version</a>)</li>
+		<li><a href="https://hkust-knowcomp.github.io/ASER">ASER</a>: An eventuality knowledge graph of activities, states, events, and their relations</li>
+		<ul>
+			<li><a href="https://github.com/HKUST-KnowComp/TransOMCS">TransOMCS</a>: Population of a commonsense knowledge base in the format of OMCS transferred from linguistic patterns in ASER</li>
+			<li><a href="https://github.com/HKUST-KnowComp/DISCOS-commonsense">DISCOS</a>: Population of ATOMIC if-then inferential commonsense knowledge base with the discourse relations in ASER (<a href="https://github.com/HKUST-KnowComp/CSKB-Population">Extension: CSKB Population Benchmark</a>)</li>
+		</ul>
+		<li><a href="https://github.com/HKUST-KnowComp/atomic-conceptualization">AbstractATOMIC</a>: A conceptualization framework of commonsense knowledge aquisition and its resulting abstract knowledge in the form of ATOMIC</li>
+		<li><a href="https://github.com/HKUST-KnowComp/AbsPyramid">AbsPyramid</a>: An implementation driven by Marvin Minsky's K-Line theory; a unification of entity typing, event typing, conceptualization, and entailment graphs</li>
+		<li><a href="https://github.com/HKUST-KnowComp/AutoSchemaKG">AutoSchemaKG</a>: A framework to automatically extract entity, event, and perform conceptualization at Web scale, with three large examples: ATLAS-Wiki (from Wikipedia), ATLAS-Pes2o (from academic papers), and ATLAS-CC (from Common Crawl)</li>
+		<li><a href="https://github.com/HKUST-KnowComp/MARS">MARS</a>: A metaphysical reasoning knowledge base</li>
+		<li><a href="https://github.com/HKUST-KnowComp/FolkScope">FolkScope</a>: Eventuality-based intention knowledge graph for e-commerce commonsense understanding (later extented to <a href="https://www.amazon.science/blog/building-commonsense-knowledge-graphs-to-aid-product-recommendation">Amazon COSMO</a>)</li>
+	</ul>
+	</li>
+	<li><strong>Natural language understanding and grounding to knowledge graphs</strong>
+	<ul>
+		<li>Conceptualization of the world knowledge</li>
+		<li>Entity and event linking, semantic parsing, and discourse analysis</li>
+	</ul>
+	</li>
+	<li><strong>Machine learning, inference, and reasoning with world knowledge</strong>
+	<ul>
+		<li>World knowledge representation, learning, and inference</li>
+		<li>Learning with global structural world knowledge</li>
+		<li>Neuro-symbolic inference and reasoning</li>
+		<li>Neural graph database/knowledgebase systems</li>
+	</ul>
+	</li>
+	<li><strong>Leveraging (commonsense) knowledge and social norms to improve privacy, security, explainability, and fairness issues in machine learning models for NLP</strong></li>
+</ul>
+
+<h2>Talks:</h2>
+
+<ul>
+	<li>2025 Summer: Huawei. <strong>Towards Compliant LLM Agents: From Contextual Integrity (CI) to Model Contextual Integrity Protocol (MCIP)</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/TowardsMCIP-YangqiuSong-V2.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/TowardsMCIP-YangqiuSong-V2.pptx">ppt</a>]</li>
+	
+	<li>2024 December: WeBank. <strong>AI Privacy & Safety Compliance: From Checklist to Reasoning</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/PrivacyChecklist-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/PrivacyChecklist-YangqiuSong.pptx">ppt</a>]</li>
+	<li>2024 July: Federated Learning Summer School, Qingdao. <strong>Privacy-Preserved Neural Graph Databases</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/p-NGDBs-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/p-NGDBs-YangqiuSong.pptx">ppt</a>]</li>
+	<li>2024 May: WWW 2024 Tutorial. <strong>New Frontiers of Knowledge Graph Reasoning: Recent Advances and Future Trends</strong>. [<a href="https://sites.google.com/view/new-frontiers-kgr">Link</a>]</li>
+	<li>2024 April: HKUST. <strong>E-Commerce Commonsense Knowledge Graphs for Intention-based Recommendation</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/FolkScope-COSMO-YangqiuSong-Final.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/FolkScope-COSMO-YangqiuSong-Final.pptx">ppt</a>]</li>
+	<li>2023 November: Amazon/NVIDIA/Huawei/WeBank. <strong>Complex Query Answering on Neural Knowledge Graphs with Rich Semantics</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/CQA-RichSemantics-YangqiuSong-Final.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/CQA-RichSemantics-YangqiuSong-Final.pptx">ppt</a>]</li>
+	<li>2023 October: COMP5222 Lectures on <strong>Complex Query Answering on Neural Knowledge Graphs</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/COMP5222-KG-CQA-1.pptx">Part 1</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/COMP5222-KG-CQA-2.pptx">Part 2</a>] (Most contents are developed by <a href="https://zihao-wang.github.io/">Zihao Wang</a> (<a href="https://zihao-wang.github.io/assets/pdf/Neuro-symbolic4KGCQA.pdf">orginal slides</a>).</li>
+	<li>2023 Summer: IJCAI-FL. <strong>Privacy Attacks on Large Language Models</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/LLMPrivacy-YangqiuSong-V3.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/LLMPrivacy-YangqiuSong-V3.pptx">ppt</a>]</li>
+	<li>2023 Summer: KDD-China. <strong>Activity (or Process), State, and Event-based Knowledge Graphs </strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2023-KDD-China-YangqiuSong-Final.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/2023-KDD-China-YangqiuSong-Final.pptx">ppt</a>]</li>
+	<li>2022 July: Amazon Search Science Team. <strong>Acquiring and Modeling Abstract Commonsense Knowledge via Conceptualization</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/202207-YangqiuSong-Conceptualization-Final.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/202207-YangqiuSong-Conceptualization-Final.pptx">ppt</a>]</li>
+	<li>2021 Novermber: CCKS Tutorial. <strong>Commonsense Knowledge Acquisition and Reasoning</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/CCKS2021Tutorial-Commonsense-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/CCKS2021Tutorial-Commonsense-YangqiuSong.pptx">ppt</a>]</li>
+	<li>2021 September: Huawei Workshop on Commonsense. <strong>Commonsense Knowledge Base Population</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/CSKBP-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/CSKBP-YangqiuSong.pptx">ppt</a>]</li>
+	<li>2021 Summer: WeBank, BUPT, and 4Paradigm. <strong>Differentially Private Federated Knowledge Graphs Embedding</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2021.07-FKGE-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/2021.07-FKGE-YangqiuSong.pptx">ppt</a>]</li>
+	<li>2021 Summer: Renmin University and THU. <strong>An Overview of Commonsense Knowledge Graph Construction and Reasoning at HKUST</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-202107-Tsinghua.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-202107-Tsinghua.pptx">ppt</a>]</li>
+	<li>2020 KDD Tutorial. <strong>Recent Advances on Graph Analytics and Its Applications in Healthcare</strong>. [<a href="http://www.calvinzang.com/kdd2020_tutorial_medical_graph_analytics.html">Tutorial Page</a>] [<a href="http://home.cse.ust.hk/~yqsong/papers/KDD2020_tutorial_part3.pptx">Part 3 ppt</a>]</li>
+	<li>2020 July: Knowledge Works at Fudan and THU. <strong>ASER: Building a Commonsense Knowledge Graph by Higher-order Selectional Preference</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-202007-KnowledgeWorks.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-202007-KnowledgeWorks.pptx">ppt</a>]</li>
+	<li>2019 July: HIT Event Reasoning Workhop, BUPT, PKU, Beihang. <strong>ASER: A Large scale Eventuality Knowledge Graph</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-YangqiuSong.pdf">pdf</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-YangqiuSong.pptx">ppt</a>], [<a href="http://home.cse.ust.hk/~yqsong/papers/ASER-WWW20.pptx">WWW20 Version</a>]</li>
+	<li>2018 November: ICDM Workshop on Large Scale Graph Representation Learning and Applications (GRLA). <strong>Automatic Information Fusion with Heterogeneous Information Networks</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2018-ICDM-Workshop-GRLA.pptx">ppt</a>] [<a href="http://home.cse.ust.hk/~yqsong/papers/2018-ICDM-Workshop-GRLA.pdf">pdf</a>]</li>
+	<li>2017 Summer: SCUT, PKU. <strong>Recent Development of Heterogeneous Information Networks: From Meta-paths to Meta-graphs</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2017-HIN-Metagraph.pptx">ppt</a>] [<a href="http://home.cse.ust.hk/~yqsong/papers/2017-HIN-Metagraph.pdf">pdf</a>]</li>
+	<li>2016 IJCAI Workshop on Heterogeneous Information Network Analysis (HINA). <strong>Incorporating Structured World Knowledge into Unstructured Text via Heterogeneous Information Networks</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2016-ijcai-HINA-workshop.pptx">ppt</a>] [<a href="http://home.cse.ust.hk/~yqsong/papers/2016-ijcai-HINA-workshop.pdf">pdf</a>] (extended abstract [<a href="https://home.cse.ust.hk/~yqsong/papers/2016_IJCAI_workshop_HINA.pdf">pdf</a>])</li>
+	<li>2015 ICDM Workshop on Practical Transfer Learning. <strong>Text Classification without Supervision: Incorporating World Knowledge and Domain Adaptation</strong>. [<a href="http://home.cse.ust.hk/~yqsong/papers/2015-ICDM-workshop-supervisionless.pptx">ppt</a>] [<a href="http://home.cse.ust.hk/~yqsong/papers/2015-ICDM-workshop-supervisionless.pdf">pdf</a>]</li>
+</ul>
+
+<h2>Group:</h2>
+
+<p><strong>Postdocs:</strong></p>
+<ul>
+	<li><a href="http://hlibt.student.ust.hk">Haoran Li</a> (Since Spring 2025)</li>
+	<li><a href="http://www.bjx.fun/">Jiaxin Bai</a> (Since Spring 2025)</li>
+	<li><a href="https://scholar.google.com/citations?user=ddfKpX0AAAAJ">Xi Yang</a> (Since Spring 2025)</li>
+</ul>
+
+<p><strong>PhDs:</strong></p>
+
+<ul>
+	<li><a href="https://hhy-huang.github.io/">Haoyu Huang</a> (Since Fall 2025)</li>
+	<li>Yufei Li (Since Fall 2025)</li>
+	<li>Xiyu Ren (Since Fall 2025)</li>
+	<li>Yuxuan Liu (Since Fall 2025)</li>
+	<li>Andy Yau Wai YIM (Since Fall 2025)</li>
+	<li>Tsz Ho CHAN (Part-time, Since Fall 2025)</li>
+	<li><a href="https://egbertjing.github.io/">Huihao Jing</a> (Since Spring 2025)</li>
+	<li>Wenbin Hu (Since Spring 2025)</li>
+	<li><a href="https://stonetzheng.github.io/">Tianshi Zheng</a> (Since Fall 2024)</li>
+	<li><a href="https://tonyxu12138.github.io/">Baixuan Xu</a> (Since Fall 2024)</li>
+	<li><a href="https://zongqing0068.github.io/">Qing Zong</a> (Since Fall 2024)</li>
+	<li>Haochen Shi (Since Fall 2024)</li>
+	<li><a href="https://alexfan.cn/">Wei Fan</a> (Since Fall 2023)</li> 
+	<li><a href="https://zhaowei-wang-nlp.github.io/">Zhaowei Wang</a> (Since Fall 2023)</li>
+	<li><a href="https://jiayangcheng.com/">Jiayang Cheng</a> (Since Fall 2023)</li>
+	<li><a href="https://chanchunkithkust.github.io/">Jacky Chun Kit Chan</a> (Since Fall 2023)</li>
+	<li><a href="https://mighty-weaver.github.io/">Weiqi Wang</a> (Since Fall 2022)</li>
+	<li><a href="https://dzy97.github.io/">Zheye Deng</a> (Since Fall 2022)</li>
+	<li>Zizheng Lin (Since Fall 2019)</li>
+</ul>
+
+<p><strong>MPhils:</strong></p>
+
+<ul>
+	<li><a href="https://changxuanfan.github.io/">Changxuan Fan</a> (Since Fall 2025)</li>
+	<li>Jerry, Ki Sen HUNG(Since Fall 2025)</li>
+	<li>Anson, Tsun On KWOK(Since Fall 2025)</li>
+	<li>Ka Wai CHUNG(Since Fall 2025)</li>
+	<li><a href="https://eason-nuosen.github.io">Yisen Gao</a> (Since Fall 2025)</li>
+	<li>Zhongwei Xie (Since Fall 2025)</li>
+	<li>Bowen Liu (Since Fall 2025, Co-supervised with Xiaomeng Li)</li>
+	<li>Shurui Zhang (Since Fall 2025, Co-supervised with Kani Chen)</li>
+	<li>Xingyan Chen (Since Fall 2024, Co-supervised with Kani Chen)</li>
+	<li><a href="https://lcy2723.github.io/">Chunyang Li</a> (Since Fall 2024)</li>
+	<li><a href="https://lucaswychan.github.io/">Lucas Wun Yu CHAN</a> (Since Fall 2024)</li>
+	<li>Jason Tsz Ho LI (Since Fall 2024)</li>
+	<li><a href="https://gzone0111.github.io/">Dennis Hong Ting TSANG</a> (Since Fall 2024)</li>
+	<li><a href="https://asifkhan.me/">Asif KHAN</a> (Since Fall 2024)</li>
+	<li>Peng Xie (Since Fall 2024, Co-supervised with Kani Chen)</li>
+	<li>Hongyu Luo (Since Fall 2024)</li>
+	<li>Zirui Wang (Since Fall 2022, Co-supervised with Qian Xu)</li>
+</ul>
+
+</ul>
+
+
+<p><strong>Past students, interns, visitors, collaborators with first employment:</strong></p>
+
+<ul>
+	<li>HKUST PhD:
+	<ul>
+		<li>Qi Hu (Since Fall 2020-Spring 2025, First Employment: Byte Dance in Shanghai). Thesis: Privacy-Preserved Learning on Graph-Structured Data</li>
+		<li><a href="http://www.bjx.fun/">Jiaxin Bai</a> (Fall 2020-Spring 2025, First Employment: Postdoc@HKUST). Thesis: Advancements in Knowledge Graph Reasoning: Innovative Approaches to Complex Query Answering and Logical Hypothesis Generation</li>
+		<li><a href="https://zihao-wang.github.io/">Zihao Wang</a> (Fall 2020-Spring 2025, First Employment: Financial Industry in Hong Kong). Thesis: Querying Neural Graph Databases</li>
+		<li><a href="https://suytingwan.github.io/">Ying Su</a> (Fall 2020-Fall 2024, First Employment: Postdoc@HKU). Thesis: Commonsense Knowledge Representation, Reasoning and Application</li>
+		<li><a href="http://hlibt.student.ust.hk">Haoran Li</a> (Fall 2020-Fall 2024, First Employment: Postdoc@HKUST). Thesis: Enhancing Trustworthiness in Large Language Models: Perspectives on Privacy and Safety</li>
+		<li><a href="http://fangtq.com/">Tianqing Fang</a> (Fall 2019-Summer 2024, First Employment: Tencent AI Lab in Shenzhen). Thesis: Commonsense Knowledge Base Population and Reasoning for Inferential Knowledge</li>
+		<li><a href="https://seanliu96.github.io/">Xin Liu</a> (Fall 2018-Summer 2023, First Employment: Scientist@Amazon A9 in Palo Alto). Thesis: Theory and Practice: Graph Representation Learning For Subgraph Isomorphisms and Substructure-Augmented Applications</li>
+		<li><a href="https://huiruxiao.github.io/">Huiru Xiao</a> (Fall 2016-Summer 2022, First Employment: Lecturer@HKUST). Thesis: Learning with Hierarchical Data</li>
+		<li><a href="https://www.linkedin.com/in/wenyi-xiao-412b6b1a2/?originalSubdomain=hk">Wenyi Xiao</a> (Fall 2016-Fall 2021, First Employment: Scientist@Huawei in Hong Kong). Thesis: Path Learning in Complex Networks</li>
+		<li><a href="https://panda0881.github.io/Hongming_Homepage/">Hongming Zhang</a> (Fall 2018-Summer 2021, First Employment: Scientist@Tencent AI Lab in Seattle). Thesis: Towards Commonsense Reasoning with Higher-order Selectional Preference over Eventualities</li>
+		<li><a href="https://hldai.github.io/">Hongliang Dai</a> (Fall 2017-Summer 2021, First Employment: Scientist@Tencent Jarvislab in Shenzhen). Thesis: Weak Supervision for Information Extraction</li>
+		<li><a href="https://ziqianzeng.github.io/">Ziqian Zeng</a> (Fall 2016-Summer 2021, First Employment: Assistant Professor@SCUT in Guangzhou). Thesis: On the Use of Auxiliary Information for Label-less Text Mining Tasks</li>
+		<li>Yinghua Zhang (Fall 2015-Spring 2021, Co-supervised with Prof. Qiang Yang, First Employment: Research Engineer@Meituan in Shanghai). Thesis: Deep Transfer Learning: Generalization on Clean and Adversarial Data</li>
+		<li><a href="https://nedjmaou.github.io/">Nedjma Ousidhoum</a> (Fall 2014-Summer 2021, Co-supervised with Prof. DY Yeung, First Employment: Postdoc@Cambridge). Thesis: On the Importance of Normalization of the Experimental Design of Multilingual Toxic Content Detection</li>
+	</ul>
+	</li>
+	<li>HKUST MPhil:
+	<ul>
+	<li>Louis Chun Yi Bo (Since Fall 2022, First Employment: Gap Year). Thesis: Educational Question Generation and Evaluation with Large Language Models</li>
+	<li><a href="https://lizihanov17.github.io/">Zihan Li</a> (Since Fall 2022, Co-supervised with Prof. Bo Li, First Employment: PhD@UToronto). Thesis: Sparse Gradient Communication for Accelerating Distributed Deep Learning</li>
+	<li><a href="https://syncdoth.github.io/">Sehyun Choi</a> (Since Fall 2022, First Employment: Startup Company in Korea). Thesis: Knowledge Grounded Generation with Inference-Time Optimization and Constrained Decoding</li>
+	<li><a href="https://dovanquyet.github.io/">Van Quyet DO</a> (Since Fall 2022, First Employment: PhD@Virginia Tech). Thesis: ConstraintChecker: A Plugin for Large Language Models to Reason on Commonsense Knowledge Bases</li>
+	<li><a href="https://www.linkedin.com/in/cynwell/">Cynwell Yik Lun Lau</a> (Fall 2021-Fall 2023, First Employment: HKMA). Thesis: Better Questions for Better Answers: Generating High-quality QA Pairs</li>
+	<li><a href="https://zhaowei-wang-nlp.github.io/">Zhaowei Wang</a> (Fall 2021-Summer 2023, First Employment: PhD@HKUST). Thesis: SubeventWriter: Iterative Sub-event Sequence Generation with Coherence Controller</li>
+	<li><a href="https://jiayangcheng.com/">Jiayang Cheng</a> (Fall 2021-Summer 2023, First Employment: PhD@HKUST). Thesis: Narrative Reasoning by Grounding to Event-centric Knowledge Graphs</li>
+	<li><a href="https://chanchunkithkust.github.io/">Jacky Chun Kit Chan</a> (Fall 2021-Summer 2023, First Employment: PhD@HKUST). Thesis: Promp Learning on Abductive Commonsense Reasoning</li>
+	<li>Gio Tsz Ho Chan (Fall 2021-Summer 2023, First Employment: Research Engineer@Huawei Hong Kong). Thesis: Exploring Contextualized Conceptualization: An Evaluation of Prompt-Driven Responses in Diverse Language Models</li>
+	<li><a href="https://www.linkedin.com/in/ngo-yin-wong-989347152/">Ngo Yin Wong</a> (Fall 2019-Summer 2023, First Employment: Software Engineer@Amazon AWS in Hong Kong). Thesis: Reasoning over Merged Semantic Graphs across Multiple Frameworks for Fact Verification</li>	
+	<li>Haowen Ke (Fall 2019-Summer 2022, First Employment: Unknown). Thesis: Personalised Knowledge-aware News Recommendation</li>
+	<li><a href="https://mutiann.github.io/">Mutian He</a> (Fall 2019-Spring 2022, First Employment: PhD@EPFL). Thesis: Acquiring and Modelling Abstract Commonsense Knowledge via Conceptualization</li>
+	<li><a href="http://scarletpan.github.io/about/">Haojie Pan</a> (Fall 2018-Spring 2020, First Employment: Research Engineer@Alibaba): Thesis: Pragmatical Discourse Analysis in Dialogues</li>
+	<li>Yan Liang (Fall 2016-Summer 2019, First Employment: Financial Industry). Thesis: Relation Discovery with Out-of-Relation Knowledge Base as Supervision</li>
+	<li>Ruixiang Zhang (Fall 2016-Summer 2018, First Employment: PhD@UMontreal). Thesis: An Adversarial Approach to Few-Shot Learning</li>
+	<li><a href="https://panda0881.github.io/Hongming_Homepage/">Hongming Zhang</a> (2016.08-2018.08, First Employment: PhD@HKUST). Thesis: FinFlow</li>
+	</ul>
+	</li>
+</ul>
+
+<p><strong>Student Achievements:</strong></p>
+
+<ul>
+	<li>Andy Yau Wai YIM: Hong Kong PhD Fellowship (HKPF), 2025</li>
+	<li>Xiyu Ren: Hong Kong PhD Fellowship (HKPF), 2025</li>
+	<li>Zheye Deng: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2024/25</li>
+	<li>Weiqi Wang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2024/25</li>
+	<li>Wei Fan: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2024/25</li>
+	<li>Zhaowei Wang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2024/25</li>
+	<Li>Tianqing Fang: Finalist of School of Engineering (SENG) PhD Research Excellence Award 2024-25 </li>
+	<li>Tianshi Zheng: Hong Kong PhD Fellowship (HKPF), 2024</li>
+	<li>Qing Zong: Hong Kong PhD Fellowship (HKPF), 2024</li>
+	<li>Baixuan Xu: Hong Kong PhD Fellowship (HKPF), 2024</li>
+	<li>Tianqing Fang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2023/24</li>
+	<li>Haoran Li: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2023/24</li>
+	<li>Zheye Deng: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2023/24</li>
+	<li>Weiqi Wang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2023/24</li>
+	<li>Haoran Li: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2022/23</li>
+	<li>Tianqing Fang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2022/23</li>
+	<li>Zhaowei Wang: Hong Kong PhD Fellowship (HKPF), 2023</li>
+	<li>Jiayang Cheng: Hong Kong PhD Fellowship (HKPF), 2023</li>
+	<li>Jacky Chun Kit Chan: Hong Kong PhD Fellowship (HKPF), 2023</li>
+	<li>Sehyun Choi: Asian Future Leaders Scholarship Program (AFLSP), 2022</li>
+	<li>Weiqi Wang: Hong Kong PhD Fellowship (HKPF), 2022</li>
+	<li>Zheye Deng: Hong Kong PhD Fellowship (HKPF), 2022</li>
+	<li>Hongming Zhang: Finalist of School of Engineering (SENG) PhD Research Excellence Award 2021-22 </li>
+	<li>Xin Liu: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2021/22</li>
+	<li>Haoran Li: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2021/22</li>
+	<li>Tianqing Fang: HKUST RedBird Academic Excellence Award for Continuing PhD Students in 2021/22</li>
+	<li>Xin Liu: HKUST CSE Professor Samuel Chanson Best Teaching Assistant Award 2020</li>
+	<li>Xin Liu: HKUST School of Engineering Academic Award for Continuing PhD Students 2019-2020</li>
+	<li>Hongming Zhang: HKUST School of Engineering Academic Award for Continuing PhD Students 2019-2020</li>
+	<li>Zihao Wang: Hong Kong PhD Fellowship (HKPF), 2020</li>
+	<li>Jiaxin Bai: Hong Kong PhD Fellowship (HKPF), 2020</li>
+	<li>Hongming Zhang: Tencent Rhino-Bird Scholarship, 2019</li>
+	<li>Hongming Zhang: Microsoft Research Asia Fellowship, 2019</li>
+	<li>Hongliang Dai: HKUST School of Engineering Academic Award for Continuing PhD Students 2018-2019</li>
+	<li>Ziqian Zeng: HKUST School of Engineering Academic Award for Continuing PhD Students 2018-2019</li>
+	<li>Zizheng Lin: Hong Kong PhD Fellowship (HKPF), 2019</li>
+	<li>Tianqing Fang: Hong Kong PhD Fellowship (HKPF), 2019</li>
+	<li>Xin Liu: Huawei PhD Fellowship, 2018</li>
+	<li>Hongming Zhang: Hong Kong PhD Fellowship (HKPF), 2018</li>
+	<li>Ziqian Zeng: Hong Kong PhD Fellowship (HKPF), 2016</li>
+	<li>Yinghua Zhang: Hong Kong PhD Fellowship (HKPF), 2015</li>
+</ul>
+
+<p><strong>Best Paper Awards:</strong></p>
+
+<ul>
+	<li>TMLR 2024: Outstanding Paper Finalist</li>
+	<li>EMNLP 2024: Outstanding Paper Award</li>
+	<li>Amazon 2024: Top 10 Most Viewed <a href="https://www.amazon.science/blog/the-10-most-viewed-publications-of-2024">Paper</a> and <a href="https://www.amazon.science/blog/the-10-most-viewed-blog-posts-of-2024">Blog</a></li>
+	<li>AKBC 2021: Outstanding Paper Award</li>
+	<li>IEEE VIS 2021: Best Paper Award-Honorable Mention</li>
+	<li>WSDM 2018 workshop on KBCOM: Best Paper Award-Honorable Mention</li>
+	<li>Yelp 2018: Grand Prize for Best Paper Award in Yelp Dataset Challenge - Round 10</li>
+	<li>KDD 2017: Best Data Science Track Paper Award</li>
+	<li>IUI 2015: Best Paper Award-Honorable Mention</li>
+	<li>KDD 2014: Selected in TKDD Special Issue of Best Papers in ACM SIGKDD 2014 (One out of Nine)</li>
+	<li>PAKDD 2007: Best Paper Award-Honorable Mention</li>
+</ul>
+
+<h2>Service:</h2>
+
+<ul>
+	<li><strong>Journal Editorial Board: </strong>Journal of Artificial Intelligence Research (2016.07-Present); Artificial Intelligence (2024.04-Present)</li>
+	<li><strong>Journal Editorial Board, Standing Reviewer: </strong>Transactions of the Association for Computational Linguistics</li>
+	<li><strong>Journal Guest Editor</strong>: ACM Transactions on Intelligent Systems and Technology (TIST) Special Issue on &ldquo;Federated Learning: Algorithms, Systems, and Applications&rdquo;</li>
+	<li><strong>Journal Guest Editor</strong>: IEEE Transaction on Big Data Special Issue on &ldquo;Knowledge Graphs: Techniques and Applications.&rdquo;</li>
+	<li><strong>Journal Guest Editor </strong>:ACM Transactions on Interactive Intelligent Systems (TIIS) Special Issue on &ldquo;Modeling User Trait and Behavior with Machine Learning.&rdquo;</li>
+	<li><strong>Conference Chair: </strong>ICKG&#39;21: Knowledge Graph for NLP Track Area Chair; EMNLP&#39;21: Information Extraction Track Chair; ACL-IJCNLP&#39;21: Information Extraction Track Area Chair; NAACL&#39;21: Semantics: Sentence-level Semantics and Textual Inference Track Area Chair; IJCAI&#39;21: Area Chair; EMNLP&#39;20: Information Extraction Track Area Chair; ACL&#39;20: Information Retrieval and Text Mining Track Area Chair; NLPCC&#39;19: Knowledge Graphs Track Area Chair; IJCAI&#39;19 in Macau: Local Chair; NLPCC&#39;17: Machine Learning Track Area Chair</li>
+	<li><strong>Senior Program Committee:</strong> KDD&#39;21 Data Science; CIKM&#39;19,21; AAAI&#39;18,20,21; IJCAI&#39;15</li>
+	<li><strong>Program Committee: </strong>KDD&#39;13-21; NIPS&#39;15-18,20; COLING&#39;14,18,20; IJCAI&#39;13,16,19,20; EMNLP&#39;18,19; *SEM&#39;17,19; ACL&#39;13,17-19; ICDM&#39;14-16,18; CIKM&#39;14,17-18; ECML/PKDD&#39;11,14-18; ICML&#39;15,18; AAAI&#39;15-17; SDM&#39;15-17;DASFAA&#39;17; ICMLA&#39;07-15; IEEE DSAA&#39;15; ICTAI&#39;11-12,14-15; ACML&#39;13-15; BigComp&#39;15; CIKM&#39;14; CIDM&#39;13-14; COLING&#39;14; SMIR&#39;14; WSDM&#39;14; IEEE-CSE&#39;12-13; RecSys&#39;13; LSRS&#39;13; IUI&#39;13; ParLearning&#39;12-13; LSVA&#39;11; OEDM&#39;09-11; SBNMA&#39;11</li>
+</ul>
+
+<h2>Current Research Sponsors:</h2>
+
+<ul>
+	<li>HK-UGC, HK-RGC, HK-ITC, China NSFC, Tencent AI Lab, Hong Kong Mediation and Arbitration Centre (HKMAAC) and California University, School of Business Law &amp; Technology.</li>
+</ul>
+</blockquote>
+
+<p><a href="http://www.clustrmaps.com/map/cse.ust.hk/~yqsong/"><img src="//www.clustrmaps.com/map_v2.png?u=4JHY&amp;d=0M_M4nE02861DSn2zqxv_haWe-cC0kvxwyR68gQ0IcA" /></a></p>
+
+<hr />

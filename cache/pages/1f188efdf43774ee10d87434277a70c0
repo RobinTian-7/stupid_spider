@@ -1,0 +1,569 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Chenshu Wu - AIoT Research at HKU</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/AIoT-icon.png" /> 
+  <meta name="description" content="Chenshu Wu - The University of Hong Kong" />
+  <meta name="keywords" content="Chenshu Wu, Hong Kong, Maryland, Origin Wireless, Tsinghua, Localization, Wireless Sensing, Smartphone" />
+  <meta http-equiv="content-type" content="text/html; charset=GB2312" />
+  <meta name="author" content="Chenshu Wu, 吴陈沭">
+  <meta name="keywords" content="Chenshu Wu, Wu Chenshu, Chenshu, Wu, C. Wu, Tsinghua, Indoor Localization, wireless sensing, 吴陈沭, 清华, 港大, HKU"/> 
+    
+  <!-- <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/2e3694663a.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400&family=Raleway:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+  <script src="js/lightbox.js"></script> 
+  <script src="js/main.js"></script>
+
+  <!--Baidu Statistics-->
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?efd2726d620199673982fee36f79efb8";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <!--End of Baidu Statistics-->
+
+  <!-- Start of ClustrMaps Statistics -->
+	<!-- <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=HxK8&d=qa3ow0WC7R-CxpyynFl37-Dbrfsh8LGCfy3CGEeuh_c"></script> -->
+  <!-- End of ClustrMaps Statistics -->
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">      
+      <div id="logo">
+        <div class="name">
+		<h1>Chenshu Wu | 吳陳沭</h1>
+        <!--<h2>Search to Research.</h2>-->
+		</br>
+		<h2></h2>
+		<h2><a href="https://aiot.hku.hk/">HKU AIoT (Artificial Intelligence of Things) Lab</a></h2>
+		<h2>Assistant Professor, <a href='https://www.cs.hku.hk/'>Department of Computer Science</a></h2>
+		<h2>Associate Head, <a href='https://www.cds.hku.hk/'>Department of Computer Science</a></h2>
+		<h2><a href='https://www.hku.hk/'>The University of Hong Kong</a></h2>
+		</br>
+
+		
+		</br>
+		<h2>Office: 315B, Chow Yei Ching Building</h2>
+		<h2>Email: chenshu [at] cs [dot] hku [dot] hk</h2>
+		<h2><a target='blank' href="http://scholar.google.com/citations?user=q9llreMAAAAJ"><i class="ai ai-google-scholar-square ai-lg"></i></a> 
+			<a target='blank' href='http://dblp.uni-trier.de/pers/hd/w/Wu:Chenshu'><i class="ai ai-dblp-square ai-lg"></i></a> 
+			<a href="https://www.researchgate.net/profile/Chenshu_Wu"><i class="ai ai-researchgate-square ai-lg"></i></a>
+			<a href="https://orcid.org/0000-0002-9700-4627"><i class="ai ai-orcid-square ai-lg"></i></a>
+			<a href="https://www.linkedin.com/in/chenshu-wu-17910024/"><i class="fab fa-linkedin ai-lg"></i></a>
+			<a href="https://twitter.com/ChenshuWu"><i class="fab fa-twitter-square ai-lg"></i></a>		
+			<a href='https://github.com/aiot-lab/'><i class="fab fa-github-square ai-lg"></i></a>
+			<a href='cswu-cv.pdf'><i class="ai ai-cv-square ai-lg"></i></a>
+		</h2>			
+		</div>
+		<div class="avatar">
+			<span class="right"><img width="250px" src="./images/avatar.jpg" alt="example graphic" /></span>
+		</div>
+	  </div>
+	  <div id="menubar">
+	  	<div id="banner">
+	  		<img height="25px" src="https://hku.hk/assets/img/hku-logo.svg">
+	  	</div>      
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class=""><a href="index.html">Home</a></li>
+          <span>|</span>
+          <li class=""><a href="#bio">Biography</a></li>
+          <span>|</span>
+          <li class=""><a href="pubs.html">Publications</a></li>
+          <span>|</span>
+          <!-- <li class=""><a href="index.html#pub">Patents</a></li> -->
+          <!-- <span>|</span> -->
+          <li class=""><a href="#teaching">Teaching</a></li>
+          <span>|</span>
+          <li class=""><a href="research.html">Research</a></li>
+          <span>|</span>
+          <!-- <li class=""><a href="#services">Services</a></li> -->
+          <!-- <span>|</span> -->
+          <li class=""><a href="#awards">Awards</a></li>
+        </ul>
+      </div>      
+    </div>
+    <div id="site_content">
+      <!-- <div class="sidebar"> -->
+			
+	  <!-- </div> -->
+      <!-- <div id="content"> -->
+        <!-- insert the page content here -->
+		
+		 <!-- updates -->
+		<a name='news' style='text-decoration: none'><h1><i class="far fa-list-alt"></i> News</h1></a>
+		<ul style="list-style-type: disc;">
+			<li><span class='text_block highlight'>I am actively looking for highly self-motivated PhD students to work on AIoT systems, with potential HKPF and HKU-PS scholarships. If you are interested, please drop me an email. Multiple PhD, postdoc, and RA positions are available. Check out more details here: <a href='https://aiot.hku.hk/openings/'><i class="fa fa-hand-point-right"></i>Prospective Students</a> </span></li>
+			<!-- <li><span class='text_block highlight'><a href='https://aiot.hku.hk/openings/'><a href='https://www.rss.hku.hk/fund/presidential-rap-scheme'>Presidential Research Assistant Professor (RAP) Scheme:</a></a> We are also looking for RAP under the University's Presidential RAP Scheme. Feel free to reach out if you are interested.</span></li> -->
+			<li><strong>Are you still using Wi-Fi for the Internet only? You are missing a lot!</strong> Check out our recent article <a href='./papers/comstd22_WiFiCanDoMore.pdf'>"<strong>Wi-Fi Can Do More: Towards Ubiquitous Wireless Sensing</strong>"</a> on IEEE Communications Standards Magazine!</li>
+			<li><strong><i class="fa fa-caret-right" aria-hidden="true"></i><i class="fa fa-caret-right" aria-hidden="true"></i><i class="fa fa-caret-right" aria-hidden="true"></i></strong> Check out <a href='https://aiot.hku.hk/'><strong>HKU AIoT Lab website</strong></a> for more updates!</li>
+			<li>2025/12, received the ICEdge AIoT Rising Star Award! Thanks!</li>
+			<li>2025/12, Songlin successfully defended his MPhil degree! Big Congrats!</li>
+			<li>2025/12, invited to serve on the TPC of IEEE ICDCS 2026.</li>
+			<li>2025/12, invited to serve on the TPC of ACM MobiHoc 2026.</li>
+			<li>2025/12, invited to serve on the TPC of EWSN 2026.</li>
+			<li>2025/12, invited to attend the 2026 IEEE Laureate Forum! </li>
+			<li>2025/11, two papers conditionally accepted by MobiCom'26.</li>
+			<li>2025/10, invited to serve on the TPC of ACM MobiSys 2026.</li>
+			<li>2025/09, OctoNet accepted to NeurIPS 2025 Datasets and Benchmarks Track! Congrats!</li>
+			<li>2025/08, received the 2025 IEEE Communications Society Fred W. Ellersick Prize!</li>
+			<li>2025/05, 🔥 Check out <a href="https://hotsense.github.io">HotSense @ MobiCom 2025</a> — the first ACM workshop on thermal sensing and computing!</li>
+			<li>2025/04, one paper from our group accepted to OSDI 2025 and two papers to IMWUT/UbiComp 2025!</li>
+			<li>2025/03, invited to serve as the Journal Track Co-Chair for <a href='https://www.ewsn25.cs.kuleuven.be/home'>EWSN 2025</a> in Leuven. Please consider submitting!</li> 
+			<li>2024/12, invited to serve on the TPC of <a href='https://www.sigmobile.org/mobihoc/2025/'>ACM MobiHoc 2025</a> in Houston.</li>
+			<li>2024/11, RF-Diffusion received the ACM MobiCom 2024 Best Artifact Award!</li>
+			<li>2024/11, invited to serve on the TPC of <a href='https://sensys.acm.org/2025/'>ACM SenSys 2025</a> in Irvine.</li>
+			<li>2024/10, awarded the <a href="https://www.cds.hku.hk/news/professor-chenshu-wu-and-his-team-won-the-us-national-academy-of-medicine-nam-healthy-longevity-catalyst-award-hlca-2024/"><strong> 2024 NAM Healthy Longevity Catalyst Awards (Hong Kong)</strong></a>!</li>
+			<li>2024/10, invited to serve on the TPC of <a href='https://sigmobile.org/mobisys/2025/'>ACM MobiSys 2025</a> in California.</li>
+			<li>2024/10, invited to serve on the TPC of <a href='https://dyspan2025.ieee-dyspan.org/'>IEEE DySPAN 2025</a> in London.</li>
+			<li>2024/09, invited to serve on the TPC of <a href='https://icdcs2025.icdcs.org/'>IEEE ICDCS 2025</a> (IoT and CPS track), Glasgow, Scotland.</li>
+			<li>2024/08, delivered my first ever lecture for middle/high school students through the <a href='https://talented.hku.hk/academic-programmes/hku-ai-academy-for-the-talented-aug-5-9'>HKU AI Academy for the Talented</a> program!</li>
+			<li>2024/08, Co-Chairing The 1st International Workshop on RF Computing (RFCOM, co-located with SenSys), Hangzhou, China, 2024.</li>
+			<li>2024/06, our research on statistical acoustic sensing was funded by RGC/GRF!</li>
+			<li>2024/06, invited to serve as an Associate Editor for ACM Transactions on Internet of Things.</li>
+			<li>2024/04, co-chairing the TPC of <a href='https://attend.ieee.org/icpads/'>IEEE ICPADS 2024</a> in Belgrade, Serbia (the first time in Europe!). Please consider submitting!</li>
+			<li>2024/04, invited to serve on the TPC of <a href='https://www.cse.unsw.edu.au/~wowmom/2024/'>IEEE WoWMoM 2024 - PhD Forum</a> in Perth, Western Australia.</li>
+			<li>2024/03, invited to serve on the TPC of <a href='https://sensys.acm.org/2024/'>ACM SenSys 2024</a> in Hangzhou.</li>
+			<li>2024/02, invited to serve on the editorial board as an Associate Editor of ACM IMWUT.</li>
+			
+			<!-- <li>2024/01, our research on “Sensing in 6G Cellular Networks” (PC: Dr. Liang Liu from PolyU) was funded by RGC Young Collaborative Research Fund (YCRF)!
+			<li>2023/12, invited to serve on the TPC of <a href='https://icdcs2024.icdcs.org/'>IEEE ICDCS 2024</a> in New Jersey.</li>
+			<li>2023/11, one paper (RF-Diffusion) accepted by ACM MobiCom'24!</li>
+			<li>2023/11, our short course proposal on wireless sensing was accepted to ICASSP 2024!</li>
+			<li>2023/10, invited to serve on the TPC of <a href='https://ipsn.acm.org/2024/'>IEEE IPSN 2024</a> in Hong Kong.</li>			
+			<li>2023/10, featured in the <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw">World’s Top 2% Scientists 2023</a> published by Stanford University!</li>
+			<li>2023/09, invited to serve on the TPC of <a href='https://mobiquitous.eai-conferences.org/2023/'>EAI MobiQuitous 2023</a> in Melbourne.</li>
+			<li>2023/08, I'm serving as the Social Media Chair of <a href='https://cps-iot-week2024.ie.cuhk.edu.hk/'>CPS-IoT Week 2024</a> in Hong Kong.</li>
+			<li>2023/07, invited to serve on the TPC of <a href='https://dyspan2024.ieee-dyspan.org/'>IEEE DySPAN 2024</a> in Washington DC.</li>
+			<li>2023/07, one paper accepted by ACM IMWUT!</li>			
+			<li>2022/07, recognized as one of the <a href="https://hub.hku.hk/local/top1pc/top1pc.jsp?year=2023"><strong>HKU Scholars ranked by Clarivate Analytics in the top 1% worldwide</strong></a> in 2023!</li>
+			<li>2023/06, I gave a Tutorial "Physiological sensing in the dark and through occlusion via RF signals" as part of the <a href="https://2023.ieeeicassp.org/tutorials/#1675893598916-a55ce92a-afe4">ICASSP 2023 Tutorial</a> titled "No Touch Needed: Contact-Free Physiological Sensing for Fitness and Healthcare Using Cameras and RF Signals".
+			<li>2023/03, I'm serving as the Publicity Co-Chair of <a href='https://sensys.acm.org/2023/'>ACM SenSys 2023</a>. SenSys 2023 will be held in Istanbul, Turkey, on November 13-15, 2023. The paper submission deadline is firm on June 29, 2023. Please consider submitting!</li>
+			<li>2023/03, invited to serve on the TPC of <a href='https://sensys.acm.org/2023/'>ACM SenSys 2023</a>.</li>
+			<li>2022/12, featured in the <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw">World’s Top 2% Scientists 2022</a> published by Stanford University!</li>
+			<li>2022/12, two papers accepted by <a href="https://www.usenix.org/conference/nsdi23">NSDI'23</a>!</li>
+			<li>2022/09, awarded the <a href="https://healthylongevitychallenge.org/category/research-grants-council-of-the-hong-kong-special-administrative-region-china/?post_types=winner&post_date=2022-01-01+2022-12-31"><strong>Healthy Longevity Catalyst Awards (Hong Kong)</strong></a> (part of the Healthy Longevity Global Competition founded by the U.S. National Academy of Medicine<a href="https://healthylongevitychallenge.org/"></a>)!</li>
+			<li>2022/08, awarded the <a href="https://www.hku.hk/press/news_detail_24910.html"><strong>NSFC National Excellent Young Scientists Fund (HK&Macau)</strong></a> 2022!</li>
+			<li>2022/07, recognized as one of the <a href="https://hub.hku.hk/local/top1pc/top1pc.jsp?year=2022"><strong>HKU Scholars ranked by Clarivate Analytics in the top 1% worldwide</strong></a> in 2022!</li>
+			<li>2022/07, our paper RadioVAD won the <strong>Best Paper Award</strong> at IASA Workshop@MobiSys'22! Congrats <a href='https://zahidozt.github.io/'>Zahid</a>! Check out our recent work <a href='https://zahidozt.github.io/RadioSES/'>RadioSES</a> as well.</li>
+			<li>2022/06, our research was funded by RGC/ECS!</li>
+			<li>2022/05, invited to serve on the TPC of IEEE ICPADS'22, EAI MobiQuitous'22.</li>
+			<li>2022/03, one paper on 6-DoF drone tracking accepted by ACM MobiSys'22.</li>
+			<li>2022/03, Co-Organizing the first <a href="https://wcsng.ucsd.edu/waip/">Wireless AI Perception Workshop</a> at <a href="https://cvpr2022.thecvf.com/">CVPR 2022</a>. Stay tuned!</li>
+			<li>2022/02, invited to serve on the TPC of <a href='https://sensys.acm.org/2022/'>ACM SenSys 2022</a>.</li>
+			<li>2022/01, three papers accepted by <a href='https://sensys.acm.org/2022/'>IEEE ICASSP 2022</a>.</li>
+			<li>2021/11, two papers on fall detection and driver monitoring accepted by IEEE IoTJ</a>.</li>
+			<li>2021/09, Co-Chairing <a href='https://ubicomp-cpd.com/2021.html'>The 4th International Workshop on Combining Physical and Data-Driven Knowledge in Ubiquitous Computing (CPD)</a> at <a href='https://www.ubicomp.org/ubicomp2021/'>ACM UbiComp 2021</a>.</li>
+			<li>2021/09, invited to serve on the TPC of <a href='https://conferences.computer.org/iotDI/2022/'>ACM/IEEE IoTDI 2022</a>.</li>
+			<li><span class='text_block'>2021/08, our work on “Universal Virtual Keyboard Using 60 GHz mmWave Radar” won the <a href="./images/award-WF-IOT2021-Best-Student-Paper.jpeg">Best Student Paper Award</a> at <a href="https://wfiot2021.iot.ieee.org/">IEEE’s 7th World Forum on Internet of Things</a> (WF-IoT 2021)! Congrats Yuqian!</span></li>
+			<li><span class='text_block'>2021/08, the extended version of Widar3.0 got accepted by TPAMI!</span></li>
+			<li>2021/07, our new book <a href='https://link.springer.com/book/10.1007/978-981-16-5658-3'>Smart Wireless Sensing: From IoT to AIoT</a> is now available online!</li>
+			<li>2021/06, co-organizing a <a href="https://www.2021.ieeeicassp.org/2021.ieeeicassp.org/Papers/ViewSession3129.html?Sessionid=1269">Special Session on "Contactless and Wireless Sensing for Smart Environments"</a> at <a href="https://www.2021.ieeeicassp.org">IEEE ICASSP 2021</a> with Beibei Wang and Neal Patwari.</li>
+			<li><span class='text_block'>2021/04, our papers <a href="https://ieeexplore.ieee.org/document/9411864">mmHRV</a> on heart rate monitoring and <a href="https://ieeexplore.ieee.org/document/9380316">mmWrite</a> on in-air handwriting got accepted by IEEE IOT Journal.</span></li> -->
+			<!-- <li><span class='text_block'>2020/12, our research has been commercialized by Origin Wireless as Origin Health - Remote Patient Monitoring which won the <a href="https://www.ces.tech/Innovation-Awards/Honorees/2021/Best-Of/O/Origin-Health-Remote-Patient-Monitoring.aspx"><strong>CES 2021 Best of Innovation Award</strong></a>, and HEX Home for home security which won the <a href="https://www.ces.tech/Innovation-Awards/Honorees/2021/Honorees/H/Hex-Home.aspx"><strong>CES 2021 Innovation Award</strong></a>!</span></li> -->
+			<!-- <li><span class='text_block'>2020/12, <a href='https://www.linksys.com/us/linksys-aware/'>LinkSys Aware</a>, a motion sensing product of Belkin enabled by our wireless AI technology, was named one of the most important security innovations of 2020 by <a href="https://www.popsci.com/story/technology/most-important-security-innovations-2020/">Popular Science</a>! -->
+			<!-- <li><span class='text_block'>2020/11, our paper <b>mmEye</b> on super-resolution imaging got accepted by IEEE IOT Journal.</span></li>
+			<li><span class='text_block'>2020/07, our paper <b>mSense</b> on mobile material sensing got accepted by IMWUT/UbiComp'20.</span></li>
+			<li><span class='text_block'>2020/06, our paper <b>AirCode</b> on hidden screen-camera communication got accepted by NSDI'21.</span></li>
+			<li><span class='text_block'>2020/02, our work <b>GaitWay</b> on through-the-wall gait recognition using WiFi got accepted by IEEE TMC.</span></li>
+			<li><span class='text_block'> 2020/02, three papers on stride length estimation, mmWave handwriting, and people counting got accepted by <a href='https://wfiot2020.iot.ieee.org/'>IEEE 6th World Forum on Internet of Things (WF-IOT 2020)</a>.</span></li>
+			<li><span class='text_block'>2020/01, invited to serve on the TPC of <a href='http://www.ieee-trustcom.org/TrustCom2020/'>IEEE TrustCom 2020</a>.</span></li>
+			<li><span class='text_block'>2020/01, three papers on fall detection, vital sign monitoring, and indoor heading direction finding got accepted by <a href='https://2020.ieeeicassp.org/'>IEEE ICASSP 2020</a>. </span></li>			 -->
+			<!-- <li><span class='text_block'><i class="fas fa-hand-point-right"></i> <a href="news.html">More news...</a></span></li> -->
+		</ul>
+		<!-- biography -->
+        <a name='bio' style='text-decoration: none'><h1><i class="far fa-user"></i> About Me</h1></a>
+        <p class='text_block'>
+			
+			I'm currently an Assistant Professor in the <a href='https://www.cs.hku.hk/'>Department of Computer Science</a>, <a href='https://www.hku.hk/'>The University of Hong Kong</a>, where I lead the <a href="https://aiot.hku.hk/">AIoT Lab</a>. 
+			I was an Assistant Research Scientist in the <a href='https://www.ece.umd.edu/'>Department of Electrical and Computer Engineering</a>, <a href='http://www.umd.edu/'>University of Maryland, College Park</a> and the Chief Scientist at <a href="https://www.originwirelessai.com/">Origin AI</a> (a startup commercializing WiFi sensing technologies), working with Prof. <a href='https://www.rayliu.org/'>K. J. Ray Liu</a>, after working as a research associate in the <a href='https://www.cs.princeton.edu/'>Department of Computer Science</a>, <a href='http://www.princeton.edu/'>Princeton University</a> and the <a href='http://thss.tsinghua.edu.cn/'>School of Software</a>, <a href='http://www.tsinghua.edu.cn/'>Tsinghua University</a>. 
+			I received my Ph.D. degree in the Department of Computer Science and Technology, Tsinghua University, under supervision of Prof. <a href='http://www.greenorbs.org/people/liu/'>Yunhao Liu</a>. During my Ph.D., I was lucky to work with Prof. <a href='http://web.eecs.umich.edu/~mingyan/'>Mingyan Liu</a> in the <a href='http://www.eecs.umich.edu/'>Department of EECS</a>, <a href='http://www.umich.edu/'>University of Michigan</a> and Prof. <a href='http://www4.comp.polyu.edu.hk/~csjcao/'>Jiannong Cao</a> in the <a href='http://www.comp.polyu.edu.hk/'>Department of Computing</a>, <a href='http://www.polyu.edu.hk/'>HKPU</a>. 
+			I received my B.E. degree from the School of Software, Tsinghua University.
+		</p>		
+		
+		<!-- research interest -->
+		<a name='research' style='text-decoration: none'><h1><i class="far fa-flag"></i> Research Interests</h1></a>
+		<!-- <p class='text_block'>
+			My research focuses on mobile and ubiquitous computing, centered around the vision of shaping "Wireless AI" via novel sensing for smart space. To achieve that, I design novel localization and sensing solutions to bridge the physical world with the cyberspace as well as developing commercialized applications for a smarter life. My current research topics include:
+		</p> -->
+		<div class='row'>
+			<!-- <div class="col-4"> -->
+				<p class='text_block' style="padding-bottom: 0px;">Can machines sense without sensors? Can they "see" without cameras, in the dark, and through the walls? My research is driven by the vision of shaping "<strong>Wireless AI Perception</strong>" to advance machine intelligence beyond vision and language. We focus on pioneering sensing AI technologies that <strong>transform "Homecare" to "Home Cares" and bring healthcare from "Benchside" to "Bedside"</strong>. The field of wireless sensing has experienced tremendous growth in the past 15 years, and I'm fortunate to have my research in this area translated into award-winning products that are deployed in millions of devices worldwide. Currently, my lab is dedicated to designing cutting-edge sensing solutions as well as building commercialized applications for a smarter, more connected life. Our current research interests include:
+				<ul style="list-style-type: disc">
+				<li><strong>Sensing AI for Homecare, Healthcare, Eldercare</strong></li>
+				<li><strong>Localization for Mobiles, Robots, Drones</strong></li>
+				<li><strong>AI for Healthcare</strong></li>
+				<li><strong>Automotive In-Cabin Sensing</strong></li>
+				</ul>
+			</p>
+			<!-- </div> -->
+			<!-- <div style="float:left; margin-right: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);"> -->
+				<!-- <a class="example-image-link" href="./images/taxonomy_CW.png" data-lightbox="example-set"><img height="220px" src="images/taxonomy_CW.png" alt="Research Portfolio"></a> -->
+				<!-- <div style="float:right; margin-right: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);"><a class="example-image-link" href="./images/taxonomy_CW.png" data-lightbox="example-set"><img height="220px" src="images/taxonomy_CW.png" alt="Research Portfolio"></a></div> -->
+			<!-- </div> -->
+		</div>
+		
+		<a name='projects' style='text-decoration: none'><h1><i class="fa fa-tags"></i> Research Projects</h1></a>
+		<span class='highlight' style='padding-left: 30px'>Highlights on Industrial Impacts:</span>
+		<ul>
+			<!-- <li><span class='text_block'>+ Our motion sensing technology has been commercialized by Origin Wireless Inc. and, in partnership with <a href='https://www.belkin.com/us/'>Belkin</a>, has been deployed over 150 countries worldwide as <a href='https://www.linksys.com/us/linksys-aware/'>LinkSys Aware</a>, the first-of-its-kind motion sensing in mesh WiFi for home security.  -->
+				<!-- <li><b>Awards won by LinkSys Aware</b>: <a href='https://www.ces.tech/Innovation-Awards/Honorees/2020/Honorees/L/Linksys-Aware.aspx'><strong>CES 2020 Innovation Award</strong></a>, <a href='https://m3.idg.se/2.1022/1.729088/ces-2020-sju-grymma-prylar-prisades-av-m3'>Best in Session 2020 by M3</a>, 
+				  <a href='https://www.originwirelessai.com/pictures'>Best of CES 2020 by Newsweek</a>.
+				</li>
+				<li>
+					Press Coverage: 
+				  <a href='https://www.linksys.com/us/linksys-aware/'>LinkSys Aware</a>, 
+				  <a href='https://wifinowglobal.com/news-and-blog/roundup-centurylinks-wi-fi-6-with-intel-origins-mesh-sensing-xfinitys-wifi-ready/'>WiFi Now</a>,
+				  <a href='https://gizmodo.com/the-very-best-gadgets-we-saw-at-ces-2020-1840949011'>The Very Best Gadgets at CES 2020</a>,
+				  <a href='https://www.prnewswire.com/news-releases/origin-wireless-brings-smart-home-and-indoor-tracking-solution-to-mesh-routers-300576721.html?tc=eml_cleartime'>PR Newswire</a>, 
+				  <a href='https://www.linksys.com/us/pressreleases/linksys-first-to-market-motion-sensing-mesh-wifi-technology/'>LinkSys</a>, 
+				  <a href='https://9to5mac.com/2019/10/08/linksys-aware-motion-sensing-mesh-wifi/'>9TO5Mac</a>, 
+				  <a href='https://www.engadget.com/2019/10/08/linksys-motion-sensing-velop/'>engadget</a>, 
+				  <a href='https://www.originwirelessai.com/'>Origin Wireless</a>.
+				</li>
+			</span></li> -->
+			<li><span class='text_block'>+ Our sleep monitoring work has been commercialized by Origin Wireless as Origin Health - Remote Patient Monitoring, which won the <a href="https://www.ces.tech/Innovation-Awards/Honorees/2021/Best-Of/O/Origin-Health-Remote-Patient-Monitoring.aspx"><strong>CES 2021 Best of Innovation Award</strong></a>!
+			</span></li>
+			<!-- <li><span> + Our research has been commercialized as <a href="https://myhexhome.com/">HEX Home</a> for home security, which won the <a href="https://www.ces.tech/Innovation-Awards/Honorees/2021/Honorees/H/Hex-Home.aspx"><strong>CES 2021 Innovation Award</strong></a>! -->
+			</span></li>
+			<li><span class='text_block'>+ Our works on wireless indoor tracking, gait recognition, fall detection are being commercialized by Origin Wireless Inc. Stay tuned!
+			</span></li>
+			<li><span class='text_block'>+ Authored 60+ US/international patents and 20+ China patents.</span></li>
+		</ul>
+		<span class='text_block' style='padding-left: 30px'><i class="far fa-hand-point-right"></i> Checkout more research projects <a href="research.html"><strong>HERE</strong></a>, and <a href="rim.html">RIM</a>, <a href="easitrack.html">EasiTrack</a>, <a href="http://tns.thss.tsinghua.edu.cn/widar3.0/index.html">Widar</a>, <a href="https://walleve.github.io/ChromaCode/">ChromaCode</a>.</span>
+		
+		<div style="width: 100%; margin-top: 15px;">
+			<div class="row">
+				<div class="col-3">
+					<div class="project-badge">
+						<a href="research.html#rim"><img class="img-inline" src="projects/project-rim.jpg"></a>
+					</div>
+					<div class="project-details">
+						<a href="research.html#rim">RF-based Inertial Measurement</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="project-badge">
+						<a href="research.html#widar"><img class="img-inline" src="projects/project-widar.jpg"></a>
+					</div>
+					<div class="project-details">
+						<a href="research.html#widar">Wireless, Contactless, Sensorless Sensing</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="project-badge">
+						<a href="research.html#aircode"><img class="img-inline" src="projects/project-aircode.jpg"></a>
+					</div>
+					<div class="project-details">
+						<a href="research.html#aircode">Hidden Screen-Camera Communication Systems</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="project-badge">
+						<a href="research.html#posx"><img class="img-inline" src="projects/project-posx.jpg"></a>
+					</div>
+					<div class="project-details">
+						<a href="research.html#posx">Wireless Indoor Localization via Mobile Crowdsourcing</a>
+					</div>
+				</div>
+
+				<div class="right-fill">
+				</div>
+			</div>
+		</div>
+		
+        <a name='pub' style='text-decoration: none'><h1><i class="fa fa-file-text"></i> Selected Publications</h1></a>
+        <i class="fas fa-hand-point-right"></i> For a complete list, see <a href="pubs.html"><strong>HERE</strong></a> or my <a href="http://scholar.google.com/citations?user=q9llreMAAAAJ">Google Scholar Profile</a>. According to Google Scholar, <b>my papers have more than 11,700 citations, with an h-index of 54</b>.
+        
+
+		<h2><i class="fa fa-book"></i> Books</h2>
+		<ol id="book">
+			<span class='text_block'><li style="min-height: 160px"> 
+				<div style="float:left; margin-right: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);"><a href='https://link.springer.com/book/10.1007/978-981-16-5658-3'><img height="150px" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-981-16-5658-3" alt="Book Cover"></a></div>
+				<a href='https://link.springer.com/book/10.1007/978-981-16-5658-3'><b>Smart Wireless Sensing: From IoT to AIoT</b></a></br> 
+				Zheng Yang, Kun Qian, <b>Chenshu Wu</b>, Yi Zhang</br>
+				Springer, 2021. ISBN: 978-981-16-5658-3.</br></br>
+				[<a href='https://link.springer.com/content/pdf/bfm%3A978-981-16-5658-3%2F1.pdf'>Front Matter</a>] 
+				[<a href='https://link.springer.com/book/10.1007/978-981-16-5658-3'>Read Online</a>]
+			</li></span>
+			<span class='text_block'><li style="min-height: 160px"> 
+				<div style="float:left; margin-right: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);"><a href='https://www.springer.com/us/book/9789811303555'><img height="150px" src="images/WILACA-book-cover.png" alt="Book Cover"></a></div>
+				<a href='https://www.springer.com/us/book/9789811303555'><b>Wireless Indoor Localization: A Crowdsourcing Approach</b></a></br> 
+				<b>Chenshu Wu</b>, Zheng Yang, Yunhao Liu</br>
+				Springer, 2018. ISBN: 978-981-13-0355-5.</br></br>
+				[<a href='./papers/WILACA_ProductFlyer_9789811303555.pdf'>Book Flyer</a>] 
+				[<a href='https://www.springer.com/us/book/9789811303555'>Read Online</a>]
+			</li></span>
+			<span class='text_block'><li style="min-height: 160px"> 
+				<div style="float:left; margin-right: 20px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);"><a href='http://tns.thss.tsinghua.edu.cn/lbcbook/'><img height="150px" src="images/lbc_book_cover.png" alt="Book Cover"></a></div>
+				<a href='http://www.tup.tsinghua.edu.cn/booksCenter/book_05620801.html'><b>Location-based Computing: Localization and Localizability of Wireless Networks (位置计算：无线网络定位与可定位性)</b></a></br>
+				Zheng Yang, <b>Chenshu Wu</b>, Yunhao Liu</br>
+				Tsinghua University Press, Jan. 2014. ISBN: 978-7-302-35113-9 </br></br>
+				<a target='blank' href='./images/award-lbcbook-2015.jpg'><span class='highlight'>Excellent Academic Monograph (Second Class) of Chinese University Press Book Award (获第四届中国大学出版社图书奖优秀学术著作二等奖)</span></a>
+			</li></span>
+		</ol>
+		<h2><i class="fa fa-file"></i> Selected Conferences</h2>
+		<ol id="conference">
+			
+		</ol>
+		
+		<h2><i class="fa fa-file"></i> Selected Journals</h2>
+		<ol id="journal">
+			
+		</ol>
+
+        <!-- <ul>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#rim">RIM: RF-based Inertial Measurement</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#widar">Widar: Passive Tracking and Gesture Recognition using Commodity WiFi</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#easitrack">EasiTrack: Accurate Indoor Tracking Made Easy and Scalable</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#smars">SMARS: Sleep Monitoring using Ambient Radio Signals</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#motion">WiFi Radio as a Ubiquitous Motion Sensor</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#gait">Gait Monitoring and Recognition Through the Walls</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#aircode">Hidden Screen-Camera Communication System</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#p2pnav">Peer-to-Peer Indoor Navigation</a></li>
+          <li><i class="fa fa-tag"></i> <a href="projects.html#posx">Wireless Indoor Localization via Mobile Crowdsourcing</a></li>
+        </ul> -->
+
+		
+		<a name='awards' style='text-decoration: none'><h1><i class="fa fa-trophy"></i> Honors and Awards</h1></a>
+			<ul>
+				<li>2025, IEEE Communications Society Fred W. Ellersick Prize</li>
+				<li>2024, ACM MobiCom 2024 Best Artifact Award</li>
+				<li>2024, Healthy Longevity Catalyst Awards (Hong Kong), National Academy of Medicine (NAM)</li>
+				<li>2022, 2023, 2024, The World's Top 2% Scientists List by Stanford University</li>				
+				<li>2022, 2023, 2024, Top 1% Scholar Worldwide by Citations, Clarivate Analytics Essential Science Indicators (ESI)</li>
+				<li>2022, NSFC National Excellent Young Scientists Fund (HK&Macau) (國家優秀青年科學家基金項目（港澳）)</li>
+				<li>2022, Healthy Longevity Catalyst Awards (Hong Kong), National Academy of Medicine (NAM)</li>
+				<li>2022, Best Paper Award, ACM IASA 2022</li>
+				<li>2021, Best Student Paper Award, IEEE WF-IoT 2021</li>
+				<li>2019, <a href='https://gradschool.umd.edu/newsroom/4897'>Postdoc Research Symposium Winner (#1 in Engineering School)</a>, University of Maryland</li>
+				<li>2017, Best Paper Honorable Mention Award, ACM CHI 2017</li>
+				<li>2017, Best Paper Award of the Year 2016, Tsinghua Science and Technology</li>
+				<li>2016, China Computer Federation (CCF) Excellent Doctoral Dissertation Award (中国计算机学会优秀博士学位论文奖)</li>
+				<li>2015, <a href='https://www.committee100.org/'>The Committee of 100</a>'s Leadership Scholarship Program Award</li>
+				<li>2015, Excellent PhD Graduate of Beijing</li>
+				<li>2015, Excellent PhD Graduate of Tsinghua University</li>
+				<li>2015, Excellent Doctoral Dissertation, Tsinghua University (rank 1st in Dept. of CS)</li>
+				<li>2015, Academic Rising Star of Tsinghua University (清华大学学术新秀) (10 graduates per year)</li>
+				<li>2014, Tsinghua Top Grade Scholarship (清华大学特等奖学金) (10 graduates per year)</li>
+				<li>2014, Best Paper Candidate Award, IEEE ICPADS 2014</li>
+				<li>2012, 2013, 2014, National Graduate Scholarship</li>
+				<li>2013, Tsinghua Lin Feng Counsellor Prize (清华大学林枫辅导员奖)</li>
+				<!-- <li>2012, Schlumberger Scholarship</li> -->
+				<!--				
+				<li>Boeing Scholarship, 2014 (6 graduates per year in Tsinghua)</li>
+				<li>Academic Rising Star Award by Dept. CS, Tsinghua University, 2013, 2014</li>
+				<li>ACM&IEEE CPSWeek 2012 Outstanding Volunteer Award, 2012</li>
+				<li>Guanghua Scholarship, 2011</li>
+				<li>RIM Scholarship, 2011,2012,2013</li>
+				<li>Excellent Student Award in Beijing, 2010</li>-->
+			</ul>
+
+
+		
+
+		<a name='services' style='text-decoration: none'><h1><i class="far fa-bookmark"></i> Professional Services</h1></a>
+			<ul>
+				<b>Editorship</b>			
+					<li>- Associate Editor, PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2024 - now</li>
+					<li>- Associate Editor, ACM Transactions on Internet of Things, 2024 - now</li>
+					<li>- Associate Editor, IEEE ACCESS, 2020 - 2024</li>
+					<li>- Guest Editor, Special Section on ``Wireless Sensing AI and Technologies'', IEEE Journal of Selected Areas in Sensors, 2025</li>
+					<li>- Guest Editor, Special Issue on “Resource Management at the Edge for Future Web, Mobile and IoT Applications”, World Wide Web Journal, 2021</li>
+					<li>- Guest Editor, Special Issue on "Cloud Computing-based Big Data Processing and Intelligent Analytics", Concurrency and Computation: Practice and Experience, November 2019.</li>
+				<b>Conference and Workshop Organizer for</b>
+					<li>- Gadget Show Chair, ACM UbiComp 2026, Shanghai</li>
+					<li>- General Co-Chair, ACM HotSense 2025, Hong Kong</li>
+					<li>- Journal Track Co-Chair, EWSN 2025, Leuven, Belgium</li>
+					<li>- Local Arrangement Chair, ACM CoNEXT 2025, Hong Kong</li>
+					<li>- TPC Co-Chair, IEEE ICPADS 2024, Belgrade, Serbia</li>
+					<li>- Co-Chair, The 1st International Workshop on RF Computing (Co-located with SenSys), Hangzhou, China, 2024</li>
+					<li>- Local Arrangement Chair, TAAC FFSE (The 4th Forum on Frontiers of Science and Engineering) 2024, Hong Kong</li>
+					<li>- Social Media Chair, IEEE CPS-IoT Week 2024, Hong Kong</li>
+					<li>- Publicity Co-Chair, ACM SenSys 2023, Istanbul, Turkiye</li>
+					<li>- Co-Organizer, Wireless AI Perception Workshop at CVPR 2022</li>
+					<li>- General Co-Chair, ACM Ubicomp Workshop on Combining Physical and Data-Driven Knowledge in Ubiquitous Computing (CPD), 2021</li>
+					<li>- Publicity Co-Chair, ACM SIGOPS Asia-Pacific Workshop on Systems (APSys), 2021</li>
+					<li>- Special Session Organizer on “Contactless and Wireless Sensing for Smart Environments”, IEEE ICASSP, 2021</li>
+					<!-- <li>- Panel Co-chair for the 11th ACM International Workshop on IoT and Cloud Computing</li> -->
+					<!-- <li>- PC Co-chair for the 10th ACM International Workshop on IoT and Cloud Computing</li> -->
+					<!-- <li>- Poster Co-chair for the 9th ACM International Workshop on IoT and Cloud Computing</li> -->
+					<!-- <li>- PC Co-chair the 8th International Workshop on IoT and Cloud Computing</li> -->
+				<b>Technical Program Committee Member</b> for
+					<li>- 2026: ACM MobiSys, ACM MobiHoc, EWSN, IEEE IDCDS</li>
+					<li>- 2025: ACM MobiSys, ACM MobiHoc, ACM SenSys, IEEE IDCDS</li>
+					<li>- 2024: ACM SenSys, IEEE ICDCS, ACM/IEEE IPSN, CSCAIoTSys@CPS-IoT Week, IEEE WoWMoM - PhD Forum, IEEE MSN</li>
+					<li>- 2023: ACM SenSys, IEEE DySPAN, IEEE MSN, EAI MobiQuitous</li>
+					<li>- 2022: ACM SenSys, ACM/IEEE IoTDI, IEEE ICPADS, EAI MobiQuitous, IEEE ICCCN</li>
+					<li>- 2021: IEEE DySPAN, UbiSec</li>
+					<li>- 2020: IEEE TrustCom, IEEE MIPR</li>
+					<li>- 2019: IEEE DySPAN, IEEE ICPADS, IEEE MIPR</li>
+					<li>- 2018: IEEE UIC, IEEE ICCCN</li>
+					<li>- 2017: IEEE INFOCOM, IEEE ICDCS, IEEE UIC</li>
+					<li>- 2016: IEEE UIC</li>
+<!-- 					<li>- <a target='blank' href='https://sensys.acm.org/2022/'>ACM SenSys</a>, Boston, US, 2022</li>
+					<li>- <a target='blank' href='https://mobiquitous.eai-conferences.org/2022/'>EAI MobiQuitous</a>, Pittsburgh, US, 2022</li>
+					<li>- <a target='blank' href='http://ieee-icpads.net/'>IEEE ICPADS</a>, Nanjing, China, 2022</li>
+					<li>- <a target='blank' href='https://conferences.computer.org/iotDI/2022/'>ACM/IEEE IoTDI</a>, Milan, Italy, 2022</li>
+					<li>- <a target='blank' href='http://www.ieee-trustcom.org/TrustCom2020/'>IEEE TrustCom</a>, Guangzhou, China, 2020</li>
+					<li>- <a target='blank' href='http://www.ieee-mipr.org/'>IEEE MIPR</a>, Shenzhen, China, 2020</li></li>
+					<li>- <a target='blank' href='https://dyspan2019.ieee-dyspan.org/'>IEEE DySPAN</a>, Newark, NJ, USA, 2019</li>
+					<li>- <a target='blank' href='http://www.ieee-mipr.org/'>IEEE MIPR</a>, San Jose, USA, 2019</li></li>
+					<li>- <a target='blank' href='http://www.icpads2019.cn/'>IEEE ICPADS</a>, Tianjin, China, 2019</li>
+					<li>- <a target='blank' href='http://smart-world.org/2018/uic/index.php'>IEEE UIC</a>, Guangzhou, China, 2018</li>
+					<li>- <a target='blank' href='http://icccn.org/icccn18/'>ICCCN</a>, Hangzhou, China, 2018</li>
+					<li>- <a target='blank' href='http://icdcs2017.gatech.edu/'>IEEE ICDCS</a>, Atlanta, USA, 2017</li>
+					<li>- <a target='blank' href='http://ieee-smartworld.org/2017/uic/'>IEEE UIC</a>, San Francisco, USA, 2017</li>
+					<li>- <a target='blank' href='http://infocom2017.ieee-infocom.org/'>IEEE INFOCOM</a>, Atlanta, USA, 2017</li>
+					<li>- <a target='blank' href='http://uic2016.sciencesconf.org/'>IEEE UIC</a>, Toulouse France, 2016</li> -->
+					<!--<li>PC Member for <a target='blank' href='http://icatse.org/icitcs/'>5th ICITCS 2015</a>, Kuala Lumpur, Malaysia</li>-->
+					<!-- <li>- <a target='blank' href='http://www.nwpu-aslp.org/phdforum/2014/index.html'>7th International Doctoral Forum</a>, Xi'an, China, 2014</li> -->
+					<!-- <li>- 12th/13th Tsinghua Doctoral Forum on Computer Science, 2013/2014</li> -->
+
+
+				<b>Journal Reviewers</b> for
+					<li> 1) IEEE/ACM Transactions on Networking (TON); 
+						2) IEEE Transactions on Mobile Computing (TMC); 
+						3) PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/UbiComp); 
+						4) IEEE Transactions on Parallel and Distributed Systems (TPDS); 
+						5) IEEE Journal on Selected Areas in Communications (JSAC); 
+						6) IEEE Transactions on Wireless Communications (TWC); 
+						7) IEEE Transactions on Signal Processing (TSP); 
+						8) ACM Transactions on Sensor Networks (TOSN); 
+						9) ACM Transactions on Intelligent Systems and Technology (TIST); 
+						10) IEEE Transactions on Vehicular Technology (TVT); 
+						11) IEEE Internet of Things Journal (IOTJ); 
+						12) IEEE Journal of Biomedical and Health Informatics (JBHI); 
+						13) IEEE Transactions on Industrial Electronics (TIE); 
+						14) IEEE Transactions on Automation Science and Engineering (TASE); 
+						15) IEEE Transactions on Network Science and Engineering (TNSE);
+						16) IEEE Systems Journal; 
+						17) IEEE Computer Magazine; 
+						18) IEEE Communications Letters; 
+						19) IEEE Access; 
+						20) Elsevier Computer Networks; 
+						21) Elsevier Computer Communications; 
+						22) Wireless Communications and Mobile Computing; 
+						23) Springer Journal of Computer Science and Technology (JCST);
+						24) ACM Transactions on Internet of Things (TIoT).
+					</li>
+
+				</li>
+				<!--<li>Volunteer for the CPSWeek 2012 (Joint conference of HSCC, ICCPS, IPSN, RTAS, HiCoNS)</li>-->
+			</ul>
+
+
+			<a name='funds' style='text-decoration: none'>
+		<h1><i class="fa fa-support"></i> Grants</h1></a>				
+		<ol>
+<span class='text_block'><li><b>PI</b>: "Development of a Practical Elderly Fall Detection Solution via Non-Intrusive, Low-Cost Sensing", RGC Healthy Longevity Catalyst Awards (Hong Kong), 2024-2025.</li></span>
+			<span class='text_block'><li><b>PI</b>: "Statistical Acoustic Sensing: Theories, Techniques, and Applications", RGC General Research Fund (GRF), 2024-2026.</li></span>
+<span class='text_block'><li><b>Co-PI</b>: "Sensing in 6G Cellular Networks", RGC CRF Young Collaborative Research Grant (YCRG), 2024-2026.</li></span>
+	<span class='text_block'><li><b>PI</b>: "Smart Wireless Sensing and Tracking", Excellent Young Scientists Fund (HK & Macau), National Natural Science Foundation of China, 2023 - 2025.</li></span>
+<span class='text_block'><li><b>PI</b>: "A Signal Processing-Deep Learning Co-Design for Practical Deep Wireless Sensing", RGC Early Career Scheme (ECS), 2022 - 2025.</li></span>
+<span class='text_block'><li><b>PI</b>: "Empowering Acoustic Sensing and Learning on Accessible Speakers to Monitor and Detect Older Adult Falls'', RGC Healthy Longevity Catalyst Awards (Hong Kong), 2022-2023.</li></span>
+<span class='text_block'><li><b>PI</b>: "Cross-Modality Contactless Sensing for Multi-Target Interaction and Healthcare", General Funding Scheme, TCL Research, 2022 - 2024</li></span>
+
+<span class='text_block'><li><b>Co-PI</b>: "Edge Learning: the Enabling Technology for Distributed Big Data Analytics in Cloud-Edge Environment'', RGC Research Impact Fund (RIF), 2020-2025.</li></span>
+			<span class='text_block'><li><b>PI</b>: Wireless Contactless Sensing for Industrial Internet, NSF China General Program (国家自然科学基金面上项目).</li></span>
+			<span class='text_block'><li><b>Co-PI</b>: Research on the Architecture and Key Technologies for Industrial Internet, NSF China Key Program（国家自然科学基金重点项目).</li></span>
+			<span class='text_block'><li><b>PI</b>: Research on Sensorless Sensing with Wireless Signals, China Postdoctoral Science Foundation (中国博士后科学基金面上资助).</li></span>
+			<span class='text_block'><li><b>PI</b>: Decimeter-Level Tracking using WiFi Signals, China Postdoctoral Science Foundation Special Program (中国博士后科学基金特别资助).</li></span>
+		</ol>
+
+
+		<a name='talks' style='text-decoration: none'><h1><i class="fa fa-tags"></i> Invited Talks</h1></a>
+        <ol>
+			<span class='text_block'><li>"Wireless AI for the Internet of Things'', HKU-ISCAS 2021 Launching Seminar and Workshop, 2021/09 (virtual)</li></span>
+			<span class='text_block'><li>"Wireless AI: WiFi Sensing from Principles to Products'', Beijing University of Posts and Telecommunications, 2021/08 (virtual)</li></span>
+			<span class='text_block'><li>"Artificial Intelligence of Things (AIoT) From 0 To 1'', Keynote Speech at Shenzhen XInstitute summer school, 2021/07 (virtual)</li></span>
+			<span class='text_block'><li>"Wireless AI: WiFi Sensing from Principles to Products'', IEEE Washington Tech Talk Series, 2021/04 (virtual)</li></span>
+			<span class='text_block'><li>"Wireless AI: WiFi Sensing from Principles to Products'', Beijing University of Posts and Telecommunications, 2021/04 (virtual)</li></span>
+			<span class='text_block'><li>"Wireless AI: WiFi Sensing from Principles to Products'', Tsinghua University, 2021/04 (virtual)</li></span>
+			<span class='text_block'><li>"Wireless AI for the Internet of Things'', IEEE Signal Processing Washington Chapter Seminar, 2020/12 (virtual)</li></span>
+			<span class='text_block'><li>"Large-Scale Decimeter-Level Indoor Tracking with a Single AP'', West Anhui University, Lu'an, China, 2020/12 (virtual)</li></span>
+          <span class='text_block'><li>"Precise Passive Tracking with COTS WiFi", The George Washington University, DC, USA, May 23, 2018</li></span>
+          <span class='text_block'><li>"WiFi Radar: Wireless Sensing with Commodity WiFi", University of Maryland, College Park, MD, USA, October 31, 2017</li></span>
+          <span class='text_block'><li>"Sensorless Sensing with WiFi", Nanjing University, Nanjing, China, December 28, 2016</li></span>
+		  <span class='text_block'><li>“Sensorless Sensing Plus”, Wuxi IoT Center, China, December 2016</li></span>
+		  <span class='text_block'><li>“Wireless, Contactless, Sensorless Sensing”, Yanshan University, Qinhuangdao, China, December 2015</li></span>
+		<span class='text_block'><li>“Wireless, Contactless, Sensorless Sensing”, Wuxi IoT Center, China, December 2015</li></span>
+		<span class='text_block'><li>“Wireless Indoor Localization via Crowdsourcing”, West Anhui University, Lu’an, China, October 2015</li></span>
+		<span class='text_block'><li>“Re-imaging Mobile Sensing: Myths, Challenges, and Opportunities”, Wuxi IoT Center, China, December 2014</li></span>
+		<span class='text_block'><li>“Wireless Indoor Localization for Smartphones”, The Hong Kong Polytechnic University, Hong Kong, China, August 2013</li></span>
+        </ol>
+
+
+		<a name='teaching' style='text-decoration: none'><h1><i class="fa fa-tags"></i> Teaching</h1></a>
+        <ul>
+				<li>COMP3230 Principles of Operating Systems (Undergraduate Core), 2021 Fall, 2022 Fall, 2023 Fall, 2024 Fall, 2025 Fall</li>
+				<li>COMP3516 Data Analytics for IoT (Undergraduate Elective), 2023 Spring, 2024 Spring, 2025 Spring, 2026 Spring</li>
+				<li>COMP7310 Artificial Intelligence of Things (MSc course), 2022 Fall, 2023 Fall, 2025 Spring, 2026 Spring</li>
+				<li>COMP3423 Eureka Research Course (Engineering), Spring 2024</li>
+			</ul>
+
+        <h1><i class="fa fa-external-link-square"></i> Useful Links</h1>
+        <ul>		  
+          <li><i class="fa fa-external-link"></i> <a target='blank' href="http://ct.cswu.me">Upcoming Conferences</a></li>		
+          <li><i class="fa fa-external-link"></i> <a target='blank' href="http://www.cs.ucsb.edu/~almeroth/conf/stats/" target='blank'>Networking Conferences Statistics</a></li>
+        </ul>			
+		
+		
+	  	<!-- End of content -->
+      	<!-- </div> -->
+    </div>
+    <div id="footer">
+      <p> 
+	  Handwritten font by my 3 year old </br>
+	  Last Updated: 09/2024 | Copyright &copy; CHENSHU WU</p>
+    	<div class="bottomimg">
+    		<a href="http://www.tsinghua.edu.cn"><img src="./images/thu-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="https://www.polyu.edu.hk/"><img src="./images/hkpu-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="http://umich.edu/"><img src="./images/umich-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="https://www.princeton.edu/"><img src="./images/pu-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="https://www.umd.edu/"><img src="./images/umd-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="https://www.originwirelessai.com/"><img src="./images/ow-logo.png"></a>
+    	</div>
+    	<div class="bottomimg">
+    		<a href="https://www.hku.hk/"><img src="https://www.hku.hk/assets/img/hku-logo.svg"></a>
+    	</div>
+	    <div class="bottomimg" style="float:right">
+		<!-- Start of ClustrMaps Statistics -->
+			<a href="http://www.clustrmaps.com/map/tns.thss.tsinghua.edu.cn/~cswu/" title="Visitor Map for tns.thss.tsinghua.edu.cn/~cswu/"><img src="//www.clustrmaps.com/map_v2.png?u=HxK8&d=qa3ow0WC7R-CxpyynFl37-Dbrfsh8LGCfy3CGEeuh_c" /></a>
+		<!-- End of ClustrMaps Statistics -->	
+		</div>    
+    </div>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<!-- <div class="statcounter" style='text-align: center;'><a title="shopify
+	analytics ecommerce" href="http://statcounter.com/shopify/"
+	target="_blank"></a></div> -->
+	<!-- End of StatCounter Code for Default Guide -->
+	
+  </div>
+</body>
+</html>

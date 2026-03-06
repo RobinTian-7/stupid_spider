@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- saved from url=(0059)https://www.w3schools.com/w3css/tryw3css_templates_blog.htm -->
+   <meta name="generator"
+      content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Aixin Sun homepage</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./TemplateFiles/w3.css">
+   <link rel="stylesheet" href="./TemplateFiles/css">
+   <link rel="icon" type="image/png" href="./icons.png">
+   <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+         font-family: "Arial", sans-serif
+      }
+
+      #myBtn {
+         display: none;
+         position: fixed;
+         bottom: 30px;
+         right: 30px;
+         z-index: 99;
+         font-size: 18px;
+         border: none;
+         outline: none;
+         background-color: red;
+         color: white;
+         cursor: pointer;
+         padding: 15px;
+         border-radius: 4px;
+      }
+
+      #myBtn:hover {
+         background-color: #555;
+      }
+   </style>
+   <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+         t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+         y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "962jx7oj30");
+   </script>
+</head>
+
+<body class="w3-light-grey">
+   <!-- w3-content defines a container for fixed size centered content, 
+         and is wrapped around the whole page content, except for the footer in this example -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+   <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+         } else {
+            document.getElementById("myBtn").style.display = "none";
+         }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+      }
+   </script>
+   <div class="w3-content" style="max-width: 1400px;">
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-32"></header>
+      <!--h1>
+            <b>Welcome to Aixin's Homepage</b>
+         </h1 -->
+      <!-- Grid -->
+      <div class="w3-row">
+         <!-- Blog entries -->
+         <div class="w3-col l8 s12">
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+               <img src="./TemplateFiles/tree5.jpg" alt="Nature" style="width: 100%;">
+               <div class="w3-container">
+                  <hr>
+                  <div style="float: right;">
+                     <img src="images/AixinWeb.jpg" style="margin: 6px;" width="190" alt="Aixin Sun">
+                  </div>
+
+                  <p>Dr. Sun Aixin is an Associate Professor and Associate Dean (Undergraduate Education) at the College
+                     of Computing and Data Science (<a href="https://www.ntu.edu.sg/computing"
+                        target="_blank">CCDS</a>), Nanyang Technological University (<a href="http://www.ntu.edu.sg/"
+                        target="_blank">NTU</a>), Singapore. <!--- where he has been a faculty member since 2005. His previous
+                     roles include Associate Chair (Academic) from 2023 to 2024 and Assistant Chair from 2016 to 2023.
+                     Dr. Sun also serves on the Singapore Data Science Consortium (SDSC) Technical Committee and is
+                     NTU's SDSC institution representative. --> He received B.A.Sc. (First Class Honours) in Computer Engineering and Ph.D. from NTU in 2001 and 2004, respectively. His research interests include information retrieval, recommender systems, and natural language processing (NLP). He has published around 300 papers, which have garnered over 25,000 citations and an h-index of 72, according to Google Scholar. His work has earned several accolades, including the SIGIR 2025 Test of Time Honorable Mention Award, the Best Student Paper Award at the IEEE International Conference on Services Computing in 2020, and a Best Student Paper Honorable Mention at SIGIR 2016. </p>
+
+                  <p>Dr. Sun is an associate editor for ACM Transactions on Information Systems (TOIS), ACM Transactions
+                     on Recommender Systems (TORS), ACM Transactions on Intelligent Systems and Technology (TIST), and
+                     an editorial board member of the Journal of the Association for Information Science and Technology
+                     (JASIST). He has held significant conference roles, including Doctoral Consortium co-chair for
+                     WSDM2023, demonstration track co-chair for SIGIR2020, ICDM2018, and CIKM2017, PC co-chair for
+                     AIRS2019, and general chair for ADMA2017.  
+                     <!-- He has also contributed to the best short paper committee
+                     for SIGIR2020 and SIGIR2022 and served as an Area Chair, Senior PC member, or PC member for
+                     numerous key conferences such as SIGIR, WWW, WSDM, NeurIPS, EMNLP, AAAI, and IJCAI. --> </p>
+
+                  <br /> Email: axsun AT ntu DOT edu DOT sg Phone: (+65) 6790 5139 Office: S3-B1C-117
+                  <!-- img src="./TemplateFiles/AixinWeb.jpg" style="width: 20%;"-->
+
+                  <!--h4> <font color="red"><b>New!</b></font> </h4>
+                     < ul>
+                        <li>Our group has a <b><a href="https://ntu.wd3.myworkdayjobs.com/en-US/Careers/job/NTU-Main-Campus-Singapore/Research-Fellow--Natural-Language-Processing-_R00002642-1">Research Fellow</a> </b>positions opening for projects on text mining and natural language processing <span class="label label-NLP">NLP</span>. </li>
+                        <li> Call for papers: <a href="https://www.journals.elsevier.com/neurocomputing/call-for-papers/real-time-dynamic-network-learning">Neurocomputing Special Issue </a> on Real-time Dynamic Network Learning for Location Inference Modelling and Computing. Submission deadline: 15 October, 2020 </li>
+                     </ul -->
+
+                  <!-- h4 style="color:red;"><b>News</b></h4>
+                     <p> WSDM2023 will be held in Singapore. Call for Doctoral Consortium is <a href="https://www.wsdm-conference.org/2023/calls/call-doctoral-consortium" target="_blank">online</a> Submission deadline is 22 Oct 2022.
+
+<p>We also have research position openings (from Research Assistant to Research Associate). The research topic is on natural language video retrieval and localization. If you are interested in joining my team, please drop me an email. </p -->
+                  <h4>
+                     <b>Professional services</b>
+                  </h4>
+                  <ul>
+                     <li>Associate Editor and Editorial Board Member:
+                        <ul>
+                           <li>ACM Transactions on Recommender Systems (<a href="https://dl.acm.org/journal/tors"
+                                 target="_blank">TORS</a>), Feb 2025 -- Present</li>
+                           <li>ACM Transactions on Information Systems (<a href="https://dl.acm.org/journal/tois"
+                                 target="_blank">TOIS</a>), Aug 2022 -- Present</li>
+                           <li>ACM Transactions on Intelligent Systems and Technology (<a
+                                 href="https://dl.acm.org/journal/tist" target_="_blank">TIST</a>), June 2024 -- Present
+                           </li>
+                           <li>Journal of the Association for Information Science and Technology (<a
+                                 href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%292330-1643"
+                                 target="_blank">JASIST</a>), Jan 2018 -- Present</li>
+
+                           <li><span style="color:gray;">ACM Transactions on Asian and Low-Resource Language Information
+                                 Processing (<a href="https://dl.acm.org/journal/tallip" target="_blank">TALLIP</a>),
+                                 Aug 2023 -- Dec 2024 </span>
+                           </li>
+                           <li><span style="color:gray;">Information Retrieval Journal, Springer, Oct 2017 -- Dec
+                                 2023</span></li>
+                           <li><span style="color:gray;"><a href="https://www.journals.elsevier.com/neurocomputing"
+                                    target="_blank">Neurocomputing</a>, Aug 2018 -- May 2025</span></li>
+                        </ul>
+                     </li>
+
+                     <li>Conference organization and PC members:
+                        <ul>
+                           <li>2026: SIGIR (SAC), Action Editor for ARR.</li>
+                           <li>2025: Action Editor for ARR (ACL, EACL, NAACL), SIGIR (AC, and PC for Perspectives Paper
+                              Track), RecSys (SPC), NeurIPS (AC for Datasets and Benchmarks Track) </li>
+                           <li>2024: WWW (Search Track Co-Chair). Action Editor for ARR (ACL, EACL, NAACL), SIGIR (SPC,
+                              and PC for Perspectives Paper Track), RecSys (SPC), NeurIPS (AC for Datasets and
+                              Benchmarks Track) </li>
+                           <li>2023: EMNLP (Publication Chair), SIGIR (SPC, and PC for Perspectives Paper Track), WWW
+                              (SPC), IJCAI (AC), WSDM (DC Co-Chair), NeurIPS (AC for Datasets and Benchmarks Track),
+                              SIGIR-AP (SPC)
+                           <li>2022: WWW (SPC), IJCAI (SPC), ECIR, SIGIR(SPC, and PC for Perspectives Paper Track), KDD
+                              (PC for Applied Data Science Track)</li>
+                        </ul>
+                     </li>
+                  </ul>
+
+
+
+                  <h4>
+                     <b>Recent papers</b>
+                  </h4>
+                  <ul>
+                      <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2503.21188" target="_blank">A Task-Centric Perspective on Recommendation
+                              Tasks</a></span>
+                     </span><br> Aixin Sun. Accepted to Communications of the ACM (CACM). <span class="label-RecSys">RecSys</span>
+                  </li>
+                     <li> 
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/abs/2510.26104" target="_blank">OneTrans: Unified Feature Interaction and Sequence Modeling with One Transformer in Industrial Recommender</a></span>
+                        </span>
+                        <br>Zhaoqi Zhang, Haolei Pei, Jun Guo, Tianyu Wang, Yufei Feng, Hui Sun, Shaowei Liu, Aixin Sun. The Web Confernce (WWW2026) Industry Track <span class="label-RecSys">RecSys</span> <span class="label label-IR">IR</span>
+                     </li>
+
+                     <li> 
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/abs/2412.09950" target="_blank">Hesitation and Tolerance in Recommender Systems</a></span>
+                        </span>
+                        <br>Kuan Zou, Aixin Sun, Yitong Ji, Hao Zhang, Jing Wang, Zhuohao (Jerry) Zhang, Xuemeng Jiang. ACM CHI 2026 <span class="label-RecSys">RecSys</span> 
+                     </li>
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/abs/2501.05072">A Flexible and Scalable Framework for Video Moment Search</a>
+                           </span>
+                        </span>
+                        <br>Chongzhi Zhang, Xizhou Zhu, Aixin Sun. SIGIR-AP 2025 <span class="label label-IR">IR</span>
+                     </li>
+                      <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://www.arxiv.org/abs/2407.06597">TVR-Ranking: A Dataset for Ranked Video Moment Retrieval with Imprecise Queries</a>
+                           </span>
+                        </span>
+                        <br>Renjie Liang, Chongzhi Zhang, Li Li, Jing Wang, Xizhou Zhu, Aixin Sun. SIGIR-AP 2025 <span class="label label-IR">IR</span>
+
+
+                     </li>
+                      <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/abs/2509.06002">A Survey of Real-World Recommender Systems: Challenges, Constraints, and Industrial Perspectives</a>
+                           </span>
+                        </span>
+                        <br>Kuan Zou, Aixin Sun. Working paper <span class="label label-RecSys">RecSys</span>
+
+
+                     </li>
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://aclanthology.org/2025.findings-acl.1003/">Towards Storage-Efficient Visual Document Retrieval: An
+                              Empirical Study on Reducing Patch-Level Embeddings</a></span>
+                        </span>
+                        <br>Yubo Ma, Jinsong Li, Yuhang Zang, Xiaobao Wu, Xiaoyi Dong, Pan Zhang, Yuhang Cao, Haodong
+                        Duan, Jiaqi Wang, Yixin Cao, Aixin Sun. ACL 2025 Findings <span class="label label-IR">IR</span>
+                        <span class="label label-NLP">NLP</span>
+
+
+                     </li>
+
+                    
+
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Punctuation Restoration: A Case Study of BERT-Based Models'
+                              Task-Specific Excellence</span>
+                        </span>
+                        <br>Qishuai Zhong and Aixin Sun. IEEE ICASSP 2025. <span class="label label-NLP">NLP</span>
+
+
+                     </li>
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/abs/2407.01523">MMLONGBENCH-DOC: Benchmarking Long-context Document
+                              Understanding with Visualizations</a></span>
+                        </span>
+                        <br>Yubo Ma, Yuhang Zang, Liangyu Chen, Meiqi Chen, Yizhu Jiao, Xinze Li, Xinyuan Lu, Ziyu Liu,
+                        Yan Ma, Xiaoyi Dong, Pan Zhang, Liangming Pan, Yu-Gang Jiang, Jiaqi Wang, Yixin Cao, and Aixin
+                        Sun. NeurIPS2024 D&B <span class="label label-NLP">NLP</span> <span
+                           class="label label-IR">IR</span>
+
+
+                     </li>
+
+                     <li>
+
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">SciAgent: Tool-augmented Language Models for Scientific
+                              Reasoning</span>
+                        </span>
+                        <br>Yubo Ma, Zhibin Gou, Junheng Hao, Ruochen Xu, Shuohang Wang, Liangming Pan, Yujiu Yang,
+                        Yixin Cao, Aixin Sun. EMNLP 2024. Accepted <span class="label label-NLP">NLP</span>
+
+
+                     </li>
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Right Tool, Right Job: Recommendation for Repeat and
+                              Exploration Consumption in Food Delivery</span>
+                        </span>
+                        <br>Jiayu Li, Aixin Sun, Weizhi Ma, Peijie Sun and Min Zhang. RecSys 2024 Accepted <span
+                           class="label label-RecSys">RecSys</span>
+
+
+                     </li>
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Not All Videos Become Outdated: Short-Video Recommendation
+                              by Learning to Deconfound Release Interval Bias</span>
+                        </span>
+                        <br>Lulu Dong, Guoxiu He and Aixin Sun. RecSys 2024 Accepted. <span
+                           class="label label-RecSys">RecSys</span>
+
+
+                     </li>
+
+
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Knowledge-Enhanced Conversational Recommendation via
+                              Transformer-based Sequential Modelling</span>
+                        </span>
+                        <br>Jie Zou, Aixin Sun, Cheng Long, Evangelos Kanoulas. TOIS 2024. <span
+                           class="label label-RecSys">RecSys</span>
+
+
+                     </li>
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">On Context Utilization in Summarization with Large Language
+                              Models</span>
+                        </span>
+                        <br>Mathieu Ravaut, Aixin Sun, Nancy F. Chen, Shafiq Joty. ACL 2024. <span
+                           class="label label-NLP">NLP</span> <span class="label label-IR">IR</span>
+
+
+
+                     </li>
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Towards Verifiable Generation: A Benchmark for
+                              Knowledge-aware Language Model Attribution.</span>
+                        </span>
+                        <br>Xinze Li, Yixin Cao, Liangming Pan, Yubo Ma, Aixin Sun. ACL 2024 Findings. <span
+                           class="label label-NLP">NLP</span>
+
+                     </li>
+
+
+
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Parameter-Efficient Conversational Recommender System as a
+                              Language Processing Task</span>
+                        </span>
+                        <br>Mathieu Ravaut, Hao Zhang, Lu Xu, Aixin Sun, Yong Liu. EACL 2024. <span
+                           class="label label-NLP">NLP</span> <span class="label label-RecSys">RecSys</span>
+
+
+                     </li>
+
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">DiffuRec: A Diffusion Model for Sequential
+                              Recommendation</span>
+                        </span>
+                        <br>Zhihao Li, Aixin Sun, Chenliang Li. ACM TOIS: 42(3), Article 66. May 2024. <span
+                           class="label label-RecSys">RecSys</span>
+
+                     </li>
+
+
+
+
+
+                     <!--li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"> DP-GCN: Node Classification by Connectivity and Local
+                              Topology Structure on Real-World Network</span>
+                        </span>
+                        <br>Zhe Chen, Aixin Sun. ACM TKDD. Accepted 2004. <span class="label label-Bib">DM</span> <span
+                           class="label label-IR">IR</span>
+
+
+                     </li>
+
+
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Large Language Model Is Not a Good Few-shot Information
+                              Extractor, but a Good Reranker for Hard Samples!</span>
+                        </span>
+                        <br>Yubo Ma, Yixin Cao, Yong Ching Hong, Aixin Sun. EMNLP 2023 Findings. <span
+                           class="label label-NLP">NLP</span> <span class="label label-IR">IR</span>
+
+
+                     </li>
+
+                     <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Open Information Extraction via Chunks</span>
+                        </span> 
+                        <br>Kuicai Dong, Aixin Sun, Jung-jae Kim, Xiaoli Li. EMNLP 2023.  <span class="label label-NLP">NLP</span>
+
+                     </li>
+ <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">From Speculation Detection to Trustworthy Relational Tuples in Information Extraction.</span>
+                        </span> 
+                        <br>Kuicai Dong, Aixin Sun, Jung-jae Kim, Xiaoli Li. EMNLP 2023 Findings.  <span class="label label-NLP">NLP</span>
+
+                     </li>
+
+
+ <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;">Dataset vs Reality: Understanding Model Performance from
+the Perspective of Information Need</span>
+                        </span> 
+                        <br>Mengying Yu, Aixin Sun. Journal of the Association for Information Science and Technology (JASIST). Accepted.  <span class="label label-IR">IR</span>
+
+                     </li>
+
+
+                   <li> <span style="font-weight: bold;">
+                           <span style="font-style: italic;"> MS-DETR: Natural Language Video Localization with Sampling Moment-Moment Interaction.
+                           </span> </span> 
+                        <br>Wang Jing, Aixin Sun, Hao Zhang and Xiaoli Li. 
+                         ACL 2023. 
+                        <span class="label label-NLP">NLP</span>
+                        </li>
+
+                     <li> <span style="font-weight: bold;">
+                           <span style="font-style: italic;"> Few-shot Event Detection: An Empirical Study and a Unified View.
+                           </span> </span> 
+                        <br>Yubo Ma, Zehao Wang, Yixin Cao and Aixin Sun. 
+                         ACL 2023. 
+                        <span class="label label-NLP">NLP</span>
+                        </li>
+
+                       
+                        <li> <span style="font-weight: bold;">
+                           <span style="font-style: italic;"> Negation Scope Refinement via Boundary Shift Loss.
+                           </span> </span> 
+                        <br>Yin Wu and Aixin Sun. 
+                        ACL 2023 Findings. 
+                        <span class="label label-NLP">NLP</span>
+                        </li>
+
+                        
+                        
+                     </li -->
+
+
+
+                  </ul>
+
+                  <div class="w3-row">
+                     <div class="w3-col m8 s12">
+                        <p>
+                           <a href="publications.html">
+                              <b>Selected publications Â»</b>
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END BLOG ENTRIES -->
+         </div>
+         <!-- right side menu -->
+         <div class="w3-col l4">
+            <!-- Posts -->
+            <div class="w3-card-2 w3-margin">
+               <div class="w3-container w3-padding" style="background-color: PeachPuff;">
+                  <h4>
+                     <b>News</b>
+                  </h4>
+               </div>
+               <ul class="w3-ul w3-hoverable w3-white">
+                  <li> Jan 2026. Aixin will give a keynote titled "A Flexible and Scalable Framework for Video Moment Search" at AAAI 2026 Workshop on New Frontiers in Information Retrieval</li>
+                  <li> Jan 2026. Congratulations to Zhaoqi and Zou Kuan for paper acceptance to WWW26 and CHI26 respectively.</li>
+                  <li> Nov 2025. Aixin gave a keynote titled Storage-Efficient Visual Document Retrieval and Beyond at Information Seeking with Big Models (BigIS) Workshop at IEEE ICDM 2025.</li>
+                  <li> Sept 2025. Aixin gave a keynote on <a href="slides/MultimodalRecSys.pdf">Multimodality Recommender Systems</a> at the <a href="https://sites.google.com/view/daquamrec2025/program">DaQuaMRec</a> workshop, RecSys2025, Prague</li>
+                  <li> Sept 2025. Our team has two papers accepted at SIGIR-AP 2025, both addressing ranked video moment retrieval: one on the <a href="https://arxiv.org/abs/2407.06597"     target="_blank">TVR-Ranking</a> dataset, and the other on the 
+<a href="https://arxiv.org/abs/2501.05072" target="_blank">
+                              Flexible and Scalable Framework</a></li>
+                  <li> July 2025. Our paper "Time-Aware Point-of-Interest Recommendation" received the <b>Test of Time
+                        Honorable Mention Award</b> at SIGIR 2025. 
+                   <!-- p style="text-align:center;"><img src="images/SIGIR-ToT-800.jpg" style="width: 100%;  max-width: 380px;  height: auto; margin: 1px; border:2px solid #372AAC"></p --></li>
+                  <li>July 2025. Aixin gave a keynote on Visual Document Understanding at the <a href="https://hellozicky.github.io/nip-ir2025.github.io/">NIP@IR Workshop, SIGIR2025, Padava, Italy</a></li>
+                  <li> May 2025. Thrilled to learn that our <a href="https://arxiv.org/abs/2005.13829"
+                        target="_blank">DecayPop</a> algorithm is the top performer on <a
+                        href="https://arxiv.org/abs/2505.22238" target="_blank">Yambda-5B</a> â a massive dataset of ~5
+                     billion user-item interactions from Yandex!</li>
+                  <!-- li> May 2025. Congratulations to Yubo on the ACL Findings acceptance! The work focuses on <a
+                        href="https://arxiv.org/abs/2506.04997" target="_blank">Storage-Efficient Visual Document
+                        Retrieval</a>, a trending topic in Information Retrieval
+                  </li>
+                  <li> Apr 2025. Aixin delivered the keynote:<a href='slides/HCRS_WWW25.pdf'> From Recommendations to
+                        Interactions</a> at the <a href='https://human-centeredrec.github.io/'>Workshop on
+                        Human-Centered Recommender Systems</a>, The Web Conference 2025, Sydney.
+                  <li> Apr 2025. Aixin gave a talk on <a href='slides/VideoMomentRetrieval.pdf'>Ranked Video Moment
+                        Retrieval</a>, summarizing the group's work on a more realistic setting for retrieving video
+                     moments from a collection of long videos, much like how typical web search works.</li>
+                  <li> Feb 2025. Aixin has been invited to join <a href="https://dl.acm.org/journal/tors"
+                        target="_blank">ACM TORS</a> as an Associate Editor. </li>
+                  <li> Oct 2024. Aixin gave a talk "Understanding and Evaluating RecSysfrom aUser Perspective" at the Workshop on Risks, Opportunities, and Evaluation of Generative Models in Recommender Systems at RecSys2024. 
+                  <li> Sept 2024. Congratulations to Yubo for D&B paper acceptance to NeurIPS2024. <a href="https://github.com/mayubo2333/MMLongBench-Doc">MMLongBench-Doc</a> is a significant contribution to the emerging trend of document understanding through Vision Language Models. </li>
+               
+                  <li> Sept 2024. Congratulations to Yubo for paper acceptance to EMNLP2024</li>
+                  <li> Aug 2024. Slides for an invited talk on <a href="slides/NLPwLVLM.pdf">NLP meets Vision Langugage Model</a>
+                  <li> July 2024. Congratulations to Jiayu and Guoxiu for paper acceptance to RecSys2024</li>
+                  <li> July 2024. The paper titled "Time-aware point-of-interest recommendation" is nominated for the  SIGIR 2024 Test of Time Award</li>
+                  <li> June 2024. Aixin takes on the AE role at the ACM TIST.
+                  <li> June 2024. Congratulations to Yu-Chen and Yitong for paper acceptance to TOIS</li>
+                  <li> May 2024. Aixin gave a talk on RecSys through AI TIME. <a href="slides/RecSys2024-Review.pdf">Slides in English</a> and <a href="https://www.bilibili.com/video/BV1Ut421T7Bf/"> Talk in Chinese</a>. </li>
+                  <li> May 2024. Congratulations to Xinze and Mathieu for paper acceptance to ACL 2024</li>
+                  <li> Apr 2024. A Research Fellow positoin is available in the area of video moment retrieval.</li>
+                   <li> Mar 2024. Congratulations to Kuicai for passing the PhD defence.</li>
+                    <li> Feb 2024. Congratulations to Yitong for passing the PhD defence.</li>
+
+                  <li> Oct 2023. Congratulations to Yubo and Kuicai for paper acceptance to EMNLP 2023.</li>
+                      </li -->
+
+
+
+
+               </ul>
+            </div>
+            <hr>
+            <!-- Posts -->
+            <div class="w3-card-2 w3-margin">
+               <div class="w3-container w3-padding" style="background-color: LightSkyBlue;">
+                  <h4>
+                     <b>Read more</b>
+                  </h4>
+               </div>
+               <ul class="w3-ul w3-hoverable w3-white">
+                  <li class="w3-padding-16">
+                     <img src="./TemplateFiles/button1.jpg" alt="Image" class="w3-left w3-margin-right"
+                        style="width: 50px;">
+                     <span class="w3-large">
+                        <a href="publications.html">Publications</a>
+                     </span>
+                     <br>
+                     <span>Most of recent papers are here</span>
+                  </li>
+                  <li class="w3-padding-16">
+                     <img src="./TemplateFiles/button2.jpg" alt="Image" class="w3-left w3-margin-right"
+                        style="width: 50px;">
+                     <span class="w3-large">
+                        <a href="projects.html">Research Team</a>
+                     </span>
+                     <br>
+                     <span>My research team and projects</span>
+                  </li>
+                  <li class="w3-padding-16">
+                     <img src="./TemplateFiles/button3.jpg" alt="Image" class="w3-left w3-margin-right"
+                        style="width: 50px;">
+                     <span class="w3-large">
+                        <a href="datasets.html">Datasets</a>
+                     </span>
+                     <br>
+                     <span>Datasets used in our research</span>
+                  </li>
+                  <li class="w3-padding-16">
+                     <img src="./TemplateFiles/button5.jpg" alt="Image" class="w3-left w3-margin-right"
+                        style="width: 50px;">
+                     <span class="w3-large">
+                        <a href="teaching.html">Teaching</a>
+                     </span>
+                     <br>
+                     <span>An instructor and tutor</span>
+                  </li>
+               </ul>
+            </div>
+            <hr>
+           
+            <!-- Posts -->
+            <div class="w3-card-2 w3-margin">
+               <div class="w3-container w3-padding" style="background-color: PaleTurquoise;">
+                  <h4>
+                     <b>Revisit Recommender Systems</b>
+                  </h4>
+               </div>
+               <ul class="w3-ul w3-hoverable w3-white">
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2509.06002" target="_blank">A Survey of Real-World Recommender Systems: Challenges, Constraints, and Industrial Perspectives</a></span> 
+                     </span> Working paper 
+
+                  </li>
+                     
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2503.21188" target="_blank">A Task-Centric Perspective on Recommendation
+                              Tasks</a></span>
+                     </span> Accepted to Communications of the ACM.
+                  </li>
+
+
+                  
+
+
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2307.09985" target="_blank">Our
+                              Model Achieves Excellent Performance on MovieLens: What Does it Mean?</a></span>
+                     </span> TOIS 2024.
+                  </li>
+
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://dl.acm.org/doi/10.1145/3539618.3591931"
+                              target="_blank">Take a Fresh Look at Recommender Systems from an Evaluation
+                              Standpoint.</a></span>
+                     </span> SIGIR 2023
+
+                  </li>
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/pdf/2010.11060" target="_blank">A
+                              Critical Study on Data Leakage in Recommender System Offline Evaluation.</a></span>
+                     </span> TOIS 2023
+
+                  </li>
+                  <!--li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/pdf/2204.05927" target="_blank">Do Loyal Users Enjoy Better Recommendations? Understanding Recommender Accuracy from a Time Perspective.</a></span>
+                        </span> ICTIR 2022
+
+                     </li-->
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/pdf/2005.13829" target="_blank">A
+                              Re-visit of the Popularity Baseline in Recommender Systems.</a></span>
+                     </span> SIGIR 2020 (Short paper)
+
+                  </li>
+
+               </ul>
+
+            </div>
+            <hr>
+            <!-- END GRID -->
+
+ <!-- Posts -->
+
+
+
+
+            <div class="w3-card-2 w3-margin">
+               <div class="w3-container w3-padding" style="background-color: #CC99FF;">
+                  <h4>
+                     <b>Ranked Video Moment Retrieval (RVMR)</b>
+                  </h4>
+               </div>
+               <ul class="w3-ul w3-hoverable w3-white">
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2501.05072" target="_blank">A
+                              Flexible and Scalable Framework for Video Moment Search</a></span>
+                     </span> SIGIR-AP 2025
+
+                  </li>
+
+
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2407.06597"
+                              target="_blank">TVR-Ranking: A Dataset for Ranked Video Moment Retrieval with Imprecise
+                              Queries</a></span>
+                     </span> SIGIR-AP 2025
+                  </li>
+
+
+
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://arxiv.org/abs/2201.08071"
+                              target="_blank">Temporal Sentence Grounding in Videos: A Survey and Future
+                              Directions.</a></span>
+                     </span> TPAMI 2023
+
+                  </li>
+                  <li>
+                     <span style="font-weight: bold;">
+                        <span style="font-style: italic;"><a href="https://aclanthology.org/2020.acl-main.585/"
+                              target="_blank">Span-based Localizing Network for Natural Language Video
+                              Localization</a></span>
+                     </span> ACL 2020
+
+                  </li>
+
+               </ul>
+
+            </div>
+            <hr>
+            <!-- END GRID -->
+
+
+            <!-- Posts >
+
+               <div class="w3-card-2 w3-margin">
+                  <div class="w3-container w3-padding" style="background-color: DarkKhaki;">
+                     <h4>
+                        <b>Survey Papers</b>
+                     </h4>
+                  </div>
+                  <ul class="w3-ul w3-hoverable w3-white">
+                     <li>  
+                      <span style="font-weight: bold;">                         
+                           <span style="font-style: italic;"><a href="https://arxiv.org/pdf/2201.08071" target="_blank">Temporal Sentence Grounding in Videos: A Survey and Future Directions.</a></span> 
+                        </span> TPAMI 2023. <span class="label label-IR">IR</span> <span class="label label-NLP">NLP</span> <span class="label label-CV">CV</span>
+ 
+                     </li>
+                    <li>
+                        <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/pdf/2205.11725" target="_blank">A Survey on Neural Open Information Extraction: Current Status and Future Directions.</a></span>
+                        </span> IJCAI 2022. <span class="label label-NLP">NLP</span> 
+
+                     </li>
+
+  
+
+                      <li>
+                           <span style="font-weight: bold;">
+                           <span style="font-style: italic;"><a href="https://arxiv.org/pdf/1812.09449" target="_blank"> A Survey on Deep Learning for Named Entity Recognition.</a></span>
+                           </span> TKDE 2022. <span class="label label-NLP">NLP</span> <span class="label label-IR">IR</span> 
+                        </li>
+                         <li>
+                           <span style="font-weight: bold;">
+                           <span style="font-style: italic;"> <a href="https://arxiv.org/pdf/1707.07435"
+                              target="_blank">Deep Learning based Recommender System: A Survey and New Perspectives</a></span>
+                           </span> ACM Computing Surveys 2019. <span class="label label-RecSys">RecSys</span> 
+                        </li>
+
+ <li>
+                           <span style="font-style: italic;">
+                           <span style="font-weight: bold;"><a href="https://arxiv.org/pdf/1705.03172" target="_blank">A Survey of Location Prediction on Twitter</a></span>
+                           </span> TKDE 2018. <span class="label label-Twitter">Twitter</span> <span class="label label-POI">POI</span> 
+                        </li>
+
+
+                  </ul>
+                  
+                  
+               </div>
+               <hr -->
+            <!-- END GRID -->
+
+            <!-- a previous block for list of project demos, outdated-->
+            <!-- Posts -->
+
+            <!--div class="w3-card-2 w3-margin">
+                  <div class="w3-container w3-padding" style="background-color: DarkKhaki;">
+                     <h4>
+                        <b>Project demonstrations</b>
+                     </h4>
+                  </div>
+                  <ul class="w3-ul w3-hoverable w3-white">
+                     <li>
+                        <span class="w3-large">
+                           <a href="http://138.197.118.157:8000/segbot/" target="_blank">SegBot for Discourse Segmentation</a>
+                        </span>
+                     </li>
+                     <li>
+                        <span class="w3-large">
+                           <a href="http://138.197.118.157:8000/caveat/" target="_blank">API Caveat Explorer</a>
+                        </span>
+                     </li>
+                     <li>
+                        <span class="w3-large">
+                           <a href="http://confex.herokuapp.com/" target="_blank">Exploring and Comparing Paper Downloads</a>
+                        </span>
+                     </li>
+                     <li>
+                        <span class="w3-large">
+                           <a href="https://www.youtube.com/watch?v=w3EsALNrKAk" target="_blank">Entity Recognition and Linking</a>
+                        </span>
+                     </li>
+                  </ul>
+                  <a href="https://www.youtube.com/watch?v=w3EsALNrKAk" target="_blank">
+                     <img src="./Images/DemoImage.png" style="width: 100%;" alt="Demo">
+                  </a> 
+                  
+               </div>
+               <hr -->
+            <!-- END GRID -->
+         </div>
+         <br>
+         <!-- END w3-content -->
+      </div>
+   </div>
+</body>
+
+</html>

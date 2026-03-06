@@ -1,0 +1,460 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Abhishek Chandra's Homepage</title>
+<link rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="http://www-users.cs.umn.edu/~chandra/style.css">-->
+<!--    <link rel="shortcut icon" href="http://dcsg.cs.umn.edu/favicon.ico" type="image/png">-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="nav.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="group-name-long">Abhishek Chandra</div>
+      <nav>
+        <ul>
+          <li><a href="http://www-users.cs.umn.edu/~chandra">Home</a></li>
+          <li><a href="http://www-users.cs.umn.edu/~chandra/Research">Research</a></li>
+          <li><a href="http://www-users.cs.umn.edu/~chandra/Publications">Publications</a></li>
+          <li><a href="http://www-users.cs.umn.edu/~chandra/Teaching">Teaching</a></li>
+          <li><a href="http://www-users.cs.umn.edu/~chandra/Service">Service</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <div id="table-container">
+      <div id="table-row">
+        <section id="about">
+         <!-- <h1>Abhishek Chandra</h1>-->
+    <img src="pics/profile_chandra.jpg" alt="My picture" align="left" hspace=20px vspace=10px>
+<p>     I am
+a Professor in the <a href="http://www.cs.umn.edu">Department of
+Computer Science and Engineering</a>
+at the <a href="http://www.umn.edu">University of Minnesota, Twin
+Cities</a>. 
+   </p>   
+
+<!--          <h2>Research</h2>-->
+          <p>My research
+interests are in the areas of Operating Systems and Distributed Systems.
+	    I co-lead the <a href="http://dcsg.cs.umn.edu">Distributed Computing Systems Group</a> in the department.
+	    My research focuses on resource management and performance in distributed systems, such as Clouds, Data centers, Edge computing, and Mobile platforms, with the goal of achieving reliability, scalability, sustainability, and manageability. Much of my focus in recent years has been on designing and optimizing systems for data-driven computing in the cloud and at the edge, especially for data generated at the edge of the network (near the users). This focus has involved research in geo-distributed data analytics, social and health analytics, and mobile and IoT data analytics.
+	    <!--As part of our work, we examine problems along the full data analytics pipeline, from data collection and sensing to analytics -->
+	    <!--
+My research has focused on resource management and performance in
+distributed systems, such as Clouds, Data centers, Grids, and Mobile platforms,
+with the goal of achieving higher reliability,
+scalability, and manageability. 
+Much of my focus in recent years has been on designing and optimizing systems for
+data-driven computing:
+geo-distributed data analytics,
+social analytics,
+interactions of mobile computing (and now IoT) with the cloud, 
+and data analytics in the cloud.
+-->
+Currently, I am working on a number of projects related to these areas, investigating issues in 
+data-intensive computing, edge computing, mobile and IoT systems, and social computing.  <!--mobile-cloud interactions, and social computing.-->
+
+<!--
+             More details can be found
+about my <a  href="http://www.cs.umn.edu/~chandra/Research">Research</a>
+including some of my current and recent projects,
+along with a complete list of <a
+ href="http://www.cs.umn.edu/~chandra/Publications">Publications</a> (generally more up-to-date).
+More information can be found about my <a  href="http://www.cs.umn.edu/~chandra/Teaching">Teaching</a> including recents courses and my current and past students, and <a  href="http://www.cs.umn.edu/~chandra/Service">Service</a> including my recent professional activities.
+-->
+<p>
+  I am currently serving as the Program Co-chair for <a href="https://middleware-conf.github.io/2026/">ACM/IFIP Middleware 2026</a>. Please consider submitting a paper here. I am also serving on the Steering Committees for <a href="https://conferences.computer.org/IC2E/2025/">IEEE IC2E</a> (as Co-chair) and <a href="http://www.hpdc.org/">ACM HPDC</a> conferences.
+     In the past, I have served as the General Co-chair for <a href="https://www.hpdc.org/2022/">ACM HPDC 2022</a>, and the Program Co-chair for <a href="https://icdcs2021.us/">IEEE ICDCS 2021</a>, <a href="https://conferences.computer.org/IC2E/2018/index.htm">IEEE IC2E 2018</a> and <a href="http://www.hpdc.org/2018/">ACM HPDC 2018</a> conferences. I was also the TPC Vice chair for the Edge Computing Track for <a href="https://icdcs2020.sg/">IEEE ICDCS 2020</a> and <a href="http://icdcs2018.ocg.at/">IEEE ICDCS 2018</a>.
+</p>
+
+<!--
+<p>
+I am the Director of Graduate Studies for the Department of Computer Science. <a href="https://www.cs.umn.edu/academics/graduate">Here</a> is some useful information for current and prospective graduate students. 
+For most questions related to the graduate program and admissions, please contact 
+<i>csgradmn AT umn DOT edu</i> for the quickest response. 
+-->
+
+<!--For specific questions meant for me, please send email to 
+<i>dgs AT cs DOT umn DOT edu</i>.-->
+</p>
+
+
+
+	    <h2>Contact</h2>
+	    <p>
+            Office: Rm 4-209, Keller Hall<br>
+            Ph: (612) 626-1283<br>
+            Fax: (612) 625-0572<br>
+	    Email: chandra AT umn DOT edu 
+	    <p>	     <i><b>Note:</b> Email is the best way to contact me as I check it frequently.</i></p>
+	    <h2>Mailing Address:</h2>
+	    <p>
+	    Department of Computer Science and Engineering <br>
+	    University of Minnesota<br>
+	    4-192  Keller Hall,<br>
+	    200 Union St. SE<br>
+            Minneapolis, MN 55455<br>
+</p>
+
+
+        </section>
+
+
+
+        <aside id="news">
+          <h1>News</h1>
+<small>
+ <p>
+<!-- <image src="icons/new.gif">    -->
+   <time datetime="2025-11-01">November 2025:</time>
+   PhD student <font color="red"><b><i>Nikhil Sreekumar passes his PhD thesis defense</b></i></font>. Congrats, Nikhil!!
+ </p>
+ <p>
+    <time datetime="2025-11-01">November 2025:</time>
+Our paper on SneakPeek Edge Inference system presented at ACM SOCC 2025.
+</p>
+
+ <p>
+    <time datetime="2025-09-01">September 2025:</time>
+      Our ASTRA paper with PhD student Nikhil Sreekumar as the first author won the <font color="red"><b><i>Best Research Paper Award</b></i></font> at IEEE IC2E 2025.
+ </p>
+ <p>
+    <time datetime="2025-07-01">July 2025:</time>
+Our paper on Storage Carbon emissions presented at HotCarbon 2025.
+</p>
+ <p>
+    <time datetime="2025-06-01">June 2025:</time>
+PhD Student Nikhil Sreekumar presents a student poster on wearable energy management at SIGMETRICS 2025.
+</p>
+
+   <p>
+   <time datetime="2025-05-01">May 2025:</time>
+   MS student Owen Ratgen passes his MS Plan B Exam. Congrats, Owen!!
+   </p>
+   <p>
+   <time datetime="2025-05-01">May 2025:</time>
+   Undergraduate student Kanishk Kacholia passes his Honors Thesis Exam. Congrats, Kanishk!!
+   </p>
+   
+ <p>
+   <time datetime="2025-1-15">January 2025:</time>
+   MS student Daniel Frink passes his MS Plan B Exam. Congrats, Daniel!!
+</p>
+
+ <p>
+<!-- <image src="icons/new.gif">    -->
+   <time datetime="2024-12-03">December 2024:</time>
+   PhD student <font color="red"><b><i>Joel Wolfrath passes his PhD thesis defense</b></i></font>. Congrats, Joel!!
+ </p>
+ <p>
+   <time datetime="2024-12-03">December 2024:</time>
+   MS student Dorota Kopczyk passes her MS Plan B Exam. Congrats, Dorota!!
+ </p>
+  <p>
+    <time datetime="2024-11-01">November 2024:</time>
+Prof. Chandra received a <font color="red"><b><i>new gift award</b></i></font> from Seagate to study storage systems for ML. Thanks Seagate!
+</p>
+
+ <p>
+    <time datetime="2024-07-01">July 2024:</time>
+Prof. Chandra received a <font color="red"><b><i>new STTR grant</b></i></font> from DoD. Thanks DoD!
+</p>
+ <p>
+    <time datetime="2024-05-01">May 2024:</time>
+Two papers from our group appear at CCGrid 2024.
+</p>
+ <p>
+    <time datetime="2024-04-01">April 2024:</time>
+Prof. Chandra's <a href="https://www.onlineengineeringprograms.com/blog/edge-technologies">interview</a> on Edge computing is published.
+</p>
+  <p>
+    <time datetime="2023-08-01">August 2023:</time>
+Our paper on Geo-distributed Join Approximation accepted to ACM SOCC'23.
+</p>
+
+    <p>
+     <time datetime="2023-07-01">July 2023:</time>
+      Our SQuBA paper with PhD student Yixuan Wang as the first author won the <font color="red"><b><i>Best Student Paper Award</b></i></font> at IEEE Edge 2023. Congrats Yixuan!
+    </p>
+    <p>
+    <time datetime="2023-05-01">May 2023:</time>
+      Our AggFirstJoin paper with PhD student Dhruv Kumar as the first author won the <font color="red"><b><i>Best Paper Award</b></i></font> at CCGrid 2023.
+    </p>
+    <p>
+    <time datetime="2022-09-01">September 2022:</time>
+    We received a <font color="red"><b><i> new research grant from Cisco</b></i></font> to investigate the scalability of edge computing systems. Thanks, Cisco!
+    </p>
+    <p>
+    <time datetime="2022-09-01">September 2022:</time>
+Our paper on Efficient Edge Sampling presented at IC2E'22.
+</p>
+    <p>
+    <time datetime="2022-07-01">July 2022:</time>
+Our paper on Elasticity in Heterogeneous Edge-dense Environments presented at ICDCS'22.
+</p>
+    <p>
+    <time datetime="2022-06-01">June 2022:</time>
+Prof. Chandra serves as <font color="red"><b><i>General Co-Chair for ACM HPDC 2022 conference</i></b></font> held in Minneapolis.
+</p>
+    <p>
+    <time datetime="2022-06-02">June 2022:</time>
+    Our Network Cost-aware GDA paper published in IEEE TPDS journal.
+</p>
+    <p>
+    <time datetime="2022-06-01">June 2022:</time>
+Our paper on Heterogeneity-Aware Federated Learning presented at IPDPS'22.
+</p>
+    <p>
+    <time datetime="2022-04-01">April 2022:</time>
+Our paper on Distributed Join Sampling presented at EdgeSys'22.
+</p>
+  <p>
+    <time datetime="2022-03-01">March 2022:</time>
+PhD student <font color="red"><b><i>Dhruv Kumar passes his PhD thesis defense</b></i></font>. Congrats, Dhruv!!
+</p>
+<!--
+    <p>
+    <time datetime="2022-01-01">January 2022:</time>
+Our Heterogeneity-aware Federated Learning paper accepted to IPDPS'22.
+</p>
+-->
+    <p>
+    <time datetime="2021-12-01">December 2021:</time>
+    Our  Aggnet paper presented at ACM/IEEE SEC'21.
+</p>
+    <p>
+    <time datetime="2021-07-01">July 2021:</time>
+Prof. Chandra serves as <font color="red"><b><i>Program Co-Chair for IEEE ICDCS 2021 conference</i></b></font>.
+</p>
+    <p>
+    <time datetime="2021-06-01">June 2021:</time>
+    Our  DLion paper presented at ACM HPDC'21.
+</p>
+
+  <p>
+    <time datetime="2021-04-01">April 2021:</time>
+    Our  paper on Accelerated Federated Learning appears at EdgeSys'21.
+</p>
+    <!--  
+  <p>
+    <time datetime="2020-12-01">December 2020:</time>
+    Our WASP paper appears at Middleware'20.
+</p>
+  <p>
+    <time datetime="2020-11-01">November 2020:</time>
+    Our poster on Data-Aware Edge Sampling wins the <font color="red"><b><i>Best Poster Award</b></i></font> at SEC'20.
+</p>
+  <p>
+    <time datetime="2020-11-01">November 2020:</time>
+    Our Vision paper on Edge-native storage appears in SEC'20.
+</p>
+  <p>
+    <time datetime="2020-10-01">October 2020:</time>
+Prof. Chandra chairs the panel on Data Science Project Management at the VAIBHAV Summit: A global summit for Overseas and Resident Indian Scientists and Academicians.
+</p>
+  
+  <p>
+    <time datetime="2020-05-01">May 2020:</time>
+    Our paper on
+    Network Cost-aware Geo-distributed Data Analytics System appears at CCGrid'20.
+</p>
+  <p>
+  <time datetime="2020-02-01">Feb 2020:</time>
+Our paper on Wiera geo-distributed storage system published in IEEE TPDS.
+  </p>
+
+  <p>
+  <time datetime="2019-09-01">Sep 2019:</time>
+We received a <font color="red"><b><i>new NSF grant</b></i></font> for a project on building an edge-based IoT framework. Thanks, NSF!
+</p>
+
+  <p>
+    <time datetime="2019-07-19">July, 2019:</time>
+PhD students <font color="red"><b><i>Kwangsung Oh and Albert Jonathan pass their PhD thesis defense</b></i></font>. Congrats, Kwangsung and Albert!
+</p>
+  <p>
+    <time datetime="2019-06-01">July, 2019:</time>
+Our papers on DLion, DeCaf and Constellation systems presented at HotCloud and HotEdge workshops.
+</p>
+  <p>
+    <time datetime="2019-06-01">June, 2019:</time>
+Our paper on MESH Hypergraph processing system nominated as a <font color="red"><b><i>Best Paper Finalist</b></i></font> in IC2E'19.
+</p>
+  <p>
+    <time datetime="2019-06-01">June, 2019:</time>
+Our paper on TTL-based streaming analytics presented at SIGMETRICS'19.
+</p>
+
+
+<p>
+  <time datetime="2018-10-01">October, 2018:</time>
+Our paper on multi-query optimization in wide-area stream processing presented at SOCC'18.
+</p>
+<p>
+  <time datetime="2018-10-01">October, 2018:</time>
+Our posters on deep learning and streaming analytics in geo-distributed environments presented at SOCC'18 and OSDI'18 respectively.
+</p>
+
+<p>
+  <time datetime="2018-7-01">July, 2018:</time>
+Our paper on adaptability in wide-area stream processing presented at HotCloud'18.
+</p>
+<p>
+  <time datetime="2018-6-01">June, 2018:</time>
+  <a href="https://github.com/mesh-umn/TF.AKO">Source code</a> for TensorFlow-based decentralized distributed deep learning framework released.
+</p>
+<p>
+  <time datetime="2018-3-01">March, 2018:</time>
+Recent alum <font color="red"><b><i>Benjamin Heintz</b></i></font> (Ph.D. 2016) was honored as a runner-up for <font color="red"><b><i>SPEC’s 2017 Kaivalya Dixit Distinguished Dissertation Award</b></i></font>. Congrats, Ben!
+</p>
+
+<p>
+  <time datetime="2017-12-01">December, 2017:</time>
+Our paper on Locality-Aware Load Sharing in Mobile Cloud Computing presented at UCC 2017.
+</p>
+
+<p>
+  <time datetime="2017-09-30">September, 2017:</time>
+The <a href="https://github.com/dcsg-umn/wiera">source code</a> for Wiera, our geo-distributed storage system, 
+is released.
+</p>
+<p>
+  <time datetime="2017-8-20">August, 2017:</time>
+Prof. Chandra is PI on a <b>new collaborative NSF grant</b> on dispersed real-time data analytics.  Thanks, NSF!
+</p>
+
+<p>
+  <time datetime="2017-08-04">August, 2017:</time>
+Our paper on optimizing timeliness and cost in geo-distributed streaming analytics accepted for publication in IEEE TCC.
+</p>
+<p>
+  <time datetime="2017-06-20">June, 2017:</time>
+Our paper on Nebula Distributed Edge Cloud accepted for publication in IEEE TPDS.
+</p>
+<p>
+  <time datetime="2017-06-01">June, 2017:</time>
+The <a href="https://github.com/mesh-umn/MESH">source code</a> for MESH, our distributed hypergraph analysis system, 
+
+is released.
+</p>
+<p>
+  <time datetime="2017-05-01">May, 2017:</time>
+Our paper on TripS geo-distributed data placement framework presented at SYSTOR 2017.
+</p>
+<p>
+  <time datetime="2017-04-01">April, 2017:</time>
+Our poster on IoT/edge computing framework presented at IoTDI 2017.
+</p>
+<p>
+  <time datetime="2017-01-01">January, 2017:</time>
+Abhishek Chandra joins the Editorial Board for IEEE Transactions on Cloud Computing (TCC).
+</p>
+
+<p>
+  <time datetime="2016-12-12">December, 2016:</time>
+PhD student <b>Benjamin Heintz passes his PhD thesis defense</b>. Congrats, Ben!  
+</p>
+
+<p>
+  <time datetime="2016-10-01">Oct 2016:</time>
+We received a <b>new NSF grant</b> for a project on building systems for geo-centric applications. Thanks, NSF!
+</p>
+
+<p>
+  <time datetime="2016-7-29">July 2016:</time>
+Our paper on timeliness-accuracy tradeoff in geo-distributed streaming analytics accepted in ACM SOCC'16.
+</p>
+<p>
+  <time datetime="2016-7-29">July 2016:</time>
+Our paper on geo-distributed MapReduce optimization appears in IEEE TCC.
+</p>
+<p>
+  <time datetime="2016-5-5">May 2016:</time>
+PhD student Benjamin Heintz wins the <b>UMN Doctoral Dissertation Fellowship</b>.
+</p>
+
+<p>
+  <time datetime="2016-3-29">March 2016:</time>
+Our paper on Wiera geo-distributed storage accepted in HPDC'16.
+</p>
+<p>
+  <time datetime="2016-1-06">January 2016:</time>
+Our paper on Awan geo-distributed resource manager accepted in IC2E'16.
+</p>
+
+<p>
+  <time datetime="2015-06-19">June 19, 2015:</time>
+PhD student Benjamin Heintz wins the <b>Best Presentation Award</b> at HPDC'15.
+</p>
+
+<p>
+  <time datetime="2015-05-16">May 16, 2015:</time>
+Our HPDC paper on Geo-Distributed Streaming Analytics selected as a <b>Best Paper Finalist</b>.
+</p>
+
+<p>
+  <time datetime="2015-05-2">May 2, 2015:</time>
+ Paper on Hypergraph Analysis Systems accepted in  HotCloud'15.
+</p>
+
+<p>
+  <time datetime="2015-03-31">March 31, 2015:</time>
+  Paper on Cross-Data Center Locality
+  accepted in  BigSystem 2015.
+</p>
+
+<p>
+  <time datetime="2015-03-16">March 16, 2015:</time>
+Paper on Optimizing Grouped Aggregation in Geo-Distributed Streaming Analytics accepted in
+HPDC 2015.
+</p>
+
+<p>
+  <time datetime="2015-03-12">March 12, 2015:</time>
+Paper on Optimizing Wide-Area Streaming Analytics
+presented at 
+IWCA 2015.
+</p>
+
+<p>
+  <time datetime="2015-03-10">March 10, 2015:</time>
+Paper on Cloud-based Mobile Optimization 
+<b>nominated for Best Paper Award</b> at IC2E 2015.
+</p>
+
+
+<p>
+  <time datetime="2014-12-10">December 10, 2014:</time>
+Paper on Tiera Cloud Storage 
+presented at 
+Middleware 2014.
+</p>
+
+<p>
+  <time datetime="2014-12-8">December 8, 2014:</time>
+  Book chapter on Cross-Phase Optimization in MapReduce published.
+</p>
+
+<p>
+  <time datetime="2014-12-4">December 4, 2014:</time>
+  Paper on Cloud-Based, User-Centric Mobile Application Optimization
+  accepted in IC2E 2015.
+</p>
+-->
+</small>
+
+	  <!--
+          <p>
+            <a href="http://dcsg.cs.umn.edu/News">More news...</a>
+          </p>
+	  -->
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

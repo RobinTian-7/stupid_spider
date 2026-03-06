@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Cynthia Rudin</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-46180937-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Cynthia Rudin</div>
+<div class="menu-item"><a href="home.html" class="current">Home</a></div>
+<div class="menu-item"><a href="lab.html">Interpretable&nbsp;<br /> ML&nbsp;Lab</a></div>
+<div class="menu-item"><a href="papers.html">Papers</a></div>
+<div class="menu-item"><a href="code.html">Code</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="mediatalks.html">Announcements&nbsp;<br /> Media,&nbsp;Talks</a></div>
+<div class="menu-item"><a href="cv.pdf">CV</a></div>
+<div class="menu-item"><a href="personal.html">Personal</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Cynthia Rudin </h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="images/CynthiaNov2021.jpg" alt="" width="330px" height="438px" />&nbsp;</td>
+<td align="left"><p>Cynthia Rudin <br />
+Gilbert, Louis, and Edward Lehrman Distinguished Professor of Computer Science<br />
+Departments of Computer Science, Electrical and Computer Engineering, Statistical Science, Mathematics, and Biostatistics &amp; Bioinformatics  <br /> 
+<a href="https://users.cs.duke.edu/~cynthia/lab.html" target=&ldquo;blank&rdquo;>PI, Interpretable Machine Learning Lab</a> <br />
+<a href="http://www.duke.edu" target=&ldquo;blank&rdquo;>Duke University</a> <br />
+</p>
+<p>Office: LSRC D207 <br />
+Research Drive<br />
+Durham NC, 27708 USA<br />
+</p>
+<p><img SRC="images/eaddress.jpg" BORDER=0 height=25> 
+</p>
+</td></tr></table>
+<h2>Research:</h2>
+<p>My research focuses on interpretable machine learning and its applications; that is, designing machine learning models whose reasoning processes people can understand. This includes algorithms for extremely sparse models, interpretable neural networks, interpretable matching methods for causal inference, and dimension reduction for data visualization. 
+My lab applies these techniques to critical societal problems in healthcare, criminal justice, materials science, computer vision, and in other domains.
+Here are some of my major projects:
+</p>
+<ul>
+<li><p>My collaborators and I develop practical code for sparse models, such as decision lists, decision trees, and additive models that provably optimize accuracy and sparsity (e.g., see our NeurIPS 2022 oral, KDD 2017 oral,  NeurIPS 2019 spotlight, ICML 2020, AAAI 2022 papers). We presented a new paradigm for machine learning called the Rashomon Set paradigm, where ML algorithms return many good models and the user can choose among them. This allows humans to interact with machine learning algorithms and troubleshoot machine learning models much more easily. I discussed this in my ICML 2024 spotlight &ldquo;Amazing Things Come From Having Many Good Models.&rdquo;
+</p>
+</li>
+</ul>
+<ul>
+<li><p>My collaborators and I have been developing theory for why simpler models often perform well. Our hypothesis is that noise in the data leads to the existence of simpler models, and we prove this in special cases. This is important, because it allows us to know something about the simplicity of models before even seeing the data.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>My lab's PaCMAP algorithm for dimension reduction for data visualization is used by many scientists, particularly in bioinformatics, biology, and ecology. It has won two software awards from the American Statistical Association.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>My team's work on optimal scoring systems (sparse linear models with integer coefficients) has been applied to many important healthcare and criminal justice applications. Our work on seizure prediction in ICU patients won the 2019 INFORMS Innovative Applications in Analytics Award. It helps to prevent severe brain damage in critically ill patients. It is the only AI model currently widely used in critical care brain monitoring.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>I led a team in the first major effort to maintain an underground electrical distribution network using machine learning, in joint work with Con Edison in NYC. This won the 2013 INFORMS Innovative Applications in Analytics Award.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>My collaborators and I developed code for detecting crime series in cities. This methodology (specifically, the Series Finder algorithm) was developed in Cambridge MA and adapted by the NYPD and their application (Patternizr) has been running live in NYC since 2016 for determining whether each new crime is related to past crimes.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>I solved a well-known previously-unsolved theoretical problem in machine learning as a PhD student, which is whether AdaBoost maximizes the margin like SVM. (The answer is that sometimes it provably does and sometimes it provably doesn't.) Subsequent work solved a published COLT open problem, earning a prize.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>I have given invited and keynote talks at INFORMS, KDD (2014 and 2019), SDM, AISTATS, ECML-PKDD, Machine Learning in Healthcare, FAT-ML (Fairness, Accountability, and Transparency), the Nobel Conference, SPIE, the Conference on Statistical Practice, and at several other venues.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>I enjoy competing in data science competitions and coaching students of teams. My teams have won awards in several competitions, including the ASA Data Challenge Expo in 2022, FICO Recognition Award for the Explainable Machine Learning Competition in 2018, NTIRE Superresolution competition in 2018, and PoeTix Literary Turing Competition in 2018.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>I am one of three co-PIs of the <a href="https://almost-matching-exactly.github.io" target=&ldquo;blank&rdquo;>Almost-Matching-Exactly Lab</a>, which develops matching methods for use in interpretable causal inference.
+</p>
+</li>
+</ul>
+<h2>Major Awards:</h2>
+<ul>
+<li><p><a href="https://www.ijcai.org/awards" target=&ldquo;blank&rdquo;>IJCAI-25 John McCarthy Award</a>, 2025. Award given to a mid-career AI scientist, given by the International Joint Conferences on Artificial Intelligence Organization. 
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://aaai.org/Pressroom/Releases/release-21-1012.php" target=&ldquo;blank&rdquo;>Squirrel AI Award for Artificial Intelligence for the Benefit of Humanity</a>, Association for the Advancement of Artificial Intelligence (AAAI), 2022. An extremely prestigious award in the field of artificial intelligence. Like the Nobel prize and Turing award, it carried a $1M prize.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://connect.informs.org/data-mining/awards/prize" target=&ldquo;blank&rdquo;>INFORMS Society on Data Mining Prize</a>, 2024. This award is the highest accomplishment the society can bestow upon a member. It recognizes a senior researcher for outstanding contributions to the field of data mining over the course of their career. 
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.gf.org/announcements/" target=&ldquo;blank&rdquo;>Guggenheim Fellowship</a>, 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.informs.org/Recognizing-Excellence/Community-Prizes/Manufacturing-and-Service-Operations-Management/MSOM-Best-OM-paper-in-OR" target=&ldquo;blank&rdquo;>Best OM Paper in OR Award</a>, INFORMS, 2021. For best operations management paper published in Operations Research.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.fico.com/en/newsroom/fico-announces-winners-of-inaugural-xml-challenge" target=&ldquo;blank&rdquo;>FICO Recognition Award for the Explainable Machine Learning Challenge</a>, 2018
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://pubsonline.informs.org/do/10.1287/LYTX.2019.02.29n/full/?utm_campaign=Analytics%20eNewsletter&amp;utm_source=hs_email&amp;utm_medium=email&amp;utm_content=72089970&amp;_hsenc=p2ANqtz-_zznAl_ENu_HxpGTEuUmWKwhwve-beNtsfAQ_Vb6D68cmx2Y4IlZ06yIrZqmf_jC1RXrYlG7-aiW7QzD-xIVnSIAvo6Q&amp;_hsmi=72089970" target=&ldquo;blank&rdquo;>INFORMS Innovative Applications in Analytics Award</a>, 2019
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.informs.org/Resource-Center/Video-Library/Wagner-Competition-Videos/2017-Wagner-Competition-Videos/2017-Wagner-Finalist-Duke-Harvard" target=&ldquo;blank&rdquo;>Daniel H. Wagner Prize Finalist</a>, 2017
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.informs.org/Resource-Center/Video-Library/Innovative-Applications-in-Analytics-Award-Videos/2016-IAAA-Videos" target=&ldquo;blank&rdquo;>INFORMS Innovative Applications in Analytics Award</a>, 2016
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.informs.org/ORMS-Today/Public-Articles/June-Volume-40-Number-3/INFORMS-NEWS-Innovative-Applications-in-Analytics-Award" target=&ldquo;blank&rdquo;>INFORMS Innovative Applications in Analytics Award</a>, 2013 <a href="https://www.informs.org/Resource-Center/Video-Library/Innovative-Applications-in-Analytics-Award-Videos/2013-IAAA-Videos/Machine-Learning-for-Power-Grid-Reliability-Predicting-Manhole-Events-in-New-York" target=&ldquo;blank&rdquo;>(link to one of my presentations)</a>
+</p>
+</li>
+</ul>
+<p>Many other best paper awards are listed with their associated papers <a href="https://users.cs.duke.edu/~cynthia/papers.html" target=&ldquo;blank&rdquo;>here</a> and additional awards are listed <a href="https://users.cs.duke.edu/~cynthia/mediatalks.html" target=&ldquo;blank&rdquo;>here</a>.
+</p>
+<h2>Long Bio:</h2>
+<p>Cynthia Rudin is the Gilbert, Louis, and Edward Lehrman Distinguished Professor of Computer Science at Duke University. She is a member of the Departments of Computer Science, Electrical and Computer Engineering, Statistical Science, Mathematics, and Biostatistics &amp; Bioinformatics at Duke, and directs the Interpretable Machine Learning Lab. Previously, Prof. Rudin held positions at MIT, Columbia, and NYU. She holds an undergraduate degree from the University at Buffalo, and a PhD from Princeton University. She is the recipient of the 2022 Squirrel AI Award for Artificial Intelligence for the Benefit of Humanity from the Association for the Advancement of Artificial Intelligence (AAAI). This is an extremely prestigious award in the field of artificial intelligence. Similar only to world-renowned recognitions, such as the Nobel Prize and the Turing Award, it carried a monetary reward at the million-dollar level. Prof. Rudin is the winner of the 2024 INFORMS Society on Data Mining Prize, and a three-time winner of the INFORMS Innovative Applications in Analytics Award. She was named as one of the &ldquo;Top 40 Under 40&rdquo; by Poets and Quants in 2015, and was named by Businessinsider.com as one of the 12 most impressive professors at MIT in 2015. She is a 2022 Guggenheim fellow, as well as a fellow of the American Statistical Association, the Institute of Mathematical Statistics, and AAAI. 
+</p>
+<p>Prof. Rudin is past chair of both the INFORMS Data Mining Section and the Statistical Learning and Data Science Section of the American Statistical Association. She has also served on committees for DARPA, the National Institute of Justice, AAAI, and ACM SIGKDD. She has served on three committees for the National Academies of Sciences, Engineering and Medicine, including the Committee on Applied and Theoretical Statistics, the Committee on Law and Justice, and the Committee on Analytic Research Foundations for the Next-Generation Electric Grid.  She has given keynote/invited talks at several conferences including KDD (twice), AISTATS, INFORMS, Machine Learning in Healthcare (MLHC), Fairness, Accountability and Transparency in Machine Learning (FAT-ML), ECML-PKDD, and the Nobel Conference. Her work has been featured in news outlets including the NY Times, Washington Post, Wall Street Journal, and Boston Globe.
+</p>
+<h2>Short Bio:</h2>
+<p>Cynthia Rudin is the Gilbert, Louis, and Edward Lehrman Distinguished Professor of Computer Science at Duke University. She directs the Interpretable Machine Learning Lab, and her goal is to design predictive models that people can understand. Her lab applies machine learning in many areas, such as healthcare, criminal justice, and energy reliability. She holds degrees from the University at Buffalo and Princeton. She is the recipient of the 2022 Squirrel AI Award for Artificial Intelligence for the Benefit of Humanity from the Association for the Advancement of Artificial Intelligence (the &ldquo;Nobel Prize of AI&rdquo;), as well as the INFORMS Society of Data Mining Prize in 2024. She received a 2022 Guggenheim fellowship, and is a fellow of the American Statistical Association, the Institute of Mathematical Statistics, and the Association for the Advancement of Artificial Intelligence. 
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2025-11-06, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

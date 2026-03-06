@@ -1,0 +1,451 @@
+<html lang="en">
+	<head>
+	<title>Philip Brighten Godfrey</title>
+<link rel="stylesheet" href="main.css">
+
+<!-- Code for expand/contract content sections  -->
+<style>
+  /* Basic styling for the box */
+  .content-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0 15px 0; /* spacing */
+    background-color: #f9f9f9;
+  }
+
+  /* BUTTON STYLING */
+	.toggle-btn {
+	  background: none;
+	  border: none;
+	  font-size: 14px;
+	  cursor: pointer;
+	  padding: 5px 0;
+	  font-weight: bold;
+	  color: #333;
+	  text-align: left;
+	}
+
+	/* AUTOMATIC ARROW GENERATION */
+	.toggle-btn::before {
+	  content: ">>";         /* The text to insert */
+	  display: inline-block; /* Allows rotation */
+	  margin-right: 8px;     /* Spacing between arrow and name */
+	  transition: transform 0.2s ease; /* Smooth rotation */
+	}
+
+	/* ROTATION STATE */
+	/* When the button has the class 'open', rotate the ::before element */
+	.toggle-btn.open::before {
+	  transform: rotate(90deg);
+	}
+</style>
+
+<script type="text/javascript">
+
+	function toggleSection(btn, targetId) {
+	      var targetDiv = document.getElementById(targetId);
+      
+	      if (targetDiv.style.display === "none") {
+	        // Show div
+	        targetDiv.style.display = "block";
+	        // Add class to button (triggers CSS rotation)
+	        btn.classList.add("open");
+	      } else {
+	        // Hide div
+	        targetDiv.style.display = "none";
+	        // Remove class from button
+	        btn.classList.remove("open");
+	      }
+	    }
+</script>
+
+<!-- Compact links to papers in my paper list  -->
+
+
+<!--<script src="hyphenate.js" type="text/javascript"></script> -->
+	</head>
+
+	<body class="hyphenate">
+
+<script>
+	class PaperLink extends HTMLElement {
+	    connectedCallback() {
+	      // Wait for the browser to finish parsing the children
+	      setTimeout(() => {
+	        const item = this.getAttribute('pid');
+        
+	        // Safety check: ensure we haven't already created the link
+	        if (this.querySelector('a')) return;
+
+	        // Replace the supplied text with a link to the paper
+	        this.innerHTML = `<a href="papers/index.html#${item}">${this.innerHTML}</a>`;
+        
+	        this.style.display = 'inline'; 
+	      });
+	    }
+	  }
+
+	  customElements.define('paper-link', PaperLink);
+</script>
+
+
+
+
+
+	<div id="content" style="width:689px">
+
+<table border=0 cellspacing=0 cellpadding=0 width="100%"><tr><td colspan=2><h1>Philip Brighten Godfrey</h1></td></tr>
+<tr><td valign=top width=500><p>Ph.D., <a href="http://www.cs.berkeley.edu">Computer Science</a>, <a href="http://www.berkeley.edu/">UC Berkeley</a>, May 2009.<br>
+M.S., <a href="http://www.cs.berkeley.edu">UC Berkeley</a>, 2006.<br>
+B.S. in <a href="http://www.cs.cmu.edu">Computer Science</a>,
+<a href="http://www.cmu.edu/">Carnegie Mellon University</a>,
+May 2002.</p>
+
+<p>
+Office: 3211 <a href="http://www.davidkunzman.net/extern/siebel/index.php">Siebel Center</a><br>
+Email: pbg at illinois dot edu<br>
+</p>
+
+
+<p>I am a professor in the <a href="https://siebelschool.illinois.edu/">Siebel School of Computing and Data Science</a> and the <a href="https://csl.illinois.edu">CSL</a> at
+the University of Illinois at Urbana-Champaign. I was co-founder and CTO of startup Veriflow, which pioneered network verification technology and was acquired in 2019 by VMware (now Broadcom), where I served as technical director through 2025.  Before joining UIUC, I was a Ph.D. student at UC Berkeley, advised by <a
+href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a>, and a visiting researcher at Intel Labs Berkeley.</p>
+
+<!--I completed my Ph.D. in
+May 2009, advised by <a
+href="http://www.eecs.berkeley.edu/~istoica/">Ion Stoica</a> at
+UC Berkeley (which means <a href="http://maps.google.com/maps?f=d&source=s_d&saddr=brighton,+il&daddr=godfrey,+il+to:berkeley,+mo&hl=en&geocode=&gl=us&mra=ls&sll=38.907064,-90.179901&sspn=0.304029,0.482025&ie=UTF8&ll=38.928434,-90.188141&spn=0.607872,0.96405&z=10">this</a> is something of a coincidence). From February to July 2009, I was a visiting
+researcher at Intel Labs Berkeley.</p>-->
+
+<!--<p>I am seeking strong graduate students to work on challenging problems
+in building, analyzing, and understanding networks and systems. If you are interested in working with me or applying to Illinois, please <a href="admissions.html">read this</a>.</p> -->
+
+<p><b>Ph.D. applicants:</b>  I encourage you to apply to UIUC CS for the 2025 admission season. Our group is always interested in strong applicants in the broad area of networked systems. The type of work in our group spans building networked systems, applications of ML to networked systems, and algorithms and optimization for networks.  Read more about our group's current research thrusts below. Apply to our PhD program and list my name as one of the faculty you are interested to work with. UIUC has a fantastic group of faculty in the Systems and Networking space and I encourage you to explore who is the best fit for you.</p>
+
+<p><b>Undergraduate research:</b> Drop me an email with your resume and a transcript.</p>
+
+
+<a href="#research">Research</a> |
+<a href="papers/index.html">Papers</a> |
+<a href="#news">News</a> |
+<a href="#group">Group</a> |
+<a href="#teaching">Teaching</a> |
+<a href="#service">Service</a>
+
+</td>
+<td><div class="thumb tright" onmouseover="document.getElementById('photo-credit').style.visibility='visible';" onmouseout="document.getElementById('photo-credit').style.visibility='hidden';"><div><img src="me.jpg" alt="" /></div><br><p style="color:#999999; font-size:75%; visibility:hidden;" id="photo-credit">Photo: <a href="http://cs.brown.edu/~rfonseca/" style="color:#999999">Rodrigo Fonseca</a></p></div>
+</td></tr></table>
+
+
+<div style="width:500px">
+
+
+		<h2 id="research">Research</h2>
+
+<p>I enjoy building networked systems that address practical problems, with strong architectural and theoretical foundations.  You can check out my <a href="papers/">complete list of papers</a>.  My group is currently working in several main areas:</p>
+
+<ul>
+
+    <li><b>Low latency networking:</b> We're leading <a href="https://nsf-breaking-low-agora.illinois.edu/">Project Agora</a>, a $7.1M NSF Breaking Low project to develop deployable low-latency wireless networking, and demonstrate its use for XR-based medical collaboration. Our other projects include the <a href="papers/index.html#cisp">Speed of Light Internet</a>, <a href="papers/index.html#sentosa23dchannel">DChannel</a>, <a href="papers/index.html#touseef23hvc">HVCs</a>, and <a href="papers/index.html#vaddiraju25wtsn">WTSN for low latency WiFi</a>.</li>
+
+    <li><b>Machine learning for systems:</b> Our group is part of the <a href="https://ldos.utexas.edu">LDOS NSF Expeditions In Computing</a> project, which is building a clean-slate Learning Directed Operating System. We've also worked on online learning for congestion control (<a href="papers/index.html#jay19aurora">Aurora</a> and <a href="http://pccproject.net">PCC</a>), deep learning as an <a href="papers/index.html#gilad19robustifying">adversary</a>, and performance diagnosis (<a href="papers/index.html#harsh23murphy">Murphy</a>).</li>
+
+    <li><b>Service layer networking</b> to optimize, observe, and secure communication between microservices. See news article: <a href="https://siebelschool.illinois.edu/news/nsf-microservices">CS-led team pioneers improvement of microservice-based applications</a> and our HotNets 2021 paper which put forth a vision of <a href="papers/index.html#ashok21servicemeshes">Service meshes as a new network layer</a>. We've built Service Layer Traffic Engineering (SLATE) (<a href="index.html#lim24slate">in HotNets 2024</a> and to appear in NSDI 2026), <a href="papers/index.html#ashok23traceweaver">TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification</a>, and <a href="papers/index.html#grewal23microservice-policies">expressive policies for microservices</a>.</li>
+
+    <li><b>Network verification and formal methods:</b> Our group pioneered network verification, specifically building the first data plane verifier applied to a real network (<paper-link pid="mai11anteater">Anteater</paper-link>) and the first real-time data plane verifier (<paper-link pid="khurshid13veriflow">VeriFlow</paper-link>), which led to our startup Veriflow, now part of VMware. We've worked on customizable consistency properties (<paper-link pid="zhou15ccg">CCG</paper-link>),	fast configuration verification (<a href="papers/index.html#prabhu20plankton">Plankton</a>), <a href="papers/index.html#liu-kheradmand20selfdriving">verifying self-driving infrastructure</a>, verifying systems of multiple microservice controllers (<paper-link pid="liu24kivi">Kivi</paper-link>), expressive policies for microservices (<paper-link pid="grewal23microservice-policies">HotNets 2023</paper-link> and <paper-link pid="grewal25safetree">SafeTree in OOPSLA 2025</paper-link>), and automated reasoning for network architectures (<paper-link pid="bothra24archie">HotNets 2024</paper-link>).</li>
+    
+</ul>
+
+<p>Other areas of work recently and in the past include:</p>
+
+<ul>
+    <li>Data center network topology, specifically the Jellyfish expander graph (<paper-link pid="singla12jellyfish">NSDI 2012</paper-link>, <paper-link pid="singla14throughput">NSDI 2014</paper-link>), measuring and understanding throughput (<paper-link pid="jyothi16throughput">SC 2016</paper-link>), spineless data centers (<paper-link pid="harsh20spineless">HotNets 2020</paper-link>), Starfish (to appear in NSDI 2026)</li>
+	<li>Network diagnosis, including including network fault localization (<a href="papers/index.html#harsh23flock">Flock</a>) and diagnosing performance problems in distributed apps (<a href="papers/index.html#harsh23murphy">Murphy</a>)</li>
+    <li>Compact routing and fast shortest path algorithms in social networks</li>
+    <li>Flexible Internet architectures</li>
+    <li>Peer-to-peer systems</li>
+</ul>
+
+<h2 id="news">Recent News</h2>
+
+<p>2025:</p>
+<ul>
+
+	<li>NSF has awarded <a href="https://nsf-breaking-low-agora.illinois.edu/">Project Agora</a>, a $7.1 million project that will develop deployable low-latency wireless networking, and demonstrate its use for medical collaboration. The project is led by myself (PI), Sarita Adve and Christine Zhang (co-PIs), with members from the UIUC Siebel School for Computing and Data Science, the Carle Illinois College of Medicine, Peraton Labs, MediView, T-Mobile, Qualcomm, and Cisco. Agora is one of just three projects awarded in the NSF Breaking Low program.</li>
+	
+	<li>Here's my <a href="https://docs.google.com/document/d/1YddgP-TVtg2WlxPz5OfZiPidgSJWAJQSCV5BrB7tUAk/edit?usp=sharing">unhinged rant on the paper reviewing process</a> used by the networking community, focused on the problem that it can take years to publish a paper, even after the work is essentially done. I was also a panelist in the reviewing discussion at the <a href="https://www.youtube.com/watch?v=LyDSv-RDCz8">SIGCOMM'25 Community Session (video)</a> in Coimbra in September.</li>
+
+	<li><a href="papers/index.html#sentosa25cellreplay">CellReplay</a>, led by William Sentosa, won the Community Award for best paper with open code and data at NSDI 2025! You can <a href="https://github.com/williamsentosa95/cellreplay">use CellReplay now</a> for accurate record-and-replay emulation of cellular networks.</li>	
+
+	<li>Our work on low latency networking and its application to XR has new papers out: an investigation of <a href="papers/index.html#vaddiraju25wtsn">whether WTSN is the missing piece for low latency Wi-Fi</a> (HotMobile'25) led by Milind Kumar V; and <a href="papers/index.html#gao25XRgo">XRgo</a> and <a href="papers/index.html#jiang25RemoteVIO">RemoteVIO</a>, both in MMsys 2025 and in collaboration with Sarita Adve's group, which offload rendering and VIO components of the XR stack, respectively.</li>
+		
+	<li>My Spring 2025 course CS 435 Cloud Networking is on the <a href="https://citl.illinois.edu/teachers-ranked-excellent">List of Teachers Ranked as Excellent by Their Students!</a></li>
+	
+	<li>Looking forward to serving as PC Co-Chair of <a href="https://conferences.sigcomm.org/hotnets/2025/">HotNets 2025</a> with Barath Raghavan!</li>
+	
+	<li>Congrats to undergraduate researcher <a href="https://www.linkedin.com/in/adiprerepa/">Aditya Prerepa</a> on his graduation! Aditya co-led the SLATE project, which was presented in EnvoyCon'23 and HotNets'24, and will appear in NSDI 2026.</li>
+	
+	<li>Honored to give the invited keynote talk, <a href="https://netdevconf.info/0x19/sessions/keynote/understanding-and-improving-robustness-of-networked-systems-with-machine-learning.html">Understanding and Improving Robustness of Networked Systems with Machine Learning</a>, at NetDev 0x19 on March 11 in Zagreb, Croatia! The <a href="https://www.youtube.com/watch?v=9Mjyo8NqMAA">talk video</a> is now online. I was also honored to deliver this talk at the <a href="https://coseners.qmul.ac.uk/ngn-webinar-series/">Queen Mary University of London Next Generation Networking Webinar Series</a> in March.</li>
+
+	<li>Invited talk in the Qualcomm Academic Lecture Series on "Democratizing Low Latency:
+A Grand Challenge for Networking", October 2025</li>
+
+</ul>
+
+<p>2024:</p>
+
+<ul>
+	
+	<li>Enjoyed giving an invited talk, "Improving Robustness of Networked Systems With Machine Learning", at the Google AIOps Workshop in November 2024</li>
+
+	<li>Two papers in HotNets this year, in the areas of microservices and formal methods for networks respectively: <a href="papers/index.html#lim24slate">Opportunities and Challenges in Service Layer Traffic Engineering</a>, led by Gangmuk Lim and Aditya Prerepa, and <a href="papers/index.html#bothra24archie">Lightweight Automated Reasoning for Network Architectures</a> led by Rahul Bothra</li>
+	
+
+	<li>Lots happening at SIGCOMM this year in addition to papers. I gave the keynote talk "The Networks Above the Network: Opportunities for Formal Methods in The World of Cloud Native Computing" at the <a href="https://conferences.sigcomm.org/sigcomm/2024/workshop/fmano/">ACM SIGCOMM Workshop on Formal Methods Aided Network Operation (FMANO)</a> in August 2024, and was also a panelist in the SIGCOMM reviewing panel.</li>
+
+	<li>Two papers on microservices this summer: <a href="papers/index.html#liu24kivi">Kivi</a> in USENIX ATC, led by Bingzhe Liu, is the first verifier for interactions among microservice controllers, and <a  href="papers/index.html#liu24kivi">TraceWeaver</a> in ACM SIGCOMM, led by Sachin Ashok and with our collaborators at IBM, reconstructs distributed traces of requests flowing across microservices, without modifying applications to propagate request context.</li>
+
+	<li>Excited to <a href="https://siebelschool.illinois.edu/news/-NSF-expedition">kick off</a> the <a href="https://ldos.utexas.edu/">Learning Directed Operating System (LDOS) project</a>, a 5-year, $12 million NSF Expedition project that will build an intelligent and self-adaptive operating system. Gang Wang and I are co-PIs at UIUC, and the project is led by PI Aditya Akella.</li>
+
+	<li>Invited talk "Expanding the scope of network verification to microservices" at the Bellairs Network Verification Workshop, April 2024 </li>
+
+	<li>Our $1.1 million NSF project on networking for microservices kicked off recently, with co-PIs Radhika Mittal and R. Srikant -- see the news article <a href="https://siebelschool.illinois.edu/news/nsf-microservices">CS-led team pioneers improvement of microservice-based applications</a>
+
+</ul>
+
+
+
+<p>2023:</p>
+<ul>
+    <li>Congratulations to <a href="https://bingzhe.web.engr.illinois.edu">Bingzhe Liu</a> on her Ph.D. dissertation defense!</li>
+    <li>Excited to share two papers in HotNets 2023 from different thrusts of our group's work, on <a href="papers/index.html#touseef23hvc">low latency networking for interactive applications</a>, and <a href="papers/index.html#grewal23microservice-policies">expressive policies for microservice communication</a></li>
+    <li>Our group has two upcoming talks at KubeCon 2023 in Chicago: Bingzhe Liu and Gangmuk Lim on <a href="https://kccncna2023.sched.com/event/1R2u1">verifying Kubernetes controllers</a>, and Gangmuk Lim and Aditya Prerepa on service layer traffic engineering with <a href="https://sched.co/1Rj1y">SLATE</a>.</li>
+	<li>My course CS 538 in Spring 2023 is on the <a href="https://citl.illinois.edu/teachers-ranked-excellent">List of Teachers Ranked as Excellent by Their Students</a></li>
+    <li>Congratulations to <a href="https://vharsh2.web.engr.illinois.edu">Vipul Harsh</a> on his Ph.D. dissertation defense!</li>
+    <li>Check out <a href="https://blogs.vmware.com/management/2023/09/improving-cloud-network-troubleshooting-a-research-based-solution-unveiled-at-sigcomm-2023-new-york-city.html">VMware's blog</a> on commercial impact of <a href="papers/index.html#harsh23murphy">Murphy</a>, which appeared in SIGCOMM'23</li>
+    <li>I've joined the ACM SIGCOMM Steering Committee for a three-year term, 2023 - 2026.</li>
+    <li>Enjoyed speaking on <a href="papers/index.html#cisp">cISP</a> at the Harvard Systems + Theory Seminar in February</li>
+</ul>
+
+
+<button class="toggle-btn" onclick="toggleSection(this, 'olderNews')">
+    Older News
+  </button>
+  
+  <div id="olderNews" style="display:none;">  
+
+<p>2022:</p>
+<ul>
+    <li>Panelist at ACM Symposium on SDN Research, on "Broadening Software-Defined Networking" -- check out the <a href="https://www.youtube.com/watch?v=Vvj69YyBVb4&t=13113s">video</a></li>
+    <li>Sachin Ashok and Vipul Harsh's talk at KubeCon 2022: <a href="https://www.youtube.com/watch?v=xSoF5XRx8l8">Distributed Tracing Without The Pain</a></li>
+    <li><a href="https://www.syfy.com/syfy-wire/microwave-towers-could-provide-near-light-speed-internet">SYFY Wire</a> covered our work on designing a speed-of-light Internet which recently appeared in NSDI 2022.  See also <a href="https://twitter.com/BrightenGodfrey/status/1517302414331756544">my quick summary</a> on Twitter.</li>
+    <li>Honored to be recognized with a 2022 Engineering Council Outstanding Advisor Award from the UIUC College of Engineering, which is due to an awesome group of students!</li>
+    <li>I've been happy to give a few virtual talks recently:
+        at Cambridge University on "Software as a Network",
+        at the <a href="https://sites.google.com/utexas.edu/mll-sysml/schedule">UT Austin Sys/ML Workshop</a> on "Towards Self-Driving Clouds Via Machine Learning", and
+        at Cambridge and FutureWei on <a href="papers/index.html#cisp">cISP</a> (<a href="https://www.cl.cam.ac.uk/research/srg/seminars/videos/2022-07-21.mp4">video online!</a>).
+</ul>
+
+<p>2021:</p>
+
+<ul>
+    <li>Talk video now online: <a href="https://www.youtube.com/watch?v=0Tjr3l9o1RM">Adventures in Learning-Based Rate Control</a> at the c3.ai workshop on Networks+ML in September</li>
+    <li>I'll be co-chairing <a href="https://conferences.sigcomm.org/sigcomm/2022/">ACM SIGCOMM 2022</a> with Bruce Maggs.</li>
+    <li>Check out our HotNets <a href="papers/ashok21servicemesh.pdf">paper</a> and Sachin's <a href="https://www.youtube.com/watch?v=ajkQNjXP5Zs">10-minute talk video</a> on Leveraging Service Meshes as a New Network Layer.</li>
+    <li>A few talks this fall -- at ONUG 2021 on <a href="https://onug.net/events/spinelessness-the-future-of-data-center-networks/">spineless data center networks</a>, at <a href="https://www.netverify2021.org">NetVerify 2021</a>, and the <a href="https://c3.ai/dti/events/workshops/networks-of-machine-learning/">c3.ai workshop on Networks of Machine Learning, for Machine Learning, by Machine Learning</a></li>
+    <li>We're excited that cISP, our project on designing an Internet that achieves nearly speed-of-light latency, will appear at NSDI 2022.  Watch for the upcoming paper!</li>
+    <li>Congratulations to Ph.D. graduates Tong Meng and Ali Kheradmand!</li>
+    <li>Here's William's <a href="https://www.youtube.com/watch?v=HifNZjmK2eM">talk video</a> from HotMobile'21 about accelerating mobile apps by using parallel high-bandwidth and low-latency channels in 5G (and beyond)</li>
+</ul>
+
+  </div>
+
+
+<h2 id="teaching">Teaching</h2>
+
+	<ul>
+    <li>CS 435: Cloud Networking (Spring 2026, Spring 2025, Spring 2024, Fall 2021, Fall 2022)</li>
+	<li>CS 591 UP: Computing Startup Seminar (<a href="https://courses.grainger.illinois.edu/cs591up/fa2025/">Fall 2025</a>)</li>
+    <li>CS 538: Advanced Computer Networks
+        (<a href="https://courses.engr.illinois.edu/cs538/sp2023">Spring 2023</a>, <a href="https://courses.engr.illinois.edu/cs538/sp2021">Spring 2021</a>, <a href="https://courses.engr.illinois.edu/cs538/sp2019">Spring 2019</a>,
+        <a href="https://courses.engr.illinois.edu/cs538/sp2018">Spring 2018</a>,
+        <a href="https://courses.engr.illinois.edu/cs538/sp2017">Spring 2017</a>,
+        <a href="https://courses.engr.illinois.edu/cs538/fa2013">Fall 2013</a>,
+        <a href="https://courses.engr.illinois.edu/cs538/fa2012">Fall 2012</a>,
+        <a href="courses/cs538fa11">Fall 2011</a>)
+	<li>CS 498: Cloud Networking (Fall 2020, Fall 2019, Fall 2018)</li>
+</ul>
+
+<button class="toggle-btn" onclick="toggleSection(this, 'olderTeaching')">
+    Older Teaching
+  </button>
+
+<ul id="olderTeaching" style="display:none;">
+    <li>CS 241: Systems Programming (<a href="https://courses.engr.illinois.edu/cs241/sp2014">Spring 2014</a>, <a href="https://courses.engr.illinois.edu/cs241/sp2012/">Spring 2012</a>, <a href="http://www.cs.uiuc.edu/class/sp10/cs241/">Spring 2010</a>)</li>
+    <li>CS 438: Communication Networks (Spring 2011)</li>
+
+	<li>CS 598: Advanced Computer Networks (<a href="courses/cs598fa10">Fall 2010</a>)</li>
+
+	<li>CS 591: Foundations of Systems and Networking (<a href="https://agora.cs.illinois.edu/display/cs591fsn/">Spring 2010</a>)</li>
+	<li>CS 598: Advanced Internet (<a href="courses/cs598fa09">Fall 2009</a>)</li>
+	
+	</ul>
+
+
+
+<h2 id="group">Research Group</h2>
+
+<h4>Current members</h4>
+
+<ul>
+    <li>Shehab Sarar Ahmed (Ph.D.)</li>
+    <li><a href="https://sachin-a.github.io">Sachin Ashok</a> (Ph.D., co-advised with Radhika Mittal)</li>
+    <li><a href="https://rahulbothra.com">Rahul Bothra</a> (Ph.D.)</li>
+    <li><a href="https://gangmuk.github.io">Gangmuk Lim</a> (Ph.D.)</li>
+    <li>Gerard Matthew (Ph.D.)</li>
+    <li>Aditya Prerepa (Undergraduate)</li>
+    <li><a href="https://williamsentosa.github.io">William Sentosa</a> (Ph.D.)</li>
+    <li><a href="https://milindkumarv.com">Milind Kumar Vaddiraju</a> (Ph.D.)</li>
+    <li><a href="https://talha.cs.illinois.edu/">Talha Waheed</a> (Ph.D., co-advised with Radhika Mittal)</li>
+	<li><a href="https://wy-go.github.io/">Wanyu Zhao</a></li>
+</ul>
+
+<h4>Ph.D. alumni</h4>
+
+<ul>
+    <li><a href="https://bingzhe.web.engr.illinois.edu">Bingzhe Liu</a> (2024, now Research Scientist at Meta)</li>
+    <li><a href="https://vharsh2.web.engr.illinois.edu">Vipul Harsh</a> (2024, now postdoc at Conviva)</li>
+    <li><a href="http://ttmeng.net">Tong Meng</a> (2021, now at ByteDance)</li>
+    <li><a href="https://sites.google.com/view/ali-kheradmand">Ali Kheradmand</a> (2021, co-advised with Grigore Rosu, now at Google)</li>
+    <li><a href="https://www.ics.uci.edu/~sabdujyo/">Sangeetha Abdu Jyothi</a> (2019, now assistant professor at UC Irvine)</li>
+	<li><a href="https://www.linkedin.com/in/modong/">Mo Dong</a> (2017, now co-founder at Celer Network)</li>
+	<li><a href="http://soudeh.net">Soudeh Ghorbani</a> (2016, now assistant professor at Johns Hopkins)</li>
+	<li><a href="https://www.linkedin.com/in/qingxi-li-42738241/">Qingxi Li</a> (2016, now at Google)</li>
+    <li><a href="https://people.inf.ethz.ch/asingla/">Ankit Singla</a> (2015, now assistant professor at ETH Zurich)</li>
+	<li><a href="http://ashish.vulimiri.net">Ashish Vulimiri</a> (2015, co-advised with Gul Agha, now at Samsung Research)</li>
+	<li><a href="https://www.linkedin.com/in/chi-yao-hong-98906b67/">Chi-Yao Hong</a> (2014, co-advised with Matt Caesar, now at Google)</li>
+    <li><a href="http://www.cs.cornell.edu/~ragarwal/index.html">Rachit Agarwal</a> (2013, co-advised with Matt Caesar, now professor at Cornell)</li>
+</ul>
+
+<h4>Postdoc alumni</h4>
+
+<ul>
+    <li><a href="http://anduowang.github.io">Anduo Wang</a> (Postdoc 2013-2015, with Matthew Caesar, now assistant professor at Temple University)
+</ul>
+
+<h4>M.S. alumni</h4>
+
+<ul>
+    <li>Talal Touseef (2024)</li>
+    <li>Aditi Partap (2021, co-advised with Radhika Mittal, now Ph.D. student at Stanford)</li>
+    <li>Nathan Jay (2019)</li>
+    <li>Fatima Tariq (2019)</li>
+	<li>Fan Yang (2015)</li>
+	<li>Kyle Jao (2014)</li>
+	<li>Abhishek Sharma (2013)</li>
+	<li>Sam Mussmann (2012)</li>
+</ul>
+
+
+<h2 id="service">Service</h2>
+
+		<ul>
+        <li>ACM HotNets 2025 PC co-chair</li>
+        <li>ACM SIGCOMM 2025 program committee</li>
+        <li>USENIX NSDI 2025 program committee</li>
+        <li>ACM SIGCOMM Steering Committee, 2023-26</li>
+        <li>USENIX NSDI 2024 program committee</li>
+        <li>SIGCOMM 2022 program committee co-chair</li>
+        <li>USENIX NSDI 2022 program committee</li>
+        <li>HotNets 2021 program committee</li>
+        <li>CoNEXT 2020 program committee</li>
+        <li>SIGCOMM 2018 program committee</li>
+        <li>SIGMETRICS 2017 program committee</li>
+        <li>HotNets 2017 program committee</li>
+        <li>SIGCOMM 2017 Workshop on VR/AR Network program committee</li>
+		<li><a href="">SOSR 2016 PC co-chair</a></li>
+		<li><a href="http://conferences.sigcomm.org/sigcomm/2015/">SIGCOMM 2015</a> program committee</li>
+		<li>Dagstuhl Seminar on Formal Methods and Networks (2015), co-organizer</li>
+		<li><a href="http://conferences.sigcomm.org/hotnets/2014/">HotNets 2014</a> PC co-chair</li>
+	</ul>  
+
+
+<button class="toggle-btn" onclick="toggleSection(this, 'olderService')">
+    Older Service
+  </button>
+ 
+
+	<ul id="olderService" style="display:none;">
+		<li><a href="http://www.sigmetrics.org/sigmetrics2014/">SIGMETRICS 2014</a> program committee</li>
+		<li><a href="http://conferences.sigcomm.org/sigcomm/2014/">SIGCOMM 2014</a> program committee and web chair</li>
+		<li><a href="">NSDI 2014</a> program committee</li>
+		<li><a href="http://conferences.sigcomm.org/hotnets/2013/">HotNets 2013</a> program committee</li>
+		<li><a href="http://www.safeconfig.org">IEEE SafeConfig 2013</a> program committee</li>
+		<li><a href="http://conferences.sigcomm.org/co-next/2013/">CoNEXT 2013</a> Workshop Co-Chair</li>
+		<li><a href="http://www.ancsconf.org/">ANCS 2013</a> program committee</a></li>
+		<li><a href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">HotSDN 2013</a> program committee</a></li>
+		<li><a href="http://www.ancsconf.org/">WWW 2013</a> program committee, Social Network and Graph Analysis track</a></li>
+		<li><a href="http://dimacs.rutgers.edu/Workshops/SoftwareDefined/">DIMACS Workshop on Software Defined Networking</a> 2012 co-organizer</li>
+		<li><a href="http://conferences.sigcomm.org/hotnets/2011/">HotNets 2011</a> program committee</li>
+		<li><a href="http://www.sigmetrics.org/sigmetrics2011/">SIGMETRICS 2011</a> program committee</li>
+		<li><a href="http://conferences.sigcomm.org/co-next/2010/Workshops/StudentWorkshop/">CoNEXT 2010 Student Workshop</a> co-chair</li>
+		<li><a href="http://networking-2010.cs.iitm.ernet.in/">IFIP Networking 2010</a> program committee</li>
+		</ul>
+
+
+		<h2>Random</h2>
+			<ul>
+<li><b><a href="bio.txt">Short biography</a></b></li>
+<li><b><a href="headshot-2021.JPG">Photo</a></b></li>
+<li><b>Writing on <a href="http://youinfinitesnake.blogspot.com/">You Infinite Snake</a> (blog) and elsewhere</b>
+	<ul>
+        <li><a href="https://www.networkworld.com/article/3237944/lan-wan/network-verification-predicting-the-future-of-complex-networks.html">Network verification: predicting the future of complex networks</a> (Network World, November 27, 2017)</li>
+		<li><a href="https://enterprisersproject.com/article/2017/2/startup-cto-explains-why-tech-leaders-should-always-keep-eye-academia">Why Tech Leaders Should Always Keep an Eye on Academia</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2011/02/attractive-scientific-plots-with.html">Attractive scientific plots with gnuplot</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2010/10/google-frequency-plotter.html">Google Frequency Plotter</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2010/09/programming-language-wars-movie.html">Programming Language Wars: The Movie</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2010/08/what-happened-to-internet-on-friday.html">What happened to the Internet on Friday</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2008/08/computer-science-research-trends.html">Computer Science Research Trends</a></li>
+		<li><a href="http://youinfinitesnake.blogspot.com/2008/08/graphing-english.html">Graphing English</a></li>
+	</ul>
+	</li>
+<li><b><a href="outreach/">Outreach activities</a></b></li>
+<li><b><a href="misc/SecuringGrants.pdf">Advice on obtaining grants</a></b></li>
+<li><b><a href="availability/">Repository of Availability Traces</a></b><br>
+Traces from measurement studies of PlanetLab, web sites, corporate PCs,
+Skype superpeers, and DNS servers packaged in a single compact format.
+</li>
+<!--<li><b><a href="conf_stats">Aggregate CS conference statistics</a></b></li> -->
+<li><b>Great talks on education:</b>
+			<a href="http://www.ted.com/index.php/talks/view/id/237">Clifford Stoll</a>,
+			<a href="http://www.ted.com/index.php/talks/view/id/66">Ken Robinson</a></li>
+			
+</ul>
+
+</div>
+
+<!--
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-413282-1";
+urchinTracker();
+</script>
+
+<!-- Start of StatCounter Code 
+<script type="text/javascript" language="javascript">
+var sc_project=1579303; 
+var sc_invisible=1; 
+var sc_partition=14; 
+var sc_security="35014bb7"; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c15.statcounter.com/counter.php?sc_project=1579303&amp;java=0&amp;security=35014bb7&amp;invisible=1" alt="web site hit counter" border="0"></a> </noscript>
+<!-- End of StatCounter Code 
+
+-->
+
+</div>
+	</body>
+</html>

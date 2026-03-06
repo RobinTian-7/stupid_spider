@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Aniket Kate</title>
+<link rel ="stylesheet" href ="my.css" type="text/css" />
+</head>
+<body>
+<table id= mainTable cellspacing ="0" cellpadding="0">
+<tr>
+		<td>
+			<img src="images/Aniket.jpg" alt="Aniket Kate's Photo" height="200"/>
+		</td>
+		<td id ="bigCol">
+			<h1>Aniket Kate</h1>
+			<h3>Associate Professor<br />
+			University Faculty Scholar	<br />
+			Research Head, <a href="https://supra.com/research-team/">Supra</a></h3>
+			<h4><a href="https://www.cs.purdue.edu/">Department of Computer Science</a><br />
+			<a  href="https://www.purdue.edu/">Purdue University</a></h4>
+			<h4>Email: <img align="middle" src="./images/email.jpg" height="27" alt="my-first-name@purdue.edu" /><br />
+			<small>[<a href="./howtopronounce.html">How To Pronounce My Name</a>]</small>
+			</h3>
+		</td>
+		<td align="right">
+			<!--img src="./images/purduecs.jpg" alt="cs.purdue logo" height="120" /-->
+			<!--img src="./images/group.jpg" alt="purdue logo" height="130" /-->
+		</td>
+
+  <tr><td colspan="3" align="center">
+  <br />
+<b>&#10220
+<a href="#research">Research</a> &#8214;
+<a href="./publications.html">Publications</a> &#8214;
+<a href="https://freedom.cs.purdue.edu/">Freedom Lab</a> &#8214;
+<a href="./documents/AniketKate-Vitae.pdf">CV</a> &#8214;
+<!--a href="https://freedom.cs.purdue.edu/#people">Advising</a> &#8214;-->
+<a href="#teaching">Teaching</a> &#8214;
+<!--a href="./talks.html">Talks</a> &#8214;-->
+<a href="#contact">Contact</a> &#10221</b>
+<hr />
+   </td></tr> 
+
+<tr><td  colspan="3"> 
+ <h3>Brief Bio</h3>
+
+<p>
+Prof. Aniket Kate is an Associate Professor of Computer Science and a University Faculty Scholar
+ at
+<a href="https://www.purdue.edu/">Purdue University</a>. 
+He is also the Research head at <a href="https://supra.com/research-team/">Supra</a>.
+His research builds on and expands cryptography, distributed computing, 
+and game theory to solve security/privacy problems in decentralized environments.
+His current projects focus on distributed ledgers (or blockchains) and secure computations.
+His work has received the IACR Test-of-time Award for Asiacrypt 2010, 
+and distinguished paper awards from ACM COSN 2015 and ACM CCS 2025. 
+He is also a recipient of the 2019 NSF CAREER Award. </p>
+<p>
+Before joining Purdue in 2015, he was a junior faculty member <!-- and an independent research group leader --> at <a href="http://www.cs.uni-saarland.de/">Saarland University</a>, Germany.
+He completed his postdoctoral fellowship at <a href="http://www.mpi-sws.org">Max Planck Institute for Software Systems</a> (MPI-SWS) in Germany. He received his PhD from the <a href="https://cs.uwaterloo.ca/">University of Waterloo</a>, Canada, and his masters from <a href="https://www.cse.iitb.ac.in">IIT-Bombay</a>, India.
+</p>
+<br />
+<a href="./ResearchInclination.html">For more about his research (inclination)...</a>
+<br />
+ </td></tr>
+ 
+
+ 
+<!--tr><td colspan="3"><hr />
+<h3>News</h3>
+<p><span style="color:#c52b48"><tt>[13/Aug/2012]</tt></span>
+Our paper <i>An Efficient Key-Exchange Protocol for Onion Routing</i> got accepted to appear at ACM WPES 2012. The protocol is already getting discussed on the <a href="https://lists.torproject.org/pipermail/tor-dev/2012-August/003901.html">tor-dev mailing list</a> as a candidate for the next generation Tor network.</p>
+
+</td></tr-->
+
+
+<tr><td  colspan="3"><hr /><a name="research"></a>
+<h3>Research Thrusts</h3>
+
+<ul>
+<li><b>Blockchains &amp; Cryptocurrencies</b> <sup> [EuroSys '26] [S&amp;P '25] [VLDB '25] [AFT '25] [CSF '25] [NDSS '24 '23 '19-'17 '15] [CCS '23 '17 '15] [FC '21 '20] [Usenix Sec '21] [PETS '20 '17 '16] [WWW '18] [ESORICS '14]</sup><br />
+<ul>
+<li>analyzing and improving privacy and security of cryptocurrencies, layer-2 solutions, IOU credit networks, blockchain sharding, and 3rd generation blockchains </li>
+<li>developing cryptography-aided (smart) contracts for breaking theoretical barriers</li>
+<li>designing novel distributed ledger (or blockchain) architectures for supply-chains and distributed CPS</li><br />
+</ul>
+
+<li><b>Crypto-economic Security/Privacy</b> <sup> [FC '26 '25 '22] [Eurocrypt '25] [S&amp;P '24] [CSF '23] [CCS '21]</sup><br />
+<ul>
+<li>improving privacy and security of cryptographic protocols (e.g., VSS, PIR, time-lock puzzles) in the rational-malicious setting
+<li>protecting against the front-running attacks via inexpensive, non-cryptographic means</li>
+<li>analyzing novel rational behaviors in ZK market places and the proof-of-work blockchains such as undercutting</li><br />
+</ul>
+
+<li><b>MPC &amp;  Threshold Crypto</b> <sup>[S&amp;P '26][Crypto '25][CCS '25 '24 '23 '20 '19] [NDSS '23 '22 '20] [EuroS&amp;P'23] [AFT '22] [PETS '22] [GPCE'21] [PODC '14 '12] [ACSAC '14] [CT-RSA '13]  [ASIACRYPT '11 '10] [SCN '10] [ICDCS '09]</sup><br />
+
+<ul>
+<li>improving the robustness and efficiency of multi-party computation (MPC)
+<li>developing MPC-based solutions for blockchains, verifiable randomness, differential privacy, #metoo, &amp; machine learning
+<li>designing synchronous/asynchronous protocols for VSS and DKG<br /><br />
+</ul>
+</li>
+
+<li><b>Distributed Systems</b> <sup> [Usenix Sec '26 '25] [S&amp;P '25] [CCS '25 '24 '21] [DSN '24] [FC '23] [Middleware '23] [ICDCS '23 '10][EuroSys '14] [ToN '13] [PODC '12] [ASIACCS '12]</sup><br />
+<ul>
+<li>designing  synchronous/asynchronous protocols for state machine replication and reliable broadcast/ data dissemination
+<li> building tailored consensus protocols for data-centers, distributed CPS, oracles, and random beacons 
+<li>designing scalable, robust, and private protocols for secure DHT lookups<br /><br />
+</ul>
+</li>
+
+<li><b>Meta-data Privacy</b> <sup>[EuroSys '26] [S&amp;P '25 '24 '18] [CCS '24 '14] [ISIT '24] [CSF '24 '13 '12]  [PETS '23 '22 '20 '07]  [NDSS '17]  [ACNS '17 '15 '14]  [ESORICS '16]  [WPES '12] [TISSec '10] [FC '10] </sup><br />
+<ul>
+<li>understanding the fundamental communication lower bounds for anonymous communications and its applications
+<li>developing cryptographic and distributing computing primitives to enhance privacy, scalability, and accountability of anonymous communication, directory authorities, and privacy-preserving storage systems
+<li>building frameworks for defining, analyzing, and quantifying anonymity
+properties for the networks
+<!--li>developing a  light-weight monitor (MATor) to assess the anonymity of Tor and other ACNs in real time-->
+<br /><br />
+</ul>
+</li>
+
+<!--li><b>Right to be Forgotten/Update/Repair</b> <sup>[Usenix Sec '22][NDSS' 21][ FC'21][PETS' 19] [IC '17] [SOUPS' 16]</sup><br />
+<ul>
+<li> analyzing users' deletion habits on the online platform, right to be forgotten, and the associated Streisand effect
+<li> proposing effective counter-measures to protect those deletions from the Cyberstalkers
+<li> making blockchain compliant to regulations such as GDPR and CCPA
+</ul>
+</li-->
+</ul>
+
+<h4>Dormant Projects</h4>
+<ul>
+
+<li><b>Right to be Forgotten/Update/Repair</b> <sup>[Usenix Sec '22][NDSS' 21][ FC'21][PETS' 19] [IC '17] [SOUPS' 16]</sup><br />
+
+<li><b>Privacy-Preserving Web Analytics</b> <sup>[ACSAC '14] [S&amp;P '12] </sup><br />
+<!--Using multi-party computation (MPC) and private-information retrieval (PIR) techniques, 
+we have designed web analytics applications with strong privacy properties.-->
+</li>
+
+<li><b>Accountability and Transparency</b> <sup>[TDSC '16] [COSN '15]</sup><br /> 
+<!--ul>
+<li>designing a secure data transfer architecture facilitating transparency in malicious data lineage scenarios
+<li>developed a tampering detection approach (Stamper) against the sybil attacks in online reputation systems to allow
+system operators to detect manipulated computations without going after the individual Sybil nodes
+</ul-->
+</li>
+
+<!--li><b>P2P/DHT Systems Privacy and Security</b> <sup> [ToN '13] [ASIACCS '12] [ICDCS '10]</sup><br />
+<Using threshold cryptography and oblivious transfer, we  have designed scalable, robust, and private protocols for secure DHT lookups
+in peer-to-peer (P2P) systems.-->
+</li>
+</ul>
+</li>
+</ul>
+</td>	
+</tr>
+
+<tr><td colspan="3"><hr /><a name="publications"></a>
+<h3>Selected Recent Publications</h3>
+
+<br />For the complete publication list, local copies, and preprints: [<a href="./publications.html">Publication Page</a>] 
+[<a href="https://scholar.google.com/citations?user=dmhWxJgAAAAJ">Google Scholar</a>]<br/><br/>
+
+<table>
+
+<td id = confName><b>[Usenix SEC '26]</b>
+<td><a href="https://eprint.iacr.org/2025/1112">Hydrangea: Optimistic Two-Round Partial Synchrony with Improved Fault Resilience</a></b><br /><br />
+</tr>
+
+<tr>
+<td id = confName><b>[IEEE S&amp;P '26]</b>
+<td><a href="https://eprint.iacr.org/2025/1736">Breaking the Barrier for Asynchronous MPC with a Friend</a><br/>
+<br/>
+</tr>
+
+
+<tr>
+<td id = confName><b>[CCS' 25]</b>
+<td><a href="https://arxiv.org/abs/2505.02761">Optimistic, Signature-Free Reliable Broadcast and Its Applications
+</a><span style="color:#c52b48">***Distinguished Paper Award***</span><br/>
+<br/>
+</tr>
+
+
+<td id = confName><b>[Crypto '25]</b>
+<td><a href="https://eprint.iacr.org/2024/1666">
+Computationally Efficient Asynchronous MPC with Linear Communication and Low Additive Overhead</a></b><br /><br />
+</tr>
+
+
+<td id = confName><b>[Usenix SEC '25]</b>
+<td><a href="https://eprint.iacr.org/2025/083"> Recover from Excessive Faults in Partially-Synchronous BFT SMR</a></b><br /><br />
+</tr>
+
+<tr>
+<td id = confName><b>[IEEE S&amp;P '25]</b>
+<td><a href="https://eprint.iacr.org/2025/174">
+VITARIT: Paying for Threshold Services on Bitcoin and Friends</a><br/>
+<br/>
+</tr>
+
+
+<td id = confName><b>[Eurocrypt '25]</b>
+<td><a href="https://eprint.iacr.org/2025/446" >Disincentivize Collusion in Verifiable Secret Sharing</a></b><br /><br />
+</tr>
+
+
+
+<tr>
+<td id = confName><b>[CCS' 24]</b>
+<td><a href="https://eprint.iacr.org/2023/1755">HashRand: Efficient Asynchronous Random Beacon without Threshold Cryptographic Setup
+</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td id = confName><b>[CCS '24]</b>
+<td><a href="https://eprint.iacr.org/2023/451">Non-interactive VSS using Class Groups and Application to DKG</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td id = confName><b>[IEEE S&amp;P '24]</b>
+<td><a href="https://arxiv.org/abs/2201.07740">More is Merrier: Relax the Non-Collusion Assumption in
+  Multi-Server PIR</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td id = confName><b>[IEEE S&amp;P '24]</b>
+<td><a href="https://zhtluo.com/paper/Attacking_and_Improving_the_Tor_Directory_Protocol.pdf">
+Attacking and Improving the Tor Directory Protocol</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td id = confName><b>[CCS '23]</b>
+<td><a href="https://eprint.iacr.org/2022/075">Uncovering Impact of Mental Models towards Adoption of Multi-device Crypto-Wallets</a><br />
+<br />
+</tr>
+
+
+<tr>
+<td id = confName><b>[NDSS '23]</b>
+<td><a href="https://eprint.iacr.org/2022/193">OptRand: Optimistically Responsive Reconfigurable Distributed
+Randomness </a><br /><br />
+</tr>
+
+
+
+
+<td id = confName><b>[Usenix SEC '22]</b>
+<td><a href="https://arxiv.org/abs/2008.11317"> Empirical Understanding of Deletion Privacy: Experiences, Expectations, and Measures</a></b><br /><br />
+</tr>
+
+
+<tr>
+<td id = confName><b>[CCS '21]</b>
+<td><a href="https://eprint.iacr.org/2020/1590">RandPiper - Reconfiguration-Friendly Random Beacons with Quadratic Communication</a></b><br />
+<br />
+</tr>
+
+<td id = confName><b>[Usenix SEC '21]</b>
+<td><a href="https://eprint.iacr.org/2021/176">Blitz: Secure Multi-Hop Payments Without Two-Phase Commits</a></b><br />
+<br />
+</tr>
+
+<tr>
+<td id = confName><b>[CCS '20]</b>
+<td><a href="https://github.com/verifiable-timed-signatures/web/blob/master/assets/paper.pdf">
+Verifiable Timed Signatures Made Practical</a><br/>
+<br/>
+</tr>
+
+
+<tr>
+<td id = confName><b>[NDSS '20]</b>
+<td><a href="https://arxiv.org/abs/1810.10123">Finding Safety in Numbers with Secure Allegation Escrows</a><br />
+<br/>
+</tr>
+
+
+<tr>
+<td id = confName><b>[CCS '19]</b>
+<td><a href="https://eprint.iacr.org/2019/883">HoneyBadgerMPC and AsynchroMix: Practical Asynchronous MPC
+              and its Application to Anonymous Communication</a><br/>
+<br/>
+</tr>
+
+
+<tr>
+<td id = confName><b>[NDSS '19]</b>
+<td><a href="https://eprint.iacr.org/2018/472">Anonymous Multi-Hop Locks for Blockchain
+Scalability and Interoperability</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td id = confName><b>[IEEE S&amp;P '18]</b>
+<td><a href="https://eprint.iacr.org/2017/954">Anonymity Trilemma: Strong Anonymity, Low Bandwidth, Low Latency---Choose Two</a><br/>
+<br/>
+</tr>
+
+
+<!--tr>
+<td><b>[WWW '18]</b>
+<td><a href="https://arxiv.org/abs/1706.02358">Mind Your Credit: Assessing the Health of the Ripple Credit Network</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[NDSS '18]</b>
+<td><a href="https://arxiv.org/abs/1709.05748">Settling Payments Fast and Private: Efficient Decentralized Routing for Path-Based Transactions</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[CCS '17]</b>
+<td><a href="https://eprint.iacr.org/2017/820">Concurrency and Privacy with Payment-Channel Networks</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[IEEE S&amp;P '17]</b>
+<td><a href="https://www.ieee-security.org/TC/SP2017/papers/231.pdf">SymCerts: Practical Symbolic Execution For Exposing Noncompliance in X.509 Certificate Validation Implementations</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[NDSS '17]</b>
+<td><a href="http://dev1.www.isocdev.org/sites/default/files/ndss2017_01-4_Ruffing_paper.pdf">P2P Mixing and Unlinkable Bitcoin Transactions</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[NDSS '17]</b>
+<td><a href="https://eprint.iacr.org/2016/1054">SilentWhispers: Enforcing Security and Privacy in Decentralized Credit Networks</a><br/>
+<br/>
+</tr>
+
+<tr>
+<td><b>[JPC '16]</b>
+<td><a href="http://repository.cmu.edu/jpc/vol7/iss2/5/">AnoA: A Framework for Analyzing Anonymous Communication Protocols</a><br/>
+<br/>
+</tr>
+
+
+<tr>
+<td><b>[COSN '15]</b>
+<td><a href="./publications/Stamper.pdf">Strength in Numbers: Robust Tamper Detection in Crowd Computations</a> <span style="color:#c52b48">***Best Paper Award***</span><br/>
+<br/>
+</tr>
+
+
+
+<tr>
+<td><b>[CCS '15]</b>
+<td><a href="./publications/Non-equivocationWithBitcoinPenalties.pdf">Liar, Liar, Coins on Fire!  --  Penalizing Equivocation By Loss of Bitcoins</a><br/>
+<br/>
+</tr-->
+
+<!--tr>
+<td><b>[NDSS'15]</b>
+<td><a href="https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/privacy-preserving-payments-credit-networks-enabling-trust-privacy-online-marketplaces/">Privacy Preserving Payments in Credit Networks</a><br/>
+P. Moreno-Sanchez, A. Kate, M. Maffei, and K. Pecina<br/><br/>
+</tr>
+
+
+
+<tr>
+<td><b>[CCS'14]</b>
+<td><a href="https://eprint.iacr.org/2014/621">(Nothing else) MATor(s): Monitoring the Anonymity of Tor's Path Selection</a><br/>
+M. Backes, A. Kate, S. Meiser, and E. Mohammadi<br/><br/>
+</tr>
+
+
+<tr>
+<td><b>[PODC'14]</b>
+<td><a href="https://eprint.iacr.org/2013/745">Asynchronous MPC with a Strict Honest Majority Using Non-equivocation</a><br/>
+M. Backes, F. Bendun, A. Choudhury, and A. Kate<br/><br/>
+</tr>
+
+<tr>
+<td><b>[ACM/IEEE ToN'13]</b>
+<td><a href="./publications/RobustP2P.pdf">Towards Practical Communication in Byzantine-Resistant DHTs</a><br/>
+M. Young, A. Kate, I. Goldberg, and M. Karsten<br/><br/>
+</tr-->
+
+
+
+
+
+</table>
+</td></tr>
+
+<!--tr><td  colspan="3"> <hr /><a name="postdoc"></a>
+ <h3>Opening for Post-Doctoral Researcher</h3>
+<p>I am looking for an outstanding post-doctoral researcher (or an extended visitor) working on topics related to applied cryptography and secure distributed systems.</p>
+<p>Our research addresses all aspects of security and privacy of distributed systems, especially distributed cryptographic protocols, concurrency, and consensus. We are particularly interested in their applications to distributed ledgers (or blockchains) and cryptocurrencies.</p>
+
+<p> 
+The application must include a curriculum vitae, a short research statement, and names of 2 contacts that can provide reference about the applicant and her/his work. The candidate shall be able to demonstrate solid expertise in cryptography/distributed systems illustrated in form of publications at top crypto/security/systems venues such as CRYPTO, EUROCRYPT, ASIACRYPT, ACM CCS, IEEE S&P, USENIX Security, NDSS, SOSP/OSDI, NSDI, EuroSys etc.</p><br />
+ </td></tr-->
+
+
+<!--tr><td colspan="3"><hr /><a name="advising"></a>
+<h3>Advising</h3>
+<ul>
+<li><b>Ph.D. Students</b>
+<ul>
+<li>Sze Yiu Chau (with Prof. Ninghui Li)</li>
+<li>Debajyoti Das</li>
+<li>Duc V Le (with Prof. Mike Atallah)</li>
+<li>Donghang Lu</li>
+<li>Easwar V Mangipudi</li>
+<li>Mohsen Minaei</li>
+<li><a href = "https://www.cs.purdue.edu/homes/pmorenos/">Pedro Moreno-Sanchez</a> (<b>graduating</b>)</li>
+<li><a href = "https://people.mmci.uni-saarland.de/~truffing/">Tim Ruffing</a> (with Prof. Dominique Schroder)  (<b>graduating</b>)</li>
+</ul>
+</li>
+
+
+<li><b>Undergraduate Advisees and Interns</b>
+<ul>
+<li>Dhairya M Doshi</li>
+<li>Mahimna Kelkar</li>
+<li>Krutarth R. Rao</li>
+</ul>
+</li>
+<li><b>Alumni</b>
+<ul>
+<li>Satrajit Ghosh (<i>Post-Master Researcher</i>)</li>
+<li>Siddharth Gupta (<i>Master Thesis</i>, CERIAS, Purdue University), April 2017</li>
+<li>Simon Heinzel (<i>Master Thesis</i>, Saarland University), Feb 2016</li>
+<li>Tobias Theobald  (<i>Master Thesis</i>, Saarland University), Dec 2015</li>
+<li>Uzair Mahmood (<i>Master Thesis</i>, Saarland University), Oct 2015</li>
+<li>Ivan Pryvalov  (<i>Master Thesis</i>, Saarland University), Feb 2015</li>
+<li>Niklas Grimm (<i>Bachelor Thesis</i>, Saarland University), July 2013</li>
+</ul>
+<br />
+I am actively looking for a talented and motivated PhD student interested in cryptography and distributed computing/systems to solve some exciting problems with blockchains and cryptocurrencies. I encourage the suitable candidates to apply to  <a href="https://www.cs.purdue.edu/graduate/">
+our grad program</a>.
+</li></ul>
+</td>	
+</tr-->
+
+<tr><td colspan="3"><hr />
+<h3>Service</h3>
+<ul>
+
+<li> <b>Organization</b>
+<table cellspacing ="0" cellpadding="2">
+<tr><td valign="top">
+[ACNS 2026] (Co) PC Chair for <a href="https://acns2026.github.io/">Applied Cryptography and Network Security (ACNS)</a> 2026</tr>
+<tr><td valign="top">
+[AsiaCCS 2026] Track (Co)Chair on Applied Crypto, Blockchains and Distributed System</td></tr>
+<tr><td valign="top">
+[Dagstuhl 2024] (Co)Organizer for the <a href="https://www.dagstuhl.de/24362">Dagstuhl Seminar 24362</a>:
+Next-Generation Secure Distributed Computing</td></tr>
+<tr><td valign="top">
+[3Rand 2024] (Co)Organizer for the <a href="https://hub.supra.com/3rand">Web3 Randomness (3Rand)</a> Workshop </td></tr>
+<tr><td valign="top">
+[DCN 2023] (Co)Organizer for the <a href="https://transitivitymaximalists.github.io/">Workshop on Decentralized Credit Networks (DCN)</a></td></tr>
+<tr><td valign="top">
+[CSF 2022] Track Chair on Blockchain</td></tr>
+<tr><td valign="top">
+[RWdC 2021] Co)Organizer for the <a href="https://rwc2021-real-world-decentralised-cryptography-workshop.w3f.community/">Real-World Decentralized Cryptography</a> Workshop </td></tr>
+<tr><td valign="top">
+[CSF 2019] Track Chair on Blockchain</td></tr>
+<tr><td valign="top">
+[CNS 2019] Technical Program Area Chair</td></tr>
+<tr><td valign="top">
+[CCS 2018] Proceedings Chair</td></tr>
+<tr><td valign="top">
+[CCS 2016] Poster/Demo Chair</td></tr>
+</table><br />
+</li>
+
+<li> <b>Selected Program Committee</b><br />
+<table cellspacing ="0" cellpadding="2">
+<tr>
+<td valign="top"><b>2026</b></td></td><td><td>[CSF]</td></tr>
+<td valign="top"><b>2025</b></td></td><td><td>[IEEE S&amp;P], [CCS], [CSF]</td></tr>
+<td valign="top"><b>2024</b></td></td><td><td>[IEEE S&amp;P], [CCS], [FC]</td></tr>
+<td valign="top"><b>2023</b></td></td><td><td>[IEEE S&amp;P], [FC]</td></tr>
+<td valign="top"><b>2022</b></td></td><td><td>[CCS], [ICDCS], [AFT], [FC]</td></tr>
+<td valign="top"><b>2021</b></td></td><td><td>[CCS], [Usenix Security], [IEEE S&amp;P], [WWW], [FC], [AFT], [ASIACCS]</td></tr>
+<td valign="top"><b>2020</b></td></td><td><td>[IEEE S&amp;P], [Usenix Security], [FC], [WPES]</td></tr>
+<td valign="top"><b>2019</b></td></td><td><td>[IEEE S&amp;P], [CCS], [NDSS], [WWW], [FC]</td></tr>
+<td valign="top"><b>2018</b></td></td><td><td>[CCS], [Usenix Security], [NDSS], [ICDCS], [ACNS], [Bitcoin]
+<!--[WPES]--></td></tr>
+<td valign="top"><b>2017</b></td></td><td><td>[CCS], [CSF], [ACNS],  [WPES], [Bitcoin], [ICDCS] <!--[POST]--></td></tr>
+<td valign="top"><b>2016</b></td></td><td>
+<td>[Eurocrypt], [ACNS], [FC], [Bitcoin], [ICDCS]</td></tr>
+
+<tr><td valign="top"><b>2015</b></td></td><td>
+<td>[CCSW], [WPES], [ICDCS], [ProvSec] 
+</td></tr>
+<tr><td valign="top"><b>...</b></td></td><td>
+<td></td></tr>
+<!---tr><td valign="top">2014</td><td>[ProvSec '14]</td></tr-->
+<!--tr><td valign="top">2013</td> <td>[WWW '13] --> <!--SPACE '13-14<br /-->
+<!--tr><td valign="top">2012</td> <td>[WPES '12]</td></tr-->
+</table><br /></li>
+
+
+<li> <b>Editorial Board</b><br />
+<table cellspacing ="0" cellpadding="2">
+<tr>
+<td valign="top"><b>2024-present</b></td><td></td><td>ACM Transactions on Privacy and Security (TOPS) </td></tr>
+<!--td valign="top"><b>2021-22</b></td><td></td><td>IEEE Transactions on Information Forensics and Security</td></tr-->
+<td valign="top"><b>2018-19</b></td><td></td><td>Privacy Enhancing Technologies</td></tr>
+</table><br />
+</li>
+
+
+<!--li> <b>Selected Journals Reviewer</b>
+<table cellspacing ="0" cellpadding="5">
+<tr>
+<td>
+ACM TISSec,
+Computer Security,
+Acta Informatica,
+IEEE Transactions on Information Theory,
+IEEE TDSC,
+Designs, Codes and Cryptography (DCC),
+IEEE TIFS,
+Distributed Computing,
+IEEE TPDS,
+IEEE Transactions on Computers,
+Information Processing Letters (IPL),
+IEEE Security and Privacy.</td></tr>
+</table>
+</li-->
+
+
+<li> <b>Overall Coordinator</b> at <a href="http://www.cse.iitb.ac.in/~secnet/index_2006.php">SecNet 2006</a>, 
+Annual Network Security Workshop, IIT-Bombay, India, 2006.</li>
+</ul>
+</td></tr>
+
+<tr><td colspan="3"><hr /><a name="teaching"></a>
+<h3>Teaching</h3>
+<table>
+<tr> <td></td><td>(<b>CS 528</b>: <a href="./courses/CS528-19/">
+Network Security</a>)
+<td>  [Spring'26] [Spring'25] [Spring'22] [Spring'21] [Spring'19] [Spring'18] [Spring'17] [Spring'16]</tr>
+<tr> <td></td><td> (<b>CS 426</b>: <a href="./courses/CS426-20/">Computer Security</a>)
+<td>[Fal'20] [Fall'19] [Fall'17] [Fall'16]</tr>
+<tr> <td></td><td>(<b>CS 590</b>: <a href="./courses/blockchain-20/">
+Blockchains and Cryptocurrencies</a>) 
+<td>[Spring'20] [Spring'19]</tr>
+<tr><td></td> <td> (<b>CS 690</b>:
+Privacy Enhancing Technologies</a>)
+<td> [Fall'15]</tr>
+</table>
+<h4>@Saarland University</h4>
+
+<table>
+<tr> <td></td><td>(<b>Advanced Course</b>) 
+Privacy Enhancing Technologies
+<td> [Summer'13] [Spring'14] [Spring'15]</tr> 
+
+
+<tr> <td></td><td>(<b>Advanced Course</b>) 
+Applied Cryptography
+<td> [Winter'14/'15]</tr>
+
+
+<tr> <td></td><td>(<b>Seminar Course</b>) 
+Practical Cryptographic Systems<td> [Spring'14] [Winter'12/'13]</tr>
+</table>
+</td>	
+</tr>
+
+<tr><td colspan="3"><hr /><h3>Miscellaneous</h3>
+<ul>
+<!--li> Since Fall 2016, I run a weekly blockchain seminar series at Purdue University. 
+Graduate as well as undergraduate students can be take it as a one-credit course: <a href="https://selfservice.mypurdue.purdue.edu/prod/bwckschd.p_disp_detail_sched?term_in=201820&crn_in=23161">CS 59000 - BTS</a>.<br /><br /-->
+
+<li>I infrequently post cryptography, security and privacy news on my Twitter page:
+<a href="https://x.com/aniketpkate" class="twitter-follow-button">Follow @aniketpkate</a>
+<br /><br />
+</li>
+<li><b>My <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=145651">Academic Genealogy</a></b><br />
+Myself (Waterloo)<b>&larr;</b> 
+<a href = "https://cs.uwaterloo.ca/~iang/">Ian Goldberg</a> (Berkeley) <b>&larr;</b> 
+<a href = "https://people.eecs.berkeley.edu/~brewer/">Eric Brewer</a> (MIT)  <b>&larr;</b> 
+<a href = "https://www.linkedin.com/in/bweihl">William Weihl</a> (MIT) <b>&larr;</b> 
+<a href = "https://www.csail.mit.edu/user/971">Barbara Liskov</a> (Stanford)<b>&larr;</b> 
+<a href = "https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)">John  McCarthy</a> (Princeton)<b>&larr;</b> &sdot;&sdot;&sdot;<br /><br />
+</li>
+<li><b>My <a href="https://www.oakland.edu/enp/">Erd&ouml;s Number</a> : 3</b><br />
+(Kate <b>&rarr;</b> Goldberg <b>&rarr;</b> Stinson <b>&rarr;</b> Erd&ouml;s) <br /> or
+(Kate <b>&rarr;</b> Zaverucha <b>&rarr;</b> Stinson <b>&rarr;</b> Erd&ouml;s)<br /><br />
+</li>
+
+<!--li>Along with academics, I also pursue various extracurricular and social activities. 
+ Visit my <a href="non-acad.html">non-academic</a> page for those.</li-->
+ </ul>
+ <hr />
+</td></tr>
+<tr>
+<td colspan="2"><a name="contact"></a><h3>Contact Information</h3>
+305 N. University Street<br />
+(Department of Computer Science)<br />
+West Lafayette, IN 47907-2107<br />
+USA<br />
+<br /><br />
+Phone: +1-765-496-2763 (<small><i>Email is preferred in general.</i></small>)<br />
+</td>
+<td align = "left">
+<img src="./images/group.jpg" alt="Group Logo" height="40" /><br />
+<img src="./images/purduecs.jpg" alt="PurdueCS" height="40" />
+<img src="./images/purdue.svg" alt="Purdue Logo" height="40" /><br />
+<img src="./images/purdue.png" alt="Purdue Logo" height="30" /><br />
+</td>
+</tr>
+
+<tr><td colspan="3"><hr />
+ <!--p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a        
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+    </a>
+</p-->
+</td></tr>
+<tr><td colspan="3" align="center">Copyright &copy; 2015-25 Aniket Kate, Purdue University.
+</td></tr>
+</table>
+</body>
+</html>

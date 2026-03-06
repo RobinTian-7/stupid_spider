@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53221392-2"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-53221392-2');
+     </script>
+     <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Nishanth Dikkala</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+<div class="container" style="margin-top: 5%;">
+<section class="header">
+<h1 class="title">NISHANTH DIKKALA</h1>
+
+<div class="docs-section" id="about">
+<p>I am a Senior Research Scientist at Google Research in Mountain View working on Large Language Models. I focus on improving reasoning capabilities of LLMs, improving their training and inference efficiency via novel architecture changes. I also have an interest in developing a foundational understanding of deep learning and have worked on unsupervised learning, sparsity within Transformers and external trainable memory modules for Transformer architectures.
+I graduated with a Ph.D. from the Computer Science department at MIT in 2020 (Advisor: Prof. Costis Daskalakis). My <a href="https://dspace.mit.edu/handle/1721.1/127016">Ph.D. thesis</a> focused on handling complex graph depenedency structures when doing statistics with data. Before MIT, I spent 4 years at IIT Bombay from where I graduated with a B. Tech. in Computer Science and Engineering.
+In Summer 2018, I was an intern at Microsoft Research New England. I worked on Econometrics and Optimization problems with Vasilis Syrgkanis and Greg Lewis. I have also interned in 2019 as a Quantitative Researcher at Jump Trading, Chicago, where I was working on prediction problems in finance with a focus on high-frequency trading strategies.</p>
+</div>
+</section>
+
+
+<div class="docs-section" id="pubs">
+<h1 style="text-align:left"> Publications </h1>
+<ol>
+<li><i> Causal Language Modeling can Elicit Search and Reasoning Capabilities for Sudoku Puzzles</i> with Kulin Shah, Xin Wang and Rina Panigrahy. <i> under submission </i><br></li>
+
+<li><i> Rethinking Chain-of-Thought Reasoning via Looped Models</i> with Nikunj Saunshi, Zhiyuan Li, Sashank J. Reddi and Sanjiv Kumar. <i> under submission </i><br></li>
+
+<li><i> ReMI: A Dataset for Reasoning with Multiple Images.</i> with Mehran Kazemi, Ankit Anand, Petar Devic, Ishita Dasgupta, Fangyu Liu, Bahare Fatemi, Pranjal Awasthi, Dee Guo, Sreenivas Gollapudi and Ahmed Qureshi. <i> under submission. </i><br>
+<a href="https://arxiv.org/abs/2406.09175">arXiv</a><br></li>
+
+<li><i> Learning Neural Networks with Sparse Activations</i> with <a href="https://scholar.google.com/citations?hl=en&user=MDfW21AAAAAJ&view_op=list_works">Pranjal Awasthi</a>, <a href="https://pritishkamath.github.io/">Pritish Kamath</a> and <a href="https://raghumeka.github.io/">Raghu Meka</a>. <i> published at <b>COLT 2024</b>. </i><br>
+<a href="https://arxiv.org/abs/2406.17989">arXiv</a><br></li>
+
+<li><i> Alternating Updates for Efficient Transformers </i> with Cenk Baykal, Dylan Cutler, Nikhil Ghosh, Rina Panigrahy and Xin Wang, published at <b>NeurIPS 2023 <span style="color: darkred">(Spotlight)</span></b>.<br>
+     <a href="https://arxiv.org/abs/2301.13310">arXiv</a><br>
+</li>
+
+<li><i> On the Benefits of Learning to Roue in Mixture of Expert Models </i> with Nikhil Ghosh, <a href="https://raghumeka.github.io/">Raghu Meka</a>, Rina Panigrahy, Nikhil Vyas and Xin Wang, published at <b>EMNLP 2023</b>.<br>
+     <a href="https://aclanthology.org/2023.emnlp-main.583.pdf">Paper</a><br>
+</li>
+
+<li><i> A Theoretical View on Sparsely Activated Networks </i> with Cenk Baykal, Rina Panigrahy, Cyrus Rashtchian and Xin Wang, published at <b>NeurIPS 2022</b>.<br>
+     <a href="https://arxiv.org/abs/2208.04461">arXiv</a><br>
+</li>
+
+<li><i> Sketching based representations for robust image classification with provable guarantees </i> with Sankeerth Rao Karingula, Raghu Meka, Jelani Nelson, Rina Panigrahy and Xin Wang, published at <b>NeurIPS 2022</b>.<br>
+     <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/2439ec22091b9d6cfbebf3284b40116e-Paper-Conference.pdf">Paper</a><br>
+</li>
+
+<li><i> Do More Negative Samples Necessarily Hurt in Contrastive Learning?</i> with <a href="https://scholar.google.com/citations?hl=en&user=MDfW21AAAAAJ&view_op=list_works">Pranjal Awasthi</a> and <a href="https://pritishkamath.github.io/">Pritish Kamath</a>. <i> published at <b>ICML 2022 <span style="color: darkred">(Oral)</span></b>. </i><br>
+<a href="https://arxiv.org/abs/2205.017899">arXiv</a><br></li>
+
+<li> <i> Estimating Ising Models from One Sample </i> with <a href="https://yuvaldagan.wordpress.com/">Yuval Dagan</a>, <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis</a> and <a href="https://dblp.uni-trier.de/pers/k/Kandiros:Vardis.html"> Anthimos Vardis Kandiros</a>. published at <b>STOC 2021</b>.<br>
+<a href="https://arxiv.org/abs/2004.09370">arXiv</a><br></li>
+
+<li> <i> Statistical Estimation from Dependent Data </i> with <a href="https://yuvaldagan.wordpress.com/">Yuval Dagan</a>, <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a> and <a href="https://dblp.uni-trier.de/pers/k/Kandiros:Vardis.html"> Anthimos Vardis Kandiros</a>. published at <b>ICML 2021</b>.<br>
+<a href="https://arxiv.org/abs/2004.09370">arXiv</a><br></li>
+
+<li> <i> Minimax Estimation of Conditional Moment Models </i> with <a href="https://gregmlewis.com/"> Greg Lewis </a>,<a href="https://web.stanford.edu/~lmackey/"> Lester Mackey </a> and <a href="http://vsyrgkanis.com/"> Vasilis Syrgkanis </a> published at <b>NeurIPS 2020</b>.<br>
+<a href="https://arxiv.org/abs/2006.07201">arXiv</a><br></li>
+
+<li> <i> Logistic Regression with Peer-Group Effects via Inference in Higher-Order Ising Models. </i> with <a href="http://people.csail.mit.edu/costis/">Constantinos Daskalakis </a> and <a href="https://sites.google.com/site/panageasj">Ioannis Panageas</a>, accepted for publication at <b>AISTATS 2020</b>. <br> 
+<a href="https://arxiv.org/abs/2003.08259">arXiv</a><br></li>
+
+<li> <i> Generalization and Learning under Dobrushin's Condition. </i> with <a href="https://yuvaldagan.wordpress.com/"> Yuval Dagan </a>, <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis</a> and <a href="https://dblp.uni-trier.de/pers/hd/j/Jayanti:Siddhartha_V=" > Siddhartha Jayanti </a>, accepted for publication at <b>COLT 2019</b>. <br> <a href="http://people.csail.mit.edu/~nishanthd/"> arXiv </a> <br> </li>
+
+<li> <i> Regression from Dependent Observations </i> with <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis</a> and <a href="https://sites.google.com/site/panageasj" > Ioannis Panageas </a>, accepted for publication at <b>STOC 2019</b>. <br> <a href="https://arxiv.org/abs/1905.03353"> arXiv </a> <br> </li>
+
+<li><i> Post-Processing Calibrated Classifiers. </i> with <a href="http://www.cs.tau.ac.il/~canetti/"> Ran Canetti </a>, <a href="https://aloni.net/"> Aloni Cohen </a>, <a href="http://www.mit.edu/~govind/"> Govind Ramnarayan </a>, <a href="https://cs-people.bu.edu/sscheff/"> Sarah Scheffler </a> and <a href="http://cs-people.bu.edu/ads22/"> Adam Smith </a>, in the 2019 Conference on Fairness, Transparency and Accountability (<b>FAT* 2019</b>). <br> 
+		<a href="http://arxiv.org/abs/1810.02003"> arXiv </a> <br></li>
+
+<li> <i> HOGWILD!-Gibbs can be PanAccurate. </i> with <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis </a> and
+         <a href="https://www.csail.mit.edu/person/siddhartha-jayanti"> Siddhartha Jayanti</a>, published at <b>NeurIPS 2018</b>. <br> 
+<a href="NeurIPS_2018_Poster.pdf">Poster</a> <br></li>
+
+<li> <i> Testing Symmetric Markov Chains from a Single Trajectory </i> with with <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis</a> and 
+     <a href="http://logic.pdmi.ras.ru/~gravin/"> Nick Gravin</a>, published at <b>COLT 2018</b>. <br>
+     <a href="https://arxiv.org/abs/1704.06850"> arXiv </a> <br> </li>
+
+<li> <i> Concentration of Multilinear Functions of the Ising Model with Applications to Network Data </i> with <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis</a> 
+         and <a href="http://www.gautamkamath.com"> Gautam Kamath</a>, published at <b>NeurIPS 2017</b>. <br>
+         <a href="https://arxiv.org/abs/1710.04170v1">arXiv</a>, <a href="https://youtu.be/HKsv2kT6wBM">Video</a> <br></li>
+
+<li> <i> Testing Ising Models </i> with <a href="http://people.csail.mit.edu/costis/"> Constantinos Daskalakis</a> 
+         and <a href="http://www.gautamkamath.com"> Gautam Kamath</a>, <br> published at <b>SODA 2018</b>. <br>
+	     <a href="https://arxiv.org/abs/1612.03147"> arXiv</a> <br>
+	     Featured in: <a href="http://ptreview.sublinear.info/?p=796">Property Testing Review </a></li> 
+
+<li> <i> Tight Hardness Results for Maximum Weight Rectangles </i> with <a href="http://www.mit.edu/~backurs"> Arturs Backurs</a> and <a href="http://christos.me/"> Christos Tzamos</a>. <br> 
+         published at <b>ICALP 2016</b>. <br>
+	     <a href="https://arxiv.org/abs/1602.05837"> arXiv </a></li>
+
+<li> <i> Effect of Strategic Grading and Early Offers in Matching Markets </i> with Hedyeh Beyhaghi and <a href="http://www.cs.cornell.edu/~eva/"> &Eacute;va Tardos</a>. 
+     <br> brief announcement in <b>SAGT 2015</b>. <br>
+     <a href="https://arxiv.org/abs/1507.02718"> arXiv</a></li>
+
+<li> <i> Can Credit Increase Revenue? </i> with <a href="http://www.cs.cornell.edu/~eva/"> &Eacute;va Tardos</a>. 
+     <br> in the 9th ACM international conference on Web and Internet Economics (<b>WINE 2013</b>). <br> 
+	 <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-45046-4_11#enumeration"> PDF </a></li>
+</ol>
+</div>
+</div>
+</body>
+</html>

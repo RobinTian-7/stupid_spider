@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Members - Dr. Sai-Kit Yeung</title>
+	
+	<link href='static/fonts.googleapis.com/css7441.css?family=Open+Sans:400,400italic,700,600,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	
+	<link href='static/site_resources/css/reset.css' rel='stylesheet' type='text/css'/>
+	<link href='static/site_resources/css/main.css' rel='stylesheet' type='text/css'/>
+	<link href='static/site_resources/css/kit.css' rel='stylesheet' type='text/css'/>
+	
+	<link rel='shortcut icon' type='image/x-icon' href='static/site_resources/images/favicon.ico' />
+
+	<script src='static/ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
+<!-- 	<script src='static/site_resources/js/main.min.js'></script>
+	<script src='static/site_resources/js/kit.min.js'></script> -->
+	
+	<style>
+		@media screen and (max-width: 600px) {
+			#nav .desktop{
+				display: none;		
+			}
+			#nav .mobile{
+				display: block;		
+			}
+		}
+		
+		@media screen and (min-width: 601px) {
+			#nav .desktop{
+				display: block;		
+			}
+			#nav .mobile{
+				display: none;		
+			}
+		}
+	
+	</style>
+	<script>
+		$(document).ready(function(){
+		
+		
+			$("#hamburger-btn").click(function(){
+				
+				mobile_menu = $("#nav .mobile");
+				
+				isShown = $(mobile_menu).hasClass("s");
+				
+				if (isShown) {
+					//Collapse
+					$("#nav .mobile").removeClass("s");
+					$("#nav .mobile .menu.t").css({'transform' : 'translateY(0px)'});
+					$("#content").css({'transform' : 'translateY(0px)'});		
+				}
+				else {
+					//Expand
+					$("#nav .mobile").addClass("s");
+					$("#nav .mobile .menu.t").css({'transform' : 'translateY(277px)'});
+					$("#content").css({'transform' : 'translateY(277px)'});						
+				}
+		
+			});
+		
+		
+		});
+	</script>
+</head>
+<body><div id='all'>
+	<!-- nav start -->
+	<div id='nav'> 
+		<div class='desktop'>
+			<div class='centerer'>
+				<div class='logo'>
+					<a href='https://www.ust.hk/' target="_blank">
+						<img src='static/site_resources/images/e_logo.svg'/>
+					</a>
+				</div>
+				<div class='links'>
+					<div class="centered-links">
+						<div class='item'><a href='index.html'>Home</a></div>
+						<div class='item'><a href='members.html'>Members</a></div>
+						<div class='item'><a href='publications.html'>Publications</a></div>
+						<div class='item'><a href='teaching.html'>Teaching</a></div>
+						<div class='item'><a href='services.html'>Services</a></div>
+						<div class='item'><a href='opportunities.html'>Opportunities</a></div>
+					</div>
+				</div>
+			</div>
+			<div id="site-menu-bar" style="">
+				<div class="header-blue-line"></div>
+				<div class="header-gold-line"></div>
+			</div>
+		</div>
+		<div class="mobile"><div class="overlay"></div><div class="logo t">
+					<a href="https://www.ust.hk/" target="_blank">
+						<img src="static/site_resources/images/e_logo.svg">
+					</a>
+				</div><div class="hamburger t" id="hamburger-btn">
+				<div class="t l l0"></div><div class="t l l1"></div><div class="t l l2"></div></div>
+				<div class="menu t">
+					<div class="links t">
+						<div class="centered-links">
+							<div class='item'><a href='index.html'>Home</a></div>
+							<div class='item'><a href='members.html'>Members</a></div>
+							<div class='item'><a href='publications.html'>Publications</a></div>
+							<div class='item'><a href='teaching.html'>Teaching</a></div>
+							<div class='item'><a href='services.html'>Services</a></div>
+							<div class='item'><a href='opportunities.html'>Opportunities</a></div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- nav end -->
+	<!-- content start -->
+
+	<div id="content" class="members">
+	
+	<div style="padding-bottom:0px; text-align:justify;">
+			 <h1>Vision, Graphics and Computational Design (VGD) Group</h1>
+
+		The Vision, Graphics and Computational Design (VGD) Group at <a href =" https://hkust.edu.hk/">HKUST</a> led by Prof. Sai-Kit Yeung performs cutting-edge research on 3D contents reconstruction, understanding, modeling,
+		and redesign, and uses AI techniques for design and content generation, human-robot interaction, and novel algorithms to enhance VR and AR applications.
+		 
+		 <br><br>
+		The VGD group is also working very closely with marine biologists, field ecologists, and coral conservationists to develop novel computer vision and graphics techniques and integrative systems to solve a wide range of marine-related problems.
+	
+	</div>
+	
+	
+	<div>
+		<!-- members start -->
+		<div class="members">
+			<h1>Members</h1>
+
+				<h2>Faculty</h2>
+					<div class="mem-row-3">
+					<div class="mem-col">
+						<a href="http://saikit.org" title="Click to visit Sai-Kit Yeung&#39;s webpage" style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/Kit_ISDsite.jpg">
+							<u>Sai-Kit Yeung</u>
+						</a>
+					</div>
+					</div>
+
+				<!-- <h2>Postdocs</h2> -->
+
+					
+				<h2>Visiting Scholar</h2>
+				<div class="mem-row-3">
+					<div class="mem-col">
+					<a href="https://ias.szu.edu.cn/info/1183/5109.htm" style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/tim_wong.jpg">
+						<u>Tim, Yue Him Wong</u>
+						<b>Assistant Professor<br>Shenzhen University</b>
+					</a>
+					</div>
+				</div>
+				
+<!-- 				<h2>Research Staff</h2>
+				<div class="mem-row-3">
+					<div class="mem-col">
+					<a>
+						<img src="./static/members/reshanga.jpg">
+						<u>Reshanga Stephen Goonetilleke</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a>
+						<img src="./static/members/lobokyin.jpg">
+						<u>Bok Yin Lo (Hiko)</u>
+					</a>
+					</div>
+				</div> -->
+
+<!-- 				<h2>Visiting Scientist</h2>
+
+					<a href="https://sites.google.com/site/laoszefei81/" title="Click to visit Wen-Yan Lin, Daniel&#39;s webpage" style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/daniel.jpg">
+						<u>Wen-Yan Lin, Daniel</u>
+					</a> -->
+
+				<h2>PhD Students</h2>
+				
+				<div class="mem-row-3">					
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/Yingshu.jpg">
+							<u>Yingshu Chen</u>
+							<b>Co-advised with Prof. Ajay Joneja</b>
+						</a>
+					</div>
+					
+					<div class="mem-col">
+						<a>
+							<img src="./static/members/Huajian.jpg">
+							<u>Huajian Huang</u>
+							<b>Co-advised with Prof. Qifeng Chen</b>
+						</a>
+					</div>
+					
+					<div class="mem-col">
+						<a>
+							<img src="./static/members/Jaeyeon.jpg">
+							<u>Jaeyeon Kim</u>
+						</a>
+					</div>
+					
+				</div>
+				
+				<div class="mem-row-3">
+<!-- 					<div class="mem-col">
+					<a >
+						<img src="./static/members/xiaoyu.png">
+						<u>Mo Xiaoyu</u>
+						<b>Co-advised with Prof. Bertram Shi</b>
+					</a>
+					</div> -->
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/ziqiang.jpg">
+						<u>Ziqiang Zheng</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/Anh.jpg">
+						<u>Tuan Anh Vu</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a >
+							<img src="./static/members/trung.jpg">
+							<u>Truong Quang Trung</u>
+					</a>
+					</div>
+					
+				</div>
+				
+				<div class="mem-row-3" >
+						
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/guo_xiaopeng.jpg">
+							<u>Guo Xiaopeng</u>
+						</a>
+					</div>
+
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/shaun_xu.jpg">
+							<u>Shaun Xu</u>
+						</a>
+					</div>	
+					
+					<div class="mem-col">
+						<a>
+							<img src="./static/members/jason.png">
+							<u>Ka Chun Shum</u>
+						</a>
+					</div>					
+					
+				</div>
+				
+ 				<div class="mem-row-3">
+										
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/sang.jpg">
+							<u>Ha Tan Sang</u>
+						</a>
+					</div>
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/yiwei_jackson.png">
+							<u>Yiwei Chen</u>
+						</a>
+					</div>
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/guocheng_shao.jpeg">
+							<u>Guocheng Shao</u>
+						</a>
+					</div>
+				</div>
+				 
+				<h2>MPhil Students</h2>
+				<div class="mem-row-3">			
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/NguyenTruongHai.jpg">
+							<u>Nguyen Truong Hai</u>
+						</a>
+					</div>
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/zhu_yipeng.png">
+							<u>Zhu Yipeng</u>
+						</a>
+					</div>
+
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/hilary.jpg">
+							<u>Liang Haixin</u>
+						</a>
+					</div>
+				</div>
+				
+				<div class="mem-row-3">
+
+					
+					
+
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/david_wong.jpg">
+							<u>Yuk Kwan Wong</u>
+						</a>
+					</div>
+
+					
+				</div>
+									
+				<h2>UG Students</h2>
+
+				<div class="mem-row-3">
+				
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/yukai_zhang.jpg">
+						<u>Yukai Zhang</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a>
+						<img src="./static/members/yuchen_liang.jpg">
+						<u>Yuchen Liang</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/ho_kiu_holdee_pang.jpg">
+						<u>Ho Kiu Holdee Pang</u>
+					</a>
+					</div>
+				
+				</div>
+				
+				
+				<div class="mem-row-3">
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/carson_chan.jpg">
+						<u>Carson Chan</u>
+					</a>
+					</div>					
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/kam_wai_lai.jpg">
+						<u>Kam Wai Lai</u>
+					</a>
+					</div>
+
+					<div class="mem-col">
+						<a >
+							<img src="./static/members/ricky.jpg">
+							<u>Ricky</u>
+						</a>
+					</div>
+				
+				</div>
+				
+				<div class="mem-row-3">					
+
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/luk_wang_lok.jpg">
+						<u>Luk Wang Lok</u>
+					</a>
+					</div>
+					
+					<div class="mem-col">
+					<a >
+						<img src="./static/members/tobyli.jpg">
+						<u>Toby Li</u>
+					</a>
+					</div>
+					
+				</div>
+				
+<!-- 				<h2>Visiting Students</h2>
+					
+					<a style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/noah.jpg">
+						<u>Noah Duncan</u>
+					</a>
+
+				<h2>Research Assistants</h2>
+
+					<a style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/rufus.jpg">
+						<u>Rufus Wong</u>
+					</a>
+					
+					<a style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/zhenghui.jpg">
+						<u>Zheng Hui Er</u>
+					</a> -->
+				<!-- <h2>Undergraduates</h2> -->
+
+
+				<h2>Alumni</h2>
+
+					<h3>Postdoc Alumni</h3>
+					
+						<div class="mem-row-4">
+							<div class="mem-col">
+							<a href="https://sites.google.com/site/liufuchg/" title="Click to visit Fuchang Liu&#39;s webpage" >
+								<img src="./static/members/fuchang.jpg">
+								<u>Fuchang Liu</u>
+								<b>Principal Lecturer<br>Hangzhou Normal University</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a href="http://alumni.media.mit.edu/~shiboxin/" title="Click to visit Boxin Shi&#39;s webpage" >
+								<img src="./static/members/boxin.jpg">
+								<u>Boxin Shi</u>
+								<b>Assistant Professor<br>Peking University</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a href="https://ducthanhnguyen.weebly.com/" >
+							<img src="./static/members/thanh.png">
+							<u>Duc Thanh Nguyen</u>
+							<b>Senior Lecturer<br>Deakin University</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a href="https://sonhua.github.io/" >
+								<img src="./static/members/binh_son.jpg">
+								<u>Binh-Son Hua</u>
+								<b>Assistant Professor<br>Trinity College Dublin</b>
+							</a>
+							</div>
+						</div>
+						
+						<div class="mem-row-4">
+							<div class="mem-col">
+								<a href="https://www.maschinenbau.tu-darmstadt.de/cps/department_cps/team_1/team_detail_167232.en.jsp" title="Click to visit Oliver Weeger&#39;s webpage" >
+									<img src="./static/members/oliver.jpg">
+									<u>Oliver Weeger</u>
+									<b>Assistant Professor<br>Technische UniversitÃ¤t Darmstadt</b>
+								</a>
+							</div>
+							
+							<div class="mem-col">
+								<a href="http://www.xuequanlu.com/" >
+									<img src="./static/members/xuequan.jpg">
+									<u>Xuequan Lu</u>
+									<b>Senior Lecturer<br>Deakin University</b>
+								</a>
+							</div>
+							
+							<div class="mem-col">
+								<a >
+									<img src="./static/members/shasha.jpg">
+									<u>Shasha Mao</u>
+									<b>Associate Professor<br>Xidian University</b>
+								</a>
+							</div>
+							<div class="mem-col">
+								<a >
+									<img src="./static/members/junyan.jpg">
+									<u>Junyan Wang</u>
+									<b>Postdoctoral scholar <br>Laboratory of Neuro imaging (LONI), USC</b>
+								</a>
+							</div>
+						</div>
+						
+						<div class="mem-row-4">
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/wuzhe.png">
+								<u>Zhe Wu</u>
+								<b>Computer Vision Engineer<br>DJI</b>
+							</a>
+							</div>
+
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/guoxuan.jpg">
+								<u>Guoxuan Zhang</u>
+								<b>Astar.ai, Inc</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/tiendung.jpg">
+								<u>Tien Dung Dinh</u>
+								<b>Postdoc research fellow<br>Ghent University</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/zhiyuan.jpg">
+								<u>Zhiyuan Zhang</u>
+								<b>Assistant Professor of Practice<br>Singapore Management University</b>
+							</a>
+							</div>
+						</div>
+						
+						<div class="mem-row-3">
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/georges.jpg">
+								<u>Georges Nader</u>
+								<b>R&D Engineer <br>Ubisoft La Forge France</b>
+							</a>
+							</div>
+							
+							<div class="mem-col">
+							<a >
+								<img src="./static/members/qianwen.jpg">
+								<u>Qianwen Chao</u>
+								<b>Lecturer<br>Xidian University</b>
+							</a>
+							</div>
+						</div>
+						
+					<h3>PhD Alumni</h3>
+					
+					<div class="mem-row-3">
+						<div class="mem-col">
+						<a href="https://person.zju.edu.cn/fengtian" >
+							<img src="./static/members/tian.jpg">
+							<u>Tian Feng</u>
+							<b>Associate Professor<br>Zhejiang University</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a >
+							<img src="./static/members/zhipeng.jpg">
+							<u>Zhipeng Mo</u>
+							<b>Senior Research Scientist<br>Samsung Research America</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a href="https://pqhieu.github.io/" >
+							<img src="./static/members/hieu.jpg">
+							<u>Quang-Hieu Pham</u>
+							<b>Senior Software Engineer<br>Woven by Toyota</b>
+						</a>
+						</div>
+					
+					</div>
+					
+					
+					<div class="mem-row-3">
+					
+						<div class="mem-col">
+						<a href="https://craigyuyu.github.io/home/" title="Click to visit Lap-Fai Yu, Craig&#39;s webpage" >
+								<img src="./static/members/craig.jpg">
+								<u>Lap-Fai (Craig) Yu</u>
+								<b>Co-advised with Prof. Demetri Terzopoulos (UCLA)</b>
+								<b>Associate Professor<br>George Mason University</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a href="https://noah-duncan.github.io/" >
+							<img src="./static/members/noah.jpg">
+							<u>Noah Duncan</u>
+							<b>Co-advised with Prof. Demetri Terzopoulos (UCLA)</b>
+							<b>Co-founder<br>WorkPatterns</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a href="https://ca.ouhk.edu.hk/page/lai-chi-fu/" title="Click to visit Chi-Fu Lai, William&#39;s webpage" >
+								<img src="./static/members/william.jpg">
+								<u>Chi-Fu Lai, William</u>
+								<b>Co-advised with Prof. Chi-Wing Fu</b>
+								<b>Assistant Professor<br>Hong Kong Metropolitan University</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a >
+							<img src="./static/members/pallavi.jpg">
+							<u>Pallavi Mohan</u>
+							<b>Co-advised with <br>Prof. Wooi Boon Goh (NTU)</b>
+							<b>Senior Scientist & Solutions Architect<br>NVIDIA Munich</b>
+						</a>
+						</div>
+					
+					</div>
+
+					<h3>Masters and Undergraduate Alumni</h3>
+					<div class="mem-row-4" >
+
+						<div class="mem-col">
+							<a >
+								<img src="./static/members/Nhan.png">
+								<u>Van Nhan Tran</u>
+								<b>Associate R&D Engineer<br>Think N Kreate Ltd.</b>
+							</a>
+						</div>
+							
+						<div class="mem-col">
+							<a>
+								<img src="./static/members/Pang.jpg">
+								<u>Hong Wing Pang</u>
+								<b>Computer Vision Engineer<br>Ficha Inc</b>
+							</a>
+						</div>
+				
+						<div class="mem-col">				
+							<a>
+								<a style="margin-bottom: 0px;" href="https://www.mashiat.live/"><img style="margin: 0 auto 0 auto;" src="./static/members/mashiat.jpg"></a>
+								<u style="display: block; margin-top: -10px;"><a href="https://www.mashiat.live/" style="">Mashiat Lamisa</a></u>
+								<b>Product Engineer<br>Sparkmate Hong Kong<br><a href="https://presidentscup.ust.hk/winning-projects?year=2021">HKUST President's Cup 2021</a></b>
+							</a>
+						</div>
+						
+						<div class="mem-col">
+							<a href="https://mikacuy.github.io/" >
+								<img src="https://mikacuy.github.io/images/mika_photo.jpeg">
+								<u>Mikaela Angelina Uy</u>
+								<b>PhD Student<br>Stanford University</b>
+							</a>
+						</div>
+						
+					</div>
+					<div class="mem-row-4" >
+						<div class="mem-col">
+							<a href="https://sites.google.com/site/xueliwebpage/home" >
+								<img src="./static/members/xue.jpg">
+								<u>Xue Li</u>
+								<b>Software Engineer<br>Facebook</b>
+							</a>
+						</div>
+							
+						<div class="mem-col">
+							<a href="https://bkys.io/bkys/index.html" >
+								<img src="./static/members/benjamin.jpg">
+								<u>Benjamin Kang Yue Sheng</u>
+								<b>Programmer<br>New Future Holdings</b>
+							</a>
+						</div>
+
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/rufus.jpg">
+							<u>Rufus Wong</u>
+							<b>Senior Software Engineer<br>HOPE Technik</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/samuel_chin.jpg">
+							<u>Samuel Chin</u>
+							<b>Graduate Student<br>MIT</b>
+						</a>
+						</div>
+						
+
+					</div>
+					<div class="mem-row-4">
+						
+						<div class="mem-col">
+							<a style="margin-left:36px; margin-right:36px;">
+								<img src="./static/members/daniel.png">
+								<u>Daniel Teo Guangwei</u>
+								<b>Founder in Residence<br>Antler</b>
+							</a>
+							</div>
+							
+						<div class="mem-col">
+							<a style="margin-left:36px; margin-right:36px;">
+								<img src="./static/members/yu_han_quek.jpg">
+								<u>Yu Han Quek</u>
+							</a>
+						</div>
+
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/erik.jpg">
+							<u>Erik Khanh Nguyen</u>
+							<b>Senior Software Engineer<br>Endowus</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/hanjie.jpg">
+							<u>Sng Han Jie</u>
+							<b>Associate Software Engineer<br>GovTech</b>
+						</a>
+						</div>
+						
+				</div>
+				<div class="mem-row-4">
+
+					<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/charmaine.jpg">
+							<u>Charmaine Wee</u>		
+							<b>Developer Engineer<br>A*STAR - Agency for Science, Technology and Research</b>
+						</a>
+						</div>
+						
+					<div class="mem-col">
+					<a style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/tatlinlee.jpg">
+						<u>Tat Lin Lee</u>		
+						<b>Consultant<br>McKinsey & Company</b>
+					</a>
+					</div>
+						
+						<div class="mem-col">
+						<a href="https://jwbian.net/" style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/jiawang.png">
+							<u>JiaWang Bian</u>		
+							<b>PhD student<br>University of Adelaide</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/zhenghui.jpg">
+							<u>Zheng Hui Er</u>		
+							<b>Senior System Analyst<br>GSafety Technology Pte. Ltd</b>
+						</a>
+						</div>
+						
+
+				</div>
+				
+				<div class="mem-row-4">
+
+					<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/chenhsin.jpg">
+							<u>Lin Chen-Hsin</u>								
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/andy_luong.jpg">
+							<u>Andy Luong</u>
+							<b>Founder<br>Slimcase.co</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/kimberly.jpg">
+							<u>Kimberly Villalobos Carballo</u>
+							<b>PhD Student<br>MIT</b>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/tracy_cheng.jpg">
+							<u>Lutong (Tracy) Cheng</u>							
+						</a>
+						</div>
+						
+				</div>
+				
+				<div class="mem-row-4">
+
+					<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/FanWang.png">
+							<u>Wang Fan</u>
+						</a>
+						</div>
+
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/sida.jpg">
+							<u>Sida Yao</u>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/xing.png">
+							<u>Gao Xing</u>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/hanyao.jpg">
+							<u>Hanyao Chen</u>
+						</a>
+						</div>
+						
+
+				</div>
+				<div class="mem-row-4">
+
+					<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/william_koh.jpg">
+							<u>Willam Koh</u>
+						</a>
+						</div>
+						
+					<div class="mem-col">
+					<a style="margin-left:36px; margin-right:36px;">
+						<img src="./static/members/lingyue.jpg">
+						<u>Lingyue Ma</u>
+					</a>
+					</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/xiaoyong.jpg">
+							<u>Xiao Yong</u>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/yile.jpg">
+							<u>Yile Wang</u>
+						</a>
+						</div>
+						
+
+				</div>
+				
+				<div class="mem-row-4">
+
+					<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/yifan.jpg">
+							<u>Yifan Zhou</u>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/yunfeng.jpg">
+							<u>Yunfeng Li</u>
+						</a>
+						</div>
+						
+						<div class="mem-col">
+						<a style="margin-left:36px; margin-right:36px;">
+							<img src="./static/members/ziwei.jpg">
+							<u>Ziwei Chen</u>
+						</a>
+						</div>
+				</div>
+						
+		</div>
+						
+		</div>
+		<!-- members end -->
+		<!-- external collaborators start -->
+		
+		<!-- <div class="ext_collab">
+
+			<h1>External Collaborators</h1>
+
+				<h2>Asia</h2>
+					<div class="c3">
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>Japan</h3>
+								<a href="http://www.cvl.iis.u-tokyo.ac.jp/~ki/">
+									Katsushi Ikeuchi <sub>(Tokyo U)</sub>
+								</a>
+							<h3>Korea</h3>
+								<a href="http://yuwing.kaist.ac.kr/">
+									Yu-Wing Tai <sub>(KAIST)</sub>
+								</a>
+							<h3>Singapore</h3>
+								<a href="http://www.ntu.edu.sg/home/cwfu/">
+									Chi-Wing Fu <sub>(NTU)</sub>
+								</a>
+								<a href="http://www.ntu.edu.sg/home/aswbgoh/">
+									Wooi Boon Goh <sub>(NTU)</sub> 
+								</a>
+								<a href="http://www.comp.nus.edu.sg/~brown/">
+									Michael S. Brown <sub>(NUS)</sub>
+								</a>
+								<a href="http://www.comp.nus.edu.sg/~kkyin/">
+									KangKang Yin <sub>(NUS)</sub> 
+								</a>
+						</div>
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>China</h3>
+								<a href="http://weiweixu.net/">
+									WeiWei Xu <sub>(Hangzhou Normal U)</sub>
+								</a>
+								<a href="http://research.microsoft.com/en-us/people/stevelin/">
+									Stephen Lin <sub>(MSRA)</sub>
+								</a>
+								<a href="http://research.microsoft.com/en-us/people/yasumat/">
+									Yasuyuki Matsushita <sub>(MSRA)</sub>
+								</a>
+								<a href="http://fit.zju.edu.cn/english/redir.php?catalog_id=834&amp;object_id=9921">
+									Zhenghui Hu <sub>(ZJU)</sub>
+								</a>
+								<a href="http://opt.zju.edu.cn/english/redir.php?catalog_id=647&amp;object_id=1324">
+									Huafeng Liu <sub>(ZJU)</sub>
+								</a>
+								<a href="http://www.kunzhou.net/">
+									Kun Zhou <sub>(ZJU)</sub>
+								</a>
+						</div>
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>Hong Kong</h3>
+								<a href="http://www.cse.cuhk.edu.hk/leojia/">
+									Jiaya Jia <sub>(CUHK)</sub>
+								</a>
+								<a href="http://www.math.ucla.edu/~chan/">
+									Tony F. Chan <sub>(HKUST)</sub>
+								</a>
+								<a href="http://www.cse.ust.hk/~achung/">
+									Albert C.S. Chung <sub>(HKUST)</sub>
+								</a>
+								<a href="http://www.cse.ust.hk/~psander/">
+									Pedro V. Sander <sub>(HKUST)</sub>
+								</a>
+								<a href="http://www.seng.ust.hk/web/eng/people_detail.php?id=121">
+									Helen S. Shen <sub>(HKUST)</sub>
+								</a>
+								<a href="https://www.cse.ust.hk/~cktang/">
+									Chi-Keung Tang <sub>(HKUST)</sub>
+								</a>
+						</div>
+					</div>
+
+				<h2>Europe</h2>
+					<div class="c2">
+						<div style="margin-left:77.5px; margin-right:77.5px;">
+							<h3>Switzerland</h3>
+								<a href="http://graphics.ethz.ch/~grossm/">
+									Markus Gross <sub>(ETH Zurich)</sub>
+								</a>
+						</div>
+						<div style="margin-left:77.5px; margin-right:77.5px;">
+							<h3>Netherlands</h3>
+								<a href="http://www.isi.uu.nl/People/?josien">
+									Josien Pluim <sub>(Utrecht University)</sub>
+								</a>
+								<a href="http://www.isi.uu.nl/People/?max">
+									Max A. Viergever <sub>(Utrecht University)</sub>
+								</a>
+						</div>
+					</div>
+
+				<h2>North America</h2>
+					<div class="c3">
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>United States (East Coast)</h3>
+								<a href="http://www.cs.columbia.edu/~eitan/">
+							 		Eitan Grinspun <sub>(Columbia U)</sub>
+							 	</a>
+								<a href="http://people.csail.mit.edu/wojciech/">
+									Wojciech Matusik <sub>(MIT)</sub>
+								</a>
+								<a href="http://www.media.mit.edu/people/raskar">
+							 		Ramesh Raskar <sub>(MIT)</sub>
+							 	</a>
+								<a href="http://vision.princeton.edu/people/xj/">
+									Jianxiong Xiao <sub>(Princeton)</sub>
+								</a>
+								<a href="http://www.rit.edu/gccis/pengcheng-shi">
+									Pengcheng Shi <sub>(RIT)</sub>
+								</a>
+								<a href="http://phd.gccis.rit.edu/linweiwang/Linwei_Wangs_HomePage/Home.html">
+									Linwei Wang <sub>(RIT)</sub>
+								</a>
+						</div>
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>United States (West Coast)</h3>
+								<a href="http://vladlen.info/">
+									Vladlen Koltun <sub>(Adobe Research)</sub>
+								</a>
+								<a href="http://www.juew.org/">
+									Jue Wang <sub>(Adobe Research)</sub>
+								</a>
+								<a href="http://research.microsoft.com/en-us/people/sbkang/">
+									Sing Bing Kang <sub>(MSR)</sub>
+								</a>
+								<a href="http://www.math.ucla.edu/~sjo/">
+									Stanley J. Osher <sub>(UCLA)</sub>
+								</a>
+								<a href="http://www.cs.ucla.edu/~dt/">
+									Demetri Terzopoulos <sub>(UCLA)</sub>
+								</a>
+								<a href="http://iris.usc.edu/people/medioni/">
+									GÃ©rard G. Medioni <sub>(USC)</sub>
+								</a>
+						</div>
+						<div style="margin-left:16px; margin-right:16px;">
+							<h3>Canada</h3>
+								<a href="http://www.ece.nus.edu.sg/stfpage/eletp/">
+									Ping Tan <sub>(Simon Fraser)</sub>
+								</a>
+						</div>
+					</div>
+		</div> -->
+		<!-- external collaborators end -->
+		<!-- facilities start -->
+		<!-- <div class="facilities">
+
+			<h1>Facilities</h1>
+			
+			<p>
+				State-of-the-art facilities for Computer Vision, Computer Graphics and 3D printing <br>
+				are equipped and accessible for all staff and students.
+			</p>
+
+				<h2>3D Printers</h2>
+
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities/eosint_m280.jpg">
+						EOSINT M 280
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities/projet5500x.jpg">
+						ProJetÂ® 5500X
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//zprinter350.jpg">
+						Zprinter 350
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//objet350.jpg">
+						Objet350 Connex 3D Printer
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//formiga_p100.jpg">
+						Formiga P100
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//laser_cutter.jpg">
+						Laser Cutter
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//object500.jpg">
+						Object500 Connex3
+					</div>
+
+				<h2>3D Scanners and Cameras</h2>
+
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//rexcan.jpg">
+						Rexcan CS+ Scanner
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//artec_spider.jpg">
+						Artec Spider Scanner
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//faro_terrian.jpg">
+						Faro Terrian Scanner
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//panasonic_d.jpg">
+						Panasonic D-Imager
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//lytro_light_field.jpg">
+						Lytro Light Field Camera
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//ladybug5.jpg">
+						LadyBug 5
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//raytrix.jpg">
+						Raytrix R29c GigE Light Field Camera
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//scanify.jpg">
+						Scanify
+					</div>
+					<div style="margin-left:17px; margin-right:17px;">
+						<img src="./facilities//primesense.jpg">
+						Primesense 3D Sensors
+					</div>
+		</div> -->
+		<!-- facilities end -->
+	</div></div>
+	<!-- content end -->
+	</body>
+</html>

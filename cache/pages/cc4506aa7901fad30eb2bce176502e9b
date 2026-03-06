@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0048)https://people.eecs.berkeley.edu/~alexdimakis/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
+
+<link rel="stylesheet" href="./index-files/jemdoc.css" type="text/css">
+<title>Alexandros G. Dimakis  (Alex Dimakis)</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tbody><tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/index.html" class="current">Main</a></div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/bio.html">Bio&nbsp;and&nbsp;CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/group.html">Projects</a></div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/group.html">Group</a></div>
+<div class="menu-category">Papers</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/papers.html">By&nbsp;Type</a></div>
+<div class="menu-item"><a href="http://scholar.google.com/citations?user=JSFmVQEAAAAJ&amp;hl=en">Scholar&nbsp;Profile</a></div>
+<div class="menu-category">Courses</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/teaching.html">Teaching</a></div>
+<div class="menu-category">Activities</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/bio.html">Service&nbsp;and&nbsp;TPCs</a></div>
+<div class="menu-category">Fun</div>
+<div class="menu-item"><a href="https://people.eecs.berkeley.edu/~alexdimakis/Alex-Artistic-Attempts/artisticattempts.html">Artistic&nbsp;Attempts</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Alexandros G. Dimakis  (Alex Dimakis)</h1>
+</div>
+<table class="imgtable"><tbody><tr><td>
+<img src="./index-files/alexdimakis_sm.jpg" alt="Alex Dimakis Photo" width="200px">&nbsp;</td>
+<td align="left"><ul>
+<li><p>Professor, <a href="http://www.eecs.berkeley.edu/">EECS Department, UC Berkeley</a> </p>
+</li>
+<li><p>Co-Founder <a href="https://bespokelabs.ai/">BespokeLabs.ai</a></p>
+</li>
+<li><p>Co-Director of the National <a href="https://ml.utexas.edu/ifml">AI Institute for Foundations of Machine Learning</a></p>
+</li>
+<li><p><a href="https://twitter.com/AlexGDimakis">Twitter</a> <br>
+Office: 269 Cory Hall, Berkeley, CA 94720 <br>
+</p>
+</li>
+</ul>
+<p><tt>alexdimakis at berkeley.edu</tt></p>
+</td></tr></tbody></table>
+<p><br></p>
+<p>I am interested in Generative AI, Information Theory and Machine Learning.
+<br></p>
+<p><a href="Alex_CV.pdf">Resume</a>.</p>
+<p><a href="http://scholar.google.com/citations?user=JSFmVQEAAAAJ&amp;hl=en">Google Scholar Profile</a>.</p>
+<p></p><hr> <p></p>
+<h2>News</h2>
+<ul>
+<li><p>Co-founded <a href="https://bespokelabs.ai/">BespokeLabs.ai</a> a startup working on data curation and data centric AI. We are hiring. </p>
+</li>
+</ul>
+<ul>
+<li><p>DeepSeek-R1 did not release its reasoning data. We are curating a reasoning dataset in 
+	<a href="https://www.openthoughts.ai//">OpenThoughts</a> and training 
+<a href="https://huggingface.co/open-thoughts/OpenThinker-32B">OpenThinker</a> aiming to make the best open-source (open-weights and open-data) reasoning models. 
+</p>
+</li>
+
+<li><p>
+N. Raoof, L. Rout, G. Daras, S. Sanghavi, C. Caramanis, S. Shakkottai, A.G. Dimakis, <br> 
+"Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models," <br>
+ICLR 2025, 
+<a href="https://openreview.net/pdf?id=9QPH1YQCMn">(Paper)</a>
+<a href="https://neginraoof.com/">(Code)</a>. <br> </p>
+</li>
+<li><p>
+S. Gadre, G. Smyrnis, V. Shankar, et al. <br> 
+"Language models scale reliably with over-training and on downstream tasks," <br>
+ICLR 2025,
+<a href="https://arxiv.org/abs/2403.08540">(Arxiv)</a>
+<a href="https://github.com/mlfoundations/scaling">(Code)</a>. <br> </p>
+</li>
+<li><p>
+A. Aali, G. Daras, B. Levac, S. Kumar, A. G. Dimakis, J. Tamir <br> 
+"Ambient Diffusion Posterior Sampling: Solving Inverse Problems with Diffusion Models Trained on Corrupted Data," <br>
+ICLR 2025, 
+<a href="https://arxiv.org/abs/2403.08728">(Arxiv)</a>
+<a href="https://github.com/utcsilab/ambient-diffusion-mri">(Code)</a>. <br> </p>
+</li>
+<li><p>Datacomp-LM released: <a href="https://github.com/mlfoundations/dclm/">DCLM</a>. This is the largest public dataset for LLM training and includes 300T tokens, effective LLM per-training code based on <a href="https://github.com/mlfoundations/open_lm">Open_LM</a> and 53 evaluations. Also we release truly open-source pretrained DCLM LMs of sizes up to 7B with excellent performance, full training data and source code. </p>
+</li>
+<li><p>D.J. Diaz, C. Gong, J.Ouyang-Zhang, J.M. Loy, J. Wells, D. Yang, A. D. Ellington, A. G. Dimakis and A. R. Klivans  <br> 
+Stability Oracle: a structure-based graph-transformer framework for identifying stabilizing mutations <br>
+<a href="https://www.nature.com/articles/s41467-024-49780-2">Nature Communications</a> <br> 
+<a href="https://www.biorxiv.org/content/10.1101/2023.05.15.540857v2.abstract">bioarxiv</a></p>
+</li>
+<li><p>Four papers accepted to NeurIPS 2023 <br></p>
+<ul>
+<li><p>S. Gadre, G. Ilharco, A. Fang, J. Hayase, G. Smyrnis, T. Nguyen, R. Marten, M. Wortsman, D. Ghosh, J. Zhang, E. Orgad, <br>
+R. Entezari, G. Daras, S. M. Pratt, V. Ramanujan, Y. Bitton, K. Marathe, S. Mussmann, R. Vencu, M. Cherti, R. Krishna, <br>
+P. W. Koh, O. Saukh, A. Ratner, S. Song, H. Hajishirzi, A. Farhadi, R. Beaumont, S. Oh, A.G. Dimakis, <br>
+J. Jitsev, Y. Carmon, V. Shankar, L. Schmidt, <br>
+âDataComp: In search of the next generation of multimodal datasetsâ <br>
+Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2023. Datasets and Benchmarks Track, <br> 
+Selected for Oral presentation. <br>
+<a href="https://www.datacomp.ai/">https://www.datacomp.ai/</a> (Project Page)</p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p>G. Daras, K. Shah, Y. Dagan, A. Gollakota, A. G. Dimakis, A. R. Klivans, <br> 
+âAmbient Diffusion: Learning Clean Distributions from Corrupted Data,â <br>
+Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2023.<br> 
+<a href="https://giannisdaras.github.io/publication/ambient">(Project Page)</a>
+<a href="https://arxiv.org/abs/2305.19256">(Arxiv)</a>,
+<a href="https://github.com/giannisdaras/ambient-diffusion">(Code)</a>. <br> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p>L. Rout, N. Raoof, G. Daras, C. Caramanis, A. G. Dimakis, S. Shakkottai, <br> 
+âSolving Inverse Problems Provably via Posterior Sampling with Latent Diffusion Models,â <br>
+Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2023.
+<a href="https://giannisdaras.github.io/publication/psld">(Project Page)</a>,
+<a href="https://arxiv.org/abs/2307.00619">(Arxiv)</a>,<a href="https://github.com/LituRout/PSLD">(Code)</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p>G. Daras, Y. Dagan, A.G. Dimakis, C. Daskalakis, <br> 
+âMartingale Diffusion Models: Mitigating Sampling Drift by Learning to be Consistent, <br>
+â Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2023.
+<a href="https://giannisdaras.github.io/publication/cdm">(Project Page)</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Our paper on deep learning for time-series modeling used for electronic system design and electromagnetic (EM) interconnect analysis for signal integrity, accepted to ICCAD:</p>
+<ul>
+<li><p>S. Ravula, V. Gorti, B. Deng, S. Chakraborty, J. Pingenot, B. Mutnury, D. Wallace, D. Winterberg, A. R. Klivans, A. G. Dimakis, <br> 
+âOne-Dimensional Deep Image Prior for Curve Fitting of S-Parameters from Electromagnetic Solvers,â <br> 
+2023 International Conference on Computer-Aided Design (ICCAD 2023)
+<a href="https://www.sriramravula.com/publications">(Project Page)</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>T. Chen, C. Gong, D. J. Diaz, X. Chen, J. T. Wells, Q. Liu, Z. Wang, A. D. Ellington, A.G. Dimakis, A. R. Klivans, <br> 
+âHotProtein: A Novel Framework for Protein Thermostability Prediction and Editing,â  <br> 
+Proceedings on the International Conference on Representation Learning (ICLR 2023). </p>
+</li>
+</ul>
+<ul>
+<li><p>Elected IEEE Fellow for contributions to distributed coding and learning, 2022. </p>
+</li>
+<li><p>Selected as Commissioner. <a href="https://www.uschamber.com/technology/u-s-chamber-launches-bipartisan-commission-on-artificial-intelligence-to-advance-u-s-leadership">Artificial Intelligence Commission on Competition, Inclusion, and Innovation</a> <br> 
+by the US Chamber of Commerce to provide a roadmap for tech leadership to US policy makers. </p>
+</li>
+<li><p>Faculty of the year award (for 2022). MS Program in Information Technology Management, (Voted by students). </p>
+</li>
+<li><p>Keynote speaker, 14th IEEE Image and Multidimensional Signal Processing Workshop (IVMSP) 2022. </p>
+</li>
+<li><p>Plenary speaker, 13th International Conference on the Image, 2022.</p>
+</li>
+<li><p>Best Paper Award at UAI 2021 Workshop on Tractable Probabilistic Modeling.</p>
+</li>
+<li><p><a href="https://www.youtube.com/watch?v=g6Pemrz8hGo&amp;t=47s">Recent talk: Generative models are the new sparsity</a> <br>
+Recent Berkeley Simons talk on deep generative models and how they can be used to solve inverse problems including Denoising, Missing data, Compressed Sensing and MRI.  </p>
+</li>
+<li><p>G. Daras, N. Raoof, Z. Gkalitsiou and A.G. Dimakis <br>
+ââMultitasking Models are Robust to Structural Failure: A Neural Model for Bilingual Cognitive Reserve,ââ <br>
+Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2022.  <br>
+<a href="https://www.ifml.institute/research/multitasking-models-are-robust-structural-failure-neural-model-bilingual-cognitive-reserve">(Project Page)</a> <a href="https://arxiv.org/abs/2210.11618">arxiv</a></p>
+</li>
+<li><p>M. Jordan, J. Hayase, A. G. Dimakis, S. Oh <br>
+ââZonotope Domains for Lagrangian Neural Network Verification,ââ <br>
+Proc. of Neural Information Processing Systems (NeurIPS), Dec. 2022. <br>
+<a href="https://arxiv.org/abs/2210.08069">(Arxiv)</a></p>
+</li>
+<li><p>G. Daras, Y. Dagan, A. G. Dimakis, C. Daskalakis <br> 
+ââScore-Guided Intermediate Level Optimization: Fast Langevin Mixing for Inverse Problems.ââ<br>
+International Conference on Machine Learning (ICML), 2022.<br>
+<a href="https://giannisdaras.github.io/publication/sgilo">(Project Page)</a></p>
+</li>
+<li><p>J. Whang, M. Delbracio, H. Talebi, C. Saharia, A. G. Dimakis, P. Milanfar,<br>
+ââDeblurring via Stochastic Refinement.ââ <br>
+Computer Vision and Pattern Recognition (CVPR) June 2022. (Oral Presentation)
+<a href="https://arxiv.org/abs/2112.02475">(Arxiv)</a></p>
+</li>
+<li><p>Two papers accepted to NeurIPS 2021 <br> </p>
+<ul>
+<li><p><a href="https://ajiljalal.github.io/">Ajil Jalal</a>, Marius Arvinte, 
+<a href="https://giannisdaras.github.io/">Giannis Daras</a>, Eric Price, 
+Alexandros G. Dimakis  and Jonathan I. Tamir, <br> 
+Robust Compressed Sensing MRI with Deep Generative Priors, <br> 
+<a href="https://ajiljalal.github.io/DeepMRI.html">(Project Page)</a>, <a href="https://arxiv.org/abs/2108.01368">(Arxiv)</a> </p>
+</li>
+<li><p><a href="https://www.sriramravula.com/">Sriram Ravula</a>, 
+<a href="https://georgiossmyrnis.github.io/">Georgios Smyrnis</a> ,<a href="https://www.cs.utexas.edu/~mjordan/">Matt Jordan</a>, Alexandros G. Dimakis <br>
+Inverse Problems Leveraging Pre-trained Contrastive Representations <br> 
+<a href="https://www.sriramravula.com/publications/inverse-problems-leveraging-pre-trained-contrastive-representations">(Project Page)</a> 
+<a href="https://arxiv.org/abs/2110.07439">(Arxiv)</a> <br>  </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Six papers accepted to ICML 2021 <br></p>
+<ul>
+<li><p><a href="https://ajiljalal.github.io/">Ajil Jalal</a>,
+<a href="https://www.cs.utexas.edu/~sushrutk">Sushrut Karmalkar</a>,
+A.G. Dimakis and E. Price,  <br> 
+Instance-Optimal Compressed Sensing via Posterior Sampling, <br>
+<a href="https://ajiljalal.github.io/instance_optimal.html">(Project Page)</a></p>
+</li>
+<li><p><a href="https://ajiljalal.github.io/">Ajil Jalal</a>,
+<a href="https://www.cs.utexas.edu/~hoffmann/">Jessica Hoffmann</a>,
+<a href="https://www.cs.utexas.edu/~sushrutk">Sushrut Karmalkar</a>,
+A.G. Dimakis and E. Price,  <br>
+Fairness for Image Generation with Uncertain Sensitive Attributes <br>
+<a href="https://ajiljalal.github.io/fairness.html">(Project page)</a></p>
+</li>
+<li><p><a href="https://giannisdaras.github.io/">Giannis Daras</a>,
+Joseph Dean, 
+<a href="https://ajiljalal.github.io/">Ajil Jalal</a>,
+and  A.G. Dimakis,  <br>
+Intermediate Layer Optimization for Inverse Problems using Deep Generative Models <br>
+<a href="https://giannisdaras.github.io/publication/ilo">(Project Page)</a></p>
+</li>
+<li><p><a href="https://www.cs.utexas.edu/~mjordan/">Matt Jordan</a>,
+A.G. Dimakis,  <br>
+Provable Lipschitz Certification for Generative Models <br>
+<a href="https://arxiv.org/pdf/2107.02732.pdf">(Arxiv)</a>, 
+<a href="https://github.com/revbucket/lipMIP">(Code)</a></p>
+</li>
+<li><p><a href="https://jaywhang.com/pubs/">Jay Whang</a>,
+<a href="https://cecilialeiqi.github.io/">Qi Lei</a>, 
+A.G. Dimakis  <br>
+Solving Inverse Problems with a Flow-based Noise Model <br>
+<a href="https://arxiv.org/abs/2003.08089">(Arxiv)</a></p>
+</li>
+<li><p><a href="https://jaywhang.com/pubs/">Jay Whang</a>, 
+<a href="https://erikml.com/">Erik Lindgren</a>, A.G. Dimakis, <br>
+Composing Normalizing Flows for Inverse Problems <br>
+<a href="https://arxiv.org/abs/2002.11743">(Arxiv)</a> <br>
+Best Paper Award at UAI 2021 Workshop on Tractable Probabilistic Modeling</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Congratulations to <a href="https://cecilialeiqi.github.io/">Qi Lei</a> for winning the
+<a href="https://www.oden.utexas.edu/about/news/qi-lei-wins-Outstanding-Dissertation-Award/">Oden Institute Outstanding Dissertation Award</a> for her 
+<a href="https://cecilialeiqi.github.io/LEI-DISSERTATION-2020.pdf">awesome Phd dissertation</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Recent service: </p>
+<ul>
+<li><p>TPC chair for <a href="https://mlsys.org/">MLSys 2021</a></p>
+</li>
+<li><p><a href="https://aaai.org/Conferences/AAAI-21/">AAAI 2021 Area chair</a>,  <a href="https://neurips.cc/">NeurIPS 2020 Area chair</a>  </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>New paper: Intermediate Layer Optimization for Inverse Problems using Deep Generative Models  <br>
+by G. Daras, J. Dean, A. Jalal and A.G. Dimakis.
+<a href="https://github.com/giannisdaras/ilo">(Code)</a>
+<a href="https://arxiv.org/abs/2102.07364">(Paper)</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Four papers accepted to NeurIPS 2020 <br> </p>
+<ul>
+<li><p>A. Jalal, L. Liu, A.G. Dimakis and C. Caramanis,<br>
+Robust compressed sensing of generative models, 
+<a href="https://arxiv.org/abs/2006.09461">(arxiv)</a> </p>
+</li>
+<li><p>M. Jordan and A.G. Dimakis, <br>
+Exactly Computing the Local Lipschitz Constant of ReLU Networks,
+<a href="https://arxiv.org/abs/2003.01219">(arxiv)</a> </p>
+</li>
+<li><p>I. Daras, N. Kitaev, A. Odena and A.G. Dimakis <br> 
+SMYRF - Efficient attention using asymmetric clustering
+<a href="https://arxiv.org/abs/2010.05315">(arxiv)</a> </p>
+</li>
+<li><p>M. Kocaoglu, S. Shakkottai, A.G. Dimakis, C. Caramanis and S. Vishwanath <br>
+Applications of Common Entropy in Causal Inference
+<a href="https://papers.nips.cc/paper/2020/file/cae7115f44837c806c9b23ed00a1a28a-Paper.pdf">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>New Survey:  Deep Learning Techniques for Inverse Problems in Imaging <br>
+G. Ongie, A. Jalal, C. A. Metzler, R. G. Baraniuk, A. G. Dimakis and R. Willett <br>
+Journal on Selected Areas in Information Theory, May 2020.  
+<a href="https://arxiv.org/abs/2005.06001">(arxiv)</a>,  <a href="https://ieeexplore.ieee.org/document/9084378">ieeeXplore</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Your Local GAN: Designing Two Dimensional Local Attention Mechanisms for Generative Models <br>
+Giannis Daras, Augustus Odena, Han Zhang, Alexandros G. Dimakis, CVPR 2020. <br>
+<a href="https://arxiv.org/abs/1911.12287">(arxiv)</a> |  <a href="https://github.com/giannisdaras/ylg">Code</a> |  <a href="https://colab.research.google.com/drive/10MO4dVoQIhS1ZpeplWTnA4KVqkvqN4Jd">Colab Notebook</a> |  <a href="https://twitter.com/giannis_daras/status/1199875107470090240">Twitter Thread</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Deep Generative models and Inverse Problems, talk at 2019 Texas AI summit <br>
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/Dimakis_TexasAI.pdf">(Slides.pdf)</a> 
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/Dimakis_TexasAI.pptx">(Slides.pptx)</a> <br>
+Related Video:
+<a href="https://www.youtube.com/watch?v=ar7tJXGmo_U&amp;index=8&amp;list=PLcsG4X8Zn_UBJsOKzH75GueOImqFr8_Q-">GANs and Compressed Sensing talk</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Gradient Coding from Cyclic MDS Codes and Expander Graphs <br>
+N. Raviv, I. Tamo, R. Tandon and A. G. Dimakis,  IEEE Transactions on Information Theory <br>
+<a href="https://arxiv.org/abs/1707.03858">(arxiv)</a> </p>
+</li>
+</ul>
+<ul>
+<li><p>Five papers accepted to NeurIPS 2019 <br> </p>
+<ul>
+<li><p><a href="https://simons.berkeley.edu/people/matt-jordan">Matt Jordan</a> , Justin Lewis, Alexandros G. Dimakis <br> 
+Provable Certificates for Adversarial Examples: Fitting a Ball in the Union of Polytopes <br>
+<a href="https://arxiv.org/abs/1903.08778">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p><a href="https://cecilialeiqi.github.io/">Qi Lei</a>, <a href="https://sites.google.com/site/ajiljalal/home">Ajil Jalal</a>, Inderjit S. Dhillon, and Alexandros G. Dimakis <br> 
+Inverting Deep Generative models, One layer at a time. <br>
+<a href="https://arxiv.org/abs/1906.07437">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p><a href="https://cecilialeiqi.github.io/">Qi Lei</a>, Jiacheng Zhuo, Constantine Caramanis, Inderjit S Dhillon, Alexandros G Dimakis <br>  
+Primal-Dual Block Frank-Wolfe <br>
+<a href="https://arxiv.org/abs/1906.02436">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p><a href="https://wushanshan.github.io/">Shanshan Wu</a>, Sujay Sanghavi, Alexandros G. Dimakis <br> 
+Sparse Logistic Regression Learns All Discrete Pairwise Graphical Models (Spotlight) <br>
+<a href="https://arxiv.org/abs/1810.11905">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+<ul>
+<li><p><a href="https://wushanshan.github.io/">Shanshan Wu</a>, Alexandros G. Dimakis, Sujay Sanghavi <br>
+Learning Distributions Generated by One-Layer ReLU Networks <br>
+<a href="https://arxiv.org/abs/1909.01812">(pdf)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>SysML 2019 paper on adversarial attacks on text classifiers <br> </p>
+<ul>
+<li><p><a href="https://cecilialeiqi.github.io/">Q. Lei</a>, L. Wu, P. Chen, A.G. Dimakis, I.S. Dhillon and M. Witbrock, <br> 
+Discrete Adversarial Attacks and Submodular Optimization with Applications to Text Classification <br>
+Systems and Machine Learning (SysML), April 2019. 
+<a href="https://arxiv.org/abs/1812.00151">(pdf)</a> <a href="https://users.oden.utexas.edu/~leiqi/discrete_attack.pdf">slides</a> <a href="https://github.com/cecilialeiqi/adversarial_text">code</a> </p>
+</li>
+<li><p>Press coverage: <a href="https://www.nature.com/articles/d41586-019-01510-1?utm_source=twt_nnc&amp;utm_medium=social&amp;utm_campaign=naturenews&amp;sf212595612=1">Nature News</a>, <a href="https://venturebeat.com/2019/04/01/text-based-ai-models-are-vulnerable-to-paraphrasing-attacks-researchers-find">VentureBeat</a>, <a href="https://bdtechtalks.com/2019/04/02/ai-nlp-paraphrasing-adversarial-attacks/">TechTalks</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>ICML 2019 paper on learned compressed sensing matrices <br> </p>
+<ul>
+<li><p><a href="https://people.eecs.berkeley.edu/~alexdimakis/[https://wushanshan.github.io">S. Wu</a>, A.G. Dimakis, S. Sanghavi, F.X. Yu, D. Holtmann-Rice, D. Storcheus, A. Rostamizadeh, S. Kumar, <br>
+Learning a Compressed Sensing Measurement Matrix via Gradient Unrolling <br> 
+International Conference on Machine Learning (ICML), 2019. 
+<a href="https://icml.cc/media/Slides/icml/2019/103(12-11-00)-12-12-10-5087-learning_a_comp.pdf">(slides)</a> 
+<a href="http://proceedings.mlr.press/v97/wu19b/wu19b.pdf">(pdf)</a> 
+<a href="https://github.com/wushanshan/L1AE">(Tensorflow Code)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>New Paper accepted to NeurIPS 2018  <br></p>
+<ul>
+<li><p><a href="https://wncg.org/people/students/erik-lindgren">Erik Lindgren</a>, <a href="http://www.muratkocaoglu.com/">Murat Kocaoglu</a>, A.G. Dimakis and Sriram Vishwanath <br>
+Experimental Design for Cost-Aware Learning of Causal Graphs <br> 
+Neural Information Processing Systems, 2019. <a href="http://papers.nips.cc/paper/7774-experimental-design-for-cost-aware-learning-of-causal-graphs.pdf">(pdf)</a>
+<a href="https://www.youtube.com/watch?v=7LPQxhpXKtA">(Short video ft. Erik's radio voice)</a>  </p>
+</li></ul>
+</li>
+<li><p>Preprint </p>
+<ul>
+<li><p>D. Van Veen, A. Jalal, E. Price, S.  Vishwanath, and A.G. Dimakis <br> 
+Compressed Sensing with Deep Image Prior and Learned Regularization <br>
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/index.html">https:<i></i>arxiv.org<i>abs</i>1806.06438 (arxiv)</a>   <a href="https://github.com/davevanveen/compsensing_dip">(Code)</a>  </p>
+</li></ul>
+</li>
+<li><p>Preprint</p>
+<ul>
+<li><p>The Robust Manifold Defense: Adversarial Training using Generative Models <br>
+A. Ilyas, A. Jalal, E. Asteri, C. Daskalakis, A. G. Dimakis <br> 
+<a href="https://arxiv.org/abs/1712.09196">(arxiv)</a> <br></p>
+</li></ul>
+</li>
+<li><p>Paper accepted to Annals of Statistics </p>
+<ul>
+<li><p>E. R. Elenberg, R. Khanna, A.G. Dimakis, and S. Negahban <br> 
+ââRestricted Strong Convexity Implies Weak Submodularityââ,<br>
+to appear in Annals of Statistics, 2018. <br>
+<a href="https://arxiv.org/abs/1612.00804">(preprint)</a></p>
+</li></ul>
+</li>
+<li><p>Teaching resources for <a href="http://users.ece.utexas.edu/~dimakis/DataScienceLab.html">Data Science and Machine learning</a> </p>
+</li>
+<li><p>Honored to receive the <a href="https://www.itsoc.org/honors/massey-award">James Massey award</a></p>
+</li>
+<li><p>NeurIPS,  ICML, AISTATS Area chair</p>
+</li>
+<li><p>Compressed Sensing using Generative models 
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/bora-pretrained.zip">Pre-trained models</a> see also 
+<a href="https://github.com/AshishBora/csgm">GitHub CSGM</a> </p>
+</li>
+<li><p>ICLR 2018</p>
+<ul>
+<li><p>A. Bora, E. Price, A.G. Dimakis <br> 
+AmbientGAN: Generative models from lossy measurements <br>
+(Oral Presentation) <a href="https://openreview.net/pdf?id=Hy7fDog0b">(openreview)</a>, <a href="https://github.com/AshishBora/ambient-gan">(code)</a><br></p>
+</li>
+<li><p>M. Kocaoglu, C. Snyder, A.G. Dimakis and S. Vishwanath <br> 
+CausalGAN: Learning Causal Implicit Generative Models with Adversarial Training <br>
+<a href="https://arxiv.org/abs/1709.02023">(arxiv)</a> <a href="https://github.com/mkocaoglu/CausalGAN">(code)</a></p>
+</li></ul>
+</li>
+<li><p>NIPS 2017:</p>
+<ul>
+<li><p>E.R. Elenberg, A.G. Dimakis, M. Feldman, and A. Karbasi<br> 
+ââStreaming Weak Submodularity: Interpreting Neural Networks on the Flyââ,<br>
+(NIPS), 2017. (Oral presentation)
+<a href="https://arxiv.org/abs/1703.02647">(arxiv)</a> <a href="https://github.com/eelenberg/streak">code</a><br> </p>
+</li>
+<li><p>Model-Powered Conditional Independence Test
+R. Sen, A.T. Suresh, K. Shanmugam, A.G. Dimakis and S. Shakkottai
+(NIPS), 2017.</p>
+</li></ul>
+</li>
+<li><p>Preprint</p>
+<ul>
+<li><p>Gradient Coding from Cyclic MDS Codes and Expander Graphs <br>
+N Raviv, I Tamo, R Tandon, AG Dimakis <a href="https://arxiv.org/pdf/1707.03858.pdf">(arxiv)</a> </p>
+</li></ul>
+</li>
+<li><p>Six papers accepted to ICML 2017: </p>
+<ul>
+<li><p>Compressed Sensing using Generative Models 
+<a href="https://arxiv.org/abs/1703.03208">(arxiv)</a> <a href="https://github.com/AshishBora/csgm">Code and Demo</a>  <br> 
+A. Bora, A. Jalal, E. Price, A. G. Dimakis </p>
+</li>
+<li><p>Gradient Coding  <a href="https://arxiv.org/abs/1612.03301">(pdf)</a> <br> 
+R. Tandon, Q. Lei, A. G. Dimakis, N. Karampatziakis.
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/ITA_2017_Gradient_Coding.pdf">(Slides from ITA)</a></p>
+</li>
+<li><p>On Approximation Guarantees for Greedy Low Rank Optimization
+<a href="https://arxiv.org/abs/1703.02721">(arxiv)</a> <br>
+R. Khanna, E. Elenberg, A. G. Dimakis, S. Negahban.</p>
+</li>
+<li><p>Exact MAP Inference by Avoiding Fractional Vertices
+<a href="https://arxiv.org/abs/1703.02689">(arxiv)</a> <br> 
+E. M. Lindgren, A. G. Dimakis, A. Klivans.</p>
+</li>
+<li><p>Cost-Optimal Learning of Causal Graphs 
+<a href="https://arxiv.org/abs/1703.02645">(arxiv)</a> <br>
+M. Kocaoglu, A. G. Dimakis, S. Vishwanath. </p>
+</li>
+<li><p>Identifying Best Interventions through Online Importance Sampling 
+<a href="https://arxiv.org/abs/1701.02789">(arxiv)</a> <br> 
+R. Sen, K. Shanmugam, A. G. Dimakis and S. Shakkottai. </p>
+</li></ul>
+</li>
+<li><p>Two papers accepted to ISIT 2017: </p>
+<ul>
+<li><p>Entropic Causality and Greedy Minimum Entropy Coupling
+<a href="https://arxiv.org/pdf/1701.08254">(arxiv)</a> <br> 
+M. Kocaoglu, A. G. Dimakis, S. Vishwanath and B. Hassibi.</p>
+</li>
+<li><p>Coded Caching with Linear Subpacketization <i>is Possible</i> using Ruzsa-SzemÃ©redi Graphs.
+<a href="https://arxiv.org/abs/1701.07115">(arxiv)</a> <br>
+K. Shanmugam, A. M. Tulino and A. G. Dimakis. <br></p>
+</li></ul>
+</li>
+<li><p>Recent work on decoding brain signals using interpretable features: </p>
+<ul>
+<li><p>H. Yi, Z. Xie, R. Reetzke, A.G. Dimakis and B. Chandrasekaran.<br>
+Vowel decoding from single-trial speech-evoked electrophysiological responses: A feature-based machine learning approach.<br> 
+Brain and Behavior. April 2017; <a href="http://onlinelibrary.wiley.com/doi/10.1002/brb3.665/abstract">(Open Access)</a> <br></p>
+</li></ul>
+</li>
+<li><p>Check the cool projects from our <a href="http://users.ece.utexas.edu/~dimakis/DataScienceLab.html">undergraduate Data Science Lab course</a> </p>
+</li>
+<li><p>Entropic Causality paper to appear in AAAI 2017. 
+<a href="https://arxiv.org/abs/1611.04035">(Arxiv)</a> <br> <a href="http://www.muratkocaoglu.com/">More information</a></p>
+</li>
+<li><p>Two papers accepted to AISTATS 2017:</p>
+<ul>
+<li><p>Contextual Bandits with Latent Confounders: An NMF Approach
+<a href="http://proceedings.mlr.press/v54/sen17a/sen17a.pdf">(pdf)</a> <br> 
+R. Sen, K. Shanmugam, M. Kocaoglu, A. G. Dimakis and S. Shakkottai. </p>
+</li>
+<li><p>Scalable Greedy Feature Selection via Weak Submodularity. 
+<a href="https://rjvak7.github.io/papers/distributed_weaksubmod.pdf">(pdf)</a> <br> 
+R. Khanna, E. Elenberg, A. G. Dimakis, S. Neghaban and J. Ghosh</p>
+</li></ul>
+</li>
+<li><p>Slides and notes from <a href="http://graphday.com/">GraphDay</a> overview talk on graph analytics and machine learning 
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/GraphDay_wNotes.pdf">(pdf)</a></p>
+</li>
+<li><p>Upcoming talk at Canadian Workshop on Information Theory (CWIT)
+<a href="http://cwit.ca/2017/index.php/plenary-talks/">(CWIT link)</a> </p>
+</li>
+<li><p>Two papers accepted to NIPS 2016:</p>
+<ul>
+<li><p>Leveraging Sparsity for Efficient Submodular Data Summarization <br>
+E. Lindgren, S. Wu, A. G. Dimakis 
+<a href="http://erikml.com/">(pdf)</a> </p>
+</li>
+<li><p>Single Pass PCA of Matrix Products 
+S. Wu, S. Bhojanapalli, S. Sanghavi, A. G. Dimakis 
+<a href="https://wushanshan.github.io/">(pdf)</a></p>
+</li></ul>
+</li>
+<li><p>Preprint: Restricted Strong Convexity Implies Weak Submodularity <br>
+E. Elenberg, R. Khanna, A. G. Dimakis, S. Negahban
+<a href="http://eelenberg.github.io/weak-submodular-preprint.pdf">(pdf)</a></p>
+</li>
+<li><p>Distributed Estimation of Graph 4-profiles <br> 
+E. R. Elenberg, K. Shanmugam, M. Borokhovich, A. G. Dimakis.<br>
+in Proc. International World Wide Web Conference (WWW), 2016
+<a href="http://arxiv.org/abs/1510.02215">(Arxiv)</a></p>
+</li>
+<li><p>Bipartite Correlation Clustering: Maximizing Agreements <br> 
+M. Asteris, A. Kyrillidis, D. Papailiopoulos, A. G. Dimakis, AISTATS 
+2016 <a href="http://megasthenis.github.io/repository/bcc-aistats2016.pdf">(pdf)</a></p>
+</li>
+<li><p>Three papers accepted to NIPS 2015 </p>
+<ul>
+<li><p>Orthogonal NMF through Subspace Exploration <br>
+M. Asteris  D. Papailiopoulos  A. G. Dimakis
+<a href="http://megasthenis.github.io/">(pdf)</a></p>
+</li>
+<li><p>Sparse PCA via Bipartite Matchings <br>
+M. Asteris  D. Papailiopoulos  A. Kyrillidis  A. G. Dimakis
+<a href="http://megasthenis.github.io/">(pdf)</a></p>
+</li>
+<li><p>Learning Causal Graphs with Small Interventions <br>
+K. Shanmugam, M.  Kocaoglu, A.G. Dimakis, S. Vishwanath
+<a href="https://arxiv.org/abs/1511.00041">(arxiv)</a> </p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Stay on path: PCA along graph paths 
+M. Asteris  A. Kyrillidis  A. G. Dimakis  H. Yi  B. Chandrasekaran
+International Conference on Machine Learning (ICML), Lille, France, 2015,
+<a href="http://arxiv.org/abs/1506.02344">(pdf)</a>
+<a href="http://megasthenis.github.io/repository/ICML2015-StayOnPath-Presentation.pdf">(slides)</a></p>
+</li>
+</ul>
+<ul>
+<li><p>E.R. Elenberg, K. Shanmugam, M. Borokhovich and A.G. 
+Dimakis, <br>
+<a href="https://people.eecs.berkeley.edu/~alexdimakis/3profile_ext.pdf">Beyond Triangles: A Distributed Framework for Estimating 3-profiles of Large Graphs</a>  (KDD 2015, to appear)</p>
+</li>
+<li><p>I. Mitliagkas, M. Borokhovich, A.G. Dimakis and C. Caramanis, 
+<a href="http://mitliagkas.github.io/papers/FrogWild.pdf">FrogWild!-Fast PageRank Approximations on Graph Engines</a> (to appear 
+in VLDB 2015).</p>
+</li>
+<li><p>Two papers accepted to ISIT 2015</p>
+<ul>
+<li><p><a href="https://sites.google.com/a/utexas.edu/karthiksh/Approx-ISIT-Preprint.pdf">On approximating the sum-rate for multiple 
+unicasts</a>
+K. Shanmugam, M. Asteris and A.G. Dimakis</p>
+</li>
+<li><p><a href="http://arxiv.org/abs/1410.2920">Batch Codes through Dense Graphs with High Girth</a>
+A.S. Rawat, Z. Song, A.G. Dimakis and A. Gal</p>
+</li></ul>
+</li>
+<li><p>Two papers accepted in NIPS 2014.</p>
+<ul>
+<li><p><a href="http://arxiv.org/pdf/1402.3902.pdf">Sparse Polynomial Learning and Graph 
+Sketching</a> (Oral)<br> 
+M. Kocaoglu, K. Shanmugam, A.G. Dimakis, A. Klivans</p>
+</li>
+<li><p><a href="http://arxiv.org/pdf/1411.1434.pdf">On the Information Theoretic Limits of Learning Ising Models</a> <br> 
+R. Tandon, K. Shanmugam, P. Ravikumar, A.G. Dimakis</p>
+</li></ul>
+</li>
+<li><p><a href="http://arxiv.org/pdf/1410.2920.pdf">Batch Codes through Dense Graphs without Short Cycles</a>
+A.G. Dimakis, A. Gal, A.S. Rawat, Z. Song</p>
+</li>
+<li><p>Invited talk on coding theory for distributed storage at 
+<a href="http://acn2014.u-bordeaux.fr/">Algebra Codes and Networks</a> at Bordaux. 
+Talk <a href="https://people.eecs.berkeley.edu/~alexdimakis/Bordaux_ACN_Talk.pdf">Slides</a>.</p>
+</li>
+<li><p>Two papers accepted in ICML 2014.</p>
+<ul>
+<li><p><a href="https://people.eecs.berkeley.edu/~alexdimakis/NNSPCA_ICML.pdf">Nonnegative Sparse PCA with Provable Guarantees</a> <br>
+M. Asteris, D. Papailiopoulos, A.G. Dimakis <br>
+<a href="http://techtalks.tv/talks/nonnegative-sparse-pca-with-provable-guarantees/61122/">ICML video</a></p>
+</li>
+<li><p><a href="https://people.eecs.berkeley.edu/~alexdimakis/DKS_ICML.pdf">Finding Dense Subgraphs via Low-Rank Bilinear Optimization</a> <br>
+D. Papailiopoulos, I. Mitliagkas, A.G. Dimakis, C. Carmanis <br> 
+<a href="http://techtalks.tv/talks/finding-dense-subgraphs-via-low-rank-bilinear-optimization/61123/">ICML video</a></p>
+</li></ul>
+</li>
+<li><p>Three papers accepted in ISIT 2014.</p>
+<ul>
+<li><p><a href="https://sites.google.com/a/utexas.edu/karthiksh/GLRCIndexlong.pdf">Bounding Multiple Unicasts through Index Coding and 
+Locally Repairable Codes</a></p>
+</li>
+<li><p><a href="https://sites.google.com/a/utexas.edu/karthiksh/locallongver.pdf">Graph Theory versus Minimum Rank for Index Coding</a></p>
+</li>
+<li><p><a href="http://arxiv.org/abs/1402.2011">Locality and Availability in Distributed Storage</a></p>
+</li></ul>
+</li>
+<li><p>Our Locally Repairable Storage codes featured on <a href="http://highscalability.com/blog/2013/6/27/paper-xoring-elephants-novel-erasure-codes-for-big-data.html">High Scalability</a>, 
+<a href="http://storagemojo.com/2013/06/21/facebooks-advanced-erasure-codes/">StorageMojo</a> and <a href="http://techcrunch.com/2013/05/16/facebook-research-papers/">TechCrunch</a>.</p>
+</li>
+<li><p>Online Milibo tutorial <a href="http://www.youtube.com/watch?v=TPZyW_CnXGQ">Erasure codes over Hadoop</a> </p>
+</li>
+<li><p>New paper: <a href="http://arxiv.org/abs/1303.0551">Sparse PCA through Low-rank Approximations</a> (to appear in ICML 2013).
+<a href="http://www.birs.ca/events/2013/5-day-workshops/13w5136/videos/watch/201302261533-Dimakis.mp4">video of Sparse PCA talk</a></p>
+</li>
+<li><p>Our <a href="http://anrg.usc.edu/~maheswaran/Xorbas.pdf">Xorbas Hadoop</a> locally repairable codes paper will appear in 
+<a href="http://www.vldb.org/2013">VLDB 2013</a>. 
+Visit the <a href="http://smahesh.com/HadoopUSC/">Xorbas HDFS project homepage</a>.</p>
+</li>
+<li><p>I have moved to UT Austin. My <a href="http://www-bcf.usc.edu/~dimakis/">USC homepage</a> will no longer be updated. </p>
+</li>
+<li><p>Received a <a href="http://research.google.com/university/relations/research_awards.html">Google Faculty Research Award</a>. Support gratefully acknowledged.</p>
+</li>
+<li><p>Our paper received the 
+<a href="http://www.itsoc.org/honors/comsoc-information-theory-joint-paper-award">Communications Society &amp; Information Theory Society Joint Paper Award</a>.</p>
+</li>
+</ul>
+<p></p><hr>
+I maintain the <a href="http://storagewiki.ece.utexas.edu/">Distributed Storage Wiki</a>, an
+online bibliography about theoretical problems in large-scale distributed storage systems. 
+(Temprary offline, will need new host for this)<p></p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-08-21 02:00:50 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" async="" src="./index-files/js"></script><script async="" src="./index-files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-1331701-2', 'auto'); ga('send', 'pageview');
+</script>
+
+
+</body></html>

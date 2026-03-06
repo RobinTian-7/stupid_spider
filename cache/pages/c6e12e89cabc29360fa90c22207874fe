@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="artificial intelligence, machine learning, boyang li, narrative intelligence" />
+<meta name="description" content="Boyang Li's Personal Website" />  
+
+<title>Boyang "Albert" Li</title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<!-- My Style -->
+<link href="./css/style2021.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body class="bg-white">
+
+<header class="section-header py-4">
+<div class="container" id="header">
+	<h2>Boyang "Albert" Li</h2>
+	<p>Nanyang Associate Professor</p>
+	<p>College of Computing and Data Science</p>
+	<p>Nanyang Technological University</p>
+	<div class="mt-1">
+	<a class="btn btn-outline-dark btn-sm" href="https://scholar.google.com/citations?user=QwL4z2UAAAAJ"><i class="bi bi-google"></i>  Scholar</a> 
+	<a class="btn btn-outline-dark btn-sm" href="https://www.youtube.com/channel/UCqSLN1NKHcVwI-GZe97jBpA/featured"><i class="bi bi-youtube"></i>  YouTube</a> 
+	<a class="btn btn-outline-dark btn-sm" href="https://twitter.com/AlbertBoyangLi"><i class="bi bi-twitter"></i>  Twitter</a>
+	</div>
+</div>
+</header> <!-- section-header.// -->
+
+<!-- ========================= SECTION CONTENT ========================= -->
+
+<div class="modal fade " id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" data-dismiss="modal">
+	<div class="modal-content">              
+	  <div class="modal-body">
+		<img src="" class="imagepreview" style="width: 100%;" >
+	  </div>
+	</div>
+  </div>
+</div>
+		
+<div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-right sticky-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	<ul class="navbar-nav px-1">
+		<li class="nav-item px-1 "> <a class="nav-link" href="./index.html">Home </a> </li>
+		<li class="nav-item dropdown px-1"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Research </a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href='machine-learning.html'><span>Machine Learning</span></a></li>
+				<li><a class="dropdown-item" href='multimodal.html'><span>Multimodal Learning</span></a></li>
+				<li><a class="dropdown-item" href='data-centric.html'><span>Data-centric AI</span></a></li>
+				<li><a class="dropdown-item" href='story-understanding.html'><span>Story Understanding</span></a></li>
+				<li><a class="dropdown-item" href='openstory.html'><span>Acquiring Story Knowledge</span></a></li>
+				<li><a class="dropdown-item" href='interactive-narrative.html'><span>Interactive Narrative</span></a></li>
+				<li><a class="dropdown-item" href='story-generation.html'><span>Story Generation</span></a></li>
+				<li><a class="dropdown-item" href='story-cogsci.html'><span>Story and Cognition</span></a></li>
+		    </ul>
+		</li>
+		<li class="nav-item px-1"><a class="nav-link" href="./publications.html"> Publications </a></li>
+		<li class="nav-item px-1">	<a class="nav-link" href="./group.html"> Group </a>
+		<li class="nav-item px-1">	<a class="nav-link" href="./teaching.html">Teaching</a>
+		<li class="nav-item px-1">	<a class="nav-link" href="./cv.pdf"> CV </a>
+		</li>
+	</ul>
+  </div> <!-- navbar-collapse.// -->
+</nav>
+
+<section class="section-content py-4 main-text">
+
+<h4 class="d-flex justify-content-center mt-2 mb-4">A Message for Applicants of Short-term Visiting Positions</h4>
+
+	
+	<p>I receive many emails expressing interest in becoming a short-term visitor at my lab. While I appreciate the interest, please understand that supervising someone requires an enormous amount of time and energy. In addition, I will have to support your research with sufficient computational resources, such as GPU cards or cloud credits. </p> 
+	
+	<p>As a general rule, I can only accept visitors under exceptional circumstances. A successful applicant should have substantial knowledge of deep learning, have published papers in top-tier conferences such as CVPR, ACL, AAAI, etc., and can commit to a minimum of 6 months at the lab. The ability to source your own GPUs would be a strong plus. </p> 
+	
+	<p>Alternatively, if you have a local supervisor that I know, there is the possibility of a co-supervisory arrangment.</p>
+	
+	<p>I notice that many applicants stayed at their previous labs for 3 months or shorter, typically without any material result or publication. I can see why people may think staying at many different labs and working with many famous researchers add to their resume, but my view is different. Scientific research, for better or worse, requires in-depth knowledge of an area and persistence. One does not gain or demonstrate these things by constantly switching between areas and labs. I strongly advise against this behavior.</p> 
+	
+	<p>Due to the sheer volume of emails I receive, I will not be able to reply to every email. To make sure I read your email, please include "Elaborate Elephant" in the subject.</p> 
+	
+</section>
+
+</div><!-- container //  -->
+
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=9379014; 
+var sc_invisible=1; 
+var sc_security="c7c6aca0"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter_xhtml.js'></"+"script>");
+//]]>
+</script>
+<noscript><div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/" class="statcounter"><img
+class="statcounter"
+src="http://c.statcounter.com/9379014/0/c7c6aca0/1/"
+alt="free web stats" /></a></div></noscript>
+</body>
+</html>

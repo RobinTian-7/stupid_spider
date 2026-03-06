@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    
+<meta charset="UTF-8">
+
+<title>Home</title>
+<style>
+    header {
+        width: 100%;
+        background-color: rgb(122,0,25);
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    body {
+        background-color: #FFF5E1;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .image-container {
+        display: flex;
+        align-items: center;@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* 将导航栏变为竖直方向 */
+                align-items: flex-start;
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%; /* 使链接在窄屏幕时占满整个宽度 */
+                box-sizing: border-box;
+            }
+            .top-image {
+                height: 60px;
+                width: 130px;
+            }
+        }
+    }
+
+    .top-image {
+        margin-right: 20px; /* 添加右边距以确保导航栏紧挨着 logo */
+        height: 80px;
+        width: 170px;
+        background: none;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .navbar a {
+        color: white;
+        text-align: center;
+        padding: 14px 25px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* 将导航栏变为竖直方向 */
+                align-items: flex-start;
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%; /* 使链接在窄屏幕时占满整个宽度 */@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* 将导航栏变为竖直方向 */
+                align-items: flex-start;
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%; /* 使链接在窄屏幕时占满整个宽度 */
+                box-sizing: border-box;
+            }
+            .top-image {
+                height: 60px;
+                width: 130px;
+            }
+        }
+                box-sizing: border-box;
+            }
+            .top-image {
+                height: 60px;
+                width: 130px;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .section {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-column img {
+        width: 150px;
+        height: 225px;
+        border-radius: 4px;
+    }
+    .info-column, .bio-column {
+        flex: 4;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio-column {
+        padding-left: 0;
+    }
+    .info, .laboratory, .news, .research-sponsors {
+        margin-bottom: 20px;
+    }
+    .info p, .laboratory ul, .news ul {
+        margin: 10px 0;
+    }
+    .news ul, .laboratory ul {
+        list-style: none;
+        padding: 0;
+    }
+    .news li {
+        margin-bottom: 5px;
+    }
+     @media (max-width: 1024px) {
+            header {
+                flex-direction: column; /* 将header变为竖直方向 */
+                align-items: center; /* 居中对齐 */
+            }
+            .navbar {
+                flex-direction: column; /* 将导航栏变为竖直方向 */
+                align-items: center;
+                width: 100%; /* 使导航栏在窄屏幕时占满整个宽度 */
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%; /* 使链接在窄屏幕时占满整个宽度 */
+                box-sizing: border-box;
+            }
+            .top-image {
+                height: 60px;
+                width: 130px;
+                margin-right: 0; /* 去掉右边距 */
+                margin-bottom: 10px; /* 添加底部间距 */
+            }
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <!--
+            <a href="https://twin-cities.umn.edu/">
+                <img src="university-of-minnesota.png" alt="Image 1" class="top-image">
+            </a>
+            -->
+        </div>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="publication.html">Publications</a>
+            <a href="Awards_Activities.html">Awards &amp; Activities</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Projects</a>
+            
+            <a href="team.html">Team</a>
+            
+            <a href="news.html">News</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <div class="image-column">
+                <img src="cw4.jpg" alt="Caiwen Ding">
+            </div>
+            <div class="info-column">
+                <h1>Caiwen Ding</h1>
+                <div class="info">
+                    <p>Computer Science and Engineering<br />
+                    University of Minnesota, Twin Cities<br />
+                    Room 6-201 Keller Hall<br />
+                    200 Union Street S.E. Minneapolis, MN 55455-0159</p>
+                    <p>Contact:<br />
+                    Email: dingc@umn.edu<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="bio-column">
+                <div class="bio">
+                    <p>Caiwen joined as an Associate Professor in the <a href="https://cse.umn.edu/cs">Department of Computer Science & Engineering</a> at <a href="https://twin-cities.umn.edu/">University of Minnesota Twin Cities</a> in Aug 2024. Previously, he was  an assistant professor in the School of Computing at the University of Connecticut. He received his Ph.D. degree from Northeastern University (NEU), Boston in 2019, supervised by <strong><a href="https://web.northeastern.edu/yanzhiwang/">Prof. Yanzhi Wang</a></strong>. His interests include Algorithm-system co-design of machine learning/artificial intelligence; computer architecture and heterogeneous computing (FPGAs/GPUs); privacy-preserving machine learning; machine learning for electronic design automation (EDA); neuromorphic computing; computer vision and natural language processing.</p>
+                    <p>His work has been frequently published in high-impact conferences (e.g., DAC, ICCAD, ASPLOS, ISCA, MICRO, HPCA, CCS, Oakland, SC, FPGA, MLSys, NeurIPS, ICML, CVPR, AAAI, ACL, EMNLP, IJCAI, ICRA, DATE). He is a recipient of the NSF CAREER Award, Amazon Research Award, and CISCO Research Award. He received the Best Paper Award at the 2025 IEEE International Conference on LLM-Aided Design (ICLAD), 2023 AAAI DL-Hardware Co-Design for AI Acceleration (DCAA) workshop, Outstanding student paper award at 2023 HPEC, Best Paper Award Nomination at DATE 2018 and DATE 2021, and publicity paper at DAC 2022. His team won first place in accuracy and fourth place overall at the 2022 ACM/IEEE TinyML Design Contest at ICCAD. He received two UConn Research Excellence Awards in 2021 and 2023, respectively, and the 2021 Excellent in Teaching Award from UConn Provost.</p>
+                    <p><a class="dhtgD aw5Odc external" href="https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en" target="_blank" rel="noopener"><strong>Google Scholar</strong></a> <strong><a href="https://dblp.org/pid/175/2489.html">DBLP</a> <a href="https://www.semanticscholar.org/author/Caiwen-Ding/2881873">Semantic Scholar</a></strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="info-column">
+                <div class="laboratory">
+                    <ul>
+                        <li>Visit our <a href="https://github.com/ies-uconn">GitHub repository</a>!</li>
+                    </ul>
+                </div>
+                <div id="i4c-dialogs-container">
+                    <em><strong>[To Prospective Ph.D./postdoc Applications]</strong> I am always looking for highly-motivated Ph.D./postdoc students who have strong interests in FPGAs/GPUs programming, EDA/Architecture, or machine learning/deep learning, with full financial support. You are welcome to drop me an email at <strong>cwen1988@gmail.com</strong> (receiving too many emails from my umn email address) with your materials such as CV and transcripts and mention my name in your application. PostDoc application portal:<a href="https://hr.myu.umn.edu/jobs/ext/365657"> https://hr.myu.umn.edu/jobs/ext/365657</a>. The "Job Opening ID" is <strong>#365657</strong>.</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="info-column">
+                <div class="news">
+                    <h3 class="widget-title">Recent News</h3>
+                    <ul>
+                        
+                        <li>01/2026 Two Papers are accepted by 2026 <strong>ICLR</strong>.</li>
+                        <li>01/2026 Honored to receive a Gift Grant from Amazon.</li>
+                        <li>12/2025 Honored to receive a Research Grant from DOE/LLNL.</li>
+                        <li>09/2025 Two Papers are accepted by 2025 <strong>NeurIPS</strong>.</li>
+                         <li>08/2025 Honored to receive a Research Grant from NSF. </li>
+                            <li>07/2025 Two Papers are accepted by 2025 <strong>ICCAD</strong>.</li>
+                <li>06/2025 HiVeGen won <strong>Best Paper Award</strong> at 2025 <strong>ICLAD</strong>!</li>
+                  <li>05/2025 Amit starts summer intern at Adobe Research. Congrats!</li>
+                  <li>05/2025 Xi starts summer intern at Nvidia. Congrats!</li>
+                        <li>04/2025 Two papers are accepted to 2025 <strong>ICS</strong>.</li>
+                           <li>   04/2025 One paper is accepted to  Scientific Reports.</li>
+                        <li>03/2025 Honored to receive a CISCO Research Award.</li>
+                        <li>03/2025 Our workshop proposal “DCgAA 2025: International Workshop on DL-Hardware Co-Design for Generative AI Acceleration” is accepted to DAC 2025.</li>
+                        <li>02/2025 One paper is accepted to 2025 <strong>CVPR </strong>. <li>
+                        <li>02/2025 Honored to receive a Research Grant from the DOE Lawrence Livermore National Laboratory as PI. <li>
+                        <li>01/2025 One paper is accepted to 2025 <strong>ICLR. </strong> <li>
+                        <li>12/2024 Hongwu has successfully defended and will be joining Adobe Research as a full-time Research Scientist. Congratulations, Dr. Peng!</li>
+                        <li>11/2024 Honored to receive a Research Grant from DOE. </li>
+                        <li>10/2024 Our team won third place at the <a href="https://nvlabs.github.io/LLM4HWDesign/results.html">2024 ICCAD Contest on LLM-Assisted Hardware Code Generation</a>. Thanks to Dr. Yu from UMD for the leading effort!
+                        <li>09/2024 One paper is accepted to 2024 <strong>NeurIPS</strong>. As of Oct 2024, MACM Ranked #1 on Math Word Problem Solving on MATH in paperwithcodes.
+                        <li>09/2024 Shanglin has successfully defended and will be joining Walmart AI Lab as a full-time Senior Data Scientist. Congratulations, Dr. Zhou!
+                        <li>09/2024 Honored to receive a Research Grant from the DOT Safe Streets and Roads for All (SS4A) Grant Program. </li>
+                        <li>08/2024 Caiwen joins as an Associate Professor in the CS&E Department at University of Minnesota Twin Cities in Fall 2024.</li>
+                        <li>08/2024 Honored to receive a Research Grant from NIH/NCI. </li>
+                        <li>07/2024 One paper is accepted to 2024 <strong>ECCV</strong>.
+                        <li>06/2024 One paper is accepted to 2024 <strong>ICCAD</strong>.
+                        <li>05/2024 We have a fruitful School of Computing Annual PhD Fellowship achievement this year. Kiran receives Predoctoral Honorable Mention; Jiahui receives Predoctoral Fellowship; Hongwu receives Predoctoral Prize for Research Excellence; Shaoyi receives Marion and Frederick Buckman Engineering Fellowship; Shanglin receives Predoctoral Fellowship; Amit receives Professor Reda Ammar Fellowship. Congrats to everyone!</li>
+                        <li>05/2024 Hongwu starts summer intern at Adobe Research. Congrats!</li>
+                        <li>05/2024 Shaoyi is selected as one of the <a href="https://mlcommons.org/2024/02/call-for-ml-and-systems-rising-stars-2024/">2024 ML and Systems Rising Stars</a>. Congrats!</li>
+                        <li>05/2024 Shaoyi will join as a Tenure-Track Assistant Professor in the <a href="https://www.stevens.edu/school-engineering-science/departments/computer-science">Department of Computer Science</a> at Stevens Institute of Technology in Fall 2024. Congrats!</li>
+                        <li>04/2024 Honored to receive a Research Grant from Connecticut Cooperative Transportation Research Program (CCTRP).</li>
+                        <li>04/2024 Invited to serve as ComSys track co-chair for 2024 ICCD.</li>
+                        <li>04/2024 Invited to serve on the external review committee for 2024 MICRO.</li>
+                        <li>04/2024 One paper is accepted by 2024 <strong>ICS</strong>.</li>
+                        <li>03/2024 Invited to serve as a reviewer at ECCV 2024, ACL 2024, IJCAI 2024.</li>
+                        <li>03/2024 Honored to receive an Amazon Research Award.</li>
+                        <li>03/2024 One paper is accepted by 2024 <strong>ICPE</strong>.</li>
+                        <li>02/2024 Our workshop proposal “DCgAA 2024: International Workshop on DL-Hardware Co-Design for Generative AI Acceleration” is accepted to DAC 2024.</li>
+                        <li>02/2024 Honored to receive the NSF CAREER Award.</li>
+                        <li>02/2024 Honored to receive a CISCO Research Award.</li>
+                        <li>12/2023 Honored to receive a Research Grant from the DOE Lawrence Livermore National Laboratory as PI.</li>
+                        <li>12/2023 Honored to receive a Research Grant from the DOT NEUTC program as PI.</li>
+                        <li>11/2023 One paper is accepted by 2024 <strong>DATE.</strong></li>
+                        <li>11/2023 One paper is accepted by 2024 <strong>ASPLOS. </strong>[<a href="https://github.com/harveyp123/MaxK-GNN">Codes</a>]</li>
+                        <li>11/2023 One paper is accepted by <strong>IEEE CAL.</strong></li>
+                        <li>11/2023 One paper is accepted by <strong>IEEE I-ITS.</strong></li>
+                        <li>10/2023 One paper is accepted by 2024 <strong>HPCA.</strong></li>
+                        <li>9/2023 One paper is accepted by 2023 <strong>NeurIPS.</strong></li>
+                        <li><a href="news.html">More News</a></li>
+                    </ul>
+                </div>
+                <div class="research-sponsors">
+                    <h3 class="widget-title">Research Sponsors:</h3>
+                    <img fetchpriority="high" decoding="async" width="400" height="282" src="sponsor/sponsor.png" class="image wp-image-1811 attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://caiwending-cse.media.uconn.edu/wp-content/uploads/sites/2888/2024/04/Screenshot-2024-04-04-000026-400x282.png 400w, https://caiwending-cse.media.uconn.edu/wp-content/uploads/sites/2888/2024/04/Screenshot-2024-04-04-000026-768x541.png 768w, https://caiwending-cse.media.uconn.edu/wp-content/uploads/sites/2888/2024/04/Screenshot-2024-04-04-000026.png 913w" sizes="(max-width: 400px) 100vw, 400px">
+                </div>
+                <div class="clustrmaps">
+                    <p><a href="https://clustrmaps.com/site/1c0cx"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=kI-bV_qP7W1AotPjRHG6FuASmOuo2O2_4yYrAGxLYxw&cl=ffffff" /></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

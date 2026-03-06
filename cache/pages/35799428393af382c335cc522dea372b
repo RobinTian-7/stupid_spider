@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>Learning Data-driven Reflectance Priors for Intrinsic Image Decomposition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <script src="lib.js" type="text/javascript"></script>
+        <script src="popup.js" type="text/javascript"></script>
+       
+        <script type="text/javascript">
+            // redefining default features
+            var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
+            </script>
+        <link media="all" href="glab.css" type="text/css" rel="StyleSheet">
+            <style type="text/css" media="all">
+                IMG {
+                    PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    FLOAT: right;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px
+                }
+            #primarycontent {
+                MARGIN-LEFT: auto; ; WIDTH: expression(document.body.clientWidth >
+                800? "800px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width:
+                800px }
+            BODY {
+                TEXT-ALIGN: center
+            }
+            </style>
+            
+        <meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script src="b5m.js" id="b5mmain" type="text/javascript"></script></head>
+
+<body>
+    
+    <div id="primarycontent">
+        <center><h1>Learning Data-driven Reflectance Priors for Intrinsic Image Decomposition</h1>
+            <a href="http://www.eecs.berkeley.edu/~tinghuiz/projects/learnReflectance/images/teaser_h.png">
+                <img src="images/teaser_h.png" width="800" align="right"> </a></center>
+        <table align="left">
+        <tr>
+        <td>
+        <h2>People</h2>
+        <ul id="people">
+            <li><a href="http://www.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a>
+            </li>
+            <li><a href="http://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl</a>
+            </li>
+            <li><a href="http://www.eecs.berkeley.edu/~efros/">Alexei A. Efros</a>
+            </li></ul>
+        
+        
+        
+        <h2>Abstract</h2>
+        
+        <p>We propose a data-driven approach for intrinsic image decomposition, which is the process of inferring the confounding factors of reflectance and shading in an image. We pose this as a two-stage learning problem. First, we train a model to predict relative reflectance ordering between image patches (`brighter', `darker', `same') from large-scale human annotations, producing a data-driven reflectance prior. Second, we show how to naturally integrate this learned prior into existing energy minimization frameworks for intrinsic image decomposition. We compare our method to the state-of-the-art approach of Bell et al. on both decomposition and image relighting tasks, demonstrating the benefits of the simple relative reflectance prior, especially for scenes under challenging lighting conditions.</p>
+        <br>
+        </td>
+            </tr>
+        </table>
+        
+        <a href="http://www.eecs.berkeley.edu/~tinghuiz/papers/iccv15_lrp.pdf"><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="images/paper_thumbnail.png"></a>
+        
+        
+        
+        <h3>Paper</h3>
+        ICCV'15 <a href="http://www.eecs.berkeley.edu/~tinghuiz/papers/iccv15_lrp.pdf">paper</a>. (pdf, 10.4MB)<br> <br>
+        
+        <i>(There was an indexing typo in computing the MPRE metric in the version we submitted to the ICCV'15 proceedings. Please refer to the above link for corrected version.)</i>
+        </p>
+        
+<!--        <h3>Citation</h3>-->
+<!--        <p>Tinghui Zhou, Yong Jae Lee, Stella X. Yu, Alexei A. Efros. <b>FlowWeb: Joint Image Set Alignment by Weaving Consistent, Pixel-wise Correspondences.</b>-->
+<!--        <br>-->
+<!--        In <i>CVPR 2015</i>.-->
+<!--        </p>-->
+        <h3>Code</h3>
+        See <a href="https://github.com/tinghuiz/learn-reflectance">Github</a>. <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Acknowledgement</h2>
+        This research is supported by ONR MURI N000141010934, Intel research grant, and Nvidia hardware donation.
+
+</body></html>

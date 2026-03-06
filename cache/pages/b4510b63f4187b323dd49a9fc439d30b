@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chris Piech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style-oct23.css" rel="stylesheet">
+
+  <!-- Le scripts -->
+  <script src="plugins/jquery.min.js"></script>
+</head>
+
+<body>
+<div id = 'tabletBottom'>
+    <input id='tunnel' type="image" src="darknet/images/tunnel.png" OnClick="Main.tunnelOnClick();">
+</div>
+<div id="fullBody">
+
+	<!-- this is going to contain the entire page -->
+
+	<script>
+        Main = function() {
+        };
+
+        Main.tabletOpen = false;
+
+        Main.secretOnClick = function() {
+          console.log('test')
+          if (Main.tabletOpen) {
+            Main.closeTablet();
+          } else {
+            Main.openTablet();
+          }
+          Main.tabletOpen = !Main.tabletOpen;
+        }
+
+        Main.tunnelOnClick = function() {
+          $('body').append('<div id="theLights"></div>');
+          $('#theLights').fadeTo(900.0, 1.0, function() {
+              window.location = 'darknet.html';
+            });
+        }
+
+        Main.openTablet = function() {
+          console.log($('#tableTop'))
+          $('#secretButton').css('z-index', 0);
+          $('#fullBody').css('position', 'absolute');
+          $('#fullBody').animate({
+            left : '1000px'
+          }, 2000);
+        }
+
+        Main.closeTablet = function() {
+
+          $('#fullBody').animate({
+            left : '0px'
+          }, 2000, function() {
+            $('#secretButton').css('z-index', 999);
+            $('#fullBody').css('position', 'relative');
+          });
+        }
+      </script>
+
+
+
+  <div class="container" id="inner">
+    <!--  header -->
+    <div class="row mt-5">
+      <div class="col-xs-6 col-sm-3">
+        <a class="thumbnail profilePicture"> <img src="images/people/chrisP.jpg" onclick="Main.secretOnClick();"> </a>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <h1>Chris Piech</h1>
+        <p>
+          <hr />
+        </p>
+        <p>
+          Assistant Professor of <a href="http://cs.stanford.edu">Computer Science</a> Education, Stanford University.
+          <br />
+          PhD advised by <a href="http://geometry.stanford.edu/member/guibas/">Leo Guibas</a> and <a
+            href="http://robotics.stanford.edu/users/sahami/bio.html">Mehran Sahami</a>.
+        </p>
+
+        <p>
+          <span class="sidebaricon glyphicon glyphicon-home" aria-hidden="true" /></span> Office: CODA Building, Room
+          E126 <br />
+          <span class="sidebaricon glyphicon glyphicon-envelope" aria-hidden="true" /></span> Email: piech <i>at</i>
+          cs.stanford.edu <br />
+          <span class="" aria-hidden="true" /><img class="sidebarimg"
+            src="//stanford.edu/~cpiech/bio/images/icons/twitter.png"></img></span> Twitter: <a
+            href="https://twitter.com/chrispiech">@chrispiech</a><br />
+          <span class="" aria-hidden="true" /><span class="sidebaricon glyphicon glyphicon-asterisk"></span></span> <a
+            href="https://piechlab.stanford.edu/">The Piech Lab</a>
+        </p>
+      </div>
+      <div class="col-xs-12" style="margin-top:20px">
+        <p>
+          <em>I was born and grew up in Nairobi, Kenya.
+            When I was twelve I moved to Kuala Lumpur, Malaysia where I lived until I came to Stanford for university,
+            liked it a lot and stayed.
+            I love teaching and I'm into exploring our world (through both science and travelling). My research is in
+            machine learning to understand human learning.</em>
+        </p>
+
+<div class="well">
+  <div style="margin-bottom:5px"><b>News</b> (Jan, 2025):</div>
+  <div style="margin-bottom:5px"><b class="newsTitle"> <a href="https://codeinplace.stanford.edu">Code in
+        Place</a></b> returns April 2025. CS106A online to 40k students with 4k volunteer TAs. The course in the
+    world with the most teachers?!</div>
+
+
+  <div style="margin-bottom:5px"><b class="newsTitle">Best paper awards</b>: The lab is humbled to have received
+    best paper awards from
+
+    <a href="//stanford.edu/~cpiech/bio/papers/errorMessages.pdf">SIGCSE'24</a>,
+    <a href="//stanford.edu/~cpiech/bio/papers/handwrittencode.pdf">L@S'24</a>,
+    <a href="//stanford.edu/~cpiech/bio/papers/aiteachertest.pdf">EDM'22</a>,
+    <a href="//stanford.edu/~cpiech/bio/papers/variationalItemResponseTheory.pdf">EDM'20</a>,
+    <a href="//stanford.edu/~cpiech/bio/papers/crossBorderCoteaching.pdf">L@S'20</a> and
+    <a href="//stanford.edu/~cpiech/bio/papers/zeroShotCode.pdf">AAAI'19</a>
+  </div>
+
+  <!-- <div style="margin-bottom:5px"><b class="newsTitle"> <a href="https://codeinplace.stanford.edu">Keynote at L@S</a></b> returns April 2025. CS106A online to 40k students with 4k volunteer TAs. The course in the
+world with the most teachers?!</div> -->
+
+  <div style="margin-bottom:5px"><b class="newsTitle"> <a href="https://codeorg.medium.com/code-org-wins-2024-best-of-stem-award-155e55bde866">Best of STEM 2024 award</a></b> for best use of AI for Teaching and Learning with Code.org. Awarded for "AI teaching Assistant".</div>
+  
+</div>
+
+
+<!-- Past news -->
+
+  <!-- <div style="margin-bottom:5px"><b class="newsTitle">AI Visual Acuity Test</b>: Our new <a href="https://myeyes.ai/">AI based algorithm</a> for precisely measuring vision was covered in <a href="https://www.sciencemag.org/news/2020/06/eye-robot-artificial-intelligence-dramatically-improves-accuracy-classic-eye-exam">Science Magazine</a> and <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02149-8/fulltext">the Lancet</a> [<a href="https://arxiv.org/pdf/1906.01811.pdf">paper</a>].</div> -->
+
+
+  <!-- <div style="margin-bottom:5px"><b class="newsTitle">HAI Hoffman-Yee grant</b>: A group of CS and Education professors were recently awarded an HAI Hoffman-Yee grant and won a renewal.</div> -->
+
+  <!-- <div style="margin-bottom:5px"><b class="newsTitle">Grading Open-Ended Midterms</b>: Our work to rubric-grade novel open-ended exams was covered in the New York Times. See the <a href="http://ai.stanford.edu/blog/prototransformer/">HAI blog</a>.</div> -->
+  
+
+        <hr />
+      </div>
+    </div>
+
+    <!-- classes -->
+
+<div class="row">
+  <div class="col-xs-12">
+
+    <h2 class="bioLead">
+      Teaching at Stanford
+    </h2>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3">
+    <div class="course well">
+      <h4>CS106A</h4>
+      <p>
+        <a href="http://web.stanford.edu/class/archive/cs/cs106a/cs106a.1246/">Programming Methodologies</a>
+      </p>
+      <p class="subtleHeading no-margin">Last: Spr 2023</p>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3">
+    <div class="well course">
+      <h4>CS109</h4>
+      <p>
+        <a href="http://web.stanford.edu/class/archive/cs/cs109/cs109.1254/">Probability for Computer Scientists</a>
+      </p>
+      <p class="subtleHeading no-margin">Last: Win 2025</p>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3">
+    <div class="course well">
+      <h4>CS398</h4>
+      <p>
+        <a href="http://cs398.stanford.edu/">Computational Education</a><br/><br/>
+      </p>
+      <p class="subtleHeading no-margin">Last: Fall 2019</p>
+    </div>
+  </div>
+  
+  <div class="col-xs-6 col-sm-3 col-md-3">
+    <div class="well course">
+      <h4>CS106B</h4>
+      <p>
+        <a href="http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1172/">Programming<br/> Abstractions</a>
+      </p>
+      <p class="subtleHeading no-margin">Last: Fall 2016</p>
+    </div>
+  </div>
+   <div class="col-xs-12">
+  <p>I co-created and co-taught <a href="https://codeinplace.stanford.edu/">Code in Place</a>. I last taught CS221 in <a href="http://www.stanford.edu/class/cs221/">Summer 2013</a></p>
+  </div>
+    
+
+</div>
+
+<hr/>
+    <!-- papers -->
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Recent Papers <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=fpT49d8AAAAJ"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></a></h2>
+  </div>
+</div>
+<div class="row">
+
+
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/connections.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/connections.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/connections.pdf">Fostering and Understanding Diverse Interpersonal Connections in a Massive Online CS1 Course</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Li, A. Malik, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education. 2025 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/softgrades.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/softgrades.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/softgrades.pdf">Soft Grades: A Calibrated and Accurate Method for Course-Grade Estimation that Expresses Uncertainty</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          J. Woodrow, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 14th International Learning Analytics and Knowledge Conference. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/teachnow.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/teachnow2.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/teachnow.pdf">TeachNow: Enabling Teachers to Provide Spontaneous, Realtime 1: 1 Help in Massive Online Courses</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Malik, J. Woodrow, C. Wang, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 2024 on Innovation and Technology in Computer Science Education </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/gptsurprise.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/gptsurprise.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/gptsurprise.pdf">The GPT Surprise: Offering Large Language Model Chat in a Massive Coding Class Reduced Engagement but Increased Adopters&#039; Exam Performances</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Nie, Y. Chandak, M. Suzara, A. Malik, J. Woodrow, M. Peng, M. Sahami, E. Brunskill, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>White Paper </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/stochasticgrade.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/stochasticgrade.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/stochasticgrade.pdf">Grading and Clustering Student Programs That Produce Probabilistic Output</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          Y. Kim, J. Geathers, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 17th International Conference on Educational Data Mining. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/handwrittencode.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/handwritten.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/handwrittencode.pdf">Handwritten Code Recognition for Pen-and-Paper CS Education</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          S. Islam, M. Doumbouya, C. Manning, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Eleventh ACM Conference on Learning@ Scale, 2024 </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Undergraduate Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/errorMessages.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/errors.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/errorMessages.pdf">A large scale RCT on effective error messages in CS1</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          S. Wang, J. Mitchell, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education, Portland, USA. 2024 </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/tarzantotolkien.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/tarzantotolkien.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/tarzantotolkien.pdf">From Tarzan to Tolkien: Controlling the Language Proficiency Level of LLMs for Content Generation</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Malik, S. Mayhew, C. Piech, K. Bicknell
+        </p>
+        
+       
+        <p >
+          <i>Findings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL) 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/learnersTeachingNovices.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/avt.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/learnersTeachingNovices.pdf">Learners Teaching Novices: An Uplifting Alternative Assessment</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Malik, J. Woodrow, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education, Portland, USA. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/breakoutGrading.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/breakout.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/breakoutGrading.pdf">A Fast and Accurate Machine Learning Autograder for the Breakout Assignment</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          E. Liu, D. Yuan, A. Ahmed, E. Cornwall, J. Woodrow, K. Burns, A. Nie, E. Brunskill, C. Piech, C. Finn
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education, Portland, USA. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/aiStyle.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/styleai.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/aiStyle.pdf">AI Teaches the Art of Elegant Coding: Timely, Fair, and Helpful Style Feedback in a Global Course</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          J. Woodrow, A. Malik, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education, Portland, USA. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/pyodideU.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/ide.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/pyodideU.pdf">PyodideU: Unlocking Python Entirely in a Browser for CS1</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          T. Jefferson, C. Gregg, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 55th ACM Technical Symposium on Computer Science Education, Portland, USA. 2024 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/GPTeach.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/GPTeach.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/GPTeach.pdf">GPTeach: Interactive TA Training with GPT Based Students</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          J. Markel, S. Opferman, J. Landay, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Tenth ACM Conference on Learning@ Scale. 2023 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/teacherfeedback.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/teacherfeedback.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/teacherfeedback.pdf">Can automated feedback improve teachers&#039; uptake of student ideas? evidence from a randomized controlled trial in a large-scale online course</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          D. Demszky, J. Liu, H. C. Hill, D. Jurafsky, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Journal of Educational Evaluation and Policy Analysis. 2023 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/hrcf.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/hrcf.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/hrcf.pdf">High-Resolution Course Feedback: Timely Feedback Mechanism for Instructors</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          Y. Kim, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Tenth ACM Conference on Learning@ Scale. 2023 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/zipf.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/zipf.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/zipf.pdf">The Student Zipf Theory: Inferring Latent Structures in Open-Ended Student Work To Help Educators</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          Y. Kim, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 13th International Learning Analytics and Knowledge Conference. 2023 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/VTIRT.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/VTIRT.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/VTIRT.pdf">Variational temporal IRT: Fast, accurate, and explainable inference of dynamic learner proficiency</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          Y. Kim, S. Sankaranarayanan, C. Piech, C. Thille
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Tenth ACM Conference on Learning@ Scale. 2023 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/moca.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/moca.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/moca.pdf">MoCa: Measuring Human-Language Model Alignment on Causal and Moral Judgment Tasks</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Nie, Y. Zhang, A. Shailesh Amdekar, C. Piech, T. Hashimoto, T. Gerstenberg
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, 2023. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/aiteachertest.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/aiteachertest.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/aiteachertest.pdf">The AI teacher test: Measuring the pedagogical ability of blender and GPT-3 in educational dialogues</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Tack, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 15th International Conference on Educational Data Mining. 2022. </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/MABSplit.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/MABSplit.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/MABSplit.pdf">MABSplit: Faster Forest Training Using Multi-Armed Bandits</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Tiwari, R. Kang, J. Lee, S. Thrun, C. Piech, I. Shomorony, M. Zhang
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, 2022. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/BanditPAM.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/banditPAM.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/BanditPAM.pdf">Banditpam: Almost linear time k-medoids clustering via multi-armed bandits</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Tiwari, M. J. Zhang, J. Mayclin, S. Thrun, C. Piech, I. Shomorony
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, 2022. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/functionNames.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/functionNames.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/functionNames.pdf">Function Names: Quantifying the Relationship Between Identifiers and Their Functionality to Improve Them</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Charitsis, C. Piech, J. Mitchell
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Ninth ACM Conference on Learning@ Scale. 2022 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/programDecomposition.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/programDecomposition.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/programDecomposition.pdf">Using NLP to Quantify Program Decomposition in CS1</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Charitsis, C. Piech, J. Mitchell
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Ninth ACM Conference on Learning@ Scale. 2022 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/foundationModels.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/foundationmodels.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/foundationModels.pdf">Foundation Models for Education</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Malik, D. Demszky, P. Koh, M. Doumbouya, D. Hudson, A. Nie, H. Nilforoshan, A. Tamkin, E. Brunskill, N. Goodman, C. Piech
+        </p>
+        
+       
+        <p >
+          <i> Center for Research on Foundation Models (CRFM). 2022 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/speed.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/speed.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/speed.pdf">Variation in respondent speed and its implications: Evidence from   an adaptive testing scenario</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          B. Domingue, K. Kanopka, B. Stenhaug, J. Soland, M. Kuhfeld, S. Wise, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Journal of Educational Measurement 58, no. 3: 335-363. 2021. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/speedaccuracy.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/speedaccuracy.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/speedaccuracy.pdf">SpeedâAccuracy Trade-Off? Not So Fast: Marginal Changes in Speed Have Inconsistent Relationships With Accuracy in Real-World Settings</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          B. Domingue, K. Kanopka, B. Stenhaug, M. Sulik, T. Beverly, M. Brinkhuis, R. Circi, J. Faul, D. Liao, B. McCandliss, J. ObradoviÄ, C. Piech, T. Porter, J. Soland, J. Weeks, S. Wise, J. Yeatman
+        </p>
+        
+       
+        <p >
+          <i>Journal of Educational and Behavioral Statistics 47.5: 576-602. 2022. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/generativeGrading.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/generativeGrading.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/generativeGrading.pdf">Generative Grading: Near Human-level Accuracy for Automated Feedback on Richly Structured Problems</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Malik, M. Wu, V. Vasavada, J. Song, M. Coots, J. Mitchell, N. Goodman, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 14th International Conference on Educational Data Mining (EDM), Paris, France. 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/metaPlay2Grade.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/metaPlay2Grade.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/metaPlay2Grade.pdf">Giving Feedback on Interactive Student Programs  with Meta-Exploration</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          E. Liu, M. Stephan, A. Nie, C. Piech, E. Brunskill, C. Finn
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, 2022. </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/playToGrade.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/play2Grade.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/playToGrade.pdf">Play to Grade: Testing Coding Games as Classifying Markov Decision Process</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Nie, E. Brunskill, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, Dec 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/radioArchives.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/radioArchives.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/radioArchives.pdf">Using Radio Archives for Low-Resource Speech Recognition: Towards an Intelligent Virtual Assistant for Illiterate Users</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Doumbouya, L. Einstein, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the AAAI Conference on Artificial Intelligence, Apr 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/cornealInfections.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/eyeInfection.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/cornealInfections.pdf">Differentiation of Active Corneal Infections from Healed Scars Using Deep Learning</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Tiwari, C. Piech, M. Baitemirova, N. Prajna, M. Srinivasan, P. Lalitha, N. Villegas, N. Balachandar, J. Chua, T. Redd, T. M. Lietman, S. Thrun, C. Lin
+        </p>
+        
+       
+        <p >
+          <i>Othalmology, the journal of the American Academy of Ophthalmology, August 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/pearProgramming.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/pearProgramming.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/pearProgramming.pdf">PearProgram: A more fruitful approach to pair programming</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Bigman, E. Roy, J. Garcia, M. Suzara, K. Wang, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>SIGCSE, ACM Technical Symposium on Computer Science Education, 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/codeInPlace.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/cip.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/codeInPlace.pdf">Code in Place: Online Section Leading for Scalable Human-Centered Learning</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, A. Malik, K. Jue, M. Sahami
+        </p>
+        
+       
+        <p >
+          <i>SIGCSE, ACM Technical Symposium on Computer Science Education, 2021 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/crossBorderCoteaching.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/coteaching.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/crossBorderCoteaching.pdf">Co-Teaching Computer Science Across Borders: Human-Centric Learning at Scale</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, L. Yan, L. Einstein, A. Saavedra, B. Bozkurt, E. Sestakova, O. Guth, N. McKeown
+        </p>
+        
+       
+        <p >
+          <i>7th conference on Learning@Scale, 2020 </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/variationalItemResponseTheory.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/vibo2.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/variationalItemResponseTheory.pdf">Variational Item Response Theory: Fast, Accurate, and Expressive</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Wu, R. Davis, B. Domingue, C. Piech, N. Goodman
+        </p>
+        
+       
+        <p >
+          <i>12th Conference on Educational Data Mining. 2020 </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/StAT.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/StAT.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/StAT.pdf">The Stanford Acuity Test: A Precise Vision Test Using Bayesian Techniques and a Discovery in Human Visual Response</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, A. Malik, L. Mapstone, R. Chang, C. Lin
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 34th AAAI conference on Artificial Intelligence, New York, USA. 2020 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/codeInternational.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/codeInternational.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/codeInternational.pdf">Human Languages in Source Code: Auto-Translation for Localized Instruction</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, S. Haija
+        </p>
+        
+       
+        <p >
+          <i>7th conference on Learning@Scale, 2020 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/googleTrends.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/googleTrends.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/googleTrends.pdf">Using Google Search Trends to Estimate Global Patterns in Learning</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          S. Arslan, M. Tiwari, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>7th conference on Learning@Scale, 2020 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/abilityToLearnIRT.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/irtLearn.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/abilityToLearnIRT.pdf">Measuring Ability-to-Learn Using Parametric Learning-Gain Functions</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, E. Bumbacher, R. Davis
+        </p>
+        
+       
+        <p >
+          <i>12th Conference on Educational Data Mining. 2020 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/zeroShotCode.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/zeroShot.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/zeroShotCode.pdf">Zero Shot Learning for Code Education: Rubric Sampling with Deep Learning Inference</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Wu, M. Mosse, N. Goodman, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 33rd AAAI conference on Artificial Intelligence, Honolulu, USA. 2019 </i>
+        </p>
+
+        <p>
+          <span style="color:blue">&#9733;</span> Best Student Paper Award
+        </p>
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="https://blogs.scientificamerican.com/observations/a-vision-of-ai-for-joyful-education/"> 
+        <img class="paperImage hexagonImage"   src="images/papers/joyfulEd.jpg"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="https://blogs.scientificamerican.com/observations/a-vision-of-ai-for-joyful-education/">A Vision of AI for Joyful Education</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, L. Einstein
+        </p>
+        
+       
+        <p >
+          <i>Scientific American Opinions. 2019 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/gradesAreNotNormal.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/notNormal.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/gradesAreNotNormal.pdf">Grades are not Normal: Improving Exam Score Models  Using the Logit-Normal Distribution</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          N. Arthurs, B. Stenhaug, S. Karayev, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of Educational Data Mining, MontrÃ©al, Canada. 2019 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/pensieve.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/pensieve.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/pensieve.pdf">Pensieve: Feedback on coding process for novices</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          L. Yan, A. Hu, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 50th ACM Technical Symposium on Computer Science Education, Minneapolis, USA. 2019 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/pyramidChallenge.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/pyramid.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/pyramidChallenge.pdf">The PyramidSnapshot Challenge: Understanding student process from visual output of programs</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          L. Yan, N. McKeown, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 50th ACM Technical Symposium on Computer Science Education, Minneapolis, USA. 2019 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/fairnessAdversary.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/fairness.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/fairnessAdversary.pdf">Achieving Fairness through Adversarial Learning: an Application to Recidivism Prediction</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Wadsworth, F. Vera, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>5th Conference on Fairness, Accountability and Transparency in ML, Stockholm, Sweden. 2018 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/tmoss.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/tmoss.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/tmoss.pdf">TMOSS: Using Intermediate Assignment Work to Understand  Excessive Collaboration in Large Classes</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          L. Yan, N. McKeown, M. Sahami, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 49th ACM Technical Symposium on Computer Science Education, Baltimore, USA. 2018 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/blueBook.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/bluebook.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/blueBook.pdf">BlueBook: A Computerized Replacement for Paper Tests in  Computer Science</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, C. Gregg
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 49th ACM Technical Symposium on Computer Science Education, Baltimore, USA. 2018 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/dktCode.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/dktCode.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/dktCode.pdf">Deep Knowledge Tracing on Programming Excercises</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          L. Wang, A. Sy, L. Liu, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 10th International Conference on Educational Data Mining, Wuhan, China. 2017 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/deepKnowledgeTracing.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/dkt.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/deepKnowledgeTracing.pdf">Deep Knowledge Tracing</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, J. Bassen, J. Huang, S. Ganguli, M. Sahami, L. Guibas, J. Sohl-Dickstein
+        </p>
+        
+       
+        <p >
+          <i>NeurIPS, Advances in Neural Information Processing Systems, 2015 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/programEncoding.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/embeddingIcon.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/programEncoding.pdf">Learning Program Embeddings to Propagate Feedback on Student Code</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, J. Huang, A. Nguyen, M. Phulsuksombati, M. Sahami, L. Guibas
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 43rd International Conference on Machine Learning, Lille, France 2015 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/inferringProblemSolvingPolicies.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/codeDotOrgPolicy.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/inferringProblemSolvingPolicies.pdf">Inferring Problem Solving Policies</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, M. Sahami, J. Huang, L. Guibas
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 2nd ACM Conference on Learning at Scale, Vancouver, Canada, 2015 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/scalableHomeworkSearch.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/context.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/scalableHomeworkSearch.pdf">Codewebs: Scalable Homework Search for Massive Open Online Programming Courses</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          A. Nguyen, C. Piech, J. Huang, L. Guibas
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 23rd international conference on World Wide Web, Seoul, Korea, 2014 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/homeworkVariance.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/codeWebs.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/homeworkVariance.pdf">Syntactic and Functional Variability of a Million  Code Submissions in a Machine Learning MOOC</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          J. Huang, C. Piech, A. Nguyen, L. Guibas
+        </p>
+        
+       
+        <p >
+          <i>MOOC Shop, 11th International Conference on the Learning Sciences, Boulder, USA. 2014 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/tuningPeerGrading.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/pgnetwork.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/tuningPeerGrading.pdf">Tuned Models of Peer Assessment in MOOCs</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, J. Huang, Z. Chen, C. Do, A. Ng, D. Koller
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 6th International Conference on Educational Data Mining, Memphis, USA. 2013 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/futureOfAssessment.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/future.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/futureOfAssessment.pdf">The Future of Data-Enriched Assessment</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Thille, E. Schneider, R. Kizilcec, C. Piech, S. Halawa, D. Greene
+        </p>
+        
+       
+        <p >
+          <i>Research and Practice in Assessment vol 9. 2014 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/whoAreYou.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/stereotype.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/whoAreYou.pdf">Measuring Stereotype and Identity in Computer Science</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          R. Semmens, C. Piech, M. Friend
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the Third Conference on GenderIT, Philadelphia USA. 2015 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/deconstructingDisengagement.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/composition.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/deconstructingDisengagement.pdf">Deconstructing Disengagement:  Analyzing Learner Subpopulations in  Massive Open Online Courses</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          R. Kizilcec, C. Piech, E. Schneider
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 3rd International Conference on Learning Analytics and Knowledge, Leuven, Belgium. 2013 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/asCsEnrollmentsGrow.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/csEnroll.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/asCsEnrollmentsGrow.pdf">As CS Enrollments Grow, Are We Attracting Weaker  Students? A Statistical Analysis of Student Performance in Introductory Programming Courses Over Time</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          M. Sahami, C. Piech
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 47th ACM Technical Symposium on Computer Science Education, Memphis, USA. 2016 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/modelingHowStudentsLearn.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/hmm.png"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/modelingHowStudentsLearn.pdf">Modeling How Students Learn To Program</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, M. Sahami, D. Koller, S. Cooper, P. Blikstein
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the 43rd ACM Technical Symposium on Computer Science Education, Raleigh, USA. 2012 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 mb-4" style="height:100%">
+  	<div class="" >
+  	  <a class="pull-left hexagonContainer" href="papers/nothingButABrowser.pdf"> 
+        <img class="paperImage hexagonImage"   src="images/papers/browser.jpg"> </a>
+      <div class="media-body paperBody" style="height:100px">
+        <h4 class="media-heading" style="margin-bottom:0px"><a href="papers/nothingButABrowser.pdf">Informatics Education Using Nothing but a Browser</a>  
+        </h4>
+        <p style="margin-bottom:0px">
+          C. Piech, E. Roberts
+        </p>
+        
+       
+        <p >
+          <i>Proceedings of the IFIP Conference on Informatics in a Globalised World of Education, Mombasa, Kenya. 2011 </i>
+        </p>
+
+
+      </div>
+	</div>
+  </div>
+
+
+  
+
+	
+
+
+<div class="row">
+	<div class="col-xs-12">
+		<hr/>
+	</div>
+</div>
+
+
+    <!-- ed projects -->
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Teaching Tools</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4><a href="http://csbridge.org/">CS Bridge</a></h4>
+	    <p class="subtleHeading">
+	    	Intro CS in Istanbul
+	    </p>
+	</div>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4>Purple Book</h4>
+	    <p class="subtleHeading">
+	    	Online Exam Grading (Soon)
+	    </p>
+	</div>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4>Blue Book</h4>
+	    <p class="subtleHeading">
+	    	Secure Electronic Exams (Soon)
+	    </p>
+	</div>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4>Pensieve</h4>
+	    <p class="subtleHeading">
+	    	Students See Their Own Progress
+	    </p>
+	</div>
+  </div>
+  
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4>High Resolution Feedback</h4>
+	    <p class="subtleHeading">
+	    	Understand Your Class
+	    </p>
+	</div>
+  </div>
+
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4>CS Website Maker</h4>
+	    <p class="subtleHeading">
+	    	Style and Design for CS Pages
+	    </p>
+	</div>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4><a href="http://stanford.edu/~cpiech/karel/learn.html">Karel Online</a></h4>
+	    <p class="subtleHeading">
+	    	Proto Coding Online
+	    </p>
+	</div>
+  </div>
+  <div class="col-xs-6 col-sm-4">
+  	<div class="well">
+	    <h4><a href="https://blog.udacity.com/2013/03/course-pods-new-way-to-connect-with.html">Course Pods</a></h4>
+	    <p class="subtleHeading">
+	    	Proto Inperson MOOCs
+	    </p>
+	</div>
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<hr/>
+	</div>
+</div>
+    <!-- data viz -->
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Data Visualization</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-7">
+      <div class="thumbnail">
+        <img id = "graph" src="images/graphs/codeDotOrgPolicy.png" alt="...">
+      </div>
+    <p id="graphTag"><b>Code.org problem solving policy</b> graph of learned policy for how to solve a single open ended programming assignment from over 1M users. Each node is a unique partial-solution (and node 0 is the correct answer)</p>
+  </div>
+
+  <div class="col-sm-5">
+    <div>
+      <a onclick="changeCodeDotOrg();" class="thumbnail graphThumb marginRight"> 
+        <img src="images/graphs/codeDotOrgPolicy.png" alt="Course Pods" class="graphThumbImg"> 
+      </a>
+      <a onclick="changeGeo();" class="thumbnail graphThumb"> 
+        <img src="images/graphs/geoDensity.png" alt="Course Pods" class="graphThumbImg"> 
+      </a>
+    </div>
+    <div>
+    	<a onclick="changeBlossoms();" class="thumbnail graphThumb "> 
+        <img src="images/graphs/blossoms-sq.png" alt="Learning Blossoms" class="graphThumbImg"> 
+      </a>
+      
+      <a onclick="changeCodeWebs();" class="thumbnail graphThumb"> 
+        <img src="images/graphs/codeWebs.png" alt="Course Pods" class="graphThumbImg"> 
+      </a>
+      
+    </div>
+    <div>
+      <a onclick="changeCheckerboard();" class="thumbnail graphThumb marginRight"> 
+        <img src="images/graphs/checkerboardKarel.jpg" alt="Course Pods" class="graphThumbImg"> 
+      </a>
+      <a onclick="changePeer();" class="thumbnail graphThumb marginRight"> 
+        <img src="images/graphs/peerGrading.png" alt="Course Pods" class="graphThumbImg"> 
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+      <script>
+        function changeGeo() {
+          setGraphSrc("images/graphs/geoDensity.png");
+          setGraphTxt('<b>Coursera CS1 Geographic Density:</b> this graph shows all 100K users in the coursera intro CS course linked by physical distance. Students within 1 km are combined into a single node.');
+        }
+        function changeCodeDotOrg() {
+          setGraphSrc("images/graphs/codeDotOrgPolicy.png");
+          setGraphTxt('<b>Code.org problem solving policy</b> graph of learned policy for how to solve a single open ended programming assignment from over 1M users. Each node is a unique partial-solution (and node 0 is the correct answer)');
+        }
+        function changeCodeWebs() {
+          setGraphSrc("images/graphs/codeWebs.png");
+          setGraphTxt('<b>Coursera Machine Learning Code Web:</b> Submissions from 40K students to logistic regression. Edge strength is inverse of abstract syntax tree edit distance. Node size is number of students.' );
+        }
+        function changePeer() {
+          setGraphSrc("images/graphs/peerGrading.png");
+          setGraphTxt('<b>Coursera HCI Peer Grading:</b> A peer grading network of 63K peer grades for 7K students in an online course. A single student is highlighted, red squares graded the student, red circles were graded by the student.');
+        }
+        function changeDeconstructing() {
+          setGraphSrc("images/graphs/deconstructing.png");
+          setGraphTxt('');
+        }
+        function changeCheckerboard() {
+          setGraphSrc("images/graphs/checkerboardKarel.jpg");
+          setGraphTxt('<b>CS106A clustered transitions:</b> Transitions between 6K submissions from 400 students in Stanford\'s intro to CS course. Nodes are clusters of API calls for partial solutions. Edges are proportional to humber of student transitions. S is start. G is goal. Nodes like 16 and 0 are sink states.');
+        }
+
+        function changeBlossoms() {
+          setGraphSrc("images/graphs/blossoms.png");
+          setGraphTxt('<b>Code.org Learning Blossoms:</b> This graphic is a screen shot of an animation that shows 509,405 students solving the third challenge in the code.org hour of code. The pink dots are students. See the <a href="http://stanford.edu/~cpiech/demos/research/blossoms.html">demo website</a> for the animation.');
+        }
+
+        function setGraphSrc(newSrc) {
+          $("#graph").attr("src", newSrc);
+        }
+
+        function setGraphTxt(newTxt) {
+          $("#graphTag").html(newTxt);
+        }
+
+      </script>
+
+<div class="row">
+  <div class="col-xs-12">
+    <hr/>
+  </div>
+</div>
+
+
+    <!-- Gotta have that footer! -->
+<div class="row">
+	<div class="col-md-12">
+
+		<div class="footer">
+			<p class="pull-left">
+				&copy; Created by Chris Piech. Updated in 2023 (hopefully it isn't something like 2024 when you are reading this).
+			</p>
+		</div>
+	</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74362126-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <!-- end container -->
+  </div>
+  </div>
+</body>
+
+</html>

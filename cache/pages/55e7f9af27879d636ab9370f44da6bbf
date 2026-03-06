@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Benjamin Fish</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/assets/css/bootstrap.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+
+    <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+      <a class="navbar-brand" href="/index.html">Benjamin Fish</a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+      <ul class="nav navbar-nav">
+        <li class="active""><a href="/">Home</a></li>
+        <li "><a href="/research.html">Papers</a></li>
+
+        <li>
+            <a href="mailto:benfish@umich.edu" style="padding:0 15px 0 15px;"><i class="material-icons">email</i></a>
+        </li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+
+      <!-- <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" placeholder="Email" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Sign in</button>
+      </form> -->
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>
+
+
+    <div class="jumbotron">
+  <div class="container">
+    <img width=25% src="/assets/images/IMG_8779.jpg" alt="Ben Fish" style="float:left; margin-right: 30px;">
+    <p> Most recently I was an Assistant Professor in <a href="https://cse.engin.umich.edu/">Computer Science and Engineering</a> at the <a href="https://umich.edu/">University of Michigan</a>.  
+      My research is in developing methods for understanding and incorporating human values into AI by making the social world visible to AI.
+      I was also previously at <a href="https://mila.quebec/en/">Mila</a> and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-montreal/">Microsoft Research</a>, and completed my PhD at the <a href="https://mscs.uic.edu/">University of Illinois at Chicago</a>. </p>
+
+    <p><a href="/assets/cv_fish.pdf">CV</a> &nbsp; &nbsp; <a href="https://scholar.google.com/citations?user=ZHWyQWAAAAAJ">Google Scholar page</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <h2>selected papers (<a href="research.html">all papers</a>)</h2>
+
+  <b> RelAItionship Building: Analyzing Recruitment Strategies for Participatory AI </b>  
+    (<a href="https://arxiv.org/pdf/2508.20176">arXiv</a>) <br>
+  Gena Eugene Kim, Vaibhav Balloli, Berelian Karimian, Elizabeth Bondi-Kelly, and Benjamin Fish <br>
+  To appear at <a href="https://www.aies-conference.com/2025/">AIES 2025</a> <br><br>
+
+  <b> Equal Merit Does Not Imply Equality: Discrimination at Equilibrium in a Hiring market with Symmetric Agents </b>  
+    (<a href="https://arxiv.org/abs/2412.15162">arXiv</a>) <br>
+  Serafina Kamp and Benjamin Fish <br>
+  <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI 2025</a> <br><br>
+
+  <b> On Performance Discrepancies Across Local Homophily Levels in Graph Neural Networks </b> 
+    (<a href="https://openreview.net/forum?id=3sPJt65hzO">open review</a>) <br>
+    Donald Loveland, Jiong Zhu, Mark Heimann, Benjamin Fish, Michael T Schaub, and Danai Koutra <br>
+         <a href="https://logconference.org/">LoG 2023</a> <br><br>
+
+  <b> Itâs Not Fairness, and Itâs Not Fair: The Failure of Distributional Equality and the Promise of Relational Equality in Complete-Information Hiring Games </b> 
+     (<a href="https://arxiv.org/abs/2209.05602">arXiv</a>) <br>
+          Benjamin Fish and Luke Stark <br>
+          <a href="">EAAMO 2022</a> <br><br>
+      
+  <b>Gaps in Information Access in Social Networks</b> (<a href="/assets/papers/www19_final.pdf">pdf</a>) <br>
+    Benjamin Fish, Ashkan Bashardoust, danah boyd, Sorelle A. Friedler, Carlos Scheidegger, and Suresh Venkatasubramanian <br>
+    <a href="https://www2019.thewebconf.org/">WWW 2019</a> <br><br>
+
+  <h2>preprints</h2>
+  <b> Last-Iterate Convergence of No-Regret Learning for Equilibria in Bargaining Games </b>  (<a href="/assets/papers/last_iterate_draft.pdf">preprint</a>)
+  <br>
+  Serafina Kamp, Reese Liebman, and Benjamin Fish <br>
+  Manuscript <br><br>
+
+  <b> Centralization vs Decentralization in Hiring and Admissions </b>  (<a href="https://arxiv.org/abs/2502.07792">preprint</a>)
+  <br>
+  Benjamin Fish, Diptangshu Sen, and Juba Ziani <br>
+  Manuscript <br><br>
+
+ 
+
+  <h2>teaching</h2>
+
+  Instructor, EECS 498/598: Foundations of Fairness in Machine Learning (Fall 2024)
+  <br>
+  Instructor, EECS 298: Introduction to the Social Consequences of Computing (Winter 2023, Winter 2024, Winter 2025)
+  <br>
+  Instructor, EECS 376: Foundations of Computer Science (Fall 2023)
+  <br>
+  Instructor, EECS 492:  Introduction to Artificial Intelligence (Fall 2021, Fall 2022)
+  <br>
+  Instructor, EECS 598: Social Consequences of Computing (Winter 2022)
+
+  <h2>phd students</h2>
+  <a href="https://public.websites.umich.edu/~serafibk/">Serafina Kamp</a>, Ph.D. in progress
+  <br><br>
+
+  <a href="https://porouspaper.github.io/octogram/">Eugene Kim</a>, Ph.D. in progress 
+
+
+</div>
+
+
+    </body>
+
+</html>

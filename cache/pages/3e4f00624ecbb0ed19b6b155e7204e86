@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113053854-1"></script>
+    <!-- include script file -->
+    <script src="./js/hidebib.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-113053854-1');
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Bhattad - Assistant Professor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="publications.js"></script>
+    <script src="script.js"></script>
+</head>
+<nav id="quick-links">
+    <a href="#bio">About Me</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#services">Leadership</a>
+    <a href="#publications">Publications</a>
+    <!-- <a href="#students">Mentoring</a> -->
+</nav>
+<body>
+    <main id="content">
+            <!-- Navigation -->
+        <!-- Merged Header Section -->
+        <div class="header-content">
+            <div class="header-image">
+                <img src="files/anand_portrait_2026.jpg" alt="Anand Bhattad" id="profile-photo">
+            </div>
+            <div class="header-text">
+                <h1>Anand Bhattad</h1>
+                <style>
+                    p {
+                        margin-top: 10px;  /* Adjust the top margin */
+                        margin-bottom: 10px;  /* Adjust the bottom margin */
+                        padding: 0;  /* Remove any padding */
+                    }
+                </style>
+                <p>Assistant Professor</p>
+                <p><a href="https://www.cs.jhu.edu/" target="_blank">Computer Science</a></p>
+                <p><a href="https://ai.jhu.edu/" target="_blank">Data Science and AI Institute</a></p>
+                <p><a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a></p>
+                <p>Email: bhattad [at] jhu.edu</p>
+                <div class="social-links">                 
+                    <a href="https://scholar.google.com/citations?hl=en&user=XUsauXIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+                        Google Scholar
+                    </a>
+                    &nbsp;/&nbsp;
+                    <a href="https://x.com/anand_bhattad" target="_blank">Twitter</a>
+                    &nbsp;/&nbsp;
+                    <a href="./files/anand_bhattad_cv_2025.pdf" target="_blank">CV</a>
+                    <!-- <h4><strong>Incoming Assistant Professor in Computer Science at Johns Hopkins University</h4></strong> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Other sections such as Bio, Research, etc.
+        <section id="bio" class="section">
+            <h2>Bio</h2>
+            <p>Your bio content goes here...</p>
+        </section> -->
+        
+        <!-- Add other sections similarly -->
+    </main>
+    <!-- <footer>
+        <p>&copy; 2025 Anand Bhattad</p>
+    </footer> -->
+
+</body>
+</html>

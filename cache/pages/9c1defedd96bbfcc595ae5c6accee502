@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-09-29 Mon 14:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chao Zhang</title>
+<meta name="author" content="Zhang" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link href="css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chao Zhang</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgee7a90d">Research</a></li>
+<li><a href="#org208e9f0">1. Post-Training for LLM Agents</a></li>
+<li><a href="#org0ed149b">2. Safe and Trustworthy AI</a></li>
+<li><a href="#orgd1bdeb0">3. Data Evaluation and Benchmarks</a></li>
+<li><a href="#org26dc4b5">4. AI for Scientific Discovery</a></li>
+<li><a href="#org3903645">5. Previous Projects</a></li>
+<li><a href="#org9ac7db2">Awards</a></li>
+<li><a href="#org441094f">Publications</a>
+<ul>
+<li><a href="#orgabb1086">2025</a></li>
+<li><a href="#org1fb29a1">2024</a></li>
+<li><a href="#org2372529">2023</a></li>
+<li><a href="#orgd291ae9">2022</a></li>
+<li><a href="#org2b2a2f2">2021</a></li>
+<li><a href="#orga32ff21">2020</a></li>
+<li><a href="#org067a613">2019</a></li>
+<li><a href="#org0b2e782">2018</a></li>
+<li><a href="#orgaca643a">Earlier</a></li>
+</ul>
+</li>
+<li><a href="#org832cf0e">Students</a></li>
+</ul>
+</div>
+<h2>Quick Links</h2>
+<div id="text-table-of-contents">
+<ul>
+    <li><a href="https://scholar.google.com/citations?hl=en&user=CeEO6SIAAAAJ">Google Scholar</a></li>
+<!-- <li><a href="./course/cx4240.html">CX4240</a></li> -->
+<!-- <li><a href="./course/cse8803.html">CSE8803</a></li> -->
+</ul>
+</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96993546-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-96993546-1');
+</script>
+<table border="0" cellpadding="0">
+<tbody> <tr>
+<td valign="top" style="min-width:120px;">
+<img src="./chao.jpg" width="220" style="float:left; margin:0pt 20pt 0pt 0pt;" >
+</td>
+<td valign="top">
+<b>James Edenfield Associate Professor</b><br>
+<a href="https://cse.gatech.edu">School of Computational Science and Engineering</a><br>
+<a href="https://www.cc.gatech.edu">College of Computing</a><br>
+<a href="https://www.gatech.edu">Georgia Institute of Technology</a><br><br>
+Office: CODA E1358B<br>
+Address: 756 W Peachtree St NW, Atlanta, GA 30308<br>
+Email: <a href="mailto:chaozhang@gatech.edu">chaozhang@gatech.edu</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-orgee7a90d" class="outline-2">
+<h2 id="orgee7a90d">Research</h2>
+<div class="outline-text-2" id="text-orgee7a90d">
+<p>
+My research lies in the areas of data science, machine learning, and AI. My goal is to build advanced large language models and AI agents for complex task-solving and decision-making. My technical efforts center on addressing key challenges in <i>data efficiency</i>, <i>computation efficiency</i>, and <i>model robustness</i>. On the application front, I am deeply interested in harnessing foundation models to advance <i>AI for science</i>.
+</p>
+
+<p>
+Currently, I am working on the following themes:
+</p>
+
+<ol class="org-ol">
+<li><b>LLM Post-Training Data and Algorithms for Agents</b> &#x2013; Developing efficient post-training methods for adapting and fine-tuning LLMs to create intelligent agents that can learn from experience, interact with environments, and improve their reasoning and agentic capabilities.</li>
+
+<li><b>AI Safety and Trustworthy AI</b> &#x2013; Facilitating responsible and reliable deployment of AI systems through critical techniques including <i>uncertainty quantification</i>, enhancing <i>LLM factuality</i>, improving <i>LLM alignment</i>, and developing robust methods for building trustworthy AI agents.</li>
+
+<li><b>Datasets, Evaluation, and Benchmarks</b> &#x2013; Creating comprehensive evaluation frameworks, datasets, and benchmarks for assessing AI system performance, particularly focusing on agent capabilities, reasoning abilities, and real-world task completion across diverse domains.</li>
+
+<li><b>AI for Scientific Discovery</b> &#x2013; Developing foundation models and AI agents to accelerate scientific discovery, with applications in diverse fields such as <i>time series analysis</i>, <i>material science</i>, <i>biomedical and life sciences</i>.</li>
+</ol>
+
+<p>
+<b><i>Acknowledgment</i></b>: My work has been generously supported by research
+funding/gift from NSF (<a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2144338&amp;HistoricalAwards=false">IIS CAREER-2144338</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2106961">IIS-2106961</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2008334&amp;HistoricalAwards=false">IIS-2008334</a>),
+<a href="https://muri.mse.gatech.edu/">ONR MURI</a> , Kolon, HomeDepot, ADP, and Adobe. My work has also been
+recognized by an NSF CAREER Award, a Facebook Faculty Award, an Amazon
+AWS Machine Learning Research Award, a Google Faculty Research Award,
+a Kolon Faculty Fellowship, an ACM SIGKDD Dissertation Runner-up
+Award, and several paper awards from IMWUT (UbiComp), ECML/PKDD, and
+ML4H.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org208e9f0" class="outline-2">
+<h2 id="org208e9f0">1. Post-Training for LLM Agents</h2>
+<div class="outline-text-2" id="text-org208e9f0">
+<p>
+We investigate improving LLM reasoning and agentic abilities by enabling them to evolve through interaction with external environments for feedback. The goal is to better adapt LLMs and enhance their reasoning and agentic capabilities through efficient post-training data collection and algorithmic innovations.
+</p>
+
+<img src="img/llm.png" class="wrap" width="350px" />
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2310.01444">Adapting LLM Agents with Universal Feedback Through Communication</a>,  NAACL'25</li>
+<li><a href="https://arxiv.org/abs/2502.06589">Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</a>, NAACL'25</li>
+<li><a href="https://arxiv.org/abs/2402.08219">BBox-Adapter: Lightweight Adapting for Black-Box Large Language Models</a>, ICML'24</li>
+<li><a href="https://arxiv.org/abs/2310.13227">ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search</a>, ICLR'24</li>
+<li><a href="https://arxiv.org/abs/2305.16653">AdaPlanner: Adaptive Planning from Feedback with Language Models</a>, NeurIPS'23</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0ed149b" class="outline-2">
+<h2 id="org0ed149b">2. Safe and Trustworthy AI</h2>
+<div class="outline-text-2" id="text-org0ed149b">
+<p>
+We aim to develop AI systems that are not only capable but also trustworthy for deployment in various domains. We study LLM factuality (e.g., RAG, agentic search), uncertainty, and alignment.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2411.16646">Self-Generated Critiques Boost Reward Modeling for Language Models</a>, NAACL'25</li>
+<li><a href="https://arxiv.org/abs/2406.05954">Aligning Large Language Models with Representation Editing: A Control Perspective</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2407.02485">RankRAG: Unifying Retrieval-Augmented Generation and Context Ranking in LLMs</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2402.13542">ARL2: Aligning Retrievers with Black-box Large Language Models via Self-guided Adaptive Relevance Labeling</a>, ACL'24</li>
+<li><a href="https://arxiv.org/abs/2306.15895">Large Language Model as Attributed Training Data Generator: A Tale of Diversity and Bias</a>, NeurIPS'23</li>
+<li><a href="https://aclanthology.org/2020.emnlp-main.102/">Calibrated Language Model Fine-Tuning for In- and Out-of-Distribution Data</a>, EMNLP'20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1bdeb0" class="outline-2">
+<h2 id="orgd1bdeb0">3. Data Evaluation and Benchmarks</h2>
+<div class="outline-text-2" id="text-orgd1bdeb0">
+<p>
+We develop new datasets, benchmarks, and evaluation protocols for training and assessing LLM performance, with particular focus on agent capabilities, reasoning abilities, and real-world task completion.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.23456">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a>, arXiv'25</li>
+<li><a href="https://arxiv.org/abs/2406.09130">Time-MMD: A New Multi-Domain Multimodal Dataset for Time Series Analysis</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2306.10060">MUBen: Benchmarking the Uncertainty of Pre-Trained Models for Molecular Property Prediction</a>, TMLR'24</li>
+<li><a href="https://arxiv.org/abs/2311.07715">POLYIE: A Dataset of Information Extraction from Polymer Material Scientific Literature</a>, NAACL'24</li>
+<li><a href="https://arxiv.org/abs/2306.13304">ToolQA: A Dataset for LLM Question Answering with External Tools</a>, NeurIPS'23</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org26dc4b5" class="outline-2">
+<h2 id="org26dc4b5">4. AI for Scientific Discovery</h2>
+<div class="outline-text-2" id="text-org26dc4b5">
+<img src="img/md.gif" class="wrap" width="250px" />
+
+<p>
+We aim to leverage AI and foundation models for advancing scientific discovery. We develop domain-specific foundation models and LLM agents for different scientific domains. On the application side, we collaborate with domain-experts to advance scientific discovery in material design, biomedical and life science, and urban science:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a>, ICLR'25</li>
+<li><a href="https://arxiv.org/abs/2406.13163">LLMatDesign: Autonomous Materials Discovery with Large Language Models</a>, preprint</li>
+<li><a href="https://arxiv.org/abs/2308.14759">May the Force be with You: Unified Force-Centric Pre-Training for 3D Molecular Conformations</a>, NeurIPS'23</li>
+<li><a href="https://www.biorxiv.org/content/10.1101/2024.02.11.579859v1.abstract">Contrastive Fitness Learning: Reprogramming Protein Language Models for Low-N Learning of Protein Fitness Landscape</a>, RECOMB'24</li>
+<li><a href="https://arxiv.org/pdf/1811.05320.pdf">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a>, IEEE ITS'20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3903645" class="outline-2">
+<h2 id="org3903645">5. Previous Projects</h2>
+<div class="outline-text-2" id="text-org3903645">
+<p>
+This section includes our previous work on weak supervision, active learning, and uncertainty quantification for language models and traditional machine learning tasks.
+</p>
+
+<ul class="org-ul">
+<li><b>Learning from Noisy Data and Weak Supervision</b>: Our foundational work on addressing data scarcity challenges through weak supervision and noisy label learning for smaller language models and traditional NLP tasks.
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2305.19395">DyGen: Fine-Tuning Language Models with Noisy Labels by Dynamics-Enhanced Generative Modeling</a>, KDD'23</li>
+<li><a href="https://arxiv.org/abs/2010.07835">Fine-Tuning Pre-trained Language Model with Weak Supervision</a>, NAACL'21</li>
+<li><a href="https://arxiv.org/abs/2205.14228">Sparse Conditional Hidden Markov Model for Weakly Supervised Named Entity Recognition</a>, KDD'22</li>
+<li><a href="https://arxiv.org/abs/2010.07245">Text Classification Using Label Names Only: A Language Model Self-Training Approach</a>, EMNLP'20</li>
+<li><a href="https://arxiv.org/abs/2006.15509">BOND: Bert-Assisted Open-Domain Named Entity Recognition with Distant Supervision</a>, KDD'20</li>
+</ul></li>
+
+<li><b>Active Learning and Data Curation</b>: Techniques for efficient data selection and curation to improve model performance with limited labeled data.
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2209.06995">Cold-start Data Selection for Better Few-shot Fine-tuning of Pretrained Language Models</a>, ACL'23</li>
+<li><a href="https://arxiv.org/abs/2203.09735">PRBoost: Prompt-Based Rule Discovery and Boosting for Interactive Weakly-Supervised Learning</a>, ACL'22</li>
+<li><a href="https://aclanthology.org/2022.naacl-main.102/">AcTune: Uncertainty-Aware Active Self-Training for Active Fine-Tuning of Language Models</a>, NAACL'22</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Uncertainty Quantification for Deep Learning:</b> Uncertainty-aware ML models are crucial for building trustworthy AI systems. Many deep learning models produce uncertainty-agnostic point estimates or miscalibrated distributions. We are addressing this issue by designing techniques for quantifying uncertainty in deep learning models. We also study decision-focused learning under uncertainty to make learning informed by downstream decision-making tasks. 
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2402.18012">Diffusion Models as Constrained Samplers for Optimization with Unknown Constraints</a>, AISTATS'25</li>
+<li><a href="https://dl.acm.org/doi/10.1145/3580305.3599547">When Rigidity Hurts: Soft Consistency Regularization for Probabilistic Hierarchical Time Series Forecasting</a>, KDD'23</li>
+<li><a href="https://arxiv.org/abs/2211.13837">End-to-end Stochastic Programming with Energy-based Model</a>, NeurIPS'22</li>
+<li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a>, NeurIPS'21</li>
+<li><a href="http://proceedings.mlr.press/v119/kong20b/kong20b.pdf">SDE-Net: Equipping Deep Neural Networks with Uncertainty Estimates</a>, ICML'20</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org9ac7db2" class="outline-2">
+<h2 id="org9ac7db2">Awards</h2>
+<div class="outline-text-2" id="text-org9ac7db2">
+<ul class="org-ul">
+<li>2024 GaTech CoC Outstanding Junior Faculty Award</li>
+<li>2022 NSF Career Award</li>
+<li>2022 ML4H Outstanding Paper Award</li>
+<li>2021 Facebook Faculty Research Award</li>
+<li>2021 Kolon Faculty Fellowship</li>
+<li>2020 Amazon AWS Machine Learning Research Award</li>
+<li>2020 Google Faculty Research Award</li>
+<li>2019 ACM SIGKDD Dissertation Award Runner-up</li>
+<li>2018 ACM IMWUT Distinguished Paper Award</li>
+<li>2015 ECML/PKDD Best Student Paper Runner-up Award</li>
+<li>2013 Chiang Chen Overseas Graduate Fellowship</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org441094f" class="outline-2">
+<h2 id="org441094f">Publications</h2>
+<div class="outline-text-2" id="text-org441094f">
+<p>
+(* denotes equal contribution)
+</p>
+</div>
+
+<div id="outline-container-orgabb1086" class="outline-3">
+<h3 id="orgabb1086">2025</h3>
+<div class="outline-text-3" id="text-orgabb1086">
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.23456">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a><br />
+Rushi Qiang, Yuchen Zhuang, Yinghao Li, Dingu Sagar V K, Rongzhi Zhang, ChangHao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang, Bo Dai<br />
+arXiv, 2025</li>
+
+<li><a href="https://arxiv.org/abs/2502.06589">Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</a><br />
+Yuchen Zhuang, Jingfeng Yang, Haoming Jiang, Xin Liu, Kewei Cheng, Sanket Lokegaonkar, Yifan Gao, Qing Ping, Tianyi Liu, Binxuan Huang, Zheng Li, Zhengyang Wang, Pei Chen, Ruijie Wang, Rongzhi Zhang, Nasser Zalmout, Priyanka Nigam, Bing Yin, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2025</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2310.01444">Adapting LLM Agents with Universal Communication Feedback</a><br />
+Kuan Wang, Yadong Lu, Michael Santacroce, Yeyun Gong, Chao Zhang, Yelong Shen<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2411.16646">Self-Generated Critiques Boost Reward Modeling for Language Models</a><br />
+Yue Yu, Zhengxing Chen, Aston Zhang, Liang Tan, Chenguang Zhu, Richard Yuanzhe Pang, Yundi Qian, Xuewei Wang, Suchin Gururangan, Chao Zhang, Melanie Kambadur, Dhruv Mahajan, Rui Hou<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2025</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.34567">LLM-Augmented Chemical Synthesis and Design Decision Programs</a><br />
+Haorui Wang, Jeff Guo, Lingkai Kong, Rampi Ramprasad, Philippe Schwaller, Yuanqi Du, Chao Zhang<br />
+International Conference on Machine Learning (<b>ICML</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a><br />
+Haorui Wang, Marta Skreta, Cher Tian Ser, Wenhao Gao, Lingkai Kong, Felix Strieth-Kalthoff, Chenru Duan, Yuchen Zhuang, Yue Yu, Yanqiao Zhu, Yuanqi Du, Alan Aspuru-Guzik, Kirill Neklyudov, Chao Zhang<br />
+International Conference on Learning Representations (<b>ICLR</b>), 2025</li>
+
+<li><a href="https://openreview.net/forum?id=l0gZS0sAlf">Ensembles of Low-Rank Expert Adapters</a><br />
+Yinghao Li, Vianne R. Gao, Chao Zhang, MohamadAli Torkamani<br />
+International Conference on Learning Representations (<b>ICLR</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2402.18012">Diffusion Models as Constrained Samplers for Optimization with Unknown Constraints</a><br />
+Lingkai Kong, Yuanqi Du, Wenhao Mu, Kirill Neklyudov, Valentin De Bortoli, Dongxia Wu, Haorui Wang, Aaron M Ferber, Yian Ma, Carla P Gomes, Chao Zhang<br />
+International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2407.45678">AutoMixAlign: Adaptive Data Mixing for Multi-Task Preference Optimization in LLMs</a><br />
+Nicholas E. Corrado, Julian Katz-Samuels, Adithya M Devraj, Hyokun Yun, Chao Zhang, Yi Xu, Yi Pan, Bing Yin, Trishul Chilimbi<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2503.19168">Language Model Uncertainty Quantification with Attention Chain</a><br />
+Yinghao Li, Rushi Qiang, Lama Moukheiber, Chao Zhang<br />
+Conference on Language Modeling (<b>COLM</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2407.56789">Self-Rewarding PPO: Aligning Large Language Models with Demonstrations Only</a><br />
+Qingru Zhang, Liang Qiu, Ilgee Hong, Zhenghao Xu, Tianyi Liu, Shiyang Li, Rongzhi Zhang, Zheng Li, Lihong Li, Bing Yin, Chao Zhang, Jianshu Chen, Haoming Jiang, Tuo Zhao<br />
+Conference on Language Modeling (<b>COLM</b>), 2025</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1fb29a1" class="outline-3">
+<h3 id="org1fb29a1">2024</h3>
+<div class="outline-text-3" id="text-org1fb29a1">
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2401.13849">TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance</a><br />
+Haorui Wang, Rongzhi Zhang, Yinghao Li, Lingkai Kong, Yuchen Zhuang, Xiusi Chen, Chao Zhang<br />
+Conference on Language Modeling (<b>COLM</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2406.05954">Aligning Large Language Models with Representation Editing: A Control Perspective</a><br />
+Lingkai Kong, Haorui Wang, Wenhao Mu, Yuanqi Du, Yuchen Zhuang, Yifei Zhou, Yue Song, Rongzhi Zhang, Kai Wang, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2407.02485">RankRAG: Unifying Retrieval-Augmented Generation and Context Ranking in LLMs</a><br />
+Yue Yu, Wei Ping, Zihan Liu, Boxin Wang, Jiaxuan You, Chao Zhang, Mohammad Shoeybi, Bryan Catanzaro<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2406.02888">HYDRA: Model Factorization Framework for Black-Box LLM Personalization</a><br />
+Yuchen Zhuang, Haotian Sun, Yue Yu, Rushi Qiang, Qifan Wang, Chao Zhang, Bo Dai<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2406.08627">Time-MMD: A New Multi-Domain Multimodal Dataset for Time Series Analysis</a><br />
+Haoxin Liu, Shangqing Xu, Zhiyuan Zhao, Lingkai Kong, Harshavardhan Kamarthi, Aditya B. Sasanur, Megha Sharma, Jiaming Cui, Qingsong Wen, Chao Zhang, B. Aditya Prakash<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2310.13227">ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search</a><br />
+Yuchen Zhuang, Xiang Chen, Tong Yu, Saayan Mitra, Victor Bursztyn, Ryan A. Rossi, Somdeb Sarkhel, Chao Zhang<br />
+International Conference on Learning Representations (<b>ICLR</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2402.08219">BBox-Adapter: Lightweight Adapting for Black-Box Large Language Models</a><br />
+Haotian Sun, Yuchen Zhuang, Wei Wei, Chao Zhang, Bo Dai<br />
+International Conference on Machine Learning (<b>ICML</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2406.09130">Time-Series Forecasting for Out-of-Distribution Generalization Using Invariant Learning</a><br />
+Haoxin Liu, Harshavardhan Kamarthi, Lingkai Kong, Zhiyuan Zhao, Chao Zhang, B. Aditya Prakash<br />
+International Conference on Machine Learning (<b>ICML</b>), 2024</li>
+
+<li><a href="https://dl.acm.org/doi/10.1145/3637528.3671851">Knowledge Distillation with Perturbed Loss: From a Vanilla Teacher to a Proxy Teacher</a><br />
+Rongzhi Zhang, Jiaming Shen, Tianqi Liu, Jialu Liu, Michael Bendersky, Marc Najork, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2024</li>
+
+<li><a href="https://proceedings.mlr.press/v238/kong24a.html">Two Birds with One Stone: Enhancing Calibration and Interpretability with Graph Functional Neural Process</a><br />
+Lingkai Kong*, Haotian Sun*, Yuchen Zhuang, Haorui Wang and Chao Zhang<br />
+International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), 2024</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2401.01549">Towards Modeling Uncertainties of Self-explaining Neural Networks</a><br />
+Wei Qian, Chenxu Zhao, Yangyi Li, Fenglong Ma, Chao Zhang, Mengdi Huai<br />
+AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2024</li>
+
+<li><a href="https://www.biorxiv.org/content/10.1101/2024.02.11.579859v1.abstract">Contrastive Fitness Learning: Reprogramming Protein Language Models for Low-N Learning of Protein Fitness Landscape</a><br />
+Junming Zhao, Chao Zhang, and Yunan Luo<br />
+Research in Computational Molecular Biology (<b>RECOMB</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2306.10060">MUBen: Benchmarking the Uncertainty of Pre-Trained Models for Molecular Property Prediction</a><br />
+Yinghao Li, Lingkai Kong, Yuanqi Du, Yue Yu, Yuchen Zhuang, Wenhao Mu, Chao Zhang<br />
+Transactions on Machine Learning Research (<b>TMLR</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2402.13542">ARL2: Aligning Retrievers with Black-box Large Language Models via Self-guided Adaptive Relevance Labeling</a><br />
+LingXi Zhang, Yue Yu, Kuan Wang, Chao Zhang<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2311.07099">Explanation-aware Soft Ensemble Empowers Large Language Model In-context Learning</a><br />
+Yue Yu, Jiaming Shen, Tianqi Liu, Zhen Qin, Jing Nathan Yan, Jialu Liu, Chao Zhang, Michael Bendersky<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2406.02886">PLaD: Preference-based Large Language Model Distillation with Pseudo-Preference Pairs</a><br />
+Rongzhi Zhang, Jiaming Shen, Tianqi Liu, Haorui Wang, Zhen Qin, Feng Han, Jialu Liu, Simon Baumgartner, Michael Bendersky, Chao Zhang<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>-Findings), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2403.11103">ProgGen: Generating Named Entity Recognition Datasets Step-by-step with Self-Reflexive Large Language Models</a><br />
+Yuzhao Heng, Chunyuan Deng, Yitong Li, Yue Yu, Yinghao Li, Rongzhi Zhang, Chao Zhang<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>-Findings), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2311.14736">Data Diversity Matters for Robust Instruction Tuning</a><br />
+Alexander Bukharin, Shiyang Li, Zhengyang Wang, Jingfeng Yang, Bing Yin, Xian Li, Chao Zhang, Tuo Zhao, Haoming Jiang<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>-Findings), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2402.13364">A Simple but Effective Approach to Improve Structured Language Model Output for Information Extraction</a><br />
+Yinghao Li, Rampi Ramprasad, Chao Zhang<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>-Findings), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2404.18443">BMRetriever: Tuning Large Language Models as Better Biomedical Text Retrievers</a><br />
+Ran Xu, Wenqi Shi, Yue Yu, Yuchen Zhuang, Yanqiao Zhu, May Dongmei Wang, Joyce C. Ho, Chao Zhang, Carl Yang<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2024</li>
+
+<li><a href="https://pubs.acs.org/doi/10.1021/acs.chemmater.4c00709">Accelerating Materials Discovery for Polymer Solar Cells: Data-driven Insights Enabled by Natural Language Processing</a><br />
+Pranav Shetty, Aishat Adeboye, Sonakshi Gupta, Chao Zhang, Rampi Ramprasad<br />
+<b>Chemistry of Materials</b> 36 (16), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2311.07715">POLYIE: A Dataset of Information Extraction from Polymer Material Scientific Literature</a><br />
+Jerry Junyang Cheung, Yuchen Zhuang, Yinghao Li, Pranav Shetty, Wantian Zhao, Sanjeev Grampurohit, Rampi Ramprasad, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2311.07387">Assessing Logical Puzzle Solving in Large Language Models: Insights from a Minesweeper Case Study</a><br />
+Yinghao Li, Haorui Wang, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2024</li>
+
+<li><a href="https://arxiv.org/abs/2402.01696">HiGen: Hierarchy-Aware Sequence Generation for Hierarchical Text Classification</a><br />
+Vidit Jain, Mukund Rungta, Yuchen Zhuang, Yue Yu, Zeyu Wang, Mu Gao, Jeffrey Skolnick, Chao Zhang<br />
+Conference of the European Chapter of the Association for Computational Linguistics (<b>EACL</b>), 2024</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org2372529" class="outline-3">
+<h3 id="org2372529">2023</h3>
+<div class="outline-text-3" id="text-org2372529">
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2305.16653">AdaPlanner: Adaptive Planning from Feedback with Language Models</a><br />
+Haotian Sun, Yuchen Zhuang, Lingkai Kong, Bo Dai, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2306.13304">ToolQA: A Dataset for LLM Question Answering with External Tools</a><br />
+Yuchen Zhuang, Yue Yu, Kuan Wang, Haotian Sun, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2306.15895">Large Language Model as Attributed Training Data Generator: A Tale of Diversity and Bias</a><br />
+Yue Yu, Yuchen Zhuang, Jieyu Zhang, Yu Meng, Alexander Ratner, Ranjay Krishna, Jiaming Shen, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2308.14759">May the Force be with You: Unified Force-Centric Pre-Training for 3D Molecular Conformations</a><br />
+Rui Feng, Qi Zhu, Huan Tran, Binghong Chen, Aubrey Toland, Rampi Ramprasad, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2310.10810">Robust Multi-Agent Reinforcement Learning via Adversarial Regularization: Theoretical Foundation and Stable Algorithms</a><br />
+Alexander Bukharin, Yan Li, Yue Yu, Qingru Zhang, Zhehui Chen, Simiao Zuo, Chao Zhang, Songan Zhang, Tuo Zhao<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
+
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599577">Uncertainty Quantification in Deep Learning</a><br />
+Lingkai Kong, Harshavardhan Kamarthi, Peng Chen, B. Aditya Prakash, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2305.19395">DyGen: Fine-Tuning Language Models with Noisy Labels by Dynamics-Enhanced Generative Modeling</a><br />
+Yuchen Zhuang, Yue Yu, Lingkai Kong, Xiang Chen, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2306.02859">Local Boosting for Weakly-Supervised Learning</a><br />
+Rongzhi Zhang, Yue Yu, Jiaming Shen, Xiquan Cui, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2023</li>
+
+<li><a href="https://dl.acm.org/doi/10.1145/3580305.3599547">When Rigidity Hurts: Soft Consistency Regularization for Probabilistic Hierarchical Time Series Forecasting</a><br />
+Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang, B. Aditya Prakash<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2307.08849">Autoregressive Diffusion Model for Graph Generation</a><br />
+Lingkai Kong, Jiaming Cui, Haotian Sun, Yuchen Zhuang, B. Aditya Prakash, Chao Zhang<br />
+International Conference on Machine Learning (<b>ICML</b>), 2023</li>
+
+<li><a href="https://proceedings.mlr.press/v202/li23aj.html">SMURF-THP: Score Matching-based UnceRtainty quantiFication for Transformer Hawkes Process</a><br />
+Zichong Li, Yanbo Xu, Simiao Zuo, Haoming Jiang, Chao Zhang, Tuo Zhao, Hongyuan Zha<br />
+International Conference on Machine Learning (<b>ICML</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2209.06995">Cold-start Data Selection for Better Few-shot Fine-tuning of Pretrained Language Models</a><br />
+Yue Yu, Rongzhi Zhang, Ran Xu, Jieyu Zhang, Jiaming Shen and Chao Zhang<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2305.10703">Zero-Shot Text Classification by Training Data Creation with Progressive Dense Retrieval</a><br />
+Yue Yu, Yuchen Zhuang, Rongzhi Zhang, Yu Meng, Jiaming Shen and Chao Zhang<br />
+Findings of Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2305.18742">Graph Reasoning for Question Answering with Triplet Retrieval</a><br />
+Shiyang Li, Yifan Gao, Haoming Jiang, Qingyu Yin, Zheng Li, Xifeng Yan, Chao Zhang and Bing Yin<br />
+Findings of Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2305.14549">Extracting Shopping Interest-Related Product Types from the Web</a><br />
+Yinghao Li, Colin Lockard, Prashant Shiralkar and Chao Zhang<br />
+Findings of Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2023</li>
+
+<li><a href="https://arxiv.org/pdf/2209.07584">Context-Aware Query Rewriting for Improving Users' Search Experience on E-commerce Websites</a><br />
+Simiao Zuo, Qingyu Yin, Haoming Jiang, Shaohui Xi, Bing Yin, Chao Zhang, Tuo Zhao<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2023</li>
+
+<li>Improving Consistency for Text Summarization with Energy Functions<br />
+Qi Zeng, Qingyu Yin, Zheng Li, Yifan Gao, Sreyashi Nag, Zhengyang Wang, Bing Yin, Heng Ji, Chao Zhang<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>-Findings), 2023</li>
+
+<li>Knowledge-Selective Pretraining for Attribute Value Extraction<br />
+Hui Liu, Qingyu Yin, Zhengyang Wang, Chenwei Zhang, Haoming Jiang, Yifan Gao, Zheng Li, Xian Li, Chao Zhang, Bing Yin, William Yang Wang, Xiaodan Zhu<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>-Findings), 2023</li>
+
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3543507.3583295">Unsupervised Event Chain Mining from Multiple Documents</a><br />
+Yizhu Jiao, Ming Zhong, Jiaming Shen, Yunyi Zhang, Chao Zhang and Jiawei Han<br />
+The Web Conference (<b>WWW</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2303.14898">Mutually-paced Knowledge Distillation for Cross-lingual Temporal Knowledge Graph Reasoning</a><br />
+Ruijie Wang, Zheng Li, Jingfeng Yang, Tianyu Cao, Chao Zhang, Bing Yin, Tarek Abdelzaher<br />
+The Web Conference (<b>WWW</b>), 2023</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://proceedings.mlr.press/v225/xu23a/xu23a.pdf">TransEHR: Self-Supervised Transformer for Clinical Time Series Data</a><br />
+Yanbo Xu, Shangqing Xu, Manav Ramprasad, Alexey Tumanov, Chao Zhang<br />
+Machine Learning for Health (<b>ML4H</b>), 2023<br /></li>
+
+<li><a href="https://arxiv.org/abs/2306.14314">G-STO: Sequential Main Shopping Intention Detection via Graph-Regularized Stochastic Transformer</a><br />
+Yuchen Zhuang, Xin Shen, Yan Zhao, Chaosheng Dong, Ming Wang, Jin Li and Chao Zhang<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2023</li>
+
+<li><a href="https://arxiv.org/abs/2301.03726">Neighborhood-regularized Self-Training for Learning with Few Labels</a><br />
+Ran Xu, Yue Yu, Hejie Cui, Xuan Kan, Yanqiao Zhu, Joyce C. Ho, Chao Zhang and Carl Yang.<br />
+AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2023.</li>
+
+<li><a href="https://pubs.acs.org/doi/10.1021/acs.jpca.3c05870">Accelerated Scheme to Predict Ring-Opening Polymerization Enthalpy: Simulation-Experimental Data Fusion and Multitask Machine Learning</a><br />
+Aubrey Toland, Huan Tran, Lihua Chen, Yinghao Li, Chao Zhang, Will Gutekunst, and Rampi Ramprasad<br />
+Journal of Physical Chemistry A, 2023</li>
+
+<li><a href="https://arxiv.org/abs/2209.13136">A General-Purpose Material Property Data Extraction Pipeline from Large Polymer Corpora Using Natural Language Processing</a><br />
+Pranav Shetty, Arunkumar Chitteth Rajan, Christopher Kuenneth, Sonkakshi Gupta, Lakshmi Prerana Panchumarti, Lauren Holm, Chao Zhang, Rampi Ramprasad<br />
+npj Comput Materials 9(52), 2023</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgd291ae9" class="outline-3">
+<h3 id="orgd291ae9">2022</h3>
+<div class="outline-text-3" id="text-orgd291ae9">
+<ul class="org-ul">
+<li><a href="https://openreview.net/pdf?id=_sYOodxTMcF">End-to-end Stochastic Optimization with Energy-based Model</a><br />
+Lingkai Kong, Jiaming Cui, Yuchen Zhuang, Rui Feng, B. Aditya Prakash, Chao Zhang<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2022<br />
+<b><font color = "red">(Selected as Oral)</font></b></li>
+<li><a href="https://arxiv.org/abs/2210.15056">UnfoldML: Cost-Aware and Uncertainty-Based Dynamic 2D Prediction for Multi-Stage Classification</a><br />
+Yanbo Xu, Alind Khare, Glenn Matlin, Monish Ramadoss, Rishikesan Kamaleswaran, Chao Zhang, Alexey Tumanov<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2203.15802">Shift-Robust Node Classification via Graph Clustering Co-training</a><br />
+Qi Zhu, Chao Zhang, Chanyoung Park, Carl Yang, Jiawei Han<br />
+NeurIPS GLFrontiers Workshop, 2022</li>
+<li><a href="https://arxiv.org/abs/2205.14228">Sparse Conditional Hidden Markov Model for Weakly Supervised Named Entity Recognition</a><br />
+Yinghao Li, Le Song, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2206.13749">Adaptive Multi-view Rule Discovery for Weakly-Supervised Compatible Products Prediction</a><br />
+Rongzhi Zhang, Rebecca West, Xiquan Cui, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2109.07438">CAMUL: Calibrated and Accurate Multi-view Time-Series Forecasting</a><br />
+Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang and B. Aditya Prakash<br />
+The Web Conference (<b>WWW</b>), 2022</li>
+<li><a href="https://proceedings.mlr.press/v193/xu22a.html">Precise Clinical Predictions via Counterfactual and Factual Reasoning over Hypergraphs of Electronic Health Records</a><br />
+Ran Xu, Yue Yu, Chao Zhang, Mohammed K Ali, Joyce Ho, Carl Yang<br />
+Machine Learning for Health (<b>ML4H</b>), 2022<br />
+<b><font color = "red">(Outstanding Paper Award)</font></b></li>
+<li><a href="https://arxiv.org/pdf/2211.00261">Deep DAG Learning on Brain Networks for fMRI Analysis</a><br />
+Yue Yu, Xuan Kan, Hejie Cui, Ran Xu, Yujia Zheng, Xiangchen Song, Yanqiao Zhu, Kun Zhang, Razieh Nabi, Ying Guo, Chao Zhang, Carl Yang<br />
+Proceedings of the IEEE International Symposium on Biomedical Imaging (ISBI), 2022</li>
+<li><a href="https://www.mdpi.com/2673-2688/3/1/13">Rule-Enhanced Active Learning for Semi-Automated Weak Supervision</a><br />
+David Kartchner, Davi Nakajima An,  Wendi Ren, Chao Zhang, Cassie S. Mitchell<br />
+<b>AI</b> 3(1), 211-228, 2022</li>
+<li><a href="https://arxiv.org/abs/2203.09735">PRBoost: Prompt-Based Rule Discovery and Boosting for Interactive Weakly-Supervised Learning</a><br />
+Rongzhi Zhang, Yue Yu, Shetty Pranav, Le Song and Chao Zhang<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2022.</li>
+<li><a href="https://arxiv.org/abs/2210.14427">ReSel: N-ary Relation Extraction from Scientific Text and Tables by Learning to Retrieve and Select</a><br />
+Yuchen Zhuang, Yinghao Li, Junyang Zhang, Yue Yu, Yingjun Mou, Xiang Chen, Le Song and Chao Zhang<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2210.15212">COCO-DR: Combating the Distribution Shift in Zero-Shot Dense Retrieval with Contrastive and Distributional Robust Learning</a><br />
+Yue Yu, Chenyan Xiong, Si Sun, Chao Zhang and Arnold Overwijk<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2204.04303">CERES: Pretraining of Graph-Conditioned Transformer for Semi-Structured Session Data</a><br />
+Rui Feng, Chen Luo, Qingyu Yin, Bing Yin, Tuo Zhao, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2022</li>
+<li><a href="https://aclanthology.org/2022.naacl-main.102/">AcTune: Uncertainty-Aware Active Self-Training for Active Fine-Tuning of Pretrained Language Models</a><br />
+Yue Yu, Lingkai Kong, Jieyu Zhang, Rongzhi Zhang, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2022</li>
+<li><a href="https://arxiv.org/abs/2109.07049">Self-Training with Differentiable Teacher</a><br />
+Simiao Zuo, Yue Yu, Chen Liang, Haoming Jiang, Siawpeng Er, Chao Zhang, Tuo Zhao, Hongyuan Zha<br />
+Findings of Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>-Findings), 2022</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2b2a2f2" class="outline-3">
+<h3 id="org2b2a2f2">2021</h3>
+<div class="outline-text-3" id="text-org2b2a2f2">
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a><br />
+Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang, B. Aditya Prakash<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2021</li>
+<li><a href="https://arxiv.org/abs/2009.05204">Transfer Learning of Graph Neural Networks with Ego-graph Information Maximization</a><br />
+Qi Zhu, Carl Yang, Yidan Xu, Haonan Wang, Chao Zhang, and Jiawei Han<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2021</li>
+<li><a href="https://arxiv.org/pdf/2105.12848.pdf">BERTifying Hidden Markov Models for Multi-Source Weakly Supervised Named Entity Recognition</a><br />
+Yinghao Li, Pranav Shetty, Lucas Liu, Chao Zhang, Le Song<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2021</li>
+<li><a href="https://arxiv.org/abs/2010.07835">Fine-Tuning Pre-trained Language Model with Weak Supervision: A Contrastive-Regularized Self-Training Approach</a> <br />
+Yue Yu*, Simiao Zuo*, Haoming Jiang, Wendi Ren, Tuo Zhao, Chao Zhang<br />
+Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2021</li>
+<li><a href="https://arxiv.org/abs/2109.05357">Learning from Language: Low-shot Named Entity Recognition via Decomposed Framework</a><br />
+Yaqing Wang, Haoda Chu, Chao Zhang, Jing Gao<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>-Findings), 2021</li>
+<li><a href="https://ieeexplore.ieee.org/document/8812927">Semantics-Aware Hidden Markov Model for Human Mobility</a><br />
+Hongzhi Shi, Yong Li, Hancheng Cao, Xiangxin Zhou, Chao Zhang, Vassilis Kostakos<br />
+IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2021.</li>
+<li><a href="https://arc.aiaa.org/doi/abs/10.2514/6.2021-0519">Supervised Machine Learning-based Wind Prediction to Enable Real-Time Flight Path Planning</a> <br />
+Jung-Hyun Kim, Chao Zhang, Simon I. Briceno and Dimitri N. Mavris<br />
+AIAA Scitech Forum, 2021</li>
+<li><a href="https://arxiv.org/abs/2010.01450">SumGNN: Multi-typed Drug Interaction Prediction via Efficient Knowledge Graph Summarization</a> <br />
+Yue Yu*, Kexin Huang*, Chao Zhang, Lucas M. Glass, Jimeng Sun, Cao Xiao <br />
+Bioinformatics, 2021</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga32ff21" class="outline-3">
+<h3 id="orga32ff21">2020</h3>
+<div class="outline-text-3" id="text-orga32ff21">
+<ul class="org-ul">
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8809901">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a><br />
+Ling Zhao, Yujiao Song, Chao Zhang, Yu Liu, Pu Wang, Tao Lin, Min Deng, Haifeng Li.<br />
+IEEE Transactions on Intelligent Transportation Systems (<b>T-ITS</b>), 21(9), 3848–3858, 2020</li>
+
+<li><a href="https://ieeexplore.ieee.org/document/9306921">A Linear Time Approach to Computing Time Series Similarity based on Deep Metric Learning</a><br />
+Di Yao, Gao Cong, Chao Zhang, Xuying Meng, Rongchang Duan, Jingping Bi<br />
+IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2020</li>
+
+<li><a href="http://proceedings.mlr.press/v119/kong20b/kong20b.pdf">SDE-Net: Equipping Deep Neural Networks with Uncertainty Estimates</a><br />
+Lingkai Kong, Jimeng Sun, Chao Zhang.<br />
+International Conference on Machine Learning (<b>ICML</b>), 2020</li>
+
+<li><a href="papers/2020-kdd-steam.pdf">STEAM: Self-Supervised Taxonomy Expansion with Mini-Paths</a><br />
+Yue Yu, Yinghao Li, Jiaming Shen, Hao Feng, Jimeng Sun and Chao Zhang.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2020</li>
+
+<li><a href="papers/2020-kdd-bond.pdf">BOND: Bert-Assisted Open-Domain Named Entity Recognition with Distant Supervision</a><br />
+Chen Liang*, Yue Yu*, Haoming Jiang, Siawpeng Er, Ruijia Wang, Tuo Zhao and Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2020</li>
+
+<li><a href="papers/2020-kdd-logpar.pdf">LogPar: Logistic PARAFAC2 Factorization for Temporal Binary Data with Missing Values</a><br />
+Kejing Yin, Ardavan Afshar, Joyce Ho, William Cheung, Chao Zhang and Jimeng Sun<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2020</li>
+
+<li><a href="https://arxiv.org/abs/2007.09536">Hierarchical Topic Mining via Joint Spherical Tree and Text Embedding</a><br />
+Yu Meng, Yunyi Zhang, Jiaxin Huang, Yu Zhang, Chao Zhang and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2020</li>
+
+<li><a href="https://arxiv.org/abs/2004.06059">paper2repo: GitHub Repository Recommendation for Academic Papers</a><br />
+Huajie Shao, Dachun Sun, Jiahao Wu, Zecheng Zhang, Aston Zhang, Shuochao Yao, Shengzhong Liu, Tianshi Wang, Chao Zhang and Tarek Abdelzaher.<br />
+The Web Conference (<b>WWW</b>), 2020</li>
+
+<li><a href="https://arxiv.org/abs/1908.07162">Discriminative Topic Mining via Category-Name Guided Text Embedding</a><br />
+Yu Meng, Jiaxin Huang, Guangyuan Wang, Zihan Wang, Chao Zhang, Yu Zhang and Jiawei Han.<br />
+The Web Conference (<b>WWW</b>), 2020</li>
+
+<li><a href="https://openreview.net/pdf?id=FZDPu3JLEPg">ReGAL: Rule-Generative Active Learning for Model-in-the-Loop Weak Supervision</a><br />
+David Kartchner, Wendi Ren, Davi Nakajima An, Chao Zhang, Cassie Mitchell.<br />
+NeurIPS 2020 HAMLETS workshop on Human and Model in the Loop Evaluation and Training Strategies</li>
+
+<li><a href="papers/2020-emnlp-calibration.pdf">Calibrated Language Model Fine-Tuning for In- and Out-of-Distribution Data</a><br />
+Lingkai Kong, Haoming Jiang, Yuchen Zhuang, Jie Lyu, Tuo Zhao and Chao Zhang.<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2020</li>
+
+<li><a href="papers/2020-emnlp-name.pdf">Text Classification Using Label Names Only: A Language Model Self-Training Approach</a><br />
+Yu Meng, Yunyi Zhang, Jiaxin Huang, Chenyan Xiong, Heng Ji, Chao Zhang, Jiawei Han.<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2020</li>
+
+<li><a href="papers/2020-emnlp-seqmix.pdf">SeqMix: Augmenting Active Sequence Labeling via Sequence Mixup</a><br />
+Rongzhi Zhang, Yue Yu and Chao Zhang.<br />
+Conference on Empirical Methods in Natural Language Processing (<b>EMNLP</b>), 2020</li>
+
+<li><a href="papers/2020-emnlp-multi-source.pdf">Denoising Multi-Source Weak Supervision for Neural Text Classification</a><br />
+Wendi Ren, Yinghao Li, Hanting Su, David Kartchner, Cassie Mitchell, and Chao Zhang.<br />
+Findings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Findings</b>), 2020</li>
+
+<li><a href="https://dl.acm.org/doi/abs/10.1145/3397271.3401179">Joint Aspect-Sentiment Analysis with Minimal User Guidance</a><br />
+Honglei Zhuang, Fang Guo, Chao Zhang, Liyuan Liu and Jiawei Han.<br />
+<i>ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR</b>)</i>, 2020.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org067a613" class="outline-3">
+<h3 id="org067a613">2019</h3>
+<div class="outline-text-3" id="text-org067a613">
+<ul class="org-ul">
+<li><a href="https://www.morganclaypool.com/doi/10.2200/S00903ED1V01Y201902DMK017">Multidimensional Mining of Massive Text Data</a><br />
+Chao Zhang, Jiawei Han.<br />
+Morgan &amp; Claypool Publishers, 2019</li>
+
+<li><a href="https://papers.nips.cc/paper/9031-spherical-text-embedding.pdf">Spherical Text Embedding</a><br />
+Yu Meng, Jiaxin Huang, Guangyuan Wang, Chao Zhang, Honglei Zhuang, Lance Kaplan, Jiawei Han.<br />
+Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2019</li>
+
+<li><a href="papers/2019-kdd-share-hmm.pdf">State-Sharing Sparse Hidden Markov Models for Personalized Sequences</a><br />
+Hongzhi Shi, Chao Zhang, Mingquan Yao, Yong Li, Funing Sun, Depeng Jin.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2019</li>
+
+<li><a href="papers/2019-kdd-demo-a.pdf">TopicMine: User-Guided Topic Mining by Category-Oriented Embedding</a><br />
+Yu Meng, Jiaxin Huang, Zihan Wang, Chenyu Fan, Guangyuan Wang, Chao Zhang, Jingbo Shang, Lance Kaplan, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2019<br />
+(Demo)</li>
+
+<li><a href="papers/2019-kdd-demo-b.pdf">CubeNet: Multi-Facet Hierarchical Heterogeneous Network Construction, Analysis, and Mining</a><br />
+Carl Yang, Dai Teng, Siyang Liu, Sayantani Basu, Jieyu Zhang, Jiaming Shen, Chao Zhang, Jingbo Shang, Lance Kaplan, Timothy Harratty, and Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2019<br />
+(Demo)</li>
+
+<li><a href="http://proceedings.mlr.press/v97/chen19h.html">A Gradual, Semi-Discrete Approach to Generative Network Training via Explicit Wasserstein Minimization</a><br />
+Yucheng Chen, Matus Telgarsky, Chao Zhang, Bolton Bailey, Daniel Hsu, Jian Peng.<br />
+International Conference on Machine Learning (<b>ICML</b>), 2019</li>
+
+<li><a href="papers/2019-aaai-hierarchical-classification.pdf">Weakly-Supervised Hierarchical Text Classification</a><br />
+Yu Meng, Jiaming Shen, Chao Zhang, Jiawei Han.<br />
+AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2019</li>
+
+<li><a href="https://ieeexplore.ieee.org/document/8731427">Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach</a><br />
+Di Yao, Gao Cong, Chao Zhang, Jingping Bi.<br />
+IEEE International Conference on Data Engineering (<b>ICDE</b>), 2019</li>
+
+<li><a href="https://dl.acm.org/citation.cfm?id=3313424">DPLink: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data</a><br />
+Jie Feng, Mingyang Zhang, Huandong Wang, Zeyu Yang, Chao Zhang,  Yong Li, Depeng Jin.<br />
+The Web Conference (<b>WWW</b>), 2019</li>
+
+<li><a href="https://epubs.siam.org/doi/pdf/10.1137/1.9781611975673.8">GeoAttn: Localization of Social Media Messages Via Attentional Memory Network</a><br />
+Sha Li, Chao Zhang, Dongming Lei, Ji Li, Jiawei Han.<br />
+SIAM International Conference on Data Mining (<b>SDM</b>), 2019</li>
+
+<li><a href="http://hanchengcao.me/pdf/EmbeddingHMM.pdf">Semantics-Aware Hidden Markov Model for Human Mobility</a><br />
+Hongzhi Shi, Hancheng Cao, Xiangxin Zhou, Yong Li, Chao Zhang, Vassilis Kostakos, Funing Sun, Fanchao Meng.<br />
+SIAM International Conference on Data Mining (<b>SDM</b>), 2019</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0b2e782" class="outline-3">
+<h3 id="org0b2e782">2018</h3>
+<div class="outline-text-3" id="text-org0b2e782">
+<ul class="org-ul">
+<li><a href="https://www.ideals.illinois.edu/handle/2142/102465">Multi-Dimensional Mining of Unstructured Data with Limited Supervision</a><br />
+Chao Zhang<br />
+Ph.D. Thesis<br />
+<b><font color = "red">(ACM SIGKDD 2019 Dissertation Runner-up Award)</font></b></li>
+
+<li><a href="papers/2018-kdd-taxogen.pdf">TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering</a><br />
+Chao Zhang, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2018<br />
+<a href="https://github.com/franticnerd/local-embedding">(Code)</a> <a href="https://goo.gl/NRQbmg">(Data)</a><br /></li>
+
+<li><a href="papers/2018-kdd-hiexpan.pdf">HiExpan: Task-Guided Taxonomy Construction by Hierarchical Tree Expansion</a><br />
+Jiaming Shen, Zeqiu Wu, Dongming Lei, Chao Zhang, Xiang Ren, Michelle T. Vanni, Brian M. Sadler, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2018</li>
+
+<li><a href="https://arxiv.org/pdf/1807.03490.pdf">Easing Embedding Learning by Comprehensive Transcription of Heterogeneous Information Networks</a><br />
+Yu Shi, Qi Zhu, Fang Guo, Chao Zhang, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2018</li>
+
+<li><a href="https://www.dropbox.com/s/0ca5wjwutzrioie/kdd18-tutorial-slides.pdf?dl=0">Towards Multidimensional Analysis of Text Corpora</a><br />
+Jingbo Shang, Chao Zhang, Jiaming Shen, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2018<br />
+(Tutorial)</li>
+
+<li><a href="papers/2018-www-mobility.pdf">DeepMove: Predicting Human Mobility with Attentional Recurrent Networks</a><br />
+Jie Feng, Yong Li, Chao Zhang, Funing Sun, Fanchao Meng, Ang Guo, Depeng Jin.<br />
+The International World Wide Web Conference (<b>WWW</b>), 2018<br />
+<a href="https://github.com/vonfeng/DeepMove">(Code &amp; Data)</a><br /></li>
+
+<li><a href="papers/2018-cikm-westclass.pdf">Weakly-Supervised Neural Text Classification</a><br />
+Yu Meng, Jiaming Shen, Chao Zhang, Jiawei Han.<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2018<br />
+<a href="https://github.com/yumeng5/WeSTClass">(Code)</a></li>
+
+<li><a href="papers/2018-cikm-event-schema.pdf">Open-Schema Event Profiling for Massive News Corpora</a><br />
+Quan Yuan, Xiang Ren, Wenqi He, Chao Zhang, Xinhe Geng, Lifu Huang, Heng Ji, Chin-Yew Lin, Jiawei Han.<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2018</li>
+
+<li><a href="papers/2018-aaai-branchnet.pdf">Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach</a><br />
+Chao Zhang, Mengxiong Liu, Zhengchao Liu, Carl Yang, Luming Zhang, and Jiawei Han.<br />
+AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2018</li>
+
+<li><a href="papers/2018-aaai-semantics-hmm.pdf">A Spherical Hidden Markov Model for Semantics-Rich Human Mobility Modeling</a><br />
+Wanzheng Zhu +, Chao Zhang +, Shuochao Yao, Xiaobin Gao, and Jiawei Han.<br />
+AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2018</li>
+
+<li><a href="papers/2018-icdm-text-cube.pdf">Doc2Cube: Allocating Documents to Text Cube without Labeled Data</a><br />
+Fangbo Tao +, Chao Zhang +, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han.<br />
+IEEE International Conference on Data Mining (<b>ICDM</b>), 2018<br />
+<a href="https://github.com/fangbo-tao/doc2cube">(Code)</a><br /></li>
+
+<li><a href="https://arxiv.org/pdf/1709.02980.pdf">RDeepSense: Reliable Deep Mobile Computing Models with Uncertainty Estimations</a><br />
+Shuochao Yao, Yiran Zhao, Huajie Shao, Aston Zhang, Chao Zhang, Shen Li, and Tarek Abdelzaher.<br />
+Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (<b>IMWUT</b>), 2018</li>
+
+<li><a href="https://dl.acm.org/citation.cfm?id=3264954">SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework</a><br />
+Shuochao Yao, Yiran Zhao, Huajie Shao, Chao Zhang, Aston Zhang, Shaohan Hu, Dongxin Liu, Shengzhong Liu, and Tarek Abdelzaher.<br />
+Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (<b>IMWUT</b>), 2018<br />
+<b><font color = "red">(Distinguished Paper Award)</font></b></li>
+
+<li><a href="https://ieeexplore.ieee.org/document/8364644/">Deep Learning for the Internet of Things</a><br />
+Shuochao Yao, Yiran Zhao, Aston Zhang, Huajie Shao, Chao Zhang, Lu Su, Tarek Abdelzaher.<br />
+IEEE Computer, 2018</li>
+
+<li><a href="papers/2018-tist-gb-plus.pdf">GeoBurst+: Effective and Real-Time Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+Chao Zhang, Dongming Lei, Quan Yuan, Honglei Zhuang, Lance Kaplan, Shaowen Wang, Jiawei Han.<br />
+ACM Transactions on Intelligent Systems and Technology (<b>TIST</b>), 2018</li>
+
+<li><a href="papers/2018-asonam-event.pdf">Leveraging the Power of Informative Users for Local Event Detection</a><br />
+Hengtong Zhang, Fenglong Ma, Yaliang Li, Chao Zhang, Tianqi Wang, Yaqing Wang, Jing Gao, Lu Su.<br />
+IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (<b>ASONAM</b>), 2018</li>
+
+<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/exsy.12252">Learning deep representation for trajectory clustering</a><br />
+Di Yao, Chao Zhang, Zhihua Zhu, Qin Hu,heng Wang, Jianhui Huang, Jingping Bi.<br />
+Expert Systems, 2018.</li>
+
+<li><a href="papers/2018-icde-ride.pdf">Did You Enjoy the Ride: Understanding Passenger Experience via Heterogeneous Network Embedding</a><br />
+Carl Yang, Chao Zhang, Jiawei Han, Xuewen Chen, and Jieping Ye.<br />
+IEEE International Conference on Data Engineering (<b>ICDE</b>), 2018</li>
+
+<li><a href="https://ieeexplore.ieee.org/abstract/document/8416304/">ApDeepSense: Deep Learning Uncertainty Estimation without the Pain for IoT Applications</a><br />
+Shuochao Yao, Yiran Zhao, Huajie Shao, Chao Zhang, Aston Zhang, Dongxin Liu, Shengzhong Liu, Lu Su, Tarek Abdelzaher.<br />
+IEEE International Conference on Distributed Computing Systems (<b>ICDCS</b>), 2018</li>
+
+<li><a href="papers/2018-infocom-social-sensing.pdf">A Constrained Maximum Likelihood Estimator for Unguided Social Sensing</a><br />
+Huajie Shao, Shuochao Yao, Yiran Zhao, Chao Zhang, Jinda Han, Lance Kaplan, Su Lu, and Tarek Abdelzaher.<br />
+IEEE International Conference on Computer Communications (<b>InfoCom</b>), 2018</li>
+
+<li><a href="https://dl.acm.org/citation.cfm?id=3187011">Towards Personalized Activity Level Prediction in Community Question Answering Websites</a><br />
+Zhenguang Liu, Yingjie Xia, Qi Liu, Qinming He, Yanxiang Chen, Chao Zhang, and Roger Zimmermann.<br />
+ACM Transactions on Multimedia Computing, Communications, and Applications (<b>TOMM</b>), 2018</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaca643a" class="outline-3">
+<h3 id="orgaca643a">Earlier</h3>
+<div class="outline-text-3" id="text-orgaca643a">
+<ul class="org-ul">
+<li><a href="papers/2017-kdd-triovecevent.pdf">TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+Chao Zhang, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2017<br />
+<b><font color = "red">(Featured by Illinois Innovator)</font></b></li>
+
+<li><a href="papers/2017-kdd-poi-recommendation.pdf">Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation</a><br />
+Carl Yang, Lanxiao Bai, Chao Zhang, Quan Yuan and Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2017.<br />
+<a href="https://github.com/yangji9181/PACE2017">(Code &amp; Data)</a></li>
+
+<li><a href="papers/2017-sigir-online-embedding.pdf">ReAct: Online Multimodal Embedding for Recency-Aware Spatiotemporal Activity Modeling</a><br />
+Chao Zhang, Keyang Zhang, Quan Yuan, Fangbo Tao, Luming Zhang, Tim Hanratty, and Jiawei Han.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR</b>), 2017<br />
+(<a href="https://docs.google.com/presentation/d/1pIkCi1Yxw8k8Q78xAuEqW4UWkC5oGyE8dBKRcNLIzE4/edit?usp=sharing">Slides)</a> <a href="https://goo.gl/HxvERN">(Code)</a> <a href="https://goo.gl/kq4dfn">(Data)</a></li>
+
+<li><a href="papers/2017-www-crossmap.pdf">Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning</a><br />
+Chao Zhang, Keyang Zhang, Quan Yuan, Haoruo Peng, Yu Zheng, Tim Hanratty, Shaowen Wang, and Jiawei Han.<br />
+International World Wide Web Conference (<b>WWW</b>), 2017<br /></li>
+
+<li><a href="papers/2017-icde-tutorial.pdf">Bringing Semantics to Spatiotemporal Data Mining: Challenges, Methods, and Applications</a><br />
+Chao Zhang, Quan Yuan, and Jiawei Han.<br />
+IEEE International Conference on Data Engineering (<b>ICDE</b>), 2017<br />
+(Tutorial)</li>
+
+<li><a href="papers/2017-wsdm-periodic.pdf">PRED: Periodic Region Detection for Mobility Modeling of Social Media Users</a><br />
+Quan Yuan, Wei Zhang, Chao Zhang, Xinhe Geng, Gao Cong, and Jiawei Han.<br />
+ACM International Conference on Web Search and Data Mining (<b>WSDM</b>), 2017<br />
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCQjZGNEFXUmlDSTg">(Code &amp; Data)</a><br /></li>
+
+<li><a href="https://drive.google.com/open?id=0Byrzhr4bOatCck5mdWJnb2xudVk">Towards Space and Time Coupled Social Media Analysis</a><br />
+Chao Zhang,  Quan Yuan, Shi Zhi, Sha Li, and Jiawei Han.<br />
+2017 ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2017<br />
+(Tutorial)</li>
+
+<li><a href="papers/2017-cikm-periodic.pdf">Detecting Multiple Periods and Periodic Patterns in Event Time Sequences</a><br />
+Quan Yuan, Jingbo Shang, Xin Cao, Chao Zhang, Xinhe Geng, Jiawei Han.<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2017</li>
+
+<li><a href="papers/2017-cikm-serm.pdf">SERM: A Recurrent Model for Next Location Prediction in Semantic Trajectories</a><br />
+Di Yao, Chao Zhang, Jianhui Huang, and Jingping Bi<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2017<br />
+<a href="https://github.com/yaodi833/serm">(Code &amp; Data)</a></li>
+
+<li><a href="papers/2017-cikm-urbanity.pdf">Urbanity: A System for Interactive Exploration of Urban Dynamics from Streaming Human Sensing Data</a><br />
+Mengxiong Liu, Zhengchao Liu, Chao Zhang,  Keyang Zhang, Quan Yuan, Tim Hanratty, and Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2017<br />
+<a href="http://urbanity-frontend.herokuapp.com/">(Demo)</a></li>
+
+<li><a href="https://dl.acm.org/citation.cfm?id=3133182">ClaimVerif: A Real-time Claim Verification System Using the Web and Fact Databases</a><br />
+Shi Zhi, Yicheng Sun,  Jiayi Liu, Chao Zhang, and Jiawei Han.<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2017</li>
+
+<li><a href="https://ieeexplore.ieee.org/document/7966345">Trajectory Clustering via Deep Representation Learning</a><br />
+Di Yao, Chao Zhang, Zhihua Zhu, Jianhui Huang, and Jingping Bi.<br />
+International Joint Conference on Neural Networks (<b>IJCNN</b>), 2017<br />
+<a href="https://github.com/yaodi833/trajectory2vec.git">(Code)</a></li>
+
+<li><a href="papers/2017-tbd-air-causality.pdf">pg-Causality: Identifying Spatiotemporal Causal Pathways for Air Pollutants with Urban Big Data</a><br />
+Julie Yixuan Zhu +, Chao Zhang +, Huichu Zhang, Shi Zhi, Victor O.K. Li, Jiawei Han, and Yu Zheng.<br />
+IEEE Transactions on Big Data (<b>TBD</b>), 2017</li>
+
+<li><a href="http://onlinelibrary.wiley.com/book/10.1002/9781118786352">Geographical Data Mining</a><br />
+Chao Zhang and Jiawei Han.<br />
+The International Encyclopedia of Geography: People, the Earth, Environment and Technology, 2017</li>
+
+<li><a href="https://www.springer.com/us/book/9783319525204">A Survey on Spatiotemporal and Semantic Data Mining</a><br />
+Quan Yuan, Chao Zhang, Jiawei Han.<br />
+Trends in Spatial Analysis and Modelling, Springer, 2017</li>
+
+<li><a href="papers/2016-kdd-gmove.pdf">GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media</a><br />
+Chao Zhang, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2016<br /></li>
+
+<li><a href="papers/2016-sigir-geoburst.pdf">GeoBurst: Real-Time Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+Chao Zhang, Guangyu Zhou, Quan Yuan, Honglei Zhuang, Yu Zheng, Lance Kaplan, Shaowen Wang, Jiawei Han.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR</b>), 2016<br /></li>
+
+<li><a href="papers/2016-tcbb-sequential.pdf">Mining Contiguous Sequential Generators in Biological Sequences</a><br />
+Jingsong Zhang, Yinglin Wang, Chao Zhang, and Yongyong Shi<br />
+Transactions on Computational Biology and Bioinformatics (<b>TCBB</b>), 13(5): 855&#x2013;867, 2016</li>
+
+<li><a href="papers/2015-kdd-scp.pdf">Assembler: Efficient Discovery of Spatial Co-evolving Patterns in Massive Geo-sensory Data</a><br />
+Chao Zhang, Yu Zheng, Xiuli Ma, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2015</li>
+
+<li><a href="papers/2015-pkdd-random-walk.pdf">Fast Inbound Top-K Query for Random Walk with Restart</a><br />
+Chao Zhang, Shan Jiang, Yucheng Chen, Yidan Sun, Jiawei Han.<br />
+European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (<b>ECML/PKDD</b>), 2015<br />
+<b><font color = "red">(Best Student Paper Runner-up Award)</font></b></li>
+
+<li><a href="papers/2015-icde-stream-cube.pdf">StreamCube: Hierarchical Spatio-temporal Hashtag Clustering for Event Exploration over the Twitter Stream</a><br />
+Wei Feng, Chao Zhang, Wei Zhang, Jiawei Han, Jianyong Wang, Charu Aggarwal, Jianbin Huang.<br />
+IEEE International Conference on Data Engineering (<b>ICDE</b>), 2015</li>
+
+<li><a href="papers/2014-pvldb-splitter.pdf">Splitter: Mining Fine-Grained Sequential Patterns in Semantic Trajectories</a><br />
+Chao Zhang, Jiawei Han, Lidan Shou, Jiajun Lu, Thomas La Porta.<br />
+International Conference on Very Large Data Bases (<b>VLDB</b>), 2014<br /></li>
+
+<li><a href="https://ieeexplore.ieee.org/document/6816742/">Trendspedia: An Internet Observatory for Analyzing and Visualizing the Evolving Web</a><br />
+Wei Kang, Anthony K. H. Tung, Wei Chen, Xinyu Li, Qiyue Song, Chao Zhang, Feng Zhao, Xiajuan Zhou.<br />
+IEEE International Conference on Data Engineering (<b>ICDE</b>), 2014</li>
+
+<li><a href="papers/2013-tkde-privacy.pdf">Supporting Pattern-Preserving Anonymization for Time-Series Data</a><br />
+Lidan Shou, Xuan Shang, Ke Chen, Gang Chen, Chao Zhang.<br />
+IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 25(4): 877-892, 2013</li>
+
+<li><a href="papers/2012-cikm-social-influence.pdf">Evaluating Geo-Social Influence in Location-Based Social Networks</a><br />
+Chao Zhang, Lidan Shou, Ke Chen, Gang Chen, Yijun Bei.<br />
+ACM International Conference on Information and Knowledge Management (<b>CIKM</b>), 2012</li>
+
+<li><a href="papers/2012-sigir-see-to-retrieve.pdf">See-To-Retrieve: Efficient Processing of Spatio-Visual Keyword Queries</a><br />
+Chao Zhang, Lidan Shou, Ke Chen, Gang Chen.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR</b>), 2012</li>
+
+<li><a href="papers/2011-sigir-demo.pdf">What-You-Retrieve-Is-What-You-See: A Preliminary Cyber-Physical Search Engine</a><br />
+Lidan Shou, Ke Chen, Gang Chen, Chao Zhang, Yi Ma, Xian Zhang.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR</b>), 2011</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org832cf0e" class="outline-2">
+<h2 id="org832cf0e">Students</h2>
+<div class="outline-text-2" id="text-org832cf0e">
+<p>
+<a id="orge4e27d3"></a>
+</p>
+
+<p>
+<b>Prospective students:</b> I am always looking for strong and motivated students
+to join our group. If you are interested in working with me, you can either
+email me or fill out <a href="https://forms.gle/Locv9n73nKrfN8Ci9">this form</a>.
+</p>
+
+<p>
+<b>Current:</b>
+</p>
+<ul class="org-ul">
+<li>Agam A. Shah: Ph.D. Student in ML (co-advised with Sudheer Chava)</li>
+<li>Changhao Li: Ph.D. Student in CSE (co-advised with Bo Dai)</li>
+<li>Haorui Wang: Ph.D. Student in CSE</li>
+<li>Haotian Sun: Ph.D. Student in ML (co-advised with Bo Dai)</li>
+<li>Jing Peng: Ph.D. Student in CSE</li>
+<li>Kuan Wang: Ph.D. Student in CSE</li>
+<li>Rui Feng: Ph.D. Student in CS</li>
+<li>Rushi Qiang: Ph.D. Student in CSE (co-advised with Bo Dai)</li>
+<li>Yanbin Yin: Ph.D. Student in CS</li>
+</ul>
+
+<p>
+<b>Alumni:</b>
+</p>
+
+<ul class="org-ul">
+<li>Yuchen Zhuang: Ph.D. Student in ML  (&#x2013;&gt; Research Scientist @ Google Deepmind)</li>
+<li>Yinghao Li: Ph.D. Student in ML  (&#x2013;&gt; Research Scientist @ Amazon AWS)</li>
+<li>Rongzhi Zhang: Ph.D. Student in ML  (&#x2013;&gt; Research Scientist @ Amazon Rufus Team)</li>
+<li>Yue Yu: Ph.D., 2024  (&#x2013;&gt; Research Scientist @ Meta GenAI Team)</li>
+<li>Lingkai Kong: Ph.D., 2024 (&#x2013;&gt; Postdoc Fellow @ Harvard)</li>
+<li>Yanbo Xu: Ph.D.,  2023 (&#x2013;&gt; Research Scientist @ Microsoft Research)</li>
+<li>Binghong Chen: Ph.D.,  2023 (&#x2013;&gt; Quant @ Citadel Capital, co-advised with Prof. Le Song)</li>
+<li>Pranav Shetty: Ph.D., 2023 (&#x2013;&gt; Research Scienctist @ JP Morgan Chase, JP Morgan AI Ph.D. Fellowship, co-advised with Prof. Rampi Ramprasad)</li>
+<li>Yi Rong: Visiting Ph.D. Student</li>
+<li>Vidit Jain: M.S. Student in CS</li>
+<li>Mukund Rungta: M.S. Student in CS</li>
+<li>Junyang Zhang: M.S. Student in CS</li>
+<li>Piyush Patil: M.S. Student in CS</li>
+<li>Mengyang Liu: M.S. Student in CSE</li>
+<li>Isaac Rehg: M.S. in CS</li>
+<li>Wendi Ren: M.S. in CSE</li>
+<li>Ruijia Wang: M.S. in CSE</li>
+<li>Jacob Wessell: M.S. in CS</li>
+<li>Wenhao Mu: M.S. in CS</li>
+<li>Shangqing Xu: M.S. in CS</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

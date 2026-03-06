@@ -1,0 +1,1861 @@
+<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+<!--<BASE HREF='http://people.csail.mit.edu/~akcheung/'>-->
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN'
+ 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+  <title>Alvin Cheung's Homepage</title>
+  <meta name='keywords' content='Alvin Cheung,databases,data science,programming languages,UCB,University of California, Berkeley,CS,research,computer science,systems,homeprice,property valuation'>
+<link rel=stylesheet href='style.css' type='text/css'>
+
+<!-- gtm -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPSP62F');</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143279167-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143279167-1');
+</script>
+</head>
+
+
+<!--<body bgcolor=f0fff0 text=0030000>-->
+<body>
+
+<!-- gtm -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPSP62F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<h1>Alvin Cheung</h1>
+
+<table border="0">
+<tr>
+<td>
+<img src="self.jpg" height="150" width="110" hspace="30">
+</td>
+
+<td>
+<script type='text/javascript'><!--
+var s = 'akcheung' + 'acs.berkeleyttedu'.replace('a', '#').replace('tt', '.').replace('#', '@');
+document.write('<a href=\'mailt' + 'o:' + s + '\'>' + s + '</a><br />');
+-->
+</script>
+Room 785, <a href="https://eecs.berkeley.edu/about/visiting">Soda Hall</a> <br>
+<!-- <a class="twitter-follow-button" href="https://twitter.com/alvinkcheung" 
+   data-show-count="false" data-show-screen-name="false">
+  Follow @alvinkcheung</a>
+<a class="github-button" href="https://github.com/akcheung" 
+   aria-label="Follow @akcheung on GitHub"></a>   -->
+<br>
+<a href="http://www.linkedin.com/in/alvinkcheung">LinkedIn</a> | <a href="https://twitter.com/alvinkcheung">X</a> | <a href="https://github.com/akcheung">GitHub</a>
+<br>
+<br>
+<b>Mailing address</b><br>
+387 Soda Hall <br>
+Berkeley, CA 94720-1776 <br>
+</td>
+
+</tr>
+
+</table>
+
+<p class=abstract>
+I am an associate professor in the <a href='http://cs.berkeley.edu'>Computer Science Division</a>
+at <a href='http://www.berkeley.edu'>UC Berkeley</a> <a href="http://eecs.berkeley.edu">EECS</a>. 
+I am a member of the 
+<a href='http://dsf.berkeley.edu'>Data Systems and Foundations</a> group,
+<a href='http://ps.berkeley.edu'>Programming Systems</a> group, 
+<a href='https://sky.cs.berkeley.edu'>Sky Lab</a>, 
+<a href="https://slice.eecs.berkeley.edu/">SLICE Lab</a>,
+and a faculty affiliate in the <a href='https://bids.berkeley.edu/'>Berkeley Institute for Data Science</a>.
+I also serve as an advisor to the <a href="https://data.berkeley.edu/discovery/about">Data Science Discovery Program</a>,
+and technical advisor to several companies.
+
+<p class=abstract>
+My research interests include data management, programming languages,
+and building software systems. My group aims to help end users,
+from data scientists to coding experts, to easily extract insights from large amounts of data. 
+We also develop techniques and tools that make it easy to build
+large-scale, efficient, and manageable data processing pipelines, where such pipelines range 
+from traditional computer science applications (web, cloud) to emerging application domains in data science (physical sciences, healthcare, social sciences) 
+and beyond.
+</p>
+
+<p class=abstract>
+Some research themes:
+<ul>
+<li> <a href="http://metalift.github.io">Verified lifting</a>
+is a new technique for inferring properties of programs by leveraging formal methods and deep learning. 
+We have applied this to database applications (<a href="https://homes.cs.washington.edu/~akcheung/papers/pldi13.html">QBS</a>),
+stencil computations (<a href="http://stng.uwplse.org">STNG</a>),
+programmable switches (<a href="http://web.mit.edu/domino/">Domino</a>), 
+parallel data processing frameworks (<a href="https://casper-compiler.github.io/">Casper</a>),
+GPUs (<a href="http://dexter.uwplse.org">Dexter</a> and <a href="https://github.com/uwplse/rake">Rake</a>),
+CRDTs (<a href="https://github.com/hydro-project/katara">Katara</a>), and 
+tensor computations (<a href="https://github.com/tenspiler/tenspiler">Tenspiler</a>).
+Code generated using our techniques are now deployed at Adobe and Google.
+
+<li> Designing new data processing and programming languages techniques to build and optimize data management and machine learning systems
+for emerging applications:
+<a href="http://cosette.cs.washington.edu">Cosette</a> and <a href="https://github.com/qed-solver">QED</a> (reasoning about data transformations from grading homework assignments to 
+building query optimizers),
+<a href="https://hyperloop-rails.github.io">Hyperloop</a> (improving the performance of database-backed applications), 
+<a href="https://github.com/apperception-db/spatialyze">Spatialyze</a> (data management system for large-scale geospatial video datasets), and
+<a href="https://github.com/LiuXiaoxuanPKU/OSD">OSD</a> (adaptive speculative decoding).
+</li>
+
+<li> Improving end user (such as data scientists) data programming experience with new user interfaces and code generators across different domains, using techniques
+from machine learning, program synthesis, and human-computer interaction: 
+<a href="https://falx.cs.washington.edu">Falx</a>, 
+<a href="https://github.com/gonglinyuan/ast_t5">AST-T5</a>, and 
+<a href="https://safimbenchmark.com/">SAFIM</a>.
+
+</ul>
+</p>
+
+<p class=abstract>
+<!--
+I'll be recruiting new graduate students next year for the topics above 
+(see <a href="https://eecs.berkeley.edu/academics/graduate/research-programs/admissions">admissions website</a> for details) 
+but unfortunately cannot comment on individual cases. -->
+If you are a Berkeley student interested in doing research 
+in these areas and have done well in CS 164, CS182, or CS186 please send me an email mentioning which class(es) you have 
+taken, and include your resume and unofficial transcript.
+</p>
+
+<p class=abstract>
+I regularly teach the undergraduate <a href="https://cs186berkeley.net/">data management</a> class at Berkeley.
+Check out the <a href="https://www.youtube.com/@CS186Berkeley/playlists">recorded videos</a> if you are interested.
+</p>
+
+<p class=abstract>
+We thank the NSF, DOE, ONR, ARO, and Intel for their generous support of our group's research, and
+transferring our technology to real-world products. We are also grateful for the early career awards and other recognitions from the 
+data management and programming systems research communities.
+</p>
+
+<!-- <p class=abstract> 
+I was earlier on the CSE faculty at the <a href="https://www.cs.washington.edu/">University of Washington</a> and 
+an affiliate in the <a href="https://escience.washington.edu/">UW eScience Institute</a>, and before that 
+a graduate student in the <a href='http://db.csail.mit.edu'>MIT
+database group</a> and the 
+<a href='http://groups.csail.mit.edu/cap'>computer-aided programming group</a>,
+working with Professors 
+<a href='http://db.csail.mit.edu/madden'>Sam Madden</a> and
+<a href='http://people.csail.mit.edu/asolar'>Armando Solar-Lezama</a>.
+I worked on tools that make use of programming language techniques 
+to improve application performance. </p> -->
+
+<!--
+<p class=abstract>
+<b>Fall 2022 </b>:
+If you are a Berkeley student interested in enrolling in CS186 in fall 2022, please
+see <a href="https://docs.google.com/document/d/1lOLj0gJa7QcA_QL6D3lXmwk_lvF41JcapbcEu_Tduvg/edit">this page</a> for
+enrollment information. Please contact the dept admins for permission codes.
+And see <a href="https://classes.berkeley.edu/content/2022-fall-compsci-186-001-lec-001">this page</a> for final
+exam conflicts.
+</p>
+-->
+
+<h2>What's new?</h2>
+<!--
+<a class="twitter-timeline" href="https://twitter.com/alvinkcheung"
+data-height="100" data-width="70ex" data-chrome="noheader,nofooter,noborder">
+What's new?</a> 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+-->
+<ul>
+
+<li>
+<small>[12/25]</small> We recently released a <a href="https://frontier-cs.org/">new benchmark</a> to evaluate frontier models' performance
+on open-ended computer science problems. Check it out! 
+</li>
+
+<li>
+<small>[7/25]</small> Honored to be the recipient of the <a href="https://eecs.berkeley.edu/news/alvin-cheung-receives-acsic-rock-star-award/">ACSIC Rock Star Award</a> this year.
+Thank you for the recognition and grateful for the support of the Chinese community in computing!
+</li>
+
+<li>
+<small>[7/25]</small> <a href="https://charleshong3.github.io/blog/autocomp.html">Autocomp</a>, 
+our work on using ML to optimize code, 
+received <a href="https://www.linkedin.com/posts/mlarchsys_mlarchsys2025-isca2025-machinelearning-activity-7342358903382315008-xxA0/">outstanding paper award</a>
+at the <a href="https://sites.google.com/view/mlarchsys">ML Arch Sys</a> workshop this year!
+</li>
+<li>
+
+<small>[10/24]</small> Honored to receive the <a href="https://eecs.berkeley.edu/news/alvin-cheung-wins-dahl-nygaard-junior-prize/">Dahl-Nygaard Junior Prize</a> 
+this year!
+</li>
+
+<li>
+<small>[7/24]</small> We will be presenting 3 papers at ICML this year: 
+Lily's work on <a href="https://github.com/LiuXiaoxuanPKU/OSD">continuously updating draft models</a> to improve 
+speculative decoding performance, 
+and Linyuan's work on <a href="https://github.com/gonglinyuan/ast_t5">making LLMs code-aware for coding tasks</a> along with 
+<a href="https://github.com/gonglinyuan/safim">a new benchmark</a> for evaluation.
+</li>
+
+</ul>
+
+
+<button class="accordion">Previous News</button>
+<div class="panel">
+<ul>
+
+<li>
+<small>[7/24]</small> We just released <a href="https://tyler-griggs.github.io/blogs/melange">M&eacute;lange</a> for deciding how 
+to allocate GPUs for LLM workloads. Check it out! 
+</li>
+
+<li>
+<small>[5/24]</small> We released a new benchmark for LLM-based coding tasks. Unlike traditional code completion type tasks, 
+our benchmark requires the model to understand <i>both</i> the code that comes before and after the part to be generated.
+Take a look at <a href="https://safimbenchmark.com/">our leaderboard</a>.
+</li>
+
+<li>
+<small>[8/23]</small> Excited to receive the <a href="https://vldb.org/2023/?conference-awards#ea">VLDB Early Career Research Contributions Award</a> this year. Thank you mentors, colleagues, and students for your support and guidance! 
+</li>
+
+<li>
+<small>[6/23]</small> Lily will be presenting <a href="https://github.com/LiuXiaoxuanPKU/Coco">Coco</a> at VLDB this year. Coco is a new tool that extracts 
+functional dependencies from webapp code and uses them to optimize queries!
+</li> 
+
+
+<li>
+<small>[5/23]</small> We will be presenting an overview paper on <a href="http://metalift.github.io">Metalift</a> at ECOOP later this year, along with a talk on
+integrating Metalift with <a href="https://github.com/ucb-bar/gemmini">Gemmini</a> at the upcoming <a href="https://oscar-workshop.github.io/">OSCAR</a> workshop at PLDI.
+</li>
+
+<!--
+<li>
+<small>[7/23]</small> Our group has a 1-2 yr postdoc opening starting this fall on using ML for code compilation and generation in a number of domains.  Please send me your CV, a brief research statement, and names of two references if you are interested!
+</li>
+-->
+
+
+<li>
+<small>[10/22]</small> Shadaj's new tool <a href="https://github.com/hydro-project/katara">Katara</a> has been released! We use verified lifting to synthesize new CRDTs for cloud applications.
+</li>
+
+
+<li>
+<small>[6/22]</small> Congrats to Xiangyu, Chenglong, and Ras for winning the 
+distinguished paper award at PLDI 22 for <a href="https://pldi22.sigplan.org/details/pldi-2022-pldi/45/Synthesizing-Analytical-SQL-Queries-from-Computation-Demonstration">Sickle</a>!
+</li>
+
+
+<li>
+<small>[1/22]</small> Thank you Army Research Office for supporting our work on 
+synthesizing data visualization programs from multi-modal inputs through
+an Early Career Program grant!
+</li>
+
+<li>
+<small>[10/21]</small> I recently spoke with Justin Gottschlich from Intel Labs on 
+<a href="https://t.co/BLh15MvrfF?amp=1">the exciting future of machine programming</a>.
+</li>
+
+<li>
+<small>[7/21]</small> Two upcoming invited talks on <a href="https://workshops.inf.ed.ac.uk/SYNT2021/program.html">using synthesis to build compilers</a> and 
+<a href="https://sites.google.com/view/dbpl2021">new directions in cloud programming</a>!
+</li>
+
+<li>
+<small>[6/21]</small> Looking forward to giving one of the keynotes at the <a =href="https://www.ifis.uni-luebeck.de/~groppe/bidede/program">BiDEDE</a> workshop at SIGMOD this year!
+</li>
+
+<li>
+<small>[5/21]</small> Thank you ONR for the <a href="https://www.onr.navy.mil/en/Media-Center/Press-Releases/2021/ONR-2021-Young-Investigators">Young Investigator Award</a>!
+</li>
+
+<li>
+<small>[3/21]</small> Congrats to <a href="https://chenglongwang.org/">Chenglong</a> for winning a CHI best paper award for <a href="https://falx.cs.washington.edu">Falx</a>. 
+</li>
+
+
+<li>
+<small>[2/21]</small> Thank you Intel for the <a href="https://www.intel.com/content/www/us/en/research/blogs/intel-outstanding-researcher-award-2020.html">Outstanding Researcher Award</a>!
+</li>
+
+
+<li>
+<small>[1/21]</small> Looking forward to presenting a <a href="http://cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf">new programming paradigm</a> for cloud computing at CIDR this year.
+</li>
+
+<li>
+<small>[8/20]</small> I recently spoke with BBC on the ongoing revolution on
+<a href="https://www.bbc.com/worklife/article/20200810-how-a-twitter-clone-heralded-a-no-code-boom">no-code technologies</a>.
+</li>
+
+
+<li>
+<small>[6/20]</small> Multiple papers to be presented this and next month! Check out Guna's SIGMOD presentation on <a href="https://www.youtube.com/watch?v=pghDFeKvw_4">Strife</a>, and Junwen's ICSE presentation on <a href="https://www.youtube.com/watch?v=KAqMJx3h3M8">managing data constraints in database applications</a>.
+</li>
+
+<li>
+<small>[4/20]</small> Thrilled to be the recipient of the <a href='http://tab.computer.org/tcde/tcdeawardsrecipients.html'>IEEE TCDE Rising Star Award</a> this year!
+</li>
+
+
+<li>
+<small>[2/20]</small> Thank you VMware for the <a href="https://eecs.berkeley.edu/news/2020/02/alvin-cheung-wins-vmware-early-career-faculty-award">early career award</a>!
+</li>
+
+<li>
+<small>[1/20]</small> Wouldn't it be great to create viz easily from examples? Check out <a href='http://www.stanleywang.org'>Chenglong</a>'s <a href='https://www.youtube.com/watch?v=U0Fcao4ypq4&feature=youtu.be'>talk at POPL this year</a>!
+</li>
+
+<li>
+<small>[10/19]</small> <i>Both</i> papers to CIDR 20 got accepted. Congrats to Brandon, Cong, and co-authors!
+</li>
+
+<li>
+<small>[8/19]</small> Two paper acceptances: <a href="https://homes.cs.washington.edu/~congy/chestnut.pdf">generating data layouts for database applications</a> (VLDB), 
+and <a href="https://arxiv.org/abs/1904.09086">using program idioms to generate code from natural language</a> (EMNLP). Congrats Cong and Srini!
+</li>
+
+<li>
+<small>[7/19]</small> Incredibly thrilled to be one of the <a href="https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-announces-recipients-presidential-early-career-award-scientists-engineers/">PECASE</a> awardees this year!
+Extremely grateful to all the awesome students and colleagues who I get to learn from in the past few years. 
+</li>
+
+<li>
+<small>[7/19]</small> Thank you Adrian for <a href="https://blog.acolyer.org/2019/07/12/view-centric-performance-optimization/">a very nice summary</a> of
+<a href="https://hyperloop-rails.github.io/panorama/">Panorama</a> on the morning paper.
+</li>
+
+<li>
+<small>[6/19]</small> Check out <a href="http://db.cs.washington.edu/projects/visualroad/">Visual Road</a>, our new benchmark for video data management systems!
+</li>
+
+
+<li>
+<small>[4/19]</small> Our paper on a new IDE for optimizing database-backed web apps has 
+won a distinguished paper award at <a href="https://2019.icse-conferences.org/event/icse-2019-technical-papers-view-centric-performance-optimization-for-database-backed-web-applications">ICSE 19</a>!
+This will be the third paper we have published on our <a href="https://hyperloop-rails.github.io/">Hyperloop</a> project.
+</li>
+
+<li>
+<small>[2/19]</small> Extremely honored to be selected as one of the <a href="https://sloan.org/fellowships/2019-Fellows">Sloan fellows</a> this year!
+</li>
+
+<li>
+<small>[7/18]</small> We have released <a href="https://hyperloop-rails.github.io/">PowerStation</a>, a 
+tool for fixing performance bugs in Rails applications. Our project has been featured on 
+<a href="https://news.ycombinator.com/item?id=17414383">Hacker News</a>!
+</li>
+
+<li>
+<small>[6/18]</small> We have implemented a <a href="https://arxiv.org/abs/1802.02229">new theory for reasoning about relational query languages</a> 
+using <a href="http://cosette.cs.washington.edu">Cosette</a>, and will be presenting the results at 
+<a href="http://vldb2018.lncc.br">VLDB</a> this year.
+</li>
+
+<li>
+<small>[5/18]</small> <a href="http://db.cs.washington.edu/projects/lightdb/">LightDB</a> will be presented at <a href="http://vldb2018.lncc.br">VLDB</a> this year!
+</li>
+
+<li>
+<small>[4/18]</small> Thank you Intel Software and Services Group for their generous support of our <a href="http://metalift.uwplse.org">MetaLift</a> project!
+</li>
+
+<li>
+<small>[3/18]</small> <a href="http://casper.uwplse.org/">Casper</a> has been accepted by <a href="https://sigmod2018.org/">SIGMOD18</a>.
+</li>
+
+<li>
+<small>[3/18]</small> Received a Google research award for <a href="http://db.cs.washington.edu/projects/lightdb/">LightDB</a>. Thank you Google!
+</li>
+
+<li>
+<small>[1/18]</small> The first <a href="http://db.cs.washington.edu/events/database_day/2018/database_day_2018.html">Pacific Northwest Database Meeting</a> had over 100 participants and was a great gathering of academic and industrial research groups in the region!
+</li>
+
+<li>
+<small>[12/17]</small> Our paper on <a href="http://hyperloop.cs.washington.edu">studying real-world Rails applications</a> has been accepted by <a href="https://www.icse2018.org">ICSE18</a>!
+</li>
+
+<li>
+<small>[10/17]</small> Presented <a href="http://metalift.uwplse.org">MetaLift</a> at the 
+<a href="https://www.youtube.com/watch?v=shDoux5Dcyk">StrangeLoop</a> conference.
+Check out our work if you build compilers for DSLs!
+</li>
+
+<li>
+<small>[8/17]</small> Our <a href="http://homes.cs.washington.edu/~congy/study_db.pdf">work on understanding performance inefficiencies in 
+real-world database applications</a> has been accepted to the full paper track at <a href="http://cikm2017.org">CIKM</a>.
+</li>
+
+
+<li>
+<small>[8/17]</small> Presented our work on using 
+<a href="https://github.com/sriniiyer/nl2sql">machine learning to generate SQL</a> at 
+<a href="http://acl2017.org/">ACL</a>.
+</li>
+
+<li>
+<small>[7/17]</small> We have released <a href="http://cosette.cs.washington.edu">Cosette</a>, and it was featured
+on the front pages of <a href="https://www.reddit.com/r/programming/comments/6oektc/introducing_cosette_a_sql_solver_for/">reddit</a> and <a href="https://news.ycombinator.com/item?id=14815728">hackernews</a>!
+</li>
+
+<li>
+<small>[6/17]</small> We hosted the first <a href="http://db.cs.washington.edu/events/workshop/2017/db_usability.html">UWDB affiliates workshop</a> on database usability.
+Thank you all the speakers for their excellent talks.
+</li>
+
+<li>
+<small>[6/17]</small> Two papers presented at <a href="http://conf.researchr.org/home/pldi-2017">PLDI</a>:
+<a href="http://cosette.cs.washington.edu">Cosette</a>, our solver for SQL, 
+and <a href="https://scythe.cs.washington.edu/">Scythe</a>, a tool for synthesizing SQL queries from input-output examples.
+</li>
+
+<li>
+<small>[5/17]</small> Five demos presented at <a href="http://sigmod2017.org/">SIGMOD</a>.
+Thank you to the demo committee for giving us <a href="https://news.cs.washington.edu/2017/06/07/allen-school-researchers-shine-brightly-at-sigmod/">the best demo and two honorable mentions</a> for our work! 
+</li>
+
+<li>
+<small>[3/17]</small> We have written up our work on 
+proving SQL query equivalences on the <a href="https://homotopytypetheory.org/2016/09/26/hottsql-proving-query-rewrites-with-univalent-sql-semantics/">
+Homotopy Type Theory Blog</a>.
+</li>
+
+<li>
+<small>[9/15]</small> Thank you DoE for <a href="http://ascr-discovery.science.doe.gov/2016/09/have-stencil-will-lift/">
+covering our work</a>
+on verified lifting!
+</li>
+
+<li>
+<small>[9/1]</small> <a href="http://casper.uwplse.org"</a>Casper</a> has been released. If
+you want to automatically parallelize your sequential Java code into Spark, try it out!</a>
+</li>
+
+<li>
+<small>[8/15]</small> Our survey / tutorial on computer-aided authoring of database queries has been
+published in <a href='papers/fntSurvey15.html'>Foundations and Trends in Programming Languages</a>.
+</li>
+
+</ul>
+</div>
+
+
+
+<h2>Teaching</h2>
+<ul>
+
+<li>
+<a href='https://www2.eecs.berkeley.edu/Courses/CS186/'>CS 186: Introduction to Database Systems</a>
+</li>
+
+<li>
+<a href='https://www2.eecs.berkeley.edu/Courses/CS263/'>CS 263: Design of Programming Languages</a> (Fall 19, Fall 21)
+</li>
+
+<li>
+<a href='http://courses.cs.washington.edu/courses/cse344'>CSE 344: Introduction to Data Management</a> 
+(<a href='http://courses.cs.washington.edu/courses/cse344/15wi'>Winter 15</a>, 
+ <a href='http://courses.cs.washington.edu/courses/cse344/16au'>Fall 16</a>,
+ <a href='http://courses.cs.washington.edu/courses/cse344/17wi'>Winter 17</a>)
+</li>
+
+<li>
+<a href='http://courses.cs.washington.edu/courses/cse401/16wi'>CSE 401: Hack Your Language!</a> (Winter 16)
+</li>
+
+<li>
+<a href='http://courses.cs.washington.edu/courses/cse414/18sp'>CSE 414: Introduction to Database Systems</a> (Spring 18)
+</li>
+
+<li>
+<a href='http://courses.cs.washington.edu/courses/cse544/15au'>CSE 544: Principles of Data Management</a> (Fall 15)
+</li>
+
+<li>
+<a href='http://courses.cs.washington.edu/courses/cse501/15sp'>CSE 501: Principles and Applications of Program Analysis</a> (Spring 15)
+</li>
+
+<li>
+<a href="http://courses.cs.washington.edu/courses/csep544/17au">CSE P 544: Database Management Systems</a> (Fall 17)
+</li>
+
+</ul>
+
+<h2>Students who I humbly learn from</h2>
+<ul>
+
+<li>Sahil Bhatia (co-advised with <a href="http://people.eecs.berkeley.edu/~sseshia/">Sanjit Seshia</a>)</li>
+
+<li><a href="https://chanwutk.github.io/">Mick Kittivorawong</a></li>
+
+<li><a href="https://www.js-park.info/">Jongseok Park</a> (co-advised with <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a>)</li>
+
+</ul>
+
+
+<h2>Graduated students</h2>
+
+<ul>
+<li><a href="https://gonglinyuan.com/">Linyuan Gong</a> (PhD 2025)</li>
+
+<li><a href="https://www.shadaj.me/">Shadaj Laddad</a> (co-advised with <a href="https://dsf.berkeley.edu/jmh/">Joe Hellerstein</a>) (PhD 2025, AWS)</li>
+
+<li><a href="https://liuxiaoxuanpku.github.io/">Lily Liu</a> (PhD 2025, OpenAI)</li>
+
+<li><a href="https://about.gmatute.dev/">Gabriel Matute</a> (co-advised with <a href="https://schasins.com/">Sarah Chasins</a>) (MS 2024, Databricks)</li>
+
+<li><a href="http://homes.cs.washington.edu/~maazsaf/">Maaz Ahmad</a> (PhD 2022, Adobe Research)</li>
+
+<li><a href="http://chenglongwang.org/">Chenglong Wang</a> (co-advised with <a href="http://www.cs.washington.edu/people/faculty/bodik">Ras Bodik</a>)
+(PhD 2021, Microsoft Research)
+</li>
+
+<li><a href="http://homes.cs.washington.edu/~congy/">Cong Yan</a>
+(PhD 2020, Microsoft Research)
+</li>
+
+<li><a href="https://brandonhaynes.github.io/">Brandon Haynes</a> (co-advised with <a href="http://www.cs.washington.edu/people/faculty/magda">Magda Balazinska</a>)
+(PhD 2020, Microsoft Jim Gray Systems Lab)
+</li>
+
+
+<li><a href="http://sriniiyer.github.io/">Srini Iyer</a> (co-advised with <a href="http://www.cs.washington.edu/people/faculty/lsz">Luke Zettlemoyer</a>)
+(PhD 2020, Facebook AI Research)
+</li>
+
+<li><a href="http://homes.cs.washington.edu/~guna/">Guna Prasaad</a> (co-advised with <a href="http://homes.cs.washington.edu/~suciu/">Dan Suciu</a>)
+(MS 2020, Facebook)
+</li>
+
+
+<li><a href="http://tomerk.github.io/">Tomer Kaftan</a> (co-advised with <a href="http://www.cs.washington.edu/people/faculty/magda">Magda Balazinska</a>)
+(MS 2018, Google Brain)
+</li>
+
+</ul>
+
+<h2>Award-Winning Papers</h2>
+
+<ul class=papers>
+
+<li>
+<a href="https://charleshong3.github.io/blog/autocomp.html">Autocomp: LLM-Driven Code Optimization for Tensor Accelerators</a>
+<br>
+Charles Hong, Sahil Bhatia, Alvin Cheung, Yakun Sophia Shao
+<br>
+<i>ML Arch Sys 2025</i>, <font color="red">outstanding paper award</font>
+</li>
+
+<li>
+<a href="https://pldi22.sigplan.org/details/pldi-2022-pldi/45/Synthesizing-Analytical-SQL-Queries-from-Computation-Demonstration">Synthesizing Analytical SQL Queries from Computation Demonstration</a>
+<br>
+Xiangyu Zhou, Ras Bodik, Alvin Cheung, Chenglong Wang
+<br>
+<i>PLDI 2022</i>, <font color="red">distinguished paper award</font>
+</li>
+
+<li>
+<a href="https://falx.cs.washington.edu/">Falx: Synthesis-powered Visualization Authoring</a>
+<br>
+Chenglong Wang, Yu Feng, Rastislav Bodik, Isil Dillig, Alvin Cheung, Amy J. Ko
+<br>
+<i>CHI 2021</i>, <font color="red">best paper award</font>
+</li>
+
+<li>
+<a href="https://hyperloop-rails.github.io/">
+View-Centric Performance Optimization for Database-Backed Web Applications
+</a>
+<br>
+Junwen Yang, Cong Yan, Chengcheng Wan, Shan Lu, Alvin Cheung
+<br>
+<i>ICSE 2019</i>, <font color="red">distinguished paper award</font>
+</li>
+
+<li>
+<a href="http://lightdb.uwdb.io/">
+Perceptual Compression for Video Storage and Processing Systems
+</a>
+<br>
+Amrita Mazumdar, Brandon Haynes, Magda Balazinska, Luis Ceze, Alvin Cheung, Mark Oskin
+<br>
+<i>SoCC 2019</i>, <font color="red">best poster award</font>
+</li>
+
+<li>
+<a href="http://cosette.cs.washington.edu/">Demonstration of the Cosette Automated SQL Prover</a>
+<br>
+Shumo Chu, Daniel Li, Chenglong Wang, Alvin Cheung, Dan Suciu<br>
+<i>SIGMOD 2017 (demo)</i>, <font color="red">best demo award</font>
+</li>
+
+<li>
+<a href="http://casper.uwplse.org">Leveraging Parallel Data Processing Frameworks with Verified Lifting</a>
+<br>
+Maaz Bin Safeer Ahmad, Alvin Cheung
+<br>
+<i>SYNT 2016</i>, <font color="red">best student paper award</font>
+</li>
+
+<li>
+<a href='papers/sigmod14.html'>
+Sloth: Being Lazy is a Virtue (When Issuing Database Queries)
+</a>
+<br>
+Alvin Cheung, Samuel Madden, Armando Solar-Lezama<br>
+<i>SIGMOD 2014</i>, selected as one of the <font color="red">best of SIGMOD 2014</font>
+</li>
+
+<li>
+<a href='papers/cidr13.html'>
+StatusQuo: Making Familiar Abstractions Perform Using Program Analysis
+</a>
+<br>
+Alvin Cheung, Owen Arden, Samuel Madden, Armando Solar-Lezama, Andrew C. Myers<br>
+<i>CIDR 2013</i>, <font color="red">best paper award</font>
+</li>
+
+</ul>
+
+
+<h2>All Papers</h2>
+
+<ul class=papers>
+<li>
+<a href="https://arxiv.org/abs/2601.11580">Speculative Decoding: Performance or Illusion?</a>
+<br>
+Xiaoxuan Liu, Jiaxiang Yu, Jongseok Park, Ion Stoica, Alvin Cheung
+<br>
+<i>MLSys 2026</i>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2509.00997">Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First</a>
+<br>
+Shu Liu, Soujanya Ponnapalli, Shreya Shankar, Sepanta Zeighami, Alan Zhu, Shubham Agarwal, Ruiqi Chen, Samion Suwito, Shuo Yuan, Ion Stoica, Matei Zaharia, Alvin Cheung, Natacha Crooks, Joseph E. Gonzalez, Aditya G. Parameswaran
+<br>
+<i>CIDR 2026</i>
+</li>
+
+<li>
+<a href="https://github.com/ucbepic/TWIX">Visual Template Inference for Data Extraction from Documents</a>
+<br>
+Yiming Lin, Mawil Hasan, Rohan Kosalge, Alvin Cheung, Aditya G. Parameswaran
+<br>
+<i>SIGMOD 2026</i>
+</li>
+
+<li>
+<a href="https://charleshong3.github.io/blog/autocomp.html">Autocomp: LLM-Driven Code Optimization for Tensor Accelerators</a>
+<br>
+Charles Hong, Sahil Bhatia, Alvin Cheung, Yakun Sophia Shao
+<br>
+<i>ML Arch Sys 2025</i>, <font color="red">outstanding paper award</font>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2411.08274">Flo: a Semantic Foundation for Progressive Stream Processing</a>
+<br>
+Shadaj Laddad, Alvin Cheung, Joseph M. Hellerstein, Mae Milano
+<br>
+<i>POPL 2025</i>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2406.03003">Verified Code Transpilation with LLMs</a>
+<br>
+Sahil Bhatia, Jie Qiu, Niranjan Hasabnis, Sanjit A. Seshia, Alvin Cheung
+<br>
+<i>NeurIPS 2024</i>
+</li>
+
+
+<li>
+<a href="https://dl.acm.org/doi/10.1145/3627673.3679589">Inferring Visualization Intent from Conversation</a>
+<br>
+Haotian Li, Nithin Chalapathi, Huamin Qu, Alvin Cheung and Aditya G. Parameswaran
+<br>
+<i>CIKM 2024</i>
+</li>
+
+
+<li>
+<a href="https://github.com/tenspiler/tenspiler">Tenspiler: A Verified Lifting-Based Compiler for Tensor Operations</a>
+<br>
+Jie Qiu, Colin Cai, Sahil Bhatia, Niranjan Hasabnis, Sanjit Seshia, Alvin Cheung
+<br>
+<i>ECOOP 2024</i>
+</li>
+
+<li>
+<a href="https://github.com/qed-solver">QED: A Powerful Query Equivalence Decider for SQL</a>
+<br>
+Shuxian Wang, Sicheng Pan, Alvin Cheung
+<br>
+<i>VLDB 2024</i>
+</li>
+
+<li>
+<a href="https://safimbenchmark.com/">Evaluation of LLMs on Syntax-Aware Code Fill-in-the-Middle Tasks</a>
+<br>
+Linyuan Gong, Sida Wang, Mostafa Elhoushi, Alvin Cheung
+<br>
+<i>ICML 2024</i>
+</li>
+
+<li>
+<a href="https://github.com/gonglinyuan/ast_t5">AST-T5: Structure-Aware Pretraining for Code Generation and Understanding</a>
+<br>
+Linyuan Gong, Mostafa Elhoushi, Alvin Cheung
+<br>
+<i>ICML 2024</i>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2310.07177">Online Speculative Decoding</a>
+<br>
+Xiaoxuan Liu, Lanxiang Hu, Peter Bailis, Alvin Cheung, Zhijie Deng, Ion Stoica, Hao Zhang
+<br>
+<i>ICML 2024</i>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2303.03593">ADELT: Transpilation Between Deep Learning Frameworks</a>
+<br>
+Linyuan Gong, Jiayi Wang, Alvin Cheung
+<br>
+<i>IJCAI 2024</i>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2305.18513">SlimFit: Memory-Efficient Fine-Tuning of Transformer-based Models Using Training Dynamics</a>
+<br>
+Arash Ardakani, Altan Haan, Shangyin Tan, Doru Thom Popovici, Alvin Cheung, Costin Iancu, Koushik Sen
+<br>
+<i>NAACL 2024</i>
+</li>
+
+<li>
+<a href="https://dl.acm.org/doi/abs/10.1145/3656460">Syntactic Code Search with Sequence-to-Tree Matching</a>
+<br>
+Gabriel Matute, Wode Ni, Titus Barik, Alvin Cheung, Sarah E. Chasins
+<br>
+<i>PLDI 2024</i>
+</li>
+
+<li>
+<a href="https://github.com/apperception-db/spatialyze">Spatialyze: A Geospatial Video Analytics System with Spatial-Aware Optimizations</a>
+<br>
+Chanwut Kittivorawong, Yongming Ge, Yousef Helal, Alvin Cheung
+<br>
+<i>VLDB 2024</i>
+</li>
+
+<li>
+<a href="https://www.vldb.org/pvldb/vol16/p4116-cheung.pdf">Towards Auto-Generated Data Systems</a>
+<br>
+Alvin Cheung, Maaz Bin Safeer Ahmad, Brandon Haynes, Chanwut Kittivorawong, Shadaj Laddad, Xiaoxuan Liu, Chenglong Wang, Cong Yan
+<br>
+<i>VLDB 2023</i> 
+</li>
+
+<li>
+<a href="https://metalift.github.io/">Building Code Transpilers for Domain-Specific Languages Using Program Synthesis</a>
+<br>
+Sahil Bhatia, Sumer Kohli, Sanjit Seshia, Alvin Cheung
+<br>
+<i>ECOOP 2023</i> 
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2305.12567">Model-Generated Pretraining Signals Improves Zero-Shot Generalization of Text-to-Text Transformers</a>
+<br>
+Linyuan Gong, Chenyan Xiong, Xiaodong Liu, Payal Bajaj, Yiqing Xie, Alvin Cheung, Jianfeng Gao, Xia Song
+<br>
+<i>ACL 2023</i> 
+</li>
+
+<li>
+Optimizing Stateful Dataflow with Local Rewrites 
+<br>
+Shadaj Laddad, Conor Power, Tyler Hou, Alvin Cheung, Joseph M. Hellerstein
+<br>
+<i>EGRAPHS 2023</i> 
+</li>
+
+<li>
+<a href="https://github.com/LiuXiaoxuanPKU/Coco">Leveraging Application Data Constraints to Optimize Database-Backed Web Applications</a>
+<br>
+Lily Liu, Shuxian Wang, Mengzhu Sun, Sicheng Pan, Ge Li, Siddharth Jha, Cong Yan, Junwen Yang, Shan Lu, Alvin Cheung
+<br>
+<i>VLDB 2023</i> 
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2210.12605">Keep CALM and CRDT On</a>
+<br>
+Conor Power, Mae Milano, Shadaj Laddad, Alvin Cheung, Joseph Hellerstein, Natacha Crooks
+<br>
+<i>VLDB 2023</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2022</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="https://github.com/hydro-project/katara">Synthesizing CRDTs from Sequential Data Types with Verified Lifting</a> 
+<br>
+Shadaj Laddad, Conor Power, Mae Milano, Alvin Cheung, Joseph M. Hellerstein
+<br>
+<i>OOPSLA 2022</i>
+</li>
+
+<li>
+<a href="http://arxiv.org/abs/2206.11357">GACT: Activation Compressed Training for Generic Network Architectures</a>
+<br>
+Lily Liu, Lianmin Zheng, Dequan Wang, Yukuo Cen, Weize Chen, Xu Han, Jianfei Chen, Zhiyuan Liu, Jie Tang, Joey Gonzalez, Michael Mahoney, Alvin Cheung
+<br>
+<i>ICML 2022</i>
+</li>
+
+<li>
+<a href="https://pldi22.sigplan.org/details/pldi-2022-pldi/45/Synthesizing-Analytical-SQL-Queries-from-Computation-Demonstration">Synthesizing Analytical SQL Queries from Computation Demonstration</a>
+<br>
+Xiangyu Zhou, Ras Bodik, Alvin Cheung, Chenglong Wang
+<br>
+<i>PLDI 2022</i>, <font color="red">distinguished paper award</font>
+</li>
+
+<li>
+<a href="https://dl.acm.org/doi/10.1145/3503222.3507714">Vector Instruction Selection for Digital Signal Processors Using Program Synthesis</a>
+<br>
+Maaz Bin Safeer Ahmad, Andrew Adams, Shoaib Kamil, Alvin Cheung, Alexander J. Root
+<br>
+<i>ASPLOS 2022</i>
+</li>
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2021</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="https://kilthub.cmu.edu/articles/conference_contribution/Change_in_Software_Ecosystems/19799314">Change in Software Ecosystems: Social Challenges of Automating Upgrades</a>
+<br>
+Gabriel Matute, Alvin Cheung, Sarah E. Chasins
+<br>
+<i>PLATEAU 2021</i>
+</li>
+
+<li>
+<a href="https://apperception-db.github.io/">Demonstration of Apperception: A Database Management System for Geospatial Video Data</a>
+<br>
+Vanessa Lin, Frank Ge, Brandon Haynes, Maureen Daum, Alvin Cheung, Magdalena Balazinska
+<br>
+<i>VLDB 2021</i>
+</li>
+
+
+<li>
+<a href="https://aclanthology.org/2021.acl-long.169/">PlotCoder: Hierarchical Decoding for Synthesizing Visualization Code in Programmatic Context</a>
+<br>
+Xinyun Chen, Linyuan Gong, Alvin Cheung, Dawn Song
+<br>
+<i>ACL 2021</i>
+</li>
+
+
+<li>
+<a href="https://db.cs.washington.edu/projects/visualworld/vss.pdf">VSS: A Storage System for Video Analytics</a>
+<br>
+Brandon Haynes, Maureen Daum, Dong He, Amrita Mazumdar, Magdalena Balazinska, Alvin Cheung, Luis Ceze
+<br>
+<i>SIGMOD 2021</i>
+</li>
+
+
+<li>
+<a href="https://falx.cs.washington.edu/">Falx: Synthesis-powered Visualization Authoring</a>
+<br>
+Chenglong Wang, Yu Feng, Rastislav Bodik, Isil Dillig, Alvin Cheung, Amy J. Ko
+<br>
+<i>CHI 2021</i>, <font color="red">best paper award</font>
+</li>
+
+
+<li>
+<a href="http://cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf">New Directions in Cloud Programming</a>
+<br>
+Alvin Cheung, Natacha Crooks, Joseph Hellerstein, Mae Milano
+<br>
+<i>CIDR 2021</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2020</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="https://gunaprsd.org/assets/strife-sigmod-2020.pdf">Handling Highly Contended OLTP Workloads using Fast Dynamic Partitioning</a>
+<br>
+Guna Prasaad, Alvin Cheung, Dan Suciu
+<br>
+<i>SIGMOD 2020</i>
+</li>
+
+<li>
+<a href="https://dl.acm.org/doi/pdf/10.1145/3318464.3384712">Demonstration of Chestnut: An In-memory Data Layout Designer for Database Applications</a>
+<br>
+Mingwei Samuel, Cong Yan, Alvin Cheung
+<br>
+<i>SIGMOD 2020</i>
+</li>
+
+<li>
+<a href="https://dl.acm.org/doi/abs/10.1145/3395032.3395322">Testing Query Execution Engines with Mutations</a>
+<br>
+Xinyue Chen, Chenglong Wang, Alvin Cheung
+<br>
+<i>DBTest 2020</i>
+</li>
+
+<li>
+<a href="https://hyperloop-rails.github.io/">Managing Data Constraints in Database-Backed Web Applications</a>
+<br>
+Junwen Yang, Utsav Sethi, Cong Yan, Shan Lu, Alvin Cheung
+<br>
+<i>ICSE 2020</i>
+</li>
+
+<li>
+<a href="https://falx.cs.washington.edu">Visualization by Example</a>
+<br>
+Chenglong Wang, Yu Feng, Rastislav Bodik, Alvin Cheung, Isil Dillig
+<br>
+<i>POPL 2020</i>
+</li>
+
+<li>
+<a href="http://lightdb.uwdb.io/">
+LightDB++ : A DBMS for the Visual World
+</a>
+<br>
+Bandon Haynes, Maureen Daum, Amrita Mazumdar, Magdalena Balazinska, Alvin Cheung, Luis Ceze
+<br>
+<i>CIDR 2020</i>
+</li>
+
+<li>
+<a href="http://hyperloop-rails.github.io/">View-Driven Optimization of Database-Backed Web Applications</a>
+<br>
+Cong Yan, Alvin Cheung, Junwen Yang, Shan Lu
+<br>
+<i>CIDR 2020</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2019</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="http://dexter.uwplse.org/">Automatically Translating Image Processing Libraries to Halide</a>
+<br>
+Maaz Bin Safeer Ahmad, Jonathan Ragan-Kelley, Alvin Cheung, Shoaib Kamil
+<br>
+<i>SIGGRAPH ASIA 2019</i>
+</li>
+
+<li>
+<a href="http://lightdb.uwdb.io/">
+Perceptual Compression for Video Storage and Processing Systems
+</a>
+<br>
+Amrita Mazumdar, Brandon Haynes, Magda Balazinska, Luis Ceze, Alvin Cheung, Mark Oskin
+<br>
+<i>SoCC 2019</i>, <font color="red">best poster award</font>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/1904.09086">Learning Programmatic Idioms for Scalable Semantic Parser</a>
+<br>
+Srini Iyer, Alvin Cheung, Luke Zettlemoyer
+<br>
+<i>EMNLP 2019</i>
+</li>
+
+<li>
+<a href="http://www.vldb.org/pvldb/vol12/p1513-yan.pdf">Generating Application-Specific Data Layouts for In-Memory Databases</a>
+<br>
+Cong Yan, Alvin Cheung
+<br>
+<i>VLDB 2019</i>
+</li>
+
+
+<li>
+<a href="http://db.cs.washington.edu/projects/visualroad/">
+Visual Road: A Video Data Management Benchmark
+</a>
+<br>
+Brandon Haynes, Amrita Mazumdar, Magdalena Balazinska, Luis Ceze, Alvin Cheung
+<br>
+<i>SIGMOD 2019</i>
+</li>
+
+
+<li>
+<a href="https://hyperloop-rails.github.io/">
+View-Centric Performance Optimization for Database-Backed Web Applications
+</a>
+<br>
+Junwen Yang, Cong Yan, Chengcheng Wan, Shan Lu, Alvin Cheung
+<br>
+<i>ICSE 2019</i>, <font color="red">distinguished paper award</font>
+</li>
+
+</ul>
+</div>
+<p></p>
+
+<button class="accordion">2018</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="https://ieeexplore.ieee.org/document/8509181">
+Iterative Search for Reconfigurable Accelerator Blocks with a Compiler in the Loop
+</a>
+<br>
+Max Willsey, Vincent Lee, Alvin Cheung, Ras Bodik, Luis Ceze
+<br>
+<i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</i>, 2018.
+</li>
+
+
+<li>
+<a href="https://cosette.cs.washington.edu">
+Speeding up Symbolic Reasoning for Relational Queries
+</a>
+<br>
+Chenglong Wang, Alvin Cheung, Ras Bodik
+<br>
+<i>SPLASH 2018</i>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1808.09588">
+Mapping Language to Code in Programmatic Context
+</a>
+<br>
+Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Luke Zettlemoyer
+<br>
+<i>EMNLP 2018</i>
+</li>
+
+<li>
+<a href="https://hyperloop-rails.github.io/">
+PowerStation: Automatically detecting and fixing inefficiencies of database-backed web applications in IDE 
+</a>
+<br>
+Junwen Yang, Cong Yan, Pranav Subramaniam, Shan Lu, Alvin Cheung
+<br>
+<i>FSE 2018 (demo)</i>
+</li>
+
+<li>
+<a href="http://cosette.cs.washington.edu">
+Axiomatic Foundations and Algorithms for Deciding Semantic Equivalences of SQL Queries
+</a>
+<br>
+Shumo Chu, Brendan Murphy, Jared Roesch, Alvin Cheung, Dan Suciu
+<br>
+<i>VLDB 2018</i>
+</li>
+
+<li>
+<a href="http://casper.uwplse.org">
+Automatically Leveraging MapReduce Frameworks for Data-Intensive Applications
+</a>
+<br>
+Maaz Bin Safeer Ahmad, Alvin Cheung
+<br>
+<i>SIGMOD 2018</i>
+</li>
+
+<li>
+<a href="http://lightdb.uwdb.io/">
+LightDB: A DBMS for Virtual Reality Video
+</a>
+<br>
+Brandon Haynes, Amrita Mazumdar, Armin Alaghi, Magdalena Balazinska, Luis Ceze, Alvin Cheung
+<br>
+<i>VLDB 2018</i>
+</li>
+
+<li>
+<a href="https://hyperloop-rails.github.io/">
+How <i>Not</i> to Structure Your Database-backed Web Applications: a Study of Performance Bugs in the Wild
+</a>
+<br>
+Junwen Yang, Cong Yan, Pranav Subramaniam, Shan Lu, Alvin Cheung 
+<br>
+<i>ICSE 2018</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2017</button>
+<div class="panel">
+
+<ul>
+
+<li>
+<a href="http://homes.cs.washington.edu/~congy/study_db.pdf">
+Understanding Performance Inefficiencies in Real-world Database-backed Applications
+</a>
+<br>
+Cong Yan, Junwen Yang, Alvin Cheung, Shan Lu 
+<br>
+<i>CIKM 2017</i>
+</li>
+
+
+<li>
+<a href="http://www.vldb.org/pvldb/vol10/p1226-mehta.pdf">
+Comparative Evaluation of Big-Data Systems on Scientific Image Analytics Workloads</a>
+<br>
+Parmita Mehta, Sven Dorkenwald, Dongfang Zhao, Tomer Kaftan, Alvin Cheung, Magdalena Balazinska, Ariel Rokem, Andrew Connolly, Jacob Vanderplas, Yusra AlSayyad
+<br>
+<i>VLDB 2017</i>
+</li>
+
+<li>
+<a href="https://github.com/sriniiyer/nl2sql">Learning a Neural Semantic Parser from User Feedback</a>
+<br>
+Srinivasan Iyer, Ioannis Konstas, Alvin Cheung, Jayant Krishnamurthy and Luke Zettlemoyer
+<br>
+<i>ACL 2017</i>
+</li>
+
+<li>
+<a href="http://cosette.cs.washington.edu/">Demonstration of the Cosette Automated SQL Prover</a>
+<br>
+Shumo Chu, Daniel Li, Chenglong Wang, Alvin Cheung, Dan Suciu<br>
+<i>SIGMOD 2017 (demo)</i>, <font color="red">best demo award</font>
+</li>
+
+<li>
+<a href="http://visualcloud.uwdb.io">VisualCloud Demonstration: A DBMS for Virtual Reality</a>
+<br>
+Brandon Haynes, Artem Minyalov, Magdalena Balazinska, Luis Ceze, Alvin Cheung<br>
+<i>SIGMOD 2017 (demo)</i>, selected as one of the <font color="red">"best of" demos</font>, 
+and <font color="red">honorable mention for the best demo award</font>
+</li>
+
+<li>
+<a href="https://scythe.cs.washington.edu">Interactive Query Synthesis from Input-Output Examples</a>
+<br>
+Chenglong Wang, Alvin Cheung, Ras Bodik<br>
+<i>SIGMOD 2017 (demo)</i>, selected as one of the <font color="red">"best of" demos</font> 
+</li>
+
+<li>
+<a href="http://casper.uwplse.org">Optimizing Java Applications Using Apache Spark</a>
+<br>
+Maaz Bin Safeer Ahmad, Alvin Cheung<br>
+<i>SIGMOD 2017 (demo)</i>, selected as one of the <font color="red">"best of" demos</font>, 
+and <font color="red">honorable mention for the best demo award</font>
+</li>
+
+<li>
+<a href="http://cosette.cs.washington.edu/">HoTTSQL: Proving Query Rewrites with Univalent SQL Semantics</a>
+<br>
+Shumo Chu, Konstantin Weitz, Alvin Cheung, Dan Suciu<br>
+<i>PLDI 2017</i>
+</li>
+
+<li>
+<a href="https://scythe.cs.washington.edu">Synthesizing Highly Expressive SQL Queries from Input-Output Examples</a>
+<br>
+Chenglong Wang, Alvin Cheung, Ras Bodik<br>
+<i>PLDI 2017</i>
+</li>
+
+<li>
+<a href="http://cosette.cs.washington.edu/">Cosette: An Automated SQL Solver</a>
+<br>
+Shumo Chu, Chenglong Wang, Konstantin Weitz, Alvin Cheung
+<br>
+<i>CIDR 2017</i>
+</li>
+
+</ul>
+
+</div>
+
+<p></p>
+
+<button class="accordion">2016</button>
+<div class="panel">
+
+<ul>
+<li>
+<a href="papers/socc16.html">PipeGen: Data Pipe Generator for Hybrid Analytics</a>
+<br>
+Brandon Haynes, Alvin Cheung, Magdalena Balazinska
+<br>
+<i>SoCC 2016</i>
+</li>
+
+<li>
+<a href="http://casper.uwplse.org">Leveraging Parallel Data Processing Frameworks with Verified Lifting</a>
+<br>
+Maaz Bin Safeer Ahmad, Alvin Cheung
+<br>
+<i>SYNT 2016</i>, <font color="red">best student paper award</font>
+</li>
+
+<li>
+<a href="http://github.com/sriniiyer/codenn">Summarizing Source Code using a Neural Attention Model</a>
+<br>
+Srinivasan Iyer, Ioannis Konstas, Alvin Cheung and Luke Zettlemoyer
+<br>
+<i>ACL 2016</i>
+</li>
+
+<li>
+<a href='papers/sigcomm16.html'>
+Packet Transactions: High-level Programming for Line-Rate Switches
+</a>
+<br>
+Anirudh Sivaraman, Mihai Budiu, Alvin Cheung, Changhoon Kim, Steve Licking, George Varghese, Hari Balakrishnan, Mohammad Alizadeh, Nick McKeown<br>
+<i>SIGCOMM 2016</i>
+</li>
+
+<li>
+<a href='papers/fntSurvey15.html'>
+Computer-Assisted Query Formulation
+</a>
+<br>
+Alvin Cheung, Armando Solar-Lezama<br>
+<a href='http://dx.doi.org/10.1561/2500000018'>
+<i>Foundations and Trends in Programming Languages</i></a>, volume 3 issue 1
+</li>
+
+<li>
+<a href='papers/pldi16.html'>
+Verified Lifting of Stencil Computations
+</a>
+<br>
+Shoaib Kamil, Alvin Cheung, Shachar Itzhaky, Armando Solar-Lezama<br>
+<i>PLDI 2016</i>
+</li>
+
+<li>
+<a href='papers/vldb16.html'>
+Leveraging Lock Contention to Improve OLTP Application Performance
+</a>
+<br>
+Cong Yan, Alvin Cheung<br>
+<i>VLDB 2016</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2015</button>
+<div class="panel">
+<ul>
+<li>
+<a href='papers/snapl15.html'>
+Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis
+</a>
+<br>
+Alvin Cheung, Shoaib Kamil, Armando Solar-Lezama<br>
+<i>SNAPL 2015</i>
+</li>
+
+<li>
+<a href='papers/cidr15.html'>
+Towards Generating Application-Specific Data Management Systems
+</a>
+<br>
+Alvin Cheung<br>
+Abstract for <i>CIDR 2015</i>
+</li>
+
+</ul>
+</div>
+
+<p></p>
+
+<button class="accordion">2014 and earlier</button>
+<div class="panel">
+
+<ul>
+<li>
+<a href='papers/sigmod14.html'>
+Sloth: Being Lazy is a Virtue (When Issuing Database Queries)
+</a>
+<br>
+Alvin Cheung, Samuel Madden, Armando Solar-Lezama<br>
+<i>SIGMOD 2014</i>, selected as one of the <font color="red">best of SIGMOD 2014</font>
+</li>
+
+
+<li>
+<a href='papers/debull14.html'>
+Using Program Analysis to Optimize Database Applications
+</a>
+<br>
+Alvin Cheung, Owen Arden, Samuel Madden, Armando Solar-Lezama, Andrew C. Myers<br>
+<i>IEEE Computer Society Data Engineering Bulletin, March 2014</i>
+</li>
+
+
+<li>
+<a href='papers/apsys13.html'>
+Mobile Applications Need Targeted Micro-Updates
+</a>
+<br>
+Alvin Cheung, Lenin Ravindranath, Eugene Wu, Samuel Madden, Hari Balakrishnan<br>
+<i>APSys 2013</i>
+</li>
+
+
+<li>
+<a href='papers/sigmod13.html'>
+Speeding up Database Applications with Pyxis
+</a> (demo)
+<br>
+Alvin Cheung, Owen Arden, Samuel Madden, Andrew C. Myers<br>
+<i>SIGMOD 2013</i>
+</li>
+
+<li>
+<a href='papers/pldi13.html'>
+Optimizing Database-Backed Applications with Query Synthesis
+</a>
+<br>
+Alvin Cheung, Samuel Madden, Armando Solar-Lezama<br>
+<i>PLDI 2013</i>
+</li>
+
+<li>
+<a href='papers/cidr13.html'>
+StatusQuo: Making Familiar Abstractions Perform Using Program Analysis
+</a>
+<br>
+Alvin Cheung, Owen Arden, Samuel Madden, Armando Solar-Lezama, Andrew C. Myers<br>
+<i>CIDR 2013</i>, <font color="red">best paper award</font>
+</li>
+
+<li>
+<a href='papers/cikm12.html'>
+Using Program Synthesis for Social Recommendations
+</a>
+<br>
+Alvin Cheung, Armando Solar-Lezama, Samuel Madden<br>
+<i>CIKM 2012</i>
+</li>
+
+<li>
+<a href='papers/apsys12.html'>
+Undefined Behavior: What Happened to My Code?
+</a><br>
+Xi Wang, Haogang Chen, Alvin Cheung, Zhihao Jia, Nickolai Zeldovich, M. Frans Kaashoek<br>
+<i>APSys 2012</i>
+</li>
+
+<li>
+<a href='papers/vldb12.html'>
+Automatic Partitioning of Database Applications
+</a><br>
+Alvin Cheung, Owen Arden, Samuel Madden, Andrew C. Myers<br>
+<i>VLDB 2012</i>
+</li>
+
+<li>
+<a href='papers/sensys11.html'>
+Automatically Generating Interesting Events with LifeJoin
+</a> (demo)<br>
+Alvin Cheung, Arvind Thiagarajan, Samuel Madden<br>
+<i>SenSys 2011</i>
+</li>
+
+<li>
+<a href='papers/fse11.html'>
+Partial Replay of Long-Running Applications
+</a><br>
+Alvin Cheung, Armando Solar-Lezama, Samuel Madden<br>
+<!--<small>(34/203 = 17% acceptance rate)</small> <br>-->
+<i>FSE 2011</i>
+</li>
+
+<li>
+<a href='papers/vldb08.html'>
+Performance Profiling with EndoScope, an Acquisitional Software Monitoring Framework
+</a><br>
+Alvin Cheung, Samuel Madden<br>
+<!--<small>(16.5% acceptance rate)</small> <br>-->
+<i>VLDB 2008</i>
+</li>
+
+<li>
+<a href='getFile.php?file=theseos.pdf'>
+Theseos: A Query Engine for Traceability across Sovereign, Distributed RFID Database
+</a> (demo)<br>
+Alvin Cheung, Karin Kailing, Stefan Sch&ouml;nauer<br>
+<i>ICDE 2007</i>
+</li>
+
+<li>
+<a href='getFile.php?file=infinity.pdf'>
+&Iuml;nf&iuml;n&iuml;ty: a generic platform for application development and information sharing on mobile devices
+</a><br>
+Alvin Cheung, Tyrone Grandison, Christopher M. Johnson, Stefan Sch&ouml;nauer<br>
+<i>MobiDE 2007</i>
+</li>
+
+<li>
+<a href='getFile.php?file=traceability.pdf'>
+Towards Traceability across Sovereign, Distributed RFID Databases
+</a><br>
+Rakesh Agrawal, Alvin Cheung, Karin Kailing,  Stefan Sch&ouml;nauer<br>
+<i>IDEAS 2006</i>
+</li>
+
+<li>
+<a href='getFile.php?file=isqed05.pdf'>
+A New Method for Design of Robust Digital Circuits
+</a><br>
+Dinesh Patil, Sunghee Yun, Seung-Jean Kim, Alvin Cheung, Stephen Boyd, Mark Horowitz<br>
+<i>ISQED 2005</i>, <font color="red">best paper award</font>
+</li>
+
+</ul>
+</div>
+
+<h2>Dissertation</h2>
+<ul>
+<li><a href='papers/dissertation.html'>Rethinking the Application-Database Interface</a><br>
+Alvin Cheung, <font color="red">MIT George M. Sprowls Award for 
+best computer science dissertation</font><br>
+</li>
+</ul>
+
+<h2>Recent Awards</h2>
+
+<ul>
+<li><a href="https://eecs.berkeley.edu/news/alvin-cheung-receives-acsic-rock-star-award/">ACSIC Rock Star Award</a> (2025)</li>
+
+<li><a href="https://www.linkedin.com/posts/mlarchsys_mlarchsys2025-isca2025-machinelearning-activity-7342358903382315008-xxA0/">ML Arch Sys Outstanding Paper Award</a> (2025)</li>
+
+<li><a href="https://sites.google.com/aito.org/home/aito-dahl-nygaard/2024-winners">Dahl-Nygaard Junior Prize</a> (2024)</li>
+
+<li><a href="https://vldb.org/2023/?conference-awards#ea">VLDB Early Career Research Contribution Award</a> (2023)</li>
+
+<li><a href="https://pldi22.sigplan.org/details/pldi-2022-pldi/45/Synthesizing-Analytical-SQL-Queries-from-Computation-Demonstration">PLDI Distinguished Paper Award</a> (2022)</li>
+
+<li>Army Research Office Early Career Program Award (2022)</li>
+
+<li><a href="https://www.onr.navy.mil/en/Media-Center/Press-Releases/2021/ONR-2021-Young-Investigators">Office of Naval Research Young Investigator Award</a> (2021)</li>
+
+<li><a href="https://programs.sigchi.org/chi/2021/program/content/47196">CHI Best Paper Award</a> (2021)</li>
+
+<li><a href="https://www.intel.com/content/www/us/en/research/blogs/intel-outstanding-researcher-award-2020.html">Intel Outstanding Researcher Award</a> (2021)</li>
+
+<li><a href="http://tab.computer.org/tcde/tcdeawardsrecipients.html">IEEE TCDE Rising Star Award</a> (2020)</li>
+
+<li><a href="https://www.vmware.com/company/research/faculty-programs.html#early">VMware Early Career Faculty Award</a> (2020)</li>
+
+<li><a href="https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-announces-recipients-presidential-early-career-award-scientists-engineers/">PECASE Award</a> (2019) </li>
+
+<li><a href="https://2019.icse-conferences.org/info/awards">ICSE Distinguished Paper Award</a> (2019)</li>
+
+<li><a href="https://sloan.org/fellowships/2019-Fellows">Sloan Fellowship</a> (2019)</li>
+
+<li><a href="https://research.googleblog.com/2018/03/google-faculty-research-awards-2017.html">Google Faculty Award</a> (2018)</li>
+
+<li><a href="https://news.cs.washington.edu/2017/06/07/allen-school-researchers-shine-brightly-at-sigmod/">SIGMOD Best Demo Award</a> (2017)</li>
+
+<li><a href="dbopt.html">NSF CAREER Award</a> (2017)</li>
+<!--<li><a href="https://news.cs.washington.edu/2017/04/18/six-allen-school-faculty-members-win-nsf-career-awards/">NSF CAREER Award</a> (2017)</li>-->
+
+<!-- <li><a href="coopt.html">NSF BIGDATA Award</a> (2016)</li> -->
+
+<li>Honorable mention, <a href="http://sigmod.org/sigmod-awards/citations/2016-sigmod-jim-gray-doctoral-dissertation-award/">SIGMOD Jim Gray Dissertation Award</a> (2016)</li>
+
+<li><a href="https://news.cs.washington.edu/2016/05/04/uw-cses-alvin-cheung-receives-u-s-department-of-energy-early-career-research-award/">US Department of Energy Early Career Research Award</a> (2016)</li>
+
+<li><a href="https://news.cs.washington.edu/2015/11/17/uw-cses-alvin-cheung-wins-sprowls-award-from-mit/">MIT George M. Sprowls Award for best computer science dissertation</a> (2016)</li>
+
+<li><a href='http://googleresearch.blogspot.com/2015/02/google-faculty-research-awards-winter.html'>Google Faculty Award</a> (2015)</li>
+
+<li><a href="http://www.csail.mit.edu/node/2118">Intel PhD Fellowship</a></li>
+<li>NSF Graduate Fellowship</li>
+<li>NDSEG Fellowship</li>
+<li>
+<a href='http://www.clir.org/pubs/issues/issues58.html/#zipf'>Zipf Fellow</a>,
+Council on Library and Information Resources</li>
+</ul>
+
+<h2>Service</h2>
+<ul>
+
+<li>2026:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://2026.sigmod.org/">SIGMOD</a></td>
+  <td>Associate Editor</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2025:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://www.vldb.org/pvldb/volumes/18">PVLDB</a></td>
+  <td>Associate Editor</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://2025.splashcon.org/track/OOPSLA">OOPSLA</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2024:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://2024.ecoop.org/">ECOOP</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2023:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://nips.cc/Conferences/2023">NeurIPS</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2022:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://conf.researchr.org/series/POPL">POPL</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+<tr>
+  <td><a href="http://2022.sigmod.org/">SIGMOD</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+<tr>
+  <td><a href="https://2022.splashcon.org/">SPLASH</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+
+</table>
+</li>
+
+
+<li>2021:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="http://2021.sigmod.org/">SIGMOD</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://icde2021.gr/">ICDE</a></td>
+  <td>PhD Symposium Co-Chair</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://vldb.org/2021/">VLDB Demo</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+
+</table>
+</li>
+
+</ul>
+
+<button class="accordion">Earlier service</button>
+<div class="panel">
+<ul>
+
+<li>2020:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://conf.researchr.org/home/pldi-2020">PLDI</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://sigmod2020.org/">SIGMOD</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://vldb2020.org/">VLDB</a></td>
+  <td>Demo Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2019:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://pldi19.sigplan.org/track/dbpl-2019-papers">DBPL</a></td>
+  <td>Program Committee Co-Chair</td>
+  </tr>
+
+  <tr>
+  <td><a href="https://acmsocc.github.io/2019/">SoCC</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href="http://vldb.org/2019/?call-for-demonstrations">VLDB</a></td>
+  <td>Demo Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+<li>2018:<br>
+<table border="0">
+  <col width="120">
+
+  <tr>
+  <td><a href="https://mapl18.hotcrp.com/">MAPL</a></td>
+  <td>Program Committee Chair</td>
+  </tr>
+ 
+  <tr>
+  <td><a href="https://sigmod2018.org/sigmod_student_research_competition.shtml">SIGMOD</a></td>
+  <td>Program Committee, Student Research Competition co-chair</td>
+  </tr>
+ 
+  <tr>
+  <td><a href="https://icde2018.org/">ICDE</a></td>
+  <td>Program Committee (poster)</td>
+  </tr>
+
+  <tr>
+  <td><a href="http://www.mmve-workshop.org/">MMVE</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+</table>
+</li>
+
+
+<li>2017:<br>
+<table border="0">
+  <col width="120">
+  <tr>
+  <td><a href='http://sigmod2017.org/'>SIGMOD</a></td>
+  <td>Program Committee, Student Research Competition co-chair</td>
+  </tr>
+  
+  <tr>
+  <td><a href='http://www.vldb.org/2017'>VLDB</a></td>
+  <td>Proceedings co-chair</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://conf.researchr.org/track/pldi-2017/'>PLDI</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://cikm2017.org/'>CIKM</a></td>
+  <td>Senior Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://dbpl2017.org/'>DBPL</a></td>
+  <td>Program Committee</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://uist.acm.org/uist2017/'>UIST</a></td>
+  <td>External Reviewer</td>
+  </tr>
+
+</table>
+</li>
+
+<li>2016:<br>
+<table border="0">
+  <col width="120">
+  <tr>
+  <td><a href='http://www.sigmod2016.org/'>SIGMOD</a></td>
+  <td>Program Committee (technical and demo)</td>
+  </tr>
+  
+  <tr>
+  <td><a href='http://acmsocc.github.io/2016/'>SoCC</a></td>
+  <td>Program Committee</td>
+  </tr>
+  
+  <tr>
+  <td><a href='http://www.sigmod2016.org/'>PODS</a></td>
+  <td>Subreviewer</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://vldb2016.persistent.com/'>VLDB</a></td>
+  <td>Program Committee (PhD Workshop)</td>
+  </tr>
+  
+  <tr>
+  <td><a href='http://conf.researchr.org/track/PLMW-PLDI-2016/PLMW-PLDI-2016'>PLMW@PLDI</a></td>
+  <td>Panelist</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://taco.acm.org'>TACO</a></td>
+  <td>Reviewer</td>
+  </tr>
+
+  <tr>
+  <td><a href='http://tods.acm.org'>TODS</a></td>
+  <td>Reviewer</td>
+  </tr>
+
+  <tr>
+  <td><a href='https://homes.cs.washington.edu/~akcheung/pnw16/'>PNW PLSE Meeting</a></td>
+  <td>Co-organizer</td>
+  </tr>
+</table>
+
+<li>2015:<br>
+<table border="0">
+  <col width="120">
+  <tr>
+  <td><a href='http://sigmod2015.org/'>SIGMOD</a></td>
+  <td>Program Committee</td>
+  </tr>
+  
+  <tr>
+  <td><a href='http://2015.splashcon.org'>SPLASH</a></td>
+  <td>External Review Committee</td>
+  </tr>
+
+</table>
+</li>
+
+</ul>
+</div>
+
+<!--
+<h2>Misc Projects</h2>
+
+<ul>
+<li><a href='http://en.homeprice.com.hk'>Homeprice</a>, a website that provides free property valuation in Hong Kong.
+</ul>
+-->
+
+<script async defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+
+
+</script>
+
+</body>
+</html>

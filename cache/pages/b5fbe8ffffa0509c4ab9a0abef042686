@@ -1,0 +1,869 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="abstract" content="My home page">
+  <meta name="keywords" content="Dana Dachman-Soled's home page">
+  <meta name="review" content="19960208">
+  <meta name="security" content="public">
+  <meta name="GENERATOR"
+ content="Mozilla/4.5 [en] (X11; U; AIX 4.1) [Netscape]">
+  <title>Dana (Glasner) Dachman-Soled</title>
+</head>
+<body bgcolor="#ffffff">
+<table width="800">
+  <tbody>
+    <tr>
+      <td>
+      <table style="width: 100%;">
+        <tbody>
+          <tr>
+            <td
+ style="width: 30%; vertical-align: middle; text-align: left;"> 
+  <img src="dana-profile.jpg" alt="Dana (Glasner) Dachman-Soled" 
+  width=208px height=259px>
+</a> </td>
+            <td
+ style="width: 70%; text-align: left; vertical-align: middle;">
+            <p> </p>
+            <font size="+1"> </font>
+            <h2><big><font size="+1"><big>Dana (Glasner) Dachman-Soled</big></font></big></h2>
+	    <small><font size="+1"><small>
+		Associate Professor
+		<br>
+            <small><font size="+1"><small>
+<a href="http://www.ece.umd.edu/">Department of Electrical and Computer Engineering</a>
+ and <a href="http://www.umiacs.umd.edu/">UMIACS</a>
+<br>
+<a href="https://www.cs.umd.edu/">Department of Computer Science</a> (affiliate) <br>
+<a href="https://isr.umd.edu/">Institute for Systems Research (ISR)</a> (affiliate)
+ <br>
+<small><font size="+1"><small>
+<a href="http://www.umd.edu/">University of Maryland</a>
+<br>
+            </small></font></small>
+Iribe 5238 <br>
+Iribe Center for Computer Science and Engineering <br>
+8125 Paint Branch Dr.<br>
+College Park, MD 20742<br>
+            <p> <i>Phone: (301) 405-9927</i><br>
+            <i>Email: danadach at umd dot edu</i><br>
+            </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p> 
+      <table cellpadding="2" cellspacing="2" border="0"
+ style="width: 100%; text-align: left;">
+</tr>
+        </tbody>
+      </table>
+      <p> <a href="#research">Research</a> | <a href="#research_focus_highlights">Research Highlights</a> | <a href="#Students">Students</a> | <a href="#publications">Publications</a>
+| <a href="#teaching">Teaching</a> | <a
+ href="#activities">Professional
+Activities</a>
+
+
+
+<H2> About Me </H2>
+<hr>
+<hr>
+I am an associate professor in the <a href="http://www.ece.umd.edu/">Department
+of Electrical and Computer Engineering at the University of Maryland, 
+College Park</a> and a core faculty member of 
+the <a href="http://
+www.cyber.umd.edu/">Maryland Cybersecurity Center</a>.
+I am supported in part by NSF, including an <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1453045&HistoricalAwards=false">NSF CAREER</a> award, 
+and a <a href="http://www.orau.org/university-partnerships/faculty-student-programs/powe/">Ralph E. Powe Junior Faculty Enhancement</a> award.
+I am, or have been, supported in part by NIST, Cisco, Intel,
+ JP Morgan, and Amazon.
+I am also the recipient of a Summer 2016 <a href="https://www.gradschool.umd.edu/sites/gradschool.umd.edu/files/uploads/Awards/ay_2016-17_summer_rasa_recipients.pdf">Research and Scholarship (RASA)</a> award.<br>
+
+
+Prior to joining University of Maryland, I spent two years as a
+postdoc at <a href="http://research.microsoft.com/en-us/labs/newengland/">Microsoft Research New England</a>.
+Before that, I completed my PhD
+at Columbia University
+under the supervision of
+<a href="http://www.cs.columbia.edu/~tal">Prof. Tal Malkin</a>. <br>
+Here is my <a href="DDS_CV_3_27_signed.pdf">CV</a> (March 2025).<br>
+Here is my <a href="https://scholar.google.com/citations?user=Ss009KUAAAAJ&hl=en">Google Scholar</a> page.<br>
+
+<a name="research"></a><H2> Research Interests </H2>
+<hr>
+<hr>
+
+My research interests are in cryptography, complexity theory and security.
+I have broad interests in cryptography including
+post-quantum cryptography, non-malleable codes and extractors,
+secure multiparty computation,
+and black-box complexity.
+I am
+also interested in 
+privacy preserving machine learning, complexity-theoretic cryptography, and side-channel attacks.
+
+<a name="research_focus_highlights"></a><H2> Research Areas of Focus and Recent Highlights </H2>
+<hr>
+<hr>
+
+<p>
+  <img src="3D_ellipsoid_halfspace_intersection.png" alt="Image Description" style="float: left; width: 400px; height: auto;">
+<b>Post-Quantum Cryptography.</b>
+Post-quantum cryptography refers to classical cryptographic protocols that are secure even against a quantum adversary.
+Cryptography based on lattice assumptions, such as learning with errors (LWE), is one of the most promising avenues for obtaining post-quantum cryptography.
+In two recent works 
+<ul>
+<li>
+LWE with Side Information: Attacks and Concrete Security
+Estimation.<br>
+D. Dachman-Soled, L. Ducas, H. Gong, M. Rossi.<br>
+CRYPTO 2020.  <a href="https://eprint.iacr.org/2020/292">eprint version</a>
+</li>
+<li>
+Revisiting Security Estimation for LWE with Hints from a Geometric Perspective. <br>
+D. Dachman-Soled, H. Gong, T. Hanson, H. Kippen. <br>
+CRYPTO 2023. <a href="https://eprint.iacr.org/2022/1345">ePrint version</a>
+</li>
+</ul>
+we developed publicly available toolkits (<a href="https://github.com/lducas/leaky-LWE-Estimator">Leaky LWE GitHub</a>, <a href="https://github.com/hunterkipt/Geometric-LWE-Estimator">Geometric LWE GitHub</a>) that provide estimates for the concrete security of lattice-based cryptosystems when side information is incorporated. Specifically, the toolkit provides scripts to automatically analyze the performance of so-called "lattice reduction algorithms" when side-information is available. The side information handled by the toolkit includes various types of side-channel information, as well as structural information that is present in some cryptosystems that are candidates in NIST's ongoing post-quantum standardization effort. Thus, the toolkit allows one to determine the quantitative impact of the side information on the concrete hardness of the cryptosystem.
+
+<br>
+
+The difference between the two toolkits is that the first toolkit assumes leakage on the LWE secret/error can always be well-approximated by a multivariate Gaussian distribution and uses this assumption to exactly compute the conditional probability distribution on the LWE secret/error as information is leaked.
+
+<br>
+
+The second toolkit instead views leakage from a geometric perspective. Specifically, the original confidence region for the LWE secret/error is well-approximated by an ellipsoid. Subsequently, leakage (e.g. from decryption failures) provides the information that the LWE secret/error lies on one side of a hyperplane (i.e. is contained in a halfspace). This means that we know that the LWE secret/error lies in the intersection of the ellipsoid and the halfspace. We must always maintain the invariant that the LWE secret/error is known to lie inside an ellipsoid. However, the intersection of the ellipsoid and halfspace may no longer be an ellipsoid. Therefore we approximate the intersection of the ellipsoid and halfspace by circumscribing it with an ellipsoid of reduced volume (as shown in the picture). This process can be repeated iteratively. We can also deal with intersections of ellipsoids with other convex bodies, which can capture other types of leaked information.
+
+We applied and extended the techniques from the two toolkits in these works:
+<ul>
+<li>
+Revisiting the Security of Approximate FHE with Noise-Flooding Countermeasures. <br>
+F. Bergamaschi, A. Costache, D. Dachman-Soled, H. Kippen, L. LaBuff, R. Tang. <br>
+PKC 2025. <a href="https://eprint.iacr.org/2024/424">ePrint version</a>
+</li>
+<li>
+When Frodo Flips: End-to-End Key Recovery on FrodoKEM via Rowhammer.<br>
+M. Fahr Jr., H. Kippen, A. Kwong, T. Dang, J. Lichtinger, D. Dachman-Soled, D. Genkin, A. Nelson, R. Perlner, A. Yerukhimovich, D. Apon.<br>
+CCS 2022, RWC 2023. <a href="https://eprint.iacr.org/2022/952">ePrint version</a> <br>
+<b>CCS 2022 Best paper honorable mention</b>
+</li>
+</ul>
+The first paper above applies our techniques to the fully homomorphic encryption (FHE) setting. In this setting, the added challenge is that due to extremely high matrix dimension (up to 200K x 200K), the estimation algorithms given in the Toolkit become infeasible, and new estimation techniques had to be developed.
+The second paper above combines techniques from the toolkit with a side-channel attack known as "Rowhammer" to provide an end-to-end key recovery attack on FrodoKEM, a Round 3 NIST PQC candidate.
+
+<br>
+<br>
+<small>Research supported in part by NSF grants #CNS-1453045 (CAREER), and #CNS-2154705, by financial assistance awards 70NANB15H328 and 70NANB19H126 from the U.S. Department of Commerce, National Institute of Standards and Technology, and by Intel through the Intel Labs Crypto Frontiers Research Center.</small>
+</p>
+
+
+<p>
+  <img src="sigmoid vs minmax1.png" alt="Image Description" style="float: left; width: 400px; height: auto;">
+<b>Privacy-Preserving Machine Learning.</b>
+
+When training a machine learning model using fully homomorphic encryption (FHE) or multiparty computation (MPC), continuous real functions are often replaced with a polynomial approximation to allow for compatibility with the underlying FHE or MPC ring structure. In our work
+<ul>
+<li>
+ Bounding the Excess Risk for Linear Models Trained on Marginal-Preserving, Differentially-Private, Synthetic Data. <br>
+Y. Zhou, M. Liang, I. Brugere, D. Dachman-Soled, D. Dervovic, A. Polychroniadou, M. Wu. <br>
+ICML 2024. <a href="https://arxiv.org/abs/2402.04375#:~:text=6%20Feb%202024%5D-,Bounding%20the%20Excess%20Risk%20for%20Linear%20Models%20Trained%20on%20Marginal,%2C%20Differentially%2DPrivate%2C%20Synthetic%20Data&text=The%20growing%20use%20of%20machine,contributed%20to%20the%20training%20dataset.">arXiv version</a>
+</li>
+</ul>
+we employed the theory of polynomial approximation of continuous functions for a different purpose. Specifically, we considered machine learning models of the form &phi;(&lt;<b>w</b>,<b>x</b>&gt;), where &phi; is an activation function, <b>w</b> are the model weights, and <b>x</b> is the datapoint. For example, in a logistic regression model, &phi; is the Sigmoid function and can be well-approximated by a degree-3 polynomial, as shown in the picture. The loss function itself for logistic regression can also be expressed in the form &Sigma; &psi;(&lt;<b>w</b>,<b>x</b><sub>i</sub>&gt;) for some other continuous function &psi;. 
+
+<br>
+
+We consider synthetic data that is differentially private and marginal-preserving. The fact that the synthetic data is differentially private means that it can be safely stored and computed on without violating the privacy of individuals who contributed to the dataset. The fact that the synthetic data is marginal-preserving means that the distribution over all small subsets of attributes is (approximately) preserved. Generation of such synthetic data is well-studied in the differential privacy literature. In our work we ask what happens when one tries to train a machine learning model on such synthetic data. Specifically, we investigated the excess loss when training on such synthetic data versus when training on the real dataset. 
+
+<br>
+
+Using fundamental theorems on approximation of continuous functions via low-degree polynomials (such as Bernstein polynomials), we were able to theoretically upper bound this excess loss.
+The key observation is that marginal-preserving synthetic data will achieve exactly the same loss as the real data with respect to the polynomial approximation.Thus, the main task becomes bounding the excess loss when training the real (resp. synthetic) data using the Bernstein approximation versus the true loss function. We were also able to prove matching lower bounds by showing that lower bounds for non-adaptive learning algorithms in the statistical query (SQ) model can be applied to our setting.
+
+<br>
+
+In ongoing work we are investigating convergence and other guarantees when training using polynomial approximations. Such guarantees have  previously have been heuristic/experimental only. This analysis will provide provable guarantees on convergence and excess loss when training machine learning models in the FHE and MPC settings.
+
+<br>
+<br>
+<small>Research supported in part by JPMorgan Chase Faculty Research Awards 2021 and 2024, and by a joint NSF and Amazon grant #IIS-2147276.</small>
+</p>
+
+
+<p>
+  <img src="Fano_plane.png" alt="Image Description" style="float: left; width: 300px; height: auto;">
+<b>Complexity-Theoretic Cryptography.</b>
+
+Derandomization techniques have been used in complexity theory to prove results such as BPP = P, under appropriate hardness assumption. Nisan and Wigderson first showed such a result by constructing a pseudorandom generator (PRG) that has a short seed, is computable in polynomial time and is hard to distinguish from random for bounded polynomial time adversaries, under the assumption that the complexity class E contains problems that are hard for exponential size circuits. Their key technique for constructing such a PRG was constructing a combinatorial design (a slightly different combinatorial design is shown in the picture). This design consists of a large (typically super polynomial number of subsets), where each subset contains elements from a polynomial (or logarithmic) size universe, the size of each subset is polynomial (or logarithmic), and yet every pair of subsets has an intersection of size at most constant (or logarithmic). In a sequence of works, we used derandomization techniques and combinatorial designs in particular to obtain a broad range of results across different areas of cryptography. Some examples include:
+<ul>
+<li>
+Uniform Black-Box Separations via Non-Malleable Extractors. <br>
+M. Ball, D. Dachman-Soled. <br>
+CRYPTO 2025. <a href="https://eprint.iacr.org/2025/1060">ePrint version</a>
+</li>
+<li>
+Extracting Randomness from Samplable Distributions, Revisited. <br>
+M. Ball, D. Dachman-Soled, E. Goldin, S. Mutreja. <br>
+FOCS 2023. <a href="https://eccc.weizmann.ac.il/report/2023/169/">ECCC version</a>
+</li>
+<li>
+(Nondeterministic) Hardness vs. Non-Malleability.<br>
+M. Ball, D. Dachman-Soled, J. Loss.<br>
+CRYPTO 2022. <a href="https://eprint.iacr.org/2022/070">ePrint version</a>
+</li>
+<li>
+BKW Meets Fourier: New Algorithms for LPN with Sparse Parities.<br>
+D. Dachman-Soled, H. Gong, H. Kippen, A. Shahverdi.<br>
+TCC 2021. <a href="https://eprint.iacr.org/2021/994">ePrint version</a>
+</li>
+<li>
+New Techniques for Zero-Knowledge: Leveraging Inefficient
+Provers to Reduce Assumptions, Interaction, and Trust.<br>
+M. Ball, D. Dachman-Soled, M. Kulkarni.<br>
+CRYPTO 2020. <a href="https://eprint.iacr.org/2019/1464">eprint version</a>
+</li>
+</ul>
+The first work above shows an application of t-time non-malleable exractors against non-determinstic tampering to ruling out uniform, black-box reductions in which the reduction fully controls the random coins of the adversary, providing a completely new direction for applications of non-malleable extractors.
+The second work above constructs deterministic extractors from quantum-samplable sources via derandomization-type assumptions. It also reduces the assumptions needed for deterministic extractors from classically-samplable sources and constitutes the first major progress on this question in over 20 years.
+The third work constructs non-malleable extractors and codes against bounded polynomial-time tampering (the holy grail for non-malleable extractors and codes) by leveraging derandomization assumptions. The construction from this work was subsequently used to obtain codes for polynomially-bounded channels.
+The fourth work gives algorithms that improve upon the state-of-the-art asymptotically <em>in the exponent</em> for the sparse learning parity with noise (LPN) problem (a post-quantum cryptographic problem). Here, one of the algorithms generates a large number of samples from a given small number of samples by using combinatorial designs. The properties of the combinatorial design ensure that there is low pair-wise correlation across the generated samples.
+The fifth work shows that (inefficient prover) ZAPs (two message witness indistinguishable proofs) can be constructed from one-way permutations, with a construction that again leverages combinatorial designs. We subsequently improved this result, showing that one-way functions (and even a slightly weaker notion of hard-to-invert functions) are sufficient in the following work:
+<ul>
+<li>
+(Inefficient Prover) ZAPs from Hard-to-Invert Functions. <br>
+M. Ball, D. Dachman-Soled. <br>
+Eurocrypt 2025, to appear. <a href="https://eccc.weizmann.ac.il/report/2023/205/download/">ECCC version</a>
+</li>
+</ul>
+These results show that "Minicrypt" (or even weaker) assumptions are sufficient for inefficient-prover ZAPs, whereas previously "Cryptomania" type assumptions (such as trapdoor permutations, LWE, or specific number-theoretic assumptions) were needed to obtain ZAPs. Our results also have complexity-theoretic implications on the existence of hard languages in (a variant of) NP &cap; coNP.
+
+<br>
+<br>
+<small>Research supported in part by NSF grants #CNS-1453045 (CAREER), and #CNS-1933033.</small>
+</p>
+
+
+<a name="Students"></a><H2> Students and Postdocs </H2>
+<hr>
+<hr>
+
+<br>
+Current PhD Students:
+<ul>
+<li>
+Yvonne Zhou
+</li>
+<li>
+Rui Tang
+</li>
+<li>
+Russell Chiu
+</li>
+</ul>
+
+<br>
+Graduated PhD Students:
+<ul>
+<li>
+Aishwarya Thiruvengadam (co-advised with Jonathan Katz). First position--postdoc at UCSB.
+</li>
+<li>
+Mukul Kulkarni. First position--postdoc at UMass Amherst.
+</li>
+<li>
+Huijing Gong. First position--Intel Labs.
+</li>
+<li>
+Aria Shahverdi. First position--Google.
+</li>
+<li>
+Hunter Kippen. First position--Samsung Research.
+</li>
+</ul>
+
+<br>
+Postdocs (Current and Past):
+<ul>
+<li>
+Mingyu Liang, Jan 2023-June 2024 (co-advised with Arkady Yerukhimovich)
+</li>
+<li>
+<a href="http://www.cc.gatech.edu/grads/j/jmas6/">Jacob Alperin-Sherriff</a>, Sep 2015-June 2016 (co-advised with Jonathan Katz).
+</li>
+<li>
+<a href="http://faculty.eng.fau.edu/fenghao/">Feng-Hao Liu</a>, Sep 2014-June 2015 (co-advised with Jonathan Katz and Elaine Shi).
+</li>
+</ul>
+
+<br>
+Visiting Researchers (Current and Past):
+<ul>
+<li>
+Hai Huang,
+Fall 2015-Spring 2016.
+</li>
+<li>
+<a href="https://www.parc.com/about/people/3082/vanishree-rao.html">Vanishree Rao</a>, Summer 2014. 
+</li>
+</ul>
+
+<a name="publications"></a><H2> Full List of Publications </H2>
+<hr>
+<hr>
+
+<br>
+<p>
+<ul>
+<p>
+<li>
+Quantum Black-Box Separations: Succinct Non-Interactive Arguments from Falsifiable Assumptions. <br>
+G. Alagic, D. Dachman-Soled, M. Shingane, P. Struck. <br>
+CiC 2026. <a href="https://eprint.iacr.org/2024/1763">ePrint version</a>
+</li>
+<p>
+<li>
+Balancing Fairness and Accuracy in Data-Restricted Binary Classification. <br>
+Z. Lazri, D. Dervovic, A. Polychroniadou, I. Brugere, D. Dachman-Soled, F. Huang, M. Wu. <br>
+ACM Transactions on Knowledge Discovery from Data, 2025. <a href="https://arxiv.org/abs/2403.07724">arXiv version</a>
+<p>
+<li>
+Uniform Black-Box Separations via Non-Malleable Extractors. <br>
+M. Ball, D. Dachman-Soled. <br>
+CRYPTO 2025. <a href="https://eprint.iacr.org/2025/1060">ePrint version</a>
+</li>
+<p>
+<li>
+Revisiting the Security of Approximate FHE with Noise-Flooding Countermeasures. <br>
+F. Bergamaschi, A. Costache, D. Dachman-Soled, H. Kippen, L. LaBuff, R. Tang. <br>
+PKC 2025. <a href="https://eprint.iacr.org/2024/424">ePrint version</a>
+</li>
+<p>
+<li>
+(Inefficient Prover) ZAPs from Hard-to-Invert Functions. <br>
+M. Ball, D. Dachman-Soled. <br>
+Eurocrypt 2025. <a href="https://eccc.weizmann.ac.il/report/2023/205/download/">ECCC version</a>
+</li>
+<p>
+<li>
+On the Privacy of Sublinear-Communication Jaccard Index Estimation via Min-hash. <br>
+M. Liang, S.G. Choi, D. Dachman-Soled, L. Liu, A. Yerukhimovich. <br>
+CiC 2025. <a href="https://eprint.iacr.org/2023/1523">ePrint version</a>
+</li>
+<p>
+<li>
+A Canonical Data Transformation for Achieving Inter-and Within-group Fairness. <br>
+Z. Lazri, I. Brugere, X. Tian, D. Dachman-Soled, A. Polychroniadou, D. Dervovic, M. Wu<br>
+IEEE Transactions on Information Forensics and Security, 2024. <a href="https://arxiv.org/pdf/2310.15097">arXiv version</a>
+</li>
+<p>
+<li>
+ Breaking RSA Generically is Equivalent to Factoring, with
+  Preprocessing. <br>
+D. Dachman-Soled, J. Loss, A. O'Neill<br>
+ITC 2024, to appear. <a href="https://eprint.iacr.org/2022/1261">ePrint version</a>
+</li>
+<p>
+<li>
+ Bounding the Excess Risk for Linear Models Trained on Marginal-Preserving, Differentially-Private, Synthetic Data. <br>
+Y. Zhou, M. Liang, I. Brugere, D. Dachman-Soled, D. Dervovic, A. Polychroniadou, M. Wu. <br>
+ICML 2024, to appear. <a href="https://arxiv.org/abs/2402.04375#:~:text=6%20Feb%202024%5D-,Bounding%20the%20Excess%20Risk%20for%20Linear%20Models%20Trained%20on%20Marginal,%2C%20Differentially%2DPrivate%2C%20Synthetic%20Data&text=The%20growing%20use%20of%20machine,contributed%20to%20the%20training%20dataset.">arXiv version</a>
+</li>
+<p>
+<li>
+Extracting Randomness from Samplable Distributions, Revisited. <br>
+M. Ball, D. Dachman-Soled, E. Goldin, S. Mutreja. <br>
+FOCS 2023. <a href="https://eccc.weizmann.ac.il/report/2023/169/">ECCC version</a>
+</li>
+<p>
+<li>
+Revisiting Security Estimation for LWE with Hints from a Geometric Perspective. <br>
+
+D. Dachman-Soled, H. Gong, T. Hanson, H. Kippen. <br>
+CRYPTO 2023. <a href="https://eprint.iacr.org/2022/1345">ePrint version</a>
+</li>
+<p>
+<li://user.eng.umd.edu/~danadach/index_in_progress.htmlhttps://user.eng.umd.edu/~danadach/index_in_progress.html>
+Secure Sampling with Sublinear Communication.<br>
+S.G. Choi, D. Dachman-Soled, S.D. Gordon, L. Liu, A. Yerukhimovich.<br>
+TCC 2022. <a href="https://eprint.iacr.org/2022/660">ePrint version</a>
+</li>
+<p>
+<li>
+When Frodo Flips: End-to-End Key Recovery on FrodoKEM via Rowhammer.<br>
+M. Fahr Jr., H. Kippen, A. Kwong, T. Dang, J. Lichtinger, D. Dachman-Soled, D. Genkin, A. Nelson, R. Perlner, A. Yerukhimovich, D. Apon.<br>
+CCS 2022, RWC 2023. <a href="https://eprint.iacr.org/2022/952">ePrint version</a> <br>
+CCS 2022 Best paper honorable mention
+</li>
+<p>
+<li>
+(Nondeterministic) Hardness vs. Non-Malleability.<br>
+M. Ball, D. Dachman-Soled, J. Loss.<br>
+CRYPTO 2022. <a href="https://eprint.iacr.org/2022/070">ePrint version</a>
+</li>
+<p>
+<li>
+BKW Meets Fourier: New Algorithms for LPN with Sparse Parities.<br>
+D. Dachman-Soled, H. Gong, H. Kippen, A. Shahverdi.<br>
+TCC 2021. <a href="https://eprint.iacr.org/2021/994">ePrint version</a>
+</li>
+<p>
+<li>
+Compressed Oblivious Encoding for Homomorphically Encrypted Search.<br>
+S. G. Choi, D. Dachman-Soled, D. Gordon, L. Liu, A. Yerukhimovich.<br>
+CCS 2021. <a href="https://eprint.iacr.org/2021/1199">ePrint version</a>
+</li>
+<p>
+<li>
+Non-Malleable Codes for Bounded Parallel-Time Tampering.<br>
+D. Dachman-Soled, I. Komargodski, R. Pass.<br>
+CRYPTO 2021. <a href="https://eprint.iacr.org/2020/776">ePrint version</a>
+</li>
+<p>
+<li>
+Database Reconstruction from Noisy Volumes: A Cache
+Side-Channel Attack on SQLite.<br>
+A. Shahverdi, M. Shirinov, D. Dachman-Soled.<br>
+USENIX 2021. <a href="https://arxiv.org/abs/2006.15007">arXiv version</a>
+</li>
+<p>
+<li>
+Revisiting Fairness in MPC: Polynomial Number of Parties and General Adversarial Structures.<br>
+D. Dachman-Soled.<br>
+TCC 2020. <a href="https://eprint.iacr.org/2020/1430">eprint version</a>
+</li>
+<p>
+<li>
+LWE with Side Information: Attacks and Concrete Security
+Estimation.<br>
+D. Dachman-Soled, L. Ducas, H. Gong, M. Rossi.<br>
+CRYPTO 2020.  <a href="https://eprint.iacr.org/2020/292">eprint version</a>
+</li>
+<p>
+<li>
+New Techniques for Zero-Knowledge: Leveraging Inefficient
+Provers to Reduce Assumptions, Interaction, and Trust.<br>
+M. Ball, D. Dachman-Soled, M. Kulkarni.<br>
+CRYPTO 2020. <a href="https://eprint.iacr.org/2019/1464">eprint version</a>
+</li>
+<p>
+<li>
+Differentially-Private Multi-Party Sketching for Large-Scale Statistics. <br>
+S.G. Choi, D. Dachman-Soled, M. Kulkarni, A. Yerukhimovich.<br>
+PETS 2020.
+<a href="https://eprint.iacr.org/2020/029">eprint version</a>
+</li>
+<p>
+<li>
+How to Own the NAS in Your Spare Time.<br>
+S. Hong, M. Davinroy, Y. Kaya, D. Dachman-Soled, T. Dumitras.<br>
+ICLR 2020.
+<a href="https://arxiv.org/abs/2002.06776">arXiv version</a>
+</li>
+<p>
+<li>
+TMPS: Ticket-Mediated Password Strengthening.<br>
+J. Kelsey, D. Dachman-Soled, S. Mishra, M.S. Turan.<br>
+CT-RSA 2020.
+<a href="https://eprint.iacr.org/2019/543">eprint version</a>
+</li>
+<p>
+<li>
+Limits to Non-Malleability.<br>
+M. Ball, D. Dachman-Soled, M. Kulkarni, T. Malkin.<br>
+ITCS 2020.
+<a href="https://eprint.iacr.org/2019/449">eprint version</a>
+</li>
+<p>
+<li>
+(In)Security of Ring-LWE Under Partial Key Exposure.<br>
+D. Dachman-Soled, H. Gong, M. Kulkarni, A. Shahverdi.<br>
+Mathcrypt 2019. <br>
+Proceedings will appear as a Special Issue of the Journal of Mathematical Cryptology.
+</li>
+<p>
+<li>
+Towards a Ring Analogue of the Leftover Hash Lemma.<br>
+D. Dachman-Soled, H. Gong, M. Kulkarni, A. Shahverdi.<br>
+Mathcrypt 2019. <br>
+Proceedings will appear as a Special Issue of the Journal of Mathematical Cryptology.
+</li>
+<p>
+<li>
+Mitigating Reverse Engineering Attacks on Deep Neural Networks.<br>
+Y. Liu, D. Dachman-Soled, A. Srivastava.<br>
+ISVLSI 2019.
+<a href="MyPapers/Neural_ORAM.pdf"> pdf </a></li>
+<p>
+<li>
+Non-Malleable Codes Against Bounded Polynomial Time Tampering.<br>
+M. Ball, D. Dachman-Soled, M. Kulkarni, H. Lin, T. Malkin. <br>
+Eurocrypt 2019.
+<a href="https://eprint.iacr.org/2018/1015">eprint version</a>
+</li>
+<p>
+<li>
+Constant-Round Group Key-Exchange from the Ring-LWE Assumption.<br>
+D. Apon, D. Dachman-Soled, H. Gong, J. Katz. <br>
+PQCrypto 2019.
+<a href="https://eprint.iacr.org/2019/398">eprint version</a>
+</li>
+<p>
+<li> Upper and Lower Bounds for Continuous Non-Malleable Codes.<br>
+D. Dachman-Soled, M. Kulkarni. <br>
+PKC 2019.
+<a href="https://eprint.iacr.org/2018/517">eprint version</a>
+</li>
+<p>
+<li> Non-Malleable Codes for Small-Depth circuits.<br>
+M. Ball, D. Dachman-Soled, S. Guo, T. Malkin, L.Y. Tan. <br>
+FOCS 2018. <a href="https://eprint.iacr.org/2018/207">eprint version</a>
+</li>
+<p> 
+<li> Non-Malleable Codes from Average-Case Hardness: AC0, Decision Trees, and Streaming Space-Bounded Tampering <br>
+M. Ball, D. Dachman-Soled, M. Kulkarni, T. Malkin. <br>
+Eurocrypt 2018. <a href="https://eprint.iacr.org/2017/1061">eprint version</a>
+</li>
+<p>
+<li> Local Non-Malleable Codes in the Bounded Retrieval Model <br>
+D. Dachman-Soled, M. Kulkarni, A. Shahverdi. <br>
+PKC 2018. <a href="https://eprint.iacr.org/2017/303">eprint version</a>
+</li>
+<p>
+<li>
+On the Leakage Resilience of Ideal-Lattice Based Public Key Encryption <br>
+D. Dachman-Soled, H. Gong, M. Kulkarni, A. Shahverdi. <br>
+Manuscript. Can be found <a href="main_LR_lattice.pdf">here</a>. 
+</li>
+<p>
+<li>
+Improved, Black-Box, Non-Malleable
+Encryption from Semantic Security <br>
+S. G. Choi, D. Dachman-Soled, T. Malkin, H. Wee. <br> 
+Designs, Codes and Cryptography.
+<a href="https://eprint.iacr.org/2016/842">eprint version</a>
+</li>
+<p>
+<li>
+Tight Upper and Lower Bounds for Leakage-Resilient, Locally Decodable and Updatable Non-Malleable Codes <br>
+D. Dachman-Soled, M. Kulkarni, A. Shahverdi <br>
+PKC 2017; Information & Computation.
+<a href="https://eprint.iacr.org/2017/015">eprint version</a> <br>
+</li>
+<p>
+<li>
+Towards Non-Black-Box Separations of Public Key Encryption and One Way Functions <br>
+D. Dachman-Soled <br>
+TCC B-2016.
+<a href="https://eprint.iacr.org/2016/812">eprint version</a>
+</li>
+<p>
+<li>
+Non-Malleable Codes for Bounded Depth, Bounded Fan-in Circuits <br>
+M. Ball, D. Dachman-Soled, M. Kulkarni, T. Malkin <br>
+Eurocrypt 2016.
+<a href="https://eprint.iacr.org/2016/307">eprint version</a
+>
+</li>
+<p>
+<li>
+10-Round Feistel is Indifferentiable from an Ideal Cipher <br>
+D. Dachman-Soled, J. Katz, A. Thiruvengadam <br>
+Eurocrypt 2016.
+<a href="http://eprint.iacr.org/2015/876">eprint version</a>
+</li>
+<p>
+<li>
+Leakage-Resilient Public-Key Encryption from Obfuscation
+<br>
+D. Dachman-Soled, S.D. Gordon, F.H. Liu, A. O'Neill, H.S. Zhou <br>
+PKC 2016; Journal of Cryptology 2019.
+<a href="https://eprint.iacr.org/2018/207">eprint version</a> <br>
+</li>
+<p>
+<li>
+Efficient Concurrent Covert Computation of String Equality and Set Intersection <br>
+C. Cho, D. Dachman-Soled, S. Jarecki <br>
+CT-RSA 2016.
+<a href="MyPapers/covert_SI.pdf"> pdf </a></li>
+</li>
+<p>
+<li>
+Oblivious Network RAM and Leveraging Parallelism to Achieve Obliviousness <br>
+D. Dachman-Soled, C. Liu, C. Papamanthou, E. Shi, U. Vishkin <br>
+Asiacrypt 2015; Journal of Cryptology 2019. <a href="http://eprint.iacr.org/2015/073">eprint version</a>
+</li><p>
+<li>
+Leakage-Resilient Circuits Revisited -- Optimal Number
+of Computing Components without Leak-free Hardware <br>
+D. Dachman-Soled, F. H. Liu, H. S. Zhou <br>
+Eurocrypt 2015. <a href="http://eprint.iacr.org/2014/856">eprint version</a
+></li>
+<p>
+<li>
+Locally Decodable and Updatable Non-Malleable Codes and Their Applications <br>
+D. Dachman-Soled, F. H. Liu, E. Shi, H. S. Zhou <br>
+TCC 2015; Journal of Cryptology, to appear. <a href="http://eprint.iacr.org/2014/663">eprint version</a></li>
+<p>
+<li>
+Adaptively Secure, Universally Composable, Multi-Party Computation in Constant Rounds <br>
+D. Dachman-Soled, J. Katz, V. Rao <br>
+TCC 2015. <a href="http://eprint.iacr.org/2014/858">eprint version</a></li>
+<p>
+<li>
+Approximate resilience,
+monotonicity, and the complexity of agnostic learning <br>
+D. Dachman-Soled, V. Feldman, L.Y. Tan, A. Wan, K. Wimmer <br>
+SODA 2015.
+<a href="https://arxiv.org/abs/1405.5268">arXiv version</a></li>
+<p>
+<li>
+Feasibility and Infeasibility of Secure Computation with Malicious PUFs <br>
+D. Dachman-Soled, N. Fleischhacker, J. Katz, A. Lysyanskaya, D. Schr&oumlder <br>
+Crypto 2014; Journal of Cryptology, to appear.
+<a href="http://eprint.iacr.org/2015/405">eprint version</a></li>
+<p>
+<li>
+Leakage-Tolerant Computation with Input-Independent Preprocessing <br>
+N. Bitansky, D. Dachman-Soled, H. Lin <br>
+Crypto 2014.
+<a href="MyPapers/lt_mpc.pdf"> pdf </a></li>
+<p>
+<li>
+A Black-Box Construction of a CCA2 Encryption Scheme from a Plaintext Aware Encryption Scheme <br>
+D. Dachman-Soled </br>
+PKC 2014.
+<a href="http://eprint.iacr.org/2013/680">eprint version</a></li>
+<p>
+<li>
+On Minimal Assumptions for Sender-Deniable Public Key Encryption <br>
+D. Dachman-Soled </br>
+PKC 2014.
+<a href="http://eprint.iacr.org/2012/727">eprint version</a></li>
+<p>
+<li>
+Enhanced Chosen-Ciphertext Security and Applications <br>
+D. Dachman-Soled, G. Fuchsbauer, P. Mohassel; A. O'Neill <br>
+PKC 2014.
+<a href="http://eprint.iacr.org/2012/543">eprint version</a></li>
+<p>
+<li>
+Securing Circuits and Protocols Against 1/poly(k) Tampering Rate <br>
+D. Dachman-Soled, Y. T. Kalai </br>
+TCC 2014.
+<a href="http://eprint.iacr.org/2012/366">eprint version</a></li>
+<p>
+<li>
+Can Optimally-Fair Coin Tossing be Based on One-Way Functions? <br>
+D. Dachman-Soled, M. Mahmoody, T. Malkin </br>
+TCC 2014.
+<a href="MyPapers/coin_2.pdf"> pdf </a></li>
+<p>
+<li>
+Adaptive and Concurrent Secure Computation from New Adaptive, Non-Malleable Commitments <br>
+D. Dachman-Soled, T. Malkin, M. Raykova and M. Venkitasubramaniam <br>
+Asiacrypt 2013.
+<a href="http://eprint.iacr.org/2011/611.pdf">eprint version</a></li>
+<p>
+<li>
+Why "Fiat-Shamir for Proofs" Lacks a Proof <br>
+N. Bitansky, D. Dachman-Soled, S. Garg, A. Jain, Y. T. Kalai,
+A. Lopez-Alt, D. Wichs <br>
+TCC 2013. <br>
+Merge of 
+<a href="http://eprint.iacr.org/2012/706">this</a> 
+and
+<a href="http://eprint.iacr.org/2012/705">this.</a>
+</li>
+<p>
+<li>
+On The Centrality of Off-Line E-Cash to Concrete Partial Information Games <br>
+S. G. Choi, D. Dachman-Soled, M. Yung </br>
+SCN 2012.
+<a href="MyPapers/cdy12.pdf"> pdf </a></li>
+<p>
+<li>
+Securing Circuits Against Constant-Rate Tampering <br>
+D. Dachman-Soled, Y. T. Kalai </br>
+CRYPTO 2012.
+<a href="http://eprint.iacr.org/2012/366">eprint version</a></li>
+<p>
+<li>
+Efficient Password Authenticated Key Exchange via Oblivious Transfer <br>
+R. Canetti, D. Dachman-Soled, V. Vaikuntanathan, H. Wee <br>
+PKC 2012.
+<a href="MyPapers/pake.pdf"> pdf </a></li>
+</li>
+<p>
+<li>
+Computational Extractors and Pseudorandomness <br>
+D. Dachman-Soled, R. Gennaro, H. Krawczyk, T. Malkin <br>
+TCC 2012.
+<a href="http://eprint.iacr.org/2011/708">eprint version</a></li>
+<p>
+<li>
+A canonical form for testing Boolean function properties <br>
+D. Dachman-Soled and R. Servedio <br>
+RANDOM 2011. 
+<a href="MyPapers/canon_test_full.pdf"> pdf </a></li>
+<p>
+<li> 
+Secure Efficient Multiparty Computing of Multivariate Polynomials and
+Applications <br/> 
+D. Dachman-Soled, T. Malkin, M. Raykova and M. Yung <br> 
+ACNS 2011.
+<a href="MyPapers/multivar.pdf"> pdf </a></li> 
+<p>  
+<li>
+On the Black-Box Complexity of Optimally-Fair Coin Tossing <br>
+D. Dachman-Soled, Y. Lindell, M. Mahmoody, T. Malkin <br>
+TCC 2011.
+<a href="MyPapers/coin-cut.pdf"> pdf </a></li>
+<p>  
+<li>
+Improved Non-Committing Encryption with Applications to Adaptively Secure Protocols <br>
+S. G. Choi, D. Dachman-Soled, T. Malkin and H. Wee <br>
+Asiacrypt 2009.
+<a href="MyPapers/nce.pdf"> pdf </a></li>
+<p>  
+<li>
+Efficient Robust Private Set Intersection <br>
+D. Dachman-Soled, T. Malkin, M. Raykova and M. Yung <br>
+ACNS 2009; International Journal of Applied Cryptography 2012.
+<a href="MyPapers/set-int.pdf"> pdf </a></li>
+<p>  
+<li>
+Simple, Black-Box Constructions of Adaptively Secure Protocols <br>
+S.G. Choi, D. Dachman-Soled, T. Malkin and H. Wee <br>
+TCC 2009.
+<a href="MyPapers/ot.pdf"> pdf </a></li>
+<p>  
+<li>
+Optimal Cryptographic Hardness of Learning Monotone Functions <br>
+D. Dachman-Soled, H. Lee, T. Malkin, R. Servedio, A. Wan and H. Wee <br>
+ICALP 2008; Theory of Computing 2009.
+<a href="MyPapers/monocrypto.pdf"> pdf </a></li>
+<p>  
+<li>    
+Black-Box Construction a Non-Malleable Encryption Scheme from Any Semantically Secure One <br>
+S.G. Choi, D. Dachman-Soled, T. Malkin and H. Wee <br>
+TCC 2008; Journal of Cryptology 2018.
+<a href="MyPapers/non-mal.pdf"> pdf </a></li>
+<p>  
+<li>
+Distribution-Free Testing Lower Bounds for Basic Boolean Functions <br>
+D. Glasner and R. Servedio <br>
+RANDOM 2007; Theory of Computing 2009.
+<a href="MyPapers/dist-free.pdf"> pdf </a></li>  
+<p> 
+<li>
+Configuration Reasoning and Ontology For Web <br>
+D. Glasner and V. C. Sreedhar <br>
+SCC, 2007.
+<a href="MyPapers/ontology.pdf"> pdf </a></li>
+<p>  
+<li>    
+Geometrical characteristics of regular polyhedra:  Application to EXAFS studies of nanoclusters <br>
+D. Glasner and A. I. Frenkel <br>
+AIP Conf. Proc., 2007.
+<a href="MyPapers/icos.pdf"> pdf </a></li>
+<p>  
+<li>
+Geometry and Charge State of Mixed-Ligand Au13 Nanoclusters <br>
+A. I. Frenkel, L. D. Menard, P. Northrup, J. A. Rodriquez, F. Zypman, D. Glasner, S.P. Gao, H. Xu, J.C. Yang and R.G. Nuzzo <br>  
+AIP Conf. Proc., 2007.
+<a href="MyPapers/nanoclusters.pdf"> pdf </a></li>
+</ul> 
+
+<a name="teaching"><H2>Teaching</H2>
+<hr>
+<hr>
+<ul>
+<li>
+Spring 2026: <a href="Cryptography_26/index.html">Cryptography</a> (ENEE/CMSC/MATH456).
+</li>
+<li>
+Spring 2025: <a href="Cryptography_25/index.html">Cryptography</a> (ENEE/CMSC/MATH456).
+</li>
+<li>
+Fall 2024: <a href="Security_Fall_24/index.html">Computer Systems Security</a> (
+ENEE457).
+</li>
+<li>
+Spring 2024: <a href="Cryptography_24/index.html">Cryptography</a> (ENEE/CMSC/MATH456).
+</li>
+<li>
+Spring 2023: Cryptography (ENEE/CMSC/MATH456) (archived).
+</li>
+<li>
+Fall 2022: <a href="Security_Fall_22/index.html">Computer Systems Security</a> (
+ENEE457).
+</li>
+<li>
+Spring 2022: Cryptography (ENEE/CMSC/MATH456) (archived).
+</li>
+<li>
+Fall 2021: <a href="Security_Fall_21/index.html">Computer Systems Security</a> (
+ENEE457).
+</li>
+<li>
+Fall 2020: <a href="Security_Fall_20/index.html">Computer Systems Security</a> (
+ENEE457).
+</li>
+<li>
+Spring 2020: Cryptography (ENEE/CMSC/MATH456) (archived).
+</li>
+<li>
+Fall 2019: <a href="Security_Fall_19/index.html">Computer Systems Security</a> (ENEE457).
+</li>
+<li>
+Spring 2019: Cryptography (ENEE/CMSC/MATH456) (archived).
+</li>
+<li>
+Spring 2018: Introduction to
+Cryptology (ENEE459E/CMSC498R) (archived).
+</li>
+<li>
+Fall 2017: <a href="Security_Fall_17/index.html">Computer Systems Security</a> (ENEE457/CMSC498E).
+</li>
+<li>
+Spring 2017: Introduction to
+Cryptology (ENEE459E/CMSC498R) (archived).
+</li>
+<li>
+Spring 2016: Introduction to 
+Cryptology (ENEE459E/CMSC498R) (archived).
+</li>
+<li>
+Fall 2015: <a href="ENEE_244_Fall_15/index.html">Digital Logic</a> (ENEE 244).
+</li>
+<li>
+Spring 2015: Introduction to Cryptology (ENEE459E/CMSC498R) (archived).
+</li>
+<li>
+Fall 2014: <a href="ENEE_244_Fall_14/index.html">Digital Logic</a> (ENEE 244).
+</li>
+<li>
+Spring 2014: Introduction to Cryptology (ENEE459E/CMSC498R) (archived).
+</li>
+<li>
+Fall 2013:  <a href="Crypto_Physical2013/coursepage.html">Cryptography Against Physical Attacks</a> (ENEE759O/CMSC858T).
+</li>
+</ul>
+
+
+<a name="activities"></a><H2> Professional Activities </H2>
+<hr>
+<hr>
+Program Committee member:  SCN 2012, CRYPTO 2013, PKC 2016, TCC 2016A, CCS 2016, NDSS 2017, PKC 2017, CRYPTO 2017, TCC 2017, PKC 2018, CRYPTO 2018, EUROCRYPT 2019, TCC 2019, ASIACRYPT 2021, EUROCRYPT 2022, STOC 2023, ITC 2025.
+
+<hr>
+
+Program Chair: ITC 2022.
+
+<hr>
+
+Area Chair: CRYPTO 2024.
+</body>
+</html>

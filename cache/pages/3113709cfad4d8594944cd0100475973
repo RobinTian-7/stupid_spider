@@ -1,0 +1,997 @@
+Dr. Bertram Lud¨ascher
+School of Information Sciences
+Phone (530) 554-1800
+University of Illinois at Urbana-Champaign (UIUC)
+Fax (217) 244-3302
+501 E. Daniel Street, MC-493
+ludaesch@illinois.edu
+Champaign, IL 61820-6211
+Research Interests
+Scientiﬁc data & workﬂow engineering; data integration, knowledge representation & reasoning; conceptual founda-
+tions; data science tools. Current research topics include:
+• Modeling, design, and analysis of scientiﬁc workﬂows.
+• Optimization of data-intensive and compute-intensive workﬂows.
+• Conceptual foundations of provenance in databases and workﬂows.
+• Optimization of provenance capture and querying.
+• Principles and practice of data curation.
+• Provenance and reproducibility.
+• Knowledge-based data integration, knowledge representation and reasoning.
+• Reasoning about taxonomies and biodiversity informatics applications.
+Education
+1998
+Ph.D. (Dr. rer. nat.) Computer Science, University of Freiburg, Germany
+WOLFGANG-GENTNER Prize (DEM 10,000) for thesis on Integration of Active and Deductive Database Rules
+Advisor: Prof. Dr. Georg Lausen, Databases and Information Systems (DBIS), University of Freiburg, Germany
+1992
+M.S. (Dipl.-Inform.) Computer Science, Karlsruhe Institute of Technology (KIT), Germany
+Advisor: Prof. Dr. Peter H. Schmitt, Inst. for Logic, Complexity & Deduction Systems, KIT, Germany
+Appointments
+2015–present
+Director, Center for Informatics Research in Science & Scholarship (CIRSS), iSchool, UIUC
+2015–present
+Professor (afﬁliate), Department of Computer Science, UIUC
+2014–present
+Professor (afﬁliate), Computing & Data Sciences, National Center for Supercomputing Applications (NCSA)
+2014–present
+Professor, School of Information Sciences (the iSchool @ Illinois; formerly: GSLIS), UIUC
+2009–2014
+Professor, Department of Computer Science & Genome Center, University of California, Davis
+2004–2009
+Associate Professor, Department of Computer Science & Genome Center, University of California, Davis
+2008–2010
+Research Fellow, Graduate School of Library & Information Science (GSLIS), UIUC
+2004–2008
+Research Fellow, San Diego Supercomputer Center, UC San Diego
+2002–2004
+Adj. Asst. Professor, Dept. of Computer Science & Engineering, UC San Diego
+2004
+Associate Research Scientist, San Diego Supercomputer Center, UC San Diego
+2001–2004
+Lab Director, Knowledge-Based Inf. Systems, San Diego Supercomputer Center, UCSD
+2000–2004
+Assistant Research Scientist, San Diego Supercomputer Center, UC San Diego
+2000–2001
+Lecturer, Dept. of Computer Science & Engineering, UC San Diego
+1998–2000
+Visiting Project Scientist, San Diego Supercomputer Center, UC San Diego
+1998
+Research Scientist C1 (Asst. Prof.), Databases & Information Systems, U Freiburg, Germany
+1993–1998
+Research Scientist BAT IIa, Databases & Information Systems, U Freiburg, Germany
+
+Summary (Reporting Period: May 2017 – April 2018)
+Research and Development
+I joined the iSchool as a tenured professor in August 2014, and since 2015 I have been appointed Director of the Center
+for Informatics Research in Science and Scholarship (CIRSS). I also hold faculty appointments (i) with the National
+Center for Supercomputing Applications (NCSA) in the Computing and Data Sciences group, where I spend a good
+amount of my time, due to large ongoing projects (see below), and (ii) with the Department of Computer Science,
+where I am a member of the Data and Information Systems Laboratory (DAIS).
+At NCSA I lead a large collaborative project CC*DNI DIBBS: Merging Science and Cyberinfrastructure
+Pathways: The Whole Tale. This $4,986,951 ﬁve year project was awarded in 2016 and includes collaborators
+from the University of Chicago, University of Texas at Austin, The University of Notre Dame, and the University of
+California, Santa Barbara. Given the prominence that NSF assigns to certain projects, including to Whole Tale, this is
+not a “regular” NSF award, but instead set up as a cooperative agreement between NSF and UIUC. As a side-effect,
+there is considerable additional adminstrative effort that goes into running this project. In November 2017, the Whole
+Tale team underwent the scheduled 18 month review, organized as a “reverse site visit” (RSV) at NSF. Before, during,
+and after this 18 Month RSV, considerable effort was spent on planning and documentation of project activities. The
+18 Month RSV was successful and NSF has since released the next increment of funding. In Spring 2019 we will
+have our second (and ﬁnal) 36 Month RSV. Whole Tale development is completely open (github.com/whole-tale).
+A second large collaborative NSF project is NSF-SMA 1637155: RIDIR: Collaborative Research: Developing
+and Deploying SKOPE – A resource for Synthesizing Knowledge of Past Environments, which was awarded in
+2016, with the majority funding ($884,627) going to Illinois, and smaller collaborative awards to ASU and WSU (the
+collaborative total is $1,339,658). The SKOPE project is developing and deploying an online resource for paleoenvi-
+ronmental data and models. A practical (i.e., project management) challenge that this project has been dealing with
+was triggered by the move of the CyberGIS group under Shaowen Wang (SKOPE co-PI) away from NCSA and to the
+Department of Geography. As a result, the CyberGIS resource ROGER is no longer available to the SKOPE project.
+Similarly, software development efforts have been delayed for a number of reasons (e.g., lack of developer time avail-
+able from the CyberGIS team). This has required additional PI effort to supervise the project and get it back on track.
+As in the case of Whole Tale, the SKOPE software development happens in the open (github.com/openskope).
+The Whole Tale and SKOPE projects, as well as the (soon to be ending) Kurator project1 (awarded in 2014) all
+entail a signiﬁcant amount of project management, e.g., to run weekly meetings, supervise developers, postdocs,
+and students, or to write regular reports, etc. The nature of the research coming out of these projects is inherently
+application oriented [39], [46].
+In addition, I maintain a strong research interest in conceptual foundations, and technical/engineering topics. For
+example, I continued work on the foundations of database provenance, with a focus on why-not provenance, where
+the basic problem is to explain the absence of certain answers in the result of a query. I had earlier pioneered a
+game-theoretic approach [162] with my students at UC Davis, and since my move to Illinois established a fruitful col-
+laboration with colleagues at IIT Chicago. This collaboration led to the ﬁrst practical implementation of provenance
+games and a string of publications and new results [177, 180, 182, 183, 208]. I have also recently published a survey
+on some of the practical and theoretical foundations of provenance in workﬂows and databases [61].
+In another line of foundational research, I continue to work on the theory and applications of taxonomy alignment.
+The Euler/X system I had originally developed with my former students at UC Davis [167, 202, 38, 40] continues to
+be in active use, and research and development continues in various directions to consolidate, apply, and extend the
+tools and methods, despite the fact that the original NSF funding has long ended. Real-world taxonomy alignment
+problems solved with Euler/X include [201, 38, 40, 42, 207] and cover weevils, grasses, birds, and primates, to name
+a few illustrious examples. An ambitious proposal submitted to the NSF [206], unfortuntately wasn’t funded.2
+A bit closer from home for a typical iSchool audience and use cases, PhD student Jessica Cheng has demonstrated
+1In Fall 2014, the NSF-ABI proposal Kurator: A Provenance-enabled Workﬂow Platform and Toolkit to Curate Biodiversity Data was
+awarded ($748,931). This is a collaboration with Prof. James Hanken, Curator in Herpetology, and Director of the Museum of Comparative Zoology
+at Harvard (collaborative total: $1.6M). In Kurator, we develop data curation technologies for natural history collections, combining workﬂow-based
+approaches and script-based approaches that we aim to “workﬂow-enable” via methods developed in the YesWorkﬂow initiative.
+2Success rates for many NSF programs are notoriously low and apparently continue to fall.
+
+how Euler/X can be applied when it is necessary to “agree to disagree”, using a geo-taxonomy example presented at
+ASIS&T’17 [184]. Led by iSchool alumna Dr. Andrea Thomer we also published a paper [45] which applied Euler/X
+to produce and visualize multiple possible worlds that capture the relation between different versions of a (subset of)
+the database schema of Specify 6. The latter is a popular information systems in use by natural history museums.
+We are not only exploring new directions for applying Euler/X to non-biological use cases, but also developing
+new functionality for the Euler/X system and beyond. For example SPIN intern and CS undergraduate student Sahil
+Gupta has developed a novel Possible Worlds Explorer that can be used to explore multiple possible worlds (answer
+sets of logic rules with negation in the body and disjunction/choice in the head). This student is also currently ﬁnishing
+a ﬁrst reimplementation of Euler/X called LeanEuler.
+Another important area of my research is data curation technologies, speciﬁcally scientiﬁc workﬂows and other
+related (script-based) approaches to automating data curation workﬂows. Driven by practical needs in data curation
+and workﬂows, I started a new grass-roots project YesWorkﬂow (YW) [37] that is already seeing early adoption by
+DataONE community members doing climate modeling, archaeologists [39], bioinformaticians, and HPC users.3 The
+YesWorkﬂow project is an example how with little funding and/or leveraging existing projects, one can incubate
+grass-roots projects that have the potential to lead to new research projects (and funding!) down the road. A critical
+issue here for the iSchool is to futher the culture and expand the informatics research capabilities through IS, CS, and
+informatics students and postdocs. Recent publications related to YesWorkﬂow include [179] and [212].
+Last not least, after a number of prior attempts, our IMLS National Forum proposal (Limited Access/Use TDM)
+was ﬁnally awarded. The goal of IMLS National Forum: Data Mining Research Using In-copyright and Limited-
+access Text Datasets is to shape a research and implementation agenda for researchers and libraries content providers.
+This project is co-led by Beth Sandore Namachchivaya (now at the University of Waterloo), Megan Senseney (iSchool),
+and myself. We held a successful meeting in Chicago in early April of 2018 and are now continuing a number of ac-
+tivities started during the forum meeting.
+3Liudmila Mainzer, a senior research scientist at NCSA and the HPCBio group has begun exploring the use of YW for scripts managing HPC
+jobs on Blue Waters.
+
+Teaching
+The ﬁrst course I taught at the iSchool was LIS452LE: Foundations of Information Processing in LIS. Both the new
+MS/IM program at the iSchool, as well as the MCS/DS program at the CS department, created a demand for a new
+course on data wrangling / data cleaning. In response to this need, I have been developing a new course IS 532:
+Theory & Practice of Data Cleaning and its Coursera-based companion CS 513 at the CS department. The course has
+been evolving over the last few years, as no standard curriculum or syllabus for this course has been readily available.
+In the current semester (Spring 2018), some new materials based on R and Python were created “on the ﬂy”, but
+additional efforts are needed over the summer to consolidate and further improve these course materials.
+Courses taught
+• LIS 452 Foundations of Information Processing in LIS (Python-oriented; based on Vetle’s course)
+• IS 532 (formerly: LIS 590): Theory & Practice of Data Cleaning
+• CS 513 (formerly CS 598): Theory & Practice of Data Cleaning (Courserabased, for MCSDS)
+• IS 592 Independent Study
+• IS 599 Thesis Research
+• CS 397 Independent Study
+• CS 499 Senior Thesis
+Other teaching
+• Digital Humanities at Oxford Summer School (2016): Humanities Data: A HandsOn Approach; Hands on Data
+Quality, Provenance, Reproducibility
+• 31st Brazilian Symposium on Databases (SBBD): Tutorial: Provenance in Databases and Scientiﬁc Workﬂows
+• DataONE Webinar: Provenance and DataONE: Facilitating Reproducible Science
+• iDigBio Webinar: Towards userdeﬁnable, semiautomated workﬂows for curating biodiversity data
+Postdoc mentoring
+• Dr. Yang Cao (DataONE project)
+• Dr. Qian Zhang (Kurator project)
+Independent studies at UIUC
+• Cheng, Jessica (IS)
+• Gupta, Sahil (CS)
+• Jiang, Xiaoliang (IS)
+• Lan, Li (IS)
+• Senseney, Megan (IS)
+• Shrivastava, Pratik (IS)
+• Wang, Qiwen (IS)
+
+NCSA SPIN interns mentored
+• Wang, Qiwen (2017, Regular Path Query to SQL compiler)
+• Gupta, Sahil (2017, Possible Worlds Explorer for Answer Set Programming)
+• Laskowski, Aubrey (2017, Counting Monotone Boolean Functions)
+• Nath, Nitesh (2016, Parallel Computation of Dedekind numbers)
+• Huq, Solaman (2015, Finding Minimum Inconsistent Subset)
+DataONE interns mentored
+• Lee, Seokki (upcoming 2018, CS PhD student at IIT, Chicago)
+• Lyu, Hui (2017, MS LIS graduate at UIUC, now CS PhD student at UPenn)
+• Hoang, Linh (2017, LIS PhD student at UIUC)
+• Vu, Duc (2016, ECE PhD student at UIC)
+• Yoo, Michael (2015, CE student at UIUC)
+• Song, Tianhong (2014, CS PhD student at UC Davis)
+Whole Tale interns mentored
+• NunezCorrales, Santiago (upcoming 2018, I3 PhD student at UIUC)
+• Cheng, Jessica (upcoming 2018, LIS PhD student at UIUC)
+• Lan, Li (upcoming 2018, MS/IM student at UIUC)
+• Shrivastava, Pratik (2017, MS/IM student at UIUC)
+ICES evaluations
+Most recent evaluations (see separate documents for additional evaluations and details):
+• IS 590 (Theory & Practise of Data Cleaning), Fall 2017 (19 out of 21 students, i.e., 90.5% reporting):
+– Rate the instructor’s overall teaching effectiveness: 4.58 (5)
+– Rate the overall quality of this course: 4.47 (5)
+– How much have you learned in this course? 4.58 (5)
+
+Service
+Since 2015 I am the Director of the Center for Informatics Research in Science and Scholarship (CIRSS). CIRSS aims
+to foster research collaborations among iSchool faculty and researchers in a number of informatics research areas. In
+addition to organizing the well-established CIRSS seminar, colleagues who want to brainstorm new research directions
+or submit research proposals are encouraged to team up with CIRSS colleagues. We also offer some support for
+proposal preparation and budget planning etc. My service to the iSchool and beyond during the report period includes:
+iSchool
+• Member, Doctorial Studies Committee
+• Member, Admissions Committee
+Campus
+• Member, iDSI Steering Committee (Illinois Data Science Initiative)
+• Member, NCSA Search Committee (Deputy Director)
+Other Professional
+• PeerJ Editorial Board Member
+• NSF panelist (National Science Foundation)
+• ISF reviewer (Israel Science Foundation)
+• IPAW PC member
+• SSDBM PC member
+• VLDB PC member (demo track)
+• ESWC PC member
+• Reviewer, Distributed and Parallel Databases
+
+Research Projects & Funding
+Active Awards
+• IMLS National Forum: Data Mining Research Using In-copyright and Limited-access Text Datasets: Shaping
+a Research and Implementation Agenda for Researchers, Libraries Content Providers, $99,536. 7/1/17–
+6/30/18. PI; co-PIs: Beth Sandore Namachchivaya (University of Waterloo) and Megan Senseney (Illinois), co-I
+Eleanor Dickson (Illinois).
+• NSF-SMA 1637155: RIDIR: Collaborative Research: Developing and Deploying SKOPE–A resource for
+Synthesizing Knowledge of Past Environments, $884,627, 9/15/16–2/29/2020. PI; collaboration with ASU
+($200,842) and Washington State University ($254,189); collaborative total: $1,339,658.
+• NSF-ACI 1541450: CC*DNI DIBBS: Merging Science and Cyberinfrastructure Pathways: The Whole Tale,
+$4,986,951, 3/1/16–2/28/21. PI; collaboration with University of Chicago; University of Texas, Austin; University
+of California, Santa Barbara; University of Notre Dame.
+• NSF Collaborative Research: ABI Development: Kurator: A Provenance-enabled Workﬂow Platform and
+Toolkit to Curate Biodiversity Data, $748,931, 09/1/14-08/31/18 (NCE). PI; collaboration with Museum of Com-
+parative Zoology, Harvard University.
+Completed (at UIUC)
+• NSF-SMA 1439603: BCC: Collaborative Research: Designing SKOPE: Synthesized Knowledge of Past En-
+vironments, PI, 9/1/14– 2/28/17, $133,877; collaboration with ASU and Washington State University.
+• NSF-DBI 1147273 Collaborative Research: ABI Development: Exploring Taxon Concepts (ETC) through
+Analyzing Fine-Grained Semantic Markup of Descriptive Literature, $392,114, 09/01/12–08/31/17 (NCE) PI;
+collaboration with University of Arizona.
+• NSF- IIS 1118088: A Logic-Based, Provenance-Aware System for Merging Scientiﬁc Data under Context and
+Classiﬁcation Constraints, $479,194, 10/1/11-9/30/16, PI.
+Completed (pre-UIUC)
+• NSF/DBI: Filtered-Push: Continuous Quality Control for Distributed Collections and Other Species-Occurrence
+Data, $414,822, 07/01/10–06/30/2015. PI for UCD (collaborative PI: J. Hanken, Harvard)
+• NSF/SDCI Improvement: Development of Kepler/CORE – A Comprehensive, Open, Robust, and Extensi-
+ble Scientiﬁc Workﬂow Infrastructure, $1,700,000, 10/01/2007 – 9/30/2010 , PI. (co-PIs: I. Altintas (SDSC
+subcontract), S. Bowers, M. Jones (UCSB subcontract), T. McPhillips).
+• NSF/SEI(BIO)+II: A Collaborative Scientiﬁc Workﬂow Environment for Accelerating Genome-Scale Biolog-
+ical Research, $600,139, 7/1/2006 – 6/30/2009, PI. (co-PIs: S. Bowers, P. Farnham.)
+• NSF/IIS: Collaborative: Core Database Technologies to Enable the Integration of AToL Information (pPOD),
+$462,000, 9/2006 – 8/2010, PI. (co-PIs at UCD S. Bowers, T. McPhillips; PI of collaborative: Val Tannen, U Penn.)
+• NSF/CEO-P: COMET: Coast-to-Mountain Environmental Transect, $2,158,580, 10/1/2006 – 9/30/2009, co-PI.
+Since 9/2008: PI (until then, PI: M. Gertz).
+• NSF/CEO-P: Collaborative: Management and Analysis of Environmental Observatory Data using the KE-
+PLER Scientiﬁc Workﬂow System (REAP), $299,041 (collaborative total: $2.7M), 10/1/2006 – 9/30/2010, PI
+for UCD. (collaborative PI: M. Jones, UCSB.)
+
+• DOE/SciDAC: DE-FC02-07ER25811: Scientiﬁc Data Management Center for Enabling Technologies (CET),
+a.k.a. Scientiﬁc Data Management Center (SDM-2) $965,000, 11/15/2006 – 11/14/2011, PI for UCD. (co-PI of
+SDSC subcontract: I. Altintas; PI of SDM-2: A. Shoshani.)
+• DOE/SciDAC Scientiﬁc Data Management Center (SDM-1), $927,921, 8/15/2001 – 8/14/2006, PI for SDSC.
+(PI of SDM: A. Shoshani, LBL.)
+• DOE Center for Plasma Edge Simulation (CPES), 1/1/2006–12/31/2008, $243,181 subcontract from LBL, PI
+for UCD. (PI at LBL: A. Shoshani.)
+• NSF/ITR: Science Environment for Ecological Knowledge (SEEK), $2,485,683 (collaborative total: $12.25M),
+10/1/2002 – 9/30/2008, PI for UCSD/SDSC, UC Davis. Transfer of project and remaining funds ($1,678,100) to
+UC Davis Genome Center, November 1, 2004.
+• NSF/ITR: Collaborative Research: GEON: A Research Project to Create Cyberinfrastructure for the Geo-
+sciences (GEON), $5,627,953 (collaborative total: $11M), 10/1/2002 – 9/30/2007, co-PI for SDSC (PI: C. Baru);
+main project remained at SDSC; from 2005 – 2007: $272,000 subcontract from SDSC.
+Publications
+Many of the publications below are available online, see in particular my
+• Google Scholar citation page,
+• DBLP page, and
+• Illinois Experts page.
+Some of the more recent publications are also directly hyperlinked below and have a one sentence synopsis.
+Journal Articles and Communications
+[1] B. Lud¨ascher, R. Himmer¨oder, G. Lausen, W. May, and C. Schlepphorst. Managing Semistructured Data with
+FLORID: A Deductive Object-Oriented Perspective. Information Systems, 23(8):589–613, 1998. Pergamon
+(Elsevier)
+JOURNAL ARTICLE
+[2] B. Lud¨ascher and G. Lausen. Handling Termination in a Logical Language for Active Rules. Informatica,
+9(1):65–84, 1998. special issue: 7th Advanced Course on Artiﬁcial Intelligence (ACAI), Lithuanian Academy of
+Sciences, Vilnius
+JOURNAL ARTICLE
+[3] J. Flum, M. Kubierschky, and B. Lud¨ascher. Games and Total Datalog¬ Queries. Theoretical Computer Science,
+239(2):257–276, 2000. Elsevier
+JOURNAL ARTICLE
+[4] R. Moore, C. Baru, A. Rajasekar, B. Lud¨ascher, R. Marciano, M. Wan, W. Schroeder, and A. Gupta. Collection-
+Based Persistent Digital Archives (Part I&II). D-Lib Magazine, 6(3&4), March 2000.
+INVITED ARTICLE
+[5] A. Paepcke, R. Brandriff, G. Janee, R. Larson, B. Lud¨ascher, S. Melnik, and S. Raghavan.
+Search Mid-
+dleware and the Simple Digital Library Interoperability Protocol.
+D-Lib Magazine, 6(3), March 2000.
+INVITED ARTICLE
+[6] B. Lud¨ascher, R. Marciano, and R. Moore. Preservation of Digital Data with Self-Validating, Self-Instantiating
+Knowledge-Based Archives. ACM SIGMOD Record, 30(3):54–63, 2001.
+JOURNAL ARTICLE
+[7] G. A. P. C. Burns, K. Stephan, B. Lud¨ascher, A. Gupta, and R. K¨otter. Towards a Federated Neuroscien-
+tiﬁc Knowledge Management System Using Brain Atlases. Neurocomputing, 38–40(1–4):1633–1641, 2001.
+Elsevier
+JOURNAL ARTICLE
+
+[8] M. E. Martone, A. Gupta, M. Wong, X. Qian, G. Sosinsky, B. Lud¨ascher, and M. H. Ellisman.
+A Cell-
+Centered Database for Electron Tomographic Data. Journal of Structural Biology, 138(1–2):145–155, 2002.
+JOURNAL ARTICLE
+[9] W. May and B. Lud¨ascher. Understanding the Global Semantics of Referential Actions Using Logic Rules.
+Transactions on Database Systems (TODS), 27(4):343–397, 2002.
+JOURNAL ARTICLE
+[10] O. Boucelma, S. Castano, C. A. Goble, V. Josifovski, Z. Lacroix, and B. Lud¨ascher. Scientiﬁc Data Integration
+– Report on the EDBT’02 Panel. ACM SIGMOD Record, 31(4):107–112, 2002.
+INVITED ARTICLE
+[11] A. Gupta, B. Lud¨ascher, J. S. Grethe, and M. E. Martone.
+Towards a Formalization of Disease-Speciﬁc
+Ontologies for Neuroinformatics. Neural Networks, Special Issue on Neuroinformatics, 16:1277–1292, 2003.
+JOURNAL ARTICLE.
+[12] W. K. Michener, J. H. Beach, M. B. Jones, B. Lud¨ascher, D. D. Pennington, R. S. Pereira, A. Rajasekar, and
+M. Schildhauer. A Knowledge Environment for the Biodiversity and Ecological Sciences. Journal of Intelligent
+Information Systems, 29(1), pp. 111-126. 2005.
+JOURNAL ARTICLE
+[13] S. A. Klasky, M. Beck, V. Bhat, E. Feibush, B. Lud¨ascher, M. Parashar, A. Shoshani, D. Silver, and M. Vouk.
+Data Management on the Fusion Computational Pipeline. Journal of Physics: Conference Series, 16:510–520,
+2005.
+JOURNAL ARTICLE
+[14] B. Lud¨ascher, I. Altintas, C. Berkley, D. Higgins, E. Jaeger, M. Jones, E. A. Lee, J. Tao, and Y. Zhao. Sci-
+entiﬁc Workﬂow Management and the Kepler System.
+Concurrency and Computation: Practice & Expe-
+rience, 18(10):1039–1065, 2006.
+Introduction and overview on scientiﬁc workﬂows and the Kepler system.
+JOURNAL ARTICLE.
+[15] I. Altintas, O. Barney, Z. Cheng, T. Critchlow, B. Lud¨ascher, S. Parker, A. Shoshani, and M. Vouk. Accelerating
+the Scientiﬁc Exploration Process with Scientiﬁc Workﬂows. Journal of Physics: Conference Series, 46:468–
+478, 2006.
+JOURNAL ARTICLE
+[16] A. Shoshani, I. Altintas, A. Choudhary, T. Critchlow, C. Kamath, B. Lud¨ascher, J. Nieplocha, S. Parker, R. Ross,
+N. Samatova, M. Vouk, SDM Center Technologies for Accelerating Scientiﬁc Discoveries, Journal of Physics:
+Conference Series 78), doi:10.1088/1742-6596/78/1/012068, 2007
+JOURNAL ARTICLE
+[17] A. Deutsch, B. Lud¨ascher, A. Nash. Rewriting Queries Using Views with Access Patterns Under Integrity
+Constraints. Theoretical Computer Science, 371(3), pp.200–226, Elsevier. 2007
+JOURNAL ARTICLE
+[18] B. Lud¨ascher, N. Podhorszki, I. Altintas, S. Bowers, T. McPhillips, From Computation Models to Models of
+Provenance: The RWS Approach, Concurrency and Computation: Practice & Experience, special issue on the
+First Provenance Challenge, 2007.
+JOURNAL ARTICLE
+[19] S. Bowers, T. McPhillips, B. Lud¨ascher. Provenance in Collection-Oriented Scientiﬁc Workﬂows, Concur-
+rency and Computation: Practice & Experience, special issue on the First Provenance Challenge, 2007.
+JOURNAL ARTICLE
+[20] D. Thau, B. Lud¨ascher, Reasoning about Taxonomies in First-Order Logic, Ecological Informatics. Vol. 2(3),
+pp. 195–209, October, 2007.
+JOURNAL ARTICLE
+[21] D. A. Batchelor, M. Beck, A. Becoulet, R. V. Budny, C. S. Chang, P. H. Diamond, J. Q. Dong, G. Y. Fu,
+A. Fukuyama, T. S. Hahm, D. E. Keyes, Y. Kishimoto, S. Klasky, L. L. Lao, K. Li, Z. Lin, B. Lud¨ascher,
+J. Manickam, N. Nakajima, T. Ozeki, N. Podhorszki, W. M. Tang, M. A. Vouk, R. E. Waltz, S. J. Wang, H. R.
+Wilson, X. Q. Xu, M. Yagi, and F. Zonca. Simulation of Fusion Plasmas: Current Status and Future Direction.
+Plasma Science and Technology, 9(3):312–387, 2007.
+
+[22] J. Cummings, A. Pankin, N. Podhorszki, G. Park, S. Ku, R. Barreto, S. Klasky, C. S. Chang, H. Strauss, L.
+Sugiyama, P. Snyder, D. Pearlstein, B. Lud¨ascher, G. Bateman, A. Kritz, and the CPES Team, Plasma Edge
+Kinetic-MHD Modeling in Tokamaks using Kepler Workﬂow for Code Coupling, Data Management and Visu-
+alization, Commun. Comput. Phys., 4 , pp. 675–702, 2008.
+JOURNAL ARTICLE
+[23] S. Davidson, S. Cohen-Boulakia, A. Eyal, B. Lud¨ascher, T. McPhillips, S. Bowers, M. Anand, J.
+Freire: Provenance in Scientiﬁc Workﬂow Systems. IEEE Data Engineering Bulletin. 30(4): 44-50 (2007)
+INVITED ARTICLE
+[24] T. M. McPhillips, S. Bowers, D. Zinn, and B. Lud¨ascher. Scientiﬁc Workﬂow Design for Mere Mortals. Fu-
+ture Generation Computer Systems (FGCS), 25(5):541–551, 2009. Identiﬁes desiderata of a more user-friendly
+scientiﬁc workﬂow design paradigm; shows how COMAD satisﬁes many desiderata.
+JOURNAL ARTICLE.
+[25] J. Cheney, P. Buneman, and B. Lud¨ascher. Report on the Principles of Provenance Workshop. SIGMOD Record,
+37(1):62–65, 2008.
+INVITED ARTICLE
+[26] S. Bowers, T. M. McPhillips, and B. Lud¨ascher. Provenance in collection-oriented scientiﬁc workﬂows. Concur-
+rency and Computation: Practice and Experience, 20(5):519–529, 2008. Describes how the Collection-Oriented
+Model of provenance in Kepler is used to solve the First Provenance Challenge.
+JOURNAL ARTICLE.
+[27] L. Moreau, B. Lud¨ascher, I. Altintas, R. S. Barga, S. Bowers, S. P. Callahan, G. C. Jr., B. Clifford, S. Cohen,
+S. C. Boulakia, S. B. Davidson, E. Deelman, L. A. Digiampietri, I. T. Foster, J. Freire, J. Frew, J. Futrelle,
+T. Gibson, Y. Gil, C. A. Goble, J. Golbeck, P. T. Groth, D. A. Holland, S. Jiang, J. Kim, D. Koop, A. Krenek,
+T. M. McPhillips, G. Mehta, S. Miles, D. Metzger, S. Munroe, J. Myers, B. Plale, N. Podhorszki, V. Ratnakar,
+E. Santos, C. E. Scheidegger, K. Schuchardt, M. I. Seltzer, Y. L. Simmhan, C. T. Silva, P. Slaughter, E. G.
+Stephan, R. Stevens, D. Turi, H. T. Vo, M. Wilde, J. Zhao, and Y. Zhao. Special Issue: The First Provenance
+Challenge.
+Concurrency and Computation: Practice and Experience, 20(5):409–418, 2008.
+Describes the
+goals and outcomes of a community workshop on the First Provenance Challenge, bringing together teams to
+implement provenance capture and querying across different workﬂow systems.
+JOURNAL ARTICLE.
+[28] D. Thau, S. Bowers, and B. Lud¨ascher. Merging Taxonomies under RCC-5 Algebraic Articulations. Journal
+of Computing Science and Engineering (JCSE), 3(2):109–126, 2009. Describes a dataset merge algorithm for
+taxonomically annotated data.
+JOURNAL ARTICLE.
+[29] D. Zinn, S. Bowers, S. K¨ohler, and B. Lud¨ascher. Parallelizing XML data-streaming workﬂows via MapRe-
+duce. Journal of Computer and System Sciences (JCSS), 76(6):447–463, 2010. Describes a novel technique for
+efﬁciently executing XML-based streaming workﬂows via Map-Reduce.
+JOURNAL ARTICLE.
+[30] A. L. Hartman, S. Riddle, T. M. McPhillips, B. Lud¨ascher, and J. A. Eisen.
+WATERS: a Workﬂow for
+the Alignment, Taxonomy, and Ecology of Ribosomal Sequences. BMC Bioinformatics, 11:317, 2010. The
+paper describes a complex, real-world bioinformatics workﬂow and its implementation in Kepler/COMAD.
+JOURNAL ARTICLE.
+[31] I. Altintas, M. K. Anand, T. N. Vuong, S. Bowers, B. Lud¨ascher, and P. M. Sloot. A Data Model for Analyzing
+User Collaborations in Workﬂow-Driven eScience. International Journal of Computers and Their Applications
+(IJCA), 18(3):160–179, December 2011. Special Issue on Scientiﬁc Workﬂows, Provenance and Their Applica-
+tions The paper describes a data model for collaborative provenance and describes a real-world use case from
+the CAMERA Metagenomics project.
+JOURNAL ARTICLE.
+[32] T. Stropp, T. M. McPhillips, B. Lud¨ascher, and M. Bieda. Workﬂows for microarray data processing in the Ke-
+pler environment. BMC Bioinformatics, 13:102, 2012. Describes a new suite of Kepler workﬂows for microarray
+data processing.
+JOURNAL ARTICLE.
+[33] V. Cuevas-Vicentt´ın, S. C. Dey, S. K¨ohler, S. Riddle, and B. Lud¨ascher. Scientiﬁc Workﬂows and Provenance:
+Introduction and Research Opportunities. Datenbank-Spektrum, 12(3):193–203, 2012. Survey article on research
+questions in scientiﬁc workﬂows and provenance.
+JOURNAL ARTICLE.
+
+[34] Y. Tsai, S. E. McPhillips, A. Gonz´alez, T. M. McPhillips, D. Zinn, A. E. Cohen, M. D. Feese, D. Bushnell,
+T. Tiefenbrunn, C. Stout, B. Lud¨ascher, B. Hedman, K. O. Hodgson, and S. M. Soltis. AutoDrug: fully auto-
+mated macromolecular crystallography workﬂows for fragment-based drug discovery. Acta Crystallographica
+Section D: Biological Crystallography, 69(5):796–803, 2013. Describes a real-world application of the Rest-
+Flow workﬂow system, developed by McPhillips.
+JOURNAL ARTICLE
+[35] T. Song, S. K¨ohler, B. Lud¨ascher, J. Hanken, M. Kelly, D. Lowery, J. A. Macklin, P. J. Morris, and R. A.
+Morris. Towards Automated Design, Analysis and Optimization of Declarative Curation Workﬂows. Interna-
+tional Journal of Digital Curation (IJDC), 9(2):111–122, 2014. Presents a declarative workﬂow approach to
+semi-automated curation workﬂow design.
+JOURNAL ARTICLE
+[36] V. Cuevas-Vicentt´ın, P. Kianmajd, B. Lud¨ascher, P. Missier, F. Chirigati, Y. Wei, D. Koop, and S. Dey. The
+PBase Scientiﬁc Workﬂow Provenance Repository. International Journal of Digital Curation (IJDC), 9(2):28–
+38, 2014. Describes an implementation of ProvONE.
+JOURNAL ARTICLE
+[37] T. McPhillips, T. Song, T. Kolisnik, S. Aulenbach, K. Belhajjame, K. Bocinsky, Y. Cao, J. Cheney, F. Chiri-
+gati, S. Dey, J. Freire, C. Jones, J. Hanken, K. W. Kintigh, T. A. Kohler, D. Koop, J. A. Macklin, P. Missier,
+M. Schildhauer, C. Schwalm, Y. Wei, M. Bieda, and B. Lud¨ascher. YesWorkﬂow: A User-Oriented, Language-
+Independent Tool for Recovering Workﬂow Information from Scripts.
+International Journal of Digital Cu-
+ration (IJDC), 10(1):298–313, 2015. Describes the YesWorkﬂow approach to model scripts as workﬂows.
+JOURNAL ARTICLE
+[38] N. M. Franz, M. Chen, S. Yu, P. Kianmajd, S. Bowers, and B. Lud¨ascher. Reasoning over Taxonomic Change:
+Exploring Alignments for the Perelleschus Use Case. PLoS ONE, 10(2):1–34, February 2015. Gives an overview
+of the Euler/X approach to taxonomy alignment using a real-world weevils use case.
+JOURNAL ARTICLE
+[39] K. W. Kintigh, J. H. Altschul, A. P. Kinzig, W. F. Limp, W. K. Michener, J. A. Sabloff, E. J. Hackett, T. A.
+Kohler, B. Lud¨ascher, and C. A. Lynch. Cultural Dynamics, Deep Time, and Data. Advances in Archaeological
+Practice, 3(1):1–15, 2015. Recommendations for cyberinfrastructure tool building, resulting from a series of
+workshops.
+JOURNAL ARTICLE
+[40] N. Franz, M. Chen, P. Kianmajd, S. Yu, S. Bowers, A. S. Weakley, and B. Lud¨ascher. Names Are Not Good
+Enough: Reasoning over Taxonomic Change in the Andropogon Complex. Semantic Web, 7(6):645–667, 2016.
+Uses a real-world use case to show how taxonomic names have changed over 126 years and how Euler/X can be
+used to “sort things out”.
+JOURNAL ARTICLE
+[41] H. Cui, D. Xu, S. S. Chong, M. Ramirez, T. Rodenhausen, J. A. Macklin, B. Lud¨ascher, R. A. Morris, E. M.
+Soto, and N. M. Koch. Introducing Explorer of Taxon Concepts with a Case Study on Spider Measurement
+Matrix Building. BMC Bioinformatics, 17:471:1–471:22, 2016. Describes the outcomes of the NSF ETC project.
+JOURNAL ARTICLE
+[42] N. M. Franz, N. M. Pier, D. M. Reeder, M. Chen, S. Yu, P. Kianmajd, S. Bowers, and B. Lud¨ascher. Two
+Inﬂuential Primate Classiﬁcations Logically Aligned. Systematic Biology, 65(4):561–582, July 2016. Another
+real-world application of Euler/X for aligning taxonomies.
+JOURNAL ARTICLE
+[43] A. Sarkar, S. K¨ohler, B. Lud¨ascher, and M. Bishop. Insider Attack Identiﬁcation and Prevention in Collection-
+Oriented Dataﬂow-Based Processes. IEEE Systems Journal, 11(2):522–533, 2017. Shows how logic rules in
+answer set programming can be used to model and analyze privacy attacks..
+JOURNAL ARTICLE
+[44] Q. Zhang, H. Imker, C. Li, B. Lud¨ascher, and M. Senseney. Using a Computational Study of Hydrodynamics in
+the Wax Lake Delta to Examine Data Sharing Principles. International Journal of Digital Curation, 11(2):138–
+155, July 2017. Demonstrates the divergence of theory and practice when it comes to data sharing, using a
+real-world use case.
+JOURNAL ARTICLE
+
+[45] A. Thomer, Yi-Yun Cheng, J. Schneider, M. Twidale, and B. Lud¨ascher. Logic-Based Schema Alignment for
+Natural History Museum Databases. Knowledge Organization, 44(7):545–558, November 2017. Uses Euler/X to
+produce “possible worlds”, relating two versions of a subset of the Specify 6 data model.
+JOURNAL ARTICLE
+[46] A. Brinckman, K. Chard, N. Gaffney, M. Hategan, M. B. Jones, K. Kowalik, S. Kulasekaran, B. Lud¨ascher,
+B. D. Mecum, J. Nabrzyski, V. Stodden, I. J. Taylor, M. J. Turk, and K. Turner. Computing Environments for
+Reproducibility: Capturing the “Whole Tale”. Future Generation Computer Systems, February 2018. Provides an
+overview of the motivation behind and technical architecture of the Whole-Tale project.
+JOURNAL ARTICLE
+Books and Book Chapters
+[47] B. Lud¨ascher. Integration of Active and Deductive Database Rules. DISDBIS 45, inﬁx-Verlag, Sankt Augustin,
+1998. Ph.D. thesis, Institut f¨ur Informatik, Universit¨at Freiburg, ISBN 3-89601-445-5
+BOOK
+[48] G. Lausen, B. Lud¨ascher, and W. May. On Logical Foundations of Active Rules. In J. Chomicki and G. Saake,
+editors, Logics for Databases and Information Systems, chapter 12, pp. 389–422. Kluwer Academic Publishers,
+1998. part of the ACM Anthology
+BOOK CHAPTER
+[49] J. Lu, B. Lud¨ascher, J. Sch¨u, and V. Subrahmanian. Maintaining Well-Founded Views in Constraint Databases.
+In T. Martin and F. A. Fontana, editors, Logic Programming and Soft Computing, volume 3 of Uncertainty Theory
+in AI, pp. 129–144. Wiley, 1998.
+BOOK CHAPTER
+[50] G. Lausen, B. Lud¨ascher, and W. May. On Active Deductive Databases: The Statelog Approach. In B. Freitag,
+H. Decker, M. Kifer, and A. Voronkov, editors, Transactions and Change in Logic Databases, number 1472 in
+LNCS, pp. 69–106. Springer, 1998.
+BOOK CHAPTER
+[51] M. E. Martone, A. Gupta, B. Lud¨ascher, I. Zaslavsky, and M. H. Ellisman. Federation of Brain Data through
+Knowledge-Guided Mediation. In R. K¨otter, editor, Neuroscience Databases – A Practical Guide, pp. 275–292.
+Kluwer Academic Publishers, 2002.
+BOOK CHAPTER
+[52] B. Lud¨ascher, A. Gupta, and M. E. Martone. A Model-Based Mediator System for Scientiﬁc Data Management.
+In T. Critchlow and Z. Lacroix, editors, Bioinformatics: Managing Scientiﬁc Data. Morgan Kaufmann, 2003.
+BOOK CHAPTER
+[53] B. Lud¨ascher and L. Raschid, editors.
+2nd Intl. Workshop on Data Integration in the Life Sciences
+(DILS), volume 3615 of Lecture Notes in Bioinformatics (LNBI), San Diego, California, July 2005. Springer.
+EDITED VOLUME
+[54] B. Lud¨ascher and C. A. Goble. Guest Editors’ Introduction to the Special Section on Scientiﬁc Workﬂows.
+SIGMOD Record, 34(3), 2005.
+EDITED VOLUME
+[55] B. Lud¨ascher, K. Lin, S. Bowers, E. Jaeger-Frank, B. Brodaric, and C. Baru. Managing Scientiﬁc Data: From
+Data Integration to Scientiﬁc Workﬂows. Geoinformatics: Data to Knowledge, Geological Society of America
+Special Paper 397, pp. 109–129, 2006.
+BOOK CHAPTER
+[56] B. Lud¨ascher and N. Mamoulis, editors. 20th International Conference on Scientiﬁc and Statistical Database
+Management (SSDBM), volume 5069 of Lecture Notes in Computer Science (LNCS), Hong Kong, China, July
+2008. Springer.
+EDITED VOLUME.
+[57] B. Lud¨ascher, I. Altintas, S. Bowers, J. Cummings, T. Critchlow, E. Deelman, D. D. Roure, J. Freire, C. Goble,
+M. Jones, S. Klasky, T. McPhillips, N. Podhorszki, C. Silva, I. Taylor, and M. Vouk. Scientiﬁc Process Automa-
+tion and Workﬂow Management. In A. Shoshani and D. Rotem, editors, Scientiﬁc Data Management: Chal-
+lenges, Existing Technology, and Deployment, Computational Science Series, chapter 13. Chapman & Hall/CRC,
+2009. Introduction and overview to scientiﬁc workﬂows.
+BOOK CHAPTER.
+
+[58] M. Gertz and B. Lud¨ascher, editors. Scientiﬁc and Statistical Database Management, 22nd International Con-
+ference, SSDBM 2010, Heidelberg, Germany, June 30 - July 2, 2010. Proceedings, volume 6187 of LNCS.
+Springer, 2010. Program co-chair and proceedings editor.
+BOOK.
+[59] A. Chapman, B. Lud¨ascher, and A. Schreiber, editors. 6th Workshop on the Theory and Practice of Provenance
+(TaPP), Cologne, Germany, June 12–13, 2014. USENIX Association.
+[60] B. Lud¨ascher and B. Plale, editors. Provenance and Annotation of Data and Processes: 5th International Prove-
+nance and Annotation Workshop (IPAW). Revised Selected Papers, volume 8628 of LNCS, Cologne, Germany,
+June 9–13, 2014. Springer.
+[61] B. Lud¨ascher. A Brief Tour Through Provenance in Scientiﬁc Workﬂows and Databases. (IDEALS version). In
+V. Lemieux, editor, Building Trust in Information, Springer Proceedings in Business and Economics, pp. 103–
+126. Springer, 2016. Survey paper with a focus on the relation of workﬂow vs database provenance, and “worked
+examples” in the appendix.
+BOOK CHAPTER
+Refereed Conference and Workshop Proceedings
+[62] J. Posegga and B. Lud¨ascher. Towards First-order Deduction Based on Shannon Graphs. In 16th German Con-
+ference on Artiﬁcial Intelligence (GWAI), Bonn, LNAI 671, pp. 67–76. Springer, 1992.
+RESEARCH ARTICLE
+[63] G. Lausen and B. Lud¨ascher. Updates by Reasoning about States. In 2nd Intl. East-West Database Workshop
+(EWDW), Workshops in Computing, pp. 17–30, Klagenfurt, Austria, 1994. Springer.
+RESEARCH ARTICLE
+[64] B. Lud¨ascher, U. Hamann, and G. Lausen. A Logical Framework for Active Rules. In 7th Intl. Conference on
+Management of Data (COMAD), pp. 221–238, Pune, India, 1995. Tata-McGraw Hill
+RESEARCH ARTICLE
+[65] B. Lud¨ascher, W. May, and G. Lausen.
+Nested Transactions in a Logical Language for Active Rules.
+In Intl. Workshop on Logic in Databases (LID), LNCS 1154, pp. 197–222, San Miniato, Italy, 1996.
+Springer
+RESEARCH ARTICLE
+[66] B. Lud¨ascher, W. May, and J. Reinert. Towards a Logical Semantics for Referential Actions in SQL. In 6th
+Intl. Workshop on Foundations of Models and Languages for Data and Objects (FMLDO), Dagstuhl, Germany,
+1996.
+RESEARCH ARTICLE
+[67] J. Flum, M. Kubierschky, and B. Lud¨ascher.
+Total and Partial Well-Founded Datalog Coincide.
+In 6th
+Intl. Conference on Database Theory (ICDT), LNCS 1186, pp. 113–124, Delphi, Greece, January 1997.
+Springer
+RESEARCH ARTICLE
+[68] R. Himmer¨oder, G. Lausen, B. Lud¨ascher, and C. Schlepphorst. On a Declarative Semantics for Web Queries.
+In 5th Intl. Conference on Deductive and Object-Oriented Databases (DOOD), LNCS 1341, pp. 386–398, Mon-
+treux, Switzerland, 1997. Springer.
+RESEARCH ARTICLE
+[69] B. Lud¨ascher, W. May, and G. Lausen. Referential Actions as Logical Rules. In 16th ACM Symposium on
+Principles of Database Systems (PODS), pp. 217–227, Tucson, Arizona, 1997.
+RESEARCH ARTICLE
+[70] W. May, B. Lud¨ascher, and G. Lausen.
+Well-Founded Semantics for Deductive Object-Oriented Database
+Languages. In 5th Intl. Conference on Deductive and Object-Oriented Databases (DOOD), LNCS 1341, pp.
+320–336, Montreux, Switzerland, 1997. Springer
+RESEARCH ARTICLE
+[71] C. Baru, B. Lud¨ascher, Y. Papakonstantinou, P. Velikhov, and V. Vianu. Features and Requirements for an XML
+View Deﬁnition Language: Lessons from XML Information Mediation. In W3C Query Languages Workshop
+(QL’98), Boston, Massachussets, 1998.
+INVITED ARTICLE
+[72] R. Himmer¨oder, P.-T. Kandzia, B. Lud¨ascher, W. May, and G. Lausen. Search, Analysis, and Integration of Web
+Documents: A Case Study with FLORID. In Intl. Workshop on Deductive Databases and Logic Programming
+(DDLP), pp. 47–57, Manchester, UK, 1998.
+RESEARCH ARTICLE
+
+[73] R. Himmer¨oder, G. Lausen, B. Lud¨ascher, and C. Schlepphorst. FLORID: A DOOD-System for Querying the
+Web. In Exhibition Program at Intl. Conf. on Extending Database Technology (EDBT), Valencia, Spain, 1998.
+DEMO PAPER
+[74] B. Lud¨ascher, R. Himmer¨oder, and W. May. Techniques and Rule Patterns for Declaratively Querying Web
+Data with FLORID. In Deklarative KI-Methoden zur Implementierung und Nutzung von Systemen in Netzen
+(Workshop KI-98), Bremen, Germany, 1998.
+RESEARCH ARTICLE
+[75] B. Lud¨ascher and W. May.
+Referential Actions: From Logical Semantics to Implementation.
+In Intl.
+Conference on Extending Database Technology (EDBT), LNCS 1377, pp. 404–418, Valencia, Spain, 1998.
+Springer
+RESEARCH ARTICLE
+[76] C. Baru, V. Chu, A. Gupta, B. Lud¨ascher, R. Marciano, Y. Papakonstantinou, and P. Velikhov. XML-Based
+Information Mediation for Digital Libraries. In ACM Conf. on Digital Libraries (DL), pp. 214–215, Berkeley,
+CA, 1999. exhibition program
+DEMO PAPER
+[77] C. Baru, A. Gupta, B. Lud¨ascher, R. Marciano, Y. Papakonstantinou, P. Velikhov, and V. Chu. XML-Based
+Information Mediation with MIX. In ACM Intl. Conference on Management of Data (SIGMOD), pp. 597–599,
+Philadelphia, PA, 1999. exhibition program
+DEMO PAPER
+[78] B. Lud¨ascher and A. Gupta. Modeling Interactive Web Sources for Information Mediation. In Intl. Workshop on
+the World-Wide Web and Conceptual Modeling (WWWCM’99), LNCS 1727, pp. 225–238, Paris, France, 1999.
+Springer
+RESEARCH ARTICLE
+[79] B. Lud¨ascher, Y. Papakonstantinou, P. Velikhov, and V. Vianu. View Deﬁnition and DTD Inference for XML. In
+Post-ICDT Workshop on Query Processing for Semistructured Data and Non-Standard Data Formats, Jerusalem,
+1999.
+RESEARCH ARTICLE
+[80] B. Lud¨ascher, Y. Papakonstantinou, and P. Velikhov.
+A Framework for Navigation-Driven Lazy Media-
+tors.
+In ACM SIGMOD Workshop on the Web and Databases (WebDB), pp. 85–90, Philadelphia, 1999.
+RESEARCH ARTICLE
+[81] W. May, R. Himmer¨oder, G. Lausen, and B. Lud¨ascher. A Uniﬁed Framework for Wrapping, Mediating and
+Restructuring Information from the Web. In Intl. Workshop on the World-Wide Web and Conceptual Modeling
+(WWWCM), LNCS 1727, Paris, France, 1999. Springer
+RESEARCH ARTICLE
+[82] G. A. P. C. Burns, K. Stephan, B. Lud¨ascher, A. Gupta, and R. K¨otter. Towards a Federated Neuroscientiﬁc
+Knowledge Management System Using Brain Atlases. In Computational Neuroscience Meeting (CNS), Brugge,
+Belgium, 2000.
+RESEARCH ARTICLE
+[83] A. Gupta, B. Lud¨ascher, and M. E. Martone. Knowledge-Based Integration of Neuroscience Data Sources. In
+12th Intl. Conference on Scientiﬁc and Statistical Database Management (SSDBM), pp. 39–52, Berlin, Germany,
+July 2000. IEEE Computer Society
+RESEARCH ARTICLE
+[84] B. Lud¨ascher, A. Gupta, and M. E. Martone. Model-Based Information Integration in a Neuroscience Mediator
+System. In 26th Conference on Very Large Data Bases (VLDB), pp. 639–642, Cairo, Egypt, 2000. Morgan
+Kaufmann. demonstration session
+DEMO PAPER
+[85] B. Lud¨ascher, Y. Papakonstantinou, and P. Velikhov. Navigation-Driven Evaluation of Virtual Mediated Views.
+In Intl. Conference on Extending Database Technology (EDBT), LNCS 1777, pp. 150–165, Konstanz, Germany,
+2000. Springer.
+RESEARCH ARTICLE
+[86] K. D. Munroe, B. Lud¨ascher, and Y. Papakonstantinou. BBQ: Blended Browsing and Querying of XML in a
+Lazy Mediator System. In Intl. Conference on Extending Database Technology (EDBT), Konstanz, Germany,
+2000. exhibition program
+DEMO PAPER
+
+[87] I. Zaslavsky, B. Lud¨ascher, A. Gupta, and R. Marciano. Accuracy Mediation within a Spatial Wrapper-Mediator
+System. In 1st Intl. Conf. on Geographic Information Science (GIScience), Savannah, Georgia, October 2000.
+ACM.
+RESEARCH ABSTRACT
+[88] A. Gupta, B. Lud¨ascher, and M. E. Martone.
+An Extensible Model-Based Mediator System with Do-
+main Maps.
+In 17th Intl. Conf. on Data Engineering (ICDE), Heidelberg, Germany, 2001.
+exhibition
+program
+DEMO PAPER
+[89] B. Lud¨ascher, A. Gupta, and M. E. Martone. Model-Based Mediation with Domain Maps. In 17th Intl. Conf.
+on Data Engineering (ICDE), Heidelberg, Germany, 2001. IEEE Computer Society
+RESEARCH ARTICLE
+[90] B. Lud¨ascher, R. Marciano, and R. Moore.
+Towards Self-Validating Knowledge-Based Archives.
+In 11th
+Intl. Workshop on Research Issues in Data Engineering (RIDE), Heidelberg, Germany, 2001. IEEE Computer
+Society
+RESEARCH ARTICLE
+[91] I. Zaslavsky, A. Gupta, B. Lud¨ascher, and S. Tambawala. Query Evaluation and Presentation Planning with a
+Spatial Mediator: Extending XML-Based Mediation to Heterogeneous Sources of GIS and Imagery Data. In
+5th Intl. Workshop on Query Processing and Multimedia Issues in Distributed Systems (QPMIDS), M¨unchen,
+Germany, 2001.
+RESEARCH ABSTRACT
+[92] A. Gupta, B. Lud¨ascher, M. E. Martone, X. Qian, E. Ross, J. Tran, and I. Zaslavsky. KIND-2: A System
+for Managing Alternate Models in Model-based Mediation. In 19th British National Conference on Databases
+(BNCOD), LNCS 2405, Shefﬁeld, UK, July 2002. Springer.
+DEMO PAPER
+[93] A. Gupta, B. Lud¨ascher, and R. Moore.
+Ontology Services for Curriculum Development in NSDL.
+In
+Joint Conference on Digital Libraries (JCDL), Portland, Oregon, July 2002.
+ACM & IEEE Computer
+Society
+RESEARCH ARTICLE
+[94] X. Qian, B. Lud¨ascher, M. E. Martone, and A. Gupta. Navigating Virtual Information Sources with Know-ME.
+In EDBT, number 2287 in LNCS, Prague, Czech Republic, March 2002.
+DEMO PAPER
+[95] A. Rajasekar, R. Moore, B. Lud¨ascher, and I. Zaslavsky.
+The Grid Adventures: SDSC’s Storage Re-
+source Broker and Web Services in Digital Library Applications. In Digitial Libraries: Advanced Methods
+and Technologies, Digital Collections, 4th All-Russian Scientiﬁc Conference (RCDL), Dubna, Russia, 2002.
+RESEARCH ARTICLE
+[96] I. Zaslavsky, B. Lud¨ascher, A. Gupta, and J. Tran. Feature Interpretation in Vector Data: Reconciling Spatial
+and Semantic Integrity Constraints. In Proc. 2nd Intl. Geographic Information Science Conference (GIScience),
+pp. 215–218, Boulder, USA, September 2002.
+RESEARCH ABSTRACT
+[97] A. Gupta, B. Lud¨ascher, and M. E. Martone. Registering Scientiﬁc Information Sources for Semantic Mediation.
+In 21st Intl. Conference on Conceptual Modeling (ER), LNCS 2503, pp. 182–198, Tampere, Finland, October
+2002.
+RESEARCH ARTICLE
+[98] B. Lud¨ascher, I. Altintas, and A. Gupta.
+Time to Leave the Trees: From Syntactic to Conceptual Query-
+ing of XML.
+In Intl. Workshop on XML-Based Data Management (XMLDM), in conjunction with Intl.
+Conf. on Extending Database Technology (EDBT), LNCS 2490, pp. 148–168, Prague, March 2002. Springer.
+RESEARCH ARTICLE
+[99] B. Lud¨ascher, P. Mukhopadhyay, and Y. Papakonstantinou. A Transducer-Based XML Query Processor. In 28th
+Conference on Very Large Data Bases (VLDB), pp. 227–238, Hong Kong, 2002.
+RESEARCH ARTICLE
+[100] R. Marciano, B. Lud¨ascher, R. Moore, I. Zaslavsky, and K. Pezzoli. Multi-Level Information Modeling and
+Preservation of eGOV Data. In Intl. Conference on eGovernment (EGOV), LNCS 2456, pp. 93–100, Aix-en-
+Provence, France, September 2002.
+RESEARCH ARTICLE
+
+[101] I. Altintas, S. Bhagwanani, D. Buttler, S. Chandra, Z. Cheng, M. Coleman, T. Critchlow, A. Gupta, W. Han,
+L. Liu, B. Lud¨ascher, C. Pu, R. Moore, A. Shoshani, and M. Vouk. A Modeling and Execution Environment for
+Distributed Scientiﬁc Workﬂows. In 15th Intl. Conference on Scientiﬁc and Statistical Database Management
+(SSDBM), Boston, Massachussets, 2003.
+DEMO PAPER
+[102] S. Bowers and B. Lud¨ascher. Towards a Generic Framework for Semantic Registration of Scientiﬁc Data.
+In Semantic Web Technologies for Searching and Retrieving Scientiﬁc Data (SCISW), Sanibel Island, Florida,
+2003.
+RESEARCH ABSTRACT
+[103] M. Chagoyen, M. Kurul, P. De-Alarc´on, S. Santini, B. Lud¨ascher, J. Carazo, and A. Gupta. A Semantic Me-
+diation Approach for Problems in Computational Molecular Biology. In IEEE Computer Society Bioinformatics
+Conference (CSB2003), August 2003.
+RESEARCH ABSTRACT
+[104] A. Gupta, B. Lud¨ascher, and M. Martone. BIRN-M: A Semantic Mediator for Solving Real-World Neuro-
+science Problems. In ACM Intl. Conference on Management of Data (SIGMOD), 2003.
+DEMO PAPER
+[105] K. Lin and B. Lud¨ascher.
+A System for Semantic Integration of Geologic Maps via Ontologies.
+In Se-
+mantic Web Technologies for Searching and Retrieving Scientiﬁc Data (SCISW), Sanibel Island, Florida, 2003.
+RESEARCH ABSTRACT
+[106] B. Lud¨ascher, I. Altintas, and A. Gupta. Compiling Abstract Scientiﬁc Workﬂows into Web Service Workﬂows.
+In 15th Intl. Conference on Scientiﬁc and Statistical Database Management (SSDBM), Boston, Massachussets,
+2003.
+RESEARCH ABSTRACT
+[107] S. Bowers and B. Lud¨ascher. An Ontology Driven Framework for Data Transformation in Scientiﬁc Work-
+ﬂows. In International Workshop on Data Integration in the Life Sciences (DILS), LNCS 2994, Leipzig, Ger-
+many, March 2004.
+RESEARCH ARTICLE.
+[108] S. Bowers, K. Lin, and B. Lud¨ascher. On Integrating Scientiﬁc Resources through Semantic Registration. In
+16th Intl. Conference on Scientiﬁc and Statistical Database Management (SSDBM), Santorini Island, Greece,
+2004.
+RESEARCH ARTICLE.
+[109] I. Altintas, C. Berkley, E. Jaeger, M. Jones, B. Lud¨ascher, and S. Mock. Kepler: Towards a Grid-Enabled
+System for Scientiﬁc Workﬂows. In Workshop on Workﬂow in Grid Systems, Global-Grid Forum (GGF10),
+Berlin, Germany, March 2004.
+RESEARCH ABSTRACT.
+[110] I. Altintas, E. Jaeger, C. Berkley, M. Jones, B. Lud¨ascher, and S. Mock. Kepler: An Extensible System for
+Design and Execution of Scientiﬁc Workﬂows. In 16th Intl. Conference on Scientiﬁc and Statistical Database
+Management (SSDBM), Santorini, Greece, 2004.
+DEMO PAPER.
+[111] I. Altintas, E. Jaeger, K. Lin, B. Lud¨ascher, and A. Memon. A Web Service Composition and Deployment
+Framework for Scientiﬁc Workﬂows. In 2nd Intl. Conference on Web Services (ICWS), San Diego, California,
+July 2004.
+RESEARCH ABSTRACT.
+[112] A. Nash and B. Lud¨ascher. Processing Unions of Conjunctive Queries with Negation under Limited Access
+Patterns. In Intl. Conference on Extending Database Technology (EDBT), 2004.
+RESEARCH ARTICLE
+[113] B. Lud¨ascher and A. Nash.
+Web Service Composition Through Declarative Queries:
+The Case of
+Conjunctive Queries with Union and Negation.
+In 20th Intl. Conf. on Data Engineering (ICDE), 2004.
+RESEARCH ABSTRACT
+[114] A. Nash and B. Lud¨ascher. Processing First-Order Queries with Limited Access Patterns. In ACM Symposium
+on Principles of Database Systems (PODS), Paris, France, June 2004.
+RESEARCH ARTICLE.
+[115] A. Deutsch, B. Lud¨ascher, and A. Nash. Rewriting Queries Using Views with Access Patterns Under Integrity
+Constraints. In 10th Intl. Conference on Database Theory (ICDT), number 3363 in LNCS, Edinburgh, Scotland,
+January 2005. Springer.
+RESEARCH ARTICLE
+
+[116] S. Bowers and B. Lud¨ascher. Actor-Oriented Design of Scientiﬁc Workﬂows. In 24st Intl. Conference on
+Conceptual Modeling (ER), LNCS, Klagenfurt, Austria, October 2005. Springer.
+RESEARCH ARTICLE
+[117] S. Bowers and B. Lud¨ascher. Towards Automatic Generation of Semantic Types in Scientiﬁc Workﬂows. In
+Intl. Workshop on Scalable Semantic Web Knowledge Base Systems (SSWS), LNCS, New York, November 2005.
+Springer.
+RESEARCH ARTICLE
+[118] I. Altintas, A. Birnbaum, K. Baldridge, W. Sudholt, M. Miller, C. Amoreira, Y. Potier, and B. Lud¨ascher. A
+Framework for the Design and Reuse of Grid Workﬂows. In Intl. Workshop on Scientiﬁc Applications on Grid
+Computing (SAG’04), LNCS 3458. Springer, 2005.
+RESEARCH ARTICLE
+[119] W. Michener, J. Beach, S. Bowers, L. Downey, M. Jones, B. Lud¨ascher, D. Pennington, A. Rajasekar, S. Ro-
+manello, M. Schildhauer, D. Vieglais, and J. Zhang. Data Integration and Workﬂow Solutions for Ecology. In 2nd
+Intl. Workshop on Data Integration in the Life Sciences (DILS), volume 3615 of LNBI, San Diego, California,
+July 2005. Springer.
+RESEARCH ARTICLE
+[120] S. Romanello, J. Beach, S. Bowers, M. Jones, B. Lud¨ascher, W. Michener, D. Pennington, A. Rajasekar, and
+M. Schildhauer. Creating and Providing Data Management Services for the Biological and Ecological Sciences:
+Science Environment for Ecological Knowledge. In 17th Intl. Conference on Scientiﬁc and Statistical Database
+Management (SSDBM), Santa Barbara, California, June 2005.
+RESEARCH ARTICLE
+[121] C. Berkley, S. Bowers, M. Jones, B. Lud¨ascher, M. Schildhauer, and J. Tao. Incorporating Semantics in
+Scientiﬁc Workﬂow Authoring. In 17th Intl. Conference on Scientiﬁc and Statistical Database Management
+(SSDBM), Santa Barbara, California, June 2005.
+RESEARCH ARTICLE
+[122] E. Jaeger, I. Altintas, J. Zhang, B. Lud¨ascher, D. Pennington, and W. Michener. A Scientiﬁc Workﬂow Ap-
+proach to Distributed Geospatial Data Processing using Web Services. In 17th Intl. Conference on Scientiﬁc and
+Statistical Database Management (SSDBM), Santa Barbara, California, June 2005.
+RESEARCH ARTICLE
+[123] S. Bowers, T. McPhillips, B. Lud¨ascher, S. Cohen, and S. B. Davidson. A Model for User-Oriented Data
+Provenance in Pipelined Scientiﬁc Workﬂows. In Intl. Provenance and Annotation Workshop (IPAW), Chicago,
+May 2006.
+RESEARCH ARTICLE
+[124] S. Bowers, B. Lud¨ascher, A. H. Ngu, and T. Critchlow. Enabling Scientiﬁc Workﬂow Reuse through Structured
+Composition of Dataﬂow and Control-Flow.
+In IEEE Workshop on Workﬂow and Data Flow for Scientiﬁc
+Applications (SciFlow), Atlanta, GA, April 2006. in conjunction with ICDE.
+RESEARCH ARTICLE
+[125] S. A. Klasky, B. Lud¨ascher, and M. Parashar. The Center for Plasma Edge Simulation Workﬂow Requirements.
+In IEEE Workshop on Workﬂow and Data Flow for Scientiﬁc Applications (SciFlow), Atlanta, GA, April 2006.
+in conjunction with ICDE.
+RESEARCH ARTICLE
+[126] S. Bowers and B. Lud¨ascher. A Calculus for Propagating Semantic Annotations through Scientiﬁc Workﬂow
+Queries. In Query Languages and Query Processing (QLQP): 11th Intl. Workshop on Foundations of Models
+and Languages for Data and Objects, LNCS, Munich, Germany, March 2006.
+RESEARCH ARTICLE
+[127] U. Nambiar, B. Lud¨ascher, K. Lin, and C. Baru. The GEON Portal: Accelerating Knowledge Discovery
+in the Geosciences. In Intl. Workshop on Web Information and Data Management (WIDM), pp. 83–90, Ar-
+lington, Virginia, USA, November 2006. ACM. Describes the GEON Portal for integrating multi-disciplinary
+geoscience data and tools. Semantic integration is facilitated using ontologies and spatiotemporal metadata.
+RESEARCH ARTICLE.
+[128] S. Bowers, T. McPhillips, M. Wu, B. Lud¨ascher. Project Histories: Managing Data Provenance Across
+Collection-Oriented Scientiﬁc Workﬂow Runs, 4th Intl. Workshop on Data Integration in the Life Sciences
+(DILS), University of Pennsylvania, Philadelphia, June 27–29, 2007.
+RESEARCH ARTICLE
+
+[129] N. Podhorszki, B. Lud¨ascher, S. Klasky. Workﬂow Automation for Processing Plasma Fusion Simulation Data,
+2nd Workshop on Workﬂows in Support of Large-Scale Science (WORKS), Monterey Bay California, June 25,
+2007.
+RESEARCH ARTICLE
+[130] M.A. Vouk, I. Altintas, R. Barreto, J. Blondin, Z. Cheng, T. Critchlow, A. Khan, S. Klasky, J. Ligon,
+B. Lud¨ascher, P. A. Mouallem, S. Parker, N. Podhorszki, A. Shoshani, C. Silva, Automation of Network-
+Based Scientiﬁc Workﬂows, in: Grid-based Problem Solving Environments, Intl. Federation for Informa-
+tion Processing (IFIP), Volume 239, eds. P.W. Gaffney, J.C.T. Pool JCT, (Boston: Springer), pp 35-61,
+2007
+RESEARCH ARTICLE
+[131] S. Bowers, T. McPhillips, S. Riddle, M. Anand, and B. Lud¨ascher, Kepler/pPOD: Scientiﬁc Workﬂow and
+Provenance Support for Assembling the Tree of Life, Intl. Provenance and Annotation Workshop (IPAW),
+Springer LNCS, Salt Lake City, June 2008
+RESEARCH ARTICLE
+[132] D. Thau, S. Bowers, and B. Lud¨ascher. Merging Taxonomies under RCC-5 Algebraic Articulations. In CIKM
+Workshop on Ontologies and Information Systems for Semantic Web (ONISW), Napa Valley, California, 2008.
+RESEARCH ARTICLE
+[133] B. Lud¨ascher, S. Bowers, and T. M. McPhillips. Scientiﬁc Workﬂows. In Encyclopedia of Database Sys-
+tems, pp. 2507–2511. Springer, 2009. This is the entry on “scientiﬁc workﬂow” in Springer’s comprehensive
+Encyclopedia of Database Systems.
+RESEARCH ARTICLE.
+[134] B. Lud¨ascher, M. Weske, T. M. McPhillips, and S. Bowers. Scientiﬁc Workﬂows: Business as Usual?
+In
+U. Dayal, J. Eder, J. Koehler, and H. A. Reijers, editors, BPM, volume 5701 of Lecture Notes in Computer Sci-
+ence, pp. 31–47. Springer, 2009. Compares and analyses differences between business workﬂows and scientiﬁc
+workﬂows.
+RESEARCH ARTICLE.
+[135] M. K. Anand, S. Bowers, T. M. McPhillips, and B. Lud¨ascher. Exploring Scientiﬁc Workﬂow Provenance
+Using Hybrid Queries over Nested Data and Lineage Graphs. In Intl. Conf. on Scientiﬁc and Statistical Database
+Management (SSDBM), LNCS 5566, pp. 237–254. Springer, 2009. Presents a new hybrid model of provenance
+with a horizontal (time) and vertical (data) dimension.
+RESEARCH ARTICLE.
+[136] M. K. Anand, S. Bowers, T. M. McPhillips, and B. Lud¨ascher. Efﬁcient provenance storage over nested data
+collections. In 12th Intl. Conf. on Extending Database Technology (EDBT), pp. 958–969, Saint Petersburg,
+Russia, March 2009. Storing provenance efﬁciently is an important challenge in scientiﬁc workﬂows. The paper
+presents and evaluates an efﬁcient new technique for provenance storage.
+RESEARCH ARTICLE.
+[137] D. Zinn, S. Bowers, T. M. McPhillips, and B. Lud¨ascher. Scientiﬁc workﬂow design with data assembly
+lines. In Workshop on Workﬂows in Support of Large-Scale Scienc (WORKS), Portland, OR, USA, Novem-
+ber 2009. Formalization of VDAL ,a variant / generalization of the COMAD workﬂow model of computation.
+RESEARCH ARTICLE.
+[138] D. Zinn, S. Bowers, T. M. McPhillips, and B. Lud¨ascher. X-CSR: Dataﬂow Optimization for Distributed
+XML Process Pipelines. In Intl. Conf. on Data Engineering (ICDE), pp. 577–580, Shanghai, China, March
+2009.
+RESEARCH ARTICLE.
+[139] M. K. Anand, S. Bowers, and B. Lud¨ascher. A navigation model for exploring scientiﬁc workﬂow provenance
+graphs. In Workshop on Workﬂows in Support of Large-Scale Scienc (WORKS), Portland, OR, USA, November
+2009. Introduces a new navigation model (e.g. expand and collapse operators) for workﬂow provenance graphs
+and different architectures for implementing the model.
+RESEARCH ARTICLE.
+[140] P. Missier, B. Lud¨ascher, S. Bowers, S. Dey, A. Sarkar, B. Shrestha, I. Altintas, M. K. Anand, and C. Goble.
+Linking multiple workﬂow provenance traces for interoperable collaborative science. In The 5th Workshop on
+Workﬂows in Support of Large-Scale Science (WORKS). IEEE, November 2010. Describes the ideas behind the
+Data-Tree of Life summer of code project that built an interoperable provenance tool.
+RESEARCH ARTICLE.
+
+[141] M. K. Anand, S. Bowers, and B. Lud¨ascher. Techniques for efﬁciently querying scientiﬁc workﬂow provenance
+graphs. In I. Manolescu, S. Spaccapietra, J. Teubner, M. Kitsuregawa, A. L´eger, F. Naumann, A. Ailamaki,
+and F. ¨Ozcan, editors, EDBT, volume 426 of ACM International Conference Proceeding Series, pp. 287–298.
+ACM, 2010. Develops new techniques for querying large provenance graphs and analyses their performance.
+RESEARCH ARTICLE.
+[142] M. K. Anand, S. Bowers, and B. Lud¨ascher. Provenance browser: Displaying and querying scientiﬁc workﬂow
+provenance graphs. In Intl. Conf. on Data Engineering (ICDE), pp. 1201–1204, Long Beach, CA, USA, March
+2010. This short paper describes the implementation of the Kepler provenance browser. At the time of writing,
+few if any other scientiﬁc workﬂow systems had provenance recording, efﬁcient storage, querying and browsing
+implemented.
+DEMO PAPER.
+[143] M. K. Anand, S. Bowers, I. Altintas, and B. Lud¨ascher.
+Approaches for Exploring and Querying Sci-
+entiﬁc Workﬂow Provenance Graphs.
+In Intl. Provenance and Annotation Workshop (IPAW), pp. 17–26,
+2010.
+Introduced scientiﬁc workﬂow provenance model and describes provenance browser architecture.
+RESEARCH ARTICLE.
+[144] D. Zinn, S. Bowers, and B. Lud¨ascher. XML-based computation for scientiﬁc workﬂows. In Intl. Conf.
+on Data Engineering (ICDE), pp. 812–815, Long Beach, CA, USA, March 2010. Describes a static analy-
+sis technique for XML-based scientiﬁc workﬂows that can be used to improve workﬂow design and execution.
+RESEARCH ARTICLE.
+[145] D. Zinn, Q. Hart, T. M. McPhillips, B. Lud¨ascher, Y. Simmhan, M. Giakkoupis, and V. K. Prasanna. Towards
+Reliable, Performant Workﬂows for Streaming-Applications on Cloud Platforms. In CCGRID, pp. 235–244.
+IEEE, 2011. Develops a framework and describes an implementation for scientiﬁc workﬂows execution in cloud
+environments.
+RESEARCH ARTICLE.
+[146] L. Dou, D. Zinn, T. M. McPhillips, S. K¨ohler, S. Riddle, S. Bowers, and B. Lud¨ascher. Scientiﬁc Workﬂow
+Design 2.0: Demonstrating Streaming Data Collections in Kepler. In S. Abiteboul, K. B¨ohm, C. Koch, and
+K.-L. Tan, editors, ICDE, pp. 1296–1299. IEEE Computer Society, 2011. Demonstration at ICDE showing novel
+collection-oriented workﬂow design and streaming workﬂow capabilities.
+RESEARCH ARTICLE.
+[147] S. C. Dey, D. Zinn, and B. Lud¨ascher. ProPub: Towards a Declarative Approach for Publishing Customized,
+Policy-Aware Provenance. In Intl. Conf. on Scientiﬁc and Statistical Database Management (SSDBM), pp. 225–
+243, Portland, OR, USA, 2011. User-deﬁned provenance publication requests and privacy concerns mark an
+inherent trade-off that is reconciled in a declarative framework.
+RESEARCH ARTICLE.
+[148] S. K¨ohler, S. Riddle, D. Zinn, T. M. McPhillips, and B. Lud¨ascher. Improving Workﬂow Fault Tolerance
+through Provenance-Based Recovery. In Intl. Conf. on Scientiﬁc and Statistical Database Management (SS-
+DBM), pp. 207–224, Portland, OR, USA, 2011. Generalizes the Rescue-DAG approach of CONDOR/DAGMan
+and is to-date the only crash-recovery method available in Kepler.
+RESEARCH ARTICLE.
+[149] S. Dey, D. Zinn, and B. Lud¨ascher. Reconciling Provenance Policy Conﬂicts by Inventing Anonymous Nodes.
+In 4th International Workshop on Resource Discovery (RED), LNCS 7117, pp. 172–185, Heraklion, Greece,
+2011. Springer. Improved and extended version of [150].
+RESEARCH ARTICLE.
+[150] S. Dey, D. Zinn, and B. Lud¨ascher. Repairing Provenance Policy Violations by Inventing Non-Functional
+Nodes. In M.-E. Vidal, E. Ruckhaus, and Z. Lacroix, editors, 4th International Workshop on Resource Discovery
+(RED), volume 737 of CEUR Workshop Proceedings, Heraklion, Greece, May 2011. In conjunction with 8th
+Extended Semantic Web Conferences (ESWC) First approach to reconcile user requests and provenance policies
+in a rule-based logic framework.
+WORKSHOP.
+[151] T. Critchlow, I. Altintas, G. Chin, D. Crawl, H. Iyer, A. Khan, S. Klasky, S. Koehler, B. Lud¨ascher,
+P. Mouallem, M. Nagappan, N. Podhorszki, A. Shoshani, C. Silva, R. Tchoua, and M. Vouk. Working with
+Workﬂows: Highlights from 5 Years Building Scientiﬁc Workﬂows. In SciDAC: Scientiﬁc Discovery through
+
+Advanced Computing, July 2011. High-level summary of workﬂow technology development and application in
+the SDM Center Project.
+RESEARCH ABSTRACT.
+[152] S. K¨ohler, B. Lud¨ascher, and Y. Smaragdakis. Declarative Datalog Debugging for Mere Mortals. In Datalog
+2.0: Datalog in Academia and Industry, Second Intl. Workshop, LNCS 7494, pp. 111–122, Vienna, Austria,
+September 2012. Springer. Develops a set of program rewritings for declarative Datalog debugging using an
+underlying provenance model.
+RESEARCH ARTICLE.
+[153] D. Zinn, T. J. Green, and B. Lud¨ascher. Win-move is coordination-free (sometimes). In Intl. Conf. on Database
+Theory (ICDT), pp. 99–113, Berlin, Germany, 2012. Sheds new light on the CALM conjecture by Hellerstein
+and the related notion of “coordination-free” computation. Shows that non-stratiﬁed computations may also be
+evaluated in a coordination-free manner.
+RESEARCH ARTICLE.
+[154] S. Bowers, T. M. McPhillips, and B. Lud¨ascher. Declarative Rules for Inferring Fine-Grained Data Provenance
+from Scientiﬁc Workﬂow Execution Traces. In Intl. Provenance and Annotation Workshop (IPAW), pp. 82–96,
+Santa Barbara, CA, USA, June 2012. Presents a logic rule-based approach for enhancing and deriving new
+provenance information.
+RESEARCH ARTICLE.
+[155] M. K. Anand, S. Bowers, and B. Lud¨ascher. Database Support for Exploring Scientiﬁc Workﬂow Provenance
+Graphs. In Intl. Conf. on Scientiﬁc and Statistical Database Management (SSDBM), LNCS 7338, pp. 343–
+360, Chania, Crete, 2012. Provides a rich provenance graph querying and navigation model, and demonstrates
+that the resulting language can be implemented efﬁciently using a standard relational database technology.
+RESEARCH ARTICLE.
+[156] S. K¨ohler, S. Gulati, G. Cao, Q. Hart, and B. Lud¨ascher. Sliding Window Calculations on Streaming Data using
+the Kepler Scientiﬁc Workﬂow System. Procedia CS: Kepler Workshop, Intl. Conf. on Computational Science
+(ICCS), 9:1639–1646, 2012. Shows how to improve scientiﬁc workﬂow design for sliding window aggregates
+over data streams in Kepler.
+WORKSHOP.
+[157] S. Dey, S. K¨ohler, S. Bowers, and B. Lud¨ascher. Datalog as a Lingua Franca for Provenance Querying and
+Reasoning. In Workshop on the Theory and Practice of Provenance (TaPP), Boston, MA, USA, June 2012.
+Shows how Datalog can be used to query and reason about provenance.
+RESEARCH ARTICLE.
+[158] S. K¨ohler, P. Seitzer, M. T. Facciotti, and B. Lud¨ascher. Improved Motif Detection in Large Sequence Sets
+with Random Sampling in a Kepler workﬂow. Procedia CS: Kepler Workshop, Intl. Conf. on Computational
+Science (ICCS), 9:1999, 2012. Demonstrates how a bioinformatics workﬂow (MotifCatcher) can be scaled up
+via MapReduce in Kepler.
+RESEARCH ABSTRACT.
+[159] L. Dou, G. Cao, P. J. Morris, R. A. Morris, B. Lud¨ascher, J. A. Macklin, and J. Hanken. Kurator: A Kepler
+Package for Data Curation Workﬂows. Procedia CS: Kepler Workshop, Intl. Conf. on Computational Science
+(ICCS), 9:1614–1619, 2012. video at http://youtu.be/DEkPbvLsud0 Demonstrates how data curation
+pipelines can be implemented using Kepler and “humans in the loop” via Google spreadsheets and other cloud
+services.
+WORKSHOP.
+[160] P. Missier, B. Lud¨ascher, S. Dey, M. Wang, T. McPhillips, S. Bowers, M. Agun, and I. Altintas. Golden
+Trail: Retrieving the Data History that Matters from a Comprehensive Provenance Repository. International
+Journal of Digital Curation (IJDC), papers from the 7th Intl. Digital Curation Conference (IDCC, Bristol,
+UK, December 2011), 7(1):139–150, 2012. Describes the model, architecture, and prototypical implementa-
+tion of a workﬂow provenance repository, developed in the context of the DataONE Provenance Working Group.
+RESEARCH ARTICLE.
+[161] R. Littauer, K. Ram, B. Lud¨ascher, W. Michener, and R. Koskela. Trends in Use of Scientiﬁc Workﬂows:
+Insights from a Public Repository and Recommendations for Best Practice. International Journal of Digital
+Curation (IJDC), papers from the 7th Intl. Digital Curation Conference (IDCC, Bristol, UK, December 2011),
+7(2):92–100, 2012. Summary of a simple workﬂow repository study conducted by the ﬁrst author as part of a
+DataONE summer project.
+RESEARCH ARTICLE.

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Positions | MLO @ CityU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        /* --- Global Reset & Typography --- */
+        :root {
+            --primary-color: #0056b3;
+            --text-dark: #1a1a1a;
+            --text-light: #555;
+            --bg-color: #ffffff;
+            --accent-bg: #f4f6f8;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        a { text-decoration: none; color: inherit; transition: color 0.2s; }
+        a:hover { color: var(--primary-color); }
+
+        /* --- Layout --- */
+        .container {
+            width: 92%;             /* Adaptive width */
+            max-width: 1200px;      /* Larger cap for wide screens */
+            margin: auto;      /* Vertical spacing */
+            padding: 20px;
+        }
+
+        /* --- Navigation --- */
+        .nav {
+            display: flex;
+            gap: 25px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-light);
+        }
+        .nav a:hover, .nav span.active {
+            color: var(--primary-color);
+        }
+
+        /* --- Section Headers --- */
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; letter-spacing: -0.02em; line-height: 1.2; }
+        h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-dark); border-bottom: 2px solid var(--accent-bg); padding-bottom: 10px; }
+        h3 { font-size: 1.2rem; color: var(--primary-color); font-weight: 600; margin-top: 0; margin-bottom: 1rem; }
+        h4 { font-size: 1.1rem; color: var(--text-dark); font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+        /* --- Intro Text --- */
+        .intro-text {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 3rem;
+        }
+
+        /* --- Position Cards --- */
+        .position-card {
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .position-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+            border-color: #d0d7de;
+        }
+
+        .position-content p {
+            margin-bottom: 1rem;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-bg);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Utility for links inside content */
+        .content-link {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 86, 179, 0.2);
+        }
+        .content-link:hover {
+            text-decoration-color: var(--primary-color);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .nav { justify-content: center; gap: 15px; }
+            .position-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./group.html">Group</a>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./talk.html">Talks</a>
+            <a href="./publication.html">Publications</a>
+            <span class="active" style="font-weight: 700; color: var(--primary-color);">Open Positions</span>
+        </div>
+
+        <h1>Open Positions</h1>
+
+        <div class="intro-text">
+            I am looking for motivated students or research staff interested in machine learning and optimization, especially in the field of reliable machine learning. If you are interested in working with me in the MLO group, please check the following information.
+        </div>
+
+        <div class="position-card">
+            <h3>Research Student - Ph.D.</h3>
+            <div class="position-content">
+                <p><strong>General requirements:</strong> Applicants should have strong mathematical and programming skills. They should have a bachelor degree in Computer Science, Mathematics or related majors, with a GPA higher than 85 / 100 or 3.3 / 4.0. Other information and requirements upon application are listed on the <a href="https://www.cityu.edu.hk/pg/research-degree-programmes/entrance-requirements" target="_blank" class="content-link">university's website</a> and the <a href="https://www.cs.cityu.edu.hk/academic-programmes/master-philosophy-doctor-philosophy/admissions" target="_blank" class="content-link">department's website</a>.</p>
+                
+                <p>Interested applicants can send me an email with CV and undergraduate transcript. The studentship rate for a successful Ph.D. applicant is around 18k HKD per month. More information about the financial aid provided by the university is provided on <a href="https://www.cityu.edu.hk/pg/research-degree-programmes/scholarships-financial-aid-and-fees" target="_blank" class="content-link">this website</a>. Ph.D. students can be enrolled in January, June and September each year. The anticipated duration is 4 years.</p>
+
+                <div class="highlight-box">
+                    <span class="highlight-title">Hong Kong Ph.D. Fellowship Scheme (HKPFS)</span>
+                    <p style="margin:0;">Outstanding candidates are invited to apply for <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank" class="content-link">Hong Kong Ph.D Fellowship Scheme</a>, in which a higher rate of scholarship (~27.6k HKD per month) will be provided. More information is also available on <a href="https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme" target="_blank" class="content-link">the university's website</a>.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 10px;">
+                    <span class="highlight-title">Joint Ph.D. Programme / Mainland Collaboration Schemes</span>
+                    <p style="margin:0;">CityU also has joint Ph.D. programmes with other universities. The entrance requirements are generally the same as regular Ph.D. students. Specifically, Ph.D. students from Mainland universities which have joint Ph.D. programmes with CityU can apply under the mainland collaboration schemes. The application usually opens in October and closes in mid-December. More information is available on <a href="https://www.cityu.edu.hk/pia/page.aspx?p=PhD_Joint_Degree_Programmes" target="_blank" class="content-link">this website</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-card">
+            <h3>Research Student - MPhil</h3>
+            <div class="position-content">
+                <p><strong>General requirements:</strong> Applicants should have good mathematical and programming skills. They should have a bachelor degree in Computer Science, Mathematics or related majors, with a GPA higher than 80 / 100 or 3.0 / 4.0. Other information and requirements upon application are listed on the <a href="https://www.cityu.edu.hk/pg/research-degree-programmes/entrance-requirements" target="_blank" class="content-link">university's website</a> and the <a href="https://www.cs.cityu.edu.hk/academic-programmes/master-philosophy-doctor-philosophy/admissions" target="_blank" class="content-link">department's website</a>.</p>
+                
+                <p>Interested applicants can send me an email with CV and undergraduate transcript. Most MPhil positions in the CS department of CityU are offered on a self-funded basis. More information about the financial aid provided by the university is provided on <a href="https://www.cityu.edu.hk/pg/research-degree-programmes/scholarships-financial-aid-and-fees" target="_blank" class="content-link">this website</a>. MPhil students can be enrolled in January, June and September each year. The anticipated duration is 2 years.</p>
+
+                <p>MPhil students can transfer to Ph.D. programmes, in this case, the MPhil study period shall count towards the PhD candidature.</p>
+            </div>
+        </div>
+
+        <div class="position-card">
+            <h3>Research Staff - Postdoc</h3>
+            <div class="position-content">
+                <p><strong>General requirements:</strong> Applicants have obtained or will obtain Ph.D. degree from <a href="http://www.moe.gov.cn/s78/A22/A22_ztzl/ztzl_tjsylpt/sylpt_jsgx/201712/t20171206_320667.html" target="_blank" class="content-link">a double-class university (category A) in China</a> or an overseas equivalent university with majors in Computer Science, Mathematics or related fields. They should have publications in the areas related to machine learning.</p>
+                
+                <p>Interested applicants can send me an email with CV and research proposal. The salary of a successful postdoc applicant is negotiated on a case-by-case basis and is no less than 27k HKD per month.</p>
+            </div>
+        </div>
+
+        <div class="position-card">
+            <h3>Short-Term Research Opportunities</h3>
+            <div class="position-content">
+                <p>I welcome highly motivated CityU undergraduate students to conduct research with me. Applicants should have a strong background in mathematics and programming. If you are interested in my research area, feel free to reach out via email. Along with your CV and transcripts, please tell me the brief idea of your interested research direction in your email.</p>
+                
+                <p>For senior CityU undergraduate students looking for final year project (FYP), please first check <a href="https://fyp.cs.cityu.edu.hk:443/" target="_blank" class="content-link">FYPMS</a> for more information. If you have a research idea related to my research interest, you can also directly send me an email about it.</p>
+
+                <div class="highlight-box">
+                    <span class="highlight-title">Research Assistant</span>
+                    <p style="margin:0;">If you are an external student or have graduated from CityU seeking a research assistant position, please feel free to reach out to me via email. Kindly attach your CV, undergraduate transcripts, and any relevant research works you may have. For short-term research applications, evaluation will primarily consider the alignment of the proposed research topic with our ongoing projects.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

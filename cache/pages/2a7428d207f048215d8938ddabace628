@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Andrew Gordon Wilson</title>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81945202-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <meta id="viewport" name="viewport" content="width=500">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="base.css" type="text/css">
+    <link rel="stylesheet" href="code.css" type="text/css">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="940x1641">
+    <link rel="icon" type="image/png"
+      href="http://www.cs.cmu.edu/%7Eandrewgw/andrewavatar.png"
+      sizes="32x32">
+  </head>
+  <body>
+    <div class="content">
+      <header> <img src="andrewheadshotnew.jpeg" alt="andrewheadshot"
+          height="1461" width="1367"><br>
+        <h1><a href="https://cims.nyu.edu/~andrewgw">Andrew
+            Gordon Wilson<br>
+          </a></h1>
+        <ul>
+          <li><a href="https://cims.nyu.edu/~andrewgw/andrewcv.pdf">CV</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/bio">Bio</a></li>
+       <!--   <li><a href="https://cims.nyu.edu/~andrewgw/#thesis">PhD Thesis</a></li>
+-->          <li><a href="https://cims.nyu.edu/~andrewgw/#papers">Papers</a></li>
+ <li><a href="https://cims.nyu.edu/~andrewgw/talks">Talks</a></li>     
+     <li><a href="https://cims.nyu.edu/~andrewgw/group">Group</a></li>
+     <li><a href="https://cims.nyu.edu/~andrewgw/join">Join</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/teaching">Teaching</a></li>
+          <li><a href="https://cims.nyu.edu/~andrewgw/code">Code<br>
+            </a></li>
+          <!--   <li><a href="mailto:%20andrew@cornell.edu">Contact</a></li> -->
+        </ul>
+      </header>
+      <div align="center">
+        <section id="bio">
+          <meta http-equiv="content-type" content="text/html;
+            charset=UTF-8">
+          <b><b><big><big><big>Biography<br>
+                    <br>
+       <div align="left">
+             </big></big></big></b></b>
+Andrew Gordon Wilson is a Professor in the Courant Institute of Mathematical Sciences and Center for Data Science at New York University. He is also an Amazon Scholar, working on foundation models for time-series forecasting within supply chain optimization technologies (SCOT). He received his PhD in machine learning from the University of Cambridge, and BSc in mathematics and physics from the University of British Columbia. Prior to joining NYU, he was a professor at Cornell, and a postdoc at CMU. His work is focused on developing a prescriptive foundation for building intelligent systems. This work involves a mix of methods, empiricism, theory, and applications, often concerning deep neural networks, Gaussian processes, large language models, Bayesian methods, uncertainty representation, and scientific applications. He has been EXPO Chair, Tutorial Chair, Workshop Chair, and Senior Area Chair at the main machine learning conferences. He has also received several awards, including the NSF CAREER Award, the Amazon Research Award, and best paper, reviewer, area chair, and dissertation awards. Outside of work, Andrew is a classical pianist.
+<br>
+<br>
+Career research highlights, with collaborators, include:
+<ul style="list-style: disc; padding-left: 25px;"> 
+	<li>The discovery that modes in the neural network loss landscape are connected along simple curves, known as <a href="https://arxiv.org/abs/1802.10026"><i>mode connectivity</i></a>.  </li>
+	<li>The popular <a href="https://arxiv.org/abs/1803.05407">SWA optimization procedure</a>, which is natively included in PyTorch, and also inspired SAM, model soups, and model merging.</li>
+	<li><i><a href="https://arxiv.org/abs/2601.03220">Epiplexity</a></i>, a new measure of information to resolve fundamental paradoxes in information theory in describing modern AI practice, around the value of data, emergent phenomena, induction, and OOD generalization.</li>
+	<li>Scalable Gaussian processes and the popular <a href="https://arxiv.org/abs/1809.11165">GPyTorch library</a>.</li>
+	<li>Unifying the complementary advantages of Gaussian processes  and neural networks, through <a href="https://proceedings.mlr.press/v51/wilson16.pdf">deep kernel learning</a>.</li>
+	<li>Informative non-vacuous generalization bounds for <a href="https://arxiv.org/abs/2211.13609">large neural nets</a> and <a href="https://arxiv.org/abs/2504.15208">LLMs</a>.</li>
+	<li>The development of <a href="https://arxiv.org/abs/2002.08791">Bayesian deep learning</a> as a research area.</li>
+	<li>Resolutions of several <a href="https://arxiv.org/abs/2503.02113">generalization phenomena</a>, including benign overfitting and double descent, from a probabilistic perspective.</li>
+	<li>Identifying and understanding fundamental issues in <a href="https://arxiv.org/abs/2202.11678">Bayesian model selection</a>.</li>
+	<li>A general method for <a href="https://arxiv.org/abs/2104.09459">solving for the complete basis for equivariant linear maps</a> for a given representation and symmetry group (rotation, translation, etc.).</li>
+	<li>Discovering that neural networks in fact <a href="https://arxiv.org/abs/2204.02937">learn about salient features, even when they appear to be dominated by spurious features,</a> and exploiting this observation for significantly improved generalization under distribution shifts.</li>
+	<li>The first <a href="https://arxiv.org/abs/2310.07820">LLM time-series forecasting model</a>, and the discovery that text-based pre-training can lead to competitive zero-shot time-series forecasting.
+		<li>Pioneering optimization techniques for <a href="https://arxiv.org/abs/2305.20009">protein and antibody engineering</a>, with high expression and binding affinity to therapeutic targets in the wetlab.</li>
+ <li>The training of many wonderful students.</li>
+</ul>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <b><b></b></b></section>
+      </div>
+      <footer> Find me on <a href="https://twitter.com/andrewgwils">Twitter</a>
+        <br>
+        Theme Inspired by Dan Foreman-Mackey<br>
+      </footer>
+    </div>
+  </body>
+</html>

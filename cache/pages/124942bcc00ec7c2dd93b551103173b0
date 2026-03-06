@@ -1,0 +1,1397 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Prizes &amp; Fellowships | NYU Courant</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- test -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/cims/index.css" rel="stylesheet">
+    <link href="/static/cims/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+
+    
+
+
+</head>
+<body id="bootstrap-overrides">
+
+
+<div id="main-container" class="container">
+
+    
+    
+
+<header id="header" class="d-none d-md-block" style="position: relative;" role="banner">
+
+    <!--  Skip to main menu link -->
+    <a id="skiptomaincontent" class="skip-to-main-content" href="#main-content">Skip to main content</a>
+
+    <!--  COVID alert -->
+    <div id="covid" class="animated slideInDown fast alert alert-danger sr-only" role="alert" style="margin: 0;">NYU is
+        reconvening for classes in-person and remotely. Resources, information, and official updates from NYU regarding
+        the current status of COVID-19 and its impact on the University community are available <a
+                href="https://www.nyu.edu/life/safety-health-wellness/coronavirus-information.html"
+                aria-label='Updates regarding the impact of COVID-19'>here</a>, which includes detailed links for
+        students, faculty and staff.
+    </div>
+    <!--    <a href="/" title="Courant Institute of Mathematical Sciences">-->
+    <!-- <img style="width: 100%;" src="/images/cimsredesign5-12.png" /> -->
+    <!-- <img style="width: 100%;" src="/images/courant_header_1170x150.png" alt="Logo of the Courant Institute of Mathematical Sciences" /> -->
+    <!--    </a>-->
+    <!--    <button type="button" class="btn btn-primary" style="position: absolute;top: 30px;right: 10px;background-color: #39DBD1;border-color: #39DBD1;" onclick="window.location.href='https://www.nyu.edu/life/safety-health-wellness/coronavirus-information.html'">COVID-19 INFO</button>-->
+
+    <!--  Logo image -->
+    <a href="https://cims.nyu.edu/" title="Courant Institute of Mathematical Sciences">
+        <img id="header-img" class="" src="/static/cims/images/Courant_Logos/NYUCourant_Long-Color.png"
+             alt="Logo of The Courant Institure of Mathematical Sciences">
+    </a>
+
+    <div class="w-100 h-100 d-flex justify-content-end py-xl-3"
+         style="position: absolute; top: 0; padding-right: 15px; pointer-events: none; ">
+        <div class="d-flex flex-column justify-content-around align-items-end">
+
+            <!--  Search bar -->
+            <div style="pointer-events: auto;">
+                <form id="courant-search" class="search form-inline" role="search" method="get"
+                      action="https://search.nyu.edu/s/search.html" style="margin-top:100px;">
+                    <input type="hidden" name="collection" value="nyu~ds-cims"/>
+                    <input type="hidden" name="profile" value="_default_preview"/>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="courant-search-form-input" class="sr-only">Search Courant website</label>
+                            <input id="courant-search-form-input" type="text" name="query" class="form-control input-sm"
+                                   placeholder="Search"
+                                   aria-label="Search text">
+                            <span class="input-group-btn">
+                            <button id="courant-search-form-button" type="submit" value=""
+                                    class="btn btn-primary input-sm"
+                                    aria-label="Search">
+                                <div class="d-flex justify-content-center align-self-center" style="width: 100%;">
+                                    <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16"
+                                         fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                        <path fill-rule="evenodd"
+                                              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                    </svg>
+                                </div>
+                            </button>
+                          </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+    
+
+    
+
+<nav class="navbar navbar-expand-md main-nav">
+    <!--  NYU Logo on mobile  -->
+    <a class="d-block d-md-none" href="/">
+        <img
+                class="navbar-brand"
+                src="/static/cims/images/Courant_Logos/NYUCourant_Long-White.png"
+                alt="Logo of the Courant Institute of Mathematical Sciences"
+        />
+    </a>
+
+    <!--  Hamburger button  -->
+    <button
+            class="navbar-toggler ml-auto custom-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#NYUMainNavbar"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--  Navbar  -->
+    <div
+            class="collapse navbar-collapse justify-content-center"
+            id="NYUMainNavbar"
+    >
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item text-nowrap main-nav-item active dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-Institute"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Institute
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-Institute"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://math.nyu.edu/dynamic/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Mathematics </span>
+
+                            <span>
+                <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                <svg
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="13.13px"
+                        height="13.13px"
+                        viewBox="0 0 13.13 13.13"
+                        style="
+                    overflow: visible;
+                    enable-background: new 0 0 13.13 13.13;
+                  "
+                        xml:space="preserve"
+                >
+                  <title>external link</title>
+                  <g>
+                    <path
+                            d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                    />
+                    <path
+                            d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                    />
+                  </g>
+                </svg>
+              </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cs.nyu.edu/home/index.html"
+                                style="white-space: nowrap"
+                        >
+                            <span> Computer Science </span>
+
+                            <span>
+                <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                <svg
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="13.13px"
+                        height="13.13px"
+                        viewBox="0 0 13.13 13.13"
+                        style="
+                    overflow: visible;
+                    enable-background: new 0 0 13.13 13.13;
+                  "
+                        xml:space="preserve"
+                >
+                  <title>external link</title>
+                  <g>
+                    <path
+                            d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                    />
+                    <path
+                            d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                    />
+                  </g>
+                </svg>
+              </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-Academics"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Academics
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-Academics"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a class="dropdown-item dropdown-toggle" href="#">
+                            Undergraduate Programs
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lower-level">
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cs.nyu.edu/home/undergrad/overview.html"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Computer Science </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://math.nyu.edu/dynamic/undergrad/overview/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Mathematics </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a class="dropdown-item dropdown-toggle" href="#">
+                            Master&#39;s Programs
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lower-level">
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cs.nyu.edu/dynamic/masters/prospective-overview/masters-in-computer-science-mscs/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Computer Science </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://math.nyu.edu/dynamic/graduate/ms-gsas/overview/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Mathematics </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cds.nyu.edu/masters-admissions/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Data Science </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://math.nyu.edu/dynamic/graduate/ms-gsas/ms-scientific-computing/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Scientific Computing </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cs.nyu.edu/dynamic/masters/prospective-overview/masters-of-science-in-information-systems-msis/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Information Systems </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://math.nyu.edu/financial_mathematics/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Math Finance </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cs.nyu.edu/ms-cei/index.html"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Computing, Entrepreneurship &amp; Innovation </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a class="dropdown-item dropdown-toggle" href="#"> PhD Programs </a>
+                        <ul class="dropdown-menu dropdown-menu-lower-level">
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://cs.nyu.edu/home/phd/index.html"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Computer Science </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://math.nyu.edu/dynamic/graduate/phd-mathematics/overview/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Mathematics </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+
+                            <li class="dropdown-submenu" style="padding: 0">
+                                <a
+                                        class="dropdown-item"
+                                        href="https://caos.cims.nyu.edu/dynamic/phd-program/overview/"
+                                        style="white-space: nowrap"
+                                >
+                                    <span> Atmosphere Ocean Science </span>
+
+                                    <span>
+                    <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                    <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="13.13px"
+                            height="13.13px"
+                            viewBox="0 0 13.13 13.13"
+                            style="
+                        overflow: visible;
+                        enable-background: new 0 0 13.13 13.13;
+                      "
+                            xml:space="preserve"
+                    >
+                      <title>external link</title>
+                      <g>
+                        <path
+                                d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                        />
+                        <path
+                                d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/academics/student_recognition/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Prizes &amp; Fellowships </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-Research"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Research
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-Research"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/research/areas/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Research Areas </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/research/centers/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Research Centers </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/research/recognition/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Faculty Recognition </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-People"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    People
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-People"
+                >
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/people/leadership/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Institute Leadership </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/people/faculty/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Faculty </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/people/postdocs-research-staff/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Postdocs &amp; Research Staff </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/people/graduate-students/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Graduate Students </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/people/courant-staff/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Staff </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/directory/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Directory (Courant access only) </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-Calendars"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Calendars
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-Calendars"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/events/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Weekly Seminar Bulletin </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/events/special-events"
+                                style="white-space: nowrap"
+                        >
+                            <span> Special Events and Activities </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/calendars/seminars/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Seminars List </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/calendars/25-live/"
+                                style="white-space: nowrap"
+                        >
+              <span>
+                Classroom Calendar &amp; Reservations (NYU access only)
+              </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://www.nyu.edu/students/student-information-and-resources/registration-records-and-graduation/academic-calendar.html"
+                                style="white-space: nowrap"
+                        >
+                            <span> NYU Academic Calendars </span>
+
+                            <span>
+                <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In  -->
+                <svg
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="13.13px"
+                        height="13.13px"
+                        viewBox="0 0 13.13 13.13"
+                        style="
+                    overflow: visible;
+                    enable-background: new 0 0 13.13 13.13;
+                  "
+                        xml:space="preserve"
+                >
+                  <title>external link</title>
+                  <g>
+                    <path
+                            d="M7.1,1.11C6.4,1.82,5.76,2.5,5.07,3.2c-0.92,0.31-2.5-0.41-2.83,0.93c0.13,8.01-1.64,6.72,6.47,6.8
+                                    c1.63-0.07,0.95-1.78,1.21-2.78c0.7-0.7,1.39-1.41,2.11-2.1c-0.02,3.29,0.64,6.93-3.86,7.05c-1.99-0.11-4.07,0.29-6-0.29
+                                    c-0.88-0.35-1.5-0.96-1.84-1.84c-0.59-2.04-0.17-4.24-0.28-6.34C0.03,3.26,0.82,1.88,2.14,1.4C3.72,0.86,5.45,1.18,7.1,1.11z"
+                    />
+                    <path
+                            d="M11.56,3.88c-0.76,0.76-1.5,1.5-2.24,2.24C8.78,6.5,8,7.99,7.32,7.23C6.84,6.75,6.37,6.28,5.89,5.8
+                                    C5.6,5.51,5.6,5.22,5.9,4.92c1.13-1.1,2.2-2.26,3.36-3.33C8.87,1.19,8.49,0.82,8.1,0.42c-0.27-0.2-0.16-0.46,0.18-0.42
+                                    c1.41,0,2.82,0,4.23,0c0.4,0,0.61,0.21,0.61,0.61c-0.03,1.49,0.06,2.99-0.03,4.47C12.95,5.55,11.79,4.02,11.56,3.88z"
+                    />
+                  </g>
+                </svg>
+              </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-Resources"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Resources
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-Resources"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/resources/for_faculty/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Faculty, Staff, & Students </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/resources/for_visitors/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Visitor Information </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/systems/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Computing & Technology </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/resources/library/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Courant Library </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle main-nav-item-text"
+                        href="#"
+                        id="navbarDropdownMenuLink-AboutUs"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    About Us
+                </a>
+                <ul
+                        class="dropdown-menu navbar-menu-ul menu-dropdown-links"
+                        aria-labelledby="navbarDropdownMenuLink-AboutUs"
+                >
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/about/contacts/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Contact Information </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/about/directions/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Directions </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/about/newsletters/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Newsletters </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/about/history/"
+                                style="white-space: nowrap"
+                        >
+                            <span> History of the Courant Institute </span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-submenu" style="padding: 0">
+                        <a
+                                class="dropdown-item"
+                                href="https://cims.nyu.edu/dynamic/about/employment/"
+                                style="white-space: nowrap"
+                        >
+                            <span> Employment Opportunities at Courant </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-nowrap main-nav-item menu-link-style">
+                <a
+                        class="menu-link-style-linktext menu-link-top-level"
+                        href="https://www.givecampus.com/campaigns/21846/donations/new?designation=courantinstituteofmathematicalsciences"
+                        style="white-space: nowrap"
+                >
+                    <span> Giving </span>
+                </a>
+            </li>
+        </ul>
+
+        <!--  Search bar on mobile  -->
+        <form
+                class="navbar-form navbar-right d-block d-md-none"
+                role="search"
+                method="get"
+                action="https://search.nyu.edu/s/search.html"
+                style="height: 100%"
+        >
+            <div class="d-flex flex-column">
+                <input type="hidden" name="collection" value="nyu-cims"/>
+                <input type="hidden" name="profile" value="_default_preview"/>
+                <div class="form-group justify-self-center" style="margin: 0">
+                    <div class="input-group">
+                        <input
+                                type="text"
+                                name="query"
+                                class="form-control input-sm"
+                                placeholder="Search"
+                                aria-label="Search text"
+                        />
+                        <span class="input-group-btn">
+              <button
+                      type="submit"
+                      value=""
+                      class="btn btn-primary input-sm"
+                      aria-label="Search"
+              >
+                <svg
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        class="bi bi-search"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                          fill-rule="evenodd"
+                          d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                  />
+                  <path
+                          fill-rule="evenodd"
+                          d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                </svg>
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+
+    
+
+    <main class="content">
+        
+        <div id="main-content"></div>
+        
+
+<div class="row">
+    <div class="col-sm-3 col-lg-2 hidden-xs">
+        <aside class="sidebar" aria-label="sidebar">
+            <ul class="nav flex-column nav-pills">
+                <li class="active nav-item"><a class="nav-link" href="">Student Recognition</a></li>
+            </ul>
+        </aside>
+    </div>
+    <div class="col-sm-9 col-lg-10 col-xs-12">
+        <div class="page-header">
+            <h1>Student and Postdoc Prizes and Fellowships</h1>
+
+<hr>
+<p>Each year the Courant Institute awards several prizes and fellowships to recognize exceptional promise and accomplishment at various levels. These awards, which are underwritten by donations from friends of the Institute, are listed below together with the latest recipients.</p>
+            
+  <div id="_react"></div>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+        
+    </main>
+
+    <footer role="contentinfo">
+    <div class="footer">
+        <ul class="d-flex justify-content-center flex-wrap footer-nav">
+            <li class="footer-nav-item"><a href="http://www.nyu.edu/">New York University</a></li>
+            <li class="footer-nav-item"><a href="https://as.nyu.edu/faculty-listing.html">Faculty of Arts and
+                Science</a></li>
+            <li class="footer-nav-item"><a href="https://cas.nyu.edu/">College of Arts and Science</a></li>
+            <li class="footer-nav-item"><a href="https://gsas.nyu.edu/">Graduate School of Arts and Science</a></li>
+            <li class="footer-nav-item"><a href="http://www.nyu.edu/accessibility"
+                                           title="Digital Accessibility Feedback">Accessibility</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row d-flex justify-content-center flex-wrap">
+        <div class="col-sm-9 col-xs-12 text-center">
+            <p>
+                <em>
+                    New York University is committed to maintaining an environment that encourages and
+                    fosters respect for individual values and appropriate conduct among all persons.
+                    In all University spaces—physical and digital—programming, activities, and events
+                    are carried out in accordance with applicable law as well as University policy,
+                    which includes but is not limited to its
+                    <u>
+                        <a href="https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/">Non-Discrimination
+                            and Anti-Harassment Policy</a>.
+                    </u>
+                </em>
+            </p>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-6 col-xs-12 text-center">
+            <p>
+                Please e-mail comments or corrections to: <a class="rot13" href="znvygb:jroznfgre@pbhenag.alh.rqh">jroznfgre@pbhenag.alh.rqh</a><br/>
+                For other inquiries, please see the list of <a
+                    href="https://cims.nyu.edu/about/contacts.html">contacts</a>.<br/>
+                &copy; New York University
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    
+  <script type="text/javascript" src="/static/cims/bundles/student_recognition/student_recognition_bundle.js"></script>
+  <script>
+      $('.collapse').on('shown.bs.collapse', function () {
+          $(this).parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+      }).on('hidden.bs.collapse', function () {
+          $(this).parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+      });
+  </script>
+
+
+</div> <!-- end main container -->
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63794280-4', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-submenu .show').removeClass("show");
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#navbarToggleExternalContent').on('show.bs.dropdown', function (e) {
+            console.log('found');
+            // Find the first link in the dropdown and give it focus when the dropdown opens
+            setTimeout(function () {
+                $(e.target.children[1]).find('a')[0].focus()
+            }, 20);
+        });
+    });
+</script>
+
+<!--  Do rot13 obfuscation on email addresses with "rot13" class  -->
+<script>
+    var decode = function (n) {
+        function r(n) {
+            return "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".indexOf(n)
+        }
+        return n.split("").map(function (n) {
+            return -1 < r(n) ? "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"[r(n)] : n
+        }).join("")
+    };
+    Array.from(document.getElementsByClassName("rot13")).forEach(function (n) {
+        n.innerHTML = decode(n.innerHTML);
+        n.href = decode(n.href);
+    });
+</script>
+<script>
+    var el = document.querySelector('img');
+    var observer = lozad(el);
+    observer.observe();
+</script>
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/javascript" src="/static/cims/bundles/main-88145d21d7ca9ac51aaf.js" ></script>
+</body>
+</html>

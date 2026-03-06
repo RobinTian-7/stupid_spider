@@ -1,0 +1,567 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bogdan Vasilescu's homepage</title>
+<meta name="description" content="Bogdan Vasilescu’s homepage at Carnegie Mellon University ">
+
+
+  <meta name="author" content="Bogdan Vasilescu">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Bogdan Vasilescu's homepage">
+<meta property="og:title" content="Bogdan Vasilescu’s homepage">
+<meta property="og:url" content="https://bvasiles.github.io/">
+
+
+  <meta property="og:description" content="Bogdan Vasilescu’s homepage at Carnegie Mellon University ">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://bvasiles.github.io/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Bogdan Vasilescu",
+      "url": "https://bvasiles.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Bogdan Vasilescu's homepage Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--home">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/strudel-logo-top-white.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/talks/">Talks</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">Teaching</a>
+            </li><li class="masthead__menu-item">
+              <a href="/service/">Service</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bogdan-2019.jpg" alt="Bogdan Vasilescu" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Bogdan Vasilescu</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Computer Scientist, Associate Professor at <a href="http://www.cmu.edu/">CMU</a></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Contact</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://map.concept3d.com/?id=192#!m/518615" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">TCS Hall 326</span></a></li>
+          
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-phone" aria-hidden="true"></i><span class="label">(412) 268-1048</span></a></li>
+          
+        
+          
+            <li><a href="mailto:vasilescu@cmu.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/b_vasilescu" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/bvasiles" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=bcXjlqYAAAAJ&hl=en" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
+          
+        
+          
+            <li><a href="http://dblp.uni-trier.de/pers/hd/v/Vasilescu:Bogdan" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-dblp" aria-hidden="true"></i><span class="label">DBLP</span></a></li>
+          
+        
+          
+            <li><a href="https://cmustrudel.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">STRUDEL lab</span></a></li>
+          
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer"><i class="F" aria-hidden="true"></i><span class="label"></span></a></li>
+          
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer"><i class="F" aria-hidden="true"></i><span class="label"><b>Admin:</b></span></a></li>
+          
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer"><i class="F" aria-hidden="true"></i><span class="label">Dabney Schlea</span></a></li>
+          
+        
+          
+            <li><a href="https://map.concept3d.com/?id=192#!m/518615" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-university" aria-hidden="true"></i><span class="label">TCS Hall 430</span></a></li>
+          
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-phone" aria-hidden="true"></i><span class="label">(412) 268-6032</span></a></li>
+          
+        
+          
+            <li><a href="mailto:dabneyg@andrew.cmu.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title"></h1>
+    
+    <div>
+  <p>Hi there! I’m an Associate Professor in <a href="http://www.cmu.edu">CMU</a>’s 
+<a href="http://scs.cmu.edu">School of Computer Science</a> and a member of the 
+<a href="http://s3d.cmu.edu">Software and Societal Systems Department</a>.
+My students and I form the <a href="https://cmustrudel.github.io">Socio-Technical Research Using Data Excavation Lab 
+(STRUDEL)</a>.</p>
+
+  <p>I’m most active in the <a href="http://csrankings.org/#/fromyear/2016/toyear/2023/index?soft">software engineering research community</a>,
+where I have co-chaired the 
+<a href="https://conf.researchr.org/track/msr-2023/msr-2023-technical-papers">MSR 2023 PC</a>,
+have been serving on program committees for the major software engineering venues (including
+<a href="https://2019.icse-conferences.org/committee/icse-2019-technical-papers-program-committee">ICSE</a>, 
+<a href="https://esec-fse19.ut.ee/committees/research-papers/">ESEC/FSE</a>, and 
+<a href="https://2019.ase-conferences.org/committee/ase-2019-papers-program-committee">ASE</a>;
+thanks for the <a href="http://www.ase2018.com/?p=awards">Distinguished Reviewer Award</a> at ASE 2018 and ESEC/FSE 2021!),
+and am an Associate Editor for the <a href="https://dl.acm.org/journal/tosem/editorial-board#associate-editors">ACM Transactions on Software Engineering and Methodology</a>,
+<!-- and am co-chairing the [SIGSOFT Initiative on Data-driven Introspection](https://www.sigsoft.org/annualrpt/2019annualreport.html), -->
+among <a href="/service/">others</a>.</p>
+
+  <p>On the internets I’m sometimes referred to as a <em>“<a href="http://developers.slashdot.org/comments.pl?sid=6780783&amp;cid=48866403">prominent female professor from 
+a gender studies department, that no one ever audits and that gets to peer review 
+herself</a>“</em>.
+I also suffer from <a href="http://lemire.me/blog/2015/01/14/knauff-and-nejasmic-recommend-banning-latex/"><em>cognitive dissonance</em></a>
+as a scientist who uses LaTeX.</p>
+
+  <h4 id="prospective-students">Prospective Students</h4>
+
+  <p>If you’re a motivated student looking for a PhD position, check out the 
+<a href="https://se-phd.isri.cmu.edu">Software Engineering</a> 
+and <a href="https://sc.cs.cmu.edu">Societal Computing</a> programs at CMU, which most of
+my <a href="https://cmustrudel.github.io/people/">current students</a> are part of. 
+Applications are due early/mid December. 
+Please feel free to reach out to me before applying, to introduce yourself and describe 
+your research interests.</p>
+
+  <p><strong>Note</strong>: I don’t always have capacity to take on new students or funding to support 
+them, but don’t let that preclude you from reaching out!</p>
+
+  <h4 id="research-experiences-for-undergraduates">Research Experiences for Undergraduates</h4>
+
+  <p>My favorite time of the year is summer, partly because that’s when Pittsburgh stops
+being a <a href="https://www.bestplaces.net/news/gloomiest-places-in-america">top-5 Gloomiest Place in America</a>
+for a few days, but mostly because of the <a href="https://www.cmu.edu/scs/isr/reuse/">Research Experiences for Undergraduates in 
+Software Engineering (REUSE) Program</a>.
+If you’re an undergraduate student (and preferably also a U.S. citizen, national, or 
+permanent resident, because of how some of the funding for the program works)
+interested in summer research in interdisciplinary software engineering, please 
+consider applying!
+It’s okay if you’re a first- or second-year, or if you don’t have prior research 
+experience or advanced coursework in computer science or software engineering.</p>
+
+  <p><a href="/reu/">Former REU students</a> in the STRUDEL lab have
+generally had a good experience, published papers, won awards, and went on to graduate
+schools or to do other amazing things.</p>
+
+  <h4 id="brief-bio">Brief Bio</h4>
+
+  <p>Prior to joining CMU, I was a postdoc in the 
+<a href="http://decallab.cs.ucdavis.edu">Davis Eclectic Computational Analytics Lab (DECAL)</a>
+at <a href="http://www.ucdavis.edu">UC Davis</a>, where I worked with 
+<a href="http://www.cs.ucdavis.edu/~filkov/">Vladimir Filkov</a> and
+<a href="http://www.cs.ucdavis.edu/~devanbu/">Prem Devanbu</a>.
+I obtained my PhD in Computer Science <em>cum laude</em> (and 
+<a href="https://www.tue.nl/en/news/news-overview/21-10-2014-bogdan-vasilescu-obtains-his-phd-cum-laude-in-3-years-time/">cum tuxedo</a>)
+at <a href="http://www.tue.nl/en/">Eindhoven University of Technology</a>, The Netherlands, 
+in October 2014, under the supervision of 
+<a href="http://www.win.tue.nl/~aserebre/">Alexander Serebrenik</a> and 
+<a href="http://www.win.tue.nl/~mvdbrand/">Mark van den Brand</a>.
+<!-- ([here's a 10 minute video summary](http://youtu.be/-rh0IJxagHI) of my thesis). -->
+My PhD work won the <a href="https://ipa.win.tue.nl/?page_id=565">Best Dissertation Award</a>
+from the <a href="http://www.win.tue.nl/ipa/">Institute for Programming Research and Algorithmics</a>.
+I also hold a master’s degree in Computer Science and Engineering from 
+Eindhoven University of Technology (thesis advisor: 
+<a href="http://www.win.tue.nl/~aserebre/">Alexander Serebrenik</a>)
+and an engineer’s degree in Systems and Computer Science from Romania 
+(<a href="http://www.upg-ploiesti.ro">webpage</a> in Romanian; thesis advisor: 
+<a href="http://ac.upg-ploiesti.ro/gradulescu/gradulescu.php">Gabriel Rădulescu</a>).</p>
+
+  <p>See my <a href="cv.pdf" target="_blank">CV</a> for details.</p>
+</div>
+
+
+<!-- 
+<h3 class="archive__subtitle">Recent posts</h3>
+
+
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/conference-monitor/" rel="permalink">Conference Monitor
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Recently I started experimenting with Highcharts
+to visualize our conference metrics 
+in the browser. Here’s a sample. Conference organizers may find these u...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/gender-tenure-diversity-github/" rel="permalink">Gender and tenure diversity in GitHub teams
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Diversity in teams arises from any attribute that people use to differentiate
+themselves from others. 
+The most obvious attributes are arguably demographic (...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/chi-press/" rel="permalink">CHI’15 Press Release
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Having higher gender and tenure diversity is associated with higher 
+productivity in GitHub teams.
+</p>
+  </article>
+</div>
+
+
+
+
+
+ -->
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <!-- 
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Contact:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+ -->
+
+<div class="page__footer-copyright">&copy; 2023 Bogdan Vasilescu. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

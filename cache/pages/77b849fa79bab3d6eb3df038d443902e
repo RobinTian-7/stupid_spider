@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team â Cheng LONG</title>
+  <meta name="description" content="Research team of Cheng LONG at NTU Singapore.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #1a2744;
+      --navy-mid: #2d3f6b;
+      --accent: #c8893a;
+      --accent-light: #f0dfc0;
+      --text: #1e1e1e;
+      --text-muted: #555;
+      --border: #ddd;
+      --bg: #faf9f7;
+      --white: #fff;
+      --link: #1a56cc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; font-size: 17px; line-height: 1.7; color: var(--text); background: var(--bg); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+
+    header { background: var(--navy); position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 8px rgba(0,0,0,0.18); }
+    nav { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 8px; height: 54px; }
+    .nav-brand { font-family: 'EB Garamond', serif; font-size: 17px; color: #fff; font-weight: 500; letter-spacing: 0.3px; margin-right: auto; }
+    .nav-brand:hover { text-decoration: none; color: var(--accent-light); }
+    nav ul { list-style: none; display: flex; gap: 4px; }
+    nav ul a { color: rgba(255,255,255,0.82); font-size: 15.5px; font-weight: 500; padding: 6px 13px; border-radius: 4px; transition: background 0.18s, color 0.18s; }
+    nav ul a:hover { background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; }
+    nav ul a.active { background: var(--accent); color: #fff; }
+
+    .page-wrap { max-width: 860px; margin: 0 auto; padding: 44px 24px 72px; }
+    .page-title { font-family: 'EB Garamond', serif; font-size: 30px; font-weight: 600; color: var(--navy); margin-bottom: 32px; }
+
+    .section-heading {
+      font-family: 'EB Garamond', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--navy);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+      margin-top: 40px;
+    }
+    .section-heading:first-of-type { margin-top: 0; }
+
+    .member-list { list-style: none; }
+    .member-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid #eee;
+      align-items: start;
+    }
+    .member-item:last-child { border-bottom: none; }
+    .member-name { font-size: 18px; font-weight: 600; color: var(--link); }
+    .member-name.plain { color: var(--text); font-weight: 400; }
+    a.member-name:hover { color: var(--accent); }
+    .member-meta { font-size: 16px; color: var(--text-muted); margin-top: 2px; }
+    .member-note { font-size: 16px; color: var(--text-muted); font-style: italic; margin-top: 2px; }
+    .highlight { color: var(--accent); font-style: normal; font-weight: 600; }
+
+    .tag {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      border-radius: 4px;
+      padding: 2px 9px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .tag-rf   { background: #1565c0; }
+    .tag-phd  { background: #283593; }
+    .tag-msc  { background: #006064; }
+    .tag-vis  { background: #4a148c; }
+    .tag-alum { background: #546e7a; }
+
+    .member-awards {
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .award-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #7a4f00;
+      background: #fff8ed;
+      border: 1px solid #f0dfc0;
+      border-radius: 20px;
+      padding: 2px 9px 2px 7px;
+      white-space: nowrap;
+    }
+    .award-pill::before {
+      content: "â";
+      font-size: 9px;
+      color: var(--accent);
+    }
+
+    footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; font-size: 14.5px; padding: 20px; margin-top: 40px; }
+
+    @media (max-width: 520px) {
+      .member-item { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Cheng LONG</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/publications.html">Publications</a></li>
+      <li><a href="../pages/team.html" class="active">Team</a></li>
+      <li><a href="../pages/others.html">Teaching &amp; Service</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-wrap">
+  <h1 class="page-title">Team</h1>
+
+  <h2 class="section-heading">Research Staff</h2>
+  <ul class="member-list">
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://scholar.google.com/citations?user=9bOrHwsAAAAJ&hl=en" target="_blank">Zizhong MENG</a>
+        <div class="member-meta">01/2026 â Present</div>
+      </div>
+      <span class="tag tag-rf">Research Fellow</span>
+    </li>    
+  </ul>
+
+  <h2 class="section-heading">Students</h2>
+  <ul class="member-list">
+    <li class="member-item">
+      <div><span class="member-name plain">Yutong GOU</span><div class="member-meta">01/2025 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Jifan SHI</span><div class="member-meta">08/2024 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Zhonghao YANG</span><div class="member-meta">08/2024 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Junyao DONG</span><div class="member-meta">08/2024 â Present</div></div>
+      <span class="tag tag-msc">Master</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Yuexuan XU</span><div class="member-meta">08/2023 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Sixiao ZHANG</span><div class="member-meta">01/2023 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Mingrui LIU</span><div class="member-meta">08/2022 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Xi YUAN</span><div class="member-meta">08/2022 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Hettige Kethmi Hirushini</span><div class="member-meta">01/2022 â Present</div></div>
+      <span class="tag tag-phd">PhD</span>
+    </li>
+  </ul>
+
+  <h2 class="section-heading">Visiting Students</h2>
+  <ul class="member-list">
+    <!--li class="member-item">
+      <div><span class="member-name plain">Yue ZHONG</span><div class="member-meta">07/2025 â Present &nbsp;Â·&nbsp; Shenzhen University</div></div>
+      <span class="tag tag-vis">Visiting Master</span>
+    </li-->
+    <li class="member-item">
+      <div><a class="member-name" href="https://simonezeng.github.io/" target="_blank">Ximu ZENG</a><div class="member-meta">11/2025 â Present &nbsp;Â·&nbsp; University of Electronic Science and Technology of China</div></div>
+      <span class="tag tag-vis">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/169/3062-2.html" target="_blank">Letian GONG</a><div class="member-meta">09/2025 â Present &nbsp;Â·&nbsp; Beijing Jiaotong University</div></div>
+      <span class="tag tag-vis">Visiting PhD</span>
+    </li>
+  </ul>
+
+  <h2 class="section-heading">Alumni â Research Staff</h2>
+  <ul class="member-list">
+    <li class="member-item">
+    	<div>
+    		<a class="member-name" href="https://chenxiliu-hnu.github.io/homepage/" target="_blank">Chenxi LIU</a>
+    		<div class="member-note">08/2023 â 09/2025 &nbsp;Â·&nbsp; Now: Assistant Professor @	Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences</div>
+    		<div class="member-awards">
+    			<span class="award-pill">WiEST Development Grant, Women@NTU (2025)</span>
+    			<span class="award-pill">DDSA Visit Grant, Danish Data Science Academy (2024)</span>
+    			<span class="award-pill">SoBigData Award for Diversity &amp; Inclusion, EU (2024)</span>
+    		</div>
+    	</div>
+    	<span class="tag tag-alum">Research Fellow</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://dblp.org/pid/218/8490.html" target="_blank">KM Pooja</a>
+        <div class="member-note">09/2022 â 12/2023 &nbsp;Â·&nbsp; Now: Assistant Professor @ IIIT Allahabad, India</div>
+      </div>
+      <span class="tag tag-alum">Research Fellow</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://dblp.org/pid/191/4304.html" target="_blank">Aman ABIDI</a>
+        <div class="member-note">09/2022 â 09/2023</div>
+      </div>
+      <span class="tag tag-alum">Research Fellow</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://sites.google.com/site/jiezou0806" target="_blank">Jie ZOU</a>
+        <div class="member-note">11/2021 â 05/2023 &nbsp;Â·&nbsp; Now: Professor @ University of Electronic Science and Technology of China</div>
+      </div>
+      <span class="tag tag-alum">Research Fellow</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://math.seu.edu.cn/wy_2810_en/list.htm" target="_blank">Ying WAN</a>
+        <div class="member-note">07/2019 â 09/2020 &nbsp;Â·&nbsp; Now: Associate Professor @ Southeast University</div>
+      </div>
+      <span class="tag tag-alum">Research Fellow</span>
+    </li>
+  </ul>
+
+  <h2 class="section-heading">Alumni â Students</h2>
+  <ul class="member-list">
+    <li class="member-item">
+    	<div>
+    		<a class="member-name" href="https://scholar.google.com/citations?user=WRs0STMAAAAJ&hl=en" target="_blank">Qiuyu ZHU</a>
+    		<div class="member-note">08/2021 â 11/2025</div>
+    	</div>
+    	<span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://gaoj0017.github.io/" target="_blank">Jianyang GAO</a>
+        <div class="member-note">08/2021 â 04/2025 &nbsp;Â·&nbsp; Now: PostDoc @ ETH ZÃ¼rich</div>
+        <div class="member-awards">
+          <span class="award-pill">CCDS Outstanding PhD Thesis Award (2025)</span>
+        </div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://sam1224.github.io/" target="_blank">Qianxiong XU</a>
+        <div class="member-note">08/2020 â 08/2024 &nbsp;Â·&nbsp; Now: Researcher @ ByteDance Singapore</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://zhangliang-hkustgz.github.io/" target="_blank">Liang ZHANG</a>
+        <div class="member-note">08/2020 â 09/2024 &nbsp;Â·&nbsp; Now: Assistant Professor @ HKUST (GZ)</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <span class="member-name plain">Kaijun LIU</span>
+        <div class="member-note">01/2020 â 08/2024 &nbsp;Â·&nbsp; Now: Researcher @ Hyundai Motor Group Innovation Center Singapore</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://wangkaixin219.github.io" target="_blank">Kaixin WANG</a>
+        <div class="member-note">08/2019 â 07/2024 &nbsp;Â·&nbsp; Now: Assistant Professor @ Beijing University of Technology</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://kaiqiangyu.github.io/" target="_blank">Kaiqiang YU</a>
+        <div class="member-note">08/2019 â 11/2023 &nbsp;Â·&nbsp; Now: Assistant Professor @ Nanjing University, China</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://zhengwang125.github.io/" target="_blank">Zheng WANG</a>
+        <div class="member-note">08/2018 â 01/2023 &nbsp;Â·&nbsp; Now: Assistant Chief Scientist &amp; Huawei TopMinds, Huawei Singapore Research Center</div>
+        <div class="member-awards">
+          <span class="award-pill">Google PhD Fellowship (2021)</span>
+          <span class="award-pill">AISG PhD Fellowship (2021)</span>
+          <span class="award-pill">Huawei TopMinds (2022)</span>
+          <span class="award-pill">WAIC Yunfan Award (2023)</span>
+          <span class="award-pill">CCDS OPTA Symposium Honourable Mention (2023)</span>
+        </div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div>
+        <a class="member-name" href="https://arkasaha.github.io/index.html" target="_blank">Arkaprava SAHA</a>
+        <div class="member-note">04/2022 â 01/2023 &nbsp;Â·&nbsp; Now: Assistant Professor @ University of Tsukuba, Japan</div>
+      </div>
+      <span class="tag tag-alum">PhD</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Yutong GOU</span><div class="member-note">08/2023 â 12/2024 &nbsp;Â·&nbsp; Now: PhD @ NTU</div></div>
+      <span class="tag tag-alum">Master</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Shaowen ZHOU</span><div class="member-note">08/2020 â 12/2023</div></div>
+      <span class="tag tag-alum">Master</span>
+    </li>
+    <li class="member-item">
+      <div><span class="member-name plain">Xuanyi LIU</span><div class="member-note">01/2021 â 12/2022 &nbsp;Â·&nbsp; Now: PhD @ Peking University</div></div>
+      <span class="tag tag-alum">Master</span>
+    </li>
+  </ul>
+
+  <h2 class="section-heading">Alumni â Visiting Students &amp; Scholars</h2>
+  <ul class="member-list">
+    <li class="member-item">
+    	<div><a class="member-name" href="https://dblp.org/pid/169/3062-2.html" target="_blank">Yuanyuan YAO</a><div class="member-meta">12/2024 â 01/2026 &nbsp;Â·&nbsp; Zhejiang University</div></div>
+    	<span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+    	<div><span class="member-name plain">Yue ZHONG</span><div class="member-meta">07/2025 â 10/2025 &nbsp;Â·&nbsp; Shenzhen University</div></div>
+    	<span class="tag tag-alum">Visiting Master</span>
+    </li>
+    <li class="member-item">
+    	<div><a class="member-name" href="https://dblp1.uni-trier.de/pid/302/3687.html" target="_blank">Kaiwen XIA</a><div class="member-meta">02/2025 â 09/2025 &nbsp;Â·&nbsp; SouthEast University</div></div>
+    	<span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://www.qyue.online/" target="_blank">Qiang YUE</a><div class="member-meta">12/2024 â 06/2025 &nbsp;Â·&nbsp; Hangzhou Dianzi University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/266/2156.html" target="_blank">Jiahao JI</a><div class="member-meta">02/2023 â 02/2024 &nbsp;Â·&nbsp; Beihang University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/268/5896.html" target="_blank">Xinqi DU</a><div class="member-meta">11/2022 â 11/2023 &nbsp;Â·&nbsp; Jilin University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/294/1309.html" target="_blank">Zitan SUN</a><div class="member-meta">07/2023 â 09/2023 &nbsp;Â·&nbsp; Hong Kong Baptist University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/212/1869.html" target="_blank">Xinhang LI</a><div class="member-meta">10/2022 â 03/2023 &nbsp;Â·&nbsp; Tsinghua University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/41/10049-1.html" target="_blank">Wenting ZHAO</a><div class="member-meta">12/2021 â 12/2022 &nbsp;Â·&nbsp; Nanjing UST</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/146/8008-3.html" target="_blank">Chenxi LIU</a><div class="member-meta">11/2021 â 11/2022 &nbsp;Â·&nbsp; Hunan University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://dblp.org/pid/204/7768.html" target="_blank">Ziyi MA</a><div class="member-meta">10/2021 â 10/2022 &nbsp;Â·&nbsp; Hunan University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://scholar.google.com/citations?user=oDCzSVYAAAAJ&hl=zh-CN" target="_blank">Wei ZHOU</a><div class="member-meta">09/2021 â 09/2022 &nbsp;Â·&nbsp; Southwest Jiaotong University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="http://www.sjruan.me/" target="_blank">Sijie RUAN</a><div class="member-meta">09/2021 â 04/2022 &nbsp;Â·&nbsp; Xidian University</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+    <li class="member-item">
+      <div><a class="member-name" href="https://harryckh.github.io/" target="_blank">Harry Kai-Ho CHAN</a><div class="member-meta">04/2019 â 07/2019 &nbsp;Â·&nbsp; HKUST</div></div>
+      <span class="tag tag-alum">Visiting PhD</span>
+    </li>
+  </ul>
+
+</div>
+
+<footer>
+  Â© 2018â2025 Cheng LONG &nbsp;Â·&nbsp; College of Computing and Data Science, NTU Singapore
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+	    <meta http-equiv="cache-control" content="no-cache">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="./css/w3.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css?v=3431">
+		<script type="text/javascript" src="./js/main.js"></script>
+		<title>Qifeng Chen (é³å¯å³°)</title>
+	</head>
+
+	<body>
+
+		<header class="nav-bar color-theme">
+            <a href="https://cqf.io">
+				<div class="logo color-theme-dark">
+					<span>CQF</span>
+				</div>
+			</a>
+
+			<div class="menu">
+                <a href="index.html"><button class="btn-element color-theme-d2">About Me</button></a>
+                <a href="publications.html"><button class="btn-element color-theme-d2">Publications</button></a>
+                <a href="lab.html"><button class="btn-element color-theme-d2">Lab</button></a>
+                <a href="teaching.html"><button class="btn-element color-theme-d2">Teaching</button></a>
+                <a href="index.html#others"><button class="btn-element color-theme-d2">Others</button></a>
+			</div>
+
+
+            <div class="logo menu-icon color-theme-l1" onclick="showMenu()">
+                <i class="fa">&#9776;</i>
+                <ol id="menu_list_container" class="sub-menu color-theme" aria-label="submenu">
+                    <li class="menu-item"><a href="index.html">About Me</a></li>
+                    <li class="menu-item"><a href="publications.html">Publications</a></li>
+                    <li class="menu-item"><a href="lab.html">Lab</a></li>
+                    <li class="menu-item"><a href="teaching.html">Teaching</a></li>
+                    <li class="menu-item"><a href="index.html#others">Others</a></li>
+                </ol>
+            </div>
+		</header>
+
+		<div class="main-container">
+			
+			<div id="about_me" class="content-row introduction color-theme-l5">
+<!--
+				<div class="brief-intro">
+                    <span>
+                        <h3>Visual Intelligence Lab</h3>
+                    </span>					
+                </div>
+-->
+                <div class="detailed-intro">
+					<img src="./fig/HKUST_VIL.png" width="500">
+<!--
+                    <p>If you are experienced in ACM-ICPC or interested in doing PhD/MPhil with me at HKUST, please apply for
+                    <a href="https://www.cse.ust.hk/pg/admissions/recruiting/">Early Admission</a>.</p>
+                    <p>If you are an HKUST student interested in doing research with me, please <a href="mailto:cqf@ust.hk">send me an email</a>.</p><br /><br />
+-->					
+                </div>
+			</div>
+
+
+			<div id="lab" class="content-row color-theme-l3">
+				<h3>Students</h3>
+                <div class="student-container" style="font-size:12px">
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/hanlin_wang.png">
+                        </div>
+                        <div>
+                            <a href="https://scholar.google.com/citations?user=0uO4fzkAAAAJ&hl=zh-CN">Hanlin Wang</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/xuanhua_he.png">
+                        </div>
+                        <div>
+                            <a href="https://xuanhuahe.github.io/">Xuanhua He</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/i_chieh_chen.jpg">
+                        </div>
+                        <div>
+                            <a href="">I Chieh Chen</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yue_ma.jpg">
+                        </div>
+                        <div>
+                            <a href="https://mayuelala.github.io/">Yue Ma</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/runyi_yu.jpg">
+                        </div>
+                        <div>
+                            <a href="https://ingrid789.github.io/IngridYu/">Runyi Yu</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+					
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zichen_liu.jpg">
+                        </div>
+                        <div>
+                            <a href="https://zliucz.github.io/">Zichen Liu</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/trung_kien_pham.jpg">
+                        </div>
+                        <div>
+                            <a href="https://tkpham3105.github.io/">Trung Kien Pham</a><br>
+                            (PhD, co-supervised with Long Chen) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/nicholas_chan.jpg">
+                        </div>
+                        <div>
+                            <a href="">Nicholas Chan</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/yuen_fui_lau.jpg">
+                        </div>
+                        <div>
+                            Yuen-Fui Lau<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zhefan_rao.jpg">
+                        </div>
+                        <div>
+                            <a href="https://scholar.google.com/citations?user=8yjKlAEAAAAJ&hl=en">Zhefan Rao</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zhaoyang_liu.jpg">
+                        </div>
+                        <div>
+                            <a href="https://scholar.google.com/citations?user=btgwZosAAAAJ">Zhaoyang Liu</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/qingyan_bai.jpg">
+                        </div>
+                        <div>
+                            <a href="https://scholar.google.com/citations?user=xUMjxi4AAAAJ">Qingyan Bai</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/na_fan.jpg">
+                        </div>
+                        <div>
+                            Na Fan<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/guotao_meng.jpg">
+                        </div>
+                        <div>
+                            Guotao Meng<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/hongyu_liu.jpg">
+                        </div>
+                        <div>
+                            <a href="https://kumapowerliu.github.io/">Hongyu Liu</a><br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/zian_qian.jpg">
+                        </div>
+                        <div>
+                            Zian Qian<br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>	
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/runtao_liu.jpg">
+                        </div>
+                        <div>
+                            Runtao Liu<br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+
+	
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zhili_chen.jpg">
+                        </div>
+                        <div>
+                            Zhili Chen<br>
+                            (PhD) <br />
+                        </div>
+                    </div>			
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/qiang_wen.jpg">
+                        </div>
+                        <div>
+                            Qiang Wen<br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/tianjia_zhang.jpg">
+                        </div>
+                        <div>
+                            Tianjia Zhang<br>
+                            (PhD) <br />
+                        </div>
+                    </div>               
+
+
+				</div>
+                <h3>Graduated PhD</h3>
+				<div class="student-container" style="font-size:12px">
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/ka_leong_cheng.jpg">
+                        </div>
+                        <div>
+                            <a href="https://felixcheng97.github.io/">Ka Leong Cheng</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yueqi_xie.jpg">
+                        </div>
+                        <div>
+                            <a href="https://xyq7.github.io/">Yueqi Xie</a><br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/jiapeng_zhu.jpg">
+                        </div>
+                        <div>
+                            Jiapeng Zhu<br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/chao_zhao.jpg">
+                        </div>
+                        <div>
+                            <a href="https://robotll.github.io/czhao/">Chao Zhao</a><br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/jingye_chen.jpg">
+                        </div>
+                        <div>
+                            <a href="https://jingyechen.github.io/">Jingye Chen</a><br>
+                            (PhD) <br />
+                        </div>    				    
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/junming_chen.jpg">
+                        </div>
+                        <div>
+                            <a href="https://chenjunming.ml/">Junming Chen</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yingqing_he.jpg">
+                        </div>
+                        <div>
+                            Yingqing He<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/junhao_cai.jpg">
+                        </div>
+                        <div>
+                            Junhao Cai<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/jun_cen.jpg">
+                        </div>
+                        <div>
+                            <a href="https://cen-jun.com/">Jun Cen</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/maosheng_ye.jpg">
+                        </div>
+                        <div>
+                            Maosheng Ye<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/liya_ji.jpg">
+                        </div>
+                        <div>
+                            Liya Ji<br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/chenyang_qi.jpg">
+                        </div>
+                        <div>
+                            <a href="https://chenyangqiqi.github.io/">Chenyang Qi</a><br>
+                            (PhD) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/jiaxin_xie.jpg">
+                        </div>
+                        <div>
+                            <a href="https://jiaxinxie97.github.io/Jiaxin-Xie/">Jiaxin Xie</a><br>
+                            (PhD 2024) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yazhou_xing.jpg">
+                        </div>
+                        <div>
+                            <a href="https://yzxing87.github.io/">Yazhou Xing</a><br>
+                            (PhD 2024) <br />
+                        </div>
+    				    
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/rongrong_gao.jpg">
+                        </div>
+                        <div>                       
+                            Rongrong Gao<br>
+                            (PhD 2024) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/ouyang_hao.jpg">
+                        </div>
+                        <div>                           
+                            <a href="https://ken-ouyang.github.io/">Hao Ouyang</a><br>
+                            (PhD 2024) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zifan_shi.jpg">
+                        </div>
+                        <div>
+                            <a href="https://vivianszf.github.io/">Zifan Shi</a><br>
+                            (PhD 2024, co-supervised with Dit-Yan Yeung) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/tengfei_wang.jpg">
+                        </div>
+                        <div>                       
+                            <a href="https://tengfei-wang.github.io/">Tengfei Wang</a><br>
+                            (PhD 2023) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yue_wu.jpg">
+                        </div>
+                        <div>                       
+                            <a href="https://yuewuhkust.github.io/">Yue Wu</a><br>
+                            (PhD 2023) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/chenyang_lei.jpg">
+                        </div>
+                        <div>
+    				        <a href="https://chenyanglei.github.io/">Chenyang Lei</a><br>
+                            (PhD 2022) <br />
+                        </div>
+                    </div>
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/yisheng_he.jpg">
+                        </div>
+                        <div>
+                            <a href="https://hyshkust.github.io/">Yisheng He</a><br>
+                            (PhD 2022) <br />
+                        </div>    				    
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/haoran_song.jpg">
+                        </div>
+                        <div>
+                            <a href="http://song-haoran.com/">Haoran Song</a><br>
+                            (PhD 2021, co-supervised with Michael Wang)<br	>
+                        </div>    				    
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/weihao_yuan.jpg">
+                        </div>
+                        <div>
+                            <a href="https://weihao-yuan.com/">Weihao Yuan</a><br>
+                            (PhD 2020, co-supervised with Michael Wang) <br />
+                        </div>    				    
+                    </div>
+				</div>
+
+                <h3>Graduated MPhil</h3>
+				<div class="student-container" style="font-size:12px">
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/trung_kien_pham.jpg">
+                        </div>
+                        <div>
+                            Trung Kien Pham<br>
+                            (MPhil 2024) <br />
+                        </div>
+                    </div>
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/yuen_fui_lau.jpg">
+                        </div>
+                        <div>
+                            Yuen-Fui Lau<br>
+                            (MPhil 2024) <br />
+                        </div>
+                    </div>
+					<div class="student">
+                        <div>
+                            <img src="./fig/lab/chan_ho_park.jpg">
+                        </div>
+                        <div>
+                            Chan Ho Park<br>
+                            (MPhil 2023) <br />
+                        </div>
+                    </div>				
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zhaoheng_yin.jpg">
+                        </div>
+                        <div>
+                            Zhao-heng Yin<br>
+                            (MPhil 2023) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zhefan_rao.jpg">
+                        </div>
+                        <div>
+                            Zhefan Rao<br>
+                            (MPhil 2023) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yuxiang_he.jpg">
+                        </div>
+                        <div>
+                            Yuxiang He<br>
+                            (MPhil 2023) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/hyukryul_yang.jpg">
+                        </div>
+                        <div>
+                            Hyukryul Yang<br> 
+                            (MPhil 2020)<br>
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/ouyang_hao.jpg">
+                        </div>
+                        <div>                           
+                            Hao Ouyang<br>
+                            (MPhil 2020) <br />
+                        </div>
+                    </div>                    
+					
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/yuezhang_liu.jpg">
+                        </div>
+                        <div>
+                            Yuezhang Liu<br>
+                            (MPhil 2021) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/patrick_wan.jpg">
+                        </div>
+                        <div>
+                            Ching-Pui Wan<br>
+                            (MPhil 2021) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/chang_dae_park.jpg">
+                        </div>
+                        <div>
+                            Chang Dae Park<br>
+                            (MPhil 2021) <br />
+                        </div>
+                    </div>
+                    
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/ji_hyeong_yoo.jpg">
+                        </div>
+                        <div>
+                            Ji Hyeong Yoo<br>
+                            (MPhil 2021) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/minsoo_khang.jpg">
+                        </div>
+                        <div>
+                            Minsoo Khang<br>
+                            (MPhil 2022) <br />
+                        </div>
+                    </div>
+
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/zian_qian.jpg">
+                        </div>
+                        <div>
+                            Zian Qian<br>
+                            (MPhil 2022) <br />
+                        </div>
+                    </div>
+                    <div class="student">
+                        <div>
+                            <img src="./fig/lab/ka_ho_lee.jpg">
+                        </div>
+                        <div>
+                            Ka Ho Lee<br>
+                            (MPhil 2022) <br />
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>

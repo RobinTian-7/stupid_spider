@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Chen Liu @ CityU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        /* --- Global Reset & Typography --- */
+        :root {
+            --primary-color: #0056b3;
+            --text-dark: #1a1a1a;
+            --text-light: #555;
+            --bg-color: #ffffff;
+            --accent-bg: #f4f6f8;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        a { text-decoration: none; color: inherit; transition: color 0.2s; }
+        a:hover { color: var(--primary-color); }
+
+        /* --- Layout --- */
+        .container {
+            width: 92%;             /* Adaptive width */
+            max-width: 1200px;      /* Larger cap for wide screens */
+            margin: auto;      /* Vertical spacing */
+            padding: 20px;
+        }
+
+        /* --- Navigation --- */
+        .nav {
+            display: flex;
+            gap: 25px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-light);
+        }
+        .nav a:hover, .nav span.active {
+            color: var(--primary-color);
+        }
+
+        /* --- Header Section (Profile) --- */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .profile-info h1 {
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: var(--text-light);
+            font-size: 1.05rem;
+        }
+
+        .profile-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            /*border-radius: 50%;*/
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Links / Badges */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            background-color: var(--accent-bg);
+            color: var(--text-dark);
+            transition: all 0.2s ease;
+        }
+
+        .badge:hover {
+            background-color: #e0e0e0;
+            color: var(--primary-color);
+        }
+        
+        .badge img {
+            height: 14px;
+            margin-left: 4px;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        /* --- Bio Content --- */
+        .bio-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        .bio-content a {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 86, 179, 0.3);
+            text-underline-offset: 2px;
+        }
+
+        .bio-content a:hover {
+            text-decoration-color: var(--primary-color);
+        }
+
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+            .nav { justify-content: center; gap: 15px; }
+            
+            .header {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .contact-links {
+                justify-content: center;
+            }
+
+            .profile-photo img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <span class="active" style="font-weight: 700; color: var(--primary-color);">Home</span>
+            <a href="./group.html">Group</a>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./talk.html">Talks</a>
+            <a href="./publication.html">Publications</a>
+            <a href="./openings.html">Open Positions</a>
+        </div>
+
+        <div class="header">
+            <div class="profile-info">
+                <h1>Chen Liu &nbsp; 刘 晨</h1>
+                <p>Assistant Professor</p>
+                <p>Department of Computer Science</p>
+                <p>City University of Hong Kong</p>
+                <p>chen.liu <img src="figure/a.png" alt="@"> cityu.edu.hk</p>
+
+                <div class="contact-links">
+                    <a href="doc/cv.pdf" target="_blank" class="badge">Curriculum Vitae</a>
+                    <a href="https://scholar.google.com/citations?user=48PsswEAAAAJ" target="_blank" class="badge">Google Scholar</a>
+                </div>
+            </div>
+            
+            <div class="profile-photo">
+                <img src="figure/cliu.jpg" alt="Chen Liu">
+            </div>
+        </div>
+
+        <div class="bio-content">
+            <p>My name is Chen Liu. Welcome to my homepage!</p>
+
+            <p>I am currently an assistant professor in <a href="https://www.cs.cityu.edu.hk" target="_blank">the Department of Computer Science</a>, <a href="https://www.cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I am the PI of the <a href="./group.html">Machine Learning and Optimization (MLO)</a> group. I am interested in building reliable machine learning models. Particularly, I focus on deep neural networks and study their robustness and privacy properties from an optimization perspective.</p>
+
+            <p>If you are interested in working with me, please check the page of <a href="./openings.html">openings</a> and feel free to email me with your CV.</p>
+
+            <p>I obtained my Ph.D. degree from <a href="https://www.epfl.ch/en/" target="_blank">École Polytechnique Fédérale de Lausanne (EPFL)</a> in August 2022 and was supervised by <a href="https://ivrl.epfl.ch/people/people-susstrunk/" target="_blank"> Prof. Sabine Süsstrunk</a> and <a href="https://people.epfl.ch/mathieu.salzmann?lang=en" target="_blank"> Dr. Mathieu Salzmann</a>. My <a href="doc/PhDThesis/EPFL_TH9128.pdf" target="_blank">Ph.D. thesis</a> is about verifiable, generalizable, and efficient robust deep neural networks. I obtained my Master degree from <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a> in 2017 and Bachelor degree from <a href="https://www.tsinghua.edu.cn/publish/thu2018en/index.html" target="_blank"> Tsinghua University</a> in 2015, both in Computer Science.</p>
+
+            <p>I was supported by the <a href="https://www.microsoft.com/en-us/research/academic-program/phd-scholarship-europe-middle-east-africa/" target="_blank">Microsoft Research Ph.D. Scholarship Programme</a> from 2017 to 2019, working with <a href="http://tomioka.dk/" target="_blank">Dr. Ryota Tomioka</a> from <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/" target="_blank">Microsoft Research Cambridge</a>. I worked at <a href="https://www.swisscom.ch/en/about/medien/press-releases/2015/12/20151216-MM-Swisscom-und-Epfl-werden-Partner-fuer-die-digitale-Revolution.html" target="_blank">Swisscom Digital Lab</a> in Lausanne, Switzerland in 2017 and <a href="https://www.siemens-healthineers.com" target="_blank">Siemens Healthineers</a> in Princeton, New Jersey, USA in 2016.</p>
+        </div>
+
+    </div>
+</body>
+</html>

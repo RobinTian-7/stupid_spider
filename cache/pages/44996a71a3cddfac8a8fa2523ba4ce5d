@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Content-Type-Script" content="text/javascript">
+    <meta name="Content-Type-Style" content="text/css">
+    <meta name="author" content="owwwlab.com">
+    <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/demo2.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <title>Alexander (Sasha) Rakhlin</title>
+  </head>
+  <body class="fullwidth bg-gray sticky-header homepage">
+    <div id="wrapper" class="boxed-layout bg-white">
+      <section id="contents">
+        <div class="head-wrapper">
+          <header id="header" data-sticky-threshold='-300' class="trans dark sticky-light slim-container">
+            <div class="head-main header-home text-center">
+              <div class="logo-wrapper visible-sticky">
+                <a href="index.html" class="standard-logo text-logo"><img src="assets/img/avatar.jpg" alt="Sasha Rakhlin">
+                  <div class="text-wrapper">
+                    <h1 class="title">Sasha Rakhlin</h1>
+                  </div></a>
+              </div>
+              <ul id="primary-menu">
+                <li class="current-menu-item"><a href="index.html" title="Home"><span>Home</span></a>
+                </li>
+                <li><a href="publications.html" title="Publications"><span>Publications</span></a>
+                </li>
+                <li><a href="lab.html" title="Lab"><span>Lab</span></a>
+                </li>
+                <li><a href="notes.html" title="Notes"><span>Notes</span></a>
+                </li>
+                <li><a href="cv.html" title="CV"><span>CV</span></a>
+                </li>
+                <li><a href="courses.html" title="Courses"><span>Courses</span></a>
+                </li>
+                <li><a href="contact.html" title="Contact"><span>Contact</span></a>
+                </li>
+              </ul>
+              <div class="header-icons">
+                <div class="ol-mobile-trigger hamburger hamburger--elastic">
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div data-img-src="assets/img/bg/06-1.jpg" data-parallax-mode="mode-title" class="page-head h-700 parallax-layer">
+            <div class="container">
+              <div class="tb-vcenter-wrapper">
+                <div class="vcenter">
+                  <div data-parallax-mode="mode-header-demo-2" class="ol-user-profile parallax-layer">
+                    <div class="avatar"><img src="assets/img/people-01.jpg"></div>
+                    <h1 class="title">Sasha Rakhlin</h1>
+                    <h2 class="subtitle">Professor @ MIT <br><br><br>
+                      Statistics and Data Science Center, IDSS <br><br>
+                      Department of Brain & Cognitive Sciences <br><br>
+                      Laboratory for Information & Decision Systems<br><br>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-contents">
+          <section class="section slim-container p-bottom-80">
+            <div class="container">
+              <p><span class="ol-dropcaps square colored">M</span>y research group works at the interface of <strong>Machine Learning</strong>, <strong>Statistics</strong>, and <strong>Optimization</strong>. We are interested in formalizing the process of <em>learning</em>, in analyzing the learning models, and in deriving and implementing the emerging learning methods. A significant thrust of our research is on developing theoretical and algorithmic tools for online prediction, decision-making, and reinforcement learning. Our recent interests include understanding reinforcement learning and decision making, neural networks and overparametrized models, as well as large language models. 
+            <div class="col-md-12">
+              <p>
+              <div class="description"><h5>The research group currently focuses on:</h5></div><p>
+              <ol class="icon-list with-shaded-label ol-upper-alpha">
+                <li><strong>Reinforcement Learning and Decision Making:</strong> In these problems, data are collected in an active manner and feedback is limited. Our work focuses on understanding the sample complexity, on developing computationally efficient methods, and on building a bridge between supervised learning and decision making. In the last few years, we have developed a theory of decision making based on DEC, a quantity that governs the sample complexity of RL and interactive decision making (see <a href="course-decision-making-f23.html">course notes</a> for an introduction). Recent interests include LLMs and reinforcement learning in the context of fine-tuning and reasoning.
+                <li><strong>Online Learning:</strong> We aim to develop robust prediction methods that do not rely on the i.i.d. or stationary nature of data. In contrast to the well-studied setting of Statistical Learning, methods that predict in an online fashion are arguably more complex and nontrivial. This field has some beautiful connections to Statistical Learning and the theory of empirical processes.</li>  
+                <li><strong>Statistical Learning:</strong> We study the problem of learning with i.i.d. data. Our recent work focused on understanding the phenomenon of <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7BCB89D860CEDDD5726088FAD64F2A5A/S0962492921000027a.pdf/deep-learning-a-statistical-viewpoint.pdf">benign overfitting in overparametrized models</a>. Our current interests include diffusion models, as well as bridging the classical statistical ideas with the new techniques in decision making and interactive learning.</li>
+              </ol>
+            </div>
+          </section>
+        </div>
+      </section>
+      <div class="row slim-container bg-white">
+        <div class="container">
+          <div class="sp-line-0 bg-white text-center"><a href="https://accessibility.mit.edu">accessibility</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendors/vendors.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

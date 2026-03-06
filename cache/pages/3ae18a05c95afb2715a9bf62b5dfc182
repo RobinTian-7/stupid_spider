@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cong WANG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cong WANG, City University of Hong Kong, CityU Hong Kong, CityU HK, CityUHK, City University, CityU">
+    <meta name="author" content="Cong WANG">
+    <meta name="keywords" content="Cong WANG, City University of Hong Kong, CityU Hong Kong, CityU HK, CityUHK, City University, CityU">
+
+    <link rel="shortcut icon" href="http://www.cityu.edu.hk/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{font-size:16px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="./files/WangC.jpeg" class="img-responsive center-block">
+        </div>
+        <div class="col-sm-6">
+
+            <h3><strong> Cong WANG </strong></h3>
+            <p>
+                Professor, Fellow of the IEEE <br />
+                <a href="http://www.cs.cityu.edu.hk" target="_blank"> Department of Computer Science </a> <br />
+                <a href="http://www.cityu.edu.hk" target="_blank"> City University of Hong Kong</a> <br /><br />
+            </p>
+            <p>
+                Office: Y6313, Yeung Kin Man Academic Building (AC1)<br />
+                Phone: +852 3442 2010<br />
+                Fax: +852 3442 0503<br />
+                Email: congwang at cityu.edu.hk
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <hr />
+    <h4><strong> Overview </strong> </h4>
+    <p>
+        I am interested in developing secure software systems with theoretical security / privacy guarantee and practical performance. My recent work has focused on data security (e.g., encrypted databases, multi-party encrypted analytics, proofs of remote storage, etc.), AI systems and security (e.g., red teaming for LLM, federated (un)learning, robust reinforcement learning, etc.), privacy-enhancing technologies (e.g., encrypted messaging and metadata privacy, anonymous communications, encrypted network middleboxes, etc.), blockchain and decentralised applications (e.g., decentralized storage auditing, on-chain/off-chain interoperability, consensus designs, etc.), and software security and systems (e.g., hardware-assisted security, anti-fuzzing techniques, boosting performance of deep learning clusters, etc.). Please refer to the following links and the <a href="https://cyber.cs.cityu.edu.hk/en/home/index.html">group website</a> for more details.    
+    </p>
+    <a href="http://scholar.google.com/citations?user=wRa_lOEAAAAJ&hl=en">Google Scholar</a> | <a href="http://orcid.org/0000-0003-0547-315X">ORCID</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=35106222100">Scopus</a> | <a href="https://scholars.cityu.edu.hk/en/persons/cong-wang(f5740c19-f6fa-4e91-a91d-5ffa518c5ece).html">CityU Scholar</a>
+    <br/>
+    <!-- <span class="label label-primary">IEEE DSC 2019</span> <b><a href="https://conference.cs.cityu.edu.hk/dsc2019/">The 2019 IEEE Conference on Dependable and Secure Computing (DSC)</a> will be held in Hangzhou, China, 18-20 November, 2019. Welcome!</b> -->
+ 
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Selected Publications (<a href="http://cyber.cs.cityu.edu.hk/en/publication/index.html">Full List</a>) </strong></h4>
+ 
+    <h5><strong><i> Data security and privacy </i></strong></h5>
+    <ul class="square">
+        <li><span class="badge">ESORICS'24</span> Nemesis: Combating Abusive Information in Encrypted Messaging with Private Reporting. The 29th European Symposium on Research in Computer Security (ESORICS'24), Bydgoszcz, 16 September-20 September, 2024.<br />
+        Rui Lian, Yulong Ming, Chengjun Cai, Yifeng Zheng, <strong>Cong Wang</strong>, and Xiaohua Jia. 
+        </li>
+        <li><span class="badge">VLDB'24</span> SWAT: A System-Wide Approach to Tunable Leakage Mitigation in Encrypted Data Stores. 50th International Conference on Very Large Databases (VLDB'24), Guangzhou, China, August 26-30, 2024. <br />
+        Leqian Zheng, Lei Xu, <strong>Cong Wang</strong>, Sheng Wang, Yuke Hu, Zhan Qin, Feifei Li, and Kui Ren. 
+        </li>
+        <li><span class="badge">ICDCS'24</span> HiddenTor: Toward a User-Centric and Private Query System for Tor BridgeDB. The 44th IEEE International Conference on Distributed Computing Systems (ICDCS'24), Jersey City, New Jersey, 23-26 July, 2024.<br />
+        Yichen Zang, Chengjun Cai, Wentao Dong, Lei Xu, and <strong>Cong Wang</strong>.
+        </li>        
+        <li><span class="badge">CCS'23</span> Leakage-Abuse Attacks Against Forward and Backward Private Searchable Symmetric Encryption. The 30th ACM Conference on Computer and Communications Security (CCS'23), Copenhagen, Denmark, November 26-30, 2023.<br />
+        Lei Xu, Leqian Zheng, Chengzhi XU, Xinliang Yuan, and <strong>Cong Wang</strong>. 
+        </li>
+        <li><span class="badge">NSDI'23</span> Boomerang: Metadata-Private Messaging under Hardware Trust. The 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI'23), Boston, Ma, April 17-19, 2023.<br />
+        Peipei Jiang, Wang Qian, Jianhao Chen, <strong>Cong Wang</strong>, Lei Xu, Xinyu Wang, Yihao Wu, Xiaoyuan Li, and Kui Ren. 
+        </li>                  
+        <li><span class="badge">TDSC</span> Aggregation Service for Federated Learning: An Efficient, Secure, and More Resilient Realization. IEEE Transactions on Dependable and Secure Computing (TDSC), vol. 20, no. 2, pp. 988–1001, March–April, 2023.<br />
+        Yifeng Zheng, Shangqi Lai, Yi Liu, Xingliang Yuan, Xun Yi, and <strong>Cong Wang</strong>. 
+        </li>            
+        <li><span class="badge">CCS'22</span> Vizard: A Metadata-hiding Data Analytics System with End-to-End Policy Controls. The 29th ACM Conference on Computer and Communications Security (CCS'22), Los Angeles, USA, November 7-12, 2022.<br />
+        Chengjun Cai, Yichen Zang, <strong>Cong Wang</strong>, Xiaohua Jia, and Qian Wang. 
+        </li>
+        <li><span class="badge">CCS'19</span> LightBox: Full- stack Protected Stateful Middlebox at Lightning Speed. The 26th ACM Conference on Computer and Communications Security (CCS'19), London, UK, November 11-15, 2019. <br />
+        Huayi Duan, <strong>Cong Wang</strong>, Xingliang Yuan, Yajin Zhou, Qian Wang, and Kui Ren. 
+        </li>                    
+        <li><span class="badge">TC</span> Privacy-Preserving Public Auditing for Secure Cloud Storage. IEEE Transactions on Computers (TC), vol. 62, no. 2, pp. 362–375, February, 2013.<br />
+        <strong>Cong Wang</strong>, Sherman S.M. Chow, Qian Wang, Kui Ren, and Wenjing Lou.  
+        </li>        
+    </ul>
+    <h5><strong><i> AI security</i></strong></h5>
+    <ul class="square">
+        <li><span class="badge">KDD'24</span> BadSampler: Harnessing the Power of Catastrophic Forgetting to Poison Byzantine-robust Federated Learning. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'24), Barcelona, 25-29 August, 2024.<br />
+        Yi Liu, Xingliang Yuan, and <strong>Cong Wang</strong>. 
+        </li>
+        <li><span class="badge">MM'24</span> Arondight: Red Teaming Large Vision Language Models with Auto-generated Multi-modal Jailbreak Prompts. The 32nd ACM International Conference on Multimedia(MM'24), Melbourne, 28 October.-1 November, 2024.<br />
+        Yi Liu, Chengjun Cai, Xiaoli Zhang, Xingliang Yuan, and <strong>Cong Wang</strong>. 
+        </li>
+        <li><span class="badge">IJCAI'24</span> Constrained Intrinsic Motivation for Reinforcement Learning. The 33rd International Joint Conference on Artificial Intelligence (IJCAI'24), Jeju, Korea, Aug 03-09, 2024.<br />
+        Xiang Zheng, Xinjun Ma, Shengjie Wang, Xinyu Wang, Chao Shen, and <strong>Cong Wang</strong>. 
+        </li>
+        <li><span class="badge">DSN'24</span> Toward Evaluating Robustness of Reinforcement Learning with Adversarial Policy. The 54th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN'24), Brisbane, Australia, June 24-27, 2024.<br />
+        Xiang Zheng, Xinjun Ma, Chao Shen, and <strong>Cong Wang</strong>.
+        </li>        
+        <li><span class="badge">USENIX Security'24</span> More Simplicity for Trainers, More Opportunity for Attackers: Black-Box Attacks on Speaker Recognition Systems by Inferring Feature Extractor. The 33rd USENIX Security Symposium (USENIX Security’24), Philadephia, PA, August 14-16, 2024.<br />
+        Yunjie Ge, Pinji Chen, Qian Wang, Lingchen Zhao, Ningping Mou, Peipei Jiang, <strong>Cong Wang</strong>, Qi Li, and Chao Shen.
+        </li>                  
+        <li><span class="badge">TIFS</span> Proof of Unlearning: Definitions and Instantiation. IEEE Transactions on Information Forensics and Security (TIFS), vol. 19, pp.3309–3323, January, 2024.<br />
+        Jia-Si Weng, Shenglong Yao, Yuefeng Du, Junjie Huang, Jian Weng, and <strong>Cong Wang</strong>. 
+        </li>            
+        <li><span class="badge">SIGIR'23</span> Poisoning Self-supervised Learning Based Sequential Recommendations. Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR'23), pp. 300-310, Taipei, July 23-27, 2023.<br />
+        Yanling Wang, Yuchen Liu, Qian Wang, <strong>Cong Wang</strong>, and Chenliang Li. 
+        </li>
+        <li><span class="badge">ICLR'23</span> Bayes-MIL: A New Probabilistic Perspective on Attention-based Multiple Instance Learning for Whole Slide Images. The 11th International Conference on Learning Representations (ICLR’23), Kigali Rwanda, May 1-5, 2023. <br />
+        Yufei Cui, Ziquan Liu, Xiangyu Liu, Xue Liu, <strong>Cong Wang</strong>, Tei-Wei Kuo, Jason Xue Chun, and Antoni B. Chan.
+        </li>                    
+        <li><span class="badge">WWW'23</span> NetGuard: Protecting Commercial Web APIs from Model Inversion Attacks using GAN-generated Fake Samples. The Web Conference (WWW’23), Texas, TX, April 30-May 4, 2023.<br />
+        Xueluan Gong, Ziyao Wang, Yanjiao Chen, Qian Wang, and <strong>Cong Wang</strong>.  
+        </li>      
+        <li><span class="badge">NeurIPS'22</span> Amplifying Membership Exposure via Data Poisoning. The 36th Conference on Neural Information Processing Systems (NeurIPS), 29 Nov - 1 Dec, Vitual, 2022.<br />
+        Yufei Chen, Chao Shen, <strong>Cong Wang</strong>, and Yang Zhang.  
+        </li>     
+        <li><span class="badge">USENIX Security'22</span> Teacher Model Fingerprinting Attacks Against Transfer Learning. The 31st USENIX Security Symposium (USENIX Security'22), Boston, MA, USA, August 10-12, 2022.<br />
+        Yufei Chen, Chao Shen, <strong>Cong Wang</strong>, and Yang Zhang.  
+        </li>       
+        <li><span class="badge">INFOCOM'22</span> The Right to be Forgotten in Federated Learning: An Efficient Realization with Rapid Retraining. The 41st IEEE Conference on Computer Communications (INFOCOM'22), Virtual, May 2-5, 2022.<br />
+        Yi Liu, Lei Xu, Xingliang Yuan, <strong>Cong Wang</strong>, and Bo Li.  
+        </li>      
+        <li><span class="badge">CCS'21</span> Black-box Adversarial Attacks on Commercial Speech Platforms with Minimal Information. The 28th ACM Conference on Computer and Communications Security (CCS'21), Republic of Korea, November 15-19, 2021.<br />
+        Baolin Zheng, Peipei Jiang, Qian Wang, Qi Li, Chao Shen, <strong>Cong Wang</strong>, Yunjie Ge, Qingyang Teng, and Shenyi Zhang.  
+        </li>     
+        <li><span class="badge">ICML'21</span> CARTL: Cooperative Adversarially-Robust Transfer Learning. The 38th International Conference on Machine Learning (ICML'21), Virtual, July 18-24, 2021.<br />
+        Dian Chen, Hongxin Hu, Qian Wang, Yinli Li, <strong>Cong Wang</strong>, Chao Shen, and Qi Li. 
+        </li>        
+        <li><span class="badge">PIEEE</span> The Security of Autonomous Driving: Threats, Defenses, and Future Directions. Proceedings of the IEEE, vol. 108, no. 2, pp. 357–372, February, 2020.<br />
+        Kui Ren, Qian Wang, <strong>Cong Wang</strong>, Zhan Qin, and Xiaodong Lin.  
+        </li>                 
+    </ul>    
+    <h5><strong><I> Software security and systems </I></strong></h5>
+    <ul class="square">
+        <li><span class="badge">OJCS</span> ShadowBug: Enhanced Synthetic Fuzzing Benchmark Generation. IEEE Open Journal of the Computer Society (OJCS), vol.5, pp. 95 – 106, March, 2024. <br />
+        Zhengxiang Zhou and <strong>Cong Wang</strong>. 
+        </li>
+        <li><span class="badge">EMNLP'23</span> Adaptive Gating in Mixture-of-Experts based Language Models. The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23), Singapore, 6-10 December, 2023. <br />
+        Jiamin Li, Qiang Su, Yitao Yang, Yimin Jiang, <strong>Cong Wang</strong>, and Hong Xu. 
+        </li>
+        <li><span class="badge">USENIX Security'23</span> MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation. The 32nd USENIX Security Symposium (USENIX Security 2023), Anaheim, CA, August 9-11, 2023. <br />
+        Jinyan Xu, Yiyuan Liu, Sirui He, Haoran Lin, Yajin Zhou, and <strong>Cong Wang</strong>. 
+        </li>                
+        <li><span class="badge">USENIX ATC'23</span> Accelerating Distributed MoE Training and Inference with Lina. The 2023 USENIX Annual Technical Conference (USENIX ATC'23), pp. 945-959, Boston, 10–12 July, 2023. <br />
+            Jiamin Li, Yimin Jiang, Yibo Zhu, <strong>Cong Wang</strong>, and Hong Xu. 
+        </li>
+        <li><span class="badge">EuroSys'23</span> Lyra: Elastic Scheduling for Deep Learning Clusters. The 18th European Conference on Computer Systems (EuroSys), pp. 835-850, Rome, May 8-12, 2023. <br />
+            Jiamin Li, Yimin Jiang, Yibo Zhu, <strong>Cong Wang</strong>, and Hong Xu. 
+        </li>
+        <li><span class="badge">OJCS</span> Practical Anti-Fuzzing Techniques With Performance Optimization. IEEE Open Journal of the Computer Society (OJCS), vol. 4, pp. 206–217, August, 2023. <br />
+        Zhengxiang Zhou and <strong>Cong Wang</strong>. 
+        </li>        
+        <li><span class="badge">USENIX Security'22</span> SGXLock: Towards Efficiently Establishing Mutual Distrust Between Host Application and Enclave for SGX. The 31st USENIX Security Symposium (USENIX Security'22), Boston, MA, USA, August 10-12, 2022. <br />
+        Yuan Chen, Jiaqi Li, Guorui Xu, Yajin Zhou*, Zhi Wang, <strong>Cong Wang</strong>, and Kui Ren. 
+        </li>          
+        <li><span class="badge">TOSEM</span> Time-Travel Investigation: Towards Building A Scalable Attack Detection Framework on Ethereum. ACM Transactions on Software Engineering and Methodology (TOSEM),  vol. 31, no. 3, pp. 54:1– 54:33, September 2022.  <br />
+        Siwei Wu, Lei Wu, Yajin Zhou, Runhuai Li, Zhi Wang, Xiapu Luo, <strong>Cong Wang</strong>, Kui Ren.    <br /> 
+        </li>
+        <li><span class="badge">TDSC</span> WebEnclave: Protect Web Secrets from Browser Extensions with Software Enclave. IEEE Transactions on Dependable and Secure Computing (TDSC), vol. 19, no. 5, pp. 3055-3070, September–October, 2022.  <br />
+        Xinyu Wang, Yuefeng Du, <strong>Cong Wang</strong>, Qian Wang, and Liming Fang. 
+        </li>   
+        <li><span class="badge">ICPADS'18</span> Towards Privacy-Preserving Malware Detection Systems for Android. The 24th IEEE International Conference on Parallel and Distributed Systems (ICPADS'18), Sentosa, Singapore, December 11-13, 2018. (<strong>Best Paper Award</strong>) <br />
+        Helei Cui, Yajin Zhou, <strong>Cong Wang</strong>, Qi Li, and Kui Ren. 
+        </li>          
+    </ul>    
+    <h5><strong><i> Blockchain and decentralised applications</i></strong></h5>
+    <ul class="square">
+        <li><span class="badge">TDSC</span> Towards Practical Auditing of Dynamic Data in Decentralized Storage. IEEE Transactions on Dependable and Secure Computing (TDSC), vol. 20, no. 1, pp. 708–723, January–February, 2023.<br />
+        Huayi Duan, Yuefeng Du, Leqian Zheng, <strong>Cong Wang</strong>, Man Ho Au, and Qian Wang. 
+        </li>
+        <li><span class="badge">CSUR</span> A Survey of Blockchain Consensus Protocols. ACM Computing Surveys, vol. 55, no. 13, pp. 1–35, July, 2023.<br />
+        Jie Xu, <strong>Cong Wang</strong>, and Xiaohua Jia. 
+        </li>
+        <li><span class="badge">ICDCS'22</span> Enhancing Cryptocurrency Blocklisting: A Secure, Trustless, and Effective Realization. The 42nd IEEE International Conference on Distributed Computing Systems (ICDCS’22), Bolgona, Italy, July 10-13, 2022.<br />
+            Yuefeng Du, Anxin Zhou, and <strong>Cong Wang</strong>.        
+        <li><span class="badge">TPDS + ICDCS'21</span> AdaptChain: Adaptive Scaling Blockchain With Transaction Deduplication. IEEE Transactions on Parallel and Distributed Systems (TPDS), vol. 34, no. 6, pp. 1909–1922, June, 2023. (Extension from an earlier edition at ICDCS'21)<br />
+        Jie Xu, Qingyuan Xie, Sen Peng, <strong>Cong Wang</strong>, and Xiaohua Jia. 
+        </li>
+        <li><span class="badge">TDSC + ICDCS'20</span> Enabling Secure and Efficient Decentralized Storage Auditing With Blockchain. IEEE Transactions on Dependable and Secure Computing (TDSC), vol. 19, no. 5, pp. 3038–3054, September-October, 2022. (Extension from an earlier edition at ICDCS'20) <br />
+        Yuefeng Du, Huayi Duan, Anxin Zhou, <strong>Cong Wang</strong>, Man Ho Au, and Qian Wang.
+        </li>        
+        </li>                  
+        <li><span class="badge">TDSC + INFOCOM'20</span> Toward a Secure, Rich, and Fair Query Service for Light Clients on Public Blockchains. IEEE Transactions on Dependable and Secure Computing (TDSC), vol. 19, no. 6, pp. 3640–3655, November-December, 2022. (Extension from an earlier edition at INFOCOM'20).<br />
+        Chengjun Cai, Lei Xu, Anxin Zhou, and <strong>Cong Wang</strong>. 
+        </li>            
+        <li><span class="badge">PERCOM'19</span> Aggregating Crowd Wisdom via Blockchain: A Private, Correct, and Robust Realization. The 17th IEEE International Conference on Pervasive Computing and Communications (PerCom'19), Kyoto, Japan, March 11-15, 2019.<br />
+        Huayi Duan, Yifeng Zheng, Yuefeng Du, Anxing Zhou, <strong>Cong Wang</strong>, and Man Ho Au. 
+        </li>
+        <li><span class="badge">INFOCOM'18</span> Searching an Encrypted Cloud Meets Blockchain: A Decentralized, Reliable and Fair Realization. The 37th International Conference on Computer Communications (INFOCOM'18), Honolulu, HI, USA, April 15-19, 2018. <br />
+        Shengshan Hu, Chengjun Cai, Qian Wang, <strong>Cong Wang</strong>, Xiangyang Luo, and Kui Ren.
+        </li>                               
+    </ul>      
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Patents </strong></h4>
+    <!-- <div> -->
+    <ul class="square">
+        <li>
+            <strong>Cong Wang</strong>, Xinyu Wang, and Yuefeng Du. <b>"Secure Web Enclave"</b>. US Patent, granted, Patent No.: US11,586,726. Feb 21, 2023. 
+        </li>
+        <li>
+            <strong>Cong Wang</strong>, Yifeng Zheng, Chengjun Cai, <b>"System and Method for Processing Data and Managing Information"</b>, US Patent, granted, Patent No.: US11,580,417. Feb 14, 2023.
+        </li>          
+        <li>
+            <strong>Cong Wang</strong>, Helei Cui, and Huayi Duan, <b>"Method for Accelerating Execution of Application in a Trusted Execution Environment"</b>, US Patent, granted, Patent No.: US11,392,724. Jul 19, 2022.
+        </li>
+        <li>
+            <strong>Cong Wang</strong>, Xingliang Yuan, and Chengjun Cai, <b>"An Electronic Storage System and A Method of Data Management"</b>, US Patent, granted, Patent No.: US11,170,114. Nov 09, 2021.
+        </li>
+        <li>
+            <strong>Cong Wang</strong>, Sarana Nutanong, Xingliang Yuan, Xinyu Wang, and Chenyun Yu, <b>"Systems and  Methods for Privacy-assured Similarity Joins over Encrypted Datasets"</b>, US Patent, granted, Patent No.: US10,496,638. Dec 03, 2019.
+        </li>
+        <li>
+            Xingliang Yuan, Yu Guo, Xinyu Wang, and <strong>Cong Wang</strong>, <b>"Method for Operating a Distributed Key-Value Store"</b>, US Patent, granted, Patent No.: US10,476,662. Nov 12, 2019.
+        </li>
+        <li>
+            Kurt Partridge, Ersin Uzun, <strong>Cong Wang</strong>, and Manas Pathak, <b>"Privacy-Preserving Behavior     Targeting for Digital Coupons"</b>, US patent, granted US8874485 B2, Oct 28, 2014. Online at <a href="  http://www.google.com/patents/US8874485" target="_blank">http://www.google.com/patents/US8874485</a>.
+        </li>
+        <li>
+            Manas Pathak, Richard Chow, Elaine Shi, and <strong>Cong Wang</strong>, <b>"Privacy-preserving    Collaborative Filtering"</b>, US Patent, granted US8478768 B1, Jul 2, 2013. Online at <a href="https:// www.google.com/patents/US8478768" target="_blank">https://www.google.com/patents/US8478768</a>.
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Group Members </strong></h4>
+
+    <h5><strong><I> Current Students </I></strong></h5>
+    <!-- <div> -->
+    <ul class="square">
+        <li>PhD students: Xiangyi Meng (2018.08~), Yichen Zang (2020.09~), <a href="https://x-zheng16.github.io">Xiang Zheng</a> (CityU Presidential Scholarship, 2020.09~), Wentao Dong (2021.01~), Xinyan Li (2021.09~), Rui Lian (2021.09~), <a href="https://55199789.github.io/LeqianZHENG.github.io/index-EN/">Leqian Zheng</a> (HK PhD Fellowship, 2021.09~), Sirui He (2021.09~), <a href="https://yiliucs.github.io">Yi Liu</a> (2022.09~), Longxiang Wang (2023.09~), Shengchen Lin (2024.09~).</li>
+        <li>Postdoc fellows: <a href="https://yfchen1994.github.io">Yufei Chen</a>, <a href="https://duyuefeng0708.github.io">Yuefeng Du</a>, <a href="https://taoni0718.github.io">Tao Ni</a>, <a href="https://github.com/HighwayWu/">Haiwei Wu</a>. </li>
+    </ul>
+    <h5><strong><I> CityU Alumni (<a href="http://cyber.cs.cityu.edu.hk/en/people/index.html">Full List</a>) </I></strong></h5>
+    <ul class="square">
+        <li><a href="https://xyuancs.github.io/">Xingliang Yuan</a>, PhD, 2016, first employment: Lecturer (Assistant professor), Monash University, Australia; now Associate Professor, The University of Melbourne.</li>
+        <li>Jinghua Jiang, PhD, 2017, first employment: Senior engineer, Baidu Shenzhen, China.</li>
+        <li>Chengcheng Dai, PhD, 2017, first employment: Research engineer, Huawei Hangzhou, China.</li>
+        <li><a href="https://experts.griffith.edu.au/41503-leo-zhang">Yu Zhang</a>, Postdoc, 2016~2017, current employment: Senior Lecturer, Griffith University, Australia.</li>
+        <li>Zhenkui Shi, PhD, 2018, first employment: Lecturer, Guangxi Normal University, China.</li>
+        <li><a href="https://helei.pro/">Helei Cui</a>, PhD, 2018, first employment: Senior Research Associate, City University of Hong Kong; now Full Professor at Northwestern Polytechnical University, China.</li>    
+        <li><a href="https://yifengzcs.github.io/">Yifeng Zheng</a>, PhD, 2019, first employment: Postdoctoral Fellow at CSIRO Data61, Sydney, Australia, and now Assistant Professor at Harbin Institute of Technology (HIT), Shenzhen, China.</li>  
+        <li><a href="https://ai.bnu.edu.cn/xygk/szdw/fgj/1b11a1a02d0d405990efb1c8e2a1a8eb.htm">Yu Guo</a>, PhD, 2019, first employment: Postdoc, City University of Hong Kong; now Associate Professor at Beijing Normal University, China.</li>                  
+        <li>Lei Xu, Postdoc, 2021~2022, and RA, 2019~2020, City University of Hong Kong; now Associate Professor at Nanjing University of Science and Technology, China.</li>        
+        <li><a href="https://n.ethz.ch/~huduan/">Huayi Duan</a>, PhD, 2020, first employment: Postdoctoral Fellow at ETH Zurich, Switzerland.</li>          
+        <li><a href="https://scholar.google.com/citations?user=v1LDEZsAAAAJ&hl=en">Xinyu Wang</a>, PhD, 2021, first employment: Software engineer, Tencent, Shenzhen, China</li>
+        <li><a href="http://jszy.whu.edu.cn/zhaolingchen/zh_CN/index.htm">Lingchen Zhao</a>, Postdoc, 2021~2022, current employment: Associate Professor, Wuhan University, China.</li>          
+        <li><a href="https://sites.google.com/view/jiasis-homepage/">Jiasi Weng</a>, Postdoc, 2021~2022, RA, 2019~2020, current employment: Associate Professor, Jinan University, China.</li>         
+        <li><a href="https://caichengjun01.github.io">Chengjun Cai</a>, PhD, 2021, first employment: Postdoc, City University of Hong Kong; now Associate Professor at City University of Hong Kong (Dongguan).</li>  
+        <li><a href="https://duyuefeng0708.github.io">Yuefeng Du</a>, PhD, 2022, first employment: Postdoc, City University of Hong Kong</li>        
+        <li><a href="https://serendipitycoding.github.io">Jiamin Li</a>, PhD, 2024, first employment: Senior Researcher, Microsoft Research Asia – Vancouver</li>  
+        <li>Zhengxiang Zhou, PhD, 2024, first employment: Software engineer, Bytedance, Shenzhen, China</li>     
+    </ul>
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Selected Awards and Honors </strong></h4>
+    <ul class="square">
+	    <li>Stanford's Top 2% Most Highly Cited Scientists, 2020, 2021, 2022, 2023</li>
+        <li>Member of the Central Bank Digital Currency (CBDC) Expert Group, Hong Kong Monetary Authority, 2023</li>
+        <li>RGC Research Fellow, 2021</li>
+	    <li>Elevation to IEEE Fellow, 2020</li>
+        <li>Best Paper Award, <strong>IEEE ICDCS 2020</strong></li>
+        <li>IEEE INFOCOM Test of Time Paper Award, 2020</li>
+        <li><strong>The President's Awards 2019</strong>, City University of Hong Kong, 2019</li>
+        <li>Outstanding Research Award, City University of Hong Kong, 2019</li>
+        <li>First Place Award, The 2019 iDASH Genome Privacy & Security Competition, National Institute
+of Health (NIH) and Indiana University, 2019</li>
+        <li>Best Paper Award, <strong>IEEE ICPADS 2018</strong>, "Towards Privacy-Preserving Malware Detection Systems for Android", by H. Cui, Y. Zhou, C. Wang, Q. Li, and K. Ren.</li>
+        <li>Outstanding Supervisor Award, City University of Hong Kong, 2017 (Awarded on 11 Dec. 2017)</li>
+        <li>The Founding Members of the Young Academy of Sciences of Hong Kong, 2017.</li>
+        <li><strong>The President's Awards 2016</strong>, City University of Hong Kong, 2017.</li>
+        <li>Best Student Paper Award for <strong>IEEE ICDCS 2017</strong>, "You Can Hear But You Cannot Steal: Defending Against Voice Impersonation Attacks on Smartphones", by S. Chen, K. Ren, S. Piao, C. Wang, Q. Wang, J. Weng, L. Su, and A. Mohaisen.</li>
+        <li>Best Paper Award for <strong>IEEE MSN 2015</strong>, "Towards Secure and Practical Targeted Mobile Advertising", by J. Jiang, X. Gui, Z. Shi, X. Yuan, and C. Wang.</li>
+    </ul>
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Selected Recent Grants </strong></h4>
+    <ul class="square">
+        <li>"Rethinking Leakages in Dynamic Encrypted Database: Exploitation, Quantification, and Mitigation", GRF, PI, Duration: 2025.01~2027.12.</li>
+        <li>"Towards Security Assessment and Privacy Enhancement of Artificial Intelligence Algorithms in Finance", MHKJFS (Mainland-Hong Kong Joint Funding Scheme), PI, Duration: Sep 2024~Aug 2026.</li>
+        <li>"Enabling Metadata-private and Accountable Networks at Scale", HK CRF, PC, Duration: June 2023~May 2026. </li>        
+        <li>"Building Privacy-assured and Scalable Encrypted Databases with Secure Enclaves", HK RFS, PI, Duration: 2022.01~2027.12.</li>
+        <li>"Towards Secure, Dynamic, and Practical Auditing for Decentralized Storage Network", GRF, PI, Duration: 2022.01~2024.12.</li>
+    </ul>
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Teaching </strong></h4>
+    <p>
+        Course materials available at <a href="https://canvas.cityu.edu.hk/" target="_blank">CityU Canvas</a>.
+    </p>
+
+    <ul class="square">
+        <li>CS 4394, Information Security and Management, Semester A, 2021, Co-instructor</li>
+        <li>CS 5294, Information Security Technology Management, Semester A, 2021, Course Leader</li>
+        <li>CS 6290, Privacy-enhancing Technologies (TPg), Semester B, 2017-2021, Course Leader</li>
+        <li>CS 5222, Computer Networks and Internet (TPg), Semester A, 2012-2019, Course Leader</li>
+        <li>CS 4293, Topics on Computer Security (Ug), Semester B, 2013, 2015-2021, Course Leader</li>
+        <li>CS 5293, Topics on Information Security (TPg), Semester B, 2013, 2015-2017, Course Leader</li>
+        <li>GE 2323, Mobile Social Networks: Practices, Challenges, and Beyond (Ug), Semester B, 2013, Course Leader</li>
+        <li>CS 3391, Advanced Programming (Ug), Semester B, 2015-2021, Co-instructor</li>
+    </ul>
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Selected Professional Services </strong></h4>
+
+    <h5><strong><I> Editorships </I></strong></h5>
+    <ul class="square">
+        <li>Editor-in-Chief, <strong>IEEE Transactions on Dependable and Secure Computing (TDSC)</strong>, Jan. 2023</li>
+    </ul>
+
+    <h5><strong><I> Conference Organizing Committee </I></strong></h5>
+    <ul class="square">
+        <li>TPC, USENIX Security 2023 - 2025 </li> 
+        <li>Finance and Registration Chair, ICDCS 2023</li>           
+        <li>TPC Co-Chair, The 16th EAI International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness (QShine 2020)</li>
+        <li>TPC Co-Chair, The 3rd IEEE Conference on Dependable and Secure Computing (DSC 2019)</li>
+        <li>TPC Co-Chair, The 12th International Conference on Network and System Security (NSS 2018)</li>
+    </ul>
+
+
+</div>
+<div class="container">
+    <hr />
+    <h4><strong> Some Useful Links </strong></h4>
+    <ul class="square">
+        <li>Computer Security Conference Ranking and Statistic
+            <ul>
+                <li><a href="http://jianying.space/conference-ranking.html">http://jianying.space/conference-ranking.html</a></li>
+                <li><a href="http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm">http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm</a></li>
+            </ul>
+        <li>Networking Conferences Statistics (<a href="http://www.cs.ucsb.edu/~almeroth/conf/stats/" target="_blank">http://www.cs.ucsb.edu/~almeroth/conf/stats/</a>)</li>
+        <li>A Wiki for Calls For Papers (<a href="http://www.wikicfp.com/cfp/" target="_blank">http://www.wikicfp.com/cfp/</a>)</li>
+
+    </ul>
+    <hr />
+</div>
+<div class="footer">
+    <center>
+        <p>Updated: Sep, 2024</p>
+    </center>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16508386-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+	    <meta http-equiv="cache-control" content="no-cache">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="./css/w3.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css?v=1.1">
+		<script type="text/javascript" src="./js/main.js"></script>
+		<title>Qifeng Chen (é³å¯å³°)</title>
+	</head>
+
+	<body>
+
+		<header class="nav-bar color-theme">
+			<a href="https://cqf.io">
+				<div class="logo color-theme-dark">
+					<span>CQF</span>
+				</div>
+			</a>
+
+			<div class="menu">
+				<button class="btn-element color-theme-d2" onclick="scrollElmtIntoView('about_me')">About Me</button>
+				<a href="publications.html"><button class="btn-element color-theme-d2">Publications</button></a>
+				<a href="lab.html"><button class="btn-element color-theme-d2">Lab</button></a>
+				<a href="teaching.html"><button class="btn-element color-theme-d2">Teaching</button></a>
+				<button class="btn-element color-theme-d2" onclick="scrollElmtIntoView('others')">Others</button>
+			</div>
+
+            <div class="logo menu-icon color-theme-l1" onclick="showMenu()">
+                <i class="fa">&#9776;</i>
+                <ol id="menu_list_container" class="sub-menu color-theme" aria-label="submenu">
+                    <li class="menu-item"><a href="#">About Me</a></li>
+                    <li class="menu-item"><a href="publications.html">Publications</a></li>
+                    <li class="menu-item"><a href="lab.html">Lab</a></li>
+                    <li class="menu-item"><a href="teaching.html">Teaching</a></li>
+                    <li class="menu-item"><a href="#others">Others</a></li>
+                </ol>
+            </div>
+		</header>
+
+		<div class="main-container">
+			
+			<div id="about_me" class="content-row introduction color-theme-l5">
+
+				<div class="brief-intro">
+                    <img src="fig/qifeng-chen.jpg"/>
+
+                    <span>
+                        <h3>Qifeng Chen (é³å¯å³°)</h3>
+                        <h5>Associate Professor of CSE and ECE at HKUST</h5>
+                        <h5>Affiliated with Robotics Institute and AMC</h5>
+                        <h5>Email: <a href="mailto:cqf@ust.hk">cqf@ust.hk</a></h5>
+                    </span>
+                </div>
+
+                <div class="detailed-intro">
+                    <p class="self"><!--<a href="CV_Qifeng_Chen.pdf"><img src="fig/cv_icon.jpg" /></a> &nbsp;&nbsp; --><a href="about_me.html">About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://scholar.google.com/citations?user=lLMX9hcAAAAJ">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.semanticscholar.org/author/Qifeng-Chen/143832240">Semantic Scholar</a>
+					<div style="width:600px;height:220px;overflow:auto;border:1.5px solid #ccc">
+					<p> (Jan 2026) Eight papers are accepted to ICLR 2026.</p>
+					<p> (Nov 2025) I will serve as an Assosiate Editor for TPAMI.</p>
+					<p> (Jun 2025) Eight papers are accepted to ICCV 2025.</p>
+					<p> (Feb 2025) Eight papers (three highlights) are accepted to CVPR 2025.</p>
+					<p> (Dec 2024) Three papers are accepted to AAAI 2025.</p>
+					<p> (Oct 2024) Three papers are accepted to NeurIPS 2024.</p>
+					<p> (Jul 2024) A paper is conditionally accepted to SIGGRAPH Asia 2024.</p>
+					<p> (Jul 2024) Eight papers are accepted to ECCV 2024.</p>
+					<p> (Jun 2024) I will be promoted to Associate Professor with substantiation (tenure).</p>
+					<p> (May 2024) A paper is accepted to ICML 2024.</p>
+					<p> (Mar 2024) A paper is accepted to SIGGRAPH 2024.</p>
+					<p> (Feb 2024) Six papers are accepted to CVPR 2024.</p>
+					<p> (Dec 2023) A paper is accepted to ICLR 2024.</p>
+					<p> (Dec 2023) Three papers are accepted to AAAI 2024.</p>
+					<p> (Nov 2023) I will serve as an Area Chair for ACM Multimedia 2024.</p>
+					<p> (Sep 2023) Two papers are accepted to NeurIPS 2023.</p>
+					<p> (Aug 2023) Two papers are accepted to TPAMI.</p>
+					<p> (Aug 2023) A paper is accepted to SIGGRAPH Asia 2023.</p>
+					<p> (Jul 2023) A paper is accepted to ACM Multimedia 2023.</p>
+					<p> (Jul 2023) Four papers are accepted to ICCV 2023.</p>
+					<p> (Jun 2023) I will serve as an Area Chair for CVPR 2024.</p>
+					<p> (Apr 2023) A paper is accepted to RSS 2023.</p>
+					<p> (Mar 2023) I will serve as an Area Chair for NeurIPS 2023.</p>
+					<p> (Feb 2023) Nine papers are accepted to CVPR 2023.</p>
+					<p> (Jan 2023) Two papers are accepted to ICLR 2023. </p>
+					<p> (Jan 2023) Four papers are accepted to ICRA 2023.</p>
+					<p> (Dec 2022) A paper is accepted to RA-L.</p>
+					<p> (Sep 2022) Four papers are accepted to NeurIPS 2022.</p>
+					<p> (Sep 2022) I will serve as an Area Chair for CVPR 2023.</p>
+					<p> (Sep 2022) A paper is accepted to CoRL 2022.</p>
+					<p> (Aug 2022) A paper is accepted to WACV 2023.</p>
+					<p> (Jul 2022) Five papers are accepted to ECCV 2022.</p>
+					<p> (Jun 2022) A paper is accepted to IROS 2022.</p>
+					<p> (Jun 2022) Two papers are accepted to ACM MM 2022.</p>
+					<p> (May 2022) A paper is accepted to ICML 2022.</p>
+					<p> (Mar 2022) Four papers are accepted to CVPR 2022.</p>
+					<p> (Jan 2022) A paper is accepted to ICASSP 2022.</p>
+					<p> (Dec 2021) A paper is accepted to AAAI 2022.</p>
+					<p> (Dec 2021) A paper is accepted to TPAMI.</p>
+					<p> (Sep 2021) A paper is accepted to NeurIPS 2021.</p>
+					<p> (Sep 2021) A paper is accepted to CoRL 2021.</p>
+					<p> (Jul 2021) Seven papers are accepted to ICCV 2021.</p>
+					<p> (Jul 2021) Two papers are accepted to ACM MM 2021.</p>
+					<p> (Jul 2021) Three papers are accepted to IROS 2021.</p>
+					<p> (May 2021) A paper is accepted to ICML 2021.</p>
+					<p> (Mar 2021) Seven papers are accepted to CVPR 2021.</p>
+					<p> (Nov 2020) A paper is accepted to MNRAS 2020.</p>
+                    <p> (Sep 2020) A paper is accepted to NeurIPS 2020.</p>
+                    <p> (Jul 2020) A paper is accepted to ACM MM 2020.</p>
+                    <p> (Jul 2020) Five papers are accepted to ECCV 2020.</p>
+                    <p> (Jun 2020) Two papers are accepted to IROS 2020.</p>
+                    <p> (Feb 2020) Four papers are accepted to CVPR 2020.</p>
+                    <p> (Jan 2020) A paper is accepted to ICRA and RA-L 2020.</p>
+                    <p> (Jul 2019) Two papers are accepted to ICCV 2019.</p>
+                    <p> (Jun 2019) A paper is accepted to InterSpeech 2019.</p>
+                    <p> (Feb 2019) Three papers are accepted to CVPR 2019.</p>
+					</div>
+                    <p>If you are experienced in ACM-ICPC or interested in doing PhD/MPhil with me at HKUST, please apply for
+                    <a href="https://www.cse.ust.hk/pg/admissions/recruiting/">Early Admission.</a> <br> I may not reply to emails about PhD/MPhil applications, but I will go through relevant applications in early admission.</p>
+					<p>We are recruiting interns for vision-language-action model development (Aug 2025). Let me an email if you are interested.</p>
+					<!--<p>You may also consider applying for PhD/MPhil in the <a href="https://pg.ust.hk/prospective-students/GZ-Pilot-Scheme">HKUST Pilot Scheme (Guangzhou)</a> under my supervision.</p>-->
+                    <p>If you are an HKUST student interested in doing research with me, please send me an email.</p><br /><br />
+                </div>
+
+
+	            <div class="flag-counter" style="opacity:0">
+	                <center><script type="text/javascript" src="//widget.supercounters.com/ssl/flag.js"></script><script type="text/javascript">sc_flag(1503157,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="https://www.supercounters.com/">Flag Counter</a></noscript></center>
+	            </div>
+	            
+	            <div class="baidu-counter" style="opacity:0">
+	            	<a href="https://tongji.baidu.com/web/27248647/overview/index?siteId=13026505">Baidu Counter</a>
+	            </div>
+			</div>
+
+			<div id="others" class="content-row color-theme-l2 others">
+				
+				<div>
+					<h3>Honors</h3>
+					Best Paper Award at FTL-IJCAI 2021<br>
+					UROP Faculty Research Award in 2021<br>
+					Google Faculty Research Awards 2018<br />
+					Named one of 35 Innovators under 35 in China in 2018 by MIT Technology Review <br />
+					<a href="http://www.eecs.umich.edu/eecs/about/articles/2011/ACM_world_finals.html">Gold Medal (2nd place worldwide and North American Champions) at ACM-ICPC World Finals 2011</a><br />
+					<a href="http://www.cse.ust.hk/News/UGRAward2012/">Champion at Mr Armin and Mrs Lillian Kitchell Undergraduate Research Award 2012</a><br />
+					<a href="http://www.ioinformatics.org/locations/ioi07/results.shtml">Gold Medal (8th place) at IOI 2007</a><br />
+					<!--<a href="https://code.google.com/codejam/contest/2075486/scoreboard?c=2075486">12th place at Google Code Jam World Finals 2012</a>-->
+				</div>
+
+				
+				<div>
+					<h3>Services</h3>
+					Area Chair: CVPR 2024, ACM Multimedia 2024, CVPR 2023, NeurIPS 2023<br/>
+					Senior Program Committee: IJCAI 2024, AAAI 2022, IJCAI 2022, IJCAI 2021, AAAI 2020<br/>
+					Associate Editor:  IROS 2022, IROS 2021, IROS 2020, Artificial Intelligence and Autonomous Systems<br/>
+					<!--Program Committee/reviewer: PAMI, ICCV, CVPR, ECCV, NeurIPS, AAAI, SIGGRAPH, SIGGRAPH Asia, IJCV, 3DV, ICRA, IROS,<br/>
+					TIP, Eurographics, ACCV, J-STSP, ICPR, CAD/Graphics, IEEE SPL, CVIU, TCSVT, WACV, BMVC, JMIV, SPL, Autonomous Robots<br/>-->
+					Panel Member of HKCAAVQ for University Program Re-Accreditation in 2021<br/>
+				</div>
+
+				<div>
+
+					<h3>Miscellaneous</h3>
+
+					Size Balanced Tree: A data structure I came up with a long time ago.<br />
+					<a href="http://wcipeg.com/wiki/Size_Balanced_Tree">http://wcipeg.com/wiki/Size_Balanced_Tree</a>. More information is at <a href="SBT.zip">SBT</a>.<br />
+					<br />
+					The code library I used when participating in ACM-ICPC: <a href="CQF-ACM-ICPC-Library.zip">Download</a><br />
+					<br />
+					I am the coach of <a href="https://www.cse.ust.hk/acm/">ACM-ICPC teams at HKUST </a><br/>
+					<br />
+					I am the advisor of the HKUST smart campus technology in Blockchain and face recognition<br />				
+				</div>
+			</div>
+		
+		</div>
+
+
+	</body>
+
+</html>

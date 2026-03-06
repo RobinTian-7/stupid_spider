@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>Benjamin Moseley's Research Website</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body class="home">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<span class="title"><text style="color:white;" >Ben Moseley</text></span>
+			<span class="tagline"><text style="color:white;" > Associate Professor</text><br>
+			<text style="color:white;" >Operations Research </text><br>
+				<a href=""><text style="color:white;">moseleyb@andrew.cmu.edu</text></a></span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+
+			<div class="navbar-collapse collapse"  id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Publications<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="byyear.html">By Year</a></li>
+							<li><a href="bytopic.html">By Topic</a></li>
+
+						</ul>
+					</li>
+					<li><a href="teaching.html">Teaching</a></li>
+					<li><a href="notes.html">Lecture Notes</a></li>
+				</ul>
+
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
+
+
+
+
+<main id="main">
+
+	<div class="container">
+
+
+
+		<div class="row topspace">
+
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Biography</h1>
+				</header>
+
+	<p>
+Professor Moseleyâs research lies at the intersection of 
+<em>operations research</em>, <em>theoretical computer science</em>, and <em>machine learning</em>. 
+His work focuses on the design and analysis of algorithms for 
+<em>decision-making under uncertainty</em>, including learning-augmented algorithms, 
+stochastic and online optimization, scheduling, clustering, and large-scale optimization. 
+A central theme of his recent work is developing algorithmic foundations that bridge theory and practiceâcombining worst-case guarantees with data-driven predictions to design robust, high-performance systems.
+
+<br><br>
+
+His research has received multiple best paper awards, including the 
+<a href="https://www.ipdps.org/">IPDPS</a> Best Paper Award (2015), 
+<a href="https://www.spaa-conference.org/">SPAA</a> Best Paper Award (2013), 
+and the <a href="https://www.siam.org/conferences/cm/conference/soda">SODA</a> Best Student Paper Award (2010), 
+and has been selected for oral and spotlight presentations at 
+<a href="https://neurips.cc/">NeurIPS</a> and NIPS, including oral presentations at NeurIPS 2021 and NIPS 2017. 
+His work has been supported by grants from the 
+<a href="https://www.nsf.gov/">National Science Foundation</a>, the 
+<a href="https://www.onr.navy.mil/">Office of Naval Research</a>, 
+<a href="https://research.google/">Google</a>, 
+<a href="https://www.verizon.com/about/news/yahoo-acquisition">Yahoo</a>, 
+<a href="https://www.infor.com/">Infor</a>, and 
+<a href="https://www.bosch.com/">Bosch</a>, including an 
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1845146&HistoricalAwards=false">NSF CAREER Award</a>.
+
+<br><br>
+
+Professor Moseley is deeply committed to teaching, mentorship, and executive education. 
+He has developed and taught courses across the undergraduate, MBA, and MS programs on optimization, 
+machine learning, probability, and analytics, and led the creation of Tepperâs undergraduate minor in 
+<em>Business Analytics and Optimization</em>. 
+He also designs and delivers executive education programs on 
+<em>AI strategy and data-driven decision-making</em>, helping senior leaders evaluate, deploy, and govern 
+artificial intelligence in large organizations. 
+He was recognized as a 
+<a href="https://poetsandquantsforundergrads.com/">Top 50 Undergraduate Business School Professor</a> 
+by <em>Poets &amp; Quants</em>.
+
+<br><br>
+
+Before joining Carnegie Mellon, Professor Moseley was an Assistant Professor in the 
+<a href="https://cse.wustl.edu/">Department of Computer Science and Engineering</a> at 
+<a href="https://wustl.edu/">Washington University in St. Louis</a>. 
+He was previously a Research Assistant Professor at the 
+<a href="https://www.ttic.edu/">Toyota Technological Institute at Chicago</a> 
+and a <a href="https://simons.berkeley.edu/people/benjamin-moseley">Simons-Berkeley Fellow</a>. 
+He received his Ph.D. in <a href="https://cs.illinois.edu/">Computer Science</a> from the 
+<a href="https://illinois.edu/">University of Illinois at UrbanaâChampaign</a>, 
+where he was advised by 
+<a href="https://cs.illinois.edu/about/people/faculty/chekuri">Chandra Chekuri</a>.
+</p>
+
+
+
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="widget">
+					<br><br>
+					<h4 color>Benjamin Moseley</h4><br>
+					<h7 color> Associate Professor of OR</h7><br>
+                    <h7 color> and of Machine Learning (by courtesy)</h7><br>
+					<h7 color>Tepper School of Business</h7><br>
+					<h7>Carnegie Mellon University</h7><br>
+					<h7>Office: Tepper 4111</h7><br>
+					<h5><a href="assets/cv-BenMoseley.pdf">CV</a></h5	>
+				</div>
+
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+						<a href="mailto:#">moseleyb@andrew.cmu.edu</a><br>
+						<br>
+						5000 Forbes Av, Pittsburgh PA
+						<b4><br>
+						Office: Tepper 4111
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+
+				<div class="widget-body">
+						<a href="https://scholar.google.com/citations?user=m6NDX0IAAAAJ&hl=en">	<img src="assets/images/gscholar.png" alt="" width="50" /> Google Scholar</a>
+				</div>
+
+			</div>
+			<div class="col-md-6 widget">
+
+				<div class="widget-body" >
+					<img src="assets/images/CMU.png" alt=""/>
+				</div>
+
+			</div>
+		</div> <!-- /row of widgets -->
+
+	</div>
+</footer>
+
+
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>

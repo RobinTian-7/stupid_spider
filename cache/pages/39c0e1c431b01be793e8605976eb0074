@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Applied Cryptography Group | Stanford University</title>
+<script type="text/javascript">
+<!--
+if ((window.screen.width < 640) || (window.screen.height < 640)){document.write('<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">')}
+//-->
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://www.stanford.edu/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/su-identity.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/stanfordmodern.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/ceebox-min.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/mobile.css" media="only screen and (max-width: 640px)">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/print.css" media="print">
+<!--[if IEMobile]>
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/mobile.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/stanfordmodern/v2.5/css/wp7.css" media="screen">
+<![endif]-->
+<link href="https://www.stanford.edu/su-identity/css/su-identity.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie7.css" />
+<![endif]-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Brandbar snippet start -->
+<div id="brandbar">
+<div class="container" style="width:960px">
+<a href="http://www.stanford.edu" style="border:none;">
+<img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
+</a>
+</div> <!-- .container end -->
+</div> <!-- #brandbar end -->
+<!-- Brandbar snippet end -->
+
+<div id="su-wrap"> <!-- #su-wrap start -->
+<div id="su-content"> <!-- #su-content start -->
+
+<!-- Start #layout -->
+<div id="xlayout"> 
+<!-- Start #wrapper -->
+<div id="wrapper"> 
+
+<!-- Start #container -->
+<div id="container">
+
+<h1 class="">Applied Cryptography Group</h1>
+<!-- Start #content -->
+<div id="content"> 
+<!-- Start #center -->
+<div id="portal_left"> 
+<h3 class="first">Faculty</h3>
+<ul>
+  <li><a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a></li>
+</ul>
+<h3>Post-Docs</h3>
+<ul>
+<li><a href="https://chancharles92.github.io/">Binyi Chen</a></li>
+</ul>
+
+<h3>PhD Students</h3>
+<ul>
+<li><a href="https://aditi741997.github.io/">Aditi Partap</a></li>
+<li><a href="https://trishadatta.github.io/">Trisha Datta</a></li>
+<li><a href="https://jaehyungkim0.github.io/">Jaehyung Kim</a></li>
+<li><a href="https://sites.google.com/stanford.edu/kamilla-nazirkhanova/home">Kamilla Nazirkhanova</a></li>
+<li><a href="https://rohitnema.me/">Rohit Nema</a></li>
+<li><a href="https://web.stanford.edu/~meghas/">Megha Srivastava</a></li>
+<li><a href="https://www.linkedin.com/in/evan-m-laufer">Evan Laufer</a></li>
+</ul>
+
+<hr class="">
+<h3>PhD Alums</h3>
+<ul>
+<li><a href="https://bojinov.org/">Hristo Bojinov</a></li>
+<li><a href="https://crypto.stanford.edu/~abortz">Andrew Bortz</a></li>
+<li><a href="https://cs.nyu.edu/~bb/">Benedikt Bünz</a><br><span class="whereto">&rarr; &nbsp; Prof. at NYU</span></li>
+<li><a href="https://www.henrycg.com/">Henry Corrigan-Gibbs</a><br><span class="whereto">&rarr; &nbsp; Prof. at U.C.B</span></li>
+<li><a href="https://www.linkedin.com/in/glenn-durfee-226959/">Glenn Durfee</a></li>
+<li><a href="https://crypto.stanford.edu/~saba/">Saba Eskandarian</a><br><span class="whereto">&rarr; &nbsp; Prof. at UNC</span></li>
+<li><a href="https://sites.google.com/site/benafisch/">Ben Fisch</a><br><span class="whereto">&rarr; &nbsp; Prof. at Yale</span></li>
+<li><a href="https://crypto.stanford.edu/craig/">Craig Gentry</a><br><span class="whereto">&rarr; &nbsp; CTO TripleBlind</span></li>
+<li><a href="https://crypto.stanford.edu/~eujin">Eu-Jin Goh</a></li>
+<li><a href="https://crypto.stanford.edu/~pgolle/">Philippe Golle</a></li>
+<li><a href="https://mikehamburg.com">Mike Hamburg</a></li>
+<li>Jeremy Horwitz</li>
+<li><a href="https://crypto.stanford.edu/~skim13/">Sam Kim</a></li>
+<li><a href="https://cs.stanford.edu/~dkogan/">Dima Kogan</a><br><span class="whereto">&rarr; &nbsp; CTO Fordefi</span></li>
+<li><a href="https://crypto.stanford.edu/~klewi">Kevin Lewi</a></li>
+<li><a href="https://crypto.stanford.edu/~blynn/">Ben Lynn</a></li>
+<li><a href="https://theory.stanford.edu/~mikeym/page.shtml?home">Mike Malkin</a></li>
+<li><a href="https://cs.stanford.edu/~yanm2/">Yan Michalevsky</a></li>
+<li><a href="https://research.microsoft.com/users/mironov/">Ilia Mironov</a></li>
+<li><a href="https://crypto.stanford.edu/~nagendra/">Nagendra Modadugu</a></li>
+<li>Hart Montgomery</li>
+<li><a href="https://c.rypto.systems/">Wilson Nguyen</a></li>
+<li><a href="https://cs.stanford.edu/~valerini">Valeria Nikolaenko</a></li>
+<li><a href="https://cs.stanford.edu/~aozdemir/">Alex Ozdemir</a><br><span class="whereto">&rarr; &nbsp; Prof. at G.Tech</span></li>
+<li><a href="https://www.neilaperry.com">Neil Perry</a></li>
+<li><a href="https://www.ananthraghunathan.com">Ananth Raghunathan</a></li>
+<li><a href="https://www.cs.utexas.edu/~hovav/">Hovav Shacham</a><br><span class="whereto">&rarr; &nbsp; Prof. at UCSD</span></li>
+<li><a href="https://nusret1996.github.io/">Nusret Tas</a></li>
+<li><a href="https://floriantramer.com/">Florian Tramèr</a><br><span class="whereto">&rarr; &nbsp; Prof. at ETH</span></li>
+<li><a href="https://wahby.org/">Riad S. Wahby</a><br><span class="whereto">&rarr; &nbsp; Prof. at CMU</span></li>
+<li><a href="https://crypto.stanford.edu/~dwu4/">David Wu</a><br><span class="whereto">&rarr; &nbsp; Prof. at U.T.Austin</span></li>
+<li><a href="https://crypto.stanford.edu/~zhandry">Mark Zhandry</a><br><span class="whereto">&rarr; &nbsp; Prof. at Stanford</span></li>
+<li><a href="https://jzimmerman.io/">Joe Zimmerman</a></li>
+</ul>
+<h3>Post-Doc Alums</h3>
+
+<ul>
+<li><a href="https://jbonneau.com/">Joseph Bonneau</a><br><span class="whereto">&rarr; &nbsp; Prof. at NYU</span></li>
+<li><a href="https://zvikab.bitbucket.io/">Zvika Brakerski</a><br><span class="whereto">&rarr; &nbsp; Prof. at Weizmann</span></li>
+<li><a href="https://theory.stanford.edu/~dfreeman/">David Freeman</a></li>
+<li><a href="https://www.cs.columbia.edu/~suman/">Suman Jana</a><br><span class="whereto">&rarr; &nbsp; Prof. at Columbia</span></li>
+<li><a href="https://www.ics.uci.edu/~stasio/">Stanislaw Jarecki</a><br><span class="whereto">&rarr; &nbsp; Prof. at U.C.I</span></li>
+<li><a href="https://www.cs.princeton.edu/~arvindn/">Arvind Narayanan</a><br><span class="whereto">&rarr; &nbsp; Prof. at Princeton</span></li>
+<li><a href="https://liorrotem.github.io/">Lior Rotem</a><br><span class="whereto">&rarr; &nbsp; Prof. at HUJI</span></li>
+<li><a href="https://www.gilsegev.net/">Gil Segev</a><br><span class="whereto">&rarr; &nbsp; Prof. at HUJI</span></li>
+<li><a href="https://www.cs.utexas.edu/~bwaters/">Brent Waters</a><br><span class="whereto">&rarr; &nbsp; Prof. at U.T.Austin</span></li>
+
+<h3>Web Page Alums</h3>
+<ul>
+<li><a href="https://crypto.stanford.edu/web1997/">Legacy Page (1997-2014)</a></li>
+</ul>
+
+<br>
+
+
+</ul>
+</div>
+<div id="portal_center">
+<p> 
+The Applied Crypto Group is a part of the 
+<a href="http://seclab.stanford.edu/">Security Lab</a> in the 
+<a href="http://cs.stanford.edu/">Computer Science Department</a>
+at <a href="http://www.stanford.edu/">Stanford University</a>. 
+Research projects in the group focus
+on various aspects of network and computer security. In particular the group
+focuses on applications of cryptography to real-world security problems. For
+more information follow the links below.  
+</p>
+<hr class="clear red">
+
+<div class="feature-left">
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C1"><img src="img/lattice.png" width=200 class="left-noborder"></a>
+</div>
+<div class="feature-right">
+<h3><a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C1">Lattices in Cryptography</a></h3>
+<p>
+Integer lattices have found many applications in cryptography: 
+in <a href="http://crypto.stanford.edu/~dabo/pubs/abstracts/dhmsb.html">proofs of security</a>, 
+in <a href="http://crypto.stanford.edu/~dabo/pubs/abstracts/prq.html">attacks</a>, and 
+in <a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C1">constructing cryptosystems</a>.
+</p>
+</div>
+
+<hr class="clear">
+<div class="feature-left">
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S"><img src="img/priv.png" width="200" class="left-noborder"></a>
+</div>
+<div class="feature-right">
+<h3><a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S">Privacy</a></h3>
+<p>
+Can multi-user services operate without sending all user data to the 
+cloud in the clear?  Some examples include 
+<a href="http://crypto.stanford.edu/~dabo/pubs/abstracts/locpriv.html">private location-based services</a>, 
+<a href="http://crypto.stanford.edu/prio/">private computation of aggregate statistics</a>, 
+<a href="http://crypto.stanford.edu/~dabo/pubs/abstracts/garbled.html">private recommendation systems</a>, 
+<a href="http://crypto.stanford.edu/~dabo/pubs/abstracts/conjunctions.html">private queries to a database</a>, and
+<a href="https://crypto.stanford.edu/~dabo/pubs/abstracts/riposte.html">anonymous messaging</a>.
+</p>
+</div>
+
+<hr class="clear">
+<div class="feature-left">
+<a href="https://cbr.stanford.edu/"><img src="img/blockchain.jpg" width="200" class="left-noborder"></a>
+</div>
+<div class="feature-right">
+<h3><a href="https://cbr.stanford.edu/">Blockchain technologies</a></h3>
+<p>
+We are developing cryptographic tools with applications to blockchains.
+We are also teaching a course on the topic, 
+<a href="https://cs251.stanford.edu/">CS251</a>.
+</p>
+</div>
+
+
+<hr class="clear">
+
+<div class="feature-left">
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C7"><img src="img/pair.png" width=200 class="left-noborder"></a>
+</div>
+<div class="feature-right">
+<h3><a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C7">Pairings-Based Cryptography</a></h3>
+<p>
+Cryptographic pairings have
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C7">numerous applications</a> 
+to cryptography, including everything from  
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C6">identity-based encryption</a> and 
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C8">short digital signatures</a> to
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C9">broadcast encryption</a> and
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#C12">search-friendly encryption</a>.
+</p>
+</div>
+
+<hr class="clear">
+<div class="feature-left">
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S"><img src="img/web.png" width="200" class="left-noborder"></a> 
+</div>
+<div class="feature-right">
+<h3><a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S">Computer and Web Security</a></h3>
+<p>
+Computer security research explores architectures that improve software security
+and enhances our understanding of attack strategies. 
+Our research covers 
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S1">SSL and TLS</a>,
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S2">Web security</a>,
+and areas of 
+<a href="http://crypto.stanford.edu/~dabo/pubs/pubsbytopic.html#S3">operating systems security</a>.
+</p>
+</div>
+
+
+<hr class="clear red" style="clear:both;">
+<!-- End #center --> 
+
+<h4>Projects</h4>
+
+<ul style="list-style-type:square; margin-left:1em;">
+<li><h5><a href="//crypto.stanford.edu/bulletproofs/">Bulletproofs: Short Proofs for Confidential Transactions and More</a></h5></li>
+<li><h5><a href="//crypto.stanford.edu/prio/">Prio: Private, Robust, and Scalable Computation of Aggregate Statistics</a></h5></li>
+
+<li><h5><a href="//crypto.stanford.edu/balloon/">Balloon Hashing: Memory-Hard Password Hashing</a></h5></li>
+
+<li><h5><a href="//crypto.stanford.edu/powerspy/">PowerSpy: Location Tracking using Mobile Device Power Analysis</a></h5></li>
+
+<li><h5><a href="//crypto.stanford.edu/~dabo/pubs/abstracts/riposte.html">Riposte: An Anonymous Messaging System Handling Millions of Users</a></h5></li>
+
+<li><h5><a href="//crypto.stanford.edu/gyrophone/">Gyrophone: Recognizing Speech from Gyroscope Signals</a></h5></li>
+
+<li><h5><a href=http://crypto.stanford.edu/portia/>PORTIA: Managing sensitive information in a wired world</a></h5></li>
+
+<li><h5><a href="http://crypto.stanford.edu/locpriv/">Location privacy</a></h5></li>
+
+<li><h5><a href=http://crypto.stanford.edu/ibe/>Identity Based Encryption</a> email system (IBE secure email)</h5></li>
+
+<li><h5><a href="http://crypto.stanford.edu/~dabo/ITTC/">The
+ITTC project:</a> Intrusion tolerance via threshold
+cryptography </h5></li>
+
+<!--
+<li><h5>
+<a href="http://www-db.stanford.edu/~daswani/wallets/">
+Electronic wallets project:</a> wallets for desktops and
+handheld devices</h5></li>
+
+<li><h5>
+<a href="http://crypto.stanford.edu/ssl-mitm">
+SSL man in the middle</a>: a course project</h5></li>
+
+<li><h5>
+<a href="http://crypto.stanford.edu/~nagendra/projects/Palm_RSA/">
+Generating RSA</a> keys on the PalmPilot</h5></li>
+
+<li><h5>
+<a href="http://crypto.stanford.edu/~nagendra/projects/StreamAuth/">
+Authenticating streaming data</a></h5></li>
+
+<li><h5>
+<a href="http://crypto.stanford.edu/~eujin/sslsniffer/index.html">
+SSL sniffer</a>: a great way to see the SSL protocol in action</h5></li>
+-->
+</ul>
+
+<br><br>
+<hr class="red">
+<small>
+<b>Export Control Warning</b>: The US Government regulates the physical export or
+transmission of cryptographic source and corresponding object code outside the
+borders of the US and within the US when the recipient is an embassy or an
+affiliate of a foreign government. Posting encrypted code to the internet and
+making it publicly available is considered an export and may entail US
+government notification requirements. Please see Stanford's 
+<a href="http://doresearch.stanford.edu/research-scholarship/export-controls/research-and-encryption">Export Control Encryption Page</a> 
+if you have a need to take, transfer or transmit
+Stanford-generated encryption code outside of the US or to share it with
+US-based representatives of foreign governments. 
+</small>
+</div>
+
+<!-- Start #sidebar-right (Removable) -->
+<div id="sidebar-right" class="sidebar" style="display:block;"> 
+</div>
+
+<!-- End #sidebar-right (Removable) -->
+<div class="content_clear"></div>
+</div>
+<!-- End #content --> 
+</div>
+<!-- End #container --> 
+</div>
+<!-- End #wrapper --> 
+</div>
+<!-- End #layout --> 
+</div>
+
+
+</div> <!-- #su-content end -->
+</div> <!-- #su-wrap end -->
+
+<!-- Global footer snippet start -->
+<div id="global-footer">
+<div class="container">
+<div class="row">
+<div id="bottom-logo" class="span2">
+<a href="http://www.stanford.edu">
+<img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+</a>
+</div>
+<!-- #bottom-logo end -->
+<div id="bottom-text" class="span10">
+<ul>
+<li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+<li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+<li class="search-stanford"><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+<li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+<li class="emergency-info"><a href="http://emergency.stanford.edu">Emergency Info</a></li>
+</ul>
+</div> <!-- .bottom-text end -->
+<div class="clear"></div>
+<p class="copyright vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.&nbsp;&nbsp;
+<span id="copyright-complaint"><a href="http://www.stanford.edu/group/security/dmca.html" class="copyright-complaint" >Copyright Complaints</a></span>
+</p>
+</div> <!-- .row end --> 
+</div> <!-- .container end --> 
+</div> <!-- global-footer end -->
+<!-- Global footer snippet end -->
+</body>
+</html>
+

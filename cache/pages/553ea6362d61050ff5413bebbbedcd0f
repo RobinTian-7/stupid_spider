@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        /* set style of buttons on navigation bar */
+        #navigation_bar button {
+            padding-left: 10px;
+            color: #436076;
+            text-decoration: none;
+            font-family: Roboto, Microsoft JhengHei, sans-serif;
+            font-size: 14px;
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+            height: 50px;
+        }
+
+        #navigation_bar button.active {
+            background-color: #DCAA6D;
+        }
+
+        #navigation_bar button:hover {
+            background-color: #DCAA6D;
+        }
+
+        /* set style of tabs */
+        .tabcontent {
+            display: none;
+        }
+
+        div.tabcontent {
+            font-family: Roboto, Microsoft JhengHei, sans-serif;
+            font-size: 15px;
+        }
+
+        div#personal_info_bar p {
+            margin-bottom: 0;
+        }
+    </style>
+    <title>Lei CHEN's Personal Webpage</title>
+</head>
+
+<body style="margin: 0" data-gr-c-s-loaded="true">
+    <img src="./index_files/image004.jpg" style="float: left; margin-top: 50px; margin-left: 80px; border-radius: 4px;
+width: 220px;">
+    <div id="personal_info_bar" style="background-color: #436076; min-height: 320px; margin-top: 0px;">
+        <div id="personal_info" style="margin-left: 380px; max-width: 800px; padding-top: 25px">
+            <h1 style="color: #DCAA6D; font-family: Roboto,Microsoft JhengHei,sans-serif">Lei CHEN</h1>
+            <!--<h4 style="color: #FFFFFF; font-family: Arial">PhD in Computer Science, University of Waterloo</h4>-->
+            <p style="color: #DCAA6D; font-size: 17px; font-weight: bold; font-family: Roboto,Microsoft JhengHei,sans-serif">Chair Professor</p>
+            <p style="color: #DCAA6D; font-size: 17px; font-weight: bold; font-family: Roboto,Microsoft JhengHei,sans-serif">Director of HKUST Big Data Institute</p>
+            <p style="color: #DCD5C8; line-height: 1.3; font-size: 15px; font-family: Roboto,Microsoft JhengHei,sans-serif">
+                Department of Computer Science and Engineering<br>
+                Hong Kong University of Science and Technology<br>
+                Clear Water Bay, Kowloon, Hong Kong</p>
+            <p style="color: #DCD5C8; line-height: 1.3; font-size: 15px; font-family: Roboto,Microsoft JhengHei,sans-serif">
+                Lei Chen received his BS degree in Computer Science
+                at Tian Jin University ,P.R.China(BS 94), and an MA degree in computer science
+                at Asian Institute of Technology (AIT) Asian Institute of Technology (MS 97).
+                He received a Ph.D. degree in Computer Science at University of Waterloo.
+                Lei Chen is an IEEE Fellow and ACM Distinguished Scientist.</p>
+        </div>
+    </div>
+    <div id="navigation_background" style="background-color: #DCD5C8; min-height: 50px;">
+        <div id="navigation_bar" style="margin-left: 330px; height: inherit;">
+            <button class="tablink" onclick="switchTab(event, &#39;Research Interests&#39;)">Research Interests</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Awards&#39;)">Awards</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Student Achievements&#39;)">Student Achievements</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Courses&#39;)">Courses</button>
+            <button class="tablink active" onclick="switchTab(event, &#39;Publications&#39;)">Publications</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Professional Services&#39;)">Professional Services</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Group Members&#39;)">Group Members</button>
+            <button class="tablink" onclick="switchTab(event, &#39;Research Links&#39;)">Research Links</button>
+        </div>
+    </div>
+    <div id="contact_info" style="float: left; background-color: #DCAA6D; width: 220px; height: 250px;
+    margin-left: 80px; margin-top: 25px; border-radius: 4px">
+        <table id="contact_info_details" style="padding-top: 35px; margin-left: 15px">
+            <tbody>
+                <tr style="line-height: 1.625">
+                    <td style="font-weight: bold; color: #FFFFFF">Office: </td>
+                    <td style="color: #FFFFFF">Room 3561</td>
+                </tr>
+                <tr style="line-height: 1.625">
+                    <td style="font-weight: bold; color: #FFFFFF">Tel: </td>
+                    <td style="color: #FFFFFF">852-2358-6980</td>
+                </tr>
+                <tr style="line-height: 1.625">
+                    <td style="font-weight: bold; color: #FFFFFF">Fax: </td>
+                    <td style="color: #FFFFFF">852-2358-1477</td>
+                </tr>
+                <tr style="line-height: 1.625">
+                    <td style="font-weight: bold; color: #FFFFFF">Email: </td>
+                    <td>
+                        <a href="mailto:leichen@cse.ust.hk" style="text-decoration: none; color: #FFFFFF;">leichen@cse.ust.hk</a>
+                    </td>
+                </tr>
+                <tr style="line-height: 1.625">
+                    <td style="font-weight: bold; vertical-align: top; color: #FFFFFF">Group: </td>
+                    <td>
+                        <a href="http://www.cse.ust.hk/db/" target="_blank" style="color: #FFFFFF">Database Research Group</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="content_background" style="width: 100%; min-height: 450px; background-color: #FFFFFF">
+        <div id="Research Interests" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+                border-bottom: 2px solid #DCD5C8; line-height: 1.625">Research Interests</p>
+            <ul>
+                <li style="line-height: 1.625">Data-Driven Machine Learning</li>
+                <li style="line-height: 1.625">Crowdsourcing-based Data Processing</li>
+                <li style="line-height: 1.625">Uncertain and Probabilistic databases</li>
+                <li style="line-height: 1.625">Web data management</li>
+                <li style="line-height: 1.625">Multimedia and Time series databases</li>
+                <li style="line-height: 1.625">Privacy</li>
+            </ul>
+
+            <p style="margin: 0; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+                border-bottom: 2px solid #DCD5C8; line-height: 1.625">Research Groups</p>
+            <ul>
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/kg.png">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/knowledgegraph/home.html">Knolwedge Base Research Group</a>
+                    </span>
+                </li>
+
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/machinelearning.png">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/dbml/">Data-Drive Machine Learning Group</a>
+                    </span>
+                </li>
+
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/biggraph.jpeg">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/biggraph/index.html">Big Graph Research Group</a>
+                    </span>
+                </li>
+
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/stc.png">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/stc/">Spatial Temporal and Crowdsourcing Group</a>
+                    </span>
+                </li>
+
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/blockchain.png">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/blockchain/index.html">Blockchain Group</a>
+                    </span>
+                </li>
+
+                <li style="line-height: 1.625">
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <img border=0 width=102 height=102 src="./index_files/DB4AI.png">
+                    </span>
+                    <span style='font-size:11.5pt;font-family:Roboto'>
+                        <a target="_blank" href="https://cse.hkust.edu.hk/db4ai/index.html">DB4AI Group</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div id="Awards" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+                border-bottom: 2px solid #DCD5C8; line-height: 1.625">Awards</p>
+            <ul>
+                <li style="line-height: 1.625">
+                    <a href="https://vldb.org/2022/?conference-awards">VLDB Best Research Paper Award, VLDB 2022</a>
+                    <br>
+                    <a style="font-size:10.5pt" href="https://vldb.org/pvldb/vol15/p1937-peng.pdf">Sancus: Staleness-Aware Communication-Avoiding Full-Graph Decentralized Training in Large-Scale Graph Neural Networks</a>
+                </li>
+                <li style="line-height: 1.625">
+                    <a href="https://sigmod.org/sigmod-awards/citations/2015-sigmod-test-of-time-award/">SIGMOD Test-of-Time Award, SIGMOD 2015</a>
+                </li>
+                <li style="line-height: 1.625">Excellent Demo Award, VLDB 2014</li>
+                <li style="line-height: 1.625">Google Faculty Award, (2013)</li>
+                <li style="line-height: 1.625">Best Paper Award, APWeb (2013)</li>
+                <li style="line-height: 1.625">Best Paper Award, DASFAA 2010</li>
+                <li style="line-height: 1.625">Best Paper Award, DASFAA 2009</li>
+                <li style="line-height: 1.625">Best Student Paper Award Runner-Up, DASFAA 2012</li>
+                <li style="line-height: 1.625">Best Paper Session, Percom 2007</li>
+                <li style="line-height: 1.625">Outstanding Reviewer Award, ICDE 2010</li>
+            </ul>
+        </div>
+        <div id="Student Achievements" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">Student Supervision Achievements</p>
+            <ul>
+                <li style="line-height: 1.625">Yongxin Tong, Microsoft Research Asia Fellowship, 2012</li>
+                <li style="line-height: 1.625">Mingxuan Yuan, Best Student Runner-Up Award, DASFAA 2012</li>
+                <li style="line-height: 1.625"><a href="http://www.cse.ust.hk/News/YER2009/" target="_blank" style="color:#000;">
+                        Xiang Lian, The HKIE Outstanding Paper Award for Young Engineers and
+                        Researchers</a> , Hong Kong Institution of Engineers (HKIE), Hong Kong, China, 2009</li>
+                <li style="line-height: 1.625"><a href="http://www.cse.ust.hk/News/SCSA2008/" target="_blank" style="color:#000;">
+                        Professor Samuel Chanson Best Final Year Project Award 2008</a>
+                    (UG Students: Group 1: HO, Siu Pang,WONG, Pong Ching,WONG, Hiu Fai Frankie;
+                    Group 2: CHING, Chi Chung, CHAN, Kwai Keung, WONG, Sze Wan)</li>
+            </ul>
+        </div>
+        <div id="Courses" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">Courses</p>
+            <p style="font-weight: bold">Current Course: </p>
+            <ul>
+                <li style="line-height: 1.625">
+                    <a href="https://cse.hkust.edu.hk/~leichen/courses/mscbd-5002/" target="_blank" style="color: black">
+                        MSC-BD 5002 Data Mining and Knowledge Discovery (Fall 2021)</a>
+                </li>
+            </ul>
+            <p style="font-weight: bold">Past Courses: </p>
+            <ul>
+                <li style="line-height: 1.625">DSAA 5012 Advanced Database Management for Data Science (Spring 2021)</li>
+                <li style="line-height: 1.625">COMP 4331 Data Mining (Spring 2020)</li>
+                <li style="line-height: 1.625">MSCBD 5002 Knowledge Discovery and Data Mining (Spring 2020)</li>
+                <li style="line-height: 1.625">COMP 4331 Data Mining ( Fall 2018)</li>
+                <li style="line-height: 1.625">COMP 4331 Data Mining ( Spring 2018)</li>
+                <li style="line-height: 1.625">COMP 3311 Database Management Systems ( (Fall 2017)</li>
+                <li style="line-height: 1.625">COMP 4332 (RMBI 4310) Big Data Mining (Spring 2017)</li>
+                <li style="line-height: 1.625">COMP 5331 Knowledge Discovery in Databases (Fall 2016)</li>
+                <li style="line-height: 1.625">COMP 4332 (RMBI 4310) Big Data Mining (Spring 2016)</li>
+                <li style="line-height: 1.625">COMP 5331 Knowledge Discovery in Databases (Fall 2015)</li>
+                <li style="line-height: 1.625">COMP 4332 (RMBI 4310) Big Data Mining (Spring 2015)</li>
+                <li style="line-height: 1.625">COMP 5331 Knowledge Discovery in Databases (Fall 2014)</li>
+                <li style="line-height: 1.625">COMP 4332 (RMBI 4310) Big Data Mining (Spring 2014)</li>
+                <li style="line-height: 1.625">FYTG 5101 Data-Driven Processing (Spring 2014)</li>
+                <li style="line-height: 1.625">COMP 6311D Hot Topics on Big Data (Fall 2013)</li>
+                <li style="line-height: 1.625">COMP 3311-Database Management Systems (Spring 2013)</li>
+                <li style="line-height: 1.625">FYTG 5101 Data-Driven Processing (Fall 2012)</li>
+                <li style="line-height: 1.625">COMP 2012-Object-Oriented Programming and Data Structures (Spring 2012)</li>
+                <li style="line-height: 1.625">COMP 3311- Database Management Systems (Fall 2011)</li>
+                <li style="line-height: 1.625">COMP 630Q- Management of Uncertain Data (Spring 2011)</li>
+                <li style="line-height: 1.625">COMP 231- Database Management Systems (Fall 2010)</li>
+                <li style="line-height: 1.625">COMP 231- Database Management Systems (Spring 2010)</li>
+                <li style="line-height: 1.625">COMP 231- Database Management Systems (Spring 2009)</li>
+                <li style="line-height: 1.625">COMP 630P- Financial Time Series Analysis (Spring 2009)</li>
+                <li style="line-height: 1.625">COMP 231- Database Management Systems (Spring 2008)</li>
+                <li style="line-height: 1.625">COMP 171- Data Structures and Algorithms (Fall 2007)</li>
+                <li style="line-height: 1.625">COMP 530 Database System and Implementation (Spring 2007)</li>
+                <li style="line-height: 1.625">COMP 171- Data Structures and Algorithms (Fall 2006)</li>
+                <li style="line-height: 1.625">COMP 630J- Similarity Search Over Databases (Spring 2006)</li>
+            </ul>
+        </div>
+        <div id="Publications" class="tabcontent" style="width: 60%; margin-left: 380px; display: block;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625"> Publications
+                <a href="https://dblp.uni-trier.de/pid/c/LeiChen0002.html" style="color: #DCAA6D;
+        font-size: 15px; font-weight: normal; text-decoration: none" target="_blank">
+                    [ My DBLP Entry ]</a></p>
+            
+            <p style="font-weight: bold">2022:</p>
+            <ul>
+                <li style="line-height: 1.625">Yongxin Tong, Xuchen Pan, Yuxiang Zeng, Yexuan Shi, Chunbo Xue, Zimu Zhou, Xiaofei Zhang, Lei Chen, Yi Xu, Ke Xu, Weifeng Lv: Hu-Fu: Efficient and Secure Spatial Queries over Data Federation. Proc. VLDB Endow. 15(6): 1159-1172 (2022)</li>
+                <li style="line-height: 1.625">Hongzheng Li, Yingxia Shao, Junping Du, Bin Cui, Lei Chen: An I/O-Efficient Disk-based Graph System for Scalable Second-Order Random Walk of Large Graphs. Proc. VLDB Endow. 15(8): 1619-1631 (2022)</li>
+                <li style="line-height: 1.625">Jingshu Peng, Zhao Chen, Yingxia Shao, Yanyan Shen, Lei Chen, Jiannong Cao: SANCUS: Staleness-Aware Communication-Avoiding Full-Graph Decentralized Training in Large-Scale Graph Neural Networks. Proc. VLDB Endow. 15(9): 1937-1950 (2022)</li>
+                <li style="line-height: 1.625">Xiangmin Zhou, Lei Chen: Migrating Social Event Recommendation Over Microblogs. Proc. VLDB Endow. 15(11): 3213-3225 (2022)</li>
+                <li style="line-height: 1.625">Xuchen Pan, Yongxin Tong, Chunbo Xue, Zimu Zhou, Junping Du, Yuxiang Zeng, Yexuan Shi, Xiaofei Zhang, Lei Chen, Yi Xu, Ke Xu, Weifeng Lv: Hu-Fu: A Data Federation System for Secure Spatial Queries. Proc. VLDB Endow. 15(12): 3582-3585 (2022)</li>
+                <li style="line-height: 1.625">Xiao-Hui Li, Caleb Chen Cao, Yuhan Shi, Wei Bai, Han Gao, Luyu Qiu, Cong Wang, Yuanyuan Gao, Shenjia Zhang, Xun Xue, Lei Chen: A Survey of Data-Driven and Knowledge-Aware eXplainable AI. IEEE Trans. Knowl. Data Eng. 34(1): 29-49 (2022)</li>
+                <li style="line-height: 1.625">Peng Cheng, Xiang Lian, Lei Chen, Siyuan Liu: Maximizing the Utility in Location-Based Mobile Advertising. IEEE Trans. Knowl. Data Eng. 34(2): 776-788 (2022)</li>
+                <li style="line-height: 1.625">Yue Wang, Zhe Wang, Ziyuan Zhao, Zijian Li, Xun Jian, Hao Xin, Lei Chen, Jianchun Song, Zhenhong Chen, Meng Zhao: Effective Similarity Search on Heterogeneous Networks: A Meta-Path Free Approach. IEEE Trans. Knowl. Data Eng. 34(7): 3225-3240 (2022)</li>
+                <li style="line-height: 1.625">Yurong Cheng, Lei Chen, Ye Yuan, Guoren Wang, Boyang Li, Fusheng Jin: Strict and Flexible Rule-Based Graph Repairing. IEEE Trans. Knowl. Data Eng. 34(7): 3521-3535 (2022)</li>
+                <li style="line-height: 1.625">Chen Jason Zhang, Haodi Zhang, Weiteng Xie, Nan Liu, Qifan Li, Di Jiang, Peiguang Lin, Kaishun Wu, Lei Chen: Cleaning Uncertain Data With Crowdsourcing - A General Model With Diverse Accuracy Rates. IEEE Trans. Knowl. Data Eng. 34(8): 3629-3642 (2022)</li>
+                <li style="line-height: 1.625">Yongxin Tong, Yuxiang Zeng, Zimu Zhou, Lei Chen, Ke Xu: Unified Route Planning for Shared Mobility: An Insertion-based Framework. ACM Trans. Database Syst. 47(1): 2:1-2:48 (2022)</li>
+                <li style="line-height: 1.625">Libin Zheng, Lei Chen, Peng Cheng: Privacy-preserving worker allocation in crowdsourcing. VLDB J. 31(4): 733-751 (2022)</li>
+                <li style="line-height: 1.625">Jiawei Zhou, Xiaoguang Li, Lifeng Shang, Lan Luo, Ke Zhan, Enrui Hu, Xinyu Zhang, Hao Jiang, Zhao Cao, Fan Yu, Xin Jiang, Qun Liu, Lei Chen: Hyperlink-induced Pre-training for Passage Retrieval in Open-domain Question Answering. ACL (1) 2022: 7135-7146</li>
+                <li style="line-height: 1.625">Ge Lv, Lei Chen, Caleb Chen Cao: On Glocal Explainability of Graph Neural Networks. DASFAA (1) 2022: 648-664</li>
+                <li style="line-height: 1.625">Libin Zheng, Peng Cheng, Lei Chen, Jianxing Yu, Xuemin Lin, Jian Yin: Crowdsourced Fact Validation for Knowledge Bases. ICDE 2022: 938-950</li>
+                <li style="line-height: 1.625">Haoyang Li, Shimin Di, Zijian Li, Lei Chen, Jiannong Cao: Black-box Adversarial Attack and Defense on Graph Neural Networks. ICDE 2022: 1017-1030</li>
+                <li style="line-height: 1.625">Jiabao Jin, Peng Cheng, Lei Chen, Xuemin Lin, Wenjie Zhang: GridTuner: Reinvestigate Grid Size Selection for Spatiotemporal Prediction Models. ICDE 2022: 1193-1205</li>
+                <li style="line-height: 1.625">Chengmin Wu, Enrui Hu, Ke Zhan, Lan Luo, Xinyu Zhang, Hao Jiang, Qirui Wang, Zhao Cao, Fan Yu, Lei Chen: Triple-Fact Retriever: An explainable reasoning retrieval model for multi-hop QA problem. ICDE 2022: 1206-1218</li>
+                <li style="line-height: 1.625">Xi Chen, Xiangmin Zhou, Jeffrey Chan, Lei Chen, Timos Sellis, Yanchun Zhang: Event Popularity Prediction Using Influential Hashtags from Social Media (Extended Abstract). ICDE 2022: 1553-1554</li>
+                <li style="line-height: 1.625">Yexuan Shi, Yongxin Tong, Yuxiang Zeng, Zimu Zhou, Bolin Ding, Lei Chen: Efficient Approximate Range Aggregation over Large-scale Spatial Data Federation (Extended Abstract). ICDE 2022: 1559-1560</li>
+                <li style="line-height: 1.625">Xupeng Miao, Wentao Zhang, Yingxia Shao, Bin Cui, Lei Chen, Ce Zhang, Jiawei Jiang: Lasagne: A Multi-Layer Graph Convolutional Network Framework via Node-aware Deep Architecture (Extended Abstract). ICDE 2022: 1561-1562</li>
+                <li style="line-height: 1.625">Zhirong Yuan, You Peng, Peng Cheng, Li Han, Xuemin Lin, Lei Chen, Wenjie Zhang: Efficient $k-\text{clique}$ Listing with Set Intersection Speedup. ICDE 2022: 1955-1968</li>
+                <li style="line-height: 1.625">Wangze Ni, Peng Cheng, Lei Chen: Mixing Transactions with Arbitrary Values on Blockchains. ICDE 2022: 2602-2614</li>
+                <li style="line-height: 1.625">Shendi Wang, Haoyang Li, Caleb Chen Cao, Xiao-Hui Li, Ng Ngai Fai, Jianxin Liu, Xun Xue, Hu Song, Jinyu Li, Guangye Gu, Lei Chen: Tower Bridge Net (TB-Net): Bidirectional Knowledge Graph Aware Embedding Propagation for Explainable Recommender Systems. ICDE 2022: 3268-3279</li>
+                <li style="line-height: 1.625">Qiyu Liu, Yanyan Shen, Lei Chen: HAP: An Efficient Hamming Space Index Based on Augmented Pigeonhole Principle. SIGMOD Conference 2022: 917-930</li>
+                <li style="line-height: 1.625">Yuxiang Zeng, Yongxin Tong, Lei Chen: Faster and Better Solution to Embed Lp Metrics by Tree Metrics. SIGMOD Conference 2022: 2135-2148</li>
+                <li style="line-height: 1.625">Chengzhen Fu, Enrui Hu, Letian Feng, Zhicheng Dou, Yantao Jia, Lei Chen, Fan Yu, Zhao Cao: Leveraging Multi-view Inter-passage Interactions for Neural Document Ranking. WSDM 2022: 298-306</li>
+                <li style="line-height: 1.625">Jiachuan Wang, Lei Chen, Charles Wang Wai Ng: A New Class of Polynomial Activation Functions of Deep Learning for Precipitation Forecasting. WSDM 2022: 1025-1035</li>
+                <li style="line-height: 1.625">Luyu Qiu, Yi Yang, Caleb Chen Cao, Yueyuan Zheng, Hilary Hei Ting Ngai, Janet Hui-wen Hsiao, Lei Chen: Generating Perturbation-based Explanations with Robustness to Out-of-Distribution Data. WWW 2022: 3594-3605</li>
+            </ul>
+            <p style="font-weight: bold">2021:</p>
+            <ul>
+                <li style="line-height: 1.625">Lei Chen, Hongzhi Wang, Yongxin Tong, Hong Gao: Preface to the Special Issue on Data Management and Analysis Technique Supporting AI. Int. J. Softw. Informatics 11(1): 1-4 (2021)</li>
+                <li style="line-height: 1.625">Peng Cheng, Jiabao Jin, Lei Chen, Xuemin Lin, Libin Zheng: A Queueing-Theoretic Framework for Vehicle Dispatching in Dynamic Car-Hailing. Proc. VLDB Endow. 14(11): 2177-2189 (2021)</li>
+                <li style="line-height: 1.625">Jingzhi Fang, Yanyan Shen, Yue Wang, Lei Chen: ETO: Accelerating Optimization of DNN Operators by High-Performance Tensor Program Reuse. Proc. VLDB Endow. 15(2): 183-195 (2021)</li>
+                <li style="line-height: 1.625">Alexander Zhou, Yue Wang, Lei Chen: Butterfly Counting on Uncertain Bipartite Networks. Proc. VLDB Endow. 15(2): 211-223 (2021)</li>
+                <li style="line-height: 1.625">Liang Li, Guoren Wang, Gang Wu, Ye Yuan, Lei Chen, Xiang Lian: A Comparative Study of Consistent Snapshot Algorithms for Main-Memory Database Systems. IEEE Trans. Knowl. Data Eng. 33(2): 316-330 (2021)</li>
+                <li style="line-height: 1.625">Yue Wang, Zonghao Feng, Lei Chen, Zijian Li, Xun Jian, Qiong Luo: Efficient Similarity Search for Sets over Graphs. IEEE Trans. Knowl. Data Eng. 33(2): 444-458 (2021)</li>
+                <li style="line-height: 1.625">Yurong Cheng, Ye Yuan, Lei Chen, Christophe G. Giraud-Carrier, Guoren Wang, Boyang Li: Event-Participant and Incremental Planning over Event-Based Social Networks. IEEE Trans. Knowl. Data Eng. 33(2): 474-488 (2021)</li>
+                <li style="line-height: 1.625">Jiayang Tu, Peng Cheng, Lei Chen: Quality-Assured Synchronized Task Assignment in Crowdsourcing. IEEE Trans. Knowl. Data Eng. 33(3): 1156-1168 (2021)</li>
+                <li style="line-height: 1.625">Yongxin Tong, Yuxiang Zeng, Bolin Ding, Libin Wang, Lei Chen: Two-Sided Online Micro-Task Assignment in Spatial Crowdsourcing. IEEE Trans. Knowl. Data Eng. 33(5): 2295-2309 (2021)</li>
+                <li style="line-height: 1.625">Fangda Guo, Ye Yuan, Guoren Wang, Lei Chen, Xiang Lian, Zimeng Wang: Cohesive Group Nearest Neighbor Queries on Road-Social Networks under Multi-Criteria. IEEE Trans. Knowl. Data Eng. 33(11): 3520-3536 (2021)</li>
+                <li style="line-height: 1.625">Yue Wang, Yulin Che, Xiang Lian, Lei Chen, Qiong Luo: Fast and Accurate SimRank Computation via Forward Local Push and its Parallelization. IEEE Trans. Knowl. Data Eng. 33(12): 3686-3700 (2021)</li>
+                <li style="line-height: 1.625">Fatma Ãzcan, Lei Chen: Guest Editorial: Special issue on VLDB 2019. VLDB J. 30(1): 1-2 (2021)</li>
+                <li style="line-height: 1.625">Yongqi Zhang, Quanming Yao, Lei Chen: Simple and automated negative sampling for knowledge graph embedding. VLDB J. 30(2): 259-285 (2021)</li>
+                <li style="line-height: 1.625">Yingxia Shao, Shiyue Huang, Yawen Li, Xupeng Miao, Bin Cui, Lei Chen: Memory-aware framework for fast and scalable second-order random walk over billion-edge natural graphs. VLDB J. 30(5): 769-797 (2021)</li>
+                <li style="line-height: 1.625">Mengyun Chen, Kai-Xin Gao, Xiaolei Liu, Zidong Wang, Ningxi Ni, Qian Zhang, Lei Chen, Chao Ding, Zheng-Hai Huang, Min Wang, Shuangling Wang, Fan Yu, Xinyuan Zhao, Dachuan Xu: THOR, Trace-based Hardware-driven Layer-Oriented Natural Gradient Descent Computation. AAAI 2021: 7046-7054</li>
+                <li style="line-height: 1.625">Dongdong Jin, Peng Cheng, Xuemin Lin, Lei Chen: Co-authorship Prediction Based on Temporal Graph Attention. APWeb/WAIM (1) 2021: 3-19</li>
+                <li style="line-height: 1.625">Haoyang Li, Lei Chen: Cache-based GNN System for Dynamic Graphs. CIKM 2021: 937-946</li>
+                <li style="line-height: 1.625">Maocheng Li, Jiachuan Wang, Libin Zheng, Han Wu, Peng Cheng, Lei Chen, Xuemin Lin: Privacy-Preserving Batch-based Task Assignment in Spatial Crowdsourcing with Untrusted Server. CIKM 2021: 947-956</li>
+                <li style="line-height: 1.625">Haoyang Li, Xueling Lin, Lei Chen: Fine-Grained Entity Typing via Label Noise Reduction and Data Augmentation. DASFAA (1) 2021: 356-374</li>
+                <li style="line-height: 1.625">Zihuan Xu, Siyuan Han, Lei Chen: PAS: Enable Partial Consensus in the Blockchain. DASFAA (3) 2021: 375-392</li>
+                <li style="line-height: 1.625">Di Jiang, Yuanfeng Song, Rongzhong Lian, Siqi Bao, Jinhua Peng, Huang He, Hua Wu, Chen Zhang, Lei Chen: Familia: A Configurable Topic Modeling Framework for Industrial Text Engineering. DASFAA (3) 2021: 516-528</li>
+                <li style="line-height: 1.625">Qiyu Liu, Libin Zheng, Xiang Lian, Lei Chen: Efficiently Discovering Regions of Interest with User-Defined Score Function. DASFAA (1) 2021: 591-608</li>
+                <li style="line-height: 1.625">Xinjun Ma, Yue Gong, Qirui Wang, Jingwei Huang, Lei Chen, Fan Yu: EPP-MVSNet: Epipolar-assembling based Depth Prediction for Multi-view Stereo. ICCV 2021: 5712-5720</li>
+                <li style="line-height: 1.625">Xingyu Yao, Yingxia Shao, Bin Cui, Lei Chen: UniNet: Scalable Network Representation Learning with Metropolis-Hastings Sampling. ICDE 2021: 516-527</li>
+                <li style="line-height: 1.625">Yuxiang Zeng, Yongxin Tong, Lei Chen: HST+: An Efficient Index for Embedding Arbitrary Metric Spaces. ICDE 2021: 648-659</li>
+                <li style="line-height: 1.625">Shimin Di, Quanming Yao, Yongqi Zhang, Lei Chen: Efficient Relation-aware Scoring Function Search for Knowledge Graph Embedding. ICDE 2021: 1104-1115</li>
+                <li style="line-height: 1.625">Qiyu Liu, Yanyan Shen, Lei Chen: LHist: Towards Learning Multi-dimensional Histogram for Massive Spatial Data. ICDE 2021: 1188-1199</li>
+                <li style="line-height: 1.625">Hao Xin, Xueling Lin, Lei Chen: CaSIE: Canonicalize and Informative Selection of the OpenIE system. ICDE 2021: 2009-2014</li>
+                <li style="line-height: 1.625">Yiming Li, Yanyan Shen, Lei Chen: Palette: Towards Multi-source Model Selection and Ensemble for Reuse. ICDE 2021: 2147-2152</li>
+                <li style="line-height: 1.625">Wangze Ni, Nian Chen, Peng Cheng, Lei Chen, Xuemin Lin: Crowdrebate: An Effective Platform to Get more Rebate for Customers. ICDE 2021: 2261-2266</li>
+                <li style="line-height: 1.625">Xujia Li, Yanyan Shen, Lei Chen: Mcore: Multi-Agent Collaborative Learning for Knowledge-Graph-Enhanced Recommendation. ICDM 2021: 330-339</li>
+                <li style="line-height: 1.625">Jingshu Peng, Yanyan Shen, Lei Chen: GraphANGEL: Adaptive aNd Structure-Aware Sampling on Graph NEuraL Networks. ICDM 2021: 479-488</li>
+                <li style="line-height: 1.625">Xiao-Hui Li, Yuhan Shi, Haoyang Li, Wei Bai, Caleb Chen Cao, Lei Chen: An Experimental Study of Quantitative Evaluations on Saliency Methods. KDD 2021: 3200-3208</li>
+                <li style="line-height: 1.625">Cong Wang, Xiao-Hui Li, Haocheng Han, Shendi Wang, Luning Wang, Caleb Chen Cao, Lei Chen: Counterfactual Explanations in Explainable AI: A Tutorial. KDD 2021: 4080-4081</li>
+                <li style="line-height: 1.625">Xinyu Zhang, Ke Zhan, Enrui Hu, Chengzhen Fu, Lan Luo, Hao Jiang, Yantao Jia, Fan Yu, Zhicheng Dou, Zhao Cao, Lei Chen: Answer Complex Questions: Path Ranker Is All You Need. SIGIR 2021: 449-458</li>
+                <li style="line-height: 1.625">Xueling Lin, Lei Chen, Chaorui Zhang: TENET: Joint Entity and Relation Linking with Coherence Relaxation. SIGMOD Conference 2021: 1142-1155</li>
+                <li style="line-height: 1.625">Wangze Ni, Peng Cheng, Lei Chen, Xuemin Lin: When the Recursive Diversity Anonymity Meets the Ring Signature. SIGMOD Conference 2021: 1359-1371</li>
+                <li style="line-height: 1.625">Zihuan Xu, Lei Chen: DIV: Resolving the Dynamic Issues of Zero-knowledge Set Membership Proof in the Blockchain. SIGMOD Conference 2021: 2036-2048</li>
+                <li style="line-height: 1.625">Wentao Zhang, Yu Shen, Yang Li, Lei Chen, Zhi Yang, Bin Cui: ALG: Fast and Accurate Active Learning Framework for Graph Convolutional Networks. SIGMOD Conference 2021: 2366-2374</li>
+                <li style="line-height: 1.625">Jia Li, Shimin Di, Yanyan Shen, Lei Chen: FluxEV: A Fast and Effective Unsupervised Framework for Time-Series Anomaly Detection. WSDM 2021: 824-832</li>
+                <li style="line-height: 1.625">Lei Chen, Baltasar FernÃ¡ndez-ManjÃ³n: 2021 IEEE International Conference on Big Knowledge, ICBK 2021, Auckland, New Zealand, December 7-8, 2021. IEEE 2021, ISBN 978-1-6654-3859-9 [contents]</li>
+            </ul>
+            <p style="font-weight: bold">2020:</p>
+            <ul>
+                <li style="line-height: 1.625">Yingxia Shao, Bin Cui, Lei Chen: Large-scale Graph Analysis: System, Algorithm and Optimization. Springer 2020, ISBN 978-981-15-3927-5, pp. 1-146</li>
+                <li style="line-height: 1.625">Lei Chen: Letter from the Special Issue Editor. IEEE Data Eng. Bull. 43(3): 2 (2020)</li>
+                <li style="line-height: 1.625">Jiachuan Wang, Peng Cheng, Libin Zheng, Chao Feng, Lei Chen, Xuemin Lin, Zheng Wang: Demand-Aware Route Planning for Shared Mobility Services. Proc. VLDB Endow. 13(7): 979-991 (2020)</li>
+                <li style="line-height: 1.625">Xueling Lin, Haoyang Li, Hao Xin, Zijian Li, Lei Chen: KBPearl: A Knowledge Base Population System Supported by Joint Entity and Relation Linking. Proc. VLDB Endow. 13(7): 1035-1049 (2020)</li>
+                <li style="line-height: 1.625">Xun Jian, Yue Wang, Lei Chen: Effective and Efficient Relational Community Detection and Search in Large Dynamic Heterogeneous Information Networks. Proc. VLDB Endow. 13(10): 1723-1736 (2020)</li>
+                <li style="line-height: 1.625">Qiyu Liu, Libin Zheng, Yanyan Shen, Lei Chen: Stable Learned Bloom Filters for Data Streams. Proc. VLDB Endow. 13(11): 2355-2367 (2020)</li>
+                <li style="line-height: 1.625">Zhao Chen, Peng Cheng, Lei Chen, Xuemin Lin, Cyrus Shahabi: Fair Task Assignment in Spatial Crowdsourcing. Proc. VLDB Endow. 13(11): 2479-2492 (2020)</li>
+                <li style="line-height: 1.625">Alexander Zhou, Yue Wang, Lei Chen: Finding Large Diverse Communities on Networks: The Edge Maximum k*-Partite Clique. Proc. VLDB Endow. 13(11): 2576-2589 (2020)</li>
+                <li style="line-height: 1.625">Jingzhi Fang, Yanyan Shen, Yue Wang, Lei Chen: Optimizing DNN Computation Graph using Graph Substitutions. Proc. VLDB Endow. 13(11): 2734-2746 (2020)</li>
+                <li style="line-height: 1.625">Yuxiang Zeng, Yongxin Tong, Yuguang Song, Lei Chen: The Simpler The Better: An Indexing Approach for Shared-Route Planning Queries. Proc. VLDB Endow. 13(13): 3517-3530 (2020)</li>
+                <li style="line-height: 1.625">Yue Wang, Ruiqi Xu, Zonghao Feng, Yulin Che, Lei Chen, Qiong Luo, Rui Mao: DISK: A Distributed Framework for Single-Source SimRank with Accuracy Guarantee. Proc. VLDB Endow. 14(3): 351-363 (2020)</li>
+                <li style="line-height: 1.625">Sihem Amer-Yahia, Senjuti Basu Roy, Lei Chen, Atsuyuki Morishima, James Abello Monedero, Pierre Bourhis, FranÃ§ois Charoy, Marina Danilevsky, Gautam Das, Gianluca Demartini, Shady Elbassuoni, David Gross-Amblard, Emilie Hoareau, Munenari Inoguchi, Jared B. Kenworthy, Itaru Kitahara, Dongwon Lee, Yunyao Li, Ria Mae Borromeo, Paolo Papotti, H. Raghav Rao, Sudeepa Roy, Pierre Senellart, Keishi Tajima, Saravanan Thirumuruganathan, Marion Tommasi, Kazutoshi Umemoto, Andrea Wiggins, Koichiro Yoshida: Making AI Machines Work for Humans in FoW. SIGMOD Rec. 49(2): 30-35 (2020)</li>
+                <li style="line-height: 1.625">Chen Jason Zhang, Lei Chen, H. V. Jagadish, Mengchen Zhang, Yongxin Tong: Reducing Uncertainty of Schema Matching via Crowdsourcing with Accuracy Rates. IEEE Trans. Knowl. Data Eng. 32(1): 135-151 (2020)</li>
+                <li style="line-height: 1.625">Shaoxu Song, Yu Sun, Aoqian Zhang, Lei Chen, Jianmin Wang: Enriching Data Imputation under Similarity Rule Constraints. IEEE Trans. Knowl. Data Eng. 32(2): 275-287 (2020)</li>
+                <li style="line-height: 1.625">Dong Qin, Xiangmin Zhou, Lei Chen, Guangyan Huang, Yanchun Zhang: Dynamic Connection-Based Social Group Recommendation. IEEE Trans. Knowl. Data Eng. 32(3): 453-467 (2020)</li>
+                <li style="line-height: 1.625">Libin Zheng, Lei Chen: Multi-Campaign Oriented Spatial Crowdsourcing. IEEE Trans. Knowl. Data Eng. 32(4): 700-713 (2020)</li>
+                <li style="line-height: 1.625">Hao Huang, Qian Yan, Wei Lu, Huaizhong Lin, Yunjun Gao, Lei Chen: LERI: Local Exploration for Rare-Category Identification. IEEE Trans. Knowl. Data Eng. 32(9): 1761-1772 (2020)</li>
+                <li style="line-height: 1.625">Xin Miao, Yanrong Kang, Qiang Ma, Kebin Liu, Lei Chen: Quality-aware Online Task Assignment in Mobile Crowdsourcing. ACM Trans. Sens. Networks 16(3): 30:1-30:21 (2020)</li>
+                <li style="line-height: 1.625">Lei Chen, Sihem Amer-Yahia: VLDB SI survey editorial. VLDB J. 29(1): 1-2 (2020)</li>
+                <li style="line-height: 1.625">Yongxin Tong, Zimu Zhou, Yuxiang Zeng, Lei Chen, Cyrus Shahabi: Spatial crowdsourcing: a survey. VLDB J. 29(1): 217-250 (2020)</li>
+                <li style="line-height: 1.625">Xun Jian, Yue Wang, Xiayu Lei, Yanyan Shen, Lei Chen: DDSL: Efficient Subgraph Listing on Distributed and Dynamic Graphs. DASFAA (2) 2020: 632-640</li>
+                <li style="line-height: 1.625">Qiyu Liu, Libin Zheng, Yanyan Shen, Lei Chen: Finish Them on the Fly: An Incentive Mechanism for Real-Time Spatial Crowdsourcing. DASFAA (2) 2020: 694-710</li>
+                <li style="line-height: 1.625">Yurong Cheng, Boyang Li, Xiangmin Zhou, Ye Yuan, Guoren Wang, Lei Chen: Real-Time Cross Online Matching in Spatial Crowdsourcing. ICDE 2020: 1-12</li>
+                <li style="line-height: 1.625">Yongqi Zhang, Quanming Yao, Wenyuan Dai, Lei Chen: AutoSF: Searching Scoring Functions for Knowledge Graph Embedding. ICDE 2020: 433-444</li>
+                <li style="line-height: 1.625">Qian Tao, Yongxin Tong, Zimu Zhou, Yexuan Shi, Lei Chen, Ke Xu: Differentially Private Online Task Assignment in Spatial Crowdsourcing: A Tree-based Approach. ICDE 2020: 517-528</li>
+                <li style="line-height: 1.625">Zijian Li, Wenhao Zheng, Xueling Lin, Ziyuan Zhao, Zhe Wang, Yue Wang, Xun Jian, Lei Chen, Qiang Yan, Tiezheng Mao: TransN: Heterogeneous Network Representation Learning by Translating Node Embeddings. ICDE 2020: 589-600</li>
+                <li style="line-height: 1.625">Wangze Ni, Peng Cheng, Lei Chen, Xuemin Lin: Task Allocation in Dependency-aware Spatial Crowdsourcing. ICDE 2020: 985-996</li>
+                <li style="line-height: 1.625">Qiyu Liu, Libin Zheng, Lei Chen: RIDE: A System for Generalized Region of Interest Discovery and Exploration. ICDE 2020: 1738-1741</li>
+                <li style="line-height: 1.625">Yue Wang, Zhe Wang, Ziyuan Zhao, Zijian Li, Xun Jian, Lei Chen, Jianchun Song: HowSim: A General and Effective Similarity Measure on Heterogeneous Information Networks. ICDE 2020: 1954-1957</li>
+                <li style="line-height: 1.625">Boyang Li, Yurong Cheng, Ye Yuan, Guoren Wang, Lei Chen: Simultaneous Arrival Matching for New Spatial Crowdsourcing Platforms. IJCAI 2020: 1279-1287</li>
+                <li style="line-height: 1.625">Yongqi Zhang, Quanming Yao, Lei Chen: Interstellar: Searching Recurrent Architecture for Knowledge Graph Embedding. NeurIPS 2020</li>
+                <li style="line-height: 1.625">Ye Yuan, Delong Ma, Zhenyu Wen, Yuliang Ma, Guoren Wang, Lei Chen: Efficient Graph Query Processing over Geo-Distributed Datacenters. SIGIR 2020: 619-628</li>
+                <li style="line-height: 1.625">Xiaofei Zhang, M. Tamer Ãzsu, Lei Chen: ELite: Cost-effective Approximation of Exploration-based Graph Analysis. GRADES-NDA@SIGMOD 2020: 6:1-6:10</li>
+                <li style="line-height: 1.625">Wentao Zhang, Xupeng Miao, Yingxia Shao, Jiawei Jiang, Lei Chen, Olivier Ruas, Bin Cui: Reliable Data Distillation on Graph Convolutional Network. SIGMOD Conference 2020: 1399-1414</li>
+                <li style="line-height: 1.625">Yingxia Shao, Shiyue Huang, Xupeng Miao, Bin Cui, Lei Chen: Memory-Aware Framework for Efficient Second-Order Random Walk on Large Graphs. SIGMOD Conference 2020: 1797-1812</li>
+                <li style="line-height: 1.625">Xun Jian, Yue Wang, Xiayu Lei, Libin Zheng, Lei Chen: SPARQL Rewriting: Towards Desired Results. SIGMOD Conference 2020: 1979-1993</li>
+                <li style="line-height: 1.625">Chengmin Wu, Lei Chen: Utber: Utilizing Fine-Grained Entity Types to Relation Extraction with Distant Supervision. SMDS 2020: 63-71</li>
+            </ul>
+        </div>
+        <div id="Professional Services" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold; border-bottom: 2px solid #DCD5C8; line-height: 1.625">Professional Services</p>
+
+            <p style="font-weight: bold">VLDB Endowment Trustee</p>
+            <p style="font-weight: bold">Journal Editor-in-Chief: </p>
+            <ul>
+                <li style="line-height: 1.625">IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022-date</li>
+                <li style="line-height: 1.625">VLDB Journal, 2015-2022</li>
+            </ul>
+            <p style="font-weight: bold">Journal Associate Editor-in-Chief: </p>
+            <ul>
+                <li style="line-height: 1.625">IEEE Transactions on Knowledge and Data Engineering (TKDE), 2015-2021</li>
+            </ul>
+            <p style="font-weight: bold">Journal Associate Editor: </p>
+            <ul>
+                <li style="line-height: 1.625">Distributed and Parallel Databases (DAPD), 2012-2021</li>
+            </ul>
+            <p style="font-weight: bold">PC Co-Chair: </p>
+            <ul>
+                <li style="line-height: 1.625">
+                    <a target="_blank" href="https://icde2023.ics.uci.edu/" style="color: black">ICDE 2023</a>
+                </li>
+                <li style="line-height: 1.625">
+                    <a target="_blank" href="https://bigdataieee.org/BigData2022/" style="color: black">IEEE BIG DATA 2022</a>
+                </li>
+                <li style="line-height: 1.625">
+                    <a target="_blank" href="http://vldb.org/2019/" style="color: black">VLDB 2019</a>
+                </li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cse.ust.hk/apweb2014/" style="color: black">
+                        16th Asia-Pacific Web Conference (APWEB 2014)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cse.ust.hk/~waim2010/" style="color: black">
+                        11th International Conference on Web-Age Information Management (WAIM 2010)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://conference.cs.cityu.edu.hk/wise2010/" style="color: black">
+                        11th International Conference on Web Information Systems Engineering (WISE 2010)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://keys09.asu.edu/" style="color: black">
+                        First International Workshop on Keyword Search on Structured Data (KEYS 2009)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cse.ust.hk/~mound/index.htm" style="color: black">
+                        First International Workshop on Management and mining Of UNcertain Data (MOUND 2009)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~dbman" style="color: black">
+                        First International Workshop on Database Management and Application over Networks (DBMAN 2007)</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~xwict06/" style="color: black">
+                        First International Workshop on XML, Web, and Internet Contents Technologies (XWICT 2006)</a></li>
+            </ul>
+            <p style="font-weight: bold">PC Track Chair: </p>
+            <ul>
+                <li style="line-height: 1.625">SIGMOD 2014</li>
+                <li style="line-height: 1.625">VLDB 2014</li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.acmmm11.org/" style="color: black">
+                        SIGMM 2011</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.icde12.org/Site/" style="color: black">
+                        ICDE 2012</a></li>
+            </ul>
+            <p style="font-weight: bold">PC Member: </p>
+            <ul>
+                <li style="line-height: 1.625">IEEE International Conference on Data Engineering (ICDEâ15, 14, 11, 10, 09, 08, 07)</li>
+                <li style="line-height: 1.625">ACM International Conference on Management of Data (SIGMODâ16, 15, 13, 11, 10)</li>
+                <li style="line-height: 1.625">International Conference on Very Large Data Base (VLDBâ16, 15, 13, 12, 11, 10, 08)</li>
+                <li style="line-height: 1.625">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDDâ12, 10)</li>
+                <li style="line-height: 1.625">International Conference on World Wide Web (WWWâ09, 08)</li>
+                <li style="line-height: 1.625">ACM International Conference on Multimedia (SIGMM'15, 12, 08)</li>
+                <li style="line-height: 1.625">IEEE International Conference on Distributed Computing Systems (ICDCSâ12, 07)</li>
+            </ul>
+        </div>
+        <div id="Group Members" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold; border-bottom: 2px solid #DCD5C8; line-height: 1.625">Group Members</p>
+            <p style="font-weight: bold">Ph.D. Students: </p>
+            <ul>
+                <li style="line-height: 1.625">Hao Xin, Ph.D. Student (started in September, 2016)</li>
+                <li style="line-height: 1.625">Jingshu Peng, Ph.D. Student (started in September, 2016)</li>
+                <li style="line-height: 1.625">Yuxiang Zeng(started in September, 2017)</li>
+                <li style="line-height: 1.625">Qiyu Liu (started in September, 2017)</li>
+                <li style="line-height: 1.625">Chengmin Wu (started in September, 2018)</li>
+                <li style="line-height: 1.625">Haoyang Li (started in September, 2018)</li>
+                <li style="line-height: 1.625">Maocheng Li (started in September, 2019)</li>
+                <li style="line-height: 1.625">Wangze Ni (started in September, 2019)</li>
+                <li style="line-height: 1.625">Ruiling Li (started in September, 2019)</li>
+                <li style="line-height: 1.625">Jia Li (started in September, 2019)</li>
+                <li style="line-height: 1.625">Jiachuan Wang (started in September, 2019)</li>
+                <li style="line-height: 1.625">Alex Zhou (started in September, 2019)</li>
+                <li style="line-height: 1.625">Jiawei Zhou(started in September, 2019)</li>
+                <li style="line-height: 1.625">Ge Lv (started in September, 2019)</li>
+                <li style="line-height: 1.625">Yiming Li (started in September, 2019)</li>
+                <li style="line-height: 1.625">Jingzhi Fang (started in September, 2019)</li>
+            </ul>
+            <p style="font-weight: bold">Mphil. Students: </p>
+            <ul>
+            </ul>
+            <p style="font-weight: bold">Graduated: </p>
+            <ul>
+                <li style="line-height: 1.625">Linnan Jiang, Mphil. (Graduted in August, 2021)</li>
+                <li style="line-height: 1.625">Xueling Lin, Ph.D. (Graduted in June, 2021)</li>
+                <li style="line-height: 1.625">Xun Jian, Ph.D. (Graduated in March 2021, now Postdoc at HKUST)</li>
+                <li style="line-height: 1.625">Zhao Chen, Ph.D. (Graduated in August 2020)</li>
+                <li style="line-height: 1.625">Zijian Li, Ph.D. (Graduated in January 2020, now researcher at Huawei)</li>
+                <li style="line-height: 1.625">Libin Zheng, Ph.D. (Graduated in November 2019, now Associate Professor at Sun Yat-sen University)</li>
+                <li style="line-height: 1.625">Yue Wang, Ph.D. (Graduated in September, 2019, now researcher at Shenzhen Institute of Computing Sciences )</li>
+                <li style="line-height: 1.625">Konstantinos Giannakopoulos, Ph.D. (Graduated in September 2019)</li>
+                <li style="line-height: 1.625">Zheng Liu, Ph.D. (Graduated in August 2018, now researcher at MSRA)</li>
+                <li style="line-height: 1.625">Jiayang Tu (Graduated in August 2018s, now researcher at Lenovo, Hong Kong)</li>
+                <li style="line-height: 1.625">Rui Meng, Ph.D. (Graduated in August, 2017, now Assistant Professor at BNU-HKBU)</li>
+                <li style="line-height: 1.625">Peng Cheng, Ph.D. (Graduated in August, 2017, now Associate Professor at ECNU)</li>
+                <li style="line-height: 1.625">Jieying She, Ph.D. (Graduated in January, 2017, now Data Analyst at Goldman Sachs Hong Kong)</li>
+                <li style="line-height: 1.625">Yunfan Chen, Mphil. Student (Graduated in May 2017, now Software Engineer, Google)</li>
+                <li style="line-height: 1.625">Jason Chen Zhang, Ph.D. Student (Graduated in August 2015, now Senior Manger of BDI, HKUST)</li>
+                <li style="line-height: 1.625">Yongxin Tong, Ph.D. (Graduated in January 2014, Now Associate Professor in BeiHang University, China)</li>
+                <li style="line-height: 1.625">Caleb Chen Cao, Ph.D. (Graduated in August 2014, Now Senior Researcher at Huawei)</li>
+                <li style="line-height: 1.625">Xiaofei Zhang, Ph.D. (Graduated in June 2013, Now Assistant Professor at University of Memphis, U.S.A.)</li>
+                <li style="line-height: 1.625">Mingxuan Yuan, Ph.D. (Graduated in January 2012, Now Researcher at Huawei Noah's Ark Lab, Hong Kong)</li>
+                <li style="line-height: 1.625">Xiang Lian, Ph.D. (Graduated in August 2009, Now Assistant Professor at Kent State University, U.S.A.)</li>
+                <li style="line-height: 1.625">Shaoxu Song, Ph.D. (Graduated in August 2010, Now Associate Professor at Tsinghua University, China)</li>
+                <li style="line-height: 1.625">Cammy Yongzhen Zhuang, Ph.D. (Graduated in June 2008, Now at Ant Financial, China)</li>
+                <li style="line-height: 1.625">Lei Zou, Visiting Scholar (Dec 2006- June 2007), Now Professor at Peking University, China)</li>
+                <li style="line-height: 1.625">Weixiong Rao, Professor, Tongji University, Shanghai, China)</li>
+                <li style="line-height: 1.625">Yatao Li, Mphil Student (Graduated in June 2014)</li>
+                <li style="line-height: 1.625">Mengyu Li, Mphil Student (Graduated in June 2013)</li>
+                <li style="line-height: 1.625">Yincheng Lin, Mphil Student (Graduated in August 2011)</li>
+                <li style="line-height: 1.625">Louis Wong, Mphil. Student (Graduated in June 2010)</li>
+                <li style="line-height: 1.625">Changliang Wang, Mphil. Student (Graduated in June 2009), Now at EMC, China)</li>
+            </ul>
+        </div>
+        <div id="Research Links" class="tabcontent" style="width: 60%; margin-left: 380px; display: none;">
+            <p style="margin: 0; padding-top: 50px; padding-bottom: 10px;font-size: 24px; font-weight: bold;
+        border-bottom: 2px solid #DCD5C8; line-height: 1.625">Research links</p>
+            <ul>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~leichen/dbseminar.htm" style="color: black">Database Seminar in HKUST</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~leichen/readings/literaturesovertimeseries.htm" style="color: black">Reading List on Similarity-based Search Over Time Series</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~leichen/readings/literatureonsensornetwork.htm" style="color: black">Reading List on Wireless Sensor Networks</a></li>
+                <li style="line-height: 1.625"><a target="_blank" href="http://www.cs.ust.hk/~leichen/readings/literatureonp2pnetwork.htm" style="color: black">Reading List on P2P Networks</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function switchTab(evt, tabId) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabId).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>

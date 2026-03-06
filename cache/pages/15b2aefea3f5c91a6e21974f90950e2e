@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Armando Solar-Lezama Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="contact">
+            <div class="name">Armando Solar-Lezama</div>
+            <BR>
+            Distinguished Professor of Computing <br />
+            MIT Schwarzman College of Computing <br/>            
+            Associate Director and COO of CSAIL
+            <BR>
+            e-mail: <img style="border: 0px solid ; width: 156px; height: 18px;"
+                         alt="" src="images/email.GIF"><br>
+            phone: (617) 258-9727<br>
+            Assistant: Amanda Abrams (<font class="header"> acabrams@&nbsp;mit.edu  </font>) <br>
+            <a href="http://www.mit.edu">
+                <img style="border: 0px solid ; width: 82px;"
+                     src="images/mit_logo.gif" alt="mit_logo.gif">
+            </a>            
+        </div>
+
+        <img class="headshot" height="180"
+             src="images/asolar_head.jpg" alt="Armando Solar-Lezama">
+
+        <img style="width: 100%; height: 1px;" alt="&quot;&quot;"
+             src="images/PurpleDot.GIF"><br>
+
+    </div>
+
+    <h4>Research Agenda and Bio:</h4>
+
+    I lead the <a href="http://groups.csail.mit.edu/cap/">
+        Computer
+        Assisted Programming Group
+    </a>. The focus of my research is program synthesis, an exciting
+    research area that lies at the intersection of Programming Systems and Artificial Intelligence.
+    On the one hand, program synthesis is about the use of automated reasoning and learning to help
+    bring more automation to the programming process. On the other hand, we believe code provides
+    a uniquely versatile modeling mechanism, so program synthesis can play a powerful role in helping
+    to build learning systems that are more predictable and robust. Over the past five years, 
+    my group has also been working on developing <a href="https://www.neurosymbolic.org/">neurosymbolic programming</a>, a new class of learning 
+    techniques that incorporate some of the benefits of 
+    traditional programming languages, such as modularity, compositionality, and predictability.
+    
+    <p>
+        I have BS degrees in Computer Science and Mathematics from Texas A&M Univerity and 
+        got my PhD in 2008 from the University of California, Berkeley, where I was advised by
+        <a href="https://homes.cs.washington.edu/~bodik/">Rastislav Bodik</a>. 
+        I have been a faculty member at MIT since 2008 and have been helping to lead the 
+        Computer Science and Artificial Intelligence Laboratory (CSAIL) as associate director since 2020.
+    </p>
+
+    <h4>Prospective Students:</h4>
+    If you are a current MIT undergraduate and are interested in doing a UROP in my group, 
+    please send a brief description of your background to the e-mail address cap-urops[at]csail.mit.edu. 
+    Please include a brief description of your background and the kind of project you are interested in.        
+    I generally don't work with undergraduates who are not currently MIT students unless they come 
+    through a formal MIT program such as the <a href="https://oge.mit.edu/msrp/">MIT Summer Research Program (MSRP)</a>.
+<p>
+    Students interested in joining the group as PhD students should apply to the 
+    <a href="https://www.eecs.mit.edu/academics/graduate-programs/admission-process/">EECS PhD program 
+    at MIT.</a> I can only consider students through the formal application process, so please be sure to apply!
+    The application deadline is usually December 1st. In your application, you can express your 
+    interest in joining my group. Please be aware that I am usually unable to respond to 
+    individual inquiries about the application process or about joining my group, but you can 
+    direct questions about graduate admissions to <a href="mailto:grad-ap@eecs.mit.edu">grad-ap@eecs.mit.edu</a>.
+
+</p>
+    
+    <br>
+    <h4>
+        Sketch
+        Version 1.7.6  (Released Feb, 2020) :
+    </h4>
+    I am no longer actively maintaining Sketch, but you it is still quite usable. 
+    Sketch is in github and is split between two repositories:
+    the <a href="https://github.com/asolarlez/sketch-backend">sketch-backend</a> and the <a href="https://github.com/asolarlez/sketch-frontend/wiki">sketch-frontend</a>.
+    You can download an
+    easy-to-install (relatively speaking)
+    &nbsp;source distribution from here: <a href="sketch-1.7.6.tar.gz">sketch-1.7.6.tar.gz</a>
+    <BR>
+    <BR>
+    <a href="manual.pdf">Working version of Sketch Manual</a><br>
+    
+
+    <h4> Teaching: </h4>
+    Over the last few years, I have helped with the development of a few courses:
+    <ul>
+        <li>
+            Program Synthesis: Everything you wanted to know about the state of the
+            art in program synthesis, especially the techniques developed by the
+            programming languages and formal methods communities.
+            Here are <a href='./SynthesisCourse/TOC.htm'>some lecture notes</a> I put together while on sabbatical in Mexico City in
+            2018.
+        </li>
+        <li>
+            6.820--Foundations of Program Analysis: This is an introduction to many of the
+            core techniques that one can use to reason about programs, including
+            different forms of semantics, type systems, program logics, abstract interpretation
+            and model checking. And you also learn Haskell along the way!
+            The course is offered every 2 years. The class was last offered in
+            2021.
+        </li>
+        <li>
+            6.s081-- Dynamic Computer Language Engineering:
+            <a href='https://people.csail.mit.edu/mcarbin/'>Michael Carbin</a>
+            has been mostly leading this class, but I helped with the initial version
+            of it. In this class, students get to build a just-in-time compiler for
+            a non-trivial dynamic language completely from scratch.
+            <a href='http://6.s081.scripts.mit.edu/sp18/schedule.html'>
+                See here for
+                a recent version of this class.
+            </a>
+        </li>
+    </ul>
+    In recent years, I have also been involved in teaching
+    <a href='http://web.mit.edu/6.031/www/sp19/'>6.031 (Software Construction)</a>,
+    6.009 (Fundamentals of Programming) and
+    6.01 (Introduction to EECS via Robotics).
+
+    <h4>PlaySkript: </h4>
+    In my free time, I created <a href="https://code.playskript.com/">PlaySkript</a>, an online platform that I use for creating
+    presentations and visualizations. It's based on a JavaScript-like domain specific language for describing diagrams and animations,
+    and supports both direct manipulation and automated refactoring in order to help create complex presentations more easily.
+    Try it out!
+
+    <h4>Phd Thesis: </h4>
+    <a href="papers/thesis.pdf">Program Synthesis by Sketching</a>, U.C. Berkeley, December 2008, Advisor: Rastislav Bodik
+
+
+    <h4>Publications: </h4>
+    <table width="100%" border="0" id="papers">
+        <tbody>
+            <tr>
+
+                <td><a onClick="getText('conference');" href="#papers"><h4 id="confPapers">Conference Papers</h4></a></td>
+                <td><a onClick="getText('journal');" href="#papers"><h4 id="journalPapers">Journal and Journal/Conferences</h4></a></td>
+                <td><a onClick="getText('techrep');" href="#papers"><h4 id="techReps">Technical Reports</h4></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="bibrender.js"></script>
+    <div id="biblio"></div>
+
+
+    <h4>Contact:</h4>
+    MIT Computer Science
+    and Artificial Intelligence
+    Laboratory <br>
+    The Stata Center, Building 32-G742<br>
+    32 Vassar Street <br>
+    Cambridge, MA 02139<br>
+    
+
+    <p style="border-top:1px solid #999; padding:20px;"><a href="https://accessibility.mit.edu/" title="MIT accessibility page">Accessibility</a></p>
+</body>
+</html>

@@ -1,0 +1,1020 @@
+<html><head>
+<title>Bhuwan Dhingra</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!-- <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#updates">Updates</a>
+  <a href="#publications">Publications</a>
+  <a href="#preprints">Preprints</a>
+  <a href="#patents">Patents</a>
+</div> -->
+
+<div>
+    <img src="bdhingra1.jpeg" alt="Bhuwan Dhingra" class="left">
+    <div>
+        <h1>Bhuwan Dhingra</h1>
+        <p>Assistant Professor of Computer Science<br>
+	<a class="no-underline" href="https://www.cs.duke.edu/">Duke University</a><br><br>
+	Research Scientist<br>
+	<a class="no-underline" href="https://deepmind.google/">Google Deepmind</a></p>
+        <p><a class="btn nav" href="docs/bhuwan_dhingra_cv.pdf">CV</a>&nbsp;
+        <a class="btn nav" href="https://github.com/bdhingra">Github</a>&nbsp;
+        <a class="btn nav" href="https://scholar.google.com/citations?user=SLISZFAAAAAJ&hl=en">Google-Scholar</a>&nbsp;
+        <a class="btn nav" href="https://twitter.com/bhuwandhingra">Twitter</a>&nbsp;
+        <a class="btn nav" href="mailto:bxdhingra@cs.duke.edux" onmouseover="this.href=this.href.replace(/x/g,'');">Contact</a></p>
+    </div>
+</div>
+
+<div style="clear: left;">
+<hr>
+
+<div class="topnav" id="myTopnav">
+  <a id="homeNav" class="active" href="#home" onclick="onNavClick(this.id)" >Home</a>
+  <a id="prospectiveNav" href="#prospective" onclick="onNavClick(this.id)">Prospective Students</a>
+  <a id="updateNav" href="#updates" onclick="onNavClick(this.id)">Updates</a>
+  <a id="studentNav" href="#students" onclick="onNavClick(this.id)">Group</a>
+  <a id="teachingNav" href="#teaching" onclick="onNavClick(this.id)">Teaching</a>
+  <a id="pubNav" href="#publications" onclick="onNavClick(this.id)">Publications</a>
+  <a href="javascript:void(0);" class="icon" onclick="respFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- <p>I am an Assistant Professor of Computer Science at <a class="no-underline" href="https://www.cs.duke.edu/">Duke University</a> and a Research Scientist at <a class="no-underline" href="https://research.google/teams/language/">Google AI</a>.</p> -->
+
+<div id="home" class="scroll-top">
+
+<p>My group works on machine learning for natural language processing and knowledge representation. I completed my PhD in 2020 from the Language Technologies Institute at Carnegie Mellon University. My thesis advisers were <a class="no-underline" href="http://www.cs.cmu.edu/~wcohen/">William Cohen</a> and <a class="no-underline" href="http://www.cs.cmu.edu/~rsalakhu/">Russ Salakhutdinov</a>. Before that I did Electrical Engineering at <a class="no-underline" href="http://www.iitk.ac.in/">IIT Kanpur</a>, where I worked with <a class="no-underline" href="http://www.cse.iitk.ac.in/users/amit/">Amitabha Mukerjee</a>. In between I worked at <a class="no-underline" href="https://www.qualcomm.com/invention/research">Qualcomm Research</a> in San Diego, USA.<br>
+</p>
+<p>
+Current topics of interest include:
+<ul>
+	<li> Question answering and information retrieval </li>
+	<li> Reasoning over structured and unstructured knowledge </li>
+	<li> Robustness to corrupted text inputs </li>
+	<li> Misinformation / propaganda detection </li>
+	<li> Model calibration for inherently subjective NLP tasks </li>
+</ul>
+</p>
+</div>
+
+<h2 id="prospective" class="scroll-top">Prospective students</h2>
+<ul>
+	<li> <b>PhD applicants:</b> Please apply to the Duke CS PhD program <a class="no-underline" href="https://gradschool.duke.edu/admissions/application-instructions">here</a> (next deadline is Dec 15). I am currently looking for students to join my group. Please only email if you have questions which are not answered here, I may not be able to respond to all emails. </li>
+	<li> <b>Undergraduate or masters students at Duke:</b> If you are interested in working with me, please send an email describing your background and what specifically you want to work on. Include your transcript and also mention how much time will you be able to commit to the project. </li>
+	<li> <b>Others:</b> Please note that at this point I have limited bandwidth to advise students not currently at Duke. However, if you think you are a very good fit please send an email describing your background and what you want to work on. Please only email if you have significant prior experience in NLP or ML. </li>
+</ul>
+
+
+</div>
+
+<h2 id="updates" class="scroll-top">Updates</h2>
+<div id="table-scroll">
+<table>
+  <tbody>
+  <tr>
+    <td>5/24</td>
+    <td> I will be spending the summer at Google Deepmind in San Francisco.
+  </td></tr>
+  <tr>
+    <td>2/24</td>
+    <td> Gave a lecture on LLMs as part of the <a href="https://ucourses.duke.edu/univ103/">UNIV103: Let's talk about digital you</a> course.
+  </td></tr>
+  <tr>
+    <td>1/24</td>
+    <td> Received a grant from the <a href="https://learning-engineering-virtual-institute.org/">Learning Engineering Virtual Institute</a> (joint with University of Florida).
+  </td></tr>
+  <tr>
+    <td>1/23</td>
+    <td> Three new papers appearing at EACL 2023 and one at CHI 2023 (my first!). <a class="btn nav" href="#publications">publications</a>
+  </td></tr>
+  <tr>
+    <td>12/22</td>
+    <td> Serving as Senior Area Chair for the Large Language Models track at <a class="no-underline" href="https://2023.aclweb.org/">ACL 2023</a>.
+  </td></tr>
+  <tr>
+    <td>10/22</td>
+    <td>Received an Amazon Research Award for my proposal titled "Long-form QA via collaborative writing". <a class="btn nav" href="https://www.amazon.science/research-awards/program-updates/fall-2021-and-winter-2022-amazon-research-awards-recipients-announced">announcement</a>
+  </td></tr>
+  <tr>
+    <td>8/22</td>
+    <td>Awarded an NSF Medium grant with Jun Yang and Lavanya Vasudevan. <a class="btn nav" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2211526&HistoricalAwards=false">link</a>
+  </td></tr>
+  <tr>
+    <td>6/22</td>
+    <td>Recieved a gift from P&amp;G for exploring search interfaces based on concept graphs.
+  </td></tr>
+  <tr>
+    <td>10/21</td>
+    <td>Received a gift from Google for exploring NLP tools to combat misinformation.
+  </td></tr>
+  <tr>
+    <td>10/21</td>
+    <td>Invited talk at UNC Chapel Hill on "Language models as Structured KBs". <a class="btn pdf" href="slides/unc_10_21.pdf">slides</a>
+  </td></tr>
+  <tr>
+    <td>10/21</td>
+    <td>Organizing the 2nd workshop on <a class="no-underline" href="https://uskb-workshop.github.io/">Structured &amp; Unstructured KBs</a> at <a class="no-underline" href="https://www.akbc.ws/2021/">AKBC2021</a>.
+  </td></tr>
+  <tr>
+    <td>9/21</td>
+    <td>Teaching <a class="no-underline" href="https://sites.duke.edu/compsci_590_03_f21/">CS590.03: Introduction to NLP</a> with <a class="no-underline" href="https://swiseman.github.io/">Sam Wiseman</a>.
+  </td></tr>
+  <tr>
+    <td>9/21</td>
+    <td>Started at Duke University.
+  </td></tr>
+  <tr>
+    <td>7/21</td>
+    <td>New <a class="no-underline" href="https://arxiv.org/abs/2106.15110">preprint</a> on time-aware language models.
+  </td></tr>
+  <!--<tr>
+    <td>10/20</td>
+    <td>New <a class="no-underline" href="https://arxiv.org/abs/2010.14439">preprint</a> on differentiable reasoning for open-ended commonsense QA.
+  </td></tr>
+  <tr>
+    <td>9/20</td>
+    <td><a class="no-underline" href="https://arxiv.org/abs/2004.14373">Paper</a> accepted to EMNLP main conference and <a class="no-underline" href="https://arxiv.org/abs/2011.01459">another</a> to EMNLP Findings.
+  </td></tr>-->
+  <tr>
+    <td>12/20</td>
+    <td>New <a class="no-underline" href="https://arxiv.org/abs/2012.00893">preprint</a> on evaluating explanations.
+  </td></tr>
+  <tr>
+    <td>7/20</td>
+    <td>Joined <a class="no-underline" href="https://research.google/teams/language/">Google AI</a> in Seattle.
+  </td></tr>
+  <!--<tr>
+    <td>4/20</td>
+    <td>I successfully defended my thesis!
+        <a class="btn nav" href="docs/bhuwan_dhingra_thesis.pdf">pdf</a></td>
+  </tr>-->
+  <!--<tr>
+    <td>2/2020</td>
+    <td>I am on the job market this year. <a class="btn nav" href="docs/research_statement_2019.pdf">research</a>&nbsp;
+        <a class="btn nav" href="docs/teaching_statement_2019.pdf">teaching</a></td>
+  </tr>-->
+  <!--<tr>
+    <td>12/2019</td>
+    <td>Paper accepted for oral presentation at ICLR 2020. (<a href="https://openreview.net/forum?id=SJxstlHFPH">openreview</a>)</td>
+  </tr>-->
+  <tr>
+    <td>12/19</td>
+    <td>Invited talks at IIT Delhi, <a class="no-underline" href="https://ds.cs.umass.edu/event/bhuwan-dhingra-carnegie-mellon-text-virtual-knowledge-base">UMass Amherst</a> and USC.</td>
+  </tr>
+  <tr>
+    <td>10/19</td>
+    <td>Invited talks at Stanford and UC Irvine. <a class="btn nav" href="https://nlp.stanford.edu/seminar/details/bdhingra.shtml">details</a></td>
+  </tr>
+  <!--<tr>
+    <td>9/19</td>
+    <td>PubmedQA dataset, for QA over biomedical research abstracts, released. <a class="btn nav" href="https://pubmedqa.github.io/">link</a></td>
+  </tr>-->
+  <!--<tr>
+    <td>6/2019</td>
+    <td>I was named an outstanding reviewer at <a href="https://naacl2019.org/">NAACL 2019</a>!</td>
+  </tr>-->
+  <!--<tr>
+    <td>3/2019</td>
+    <td>I successfully proposed my thesis titled <i>Learning Neural Knowledge Representations</i>
+        <a class="btn nav" href="docs/bhuwan_dhingra_thesis_proposal.pdf">pdf</a></td>
+  </tr>
+  <tr>
+    <td>3/19</td>
+    <td>I won the <a class="no-underline" href="https://www.library.cmu.edu/3MT">CMU 3 Minute Thesis</a> competition for 2019!
+        <a class="btn nav" href="https://www.cmu.edu/news/stories/archives/2019/april/three-minute-thesis-results.html">article</a>&nbsp;
+        <a class="btn nav" href="https://youtu.be/CwewjEwEEXc?list=PLbkhiRA2P3qLIEnobImm6Zc4H0Tn8Gczs">my talk</a></td>
+  </tr>
+  <tr>
+    <td>1/19</td>
+    <td>Honored to be selected as the inaugural <a class="no-underline" href="https://new.siemens.com/us/en.html">Siemens</a> FutureMakers PhD Fellow!</td>
+  </tr>-->
+</tbody>
+</table>
+</div>
+
+<h2 id="students" class="scroll-top">Students</h2>
+<h3 id="phd-students" class="scroll-top">PhD</h3>
+<ol>
+	<li><a class="no-underline" href="http://www.rickard.stureborg.com/">Rich Stureborg</a> (co-advised with <a class="no-underline" href="https://users.cs.duke.edu/~junyang/">Jun Yang</a>)</li>
+	<li><a class="no-underline" href="https://raghavlite.github.io/">Raghuveer Thirukovalluru</a></li>
+	<li><a class="no-underline" href="https://ghazalkhalighinejad.github.io/">Ghazal Khalighinejad</a></li>
+	<li><a class="no-underline" href="https://sanxing.ai/">Sanxing Chen</a></li>
+	<li><a class="no-underline" href="https://isthatyou.github.io/">Junlin Wang</a></li>
+	<li><a class="no-underline" href="https://royxie.com/">Roy Xie</a></li>
+	<li><a class="no-underline" href="https://scholars.duke.edu/person/yukun.huang">Yukun Huang</a></li>
+</ol>
+<h3 id="ugrad-students" class="scroll-top">Undergraduate & Masters</h3>
+	<li><a class="no-underline" href="https://www.dukevertices.org/blog/connecting-dots-meet-angikar-ghosal-the-duke-senior-writing-4-honors-theses">Angikar Ghosal</a> (undergraduate, now a PhD student at Stanford)</li>
+	<li><a class="no-underline" href="https://phyllisang96.github.io/">Phyllis Ang</a> (MS, now at Nvidia)</li>
+	<li><a class="no-underline" href="https://www.devseth.com/">Dev Seth</a> (undergraduate, now at McKinsey)</li>
+	<li><a class="no-underline" href="http://shrouded-journey-79708.herokuapp.com/index">Anni Chen</a> (undergraduate, now at Amazon)</li>
+
+<h2 id="teaching" class="scroll-top">Teaching</h2>
+<ul>
+    <li> Spring 2024: <a class="no-underline" href="https://sites.duke.edu/compsci_572_01_sp24/">CS572: Introduction to NLP</a>(graduate)</li>
+    <li> Fall 2023: <a class="no-underline" href="https://sites.duke.edu/compsci_590_01_f23/">CS590: Generative Models</a>(graduate)</li>
+    <li> Fall 2022: <a class="no-underline" href="https://sites.duke.edu/compsci_572_01_f22/">CS572: Introduction to NLP </a>(graduate)</li>
+    <li> Spring 2022: <a class="no-underline" href="https://sites.duke.edu/compsci_590_03_sp22/">CS590: Advanced NLP </a>(graduate, co-taught with <a class="no-underline" href="https://swiseman.github.io/">Sam Wiseman</a>)</li>
+    <li> Fall 2021: <a class="no-underline" href="https://sites.duke.edu/compsci_590_03_f21/">CS590: Introduction to NLP </a>(graduate, co-taught with <a class="no-underline" href="https://swiseman.github.io/">Sam Wiseman</a>)</li>
+</ul>
+
+
+<h2 id="publications" class="scroll-top">Publications</h2>
+
+Please see my <a href="https://scholar.google.com/citations?user=SLISZFAAAAAJ&hl=en">Google Scholar</a> page for the most up-to-date list.
+
+<h3>2023</h3>
+<ul>
+    <li><i>Learning the Legibility of Visual Text Perturbations</i>&nbsp;<br>
+	    Dev Seth, Rickard Stureborg, Danish Pruthi and Bhuwan Dhingra<br>
+	EACL, 2023<br>
+    <li><i>DiffQG: Generating Questions to Summarize Factual Changes</i>&nbsp;<br>
+	    Jeremy R. Cole, Palak Jain, Julian Martin Eisenschlos, Michael J.Q. Zhang, Eunsol Choi and Bhuwan Dhingra<br>
+	EACL, 2023<br>
+    <li><i>Salient Span Masking for Temporal Understanding</i>&nbsp;<br>
+	    Jeremy R. Cole, Aditi Chaudhary, Bhuwan Dhingra and Partha Talukdar<br>
+	EACL, 2023<br>
+    <li><i>Interface Design for Crowdsourcing Hierarchical Multi-Label Text Annotations</i>&nbsp;<br>
+	    Rickard Stureborg, Bhuwan Dhingra, Jun Yang<br>
+	CHI, 2023<br>
+</ul>
+
+<h3>2022</h3>
+<ul>
+    <li><i>ASQA: Factoid Questions Meet Long-Form Answers</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2204.06092">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/google-research/language/tree/master/language/asqa">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('asqa-bib')">bib</button><br>
+	<div id="asqa-bib" class="bib-display" style="display: none">
+		@article{stelmakh2022asqa,<br>
+		title={ASQA: Factoid Questions Meet Long-Form Answers},<br>
+		author={Stelmakh, Ivan and Luan, Yi and Dhingra, Bhuwan and Chang, Ming-Wei},<br>
+		journal={EMNLP},<br>
+		year={2022}<br>
+	}
+	</div>
+	Ivan Stelmakh, Yi Luan, Bhuwan Dhingra, Ming-Wei Chang<br>
+	EMNLP, 2022<br>
+    <li><i>Characterizing the Efficiency vs. Accuracy Trade-off for Long-Context NLP Models</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2204.07288">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/phyllisayk/nlp-efficiency-tradeoff">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('efficiency-bib')">bib</button><br>
+	<div id="efficiency-bib" class="bib-display" style="display: none">
+		@inproceedings{ang-etal-2022-characterizing,<br>
+		title = "Characterizing the Efficiency vs. Accuracy Trade-off for Long-Context {NLP} Models",<br>
+		author = "Ang, Phyllis  and<br>
+			Dhingra, Bhuwan  and<br>
+			Wu Wills, Lisa",<br>
+		booktitle = "Proceedings of NLP Power! The First Workshop on Efficient Benchmarking in NLP",<br>
+		month = may,<br>
+		year = "2022",<br>
+		address = "Dublin, Ireland",<br>
+		publisher = "Association for Computational Linguistics",<br>
+		url = "https://aclanthology.org/2022.nlppower-1.12",<br>
+		doi = "10.18653/v1/2022.nlppower-1.12",<br>
+		pages = "113--121",<br>
+	}
+	</div>
+	Phyllis Ang, Bhuwan Dhingra, Lisa Wu Wills<br>
+        NLP Power! Workshop, ACL, 2022<br>
+    <li><i>Time-Aware Language Models as Temporal Knowledge Bases</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2106.15110">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/google-research/language/tree/master/language/templama">data</a>&nbsp;
+        <button class="btn bib" onclick="showbib('tlm-bib')">bib</button><br>
+	<div id="tlm-bib" class="bib-display" style="display: none">
+		@article{dhingra2022time,<br>
+		author = {Dhingra, Bhuwan and Cole, Jeremy R. and Eisenschlos, Julian Martin and Gillick, Daniel and Eisenstein, Jacob and Cohen, William W.},<br>
+		title = "{Time-Aware Language Models as Temporal Knowledge Bases}",<br>
+		journal = {Transactions of the Association for Computational Linguistics},<br>
+		volume = {10},<br>
+		pages = {257-273},<br>
+		year = {2022},<br>
+		month = {03},<br>
+		issn = {2307-387X},<br>
+		doi = {10.1162/tacl_a_00459},<br>
+		url = {https://doi.org/10.1162/tacl\_a\_00459},<br>
+		eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00459/2004543/tacl\_a\_00459.pdf},<br>
+		}
+	</div>
+        Bhuwan Dhingra, Jeremy R. Cole, Julian Martin Eisenschlos, Daniel Gillick, Jacob Eisenstein, William W. Cohen<br>
+        TACL, 2022<br>
+    <li><i>Evaluating Explanations: How much do explanations from the teacher aid students?</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2012.00893">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/danishpruthi/evaluating-explanations">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('expeval-bib')">bib</button><br>
+	<div id="expeval-bib" class="bib-display" style="display: none">
+		@article{pruthi2022evaluating,<br>
+		author = {Pruthi, Danish and Bansal, Rachit and Dhingra, Bhuwan and Soares, Livio Baldini and Collins, Michael and Lipton, Zachary C. and Neubig, Graham and Cohen, William W.},<br>
+		title = "{Evaluating Explanations: How Much Do Explanations from the Teacher Aid Students?}",<br>
+		journal = {Transactions of the Association for Computational Linguistics},<br>
+		volume = {10},<br>
+		pages = {359-375},<br>
+		year = {2022},<br>
+		month = {04},<br>
+		issn = {2307-387X},<br>
+		doi = {10.1162/tacl_a_00465},<br>
+		url = {https://doi.org/10.1162/tacl\_a\_00465},<br>
+		eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00465/2006971/tacl\_a\_00465.pdf},<br>
+	}
+	</div>
+        Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins,<br>
+        Zachary C. Lipton, Graham Neubig, William W. Cohen<br>
+        TACL, 2022<br>
+</ul>
+
+<h3>2021</h3>
+<ul>
+    <li><i>Reasoning Over Virtual Knowledge Bases With Open Predicate Relations</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2102.07043">arxiv</a>&nbsp;
+        <button class="btn bib" onclick="showbib('opql-bib')">bib</button><br>
+        <div id="opql-bib" class="bib-display" style="display: none">
+            @inproceedings{sun2021reasoning,<br>
+            title={Reasoning over virtual knowledge bases with open predicate relations},<br>
+            author={Sun, Haitian and Verga, Pat and Dhingra, Bhuwan and Salakhutdinov, Ruslan and Cohen, William W},<br>
+            journal={ICML},<br>
+            year={2021}<br>
+            }
+        </div>
+        Haitian Sun, Pat Verga, Bhuwan Dhingra, Ruslan Salakhutdinov, William W. Cohen<br>
+        ICML, 2021<br>
+    <li><i>Siamese BERT for Authorship Verification</i>&nbsp;
+        <a class="btn pdf" href="http://ceur-ws.org/Vol-2936/paper-193.pdf">pdf</a>&nbsp;
+        <button class="btn bib" onclick="showbib('siamese-bib')">bib</button><br>
+        <div id="siamese-bib" class="bib-display" style="display: none">
+            @inproceedings{TyoEtAl:CLEF-2021,<br>
+            title = {Siamese Bert for Authorship Verification},<br>
+            author = {Jacob Tyo and Bhuwan Dhingra and Zachary Lipton},<br>
+            pages = {2169--2177},<br>
+            url = {http://ceur-ws.org/Vol-2936/#paper-193},<br>
+            crossref = {CLEF-2021},<br>
+            }
+        </div>
+        Jacob Tyo, Bhuwan Dhingra, Zachary Lipton<br>
+        CLEF, 2021<br>
+    <li><i>Investigating the Effect of Background Knowledge on Natural Questions</i>&nbsp;
+        <a class="btn arxiv" href="https://aclanthology.org/2021.deelio-1.3/">aclweb</a>&nbsp;
+        <button class="btn bib" onclick="showbib('backgroundnq-bib')">bib</button><br>
+        <div id="backgroundnq-bib" class="bib-display" style="display: none">
+            @inproceedings{balachandran-etal-2021-investigating,<br>
+            title = "Investigating the Effect of Background Knowledge on Natural Questions",<br>
+            author = "Balachandran, Vidhisha  and<br>
+            Dhingra, Bhuwan  and<br>
+            Sun, Haitian  and<br>
+            Collins, Michael  and<br>
+            Cohen, William",<br>
+            booktitle = "Proceedings of Deep Learning Inside Out (DeeLIO): The 2nd Workshop on Knowledge Extraction and Integration for Deep Learning Architectures",<br>
+            month = jun,<br>
+            year = "2021",<br>
+            address = "Online",<br>
+            publisher = "Association for Computational Linguistics",<br>
+            url = "https://aclanthology.org/2021.deelio-1.3",<br>
+            doi = "10.18653/v1/2021.deelio-1.3",<br>
+            pages = "25--30",<br>
+            }
+        </div>
+        Vidhisha Balachandran, Bhuwan Dhingra, Haitian Sun, Michael Collins, William Cohen<br>
+        DeeLIO Workshop, 2021<br>
+    <li><i>Differentiable Open-Ended Commonsense Reasoning</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2010.14439">arxiv</a>&nbsp;
+        <a class="btn code" href="https://open-csr.github.io/">code+data</a>&nbsp;
+        <button class="btn bib" onclick="showbib('drfact-bib')">bib</button><br>
+        <div id="drfact-bib" class="bib-display" style="display: none">
+            @inproceedings{lin-etal-2021-differentiable,<br>
+            title = "Differentiable Open-Ended Commonsense Reasoning",<br>
+            author = "Lin, Bill Yuchen and Sun, Haitian and Dhingra, Bhuwan and Zaheer, Manzil and Ren, Xiang and Cohen, William",<br>
+            booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",<br>
+            month = jun,<br>
+            year = "2021",<br>
+            address = "Online",<br>
+            publisher = "Association for Computational Linguistics",<br>
+            url = "https://www.aclweb.org/anthology/2021.naacl-main.366",<br>
+            pages = "4611--4625"<br>
+            }
+        </div>
+        Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen<br>
+        NAACL, 2021<br>
+    <li><i>Fool Me Twice: Entailment from Wikipedia Gamification</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2104.04725">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/google-research/fool-me-twice">code+data</a>&nbsp;
+        <button class="btn bib" onclick="showbib('fm2-bib')">bib</button><br>
+        <div id="fm2-bib" class="bib-display" style="display: none">
+            @inproceedings{eisenschlos-etal-2021-fool,<br>
+            title = "Fool Me Twice: Entailment from {W}ikipedia Gamification",<br>
+            author = {Eisenschlos, Julian Martin  and<br>
+            Dhingra, Bhuwan  and<br>
+            Bulian, Jannis  and<br>
+            Borschinger, Benjamin  and<br>
+            Boyd-Graber, Jordan},<br>
+            booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",<br>
+            month = jun,<br>
+            year = "2021",<br>
+            address = "Online",<br>
+            publisher = "Association for Computational Linguistics",<br>
+            url = "https://www.aclweb.org/anthology/2021.naacl-main.32",<br>
+            pages = "352--365",<br>
+            }
+        </div>
+        Julian Martin Eisenschlos, Bhuwan Dhingra, Jannis Bulian, Benjamin BÃ¶rschinger, Jordan Boyd-Graber<br>
+        NAACL, 2021<br>
+</ul>
+
+<h3>2020</h3>
+<ul>
+    <li><i>ToTTo: A Controlled Table-To-Text Generation Dataset</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2004.14373">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/google-research-datasets/totto">data</a>&nbsp;
+        <button class="btn bib" onclick="showbib('totto-bib')">bib</button><br>
+        <div id="totto-bib" class="bib-display" style="display: none">
+            @article{parikh2020totto,<br>
+            âtitle={ToTTo: A Controlled Table-To-Text Generation Dataset},<br>
+            âauthor={Parikh, Ankur P and Wang, Xuezhi and Gehrmann, Sebastian and Faruqui, Manaal and Dhingra, Bhuwan and Yang, Diyi and Das, Dipanjan},<br>
+            âjournal={EMNLP},<br>
+            âyear={2020}<br>
+            }
+        </div>
+        Ankur P. Parikh, Xuezhi Wang, Sebastian Gehrmann, Manaal Faruqui, Bhuwan Dhingra, Diyi Yang, Dipanjan Das<br>
+        EMNLP, 2020<br>
+    </li><li><i>Weakly- and Semi-supervised Evidence Extraction</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/2011.01459">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/danishpruthi/evidence-extraction">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('evidence-bib')">bib</button><br>
+        <div id="evidence-bib" class="bib-display" style="display: none">
+            @inproceedings{pruthi2020weakly,<br>
+            âtitle={Weakly- and Semi-supervised Evidence Extraction},<br>
+            âauthor={Pruthi, Danish and and Dhingra, Bhuwan and Neubig, Graham and Lipton, Zachary C},<br>
+            âbooktitle = {Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},<br>
+            âmonth = {November},<br>
+            âyear = {2020}<br>
+            }
+        </div>
+        Danish Pruthi, Bhuwan Dhingra, Graham Neubig, Zachary C. Lipton<br>
+        Findings of EMNLP, 2020<br>
+    </li><li><i>Learning to Deceive with Attention-Based Explanations</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1909.07913">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/fool-attention.pdf">pdf</a>
+        <a class="btn code" href="https://github.com/danishpruthi/deceptive-attention">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('attention-bib')">bib</button><br>
+        <div id="attention-bib" class="bib-display" style="display: none">
+            @inproceedings{pruthi2020learning,<br>
+            âtitle={Learning to Deceive with Attention-Based Explanations},<br>
+            âauthor={Pruthi, Danish and Gupta, Mansi and Dhingra, Bhuwan and Neubig, Graham and Lipton, Zachary C},<br>
+            âbooktitle = {The 58th Annual Meeting of the Association for Computational Linguistics (ACL)},<br>
+            âaddress = {Seattle, USA},<br>
+            âmonth = {July},<br>
+            âyear = {2020}<br>
+            }
+        </div>
+        Danish Pruthi, Mansi Gupta, Bhuwan Dhingra, Graham Neubig, Zachary C. Lipton<br>
+        ACL, 2020<br>
+    </li><li><i>Differentiable Reasoning over a Virtual Knowledge Base</i>&nbsp;
+        <a class="btn openreview" href="https://openreview.net/forum?id=SJxstlHFPH">openreview</a>&nbsp;
+        <a class="btn pdf" href="papers/drkit.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="http://www.cs.cmu.edu/~bdhingra/pages/drkit.html">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('drkit-bib')">bib</button><br>
+        <div id="drkit-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra2020differentiable,<br>
+            âtitle={Differentiable Reasoning over a Virtual Knowledge Base},<br>
+            âauthor={Dhingra, Bhuwan and Zaheer, Manzil and Balachandran, Vidhisha and Neubig, Graham and Salakhutdinov, Ruslan and Cohen, William W},<br>
+            âbooktitle={International Conference on Learning Representations},<br>
+            âyear={2019}<br>
+            }
+        </div>
+        <!--(<a href="https://openreview.net/forum?id=SJxstlHFPH">openreview</a>, <a href="papers/drkit.pdf">pdf</a>)<br>-->
+        Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen<br>
+        ICLR, 2020 <b>(oral, top 2%)</b></li>
+</ul>
+
+<h3>2019</h3>
+<ul>
+    <li><i>PubMedQA: A Dataset for Biomedical Research Question Answering</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1909.06146">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/pubmedqa.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://pubmedqa.github.io/">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('pubmedqa-bib')">bib</button><br>
+        <div id="pubmedqa-bib" class="bib-display" style="display: none">
+            @inproceedings{jin2019pubmedqa,<br>
+            âtitle={PubMedQA: A Dataset for Biomedical Research Question Answering},<br>
+            âauthor={Jin, Qiao and Dhingra, Bhuwan and Liu, Zhengping and Cohen, William and Lu, Xinghua},<br>
+            âbooktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},<br>
+            âpages={2567--2577},<br>
+            âyear={2019}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1909.06146">arxiv</a>, <a href="https://pubmedqa.github.io/">code+data</a>)<br>-->
+        Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W. Cohen, Xinghua Lu<br>
+        EMNLP, 2019</li>
+    <li><i>Handling Divergent Reference Texts when Evaluating Table-to-Text Generation</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1906.01081">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/parent.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="pages/parent.html">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('parent-bib')">bib</button><br>
+        <div id="parent-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra2019handling,<br>
+            âtitle={Handling divergent reference texts in table-to-text generation},<br>
+            âauthor={Dhingra, Bhuwan and Faruqui, Manaal and Parikh, Ankur and Chang, Ming-Wei and Das, Dipanjan and Cohen, William W},<br>
+            âbooktitle={Proc. of ACL},<br>
+            âyear={2019}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1906.01081">arxiv</a>, <a href="pages/parent.html">code+data</a>)<br>-->
+    	Bhuwan Dhingra, Manaal Faruqui, Ankur Parikh, Ming-Wei Chang, Dipanjan Das, William W. Cohen<br>
+        ACL, 2019</li>
+    <li><i>Combating Adversarial Misspellings with Robust Word Recognition</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1905.11268">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/misspell.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/danishpruthi/adversarial-misspellings">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('misspell-bib')">bib</button><br>
+        <div id="misspell-bib" class="bib-display" style="display: none">
+            @article{pruthi2019combating,<br>
+            âtitle={Combating Adversarial Misspellings with Robust Word Recognition},<br>
+            âauthor={Pruthi, Danish and Dhingra, Bhuwan and Lipton, Zachary C},<br>
+            âbooktitle = {The 57th Annual Meeting of the Association for Computational Linguistics (ACL)},<br>
+            âaddress = {Florence, Italy},<br>
+            âmonth = {July},<br>
+            âyear = {2019}<br>
+            }
+        </div>
+    <!--(<a href="https://arxiv.org/abs/1905.11268">arxiv</a>, <a href="papers/misspell.pdf">pdf</a>,
+    <a href="https://github.com/danishpruthi/adversarial-misspellings">code</a>)<br>-->
+	Danish Pruthi, Bhuwan Dhingra, Zachary C. Lipton<br>
+        ACL, 2019</li>
+    <li><i>Probing Biomedical Embeddings from Language Models</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1904.02181">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/bioelmo.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/Andy-jqa/bioelmo">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('bioelmo-bib')">bib</button><br>
+        <div id="bioelmo-bib" class="bib-display" style="display: none">
+            @inproceedings{jin2019probing,<br>
+            âtitle={Probing Biomedical Embeddings from Language Models},<br>
+            âauthor={Jin, Qiao and Dhingra, Bhuwan and Cohen, William and Lu, Xinghua},<br>
+            âbooktitle={Proceedings of the 3rd Workshop on Evaluating Vector Space Representations for NLP},<br>
+            âpages={82--89},<br>
+            âyear={2019}<br>
+            }
+        </div>
+    <!--(<a href="https://arxiv.org/pdf/1904.02181.pdf">arxiv</a>, <a href="papers/bioelmo.pdf">pdf</a>,
+    <a href="https://github.com/Andy-jqa/bioelmo">code</a>)<br>-->
+    Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu<br>
+    RepEval Workshop, NAACL, 2019</li>
+    <li><i>Text Generation with Exemplar-based Adaptive Decoding</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1904.04428">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/exemplar.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/google-research/language/tree/master/language/labs/exemplar_decoding">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('exemplar-bib')">bib</button><br>
+        <div id="exemplar-bib" class="bib-display" style="display: none">
+            @InProceedings{peng2019text,<br>
+            âauthor = {Peng, Hao and Parikh, Ankur P. and Faruqui, Manaal and Dhingra, Bhuwan and Das Dipanjan},<br>
+            âtitle     = {Text Generation with Exemplar-based Adaptive Decoding},<br>
+            âbooktitle = {Proceedings of the Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},<br>
+            âyear      = {2019}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1904.04428">arxiv</a>, <a href="papers/exemplar.pdf">pdf</a>)<br>-->
+        Hao Peng, Ankur P. Parikh, Manaal Faruqui, Bhuwan Dhingra, Dipanjan Das<br>
+    NAACL, 2019</li>
+</ul>
+
+<h3>2018</h3>
+<ul>
+    <li><i>GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1806.05662">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/glomo.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/kimiyoung/glomo">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('glomo-bib')">bib</button><br>
+        <div id="glomo-bib" class="bib-display" style="display: none">
+            @inproceedings{yang2018glomo,<br>
+            âtitle={Glomo: Unsupervisedly learned relational graphs as transferable representations},<br>
+            âauthor={Yang, Zhilin and Zhao, Jake and Dhingra, Bhuwan and He, Kaiming and Cohen, William W and Salakhutdinov, Ruslan and LeCun, Yann},<br>
+            âjournal={NIPS},<br>
+            âyear={2018}<br>
+            }
+        </div>
+        Zhilin Yang*, Jake Zhao*, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun<br>
+        NIPS, 2018</li>
+    <li><i>Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1809.00782">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/graft-net.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/OceanskySun/GraftNet">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('graftnet-bib')">bib</button><br>
+        <div id="graftnet-bib" class="bib-display" style="display: none">
+            @article{sun2018open,<br>
+            âtitle={Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text},<br>
+            âauthor={Sun, Haitian and Dhingra, Bhuwan and Zaheer, Manzil and Mazaitis, Kathryn and Salakhutdinov, Ruslan and Cohen, William W},<br>
+            âjournal={EMNLP},<br>
+            âyear={2018}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1809.00782">arxiv</a>, <a href="papers/graft-net.pdf">pdf</a>, <a href="https://github.com/OceanskySun/GraftNet">code+data</a>)<br>-->
+        Haitian Sun*, Bhuwan Dhingra*, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, William W. Cohen<br>
+        EMNLP, 2018</li>
+    <li><i>AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer</i>&nbsp;
+        <a class="btn arxiv" href="https://www.aclweb.org/anthology/W18-5306/">aclweb</a>&nbsp;
+        <a class="btn pdf" href="papers/attentionmesh.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/Andy-jqa/AttnMeSH">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('attentionmesh-bib')">bib</button><br>
+        <div id="attentionmesh-bib" class="bib-display" style="display: none">
+            @inproceedings{jin-etal-2018-attentionmesh,<br>
+            âtitle = "{A}ttention{M}e{SH}: Simple, Effective and Interpretable Automatic {M}e{SH} Indexer",<br>
+            âauthor = "Jin, Qiao  and<br>
+            âDhingra, Bhuwan  and<br>
+            âCohen, William  and<br>
+            âLu, Xinghua",<br>
+            âbooktitle = "Proceedings of the 6th {B}io{ASQ} Workshop A challenge on large-scale biomedical semantic indexing and question answering",<br>
+            âmonth = nov,<br>
+            âyear = "2018",<br>
+            âaddress = "Brussels, Belgium",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/W18-5306",<br>
+            âdoi = "10.18653/v1/W18-5306",<br>
+            âpages = "47--56",<br>
+            }
+        </div>
+        <!--(<a href="">arxiv</a>, <a href="papers/attention-mesh.pdf">pdf</a>)<br>-->
+        Qiao Jin*, Bhuwan Dhingra*, William W. Cohen, Xinghua Lu<br>
+        BioASQ Workshop, 2018</li>
+    <li><i>Answering Cloze-style Software Questions Using Stack Overflow</i>&nbsp;
+        <a class="btn pdf" href="papers/case-mlp.pdf">pdf</a>&nbsp;
+        <button class="btn bib" onclick="showbib('casemlp-bib')">bib</button><br>
+        <div id="casemlp-bib" class="bib-display" style="display: none">
+            @inproceedings{winstonanswering,<br>
+            âtitle={Answering Cloze-style Software Questions Using Stack Overflow},<br>
+            âauthor={Winston, Ezra and Dhingra, Bhuwan and Mazaitis, Kathryn and Neubig, Graham and Cohen, William W},<br>
+            âjournal={Machine Learning for Programming},<br>
+            âyear={2018}<br>
+            }
+        </div>
+        <!--(<a href="papers/case-mlp.pdf">pdf</a>, <a href="https://www.youtube.com/watch?v=QWt6rrri0dI">talk</a>)<br>-->
+        Ezra Winston, Bhuwan Dhingra, Kathryn Mazaitis, Graham Neubig, William Cohen<br>
+        Machine Learning for Programming, 2018
+    </li>
+    <li><i>Embedding Text in Hyperbolic Spaces</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1806.04313">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/hyperbolic.pdf">pdf</a>&nbsp;
+        <button class="btn bib" onclick="showbib('hyperbolic-bib')">bib</button><br>
+        <div id="hyperbolic-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra-etal-2018-embedding,<br>
+            âtitle = "Embedding Text in Hyperbolic Spaces",<br>
+            âauthor = "Dhingra, Bhuwan  and<br>
+            âShallue, Christopher  and<br>
+            âNorouzi, Mohammad  and<br>
+            âDai, Andrew  and<br>
+            âDahl, George",<br>
+            âbooktitle = "Proceedings of the Twelfth Workshop on Graph-Based Methods for Natural Language Processing ({T}ext{G}raphs-12)",<br>
+            âmonth = jun,<br>
+            âyear = "2018",<br>
+            âaddress = "New Orleans, Louisiana, USA",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/W18-1708",<br>
+            âdoi = "10.18653/v1/W18-1708",<br>
+            âpages = "59--69",<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1806.04313">arxiv</a>, <a href="papers/hyperbolic.pdf">pdf</a>)<br>-->
+        Bhuwan Dhingra, Christopher J. Shallue, Mohammad Norouzi, Andrew M. Dai, George E. Dahl<br>
+        TextGraphs Workshop, 2018</li>
+    <li><i>Neural Models for Reasoning over Multiple Mentions using Coreference</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1804.05922">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/coref-gru.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/bdhingra/coref-gru">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('coref-bib')">bib</button><br>
+        <div id="coref-bib" class="bib-display" style="display: none">
+            @inproceedings{DBLP:conf/naacl/DhingraJYCS18,<br>
+            âauthor    = {Bhuwan Dhingra and<br>
+            âQiao Jin and<br>
+            âZhilin Yang and<br>
+            âWilliam W. Cohen and<br>
+            âRuslan Salakhutdinov},<br>
+            âtitle     = {Neural Models for Reasoning over Multiple Mentions Using Coreference},<br>
+            âbooktitle = {Proceedings of the 2018 Conference of the North American Chapter of<br>
+            âthe Association for Computational Linguistics: Human Language Technologies,<br>
+            âNAACL-HLT, New Orleans, Louisiana, USA, June 1-6, 2018, Volume 2 (Short<br>
+            âPapers)},<br>
+            âpages     = {42--48},<br>
+            âyear      = {2018},<br>
+            âcrossref  = {DBLP:conf/naacl/2018-2},<br>
+            âurl       = {https://aclanthology.info/papers/N18-2007/n18-2007},<br>
+            âtimestamp = {Wed, 30 May 2018 15:04:59 +0200},<br>
+            âbiburl    = {https://dblp.org/rec/bib/conf/naacl/DhingraJYCS18},<br>
+            âbibsource = {dblp computer science bibliography, https://dblp.org}<br>
+            }
+        </div>
+        <!--    (<a href="https://arxiv.org/abs/1804.05922">arxiv</a>, <a href="papers/coref-gru.pdf">pdf</a>, <a href="https://github.com/bdhingra/coref-gru">code+data</a>)<br>-->
+        Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov<br>
+        NAACL, 2018 (Short Paper)</li>
+    <li><i>Simple and Effective Semi-Supervised Question Answering</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1804.00720">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/sslqa.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="http://bit.ly/semi-supervised-qa">data</a>&nbsp;
+        <button class="btn bib" onclick="showbib('sslqa-bib')">bib</button><br>
+        <div id="sslqa-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra-etal-2018-simple,<br>
+            âtitle = "Simple and Effective Semi-Supervised Question Answering",<br>
+            âauthor = "Dhingra, Bhuwan  and<br>
+            âDanish, Danish  and<br>
+            âRajagopal, Dheeraj",<br>
+            âbooktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)",<br>
+            âmonth = jun,<br>
+            âyear = "2018",<br>
+            âaddress = "New Orleans, Louisiana",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/N18-2092",<br>
+            âdoi = "10.18653/v1/N18-2092",<br>
+            âpages = "582--587",<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1804.00720">arxiv</a>, <a href="http://bit.ly/semi-supervised-qa">data</a>)<br>-->
+        Bhuwan Dhingra*, Danish Pruthi*, Dheeraj Rajagopal*<br>
+        NAACL, 2018 (Short Paper)</li>
+</ul>
+
+<h3>2017</h3>
+<ul>
+    <li><i>Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1609.00777">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/e2e_rl.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/MiuLab/KB-InfoBot">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('e2erl-bib')">bib</button><br>
+        <div id="e2erl-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra-etal-2017-towards,<br>
+            âtitle = "Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access",<br>
+            âauthor = "Dhingra, Bhuwan  and<br>
+            âLi, Lihong  and<br>
+            âLi, Xiujun  and<br>
+            âGao, Jianfeng  and<br>
+            âChen, Yun-Nung  and<br>
+            âAhmed, Faisal  and<br>
+            âDeng, Li",<br>
+            âbooktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",<br>
+            âmonth = jul,<br>
+            âyear = "2017",<br>
+            âaddress = "Vancouver, Canada",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/P17-1045",<br>
+            âdoi = "10.18653/v1/P17-1045",<br>
+            âpages = "484--495",<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1609.00777">arxiv</a>, <a href="papers/e2e_rl.pdf">pdf</a>, <a href="https://github.com/MiuLab/KB-InfoBot">code+data</a>)<br>-->
+        Bhuwan Dhingra, Lihong Li, Xiujun Li, Jianfeng Gao, Yun-Nung Chen, Faisal Ahmed, Li Deng<br>
+        ACL, 2017</li>
+    <li><i>Gated-Attention Readers for Text Comprehension</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1606.01549">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/ga_reader.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/bdhingra/ga-reader">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('gareader-bib')">bib</button><br>
+        <div id="gareader-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra-etal-2017-gated,<br>
+            âtitle = "Gated-Attention Readers for Text Comprehension",<br>
+            âauthor = "Dhingra, Bhuwan  and<br>
+            âLiu, Hanxiao  and<br>
+            âYang, Zhilin  and<br>
+            âCohen, William  and<br>
+            âSalakhutdinov, Ruslan",<br>
+            âbooktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",<br>
+            âmonth = jul,<br>
+            âyear = "2017",<br>
+            âaddress = "Vancouver, Canada",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/P17-1168",<br>
+            âdoi = "10.18653/v1/P17-1168",<br>
+            âpages = "1832--1846",<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1606.01549">arxiv</a>, <a href="papers/ga_reader.pdf">pdf</a>, <a href="https://github.com/bdhingra/ga-reader">code+data</a>)<br>-->
+        Bhuwan Dhingra*, Hanxiao Liu*, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov<br>
+        ACL, 2017</li>
+    <li><i>Words or Characters? Fine-grained Gating for Reading Comprehension</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1611.01724">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/wordchars.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/kimiyoung/fg-gating">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('wordchars-bib')">bib</button><br>
+        <div id="wordchars-bib" class="bib-display" style="display: none">
+            @article{yang2016words,<br>
+            âtitle={Words or characters? fine-grained gating for reading comprehension},<br>
+            âauthor={Yang, Zhilin and Dhingra, Bhuwan and Yuan, Ye and Hu, Junjie and Cohen, William W and Salakhutdinov, Ruslan},<br>
+            âjournal={ICLR},<br>
+            âyear={2017}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1611.01724">arxiv</a>, <a href="papers/wordchars.pdf">pdf</a>)<br>-->
+        Zhilin Yang, Bhuwan Dhingra, Ye Yuan, Junjie Hu, William W. Cohen, Ruslan Salakhutdinov<br>
+        ICLR, 2017</li>
+    <li><i>Bootstrapping Distantly Supervised IE using Joint Learning and Small Well-structured Corpora</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1606.03398">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/distant_ie.pdf">pdf</a>&nbsp;
+        <button class="btn bib" onclick="showbib('diejob-bib')">bib</button><br>
+        <div id="diejob-bib" class="bib-display" style="display: none">
+            @inproceedings{bing2017bootstrapping,<br>
+            âtitle={Bootstrapping distantly supervised IE using joint learning and small well-structured corpora},<br>
+            âauthor={Bing, Lidong and Dhingra, Bhuwan and Mazaitis, Kathryn and Park, Jong Hyuk and Cohen, William W},<br>
+            âbooktitle={Thirty-First AAAI Conference on Artificial Intelligence},<br>
+            âyear={2017}<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1606.03398">arxiv</a>, <a href="papers/distant_ie.pdf">pdf</a>)<br>-->
+        Lidong Bing, Bhuwan Dhingra, Kathryn Mazaitis, Jong Hyuk Park, William W. Cohen<br>
+        AAAI, 2017</li>
+</ul>
+
+<h3>2016</h3>
+<ul>
+    <li><i>Tweet2Vec: Character-Based Distributed Representations for Social Media</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1605.03481">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/tweet2vec.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="https://github.com/bdhingra/tweet2vec">code</a>&nbsp;
+        <button class="btn bib" onclick="showbib('tweet2vec-bib')">bib</button><br>
+        <div id="tweet2vec-bib" class="bib-display" style="display: none">
+            @inproceedings{dhingra-etal-2016-tweet2vec,<br>
+            âtitle = "{T}weet2{V}ec: Character-Based Distributed Representations for Social Media",<br>
+            âauthor = "Dhingra, Bhuwan  and<br>
+            âZhou, Zhong  and<br>
+            âFitzpatrick, Dylan  and<br>
+            âMuehl, Michael  and<br>
+            âCohen, William",<br>
+            âbooktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",<br>
+            âmonth = aug,<br>
+            âyear = "2016",<br>
+            âaddress = "Berlin, Germany",<br>
+            âpublisher = "Association for Computational Linguistics",<br>
+            âurl = "https://www.aclweb.org/anthology/P16-2044",<br>
+            âdoi = "10.18653/v1/P16-2044",<br>
+            âpages = "269--274",<br>
+            }
+        </div>
+        <!--(<a href="https://arxiv.org/abs/1605.03481">arxiv</a>, <a href="papers/tweet2vec.pdf">pdf</a>, <a href="https://github.com/bdhingra/tweet2vec">code</a>)<br>-->
+        Bhuwan Dhingra, Zhong Zhou, Dylan Fitzpatrick, Michael Muehl, William W. Cohen<br>
+        ACL, 2016 (Short Paper)</li>
+    <li><i>Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1703.01557">arxiv</a>&nbsp;
+        <a class="btn pdf" href="papers/wakbc-2016.pdf">pdf</a>&nbsp;
+        <button class="btn bib" onclick="showbib('wakbc-bib')">bib</button><br>
+        <div id="wakbc-bib" class="bib-display" style="display: none">
+            @inproceedings{bing2016using,<br>
+            âtitle={Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction},<br>
+            âauthor={Bing, Lidong and Cohen, William and Dhingra, Bhuwan and Wang, Richard C},<br>
+            âbooktitle={Proceedings of the 5th Workshop on Automated Knowledge Base Construction},<br>
+            âpages={1--6},<br>
+            âyear={2016}<br>
+            }
+        </div>
+        <!--(<a href="papers/wakbc-2016.pdf">pdf</a>)<br>-->
+        Lidong Bing, William W. Cohen, Bhuwan Dhingra, Richard C. Wang<br>
+        WAKBC, 2016</li>
+</ul>
+
+<h3>Earlier</h3>
+<ul>
+    <li><i>Local Quadrature Reconstruction on Smooth Manifolds</i>&nbsp;
+        <a class="btn pdf" href="papers/LQR_thesis.pdf">pdf</a>&nbsp;
+        <a class="btn code" href="http://www.cse.iitk.ac.in/users/manifolds/theses/bhuwand/">webpage</a>&nbsp;
+        <button class="btn bib" onclick="showbib('lqr-bib')">bib</button><br>
+        <div id="lqr-bib" class="bib-display" style="display: none">
+            @mastersthesis{dhingra2013local,<br>
+            âtitle={Local Quadrature Reconstruction on Smooth Manifolds},<br>
+            âauthor={Dhingra, Bhuwan},<br>
+            âyear={2013},<br>
+            âschool={INDIAN INSTITUTE OF TECHNOLOGY, KANPUR}<br>
+            }
+        </div>
+        <!--(<a href="http://www.cse.iitk.ac.in/users/manifolds/theses/bhuwand/">webpage</a>, <a href="papers/LQR_thesis.pdf">pdf</a>)<br>-->
+        Bhuwan Dhingra<br>
+        Master's Thesis, 2013</li>
+    <li><i>Stock market prediction using hidden markov models</i>&nbsp;
+        <a class="btn arxiv" href="http://ieeexplore.ieee.org/document/6199099/">ieee-xplore</a>&nbsp;
+        <a class="btn pdf" href="papers/stock_hmm.pdf">pdf</a>
+        <button class="btn bib" onclick="showbib('stock-bib')">bib</button><br>
+        <div id="stock-bib" class="bib-display" style="display: none">
+            @inproceedings{gupta2012stock,<br>
+            âtitle={Stock market prediction using hidden markov models},<br>
+            âauthor={Gupta, Aditya and Dhingra, Bhuwan},<br>
+            âbooktitle={2012 Students Conference on Engineering and Systems},<br>
+            âpages={1--4},<br>
+            âyear={2012},<br>
+            âorganization={IEEE}<br>
+            }
+        </div>
+        Aditya Gupta, Bhuwan Dhingra<br>
+        IEEE-SCES, 2012</li>
+</ul>
+<i>(* Equal Contribution)</i>
+<!-- <div class="navbar-header">
+      <a <a class="no-underline" href="#preprints"></a>
+    </div> -->
+<h2>Preprints</h2>
+<ul>
+    </li><li><i>Quasar: Datasets for Question Answering by Search and Reading</i>&nbsp;
+        <a class="btn arxiv" href="https://arxiv.org/abs/1707.03904">arxiv</a>&nbsp;
+        <a class="btn code" href="https://github.com/bdhingra/quasar">data</a><br>
+        Bhuwan Dhingra, Kathryn Mazaitis, William W. Cohen<br>
+        2017<br>
+    </li><li><i>Linguistic Knowledge as Memory for Recurrent Neural Networks</i>&nbsp;
+    <a class="btn arxiv" href="https://arxiv.org/abs/1703.02620">arxiv</a>&nbsp;
+    <a class="btn pdf" href="papers/linguistic_rnn.pdf">pdf</a><br>
+        Bhuwan Dhingra, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov<br>
+        2017<br>
+    </li><li><i>A Comparative Study of Word Embeddings for Reading Comprehension</i>&nbsp;
+    <a class="btn arxiv" href="https://arxiv.org/abs/1703.00993">arxiv</a>&nbsp;
+    <a class="btn pdf" href="papers/word_embeddings.pdf">pdf</a>&nbsp;
+    <a class="btn code" href="https://github.com/bdhingra/ga-reader">code</a><br>
+        Bhuwan Dhingra, Hanxiao Liu, Ruslan Salakhutdinov, William W. Cohen<br>
+        2017<br>
+    </li><li><i>Question Answering from Unstructured Text by Retrieval and Comprehension</i>&nbsp;
+    <a class="btn arxiv" href="https://arxiv.org/abs/1703.08885">arxiv</a>&nbsp;
+    <a class="btn pdf" href="papers/qa_rac.pdf">pdf</a><br>
+        Yusuke Watanabe, Bhuwan Dhingra, Ruslan Salakhutdinov<br>
+        2017<br>
+    </li><li><i>A User Simulator for Task-Completion Dialogues</i>&nbsp;
+    <a class="btn arxiv" href="https://arxiv.org/abs/1612.05688">arxiv</a>&nbsp;
+    <a class="btn pdf" href="papers/user_sim.pdf">pdf</a>&nbsp;
+    <a class="btn code" href="https://github.com/MiuLab/TC-Bot">code</a><br>
+        Xiujun Li, Zachary C. Lipton, Bhuwan Dhingra, Lihong Li, Jianfeng Gao, Yun-Nung Chen<br>
+        2016<br>
+</li></ul>
+
+<!-- <div class="navbar-header">
+      <a class="no-underline" href="#patents"><h2>Patents</h2></a>
+    </div> -->
+    
+<h2>Patents</h2>
+<ul>
+    <li><i>End-to-end learning of dialogue agents for information access</i>&nbsp;
+    <a class="btn code" href="https://patents.google.com/patent/US20180060301A1/en">application</a><br>
+        Lihong Li, Bhuwan Dhingra, Jianfeng Gao, Xiujun Li, Yun-Nung Chen, Li Deng, Faisal Ahmed<br>
+        Filed 2017</li>
+    <li><i>Context aware system with multiple power consumption modes</i>&nbsp;
+    <a class="btn code" href="https://www.google.com/patents/US20170041874">application</a><br>
+        Tadeusz Jarosinski, Shankar Sadasivam, Ryan Carey, Jinwon Lee, Bhuwan Dhingra,<br>
+        Abhijeet Bisain, Vitor Carvalho, Rajeev Jain, Muralidhar Akula, Ashwin Swaminathan<br>
+        Filed 2015</li>
+    <li><i>Smartphone motion classifier</i>&nbsp;
+    <a class="btn code" href="https://www.google.com/patents/US20160195569">application</a><br>
+        Vitor Carvalho, Bhuwan Dhingra, Edward Harrison Teague, Siddika Parlak Polatkan, Shankar Sadasivam, Carlos Manuel Puig<br>
+        Filed 2015</li>
+    <li><i>Detecting that a mobile device is riding with a vehicle</i>&nbsp;
+    <a class="btn code" href="https://www.google.com/patents/US20130245986">application</a><br>
+        Leonard Henry Grokop, and Bhuwan Dhingra<br>
+        Filed 2012</li>
+</ul>
+
+    <script>
+        function showbib(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function respFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+
+	function onNavClick(id) {
+		var allNavItems = document.getElementById("myTopnav").children;
+		for (i=0; i<allNavItems.length - 1; i++) {
+			if (allNavItems[i].id == id) {
+				allNavItems[i].classList.add("active");
+			} else {
+				allNavItems[i].classList.remove("active");
+			}
+		}
+	}
+
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {stickyFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("myTopnav");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function stickyFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+    </script>
+
+
+
+
+</body></html>

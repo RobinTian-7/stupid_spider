@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    
+    <script>// GA self-exclusion: visit any page with ?disable_ga=true to opt out
+// Visit with ?disable_ga=false to re-enable tracking
+(function() {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var flag = params.get('disable_ga');
+    if (flag === 'true') localStorage.setItem('ga_self_exclusion', '1');
+    else if (flag === 'false') localStorage.removeItem('ga_self_exclusion');
+    window.__ga_disabled = localStorage.getItem('ga_self_exclusion') === '1';
+  } catch (e) {
+    window.__ga_disabled = false;
+  }
+})();
+</script>
+    <script>
+    if (!window.__ga_disabled) {
+        (function() {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2N92314P69';
+            document.head.appendChild(s);
+        })();
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2N92314P69', {
+          content_group: 'home'
+        });
+    }
+    </script>
+    
+
+    <!-- Basic meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <meta name="description" content="Homepage of Berk Ustun, Assistant Professor at UCSD. Research on safety, interpretability, personalization, and governance in AI and machine learning">
+
+    <!-- Page title -->
+    <title>Berk Ustun</title>
+
+    <!-- Search engine verification -->
+    
+    <meta name="google-site-verification" content="" />
+    
+    
+    
+    <meta name="msvalidate.01" content="" />
+    
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Dark mode: apply theme before first paint -->
+    <script>(function() {
+  // Apply theme immediately (before paint) to prevent flash
+  var stored = localStorage.getItem('theme_preference');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme = stored || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+
+  // Attach toggle handler after DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('dark-mode-toggle');
+    if (!btn) return;
+
+    btn.addEventListener('click', function() {
+      var html = document.documentElement;
+      var current = html.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme_preference', next);
+    });
+
+    // Listen for system theme changes (only when no explicit preference)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+      if (!localStorage.getItem('theme_preference')) {
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+  });
+})();
+</script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/v4-shims.min.css" integrity="sha512-wMbGfInxJdx5SSy+GdBNGwVy8CKiNOqyN4XKSX+1dIwfGZaJpqEuR3Nqnax6Uqr5VKLOOcMAfM2D9RMmMdGFdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    
+    <!-- Pre-calculate header height to prevent content jump -->
+    <script type="text/javascript">// Dynamically calculate and set header height as CSS custom property
+(function() {
+  function setHeaderHeight() {
+    const header = document.querySelector('.site-header');
+    if (header) {
+      const headerHeight = header.offsetHeight;
+      document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
+    }
+  }
+  
+  // Try to set immediately (may not work if called from <head>)
+  setHeaderHeight();
+  
+  // Set on DOMContentLoaded as backup
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setHeaderHeight);
+  } else {
+    // DOM already loaded, set it now
+    setHeaderHeight();
+  }
+  
+  // Also set on window load to catch any font loading that might affect height
+  window.addEventListener('load', setHeaderHeight);
+  
+  // Recalculate on resize (debounced)
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(setHeaderHeight, 250);
+  });
+})();
+</script>
+    
+    <!-- Open Graph / Twitter Card meta tags --><meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:site" content="@berkustun">
+    <meta name="twitter:creator" content="@berkustun">
+    
+    <meta name="twitter:title" content="Berk Ustun">
+    <meta name="twitter:description" content="Homepage of Berk Ustun, Assistant Professor at UCSD. Research on safety, interpretability, personalization, and governance in AI and machine learning">
+    <meta property="og:title" content="Berk Ustun">
+    <meta property="og:description" content="Homepage of Berk Ustun, Assistant Professor at UCSD. Research on safety, interpretability, personalization, and governance in AI and machine learning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.berkustun.com/">
+    <meta property="og:site_name" content="Berk Ustun">
+
+    <!-- Structured data -->
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Berk Ustun",
+        "url": "https://www.berkustun.com",
+        
+        "description": "Berk Ustun, Assistant Professor of Data Science and Computer Science at UCSD. Research on safety, interpretability, personalization, and governance in AI and machine learning.",
+        "affiliation": [
+            {
+                "@type": "Organization",
+                "name": "University of California, San Diego",
+                "url": "https://ucsd.edu"
+            },
+            {
+                "@type": "Organization", 
+                "name": "Halıcıoğlu Data Science Institute",
+                "url": "https://datascience.ucsd.edu"
+            },
+            {
+                "@type": "Organization",
+                "name": "Department of Computer Science & Engineering", 
+                "url": "https://cse.ucsd.edu"
+            }
+        ],
+        "knowsAbout": [
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Algorithmic Fairness",
+            "Interpretable Machine Learning",
+            "Data Science",
+            "Computer Science",
+            "AI Safety",
+            "AI Governance"
+            
+        ],
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "Harvard University"
+            },
+            {
+                "@type": "Organization",
+                "name": "Massachusetts Institute of Technology"
+            },
+            {
+                "@type": "Organization", 
+                "name": "University of California, Berkeley"
+            }
+        ],
+        "sameAs": ["https://twitter.com/berkustun","https://github.com/ustunb","https://www.linkedin.com/in/berkustun","https://scholar.google.com/citations?user=6z_XWYcAAAAJ","https://orcid.org/0000-0001-5188-3155"]
+    }
+    </script><!-- Image metadata for social sharing (non-paper pages) --><meta property="og:image" content="https://www.berkustun.com/assets/images/bio-photo.jpg">
+        <meta name="twitter:image" content="https://www.berkustun.com/assets/images/bio-photo.jpg"></head>
+
+
+<body>
+    
+
+<header class="site-header">
+    <div class="page-container">
+        <div class="site-header-container">
+            
+            <div class="site-title-container">
+                <a class="site-title" href="/">Berk Ustun</a>
+            </div>
+            
+            <div class="nav-container">
+                <!-- Desktop navbar -->
+                <nav class="site-nav desktop-navbar" id="desktop-nav-menu">
+                    <ul class="menu">
+                        
+                        
+                        <li class="page-link-container active">
+                            
+                            
+                            <a href="/" class="page-link">Home</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/papers/" class="page-link">Papers</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/group/" class="page-link">Group</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/teaching/" class="page-link">Teaching</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/docs/berk_cv.pdf" target="_blank" class="page-link">CV</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </nav>
+
+                <!-- Dark mode toggle (right of CV on desktop) -->
+                <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <!-- Mobile navbar -->
+                <nav class="site-nav mobile-navbar" id="mobile-nav-menu">
+                    <ul class="menu">
+                        
+                        
+                        <li class="page-link-container active">
+                            
+                            
+                            <a href="/" class="page-link">Home</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/papers/" class="page-link">Papers</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/group/" class="page-link">Group</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/teaching/" class="page-link">Teaching</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="page-link-container">
+                            
+                            
+                            <a href="/docs/berk_cv.pdf" target="_blank" class="page-link">CV</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </nav>
+
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="nav-overlay" id="nav-overlay" onclick="closeNav()"></div>
+
+
+<script>
+
+    function setNavPositions() {
+        const header = document.querySelector('.site-header');
+        const mobileNav = document.getElementById('mobile-nav-menu');
+        const overlay = document.getElementById('nav-overlay');
+        if (!header || !mobileNav || !overlay) return;
+        const headerHeight = header.getBoundingClientRect().height;
+        mobileNav.style.top = headerHeight + 'px';
+        overlay.style.top = headerHeight + 'px';
+        // Ensure proper stacking
+        mobileNav.style.zIndex = '350';
+        overlay.style.zIndex = '200';
+    }
+
+    function toggleNav() {
+        const mobileNav = document.getElementById('mobile-nav-menu');
+        const hamburger = document.getElementById('hamburger-btn');
+        const overlay = document.getElementById('nav-overlay');
+        setNavPositions();
+        const isOpen = mobileNav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        overlay.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeNav() {
+        document.getElementById('mobile-nav-menu').classList.remove('active');
+        document.getElementById('hamburger-btn').classList.remove('active');
+        document.getElementById('nav-overlay').classList.remove('active');
+        document.getElementById('hamburger-btn').setAttribute('aria-expanded', 'false');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize positions
+        setNavPositions();
+
+        // Toggle handlers
+        document.getElementById('hamburger-btn').addEventListener('click', toggleNav);
+        document.querySelectorAll('#mobile-nav-menu .page-link').forEach(link => {
+            link.addEventListener('click', closeNav);
+        });
+
+        // Update positions on resize/orientation changes
+        window.addEventListener('resize', setNavPositions);
+    });
+
+
+</script>
+    
+    <div class="page-content">
+        <div class="page-container">
+            
+<div class="text-container">
+<div class="contact-card-wrapper">
+<div class="contact-card-desktop">
+
+    <div class="contact-card-left">
+        <img src="/assets/images/bio-photo.jpg" alt="Portrait photo of Berk Ustun">
+    </div>
+
+    <div class="contact-card-right">
+    
+        <ul class="affiliations-list">
+            <strong>Assistant Professor</strong>
+<a href="https://datascience.ucsd.edu/" target="_blank" rel="noopener noreferrer">Halıcıoğlu Data Science Institute</a>
+<a href="https://cse.ucsd.edu/" target="_blank" rel="noopener noreferrer">Department of Computer Science &amp; Engineering</a>
+<a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer">University of California, San Diego</a>
+        </ul>
+        
+        <ul class="contact-list">
+            <li class="contact-list-item">
+                <a href="mailto:" class="contact-list-link">
+                    <i class="fa-solid fa-envelope contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label email-obfuscate" data-coded="R7Hr@1d5p.7p1" data-key="DwN5pnT63k4XREfuxoYeSqr09jli1KMt7GmHgLUQc8aOPhyAFWJZsd2zIvCBVb" data-text=""> </span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="https://maps.app.goo.gl/J5PUZ3zNL3dGgHHaA" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-location-dot contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">HDSI 452</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="docs/berk_cv.pdf" class="contact-list-link">
+                    <i class="fa-solid fa-file-lines contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">CV</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="bio/" class="contact-list-link">
+                    <i class="fa-solid fa-user-graduate contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">Bio</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="profile-list">
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://scholar.google.com/citations?user=6z_XWYcAAAAJ" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-solid fa-fw fa-graduation-cap contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">Google Scholar</span>
+                </a>
+            </li>
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://github.com/ustunb" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-github contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">GitHub</span>
+                </a>
+            </li>
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://www.linkedin.com/in/berkustun" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-linkedin contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">LinkedIn</span>
+                </a>
+            </li>
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://bsky.app/profile/berkustun.bsky.social" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-bluesky contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">Bluesky</span>
+                </a>
+            </li>
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://twitter.com/berkustun" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-twitter contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">Twitter</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+</div>
+<div class="contact-card-mobile">
+
+    <div class="contact-card-left">
+        <img src="/assets/images/bio-photo.jpg" alt="Portrait photo of Berk Ustun">
+    </div>
+
+    <div class="contact-card-right">
+    
+        <ul class="affiliations-list">
+            <strong>Assistant Professor</strong>
+<a href="https://datascience.ucsd.edu/" target="_blank" rel="noopener noreferrer">Data Science</a>
+<a href="https://cse.ucsd.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a>
+        </ul>
+        
+        <ul class="contact-list">
+            <li class="contact-list-item">
+                <a href="mailto:" class="contact-list-link">
+                    <i class="fa-solid fa-envelope contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label email-obfuscate" data-coded="R7Hr@1d5p.7p1" data-key="DwN5pnT63k4XREfuxoYeSqr09jli1KMt7GmHgLUQc8aOPhyAFWJZsd2zIvCBVb" data-text=""> </span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="https://maps.app.goo.gl/J5PUZ3zNL3dGgHHaA" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-location-dot contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">HDSI 452</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="docs/berk_cv.pdf" class="contact-list-link">
+                    <i class="fa-solid fa-file-lines contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">CV</span>
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a href="bio/" class="contact-list-link">
+                    <i class="fa-solid fa-user-tie contact-fa" aria-hidden="true"></i>
+                    <span class="profile-label">Bio</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="profile-list">
+            
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://scholar.google.com/citations?user=6z_XWYcAAAAJ" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-solid fa-fw fa-graduation-cap contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">Google Scholar</span>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://github.com/ustunb" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-github contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">GitHub</span>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://www.linkedin.com/in/berkustun" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-linkedin contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">LinkedIn</span>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="contact-list-item">
+                <a href="https://bsky.app/profile/berkustun.bsky.social" class="contact-list-link" target="_blank" rel="noopener noreferrer">
+                    
+                    <i class="fa-brands fa-fw fa-bluesky contact-fa" aria-hidden="true"></i>
+                    
+                    <span class="profile-label">Bluesky</span>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+<div class="banner banner-info ">
+  
+  <span class="banner-icon" aria-hidden="true">
+    <i class="fa-solid fa-circle-info"></i>
+  </span>
+  
+  <div class="banner-content">
+    <p><strong>Prospective Students and Postdocs:</strong> please read <a href="/join/">this page</a>.</p>
+
+  </div>
+</div>
+
+<h2 id="about">About</h2>
+
+<div class="text-container">
+
+  <p>My group develops methods to promote the adoption and safety of machine learning in domains like medicine, consumer finance, and the physical sciences. We focus on last mile problems related to fairness, interpretability, personalization, and governance.</p>
+
+  <p>Previously, I held research positions at Google AI and Harvard. I also co-founded <a href="https://www.petalcard.com/the-company" target="_blank" rel="noopener noreferrer">Petal</a>, a company that uses machine learning to broaden credit access. I received a PhD in Computer Science from MIT, and Bachelors degrees in Operations Research and Economics from UC Berkeley.</p>
+
+</div>
+
+<div class="header-with-toggle">
+  <div class="header-with-toggle__container">
+    <div class="header-with-toggle__title">News</div>
+    
+  </div>
+</div>
+
+<div class="card-container">
+
+
+
+
+
+
+
+
+<div class="news-list-container">
+<div class="news-list compact">
+<div class="news-card" data-news-index="0" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Sep</span>
+      <span class="news-year">
+        <span class="year-short">25</span>
+        <span class="year-full">2025</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Thrilled to be part of <a href="https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown" target="_blank" rel="noopener noreferrer">ARIA, a new AI Research Institute on Interaction for AI Assistants</a>! Thank you NSF for supporting this research!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card" data-news-index="1" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Aug</span>
+      <span class="news-year">
+        <span class="year-short">25</span>
+        <span class="year-full">2025</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>I’m now a Faculty Affiliate with <a href="https://healthinnovation.ucsd.edu/get-involved/faculty-affiliates" target="_blank" rel="noopener noreferrer">UCSD’s Jacobs Center for Health Innovation</a>. Looking forward to collaborations on safety, interpretability, personalization, and fairness in healthcare.</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card" data-news-index="2" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jun</span>
+      <span class="news-year">
+        <span class="year-short">25</span>
+        <span class="year-full">2025</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Congratulations to <a href="https://haileyjoren.github.io/" target="_blank" rel="noopener noreferrer">Hailey Joren</a> for successfully defending her PhD thesis! Hailey will be heading to Anthropic to work on AI Safety!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card" data-news-index="3" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Nov</span>
+      <span class="news-year">
+        <span class="year-short">24</span>
+        <span class="year-full">2024</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Our group grew by 1! Welcome <a href="https://mds010.github.io/" target="_blank" rel="noopener noreferrer">Meredith Stewart</a>!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card" data-news-index="4" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jun</span>
+      <span class="news-year">
+        <span class="year-short">24</span>
+        <span class="year-full">2024</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Excited to serve on the Executive Committee at FAccT!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card" data-news-index="5" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">May</span>
+      <span class="news-year">
+        <span class="year-short">24</span>
+        <span class="year-full">2024</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Our group grew by 1! Welcome <a href="https://harry.scheon.com/" target="_blank" rel="noopener noreferrer">Harry Cheon</a>!</p>
+</div>
+  </div>
+</div>
+
+
+<div class="news-card news-hidden" data-news-index="6" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">May</span>
+      <span class="news-year">
+        <span class="year-short">24</span>
+        <span class="year-full">2024</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Congratulations to <a href="https://www.jamellewd.com/" target="_blank" rel="noopener noreferrer">Jamelle Watson-Daniels</a> for successfully defending her PhD thesis! Jamelle will be heading to Meta AI!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="7" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Dec</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Recognized as a Notable Area Chair at NeurIPS!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="8" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Nov</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>We’re hiring postdocs on Responsible ML at UCSD! Apply <a href="https://www.berkustun.com/postdoc/">here</a>.</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="9" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Aug</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>I’ll be visiting the <a href="https://www.slmath.org/programs/353" target="_blank" rel="noopener noreferrer">MSRI Program on Fairness, Equity, and Algorithms</a>. See you there!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="10" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jun</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Our group grew by 1! Welcome <a href="https://kadekool.github.io/" target="_blank" rel="noopener noreferrer">Shreyas Kadekodi</a>!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="11" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jun</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>We received an NSF Award for <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313105&amp;HistoricalAwards=false" target="_blank" rel="noopener noreferrer">Recourse Verification</a>! Thank you NSF!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="12" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jan</span>
+      <span class="news-year">
+        <span class="year-short">23</span>
+        <span class="year-full">2023</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Amazon Research Award for <a href="https://www.amazon.science/research-awards/program-updates/26-amazon-research-awards-recipients-announced" target="_blank" rel="noopener noreferrer">Participatory Personalization in Machine Learning</a>!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="13" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Nov</span>
+      <span class="news-year">
+        <span class="year-short">22</span>
+        <span class="year-full">2022</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>I’ll be serving as a Program Chair for <a href="https://facctconference.org/2023/cfp.html" target="_blank" rel="noopener noreferrer">FAccT 2023</a>!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="14" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Nov</span>
+      <span class="news-year">
+        <span class="year-short">22</span>
+        <span class="year-full">2022</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>I’ll be giving a keynote talk at <a href="https://deepmath-conference.com/schedule" target="_blank" rel="noopener noreferrer">DeepMath 2022</a>.</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="15" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Oct</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>NIH Award for <a href="https://bridge2ai.org" target="_blank" rel="noopener noreferrer">Bridge to Artificial Intelligence</a>. I’ll be part of the <a href="https://bridge2ai.org/ethics-core/" target="_blank" rel="noopener noreferrer">Ethics Core</a>!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="16" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Sep</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Started as an Assistant Professor at UCSD!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="17" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Sep</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>NSF Award for <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2134904" target="_blank" rel="noopener noreferrer">AI-Driven Wildfire Prevention</a>! Thank you NSF!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="18" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jul</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Selected as a Kavli Fellow by the National Academy of Sciences!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="19" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jul</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>FAI Award for <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2040880&amp;HistoricalAwards=false" target="_blank" rel="noopener noreferrer">Fair AI in Medicine</a>! Thank you NSF &amp; Amazon!</p>
+</div>
+  </div>
+</div>
+
+<div class="news-card news-hidden" data-news-index="20" style="display: none;" onclick="toggleNewsItem(this)">
+  <div class="news-date">
+    
+      <span class="news-month">Jul</span>
+      <span class="news-year">
+        <span class="year-short">21</span>
+        <span class="year-full">2021</span>
+      </span>
+    
+  </div>
+  <div class="news-card-text">
+    <div class="news-content">
+<p>Keynote @ <a href="https://sites.google.com/view/recourse21" target="_blank" rel="noopener noreferrer">ICML Workshop for Algorithmic Recourse</a>.</p>
+</div>
+  </div>
+</div>
+
+
+
+</div>
+  
+
+<div class="align-center">
+  <button id="news-toggle-link" class="toggle-button news-toggle-link" aria-expanded="false" onclick="toggleNewsPivot(event)" data-="">
+    See More
+  </button>
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+// Track how many items are currently shown
+var newsItemsShown = 6;
+var newsTotalItems = 21;
+var newsBatchSize = 5;
+var newsFirstPageLimit = 6;
+
+// Toggle between compact and expanded views
+function toggleView() {
+  var newsList = document.querySelector('.news-list');
+  var toggleBtn = document.getElementById('news-view-toggle');
+
+  if (!newsList || !toggleBtn) return;
+
+  if (newsList.classList.contains('compact')) {
+    newsList.classList.remove('compact');
+    newsList.classList.add('expanded');
+    toggleBtn.textContent = 'Compact View';
+  } else {
+    newsList.classList.remove('expanded');
+    newsList.classList.add('compact');
+    toggleBtn.textContent = 'Expanded View';
+  }
+}
+
+// Toggle individual news item between collapsed (2 lines) and expanded
+function toggleNewsItem(item) {
+  var contentDiv = item.querySelector('.news-content');
+  if (!contentDiv) return;
+
+  if (contentDiv.classList.contains('expanded')) {
+    contentDiv.classList.remove('expanded');
+  } else {
+    contentDiv.classList.add('expanded');
+  }
+}
+
+// Check if text is overflowing (more than 2 lines) and needs ellipsis
+function checkNewsOverflow() {
+  var items = document.querySelectorAll('.news-card');
+  items.forEach(function(item) {
+    var contentDiv = item.querySelector('.news-content');
+    if (!contentDiv) return;
+
+    // Check if content is taller than 2 lines (approximately 3em with line-height 1.5)
+    var lineHeight = parseFloat(getComputedStyle(contentDiv).lineHeight);
+    var maxHeight = lineHeight * 2;
+
+    if (contentDiv.scrollHeight > maxHeight + 2) { // +2px tolerance
+      contentDiv.setAttribute('data-has-overflow', 'true');
+    }
+  });
+}
+
+// Update the last visible item styling
+function updateLastVisibleItem() {
+  // Remove news-last-visible class from all items
+  var allItems = document.querySelectorAll('.news-card');
+  allItems.forEach(function(item) {
+    item.classList.remove('news-last-visible');
+  });
+
+  // Find last visible item and add class
+  var visibleItems = Array.from(allItems).filter(function(item) {
+    return item.style.display !== 'none';
+  });
+
+  if (visibleItems.length > 0) {
+    visibleItems[visibleItems.length - 1].classList.add('news-last-visible');
+  }
+}
+
+function toggleNewsPivot(e) {
+  if (e) e.preventDefault();
+
+  var allHiddenItems = document.querySelectorAll('.news-hidden');
+  var link = document.getElementById('news-toggle-link');
+  if (!link) return false;
+
+  // Get configurable text from data attributes
+  var textMore = link.getAttribute('data-text-more') || 'More';
+  var textCollapse = link.getAttribute('data-text-collapse') || 'Collapse';
+  var batchSize = parseInt(link.getAttribute('data-batch-size')) || newsBatchSize;
+
+  var isExpanded = link.getAttribute('aria-expanded') === 'true';
+
+  if (isExpanded) {
+    // Collapse: hide all items beyond first page limit
+    allHiddenItems.forEach(function(item){ item.style.display = 'none'; });
+    newsItemsShown = newsFirstPageLimit;
+    link.setAttribute('aria-expanded','false');
+
+    // Calculate remaining items
+    var remaining = newsTotalItems - newsItemsShown;
+    var toShow = Math.min(remaining, batchSize);
+    link.textContent = 'See ' + toShow + ' more item' + (toShow === 1 ? '' : 's');
+  } else {
+    // Expand: show next batch of items
+    var toShow = Math.min(newsItemsShown + batchSize, newsTotalItems);
+
+    for (var i = 0; i < allHiddenItems.length; i++) {
+      if (i < toShow - newsFirstPageLimit) {
+        allHiddenItems[i].style.display = 'flex';
+      }
+    }
+
+    newsItemsShown = toShow;
+
+    // Update button text and aria-expanded state
+    if (newsItemsShown >= newsTotalItems) {
+      link.setAttribute('aria-expanded','true');
+      link.textContent = textCollapse;
+    } else {
+      var remaining = newsTotalItems - newsItemsShown;
+      var nextBatch = Math.min(remaining, batchSize);
+      link.textContent = 'See ' + nextBatch + ' more item' + (nextBatch === 1 ? '' : 's');
+    }
+  }
+
+  // Update last visible item styling
+  updateLastVisibleItem();
+
+  // Check overflow for newly visible items
+  checkNewsOverflow();
+
+  return false;
+}
+
+// Initialize overflow detection and last item styling when page loads
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    updateLastVisibleItem();
+    checkNewsOverflow();
+  });
+} else {
+  updateLastVisibleItem();
+  checkNewsOverflow();
+}
+</script>
+
+</div>
+
+        </div>
+    </div>
+    
+    
+
+<footer class="site-footer">
+    <div class="page-container">
+    <div class="footer-wrapper">
+        <p class="footer-last-update">© 2026 Berk Ustun</p>
+        
+    </div>
+    </div>
+</footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="6 15 12 9 18 15"></polyline>
+        </svg>
+    </button>
+
+    
+
+    
+      <script type="text/javascript">
+          (function(){
+  function decode(coded, key) {
+    var shift = coded.length;
+    var link = '';
+    for (var i = 0; i < coded.length; i++) {
+      var ch = coded.charAt(i);
+      var idx = key.indexOf(ch);
+      if (idx === -1) {
+        link += ch;
+      } else {
+        var ltr = (idx - shift + key.length) % key.length;
+        link += key.charAt(ltr);
+      }
+    }
+    return link;
+  }
+
+  // Decode email obfuscation
+  var els = document.querySelectorAll('.email-obfuscate');
+  els.forEach(function(el) {
+    var coded = el.getAttribute('data-coded');
+    var key = el.getAttribute('data-key');
+    if (!coded || !key) return;
+    var link = decode(coded, key);
+    var a = document.createElement('a');
+    a.href = 'mailto:' + link;
+    var text = el.getAttribute('data-text');
+    a.textContent = text && text.length ? text : link;
+    // copy optional id/class from the placeholder onto the link
+    if (el.id) a.id = el.id;
+    if (el.className) {
+      // remove the marker class 'email-obfuscate' when copying
+      var cls = el.className.split(/\s+/).filter(function(c){ return c && c !== 'email-obfuscate'; }).join(' ');
+      if (cls) a.className = cls;
+    }
+    el.parentNode.replaceChild(a, el);
+  });
+
+  // Show the missing URL path
+  var pathEl = document.getElementById("missing-path");
+  if (pathEl) {
+    pathEl.textContent = window.location.origin + window.location.pathname;
+  }
+})();
+
+
+      </script>
+    
+
+    <!-- Scroll to Top JavaScript -->
+    <script type="text/javascript">
+        // Scroll to Top Button Functionality
+(function() {
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  const scrollThreshold = 300;
+
+  if (!scrollToTopBtn) return;
+
+  // Show/hide button based on scroll position
+  function handleScroll() {
+    if (window.scrollY > scrollThreshold) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  }
+
+  // Scroll to top when button is clicked
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Event listeners
+  window.addEventListener('scroll', handleScroll);
+  scrollToTopBtn.addEventListener('click', scrollToTop);
+
+  // Initial check
+  handleScroll();
+})();
+
+
+    </script>
+
+    <!-- Analytics Event Tracking -->
+    
+    <script type="text/javascript">
+        // Analytics Event Tracking — Event Delegation
+// Included in default.html, runs on all pages.
+// Uses null-safe access since delegation roots only exist on specific pages.
+(function() {
+  'use strict';
+
+  if (typeof gtag !== 'function') return;
+
+  // Helper: extract paper slug from URL path (optional trailing slash)
+  function getPaperSlug() {
+    var match = window.location.pathname.match(/\/papers\/([^\/]+)\/?/);
+    return match ? match[1] : '';
+  }
+
+  // ================================================================
+  // PAPER PAGE: Outbound link click tracking
+  // Listens on .links-section for clicks on .text-link elements.
+  // Handles both <a class="text-link"> and <span class="text-link">
+  // (the latter contains a nested <a> from markdownified content).
+  // ================================================================
+  var linksSection = document.querySelector('.links-section');
+  if (linksSection) {
+    linksSection.addEventListener('click', function(e) {
+      // Find the closest .text-link (works for both <a> and <span>)
+      var textLink = e.target.closest('.text-link');
+      if (!textLink) return;
+
+      // Determine the actual anchor element
+      var anchor = (textLink.tagName === 'A') ? textLink : textLink.querySelector('a');
+      if (!anchor) return;
+
+      // Read link type from .profile-label text
+      var label = textLink.querySelector('.profile-label');
+      var labelText = label ? label.textContent.trim() : '';
+      // For markdown-rendered labels, the <a> is inside .profile-label;
+      // extract just the text content (strips the nested link text)
+      if (label && label.querySelector('a')) {
+        labelText = label.querySelector('a').textContent.trim();
+      }
+
+      // Normalize label to snake_case link_type
+      var typeMap = {
+        'pdf': 'pdf',
+        'arxiv': 'arxiv',
+        "publisher's page": 'publisher',
+        'reviews': 'reviews',
+        'github': 'code',
+        'python package': 'package',
+        'google scholar': 'google_scholar',
+        'semantic scholar': 'semantic_scholar'
+      };
+      var linkType = typeMap[labelText.toLowerCase()] || labelText.toLowerCase().replace(/\s+/g, '_');
+
+      gtag('event', 'paper_link_click', {
+        link_type: linkType,
+        paper_slug: getPaperSlug(),
+        link_url: anchor.href.substring(0, 100)
+      });
+    });
+  }
+
+  // ================================================================
+  // PAPER PAGE: Topic tag clicks
+  // ================================================================
+  var topicTags = document.querySelector('.topic-tags-list');
+  if (topicTags) {
+    topicTags.addEventListener('click', function(e) {
+      var tag = e.target.closest('.topic-tag-link');
+      if (!tag) return;
+
+      gtag('event', 'topic_tag_click', {
+        topic: tag.textContent.trim().toLowerCase(),
+        paper_slug: getPaperSlug()
+      });
+    });
+  }
+
+  // ================================================================
+  // PAPER LISTING: Card link clicks
+  // Uses data-slug attribute on .paper-card for reliable slug extraction.
+  // ================================================================
+  var papersContainer = document.getElementById('papers-container');
+  if (papersContainer) {
+    papersContainer.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+
+      var card = link.closest('.paper-card');
+      if (!card) return;
+
+      var slug = card.getAttribute('data-slug') || '';
+
+      // Determine link type from context
+      var linkType = 'title';
+      var tag = link.closest('.paper-card-tag');
+      if (tag) {
+        linkType = link.textContent.trim().toLowerCase().replace(/\s+/g, '_');
+      }
+
+      gtag('event', 'paper_card_click', {
+        paper_slug: slug,
+        link_type: linkType
+      });
+    });
+  }
+})();
+
+    </script>
+    
+  </body>
+</html>

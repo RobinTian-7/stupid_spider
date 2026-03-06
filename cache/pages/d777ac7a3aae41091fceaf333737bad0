@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chengzhi Mao — Rutgers CS</title>
+  <meta name="description" content="Chengzhi Mao — Assistant Professor, Rutgers CS. Research in LLMs, Computer Vision, and Controllable Perception." />
+  <style>
+    :root{--max:980px;--fg:#111;--muted:#666;--link:#0a58ca;--bg:#fff;--border:#eee}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:40px auto;padding:0 20px}
+    header{display:grid;grid-template-columns:1fr 220px;gap:24px;align-items:start}
+    h1{font-size:2rem;margin:.25rem 0}
+    .affil{white-space:pre-line;color:var(--muted)}
+    .contact a{margin-right:10px}
+    .headshot{width:220px;height:220px;object-fit:cover;border-radius:8px;border:1px solid var(--border)}
+    nav{margin:16px 0 24px 0} nav a{margin-right:14px;color:#444} nav a:hover{color:var(--fg)}
+    section{padding:18px 0;border-top:1px solid var(--border)}
+    h2{font-size:1.25rem;margin:0 0 .5rem 0}
+    .news li{margin:.2rem 0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .paper{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:start}
+    .thumb{width:110px;height:78px;object-fit:cover;border:1px solid var(--border);border-radius:4px;background:#fafafa}
+    .paper h3{font-size:1rem;margin:0}
+    .meta{font-size:.95rem;color:var(--muted)}
+    .by{font-size:.95rem}
+    .year{margin-top:8px;font-weight:600}
+    ul{padding-left:18px;margin:8px 0}
+    .teach li{margin:.2rem 0}
+    .students{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+    .badge{display:block;padding:10px;border:1px solid var(--border);border-radius:6px}
+    footer{color:var(--muted);font-size:.92rem;margin:24px 0 40px}
+    @media (max-width:800px){
+      header{grid-template-columns:1fr}
+      .headshot{justify-self:start}
+      .grid{grid-template-columns:1fr}
+      .paper{grid-template-columns:110px 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Chengzhi Mao</h1>
+        <div class="affil">
+Assistant Professor, Department of Computer Science, Rutgers University
+        </div>
+        <div class="contact" style="margin-top:8px">
+          <a href="mailto:chengzhi.mao@rutgers.edu">chengzhi.mao@rutgers.edu</a>
+          <a href="https://scholar.google.com/citations?user=pTTEiHUAAAAJ&hl=en">Google Scholar</a>
+        </div>
+        <nav>
+          <a href="#bio">Bio</a>
+          <a href="#students">Students</a>
+          <a href="#research">Papers</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <img class="headshot" src="ChengzhiMao2.png" alt="Chengzhi Mao headshot" />
+    </header>
+
+    <section id="bio">
+      <h2>Brief Bio</h2>
+      <p>
+        I am an Assistant Professor in the Department of <a href="https://www.cs.rutgers.edu/people/professors/details/chengzhi-mao">Computer Science at Rutgers University</a>.
+        My research spans large (vision) language models, computer vision, and AI trustworthiness. 
+      </p>
+      <p>
+        Previously, I have been a Research Scientist at Google, working on Gemini and GenAI related research. I have been a Core Faculty Member at
+        <a href="https://mila.quebec/en">MILA</a>, and an Assistant Professor at McGill. I completed my Ph.D. at Columbia University in 2023, advised by <a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a> and 
+          <a href="https://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>. I got my BS at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2018, advised by <a href="https://oa.ee.tsinghua.edu.cn/~shenyuan/">Yuan Shen</a>. I was also a visiting student at MIT, advised by <a href="https://people.csail.mit.edu/dina/">Dina Katabi</a>.
+      </p>
+      <p>
+        I am actively recruiting highly self-motivated Ph.D. students, research interns, and postdocs. If you’re interested, please email me with your CV. Interest and experience in LLM thinking, 3D, robotics, and diffusion models will be a plus. In addition to cloud compute, our lab owns 24 Blackwell Pro GPUs (24x97GB), which accelerates LLM and generative model research. 
+      </p>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><strong>Feb 2026:</strong> Congratulations to Zirui and Haoyu's <strong>CVPR 2026</strong> paper on multimodal reinforcement learning.</li>
+        <li><strong>Feb 2026:</strong> Congratulations to Qihao's <strong>CVPR 2026</strong> paper on model <strong>auditing</strong> via LLM.</li>
+        <li><strong>Jan 2026:</strong> One paper on controllable perception accepted to <strong>ICLR 2026</strong>.</li>
+        <li><strong>Nov 2025:</strong> Serving as Area Chair for ECCV 2026.</li>
+        <li><strong>Nov 2025:</strong> Serving as Area Chair for ICML 2026.</li>
+        <li><strong>Oct 2025:</strong> Giving an invited talk at ICCV 2025. The title is "Seeing Through Words: Understanding and Controlling Vision Foundation Models via Language." </li>
+        <li><strong>Sep 2025:</strong> Serving as Area Chair for ICLR 2026.</li>
+        <li><strong>Sep 2025:</strong> Two papers accepted to NeurIPS 2025.</li>
+        <li><strong>May 2025:</strong> Serving as Area Chair for NeurIPS 2025.</li>
+        <li><strong>Oct 2024:</strong> Serving as Area Chair for ICLR 2025.</li>
+        <li><strong>Apr 2024:</strong> Received the Discovery Grant for NSERC.</li>
+        <li><strong>Feb 2024:</strong> CVPR 2024 Highlight (top 2%).</li>
+      </ul>
+    </section>
+
+    <section id="students">
+      <h2>PhD Students and Postdocs</h2>
+      <div class="students">
+        <span class="badge">Yang Li — PhD Student</span>
+        <span class="badge">Yuan Qing - PhD Student</span>
+        <span class="badge">Yibin Wang - PhD Student</span>
+        <span class="badge">Zirui Zhang — PhD Student</span>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Selected Papers</h2>
+
+      <div class="year">2026</div>
+      <div class="grid">
+        
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/c3r.png" alt="arxiv" />
+          <div>
+            <h3>C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning</h3>
+            <div class="by">Zirui Zhang, Haoyu Dong, Kexin Pei, <strong>Chengzhi Mao</strong></div>
+            <div class="meta">CVPR 2026 — <a href="https://arxiv.org/pdf/">paper</a></div>
+          </div>
+        </div>
+        
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/audit.png" alt="arxiv" />
+          <div>
+            <h3>Differences That Matter: Auditing Models for Capability Gap Discovery and Rectification</h3>
+            <div class="by">Qihao Liu, <strong>Chengzhi Mao</strong>, Yaojie Liu, Alan Yuille, Wen-Sheng Chu</div>
+            <div class="meta">CVPR 2026 — <a href="https://arxiv.org/pdf/2512.16921">paper</a></div>
+          </div>
+        </div>
+        
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/iclip.png" alt="ICLR 2026 thumbnail" />
+          <div>
+            <h3>Language Instructed Vision Embeddings for Controllable and Generalizable Perception</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Xudong Lin, Wen-Sheng Chu</div>
+            <div class="meta">ICLR 2026 — <a href="https://openreview.net/forum?id=r2b0fuf8xb">paper</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year">2025</div>
+      <div class="grid">
+        
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/mull.png" alt="arxiv" />
+          <div>
+            <h3>Mull-Tokens: Modality-Agnostic Latent Thinking</h3>
+            <div class="by">Arijit Ray, Ahmed Abdelkader, <strong>Chengzhi Mao</strong>, Bryan Plummer, Kate Saenko, Ranjay Krishna, Leonidas Guibas, Wen-Sheng Chu</div>
+            <div class="meta">arxiv — <a href="https://arxiv.org/pdf/2512.10941">paper</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/largo.png" alt="NeurIPS 2025 thumbnail" />
+          <div>
+            <h3>Latent Adversarial Reflection for LLM Jailbreaking </h3>
+            <div class="by">Ran Li, Hao Wang, <strong>Chengzhi Mao</strong></div>
+            <div class="meta">NeurIPS 2025 — <a href="https://arxiv.org/abs/2505.10838">paper</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/vdiff.png" alt="Raidar thumbnail" />
+          <div>
+            <h3>Video Diffusion Models Excel at Tracking Similar-Looking Objects Without Supervision</h3>
+            <div class="by">Chenshuang Zhang, Kang Zhang, Joon Son Chung, In So Kweon, Junmo Kim, <strong>Chengzhi Mao</strong></div>
+            <div class="meta">NeurIPS 2025 — <a href="">paper</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/edit.png" alt="Raidar thumbnail" />
+          <div>
+            <h3>EDITLORD: Learning Code Transformation Rules for Code Editing</h3>
+            <div class="by">Weichen Li, Albert Jan, Baishakhi Ray, Junfeng Yang, <strong>Chengzhi Mao</strong>, Kexin Pei</div>
+            <div class="meta">ICML 2025 — <a href="https://arxiv.org/pdf/2504.15284/">paper</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/dagger.png" alt="Raidar thumbnail" />
+          <div>
+            <h3>Diversity Helps Jailbreak Large Language Models</h3>
+            <div class="by">Weiliang Zhao, Daniel Ben-Levi, Wei Hao, Junfeng Yang, <strong>Chengzhi Mao</strong></div>
+            <div class="meta">NAACL 2025 (Oral) — <a href="https://aclanthology.org/2025.naacl-long.238/">paper</a></div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="year">2024</div>
+      <div class="grid">
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/selfie.svg" alt="SelfIE thumbnail" />
+          <div>
+            <h3>SelfIE: Self-Interpretation of Large Language Model Embeddings</h3>
+            <div class="by">Haozhe Chen, Carl Vondrick, <strong>Chengzhi Mao</strong></div>
+            <div class="meta">ICML 2024 — <a href="https://selfie.cs.columbia.edu">project</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/raider.png" alt="Raidar thumbnail" />
+          <div>
+            <h3>Raidar: geneRative AI Detection viA Rewriting</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Carl Vondrick, Hao Wang, Junfeng Yang</div>
+            <div class="meta">ICLR 2024 — <a href="https://arxiv.org/">paper</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year">2023</div>
+      <div class="grid">
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/dr.png" alt="Doubly Right thumbnail" />
+          <div>
+            <h3>Doubly Right Object Recognition: A Why Prompt for Visual Rationales</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Revant Teotia, Amrutha Sundar, Sachit Menon, Junfeng Yang, Xin Wang, Carl Vondrick</div>
+            <div class="meta">CVPR 2023 — <a href="#">arXiv</a> / <a href="#">dataset</a> / <a href="#">code</a></div>
+          </div>
+        </div> <div class="paper">
+          <img class="thumb" src="assets/img/papers/shadow.png" alt="Shadows Shed Light on 3D Objects thumbnail">
+          <div>
+            <h3>Shadows Shed Light on 3D Objects</h3>
+            <div class="by">Ruoshi Liu, Sachit Menon, <strong>Chengzhi Mao</strong>, Dennis Park, Simon Stent, Carl Vondrick</div>
+            <div class="meta">CVPR 2023 — <a href="#">arXiv</a> / <a href="#">dataset</a> / <a href="#">code</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year">2022</div>
+      <div class="grid">
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/camo.gif" alt="Neural Voice Camouflage thumbnail" />
+          <div>
+            <h3>Real-Time Neural Voice Camouflage</h3>
+            <div class="by">Mia Chiquier, <strong>Chengzhi Mao</strong>, Carl Vondrick</div>
+            <div class="meta">ICLR 2022 (Oral) — <a href="#">arXiv</a> / <a href="#">code</a> / <a href="https://www.science.org/">Science</a> / <a href="#">talk</a></div>
+            
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/drvit.png" alt="Discrete Representations thumbnail" />
+          <div>
+            <h3>Discrete Representations Strengthen Vision Transformer Robustness</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Lu Jiang, Mostafa Dehghani, Carl Vondrick, Rahul Sukthankar, Irfan Essa</div>
+            <div class="meta">ICLR 2022 — <a href="#">arXiv</a> / <a href="#">code</a> / <a href="#">cite</a> / <a href="#">talk</a></div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="year">2021</div>
+      <div class="grid">
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/reverse_attack.png" alt="Adversarial Reversible thumbnail" />
+          <div>
+            <h3>Adversarial Attacks are Reversible with Natural Supervision</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Mia Chiquier, Hao Wang, Junfeng Yang, Carl Vondrick</div>
+            <div class="meta">ICCV 2021 — <a href="#">arXiv</a> / <a href="#">code</a> / <a href="#">cite</a> / <a href="#">talk</a></div>
+          </div>
+        </div>
+
+        <div class="paper">
+          <img class="thumb" src="assets/img/papers/genit.png" alt="gen" />
+          <div>
+            <h3>Generative Interventions for Causal Learning</h3>
+            <div class="by"><strong>Chengzhi Mao</strong>, Amogh Gupta*, Vikram Nitin*, Baishakhi Ray, Shuran Song, Junfeng Yang, Carl Vondrick</div>
+            <div class="meta">CVPR 2021 — <a href="#">arXiv</a> / <a href="#">code</a> / <a href="#">cite</a> / <a href="#">talk</a></div>
+          
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <ul class="teach">
+    <li>
+      <strong>New Course:</strong> 
+      <a href="Spring2026.html">Advanced Topics in Foundation Models</a>
+    </li>
+  </ul>
+</section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Department of Computer Science, Rutgers University<br/>
+        Email: <a href="mailto:chengzhi.mao@rutgers.edu">chengzhi.mao@rutgers.edu</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Chengzhi Mao 
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+<section id="visitors" style="margin-top:32px; text-align:center;">
+  <h3 style="margin-bottom:10px;">Visitors</h3>
+  <div style="display:inline-block; width:20%; min-width:160px;">
+    <script type="text/javascript" id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d=vK7MijNOsJzgrDc3p7jzWnlzHoOXrFsPuZFp78_lVF8&cl=ffffff&w=a">
+    </script>
+    <noscript>
+      <a href="https://mapmyvisitors.com/" target="_blank" rel="noopener">View visitor map</a>
+    </noscript>
+  </div>
+</section>
+
+  
+</body>
+</html>

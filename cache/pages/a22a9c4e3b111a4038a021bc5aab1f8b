@@ -1,0 +1,808 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      function toggle (t,id) {
+        console.log(t.innerHTML)
+        if (t.innerHTML== "all papers") {
+            t.innerHTML = "recent papers";
+        } else {
+            t.innerHTML = "all papers";
+        }
+        var e = document.getElementById(id);
+              e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+      }
+
+      // Scramble text function
+      function scrambleText(element) {
+        // Arabic character set for scrambling
+        const arabicChars = 'Ø¡Ø¢Ø£Ø¤Ø¥Ø¦Ø§Ø¨Ø©ØªØ«Ø¬Ø­Ø®Ø¯Ø°Ø±Ø²Ø³Ø´ØµØ¶Ø·Ø¸Ø¹ØºÙÙÙÙÙÙÙÙÙÙ';
+        const latinChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        
+        // Get all text nodes within the element
+        const walker = document.createTreeWalker(
+          element,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+        
+        let nodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+          nodes.push(node);
+        }
+        
+        // Scramble each text node
+        nodes.forEach(textNode => {
+          // Clear any existing interval for this node
+          if (textNode.scrambleInterval) {
+            clearInterval(textNode.scrambleInterval);
+          }
+
+          // Store original text if not already stored
+          if (!textNode.originalText) {
+            textNode.originalText = textNode.textContent;
+          }
+
+          let scrambledText = '';
+          let revealedIndices = new Set();
+          
+          // Check if text contains Arabic characters
+          const isArabic = /[\u0600-\u06FF]/.test(textNode.originalText);
+          const chars = isArabic ? arabicChars : latinChars;
+          
+          // Create initial scrambled text
+          for (let i = 0; i < textNode.originalText.length; i++) {
+            scrambledText += chars.charAt(Math.floor(Math.random() * chars.length));
+          }
+          textNode.textContent = scrambledText;
+          
+          // Gradually reveal the original text in random order
+          textNode.scrambleInterval = setInterval(() => {
+            if (revealedIndices.size >= textNode.originalText.length) {
+              clearInterval(textNode.scrambleInterval);
+              return;
+            }
+            
+            // Find a random unrevealed index
+            let randomIndex;
+            do {
+              randomIndex = Math.floor(Math.random() * textNode.originalText.length);
+            } while (revealedIndices.has(randomIndex));
+            
+            revealedIndices.add(randomIndex);
+            scrambledText = scrambledText.substring(0, randomIndex) + 
+                           textNode.originalText.charAt(randomIndex) + 
+                           scrambledText.substring(randomIndex + 1);
+            textNode.textContent = scrambledText;
+          }, 75);
+        });
+      }
+
+      // Apply scramble effect on page load and when image is clicked
+      document.addEventListener('DOMContentLoaded', function() {
+        const img = document.getElementById('img');
+        const marginTexts = document.querySelectorAll('.margin-text');
+        const nameElement = document.querySelector('b'); // Selects the bold name text
+        
+        // Run on page load
+        marginTexts.forEach(text => scrambleText(text));
+        
+        // Run on image click
+        img.addEventListener('click', function() {
+          if (img.src.endsWith('photo2018.jpg')) {
+            img.src = 'photo2018-g.jpg';
+          } else {
+            img.src = 'photo2018.jpg';
+          }
+          marginTexts.forEach(text => scrambleText(text));
+        });
+
+        // Run on 's' key press
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 's') {
+            marginTexts.forEach(text => scrambleText(text));
+          }
+        });
+
+        // Run when clicking the name
+        nameElement.addEventListener('click', function() {
+          marginTexts.forEach(text => scrambleText(text));
+        });
+      });
+      </script>
+      <script src="jquery.js"></script> 
+        <script> 
+        $(function(){
+          $("#includedContent").load("generated.html"); 
+        });
+      </script> 
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@300;400;700&family=JetBrains+Mono:wght@400;500&family=Source+Sans+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aws Albarghouthi's Homepage</title>
+    <style>
+      ::selection {
+        background: rgba(255, 235, 60, 0.2);
+      }
+
+      #img {
+        position: absolute;
+        right: calc(100% + 1.1em);
+        top: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0;
+        margin-top:.5em;
+        filter: contrast(110%) brightness(110%);
+      }
+
+      p {
+        line-height: 1.7;
+      }
+
+      body {
+        padding: 90px 0;
+        font: 16px 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: rgba(0, 0, 0, .8);
+        font-weight: 300;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 1em;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+      }
+
+      h2 {
+        font-size: 0.85em;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      a:link, a:visited {
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+      }
+
+      a:hover, a:active {
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .container-fluid {
+        width: auto;
+        max-width: 520px;
+        padding: 0 120px;
+        position: relative;
+      }
+
+      .header {
+        position: relative;
+        margin-bottom: 2em;
+      }
+
+      .entry {
+        position: relative;
+        margin-bottom: 0.5em;
+      }
+
+      .entry-text {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .entry-note {
+        margin: 0;
+        line-height: 1.5;
+        font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 0.85em;
+      }
+
+      .margin-text {
+        position: absolute;
+        right: calc(100% + 1.3em);
+        top: 0.15em;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 0.85em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.5;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 300;
+      }
+
+      .margin-text a,
+      .margin-text a:link,
+      .margin-text a:visited,
+      .margin-text a:hover,
+      .margin-text a:active {
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        border-bottom: none;
+      }
+
+      a.hidden-link,
+      a.hidden-link:link,
+      a.hidden-link:visited,
+      a.hidden-link:hover,
+      a.hidden-link:active {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: none;
+      }
+
+      b {
+        color: rgba(0, 0, 0, .8);
+        font-weight: 600;
+      }
+
+      @media print, screen and (max-width: 720px) {
+        body {
+          padding: 30px 0;
+        }
+        .container-fluid {
+          padding: 0 20px 0 100px;
+          max-width: 100%;
+          margin-left: 0;
+        }
+        .margin-text {
+          right: calc(100% + 1em);
+          max-width: 90px;
+          overflow: visible;
+        }
+      }
+
+      @media print, screen and (max-width: 480px) {
+        body {
+          padding: 20px 0;
+        }
+        .container-fluid {
+          padding: 0 15px 0 90px;
+          max-width: 100%;
+          margin-left: 0;
+        }
+        #img {
+          position: relative;
+          right: auto;
+          top: auto;
+          margin-bottom: 20px;
+        }
+        .margin-text {
+          right: calc(100% + 0.8em);
+          max-width: 80px;
+          overflow: visible;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+        .container-fluid {
+          padding: 0.4in;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <img id="img"
+        src="photo2018.jpg"
+        alt="Aws Albarghouthi">
+        <p>My name is <b>Aws Albarghouthi</b> and I'm an associate professor of computer science at the University of Wisconsin-Madison.
+            
+        I study the art and science of program synthesis and verification. I'm a member of the <a href="https://madpl.cs.wisc.edu/">madPL</a> and <a href="https://quantum.cs.wisc.edu/">quantum computing</a> groups. 
+        </p>
+      </div>
+
+      <p>
+      <a href="./cv.pdf">cv</a> 
+      &nbsp;Â·&nbsp;
+      aws@cs.wisc.edu
+      </p>
+
+      
+<h2>News</h2>
+<div class="entry">
+  <div class="margin-text">02.26</div>
+  <p class="entry-text">Thrilled to be giving a keynote at PLDI in June!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">02.26</div>
+  <p class="entry-text">I'll be an Associate Chair for OOPSLA 2027</p>
+</div>
+<div class="entry">
+  <div class="margin-text">12.25</div>
+  <p class="entry-text"><a href="https://arxiv.org/pdf/2511.02844">LSU</a> is using my <a href="https://eprint.iacr.org/2025/1091.pdf">quantum w/o linear algebra approach</a> in their curriculum!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">12.25</div>
+  <p class="entry-text">Jiayu presented her work on understanding RL-based reasoning at NeurIPS!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">12.25</div>
+  <p class="entry-text">I'm serving on the ISCA 26 program committee</p>
+</div>
+<div class="entry">
+  <div class="margin-text">11.25</div>
+  <p class="entry-text">Our quantum compiler generator is <a href="https://arxiv.org/pdf/2511.08508">used by Google</a> for early fault tolerance!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">10.25</div>
+  <p class="entry-text">Abtin's paper on qubit routing accepted to POPL!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">10.25</div>
+  <p class="entry-text">Amanda Xu receives the ACM SIGPLAN John Vlissides Award!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">10.25</div>
+  <p class="entry-text">Amanda Xu selected for MIT EECS Rising Stars!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">10.25</div>
+  <p class="entry-text">We gave a <a href="https://qqq-wisc.github.io/splash25-tutorial.html">tutorial on quantum compilers</a> @ SPLASH!</p>
+</div>
+<div class="entry">
+  <div class="margin-text">06.25</div>
+  <p class="entry-text">Excited to join the PLDI steering committee</p>
+</div>
+
+<h2>Books</h2>
+<div class="entry">
+  <div class="margin-text"><a href="https://verifieddeeplearning.com" class="hidden-link">FnT 22</a></div>
+  <p class="entry-text"><a href="https://verifieddeeplearning.com" class="hidden-link">Introduction to neural network verification</a></p>
+</div>
+
+<h2>Papers</h2>
+<p style="margin-bottom:1.5em"> see <a href="javascript:;" onclick="toggle(this,'papers')">all papers</a> &nbsp;Â·&nbsp; preprints on <a href="https://arxiv.org/search/?query=aws+albarghouthi&searchtype=all&source=header">arxiv</a></p>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2508.10781" class="hidden-link">POPL 26</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2508.10781" class="hidden-link">Generating compilers for qubit mapping and routing</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2406.17995" class="hidden-link">EuroSys 26</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2406.17995" class="hidden-link">A case for elastic quantum error correction decoders</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2510.14240" class="hidden-link">ICLR 26</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2510.14240" class="hidden-link">LiveResearchBench: A live benchmark for user-centric deep research in the wild</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2506.04723" class="hidden-link">NeurIPS 25</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2506.04723" class="hidden-link">Beyond accuracy: Dissecting mathematical reasoning for LLMs under reinforcement learning</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/pdf/2412.01671" class="hidden-link">PLDI 25</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/pdf/2412.01671" class="hidden-link">Verified foundations for differential privacy</a></p>
+  <p class="entry-note">Distinguished artifact award</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://dl.acm.org/doi/10.1145/3720504" class="hidden-link">OOPSLA 25</a></div>
+  <p class="entry-text"><a href="https://dl.acm.org/doi/10.1145/3720504" class="hidden-link">Checking observational correctness of database systems</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/pdf/2311.18042" class="hidden-link">OOPSLA 25</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/pdf/2311.18042" class="hidden-link">Dependency-aware compilation for surface code quantum architectures</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2411.04104" class="hidden-link">ASPLOS 25</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2411.04104" class="hidden-link">Optimizing quantum circuits, fast and slow</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2409.12332" class="hidden-link">CHI 25</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2409.12332" class="hidden-link">Perceptions of the fairness impacts of multiplicity in machine learning</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2304.10655" class="hidden-link">FAccT 23</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2304.10655" class="hidden-link">The dataset multiplicity problem: How unreliable data impacts predictions</a></p>
+</div>
+<div id="papers" style="display:none;">
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2211.09691" class="hidden-link">PLDI 23</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2211.09691" class="hidden-link">Synthesizing quantum-circuit optimizers</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3576894" class="hidden-link">CACM 23</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3576894" class="hidden-link">Proving data-poisoning robustness in decision trees</a></p>
+  <p class="entry-note">Research highlight</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2302.03088" class="hidden-link">HRI 23</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2302.03088" class="hidden-link">Sketching robot programs on the fly</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3568294.3580112" class="hidden-link">HRI 23</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3568294.3580112" class="hidden-link">Crowdsourcing task traces for service robotics</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2205.13634" class="hidden-link">NeurIPS 22</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2205.13634" class="hidden-link">BagFlip: A certified defense against data poisoning</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2205.13634" class="hidden-link">NeurIPS 22</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2205.13634" class="hidden-link">AutoWS-Bench-101: Benchmarking Automated Weak Supervision with 100 Labels</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2208.13679" class="hidden-link">MICRO 22</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2208.13679" class="hidden-link">Qubit mapping and routing via MaxSAT</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2007.06093" class="hidden-link">POPL 22</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2007.06093" class="hidden-link">Interval universal approximation for neural networks</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://ieeexplore.ieee.org/document/9825895/" class="hidden-link">SANER 22</a></div>
+  <p class="entry-text"><a href="https://ieeexplore.ieee.org/document/9825895/" class="hidden-link">Semantic robustness of models of source code</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2006.06841" class="hidden-link">ICPR 22</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2006.06841" class="hidden-link">Backdoors in neural models of source code</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2110.04363" class="hidden-link">NeurIPS 21</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2110.04363" class="hidden-link">Certifying robustness to programmable data bias in decision trees</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://arxiv.org/abs/2102.07818" class="hidden-link">EMNLP 21</a></div>
+  <p class="entry-text"><a href="https://arxiv.org/abs/2102.07818" class="hidden-link">Certified robustness to programmable transformations in LSTMs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://kilthub.cmu.edu/articles/conference_contribution/Interaction_Templates_A_Data-Driven_Approach_for_Authoring_Robot_Programs/20031965" class="hidden-link">PLATEAU 21</a></div>
+  <p class="entry-text"><a href="https://kilthub.cmu.edu/articles/conference_contribution/Interaction_Templates_A_Data-Driven_Approach_for_Authoring_Robot_Programs/20031965" class="hidden-link">Interaction templates: A data-driven approach for authoring robot programs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3411764.3446864" class="hidden-link">CHI 21</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3411764.3446864" class="hidden-link">Figaro: A tabletop authoring environment for human-robot interaction</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1109/SP40001.2021.00060" class="hidden-link">S\&P 21</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1109/SP40001.2021.00060" class="hidden-link">Learning differentially private mechanisms</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/s00224-019-09959-3" class="hidden-link">TOCS 20</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/s00224-019-09959-3" class="hidden-link">Distribution policies for datalog</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://aaai.org/ojs/index.php/AAAI/article/view/5996" class="hidden-link">AAAI 20</a></div>
+  <p class="entry-text"><a href="https://aaai.org/ojs/index.php/AAAI/article/view/5996" class="hidden-link">Synthesizing action sequences for modifying model decisions</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3313831.3376355" class="hidden-link">CHI 20</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3313831.3376355" class="hidden-link">Transforming robot programs based on social context</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="http://proceedings.mlr.press/v119/huang20h.html" class="hidden-link">ICML 20</a></div>
+  <p class="entry-text"><a href="http://proceedings.mlr.press/v119/huang20h.html" class="hidden-link">Generating programmatic referring expressions via program synthesis</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="http://proceedings.mlr.press/v119/zhang20b.html" class="hidden-link">ICML 20</a></div>
+  <p class="entry-text"><a href="http://proceedings.mlr.press/v119/zhang20b.html" class="hidden-link">Robustness to programmable string transformations via augmented abstract training</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3385412.3385975" class="hidden-link">PLDI 20</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3385412.3385975" class="hidden-link">Proving data-poisoning robustness in decision trees</a></p>
+  <p class="entry-note">SIGPLAN Research Highlight / Appeared in Communications of the ACM (CACM), Feb 2023</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3401071.3401656" class="hidden-link">AIDM 20</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3401071.3401656" class="hidden-link">Automated tuning of query degree of parallelism via machine learning</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3341698" class="hidden-link">ICFP 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3341698" class="hidden-link">Synthesizing differentially private programs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3290352" class="hidden-link">POPL 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3290352" class="hidden-link">Trace abstraction modulo probability</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="http://www.vldb.org/pvldb/vol12/p695-fan.pdf" class="hidden-link">VLDB 19</a></div>
+  <p class="entry-text"><a href="http://www.vldb.org/pvldb/vol12/p695-fan.pdf" class="hidden-link">Scaling up in-memory datalog processing: Observations and techniques</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-030-25540-4\_15" class="hidden-link">CAV 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-030-25540-4\_15" class="hidden-link">Efficient synthesis with probabilistic constraints</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3287560.3287588" class="hidden-link">FAT* 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3287560.3287588" class="hidden-link">Fairness-aware programming</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1109/HRI.2019.8673221" class="hidden-link">HRI 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1109/HRI.2019.8673221" class="hidden-link">Computational tools for human-robot interaction design</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3332165.3347957" class="hidden-link">UIST 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3332165.3347957" class="hidden-link">Bodystorming human-robot interactions</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-030-11245-5\_2" class="hidden-link">VMCAI 19</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-030-11245-5\_2" class="hidden-link">Program synthesis with equivalence reduction</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3158146" class="hidden-link">POPL 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3158146" class="hidden-link">Synthesizing coupling proofs of differential privacy</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3241062" class="hidden-link">TOS 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3241062" class="hidden-link">Protocol-aware recovery for consensus-based distributed storage</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-96145-3\_18" class="hidden-link">CAV 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-96145-3\_18" class="hidden-link">Constraint-based synthesis of coupling proofs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://www.usenix.org/conference/fast18/presentation/alagappan" class="hidden-link">FAST 18</a></div>
+  <p class="entry-text"><a href="https://www.usenix.org/conference/fast18/presentation/alagappan" class="hidden-link">Protocol-aware recovery for consensus-based storage</a></p>
+  <p class="entry-note">Best paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.4230/LIPIcs.ICDT.2018.17" class="hidden-link">ICDT 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.4230/LIPIcs.ICDT.2018.17" class="hidden-link">Distribution policies for datalog</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-99725-4\_1" class="hidden-link">SAS 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-99725-4\_1" class="hidden-link">Fairness: A formal-methods perspective</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3236024.3236066" class="hidden-link">FSE 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3236024.3236066" class="hidden-link">Neural-augmented static analysis of android communication</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3236024.3236034" class="hidden-link">FSE 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3236024.3236034" class="hidden-link">Syntax-guided synthesis of datalog programs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3242587.3242634" class="hidden-link">UIST 18</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3242587.3242634" class="hidden-link">Authoring and verifying human-robot interactions</a></p>
+  <p class="entry-note">Best paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3133904" class="hidden-link">OOPSLA 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3133904" class="hidden-link">FairSquare: Probabilistic verification of program fairness</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-63387-9\_9" class="hidden-link">CAV 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-63387-9\_9" class="hidden-link">Repairing decision-making programs under uncertainty</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-66158-2\_44" class="hidden-link">CP 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-66158-2\_44" class="hidden-link">Constraint-based synthesis of datalog programs</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.24963/ijcai.2017/643" class="hidden-link">IJCAI 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.24963/ijcai.2017/643" class="hidden-link">Weighted model integration with orthogonal transformations</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-66706-5\_1" class="hidden-link">SAS 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-66706-5\_1" class="hidden-link">Probabilistic horn clause verification</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/3106237.3106279" class="hidden-link">FSE 17</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/3106237.3106279" class="hidden-link">Discovering relational specifications</a></p>
+  <p class="entry-note">Best paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-319-41540-6\_12" class="hidden-link">CAV 16</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-319-41540-6\_12" class="hidden-link">Effectively propositional interpolants</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/2908080.2908102" class="hidden-link">PLDI 16</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/2908080.2908102" class="hidden-link">MapReduce program synthesis</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/2837614.2837628" class="hidden-link">POPL 16</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/2837614.2837628" class="hidden-link">Maximal specification synthesis</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://www.usenix.org/conference/hotos15/workshop-program/presentation/alagappan" class="hidden-link">HotOS 15</a></div>
+  <p class="entry-text"><a href="https://www.usenix.org/conference/hotos15/workshop-program/presentation/alagappan" class="hidden-link">Beyond storage APIs: Provable semantics for storage stacks</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-662-46669-8\_26" class="hidden-link">ESOP 15</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-662-46669-8\_26" class="hidden-link">Spatial interpolants</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/2535838.2535857" class="hidden-link">POPL 14</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/2535838.2535857" class="hidden-link">Symbolic optimization with SMT solvers</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-39799-8\_22" class="hidden-link">CAV 13</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-39799-8\_22" class="hidden-link">Beautiful interpolants</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-39799-8\_67" class="hidden-link">CAV 13</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-39799-8\_67" class="hidden-link">Recursive program synthesis</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-36742-7\_52" class="hidden-link">TACAS 13</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-36742-7\_52" class="hidden-link">UFO: verification with interpolants and abstract interpretation</a></p>
+  <p class="entry-note">Winner of 4 gold medals and 1 bronze medal</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-31424-7\_48" class="hidden-link">CAV 12</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-31424-7\_48" class="hidden-link">UFO: A framework for abstraction- and interpolation-based software verification</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1145/2254064.2254091" class="hidden-link">PLDI 12</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1145/2254064.2254091" class="hidden-link">Parallelizing top-down interprocedural analyses</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-33125-1\_21" class="hidden-link">SAS 12</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-33125-1\_21" class="hidden-link">Craig interpretation</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-28756-5\_12" class="hidden-link">TACAS 12</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-28756-5\_12" class="hidden-link">From under-approximations to over-approximations and back</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-27940-9\_4" class="hidden-link">VMCAI 12</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-27940-9\_4" class="hidden-link">Whale: An interpolation-based algorithm for inter-procedural verification</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://doi.org/10.1007/978-3-642-14295-6\_43" class="hidden-link">CAV 10</a></div>
+  <p class="entry-text"><a href="https://doi.org/10.1007/978-3-642-14295-6\_43" class="hidden-link">Abstract analysis of symbolic executions</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text">VVPS 09</div>
+  <p class="entry-text">On the use of planning technology for verification</p>
+</div>
+</div>
+
+<h2>Group</h2>
+<div class="entry">
+  <div class="margin-text"><a href="https://pages.cs.wisc.edu/~amolavi/" class="hidden-link">21-</a></div>
+  <p class="entry-text"><a href="https://pages.cs.wisc.edu/~amolavi/" class="hidden-link">Abtin Molavi</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://axu2017.github.io/" class="hidden-link">21-</a></div>
+  <p class="entry-text"><a href="https://axu2017.github.io/" class="hidden-link">Amanda Xu</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://jiayuww.github.io/" class="hidden-link">23-</a></div>
+  <p class="entry-text"><a href="https://jiayuww.github.io/" class="hidden-link">Jiayu Wang</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://gabeorlanski.github.io/" class="hidden-link">23-</a></div>
+  <p class="entry-text"><a href="https://gabeorlanski.github.io/" class="hidden-link">Gabriel Orlanski</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://www.linkedin.com/in/stavan-jain-558605217/" class="hidden-link">25-</a></div>
+  <p class="entry-text"><a href="https://www.linkedin.com/in/stavan-jain-558605217/" class="hidden-link">Stavan Jain</a></p>
+</div>
+
+<h2>Alumni</h2>
+<div class="entry">
+  <div class="margin-text"><a href="https://annapmeyer.github.io/" class="hidden-link">PhD 25</a></div>
+  <p class="entry-text"><a href="https://annapmeyer.github.io/" class="hidden-link">Anna P. Meyer</a></p>
+  <p class="entry-note">Assistant Professor, Carleton College</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://foreverzyh.github.io/" class="hidden-link">PhD 24</a></div>
+  <p class="entry-text"><a href="https://foreverzyh.github.io/" class="hidden-link">Yuhao Zhang</a></p>
+  <p class="entry-note">Scientist, AWS</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://lmpick.github.io/" class="hidden-link">Postdoc 24</a></div>
+  <p class="entry-text"><a href="https://lmpick.github.io/" class="hidden-link">Lauren Pick</a></p>
+  <p class="entry-note">Assistant Professor, CUHK</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://dporfirio.github.io/" class="hidden-link">PhD 22</a></div>
+  <p class="entry-text"><a href="https://dporfirio.github.io/" class="hidden-link">David Porfirio</a></p>
+  <p class="entry-note">Assistant Professor, George Mason University</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="http://pages.cs.wisc.edu/~sdrews/" class="hidden-link">PhD 21</a></div>
+  <p class="entry-text"><a href="http://pages.cs.wisc.edu/~sdrews/" class="hidden-link">Samuel Drews</a></p>
+  <p class="entry-note">Software Engineer, Facebook</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="http://pages.cs.wisc.edu/~jz/" class="hidden-link">PhD 21</a></div>
+  <p class="entry-text"><a href="http://pages.cs.wisc.edu/~jz/" class="hidden-link">Jinman Zhao</a></p>
+  <p class="entry-note">Research Scientist, Morph AI</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://cjsmith.io/" class="hidden-link">PhD 20</a></div>
+  <p class="entry-text"><a href="https://cjsmith.io/" class="hidden-link">Calvin Smith</a></p>
+  <p class="entry-note">Research Scientist, All Hands AI</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://www.linkedin.com/in/goutham-ramakrishnan/" class="hidden-link">MSc 20</a></div>
+  <p class="entry-text"><a href="https://www.linkedin.com/in/goutham-ramakrishnan/" class="hidden-link">Goutham Ramakrishnan</a></p>
+  <p class="entry-note">Scientist, Amazon AGI</p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://www.linkedin.com/in/yclee0210" class="hidden-link">MSc 19</a></div>
+  <p class="entry-text"><a href="https://www.linkedin.com/in/yclee0210" class="hidden-link">Yun Chan Lee</a></p>
+  <p class="entry-note">Software Engineer, AWS</p>
+</div>
+
+<h2>Awards</h2>
+<div class="entry">
+  <div class="margin-text">25</div>
+  <p class="entry-text">PLDI Distinguished artifact award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">22</div>
+  <p class="entry-text">Amazon research award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">22</div>
+  <p class="entry-text">Class of 1955 Teaching Excellence Award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">21</div>
+  <p class="entry-text">SIGPLAN research highlight for PLDI 20 paper</p>
+</div>
+<div class="entry">
+  <div class="margin-text">20</div>
+  <p class="entry-text">Facebook programming languages and probability award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">20</div>
+  <p class="entry-text">Facebook programming languages and probability award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">19</div>
+  <p class="entry-text">Facebook programming languages and probability award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">18</div>
+  <p class="entry-text">UIST Best paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">18</div>
+  <p class="entry-text">FAST Best paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">17</div>
+  <p class="entry-text">FSE Distinguished paper award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">17</div>
+  <p class="entry-text">National Science Foundation CAREER award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">15</div>
+  <p class="entry-text">Google faculty research award</p>
+</div>
+<div class="entry">
+  <div class="margin-text">13</div>
+  <p class="entry-text">SV-COMP Winner of 4 gold medals and 1 bronze medal</p>
+</div>
+<div class="entry">
+  <div class="margin-text">10</div>
+  <p class="entry-text">Alexander Graham Bell Canada graduate scholarship</p>
+</div>
+
+<h2>Teaching</h2>
+<div class="entry">
+  <div class="margin-text"><a href="https://github.com/barghouthi/ai-agents" class="hidden-link">S26</a></div>
+  <p class="entry-text"><a href="https://github.com/barghouthi/ai-agents" class="hidden-link">CS 839: AI Agents</a></p>
+</div>
+<div class="entry">
+  <div class="margin-text"><a href="https://canvas.wisc.edu/courses/463595" class="hidden-link">F25</a></div>
+  <p class="entry-text"><a href="https://canvas.wisc.edu/courses/463595" class="hidden-link">CS 536: Intro to compilers and programming languages</a></p>
+</div>
+
+  </body>
+</html>

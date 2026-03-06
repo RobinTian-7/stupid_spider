@@ -1,0 +1,1207 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+  	<script type="text/javascript" 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	
+	<script type="text/javascript" async
+		  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+
+	<script>
+    	$(document).ready(function(){
+	    $("h6").css('cursor','pointer');
+    	$("h6").nextUntil("h6").slideToggle();
+	    $("h6").click(function() {
+    			$(this).nextUntil("h6").slideToggle();
+    		});
+	    });
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+			$(":button").css("background-color", "lightgray");
+    		$(":button").css("border", "none");
+		    $(":button").css("font-family", "Avenir Book");
+		    $(":button").css("padding", "3px");
+		    $(":button").css("margin-left", "4px");
+    		
+    		$("#b_CV").click(function(){
+	    		location.href = "/pubs/Various/Anastasios_Kyrillidis_CV_academia.pdf";
+		    });
+		$("#b_scholar").click(function(){
+        		location.href = "http://scholar.google.ch/citations?user=TEGzkZMAAAAJ&hl=en";
+		    });
+		$("#b_LinkedIn").click(function(){
+        		location.href = "https://www.linkedin.com/in/anastasios-kyrillidis-8b05983a";
+		    });
+		    
+		$("#COMP545").click(function(){
+	    		location.href = "https://akyrillidis.github.io/comp545/";
+		    });
+		    
+		$("#COMP414").click(function(){
+	    		location.href = "https://akyrillidis.github.io/comp414-514/";
+		    });
+
+		$("#b_abs_j19").click(function(){
+        		$("#abs_j19").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j19").click(function(){
+        		$("#bib_j19").fadeToggle("slow");
+	    	});
+		$("#b_sof_j19").click(function(){
+        		location.href = "https://github.com/gidiko/MiFGD";
+		});
+			
+			
+		$("#b_abs_j18").click(function(){
+        		$("#abs_j18").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j18").click(function(){
+        		$("#bib_j18").fadeToggle("slow");
+	    	});
+		$("#b_sof_j18").click(function(){
+        		location.href = "https://github.com/wolfecameron/GIST";
+		});
+		    
+			
+			
+		$("#b_abs_j17").click(function(){
+        		$("#abs_j17").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j17").click(function(){
+        		$("#bib_j17").fadeToggle("slow");
+	    	});
+
+		
+			
+		$("#b_abs_j16").click(function(){
+        		$("#abs_j16").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j16").click(function(){
+        		$("#bib_j16").fadeToggle("slow");
+	    	});
+			
+		$("#b_abs_j15").click(function(){
+        		$("#abs_j15").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j15").click(function(){
+        		$("#bib_j15").fadeToggle("slow");
+	    	});
+
+		
+			
+		$("#b_abs_j14").click(function(){
+        		$("#abs_j14").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j14").click(function(){
+        		$("#bib_j14").fadeToggle("slow");
+	    	});
+	    	
+	    	
+			
+		$("#b_abs_j13").click(function(){
+        		$("#abs_j13").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j13").click(function(){
+        		$("#bib_j13").fadeToggle("slow");
+	    	});
+	    	
+			$("#b_abs_j12").click(function(){
+        		$("#abs_j12").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j12").click(function(){
+        		$("#bib_j12").fadeToggle("slow");
+	    	});
+			
+    		$("#b_abs_j11").click(function(){
+        		$("#abs_j11").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j11").click(function(){
+        		$("#bib_j11").fadeToggle("slow");
+	    	});
+    		
+    		
+    		$("#b_abs_j10").click(function(){
+        		$("#abs_j10").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j10").click(function(){
+        		$("#bib_j10").fadeToggle("slow");
+	    	});
+    		    		
+    		
+    		$("#b_abs_j9").click(function(){
+        		$("#abs_j9").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j9").click(function(){
+        		$("#bib_j9").fadeToggle("slow");
+	    	});
+	    	$("#b_sof_j9").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+    		
+    		$("#b_abs_j8").click(function(){
+        		$("#abs_j8").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j8").click(function(){
+        		$("#bib_j8").fadeToggle("slow");
+	    	});
+    		
+    		
+    		$("#b_abs_j7").click(function(){
+        		$("#abs_j7").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j7").click(function(){
+        		$("#bib_j7").fadeToggle("slow");
+	    	});
+
+    		
+    		$("#b_abs_j6").click(function(){
+        		$("#abs_j6").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j6").click(function(){
+        		$("#bib_j6").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_j6").click(function(){
+	    		location.href = "/pubs/Presentations/Composite_Self-Concordant_ Minimization.pdf";
+		    });
+		    $("#b_pos_j6").click(function(){
+        		location.href = "/pubs/Posters/Composite_Self-Concordant_ Minimization.pdf";
+		    });
+		    $("#b_sof_j6").click(function(){
+        		location.href = "http://lions.epfl.ch/scopt";
+		    });
+		    
+		    
+		    $("#b_abs_j5").click(function(){
+        		$("#abs_j5").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j5").click(function(){
+        		$("#bib_j5").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_j4").click(function(){
+        		$("#abs_j4").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j4").click(function(){
+        		$("#bib_j4").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_j4").click(function(){
+	    		location.href = "/pubs/Presentations/Composite_Self-Concordant_ Minimization.pdf";
+		    });
+			$("#b_sof_j4").click(function(){
+        		location.href = "http://lions.epfl.ch/scopt";
+		    });
+
+	    	
+	    	$("#b_abs_j3").click(function(){
+        		$("#abs_j3").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j3").click(function(){
+        		$("#bib_j3").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_j3").click(function(){
+	    		location.href = "/pubs/Presentations/RankD.pdf";
+		    });
+			$("#b_sof_j3").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+	    	
+	    	$("#b_abs_j2").click(function(){
+        		$("#abs_j2").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j2").click(function(){
+        		$("#bib_j2").fadeToggle("slow");
+	    	});
+	    	$("#b_sof_j2").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+	    	
+	    	$("#b_abs_j1").click(function(){
+        		$("#abs_j1").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_j1").click(function(){
+        		$("#bib_j1").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_j1").click(function(){
+	    		location.href = "/pubs/Presentations/SidKyrICASSP2013.pdf";
+		    });
+	    	$("#b_sof_j1").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+			
+		$("#b_abs_c50").click(function(){
+        		$("#abs_c50").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c50").click(function(){
+        		$("#bib_c50").fadeToggle("slow");
+	    	});
+		$("#b_pos_c50").click(function(){
+        		location.href = "/pubs/Posters/LOFT_poster.pdf";
+		});
+		$("#b_sof_c50").click(function(){
+        		location.href = "https://github.com/dunchen/LOFT_release";
+		});
+
+		$("#b_abs_c49").click(function(){
+        		$("#abs_c49").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c49").click(function(){
+        		$("#bib_c49").fadeToggle("slow");
+	    	});
+		$("#b_pos_c49").click(function(){
+        		location.href = "/pubs/Posters/AsyncDrop_poster.pdf";
+		});
+		$("#b_sof_c49").click(function(){
+        		location.href = "https://github.com/dunchen/AsyncDrop__Release";
+		});
+
+			
+		$("#b_abs_c48").click(function(){
+        		$("#abs_c48").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c48").click(function(){
+        		$("#bib_c48").fadeToggle("slow");
+	    	});
+		$("#b_pre_c48").click(function(){
+        		location.href = "/pubs/Presentations/SLTH_slides.pdf";
+		});
+		$("#b_pos_c48").click(function(){
+        		location.href = "/pubs/Posters/SLTH_poster.pdf";
+		});
+		$("#b_sof_c48").click(function(){
+        		location.href = "https://github.com/edixiong/slth-eps";
+		});
+
+			
+			
+		$("#b_abs_c47").click(function(){
+        		$("#abs_c47").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c47").click(function(){
+        		$("#bib_c47").fadeToggle("slow");
+	    	});
+
+			
+		$("#b_abs_c46").click(function(){
+        		$("#abs_c46").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c46").click(function(){
+        		$("#bib_c46").fadeToggle("slow");
+	    	});
+
+			
+			
+		$("#b_abs_c45").click(function(){
+        		$("#abs_c45").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c45").click(function(){
+        		$("#bib_c45").fadeToggle("slow");
+	    	});
+		
+			
+			
+		$("#b_abs_c44").click(function(){
+        		$("#abs_c44").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c44").click(function(){
+        		$("#bib_c44").fadeToggle("slow");
+	    	});
+		$("#b_sof_c44").click(function(){
+        		location.href = "https://github.com/GATECH-EIC/PipeGCN";
+		});
+			
+			
+		$("#b_abs_c43").click(function(){
+        		$("#abs_c43").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c43").click(function(){
+        		$("#bib_c43").fadeToggle("slow");
+	    	});
+		$("#b_pre_c43a").click(function(){
+        		location.href = "/pubs/Presentations/IST_talk.pdf";
+		});
+		$("#b_pre_c43b").click(function(){
+        		location.href = "/pubs/Presentations/IST_talk2.pdf";
+		});
+		$("#b_sof_c43").click(function(){
+        		location.href = "https://github.com/BinhangYuan/IST_Release";
+		});
+			
+			
+		$("#b_abs_c42").click(function(){
+        		$("#abs_c42").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c42").click(function(){
+        		$("#bib_c42").fadeToggle("slow");
+	    	});
+		
+			
+
+		$("#b_abs_c41").click(function(){
+        		$("#abs_c41").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c41").click(function(){
+        		$("#bib_c41").fadeToggle("slow");
+	    	});
+		$("#b_sof_c41").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/Demon.zip";
+		});	
+			
+			
+			
+		$("#b_abs_c40").click(function(){
+        		$("#abs_c40").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c40").click(function(){
+        		$("#bib_c40").fadeToggle("slow");
+	    	});
+		$("#b_pos_c40").click(function(){
+        		location.href = "/pubs/Posters/ResIST_poster.pdf";
+		});
+		$("#b_sof_c40").click(function(){
+        		location.href = "https://github.com/dunchen/ResIST_release";
+		});
+			
+			
+			
+		$("#b_abs_c39").click(function(){
+        		$("#abs_c39").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c39").click(function(){
+        		$("#bib_c39").fadeToggle("slow");
+	    	});
+			
+			
+			
+			
+		$("#b_abs_c38").click(function(){
+        		$("#abs_c38").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c38").click(function(){
+        		$("#bib_c38").fadeToggle("slow");
+	    	});
+			
+	    	
+		$("#b_abs_c37").click(function(){
+        		$("#abs_c37").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c37").click(function(){
+        		$("#bib_c37").fadeToggle("slow");
+	    	});			
+		$("#b_sof_c37").click(function(){
+        		location.href = "https://github.com/wolfecameron/i-SpaSP";
+		});	
+			
+		$("#b_abs_c36").click(function(){
+        		$("#abs_c36").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c36").click(function(){
+        		$("#bib_c36").fadeToggle("slow");
+	    	});
+			
+			
+			
+		$("#b_abs_c35").click(function(){
+        		$("#abs_c35").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c35").click(function(){
+        		$("#bib_c35").fadeToggle("slow");
+	    	});
+			
+			
+			
+		$("#b_abs_c34").click(function(){
+        		$("#abs_c34").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c34").click(function(){
+        		$("#bib_c34").fadeToggle("slow");
+	    	});
+			
+			
+		$("#b_abs_c33").click(function(){
+        		$("#abs_c33").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c33").click(function(){
+        		$("#bib_c33").fadeToggle("slow");
+	    	});
+			
+		
+		$("#b_abs_c32").click(function(){
+        		$("#abs_c32").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c32").click(function(){
+        		$("#bib_c32").fadeToggle("slow");
+	    	});
+			
+		
+			
+		$("#b_abs_c31").click(function(){
+        		$("#abs_c31").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c31").click(function(){
+        		$("#bib_c31").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c30").click(function(){
+        		$("#abs_c30").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c30").click(function(){
+        		$("#bib_c30").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c29").click(function(){
+        		$("#abs_c29").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c29").click(function(){
+        		$("#bib_c29").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c28").click(function(){
+        		$("#abs_c28").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c28").click(function(){
+        		$("#bib_c28").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c27").click(function(){
+        		$("#abs_c27").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c27").click(function(){
+        		$("#bib_c27").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c26").click(function(){
+        		$("#abs_c26").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c26").click(function(){
+        		$("#bib_c26").fadeToggle("slow");
+	    	});
+		$("#b_pos_c26").click(function(){
+        		location.href = "/pubs/Posters/lp_lowrank.pdf";
+		});
+	    	
+	    	
+	    	$("#b_abs_c25").click(function(){
+        		$("#abs_c25").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c25").click(function(){
+        		$("#bib_c25").fadeToggle("slow");
+	    	});
+		$("#b_pos_c25").click(function(){
+        		location.href = "/pubs/Posters/accIHT.pdf";
+		});
+	    	
+	    	
+	    	$("#b_abs_c24").click(function(){
+        		$("#abs_c24").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c24").click(function(){
+        		$("#bib_c24").fadeToggle("slow");
+	    	});
+	    	
+	    	
+	    	$("#b_abs_c23").click(function(){
+        		$("#abs_c23").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c23").click(function(){
+        		$("#bib_c23").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c23").click(function(){
+        		location.href = "/pubs/Posters/FGD.pdf";
+		    });
+
+		    
+		    $("#b_abs_c22").click(function(){
+        		$("#abs_c22").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c22").click(function(){
+        		$("#bib_c22").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c22").click(function(){
+        		location.href = "/pubs/Posters/FGD.pdf";
+		    });
+		    $("#b_pre_c22").click(function(){
+        		location.href = "";
+		    });
+		    $("#b_sof_c22").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+	    	
+	    	$("#b_abs_c21").click(function(){
+        		$("#abs_c21").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c21").click(function(){
+        		$("#bib_c21").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c21").click(function(){
+        		location.href = "/pubs/Posters/SparseDiagonalCCA.pdf";
+		    });
+		    $("#b_pre_c21").click(function(){
+        		location.href = "/pubs/Presentations/SparseDiagonalCCA.pdf";
+		    });
+		    $("#b_sof_c21").click(function(){
+        		location.href = "https://github.com/megasthenis/spancca";
+		    });
+		    
+	    	
+	    	$("#b_abs_c20").click(function(){
+        		$("#abs_c20").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c20").click(function(){
+        		$("#bib_c20").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c20").click(function(){
+        		location.href = "/pubs/Posters/cvx_block_expanders.pdf";
+		    });
+		    $("#b_sof_c20").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    		    
+	    	
+	    	$("#b_abs_c19").click(function(){
+        		$("#abs_c19").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c19").click(function(){
+        		$("#bib_c19").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c19").click(function(){
+        		location.href = "/pubs/Posters/GSPAM_poster.pdf";
+		    });
+		    $("#b_sof_c19").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+	    	
+	    	$("#b_abs_c18").click(function(){
+        		$("#abs_c18").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c18").click(function(){
+        		$("#bib_c18").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c18").click(function(){
+        		location.href = "/pubs/Posters/BCC.pdf";
+		    });
+		    $("#b_sof_c18").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    	
+	    	
+	    	$("#b_abs_c17").click(function(){
+        		$("#abs_c17").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c17").click(function(){
+        		$("#bib_c17").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c17").click(function(){
+        		location.href = "/pubs/Posters/SPCA.pdf";
+		    });
+
+	    	
+	    	$("#b_abs_c16").click(function(){
+        		$("#abs_c16").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c16").click(function(){
+        		$("#bib_c16").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c16").click(function(){
+        		location.href = "/pubs/Posters/PCAonPath.pdf";
+		    });
+		    $("#b_pre_c16").click(function(){
+        		location.href = "/pubs/Presentations/PCAonPath.pdf";
+		    });
+		    
+		    
+		    $("#b_abs_c15").click(function(){
+        		$("#abs_c15").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c15").click(function(){
+        		$("#bib_c15").fadeToggle("slow");
+	    	});
+		    
+		    
+		    $("#b_abs_c14").click(function(){
+        		$("#abs_c14").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c14").click(function(){
+        		$("#bib_c14").fadeToggle("slow");
+	    	});
+		    $("#b_sof_c14").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+	    
+		    
+		    $("#b_abs_c13").click(function(){
+        		$("#abs_c13").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c13").click(function(){
+        		$("#bib_c13").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c13").click(function(){
+        		location.href = "/pubs/Posters/ScalableSC.pdf";
+		    });
+		    $("#b_sof_c13").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+		    $("#b_abs_c12").click(function(){
+        		$("#abs_c12").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c12").click(function(){
+        		$("#bib_c12").fadeToggle("slow");
+	    	});		    
+		    
+		    
+		    $("#b_abs_c11").click(function(){
+        		$("#abs_c11").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c11").click(function(){
+        		$("#bib_c11").fadeToggle("slow");
+	    	});	
+	    	
+	    	
+		    $("#b_abs_c10").click(function(){
+        		$("#abs_c10").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c10").click(function(){
+        		$("#bib_c10").fadeToggle("slow");
+	    	});	
+		    
+	    	
+	    	$("#b_abs_c09").click(function(){
+        		$("#abs_c09").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c09").click(function(){
+        		$("#bib_c09").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c09").click(function(){
+        		location.href = "/pubs/Posters/RandSVP.pdf";
+		    });
+		    
+		    
+	    	$("#b_abs_c08").click(function(){
+        		$("#abs_c08").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c08").click(function(){
+        		$("#bib_c08").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c08").click(function(){
+        		location.href = "/pubs/Posters/SparseSimplex.pdf";
+		    });
+		    $("#b_pre_c08").click(function(){
+        		location.href = "/pubs/Presentations/SparseSimplex.pdf";
+		    });
+	    	$("#b_sof_c08").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+		    $("#b_abs_c07").click(function(){
+        		$("#abs_c07").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c07").click(function(){
+        		$("#bib_c07").fadeToggle("slow");
+	    	});
+	    	$("#b_sof_c07").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+		    $("#b_abs_c06").click(function(){
+        		$("#abs_c06").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c06").click(function(){
+        		$("#bib_c06").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c06").click(function(){
+        		location.href = "/pubs/Posters/GraphLearn.pdf";
+		    });
+		    
+		    
+		    $("#b_abs_c05").click(function(){
+        		$("#abs_c05").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c05").click(function(){
+        		$("#bib_c05").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c05").click(function(){
+        		location.href = "/pubs/Posters/AcceleratedMALPS.pdf";
+		    });
+		    $("#b_sof_c05").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+	    	$("#b_abs_c04").click(function(){
+        		$("#abs_c04").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c04").click(function(){
+        		$("#bib_c04").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_c04").click(function(){
+        		location.href = "/pubs/Presentations/ISIT_presentation_v2.pdf";
+		    });
+		    $("#b_sof_c04").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+	    	$("#b_abs_c03").click(function(){
+        		$("#abs_c03").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c03").click(function(){
+        		$("#bib_c03").fadeToggle("slow");
+	    	});
+	    	$("#b_pos_c03").click(function(){
+        		location.href = "/pubs/Posters/NormPursuits.pdf";
+		    });
+		    $("#b_sof_c03").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+		    $("#b_abs_c02").click(function(){
+        		$("#abs_c02").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c02").click(function(){
+        		$("#bib_c02").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_c02").click(function(){
+        		location.href = "/pubs/Presentations/Recipes_for_IHT.pdf";
+		    });
+		    $("#b_sof_c02").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    $("#b_med_c02").click(function(){
+        		location.href = "http://www.gaga4cs.org/";
+		    });
+		    
+		    
+		    $("#b_abs_c01").click(function(){
+        		$("#abs_c01").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_c01").click(function(){
+        		$("#bib_c01").fadeToggle("slow");
+	    	});
+	    	$("#b_pre_c01").click(function(){
+        		location.href = "/pubs/Presentations/RankD.pdf";
+		    });
+		    $("#b_sof_c01").click(function(){
+        		location.href = "http://akyrillidis.github.io/projects/";
+		    });
+		    
+		    
+		    
+		    
+		    
+		    
+		    $("#b_abs_b02").click(function(){
+        		$("#abs_b02").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_b02").click(function(){
+        		$("#bib_b02").fadeToggle("slow");
+	    	});
+		    $("#b_med_b02").click(function(){
+        		location.href = "https://mitpress.mit.edu/books/practical-applications-sparse-modeling";
+		    });
+		    
+		    
+		    $("#b_abs_b01").click(function(){
+        		$("#abs_b01").fadeToggle("slow");
+	    	});
+	    	$("#b_bib_b01").click(function(){
+        		$("#bib_b01").fadeToggle("slow");
+	    	});
+		    $("#b_med_b01").click(function(){
+        		location.href = "http://link.springer.com/book/10.1007%2F978-3-319-16042-9";
+		    });
+		    
+		    
+		    
+	    	
+	    	
+	    	
+	    	
+	    	$("#b_des_s1").click(function(){
+        		$("#des_s1").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s1").click(function(){
+        		location.href = "/projects/ALPS/ALPS.zip";
+	    	});
+	    	$("#b_pap_s1").click(function(){
+        		location.href = "/pubs/Conferences/CAMSAP_Recipes_for_HTM.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s2").click(function(){
+        		$("#des_s2").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s2").click(function(){
+        		location.href = "/projects/MatrixALPS/MatrixALPS_v0.1.zip";
+	    	});
+	    	$("#b_pap_s2").click(function(){
+        		location.href = "/pubs/Journals/MatrixALPS_JMVI_v2.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s3").click(function(){
+        		$("#des_s3").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s3").click(function(){
+        		location.href = "/projects/MatrixALPS_LS/MatrixALPS_LS_v0.1.zip";
+	    	});
+	    	$("#b_pap_s3").click(function(){
+        		location.href = "/pubs/Conferences/lowrank_sparse_v2.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s4").click(function(){
+        		$("#des_s4").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s4").click(function(){
+        		location.href = "http://lions.epfl.ch/scopt";
+	    	});
+	    	$("#b_pap_s4a").click(function(){
+        		location.href = "/pubs/Journals/TranDinhKyrillidisCevher_ComSelfMin2013.pdf";
+		    });
+		    $("#b_pap_s4b").click(function(){
+        		location.href = "/pubs/Conferences/covselect_final.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s5").click(function(){
+        		$("#des_s5").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s5").click(function(){
+        		location.href = "/projects/BlockSparseExpanders/BlockSparseExpanders.zip";
+	    	});
+	    	$("#b_pap_s5").click(function(){
+        		location.href = "/pubs/Conferences/cvx_block_expanders.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s6").click(function(){
+        		$("#des_s6").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s6").click(function(){
+        		location.href = "/projects/RankD/RankD.zip";
+	    	});
+	    	$("#b_pap_s6").click(function(){
+        		location.href = "/pubs/Journals/05_journal_rankDcomplex_final_v21.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s7").click(function(){
+        		$("#des_s7").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s7").click(function(){
+        		location.href = "/projects/TensorCS/TensorCS_v1.zip";
+	    	});
+	    	$("#b_pap_s7").click(function(){
+        		location.href = "/pubs/Journals/MWCSR1twocol.pdf";
+		    });
+	    	
+	    	
+	    	$("#b_des_s8").click(function(){
+        		$("#des_s8").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s8").click(function(){
+        		location.href = "/projects/BFGD/BFGD.zip";
+	    	});
+	    	$("#b_pap_s8").click(function(){
+        		location.href = "/pubs/Conferences/FGD.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s9").click(function(){
+        		$("#des_s9").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s9").click(function(){
+        		location.href = "/projects/GSPAM/GSPAM.zip";
+	    	});
+	    	$("#b_pap_s9").click(function(){
+        		location.href = "/pubs/Conferences/GSPAM.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s10").click(function(){
+        		$("#des_s10").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s10").click(function(){
+        		location.href = "/projects/BCC/BCC_Bilinear.zip";
+	    	});
+	    	$("#b_pap_s10").click(function(){
+        		location.href = "/pubs/Conferences/BCC.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s11").click(function(){
+        		$("#des_s11").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s11").click(function(){
+        		location.href = "/projects/LevScores/ProvableDetLevScoresDemo.zip";
+	    	});
+	    	$("#b_pap_s11").click(function(){
+        		location.href = "/pubs/Conferences/frp0826.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s12").click(function(){
+        		$("#des_s12").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s12").click(function(){
+        		location.href = "/projects/SparseSimplex/SparseSimplex.zip";
+	    	});
+	    	$("#b_pap_s12").click(function(){
+        		location.href = "http://jmlr.org/proceedings/papers/v28/kyrillidis13.pdf";
+		    });
+		    
+		    
+		    $("#b_des_s13").click(function(){
+        		$("#des_s13").fadeToggle("slow");
+	    	});
+	    	$("#b_dow_s13").click(function(){
+        		location.href = "/projects/NormedPursuits/CLASH_NormedPursuit.zip";
+	    	});
+	    	$("#b_pap_s13a").click(function(){
+        		location.href = "/pubs/Conferences/CLASH_ISIT.pdf";
+		    });
+		    $("#b_pap_s13b").click(function(){
+        		location.href = "/pubs/Conferences/HardThreshNormCon.pdf";
+		    });
+		});
+	</script>
+	<link type="application/atom+xml" rel="alternate" href="http://akyrillidis.github.io/feed.xml" title="Anastasios Kyrillidis" />
+    <meta charset="utf-8">
+    <title>About &mdash; Anastasios Kyrillidis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--<link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Anastasios Kyrillidis" href="/atom.xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/public/AK.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/AK.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/AK.png">
+    
+    <meta property="fb:admins" content="728642302">
+    <meta property="fb:app_id" content="38027689216">
+    
+    <meta property="og:title" content="About">
+      
+      <meta name="description" content="My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname ‘Tasos’ (‘Τάσος’). Currently, I’m a Noah Harding Associate Professor at...">
+      <meta name="og:description" content="My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname ‘Tasos’ (‘Τάσος’). Currently, I’m a Noah Harding Associate Professor at...">
+      
+    
+    
+    
+    
+    <meta property="og:url" content="http://akyrillidis.github.io//about/">
+    <meta property="og:site_name" content="akyrillidis.github.io">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+  </head>
+  <body>
+    <!--script>/*
+      var s;
+      if (document.location.hostname === 'rsms.me') {
+        s = document.createElement('script');
+        s.async = true;
+        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.rsmsHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.rsmsHostIsIOS = 'iphone';
+      }
+    */</script>
+    <div id="fb-root"></div><script></script-->
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/public/signature_new.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="https://akyrillidis.github.io/ist/" class="active" title="Independent Subnetwork Training">IST</a></li>
+        <li><a href="https://akyrillidis.github.io/nonconvex-qst/" class="active" title="Quantum state tomography project">QST</a></li>
+	<li><a href="https://akyrillidis.github.io/explore-quantum/" class="active" title="Explore Quantum project">QuanTAS</a></li>
+	<li><a href="https://akyrillidis.github.io/aiowls/" class="active" title="AI-OWLS team">AI-OWLS</a></li>
+	<li><a href="https://akyrillidis.github.io/crysformer/" class="active" title="CrysFormer">CrysFormer</a></li>	      
+        <li><a href="/group/optimalab.html" title="Our awesome group!">OptimaLab</a></li>
+        <li><a href="/pubs/" title="Collection of publications">Publications</a></li>
+        <!--<li><a href="/teaching/" title="Teaching activity">Teaching</a></li>-->
+        <li><a href="/projects/" title="Projects I used or am currently working">Software</a></li>
+        <!--<li><a href="/notes/" title="Too-long-to-read-again notes">Notes</a></li>-->
+        <li><a href="/about/"class="active">About me</a></li>
+      </ul>
+    </header>      
+	<!--<div style="text-align:center"><i><b>OptimaLab receives an Amazon ARA + a Microsoft Research award!</b></i></div>-->
+        <!--<div style="text-align:center"><i><b>I am looking for a PostDoc on Quantum Optimization!  <a href="https://docs.google.com/document/d/16tz38tQcuK3A2cxTzOP0Hy5LCJnM8QYfv58mbm9Vf_M/edit?usp=sharing">See here!</a></b></i></div>-->
+	<!--<br>
+	<div style="text-align:center"><i><b><font color="red">Looking for students: I will attend AAAI conference at New Orleans this February - please contact at anastasios.kyrillidis@ibm.com</font></b></i></div>-->
+	<br><br>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <p><img src="/public/me2.png" width="132" height="200" align="right" /></p>
+
+<p>My name is Anastasios Kyrillidis (Αναστάσιος Κυριλλίδης), but most people call me by the nickname ‘Tasos’ (‘Τάσος’). 
+Currently, I’m a Noah Harding Associate Professor at the Computer Science department at Rice University.</p>
+
+<p>Prior to that, I was a Goldstine
+PostDoctoral Fellow at IBM T. J. Watson Research Center (NY), and a Simons Foundation PostDoc member at the University of Texas at Austin. 
+I finished my PhD at the CS Department of EPFL (Switzerland).</p>
+
+<p>I’m recipient of a NSF CAREER award, an Amazon Research Award (ARA), a Microsoft Research Award, and I’m closely collaborating with Intel.</p>
+
+<p>My research interests include (but not limited to):</p>
+<ul>
+  <li>Optimization for machine learning</li>
+  <li>Convex and non-convex algorithms and analysis</li>
+  <li>Efficient large-scale optimization, including budgeted optimization, and algorithmic design that moves away from regular optimizers.</li>
+  <li>Any problem that includes a math-driven criterion, and requires an efficient method for its solution.</li>
+</ul>
+
+<p><button id="b_CV"> CV </button>
+<button id="b_scholar"> Scholar </button>
+<button id="b_LinkedIn"> LinkedIn </button></p>
+
+<p>Contact: anastasios@rice.edu</p>
+
+<h3 id="teaching"><strong>Teaching</strong></h3>
+
+<ul>
+  <li>COMP 545 - Advanced topics in optimization: From simple to complex ML systems (<em>Spring ‘19</em>, <em>Spring ‘20</em>)</li>
+</ul>
+
+<p><button id="COMP545"> Website </button></p>
+
+<ul>
+  <li>COMP 414/514 - Optimization: Algorithms, Complexity &amp; Approximations (<em>Fall ‘19</em>, <em>Fall ‘20</em>, <em>Fall ‘21</em>)</li>
+</ul>
+
+<p><button id="COMP414"> Website </button></p>
+
+<ul>
+  <li>COMP 182 - Algorithmic Thinking (<em>Spring ‘23</em>)</li>
+</ul>
+
+<h3 id="old-notes-on-various-stuff"><strong>Old notes on various stuff</strong></h3>
+<p><a href="/notes/" title="Too-long-to-read-again notes">Notes</a></p>
+
+<h3 id="funding-sources"><strong>Funding sources</strong></h3>
+
+<p><img src="/public/logos2.png" width="325" height="130" align="right" /></p>
+
+<p>My research is supported by <strong>NSF FET:Small no. 1907936</strong>, <strong>NSF MLWiNS CNS no. 2003137</strong> (in collaboration with Intel), <strong>NSF CMMI no. 2037545</strong>, <strong>NSF CAREER award no. 2145629</strong>, <strong>Welch Foundation Research Grant no. 964181</strong>, <strong>Amazon Research Award</strong>, <strong>Microsoft Research Award</strong>, and Rice <strong>InterDisciplinary Excellence Award (IDEA)</strong>.</p>
+
+</div>
+
+
+    <!--/div-->
+    
+    
+    
+    <!--div class="content sub">
+      <h2 id="comments">Comments</h2>
+      <div class="fb-comments" data-href="http://rsms.me/about/" data-num-posts="3" data-width="550" data-font="arial"></div>
+    </div-->
+    
+    
+    
+    
+    <script>
+  var n,i,L,cn,v = document.getElementsByTagName('pre');
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      if (cn.className.indexOf("none") !== -1 || cn.className.indexOf("txt") !== -1) {
+        cn.className = 'nohighlight';
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" media="all" href="/res/highlight.css" type="text/css">
+<script src="/res/highlight.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9078556-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ], 
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>

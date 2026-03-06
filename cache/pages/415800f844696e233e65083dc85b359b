@@ -1,0 +1,80 @@
+<head> <title>EC14 Tutorial: Recent Progress in Multi-dimensional Mechanism Design</title>
+<style media="screen" type="text/css" title="Default">
+      @import "style.css";
+    </style></head>
+
+<h2></h2>
+<h1><a href="http://www.sigecom.org/ec14/">EC 2014</a> Tutorial:<br><br> Recent Progress in Multi-dimensional Mechanism Design </h1>
+    <h2>&nbsp&nbsp&nbspSunday June 8, Palo Alto</h2>
+     
+     <h3>&nbsp&nbsp&nbspOrganizers: <a href="http://people.csail.mit.edu/ycai/">Yang Cai,</a> <a href="http://people.csail.mit.edu/costis">Costis Daskalakis,</a> <a href="http://people.csail.mit.edu/smweinberg/">Matt Weinberg</a></h3>
+
+
+<!--    <div id="Menu">
+      <ul>
+        <li><a href="index.html" class="active" >main</a></li>
+        <li><a href="academic.html" >academic work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div> -->
+
+    <div id="MainCopy">
+    
+<p><p><p><p><p><p><p><p>
+<h4>Mechanism design in the presence of Bayesian priors has received much attention in the Economics literature, focusing among other problems on generalizing Myerson's celebrated auction to multi-item settings. Nevertheless, only special cases have been solved, with a general solution remaining elusive. More recently, there has been an explosion of algorithmic work on the problem, focusing on computation of optimal auctions, and understanding their structure. The goal of this tutorial is to overview this work, with a focus on our own work. The tutorial will be self-contained and aims to develop a usable framework for mechanism design in multi-dimensional settings.</h4>
+
+<h2>Tutorial Venue</h2>
+
+Sheraton Palo Alto
+625 El Camino Real
+Palo Alto, CA 94301
+USA
+
+<h2><a name="schedule"></a>Tutorial Schedule</h2>
+    <ul>
+		      <h3><b>Session 1 (8:30am-10:30am)</b></h3>
+		      <table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>8:30 - 9:30 </td> <td>Constantinos Daskalakis<span style="text-decoration: underline;"><br></span><a href=#costis>Optimal Multi-Item Auctions</a> <a href="TutorialPart1.pptx">[slides]</a> <span style="text-decoration: underline;"></span> </td></tr><tr>
+			      <td>9:30 - 10:30 </td> <td>Yang Cai<br><a href=#yang>Revenue-Optimal Mechanisms</a> <a href="TutorialPart2.pptx">[slides]</a></td></tr>
+      </tbody>
+    </table>
+    
+    <h3>Coffee Break (provided) (10:30am-11am)<br></h3>
+    <h3><b>Session 2 (11:00am-12:30pm)</b></h3>
+
+      <table border="0" cellspacing="0" width="800">
+      <tbody>
+        <tr style="text-align: left;">
+          <th style="border-bottom: 1px solid;" width="120">Time </th>
+          <th style="border-bottom: 1px solid;">Talk </th>
+        </tr>
+        <tr style="background-color: rgb(204, 204, 204);">
+          <td>11:00 - 12:30 </td> <td>Matt Weinberg <br> <a href=#matt>Beyond Revenue: Optimal Mechanisms for Non-linear Objectives</a> <a href="TutorialPart3.pptx">[slides]</a></td></tr><tr>
+
+      </tbody>
+    </table>
+    
+    </ul>
+
+<h2><a name="schedule"></a>Abstracts</h2>
+
+<b>Part 1:</b> <a name=costis>Optimal Multi-Item Auctions</a>
+<br>Speaker: Constantinos Daskalakis (MIT)
+
+<br><br>This part of the tutorial will develop computationally efficient revenue-optimal auctions for selling multiple items to multiple additive bidders, i.e. bidders who value bundles of items additively in their contents. We will chacracterize the structure of optimal auctions in multi-item settings, explaining how to properly generalize Myerson's single-item auction. We will also delve into the efficient computation of optimal auctions. This part of the tutorial will focus on structural results, and will require minimal training in algorithms to follow.
+
+<br><br><br><b>Part 2:</b> <a name=yang>Revenue-Optimal Mechanisms</a>
+<br>Speaker: Yang Cai (UC Berkeley and McGill University)
+
+<br><br>We introduce complexity to the revenue maximization problem considered in Part 1 in two respects: we allow constraints on the feasible outcomes and also allow for more general bidder valuations. We will show how to extend our structural results from Part 1, explain the algorithmic challenges that arise for the computation of optimal mechanisms in this more general setting, and provide detailed solutions to address them. Our focus will be both structural and algorithmic. En route to obtaining our results, we establish a theorem that generalizes the classical equivalence of linear optimization and separation for use in Bayesian mechanism design, which is of independent interest. 
+
+<br><br><br><b>Part 3:</b> <a name=matt>Beyond Revenue: Optimal Mechanisms for Non-linear Objectives</a>
+<br>Speaker: Matt Weinberg (MIT)
+
+<br><br>In this part of the tutorial, we further extend the framework developed in Parts 1 and 2 to develop a generic reduction from mechanism to algorithm design, accommodating arbitrary objectives beyond revenue and welfare. We will explain the challenges that arise in applying this extension to objectives such as makespan and fairness, and expand further our algorithmic techniques for addressing them. The key algorithmic tool developed in this section is a generalization of the equivalence of linear optimization and separation accommodating traditional approximation algorithms and specific types of bi-criterion approximation algorithms. Finally, we will discuss open problems and future directions.

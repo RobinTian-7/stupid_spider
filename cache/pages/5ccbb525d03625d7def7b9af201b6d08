@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta charset="htf-8">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<title> Bo Dai's Homepage </title>
+</head>
+
+<body>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="span6">
+				<h1>Bo Dai</h1>
+			</div>
+			<div class="span6">
+				<img src="images/cse-logo.jpg" style="float:right;" width="50%" alt="Georgia Tech">
+				<br>
+			</div>
+			<div class="span6">
+				<img src="images/google-deep-mind-logo.jpg" style="float:right;" width="50%" alt="Google DeepMind">
+			</div>
+		</div>
+
+		<div class="navbar">
+          			
+          	<div class="navbar-inner">
+            				
+            	<div class="container">
+              					
+              		<ul class="nav">
+                						
+                    	<li class="active">
+                    		<a href="#">Home</a>
+                    	</li>
+                   			    <li>
+                   				<a href="#publications">Selected Recent Publications</a>
+                   			    </li>
+                   		
+					    <li>
+					    	<a href="#teaching">Teaching</a>
+					    </li>
+					    <li>
+					    	<a href="#awards">Selected Awards</a>
+					    </li>
+				 	    <li>
+					    	<a href="#team">Team</a>
+					    </li>
+					    <li>
+					    	<a href="#software">Software</a>
+					    </li>
+					    <li>
+					    	<a href="#services">Services</a>
+					    </li>
+				        <!--<li><a href="#skills">Skills</a></li>-->
+				        <!--<li><a href="#links">Links</a></li>-->
+				                 
+				    </ul>
+				 </div>
+			</div>
+		</div>
+
+                <!-- <div class="row">
+			<div class="span10 offset2">
+				<h3>Biography</h3>
+			</div>
+		</div> -->
+		
+		<div class="row">
+			<div class="span2">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p class="text-right"><b>Address</b></p>
+				<p class="text-right"><b>Contact</b></p> 
+				<br>
+				<p class="text-right"><b>Twitter</b></p> 
+			</div>
+			<div class="span7">
+				<p align="justify"> I am an assistant professor at <a href="https://cse.gatech.edu/">CSE in Georgia Tech</a>. I am also affiliated with <a href="https://ai.google/research/teams/brain">Google DeepMind</a> as a staff research scientist. 
+				</p>
+				<p align="justify"> My principal research interest lies on <font color="#40E0D0"><b>Agent AI</b></font> upon <font color="#40E0D0"><b>Generative Models</b></font>, <font color="#40E0D0"><b>Representation</b></font>, and <font color="#40E0D0"><b>Reinforcement Learning</b></font>, aiming for creating agents with decision-making and planning ability through modeling the world. 
+				</p>
+				<!-- <p align="justify"> 
+					[ <a href="https://scholar.google.com/citations?user=TIKl_foAAAAJ&hl=en">Google Scholar</a> ]
+					[ <a href="https://twitter.com/daibond_alpha">Twitter</a> ]
+				</p> -->
+				<p align="justify">CODA E1342A, 756 W Peachtree St NW, Atlanta, GA 30308</p> 
+				<p align="justify"> 
+					<ul class="unstyled">
+						<li><font face="Courier">bodai at cc.gatech.edu</font>  &nbsp;&nbsp;  (for general academic work)</li>
+						<li><font face="Courier">bodai at google.com</font>  &nbsp;&nbsp;  (for Google related work)</li>
+					</ul>
+				</p>
+				<p align="justify"><a href="https://twitter.com/daibond_alpha">daibond_alpha</a></p>
+			</div>
+			<div class="span3">
+				<img src="images/bodai.jpg" style="float:right;" width="80%">
+			</div>
+		</div>
+
+ 		<!-- <div class="row" id="contact">
+			<div class="span7 offset2">
+				<h3>Contact</h3>
+				<p align="justify">[Email] 
+					<ul class="unstyled">
+						<li><font face="Courier">bodai at cc.gatech.edu</font> (for general academic work)</li>
+						<li><font face="Courier">bodai at google.com</font> (for Google related work)</li>
+					</ul>
+				<p align="justify">[Twitter] <a href="https://twitter.com/daibond_alpha">daibond_alpha</a></p>
+			</div>
+		</div> -->
+
+		<div class="row" id="experiences">
+			<div class="span10 offset2">
+				<h3>Experiences</h3>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="span2">
+				<p class="text-right">Mar 2023 - NOW </p>
+				
+				<p class="text-right">Sep 2018 - NOW </p>
+				
+				<p class="text-right">Aug 2013 - Aug 2018 </p>
+			</div>
+
+			<div class="span7">
+				<ul class="unstyled">
+					<li>
+						<p class="text-left">Assistant Professor, <a href="https://cse.gatech.edu/">School of Computational Science & Engineering, Georgia Tech</a>
+						</p>
+						
+					</li>
+					<li>
+						<p class="text-left">Staff Research Scientist, <a href="https://ai.google/research/teams/brain/">Google Brain</a>
+						</p>
+						
+					</li>
+					<li>
+						<p class="text-left">Ph.D., <a href="https://cse.gatech.edu/">School of Computational Science & Engineering, Georgia Tech</a>
+						</p>
+						
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="row" id="publications">
+			<div class="span10 offset2">
+				<h3>Selected Recent Publications [<a href="https://scholar.google.com/citations?user=TIKl_foAAAAJ&hl=en">Full Publication List</a>] </h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span2">
+				<p class="text-right">Peer Reviewed Publications</p>
+			</div>
+			<div class="span10">
+				<ul class="unstyled">
+					<li>
+						<p align="justify">
+							<strong>Representation Learning via Non-Contrastive Mutual Information</strong>
+							<br> <font face="Courier">Daniel Guo, Bernardo Avila Pires, Khimya Khetarpal, Dale Schuurmans, Bo Dai</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2026.
+							<font color="#007fff">
+								<strong>Spotlight</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/pdf/2504.16667">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>MLE-Smith: Scaling MLE Tasks with Automated Multi-agent Pipeline</strong>
+							<br> <font face="Courier">Rushi Qiang, Yuchen Zhuang, Anikait Singh, Percy Liang, Chao Zhang, Sherry Yang, Bo Dai </font>
+							<br>
+							<i> International Conference on Learning Representations </i> (<b>ICLR</b>) 2026.
+							<br> [ <a href="https://arxiv.org/pdf/2510.07307">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Spectral Bellman Method: Unifying Representation and Exploration in RL</strong>
+							<br> <font face="Courier">Ofir Nabati, Shie Mannor, Bo Dai, Guy Tennenholtz</font>
+							<br>
+							<i> International Conference on Learning Representations </i> (<b>ICLR</b>) 2026.
+							<br> [ <a href="https://openreview.net/pdf?id=tHmiydOQhn">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>AmorLIP: Efficient Language-Image Pretraining via Amortization</strong>
+							<br> <font face="Courier">Haotian Sun, Yitong Li, Yuchen Zhuang, Niao He, Hanjun Dai, Bo Dai</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2505.18983">Paper</a> ]
+						</p>
+					</li>					
+					<li>
+						<p align="justify">
+							<strong>
+MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</strong>
+							<br> <font face="Courier">Rushi Qiang, Yuchen Zhuang, Yinghao Li, Dingu Sagar, Rongzhi Zhang, ChangHao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang, Bo Dai</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2025.
+							<br> [ <a href="https://mle-dojo.github.io/MLE-Dojo-page/">WebPages</a> ][ <a href="https://huggingface.co/spaces/MLE-Dojo/Leaderboard">Leaderboard</a> ][ <a href="https://arxiv.org/abs/2505.07782">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Exploration from a Primal-Dual Lens: Value-Incentivized Actor-Critic Methods for Sample-Efficient Online RL</strong>
+							<br> <font face="Courier">Tong Yang, Bo Dai, Lin Xiao, Yuejie Chi </font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2506.22401">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Matryoshka Pilot: Learning to Drive Black-Box LLMs with LLMs</strong>
+							<br> <font face="Courier">ChangHao Li, Yuchen Zhuang, Rushi Qiang, Haotian Sun, Hanjun Dai, Chao Zhang, Bo Dai </font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2410.20749">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Efficient Online Reinforcement Learning for Diffusion Policy</strong>
+							<br> <font face="Courier">Haitong Ma, Tianyi Chen, Kai Wang, Na Li, Bo Dai</font>
+							<br>
+							<i> International Conference on Machine Learning </i> (<b>ICML</b>) 2025.
+							<br> [ <a href="https://arxiv.org/pdf/2502.00361">Paper</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Value-Incentivized Preference Optimization: A Unified Approach to Online and Offline RLHF</strong>
+							<br> <font face="Courier">Shicong Cen, Jincheng Mei, Katayoon Goshvadi, Hanjun Dai, Tong Yang, Sherry Yang, Dale Schuurmans, Yuejie Chi, Bo Dai</font>
+							<br>
+							<i> International Conference on Learning Representations </i> (<b>ICLR</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2405.19320">Paper</a> ]
+						</p>
+					</li>
+					<!-- <li>
+						<p align="justify">
+							<strong>Faster WIND: Accelerating Iterative Best-of-N Distillation for LLM Alignment</strong>
+							<br> <font face="Courier">Tong Yang, Jincheng Mei, Hanjun Dai, Zixin Wen, Shicong Cen, Dale Schuurmans, Yuejie Chi, Bo Dai</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2410.20727">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Scalable Spectral Representations for Multi-Agent Reinforcement Learning in Network MDPs</strong>
+							<br> <font face="Courier">Zhaolin Ren, Runyu Zhang, Bo Dai, Na Li</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2410.17221">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Primal-Dual Spectral Representation for Off-policy Evaluation</strong>
+							<br> <font face="Courier">Yang Hu, Tianyi Chen, Kai Wang, Na Li, Bo Dai</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2025.
+							<br> [ <a href="https://arxiv.org/abs/2410.17538">Paper</a> ]
+						</p>
+					</li> -->
+	
+					<li>
+						<p align="justify">
+							<strong>Diffusion Spectral Representation for Reinforcement Learning</strong>
+							<br> <font face="Courier">Dmitry Shribak, Chen-Xiao Gao, Yitong Li, Chenjun Xiao, Bo Dai</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems</i> (<b>NeurIPS</b>) 2024.
+							<br> [ <a href="https://arxiv.org/abs/2406.16121">Paper</a> ]
+							[ <a href="https://haotiansun14.github.io/rl-rep-page/">Website</a> ]
+							[ <a href="https://github.com/haotiansun14/rl-rep">Code</a> ]
+						</p>
+					</li>
+					<!-- <li>
+						<p align="justify">
+							<strong>Skill Transfer and Discovery for Sim-to-Real Learning: A Representation-Based Viewpoint</strong>
+							<br> <font face="Courier">Haitong Ma, Zhaolin Ren, Bo Dai, Na Li</font>
+							<br>
+							<i>  IEEE/RSJ International Conference on Intelligent Robots and Systems </i> (<b>IROS</b>) 2024.
+							<font color="#007fff">
+								<strong>Oral</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/abs/2404.05051">Paper</a> ]
+							[ <a href="https://congharvard.github.io/steady-sim-to-real/">Website</a> ]
+						</p>
+					</li> -->
+					<li>
+						<p align="justify">
+							<strong>BBox-Adapter: Lightweight Adapting for Black-Box Large Language Models</strong>
+							<br> <font face="Courier">Haotian Sun, Yuchen Zhuang, Wei Wei, Chao Zhang, Bo Dai</font>
+							<br>
+							<i> International Conference on Machine Learning </i> (<b>ICML</b>) 2024.
+							<font color="#007fff">
+								<strong>Spotlight</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/abs/2402.08219">Paper</a> ]
+							[ <a href="https://haotiansun14.github.io/BBox-Adapter-page/">Website</a> ]
+							[ <a href="https://github.com/haotiansun14/BBox-Adapter">Code</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Provable Representation with Efficient Planning for Partially Observable Reinforcement Learning</strong>
+							<br> <font face="Courier">Hongming Zhang, Tongzheng Ren, Chenjun Xiao, Dale Schuurmans, Bo Dai</font>
+							<br>
+							<i> International Conference on Machine Learning </i> (<b>ICML</b>) 2024.
+							<br> [ <a href="https://arxiv.org/abs/2311.12244">Paper</a> ]
+							[ <a href="https://haotiansun14.github.io/rl-rep-page/">Website</a> ]
+							[ <a href="https://github.com/haotiansun14/rl-rep">Code</a> ]
+						</p>
+					</li>
+					<!-- <li>
+						<p align="justify">
+							<strong>Ordering-based Conditions for Global Convergence of Policy Gradient Methods</strong>
+							<br> <font face="Courier">Jincheng Mei, Bo Dai, Alekh Agarwal, Mohammad Ghavamzadeh, Csaba Szepesvari, Dale Schuurmans</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems</i> (<b>NeurIPS</b>) 2023.
+							<font color="#007fff">
+								<strong>Oral</strong>
+							</font>
+							<br> [ <a href="https://openreview.net/pdf?id=sW8yGZ4uVJ">Paper</a> ]
+						</p>
+					</li> -->
+					<li>
+						<p align="justify">
+							<strong>Learning Universal Policies via Text-Guided Video Generation</strong>
+							<br> <font face="Courier">Yilun Du*, Mengjiao Yang*, Bo Dai, Hanjun Dai, Ofir Nachum, Joshua B. Tenenbaum, Dale Schuurmans, Pieter Abbeel</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems</i> (<b>NeurIPS</b>) 2023.
+							<font color="#007fff">
+								<strong>Spotlight</strong>
+							</font>
+							<br> [ <a href="https://openreview.net/pdf?id=bo8q5MRcwy">Paper</a> ][ <a href="https://blog.research.google/2023/04/unipi-learning-universal-policies-via.html">Blog</a> ][ <a href="https://universal-policy.github.io/unipi/">Website</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>AdaPlanner: Adaptive Planning from Feedback with Language Models</strong>
+							<br> <font face="Courier">Haotian Sun, Yuchen Zhuang, Lingkai Kong, Bo Dai, Chao Zhang</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems</i> (<b>NeurIPS</b>) 2023.
+							<br> [ <a href="https://openreview.net/pdf?id=rnKgbKmelt">Paper</a> ][ <a href="https://github.com/haotiansun14/AdaPlanner">Code</a> ]
+						</p>
+					</li>
+					<li>
+						<p align="justify">
+							<strong>Stochastic Gradient Succeeds for Bandits</strong>
+							<br> <font face="Courier">Jincheng Mei*, Zixin Zhong*, Bo Dai, Alekh Agarwal, Csaba Szepesvari, Dale Schuurmans</font>
+							<br>
+							<i> International Conference on Machine Learning </i> (<b>ICML</b>) 2023.
+							<br> [ <a href="https://openreview.net/pdf?id=XqyXhjVRxR">Paper</a> ]
+						</p>
+					</li>
+					<!-- <li>
+						<p align="justify">
+							<strong>Learning to Optimize with Stochastic Dominance Constraints</strong>
+							<br> <font face="Courier">Hanjun Dai, Yuan Xue, Niao He, Yixin Wang, Na Li, Dale Schuurmans, Bo Dai</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2023.
+							<br> [ <a href="https://proceedings.mlr.press/v206/dai23b/dai23b.pdf">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Latent Variable Representation for Reinforcement Learning</strong>
+							<br> <font face="Courier">Tongzheng Ren, Chenjun Xiao, Tianjun Zhang, <br>Na Li, Zhaoran Wang, Sujay Sanghavi, Dale Schuurmans, Bo Dai</font>
+							<br>
+							<i> International Conference on Learning Representations </i> (<b>ICLR</b>) 2023.
+							<br> [ <a href="https://openreview.net/forum?id=mQpmZVzXK1h">Paper</a> ][<a href="https://rlrep.github.io/lvrep/">Website</a>][ <a href="https://github.com/shelowize/lvrep-rl">Code</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Discrete Langevin Samplers via Wasserstein Gradient Flow</strong>
+							<br> <font face="Courier">Haoran Sun, Hanjun Dai, Bo Dai, Haomin Zhou, Dale Schuurmans</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<b>AISTATS</b>) 2023.
+							<br> [ <a href="https://arxiv.org/pdf/2206.14897.pdf">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>A Free Lunch from the Noise: Provable and Practical Exploration for Representation Learning</strong>
+							<br> <font face="Courier">Tongzheng Ren, Tianjun Zhang, Csaba Szepesvari, Bo Dai</font>
+							<br>
+							<i> Conference on Uncertainty in Artificial Intelligence </i> (<b>UAI</b>) 2022.
+							<br> [ <a href="https://proceedings.mlr.press/v180/ren22a/ren22a.pdf">Paper</a> ] 
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Towards Automatic Evaluation of Dialog Systems: A Model-Free Off-Policy Evaluation Approach</strong>
+							<br> <font face="Courier">Haoming Jiang, Bo Dai, Mengjiao Yang, Tuo Zhao and Wei Wei</font> 
+							<br>
+							<i> Conference on Empirical Methods in Natural Language Processing </i> (<b>EMNLP</b>) 2021.
+							<br> [ <a href="https://aclanthology.org/2021.emnlp-main.589/">Paper</a> ]
+							[ <a href=" https://github.com/google-research/google-research/tree/master/dialogue_ope">Code</a> ]
+						</p>
+					</li>					 -->
+					<!-- <li>
+						<p align="justify">
+							<strong>CoinDICE: Off-Policy Confidence Interval Estimation</strong>
+							<br> <font face="Courier">Bo Dai*, Ofir Nachum*, Yinlam Chow, Lihong Li, Csaba Szepesvari, Dale Schuurmans</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2020.
+							<font color="#007fff">
+								<strong>Spotlight</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/abs/2010.11652">Paper</a> ]
+							[ <a href="https://github.com/google-research/dice_rl">Code</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Differentiable Top-k Operator with Optimal Transport</strong>
+							<br> <font face="Courier">Yujia Xie, Hanjun Dai, Minshuo Chen, Bo Dai, Tuo Zhao, Hongyuan Zha, Wei Wei, Tomas Pfister</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2020.
+							<br> [ <a href="https://arxiv.org/abs/2002.06504">Paper</a> ]
+							[ <a href="https://github.com/google-research/google-research/tree/master/soft_topk">Code</a> ]
+						</p>
+					</li>
+					 -->
+					<!-- <li>
+						<p align="justify">
+							<strong>DualDICE: Behavior-Agnostic Estimation of Discounted Stationary Distribution Corrections</strong>
+							<br> <font face="Courier">Ofir Nachum*, Yinlam Chow*, Bo Dai, Lihong Li</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2019.
+							<font color="#007fff">
+								<strong>Spotlight</strong>
+							</font>
+							<br> [ <a href="https://openreview.net/pdf?id=ryeE8NSeUB">Paper</a> ]
+							[ <a href="https://github.com/google-research/google-research/blob/master/dual_dice/README.md">Code</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Exponential Family Estimation via Adversarial Dynamics Embedding</strong>
+							<br> <font face="Courier">Bo Dai*, Zhen Liu*, Hanjun Dai*, Niao He, Arthur Gretton, Le Song, Dale Schuurmans</font>
+							<br>
+							<i> Advances in Neural Information Processing Systems </i> (<b>NeurIPS</b>) 2019.
+							<br> [ <a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/767d01b4bac1a1e8824c9b9f7cc79a04-Paper.pdf">Paper</a> ]
+							[ <a href="https://github.com/lzzcd001/ade-code">Code</a> ]
+						</p>
+					</li>					 -->
+					<!-- <li>
+						<p align="justify">
+							<strong>SBEED: Convergent Reinforcement Learning with Nonlinear Function Approximation</strong>
+							<br> <font face="Courier">Bo Dai, Albert Shaw, Lihong Li, Lin Xiao, Niao He, Zhen Liu, Jianshu Chen, Le Song</font>
+							<br>
+							<i> International Conference on Machine Learning</i> (<b>ICML</b>) 2018.
+							<font color="#007fff">
+								<strong>Long Oral</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/abs/1712.10285">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Syntax-Directed Variational Autoencoder for Structured Data</strong>.
+							<br>  <font face="Courier">Hanjun Dai*, Yingtao Tian*, Bo Dai, Steven Skiena and Le Song</font>
+							<br>
+							<i> International Conference on Learning Representations </i> (<b>ICLR</b>) 2018
+							<br> [ <a href="https://arxiv.org/abs/1802.08786">arxiv</a> ] [ <a href="https://github.com/Hanjun-Dai/sdvae">Code</a> ]													</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Learning from Conditional Distributions via Dual Embeddings</strong>
+							<br> <font face="Courier">Bo Dai, Niao He, Yunpeng Pan, Byron Boots, Le Song</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics</i> (<b>AISTATS</b>) 2017.
+							<br> [ <a href="http://proceedings.mlr.press/v54/dai17a/dai17a.pdf">Paper</a> ]
+						</p>
+					</li> -->
+					<!-- <li>
+						<p align="justify">
+							<strong>Discriminateive Embeddings of Latent Variable Models for Structured Data</strong>.
+							<br> <font face="Courier">Hanjun Dai, Bo Dai and Le Song</font>
+							<br>
+							<i> International Conference on Machine Learning </i> (<strong>ICML</strong>) 2016.
+							<br> [ <a href="https://arxiv.org/abs/1603.05629">arxiv</a> ] [ <a href="https://github.com/Hanjun-Dai/graphnn">Code</a> ]
+						</p>
+					</li> -->
+
+					<!-- <li>
+						<p align="justify">
+							<strong>Provable Bayesian Inference via Particle Mirror Descent</strong>.
+							<br> <font face="Courier">Bo Dai, Niao He, Hanjun Dai and Le Song</font>
+							<br>
+							<i> International Conference on Artificial Intelligence and Statistics </i> (<strong>AISTATS</strong>), 2016.
+							<font color="FireBrick">
+								<strong>Best Paper</strong>
+							</font>
+							<br> [ <a href="https://arxiv.org/abs/1506.03101">Paper</a> ]
+						</p>
+					</li> -->
+				</ul>
+
+			</div>
+		</div>
+
+
+		<!-- <div class="row">
+			<div class="span2">
+				<p class="text-right">PhD Thesis</p>
+			</div>
+			<div class="span10">
+				<ul class="unstyled">
+					<li>
+						<p align="justify">
+							<strong>Learning over Functions, Distributions and Dynamics via Stochastic Optimization</strong>.
+							<br> <font face="Courier">Bo Dai</font>, 2018
+							<br> [ <a href="https://repository.gatech.edu/entities/publication/c5671a01-2202-48f7-a82d-14f907666926">Thesis</a> ]
+						</p>
+					</li>
+				</ul>
+
+			</div>
+		</div> -->
+
+		<div class="row" id="teaching">
+			<div class="span10 offset2">
+				<h3>Teaching</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span10 offset2">
+				<p> <a href="https://bo-dai.github.io/CX4240-spring2026/">CX 4240, Introduction to Computational Data Analysis</a>, Spring 2026, Georgia Tech</p> 
+				<p> <a href="https://bo-dai.github.io/CS4641-spring2025/">CS 4641, Machine Learning</a>, Spring 2025, Georgia Tech</p> 
+				<p> <a href="https://bo-dai.github.io/CSE6243-fall2024/">CSE 6243, Advanced Machine Learning</a>, Fall 2024, Georgia Tech</p> 
+				<p> <a href="https://bo-dai.github.io/CSE6243-fall2023/">CSE 6243, Advanced Machine Learning</a>, Fall 2023, Georgia Tech</p> 
+				<p> <a href="https://sites.google.com/corp/view/fmg-data-driven-control">Reinforcement Learning via Optimization Lens</a>, Summer 2021, ETH & EPFL </p>
+				<p> Reinforcement Learning via Optimization Lens, Fall 2020, Google Brainiversity</p>
+				<p> CSE 6740, Machine Learning, Spring 2015/Fall 2016, Georgia Tech</p>
+			</div>
+		</div>
+
+		<div class="row" id="awards">
+			<div class="span10 offset2">
+				<h3>Selected Awards</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span10 offset2">
+				<p> AISTATS Best Paper Award, 2016 </p>
+				<p> NeurIPS Machine Learning for Molecules and Materials workshop Best Paper Award, 2017 </p>
+				<p> Ross Fellowship, 2011-2012 </p>
+				<p> Summa Cum Laude, Nanjing University </p>
+				<p> National Scholarship, Nanjing University</p>
+			</div>
+		</div>
+
+		<div class="row" id="team">
+			<div class="span10 offset2">
+				<h3>Team</h3>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2">
+				<p class="text-right">Current Students</p>
+			</div>
+			<div class="span10">
+				<p>
+					<a href="https://haotiansun.tech/">Haotian Sun</a>, Georgia Tech CSE PhD
+				</p>
+				<p>
+					<a href="https://lichangh20.github.io/">Changhao Li</a>, Georgia Tech CSE PhD
+				</p>
+				<p>
+					<a href="https://rushi-q.github.io/">Rushi Qiang</a>, Georgia Tech CSE PhD
+				</p>
+				<p>
+					<a href="https://tianyyiii.github.io/">Tianyi Chen</a>, Georgia Tech CSE PhD
+				</p>
+				<p>
+					<a href="https://about.gaocx.io/">Chenxiao Gao</a>, Georgia Tech CSE PhD
+				</p>
+				<p>
+					<a href="https://edwardchen.me/">Edward Chen</a>, Georgia Tech Mathematics Master
+				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2">
+				<p class="text-right">Former Members</p>
+			</div>
+			<div class="span10">
+				<p>
+					<a href="https://uzairakbar.com/">Uzair Akbar</a>, Georgia Tech CS Master
+				</p>
+				<p>
+					<a href="https://aarontrinh02.github.io/">Aaron Trinh</a>, Georgia Tech Undergraduate
+				</p>
+				<p>
+					<a href="https://d-yitongli.github.io/">Yitong Li</a>, Georgia Tech CS Master, ML Engineer at TikTok
+				</p>
+				<p>
+					<a href="https://jinchengmei.github.io/">Jincheng Mei</a>, UAlberta PhD, Research Scientist at Google Brain
+				</p>
+				<p>
+					<a href="https://webdocs.cs.ualberta.ca/~chenjun/">Chenjun Xiao</a>, UAlberta PhD, Assistant Professor at CUHK, Shenzhen, and Researcher in Kimi
+				</p>
+				<p>
+					<a href="https://zhuangdizhu.github.io/">Zhuangdi Zhu</a>, MSU PhD, Assistant Professor at George Mason University
+				</p>
+				<p>
+					<a href="https://www.cs.utexas.edu/~tzren/">Tongzheng Ren</a>, UT Austin PhD, Quantitative Researcher at Citadel Securities 
+				</p>
+<!-- 				<p>
+					<a href="https://tianjunz.github.io/">Tianjun Zhang</a>, UC Berkeley PhD
+				</p> -->
+			</div>
+		</div>
+
+		
+
+		<div class="row" id="software">
+			<div class="span10 offset2">
+				<h3>Software</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span10 offset2">
+				<p> 
+					<strong> MLE-Dojo </strong>: Interactive environments for empowering LLM agents in Machine Learning Engineering. 
+					<br> [ <a href="https://mle-dojo.github.io/MLE-Dojo-page/">Webpage</a> ] [ <a href="https://github.com/MLE-Dojo/MLE-Dojo">Code</a> ]		
+				</p>
+			</div>
+			<div class="span10 offset2">
+				<p> 
+					<strong> Representation-based Reinforcement Learning </strong>: The implementation of our research on provable and practical reinforcement learning algorithms for general stochastic nonlinear dynamics through the representation lens.
+					<br> [ <a href="https://spectral-rl.github.io/">Webpage</a> ] [ <a href="https://github.com/spectral-rl/spectral-rl">Code</a> ]		
+				</p>
+			</div>
+			<div class="span10 offset2">
+				<p> 
+					<strong> Representation-based Control Toolbox </strong>: The implementation of our nonlinear stochastic control solver upon spectral representation. 
+					<br> [ <a href="https://repr-control-orgnaization.readthedocs.io/en/latest/">Webpage</a> ] [ <a href="https://github.com/CoNG-harvard/repr_control">Code</a> ]		
+				</p>
+			</div>
+		</div>
+
+		
+		<div class="row" id="services">
+			<div class="span10 offset2">
+				<h3>Services</h3>
+			</div>
+		</div>
+
+		<div class="row">
+<!-- 			<div class="span2">
+				<p class="text-right">Services </p>
+			</div>
+ -->
+			<div class="span10 offset2">
+				<p> Action Editor of Transactions on Machine Learning Research (TMLR)</p>
+				<p> (Senior) Area Chair of top conferences for multiple years between 2019-Current: NeurIPS, ICML, ICLR, AISTATS</p>
+				<p> Co-organizer of <a href="https://sites.harvard.edu/nsf-rl-workshop/"> NSF Workshop on Reinforcement Learning, 2025 </a> </p>
+				<p> Co-organizer of <a href="https://sites.google.com/corp/view/eancs/home">Workshop on Evaluations and Assessments of Neural Conversation Systems </a> at EMNLP 2021 </p>
+				<p> Co-organizer of Workshop on Reinforcement Learning at Google, 2021</p>
+				<p> Co-organizer of <a href="https://optrl2019.github.io/">Optimization Foundations of Reinforcement Learning Workshop</a> at NeurIPS 2019 </p>
+			</div>
+		</div>
+
+		<!-- <div class="row">
+				<div class="span2">
+				</div>
+	
+				<div class="span10">
+					<br>
+					<p class="text-left">The webpage template is kindly provided by
+						<a href="https://scholar.google.com/citations?user=v474hP4AAAAJ&hl=en">Nan Du</a>
+						and
+						<a href="http://pages.cs.wisc.edu/~yliang/">Yingyu Liang</a>
+					</p>
+				</div>
+		</div> -->
+
+		<div class="row">
+			<div class="span4 offset4">
+			<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=DAHkeDXm88JkrYqB8k2CQQsDuTfCac6hPK6rwavAHD0&cl=ffffff&w=a", style="float:center"></script>
+			<!--<a href="https://clustrmaps.com/site/1bvml"  style="width: 300px;"><img src="//www.clustrmaps.com/map_v2.png?d=DAHkeDXm88JkrYqB8k2CQQsDuTfCac6hPK6rwavAHD0&cl=ffffff" /></a>-->
+			</div>
+		</div>
+</body>
+
+</html>

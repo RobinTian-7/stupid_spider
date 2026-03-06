@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Camille Cobb</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" style="letter-spacing:4px;">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button" style="text-decoration:none">About</a>
+      <a href="#students" class="w3-bar-item w3-button" style="text-decoration:none">Students</a>
+      <a href="#publications" class="w3-bar-item w3-button" style="text-decoration:none">Publications</a>
+      <!--<a href="#news" class="w3-bar-item w3-button" style="text-decoration:none">News</a>-->
+      <a href="#teaching" class="w3-bar-item w3-button" style="text-decoration:none">Teaching</a>
+      <!--<a href="https://camicobb.wordpress.com/" class="w3-bar-item w3-button" style="text-decoration:none" target="_blank">Blog</a>-->
+
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <!-- <img src="camille_1.jpg" class="w3-round w3-image" alt="Camille" width="600" height="750" style="margin-top:70px"> --> 
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class ="w3-center">Camille Cobb</h1>
+      <!--<h5 class="w3-center">Research</h5>-->
+      <p class="w3-large w3-opacity">I am an Assistant Professor of Computer Science at the University of Illinois.</p>
+      <p class="w3-large w3-opacity">Until July 2021, I was a postdoctoral researcher working with <a href="https://www.archive.ece.cmu.edu/~lbauer/" target="_blank_">Lujo Bauer</a> in the <a href="https://www.cylab.cmu.edu" target="_blank_">CyLab</a> at <a href="https://www.cmu.edu" target="_blank_">Carnegie Mellon University</a>.</p>
+      <p class="w3-large w3-opacity">I earned my Phd in June 2019 from the <a href="https://www.washington.edu/" target="_blank">University of Washington</a> in <a href="https://www.cs.washington.edu" target="_blank">Computer Science &amp; Engineering</a>. During my PhD, I was advised by <a href="https://homes.cs.washington.edu/~yoshi/" target="_blank">Tadayoshi Kohno</a> in the <a href="https://seclab.cs.washington.edu/" target="_blank">Security &amp; Privacy Research Lab</a> and <a href="https://www.alexishiniker.com/" target="_blank">Alexis Hiniker</a> from the <a href="https://ischool.uw.edu/" target="_blank">UW Information School</a>. 
+
+	      
+      <h5 class="w3-center">Research Interests</h5>
+      <p class="w3-large w3-opacity">My research focus in usable security and privacy. My work aims to ellucidate and address users' security and privacy concerns. In particular, I recognize that many perspectives have been historically left out of conversations about security and privacy, and I seek to correct for this through my work. </p>
+      <p class="w3-large w3-opacity">For more details, see my <a href="cobb_cv.pdf" target="_blank">CV</a>.</p>
+      <h5 class="w3-center">Other Interests</h5>
+      <p class="w3-large w3-opacity">Some of my non-research interests include: hanging out with my <a href="https://www.instagram.com/p/BgRah4DlbNb/?taken-by=cam_and_stormy" target="_blank">awesome dog</a>; dancing (recently, on roller skates); playing soccer and softball; going to <a href="https://www.instagram.com/p/BVv9LUdlBq4/?taken-by=cam_and_stormy" target="_blank">local</a> <a href="https://www.instagram.com/p/BYCCUijHKRx/?taken-by=cam_and_stormy" target="_blank">sports</a> games; <a href="https://www.instagram.com/p/Baicbnhnyz-/?taken-by=cam_and_stormy" target="_blank">knitting</a> and other <a href="https://www.instagram.com/p/BRHml-WFmwg/?taken-by=cam_and_stormy" target="_blank">artistic endeavors</a>.</p>
+<!--      <h5 class="w3-center">Contact</h5> --> 
+      <p class="w3-opacity">
+<!--      <i class="fa fa-envelope" style="width:30px "> </i> Email: <a href="mailto:camillec@illinois.edu">camillec@illinois.edu</a><br> --> 
+<!--      <i class="fa fa-github" style="width:30px"> </i> Github: <a href="https://github.com/cobbc12" target="_blank">cobbc12</a><br> -->
+<!--      <i class="fa fa-twitter" style="width:30px"> </i> Twitter: <a href="https://twitter.com/camPossible" target="_blank">@campossible</a><br> -->
+<!--      <i class="fa fa-instagram" style="width:30px"> </i> Instagram: <a href="https://instagram.com/cam_and_stormy/" target="_blank">cam_and_stormy</a><br> -->
+
+<!--       <i class="fa fa-wordpress" style="width:30px"> </i> Wordpress (blog): <a href="https://camicobb.wordpress.com/" target="_blank">Camille Cobb</a><br> -->
+      </p>
+
+    </div>
+  </div>
+  
+  <hr>
+
+<!--  News Section 
+  <div class="w3-row w3-padding-64" id="news">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+      <h1 class="w3-center">News</h1>
+      <p class="w3-large w3-opacity">My research has been discussed in several articles (if you hear of others, please let me know):</p>
+      <ul class="w3-opacity">
+	<li><a href="https://gizmodo.com/the-future-of-online-dating-is-unsexy-and-brutally-effe-1819781116">Gizmodo</a></li>
+	<li><a href="https://grad.uw.edu/student-alumni-profiles/how-to-maintain-privacy-while-online-dating/">UW Grad Student Profile</a></li>
+	<li><a href="https://techpolicylab.org/privacy-in-online-dating/">Tech Policy Lab</a></li>
+      </ul>
+    </div>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="jellyfish.jpg" class="w3-round w3-image" alt="Jellyfish on Blake Island" width="600" height="750">
+    </div>
+
+
+  </div>
+  <hr>
+-->
+
+  <!-- Advising Section -->
+  <div class="w3-row w3-padding-64" id="students">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <!--<img src="stormy_flowers.jpg" class="w3-round w3-image" alt="My dog Stormy in a field of flowers" width="600" height="750">-->
+    </div>
+
+    
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Students</h1>
+<!--       <p class="w3-large w3-opacity">Motivated undergrads who are would like to learn more about getting involved in research should send me an email.</p> -->
+	    
+      <p class="w3-large w3-opacity">I am currently advising the following talented PhD students:</p>
+      <ul class="w3-opacity">
+	<li><a href="https://yschiangg.gitlab.io/">Yi-Shyuan Chiang</a> (UIUC CS PhD started Fall 2021) </li>
+	<li><a href="https://yjo5252.github.io/">Yeeun Jo</a> (UIUC CS PhD started Fall 2022, co-advised by Adam Bates Yuile) </li>
+	<li>Matthew Makila (UIUC CS PhD started Fall 2024) </li>
+	<li>Muawiz Khan (UIUC CS PhD started Fall 2024) </li>
+      </ul>
+	    
+      <p class="w3-large w3-opacity">I am also fortunate to work or have worked closely with these students:</p>
+      <ul class="w3-opacity">
+	<li><a href="https://omarkhan83.com/">Omar Khan</a> (UIUC CS PhD started Fall 2022) </li>
+	<li>Ali Zaidi (UIUC CS PhD, advised by Karrie Karahalios and Indy Gupta) </li>
+	<li>Mahnoor Jameel (UIUC CS PhD, advised by Adam Bates Yuile) </li>
+	<li>Raima Mathew (UIUC CS MS, <a href="https://www.ideals.illinois.edu/items/124788">thesis</a> advisee)</li>
+	<li>Thea Surya (UIUC CS Undergraduate, CS STARS researcher) </li>
+	<li>Aditi Shukla (UIUC CS Undergraduate, CS STARS researcher) </li>
+	<li>Effie Karas (UIUC CS Undergraduate, CS STARS researcher, graduated 2023) </li>
+	<li>Sailaja Nallacheruvu (UIUC CS Undergraduate, CS STARS researcher) </li>
+	<li>Saloni Vaishnav (UIUC CS Undergraduate, CS STARS researcher) </li>
+	<li>Mutma Adebayo (UIUC CS Undergraduate, CS STARS researcher)</li>
+      </ul> 
+	    
+      <p class="w3-large w3-opacity">I've previously worked with many excellent undergrad and masters students at UW and CMU, incuding:</p>
+      <ul class="w3-opacity">
+	<li>Kentrell Owens</li>
+	<li>Diva-Oriane Marty (CMU)</li>
+	<li>Shrutika Ruhela (CMU)</li>
+	<li>Alison Hoffman (CMU)</li>
+	<li>Varun Rao (CMU)</li>
+	<li>Anna Kawakami (Wellesley College)</li>
+	<li>Clemend Zhong (UW)</li>
+	<li>Kayla Butler (UW)</li>
+      </ul>
+      <p class="w3-large w3-opacity">Early in my PhD, I led a UW HCDE Directed Research Group with undergrad and masters students from UW HCDE and UW CSE rotating in and out of the team over several quarters:</p>
+      <ul class = "w3-opacity"> 
+	<li>Aiko Lin</li>
+	<li>Ankitha Bharadwaj</li>
+	<li>Brian Do</li>
+	<li>Eng Phannipha</li>
+	<li>Janelle Van Hofwegen</li>
+	<li>Jared Comis</li>
+	<li>Joe Kohlmann</li>
+	<li>Katlyn Edwards</li>
+	<li>Tridiv Sardesai</li>
+      </ul>
+      <p class="w3-large w3-opacity">I have also mentored high school students in computer science competitions.
+    </div>
+  </div>
+
+  <!-- The Publications Section -->
+  <div class="w3-row w3-padding-64" id="publications">
+    <h1 class="w3-center">Publications</h1>
+	  
+    <p class="w3-large w3-opacity w3-left"> Yi-Shyuan Chiang, Omar Khan, Adam Bates <i>Camille Cobb</i>. More than just informed: The importance of consent facets in smart homes. CHI 2024.  
+	    <a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642288" target="_blank">pdf</a>
+
+    <p class="w3-large w3-opacity w3-left"> Ali Zaidi, Rui Yang, Vinay Koshy, <i>Camille Cobb</i>, Indranil Gupta, Karrie Karahalios. A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines. UbiComp / ISWC October 2023.  
+	    <a href="https://dl.acm.org/doi/pdf/10.1145/3581997" target="_blank">pdf</a>, <a href="https://www.youtube.com/watch?v=UBshd2CDCVg" target="_blank">30 second teaser video</a>
+
+    <p class="w3-large w3-opacity w3-left"> Andrea Gallardo, Chris Choy, Jaideep Juneja, Efe Bozkir, <i>Camille Cobb</i>, Lujo Bauer, and Lorrie Faith Cranor. Speculative privacy attitudes and concerns about AR glasses data collection. PETS July 2023.  
+	    <a href="https://petsymposium.org/2023/files/papers/issue4/popets-2023-0117.pdf" target="_blank">pdf</a>
+
+    <p class="w3-large w3-opacity w3-left"> McKenna McCall, Eric Zeng, Faysal Hossain Shezan, Mitchell Yang, Lujo Bauer, Abhishek Bichhawat, <i>Camille Cobb</i>, Limin Jia, Yuan Tian. Towards usable security analysis tools for trigger-action programming. SOUPS August 2023.  
+	    <a href="https://www.usenix.org/conference/soups2023/presentation/mccall" target="_blank">pdf and other presentation materials</a>
+
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Sruti Bhagavatula, Kalil Anderson Garrett, Alison Hoffman, Varun Rao, Lujo Bauer. “I would have to evaluate their objections”:  Privacy tensions between smart home device owners and incidental users. PETS July 2021.  
+	    <a href="https://camillec.com/popets2021-incidental-users.pdf" target="_blank">pdf</a>, <a href="https://www.youtube.com/watch?v=OvCZtDoSf6k" target="_blank">18 min talk video</a>
+	  
+    <p class="w3-large w3-opacity w3-left"> Lucy Simko, Britnie Chin, Sungmin Na, Harkiran Kaur Saluja, Tian Qi Zhu, Tadayoshi Kohno, Alexis Hiniker, Jason Yip, <i>Camille Cobb</i>. Would You Rather: A Focus Group Method for Eliciting and Discussing Formative Design Insights with Children. ACM Interaction Design and Children (IDC) June 2021.  
+	    <a href="https://camillec.com/WYR_idc2021.pdf" target="_blank">pdf</a>, <a href="https://www.youtube.com/watch?v=ZKuVkDmvB74" target="_blank">10 min talk video</a>
+	  
+    <p class="w3-large w3-opacity w3-left"> Tianshi Li, <i>Camille Cobb</i>, Jackie (Junrui) Yang, Sagar Baviskar, Yuvraj Agarwal, Beibei Li, Lujo Bauer, Jason I. Hong. What Makes People Install a COVID-19 Contact-Tracing App? Understanding the Influence of App Design and Individual Difference on Contact-Tracing App Adoption Intention. Special Issue ``IoT for Fighting COVID-19'' of Elsevier Pervasive and Mobile Computing (PMC) Journal August 2021.  
+	    <a href="https://doi.org/10.1016/j.pmcj.2021.101439" target="_blank">paper</a>, <a href="https://arxiv.org/abs/2012.12415" target="_blank">arXiv preprint</a> 	  
+
+    <p class="w3-large w3-opacity w3-left"> Kentrell Owens, <i>Camille Cobb</i>, Lorrie Cranor. ``You Gotta Watch What You Say'': Surveillance of Communication with Incarcerated People. 
+	    CHI 2021, May 2021(to be held virtually). <a href="https://camillec.com/CHI_prisoncommunication.pdf" target="_blank">pdf</a>, <a href="https://www.youtube.com/watch?v=7lkXtAwQa-Y" target="_blank">5 min talk video</a> 	  
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Milijana Surbatovich, Anna Kawakami, Mahmood Sharif, Lujo Bauer, Anupam Das, Limin Jia. How Risky Are Real Users’ IFTTT Applets? 
+	    SOUPS 2020, August 2020 (held virtually). <a href="https://camillec.com/SOUPS_2020_IFTTT.pdf" target="_blank">pdf</a>, <a href="https://youtu.be/ocsZ4_ReuZI" target="_blank">5 min talk video</a> and <a href="https://camillec.com/ifttt-soups20-5min-slides.pdf" target="_blank">slides</a>, <a href="https://youtu.be/pgTKHojPop8" target="_blank">14 min talk video</a></p>  	  
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Lucy Simko, Tadayoshi Kohno, Alexis Hiniker. A Privacy-Focused Systematic Analysis of Online Status Indicators. 
+	    PETS 2020, July 2020 (held virtually). <a href="https://camillec.com/PETS_OSIs.pdf" target="_blank">pdf</a>, <a href="https://www.youtube.com/watch?v=RVYmUEwxAzg" target="_blank">talk video</a></p>  
+    
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Lucy Simko, Tadayoshi Kohno, Alexis Hiniker. User Experiences with Online Status Indicators. CHI 2020, April 2020. <a href="https://camillec.com/CHI_OSIs.pdf" target="_blank">pdf</a></p>  
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>. User-to-User Privacy in Social and Communications Applications. Doctoral Dissertation. <a href="https://camillec.com/cam_dissertation.pdf" target="_blank">pdf</a></p>
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Tadayoshi Kohno. How Public Is My Private Life? Privacy in Online Dating. WWW 2017, Perth, Australia, April 2017. <a href="https://camillec.com/WWW2017_OnlineDating.pdf" target="_blank">pdf</a>, <a href="https://camillec.com/HowPublicIsMyPrivateLife_SurveyInstrument.pdf" target="_blank">survey instrument</a>, <a href="https://camillec.com/cobb_kohno_www2017_presentationSlides.pdf" target="_blank">presentation slides</a> </p>
+
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>*, Samuel Sudar*, Nicholas Reiter, Richard Anderson, Franziska Roesner, Tadayoshi Kohno. Computer Security for Data Collection Technologies. Development Engineering, Volume 3, 2018. Journal version of prior work presented at ICTD ’16. <!-- <a href="https://camillec.com/ICTD2016_SecurityForDataCollection.pdf" target="_blank">pdf</a> --> </p>	  
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>*, Samuel Sudar*, Nicholas Reiter, Richard Anderson, Franziska Roesner, Tadayoshi Kohno. Computer Security for Data Collection Technologies. ICTD 2016, Ann Arbor, MI, June 2016. <a href="https://camillec.com/ICTD2016_SecurityForDataCollection.pdf" target="_blank">pdf</a> </p>
+	  
+    <p class="w3-large w3-opacity w3-left"> <i>Camille Cobb</i>, Ted McCarthy, Annuska Perkins, Ankitha Bharadwaj, Jared Comis, Brian Do, Kate Starbird. Designing for the deluge: understanding &amp; supporting the distributed, collaborative work of crisis volunteers. CSCW 2014, Baltimore, MD, February 2014. <a href="https://camillec.com/CSCW2014_DesigningForTheDeluge.pdf" target="_blank">pdf</a> </p>
+
+    <p class="w3-large w3-opacity w3-left"> Sara Sprenkle, <i>Camille Cobb</i>, Lori Pollock. Leveraging user-privilege classification to customize usage-based statistical models of web applications. ICST 2012, Montreal, Canada, April 2012.</p>
+    
+    <p class="w3-large w3-opacity w3-left"><i>* Denotes equal contributions, listed in alphabetical order.</i> </p>
+      
+    <p class="w3-large w3-opacity w3-left"><i>Full list of publications on <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F50IbTUR2AxWTPfH81Lo8UyfsoegjkN3youQulQ6wi8-0QdwReOSKE7h2Bk-CJucgRystRpIFLtg0psOGHK8lhGUc3hgA&user=-agI8uoAAAAJ" target="_blank">Google Scholar</a>.</i> </p>
+
+  </div>
+
+  <hr>
+	
+
+<!--  Teaching Section -->
+  <div class="w3-row w3-padding-64" id="teaching">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+      <h1 class="w3-center">Teaching</h1>
+      <p class="w3-large w3-opacity">Fall 2021</p>
+      <ul class="w3-opacity">
+	<li>CS598CAC Inclusive Cybersecurity and Privacy<a href="https://docs.google.com/spreadsheets/d/1PzrRn3OK2EdFc5TfTuYwxCvlyEdiY-MifcrtSyy3TIs">Schedule</a></li>
+      </ul>
+    </div>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="jellyfish.jpg" class="w3-round w3-image" alt="Jellyfish on Blake Island" width="600" height="750">
+    </div>
+
+
+  </div>
+  <hr>
+
+  
+  <hr>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-opacity w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Updated August 2021</p>
+</footer>
+
+</body>
+</html>

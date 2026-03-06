@@ -1,0 +1,1387 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Homepage of Christopher Re (Chris Re)</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+  if (typeof String.prototype.startswith != 'function') {
+    String.prototype.startswith = function (str){
+      return this.indexOf(str) == 0;
+    };
+  }
+
+  $(document).ready(function() {
+    $('.proj-menu a').click(function(){
+      $('.proj-menu li').removeClass('current');
+      $(this).parent().parent().addClass('current');
+      var content = $($(this).attr('href')).html();
+      $('#content').html(content);
+      return true;
+    });
+
+    if (window.location.hash) {
+      $('#anc_' + window.location.hash.replace('#','')).click();
+    }
+
+    $('a').live('click', function(){
+      var aid = $(this).attr('id');
+      if ($(this).attr('href').startswith('#') && (typeof aid === 'undefined' || 
+                  ! aid.startswith('anc_'))) {
+        $('#anc_' + $(this).attr('href').replace('#','')).click();
+      }
+      return true;
+    });
+
+    });
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-42285902-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script><div class="proj-menu-bar">
+  <ul class="proj-menu">
+    <li class='current'><h2><a id='anc_news' href='#news'>News!</a></h2></li>
+    <li><h2><a id='anc_students' href='#students'>Students</a></h2></li>
+    <li><h2><a id='anc_papers'   href='#papers'>Papers</a></h2></li>
+    <li><h2><a id='anc_courses'  href='#courses'>Teaching and Awards</a></h2></li>
+  </ul>
+</div>
+<div style='clear:both' />
+<div id="header"> <div id='picture'>
+<img width=131 height=157 src="img/chrismre_headshot_lowres.jpg" /><br>
+</div>
+
+<div id='contact1'>
+<span>Christopher RÃ©</span><br>
+<span>Email: chrismre at cs.stanford.edu </span><br>
+<span>Our Lab's <a href="https://github.com/hazyresearch">Github</a> |  <a href="https://hazyresearch.stanford.edu/blog">Blog</a> | <a href="https://twitter.com/hazyresearch">Twitter</a>  
+</div>
+
+<div id='contact2'>
+<span>Department of Computer Science</span><br>
+<span>Stanford University</span><br>
+<span>353 Jane Stanford Way</span><br>
+   <span>Stanford, CA 94305-9025</span><br>
+</div>
+<div style='clear:both' />
+</div>
+<div id="content"><ul style="list-style: none;">
+<li style="list-style: none;">
+<div>
+   I'm a professor in the Stanford AI Lab (<a href="http://ai.stanford.edu/">SAIL</a>), the center for research on foundation models (<a href="https://crfm.stanford.edu/">CRFM</a>), and the <a href="http://ml.stanford.edu/">Machine Learning Group</a> (<a href="http://cs.stanford.edu/people/chrismre/bio.txt">bio</a>). Our lab works on the foundations of the next generation of AI systems.
+<ul>
+<li> On the AI side, I am fascinated by how we can learn from increasingly weak forms of supervision, the basis of new architectures, the role of data, and by the mathematical foundations of such techniques. 
+<li> On the systems side, I am broadly interested in how machine learning is changing how we build software and hardware. I'm particularly excited when we can blend AI and systems, e.g,. <a href="https://snorkel.org">Snorkel</a>, <a href="papers/Overton_Overview.pptx">Overton</a> (<a href="https://www.youtube.com/watch?v=Z9yKLlgaEZk">YouTube</a>),  or <a href="http://together.ai">Together</a>.
+</ul>
+   Our work is inspired by the observation that data is central to these systems, and so data management principles (re-imagined) play a starring role in our work. This sounds like Silicon Valley nonsense, but oddly enough, these ideas get used due to amazing students and collaborations with <a href="https://ai.googleblog.com/2019/03/harnessing-organizational-knowledge-for.html">Google ads</a>, <a href="https://arxiv.org/pdf/2008.09983">YouTube</a>, <a href="http://arxiv.org/abs/1909.05372">Apple</a>, and more. 
+<br><br>
+
+While we're very proud of our research ideas and their impact, the lab's real goal is to help students become professors, entrepreneurs, and researchers. To that end, over a dozen members of our group have started their own professorships. With students and collaborators, I've been fortunate enough to cofound a number of companies and a venture firm. For transparency, I try to list companies I advise or invest in <a href="startup_advising.php">here</a> and our research sponsors <a href="https://hazyresearch.stanford.edu/sponsors">here</a>. My students run the <a href="https://mlsys.stanford.edu">ML Sys Podcast</a>.
+  
+
+<br><br>
+
+<ul>
+
+					<hr><br>									
+					<li> We're interested in improving the foundations of foundation models. 
+<ul>
+    <li> We released <a href="https://hazyresearch.stanford.edu/blog/2024-05-12-tk">ThunderKittens</a> (<a href="https://hazyresearch.stanford.edu/blog/2024-05-12-quick-tk">quick blog</a>|<a href="https://arxiv.org/abs/2410.20399">paper</a>|<a href="https://github.com/HazyResearch/ThunderKittens">repo</a>) for our opinionated take on building AI kernels. Now with <a href="https://hazyresearch.stanford.edu/blog/2025-11-17-parallekittens">ParallelKittens</a> (<a href="https://arxiv.org/abs/2511.13940">paper</a>) for multi-GPU and <a href="https://hazyresearch.stanford.edu/blog/2025-11-11-hipkittens">HipKittens</a> (<a href="https://arxiv.org/abs/2511.08083">paper</a>) for AMD.
+
+   <li> <a href="https://hazyresearch.stanford.edu/blog/2025-11-18-intelligence-per-watt">Intelligence per Watt</a> (<a href="https://arxiv.org/abs/2511.07885">paper</a>|<a href="https://github.com/HazyResearch/intelligence-per-watt">repo</a>) measuring efficiency of AI and foundation models!
+
+<li>Blog post on <a href="https://ai.stanford.edu/blog/longer-sequences-next-leap-ai/">sequence length</a> and <a href="https://hazyresearch.stanford.edu/blog/2023-03-27-long-learning">more</a>. See the <a href="https://hazyresearch.stanford.edu/blog">blog</a> for more details
+
+<li> <a href="https://github.com/HazyResearch/flash-attention">Flash Attention</a> is an IO-Aware algorithm for attention. This is widely used now including in ML Perf, see <a href="https://spectrum.ieee.org/mlperf-rankings-2022">MLPerf Story on Tri!</a>. Tri's <a href="https://hazyresearch.stanford.edu/blog/2023-07-17-flash2">Version 2</a>
+
+<li> We continue to work on <a href="https://github.com/HazyResearch/state-spaces">long sequences</a>. An explainer of a simplified version of S4 (<a href="https://hazyresearch.stanford.edu/blog/2022-06-11-simplifying-s4">S4 Explainer Blog</a>). It's a convolution and an RNN based on simple ideas from signal processing. SOTA on long range arena and first to solve Path-X. <a href="https://hazyresearch.stanford.edu/blog/2023-03-27-long-learning">update on this line of work</a>. 
+   <li> We've been working on <a href="https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari">Hyena</a> using ideas from signal processing, and its application to <a href="https://hazyresearch.stanford.edu/blog/2023-06-29-hyena-dna">HyenaDNA</a> and now <a href="https://hazyresearch.stanford.edu/blog/2024-03-14-evo">Evo</a> led by <a href="https://arcinstitute.org">Arc Institute</a>--and <a href="https://brianhie.com">Brian Hie</a>. Evo selected for the cover of <a href="https://x.com/ScienceMagazine/status/1857137706112864541">Science</a>. Now <a href="https://arxiv.org/abs/2502.18918">Evo 2</a> extends to all domains of life.
+</ul>
+																																																							
+
+<br><br>
+<hr>
+<br>
+<li> Some Talks and resources
+<ul>
+   <li> Neurips23 Keynote (<a href="papers/NeurIPS23_Chris_Re_Keynote_DELIVERED.pptx">pptx</a>|<a href="NeurIPS23_Chris_Re_Keynote_DELIVERED.pdf">pdf</a>|<a href="https://nips.cc/virtual/2023/invited-talk/73990">video</a>) about building blocks for foundation models. <a href="https://github.com/HazyResearch/aisys-building-blocks
+">GitHub</a> for SysAI building blocks.
+<li> Some resources for a budding community in <a href="https://github.com/HazyResearch/data-centric-ai">Data-Centric AI</a> and a <a href="https://hazyresearch.stanford.edu/data-centric-ai">blog post</a> about it.
+
+<li> SIGMOD keynote on Data-centric AI, Declarative ML, and Foundation Models in data <a href="papers/SIGMOD-Chris-Re-DataCentric-Foundation-Models-KeyNote.pdf"> slides</a> (<a href="https://youtu.be/k20oLegpDW8?t=4966">YouTube</a>) 
+<li> SIGMOD panel on <a href="papers/ChrisRe-SIGMOD-Panel.pdf">Service, Science and Startups changing research</a>
+<li> Software 2.0 <a href="https://hai.stanford.edu/events/hai-weekly-seminar-chris-re">Overview</a> at HAI
+   <li> Thanks, NeurIPS! Our Test-of-time Award talk for Hogwild! is on <a href="https://www.youtube.com/watch?v=c5T7600RLPc&t=94s">YouTube</a>
+    
+<li> A quick overview of video our work on <a href="https://www.youtube.com/watch?v=_4gn7ibByAc">Hidden Stratification</a>.
+<li> MLSys 20 keynote talk (<a href="papers/MLSys_ChrisRe-FINAL.pdf">pdf</a>|<a href="papers/MLSys_ChrisRe-FINAL.pptx">pptx</a>) or <a href="https://www.youtube.com/watch?v=M7r5SGIxxpI">WWW BIG</a>. More articles on <a href="http://hazyresearch.stanford.edu">new group website</a> also see <a href="https://github.com/HazyResearch">github</a>. 
+</ul>
+
+
+  
+														
+<br><br>
+A messy, incomplete log of old updates is <a href="newsold.php">here</a>.<br><br>
+</div>
+</ul></div>
+
+<div id='about' class='section'>
+</div>
+
+<div id='news' class='section'>
+<ul style="list-style: none;">
+<li style="list-style: none;">
+<div>
+   I'm a professor in the Stanford AI Lab (<a href="http://ai.stanford.edu/">SAIL</a>), the center for research on foundation models (<a href="https://crfm.stanford.edu/">CRFM</a>), and the <a href="http://ml.stanford.edu/">Machine Learning Group</a> (<a href="http://cs.stanford.edu/people/chrismre/bio.txt">bio</a>). Our lab works on the foundations of the next generation of AI systems.
+<ul>
+<li> On the AI side, I am fascinated by how we can learn from increasingly weak forms of supervision, the basis of new architectures, the role of data, and by the mathematical foundations of such techniques. 
+<li> On the systems side, I am broadly interested in how machine learning is changing how we build software and hardware. I'm particularly excited when we can blend AI and systems, e.g,. <a href="https://snorkel.org">Snorkel</a>, <a href="papers/Overton_Overview.pptx">Overton</a> (<a href="https://www.youtube.com/watch?v=Z9yKLlgaEZk">YouTube</a>),  or <a href="http://together.ai">Together</a>.
+</ul>
+   Our work is inspired by the observation that data is central to these systems, and so data management principles (re-imagined) play a starring role in our work. This sounds like Silicon Valley nonsense, but oddly enough, these ideas get used due to amazing students and collaborations with <a href="https://ai.googleblog.com/2019/03/harnessing-organizational-knowledge-for.html">Google ads</a>, <a href="https://arxiv.org/pdf/2008.09983">YouTube</a>, <a href="http://arxiv.org/abs/1909.05372">Apple</a>, and more. 
+<br><br>
+
+While we're very proud of our research ideas and their impact, the lab's real goal is to help students become professors, entrepreneurs, and researchers. To that end, over a dozen members of our group have started their own professorships. With students and collaborators, I've been fortunate enough to cofound a number of companies and a venture firm. For transparency, I try to list companies I advise or invest in <a href="startup_advising.php">here</a> and our research sponsors <a href="https://hazyresearch.stanford.edu/sponsors">here</a>. My students run the <a href="https://mlsys.stanford.edu">ML Sys Podcast</a>.
+  
+
+<br><br>
+
+<ul>
+
+					<hr><br>									
+					<li> We're interested in improving the foundations of foundation models. 
+<ul>
+    <li> We released <a href="https://hazyresearch.stanford.edu/blog/2024-05-12-tk">ThunderKittens</a> (<a href="https://hazyresearch.stanford.edu/blog/2024-05-12-quick-tk">quick blog</a>|<a href="https://arxiv.org/abs/2410.20399">paper</a>|<a href="https://github.com/HazyResearch/ThunderKittens">repo</a>) for our opinionated take on building AI kernels. Now with <a href="https://hazyresearch.stanford.edu/blog/2025-11-17-parallekittens">ParallelKittens</a> (<a href="https://arxiv.org/abs/2511.13940">paper</a>) for multi-GPU and <a href="https://hazyresearch.stanford.edu/blog/2025-11-11-hipkittens">HipKittens</a> (<a href="https://arxiv.org/abs/2511.08083">paper</a>) for AMD.
+
+   <li> <a href="https://hazyresearch.stanford.edu/blog/2025-11-18-intelligence-per-watt">Intelligence per Watt</a> (<a href="https://arxiv.org/abs/2511.07885">paper</a>|<a href="https://github.com/HazyResearch/intelligence-per-watt">repo</a>) measuring efficiency of AI and foundation models!
+
+<li>Blog post on <a href="https://ai.stanford.edu/blog/longer-sequences-next-leap-ai/">sequence length</a> and <a href="https://hazyresearch.stanford.edu/blog/2023-03-27-long-learning">more</a>. See the <a href="https://hazyresearch.stanford.edu/blog">blog</a> for more details
+
+<li> <a href="https://github.com/HazyResearch/flash-attention">Flash Attention</a> is an IO-Aware algorithm for attention. This is widely used now including in ML Perf, see <a href="https://spectrum.ieee.org/mlperf-rankings-2022">MLPerf Story on Tri!</a>. Tri's <a href="https://hazyresearch.stanford.edu/blog/2023-07-17-flash2">Version 2</a>
+
+<li> We continue to work on <a href="https://github.com/HazyResearch/state-spaces">long sequences</a>. An explainer of a simplified version of S4 (<a href="https://hazyresearch.stanford.edu/blog/2022-06-11-simplifying-s4">S4 Explainer Blog</a>). It's a convolution and an RNN based on simple ideas from signal processing. SOTA on long range arena and first to solve Path-X. <a href="https://hazyresearch.stanford.edu/blog/2023-03-27-long-learning">update on this line of work</a>. 
+   <li> We've been working on <a href="https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari">Hyena</a> using ideas from signal processing, and its application to <a href="https://hazyresearch.stanford.edu/blog/2023-06-29-hyena-dna">HyenaDNA</a> and now <a href="https://hazyresearch.stanford.edu/blog/2024-03-14-evo">Evo</a> led by <a href="https://arcinstitute.org">Arc Institute</a>--and <a href="https://brianhie.com">Brian Hie</a>. Evo selected for the cover of <a href="https://x.com/ScienceMagazine/status/1857137706112864541">Science</a>. Now <a href="https://arxiv.org/abs/2502.18918">Evo 2</a> extends to all domains of life.
+</ul>
+																																																							
+
+<br><br>
+<hr>
+<br>
+<li> Some Talks and resources
+<ul>
+   <li> Neurips23 Keynote (<a href="papers/NeurIPS23_Chris_Re_Keynote_DELIVERED.pptx">pptx</a>|<a href="NeurIPS23_Chris_Re_Keynote_DELIVERED.pdf">pdf</a>|<a href="https://nips.cc/virtual/2023/invited-talk/73990">video</a>) about building blocks for foundation models. <a href="https://github.com/HazyResearch/aisys-building-blocks
+">GitHub</a> for SysAI building blocks.
+<li> Some resources for a budding community in <a href="https://github.com/HazyResearch/data-centric-ai">Data-Centric AI</a> and a <a href="https://hazyresearch.stanford.edu/data-centric-ai">blog post</a> about it.
+
+<li> SIGMOD keynote on Data-centric AI, Declarative ML, and Foundation Models in data <a href="papers/SIGMOD-Chris-Re-DataCentric-Foundation-Models-KeyNote.pdf"> slides</a> (<a href="https://youtu.be/k20oLegpDW8?t=4966">YouTube</a>) 
+<li> SIGMOD panel on <a href="papers/ChrisRe-SIGMOD-Panel.pdf">Service, Science and Startups changing research</a>
+<li> Software 2.0 <a href="https://hai.stanford.edu/events/hai-weekly-seminar-chris-re">Overview</a> at HAI
+   <li> Thanks, NeurIPS! Our Test-of-time Award talk for Hogwild! is on <a href="https://www.youtube.com/watch?v=c5T7600RLPc&t=94s">YouTube</a>
+    
+<li> A quick overview of video our work on <a href="https://www.youtube.com/watch?v=_4gn7ibByAc">Hidden Stratification</a>.
+<li> MLSys 20 keynote talk (<a href="papers/MLSys_ChrisRe-FINAL.pdf">pdf</a>|<a href="papers/MLSys_ChrisRe-FINAL.pptx">pptx</a>) or <a href="https://www.youtube.com/watch?v=M7r5SGIxxpI">WWW BIG</a>. More articles on <a href="http://hazyresearch.stanford.edu">new group website</a> also see <a href="https://github.com/HazyResearch">github</a>. 
+</ul>
+
+
+  
+														
+<br><br>
+A messy, incomplete log of old updates is <a href="newsold.php">here</a>.<br><br>
+</div>
+</ul></div>
+
+<div id='papers' class='section'>
+<script>
+var arr = [ "manuscripts", "papers2025", "papers2024", "papers2023", "papers2022", "papers2021", "papers2020", "papers2019", "papers2018", "papers2017", "papers2016", "papers2015", "papers2014", "papers2013", "papers2012", "papers2011", "papers2010", "papers2009" ];
+jQuery.each(arr, function(i, val) {
+    $("#" + val).click(function () {
+	$("#" + val + "-list").toggle('slow');
+	$("#" + val + "-down").toggle();
+	$("#" + val + "-up").toggle();
+      });
+
+    $("#" + val + "-list").toggle();
+    $("#" + val + "-up").toggle();
+  });
+
+
+$("#expand-button").click(function() {
+    jQuery.each(arr, function(i, val) {
+	  $("#" + val + "-list").show("slow");
+	  $("#" + val + "-down").hide();
+	  $("#" + val + "-up").show();
+      });
+  });
+
+$("#min-all-button").click(function() {
+    jQuery.each(arr, function(i, val) {
+	  $("#" + val + "-list").hide("slow");
+	  $("#" + val + "-down").show();
+	  $("#" + val + "-up").hide();
+      });
+  });
+
+
+</script>
+<style>
+ul.small-list {
+  font-size:10pt;
+}
+</style>
+
+<center><small> This is AI generated, so there are probably fewer errors than when I did it... and something to blame.</small></center>
+
+<table border="3" style="width:200%;" cellpadding="1" cellspacing="1">
+<div id="manuscripts">
+<img id="manuscripts-down" height="12px" src="img/arrow_down.png">
+<img id="manuscripts-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="manuscripts">Manuscripts</a></strong>
+</div>
+<hr>
+<div id="manuscripts-list">
+<ul class="small-list">
+</ul>
+</div>
+
+<tr>
+<td align="left"><b>Index by year</b></td>
+<td align="right"></td>
+</tr>
+</table>
+<div id="papers2025">
+<img id="papers2025-down" height="12px" src="img/arrow_down.png">
+<img id="papers2025-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2025">2025</a></strong>
+</div>
+<div id="papers2025-list">
+<ul class="small-list">
+  
+  <li> <a href="https://arxiv.org/abs/2502.15964">Minions: Cost-efficient collaboration between on-device and cloud language models</a> Narayan, Biderman, et al. ICML 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2502.18918">Genome modeling and design across all domains of life with Evo 2</a> Brixi, Durrant, et al. BioRxiv 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2502.10517">Kernelbench: Can llms write efficient gpu kernels?</a> Ouyang, Guo, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2501.14723">Codemonkeys: Scaling test-time compute for software engineering</a> Ehrlich, Brown, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2410.06424">Restructuring Vector Quantization with the Rotation Trick</a> Fifty, Junkins, et al. ICLR 2025. <b>Oral</b>
+  
+  <li> <a href="https://arxiv.org/abs/2411.04330">Scaling laws for precision</a> Kumar, Ankner, et al. ICLR 2025. <b> Oral </b>
+  
+  <li> <a href="https://arxiv.org/abs/2410.10254">LoLCATs: On low-rank linearizing of large language models</a> Zhang, Arora, et al. ICLR 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2411.05735">Aioli: A unified optimization framework for language model data mixing</a> Chen, Hu, et al. ICLR 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2409.15254">Archon: An architecture search framework for inference-time techniques</a> Saad-Falcon, Lafuente, et al. ICML 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2410.20399">Thunderkittens: Simple, fast, and adorable ai kernels</a> Spector, Arora, et al. ICLR 2025. <b>Spotlight</b>
+
+  <li> <a href="https://arxiv.org/abs/2506.04421">HMAR: Efficient Hierarchical Masked Auto-Regressive Image Generation</a> Kumbong, Liu, et al. CVPR 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2506.23024">BWLer: Barycentric Weight Layer Elucidates a Precision-Conditioning Tradeoff for PINNs</a> Liu, Baig, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2506.18203">Shrinking the Generation-Verification Gap with Weak Verifiers</a> Saad-Falcon, Buchanan, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2506.06266">Cartridges: Lightweight and general-purpose long context representations via self-study</a> Eyuboglu, Ehrlich, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2503.12295">Towards learning high-precision least squares algorithms with sequence models</a> Liu, Grogan, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2503.01868">Systems and algorithms for convolutional multi-hybrid language models at scale</a> Ku, Nguyen, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2511.13940">ParallelKittens: Systematic and Practical Simplification of Multi-GPU AI Kernels</a> Sul, Arora, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2511.07885">Intelligence per Watt: Measuring Intelligence Efficiency of Local AI</a> Saad-Falcon, Narayan, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2511.08083">HipKittens: Fast and Furious AMD Kernels</a> Hu, Wadsworth, et al. 2025.
+  
+  <li> <a href="https://arxiv.org/abs/2509.21716">A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems</a> Gonzalez, Buchanan, et al. 2025.
+  
+  <li> <a>Building GenAI Benchmarks: A Case Study in Legal Applications</a> Guha, Nyarko, et al. 2025.
+  
+											   <li> <a>Precise high-dimensional asymptotics for quantifying heterogeneous transfers</a> Yang, Zhang, et al. Journal of Machine Learning Research 2025.
+
+</ul>
+</div>
+<hr>
+<div id="papers2024">
+<img id="papers2024-down" height="12px" src="img/arrow_down.png">
+<img id="papers2024-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2024">2024</a></strong>
+</div>
+<div id="papers2024-list">
+<ul class="small-list">
+  <li> <a href="https://www.science.org/doi/10.1126/science.ado9336">Sequence modeling and design from molecular to genome scale with Evo</a> Nguyen, Poli, et al. Science 2024. <b>Selected for Cover</b>
+  
+  <li> <a href="https://arxiv.org/abs/2406.13264">WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks</a> Wornow, Narayan, et al. NeurIPS24 (Benchmark)
+
+       <li> <a>Smoothie: Label Free Language Model Routing</a> Guha, Chen, et al. NeurIPS24.
+											    <li> <a href="https://github.com/togethercomputer/RedPajama-Data">Red Pajama Data</a> NeurIPS24 (data)
+
+	    <li> <a href="https://arxiv.org/abs/2407.21787">Large language monkeys: Scaling inference compute with repeated sampling</a> Brown, Juravsky, et al. 2024.
+  
+											    <li> <a href="https://arxiv.org/abs/2407.05483">Just read twice: closing the recall gap for recurrent language models</a> Arora, Timalsina, et al. 2024.
+  
+											    
+  
+											    <li> <a href="https://arxiv.org/abs/2410.09187">Automated Rewards via LLM-Generated Progress Functions</a> Sarukkai, Shacklett, et al. 2024.
+  
+											    <li> <a href="https://arxiv.org/abs/2410.05224">Cookbook: A framework for improving LLM generative abilities via programmatic data generating templates</a> Narayan, Chen, et al. NeurIPS 2024 (Datasets and Benchmarks).
+  
+												 <li> <a href="https://arxiv.org/abs/2412.16178">Context clues: Evaluating long context models for clinical prediction tasks on ehrs</a> Wornow, Bedi, et al. 2024.
+  
+											    <li> <a href="https://arxiv.org/abs/2406.15027">Model changelists: Characterizing updates to ml models</a> Eyuboglu, Goel, et al. FAccT 2024.
+  
+											    <li> <a href="https://arxiv.org/abs/2402.05099">Hydragen: High-throughput llm inference with shared prefixes</a> Juravsky, Brown, et al. 2024.
+  
+											    <li> <a>Towards trustworthy seizure onset detection using workflow notes</a> Saab, Tang, et al. npj Digital Medicine 2024.
+ 
+<li> <a href="https://arxiv.org/abs/2402.07440">Benchmarking and Building Long-Context Retrieval Models with LoCo and M2-BERT</a>
+  Jon Saad-Falcon et al. ICML 2024.
+
+<li> <a href="https://arxiv.org/abs/2402.18668">Simple linear attention language models balance the recall-throughput tradeoff</a>
+  Evan Sabri Eyuboglu and Simran Arora et al. ICML 2024.
+
+<li> <a href="https://arxiv.org/abs/2403.17844">Mechanistic Design and Scaling of Hybrid Architectures</a>
+  Michael Poli et al. ICML 2024.
+
+  <li> <a href="https://arxiv.org/abs/2402.11729">Prospector Heads: Generalized Feature Attribution for Large Models and Data</a>
+  Gautam Machiraju et al. ICML2024.
+  <li> <a href="https://arxiv.org/abs/2405.06147">State-Free Inference of State-Space Models: The *Transfer Function* Approach</a> Parnichkun et al. ICML2024.
+  <li> <a href="https://arxiv.org/abs/2405.03710">Automating the Enterprise with Foundation Models</a> Wornow, Narayan, et al. VLDB 2024.
+
+<li><a href="https://arxiv.org/abs/2312.04927">Zoology: Measuring and Improving Recall in Efficient Language Models</a> Simran Arora and Sabri Eyuboglu et al.
+ICLR 2024.
+
+<li> <a href="https://arxiv.org/abs/2311.05908">FlashFFTConv: Efficient Convolutions for Long Sequences with Tensor Cores</a>
+  Daniel Y. Fu and Hermann Kumbong et al. ICLR 2024
+
+<li> <a href="https://arxiv.org/abs/2310.10971">Context-Aware Meta-Learning</a> Christopher Fifty et al. ICLR 2024
+  <li> <a href="https://arxiv.org/abs/2402.04347">The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry</a> Michael Zhang et al. ICLR 2024.
+
+</ul>
+</div>
+<hr>
+<div id="papers2023">
+<img id="papers2023-down" height="12px" src="img/arrow_down.png">
+<img id="papers2023-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2023">2023</a></strong>
+</div>
+<div id="papers2023-list">
+<ul class="small-list">
+  <li><a href="https://arxiv.org/abs/2306.15794">HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution</a> NeurIPS23. <b>Spotlight</b>
+  <li><a href="">Monarch Mixer: A Simple Sub-Quadratic GEMM-Based Architecture</A> Fu, Arora, Grogan et al. NeurIPS23. <b>Oral</b>
+  <li><a href="https://arxiv.org/abs/2307.11031">Embroid: Unsupervised Prediction Smoothing Can Improve Few-Shot Classification</a> Guha et al. NeurIPS23.
+  <li><a href="https://arxiv.org/abs/2308.11462">LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models</a> Guha et al. NeurIPS data 23.
+  <li><a href="">Laughing Hyena Distillery: Extracting Compact Recurrences From Convolutions</a> Massaroli and Poli et al. NeurIPS23
+<li><a href="https://arxiv.org/abs/2307.14430">Skill-it! A Data-Driven Skills Framework for Understanding and Training Language Models</a> Chen et al. NeurIPS23. <b> Spotlight </b>
+
+<li><a href="https://arxiv.org/abs/2306.07536">TART: A plug-and-play Transformer module for task-agnostic reasoning</a>Bhatia and Narayan et al. NeurIPS23.
+
+  <li><a href="">A case for reframing automated medical image classification as segmentation</a> Hooper et al. NeurIPS23.
+<li> <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00580/117168/Reasoning-over-Public-and-Private-Data-in">Reasoning over Public and Private Data in Retrieval-Based Systems</a> Arora et al. TACL23.
+  <li> <a href="https://arxiv.org/abs/2304.09433">Language Models Enable Simple Systems for Generating Structured Views of Heterogeneous Data Lakes</a>. Arora et al. VLDB23. 
+  <li> Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time. Chen et al. ICML 23 <b>Oral</b>
+
+<li> <a href="https://arxiv.org/abs/2302.10866">Hyena Hierarchy: Towards Larger Convolutional Language Models</a>. Poli et al. ICML23 <b>Oral</b>
+  <li> <a href="https://openreview.net/pdf?id=w2Vrl0zlzA">CocktailSGD: Fine-tuning Foundation Models over 500Mbps Networks</a> Wang et al. ICML23 
+<li> <a href="https://arxiv.org/abs/2302.06646">Simple Hardware-Efficient Long Convolutions for Sequence Modeling</a>. Fu et al. ICML23
+
+<li> <a href="https://openreview.net/pdf?id=RRntzKrBTp">High-throughput Generative Inference of Large Language Models with a Single GPU</a> Sheng et al. ICML23 <b>Oral</b>
+
+  <li> <a href="https://arxiv.org/abs/2212.14052">Hungry Hungry Hippos: Towards Language Modeling with State Space Models</a>. Fu, Dao et al. ICLR23 <b>Spotlight</b>
+  <li> <a href="https://arxiv.org/abs/2210.02441">Ask Me Anything: A simple strategy for prompting language models</a>. Arora, Narayan et al. ICLR23 <b>Spotlight</b>
+<li><a href="https://arxiv.org/abs/2303.09489">Effectively Modeling Time Series with Simple Discrete State Spaces</a>. Zhang et al. ICLR23.
+  <li> <a href="https://arxiv.org/abs/2206.12037">How to Train your HiPPO: State Space Models with Generalized Orthogonal Basis Projection</a>. Gu et al. ICLR23
+ <li> <a href="https://arxiv.org/abs/2205.09911">Can Foundation Models Wrangle Your Data?</a> Narayan et al. VLDB23
+</ul>
+</div>
+<hr>
+<div id="papers2022">
+<img id="papers2022-down" height="12px" src="img/arrow_down.png">
+<img id="papers2022-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2022">2022</a></strong>
+</div>
+<div id="papers2022-list">
+<ul class="small-list">
+  <li> <a href="https://arxiv.org/abs/2209.08443">HAPI: A Large-scale Longitudinal Dataset of Commercial ML API Predictions</a> Chen et al. NeurIPS22 (Data)
+  <li> <a href="https://arxiv.org/abs/2206.11417">Self-Supervised Learning of Brain Dynamics from Broad Neuroimaging Data</a> Thomas and Poldrack. NeurIPS22
+<li> <a href="https://arxiv.org/abs/2206.01299">Fine-tuning Language Models over Slow Networks using Activation Compression with Guarantees</a> Wang et al. NeurIPS22.
+
+<li> <a href="https://arxiv.org/abs/2206.01288">Decentralized Training of Foundation Models in Heterogeneous Environments</a> Yuan et al. NeurIPS22 <b> Oral </b>
+
+<li> Transform Once: Efficient Operator Learning in Frequency Domain
+Poli et al. NeurIPS22
+<li> <a href="https://arxiv.org/abs/2206.11893">On the Parameterization and Initialization of Diagonal State Space Models</a> Gu, Goel, Gupta. NeurIPS22
+
+<li> <a href="https://arxiv.org/abs/2210.06583">S4ND: Modeling Images and Videos as Multidimensional Signals Using State Spaces</a> Nguyen et al. NeurIPS22
+<li> <a href="https://arxiv.org/abs/2207.07180">Contrastive Adapters for Foundation Model Group Robustness</a> Zhang. NeurIPS22
+
+<li> <a href="https://arxiv.org/abs/2205.14135">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a> Dao et al. HAET22 <b> Best Paper </b> and then NeurIPS22
+
+<li> <a href="https://arxiv.org/abs/2111.02549">VORTEX: Physics-Driven Data Augmentations Using Consistency Training for Robust Accelerated MRI Reconstruction</a> Desai et al. MIDL22 <b> Best Paper </b>
+  <li> <a href="https://arxiv.org/abs/2203.13270">Shoring Up the Foundations: Fusing Model Embeddings and Weak Supervision</a> Chen et al. UAI22. <b>Oral, Best Student Paper Runner Up</b>
+<li> <a href="https://arxiv.org/abs/2203.01517">Correct-N-Contrast: A Contrastive Approach for Improving Robustness to Spurious Correlations</a>. Zhang et al. ICML22. <b>Long Talk</b>
+<li> <a href="https://arxiv.org/abs/2202.09729">It's Raw! Audio Generation with State-Space Models</a> Goel et al. ICML22. <b>Long Talk</b>
+<li> <a href="https://arxiv.org/abs/2204.00595">Monarch: Expressive Structured Matrices for Efficient and Accurate Training</a> Dao et al. ICML22. <b>Long Talk</b> and <b> Honorable Paper Runner up</b>
+<li> <a href="https://arxiv.org/abs/2204.07596">Perfectly Balanced: Improving Transfer and Robustness of Supervised Contrastive Learning</a> Chen et al. ICML22.
+<li> <a href="https://arxiv.org/pdf/2106.01501">Ember: No-Code Context Enrichment via Similarity-Based Keyless Joins</a>. Suri et al. VLDB22.
+  <li> <a href="https://arxiv.org/abs/2111.00396">Efficiently Modeling Long Sequences with Structured State Spaces</a> Gu et al. ICLR22. <b> Oral, Honorable Mention Outstanding Paper </b>.
+<li> <a href="http://arxiv.org/abs/2203.14960">Domino: Discovering Systematic Errors with Cross-Modal Embeddings</a>. Eyuboglu et al. ICLR22. <b> Oral </b>
+  <li> <a href="https://arxiv.org/abs/2112.00029">Pixelated Butterfly: Simple and Efficient Sparses Training for Neural Network Models</a> Chen et al. ICLR22. <b>Spotlight</b>
+  <li> <a href="https://arxiv.org/abs/2110.08430">Metadata Shaping: A Simple Approach for Knowledge-Enhanced Language Models</a> Arora et al. Findings of ACL22.
+  <li> <a href="https://arxiv.org/abs/2204.08173">TABi: Type-Aware Bi-Encoders for Open-Domain Entity Retrieval</a> Leszczynski et al. Findings of ACL22.
+<li> <a href="https://arxiv.org/abs/2110.08228">Cross-Domain Data Integration for Named Entity Disambiguation in Biomedical Text</a> Varma et al. Findings of ACL22.
+  <li> <a href="https://mdpi-res.com/d_attachment/csmf/csmf-03-00004/article_deploy/csmf-03-00004.pdf?version=1650444797">The Details Matter: Preventing Class Collapse in Supervised Contrastive Learning</a> Fu and Chen et al. AIBDSD@AAAI <b>Best Paper</b></a>
+</ul>
+</div>
+<hr>
+<div id="papers2021">
+<img id="papers2021-down" height="12px" src="img/arrow_down.png">
+<img id="papers2021-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2021">2021</a></strong>
+</div>
+<div id="papers2021-list">
+<ul class="small-list">
+  <li> <a href="https://arxiv.org/pdf/2203.06823v1.pdf">SKM-TEA: A Dataset for Accelerated MRI Reconstruction with Dense Image Labels for Quantitative Clinical Evaluation</a>. Desai et al. NeurIPS21.
+  <li> <a href="https://arxiv.org/abs/2110.13985">Combining Recurrent, Convolutional, and Continuous-time Models with Linear State Space Layers.</a> Gu et al. NeurIPS21.
+<li> <a href="https://arxiv.org/abs/2111.04260">Personalized Benchmarking with the Ludwig Benchmarking Toolkit</a> Narayan et al. NeurIPS21
+  <li> <a href="http://arxiv.org/abs/2110.15343">Scatterbrain: Unifying Sparse and Low-rank Attention</a> Chen et al. NeurIPS21.
+<li> <a href="https://arxiv.org/abs/2103.15798">Rethinking Neural Operations for Diverse Tasks</a> Roberts et al. NeurIPS21.
+
+
+  <li> <a href="http://proceedings.mlr.press/v139/davis21a/davis21a.pdf">Catformer: Designing Stable Transformers via Sensitivity Analysis</a> Davis et al. ICML 21.
+<li> <a href="http://proceedings.mlr.press/v139/chen21i/chen21i.pdf">Mandoline: Model Evaluation under Distribution Shift</a> Chen et al. ICML 21
+  <li> <a href="http://proceedings.mlr.press/v139/chami21a/chami21a.pdf">HoroPCA: Hyperbolic Dimensionality Reduction via Horospherical Projections</a> Chami et al. ICML 21.
+
+<li> <a href="https://krandiash.github.io/publication/2021-naacl-industry-goodwill-hunting">Goodwill Hunting: Analyzing and Repurposing Off-the-Shelf Named Entity Linking Systems</a>. Karan Goel et al. NAACL Industry 2021
+
+<li> <a href="https://krandiash.github.io/publication/2021-naacl-demo-robustness-gym">Robustness Gym: Unifying the NLP Evaluation Landscape</a>
+  Karan Goel et al.. NAACL demo, 2021.
+
+<li> <a href="https://mayeechen.github.io/files/Value_of_Data_Full.pdf">
+Comparing the Value of Labeled and Unlabeled Data in Method-of-Moments Latent Variable Estimation.</a> 
+Mayee F. Chen et al. AIStats21.
+
+<li> <a href="https://arxiv.org/abs/1910.05124">PipeMare: Asynchronous Pipeline Parallel DNN Training</a>
+Bowen Yang et al. MLSys21.
+  <li> <a href="https://openreview.net/pdf?id=wWK7yXkULyh">Mongoose: A Learnable LSH Framework for Efficient Neural Network Training</a>. Beidi Chen et al. ICLR21 <b>Oral</b>
+  <li> <a href="https://arxiv.org/abs/2008.06775">Model Patching: Closing the Subgroup Performance Gap with Data Augmentation</a>. Karan Goel et al. ICLR21
+  <li> <a href="https://openreview.net/pdf?id=bjkX6Kzb5H">Cut out the annotator, keep the cutout: better segmentation with weak supervision</a>. Sarah Hooper et al. ICLR21
+  <li> <a href="http://cidrdb.org/cidr2021/papers/cidr2021_paper13.pdf">Bootleg: Chasing the Tail with Self-Supervised Named Entity Disambiguation.</a> Laurel Orr et al. CIDR21
+<li> <a href="https://web.stanford.edu/~ksaab/media/MICCAI_2021.pdf">Observational Supervision for Medical Image Classification Using Gaze Data"></a> Saab et al. MICCAI21
+</ul>
+</div>
+<hr>
+<div id="papers2020">
+<img id="papers2020-down" height="12px" src="img/arrow_down.png">
+<img id="papers2020-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2020">2020</a></strong>
+</div>
+<div id="papers2020-list">
+<ul class="small-list">
+
+  <li> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1532046420302847">Comparison of segmentation-free and segmentation-dependent computer-aided diagnosis of breast masses on a public mammography dataset</a> Lee et al. Journal of Biomedical Informatics, 2020.
+  <li> <a href="https://arxiv.org/abs/2008.07669">HiPPO: Recurrent Memory with Optimal Polynomial Projections</a> Albert Gu et al. NeurIPS 2020. <b> Spotlight </b>
+  <li> <a href="http://stanford.edu/~nims/no_subclass_left_behind.pdf">No Subclass left Behind: Fine-Grained Robustness in Coarse-Grained Classification Problems</a> Nimit Sohoni. NeurIPS 2020.
+<li> <a href="https://arxiv.org/abs/2010.00402">Hyperbolic Hierarchical Clustering</a>. Ines Chami et al. NeurIPS 2020.
+<li> <a href="https://arxiv.org/pdf/2008.09983">Leveraging Organizational Resources to Adapt Models to New Data Modalities</a> Sahaana Suri et al. VLDB 2020
+  <li> <a href="https://arxiv.org/abs/2005.00695">On the Generalization Effects of Linear Transformations in Data Augmentation</a> Sen Wu, Hongyang R. Zhang, Greg Valiant, C. RÃ©. ICML 2020
+<li> <a href="https://arxiv.org/abs/2002.11955">Fast and Three-rious: Speeding Up Weak Supervision with Triplet Methods</a> Dan Fu et al. ICML 2020
+
+<li> <a href="https://stm.sciencemag.org/content/12/544/eaau9113">AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature</a> J. Birgmeier et al. Science Trans. Med 2020
+  <li> <a href="https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-020-03542-1">Extract Chemical Reactions from Text using Snorkel</a> Emily K. Mallory et al. BMC Bioinformatics 2020.
+ 
+<li> <a href="https://jdunnmon.github.io/cross-modal-data-programming-final.pdf">Cross-Modal Data Programming Enables Rapid Medical Machine Learning</a>.
+  J. Dunnmon, AJ Ratner et al. Cell Patterns 2020.
+  
+<li> <a href="https://grlearning.github.io/papers/101.pdf">Low-Dimensional Hyperbolic Knowledge Graph Embeddings</a>. 
+Ines Chami et al. ACL20
+  <li> <a href="https://arxiv.org/abs/2005.09117">Contextual Embeddings: When are they worth it?</a> S. Arora, A. May, J. Zhang, C. RÃ©. ACL20 (Short Paper)
+<li> <a href="https://arxiv.org/abs/1907.08362">Sparse Recovery for Orthogonal Polynomial Transforms</a>
+  Anna Gilbert, Albert Gu, C. Re, Atri Rudra, Mary Wootters. ICALP 2020.
+
+
+<li> <a href="https://jdunnmon.github.io/mi_subsets_chil.pdf">Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging</a>
+  Luke Oakden-Rayner*, Jared Dunnmon*, Gustavo Carneiro, and C. RÃ©
+  ACM CHIL, 2020 (Oral Spotlight).
+
+<li> <a href="https://arxiv.org/pdf/2004.05316.pdf">Ivy: Instrumental Variable Synthesis for Causal Inference</a>
+  Z. Kuang et al. AISTATS 2020.
+
+<li> <a href="https://www.nature.com/articles/s41746-020-0264-0.epdf">Weak supervision as an efficient approach for automated seizure detection in electroencephalography.</a>
+  Khaled Saab et al. NPJ Digital Medicine.
+  <li> <a href="http://arxiv.org/abs/1909.05372"> Overton: A Data System for Monitoring and Improving Machine-Learned Products</a>. C. RÃ©, F. Niu, P. Gudipati, and C. Srisuwananukorn. CIDR2020
+  <li> <a href="http://arxiv.org/abs/https://openreview.net/forum?id=BkgrBgSYDS"> Kaleidoscope: An Efficient, Learnable Representation For All Structured Linear Maps</a> Tri Dao et al. ICLR 2020. <b> Spotlight</b>
+  <li> <a herf="http://arxiv.org/abs/2005.00944">Understanding and Improving Information Transfer in Multi-Task Learning</a> Sen Wu, H. Zhang, C. RÃ©. ICLR 2020. 
+</ul>
+</div>
+<hr>
+<div id="papers2019">
+<img id="papers2019-down" height="12px" src="img/arrow_down.png">
+<img id="papers2019-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2019">2019</a></strong>
+</div>
+<hr>
+<div id="papers2019-list">
+<ul class="small-list">
+  <li> <a href="https://arxiv.org/abs/1909.12475">Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging</a> Luke Oakden-Rayner et al. ML4H19
+<li> <a href="https://arxiv.org/abs/1904.07640">Medical device surveillance with electronic health records</a> 
+  Alison Callahan and Jason A Fries et al. NPJ Digital Medicine. 
+
+  <li> <a href="https://arxiv.org/abs/1909.01264">On the Downstream Performance of Compressed Word Embeddings</a> Avner May, Jian Zhang, Tri Dao, C. RÃ©. NeurIPS2019. <b> Spotlight</b>
+  <li> Multi-Resolution Weak Supervision for Sequential Data. Paroma Varma, Fred Sala et al. NeurIPS 2019.
+  <li> <a href="https://vincentsc.com/papers/chen2019slice.pdf">Slice-based Learning: A programming model for residual learning on critical slices</a>. Vincent Chen, Sen Wu, Alex Ratner, C. RÃ©. NeurIPS2019.
+							  <li> Hyperbolic Graph Convolutional Neural Networks. Ines Chami, Rex Ying, C. RÃ©, Jure Leskovec. NeurIPS 2019.
+  <li> <a href="https://arxiv.org/abs/1904.11622">Scene Graph Prediction with Limited Labels</a>. Vincent S Chen, Paroma Varma, Ranjay Krishna, Michael Bernstein, C. RÃ©, Li Fei-Fei. ICCV 2019.
+  <li> <a href="https://dl.acm.org/citation.cfm?doid=3316482.3326344">Automating the generation of hardware component knowledge bases</a>. Luke Hsiao, Sen Wu, Nicholas Chiang, C.RÃ©, Philip Levis. LCTES 2019.
+  <li> <a href="https://arxiv.org/abs/1711.10160"> Snorkel: Rapid Training Data Creation with Weak Supervision</a> Alex Ratner, Stephen Bach, Henry Ehrenberg, Jason Fries, Sen Wu, C. RÃ©. VLDBJ 2019 (Best Of)
+  <li> Doubly Weak Supervision of Deep Learning Models for Head CT. Khaled Saab et al. MICCAI 2019.
+  <li> <a href="https://openreview.net/forum?id=r1gPtjcH_N">Improving Sample Complexity with Observational Supervision</a>. Khaled Saab et al. ICLR Learning with Limited Labeled Data (LLD) Workshop 2019.
+
+<li> <a href="https://ai.stanford.edu/~kuleshov/papers/gwaskb-manuscript.pdf">A Machine-Curated Database of Genome-Wide
+Association Studies</a> Volodymyr Kuleshov et al. Nature Comms 2019.
+<li> <a href="https://www.biorxiv.org/content/10.1101/339630v4.abstract">Weakly supervised classification of rare aortic valve malformations using unlabeled cardiac MRI sequences</a> Jason Fries et al. Nature Comms 2019.
+  <li> <a href="https://arxiv.org/abs/1903.05895">Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations</a> Tri Dao, Albert Gu, Matthew Eichhorn, Atri Rudra, C. RÃ©. ICML 2019.
+  <li> <a href="https://arxiv.org/abs/1903.05844">Learning Dependency Structures for Weak Supervision Models</a> Paroma Varma, Frederic Sala, Ann He, Alexander Ratner, C. RÃ©. ICML 2019.
+<li> <a href="http://arxiv.org/abs/1803.06084">A Kernel Theory of Modern Data Augmentation</a> Tri Dao, Albert Gu, Alexander J. Ratner, Virginia Smith, Christopher
+  De Sa, C. RÃ©. ICML 2019.
+  
+  <li> <a href="https://arxiv.org/abs/1812.00417">Snorkel DryBell: A Case Study in Deploying Weak Supervision at Industrial Scale</a> Stephen Bach et al. SIGMOD 2019.
+  <li> <a href="https://openreview.net/forum?id=HJxeWnCcF7">Learning Mixed-Curvature Representations in Product Spaces</a>. Beliz Gunel, Albert Gu, C. RÃ©. Fred Sala. ICLR 2019.
+  <li> <a href="https://arxiv.org/abs/1811.00155">Low-precision Random Fourier Features for Memory Constrained Kernel Approximation</a>. Tri Dao, Avner May, C. RÃ©, Jian Zhang. AIStats 2019. 
+  <li> <a href="https://arxiv.org/abs/1810.02840">Training Complex Models with Multi-Task Weak Supervision</a>. A. Ratner, B. Hancock, J. Dunnmon, F. Sala, S. Pandey, C. RÃ©. AAAI 2019.
+  <li> <a href="https://ajratner.github.io/assets/papers/software_2_mmt_vision.pdf">The Role of Massively Multi-task and Weak Superivsion in Software 2.0</a> A. Ratner, B. Hancock, C. RÃ©. CIDR 2019.
+<li><a href="https://jdunnmon.github.io/dunnmon_radiology_2018.pdf">Assessment of Deep Learning Models for Automated Triage of Chest Radiographs</a> J. Dunnmon, D. Yi, C. Langlotz, C. RÃ©, D. Rubin, M. Lungren 
+  Radiology, 2019
+
+  <li> <a href="https://www.paroma.xyz/tech_report_reef.pdf">Snuba: Automating Weak Supervision to Label Training Data</a>, Paroma Varma and C. RÃ©. VLDB 2019.
+  <li> <a href="http://pages.cs.wisc.edu/~thodrek/prob_unclean.pdf">A Formal Framework for Probabilistic Unclean Databases</a>. C. De Sa, Ihab Ilyas, Benny Kimelfeld, C. RÃ©, and Theodoros Rekatsinas, ICDT 2019.
+
+</ul>
+</div>
+<div id="papers2018">
+<img id="papers2018-down" height="12px" src="img/arrow_down.png">
+<img id="papers2018-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2018">2018</a></strong>
+</div>
+<hr>
+<div id="papers2018-list">
+<ul class="small-list">
+<ii> <a href="https://arxiv.org/abs/1810.02309">Learning Compressed Transforms with Low Displacement Rank.</a>
+  Anna T. Thomas, Albert Gu, Tri Dao, Atri Rudra, C. RÃ©. 
+  NeurIPS, 2018. 
+  <li> <a href="papers/Chris_Re-KDD.pdf">Software 2.0 and Snorkel: Beyond Hand-Labeled Data.</a> C. RÃ©. KDD18 (Invited).
+  <li> <a href="https://arxiv.org/pdf/1804.03329.pdf">Representation Tradeoffs for Hyperbolic Embeddings</a> Christopher De Sa, Albert Gu, C. RÃ©, Frederic Sala. ICML18.
+
+  <li> <a href="https://arxiv.org/abs/1805.03818">Training Classifiers with Natural Language Explanations</a>. Braden Hancock, Paroma Varma, Stephanie Wang, Percy Liang, C. RÃ©. ACL18.
+  <li> <a href="http://www.aberger.site/levelheaded.pdf">LevelHeaded: A Unified Engine for Business
+Intelligence and Linear Algebra Querying</a>. Chris Aberger, Andy Lamb, Kunle Olukotun, and C. RÃ©. ICDE 18.
+  <li> <i> <a href="https://arxiv.org/abs/1711.10160">Snorkel: Rapid Training Data Creation with Weak Supervision </i> A.J. Ratner, S. Bach, H. Ehrenberg, J.A. Fries, S. Wu, C. RÃ©.</a> VLDB 18 <b> Best Of</b>.
+  <li> <i> <a href="https://arxiv.org/abs/1703.05028"> Fonduer: Knowledge Base Construction from Richly Formatted Data</a></i> Sen Wu et al. SIGMOD 18.
+
+  <li> <i> <a href="https://arxiv.org/abs/1611.01569">A Two Pronged Progress in Structured Dense Matrix Multiplication</a></i> C. De Sa, Albert Gu, Rohan Puttagunta, C. RÃ©, Atri Rudra. SODA 18.
+
+<li> <i><a href="https://arxiv.org/abs/1707.02670">Accelerated Power Iteration</a></i>. AIStats 18.
+
+  <li> <a href="https://openreview.net/forum?id=ryGtdFJPf">Learning Invariance with Compact Transforms</a>. 
+Anna T. Thomas, Albert Gu, Tri Dao, Atri Rudra, C. RÃ©. ICLR Workshop 18.
+
+  <li> <i><a href="https://cs.stanford.edu/~zjian/project/DEEM2018LOGSEARCH/logsearch.pdf">Exploring the Utility of Developer Exhaust</a>.</i> Jian Zhang, Max Lam, Stephanie Wang, Paroma Varma, Luigi Nardi, Kunle Olukotun and C. RÃ©. DEEM 2018
+
+  <li> <i> <a href="https://ajratner.github.io/assets/papers/deem-metal-prototype.pdf">Snorkel MeTaL: Weak Supervision for Multi-Task Learning</a></i>. Alex Ratner, Braden Hancock, Jared Dunnmon, Roger Goldman, C.RÃ©. DEEM 2018.
+  <li> <i> <a href="https://arxiv.org/abs/1803.03383">High-Accuracy Low-Precision Training</a></i> C. De Sa, M. Leszczynski, J Zhang, A. Marzoev, C. R. Aberger, K. Olukotun, C. RÃ©
+
+</ul>
+</div>
+
+<div id="papers2017">
+<img id="papers2017-down" height="12px" src="img/arrow_down.png">
+<img id="papers2017-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2017">2017</a></strong>
+</div>
+<hr>
+<div id="papers2017-list">
+<ul class="small-list">
+<li> <i><a href="https://www.sciencedirect.com/science/article/pii/S2405471217304842">Association of Omics Features with Histopathology Patterns in Lung Adenocarcinoma</a></i>. K. Yu, G. Berry, D. Rubin, et al. Cell Systems 2017.
+
+<li> <i> <a href="http://arxiv.org/abs/1709.01643">Learning to Compose Domain-Specific Transformations for Data
+  Augmentation</a></i> A. Ratner, H. Ehrenberg, Z. Hussain, J. Dunnmon, C. RÃ©, NeurIPS2017.
+
+<li><i><a href="https://arxiv.org/abs/1709.02477">Inferring Generative Model Structure with Static Analysis</a>
+</i> Paroma Varma, Bryan He, Payal Bajaj, C. RÃ©, NeurIPS2017.
+
+  <li><i><a href="https://arxiv.org/abs/1709.02605">Gaussian Quadrature for Kernel Features</a></i> Tri Dao, Chris De Sa, C. RÃ©, NeurIPS2017. <b>spotlight</b>
+
+<li> <i><a href="https://arxiv.org/abs/1702.00820">HoloClean: Holistic Data Repairs with Probabilistic Inference</a></i>
+  Theo Rekatsinas, Xu Chu, Ihab F. Ilyas, C. RÃ©. VLDB 17.
+
+  <li> <i>Weighted SGD for lp regression with Randomized Preconditioning</i>. Jiyan Yang, Yin-Lam Chow, C. RÃ©, and Michael Mahoney. JMLR 17.
+
+<li> <i><a href="https://arxiv.org/abs/1703.00854">Learning the Structure of Generative Models without Labeled Data</a></i> Stephen H. Bach, Bryan He, Alex Ratner, C. RÃ©. ICML 2017.
+
+<li> <il> <a href="https://stanford.edu/~cdesa/papers/isca2017_buckwild.pdf">Understanding and Optimizing Asynchronous Low-Precision Stochastic Gradient Descent</a>. C. De Sa, Matt Feldman, C. RÃ©, Kunle Olukotun. ISCA 2017.
+ 
+  <li> <i> <a href="http://arxiv.org/abs/1410.4156">GYM: A Multiround Join Algorithm In MapReduce and Its Analysis</a></i>
+Foto Afrati, Manas Joglekar, C. RÃ©, Semih Salihoglu, Jeffrey D. Ullman. ICDT 2017.
+  
+<li> <i> <a href="https://arxiv.org/abs/1512.06474">SLiMFast: Guaranteed Results for Data Fusion and Source Reliability</a></i>. Manas Joglekar, Theodoros Rekatsinas, H. Garcia-Molina, et al. SIGMOD 17.
+
+  <li> <i> <a href="http://dl.acm.org/citation.cfm?doid=3034786.3034797">A Relational Format for Feature Engineering</a> </i> Benny Kimmelfeld, C. RÃ©. PODS 2017. <b> Best of PODS.</b>
+
+<li> <i> <a href="http://www.aberger.site/mindthegap.pdf">Mind the Gap: Bridging Multi-Domain Query Workloads with EmptyHeaded</a>.</i> Chris Aberger, Andy Lamb, Kunle Olukotun, C. RÃ©. VLDB17 (demo)
+
+<li> <i> <a href="http://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf">Snorkel: Fast Training Set Generation
+  for Information Extraction</a></i>. Alex Ratner, Stephen Bach, Henry Ehrenberg, C. RÃ©. SIGMOD 17 (demo).
+
+  <li> <i> <a href="http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf">Snorkel: A System for Lightweight Extraction</a></i> Alex Ratner, Stephen Bach et al. CIDR 2017 (one pager)
+  <li> <a href="http://dl.acm.org/citation.cfm?id=3077263">Flipper: A Systematic Approach to Debugging Training Sets.</a> Paroma Varma, Dan Iter, C. De Sa and C. RÃ©. HILDA 2017
+</div>
+
+<div id="papers2016">
+<img id="papers2016-down" height="12px" src="img/arrow_down.png">
+<img id="papers2016-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2016">2016</a></strong>
+</div>
+<hr>
+<div id="papers2016-list">
+<ul class="small-list">
+<li> <a href="http://www.nature.com/articles/ncomms12474">Predicting non-small cell lung cancer prognosis by fully automated microscopic pathology image features</a> Kun-Hsing Yu et al. Nature Comms. 2016. <b>Parasite Award</b>
+
+  <li> <a href="http://arxiv.org/abs/1605.07723"><i>Data Programming: Creating Large Training Sets, Quickly</i></a> Alex Ratner, Chris De Sa, Sen Wu, Daniel Selsam, and C. RÃ©. NeurIPS 2016. <a href="https://www.youtube.com/watch?v=iSQHelJ1xxU">video.</a>
+  <li> <i><a href="http://arxiv.org/abs/1606.03432">Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much</a></i>. Bryan He, C. De Sa, I. Mitliagkas, and C. RÃ©. NeurIPS 2016. <a href="https://www.youtube.com/watch?v=Rm1vsooAFAU">video</a>.
+  <li> <a href="http://arxiv.org/abs/1607.00559">Sub-sampled Newton Methods with Non-uniform Sampling</a> Peng Xu, Jiyan Yang, Farbod Roosta-Korasani, C. RÃ©, and Michael Mahoney. NeurIPS 2016.
+  <li> <a href="https://arxiv.org/abs/1605.09721">Cyclades: Conflict-free Asynchronous Machine Learning</a>. Xinghao Pan, Maximilian Lam, Stephen Tu, Dimitris Papailiopoulos, et al. NeurIPS 2016.
+
+<li> <i> <a href="http://arxiv.org/abs/1602.07415">Ensuring Rapid Mixing and Low Bias for Asynchronous Gibbs Sampling</a></i> Chris De Sa, Kunle Olukotun, 
+C. RÃ©. ICML 2016. <b>Best Paper Award.</b>
+
+  <li> <i><a href="http://arxiv.org/abs/1503.02368">EmptyHeaded: A Relational Engine for Graph Processing</a></i> Christopher R. Aberger, Susan Tu, Kunle Olukotun, and C. RÃ©. SIGMOD 2016.  <b>Best Of.</b>
+  <li> <i><a href="http://arxiv.org/abs/1508.07532">Aggregations over Generalized Hypertree Decompositions</a></i>. Manas Joglekar, Rohan Puttagunta, and C. RÃ©. PODS 2016. 
+  <li> <a href="papers/modiv923-zhangA.pdf">Extracting Databases from Dark Data with DeepDive</a>. Ce Zhang, Michael Cafarella, Feng Niu,  C. RÃ©, Jaeho Shin. SIGMOD 2016 (Industrial Track).
+
+  <li> High Performance Parallel Stochastic Gradient Descent in Shared Memory. S. Sallinen, N. Satish, M. Smelyanskiy, S. Sury, C. RÃ©. IPDPS16.
+
+  <li> <i><a href="http://arxiv.org/pdf/1508.01239.pdf">Itâs all a matter of degree: Using degree information to optimize multiway joins</a></i>. Manas Joglekar and C. RÃ©. ICDT2016. <b>Best Of</b>.
+
+  <li> <i><a href="http://arxiv.org/abs/1502.03571">Weighted SGD for lp Regression with Randomized Preconditioning</a></i> Jiyan Yang, Yin-Lam Chow, C. RÃ©, and Michael Mahoney. SODA16.
+ <li> <i> <a href="http://arxiv.org/abs/1605.09774">Asynchrony begets Momentum, with an Application to Deep Learning</a></i>. Ioannis Mitliagkas, Ce Zhang, Stefan Hadjis, and C. RÃ©. Allerton 16.
+
+<li> Incremental Knowledge Base Construction Using DeepDive</a></i> 
+  Jaeho Shin, Sen Wu, Feiran Wang, Ce Zhang, C. De Sa, C. RÃ©. VLDBJ.
+
+  <li><a href="http://dl.acm.org/citation.cfm?doid=2877204">Materialization Optimizations for Feature Selection</a>. Ce Zhang, Arun Kumar, and C. RÃ©. TODS 2016.
+
+<li> <i> <a href="http://arxiv.org/abs/1404.0703">A Resolution-based Framework for Joins: Worst-case and Beyond.</a></i> Mahmoud Abo Khamis, Hung Q. Ngo, C. RÃ©, and Atri Rudra. TODS 2016.
+
+
+  <li>  <a href="papers/deepdive_highlight.pdf">DeepDive: Declarative Knowledge Base Construction</a>. Chris De Sa, Alex Ratner, C. RÃ©, J. Shin, F.Wang, Sen Wu, Ce Zhang. SIGMOD Record 2016.
+
+											    <li> <i> <a href="https://arxiv.org/abs/1610.08123">Socratic Learning: Empowering the Generative Model</a></i> Paroma Varma, Rose Yu, Dan Iter, C. De Sa, C. RÃ©. FiLM-NeurIPS 2016.
+
+  <li> <a href="papers/DDL_HILDA_2016.pdf">Data Programming with DDLite: Putting Humans in a Different Part of the Loop</a>. Henry Ehrenberg, J. Shin, A. Ratner, J. Fries, C. RÃ©. HILDA16
+
+  <li> Parallel SGD: When does Averaging Help? Jian Zhang, Christopher De Sa, Ioannis Mitiliagkas, and C. RÃ©. OptML16
+
+  <li> <a href="http://arxiv.org/abs/1602.03557">Old Techniques for New Join Algorithms: A Case Study in RDF Processing</a>. Chris Aberger, Susan Tu, Kunle Olukotun, and C. RÃ©. DESWEB. ICDE16.
+									  <li> Wikipedia Knowledge Graph with DeepDive. Thomas Palomares, Youssef Ahres, Juhana Kangaspunta and C. RÃ©. In Wiki Workshop at ICSMW 2016.
+
+  <li> Dark Data: Are We Solving the Right Problems? M. Cafarella, I. Ilyas, M. Kornacker, Tim Kraska, C. RÃ©. ICDE 2016 (Panel).
+
+  <li> <i> <a href="http://arxiv.org/abs/1606.04487">Omnivore: An Optimizer for Multi-device Deep Learning on CPUs and GPUs.</a> </i> Stefan Hadjis, Ce Zhang, Ioannis Mitliagkas, and C. RÃ©.
+
+</ul></div>
+
+<div id="papers2015">
+<img id="papers2015-down" height="12px" src="img/arrow_down.png">
+<img id="papers2015-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2015">2015</a></strong>
+</div>
+<hr>
+<div id="papers2015-list">
+<ul class="small-list">
+
+
+
+  <li> <i><a href="http://arxiv.org/abs/1510.00756">Rapidly Mixing Gibbs Sampling for a Class of Factor Graphs Using Hierarchy Width</a></i> Chris De Sa, Ce Zhang, Kunle Olukotun, C. RÃ©. NeurIPS15. <b>Spotlight</b>
+
+  <li> <i><a href="http://arxiv.org/abs/1506.06438">Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms</a></i> Chris De Sa, Ce Zhang, Kunle Olukotun, and C. RÃ©. NeurIPS15
+
+  <li> <i><a href="http://arxiv.org/abs/1508.00882">Asynchronous stochastic convex optimization</a></i>. John C. Duchi, Sorathan Chaturapruek, and C. RÃ©. NeurIPS15.
+
+<li> <i><a href="http://arxiv.org/abs/1502.00731">Incremental Knowledge Base Construction Using DeepDive</a></i> 
+  Jaeho Shin, Sen Wu, Feiran Wang, Ce Zhang, C. De Sa, C. RÃ©. VLDB15. <b>Best of Issue</b>
+
+  <li> <i><a href="http://arxiv.org/abs/1411.1134">Global Convergence of Stochastic Gradient Descent for Some Nonconvex Matrix Problems</a></i> Christopher De Sa, Kunle Olukotun, and C. RÃ©. ICML15.
+
+<li> <i> <a href="http://arxiv.org/abs/1404.0703">A Resolution-based Framework for Joins: Worst-case and Beyond.</a></i> Mahmoud Abo Khamis, Hung Q. Ngo, C. RÃ©, and Atri Rudra. PODS15. <b>Best of Issue</b>.
+
+  <li> <i><a href="http://arxiv.org/abs/1411.3374">Exploiting Correlations for Expensive Predicate Evaluation</a></i> Manas Joglekar, Hector Garcia-Molina, Aditya Parameswaran, and C. RÃ©. SIGMOD15</li>
+
+											    <li> <i> <a href="papers/p2148-shin-vldb-demo.pdf">A Demonstration of Data Labeling in Knowledge Base Construction</a></i>. Jaeho Shin, Mike Cafarella, and C. RÃ©. VLDB15 (demo).
+										 <li> <i><a href="papers/ml_db_hype.pdf">Machine Learning and Databases: The Sound of Things to Come or a Cacophony of Hype?</i></a>. SIGMOD15 Panel.
+
+
+  <li> <i><a href="http://bioinformatics.oxfordjournals.org/content/early/2015/09/07/bioinformatics.btv476">Large-scale extraction of gene interactions from full text literature using DeepDive</a></i> Emily Mallory, Ce Zhang, C. RÃ©., Russ Altman. Bioinformatics
+
+
+<li><i><a href="http://arxiv.org/abs/1504.04343"> Caffe con Troll: Shallow Ideas to Speed up Deep Learning</a>.</i> Firas Abuzaid, Stefan Hadjis, Ce Zhang, and C. RÃ©. DANAC15.
+
+  <li> <i><a href="http://arxiv.org/abs/1503.04169">Join Processing for Graph Patterns: An Old Dog with New Tricks</a></i> Dung Nguyen, LogicBlox, et al. GRADES15.
+
+
+											   <li> <i> <a href="http://dl.acm.org/citation.cfm?doid=2723372.2764945">DunceCap: Compiling Worst-case Optimal Query Plans</a></i>. Adam Perelman and C. RÃ©. <b> Winner of SIGMOD Undergrad Research Competition. </b>
+
+											   <li> <i> <a href="http://dl.acm.org/citation.cfm?doid=2723372.2764946">DunceCap: Query Plans Using Generalized Hypertree Decompositions</a></i>. Susan Tu and C. RÃ©.  <b> Winner of SIGMOD Undergrad Research Competition. </b>
+
+	  		
+<li><i> <a href="http://ceur-ws.org/Vol-1378/AMW_2015_paper_1.pdf">A Database Framework for Classifier Engineering</a>.</i> Benny Kimmelfeld and C. RÃ©. AMW 2015.						
+<li><i><a href="http://jamia.oxfordjournals.org/content/early/2015/08/13/jamia.ocv071.abstract">The Mobilize Center: an NIH big data to knowledge center to advance human movement research and improve mobility</a></i>
+  Ku et al. AMIA.</li>
+
+</ul>
+</div>
+<div id="papers2014">
+<img id="papers2014-down" height="12px" src="img/arrow_down.png">
+<img id="papers2014-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2014">2014</a></strong>
+</div>
+<hr>
+<div id="papers2014-list">
+<ul class="small-list"> 
+
+  <li> <i><a href="papers/mod539-zhang.pdf">Materialization Optimizations for Feature Selection</a></i>. Ce Zhang, Arun Kumar, and C. RÃ©. SIGMOD 2014. <b>Best Paper Award.</b>
+ 											      
+  <li> <i> <a href="http://arxiv.org/abs/1403.7550">DimmWitted: A Study of Main-Memory Statistical Analytics.</a> </i> Ce Zhang and C. RÃ©. VLDB 2014.
+      <li> <i><a href="http://arxiv.org/abs/1311.1873">An Asynchronous Parallel Stochastic Coordinate Descent Algorithm</a>.</i> J. Liu, S. Wright, C. RÃ©, V. Bittorf, S. Sridhar. ICML 2014. (<a href="papers/AsySCD-JMLR_final-v2.pdf">JMLR version</a>)
+
+  <li> <i> <a href="papers/pods36-ngo.pdf">Beyond Worst-case Analysis for Joins using Minesweeper</a></i>. Hung Q. Ngo, Dung Nguyen, C. RÃ©, and Atri Rudra. PODS 2014. [<a href="http://arxiv.org/abs/1302.0914">Full</a>]
+  <li> <i> <a href="http://papers.nips.cc/paper/5296-parallel-feature-selection-inspired-by-group-testing.pdf">Parallel Feature Selection Inspired by Group Testing.</a> </i> Y. Zhou et al. NeurIPS2014.
+
+  <li> 
+  <i><a href="papers/zeta_graphs_icdt.pdf">The Theory of Zeta Graphs with an Application to Random Networks</a>.</i> C. RÃ©. ICDT 2014.  <b>Invited to "Best of" Special Issue.</b>
+
+  <li> <i> <a href="http://dl.acm.org/citation.cfm?doid=2630065">Transducing Markov Sequences</a></i> Benny Kimelfeld and C. RÃ©. JACM 2014. 
+
+ <li> <i><a href="http://arxiv.org/abs/1406.2963"> A Machine-compiled Macroevolutionary History of Phanerozoic Life</a>.</i> Shanan E. Peters, Ce Zhang, Miron Livny, and C. RÃ©. PloS ONE.
+   <li> <i> <a href="http://www-personal.umich.edu/~shapiro/papers/LaborFlowsSocialMedia.pdf">Using Social Media to Measure Labor Market Flow</a>
+</i> D. Antenucci, M. Cafarella, M. Levenstein,  C. RÃ©, and M. Shapiro. NBER. <b>Selected for <a href="http://www.nber.org/digest/aug14/aug14.pdf">NBER Digest</a></b>
+
+
+											      <li> <i><a href="http://arxiv.org/abs/1411.1134">Global Convergence of Stochastic Gradient Descent for Some Nonconvex Matrix Problems</a></i> Christopher De Sa, Kunle Olukotun, and C. RÃ©. <br>Preliminary version in Distributed Matrix Computation with NeurIPS14.
+
+ <li > <i><a href="http://arxiv.org/abs/1407.6439">Feature Engineering for Knowledge Base Construction</a></i> DeepDive Group. Data Engineering Bulletin.</li>
+
+									      <li> <i> <a href="papers/analytics_impala.pdf">Tradeoffs in Main-Memory Statistical Analytics: Impala to DimmWitted</a> (Invited)</i> V. Bittorf, M. Kornacker, C. RÃ©, C. Zhang. IMDM with VLDB14.
+
+											      <li> <i> <a href="http://beckman.cs.wisc.edu/">The Beckman Report on Database Research </a></i> Mike Carey, AnHai Doan, et al. 2014. 
+
+
+  <li>
+  <i><a href="papers/convex_join.pdf">Links between Join Processing and Convex Geometry</a>, </i> C. RÃ©. ICDT 2014 (Invited Abstract for Keynote) [<a href="talks/chrisre_joins_keynote_edbticdt.pptx">slides</a>].
+
+  <li><i><a href="http://arxiv.org/abs/1310.3314">Skew Strikes Back: New Developments in the Theory of Join Algorithms</a>. </i> Hung Ngo, C. RÃ©, and Atri Rudra. SIGMOD Rec. 2013.
+
+</ul>
+
+</ul>
+</div>
+
+<div id="papers2013">
+<img id="papers2013-down" height="12px" src="img/arrow_down.png">
+<img id="papers2013-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2013">2013</a></strong>
+</div>
+<hr>
+<div id="papers2013-list">
+<ul  class="small-list"> 
+
+
+ <li>
+<i><a href="http://www.cs.stanford.edu/people/chrismre/papers/elementary_sigmod.pdf">Towards High-Throughput Gibbs Sampling at Scale: A Study across Storage Managers</a>.</i> Ce Zhang and C. R&eacute;. SIGMOD 2013. 
+
+  <li>
+  <i><a href="http://arxiv.org/abs/1311.2661">An Approximate, Efficient LP Solver for LP Rounding</a></i>. Srikrishna Sridhar, Victor Bittorf, Ji Liu, Ce Zhang, C. RÃ©, and Stephen J. Wright. NeurIPS 2013
+
+<li> 
+<i><a href="http://www.cs.stanford.edu/people/chrismre/papers/mythical_man.pdf">Brainwash: A Data System for Feature Engineering</a></i>. M. Anderson et al. CIDR Conference 2013 (Vision Track)
+
+
+<li> <i><a href="http://cs.stanford.edu/people/chrismre/papers/jointable-acl.pdf">Understanding Tables in Context Using Standard NLP Toolkits</a></i> Vidhya Govindaraju, Ce Zhang, and C. RÃ©.
+	ACL 2013 (Short Paper)
+
+
+<li> <i><a href="http://queue.acm.org/detail.cfm?id=2431055">Hazy: Making it Easier to Build and Maintain Big-data Analytics</a></i>. Arun Kumar, Feng Niu, and C. R&eacute;  
+ACM Queue, 2013. <b>Invited to CACM March 2013</b><br>
+
+<li>	<i><a href="http://www.cs.stanford.edu/people/chrismre/papers/webdb_ringtail.pdf">Ringtail: Nowcasting Made Easy</a></i> D. Antenucci, M.J. Cafarella, M.C. Levenstein, C. RÃ©, and M. Shapiro. WebDB 2013 with SIGMOD 2013
+
+
+
+ 	<li><a href="http://www.optimization-online.org/DB_FILE/2011/04/3012.pdf"><i>Parallel Stochastic Gradient Algorithms for Large-Scale Matrix Completion</i></a> B. Recht and C. RÃ©. Mathematical Programming Computation, 2013. 
+
+<li><i><a href="http://cs.stanford.edu/people/chrismre/papers/Ringtail-VLDB-demo.pdf">Ringtail: Nowcasting Made Easy</a>.</i> Dolan Antenucci, Erdong Li, Shaobo Liu, Michael J. Cafarella, and C. RÃ©. VLDB Demo 2013.
+
+<li> <i><a href="http://cs.stanford.edu/people/chrismre/papers/ColumbusDemo-VLDB.pdf">Feature Selection in Enterprise Analytics: A Demonstration using an R-based Data Analytics System</a></i> P. Konda, A. Kumar,  C. RÃ©, and V. Sashikanth. VLDB Demo 2013
+
+<li> 
+<i><a href="http://www.cs.stanford.edu/people/chrismre/papers/gdd_demo.pdf">
+GeoDeepDive: Statistical Inference using Familiar Data-Processing Languages.</a></i> Ce Zhang, V. Govindaraju, J. Borchardt, T. Foltz, C. R&eacute;, and S. Peters. SIGMOD 13 (demo). 
+
+
+
+<li><i><a href="http://trec.nist.gov/pubs/trec21/papers/KBA.OVERVIEW.pdf">Building an Entity-Centric Stream Filtering Test Collection for TREC 2102</a></i>. J.R. Frank, M.Kleiman-Weiner, D. A. Roberts, F.Niu, Ce Zhang, C. R&eacute;, and I. Soboroff. TREC 2013
+
+
+<li> <i><a href="https://docushare.icecube.wisc.edu/dsweb/Get/Document-67643/IcecubePaperNIMA.pdf">Improvement in Fast Particle Track Reconstruction with Robust Statistics</a></i> M. Wellons, IceCube Collaboration, B. Recht, and C. RÃ©. Nuclear Inst. and Methods in Physics Research, A.
+
+
+ 	<li><i><a href="https://docushare.icecube.wisc.edu/dsweb/Get/Document-65570/icrc2013-0807.pdf">Robust Statistics in IceCube Initial Muon Reconstruction</a></i>. M. Wellons, IceCube Collaboration, B. Recht, and C. RÃ©. International Cosmic Ray Conference 2013.
+</div>
+
+<div id="papers2012">
+<img id="papers2012-down" height="12px" src="img/arrow_down.png">
+<img id="papers2012-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2012">2012</a></strong>
+</div>
+<hr>
+<div id="papers2012-list">
+
+<ul  class="small-list"><li><i><a href="http://pages.cs.wisc.edu/~brecht/papers/12.Bit.EtAl.HOTT.pdf">Factoring nonnegative matrices with linear programs</a>.</i> Victor Bittorf, Benjamin Recht, C. R&eacute;, and Joel A. Tropp.  
+NeurIPS 2012. Revised <a href="http://arxiv.org/abs/1206.1270v2">Version</a>.
+</ul>
+
+<ul  class="small-list"> <li>
+    <i><a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-38.html">The MADlib Analytics Library or MAD Skills, the SQL</a></i>. Joseph M. Hellerstein et al. PVLDB 2012
+</ul>
+
+<ul  class="small-list"> <li> <a href="http://www.cs.stanford.edu/people/chrismre/papers/HazyOCR_VLDB2012.pdf"><i> Probabilistic Management of OCR using an RDBMS</i></a> Arun Kumar and C. RÃ©. PVLDB 2012. [<a href="http://www.cs.stanford.edu/people/chrismre/papers/HazyOCR_TR.pdf">Full Version</a>]<br>
+
+<li><a href="http://www.cs.stanford.edu/people/chrismre/papers/crflex-icde12.pdf"><i>Optimizing Statistical Information Extraction Programs Over Evolving Text</i></a> Fei Chen, Xixuan Feng, C. RÃ©, and Min Wang. ICDE. [<a href="http://www.cs.stanford.edu/people/chrismre/papers/crflex-tr.pdf">Full Version</a>]<br>
+
+<li> 	<a href="http://www.cs.stanford.edu/people/chrismre/papers/TODS_max_ent_models_CRC.pdf"><i>Understanding cardinality estimation using entropy maximization</i></a> C. RÃ© and Dan Suciu. ACM Trans. Database Syst. Volume 37.
+
+<li> 	<a href="http://www.cs.stanford.edu/people/chrismre/papers/bismarck.pdf"><i>Towards a Unified Architecture for In-Database Analytics</i></a> Aaron Feng, Arun Kumar, Benjamin Recht, and C. RÃ©
+	SIGMOD 2012. [<a href="http://www.cs.stanford.edu/people/chrismre/papers/bismarck-full.pdf">Full Version</a>]<br>
+
+<li> 	
+<a href="http://www.cs.stanford.edu/people/chrismre/papers/paper49.Ngo.pdf"><i>Worst-case Optimal Join Algorithms</i></a>
+Hung Q. Ngo, Ely Porat, C. RÃ©, and Atri Rudra. PODS, 2012. 
+<b>Best Paper Award</b>
+
+<li><a href="http://www.cs.stanford.edu/people/chrismre/papers/acl2012.pdf"><i>Big Data versus the Crowd: Looking for Relationships in All the Right Places</i></a> Ce Zhang, Feng Niu, C. RÃ©, and Jude Shavlik. ACL, 2012.
+
+<li><i>Toward a noncommutative arithmetic-geometric mean inequality</i>
+					    B. Recht and C. RÃ©. COLT, 2012 [<a href="http://www.optimization-online.org/DB_HTML/2012/02/3367.html">Full Version</a>]<br>
+
+
+
+<li>
+<i><a href="http://www.cs.stanford.edu/people/chrismre/papers/elementary_journal.pdf">Elementary: Large-scale Knowledge-base Construction via Machine Learning and Statistical Inference</a></i> F. Niu, Ce Zhang, C. RÃ©, and J. Shavlik.
+IJSWIS, Special Issue on Knowledge Extraction from the Web, 2012.
+
+<li><i><a href="http://www.cs.stanford.edu/people/chrismre/papers/deepdive_vlds.pdf">DeepDive: Web-scale Knowledge-base Construction using Statistical Learning and Inference</a></i>
+F. Niu, C. Zhang, C. RÃ©, and J. Shavlik.
+VLDS, 2012.<br>
+
+<li><i> Scaling Inference for Markov Logic via Dual Decomposition</i> (Short). F. Niu, C. Zhang, C. R&eacute;, and J. Shavlik. ICDM, 2012. <br>
+
+</div>
+
+<div id="papers2011">
+<img id="papers2011-down" height="12px" src="img/arrow_down.png">
+<img id="papers2011-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2011">2011</a></strong>
+</div>
+<hr>
+<div id="papers2011-list">
+<ul class="small-list"> 	
+<li><a href="http://www.morganclaypool.com/doi/pdfplus/10.2200/S00362ED1V01Y201105DTM016"><i>Probabilistic Databases</i></a>. Dan Suciu, Dan Olteanu, C. RÃ©, and Christoph Koch. Morgan Claypool's Synthesis Lectures, 2011
+
+<li><a href="http://www.cs.stanford.edu/people/chrismre/papers/hazy-classification-vldb11.pdf"><i>Incrementally maintaining classification using an RDBMS</i></a> Mehmet Levent Koc and C. RÃ©. PVLDB Volume 4, 2011, p. 302-313
+
+ 	<li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/tuffy-vldb11.pdf"><i>Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS</i></a> F. Niu, C. RÃ©, A.Doan, and J.W. Shavlik. PVLDB 11, [<a href="http://www.cs.stanford.edu/people/chrismre/papers/tuffy-tr.pdf">Full Version</a>]
+ 	<li>
+	<a href="http://www.vldb.org/pvldb/vol4/p385-jahani.pdf"><i>Automatic Optimization for MapReduce Programs</i></a>Eaman Jahani, Michael J. Cafarella, and C. RÃ©. PVLDB 2011.
+ 	<li>
+	<a href="http://dx.doi.org/10.1016/j.jcss.2010.04.006"><i>Queries and materialized views on probabilistic databases</i>.</a> Nilesh N. Dalvi, C. Re, and Dan Suciu. JCSS 2011.
+ 	<li>
+	<a href="http://www.optimization-online.org/DB_FILE/2011/04/3012.pdf"><i>Parallel Stochastic Gradient Algorithms for Large-Scale Matrix Completion</i></a> B. Recht and  C. RÃ©. 2011.
+
+ <li>	<i><a href="http://i.stanford.edu/hazy/papers/hogwild-nips.pdf">Hogwild!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent</a></i> F. Niu, B. Recht, C. RÃ©, and S. J. Wright. NeurIPS, 2011. [<a href="http://www.optimization-online.org/DB_HTML/2011/06/3080.html">Full Version</a>]
+
+<li> 	<a href="http://arxiv.org/pdf/1108.0294v1"><i>Felix: Scaling Inference for Markov Logic with an Operator-based Approach</i></a>. Feng Niu, Ce Zhang, C. RÃ©, and Jude Shavlik. 
+</ul>
+</div>
+
+<div id="papers2010">
+<img id="papers2010-down" height="12px" src="img/arrow_down.png">
+<img id="papers2010-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2010">2010</a></strong>
+</div>
+<hr>
+<div id="papers2010-list">
+<ul class="small-list"> 	
+<li><a href="http://www.cs.stanford.edu/people/chrismre/papers/WebDB-Manimal.pdf"><i>Manimal: Relational Optimization for Data-Intensive Programs</i></a> Michael J. Cafarella and C. RÃ©. WebDB, 2010.
+ 
+<li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/pods016-kimelfeld.pdf"><i>Transducing Markov Sequences</i></a>
+Benny Kimelfeld and C. RÃ©. PODS, 2010. <b>Invited to Special Issue</b><br>
+
+ 	<li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/pods024_re.pdf"><i>Understanding Cardinality Estimation using Entropy Maximization</i></a>
+ C. RÃ© and Dan Suciu. PODS, 2010, 
+<b>Invited to Special Issue</b><br>
+
+ 	<li><a href="http://www.cs.stanford.edu/people/chrismre/papers/letchner_icde10.pdf"><i>Approximation Trade-Offs in a Markovian Stream Warehouse: An Empirical Study</i>  (Short)</a> J. Letchner, C. RÃ©, M. Balazinska, and M. Philipose. ICDE.
+</div>
+
+<div id="papers2009">
+<img id="papers2009-down" height="12px" src="img/arrow_down.png">
+<img id="papers2009-up" height="12px" src="img/arrow_up.png"> 
+<strong><a id="2009">2009 and older</a></strong>
+</div>
+<hr>
+
+<div id="papers2009-list">
+<ul> 	<li>C. RÃ©</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/re_thesis.pdf"><i>Managing Large-Scale Probabilistic Databases</i></a><br>
+	University of Washington, Seattle, 2009<br>
+<b>Winner of SIGMOD Jim Gray Thesis Award</b><br></ul>
+<ul> 	<li>Raghav Kaushik, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/em_stats_dbpl.pdf"><i>General Database Statistics Using Entropy Maximization</i></a><br>
+	DBPL, 2009, p. 84-99
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/DBPL09_Stats_talk.pptx">Talk</a>]<br></ul>
+<ul> 	<li>Katherine F. Moore, Vibhor Rastogi, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/prob_query_containment.pdf"><i>Query Containment of Tier-2 Queries over a Probabilistic Database</i></a><br>
+	Management of Uncertain Databases (MUD), 2009, 
+</ul>
+<ul> 	<li>Julie Letchner, C. RÃ©, Magdalena Balazinska, and Matthai Philipose</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/IndexMethods_ICDE09.pdf"><i>Access Methods for Markovian Streams</i></a><br>
+	ICDE, 2009, p. 246-257
+</ul>
+<ul> 	<li>Arvind Arasu, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/Arasu_ICDEResearchLong_Dedupalog.pdf"><i>Large-Scale Deduplication with Constraints Using Dedupalog</i></a><br>
+	ICDE, 2009, p. 952-963
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/Dedupalog_talk_icde09.pptx">Talk</a>]<br><b>Selected as one of the best papers in ICDE 2009</b><br></ul>
+<ul> 	<li>Nilesh N. Dalvi, C. RÃ©, and Dan Suciu</li>
+	<a href="http://doi.acm.org/10.1145/1538788.1538810"><i>Probabilistic databases: Diamonds in the dirt</i></a><br>
+	Commun. ACM Volume 52, 2009, p. 86-94
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/cacm-paper-full.pdf">Full Version</a>]<br></ul>
+<ul> 	<li>S. Manegold, I. Manolescu, L. Afanasiev, J. Feng, G. Gou, M. Hadjieleftheriou, S. Harizopoulos, P. Kalnis, K. Karanasos, D. Laurent, M. Lupu, N. Onose, C. RÃ©, V. Sans, P. Senellart, T. Wu, and D. Shasha</li>
+	<a href="http://www.sigmod.org/sigmod/record/issues/0909/p40.open.repeatability2009.pdf"><i>Repeatability & Workability Evaluation of SIGMOD 2009</i></a><br>
+	SIGMOD Record Volume 38, 2009, p. 40-43
+</ul>
+<ul> 	<li>Julie Letchner, C. RÃ©, Magdalena Balazinska, and Matthai Philipose</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/letchner_VLDB09_demo.pdf"><i>Lahar Demonstration: Warehousing Markovian Streams</i></a><br>
+	PVLDB Volume 2, 2009, p. 1610-1613
+</ul>
+<ul> 	<li>C. RÃ© and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/journal_having_queries.pdf"><i>The Trichotomy of HAVING Queries on a Probabilistic Database</i></a><br>
+	VLDB Journal 2009, 
+</ul>
+<ul> 	<li>C. RÃ©</li>
+	<i>Managing Probabilistic Data with Mystiq (Plenary Talk)</i><br>
+	 Daghstul Seminar 08421: Uncertainty Management in Information Systems, 2008, 
+</ul>
+<ul> 	<li>C. RÃ©, and Dan Suciu</li>
+	<i>Advances in Processing SQL Queries on Probabilistic Data</i><br>
+	Invited Abstract in INFORMS 2008, Simulation., 2008, 
+</ul>
+<ul> 	<li>Ting-You Wang, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.ctit.utwente.nl/library/proceedings/wp0914.pdf"><i>Implementing NOT EXISTS Predicates over a Probabilistic Database</i></a><br>
+	QDB/MUD, 2008, p. 73-86
+</ul>
+<ul> 	<li>Nodira Khoussainova, Evan Welbourne, Magdalena Balazinska, Gaetano Borriello, Garrett Cole, Julie Letchner, Yang Li, C. RÃ©, Dan Suciu, and Jordan Walke</li>
+	<i>A demonstration of Cascadia through a digital diary application</i><br>
+	SIGMOD Conference, 2008, p. 1319-1322
+</ul>
+<ul> 	<li>C. RÃ©, Julie Letchner, Magdalena Balazinska, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/fp350-re.pdf"><i>Event queries on correlated probabilistic streams</i></a><br>
+	SIGMOD Conference, 2008, p. 715-728
+</ul>
+<ul> 	<li>C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/SUM08_keynote.pdf"><i>Managing Probabilistic Data with MystiQ: The Can-Do, the Could-Do, and the Can't-Do</i></a><br>
+	SUM, 2008, p. 5-18
+</ul>
+<ul> 	<li>Julie Letchner, C. RÃ©, Magdalena Balazinska, and Matthai Philipose</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/Julie_Markovian_Challenges.pdf"><i>Challenges for Event Queries over Markovian Streams</i></a><br>
+	IEEE Internet Computing Volume 12, 2008, p. 30-36
+</ul>
+<ul> 	<li>C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/approx_lineage.pdf"><i>Approximate lineage for probabilistic databases</i></a><br>
+	PVLDB Volume 1, 2008, p. 797-808
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/approx_lineage_full.pdf">Full Version</a>][<a href="http://www.cs.stanford.edu/people/chrismre/papers/Apx_Lineage_Web.pptx">Talk</a>]<br> The version above corrects an error in the statement of lemma 3.7.<br></ul>
+<ul> 	<li>Magdalena Balazinska, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/VLDB08_tutorial.pdf"><i>Systems aspects of probabilistic data management (Part I)</i></a><br>
+	PVLDB Volume 1, 2008, p. 1520-1521
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/VLDB08_Tutorial_I_Web.pptx">Talk</a>]<br></ul>
+<ul> 	<li>Magdalena Balazinska, C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/VLDB08_tutorial.pdf"><i>Systems aspects of probabilistic data management (Part II)</i></a><br>
+	PVLDB Volume 1, 2008, p. 1520-1521
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/VLDB08_Tutorial_II_Web.pptx">Talk</a>]<br></ul>
+<br>
+
+<ul> 	<li>Michael J. Cafarella, C. RÃ©, Dan Suciu, and Oren Etzioni</li>
+	<a href="http://www.cidrdb.org/cidr2007/papers/cidr07p25.pdf"><i>Structured Querying of Web Text Data: A Technical Challenge</i></a><br>
+	CIDR, 2007, p. 225-234
+</ul>
+<ul> 	<li>C. Re, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/cikm07.pdf"><i>Management of data with uncertainties</i></a><br>
+	CIKM, 2007, p. 3-8
+</ul>
+<ul> 	<li>C. RÃ©, Dan Suciu, and Val Tannen</li>
+	<i>Orderings on Annotated Collections</i><br>
+	Liber Amicorum in honor of Jan Paredaens 60th Birthday, 2007, 
+</ul>
+<ul> 	<li>C. RÃ©, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/having_queries.pdf"><i>Efficient Evaluation of HAVING Queries</i></a><br>
+	DBPL, 2007, p. 186-200
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/full_version_having_queries.pdf">Full Version</a>][<a href="http://www.cs.stanford.edu/people/chrismre/papers/having.pptx">Talk</a>]<br></ul>
+<ul> 	<li>C. RÃ©, Nilesh N. Dalvi, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/Multisimulation_ICDE07.pdf"><i>Efficient Top-k Query Evaluation on Probabilistic Data</i></a><br>
+	ICDE, 2007, p. 886-895
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/Multisimulation_TR.pdf">Full Version</a>][<a href="http://www.cs.stanford.edu/people/chrismre/talks/Multisim_Talk_Audio.pptx">Talk</a>]<br></ul>
+<ul> 	<li>C. Re and Dan Suciu</li>
+	<a href="http://www.vldb.org/conf/2007/papers/research/p51-re.pdf"><i>Materialized Views in Probabilistic Databases for Information Exchange and Query Optimization</i></a><br>
+	VLDB, 2007, p. 51-62
+<br>[<a href="http://www.cs.stanford.edu/people/chrismre/papers/prob_materialized_views_TR.pdf">Full Version</a>][<a href="http://www.cs.stanford.edu/people/chrismre/papers/materialized.pptx">Talk</a>]<br></ul>
+<ul> 	<li>C. RÃ©</li>
+	<i>Applications of Probabilistic Constraints (General Exam Paper)</i><br>
+	University of Washington TR#2007-03-03 2007, 
+</ul>
+<ul> 	<li>Eytan Adar and C. RÃ©</li>
+	<a href="http://www.cond.org/adar_re1.pdf"><i>Managing Uncertainty in Social Networks</i></a><br>
+	IEEE Data Eng. Bull. Volume 30, 2007, p. 15-22
+</ul>
+<br>
+
+<ul> 	<li>Giorgio Ghelli, C. RÃ©, and JÃ©r^ome Sim'eon</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/XQueryBang.pdf"><i>XQuery!: An XML Query Language with Side Effects</i></a><br>
+	EDBT Workshops, 2006, p. 178-191
+</ul>
+<ul> 	<li>C. Re, JÃ©r^ome Sim'eon, and Mary F. Fern'andez</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/ICDE06_compiler.pdf"><i>A Complete and Efficient Algebraic Compiler for XQuery</i></a><br>
+	ICDE, 2006, p. 14
+</ul>
+<ul> 	<li>C. RÃ©, Nilesh N. Dalvi, and Dan Suciu</li>
+	<a href="http://sites.computer.org/debull/A06mar/re.ps"><i>Query Evaluation on Probabilistic Databases</i></a><br>
+	IEEE Data Eng. Bull. Volume 29, 2006, p. 25-31
+</ul>
+
+<ul> 	<li>Chavdar Botev, Hubert Chao, Theodore Chao, Yim Cheng, Raymond Doyle, Sergey Grankin, Jon Guarino, Saikat Guha, Pei-Chen Lee, Dan Perry, C. Re, Ilya Rifkin, Tingyan Yuan, Dora Abdullah, Kathy Carpenter, David Gries, Dexter Kozen, Andrew C. Myers, David I. Schwartz, and Jayavel Shanmugasundaram</li>
+	<a href="http://doi.acm.org/10.1145/1047344.1047439"><i>Supporting workflow in a course management system</i></a><br>
+	SIGCSE, 2005, p. 262-266
+</ul>
+<ul> 	<li>Jihad Boulos, Nilesh N. Dalvi, Bhushan Mandhani, Shobhit Mathur, C. RÃ©, and Dan Suciu</li>
+	<a href="http://doi.acm.org/10.1145/1066157.1066277"><i>MYSTIQ: a system for finding more answers by using probabilities</i></a><br>
+	SIGMOD Conference, 2005, p. 891-893
+</ul>
+<ul> 	<li>Nathan Bales, James Brinkley, E. Sally Lee, Shobhit Mathur, C. Re, and Dan Suciu</li>
+	<a href="http://dx.doi.org/10.1007/11547273_15"><i>A Framework for XML-Based Integration of Data, Visualization and Analysis in a Biomedical Domain</i></a><br>
+	XSym, 2005, p. 207-221
+</ul>
+
+<ul> 	<li>C. RÃ©, Jim Brinkley, Kevin Hinshaw, and Dan Suciu</li>
+	<a href="http://www.cs.stanford.edu/people/chrismre/papers/paper-distributed-xquery-2004.pdf"><i>Distributed XQuery</i></a><br>
+	Workshop on Information Integration on the Web (IIWeb), 2004, p. 116-121
+</ul>
+
+<ul> 	<li>Werner Vogels and C. RÃ©</li>
+	<a href="http://www2003.org/cdrom/papers/alternate/P712/p712-vogels.html"><i>WS-Membership - Failure Management in a Web-Services World</i></a><br>
+	WWW (Alternate Paper Tracks), 2003, 
+</ul>
+
+<ul> 	<li>Werner Vogels, C. RÃ©, Robbert Renesse, and Kenneth P. Birman</li>
+	<a href="http://csdl.computer.org/comp/proceedings/icdcsw/2002/1588/00/15880655abs.htm"><i>A Collaborative Infrastructure for Scalable and Robust News Delivery</i></a><br>
+	ICDCS Workshops, 2002, p. 655-659
+</ul></div>
+
+
+<div id='students' class='section'>
+<hr>
+<h2>Current PhD Students</h2>
+<ul><ul>
+ <li> <a href="https://github.com/yasab27">Yasa Baig</a> <i>Coadvisor: Stephen Quake</i>
+   <li> <a href="https://www.linkedin.com/in/francois-chaubard-0a169448/">Francois Chaubard</a> <i>Coadvisor: Mykel Kochenderfer</i>
+ <li> <a href="https://mayeechen.github.io">Mayee Chen</a>
+<li> Catherine Deng
+ <li> <a href="http://www.neelguha.com">Neel Guha</a>
+   <li> <a href="https://www.linkedin.com/in/junmiaohu/">Junmiao Hu</a> <i>Coadvisor: Gianlucca Laccarino</i>
+   <li> <a href="https://https://github.com/Kumbong/">Hermann Kumbong</a> <i>Coadvisor: Azalia Mirhoseini</i>
+ <li> <a href="https://jerrywliu.github.io/">Jerry Liu</a>
+   <li> Avanika Narayan <i> Coadvisor: John Hennessy</i></li>
+   <li> <a href="https://jonsaadfalcon.com">Jon Saad-Falcon</a> <i> Coadvisor: Azalia Mirhoseini </i> 
+     <li> <a href="https://michaelzhang.xyz">Michael Zhang</a> </li>
+
+</ul></ul>
+<br>
+<!-- <hr>
+<h2>Current Postdocs</h2>
+<ul><ul>
+</ul></ul>
+<br>!-->
+<hr>
+
+   <h2>PhD and Postdoc Alumni (Degree year, Employment)</h2>
+<ul><ul>
+   <li> Owen Dugan (On Leave, Founding Engineer New Co)
+<li> <a href="http://www.sabrieyuboglu.com">Sabri Eyuboglu</a> (PhD 25, Co-Founder Stealth Co) <i> Coadvisor: James Zou</i></li>
+
+     <li> <a href="http://erictnguyen.com/">Eric Nguyen</a> (PhD 25, Co-Founder Radical Numerics)<i> Coadvisor: Stephen Baccus</i> </li>
+     <li> <a href="https://dan-biderman.netlify.app/">Dan Biderman</a> (Postdoc 25, Co-Founder Stealth company)
+     <li> <a href="https://benjaminfspector.com">Ben Spector</a> (On Leave, Founder Flapping Airplanes)
+       <li> <a href="https://arorasimran.com">Simran Arora</a> (PhD 25, Asst. Professor Caltech, Together)
+       <li> <a href="https://michaelwornow.net">Mike Wornow</a> (PhD 25, New Co) <i> Coadvisor: Nigam Shah</i></li>
+
+   <li> <a href="https://cfifty.github.io/">Chris Fifty</a> (PhD 24, Apple)  <i> Coadvisor: Sebastian Thrun</i>
+   <li> <a href="https://gmachiraju.github.io">Gautam Machiraju</a> (PhD 24, SmarterDx) <i>Coadvisor: Parag Mallick</i>
+   <li> <a href="http://www.danfu.org/">Dan Fu</a> (PhD 24, Asst. Professor UCSD) <i> Coadvisor: Kayvon Fatahalian</a> </i> </li> 
+
+   <li> Silas Alberti  <i> Coadvisor: Stefano Ermon </i> (Cognition)
+  <li> Kush Bhatia (Postdoc 23, Google DeepMind)
+  <li> <a href="https://athms.me">Armin W. Thomas</a> (Postdoc 24, Radical Numerics)
+
+  <li> Brandon Yang (On Leave 2023, Cofounder <a href="https://cartesia.ai">Cartesia</a>)
+  <li> <a href="http://krandiash.github.io/">Karan Goel</a> (PhD 2023, Cofounder <a href="https://cartesia.ai">Cartesia</a>)</li>
+   <li> <a href="http://ad12.github.io">Arjun Desai</a> (PhD 2023, Cofounder <a href="https://cartesia.ai">Cartesia</a>) <i> Coadvisor: Akshay Chaudhari</i>
+   <li> <a href="https://stanford.edu/~trid/">Tri Dao</a> (PhD 2023, Asst. Professor Princeton) <i> Coadvisor: Stefano Ermon </i>
+   <li> <a href="https://khaledsaab.github.io/">Khaled Saab</a> (PhD 2023, Google) <i>Coadvisor: Daniel Rubin </i>
+   <li> <a href="https://www.sarahhooper.com">Sarah Hooper</a> (PhD 2023, NIH) <i> Coadvisor: Sam Gambhir </i></a></li>
+
+   <li> <a href="http://www.mleszczy.com/">Megan Leszczynski</a> (PhD 2023, Samaya)</li>
+   <li> <a href="https://www.linkedin.com/in/xnancy">Nancy Xu</a> (On Leave 2022, Founder <a href="https://www.moonhub.xyz">Moonhub</a>)</li>
+   <li> <a href="https://cs.stanford.edu/people/lorr1/">Laurel Orr</a> (Postdoc 2022, <a href="https://www.numbersstation.ai">Numbers Station</a>)
+   <li> <a href="http://web.stanford.edu/~albertgu/">Albert Gu</a> (PhD 2022, Asst. Professor CMU, Cofounder <a href="https://cartesia.ai">Cartesia</a>)</li>
+   <li> <a href="https://www.cs.rice.edu/~bc20/">Beidi Chen</a> (Postdoc 2022, Asst. Professor CMU)</li>
+   <li> <a href="https://web.stanford.edu/~nims/">Nimit Sohoni</a> (PhD 2022, Citadel)</li>
+   <li> <a href="http://web.stanford.edu/~chami/">Ines Chami</a> (PhD 2021, Cofounder <a href="https://www.numbersstation.ai">Numbers Station</a>)
+
+   <li> Charles Kuang (Postdoc 2020, Google)
+   <li> <a href="http://www.yixuanli.net">Sharon Li</a> (Postdoc 2020, Asst. Professor University of Wisconsin)
+   <li> <a href="http://web.stanford.edu/~avnermay/">Avner May</a> (Postdoc 2020, Google)
+   <li> <a href="http://stanford.edu/~fredsala/">Fred Sala</a> (Postdoc 2020, Asst. Professor University of Wisconsin)
+   <li> <a href="https://stanford.edu/~senwu/">Sen Wu</a> (PhD 2020, Cofounder <a href="https://www.numbersstation.ai">Numbers Station</a>) </li>
+ 
+
+   <li> <a href="https://jdunnmon.github.io">Jared Dunnmon</a> (Postdoc 2019, DIUX)
+   <li> <a href="http://cs.stanford.edu/people/zjian/">Jian Zhang</a> (PhD 2019, SambaNova Systems)</li>
+   <li> <a href="http://www.alexratner.com/">Alex Ratner</a> (PhD 2019, Asst. Professor at University of Washington, Cofounder and CEO Snorkel)</li>
+   <li> <a href="http://paroma.github.io/">Paroma Varma</a> (PhD 2019, Snorkel AI)</li>
+   <li> <a href="http://bradenhancock.com/">Braden Hancock</a> (PhD 2019, Snorkel AI)</li>
+   <li> <a href="http://web.stanford.edu/~caberger/">Chris Aberger</a> (PhD 2018, SambaNova Systems, Cofounder <a href="https://www.numbersstation.ai">Numbers Station</a>) <i> Coadvisor: Kunle Olukotun</i> 
+   <li> <a href="http://stephenbach.net">Stephen Bach</a>  (Postdoc 2018, Asst. Professor at Brown)
+   <li> Emily Mallory (PhD Biomedical Informatics, 2018) <i>Principle advisor: Russ Altman</i>
+   <li> <a href="http://www.cs.cmu.edu/~mfiterau/">Madalina Fiterau</a> (Postdoc 2018, Asst. Professor at UMass Amherst) <i>Coadvisor: Scott Delp</i>
+   <li> <a href="http://nmbl.stanford.edu/people/jason-fries/">Jason Fries</a> (Postdoc 2018, Asst. Professor at Stanford) <i>Coadvisor: Scott Delp</i>
+
+   <li> <a href="http://users.ece.cmu.edu/~smithv/">Virginia Smith</a> (Postdoc 2018, Asst. Professor at CMU)
+   <li> <a href="http://stanford.edu/~pengxu/">Peng Xu</a> (PhD 2018, Amazon A9) <i>Coadvisor: Michael Mahoney</i></li>
+<li> <a href="http://stanford.edu/~cdesa/">Chris De Sa</a> (PhD 2017, Asst. Professor at Cornell) <i>Coadvisor: Kunle Olukotun</i></li>
+   <li> <a href="http://mitliagkas.github.io/">Ioannis Mitliagkas</a> (Postdoc 2017, Asst. Professor at Montr&#233;al)  <i> Coadvisor: Lester Mackey</i></li>
+<li> <a href="http://stanford.edu/~thodrek/">Theodoros Rekatsinas</a> (Postdoc 2017, Asst. Professor at Wisconsin)</li>
+<li> <a href="https://cs.stanford.edu/~netj/">Jaeho Shin</a> (PhD 2016, Lattice) </li>
+<li> Jiyan Yang (PhD 2016, Facebook)  <i>Advisor: Michael Saunders (ICME) and Michael Mahoney (Berkeley)</i>
+
+   <li> <a href="https://khyulab.github.io/">Kun-Hsing Yu</a> (PhD 2016, Asst. Professor Harvard) <i>Advisor: Michael Snyder (BioE) </i>
+<li> Manas Joglekar (PhD 2016, Google) <i>Advisor: Hector Garcia-Molina</i></li>   
+	<li> <a href="https://www.inf.ethz.ch/personal/ce.zhang/">Ce Zhang</a> (PhD 2015, Postdoc 2016, Asst. Professor at ETH)
+<li> Srikrishna Sridhar (PhD 2014, Apple) Main Advisor: Stephen J. Wright</li>
+								       <li> <a href="http://pages.cs.wisc.edu/~leonn/">Feng Niu</a> <!-- (co-advised with <a href="http://pages.cs.wisc.edu/~anhai/">AnHai Doan</a>)--> (PhD 2012, Google, Alation, Lattice, Evidently Cofounder)
+
+</ul></ul>
+<hr>
+   <h2>MS Alumni (Degree year, First Employment)</h2>
+<ul><ul>
+								       <li> <a href="http://cs.stanford.edu/~vschen">Vincent Chen</a> (MS 2019, Snorkel AI)</a>
+
+								       <li> <a ref="https://agnusmaximus.github.io">Max Lam</a> (MS 2019, PhD Harvard)
+								       <li> <a href="http://web.stanford.edu/~thomasat/">Anna Thomas (Churchill Scholar)</a>
+
+								       <li> Xiao Cheng (MS 2017, Facebook)
+<li> Henry Ehrenberg (MS 2017, Facebook)
+								       <li> Andy Lamb (CoTerm MS 2017, Google)
+
+   <li> Rohan Puttagunta (MS 2016, Facebook)  </li>
+	<li> Thomas Palomares (MS 2016, Founder <a href="https://farmwise.io">Farmwise</a>) </li>
+	<li> Susan Tu (CoTerm MS 2016, Stripe)</li>
+
+	<li> Feiran Wang (MS2016, LinkedIn) </li>
+	<li> Michael Fitzpatrick (MS 2015, Google)</li>
+	<li> Firas Abuzaid (MS 2015, MIT for PhD)</li>
+	<li> Zifei Shan (MS 2015, Lattice)</li>
+	<li> Adam Goldberg (BS 2015, Rubrik)</li>
+	<li> Adam Perelman  (BS 2015, Good Eggs) </li>
+	
+<li> <a href="http://pages.cs.wisc.edu/~bittorf/">Victor Bittorf</a> (MS 2014, Cloudera)</li>
+
+<li> <a href="http://www.cs.wisc.edu/users/vidhya">Vidhya Govindaraju</a> (MS 2014, Oracle)</li>
+<li> <a href="http://pages.cs.wisc.edu/~mwellons/">Mark Wellons</a> (MS 2013, Amazon)</li>
+	     <li> <a href="http://pages.cs.wisc.edu/~arun/">Arun Kumar</a> (MS 2013, Wisconsin for PhD, Asst. Professor UCSD) 
+<li> <a href="http://pages.cs.wisc.edu/~xixi/">Xixi Luo</a> (MS in Industrial Engineering 2012, Oracle)
+<li> Vinod Ramachandran (MS 2011, Oracle)
+<li> M. Levent Koc (MS 2011, Google)
+<li> Balaji Gopalan (MS 2010, Google)
+</ul></ul>
+
+</div>
+
+<div id='projects' class='section'>
+
+<script>
+var arr = [ "geo-example", "analytics", "joins" ];
+
+jQuery.each(arr, function(i, val) {
+    $("#" + val).click(function () {
+	$("#" + val + "-list").toggle('slow');
+	$("#" + val + "-down").toggle();
+	$("#" + val + "-up").toggle();
+      });
+
+    $("#" + val + "-list").toggle();
+    $("#" + val + "-up").toggle();
+  });
+</script>
+
+We are working on two broad topics:
+
+<ul>
+<li style="list-style: none;">
+  <span>  (1) <a href="http://deepdive.stanford.edu">DeepDive</a> is a new type of system to extract value from dark data. Like dark matter, dark data is the great mass of data buried in text, tables, figures, and images, which lacks structure and so is essentially unprocessable by existing data systems. DeepDive's most popular use case is to transform the dark data of web pages, pdfs, and other databases into rich SQL-style databases. In turn, these databases can be used to support both SQL-style and predictive analytics. Recently, some DeepDive-based applications have exceeded the quality of human volunteer annotators in both <a href="http://arxiv.org/abs/1406.2963"> precision and recall</a> for complex scientific articles. Data produced by DeepDive is used by <a href="http://humantraffickingcenter.org/posts-by-htc-associates/memex-helps-find-human-trafficking-cases-online/">several law enforcement agencies and NGOs</a> to <a href="http://www.forbes.com/sites/thomasbrewster/2015/04/17/darpa-nasa-and-partners-show-off-memex/">fight human trafficking</a>. The technical core of DeepDive is an engine that combines extraction, integration, and prediction into a single engine with probabilistic inference as its core operation. A one pager with key design highlights is <a href="papers/dd.pdf">here</a>. PaleoDeepDive is featured in the July 2015 issue of <a href="http://www.nature.com/news/computers-read-the-fossil-record-1.17868">Nature</a>.
+</li><br>
+
+DeepDive is our attempt to understand a new type of database
+system. Our new approach can be summarized as follows: <i> the data,
+the output of various tools, the input from users &#8212; including
+the program the developer writes &#8212; are observations from which
+the system statistically infers the answer</i>.  This view is a
+radical departure from traditional data processing systems, which
+assume that the data is one-hundred percent correct. A key problem in
+DeepDive is that the system needs to consider many possible
+interpretations for each data item. In turn, we need to explore a huge
+number of combinations during probabilistic inference, which is one of
+the core technical challenges.<br>
+
+Our goal is to acquire more sources of data for DeepDive to understand more deeply to change the way that science and industry operate. <br>
+
+<li style="list-style: none;"> <b> (2) Fundamentals of Data
+    Processing.</b> 
+    Almost all data processing systems have their intellectual roots in first order logic. The most computationally expensive (and most interesting) operation in such systems is the relational join. Recently, I helped discover the first join algorithm with optimal worst-case running time. This result uses a novel connection between logic, combinatorics, and geometry. We are using this connection to develop new attacks on classical problems in listing patterns in graphs and in statistical inference. Two threads have emerged:
+
+<ul><ul>
+<li> 
+    The first theme is that these new worst-case-optimal algorithms are fundamentally different from the algorithms used in (most of) today's data processing systems. Although our algorithm is optimal in the
+worst case, commercial relational database engines have been tuned to
+work well on real data sets by smart people for about four
+decades. And so a difficult question is <i>how does one translate
+these insights into real data processing systems?</i></li>
+ 
+<li> The second theme is that we may need new techniques to get theoretical results strong enough to guide practice. As a result, I've started thinking about "beyond worst-case analysis" and things like conditioning for combinatorial problems to hopefully build theory that can inform practice to a greater extent. The first papers have just been posted.</li>
+</ul></ul>
+
+<ul><li style="list-style: none;"> <div id="joins">
+<img id="joins-down" height="16px" src="img/arrow_down.png">
+<img id="joins-up" height="16px" src="img/arrow_up.png"> 
+<u>Demos, Examples, and Papers.</u>
+</div>
+
+<div id="joins-list">
+<ul> 
+    <li> Worst-case Optimal Joins. We have posted a <a href="http://arxiv.org/abs/1310.3314">survey</a> for SIGMOD record about recent advances in join algorithms. Our goal is to give a high-level view of the results for practitioners and applied researchers. We also managed to  simplify the arguments. A full version of our join algorithm with worst-case optimal running time is <a href="http://arxiv.org/abs/1203.1952">here</a>. The LogicBlox guys have their own commercial worst-case optimal <a href="http://arxiv.org/abs/1210.0481">algorithm</a>. Our new system, <a href="http://arxiv.org/abs/1503.02368">EmptyHeaded</a> is based on this theory.
+
+  <li> Beyond Worst-case Joins. This <a href="http://arxiv.org/abs/1302.0914">work</a> is our attempt to go beyond  worst-case analysis for join algorithms. We (with Dung Nguyen) develop a new algorithm that we call Minesweeper based on these ideas. The main theoretical idea is to formalize the amount of work any algorithm spends certifying (using a set of propositional statements) that the output set is complete (and not, say, a proper subset). We call this set of propositions the certificate. We manage to establish a dichotomy theorem for this stronger notion of complexity: if a query is what Ron Fagin calls beta-acyclic, then Minesweeper runs in time linear in the certificate; if a query is beta-cyclic than on some instance any algorithm takes time that is super linear in the certificate.  The results get sharper and more fun. 
+ 
+<li> Almost to one algorithm to rule them all? We have a much better description of beyond worst-case optimality with a resolution framework and a host of new results for different indexing strategies. <a href="http://arxiv.org/abs/1404.0703">This paper</a> supercedes many of the results in Minesweeper and in a much nicer way!. We also hope to connect more of geometry and resolution... but we'll see!																																																																																		   <li> A first part of our attack on conditioning for combinatorial problems is <a href="http://arxiv.org/abs/1311.2661">in NIPS</a> and on <a href="http://arxiv.org/abs/1311.1873">Arxiv</a>.
+
+<li> It is not difficult to get me interested in a theory problem. Ask around the Infolab if you don't believe me.
+
+</ul>
+</div>
+
+</ul>
+Our goal is to understand the fundamentals of data processing systems. 
+</ul>
+
+
+</div>
+
+<div id='courses' class='section'>
+<ul><ul style="list-style: none;">
+
+   <li style="list-style: none;">CS229, Machine Learning. Spring 19. Fall 19. Spring 20. Fall 20. Spring 21. Spring 22. <a href="http://cs229.stanford.edu">Spring 23</a>. 							
+   <li style="list-style: none;">CS528, <a href="https://mlsys.stanford.edu">MLSys at Stanford</a>. Podcast! Fall 21. Winter 22. Spring 22. Winter 23. Spring 23. 								
+   <li style="list-style: none;">CS324, Large Language Models. <a href="https://stanford-cs324.github.io/winter2022/">Winter 22</a>. <a href="https://stanford-cs324.github.io/winter2023/">Winter 23</a>.																      
+   <li style="list-style: none;">CS329, ML System Design. <a href="https://stanford-cs329s.github.io">Winter 21</a>. <i> Faculty Sponsor </i> 																				      <li style="list-style: none;"> CS145, Introduction to Databases. Fall 14. Fall 15. <a href="http://cs145.stanford.edu">Fall 16</a>.
+
+<li style="list-style: none;">CS346, Database System Implementation. Spring 14. <a href="http://cs346.stanford.edu">Spring 15</a> 
+<li style="list-style: none;"> CS341, Project in Mining Massive Data Sets. <a href="http://cs341.stanford.edu">Spring 15</a> Spring 16.
+																																			      <li style="list-style: none;"> CS345, Advanced Database Systems.
+<a href="http://www.stanford.edu/class/cs345d-01/"> Winter 14.</a>
+</ul></ul>
+<br>
+Our course material from <a href="http://cs145.stanford.edu">CS145</a> intro databases is <a href="https://github.com/HazyResearch/cs145-notebooks">here</a>, and we'll continue to update it. We're aware of a handful of courses that are using these materials, drop us a note if you do! <br><br> 
+<hr>
+<!-- <ul><li style="list-style: none;">Recent Service
+<ul style="list-style: none;">
+																																			     <li> Area Chair, ICML 2019, 2020
+<li> Reviewer, NeurIPS 2018
+<li> Demo Chair, ICDE 2018
+<li> Editorial Boards
+<ul>
+<li> Transactions of Database Systems (Associate Editor) 2014-2017
+<li> Foundations and Trends (Associate Editor) 2014-2017
+<li> Springer Series in Data Science 2014-2017																																			      </ul>																    
+																																			      <li> Conferences: ICML 2017; Tutorial CoChair at VLDB16; SIGMOD 2013-2015,2017 (External 2016); PODS 2016; ICDT 2015; ACL 2015; CIDR 2015,2017; VLDB 2014-2015; ICDE 2011-2013,2015; EDBT 2012. 
+ <li> Journal Reviewer: TODS, JACM, CACM, TPDS, TODS, VLDBJ, TKDE.
+</ul>
+</ul>
+<hr>
+--!>
+<ul><li style="list-style: none;">Honors and Awards
+<ul style="list-style: none;">						
+																																																										     <li> Inaugural Stanford Open Source Software Prize for Flash Attention, 2024. 					 
+<li> Best Paper from IEEE TC, 2023.
+<li> MIDL Best Paper, 2022
+<li> UAI Outstanding Student Paper Runner Up, 2022									     <li> ICML Outstanding Paper Runner Up, 2022									     <li> ICLR Outstanding Paper Honorable Mention, 2022
+<li> PODS Test-of-Time Award, 2022
+																																																										     <li> NeurIPS Test-of-Time Award, 2020
+<li> Okawa Research Grant, 2016
+<li> ICML Best Paper Award, 2016
+<li> Distinguished Lectures ONR and FDA, 2016
+<li> CACM Research Highlight for DeepDive, 2016.
+<li> MacArthur Foundation Fellowship, 2015
+						     <li> VLDB Early Career Award, 2015 (<a href="https://www.youtube.com/watch?v=Sqk0-uXl2Js">talk video</a>)
+<li> Kavli Fellow, NAS, Frontiers of Science, 2015 (unable to attend)
+<li> Gordon & Betty Moore Data-Driven Discovery Award, 2014
+<li> SIGMOD Best Paper Award, 2014
+<li> National Bureau of Economic Review, NBER Digest Highlight, 2014
+<li> Alfred P. Sloan Research Fellowship, 2013
+<li> Robert N. Noyce Faculty Fellowship, 2013
+<li> PODS Best Paper Award, 2012
+<li> NSF CAREER Award, 2011
+<li> ACM SIGMOD Jim Gray Dissertation Award, 2010
+																																																										     <li> <b>"Best of" Special Issue Paper Awards: </b> VLDB 2018 (VLDBJ); PODS 2017 (TODS); Nature Comms 2016 (<a href="http://researchparasite.com/">Research Parasite for Kun</a>) SIGMOD 2016 (TODS); ICML 2016 (IJCAI Best of AI); ICDT 2016 (TOCS);
+VLDB 2015 (VLDBJ & CACM Resesearch Highlight); PODS 2015 (TODS);
+SIGMOD 2014 (JACM); ICDT 2014 (TOCS), declined; PODS 2012; PODS 2010, two papers, JACM and TODS; ICDE 2009 (TKDE), declined.
+
+</ul>
+</ul></div>
+
+<div id='oldnews' class='section'>
+</div>
+
+</body>
+
+</html>

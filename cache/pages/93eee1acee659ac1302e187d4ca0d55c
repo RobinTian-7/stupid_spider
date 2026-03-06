@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="https://lids.mit.edu/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="The Data to AI group in the Laboratory for Information and Decision Systems focuses on how to build large scale AI systems that work alongside humans. These systems have to continually learn from the data, generate predictions from them and seamlessly integrate with human efforts and interactions. The group develops foundational algorithms, abstractions and systems to enable" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://lids.mit.edu/labs-and-groups/data-ai-group-dai" />
+<link rel="shortlink" href="https://lids.mit.edu/node/1125" />
+<meta property="og:site_name" content="MIT LIDS" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Data to AI Group (DAI)" />
+<meta property="og:url" content="https://lids.mit.edu/labs-and-groups/data-ai-group-dai" />
+<meta property="og:description" content="The Data to AI group in the Laboratory for Information and Decision Systems focuses on how to build large scale AI systems that work alongside humans. These systems have to continually learn from the data, generate predictions from them and seamlessly integrate with human efforts and interactions. The group develops foundational algorithms, abstractions and systems to enable these three tasks at scale. The group’s work as a result is at the intersection of statistics and machine learning, human data interaction and distributed systems." />
+<meta property="og:updated_time" content="2018-05-23T16:05:15-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://lids.mit.edu/labs-and-groups/data-ai-group-dai" />
+<meta name="twitter:title" content="Data to AI Group (DAI)" />
+<meta name="twitter:description" content="The Data to AI group in the Laboratory for Information and Decision Systems focuses on how to build large scale AI systems that work alongside humans. These systems have to continually learn from the" />
+<meta property="article:published_time" content="2018-05-23T16:04:24-04:00" />
+<meta property="article:modified_time" content="2018-05-23T16:05:15-04:00" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Data to AI Group (DAI) | MIT LIDS</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="https://lids.mit.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lids.mit.edu/sites/default/files/css/css_haLT_wY4XnKR514fUik4V-DL2anCjVH7c06EEimrRms.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lids.mit.edu/sites/default/files/css/css_x2fpn6jGTVQlXIod6kjqdoTEpq8oSj3gDpHpo-2-KLM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lids.mit.edu/sites/default/files/css/css_Jl3TY5P9RoIxNMXGJ8YVn9uylUNqo7lYtpPLg32-KpA.css" media="all" />
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+
+  <script type="text/javascript">
+      (function() {
+/*
+ * this stopped working and I'm not sure why.
+ * I'm switching to Montserrat (see above) --bj 9/5/2017
+          var path = '//easy.myfonts.net/v1/js?sid=148510(font-family=Proxima+Nova+Regular)&sid=148514(font-family=Proxima+Nova+Bold)&sid=148547(font-family=Proxima+Nova+Semibold)&sid=148550(font-family=Proxima+Nova+Light)&key=m8CojcJybY',
+              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+              trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = protocol + path;
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+*/
+      })();
+  </script>
+  <script src="/sites/all/themes/lids/js/modernizr.min.js"></script>
+  <script src="https://lids.mit.edu/sites/default/files/js/js_s7yA-hwRxnKty__ED6DuqmTMKG39xvpRyrtyCrbWH4M.js"></script>
+<script src="https://lids.mit.edu/sites/default/files/js/js_R9UbiVw2xuTUI0GZoaqMDOdX0lrZtgX-ono8RVOUEVc.js"></script>
+<script src="https://lids.mit.edu/sites/default/files/js/js_Qsx1M2hR9xKuWuwSpCifZH-rBZV7x4WFPyEem0wPZAA.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-44710108-2", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="https://lids.mit.edu/sites/default/files/js/js_Wwq5pJyXA_Cai1JGsyYQi0pxaRe3t-JSAbmBiKYPwqA.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"lids","theme_token":"hxOVKqj9cqYjyeLBPM1fp3HaAb_a97zJGmuVUFbD2Fg","js":{"sites\/all\/themes\/lids\/js\/jquery-1.8.3.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/geo_filter\/geo_filter.js":1,"sites\/all\/modules\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/lids\/js\/plugins.js":1,"sites\/all\/themes\/lids\/js\/script.js":1,"sites\/all\/themes\/lids\/js\/eventcal.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/modules\/shib_auth\/shib_auth.css":1,"sites\/all\/modules\/custom_search\/custom_search.css":1,"sites\/all\/themes\/lids\/system.menus.css":1,"sites\/all\/themes\/lids\/system.messages.css":1,"sites\/all\/themes\/lids\/system.theme.css":1,"sites\/all\/themes\/lids\/css\/styles.css":1,"sites\/all\/themes\/lids\/css\/styles-new.css":1}},"custom_search":{"form_target":"_self","solr":0},"better_exposed_filters":{"views":{"photo_header":{"displays":{"block":{"filters":[]}}},"free_text_field_3rd_column_":{"displays":{"block":{"filters":[]}}},"free_text_field_2":{"displays":{"block":{"filters":[]}}},"resources_related_websites":{"displays":{"block_1":{"filters":[]}}},"labs_sidebar_fields":{"displays":{"block":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/labs-and-groups\/data-ai-group-dai":true}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-1125 node-type-labs-and-groups section-labs-and-groups" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+<div id="page">
+
+    
+	<header class="header" id="header" role="banner">
+
+		<div class="branding">
+                    		      	<a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="https://lids.mit.edu/sites/default/files/lids-logo.png" alt="Home" width="100" height="86" class="header__logo-image" /></a>
+
+		    
+		    		      	<div class="header__name-and-slogan" id="name-and-slogan">
+		        	
+		        			          		<div id="sitetitle">
+							<a href="/">
+								Laboratory for Information &amp; Decision Systems							</a>
+						</div>
+		        			      	</div>
+		    
+		</div><!-- branding -->
+
+		<div class="utility">
+
+		    		      	<nav id="secondary-menu" role="navigation">
+			        <h2 class="element-invisible">Utility Menu</h2><ul class="utility-nav"><li class="menu-548 first"><a href="/" title="">Home</a></li>
+<li class="menu-727"><a href="/contact-us">Contact Us</a></li>
+<li class="menu-854 last"><a href="/support-lids">Support LIDS</a></li>
+</ul>		      	</nav>
+				
+                        <div class="utility-logos">
+                          <a id="mit-header-logo" href="http://web.mit.edu"></a>
+                          <img src="/sites/all/themes/lids/images/mit-logo.png">
+                        </div>
+			
+		</div><!-- utility -->
+
+
+		<div class="show-mobile">
+
+			<a class="menu-toggle mobile-button" href="#sidr"><i class="fa fa-bars"></i></a>
+
+			<a id="m-mit-logo" href="http://web.mit.edu" target="_blank"><img src="/sites/all/themes/lids/images/mit-logo-small.png" alt="MIT Logo"></a>
+                        <div id="m-lids-logo">
+			  <a id="mit-header-logo" href="http://web.mit.edu" target="_blank"></a>
+                          <img src="/sites/all/themes/lids/images/mit-logo.png" alt="IDSS/MIT Logo">
+                        </div>
+
+		</div>
+	
+	</header>
+
+	<div class="nav-container">
+       
+        <nav class="menus" role="navigation" tabindex="-1">
+              <div class="region region-main-menu">
+    <div id="block-menu-block-1" class="block block-menu-block main-nav first last odd" role="navigation">
+
+      
+  <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-556"><a href="/about-lids" class="menu__link">About LIDS</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-569"><a href="/about-lids/history" class="menu__link">History</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1887"><a href="/about-lids/companies-founded-lids-community-members" class="menu__link">Companies Founded by LIDS Community Members</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1784"><a href="/about-lids/lidsall-magazine" class="menu__link">LIDS/All Magazine</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-921"><a href="/about-lids/directions-lids-offices" class="menu__link">Directions to LIDS Offices</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1914"><a href="/about-lids/lids-overview" class="menu__link">LIDS Overview</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-570"><a href="/research" class="menu__link">Research</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1916"><a href="/research/statistical-inference-and-machine-learning" class="menu__link">Statistical Inference and Machine Learning</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1917"><a href="/research/optimization-and-game-theory" title="" class="menu__link">Optimization and Game Theory</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1918"><a href="/research/systems-theory-control-and-autonomy" class="menu__link">Systems Theory, Control, and Autonomy</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1919"><a href="/research/networks-%E2%80%94-communications-social-networks" class="menu__link">Networks</a></li>
+</ul></li>
+<li class="menu__item is-expanded is-active-trail expanded active-trail menu-mlid-640"><a href="/labs-and-groups" class="menu__link is-active-trail active-trail">Labs and Groups</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-772"><a href="/labs-and-groups/aerospace-controls-laboratory-acl" class="menu__link">Aerospace Controls Laboratory (ACL)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-774"><a href="/labs-and-groups/communications-and-networking-research-group-cnrg" class="menu__link">Communications and Networking Research Group (CNRG)</a></li>
+<li class="menu__item is-leaf is-active-trail is-active leaf active-trail active menu-mlid-1878"><a href="/labs-and-groups/data-ai-group-dai" class="menu__link is-active-trail active-trail active">Data to AI Group (DAI)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1779"><a href="/labs-and-groups/electric-energy-systems-group-eesgmit" class="menu__link">Electric Energy Systems Group (EESG@MIT)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2177"><a href="/labs-and-groups/energy-infrastructure-systems-modeling-computing-and-control-eimc2" class="menu__link">Energy &amp; Infrastructure Systems: Modeling, Computing, and Control (EIMC2)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-775"><a href="/labs-and-groups/inference-and-stochastic-networks-group-isng" class="menu__link">Inference and Stochastic Networks Group (ISNG)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-776"><a href="/labs-and-groups/stochastic-systems-group-ssg" class="menu__link">Stochastic Systems Group (SSG)</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-777"><a href="/labs-and-groups/wireless-information-and-network-sciences-laboratory-winslab" class="menu__link">Wireless Information and Network Sciences Laboratory (WINSLab)</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-807"><a href="/news-and-events" class="menu__link">News &amp; Events</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-950"><a href="/news-and-events/news" class="menu__link">LIDS News</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-951"><a href="/news-and-events/event-calendar" class="menu__link">Event Calendar</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-1870"><a href="/people" class="menu__link">People</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1871"><a href="/people/leadership" title="Leadership" class="menu__link">Leadership</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1872"><a href="/people/faculty-pi" title="Faculty and PIs" class="menu__link">Faculty and PIs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1873"><a href="/people/administrative-staff" title="Administrative Staff" class="menu__link">Administrative Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1874"><a href="/people/research-staff" title="Research Staff" class="menu__link">Research Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1875"><a href="/people/students" title="Students" class="menu__link">Students</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1876"><a href="/people/affiliates" title="Affiliates" class="menu__link">Affiliates</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1880"><a href="/people/visitors" title="Visitors" class="menu__link">Visitors</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-1883"><a href="/alumni" title="" class="menu__link">For Alums</a></li>
+<li class="menu__item is-expanded last expanded menu-mlid-1225"><a href="/resources" class="menu__link">Resources</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1681"><a href="/resources/information-visitors-and-new-members" class="menu__link">Information for Visitors and New Members</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1913"><a href="https://lids.mit.edu/sites/default/files/lids-research-snapshots-2024.pdf" title="" class="menu__link">LIDS Research Group Snapshots</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1226"><a href="/resources/book-conference-room" class="menu__link">Book a Conference Room</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-1682"><a href="/resources/copyfaxprintscan" class="menu__link">Copy/Fax/Print/Scan</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1691"><a href="/resources/copyfaxprintscan/instructions-windows" class="menu__link">Printer Instructions for Windows</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1690"><a href="/resources/copyfaxprintscan/instructions-mac" class="menu__link">Printing Instructions for Mac</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1692"><a href="/resources/copyfaxprintscan/instructions-linux" class="menu__link">Printing Instructions for Linux</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-1679"><a href="/resources/lids-publication-info-and-thesis-collection" class="menu__link">LIDS Theses &amp; Publications</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1550"><a href="/request-repairs" class="menu__link">Request Repairs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1227"><a href="/resources/ship-receive-mail" class="menu__link">Ship &amp; Receive Mail</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1680"><a href="/resources/travel-rules-and-reimbursements" class="menu__link">Travel Rules and Reimbursements</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1801"><a href="/resources/subscribing-calendar-feeds" class="menu__link">Subscribing to Calendar Feeds</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2172"><a href="/resources/using-vibe-boards" class="menu__link">Using Vibe boards</a></li>
+</ul></li>
+</ul></div>
+
+</div>
+  </div>
+  
+        </nav>
+
+        <div class="feature">
+
+	        	        
+	        <div class="body">
+	            	        </div>
+
+	    </div>
+    
+    </div>
+  
+    <div class="bwrap">
+          <div class="region region-breadcrumb">
+    <div id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb first last odd">
+
+      
+    <div itemscope class="easy-breadcrumb" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <span itemprop="title"><a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a></span>               <span class="easy-breadcrumb_segment-separator"> / </span>
+                <span itemprop="title"><a href="/labs-and-groups" class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Labs and Groups</a></span>               <span class="easy-breadcrumb_segment-separator"> / </span>
+                <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title" itemprop="title">Data to AI Group (DAI)</span>            </div>
+
+</div>
+  </div>
+    </div>
+    
+    <div class="feature">
+        
+                
+        <div class="body">
+                    </div>
+
+    </div>
+
+    <div id="main">
+
+        
+        <div id="content" class="column" role="main">
+                  
+            <a id="main-content"></a>
+                                        <h1 class="page__title title" id="page-title">Data to AI Group (DAI)</h1>
+                                                                                    
+                                        
+
+
+<article class="node-1125 node node-labs-and-groups view-mode-full clearfix" about="/labs-and-groups/data-ai-group-dai" typeof="sioc:Item foaf:Document">
+
+      <header>
+                  <span property="dc:title" content="Data to AI Group (DAI)" class="rdf-meta element-hidden"></span>
+      
+          </header>
+  
+  
+  <div class="field-body">
+    <p>The Data to AI group in the Laboratory for Information and Decision Systems focuses on how to build large scale AI systems that work alongside humans. These systems have to continually learn from the data, generate predictions from them and seamlessly integrate with human efforts and interactions. The group develops foundational algorithms, abstractions and systems to enable these three tasks at scale.  The group’s work as a result is at the intersection of statistics and machine learning, human data interaction and distributed systems. Algorithms, systems and open source software developed by the group are applied across a broad range of use cases that come from financial, medical, cybersecurity and education industry.</p>
+  </div>
+
+  
+  
+</article>
+                                                
+        </div>
+
+        
+                    <aside class="sidebars">
+                  <section class="region region-sidebar-second column sidebar">
+    <div id="block-views-labs-sidebar-fields-block" class="block block-views sidebar-fields first last odd">
+
+      
+  <div class="view view-labs-sidebar-fields view-id-labs_sidebar_fields view-display-id-block view-dom-id-0c0cb4cce7090e93dfe378cd2aa54d06">
+        
+  
+  
+      <div class="view-content">
+        <div>
+      
+      <h4>Group Website</h4>    <p><a href="https://dai.lids.mit.edu/" target="_blank">https://dai.lids.mit.edu/</a></p>    
+      <h4>Principal Investigator</h4>    <p><a href="/people/facultypi/kalyan-veeramachaneni">Kalyan Veeramachaneni</a></p>    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+  </section>
+                  <section class="region region-sidebar-first column sidebar">
+    <div id="block-menu-block-2" class="block block-menu-block sidenav first last odd" role="navigation">
+
+      
+  <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-772"><a href="/labs-and-groups/aerospace-controls-laboratory-acl" class="menu__link">Aerospace Controls Laboratory (ACL)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-774"><a href="/labs-and-groups/communications-and-networking-research-group-cnrg" class="menu__link">Communications and Networking Research Group (CNRG)</a></li>
+<li class="menu__item is-leaf is-active-trail is-active leaf active-trail active menu-mlid-1878"><a href="/labs-and-groups/data-ai-group-dai" class="menu__link is-active-trail active-trail active">Data to AI Group (DAI)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1779"><a href="/labs-and-groups/electric-energy-systems-group-eesgmit" class="menu__link">Electric Energy Systems Group (EESG@MIT)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2177"><a href="/labs-and-groups/energy-infrastructure-systems-modeling-computing-and-control-eimc2" class="menu__link">Energy &amp; Infrastructure Systems: Modeling, Computing, and Control (EIMC2)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-775"><a href="/labs-and-groups/inference-and-stochastic-networks-group-isng" class="menu__link">Inference and Stochastic Networks Group (ISNG)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-776"><a href="/labs-and-groups/stochastic-systems-group-ssg" class="menu__link">Stochastic Systems Group (SSG)</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-777"><a href="/labs-and-groups/wireless-information-and-network-sciences-laboratory-winslab" class="menu__link">Wireless Information and Network Sciences Laboratory (WINSLab)</a></li>
+</ul></div>
+
+</div>
+  </section>
+                
+            </aside>
+        
+    </div>
+
+      <footer id="footer" class="region region-footer">
+  		<div class="inner">
+    		<div id="block-menu-menu-footer-menu" class="block block-menu hide-mobile footer-menu-wrap first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/" title="" class="menu__link">Home</a></li>
+<li class="menu__item is-leaf leaf"><a href="/about-lids" title="" class="menu__link">About</a></li>
+<li class="menu__item is-leaf leaf"><a href="/research" title="" class="menu__link">Research</a></li>
+<li class="menu__item is-leaf leaf"><a href="/labs-and-groups" title="" class="menu__link">Labs and Groups</a></li>
+<li class="menu__item is-leaf leaf"><a href="/contact-us" title="" class="menu__link">Contact Us</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/user/login" title="" class="menu__link">Site Login</a></li>
+</ul>
+</div>
+<div id="block-block-3" class="block block-block social-media-icons even">
+
+      
+  <a href="https://www.facebook.com/lidsmit" class="social social-facebook" title="Like us on Facebook." target="_blank"></a>
+<a href="https://www.linkedin.com/groups/8132873" class="social social-linked last" title="Connect with us on LinkedIn." target="_blank"></a>
+<a href="https://www.youtube.com/channel/UCJJyewrDiBKhmmJO6y6WwlA/" class="social social-youtube" title="Connect with us on Youtube" target="_blank"></a>
+</div>
+<div id="block-search-form" class="block block-search search-wrap odd" role="search">
+
+      
+  <form class="search-form" role="search" action="/labs-and-groups/data-ai-group-dai" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search this site </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-w79xzJTVecqRROPW3D0xehQQgv5xaJvtlfKRQrBnO8g" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div>
+<div id="block-block-2" class="block block-block footertext even">
+
+      
+  <h3><a href="https://lids.mit.edu/">Laboratory for Information and Decision Systems</a></h3>
+<p>Massachusetts Institute of Technology<br />Room 32-D608<br />77 Massachusetts Avenue<br />Cambridge, MA 02139</p>
+<p><a href="https://accessibility.mit.edu/" rel="noopener noreferrer" target="_blank">Accessibility</a></p>
+
+</div>
+<div id="block-block-14" class="block block-block coc-logo last odd">
+
+      
+  <p><a href="https://computing.mit.edu"><img src="/sites/all/themes/lids/images/mit-scc-logo-sm-cropped.png" /></a></p>
+
+</div>
+  		</div>
+  </footer>
+
+</div>
+
+
+<div id="slideMenu">
+    
+    <div class="slideMenu-inner"> 
+        
+        <div class="mobiletop">
+ 
+            <a id="close-btn"><i class="fa fa-times"></i> close</a>   
+        
+            
+        </div><!-- end mobiletop -->
+ 
+        <div class="mobilebot">
+
+              <div class="region region-slidemenu-bottom">
+    <div id="block-menu-block-3" class="block block-menu-block menu-red first odd" role="navigation">
+
+      
+  <div class="menu-block-wrapper menu-block-3 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-556"><a href="/about-lids" class="menu__link">About LIDS</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-569"><a href="/about-lids/history" class="menu__link">History</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1887"><a href="/about-lids/companies-founded-lids-community-members" class="menu__link">Companies Founded by LIDS Community Members</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1784"><a href="/about-lids/lidsall-magazine" class="menu__link">LIDS/All Magazine</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-921"><a href="/about-lids/directions-lids-offices" class="menu__link">Directions to LIDS Offices</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1914"><a href="/about-lids/lids-overview" class="menu__link">LIDS Overview</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-570"><a href="/research" class="menu__link">Research</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1916"><a href="/research/statistical-inference-and-machine-learning" class="menu__link">Statistical Inference and Machine Learning</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1917"><a href="/research/optimization-and-game-theory" title="" class="menu__link">Optimization and Game Theory</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1918"><a href="/research/systems-theory-control-and-autonomy" class="menu__link">Systems Theory, Control, and Autonomy</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1919"><a href="/research/networks-%E2%80%94-communications-social-networks" class="menu__link">Networks</a></li>
+</ul></li>
+<li class="menu__item is-expanded is-active-trail expanded active-trail menu-mlid-640"><a href="/labs-and-groups" class="menu__link is-active-trail is-active-trail active-trail active-trail">Labs and Groups</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-772"><a href="/labs-and-groups/aerospace-controls-laboratory-acl" class="menu__link">Aerospace Controls Laboratory (ACL)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-774"><a href="/labs-and-groups/communications-and-networking-research-group-cnrg" class="menu__link">Communications and Networking Research Group (CNRG)</a></li>
+<li class="menu__item is-leaf is-active-trail is-active leaf active-trail active menu-mlid-1878"><a href="/labs-and-groups/data-ai-group-dai" class="menu__link is-active-trail is-active-trail active-trail active-trail active">Data to AI Group (DAI)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1779"><a href="/labs-and-groups/electric-energy-systems-group-eesgmit" class="menu__link">Electric Energy Systems Group (EESG@MIT)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2177"><a href="/labs-and-groups/energy-infrastructure-systems-modeling-computing-and-control-eimc2" class="menu__link">Energy &amp; Infrastructure Systems: Modeling, Computing, and Control (EIMC2)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-775"><a href="/labs-and-groups/inference-and-stochastic-networks-group-isng" class="menu__link">Inference and Stochastic Networks Group (ISNG)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-776"><a href="/labs-and-groups/stochastic-systems-group-ssg" class="menu__link">Stochastic Systems Group (SSG)</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-777"><a href="/labs-and-groups/wireless-information-and-network-sciences-laboratory-winslab" class="menu__link">Wireless Information and Network Sciences Laboratory (WINSLab)</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-807"><a href="/news-and-events" class="menu__link">News &amp; Events</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-950"><a href="/news-and-events/news" class="menu__link">LIDS News</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-951"><a href="/news-and-events/event-calendar" class="menu__link">Event Calendar</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-1870"><a href="/people" class="menu__link">People</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1871"><a href="/people/leadership" title="Leadership" class="menu__link">Leadership</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1872"><a href="/people/faculty-pi" title="Faculty and PIs" class="menu__link">Faculty and PIs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1873"><a href="/people/administrative-staff" title="Administrative Staff" class="menu__link">Administrative Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1874"><a href="/people/research-staff" title="Research Staff" class="menu__link">Research Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1875"><a href="/people/students" title="Students" class="menu__link">Students</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1876"><a href="/people/affiliates" title="Affiliates" class="menu__link">Affiliates</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1880"><a href="/people/visitors" title="Visitors" class="menu__link">Visitors</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-1883"><a href="/alumni" title="" class="menu__link">For Alums</a></li>
+<li class="menu__item is-expanded last expanded menu-mlid-1225"><a href="/resources" class="menu__link">Resources</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1681"><a href="/resources/information-visitors-and-new-members" class="menu__link">Information for Visitors and New Members</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1913"><a href="https://lids.mit.edu/sites/default/files/lids-research-snapshots-2024.pdf" title="" class="menu__link">LIDS Research Group Snapshots</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1226"><a href="/resources/book-conference-room" class="menu__link">Book a Conference Room</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-1682"><a href="/resources/copyfaxprintscan" class="menu__link">Copy/Fax/Print/Scan</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1691"><a href="/resources/copyfaxprintscan/instructions-windows" class="menu__link">Printer Instructions for Windows</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1690"><a href="/resources/copyfaxprintscan/instructions-mac" class="menu__link">Printing Instructions for Mac</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1692"><a href="/resources/copyfaxprintscan/instructions-linux" class="menu__link">Printing Instructions for Linux</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-1679"><a href="/resources/lids-publication-info-and-thesis-collection" class="menu__link">LIDS Theses &amp; Publications</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1550"><a href="/request-repairs" class="menu__link">Request Repairs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1227"><a href="/resources/ship-receive-mail" class="menu__link">Ship &amp; Receive Mail</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1680"><a href="/resources/travel-rules-and-reimbursements" class="menu__link">Travel Rules and Reimbursements</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1801"><a href="/resources/subscribing-calendar-feeds" class="menu__link">Subscribing to Calendar Feeds</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2172"><a href="/resources/using-vibe-boards" class="menu__link">Using Vibe boards</a></li>
+</ul></li>
+</ul></div>
+
+</div>
+<div id="block-block-11" class="block block-block even">
+
+      
+  <div class="social-media-icons">
+    <a href="https://www.facebook.com/lidsmit" class="social-facebook" title="Like us on Facebook." target="_blank"></a>
+    <a href="http://www.linkedin.com/groups/LIDS-MIT-8132873/about" class="social-linked" title="Connect with us on LinkedIn." target="_blank"></a>
+</div>
+
+<div class="phone"> 
+    <p>Contact Us:<br />
+          <span class="phone-number">617-253-2142</span>
+    </p>
+</div>
+</div>
+<div id="block-block-12" class="block block-block foot-info last odd">
+
+      
+  <p><span>Laboratory for Information<br />
+and Systems Decisions</span></p>
+<p>Massachusetts Institute of Technology<br />
+77 Massachusetts Avenue<br />
+Room 32-D608<br />
+Cambridge, MA 02136</p>
+
+</div>
+  </div>
+
+        </div><!-- end mobilebot -->
+
+    </div><!-- END INNER -->
+
+</div><!-- end slideMenu -->  
+</body>
+</html>

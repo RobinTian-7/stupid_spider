@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimal Viswanath</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104190734-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104190734-1');
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navigation-clean"
+        style="background-color:rgb(255,255,255);height:36px;">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Bimal Viswanath</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="#latestupdates">Latest updates</a></li>
+                    <li role="presentation"><a href="#students">Students</a></li>
+                    <li role="presentation"><a href="#publications">Publications </a></li>
+                    <li role="presentation"><a href="#service">Service</a></li>
+                    <li role="presentation"><a href="#teaching">Teaching </a></li>
+                    <li role="presentation"><a href="#news">News Coverage</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin:63px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail"><img class="img-rounded" src="assets/img/bimal.jpg">
+                        <div class="caption">
+                            <p><strong>Associate Professor</strong><br>
+                                <a href="https://www.cs.vt.edu/">Department of Computer Science</a><br>
+                                <a href="https://vt.edu/">Virginia Tech</a><br><br>
+                                <a href="https://scholar.google.de/citations?user=bu1SCOuD_CMC&hl=en&oi=ao">Google Scholar</a>
+                            </p>
+                            
+                            <div>
+                                <div><strong>Contact</strong></div>
+                                <div>Email: vbimal@vt.edu</div>
+                                <br><br>
+                                <div>Gilbert Place<br>
+                                    Room #4302<br>
+                                    220 Gilbert Street <br>
+                                    Blacksburg, VA 24060<br>
+                                    Phone: 540-231-8702 <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row" id="latestupdates">
+                        <div class="col-md-12">
+                            <p>
+                                My research lies at the intersection of <strong>security, privacy, and AI</strong>,
+                                with a primary mission to ensure the safety and trustworthiness of emerging AI
+                                technologies.
+                            </p>
+
+                            <p>
+                                My group focuses on three interconnected challenges in the era of Generative AI and
+                                Foundation Models:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <strong>Defending Against AI-Enabled Threats:</strong> Investigating how attackers
+                                    leverage recent advances—such as
+                                    multimodal LLMs—to generate harmful content or compromise systems.
+                                </li>
+                                <li>
+                                    <strong>Securing AI Infrastructure:</strong> Uncovering vulnerabilities in machine
+                                    learning supply chains
+                                    and model deployment to prevent adversarial attacks and backdoors.
+                                </li>
+                                <li>
+                                    <strong>AI for Defense:</strong> Leveraging the reasoning capabilities of modern AI
+                                    to build
+                                    more dynamic and resilient security protections.
+                                </li>
+                            </ul> 
+                            
+                            <br>
+                            
+                            <p>
+                                <strong> I am a recipient of the Distinguished Paper Award (USENIX Security'25),
+                                    Distinguished Paper Award (SOUPS 2014), Best Paper Award (COSN 2015), and the <a
+                                        href="https://www.aminer.org/ai2000/cn">AI2000 Most Influential Scholar Award
+                                        Honorable Mention</a> for being among the top 100 most cited scholars in
+                                    computer networking from 2009-2019.</strong>
+                                <br>
+                                <br>
+                                I completed my Ph.D. in Computer Science at the&nbsp;<a
+                                    href="https://www.mpi-sws.org/">Max Planck Institute for Software Systems</a>.
+                                Before joining VT, I spent ~2 years as a Postdoc in <a
+                                    href="http://sandlab.cs.uchicago.edu/">SAND lab</a> (at <a
+                                    href="https://www.cs.ucsb.edu/">UCSB</a>). Prior to that, I spent a year as a
+                                Researcher at&nbsp;<a href="https://www.bell-labs.com/">Nokia Bell Labs,
+                                    Stuttgart</a>.
+                                <br>
+                                <br>
+                                Our research is supported by CCI, NSF and 4-VA.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#latestupdates">Latest Updates</a></h3>
+                                </div>
+                                <div class="panel-body">
+
+                                    <span>September 2025: <strong>Serving as Track Co-chair (along with Dr. Franziska
+                                            Boenisch) for the Machine Learning and Security track at AsiaCCS'26.
+                                        </strong></span><br>
+
+
+                                    <span>August 2025: <strong>New NSF SaTC Medium <a
+                                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453818&HistoricalAwards=false">funding</a>
+                                            to address data challenges in ML-based security tasks using Generative AI.
+                                        </strong></span><br>
+
+
+                                    <span>July 2025: <strong>Promoted to Associate Professor with Tenure.
+                                        </strong></span><br>
+
+                                    <span>January 2025: <strong>Our NeuralCleanse work (IEEE S&P’19) is listed among the
+                                            <a href="https://www.mlsec.org/topnotch/sec_ntop100.html">Normalized
+                                                Top-100 Security Papers</a> and also the <a
+                                                href="https://www.mlsec.org/topnotch/sec_top100.html">Top-100 Security
+                                                papers from 1980 to 2025</a>.
+                                        </strong></span><br>
+
+
+                                    <span>August 2023: <strong>Invited to participate in the AI Technology Initiative
+                                            organized by the Bipartisan Virginia Technology and Innovation Caucus. This
+                                            <a
+                                                href="https://www.governing.com/policy/a-bipartisan-effort-to-get-ahead-of-fast-moving-technology">initiative</a>
+                                            is to “explore opportunities, risks, and impacts associated with Artificial
+                                            lntelligence (AI) and technology use in government processes and
+                                            decision-making.” </strong></span><br>
+                                    <span>July 2023: <strong>Our work on deepfake text detection (IEEE S&P'23 paper) was
+                                            featured in a CACM <a
+                                                href="https://cacm.acm.org/news/the-rise-of-the-chatbots/">article</a>
+                                            by Neil Savage.</strong></span><br>
+
+                                    <span>February 2023: <strong>New NSF SaTC <a
+                                                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2231002&HistoricalAwards=false">funding</a>
+                                            to study security of open-domain chatbots. </strong></span><br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="publications"></div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#publications">Publications</a> </h3>
+                                </div>
+                                <div class="panel-body" style="margin:-7px;">
+                                    <ul style="font-size:14px;">
+
+                                        <li>
+                                            <div><strong>Off-The-Shelf Image-to-Image Models Are All You Need To Defeat
+                                                    Image Protection Schemes</strong>
+                                                <br>
+                                                Xavier Pleimling, Sifat Muhammad Abdullah, Gunjan Balde, Peng Gao,
+                                                Mainack Mondal, Murtuza Jadliwala, and Bimal Viswanath.<br>
+                                                IEEE SaTML'26, Munich, Germany, March 2026. To Appear.
+                                                <br>
+                                                <a href=""><span class="label label-default">Arxiv (coming
+                                                        soon)</span></a> <a href=""><span
+                                                        class="label label-default">Code and dataset (coming
+                                                        soon)</span></a>
+                                            </div><br>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>Taming Data Challenges in ML-based Security Tasks: Lessons from
+                                                    Integrating Generative AI</strong>
+                                                <br>
+                                                Shravya Kanchi, Neal Mangaokar, Aravind Cheruvu, Sifat Muhammad
+                                                Abdullah, Shirin Nilizadeh, Atul Prakash, and Bimal Viswanath.<br>
+                                                ACM AsiaCCS'26, Bangalore, India, June 2026. To Appear.
+                                                <br>
+                                                <a href="https://arxiv.org/abs/2507.06092"><span
+                                                        class="label label-default">Arxiv</span></a> <a
+                                                    href="https://github.com/secml-lab-vt/taming-data-challenges-security-ml/"><span
+                                                        class="label label-default">Code and dataset</span></a>
+                                            </div><br>
+                                        </li>
+
+
+
+                                        <li>
+                                            <div><strong>We Have a Package for You! A Comprehensive Analysis of Package
+                                                    Hallucinations by Code Generating LLMs</strong>
+                                                <br>
+                                                Joseph Spracklen, Raveen Wijewickrama, AHM Nazmus Sakib, Anindya Maiti,
+                                                Bimal Viswanath, and Murtuza Jadliwala
+                                                <br>
+                                                USENIX Security'25, Seattle, WA, August 2025.
+                                                <br>
+                                                <a href="https://arxiv.org/abs/2406.10279"><span
+                                                        class="label label-default">Arxiv</span></a> <a
+                                                    href="https://github.com/Spracks/PackageHallucination"><span
+                                                        class="label label-default">Code and dataset</span></a>
+                                                <span class="label label-danger">Distinguished Paper Award</span>
+                                            </div><br>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>An Analysis of Recent Advances in Deepfake Image Detection in
+                                                    an Evolving Threat Landscape</strong>
+                                                <br>
+                                                Sifat Muhammad Abdullah, Aravind Cheruvu, Shravya Kanchi, Taejoong
+                                                Chung, Peng Gao, Murtuza Jadliwala and Bimal Viswanath
+                                                <br>
+                                                IEEE S&P (Oakland) 2024, San Francisco, CA, May 2024.
+                                                <br>
+                                                <a href="https://arxiv.org/abs/2404.16212"><span
+                                                        class="label label-default">Arxiv</span></a> <a
+                                                    href="https://github.com/secml-lab-vt/EvolvingThreat-DeepfakeImageDetect"><span
+                                                        class="label label-default">Code and dataset</span></a>
+                                            </div><br>
+                                        </li>
+
+
+                                        <li>
+                                            <div><strong>A First Look at Toxicity Injection Attacks on Open-domain
+                                                    Chatbots</strong>
+                                                <br>
+                                                Connor Weeks (co-lead), Aravind Cheruvu (co-lead), Sifat Muhammad
+                                                Abdullah, Shravya Kanchi, Daphne Yao, and Bimal Viswanath
+                                                <br>
+                                                ACSAC 2023, Austin, Texas, December 2023.
+                                                <br>
+                                                <a href="publications/toxicity-acsac23.pdf"><span
+                                                        class="label label-default">PDF</span></a> <a
+                                                    href="https://github.com/secml-lab-vt/Chatbot-Toxicity-Injection/"><span
+                                                        class="label label-default">Code and dataset</span></a>
+                                            </div><br>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>Deepfake Text Detection: Limitations and Opportunities</strong>
+                                                <br>
+                                                Jiameng Pu, Zain Sarwar, Sifat Muhammad Abdullah, Abdullah Rehman,
+                                                Yoonjin Kim, Parantapa Bhattacharya, Mobin Javed, and Bimal Viswanath
+                                                <br>
+                                                IEEE S&P (Oakland) 2023, San Francisco, CA, May 2023.
+                                                <br>
+                                                <a href="publications/deepfaketext-sp23.pdf"><span
+                                                        class="label label-default">PDF</span></a> <a
+                                                    href="https://github.com/jmpu/DeepfakeTextDetection"><span
+                                                        class="label label-default">Code and dataset</span></a>
+                                            </div><br>
+                                        </li>
+
+
+                                        <li>
+                                            <div><strong>T-Miner: A Generative Approach to Defend Against Trojan Attacks
+                                                    on DNN-based Text Classification</strong>
+                                                <br>
+                                                Ahmadreza Azizi, Ibrahim Asadullah Tahmid, Asim Waheed, Neal Mangaokar,
+                                                Jiameng Pu, Mobin Javed, Chandan K. Reddy and Bimal Viswanath
+                                                <br>
+                                                USENIX Security'21, Online, August 2021
+                                                <br>
+                                                <a href="https://arxiv.org/abs/2103.04264"><span
+                                                        class="label label-default">PDF (arxiv)</span></a>
+                                                <a
+                                                    href="https://www.usenix.org/conference/usenixsecurity21/presentation/azizi"><span
+                                                        class="label label-default">Video</span></a>
+                                                <a href="https://github.com/reza321/T-Miner/"><span
+                                                        class="label label-default">Code</span></a>
+
+
+                                            </div><br>
+                                        </li>
+
+
+
+                                        <li>
+                                            <div><strong>Deepfake Videos in the Wild: Analysis and Detection</strong>
+                                                <br>
+                                                Jiameng Pu (co-lead), Neal Mangaokar (co-lead), Lauren Kelly, Parantapa
+                                                Bhattacharya, Kavya Sundaram, Mobin Javed, Bolun Wang, and Bimal
+                                                Viswanath
+                                                <br>
+                                                WWW'21, Online, April 2021
+                                                <br>
+                                                <a href="https://arxiv.org/abs/2103.04263"><span
+                                                        class="label label-default">PDF (arxiv)</span></a>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1100nIF9nXlyKZpL1H_s9Gi5knZLOeKkT/view?usp=sharing"><span
+                                                        class="label label-default">Video</span></a>
+                                                <a href="https://github.com/jmpu/webconf21-deepfakes-in-the-wild"><span
+                                                        class="label label-default">Deepfake dataset</span></a>
+
+
+                                            </div><br>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>NoiseScope: Detecting Deepfake Images in a Blind Setting</strong>
+                                                <br>
+                                                Jiameng Pu, Neal Mangaokar, Bolun Wang, Chandan K. Reddy, and Bimal
+                                                Viswanath
+                                                <br>
+                                                ACSAC'20, Online, December 2020
+                                                <br>
+                                                <a href="publications/noisescope-acsac20.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/NoiseScope-ACSAC20.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <a href="https://www.youtube.com/watch?v=VY2g6k3xc2Y"><span
+                                                        class="label label-default">Video</span></a>
+                                                <a href="https://github.com/jmpu/NoiseScope"><span
+                                                        class="label label-default">Code</span></a>
+
+
+                                            </div><br>
+                                        </li>
+
+
+                                        <li>
+                                            <div><strong>Jekyll: Attacking Medical Image Diagnostics using Deep
+                                                    Generative Models</strong>
+                                                <br>
+                                                Neal Mangaokar, Jiameng Pu, Parantapa Bhattacharya, Chandan K. Reddy,
+                                                and Bimal Viswanath
+                                                <br>
+                                                IEEE EuroS&P 2020, Online, September 2020
+                                                <br>
+                                                <a href="publications/jekyll-eurosp20.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/jekyll-eurosp20.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <a
+                                                    href="https://drive.google.com/file/d/1IvKrRn7uB9t-psLVRbQcE8qDvMEP64yH/view?usp=sharing"><span
+                                                        class="label label-default">Video</span></a>
+
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Throwing Darts in the Dark? Detecting Bots with Limited Data
+                                                    using Neural Data Augmentation</strong>
+                                                <br>
+                                                Steve T.K. Jan, Qingying Hao, Tianrui Hu, Jiameng Pu, Sonal Oswal, Gang
+                                                Wang, and Bimal Viswanath
+                                                <br>
+                                                IEEE S&P (Oakland) 2020, Online, May 2020
+                                                <br>
+                                                <a href="publications/syntheticdata-sp20.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/syntheticdata-sp20.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+
+                                            </div><br>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>What Happens After You Leak Your Password: Understanding
+                                                    Credential Sharing on Phishing Sites</strong>
+                                                <br>
+                                                Peng Peng, Chao Xu, Luke Quinn, Hang Hu, Bimal Viswanath, and Gang Wang
+                                                <br>
+                                                ASIACCS 2019, Auckland, New Zealand, July 2019
+                                                <br>
+                                                <a href="publications/asiaccs19.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Phishing-ASIACCS.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+
+                                            </div><br>
+                                        </li>
+
+
+                                        <li>
+                                            <div><strong>Neural Cleanse: Identifying and Mitigating Backdoor Attacks in
+                                                    Neural Networks</strong>
+                                                <br>
+                                                Bolun Wang, Yuanshun Yao, Shawn Shan, Huiying Li, Bimal Viswanath,
+                                                Haitao Zheng, and Ben Y. Zhao
+                                                <br>
+                                                IEEE S&P (Oakland) 2019, San Francisco, CA, USA, May 2019
+                                                <br>
+                                                <a href="publications/backdoor-sp19.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Backdoor-IEEESP.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <a href="http://sandlab.cs.uchicago.edu/neural"><span
+                                                        class="label label-default">Code</span></a>
+
+                                            </div><br>
+                                        </li>
+
+
+                                        <li>
+                                            <div><strong>With Great Training Comes Great Vulnerability: Practical
+                                                    Attacks against Transfer Learning</strong>
+                                                <br>
+                                                Bolun Wang, Yuanshun Yao, Bimal Viswanath, Haitao Zheng, and Ben Y. Zhao
+                                                <br>
+                                                USENIX Security 2018, Baltimore, MD, USA, August 2018
+                                                <br>
+                                                <a href="publications/translearn-usenix18.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/TransferLearningAttack-Usenix.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <a href="https://github.com/bolunwang/translearn"><span
+                                                        class="label label-default">Code</span></a>
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>I Spy with My Little Eye: Analysis and Detection of Spying
+                                                    Browser Extensions</strong>
+                                                <br>
+                                                Anupama Aggarwal, Bimal Viswanath, Liang Zhang, Saravana Kumar, Ayush
+                                                Shah, and Ponnurangam Kumaraguru
+                                                <br>
+                                                IEEE EuroS&P 2018, London, UK, April 2018
+                                                <br>
+                                                <a href="publications/spyingext-euroSP18.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/SpyingExtensions-EuroSP.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Towards Reliable Application Deployment in the Cloud</strong>
+                                                <br>
+                                                Ruichuan Chen, Istemi Ekin Akkus, Bimal Viswanath, Ivica Rimac and
+                                                Volker Hilt
+                                                <br>
+                                                CoNEXT 2017, Seoul, South Korea, December 2017
+                                                <br>
+                                                <a href="publications/RECloud-CoNEXT17.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/RECloud-CoNEXT.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Sieve: Actionable Insights from Monitored Metrics in
+                                                    Distributed Systems</strong>
+                                                <br>
+                                                Jörg Thalheim, Antonio Rodrigues, Istemi Ekin Akkus, Pramod Bhatotia,
+                                                Ruichuan Chen, Bimal Viswanath, Lei Jiao, Christof Fetzer
+                                                <br>
+                                                Middleware 2017, Las Vegas, NV, USA, December 2017
+                                                <br>
+                                                <a href="publications/sieve_middleware2017.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/sieve-Middleware.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <a href="https://sieve-microservices.github.io/"><span
+                                                        class="label label-default">Website</span></a>
+                                                <a href="https://arxiv.org/abs/1709.06686"><span
+                                                        class="label label-default">Technical report</span></a>
+
+
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Complexity vs. Performance: Empirical Analysis of Machine
+                                                    Learning as a Service</strong>
+                                                <br>
+                                                Yuanshun Yao, Zhujun Xiao, Bolun Wang, Bimal Viswanath, Haitao Zheng and
+                                                Ben Y. Zhao
+                                                <br>
+                                                IMC 2017, London, UK, November 2017
+                                                <br>
+                                                <a href="publications/Mlaas-IMC17.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Mlaas-IMC.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Automated Crowdturfing Attacks and Defenses in Online Review
+                                                    Systems
+                                                </strong>
+                                                <br>
+                                                Yuanshun Yao, Bimal Viswanath, Jenna Cryan, Haitao Zheng and Ben Y. Zhao
+                                                <br>
+                                                CCS 2017, Dallas, TX, USA, October 2017
+                                                <br>
+                                                <a href="https://arxiv.org/abs/1708.08151"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/DNN-CCS.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Strengthening Weak Identities Through Inter-Domain Trust
+                                                    Transfer
+                                                </strong>
+                                                <br>
+                                                Giridhari Venkatadri, Oana Goga, Changtao Zhong, Bimal Viswanath,
+                                                Krishna P. Gummadi and Nishanth Sastry
+                                                <br>
+                                                WWW 2016, Montreal, Canada, April 2016
+                                                <br>
+                                                <a href="publications/transfer_trust_WWW2016.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/transfer-WWW.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Strength in Numbers: Robust Tamper Detection in Crowd
+                                                    Computations</strong>
+                                                <br>
+                                                Bimal Viswanath, M. Ahmad Bashir, M. Bilal Zafar, Simon Bouget, Saikat
+                                                Guha, Krishna P. Gummadi,
+                                                Aniket Kate, and Alan Mislove
+                                                <br>
+                                                COSN 2015, Stanford University, CA, USA, November 2015
+                                                <br>
+                                                <a href="publications/Stamper-COSN.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Stamper-COSN.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <span class="label label-danger">Best Paper Award</span>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Towards Detecting Anomalous User Behavior in Online Social
+                                                    Networks</strong>
+                                                <br>
+                                                Bimal Viswanath, Muhammad Ahmad Bashir, Mark Crovella, Saikat Guha,
+                                                Krishna P. Gummadi, Balachander Krishnamurthy and Alan Mislove
+                                                <br>
+                                                USENIX Security 2014, San Diego, CA, USA, August 2014
+                                                <br>
+                                                <a href="publications/PCA_Security14.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Misbehavior-Usenix.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Understanding and Specifying Social Access Control
+                                                    Lists</strong>
+                                                <br>
+                                                Mainack Mondal, Yabing Liu, Bimal Viswanath, Krishna P. Gummadi and Alan
+                                                Mislove
+                                                <br>
+                                                SOUPS 2014, Menlo Park, CA, USA, July 2014
+                                                <br>
+                                                <a href="publications/soups2014-final27.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/sacls-soups14.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                                <span class="label label-danger">Distinguished Paper Award</span>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Defending Against Large-scale Crawls in Online Social
+                                                    Networks</strong>
+                                                <br>
+                                                Mainack Mondal, Bimal Viswanath, Allen Clement, Peter Druschel, Krishna
+                                                P. Gummadi, Alan Mislove,
+                                                and Ansley Post
+                                                <br>
+                                                CoNEXT 2012, Nice, France, December 2012
+                                                <br>
+                                                <a href="publications/Genie-CoNEXT.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a style="empty" href="bibtex/Genie-CoNEXT.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Keeping Information Safe from Social Networking Apps</strong>
+                                                <br>
+                                                Bimal Viswanath, Emre Kıcıman, and Stefan Saroiu
+                                                <br>
+                                                WOSN 2012, Helsinki, Finland, August 2012
+                                                <br>
+                                                <a href="publications/kiss.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/KISS-WOSN.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Canal: Scaling Social Network-based Sybil Tolerance
+                                                    Schemes</strong>
+                                                <br>
+                                                Bimal Viswanath, Mainack Mondal, Krishna P. Gummadi, Alan Mislove, and
+                                                Ansley Post
+                                                <br>
+                                                EuroSys 2012, Bern, Switzerland, April 2012
+                                                <br>
+                                                <a href="publications/Canal-EuroSys.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a style="empty" href="bibtex/Canal-EuroSys.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Understanding and Combating Link Farming in the Twitter Social
+                                                    Network</strong>
+                                                <br>
+                                                Saptarshi Ghosh (co-primary author), Bimal Viswanath (co-primary
+                                                author), Farshad Kooti, Naveen
+                                                Kumar Sharma, Korlam Gautam, Fabricio Benevenuto, Niloy Ganguly, and
+                                                Krishna P. Gummadi
+                                                <br>
+                                                WWW 2012, Lyon, France, April 2012
+                                                <br>
+                                                <a href="publications/twitterSpam_WWW2012.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/twitterSpam_WWW2012.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Exploring the Design Space of Social Network-based Sybil
+                                                    Defenses (Invited Paper)</strong>
+                                                <br>
+                                                Bimal Viswanath, Mainack Mondal, Allen Clement, Peter Druschel, Krishna
+                                                P. Gummadi, Alan Mislove,
+                                                and Ansley Post
+                                                <br>
+                                                COMSNETS 2012, Bangalore, India, January 2012
+                                                <br>
+                                                <a href="publications/sybil_defense_comsnets_2012.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Sybil-COMSNETS.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>Sharing Social Content from Home: A Measurement-driven
+                                                    Feasibility Study</strong>
+                                                <br>
+                                                Massimiliano Marcon, Bimal Viswanath, Meeyoung Cha, and Krishna P.
+                                                Gummadi
+                                                <br>
+                                                NOSSDAV 2011, Vancouver, Canada, June 2011
+                                                <br>
+                                                <a href="publications/SocialContentSharing-NOSSDAV.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/SocialContentSharing-NOSSDAV.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>An Analysis of Social Network-based Sybil Defenses</strong>
+                                                <br>
+                                                Bimal Viswanath, Ansley Post, Krishna P. Gummadi, and Alan Mislove
+                                                <br>
+                                                SIGCOMM 2010, New Delhi, India, August 2010
+                                                <br>
+                                                <a href="publications/Sybil-SIGCOMM.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Sybil-SIGCOMM.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>You Are Who You Know: Inferring User Profiles in Online Social
+                                                    Networks</strong>
+                                                <br>
+                                                Alan Mislove, Bimal Viswanath, Krishna P. Gummadi, and Peter Druschel
+                                                <br>
+                                                WSDM 2010, New York, NY, USA, February 2010
+                                                <br>
+                                                <a href="publications/Inferring-WSDM.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="bibtex/Profiles-WSDM.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div><br>
+                                        </li>
+                                        <li>
+                                            <div><strong>On the Evolution of User Interaction in Facebook</strong>
+                                                <br>
+                                                Bimal Viswanath, Alan Mislove, Meeyoung Cha, and Krishna P. Gummadi
+                                                <br>
+                                                WOSN 2009, Barcelona, Spain, August 2009
+                                                <br>
+                                                <a href="publications/Activity-WOSN-Updated.pdf"><span
+                                                        class="label label-default">PDF</span></a>
+                                                <a href="publications/Activity-WOSN.pdf"><span
+                                                        class="label label-default">Original PDF (with Errata)</span></a>
+                                                <a href="publications/Activity-WOSN-Errata.pdf"><span
+                                                        class="label label-default">Errata Note</span></a>
+                                                <a href="bibtex/Activity-WOSN.html"><span
+                                                        class="label label-default">BIBTEX</span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="students" class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#students">Students</a></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>I am delighted to work with the following students:</p>
+
+                                    <h4>Current Students</h4>
+
+                                    <h5>PhD Students</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Xavier Pleimling</strong> (Fall 2024 - Present)<br>
+                                            <em>Published in IEEE SaTML'26</em>
+
+                                        </li>
+                                    </ul>
+
+                                    <h5>MS Students</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Cameron Mraz</strong> (Fall 2025 - Present)<br>
+                                        </li>
+                                        <li>
+                                            <strong>Brianna Detter</strong> (Fall 2025 - Present)<br>
+                                        </li>
+                                    </ul>
+
+                                    <h5>Undergraduate Students</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Rudra Patel</strong> (Fall 2025 - Present)<br>
+                                        </li>
+                                    </ul>
+
+
+                                    <hr>
+
+                                    <h4>Alumni</h4>
+
+                                    <h5>PhD Graduates</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Sifat Muhammad Abdullah</strong> (2025)<br>
+                                            <em>Published in IEEE SaTML'26, AsiaCCS'26, IEEE S&P'24, IEEE S&P'23, ACSAC'23</em>
+
+                                        </li>
+
+
+                                        <li>
+                                            <strong>Jiameng Pu</strong> (2022)<br>
+                                            <em>Published in IEEE S&P'23, USENIX Security'21, WWW'21, ACSAC'20, IEEE
+                                                EuroS&P'20, IEEE S&P'20</em>
+                                        </li>
+                                        <li>
+                                            <strong>Steve T.K. Jan</strong> (2020, co-advised with Gang Wang)<br>
+                                            <em>Published in IEEE S&P'20</em>
+                                        </li>
+                                        </ul>
+
+                                    <h5>Master's Graduates</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Nicholas Kong</strong> (2024)
+                                        </li>
+                                        <li>
+                                            <strong>Connor Weeks</strong> (2023)<br>
+                                            <em>Published in ACSAC'23</em>
+                                        </li>
+                                        <li>
+                                            <strong>Cristian Vives</strong> (2022)<br>
+                                        </li>
+                                        <li>
+                                            <strong>Ahmadreza Azizi</strong> (2020)<br>
+                                            <em>Published in USENIX Security'21</em>
+                                        </li>
+                                        <li>
+                                            <strong>Tianrui Hu</strong> (2020, co-advised with Gang Wang)<br>
+                                            <em>Published in IEEE S&P'20.</em>
+                                        </li>
+                                    </ul>
+
+                                    <h5>Undergraduate Students</h5>
+                                    <ul>
+                                        <li>
+                                            <strong>Neal Mangaokar</strong> (2020)<br>
+                                            <em>Published in IEEE EuroS&P'20, ACSAC'20, USENIX Security'21,
+                                                WWW'21.</em>
+                                        </li>
+                                        <li>
+                                            <strong>Lauren Kelly</strong> (2020)<br>
+                                            <em>Published in WWW'21.</em>
+                                        </li>
+                                        <li>
+                                            <strong>Kavya Sundaram</strong><br>
+                                            <em>Published in WWW'21</em>
+                                        </li>
+                                        <li>
+                                            <strong>Abdullah Rehman</strong><br>
+                                            <em>Published in IEEE S&P'23</em>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="service" class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#service">Selected Service</a> </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <div><strong>CCS</strong> (PC: 2024, 2023, 2022, 2021)</div>
+                                        </li>
+                                        <li>
+                                            <div><strong>USENIX Security</strong> (PC: 2025, 2022, 2021, 2020)</div>
+                                        </li>
+                                        <li>
+                                            <div><strong>NDSS</strong> (PC: 2021, 2020)</div>
+                                        </li>
+                                        <li>
+                                            <div><strong>IMC</strong> (PC: 2019)</div>
+                                        </li>
+                                        <li>
+                                            <div><strong>ACSAC</strong> (PC: 2021, 2020, 2019)</div>
+                                        </li>
+                                        <li>
+                                            <div><strong>ICWSM</strong> (PC: 2018, 2017, 2016, 2015)</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="teaching" class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#teaching">Teaching</a> </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <div><strong>CS6604: Foundation Models and Security</strong>
+                                                <br>Virginia Tech, Spring 2024.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><strong>CS5914: Security Risks of Generative AI</strong>
+                                                <br>Virginia Tech, Fall 2023.
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>CS4274: Secure Computing Capstone</strong>
+                                                <br>Virginia Tech, Fall 2021, Spring 2023, Spring 2024.
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>CS5914: Defending Against ML-powered Adversaries</strong>
+                                                <br>Virginia Tech, Fall 2022.
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div><strong>CS6604: Hot Topics in Security and AI</strong>
+                                                <br>Virginia Tech, Spring 2020, Spring 2022.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><strong>CS5984: Security Analytics</strong>
+                                                <br>Virginia Tech, Spring 2019, Spring 2021.
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><strong>CS4254: Network Architecture & Programming</strong><br>Virginia
+                                                Tech, Fall 2018, Fall 2019, Fall 2020.</div>
+                                        </li>
+                                        <li>
+                                            <div><strong><a href="https://courses.mpi-sws.org/sscs-ss13/">Security and
+                                                        Privacy in Social Computing Systems</a></strong>
+                                                <br>
+                                                Saarland University, Summer 2013.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="news" class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><a href="#news">Selected News</a></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <div>Deepfake Text Detection: Limitations and Opportunities (IEEE S&P'23)
+                                                <br>
+                                                <ul>
+                                                    <li><a
+                                                            href="https://techxplore.com/news/2022-11-strengths-limitations-approaches-deepfake-text.html">
+                                                            TechXplore</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>Automated Crowdturfing Attacks and Defenses in Online Review Systems
+                                                (CCS 2017)
+                                                <br>
+                                                <ul>
+                                                    <li><a
+                                                            href="https://www.scientificamerican.com/article/could-ai-be-the-future-of-fake-news-and-product-reviews/?wt.mc=SA_Twitter-Share">Scientific
+                                                            American</a></li>
+                                                    <li><a
+                                                            href="http://www.businessinsider.com/researchers-teach-ai-neural-network-write-fake-reviews-fake-news-2017-8">Business
+                                                            Insider</a></li>
+                                                    <li><a
+                                                            href="http://fortune.com/2017/08/30/researchers-teach-ai-to-write-fake-reviews/">Fortune</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.forbes.com/sites/kevinmurnane/2017/09/05/many-people-cant-tell-the-difference-between-yelp-reviews-written-by-an-ai-and-a-human-can-you/#27ece1827b0d">Forbes</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://news.developer.nvidia.com/ai-writes-believable-fake-yelp-reviews/">NVidia
+                                                            Developer</a></li>
+                                                    <li><a
+                                                            href="https://www.theverge.com/2017/8/31/16232180/ai-fake-reviews-yelp-amazon">Verge</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.engadget.com/2017/09/01/ai-fake-yelp-reviews/">Engadget</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="http://nypost.com/2017/08/31/robots-learned-how-to-write-fake-yelp-reviews-like-a-human/">New
+                                                            York Post</a></li>
+                                                    <li><a
+                                                            href="http://www.news.com.au/technology/online/security/the-potential-of-ai-generated-crowdturfing-could-undermine-online-reviews-and-dramatically-erode-public-trust/news-story/e1c84ad909b586f8a08238d5f80b6982">News.com.au</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="http://zeenews.india.com/world/now-robots-can-write-fake-reviews-like-a-human-2038612.html">Zee
+                                                            News India</a></li>
+                                                    <li><a
+                                                            href="https://techxplore.com/news/2017-09-reveals-credibility-muscle-machine-generated.html">TechXplore</a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div>Towards Detecting Anomalous User Behavior in Online Social Networks
+                                                (Usenix Security 2014)
+                                                <br>
+                                                <ul>
+                                                    <li><a
+                                                            href="http://www.newrepublic.com/article/121551/bot-bubble-click-farms-have-inflated-social-media-currency">
+                                                            New Republic</a>
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div>Understanding and combating link farming in the Twitter social network
+                                                (WWW 2012)
+                                                <br>
+                                                <ul>
+                                                    <li><a
+                                                            href="http://gigaom.com/europe/whos-to-blame-for-twitter-spam-obama-gaga-and-you">GigaOM</a>
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li id="otherinterests">
+                                            <div>You are who you know: Inferring user profiles in Online Social Networks
+                                                (WSDM 2010)
+                                                <br>
+                                                <ul>
+                                                    <li><a
+                                                            href="https://www.cnet.com/news/privacy-facebooks-achilles-heel/">CNET
+                                                            News</a>
+                                                    <li><a
+                                                            href="http://www.miller-mccune.com/culture-society/on-facebook-you-are-who-you-know-10385/">Miller-McCune</a>
+                                                    <li><a
+                                                            href="http://yro.slashdot.org/story/10/03/12/1422200/On-Social-Networks-You-Are-Who-You-Know">Slashdot</a>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

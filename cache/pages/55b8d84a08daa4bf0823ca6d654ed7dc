@@ -1,0 +1,2221 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Staff Members Archive - The Data Science Institute at Columbia University</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- This site is optimized with the Yoast SEO Premium plugin v7.0.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://datascience.columbia.edu/people/" />
+<link rel="next" href="https://datascience.columbia.edu/people/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Staff Members Archive - The Data Science Institute at Columbia University" />
+<meta property="og:url" content="https://datascience.columbia.edu/people/" />
+<meta property="og:site_name" content="The Data Science Institute at Columbia University" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Staff Members Archive - The Data Science Institute at Columbia University" />
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//datascience.columbia.edu' />
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel="alternate" type="application/rss+xml" title="The Data Science Institute at Columbia University &raquo; Staff Members Feed" href="https://datascience.columbia.edu/people/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.6.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-2C3JND1J4X"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.6.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/datascience.columbia.edu\/people\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-2C3JND1J4X',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-2C3JND1J4X', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" href="https://datascience.columbia.edu/wp-content/themes/columbia-dsi/resources/assets/styles/additional.css"><link rel="stylesheet" href="https://use.typekit.net/edp0pjq.css"><link rel="stylesheet" href="https://datascience.columbia.edu/wp-content/themes/columbia-dsi/dist/styles/main.css"><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://datascience.columbia.edu"><link rel="alternate" href="https://datascience.columbia.edu/wp-json/tribe/events/v1/" /><link rel="icon" href="https://datascience.columbia.edu/wp-content/uploads/2020/10/cropped-dsi-favicon-2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://datascience.columbia.edu/wp-content/uploads/2020/10/cropped-dsi-favicon-2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://datascience.columbia.edu/wp-content/uploads/2020/10/cropped-dsi-favicon-2-180x180.png">
+<meta name="msapplication-TileImage" content="https://datascience.columbia.edu/wp-content/uploads/2020/10/cropped-dsi-favicon-2-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			#wpadminbar {
+	top: unset;
+	bottom: 0;
+}
+#frontiers-events {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+#frontiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.mini-event-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+}
+
+.mini-event-card:hover {
+  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+}
+
+.mini-event-img-wrap {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.mini-event-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mini-event-content {
+  padding: 1rem 1.2rem 1.25rem;
+}
+
+.mini-event-date {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: #003366;
+  font-size: 0.95rem;
+}
+
+.mini-event-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.mini-event-title a {
+  color: #001934;
+  text-decoration: none;
+}
+
+.mini-event-title a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #frontiers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/*DSI Scholars Faculty and Student Box with rounded corners */
+.scholars-hover {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.scholars-hover img {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.scholars-hover .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 123, 194, 0.85);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 0 0 2px 2px; /* match rounded corners */
+  opacity: 1; /* always visible */
+}
+
+.scholars-hover:hover img {
+  transform: scale(1.05);
+}
+
+
+/* Homepage Header Basic */
+.home .header-basic {
+  padding-bottom: 5rem !important;
+}
+/* Homepage Header Basic blurb wider + bigger */
+.home .header-basic p {
+  max-width: 40rem !important;   
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+  margin-top: 1rem !important;
+}
+.home .explore-more { padding-top: 0 !important; padding-bottom: 0 !important; }
+.home .explore-more .container > div.lg\:grid { padding-top: 1 !important; padding-bottom: 1 !important; padding-left: 0 !important; padding-right: 0 !important;
+}
+
+/* Hide menu items on mobile */
+@media (max-width: 1450px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+html {
+	margin-top: 0px !important;
+}
+listpadbottom li {
+	padding-bottom: 200px !important;
+}
+
+/* For Events Sidebar */
+.single-tribe_events .lg\:pt-16 {
+  padding-top: 0 !important;
+}
+.single-tribe_events #tribe-events-pg-template {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Icons */
+img.inline-block.align-middle.float-left {
+  width: 40px !important;
+  height: auto !important;
+  margin-right: 12px; /* adjust as needed */
+}
+
+/* Hides Staff Visualization Button Appearing on People Subpages */
+a[href*="staff-visualization"],
+a[href*="staff-visualization"] span,
+.absolute.right-0 {
+  display: none !important;
+}
+
+/* DSI Scholars Pages */
+.vertical-line {
+  border-left: 3px solid #1890ff; 
+  padding-left: 10px; 
+	margin-left: 0px;
+	padding-right: 40px;
+}
+.wp-element-caption,
+.caption {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+#phases-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allow wrapping if needed to prevent overlap */
+}
+
+#phases-section .container .phase {
+    background-color: white !important;
+    border: 2px solid #ccc !important;
+    border-radius: 8px !important;
+    width: 30.5% !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    position: relative !important;
+    margin-right: 0px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+    transform-origin: top left !important;
+    transition: transform 0.3s ease-in-out !important; /* Smooth scaling */
+}
+
+#phases-section .container .phase:last-child {
+    margin-right: 0 !important;
+}
+
+#phases-section .container .phase::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: -20px !important;
+    transform: translateY(-50%) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+    border-left: 20px solid #f9f9f9 !important;
+    z-index: 1 !important;
+}
+
+#phases-section .container .phase::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: -22px !important;
+    transform: translateY(-50%) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 22px solid transparent !important;
+    border-bottom: 22px solid transparent !important;
+    border-left: 22px solid #ccc !important;
+    z-index: 0 !important;
+}
+
+#phases-section .container .phase-title {
+    background-color: #e5f1fd !important;
+    text-align: center !important;
+    padding: 8px !important;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+#phases-section .container .phase-subtitle {
+    background-color: white !important;
+    text-align: center !important;
+    padding: 8px !important;
+    font-size: 1.1em !important;
+    color: #333 !important;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    font-weight: normal !important;
+}
+
+#phases-section .container .phase-content {
+    background-color: #f9f9f9 !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    flex-grow: 1 !important;
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* Special Styles for Phase 3 */
+#phases-section .container #phase3 {
+    border-style: dashed !important;
+    margin-right: 0 !important;
+}
+
+#phases-section .container #phase3::after, 
+#phases-section .container #phase3::before {
+    display: none !important;
+}
+
+/* Scaling for Smaller Desktop Screens */
+@media (max-width: 1024px) {
+    #phases-section .container .phase {
+        transform: scale(0.9) !important; /* Slightly scale down */
+    }
+}
+
+/* Tablet screens (stacked layout) */
+@media (max-width: 768px) {
+    #phases-section .container {
+        flex-direction: column;
+    }
+
+    #phases-section .container .phase {
+        width: 100% !important;
+        margin-right: 0 !important
+					
+					
+.card {
+  width: 300px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.scholars-card {
+  width: 300px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.scholars-title {
+  color: #007BC2;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.scholars-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.scholars-btn {
+  display: inline-block;
+  background-color: #FF5200; /* orange */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.scholars-btn:hover {
+  background-color: #e64900;
+}		</style>
+		<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50275129.js"></script>
+<!-- End of HubSpot Embed Code -->
+</head>  <body class="archive post-type-archive post-type-archive-staff_member wp-embed-responsive tribe-no-js app-data index-data archive-data archive-staff_member-data">
+        <header class="banner fixed z-40 left-0 top-0 w-full bg-slate-300 xl:text-white xl:absolute" x-data="{ menuActive: false }">
+  <div class="container mx-auto">
+    <div class="banner__inner flex flex-no-wrap xl:flex-wrap justify-between items-center xl:items-end xl:py-3 xl:pb-6">
+      
+      <nav class="banner__secondary hidden xl:flex xl:w-full xl:justify-between">
+                <ul id="menu-utility-nav" class="menu-secondary type-preset-8 font-body pb-3 text-right ml-auto"><li class="active menu-item menu-people"><a href="https://datascience.columbia.edu/people/" aria-current="page">People</a></li>
+<li class="menu-item menu-dax"><a target="_blank" href="https://www.daxnyc.ai/">DAX</a></li>
+<li class="menu-item menu-nebdhub"><a target="_blank" href="https://nebigdatahub.org/">NEBDHub</a></li>
+<li class="columbia-ai-blue menu-item menu-columbia-ai"><a target="_blank" href="https://ai.columbia.edu/">Columbia AI</a></li>
+<li class="active menu-item menu-giving"><a href="https://datascience.columbia.edu/engage/giving/">Giving</a></li>
+</ul>
+      </nav>
+      
+      <a class="w-56 sm:w-84 text-white" href="https://datascience.columbia.edu/" aria-label="Go to homepage">
+        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 95.1">
+          <g id="_x23_000d74__x7C__RGB__x7C__BLUE">
+			
+    /* Remove dividing line from header logo */
+             			  
+            <g id="Columbia_University_4_">
+              <path fill="#fff" class="st1" d="M87.2 44.8c-4.4-4-5.5-9.2-5.5-13.5 0-3.1 1.1-8.4 5.1-12.5 2.7-2.7 6.9-4.9 13.9-4.9 1.8 0 4.4.1 6.6.5 1.7.3 3.2.6 4.7.7.5 0 .6.2.6.5 0 .4-.1.9-.2 2.6-.1 1.5-.1 4-.1 4.7 0 .7-.1 1-.4 1-.3 0-.4-.3-.4-1 0-1.8-.7-3.7-1.9-4.7-1.6-1.4-5.1-2.6-9.1-2.6-6.1 0-8.9 1.8-10.5 3.3-3.3 3.2-4.1 7.3-4.1 11.9 0 8.7 6.7 16.7 16.5 16.7 3.4 0 6.1-.4 7.9-2.3 1-1 1.6-3 1.7-3.8.1-.5.2-.7.5-.7.2 0 .3.3.3.7 0 .3-.5 4.3-1 5.9-.3.9-.4 1-1.2 1.3-1.8.7-5.3 1.1-8.2 1.1-7 0-11.6-1.6-15.2-4.9zM133.1 19.1c9 0 15.9 5.5 15.9 14.6 0 8.7-6.4 15.9-16.1 15.9-11 0-15.7-8.3-15.7-15.3-.1-6.2 4.8-15.2 15.9-15.2zM134 48c3.6 0 10.9-1.9 10.9-13.2 0-9.3-5.7-14.2-12-14.2-6.7 0-11.6 4.2-11.6 12.7 0 9 5.4 14.7 12.7 14.7zM159.6 37.9c0 5.7.1 8.1.8 8.7.6.6 2.2.9 5.3.9 2.1 0 3.9 0 4.8-1.2.5-.6.8-1.4 1-2.2 0-.3.2-.5.4-.5s.3.2.3.6-.3 2.7-.6 3.9c-.3.9-.4 1.1-2.6 1.1-2.9 0-5.1 0-7-.1-1.8 0-3.2-.1-4.4-.1H156c-.8 0-1.7.1-2.3.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.3.1 4.6.1.2 0 3.2-.1 4.4-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.9 0-1.3.1-1.2.2-1.4.8-1.5 2.2v15.4zM177.8 30.9c0-6 0-7.1-.1-8.4-.1-1.2-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.2.1 4.6.1s2.9-.1 4.1-.1c.5 0 .7.1.7.3 0 .1-.2.3-.4.3-.3 0-.5 0-1 .1-1.1.2-1.3.9-1.4 2.2-.1 1.2-.1 2.3-.1 8.4v5.4c0 5.6 1.2 8 3 9.5 2 1.8 3.7 2.1 6 2.1 2.5 0 4.8-1.1 6.2-2.7 1.9-2.2 2.3-5.4 2.3-9.4v-4.9c0-6 0-7.1-.1-8.4 0-1.2-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.1.1 4.3.1.3 0 2.2-.1 3.4-.1.5 0 .6.1.6.3 0 .1-.1.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.9-1.4 2.2-.1 1.2 0 2.3 0 8.4v4.2c0 4.2-.5 8.9-3.7 11.7-2.9 2.5-6 2.8-8.4 2.8-1.3 0-5.5-.1-8.4-2.7-2-1.8-3.5-4.5-3.5-10.2v-5.8zM242.8 44.1c.1 1.4.4 3.5 2.1 4 1.1.4 2.2.4 2.6.4.2 0 .3.1.3.3 0 .2-.4.4-.8.4-.9 0-5.4 0-6.9-.2-1-.1-1.1-.2-1.1-.4 0-.1.1-.3.3-.3.2 0 .3-.6.2-1.4l-1.9-19.8h-.1L227.7 47c-.8 1.7-1.1 2.1-1.4 2.1-.4 0-.6-.4-1.4-1.8-1.1-1.9-3.7-6.9-4.7-9-1.2-2.5-4.4-9-5.1-10.6h-.2l-1.6 17.6v2c0 .6.4 1 1 1.1.7.2 1.3.2 1.6.2.1 0 .3.1.3.3 0 .3-.3.4-.7.4-1.5 0-3.4-.1-3.7-.1-.4 0-2.3.1-3.4.1-.4 0-.7-.1-.7-.4 0-.1.2-.3.4-.3.3 0 .6 0 1.2-.1 1.3-.2 1.4-1.6 1.6-3.1l2.9-25.4c0-.4.2-.7.5-.7s.6.1.8.6l12.1 24.2L238.9 20c.2-.4.4-.6.6-.6.3 0 .5.3.6 1.1l2.7 23.6zM254.1 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2.1-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.7.1 1 0 2.8-.1 4.7-.1 6.7 0 8.4 3.9 8.4 5.9 0 3.1-2 5-4.1 6.8 3.1.9 7.1 3.7 7.1 8.1 0 4.3-3.2 8.6-10.1 8.6-.7 0-2.2 0-3.5-.1-1.3 0-2.4-.1-2.6-.1h-1.6c-.8 0-1.8.1-2.4.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.1.9-1 1.1-2.2.2-1.6.2-4.7.2-8.4v-6.8zm3.4.9c0 .3.1.4.3.4.2 0 1 .2 2.5.2 2.2 0 3.1-.1 3.9-1 .9-1 1.6-2.3 1.6-4.2 0-3-1.6-6.3-5.7-6.3-.5 0-1.4 0-2.1.2-.4.1-.5.2-.5.4v10.3zm0 4.3v8.3c.1 1.9.1 2.3 1.4 2.9 1.1.5 2.8.5 3.5.5 2.6 0 5.9-1 5.9-6 0-1.7-.7-5.1-3.8-7.1-1.4-.9-2.6-.8-3.6-1-.5-.1-2.5-.1-3.2-.1-.1 0-.2.1-.2.3v2.2zM283.6 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM303.2 20.5c.5-1.3.7-1.5 1-1.5.4 0 .5.5 1 1.4.7 1.6 7.2 17.7 9.6 23.6 1.5 3.5 2.6 4 3.4 4.3.6.2 1.2.2 1.6.2.2 0 .5.1.5.3 0 .2-.5.3-.9.3-.6 0-3.6 0-6.3-.1-.8 0-1.4 0-1.4-.3 0-.2.1-.2.3-.3.2-.1.6-.4.4-1.1l-3.6-8.9c-.1-.2-.1-.2-.4-.2H299c-.2 0-.3.1-.4.3l-2.3 6.2c-.4 1-.6 1.9-.6 2.6 0 .8.7 1.1 1.4 1.1h.4c.3 0 .4.1.4.3 0 .2-.2.3-.6.3-1 0-3.2-.1-3.6-.1-.4 0-2.4.1-4.1.1-.5 0-.8-.1-.8-.3 0-.2.2-.3.4-.3.3 0 .9 0 1.2-.1 1.8-.2 2.6-1.6 3.4-3.6l9.4-24.2zm4.5 16.2c.2 0 .2-.1.1-.3l-4-10.7c-.2-.6-.5-.6-.7 0l-3.7 10.7c0 .2 0 .3.1.3h8.2zM337 27.8c0-7.1 0-8.4-.1-9.9-.1-1.6-.5-2.3-2-2.6-.4-.1-1.1-.1-1.6-.1-.2 0-.4-.1-.4-.3 0-.3.2-.4.7-.4 2.1 0 4.8.1 5.3.1.4 0 3.2-.1 4.5-.1.5 0 .7.1.7.4 0 .2-.2.3-.4.3-.3 0-.6 0-1.1.1-1.2.2-1.6 1-1.7 2.6-.1 1.5-.1 2.7-.1 9.9v6.4c0 6.6 1.5 9.4 3.4 11.3 2.2 2.1 4.3 2.5 6.9 2.5 2.8 0 5.5-1.3 7.2-3.3 2.1-2.6 2.6-6.5 2.6-11.2v-5.7c0-7.1 0-8.4-.1-9.9-.1-1.6-.5-2.3-2-2.6-.4-.1-1.1-.1-1.6-.1-.2 0-.4-.1-.4-.3 0-.3.2-.4.7-.4 2.1 0 4.6.1 4.8.1.3 0 2.5-.1 3.8-.1.5 0 .7.1.7.4 0 .2-.2.3-.4.3-.3 0-.6 0-1.1.1-1.2.3-1.6 1-1.7 2.6-.1 1.5-.1 2.7-.1 9.9v4.9c0 4.9-.5 10.4-4.2 13.7-3.3 2.9-6.7 3.4-9.4 3.4-1.6 0-6.2-.2-9.4-3.2-2.2-2.2-4-5.4-4-12v-6.8zM375.3 43.8c.1 3.2.5 4.2 1.6 4.4.7.2 1.6.2 2 .2.2 0 .3.1.3.3 0 .2-.3.3-.7.3-2.3 0-3.9-.1-4.2-.1-.4 0-2.1.1-3.9.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 1.1 0 1.6-.2 1-.3 1.1-1.3 1.1-4.9V21.1c0-1.6.2-2 .5-2 .5 0 1.1.8 1.6 1.2.6.6 6.5 6.9 12.7 13.3 4 4.1 8.3 8.7 9.5 10l-.4-19.5c0-2.5-.3-3.4-1.5-3.6-.7-.1-1.6-.2-2-.2-.3 0-.3-.2-.3-.4s.3-.3.8-.3c1.8 0 3.7.1 4.2.1s1.8-.1 3.4-.1c.4 0 .7 0 .7.3 0 .1-.2.4-.5.4-.2 0-.5 0-1 .1-1.3.3-1.4 1.1-1.4 3.4l-.1 22.8c0 2.6 0 2.8-.3 2.8-.4 0-.8-.3-3.1-2.4-.4-.4-6.2-6.1-10.5-10.5-4.7-4.9-9.2-9.7-10.4-11l.6 18.3zM413.2 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM435.9 44c2.3-5.2 7.6-18.5 8.4-21.3.2-.6.4-1.1.4-1.5 0-.3-.1-.7-.5-.8-.5-.1-.9-.1-1.4-.1-.2 0-.5-.1-.5-.3 0-.2.3-.3.9-.3 1.6 0 3.4.1 3.9.1.2 0 2-.1 3.2-.1.4 0 .6.1.6.3 0 .2-.1.4-.5.4-.3 0-1.2 0-1.9.5-.5.4-1.2.9-2.2 3.6-.5 1.1-2.4 5.8-4.5 10.5-2.5 5.7-4.2 9.9-5.2 11.8-1.1 2.3-1.3 2.9-1.7 2.9-.5 0-.7-.5-1.5-2.4l-9.9-23.8c-.9-2.2-1.5-2.6-2.8-2.9-.6-.1-1.3-.1-1.6-.1-.2 0-.3-.2-.3-.4s.4-.3 1.1-.3c1.9 0 4.2.1 4.7.1.4 0 2.2-.1 3.7-.1.7 0 1.1.1 1.1.3 0 .2-.1.4-.4.4-.5 0-1.1 0-1.5.2-.4.2-.5.4-.5.7 0 .5.5 1.7 1.1 3.2l7.8 19.4zM456.9 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.7.1h9.6c.8 0 1.5-.2 1.8-.2.2 0 .4-.2.5-.2.1 0 .2.2.2.4 0 .3-.2.7-.3 1.8 0 .4-.1 2.1-.2 2.6 0 .2-.2.4-.4.4s-.3-.2-.3-.5 0-.9-.2-1.4c-.3-.6-.7-.9-2.9-1.2-.7-.1-5.3-.1-5.8-.1-.2 0-.2.1-.2.4v10.6c0 .3 0 .4.2.4.5 0 5.8 0 6.7-.1 1-.1 1.6-.1 2-.5.3-.3.5-.5.6-.5.1 0 .2.1.2.3 0 .2-.2.9-.3 2.2-.1.8-.2 2.2-.2 2.5 0 .3-.1.7-.4.7-.2 0-.3-.1-.3-.4 0-.4 0-.8-.2-1.3-.1-.5-.5-1-2.1-1.2-1.1-.1-5.4-.2-6.1-.2-.2 0-.3.1-.3.3v9.8c.1 2.6.8 3.1 4.8 3.1 1.1 0 3 0 4-.4 1-.5 1.6-1.1 1.8-2.7.1-.5.2-.6.4-.6s.3.3.3.6-.3 2.9-.5 3.8c-.3 1-.7 1-2.2 1-3 0-5.3-.1-7-.1-1.7-.1-2.7-.1-3.3-.1H457c-.8 0-1.7.1-2.3.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.1.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.8zM479.5 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.5.1 4.7.1.4 0 3.8-.1 5-.1 2.6 0 5.4.2 7.5 1.7 1 .7 2.8 2.6 2.8 5.3 0 2.9-1.2 5.7-4.9 8.9 3.3 4.1 6.1 7.6 8.4 10.1 2.1 2.2 3.5 2.6 4.5 2.7.8.1 1.2.1 1.4.1.2 0 .4.2.4.3 0 .2-.2.3-1 .3H503c-2.3 0-3.3-.2-4.3-.8-1.7-.9-3.2-2.8-5.5-5.7-1.7-2.1-3.5-4.6-4.3-5.7-.2-.2-.3-.2-.5-.2l-5.1-.1c-.2 0-.3.1-.3.3v.9c0 3.8 0 6.8.2 8.4.1 1.1.4 1.9 1.6 2.1.5.1 1.4.2 1.8.2.3 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-4.9-.1 0 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.8zm3.4 3.3c0 .2.1.4.3.5.6.3 2.6.6 4.4.6 1 0 2.1 0 3-.7 1.4-.9 2.4-3 2.4-5.9 0-4.9-2.6-7.6-6.9-7.6-1.2 0-2.5.1-2.9.2-.2.1-.3.2-.3.5v12.4zM508.3 48.6c-.5-.3-.6-.4-.6-1.5 0-1.9.2-3.5.2-4.1 0-.4.1-.6.3-.6.2 0 .4.1.4.5 0 .3 0 .9.1 1.4.6 2.8 3.7 3.8 6.3 3.8 4 0 6-2.2 6-5.2 0-2.8-1.5-4.1-5.1-6.8l-1.8-1.4c-4.3-3.2-5.8-5.6-5.8-8.3 0-4.6 3.6-7.3 8.9-7.3 1.6 0 3.2.2 4.2.5.8.2 1.1.2 1.4.2.3 0 .4 0 .4.3 0 .2-.2 1.5-.2 4.1 0 .6 0 .9-.3.9s-.3-.2-.4-.5c0-.5-.4-1.5-.6-1.9-.3-.5-1.6-1.9-5.2-1.9-2.9 0-5.3 1.5-5.3 4.2 0 2.5 1.2 3.9 5.2 6.6l1.1.8c4.9 3.3 6.6 6 6.6 9.4 0 2.3-.9 4.8-3.7 6.6-1.7 1.1-4.2 1.4-6.4 1.4-1.8-.2-4.1-.5-5.7-1.2zM535.7 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM556.9 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.6 2.1.5.1 1.5.2 1.8.2.3 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.7-.1-5-.1-.2 0-3 .1-4.2.1-.5 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .8-.1 1.2-.2.8-.2 1.1-1 1.2-2.1.2-1.6.2-4.7.2-8.4V21.5l-5.8.1c-2.5 0-3.5.3-4.1 1.2-.5.7-.5 1-.6 1.2-.1.3-.2.4-.4.4-.1 0-.3-.1-.3-.3 0-.4.8-3.9.9-4.2 0-.2.3-.7.4-.7.3 0 .7.3 1.8.5 1.1.1 2.7.2 3.2.2h15.2c1.3 0 2.2-.1 2.9-.2.6-.1 1-.2 1.1-.2.2 0 .2.2.2.5 0 1.2-.1 4-.1 4.4 0 .3-.2.5-.4.5s-.3-.1-.3-.7v-.4c-.1-1.2-1-2.1-4.8-2.2l-5-.1v16.3zM583.7 39c0-2.1-.3-2.9-.9-4-.3-.6-5.8-9.2-7.1-11.3-1-1.5-1.9-2.3-2.6-2.8-.6-.4-1.4-.5-1.7-.5-.2 0-.4-.2-.4-.4s.1-.3.5-.3c.8 0 3.8.1 4 .1.3 0 1.9-.1 3.5-.1.5 0 .5.1.5.3 0 .1-.3.3-.6.4-.3.1-.5.3-.5.6 0 .5.3 1 .5 1.5l7.3 12.1c.8-1.6 5.8-10 6.6-11.3.5-.9.7-1.5.7-2s-.2-.9-.6-1c-.4-.1-.6-.3-.6-.5 0-.1.2-.2.6-.2 1.1 0 2.5.1 2.8.1.3 0 3.2-.1 3.9-.1.3 0 .5.1.5.2 0 .2-.2.4-.5.4-.5 0-1.2.1-1.9.5-.8.5-1.1.9-2 1.9-1.3 1.6-7 10.7-7.8 12.4-.7 1.4-.5 2.6-.5 3.9v3.3c0 .6 0 2.3.1 3.9.1 1.1.4 1.9 1.6 2.1.5.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5.1-.1-.2 0-2.7.1-3.9.1-.5 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .8-.1 1.2-.2.8-.2 1.1-.9 1.2-2.1.1-1.6.1-3.2.1-3.9V39z"/>
+            </g>
+            <g id="Columbia_Crown_Logo_9_">
+              <g class="st2">
+                <path fill="#fff" class="st3" d="M57.9 20.9c-.6-3.6-3.5-6.1-7-6.3-6.4-.6-11.9 2.8-18 3.9-.5.1-1.1-1-1.7-1.5 2.8-2.1 2.5-6.3-.8-8.2-.2-.3-.1-2.7 0-2.8.3-.2 2.4.2 2.7-.1.3-.3.2-2.8 0-3-.2-.2-2.6 0-2.7-.1-.1-.2.1-2.4-.2-2.6C30 0 29.4 0 29 0c-.4 0-1 0-1.2.1-.2.2 0 2.4-.2 2.6-.1.2-2.5-.1-2.7.1-.2.2-.2 2.8 0 3 .3.3 2.4-.1 2.7.1.1.1.2 2.5 0 2.8-3.3 1.8-3.7 6-.8 8.2-.6.6-1.3 1.6-1.7 1.5-6.1-1-11.6-4.4-17.9-3.9-3.5.3-6.4 2.8-7 6.3C-.9 27.2 3.7 32.2 6 37.7c.7 1.7 1.3 4 1.2 6h43.7c-.1-2 .5-4.3 1.2-6 2.2-5.4 6.9-10.4 5.8-16.8zM26.4 35.1c-.6 3.2-2.4 5.3-3.9 5.3-1 0-1.8-.4-2.5-1-1-.9-1.8-2.3-1.5-3.1.2-.3 2.9.1 3.1-.1.2-.3-.3-2.3-.6-2.6-.3-.3-2.7.1-3-.2-.3-.3-.6-2.8-.9-3 0 0-2.5-.4-2.7 0-.2.4.9 2.5.7 2.9-.2.4-3.5-.3-3.6.1-.1.4.2 2.3.5 2.5.3.3 3.5.3 3.5.3.6.5.8 1.5.8 2.5 0 1.3-1 2-2.6 1.5-3-.8-6.8-7.4-9-12-1.6-3.3-2.6-8.8 1.7-10.5 2.6-1 5.4-.4 8.2.4 3 .9 6.9 2.1 9.1 3.5.6.3-.7.1 1.4 4.6.7 2.2 1.7 6.7 1.3 8.9zm18.1 5.1c-1.6.5-2.6-.2-2.6-1.5 0-1 .2-2 .8-2.5 0 0 3.1 0 3.4-.3.3-.3.6-2.2.5-2.5-.1-.4-3.4.3-3.6-.1-.2-.4.9-2.5.7-2.9-.2-.4-2.7 0-2.7 0-.3.2-.6 2.7-.9 3-.3.3-2.7-.1-3 .2-.3.3-.8 2.3-.6 2.6.2.3 2.8-.1 3.1.1.3.8-.5 2.3-1.5 3.1-.7.6-1.5 1-2.5 1-1.5 0-3.3-2.1-3.9-5.3-.4-2.3.6-6.7 1.5-8.8 2-4.5.8-4.2 1.4-4.6 2.3-1.4 6.2-2.6 9.1-3.5 2.8-.8 5.6-1.4 8.2-.4 4.3 1.6 3.3 7.1 1.7 10.5-2.3 4.5-6.1 11.1-9.1 11.9zm6.9 6.6v3.8H6.7v-3.8h44.7z"/>
+              </g>
+              <path fill="#fff" class="st1" d="M57.9 20.9c-.6-3.6-3.5-6.1-7-6.3-6.4-.6-11.9 2.8-18 3.9-.5.1-1.1-1-1.7-1.5 2.8-2.1 2.5-6.3-.8-8.2-.2-.3-.1-2.7 0-2.8.3-.2 2.4.2 2.7-.1.3-.3.2-2.8 0-3-.2-.2-2.6 0-2.7-.1-.1-.2.1-2.4-.2-2.6C30 0 29.4 0 29 0c-.4 0-1 0-1.2.1-.2.2 0 2.4-.2 2.6-.1.2-2.5-.1-2.7.1-.2.2-.2 2.8 0 3 .3.3 2.4-.1 2.7.1.1.1.2 2.5 0 2.8-3.3 1.8-3.7 6-.8 8.2-.6.6-1.3 1.6-1.7 1.5-6.1-1-11.6-4.4-17.9-3.9-3.5.3-6.4 2.8-7 6.3C-.9 27.2 3.7 32.2 6 37.7c.7 1.7 1.3 4 1.2 6h43.7c-.1-2 .5-4.3 1.2-6 2.2-5.4 6.9-10.4 5.8-16.8zM26.4 35.1c-.6 3.2-2.4 5.3-3.9 5.3-1 0-1.8-.4-2.5-1-1-.9-1.8-2.3-1.5-3.1.2-.3 2.9.1 3.1-.1.2-.3-.3-2.3-.6-2.6-.3-.3-2.7.1-3-.2-.3-.3-.6-2.8-.9-3 0 0-2.5-.4-2.7 0-.2.4.9 2.5.7 2.9-.2.4-3.5-.3-3.6.1-.1.4.2 2.3.5 2.5.3.3 3.5.3 3.5.3.6.5.8 1.5.8 2.5 0 1.3-1 2-2.6 1.5-3-.8-6.8-7.4-9-12-1.6-3.3-2.6-8.8 1.7-10.5 2.6-1 5.4-.4 8.2.4 3 .9 6.9 2.1 9.1 3.5.6.3-.7.1 1.4 4.6.7 2.2 1.7 6.7 1.3 8.9zm18.1 5.1c-1.6.5-2.6-.2-2.6-1.5 0-1 .2-2 .8-2.5 0 0 3.1 0 3.4-.3.3-.3.6-2.2.5-2.5-.1-.4-3.4.3-3.6-.1-.2-.4.9-2.5.7-2.9-.2-.4-2.7 0-2.7 0-.3.2-.6 2.7-.9 3-.3.3-2.7-.1-3 .2-.3.3-.8 2.3-.6 2.6.2.3 2.8-.1 3.1.1.3.8-.5 2.3-1.5 3.1-.7.6-1.5 1-2.5 1-1.5 0-3.3-2.1-3.9-5.3-.4-2.3.6-6.7 1.5-8.8 2-4.5.8-4.2 1.4-4.6 2.3-1.4 6.2-2.6 9.1-3.5 2.8-.8 5.6-1.4 8.2-.4 4.3 1.6 3.3 7.1 1.7 10.5-2.3 4.5-6.1 11.1-9.1 11.9zm6.9 6.6v3.8H6.7v-3.8h44.7z"/>
+            </g>
+            <path fill="#fff" class="st1" d="M85.7 75.6c0-6.3 0-7.5-.1-8.8-.1-1.4-.4-2-1.7-2.3-.3-.1-1-.1-1.4-.1-.2 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.6.1.5 0 3-.1 5.5-.1 4 0 11.4-.4 16.3 4.6 2 2.1 3.9 5.5 3.9 10.3 0 5.1-2.1 9-4.4 11.4-1.7 1.8-5.4 4.7-12.3 4.7-1.7 0-3.9-.1-5.6-.2-1.8-.1-3.2-.2-3.4-.2h-1.6c-.8 0-1.7.1-2.4.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.2 1-1.1 1.2-2.2.2-1.7.2-4.9.2-8.8v-7.3zm3.4 4.4c0 4.3 0 8 .1 8.8 0 1 .1 2.6.4 3.1.5.8 2.1 1.6 6.9 1.6 3.8 0 7.3-1.4 9.7-3.8 2.1-2.1 3.2-6 3.2-9.7 0-5.2-2.2-8.5-3.9-10.2-3.8-4-8.4-4.6-13.3-4.6-.8 0-2.3.1-2.6.3-.4.2-.5.4-.5.8V80zM126.9 69.1c.4-1.1.6-1.3.9-1.3.4 0 .5.5.9 1.3.6 1.5 6.4 15.7 8.6 20.9 1.3 3.1 2.3 3.5 3 3.8.5.2 1.1.2 1.4.2.2 0 .4.1.4.3s-.4.3-.8.3c-.5 0-3.2 0-5.6-.1-.7 0-1.3 0-1.3-.2s.1-.2.2-.2c.2-.1.6-.4.3-.9l-3.2-7.9c-.1-.2-.1-.2-.3-.2h-8.2c-.2 0-.3.1-.4.3l-2 5.5c-.3.9-.5 1.7-.5 2.3 0 .7.6.9 1.2.9h.3c.3 0 .4.1.4.3 0 .2-.2.3-.5.3-.9 0-2.8-.1-3.2-.1-.4 0-2.1.1-3.6.1-.4 0-.7-.1-.7-.3 0-.2.2-.3.3-.3.2 0 .8 0 1.1-.1 1.6-.2 2.3-1.4 3-3.2l8.3-21.7zm4 14.4c.2 0 .2-.1.1-.2l-3.5-9.5c-.2-.5-.4-.5-.6 0l-3.3 9.5c0 .2 0 .2.1.2h7.2zM152 84.5c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2H158c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2.2 0 .2.2.2.4 0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4-.2 0-.2-.1-.3-.6v-.4c-.1-1.1-.9-1.8-4.3-1.9H152v14.5zM172.7 69.1c.4-1.1.6-1.3.9-1.3.4 0 .5.5.9 1.3.6 1.5 6.4 15.7 8.6 20.9 1.3 3.1 2.3 3.5 3 3.8.5.2 1.1.2 1.4.2.2 0 .4.1.4.3s-.4.3-.8.3c-.5 0-3.2 0-5.6-.1-.7 0-1.3 0-1.3-.2s.1-.2.2-.2c.2-.1.6-.4.3-.9l-3.2-7.9c-.1-.2-.1-.2-.3-.2H169c-.2 0-.3.1-.4.3l-2 5.5c-.3.9-.5 1.7-.5 2.3 0 .7.6.9 1.2.9h.3c.3 0 .4.1.4.3 0 .2-.2.3-.5.3-.9 0-2.8-.1-3.2-.1-.4 0-2.1.1-3.6.1-.4 0-.7-.1-.7-.3 0-.2.2-.3.3-.3.2 0 .8 0 1.1-.1 1.6-.2 2.3-1.4 3-3.2l8.3-21.7zm4 14.4c.2 0 .2-.1.1-.2l-3.5-9.5c-.2-.5-.4-.5-.6 0l-3.3 9.5c0 .2 0 .2.1.2h7.2zM204.1 94c-.6-.3-.6-.4-.6-1.5 0-2 .2-3.7.2-4.3 0-.4.1-.6.3-.6.2 0 .3.1.3.4 0 .4 0 .9.1 1.5.6 3 3.3 4.1 6 4.1 3.9 0 5.8-2.8 5.8-5.4 0-2.8-1.2-4.4-4.7-7.3l-1.8-1.5c-4.3-3.5-5.3-6-5.3-8.8 0-4.3 3.2-7.3 8.4-7.3 1.6 0 2.8.2 3.8.4.8.2 1.1.2 1.4.2.3 0 .4.1.4.3s-.2 1.5-.2 4.3c0 .6-.1.9-.3.9-.2 0-.3-.2-.3-.5 0-.5-.3-1.6-.5-2-.2-.4-1.3-2.1-5.1-2.1-2.8 0-5 1.7-5 4.7 0 2.3 1.1 3.8 4.9 6.8l1.1.9c4.8 3.8 5.9 6.3 5.9 9.5 0 1.7-.6 4.7-3.4 6.7-1.7 1.2-3.9 1.7-6.1 1.7-1.8 0-3.6-.3-5.3-1.1zM229.2 91.3c-3.5-3-4.3-6.9-4.3-10.2 0-2.3.9-6.3 4-9.4 2.1-2.1 5.4-3.7 10.9-3.7 1.4 0 3.4.1 5.2.4 1.3.2 2.5.5 3.7.5.4 0 .4.2.4.4 0 .3-.1.7-.2 1.9 0 1.1 0 3-.1 3.5 0 .5-.2.7-.4.7s-.3-.2-.3-.7c0-1.3-.6-2.7-1.5-3.4-1.3-1.1-3.9-1.9-7-1.9-4.6 0-6.8 1.2-8 2.4-2.6 2.4-3.2 5.5-3.2 9 0 6.6 5.2 12.5 12.9 12.5 2.7 0 4.5-.2 5.9-1.6.8-.8 1.3-2.2 1.4-2.9.1-.4.1-.5.4-.5.2 0 .3.2.3.5 0 .2-.5 3.2-.9 4.4-.2.6-.3.8-.9 1-1.5.6-4.1.8-6.4.8-5.5 0-9.1-1.3-11.9-3.7zM260.8 84.5c0 3.3 0 6 .2 7.5.1 1 .2 1.7 1.3 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2 0-4.3-.1-4.5-.1-.2 0-2.4.1-3.5.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.2.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1c0-5.4 0-6.3-.1-7.4-.1-1.2-.4-1.7-1.1-1.9-.4-.1-.9-.1-1.1-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.2 0 3.4.1 3.6.1.2 0 2.5-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.5 0-.9.1-1 .2-1.2.7-1.3 1.9v13.5zM272.6 78.4c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4.1 0 .2.1.2.3s-.2.8-.3 1.9c-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1zM296.4 89.8c.1 2.8.4 3.7 1.4 3.9.6.2 1.5.2 1.8.2.2 0 .3.1.3.3 0 .2-.2.3-.6.3-2 0-3.4-.1-3.8-.1-.3 0-1.8.1-3.4.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 .9 0 1.5-.2.9-.2 1-1.2 1-4.3V69.7c0-1.4.2-1.7.5-1.7.4 0 1 .7 1.4 1.1.6.6 5.8 6.1 11.3 11.8 3.5 3.7 7.3 7.7 8.4 8.9l-.4-17.3c0-2.2-.2-3-1.3-3.2-.6-.1-1.5-.2-1.7-.2-.2 0-.3-.2-.3-.3 0-.2.3-.2.7-.2 1.6 0 3.3.1 3.7.1.4 0 1.6-.1 3-.1.4 0 .6 0 .6.2 0 .1-.2.3-.4.3s-.4 0-.9.1c-1.2.2-1.3.9-1.3 3l-.1 20.2c0 2.3 0 2.5-.3 2.5-.4 0-.7-.3-2.7-2.1-.4-.3-5.5-5.4-9.3-9.3-4.1-4.3-8.2-8.6-9.2-9.8l.4 16.1zM328.4 91.3c-3.5-3-4.3-6.9-4.3-10.2 0-2.3.9-6.3 4-9.4 2.1-2.1 5.4-3.7 10.9-3.7 1.4 0 3.4.1 5.2.4 1.3.2 2.5.5 3.7.5.4 0 .4.2.4.4 0 .3-.1.7-.2 1.9 0 1.1 0 3-.1 3.5 0 .5-.2.7-.4.7s-.3-.2-.3-.7c0-1.3-.6-2.7-1.5-3.4-1.3-1.1-3.9-1.9-7-1.9-4.6 0-6.8 1.2-8 2.4-2.6 2.4-3.2 5.5-3.2 9 0 6.6 5.2 12.5 12.9 12.5 2.7 0 4.5-.2 5.9-1.6.8-.8 1.3-2.2 1.4-2.9.1-.4.1-.5.4-.5.2 0 .3.2.3.5 0 .2-.5 3.2-.9 4.4-.2.6-.3.8-.9 1-1.5.6-4.1.8-6.4.8-5.5 0-9.1-1.3-11.9-3.7zM356.8 78.4c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4.1 0 .2.1.2.3s-.2.8-.3 1.9c-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1z"/>
+            <g>
+              <path fill="#fff" class="st1" d="M393 82.9c0 3.9 0 7.1.2 8.8.1 1.2.4 2.1 1.6 2.2.6.1 1.5.2 1.8.2.2 0 .3.1.3.2 0 .2-.2.3-.7.3-2.2 0-4.8-.1-5-.1-.2 0-2.8.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.2 1-1.1 1.2-2.2.2-1.7.2-4.9.2-8.8v-7.1c0-6.3 0-7.5-.1-8.8-.1-1.4-.5-2.1-1.4-2.3-.4-.1-1-.2-1.3-.2-.2 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.3 0 3.9.1 4.1.1.2 0 2.8-.1 4-.1.4 0 .6.1.6.3 0 .2-.2.2-.3.2-.3 0-.5 0-1 .1-1.1.2-1.4.9-1.5 2.3-.1 1.3-.1 2.4-.1 8.8v7.2zM408 89.9c.1 2.8.4 3.7 1.4 3.9.6.2 1.5.2 1.8.2.2 0 .3.1.3.3 0 .2-.2.3-.6.3-2 0-3.4-.1-3.8-.1-.3 0-1.8.1-3.4.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 .9 0 1.5-.2.9-.2 1-1.2 1-4.3V69.8c0-1.4.2-1.7.5-1.7.4 0 1 .7 1.4 1.1.6.6 5.8 6.1 11.3 11.8 3.5 3.7 7.3 7.7 8.4 8.9l-.5-17.4c0-2.2-.2-3-1.3-3.2-.6-.1-1.5-.2-1.7-.2-.2 0-.3-.2-.3-.3 0-.2.3-.2.7-.2 1.6 0 3.3.1 3.7.1.4 0 1.6-.1 3-.1.4 0 .6 0 .6.2 0 .1-.2.3-.4.3s-.4 0-.9.1c-1.2.2-1.3.9-1.3 3l-.1 20.2c0 2.3 0 2.5-.3 2.5-.4 0-.7-.3-2.7-2.1-.4-.3-5.5-5.4-9.3-9.3-4.1-4.3-8.2-8.6-9.2-9.8l.5 16.2zM437.3 94.2c-.5-.2-.5-.4-.5-1.3 0-1.7.2-3.1.2-3.7 0-.4.1-.6.3-.6s.3.1.3.4 0 .8.1 1.3c.6 2.5 3.2 3.4 5.6 3.4 3.5 0 5.4-2 5.4-4.6 0-2.5-1.3-3.7-4.5-6l-1.6-1.2c-3.9-2.9-5.1-5-5.1-7.4 0-4.1 3.2-6.5 7.9-6.5 1.4 0 2.8.2 3.7.4.7.2 1 .2 1.3.2s.4 0 .4.2-.2 1.3-.2 3.7c0 .5 0 .8-.3.8-.2 0-.3-.2-.3-.4 0-.4-.3-1.3-.5-1.7-.2-.4-1.4-1.7-4.6-1.7-2.6 0-4.7 1.3-4.7 3.7 0 2.2 1.1 3.4 4.6 5.8l1 .7c4.3 3 5.8 5.4 5.8 8.3 0 2-.8 4.2-3.3 5.9-1.5 1-3.7 1.2-5.7 1.2-1.7 0-3.8-.3-5.3-.9zM469.4 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4-.2 0-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM489.6 84.6c0 3.3 0 6 .2 7.5.1 1 .2 1.7 1.3 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2 0-4.3-.1-4.5-.1-.2 0-2.4.1-3.5.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.2.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1c0-5.4 0-6.3-.1-7.4-.1-1.2-.4-1.7-1.1-1.9-.4-.1-.9-.1-1.1-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.2 0 3.4.1 3.6.1.2 0 2.5-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.5 0-.9.1-1 .2-1.2.7-1.3 1.9v13.5zM509.9 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4s-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM525 78.5c0-5.4 0-6.3-.1-7.4-.1-1.1-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.8.1 4.1.1.3 0 2.6-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.4 0-.9.1-.9.2-1.1.8-1.2 1.9-.1 1.1-.1 2.1-.1 7.4v4.8c0 5 1.1 7.1 2.6 8.4 1.7 1.6 3.3 1.9 5.3 1.9 2.2 0 4.3-1 5.5-2.4 1.7-2 2-4.8 2-8.4v-4.3c0-5.4 0-6.3-.1-7.4 0-1.1-.2-1.7-1.4-1.9-.3 0-.9-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.7.1 3.9.1.2 0 1.9-.1 3-.1.4 0 .6.1.6.3 0 .1-.1.3-.3.3-.2 0-.4 0-.9.1-1 .2-1.2.8-1.3 1.9-.1 1.1 0 2.1 0 7.4v3.7c0 3.7-.5 7.9-3.3 10.3-2.6 2.2-5.4 2.5-7.5 2.5-1.2 0-4.9-.1-7.4-2.4-1.7-1.6-3.1-4-3.1-9v-5.1zM564.3 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4s-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM581.3 78.5c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4s.2.1.2.3c0 .2-.2.8-.3 1.9-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1z"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+      
+      <button class="ml-6 js-menu-toggle xl:hidden" @click="menuActive = !menuActive">
+        <svg class="w-8 h-8 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+        </svg>
+        <span class="hidden">mobile menu button</span>
+      </button>
+      
+      <nav class="banner__primary hidden xl:block">
+        
+        <ul id="menu-primary-menu" class="menu-desktop">
+            <li id="menu-item-40167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40167"><a href="https://datascience.columbia.edu/about-dsi/">About</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="240" height="160" src="https://datascience.columbia.edu/wp-content/uploads/2020/01/news-default-thumbnail.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+<li id="menu-item-8147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8147"><a href="https://datascience.columbia.edu/education/">Education</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="240" height="160" src="https://datascience.columbia.edu/wp-content/uploads/2020/01/news-default-thumbnail.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+<li id="menu-item-2050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2050"><a href="https://datascience.columbia.edu/research/">Research</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="240" height="160" src="https://datascience.columbia.edu/wp-content/uploads/2020/01/news-default-thumbnail.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+<li id="menu-item-14670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14670"><a href="https://datascience.columbia.edu/engage/">Ways to Engage</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="480" height="262" src="https://datascience.columbia.edu/wp-content/uploads/2025/08/iStock-1330603237-e1755088467460-480x262.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://datascience.columbia.edu/wp-content/uploads/2025/08/iStock-1330603237-e1755088467460-480x262.jpg 480w, https://datascience.columbia.edu/wp-content/uploads/2025/08/iStock-1330603237-e1755088467460-320x175.jpg 320w, https://datascience.columbia.edu/wp-content/uploads/2025/08/iStock-1330603237-e1755088467460-640x349.jpg 640w, https://datascience.columbia.edu/wp-content/uploads/2025/08/iStock-1330603237-e1755088467460.jpg 724w" sizes="auto, (max-width: 480px) 100vw, 480px" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+<li id="menu-item-40718" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-40718"><a href="https://datascience.columbia.edu/news/">News</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="240" height="160" src="https://datascience.columbia.edu/wp-content/uploads/2020/01/news-default-thumbnail.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+<li id="menu-item-40717" class="menu-item menu-item-type-post_type_archive menu-item-object-tribe_events menu-item-40717"><a href="https://datascience.columbia.edu/events/">Events</a>
+            <div class="mega-menu absolute left-0 w-screen py-12 bg-white shadow-lg" style="top: 100%;">
+                <div class="container mx-auto">
+                    <div class="flex flex-no-wrap">
+                        <figure class="w-1/3 rounded-md overflow-hidden pr-10">
+                            <img width="240" height="160" src="https://datascience.columbia.edu/wp-content/uploads/2020/01/news-default-thumbnail.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" />
+                        </figure>
+                        <div class="w-2/3">
+            </li>
+
+            <li class="menu-item align-middle inline-block">
+                <a href="/search">
+                <span class="hidden">search</span>
+                    <svg class="search fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.059 9.94c-.923-.919-1.431-2.143-1.431-3.445 0-1.301.508-2.524 1.431-3.444.922-.92 2.149-1.427 3.453-1.427 1.305 0 2.53.506 3.453 1.428.923.919 1.431 2.142 1.431 3.443 0 1.302-.508 2.526-1.431 3.445-.922.92-2.148 1.427-3.453 1.427-1.304 0-2.53-.507-3.453-1.428zM16 14.851l-4.365-4.354c.897-1.138 1.389-2.532 1.389-4.003 0-1.735-.677-3.366-1.908-4.592C9.886.676 8.252 0 6.512 0c-1.74 0-3.374.676-4.604 1.903C.678 3.13 0 4.76 0 6.495c0 1.736.678 3.366 1.908 4.593 1.23 1.227 2.864 1.902 4.604 1.902 1.455 0 2.833-.478 3.966-1.35L14.849 16 16 14.852z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </div>
+  
+  <div class="banner__menu--mobile hidden xl:hidden h-screen overflow-y-scroll pt-3 pb-10 text-white" :class="{ 'hidden' : !menuActive }" x-show.transition.opacity="menuActive">
+    <div class="container mx-auto">
+      <div class="max-w-3xl mx-auto">
+  <form class="search-wrapper type-preset-5 text-slate-200" role="search" method="get" action="https://datascience.columbia.edu/">
+    <label>
+      <span class="sr-only">Search for:</span>
+      <input
+        class="py-2 px-5 pr-12 placeholder-slate-200"
+        type="search"
+        placeholder="Search"
+        value=""
+        name="s">
+    </label>
+    <button type="submit" class="mr-5">
+      
+            <span class="hidden">search</span>
+            <svg class="w-5 h-5 text-blue-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.059 9.94c-.923-.919-1.431-2.143-1.431-3.445 0-1.301.508-2.524 1.431-3.444.922-.92 2.149-1.427 3.453-1.427 1.305 0 2.53.506 3.453 1.428.923.919 1.431 2.142 1.431 3.443 0 1.302-.508 2.526-1.431 3.445-.922.92-2.148 1.427-3.453 1.427-1.304 0-2.53-.507-3.453-1.428zM16 14.851l-4.365-4.354c.897-1.138 1.389-2.532 1.389-4.003 0-1.735-.677-3.366-1.908-4.592C9.886.676 8.252 0 6.512 0c-1.74 0-3.374.676-4.604 1.903C.678 3.13 0 4.76 0 6.495c0 1.736.678 3.366 1.908 4.593 1.23 1.227 2.864 1.902 4.604 1.902 1.455 0 2.833-.478 3.966-1.35L14.849 16 16 14.852z"/>
+            </svg>
+            
+    </button>
+  </form>
+</div>      <nav class="nav-mobile">
+        
+        <ul id="menu-mobile-and-top-level-secondary-navigation" class="menu-mobile font-display xl:font-body type-preset-4 xl:type-preset-7 font-bold xl:font-normal py-5 xl:py-0"><li id="menu-item-39733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39733"><a rel="mobile" href="https://datascience.columbia.edu/about-dsi/">About
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-26982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26982"><a href="https://datascience.columbia.edu/about-dsi/">About DSI
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-43246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43246"><a href="https://datascience.columbia.edu/about-dsi/membership/">Membership
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-40147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40147"><a href="https://datascience.columbia.edu/about-dsi/membership/become-a-member/">Become a Member
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-43245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43245"><a href="https://datascience.columbia.edu/about-dsi/membership/core-members/">Core Members
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-39710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39710"><a href="https://datascience.columbia.edu/about-dsi/what-is-data-science/">What is Data Science?
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40372"><a href="https://datascience.columbia.edu/about-dsi/people-at-dsi/">People at DSI
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://datascience.columbia.edu/about-dsi/work-with-us/">Work with Us
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://datascience.columbia.edu/about-dsi/contact-us/">Contact Us
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+<li id="menu-item-27102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27102"><a href="https://datascience.columbia.edu/education/">Education
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-27115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27115"><a href="https://datascience.columbia.edu/education/">Education
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-39768" class="menu-item menu-item-type-post_type menu-item-object-education_program menu-item-has-children menu-item-39768"><a href="https://datascience.columbia.edu/education/programs/m-s-in-data-science/">MS in Data Science
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-39769" class="menu-item menu-item-type-post_type menu-item-object-education_program menu-item-39769"><a href="https://datascience.columbia.edu/education/programs/m-s-in-data-science/admissions/">Admissions
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-39773" class="menu-item menu-item-type-post_type menu-item-object-education_program menu-item-39773"><a href="https://datascience.columbia.edu/education/programs/m-s-in-data-science/student-experience/">Student Experience
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-4245" class="menu-item menu-item-type-post_type menu-item-object-education_program menu-item-4245"><a href="https://datascience.columbia.edu/education/programs/ph-d-with-a-specialization-in-data-science/">PhD Specialization in Data Science
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-4246" class="menu-item menu-item-type-post_type menu-item-object-education_program menu-item-4246"><a href="https://datascience.columbia.edu/education/programs/certification-of-professional-achievement-in-data-sciences/">Certification of Professional Achievement in Data Sciences
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+<li id="menu-item-27140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27140"><a href="https://datascience.columbia.edu/research/">Research
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-39812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39812"><a href="https://datascience.columbia.edu/research/">Research
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-39823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39823"><a href="https://datascience.columbia.edu/research/centers-and-working-groups/">Research Centers and Working Groups
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40054"><a href="https://datascience.columbia.edu/research/programs/dsi-scholars/">Research Programs
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-5755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5755"><a href="https://datascience.columbia.edu/research/programs/postdoctoral-fellows-program/">Postdoctoral Fellows Program
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-27645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27645"><a href="https://datascience.columbia.edu/research/programs/dsi-scholars/">DSI Scholars Program
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-39969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39969"><a href="https://datascience.columbia.edu/research/grants-funding-opportunities/">Grants and Funding Opportunities
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-40157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40157"><a href="https://datascience.columbia.edu/research/grants-funding-opportunities/frontiers-in-data-science-and-ai/">Frontiers in Data Science and AI
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-5891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5891"><a href="https://datascience.columbia.edu/research/grants-funding-opportunities/seed-fund-program/">Seed Fund Program
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-39977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39977"><a href="https://datascience.columbia.edu/research/join-us/">Join Our Research Community
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+<li id="menu-item-27105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27105"><a href="https://datascience.columbia.edu/engage/">Engage
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-27110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27110"><a href="https://datascience.columbia.edu/engage/">Engage
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-39998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39998"><a href="https://datascience.columbia.edu/engage/for-industry/">For Industry
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40003"><a href="https://datascience.columbia.edu/engage/for-faculty-and-researchers-ways-to-engage/">For Faculty and Researchers
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40012"><a href="https://datascience.columbia.edu/engage/alumni/">For Alumni
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40013"><a href="https://datascience.columbia.edu/engage/for-students/">For Students
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-40014" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40014"><a href="https://datascience.columbia.edu/engage/giving/">Giving
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-128"><a href="https://datascience.columbia.edu/news/" title="hide-mobile">News
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-40724" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40724"><a href="/news/archive/" title="hide-mobile">All News
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-41291" class="hide-mobile menu-item menu-item-type-post_type menu-item-object-page menu-item-41291"><a href="https://datascience.columbia.edu/news/archive/">News Archive
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-5744" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5744"><a href="https://datascience.columbia.edu/news-archive/dsi-news/">DSI News
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-32455" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32455"><a href="https://datascience.columbia.edu/news-archive/news-across-columbia/">News Across Columbia
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-10766" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10766"><a href="https://datascience.columbia.edu/news-archive/postdoctoral-researchers/">Postdoctoral Researchers
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-7940" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7940"><a href="https://datascience.columbia.edu/news-archive/alumni-download/">Alumni Download
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-5747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5747"><a href="https://datascience.columbia.edu/news-archive/student-spotlight/">Student Spotlight
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+<li id="menu-item-40855" class="menu-item menu-item-type-post_type_archive menu-item-object-tribe_events menu-item-40855"><a href="https://datascience.columbia.edu/events/">Events
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a></li>
+<li id="menu-item-39802" class="hide-mobile menu-item menu-item-type-custom menu-item-object-custom current-menu-item current-menu-ancestor current-menu-parent menu-item-has-children menu-item-39802"><a href="https://datascience.columbia.edu/people/" aria-current="page">People
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-5 xl:mr-0 stroke-current fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M16 3.75L8.499 11.25 1 3.75" transform="matrix(0 1 1 0 1 -1)"/>
+            </svg>
+            </a>
+<ul class="sub-menu depth-0 font-body type-preset-7 font-normal font-bold">
+	<li id="menu-item-39798" class="menu-item menu-item-type-post_type_archive menu-item-object-staff_member current-menu-item menu-item-39798"><a href="https://datascience.columbia.edu/people/" aria-current="page">All People
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	<li id="menu-item-5488" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-has-children menu-item-5488"><a href="https://datascience.columbia.edu/people-type/leadership/">Leadership
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-5490" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-5490"><a href="https://datascience.columbia.edu/people-type/leadership-team/">Leadership Team
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-5489" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-5489"><a href="https://datascience.columbia.edu/people-type/executive-committee/">Executive Committee
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7107" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7107"><a href="https://datascience.columbia.edu/people-type/data-science-institute-advisory-council/">Data Science Institute Advisory Council
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-27142" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-has-children menu-item-27142"><a href="https://datascience.columbia.edu/people-type/research/">Research
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-27129" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-27129"><a href="https://datascience.columbia.edu/people-type/research-scientist/">Research Scientists and Scholars
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-27126" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-27126"><a href="https://datascience.columbia.edu/people-type/postdoctoral-research-fellows/">Postdoctoral Researchers
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-7113" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-has-children menu-item-7113"><a href="https://datascience.columbia.edu/people-type/education/">Education
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-7112" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7112"><a href="https://datascience.columbia.edu/people-type/adjuncts/">Adjuncts
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7115" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7115"><a href="https://datascience.columbia.edu/people-type/ph-d-specialization-committee/">Ph.D. Specialization Committee
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-7116" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-has-children menu-item-7116"><a href="https://datascience.columbia.edu/people-type/administration/">Administration
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a>
+	<ul class="sub-menu depth-1 font-body type-preset-7 font-normal">
+		<li id="menu-item-7125" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7125"><a href="https://datascience.columbia.edu/people-type/academic-programs-and-student-services-and-career-management/">Academic Programs, Student Services, and Career Management
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7123" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7123"><a href="https://datascience.columbia.edu/people-type/communications/">Communications
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7122" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7122"><a href="https://datascience.columbia.edu/people-type/development/">Development
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7117" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7117"><a href="https://datascience.columbia.edu/people-type/events/">Events
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7121" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7121"><a href="https://datascience.columbia.edu/people-type/finance-and-research/">Finance and Research
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-42449" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-42449"><a href="https://datascience.columbia.edu/people-type/human-resources/">Human Resources
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7119" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7119"><a href="https://datascience.columbia.edu/people-type/northeast-big-data-innovation-hub/">Northeast Big Data Innovation Hub
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+		<li id="menu-item-7118" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7118"><a href="https://datascience.columbia.edu/people-type/operations/">Operations
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+	</ul>
+</li>
+	<li id="menu-item-7109" class="menu-item menu-item-type-taxonomy menu-item-object-staff_type menu-item-7109"><a href="https://datascience.columbia.edu/people-type/faculty/">Faculty
+            <span class="hidden">search</span>
+            <svg class="absolute inset-y-0 right-0 mr-6 fill-current stroke-current" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="none" fill-rule="evenodd" stroke-width="2" d="M10 3L5 8 0 3" transform="rotate(-90 5 5.5)"/>
+            </svg>
+            </a></li>
+</ul>
+</li>
+</ul>
+        
+        <ul id="menu-utility-nav-1" class="menu-secondary type-preset-7 font-body border-t border-slate-100 py-10 grid grid-cols-2 gap-6"><li class="active menu-item menu-people"><a href="https://datascience.columbia.edu/people/" aria-current="page">People</a></li>
+<li class="menu-item menu-dax"><a target="_blank" href="https://www.daxnyc.ai/">DAX</a></li>
+<li class="menu-item menu-nebdhub"><a target="_blank" href="https://nebigdatahub.org/">NEBDHub</a></li>
+<li class="columbia-ai-blue menu-item menu-columbia-ai"><a target="_blank" href="https://ai.columbia.edu/">Columbia AI</a></li>
+<li class="active menu-item menu-giving"><a href="https://datascience.columbia.edu/engage/giving/">Giving</a></li>
+</ul>
+        <button class="btn btn--slate w-full type-preset-8 js-menu-toggle" @click="menuActive = false"><span class="hidden">mobile close button</span>Close Menu</button>
+      </nav>
+    </div>
+  </div>
+</header>
+    <div class="wrap" role="document">
+      <div class="content">
+        <main class="main bg-blue-100">
+          
+  
+  
+    <style type="text/css">
+                #header-basic-ed4d309e-8a35-4d16-ab08-a0ad2b369a29 {
+                    background-image:
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%);
+                    
+                }
+                
+            </style>
+            
+<style type="text/css">
+  #header-basic-ed4d309e-8a35-4d16-ab08-a0ad2b369a29 .header-basic__title-link {
+    text-decoration: none;
+  }
+
+  #header-basic-ed4d309e-8a35-4d16-ab08-a0ad2b369a29 .header-basic__title-link:hover,
+  #header-basic-ed4d309e-8a35-4d16-ab08-a0ad2b369a29 .header-basic__title-link:focus {
+    text-decoration: underline;
+  }
+</style>
+<section id="header-basic-ed4d309e-8a35-4d16-ab08-a0ad2b369a29" class="header-basic pt-24 pb-12 bg-slate-300 text-white">
+  
+  <div class="relative container mx-auto">
+    <h1 class="font-display font-bold type-preset-vw"
+                  style="text-shadow: 1px 1px 3px rgba(0,0,0,0.6);"
+        >
+              People
+          </h1>
+
+          <p class="type-preset-7 mt-2 max-w-md
+         ">
+        We train the next generation of data scientists, develop innovative technology, foster collaborations in advancing techniques to interpret data and address pressing societal problems, and work closely with industry to bring promising ideas to market.
+      </p>
+      </div>
+</section>
+
+    <div>
+    <div class="bg-blue-400">
+    <div class="container mx-auto">
+      <nav>
+        <div class="section-navigation section-navigation--primary overflow-x-auto whitespace-no-wrap">
+          <ul>
+                        <li ><a href="/people/" target="_self">People</a></li>
+                        <li ><a href="/people-type/leadership/" target="_self">Leadership</a></li>
+                        <li ><a href="/people-type/research/" target="_self">Research</a></li>
+                        <li ><a href="/people-type/education/" target="_self">Education</a></li>
+                        <li ><a href="/people-type/administration/" target="_self">Administration</a></li>
+                        <li ><a href="/people-type/faculty/" target="_self">Faculty</a></li>
+                      </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+      <div class="bg-orange-100">
+    <div class="container mx-auto">
+      <nav>
+        <div class="section-navigation section-navigation--secondary overflow-x-auto whitespace-no-wrap">
+          <ul>
+                      </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+
+    <div class="staff-grid bg-white">
+      <div class="pt-12 pb-8">
+        <section class="staff-glossary">
+    <div class="container mx-auto">
+      <nav aria-label="Filter staff by last name">
+        <ul class="type-preset-7 text-blue-400">
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=a&amp;paged=1"
+              aria-label="Filter by Last Name: A"
+              >
+                A
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=b&amp;paged=1"
+              aria-label="Filter by Last Name: B"
+              >
+                B
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=c&amp;paged=1"
+              aria-label="Filter by Last Name: C"
+              >
+                C
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=d&amp;paged=1"
+              aria-label="Filter by Last Name: D"
+              >
+                D
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=e&amp;paged=1"
+              aria-label="Filter by Last Name: E"
+              >
+                E
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=f&amp;paged=1"
+              aria-label="Filter by Last Name: F"
+              >
+                F
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=g&amp;paged=1"
+              aria-label="Filter by Last Name: G"
+              >
+                G
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=h&amp;paged=1"
+              aria-label="Filter by Last Name: H"
+              >
+                H
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=i&amp;paged=1"
+              aria-label="Filter by Last Name: I"
+              >
+                I
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=j&amp;paged=1"
+              aria-label="Filter by Last Name: J"
+              >
+                J
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=k&amp;paged=1"
+              aria-label="Filter by Last Name: K"
+              >
+                K
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=l&amp;paged=1"
+              aria-label="Filter by Last Name: L"
+              >
+                L
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=m&amp;paged=1"
+              aria-label="Filter by Last Name: M"
+              >
+                M
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=n&amp;paged=1"
+              aria-label="Filter by Last Name: N"
+              >
+                N
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=o&amp;paged=1"
+              aria-label="Filter by Last Name: O"
+              >
+                O
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=p&amp;paged=1"
+              aria-label="Filter by Last Name: P"
+              >
+                P
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=q&amp;paged=1"
+              aria-label="Filter by Last Name: Q"
+              >
+                Q
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=r&amp;paged=1"
+              aria-label="Filter by Last Name: R"
+              >
+                R
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=s&amp;paged=1"
+              aria-label="Filter by Last Name: S"
+              >
+                S
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=t&amp;paged=1"
+              aria-label="Filter by Last Name: T"
+              >
+                T
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=u&amp;paged=1"
+              aria-label="Filter by Last Name: U"
+              >
+                U
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=v&amp;paged=1"
+              aria-label="Filter by Last Name: V"
+              >
+                V
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=w&amp;paged=1"
+              aria-label="Filter by Last Name: W"
+              >
+                W
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=x&amp;paged=1"
+              aria-label="Filter by Last Name: X"
+              >
+                X
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=y&amp;paged=1"
+              aria-label="Filter by Last Name: Y"
+              >
+                Y
+              </a>
+            </li>
+                      <li class="inline-block mr-4 mb-4">
+              <a
+              class="underline hover:no-underline focus:no-underline "
+              href="?staff_glossary=z&amp;paged=1"
+              aria-label="Filter by Last Name: Z"
+              >
+                Z
+              </a>
+            </li>
+                  </ul>
+      </nav>
+    </div>
+  </section>
+      </div>
+      <div class="container mx-auto pb-32">
+                  <h3 class="mb-8 type-preset-6 font-bold text-slate-300">All People</h3>
+                          <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12">
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/ryan-abernathey/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/ryan_300x400.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Ryan Abernathey
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Faculty of Arts and Sciences<br>
+                            Associate Professor of Earth and Environmental Sciences
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/general-inquiries/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2025/08/Untitled-design-22-320x320.png)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        General Inquiries
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Data Science Institute<br>
+                            Academic Programs, Student Services, and Career Management
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/paris-adkins-jackson/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2022/11/Adkins-Jackson.Paris_.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Paris Adkins-Jackson
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Mailman School of Public Health<br>
+                            Assistant Professor of Epidemiology and Sociomedical Sciences
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/anish-agarwal/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2023/10/Anish-Agarwal-Headshot.png)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Anish Agarwal
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Assistant Professor of Industrial Engineering and Operations Research
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/shipra-agrawal/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Agrawal.Shipra.png)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Shipra Agrawal
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Cyrus Derman Associate Professor of Industrial Engineering and Operations Research
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/sunil-agrawal/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/agrawal500.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Sunil Agrawal
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Professor of Mechanical Engineering and of Rehabilitation and Regenerative Medicine
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/manan-ahmed/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Manan-Ahmed.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Manan Ahmed
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Faculty of Arts and Sciences<br>
+                            Associate Professor of History
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/daniel-alicea/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Daniel-Alicea_TLPS-3580-320x448.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Daniel Alicea
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Data Science Institute<br>
+                            Director of Post-Award Finance
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/milad-alshomary/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2024/01/milad_photo-320x393.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Milad Alshomary
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Data Science Institute<br>
+                            Postdoctoral Research Scientist
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/dimitris-anastassiou/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/photo_anastassiou-320x380.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Dimitris Anastassiou
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Charles Batchelor Professor of Electrical Engineering
+            </li>
+                                  <li>
+                              Vagelos College of Physicians and Surgeons<br>
+                            Professor of Systems Biology
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/james-anderson/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Anderson.James_.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        James Anderson
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Assistant Professor of Electrical Engineering
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/alexandr-andoni/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Andoni.Alex_.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Alexandr Andoni
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Associate Professor of Computer Science
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/asim-ansari/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Asim_Ansari_300x400.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Asim Ansari
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Business School<br>
+                            William T. Dillard Professor of Marketing
+            </li>
+                                            </ul>
+          </div>
+  </div>
+  </a>
+                                        <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/avanessians-320x355.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Armen Avanessians
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                            Trustee, Council Co-Chair, EN’83, P: CC’12, CC’17, IA’17
+            </li>
+                                  <li>
+                            Chief Investment Officer (Retired), Goldman Sachs Asset Management
+            </li>
+                  </ul>
+          </div>
+  </div>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/alexis-avedisian/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Avedisian-Alexis_Wide-320x415.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Alexis Avedisian
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Data Science Institute<br>
+                            Director of Events and Marketing
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/elham-azizi/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Azizi.Elham_.jpeg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Elham Azizi
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Assistant Professor of Biomedical Engineering
+            </li>
+                                  <li>
+                              Irving Institute for Cancer Dynamics<br>
+                            Florence Irving Assistant Professor of Cancer Data Research
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/jushan-bai/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/Bai.Jushan.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Jushan Bai
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Faculty of Arts and Sciences<br>
+                            Professor of Economics
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/suzanne-r-bakken/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/07/Faculty_Bakken_300.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Suzanne R. Bakken
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              School of Nursing<br>
+                            Alumni Professor of the School of Nursing
+            </li>
+                                  <li>
+                              Vagelos College of Physicians and Surgeons<br>
+                            Professor of Biomedical Informatics
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/eric-balkanski/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/10/Balkanski.Eric_-320x351.jpeg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Eric Balkanski
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Assistant Professor of Industrial Engineering and Operations Research
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/dhruv-balwada/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2025/12/dhruv-balwada-320x334.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Dhruv Balwada
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Climate School<br>
+                            Lamont Assistant Research Professor, Lamont Doherty Earth Observatory
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/veronica-barcelona/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2025/12/veronica-barcelona-320x269.png)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Veronica Barcelona
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              School of Nursing<br>
+                            Assistant Professor, Office of Research and Scholarship
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/elias-bareinboim/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/bareinboim.elias_.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Elias Bareinboim
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Associate Professor of Computer Science
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/katayun-barmak/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2022/07/Barmak.Katayun.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Katayun Barmak
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Columbia Engineering<br>
+                            Philips Electronics Professor of Applied Physics and Applied Mathematics
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                                        <a class="inline-block group" href="https://datascience.columbia.edu/people/leslie-barna/">
+  <div class="flex flex-start items-start space-x-4">
+    <div>
+      <div class="image-box image-box-3/4 w-16">
+        <div class="image" style="background-image: url(https://datascience.columbia.edu/wp-content/uploads/2020/08/barna.jpg)"></div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <h4 class="type-preset-7 text-slate-300 font-bold transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+        Leslie Barna
+              </h4>
+              <ul class="space-y-2 text-slate-200 type-preset-8 transition-colors duration-150 ease-in-out group-hover:text-blue-400">
+                                  <li>
+                              Data Science Institute<br>
+                            Associate Director of Academic and Research Operations
+            </li>
+                  </ul>
+          </div>
+  </div>
+  </a>
+                      </div>
+          <div class="mt-20">
+            <div id="pagination-3f59c4db-c263-4218-aa40-bb212a4b7bda" class="pagination text-center">
+    <span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://datascience.columbia.edu/people/page/2/">2</a>
+<a class="page-numbers" href="https://datascience.columbia.edu/people/page/3/">3</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="https://datascience.columbia.edu/people/page/19/">19</a>
+<a class="next page-numbers" href="https://datascience.columbia.edu/people/page/2/">>></a>
+  </div>
+          </div>
+              </div>
+    </div>
+
+          </main>
+      </div>
+    </div>
+        <footer class="footer text-white">
+  
+  <div class="bg-navy-200 relative">
+    <div class="js-particles absolute z-0 inset-0"></div>
+    <div class="container mx-auto relative">
+      <div class="py-12 md:py-24 text-center">
+        <h5 class="type-preset-6 font-bold">Newsletter</h5>
+        <h4 class="type-preset-3 font-bold mt-2">Stay informed. Sign up for our newsletter.</h4>
+        <div class="max-w-3xl mx-auto">
+          
+          <div class="bg-white text-slate-200 p-12 sm:py-16 sm:px-20 mt-12">
+            <form id="sib-form" method="POST" action="https://8c9abe91.sibforms.com/serve/MUIEAMOE73IRgJjikVkkOL2b67fAuNN8POJvJsctzOl0OI0j3Nt8eytrDNtj_nBr2gJ53FXG0QQoxrA576eUQXhWt9XpNJNhm8JkNho87e9vAHtzcuqyL4Aqx6OACiID8rwy3FGvLWtWKMv5OL4Mevfn2bV84HMKP-tLnLE0jZDkKzE69kMqK1RygOEz6xYYcB_11bVN1KewGjvm">
+              <div class="text-left space-y-10">
+                <div class="flex flex-wrap sm:flex-no-wrap justify-between items-start space-y-8 sm:space-y-0 sm:space-x-8">
+                  <label class="w-full sm:w-1/2 font-bold">First Name
+                    <span class="wpcf7-form-control-wrap full-name">
+                      <input class="input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="First Name" />
+                    </span>
+                  </label>
+                  <label class="w-full sm:w-1/2 font-bold">Last Name
+                    <span class="wpcf7-form-control-wrap full-name">
+                      <input class="input" maxlength="200" type="text" id="LASTNAME" name="LASTNAME" autocomplete="off" placeholder="Last Name" />
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <label class="w-full sm:w-1/2 font-bold mt-10 sm:mt-0">Email Address
+                    <span class="wpcf7-form-control-wrap email">
+                      <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email Address" data-required="true" required />
+                    </span>
+                  </label>
+                </div>
+                <div class="">
+                  <label class="w-full sm:w-1/2 font-bold mt-10 sm:mt-0">Organization
+                  <input class="input" maxlength="200" type="text" id="ORGANIZATION" name="ORGANIZATION" autocomplete="off" placeholder="Organization" />
+                  </label>
+                </div>
+                <div>
+                  <span class="wpcf7-form-control-wrap newsletter"><span class="wpcf7-form-control wpcf7-checkbox type-preset-8"><span class="wpcf7-list-item first last"><label><input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" /><span class="wpcf7-list-item-label">Sign up to receive news and information about upcoming events, research, and more.</span></label></span></span></span>
+                </div>
+                <input type="hidden" name="locale" value="en">
+                <input type="hidden" name="html_type" value="simple">
+                <label class="hidden" >submit</label>
+                <button type="submit" class="btn btn--orange btn--slim btn--full cursor-pointer">Submit</button>
+                
+              </div>
+                              <span class="block text-center mt-5 type-preset-8">
+                  Questions? Email:&nbsp;
+                  <a class="text-blue-400 underline hover:no-underline focus:no-underline" href="mailto:datascience@columbia.edu" target="_blank" rel="nofollow">datascience@columbia.edu</a>.
+                </span>
+                          </form>
+          </div>
+          
+          <div class="mt-12 flex flex-wrap lg:flex-no-wrap justify-center lg:justify-between text-center lg:text-left items-start text-white space-y-4 lg:space-y-0">
+            <div class="w-full lg:w-auto">
+              <svg class="w-72 xs:w-84 inline-block fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 95.1">
+                <g id="_x23_000d74__x7C__RGB__x7C__BLUE">
+
+    /* Remove dividing line from footer logo */
+             					
+					
+                    <path fill="#fff" class="st1" d="M87.2 44.8c-4.4-4-5.5-9.2-5.5-13.5 0-3.1 1.1-8.4 5.1-12.5 2.7-2.7 6.9-4.9 13.9-4.9 1.8 0 4.4.1 6.6.5 1.7.3 3.2.6 4.7.7.5 0 .6.2.6.5 0 .4-.1.9-.2 2.6-.1 1.5-.1 4-.1 4.7 0 .7-.1 1-.4 1-.3 0-.4-.3-.4-1 0-1.8-.7-3.7-1.9-4.7-1.6-1.4-5.1-2.6-9.1-2.6-6.1 0-8.9 1.8-10.5 3.3-3.3 3.2-4.1 7.3-4.1 11.9 0 8.7 6.7 16.7 16.5 16.7 3.4 0 6.1-.4 7.9-2.3 1-1 1.6-3 1.7-3.8.1-.5.2-.7.5-.7.2 0 .3.3.3.7 0 .3-.5 4.3-1 5.9-.3.9-.4 1-1.2 1.3-1.8.7-5.3 1.1-8.2 1.1-7 0-11.6-1.6-15.2-4.9zM133.1 19.1c9 0 15.9 5.5 15.9 14.6 0 8.7-6.4 15.9-16.1 15.9-11 0-15.7-8.3-15.7-15.3-.1-6.2 4.8-15.2 15.9-15.2zM134 48c3.6 0 10.9-1.9 10.9-13.2 0-9.3-5.7-14.2-12-14.2-6.7 0-11.6 4.2-11.6 12.7 0 9 5.4 14.7 12.7 14.7zM159.6 37.9c0 5.7.1 8.1.8 8.7.6.6 2.2.9 5.3.9 2.1 0 3.9 0 4.8-1.2.5-.6.8-1.4 1-2.2 0-.3.2-.5.4-.5s.3.2.3.6-.3 2.7-.6 3.9c-.3.9-.4 1.1-2.6 1.1-2.9 0-5.1 0-7-.1-1.8 0-3.2-.1-4.4-.1H156c-.8 0-1.7.1-2.3.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.3.1 4.6.1.2 0 3.2-.1 4.4-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.9 0-1.3.1-1.2.2-1.4.8-1.5 2.2v15.4zM177.8 30.9c0-6 0-7.1-.1-8.4-.1-1.2-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.2.1 4.6.1s2.9-.1 4.1-.1c.5 0 .7.1.7.3 0 .1-.2.3-.4.3-.3 0-.5 0-1 .1-1.1.2-1.3.9-1.4 2.2-.1 1.2-.1 2.3-.1 8.4v5.4c0 5.6 1.2 8 3 9.5 2 1.8 3.7 2.1 6 2.1 2.5 0 4.8-1.1 6.2-2.7 1.9-2.2 2.3-5.4 2.3-9.4v-4.9c0-6 0-7.1-.1-8.4 0-1.2-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.1.1 4.3.1.3 0 2.2-.1 3.4-.1.5 0 .6.1.6.3 0 .1-.1.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.9-1.4 2.2-.1 1.2 0 2.3 0 8.4v4.2c0 4.2-.5 8.9-3.7 11.7-2.9 2.5-6 2.8-8.4 2.8-1.3 0-5.5-.1-8.4-2.7-2-1.8-3.5-4.5-3.5-10.2v-5.8zM242.8 44.1c.1 1.4.4 3.5 2.1 4 1.1.4 2.2.4 2.6.4.2 0 .3.1.3.3 0 .2-.4.4-.8.4-.9 0-5.4 0-6.9-.2-1-.1-1.1-.2-1.1-.4 0-.1.1-.3.3-.3.2 0 .3-.6.2-1.4l-1.9-19.8h-.1L227.7 47c-.8 1.7-1.1 2.1-1.4 2.1-.4 0-.6-.4-1.4-1.8-1.1-1.9-3.7-6.9-4.7-9-1.2-2.5-4.4-9-5.1-10.6h-.2l-1.6 17.6v2c0 .6.4 1 1 1.1.7.2 1.3.2 1.6.2.1 0 .3.1.3.3 0 .3-.3.4-.7.4-1.5 0-3.4-.1-3.7-.1-.4 0-2.3.1-3.4.1-.4 0-.7-.1-.7-.4 0-.1.2-.3.4-.3.3 0 .6 0 1.2-.1 1.3-.2 1.4-1.6 1.6-3.1l2.9-25.4c0-.4.2-.7.5-.7s.6.1.8.6l12.1 24.2L238.9 20c.2-.4.4-.6.6-.6.3 0 .5.3.6 1.1l2.7 23.6zM254.1 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2.1-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.7.1 1 0 2.8-.1 4.7-.1 6.7 0 8.4 3.9 8.4 5.9 0 3.1-2 5-4.1 6.8 3.1.9 7.1 3.7 7.1 8.1 0 4.3-3.2 8.6-10.1 8.6-.7 0-2.2 0-3.5-.1-1.3 0-2.4-.1-2.6-.1h-1.6c-.8 0-1.8.1-2.4.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.1.9-1 1.1-2.2.2-1.6.2-4.7.2-8.4v-6.8zm3.4.9c0 .3.1.4.3.4.2 0 1 .2 2.5.2 2.2 0 3.1-.1 3.9-1 .9-1 1.6-2.3 1.6-4.2 0-3-1.6-6.3-5.7-6.3-.5 0-1.4 0-2.1.2-.4.1-.5.2-.5.4v10.3zm0 4.3v8.3c.1 1.9.1 2.3 1.4 2.9 1.1.5 2.8.5 3.5.5 2.6 0 5.9-1 5.9-6 0-1.7-.7-5.1-3.8-7.1-1.4-.9-2.6-.8-3.6-1-.5-.1-2.5-.1-3.2-.1-.1 0-.2.1-.2.3v2.2zM283.6 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM303.2 20.5c.5-1.3.7-1.5 1-1.5.4 0 .5.5 1 1.4.7 1.6 7.2 17.7 9.6 23.6 1.5 3.5 2.6 4 3.4 4.3.6.2 1.2.2 1.6.2.2 0 .5.1.5.3 0 .2-.5.3-.9.3-.6 0-3.6 0-6.3-.1-.8 0-1.4 0-1.4-.3 0-.2.1-.2.3-.3.2-.1.6-.4.4-1.1l-3.6-8.9c-.1-.2-.1-.2-.4-.2H299c-.2 0-.3.1-.4.3l-2.3 6.2c-.4 1-.6 1.9-.6 2.6 0 .8.7 1.1 1.4 1.1h.4c.3 0 .4.1.4.3 0 .2-.2.3-.6.3-1 0-3.2-.1-3.6-.1-.4 0-2.4.1-4.1.1-.5 0-.8-.1-.8-.3 0-.2.2-.3.4-.3.3 0 .9 0 1.2-.1 1.8-.2 2.6-1.6 3.4-3.6l9.4-24.2zm4.5 16.2c.2 0 .2-.1.1-.3l-4-10.7c-.2-.6-.5-.6-.7 0l-3.7 10.7c0 .2 0 .3.1.3h8.2zM337 27.8c0-7.1 0-8.4-.1-9.9-.1-1.6-.5-2.3-2-2.6-.4-.1-1.1-.1-1.6-.1-.2 0-.4-.1-.4-.3 0-.3.2-.4.7-.4 2.1 0 4.8.1 5.3.1.4 0 3.2-.1 4.5-.1.5 0 .7.1.7.4 0 .2-.2.3-.4.3-.3 0-.6 0-1.1.1-1.2.2-1.6 1-1.7 2.6-.1 1.5-.1 2.7-.1 9.9v6.4c0 6.6 1.5 9.4 3.4 11.3 2.2 2.1 4.3 2.5 6.9 2.5 2.8 0 5.5-1.3 7.2-3.3 2.1-2.6 2.6-6.5 2.6-11.2v-5.7c0-7.1 0-8.4-.1-9.9-.1-1.6-.5-2.3-2-2.6-.4-.1-1.1-.1-1.6-.1-.2 0-.4-.1-.4-.3 0-.3.2-.4.7-.4 2.1 0 4.6.1 4.8.1.3 0 2.5-.1 3.8-.1.5 0 .7.1.7.4 0 .2-.2.3-.4.3-.3 0-.6 0-1.1.1-1.2.3-1.6 1-1.7 2.6-.1 1.5-.1 2.7-.1 9.9v4.9c0 4.9-.5 10.4-4.2 13.7-3.3 2.9-6.7 3.4-9.4 3.4-1.6 0-6.2-.2-9.4-3.2-2.2-2.2-4-5.4-4-12v-6.8zM375.3 43.8c.1 3.2.5 4.2 1.6 4.4.7.2 1.6.2 2 .2.2 0 .3.1.3.3 0 .2-.3.3-.7.3-2.3 0-3.9-.1-4.2-.1-.4 0-2.1.1-3.9.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 1.1 0 1.6-.2 1-.3 1.1-1.3 1.1-4.9V21.1c0-1.6.2-2 .5-2 .5 0 1.1.8 1.6 1.2.6.6 6.5 6.9 12.7 13.3 4 4.1 8.3 8.7 9.5 10l-.4-19.5c0-2.5-.3-3.4-1.5-3.6-.7-.1-1.6-.2-2-.2-.3 0-.3-.2-.3-.4s.3-.3.8-.3c1.8 0 3.7.1 4.2.1s1.8-.1 3.4-.1c.4 0 .7 0 .7.3 0 .1-.2.4-.5.4-.2 0-.5 0-1 .1-1.3.3-1.4 1.1-1.4 3.4l-.1 22.8c0 2.6 0 2.8-.3 2.8-.4 0-.8-.3-3.1-2.4-.4-.4-6.2-6.1-10.5-10.5-4.7-4.9-9.2-9.7-10.4-11l.6 18.3zM413.2 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM435.9 44c2.3-5.2 7.6-18.5 8.4-21.3.2-.6.4-1.1.4-1.5 0-.3-.1-.7-.5-.8-.5-.1-.9-.1-1.4-.1-.2 0-.5-.1-.5-.3 0-.2.3-.3.9-.3 1.6 0 3.4.1 3.9.1.2 0 2-.1 3.2-.1.4 0 .6.1.6.3 0 .2-.1.4-.5.4-.3 0-1.2 0-1.9.5-.5.4-1.2.9-2.2 3.6-.5 1.1-2.4 5.8-4.5 10.5-2.5 5.7-4.2 9.9-5.2 11.8-1.1 2.3-1.3 2.9-1.7 2.9-.5 0-.7-.5-1.5-2.4l-9.9-23.8c-.9-2.2-1.5-2.6-2.8-2.9-.6-.1-1.3-.1-1.6-.1-.2 0-.3-.2-.3-.4s.4-.3 1.1-.3c1.9 0 4.2.1 4.7.1.4 0 2.2-.1 3.7-.1.7 0 1.1.1 1.1.3 0 .2-.1.4-.4.4-.5 0-1.1 0-1.5.2-.4.2-.5.4-.5.7 0 .5.5 1.7 1.1 3.2l7.8 19.4zM456.9 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.7.1h9.6c.8 0 1.5-.2 1.8-.2.2 0 .4-.2.5-.2.1 0 .2.2.2.4 0 .3-.2.7-.3 1.8 0 .4-.1 2.1-.2 2.6 0 .2-.2.4-.4.4s-.3-.2-.3-.5 0-.9-.2-1.4c-.3-.6-.7-.9-2.9-1.2-.7-.1-5.3-.1-5.8-.1-.2 0-.2.1-.2.4v10.6c0 .3 0 .4.2.4.5 0 5.8 0 6.7-.1 1-.1 1.6-.1 2-.5.3-.3.5-.5.6-.5.1 0 .2.1.2.3 0 .2-.2.9-.3 2.2-.1.8-.2 2.2-.2 2.5 0 .3-.1.7-.4.7-.2 0-.3-.1-.3-.4 0-.4 0-.8-.2-1.3-.1-.5-.5-1-2.1-1.2-1.1-.1-5.4-.2-6.1-.2-.2 0-.3.1-.3.3v9.8c.1 2.6.8 3.1 4.8 3.1 1.1 0 3 0 4-.4 1-.5 1.6-1.1 1.8-2.7.1-.5.2-.6.4-.6s.3.3.3.6-.3 2.9-.5 3.8c-.3 1-.7 1-2.2 1-3 0-5.3-.1-7-.1-1.7-.1-2.7-.1-3.3-.1H457c-.8 0-1.7.1-2.3.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.1.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.8zM479.5 30.9c0-6 0-7.1-.1-8.4-.1-1.3-.3-2-1.6-2.2-.3 0-1-.1-1.4-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.8 0 4.5.1 4.7.1.4 0 3.8-.1 5-.1 2.6 0 5.4.2 7.5 1.7 1 .7 2.8 2.6 2.8 5.3 0 2.9-1.2 5.7-4.9 8.9 3.3 4.1 6.1 7.6 8.4 10.1 2.1 2.2 3.5 2.6 4.5 2.7.8.1 1.2.1 1.4.1.2 0 .4.2.4.3 0 .2-.2.3-1 .3H503c-2.3 0-3.3-.2-4.3-.8-1.7-.9-3.2-2.8-5.5-5.7-1.7-2.1-3.5-4.6-4.3-5.7-.2-.2-.3-.2-.5-.2l-5.1-.1c-.2 0-.3.1-.3.3v.9c0 3.8 0 6.8.2 8.4.1 1.1.4 1.9 1.6 2.1.5.1 1.4.2 1.8.2.3 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-4.9-.1 0 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1.1-2.1.2-1.6.2-4.7.2-8.4v-6.8zm3.4 3.3c0 .2.1.4.3.5.6.3 2.6.6 4.4.6 1 0 2.1 0 3-.7 1.4-.9 2.4-3 2.4-5.9 0-4.9-2.6-7.6-6.9-7.6-1.2 0-2.5.1-2.9.2-.2.1-.3.2-.3.5v12.4zM508.3 48.6c-.5-.3-.6-.4-.6-1.5 0-1.9.2-3.5.2-4.1 0-.4.1-.6.3-.6.2 0 .4.1.4.5 0 .3 0 .9.1 1.4.6 2.8 3.7 3.8 6.3 3.8 4 0 6-2.2 6-5.2 0-2.8-1.5-4.1-5.1-6.8l-1.8-1.4c-4.3-3.2-5.8-5.6-5.8-8.3 0-4.6 3.6-7.3 8.9-7.3 1.6 0 3.2.2 4.2.5.8.2 1.1.2 1.4.2.3 0 .4 0 .4.3 0 .2-.2 1.5-.2 4.1 0 .6 0 .9-.3.9s-.3-.2-.4-.5c0-.5-.4-1.5-.6-1.9-.3-.5-1.6-1.9-5.2-1.9-2.9 0-5.3 1.5-5.3 4.2 0 2.5 1.2 3.9 5.2 6.6l1.1.8c4.9 3.3 6.6 6 6.6 9.4 0 2.3-.9 4.8-3.7 6.6-1.7 1.1-4.2 1.4-6.4 1.4-1.8-.2-4.1-.5-5.7-1.2zM535.7 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.5 2.1.6.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5-.1-.2 0-2.7.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .9-.1 1.2-.2.8-.2.9-.9 1-2.1.2-1.6.2-4.7.2-8.4v-6.9c0-6 0-7.1-.1-8.4-.1-1.3-.4-1.9-1.3-2.1-.5-.1-1-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.3 0 3.8.1 4.1.1.2 0 2.8-.1 4-.1.5 0 .6.1.6.3 0 .1-.2.3-.3.3-.3 0-.5 0-1 .1-1.1.2-1.3.8-1.4 2.2v15.2zM556.9 37.8c0 3.8 0 6.8.2 8.4.1 1.1.3 1.9 1.6 2.1.5.1 1.5.2 1.8.2.3 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.7-.1-5-.1-.2 0-3 .1-4.2.1-.5 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .8-.1 1.2-.2.8-.2 1.1-1 1.2-2.1.2-1.6.2-4.7.2-8.4V21.5l-5.8.1c-2.5 0-3.5.3-4.1 1.2-.5.7-.5 1-.6 1.2-.1.3-.2.4-.4.4-.1 0-.3-.1-.3-.3 0-.4.8-3.9.9-4.2 0-.2.3-.7.4-.7.3 0 .7.3 1.8.5 1.1.1 2.7.2 3.2.2h15.2c1.3 0 2.2-.1 2.9-.2.6-.1 1-.2 1.1-.2.2 0 .2.2.2.5 0 1.2-.1 4-.1 4.4 0 .3-.2.5-.4.5s-.3-.1-.3-.7v-.4c-.1-1.2-1-2.1-4.8-2.2l-5-.1v16.3zM583.7 39c0-2.1-.3-2.9-.9-4-.3-.6-5.8-9.2-7.1-11.3-1-1.5-1.9-2.3-2.6-2.8-.6-.4-1.4-.5-1.7-.5-.2 0-.4-.2-.4-.4s.1-.3.5-.3c.8 0 3.8.1 4 .1.3 0 1.9-.1 3.5-.1.5 0 .5.1.5.3 0 .1-.3.3-.6.4-.3.1-.5.3-.5.6 0 .5.3 1 .5 1.5l7.3 12.1c.8-1.6 5.8-10 6.6-11.3.5-.9.7-1.5.7-2s-.2-.9-.6-1c-.4-.1-.6-.3-.6-.5 0-.1.2-.2.6-.2 1.1 0 2.5.1 2.8.1.3 0 3.2-.1 3.9-.1.3 0 .5.1.5.2 0 .2-.2.4-.5.4-.5 0-1.2.1-1.9.5-.8.5-1.1.9-2 1.9-1.3 1.6-7 10.7-7.8 12.4-.7 1.4-.5 2.6-.5 3.9v3.3c0 .6 0 2.3.1 3.9.1 1.1.4 1.9 1.6 2.1.5.1 1.5.2 1.8.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2.2 0-4.8-.1-5.1-.1-.2 0-2.7.1-3.9.1-.5 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.4 0 .8-.1 1.2-.2.8-.2 1.1-.9 1.2-2.1.1-1.6.1-3.2.1-3.9V39z"/>
+                  </g>
+                  <g id="Columbia_Crown_Logo_9_">
+                    <g class="st2">
+                      <path fill="#fff" class="st3" d="M57.9 20.9c-.6-3.6-3.5-6.1-7-6.3-6.4-.6-11.9 2.8-18 3.9-.5.1-1.1-1-1.7-1.5 2.8-2.1 2.5-6.3-.8-8.2-.2-.3-.1-2.7 0-2.8.3-.2 2.4.2 2.7-.1.3-.3.2-2.8 0-3-.2-.2-2.6 0-2.7-.1-.1-.2.1-2.4-.2-2.6C30 0 29.4 0 29 0c-.4 0-1 0-1.2.1-.2.2 0 2.4-.2 2.6-.1.2-2.5-.1-2.7.1-.2.2-.2 2.8 0 3 .3.3 2.4-.1 2.7.1.1.1.2 2.5 0 2.8-3.3 1.8-3.7 6-.8 8.2-.6.6-1.3 1.6-1.7 1.5-6.1-1-11.6-4.4-17.9-3.9-3.5.3-6.4 2.8-7 6.3C-.9 27.2 3.7 32.2 6 37.7c.7 1.7 1.3 4 1.2 6h43.7c-.1-2 .5-4.3 1.2-6 2.2-5.4 6.9-10.4 5.8-16.8zM26.4 35.1c-.6 3.2-2.4 5.3-3.9 5.3-1 0-1.8-.4-2.5-1-1-.9-1.8-2.3-1.5-3.1.2-.3 2.9.1 3.1-.1.2-.3-.3-2.3-.6-2.6-.3-.3-2.7.1-3-.2-.3-.3-.6-2.8-.9-3 0 0-2.5-.4-2.7 0-.2.4.9 2.5.7 2.9-.2.4-3.5-.3-3.6.1-.1.4.2 2.3.5 2.5.3.3 3.5.3 3.5.3.6.5.8 1.5.8 2.5 0 1.3-1 2-2.6 1.5-3-.8-6.8-7.4-9-12-1.6-3.3-2.6-8.8 1.7-10.5 2.6-1 5.4-.4 8.2.4 3 .9 6.9 2.1 9.1 3.5.6.3-.7.1 1.4 4.6.7 2.2 1.7 6.7 1.3 8.9zm18.1 5.1c-1.6.5-2.6-.2-2.6-1.5 0-1 .2-2 .8-2.5 0 0 3.1 0 3.4-.3.3-.3.6-2.2.5-2.5-.1-.4-3.4.3-3.6-.1-.2-.4.9-2.5.7-2.9-.2-.4-2.7 0-2.7 0-.3.2-.6 2.7-.9 3-.3.3-2.7-.1-3 .2-.3.3-.8 2.3-.6 2.6.2.3 2.8-.1 3.1.1.3.8-.5 2.3-1.5 3.1-.7.6-1.5 1-2.5 1-1.5 0-3.3-2.1-3.9-5.3-.4-2.3.6-6.7 1.5-8.8 2-4.5.8-4.2 1.4-4.6 2.3-1.4 6.2-2.6 9.1-3.5 2.8-.8 5.6-1.4 8.2-.4 4.3 1.6 3.3 7.1 1.7 10.5-2.3 4.5-6.1 11.1-9.1 11.9zm6.9 6.6v3.8H6.7v-3.8h44.7z"/>
+                    </g>
+                    <path fill="#fff" class="st1" d="M57.9 20.9c-.6-3.6-3.5-6.1-7-6.3-6.4-.6-11.9 2.8-18 3.9-.5.1-1.1-1-1.7-1.5 2.8-2.1 2.5-6.3-.8-8.2-.2-.3-.1-2.7 0-2.8.3-.2 2.4.2 2.7-.1.3-.3.2-2.8 0-3-.2-.2-2.6 0-2.7-.1-.1-.2.1-2.4-.2-2.6C30 0 29.4 0 29 0c-.4 0-1 0-1.2.1-.2.2 0 2.4-.2 2.6-.1.2-2.5-.1-2.7.1-.2.2-.2 2.8 0 3 .3.3 2.4-.1 2.7.1.1.1.2 2.5 0 2.8-3.3 1.8-3.7 6-.8 8.2-.6.6-1.3 1.6-1.7 1.5-6.1-1-11.6-4.4-17.9-3.9-3.5.3-6.4 2.8-7 6.3C-.9 27.2 3.7 32.2 6 37.7c.7 1.7 1.3 4 1.2 6h43.7c-.1-2 .5-4.3 1.2-6 2.2-5.4 6.9-10.4 5.8-16.8zM26.4 35.1c-.6 3.2-2.4 5.3-3.9 5.3-1 0-1.8-.4-2.5-1-1-.9-1.8-2.3-1.5-3.1.2-.3 2.9.1 3.1-.1.2-.3-.3-2.3-.6-2.6-.3-.3-2.7.1-3-.2-.3-.3-.6-2.8-.9-3 0 0-2.5-.4-2.7 0-.2.4.9 2.5.7 2.9-.2.4-3.5-.3-3.6.1-.1.4.2 2.3.5 2.5.3.3 3.5.3 3.5.3.6.5.8 1.5.8 2.5 0 1.3-1 2-2.6 1.5-3-.8-6.8-7.4-9-12-1.6-3.3-2.6-8.8 1.7-10.5 2.6-1 5.4-.4 8.2.4 3 .9 6.9 2.1 9.1 3.5.6.3-.7.1 1.4 4.6.7 2.2 1.7 6.7 1.3 8.9zm18.1 5.1c-1.6.5-2.6-.2-2.6-1.5 0-1 .2-2 .8-2.5 0 0 3.1 0 3.4-.3.3-.3.6-2.2.5-2.5-.1-.4-3.4.3-3.6-.1-.2-.4.9-2.5.7-2.9-.2-.4-2.7 0-2.7 0-.3.2-.6 2.7-.9 3-.3.3-2.7-.1-3 .2-.3.3-.8 2.3-.6 2.6.2.3 2.8-.1 3.1.1.3.8-.5 2.3-1.5 3.1-.7.6-1.5 1-2.5 1-1.5 0-3.3-2.1-3.9-5.3-.4-2.3.6-6.7 1.5-8.8 2-4.5.8-4.2 1.4-4.6 2.3-1.4 6.2-2.6 9.1-3.5 2.8-.8 5.6-1.4 8.2-.4 4.3 1.6 3.3 7.1 1.7 10.5-2.3 4.5-6.1 11.1-9.1 11.9zm6.9 6.6v3.8H6.7v-3.8h44.7z"/>
+                  </g>
+                  <path fill="#fff" class="st1" d="M85.7 75.6c0-6.3 0-7.5-.1-8.8-.1-1.4-.4-2-1.7-2.3-.3-.1-1-.1-1.4-.1-.2 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.8 0 4.4.1 4.6.1.5 0 3-.1 5.5-.1 4 0 11.4-.4 16.3 4.6 2 2.1 3.9 5.5 3.9 10.3 0 5.1-2.1 9-4.4 11.4-1.7 1.8-5.4 4.7-12.3 4.7-1.7 0-3.9-.1-5.6-.2-1.8-.1-3.2-.2-3.4-.2h-1.6c-.8 0-1.7.1-2.4.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.2 1-1.1 1.2-2.2.2-1.7.2-4.9.2-8.8v-7.3zm3.4 4.4c0 4.3 0 8 .1 8.8 0 1 .1 2.6.4 3.1.5.8 2.1 1.6 6.9 1.6 3.8 0 7.3-1.4 9.7-3.8 2.1-2.1 3.2-6 3.2-9.7 0-5.2-2.2-8.5-3.9-10.2-3.8-4-8.4-4.6-13.3-4.6-.8 0-2.3.1-2.6.3-.4.2-.5.4-.5.8V80zM126.9 69.1c.4-1.1.6-1.3.9-1.3.4 0 .5.5.9 1.3.6 1.5 6.4 15.7 8.6 20.9 1.3 3.1 2.3 3.5 3 3.8.5.2 1.1.2 1.4.2.2 0 .4.1.4.3s-.4.3-.8.3c-.5 0-3.2 0-5.6-.1-.7 0-1.3 0-1.3-.2s.1-.2.2-.2c.2-.1.6-.4.3-.9l-3.2-7.9c-.1-.2-.1-.2-.3-.2h-8.2c-.2 0-.3.1-.4.3l-2 5.5c-.3.9-.5 1.7-.5 2.3 0 .7.6.9 1.2.9h.3c.3 0 .4.1.4.3 0 .2-.2.3-.5.3-.9 0-2.8-.1-3.2-.1-.4 0-2.1.1-3.6.1-.4 0-.7-.1-.7-.3 0-.2.2-.3.3-.3.2 0 .8 0 1.1-.1 1.6-.2 2.3-1.4 3-3.2l8.3-21.7zm4 14.4c.2 0 .2-.1.1-.2l-3.5-9.5c-.2-.5-.4-.5-.6 0l-3.3 9.5c0 .2 0 .2.1.2h7.2zM152 84.5c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2H158c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2.2 0 .2.2.2.4 0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4-.2 0-.2-.1-.3-.6v-.4c-.1-1.1-.9-1.8-4.3-1.9H152v14.5zM172.7 69.1c.4-1.1.6-1.3.9-1.3.4 0 .5.5.9 1.3.6 1.5 6.4 15.7 8.6 20.9 1.3 3.1 2.3 3.5 3 3.8.5.2 1.1.2 1.4.2.2 0 .4.1.4.3s-.4.3-.8.3c-.5 0-3.2 0-5.6-.1-.7 0-1.3 0-1.3-.2s.1-.2.2-.2c.2-.1.6-.4.3-.9l-3.2-7.9c-.1-.2-.1-.2-.3-.2H169c-.2 0-.3.1-.4.3l-2 5.5c-.3.9-.5 1.7-.5 2.3 0 .7.6.9 1.2.9h.3c.3 0 .4.1.4.3 0 .2-.2.3-.5.3-.9 0-2.8-.1-3.2-.1-.4 0-2.1.1-3.6.1-.4 0-.7-.1-.7-.3 0-.2.2-.3.3-.3.2 0 .8 0 1.1-.1 1.6-.2 2.3-1.4 3-3.2l8.3-21.7zm4 14.4c.2 0 .2-.1.1-.2l-3.5-9.5c-.2-.5-.4-.5-.6 0l-3.3 9.5c0 .2 0 .2.1.2h7.2zM204.1 94c-.6-.3-.6-.4-.6-1.5 0-2 .2-3.7.2-4.3 0-.4.1-.6.3-.6.2 0 .3.1.3.4 0 .4 0 .9.1 1.5.6 3 3.3 4.1 6 4.1 3.9 0 5.8-2.8 5.8-5.4 0-2.8-1.2-4.4-4.7-7.3l-1.8-1.5c-4.3-3.5-5.3-6-5.3-8.8 0-4.3 3.2-7.3 8.4-7.3 1.6 0 2.8.2 3.8.4.8.2 1.1.2 1.4.2.3 0 .4.1.4.3s-.2 1.5-.2 4.3c0 .6-.1.9-.3.9-.2 0-.3-.2-.3-.5 0-.5-.3-1.6-.5-2-.2-.4-1.3-2.1-5.1-2.1-2.8 0-5 1.7-5 4.7 0 2.3 1.1 3.8 4.9 6.8l1.1.9c4.8 3.8 5.9 6.3 5.9 9.5 0 1.7-.6 4.7-3.4 6.7-1.7 1.2-3.9 1.7-6.1 1.7-1.8 0-3.6-.3-5.3-1.1zM229.2 91.3c-3.5-3-4.3-6.9-4.3-10.2 0-2.3.9-6.3 4-9.4 2.1-2.1 5.4-3.7 10.9-3.7 1.4 0 3.4.1 5.2.4 1.3.2 2.5.5 3.7.5.4 0 .4.2.4.4 0 .3-.1.7-.2 1.9 0 1.1 0 3-.1 3.5 0 .5-.2.7-.4.7s-.3-.2-.3-.7c0-1.3-.6-2.7-1.5-3.4-1.3-1.1-3.9-1.9-7-1.9-4.6 0-6.8 1.2-8 2.4-2.6 2.4-3.2 5.5-3.2 9 0 6.6 5.2 12.5 12.9 12.5 2.7 0 4.5-.2 5.9-1.6.8-.8 1.3-2.2 1.4-2.9.1-.4.1-.5.4-.5.2 0 .3.2.3.5 0 .2-.5 3.2-.9 4.4-.2.6-.3.8-.9 1-1.5.6-4.1.8-6.4.8-5.5 0-9.1-1.3-11.9-3.7zM260.8 84.5c0 3.3 0 6 .2 7.5.1 1 .2 1.7 1.3 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2 0-4.3-.1-4.5-.1-.2 0-2.4.1-3.5.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.2.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1c0-5.4 0-6.3-.1-7.4-.1-1.2-.4-1.7-1.1-1.9-.4-.1-.9-.1-1.1-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.2 0 3.4.1 3.6.1.2 0 2.5-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.5 0-.9.1-1 .2-1.2.7-1.3 1.9v13.5zM272.6 78.4c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4.1 0 .2.1.2.3s-.2.8-.3 1.9c-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1zM296.4 89.8c.1 2.8.4 3.7 1.4 3.9.6.2 1.5.2 1.8.2.2 0 .3.1.3.3 0 .2-.2.3-.6.3-2 0-3.4-.1-3.8-.1-.3 0-1.8.1-3.4.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 .9 0 1.5-.2.9-.2 1-1.2 1-4.3V69.7c0-1.4.2-1.7.5-1.7.4 0 1 .7 1.4 1.1.6.6 5.8 6.1 11.3 11.8 3.5 3.7 7.3 7.7 8.4 8.9l-.4-17.3c0-2.2-.2-3-1.3-3.2-.6-.1-1.5-.2-1.7-.2-.2 0-.3-.2-.3-.3 0-.2.3-.2.7-.2 1.6 0 3.3.1 3.7.1.4 0 1.6-.1 3-.1.4 0 .6 0 .6.2 0 .1-.2.3-.4.3s-.4 0-.9.1c-1.2.2-1.3.9-1.3 3l-.1 20.2c0 2.3 0 2.5-.3 2.5-.4 0-.7-.3-2.7-2.1-.4-.3-5.5-5.4-9.3-9.3-4.1-4.3-8.2-8.6-9.2-9.8l.4 16.1zM328.4 91.3c-3.5-3-4.3-6.9-4.3-10.2 0-2.3.9-6.3 4-9.4 2.1-2.1 5.4-3.7 10.9-3.7 1.4 0 3.4.1 5.2.4 1.3.2 2.5.5 3.7.5.4 0 .4.2.4.4 0 .3-.1.7-.2 1.9 0 1.1 0 3-.1 3.5 0 .5-.2.7-.4.7s-.3-.2-.3-.7c0-1.3-.6-2.7-1.5-3.4-1.3-1.1-3.9-1.9-7-1.9-4.6 0-6.8 1.2-8 2.4-2.6 2.4-3.2 5.5-3.2 9 0 6.6 5.2 12.5 12.9 12.5 2.7 0 4.5-.2 5.9-1.6.8-.8 1.3-2.2 1.4-2.9.1-.4.1-.5.4-.5.2 0 .3.2.3.5 0 .2-.5 3.2-.9 4.4-.2.6-.3.8-.9 1-1.5.6-4.1.8-6.4.8-5.5 0-9.1-1.3-11.9-3.7zM356.8 78.4c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4.1 0 .2.1.2.3s-.2.8-.3 1.9c-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1z"/>
+                  <g>
+                    <path fill="#fff" class="st1" d="M393 82.9c0 3.9 0 7.1.2 8.8.1 1.2.4 2.1 1.6 2.2.6.1 1.5.2 1.8.2.2 0 .3.1.3.2 0 .2-.2.3-.7.3-2.2 0-4.8-.1-5-.1-.2 0-2.8.1-4 .1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.4 0 .9-.1 1.2-.2.8-.2 1-1.1 1.2-2.2.2-1.7.2-4.9.2-8.8v-7.1c0-6.3 0-7.5-.1-8.8-.1-1.4-.5-2.1-1.4-2.3-.4-.1-1-.2-1.3-.2-.2 0-.3-.1-.3-.2 0-.2.2-.3.6-.3 1.3 0 3.9.1 4.1.1.2 0 2.8-.1 4-.1.4 0 .6.1.6.3 0 .2-.2.2-.3.2-.3 0-.5 0-1 .1-1.1.2-1.4.9-1.5 2.3-.1 1.3-.1 2.4-.1 8.8v7.2zM408 89.9c.1 2.8.4 3.7 1.4 3.9.6.2 1.5.2 1.8.2.2 0 .3.1.3.3 0 .2-.2.3-.6.3-2 0-3.4-.1-3.8-.1-.3 0-1.8.1-3.4.1-.4 0-.6 0-.6-.3 0-.2.1-.3.3-.3.3 0 .9 0 1.5-.2.9-.2 1-1.2 1-4.3V69.8c0-1.4.2-1.7.5-1.7.4 0 1 .7 1.4 1.1.6.6 5.8 6.1 11.3 11.8 3.5 3.7 7.3 7.7 8.4 8.9l-.5-17.4c0-2.2-.2-3-1.3-3.2-.6-.1-1.5-.2-1.7-.2-.2 0-.3-.2-.3-.3 0-.2.3-.2.7-.2 1.6 0 3.3.1 3.7.1.4 0 1.6-.1 3-.1.4 0 .6 0 .6.2 0 .1-.2.3-.4.3s-.4 0-.9.1c-1.2.2-1.3.9-1.3 3l-.1 20.2c0 2.3 0 2.5-.3 2.5-.4 0-.7-.3-2.7-2.1-.4-.3-5.5-5.4-9.3-9.3-4.1-4.3-8.2-8.6-9.2-9.8l.5 16.2zM437.3 94.2c-.5-.2-.5-.4-.5-1.3 0-1.7.2-3.1.2-3.7 0-.4.1-.6.3-.6s.3.1.3.4 0 .8.1 1.3c.6 2.5 3.2 3.4 5.6 3.4 3.5 0 5.4-2 5.4-4.6 0-2.5-1.3-3.7-4.5-6l-1.6-1.2c-3.9-2.9-5.1-5-5.1-7.4 0-4.1 3.2-6.5 7.9-6.5 1.4 0 2.8.2 3.7.4.7.2 1 .2 1.3.2s.4 0 .4.2-.2 1.3-.2 3.7c0 .5 0 .8-.3.8-.2 0-.3-.2-.3-.4 0-.4-.3-1.3-.5-1.7-.2-.4-1.4-1.7-4.6-1.7-2.6 0-4.7 1.3-4.7 3.7 0 2.2 1.1 3.4 4.6 5.8l1 .7c4.3 3 5.8 5.4 5.8 8.3 0 2-.8 4.2-3.3 5.9-1.5 1-3.7 1.2-5.7 1.2-1.7 0-3.8-.3-5.3-.9zM469.4 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4-.2 0-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM489.6 84.6c0 3.3 0 6 .2 7.5.1 1 .2 1.7 1.3 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-2 0-4.3-.1-4.5-.1-.2 0-2.4.1-3.5.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.2.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1c0-5.4 0-6.3-.1-7.4-.1-1.2-.4-1.7-1.1-1.9-.4-.1-.9-.1-1.1-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.2 0 3.4.1 3.6.1.2 0 2.5-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.5 0-.9.1-1 .2-1.2.7-1.3 1.9v13.5zM509.9 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4s-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM525 78.5c0-5.4 0-6.3-.1-7.4-.1-1.1-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.8.1 4.1.1.3 0 2.6-.1 3.6-.1.4 0 .6.1.6.3 0 .1-.2.3-.3.3-.2 0-.4 0-.9.1-.9.2-1.1.8-1.2 1.9-.1 1.1-.1 2.1-.1 7.4v4.8c0 5 1.1 7.1 2.6 8.4 1.7 1.6 3.3 1.9 5.3 1.9 2.2 0 4.3-1 5.5-2.4 1.7-2 2-4.8 2-8.4v-4.3c0-5.4 0-6.3-.1-7.4 0-1.1-.2-1.7-1.4-1.9-.3 0-.9-.1-1.2-.1-.2 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.7.1 3.9.1.2 0 1.9-.1 3-.1.4 0 .6.1.6.3 0 .1-.1.3-.3.3-.2 0-.4 0-.9.1-1 .2-1.2.8-1.3 1.9-.1 1.1 0 2.1 0 7.4v3.7c0 3.7-.5 7.9-3.3 10.3-2.6 2.2-5.4 2.5-7.5 2.5-1.2 0-4.9-.1-7.4-2.4-1.7-1.6-3.1-4-3.1-9v-5.1zM564.3 84.6c0 3.3 0 6 .2 7.5.1 1 .3 1.7 1.4 1.8.5.1 1.3.2 1.6.2.2 0 .3.2.3.3 0 .2-.2.3-.6.3-1.9 0-4.2-.1-4.4-.1-.2 0-2.6.1-3.7.1-.4 0-.6-.1-.6-.3 0-.1.1-.2.3-.2.3 0 .7-.1 1.1-.2.7-.2.9-.9 1.1-1.9.2-1.4.2-4.1.2-7.5V70.1l-5.2.1c-2.2 0-3.1.3-3.6 1.1-.4.6-.4.9-.6 1.1-.1.3-.2.3-.4.3-.1 0-.2-.1-.2-.3 0-.4.7-3.4.8-3.7.1-.2.2-.6.4-.6s.6.3 1.6.4c1 .1 2.4.2 2.8.2h13.5c1.2 0 2-.1 2.6-.2.5-.1.9-.2 1-.2s.2.2.2.4c0 1.1-.1 3.5-.1 3.9 0 .3-.2.4-.3.4s-.2-.1-.3-.6V72c-.1-1.1-.9-1.8-4.3-1.9l-4.5-.1v14.6zM581.3 78.5c0-5.4 0-6.3-.1-7.4-.1-1.2-.3-1.7-1.5-1.9-.3 0-.9-.1-1.2-.1-.1 0-.3-.2-.3-.3 0-.2.2-.3.6-.3 1.6 0 3.9.1 4.1.1h8.5c.7 0 1.3-.2 1.6-.2.2 0 .3-.2.5-.2.1 0 .2.2.2.3 0 .2-.2.6-.3 1.6 0 .3-.1 1.9-.2 2.3 0 .2-.2.4-.3.4-.2 0-.3-.2-.3-.4s0-.8-.2-1.2c-.2-.6-.6-.8-2.6-1.1-.6-.1-4.7-.1-5.2-.1-.2 0-.2.1-.2.4v9.4c0 .2 0 .4.2.4.4 0 5.2 0 6-.1.9-.1 1.4-.1 1.7-.5.2-.2.4-.4.5-.4s.2.1.2.3c0 .2-.2.8-.3 1.9-.1.7-.2 2-.2 2.2 0 .3-.1.7-.3.7-.2 0-.2-.1-.2-.3 0-.3 0-.7-.2-1.1-.1-.5-.4-.9-1.8-1.1-1-.1-4.8-.2-5.4-.2-.2 0-.2.1-.2.2v8.8c.1 2.3.7 2.8 4.3 2.8.9 0 2.6 0 3.6-.4.9-.4 1.4-1 1.6-2.4.1-.4.2-.5.4-.5s.2.3.2.5-.3 2.6-.5 3.3c-.2.9-.6.9-2 .9-2.7 0-4.7-.1-6.2-.1-1.5-.1-2.4-.1-3-.1h-1.5c-.7 0-1.5.1-2.1.1-.4 0-.6-.1-.6-.3 0-.1.1-.3.3-.3.3 0 .8-.1 1.1-.2.7-.1.8-.8.9-1.8.2-1.4.2-4.1.2-7.5v-6.1z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="w-full lg:w-auto">
+              <section id="social-bar-c2208a14-7cbc-4f26-a75d-5eeeae612152" class="social-bar inline-block align-middle">
+  <div class="container mx-auto px-0">
+    <div class="flex flex-wrap sm:flex-no-wrap justify-between items-center font-display font-bold type-preset-8 uppercase ">
+      <div class="text-white grid grid-cols-6 justify-center items-center lg:grid-cols-3">
+                          <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="https://www.facebook.com/DataSciColumbia" aria-label="Facebook" target="_blank" rel="external nofollow">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path fill-rule="evenodd" d="M26.157 35V24.999h2.74l.363-3.447h-3.103l.005-1.725c0-.899.085-1.38 1.366-1.38h1.713V15H26.5c-3.291 0-4.45 1.672-4.45 4.484v2.069H20v3.446h2.051V35h4.106z"/></svg>
+          </a>
+                  <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="https://www.instagram.com/datascicolumbia/" aria-label="Instagram" target="_blank" rel="external nofollow">
+            <svg class="fill-current inline-block" height="21" viewBox="0 0 511 511.9" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
+          </a>
+                  <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="https://x.com/datascicolumbia" aria-label="Twitter" target="_blank" rel="external nofollow">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51"><path fill-rule="evenodd" d="M24.711 21.934l.043.72-.722-.088c-2.63-.338-4.928-1.486-6.879-3.413l-.954-.956-.245.706c-.52 1.574-.188 3.237.896 4.355.578.618.448.706-.55.338-.346-.118-.65-.206-.679-.162-.1.103.246 1.442.52 1.972.376.735 1.142 1.456 1.98 1.883l.709.338-.839.015c-.809 0-.838.015-.751.323.289.957 1.43 1.972 2.702 2.413l.896.31-.78.47c-1.156.677-2.515 1.06-3.873 1.089-.65.014-1.185.073-1.185.117 0 .147 1.763.971 2.79 1.295 3.077.956 6.733.544 9.479-1.089 1.95-1.162 3.902-3.472 4.812-5.708.492-1.192.983-3.369.983-4.413 0-.677.043-.766.852-1.575.477-.47.925-.985 1.012-1.132.145-.28.13-.28-.607-.03-1.228.441-1.402.383-.795-.28.448-.47.983-1.323.983-1.574 0-.044-.217.03-.462.162-.26.147-.839.368-1.272.5l-.78.25-.709-.485c-.39-.265-.939-.559-1.228-.647-.737-.206-1.864-.177-2.529.059-1.806.662-2.948 2.368-2.818 4.237z"/></svg>
+          </a>
+                  <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="https://www.youtube.com/c/ColumbiaDataScience/videos" aria-label="YouTube" target="_blank" rel="external nofollow">
+            <svg class="fill-current inline-block" height="28" viewBox="0 -71 511.99912 511" width="28" xmlns="http://www.w3.org/2000/svg"><path d="m255.980469 370.492188c-.042969 0-.089844 0-.136719 0-15.449219-.105469-152.027344-1.351563-190.722656-11.816407-27.042969-7.269531-48.390625-28.59375-55.679688-55.640625-10.125-38.011718-9.4804685-111.195312-9.410156-117.039062-.0664062-5.816406-.71875-79.605469 9.378906-117.929688.011719-.035156.019532-.074218.03125-.109375 7.207032-26.738281 29.035156-48.722656 55.613282-56.011719.066406-.019531.136718-.035156.203124-.054687 38.257813-10.054687 175.105469-11.285156 190.585938-11.390625h.277344c15.488281.105469 152.429687 1.351562 190.769531 11.832031 26.972656 7.25 48.304687 28.546875 55.613281 55.558594 10.503906 38.351563 9.53125 112.300781 9.425782 118.542969.074218 6.148437.6875 78.675781-9.378907 116.878906-.007812.039062-.019531.074219-.027343.109375-7.292969 27.046875-28.636719 48.371094-55.710938 55.648437-.035156.011719-.074219.019532-.109375.03125-38.253906 10.050782-175.105469 11.28125-190.582031 11.390626-.046875 0-.09375 0-.140625 0zm-207.90625-292.167969c-8.890625 33.828125-8.050781 106.675781-8.042969 107.410156v.527344c-.265625 20.203125.667969 78.710937 8.046875 106.421875 3.578125 13.269531 14.105469 23.78125 27.457031 27.371094 28.550782 7.722656 139.789063 10.152343 180.445313 10.4375 40.761719-.285157 152.164062-2.648438 180.503906-10.0625 13.308594-3.601563 23.800781-14.078126 27.402344-27.363282 7.386719-28.117187 8.3125-86.339844 8.042969-106.414062 0-.210938 0-.421875.003906-.632813.367187-20.445312-.355469-79.636719-8.011719-107.570312-.007813-.027344-.015625-.054688-.019531-.082031-3.59375-13.328126-14.125-23.839844-27.476563-27.429688-28.273437-7.730469-139.691406-10.152344-180.445312-10.4375-40.734375.285156-152.027344 2.644531-180.453125 10.050781-13.097656 3.632813-23.863282 14.519531-27.453125 27.773438zm435.136719 219.894531h.011718zm-278.210938-31.726562v-161.996094l140 81zm0 0"/></svg>
+          </a>
+                  <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="https://www.linkedin.com/company/datascicolumbia/" aria-label="LinkedIn" target="_blank" rel="external nofollow">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path fill-rule="evenodd" d="M20 22v11h-4V22h4zm9.474 0C32.061 22 34 23.536 34 26.838V33h-3.93v-5.75c0-1.444-.57-2.43-1.992-2.43-1.086 0-1.733.665-2.017 1.306-.104.23-.13.55-.13.872V33H22s.052-9.739 0-10.747h3.931v1.522c.522-.732 1.456-1.775 3.543-1.775zm-11.462-5c1.216 0 1.965.864 1.988 2 0 1.11-.772 2-2.012 2h-.023C16.772 21 16 20.11 16 19c0-1.136.795-2 2.012-2z"/></svg>
+          </a>
+                  <a class="inline-block align-middle text-center transition-opacity duration-200 ease-in-out hover:opacity-75 focus:opacity-75" href="mailto:datascience@columbia.edu" aria-label="Email" target="_blank" rel="external nofollow">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path fill-rule="evenodd" d="M36.096 19.205l.049.013c.064.026.105.088.105.157v11.25c0 1.036-.84 1.875-1.875 1.875h-18.75c-1.036 0-1.875-.84-1.875-1.875v-11.25c0-.068.042-.13.105-.156.064-.027.139-.013.188.037l5.812 5.812c.091.092.091.24 0 .332l-4.728 4.728c-.266.276-.263.714.008.986.271.271.71.275.986.009l4.728-4.728c.092-.091.24-.091.332 0l1.997 1.994c1.007 1.006 2.639 1.006 3.645 0l1.996-1.996c.044-.044.104-.069.166-.069.063 0 .122.025.166.07l4.728 4.727c.177.183.438.256.684.191.246-.064.438-.256.502-.502s-.01-.507-.192-.684l-4.728-4.728c-.091-.091-.091-.24 0-.331l5.812-5.813c.05-.05.124-.064.188-.037zM34.375 17.5c.09 0 .18.007.27.02.175.025.32.148.377.316.055.169.011.354-.114.48l-9.081 9.08c-.458.457-1.2.457-1.658 0l-9.078-9.08c-.126-.126-.17-.311-.115-.48.056-.168.202-.29.378-.316.09-.014.18-.02.271-.02z"/></svg>
+          </a>
+              </div>
+          </div>
+  </div>
+</section>
+            </div>
+            <address class="w-full lg:w-auto lg:inline-block lg:align-middle type-preset-8 not-italic lg:text-left">
+              Northwest Corner, 550 W 120th St<br>
+              #1401, New York, NY 10027<br>
+              (212) 854-5660
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-slate-300">
+    <div class="container mx-auto py-16 lg:py-20">
+      <div class="grid grid-cols-2 gap-6 sm:gap-8 lg:gap-10 type-preset-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+                                    <section class="widget nav_menu-2 widget_nav_menu"><ul id="menu-footer-1-menu" class="menu"><li class="active menu-item menu-item-has-children menu-about"><a href="https://datascience.columbia.edu/about-dsi/">About</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-home"><a href="https://datascience.columbia.edu/">Home</a></li>
+	<li class="active menu-item menu-what-is-data-science"><a href="https://datascience.columbia.edu/about-dsi/what-is-data-science/">What is Data Science?</a></li>
+	<li class="active menu-item menu-work-at-dsi"><a href="https://datascience.columbia.edu/about-dsi/work-with-us/">Work at DSI</a></li>
+	<li class="active menu-item menu-people-at-dsi"><a href="https://datascience.columbia.edu/about-dsi/people-at-dsi/">People at DSI</a></li>
+	<li class="active menu-item menu-contact-us"><a href="https://datascience.columbia.edu/about-dsi/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+</ul></section>                        
+                                                <section class="widget nav_menu-3 widget_nav_menu"><ul id="menu-footer-2-menu" class="menu"><li class="active menu-item menu-item-has-children menu-education"><a href="https://datascience.columbia.edu/education/">Education</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-ms-in-data-science"><a href="https://datascience.columbia.edu/education/programs/m-s-in-data-science/">MS in Data Science</a></li>
+	<li class="active menu-item menu-phd-specialization-in-data-science"><a href="https://datascience.columbia.edu/education/programs/ph-d-with-a-specialization-in-data-science/">PhD Specialization in Data Science</a></li>
+	<li class="active menu-item menu-certification-of-professional-achievement-in-data-sciences"><a href="https://datascience.columbia.edu/education/programs/certification-of-professional-achievement-in-data-sciences/">Certification of Professional Achievement in Data Sciences</a></li>
+</ul>
+</li>
+</ul></section>                        
+                                                <section class="widget nav_menu-4 widget_nav_menu"><ul id="menu-footer-3-menu" class="menu"><li class="active menu-item menu-item-has-children menu-research"><a href="https://datascience.columbia.edu/research/">Research</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-grants-funding-opportunities"><a href="https://datascience.columbia.edu/research/grants-funding-opportunities/">Grants &amp; Funding Opportunities</a></li>
+	<li class="active menu-item menu-dsi-scholars"><a href="https://datascience.columbia.edu/research/programs/dsi-scholars/">DSI Scholars</a></li>
+	<li class="active menu-item menu-postdoctoral-fellows-program"><a href="https://datascience.columbia.edu/research/programs/postdoctoral-fellows-program/">Postdoctoral Fellows Program</a></li>
+	<li class="active menu-item menu-seed-fund-program"><a href="https://datascience.columbia.edu/research/grants-funding-opportunities/seed-fund-program/">Seed Fund Program</a></li>
+</ul>
+</li>
+</ul></section>                        
+                          </div>
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+                                                <section class="widget nav_menu-5 widget_nav_menu"><ul id="menu-footer-4-menu" class="menu"><li class="active menu-item menu-item-has-children menu-research-centers"><a href="https://datascience.columbia.edu/research/centers-and-working-groups/">Research Centers</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-smart-cities"><a href="https://datascience.columbia.edu/research/centers/smart-cities/">Smart Cities</a></li>
+	<li class="active menu-item menu-sense-collect-and-move-data"><a href="https://datascience.columbia.edu/research/centers/sense-collect-and-move-data/">Sense, Collect, and Move Data</a></li>
+	<li class="active menu-item menu-health-analytics"><a href="https://datascience.columbia.edu/research/centers/health-analytics/">Health Analytics</a></li>
+	<li class="active menu-item menu-foundations-of-data-science"><a href="https://datascience.columbia.edu/research/centers/foundations-of-data-science/">Foundations of Data Science</a></li>
+	<li class="active menu-item menu-financial-and-business-analytics"><a href="https://datascience.columbia.edu/research/centers/financial-and-business-analytics/">Financial and Business Analytics</a></li>
+	<li class="active menu-item menu-data-media-and-society"><a href="https://datascience.columbia.edu/research/centers/data-media-and-society/">Data, Media, and Society</a></li>
+	<li class="active menu-item menu-cybersecurity"><a href="https://datascience.columbia.edu/research/centers/cybersecurity/">Cybersecurity</a></li>
+	<li class="active menu-item menu-ai-for-sciences-and-engineering"><a href="https://datascience.columbia.edu/research/centers/ai-for-sciences-and-engineering/">AI for Sciences and Engineering</a></li>
+</ul>
+</li>
+<li class="active menu-item menu-item-has-children menu-working-groups"><a href="/research/centers-and-working-groups/#wg">Working Groups</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-education"><a href="https://datascience.columbia.edu/research/groups/education-working-group/">Education</a></li>
+	<li class="active menu-item menu-computational-social-science"><a href="https://datascience.columbia.edu/research/groups/computational-social-science/">Computational Social Science</a></li>
+</ul>
+</li>
+</ul></section>                        
+                                                <section class="widget nav_menu-6 widget_nav_menu"><ul id="menu-footer-5-menu" class="menu"><li class="active menu-item menu-item-has-children menu-engage-with-dsi"><a href="https://datascience.columbia.edu/engage/">Engage with DSI</a>
+<ul class="sub-menu">
+	<li class="active menu-item menu-for-alumni"><a href="https://datascience.columbia.edu/engage/alumni/">For Alumni</a></li>
+	<li class="active menu-item menu-for-faculty-and-researchers"><a href="https://datascience.columbia.edu/engage/for-faculty-and-researchers-ways-to-engage/">For Faculty and Researchers</a></li>
+	<li class="active menu-item menu-for-industry"><a href="https://datascience.columbia.edu/engage/for-industry/">For Industry</a></li>
+	<li class="active menu-item menu-for-students"><a href="https://datascience.columbia.edu/engage/for-students/">For Students</a></li>
+	<li class="active menu-item menu-giving"><a href="https://datascience.columbia.edu/engage/giving/">Giving</a></li>
+</ul>
+</li>
+</ul></section>                        
+                                                <section class="widget nav_menu-7 widget_nav_menu"><ul id="menu-footer-6-menu" class="menu"><li class="active menu-item menu-news"><a href="https://datascience.columbia.edu/news/">News</a></li>
+<li class="active menu-item menu-events"><a href="https://datascience.columbia.edu/engage/industry/welcome-ia/events/">Events</a></li>
+</ul></section>                        
+                              </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer__bottom border-t bg-slate-300 border-slate-200 py-5 type-preset-8 text-center lg:text-left">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap lg:flex-no-wrap justify-center lg:justify-between">
+                  <ul id="menu-footer-bottom" class="menu-footer-bottom space-x-3"><li class="menu-item menu-columbia-university"><a href="https://columbia.edu">Columbia University</a></li>
+<li class="active menu-item menu-terms"><a href="#">Terms</a></li>
+<li class="active menu-item menu-privacy"><a href="#">Privacy</a></li>
+</ul>
+                <div class="w-full lg:w-auto">
+          <span class="block lg:inline-block">&#169; The Data Science Institute at Columbia University</span>
+          <span class="block lg:inline-block lg:ml-4">Created by <a href="https://constructive.co" target="_blank" rel="external">Constructive</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script src="https://datascience.columbia.edu/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js" async="async" data-wp-strategy="async"></script><script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/datascience.columbia.edu","hash_tracking":"false","v4_id":"G-2C3JND1J4X"};/* ]]> */
+</script>
+<script src="https://datascience.columbia.edu/wp-includes/js/jquery/jquery.min.js"></script><script src="https://datascience.columbia.edu/wp-includes/js/jquery/jquery-migrate.min.js"></script><script src="https://datascience.columbia.edu/wp-content/themes/columbia-dsi/resources/assets/scripts/shortcode.js"></script><script src="https://datascience.columbia.edu/wp-content/themes/columbia-dsi/dist/scripts/main.js"></script>  </body>
+</html>

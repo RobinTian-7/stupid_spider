@@ -1,0 +1,211 @@
+<!-- Adapted from the amazing demo here !> https://github.com/cadars/john-doe/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Adithya Murali</title>
+  <meta name="description" content="Adithya Murali's personal website. Owned and Maintained by muraliadithya.">
+
+  <meta property="og:title" content="Adithya Murali's homepage">
+  <meta property="og:description" content="Adithya Murali's personal website. Owned and Maintained by muraliadithya.">
+  <!-- <meta property="og:image" content="img/profilepic.jpg"> -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- You could also inline the stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<style>
+/* --------- Change displaypic ------- */
+input[type="checkbox"] {
+    content: url('img/profilepic.jpg');
+    appearance: none;
+    display: block;
+    width: 340px;
+    height: 450px;
+}
+
+input[type="checkbox"]:checked {
+    content: url('img/memoji.png');
+    width: 380px;
+    height: 450px;
+    position: relative;
+    top: -55px;
+    left: -10px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1 style="font-size:25px">
+      <a href="index.html#home">Adithya Murali</a>
+    </h1>
+    <nav>
+      <a href="index.html#home">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="index.html#academics">More</a>
+     <!-- <a href="https://adithyamurali.youcanbook.me/">BookMe</a> -->
+    </nav>
+  </header>
+
+  <main>
+
+
+    <!-- Home section -->
+
+    <section id="home">
+      <!-- HOME -->
+      <div class="twosplit">
+        <div class="leftsplit">
+          <h1>Welcome!</h1>
+          <p>I'm Adithya Murali, an Assistant Professor at the University of Wisconsin-Madison working on Formal Methods and Programming Languages. I did my Ph.D. at UIUC with <a href="https://madhu.cs.illinois.edu/"> Madhusudan Parthasarathy</a>. Broadly speaking, I work on program verification and program synthesis. 
+          </p>
+         <!--
+          <div style="height:5px;font-size:1px;">&nbsp;</div>
+          <p>
+              <b> <font color="#EE4B2B">I am actively looking for students to work with, so do reach out to me if you like my research! </font></b>
+          </p>
+          -->
+          <div style="height:5px;font-size:1px;">&nbsp;</div>
+          <p> 
+             The overarching focus of my research is to <b>democratize software verification</b>, enabling programmers 
+             who are not verification experts to verify their code. I'm intrigued by the idea of making verification technology broadly 
+             accessible by lowering the <i>cognitive burden</i> involved in automated software verification.
+              <br>
+              A primary focus of my work is to develop <b>data-driven 
+             logic learning</b> techniques (learning logical formulas from data) to replace the expert help currently 
+             required in automated software verification.
+          </p>
+          <div style="height:10px;font-size:1px;">&nbsp;</div>
+          <p> 
+             More generally, I also work in the area of program synthesis, and have a big interest in exploring questions at the
+             intersection of symbolic synthesis and machine learning (e.g., "Neuro-Symbolic" learning).
+          </p>
+ 
+        </div>
+        <div class="rightsplit">
+        <input type="checkbox" />
+        <!--  <figure>
+            <img src="img/profilepic.jpg" width="997" height="1329">
+            <!-- <figcaption> Caption goes here. </figcaption> 
+          </figure> -->
+
+          <div id="contact" style="font-size:20px">
+            <address>
+              <a href="mailto:adithyamurali@cs.wisc.edu">adithyamurali@cs.wisc.edu</a>&nbsp;&nbsp;
+              <br>
+              <span><a href="https://twitter.com/adithyamuralism"><i class="fab fa-twitter"></i></a></span>&nbsp;&nbsp;
+              <span><a href="https://scholar.google.com/citations?user=Yw5Q_CgAAAAJ&hl=en"><i class="fab fa-google-scholar"></i></a></span>&nbsp;&nbsp;
+              <span><a href="https://github.com/muraliadithya"><i class="fab fa-github"></i></a></span>&nbsp;&nbsp;
+
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <!--      <footer>
+        <p></p>
+      </footer>
+-->
+    </section>
+
+    <!-- Academic activities section -->
+    <section id="academics">
+      <h2> # On My Team </h2>
+      Here is a non-exhaustive list of many talented individuals I have had the pleasure of working with:
+      <ul style="margin-top:1em">
+        <li> <a href="https://atharvas.github.io/">Atharva Sehgal</a> (Undergraduate @UIUC &#8594; PhD CS @UT
+          Austin) </li>
+        <li> <a href="https://www.cs.cmu.edu/~zhengyal/">Zhengyao Lin</a> (Undergraduate @UIUC &#8594; PhD CS @CMU)
+        </li>
+        <li> Delu Zhao (Undergraduate @UIUC) </li>
+        <li> Shreya Vinjamuri (Undergraduate @UIUC) </li>
+        <li> Hrishikesh Balakrishnan (MSc Computer Science @Chennai Mathematical Institute, India &#8594; PhD CS @UIUC) </li>
+        <li> <a href="https://thakkarparth007.github.io/">Parth Thakkar</a> (MS CS @UIUC) </li>
+        <li> <a href="https://sgomber.github.io/">Shaurya Gomber</a> (MS CS @UIUC &#8594; PhD CS @UIUC) </li>
+        <li> Aman Singh (MS CS @UIUC) </li>
+        <li> Eion Blanchard (PhD Mathematics @UIUC) </li>
+        <li> <a href="https://www.codyrivera.com/">Cody Rivera</a> (PhD CS @UIUC) </li>
+        <li> <a href="https://counc009.github.io">Aaron Councilman</a> (PhD CS @UIUC) </li>
+        <li> <a href="https://zzjas.com/">Zijie Zhao</a> (PhD CS @UIUC) </li>
+      </ul>
+
+
+      <h2> # Academic Service </h2>
+      <ul>
+        <li> Subreviewer <i>PLDI 2024</i> </li>
+        <li> Subreviewer <i>CONCUR 2023</i> </li>
+        <li> Subreviewer <i>ICALP 2023</i> </li>
+        <li> Subreviewer <i>LICS 2022</i> </li>
+        <li> Artifact Evaluation Committee <i>PLDI 2022</i> </li>
+        <li> Artifact Evaluation Committee <i>POPL 2022</i> </li>
+        <li> Student Committee Chair, Department of Mathematics, BITS-Pilani, Hyderabad <i>Academic Year 2015-16</i>
+        </li>
+      </ul>
+
+      <h2> # Teaching</h2>
+      <h4 style="margin-left:12px"> UIUC </h4>
+      <ul>
+        <li> CS 521 Trustworthy AI Systems (Teaching Assistant) <i>Fall 2023</i> </li>
+        <li> CS 474 Logic in Computer Science (Teaching Assistant) <i>Spring 2023</i> </li>
+        <li> CS 421 Programming Languages and Compilers (Teaching Assistant) <i>Fall 2020</i> </li>
+        <li> CS 421 Programming Languages and Compilers (Teaching Assistant) <i>Spring 2020</i> </li>
+        <li> CS 421 Programming Languages and Compilers (Teaching Assistant) <i>Fall 2019</i> </li>
+      </ul>
+
+      <h4 style="margin-left:12px"> BITS-Pilani, Hyderabad </h4>
+      <ul>
+        <li> MATH F112 Linear Algebra and Complex Variables (Teaching Assistant) <i>Spring 2013</i> </li>
+        <li> MATH F112 Linear Algebra and Complex Variables (Teaching Assistant) <i>Spring 2014</i> </li>
+      </ul>
+
+
+      <h2> # Awards </h2>
+      <ul>
+        <li> UIUC Graduate College Conference Travel Grant <i>PLDI 2024</i> </li>
+        <li> Travel Grant <i>MWPLS 2023</i> </li>
+        <li> SIGPLAN PAC Grant <i>PLDI 2023</i> </li>
+        <li> UIUC Graduate College Spring 2020 Conference Travel Grant <i>ESOP 2020</i> (unclaimed) </li>
+        <li> SIGPLAN PAC Grant <i>POPL 2020</i> </li>
+        <li> Ray Ozzie Fellowship, Department of Computer Science, UIUC <i>2018</i> </li>
+        <li> Gold Medal, BITS-Pilani Hyderabad <i>Graduating Batch of 2017</i> </li>
+        <li> INSPIRE Scholarship, Government of India <i>Academic Years 2012-2016</i> </li>
+      </ul>
+
+
+      <h2> # Other Academic Activities </h2>
+      <ul>
+        <li> Coordinator, Formal Methods Seminar, UIUC <i>Fall 2023</i> </li>
+        <li> Student volunteer <i>PLDI 2023</i> </li>
+        <li> Coordinator, Formal Methods Seminar, UIUC <i>Spring 2023</i> </li>
+        <li> Student volunteer <i>IJCAI 2022</i> </li>
+        <li> Student volunteer <i>POPL 2022</i> </li>
+        <li> Student volunteer <i>POPL 2020</i> </li>
+        <li> I was the scribe for Dagstuhl Seminar 19361 on 'Logic and Learning'. You can read the report <a
+            href="publications.html#dagrep19361">here</a>. </li>
+      </ul>
+
+
+
+    </section>
+
+  </main>
+
+  <!-- Other images -->
+
+  <!-- <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt=""
+      src="//dummyimage.com/2400x1200/ddd/bbb"></a> -->
+
+</body>
+
+</html>

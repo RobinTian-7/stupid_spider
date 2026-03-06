@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kede Ma, lab members</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/main.css">
+    <script src="./jquery/jquery-3.3.1.min.js"></script>
+</head>
+
+<style>
+.container{
+    max-width: 1000px;
+}
+</style>
+<script>
+    $(document).ready(function(){
+        function isHasImg(pathImg){
+            var ImgObj=new Image();
+            ImgObj.src= pathImg;
+            if(ImgObj.fileSize > 0 || (ImgObj.width > 0 && ImgObj.height > 0)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        $("[name='stuName']").hover(function(){
+            var stuName = $(this).html();
+            //alert(stuName.replace(' ','').toLowerCase());
+            //图片名一定要按照规律写，例如peibeicao，zhihuawang，并且文件后缀一定要固定为jpeg
+            var imgName = "./img/" + stuName.replace(' ','').toLowerCase() +'.jpeg';
+            $("[name='stuName']").each(function(){  
+                $(this).parent().attr('style','list-style:none');  
+            });
+            $(this).parent().removeAttr("style");
+            if(isHasImg(imgName)){
+                $('#face').attr("src",imgName);
+            }else{
+                $('#face').attr("src",'./img/default.jpeg');
+            }
+        });
+    });
+</script>
+<body>
+    <div class="box container">
+        <div class="container">
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body">
+                    <h1 style="display: flex; align-items: center; justify-content: space-between; margin: 0px 0 0 0; line-height: .8; padding: 0;">
+						<span style="display: inline-block;"><b>MA Lab Members</b></span>
+						<img id = "ma-lab-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo" style="height: 2.5em; width: auto; object-fit: contain;">
+					</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-4">
+                <div style="width:147px;height:158px" class="center-block">
+                    <img src="./img/default.jpeg" class="center-block" id="face">
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <li style="list-style:none">
+                    <b>Permanent Fixtures</b> 
+                </li>
+                <ul>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Kede Ma</a>
+                    </li>
+                </ul>
+
+                
+                <li style="list-style:none">
+                    <b>Postdoctoral Fellows</b> 
+                </li>
+                <ul>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Xiaoyu Xu</a> (Spring 2025), with <a href="https://scholars.cityu.edu.hk/en/persons/jing-liao(45757c38-f737-420d-8a7f-73b58d30c1fd).html">Jing Liao</a> 
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Zengming Wang</a> (Spring 2025) 
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Xin Chen</a> (Spring 2025) 
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Nan Zhong</a> (Spring 2024) 
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Zhenyang Li</a> (Spring 2024), with <a href="https://allenjack.github.io/">Chen Ma</a> 
+                    </li>
+                </ul>
+                
+
+                
+                <li style="list-style:none">
+                    <b>PhD Students</b> 
+                </li>
+                <ul>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Jinglong Yang</a> (Fall 2022), with <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Jianguo Zhang</a> at SUSTech
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Kanglong Fan</a> (Fall 2022)
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Zhan Zhuang</a> (Fall 2022), with <a href="https://wei-ying.net/">Ying Wei</a> at ZJU and <a href="https://yuzhanghk.github.io/">Yu Zhang</a> at SUSTech
+                    </li>
+                     <li style="list-style:none">
+                        <a href="" name='stuName'>Jian Ma</a> (Fall 2023) 
+                    </li>
+                     <li style="list-style:none">
+                        <a href="" name='stuName'>Ronghuan Wu</a> (Spring 2023), with <a href="https://scholars.cityu.edu.hk/en/persons/jing-liao(45757c38-f737-420d-8a7f-73b58d30c1fd).html">Jing Liao</a> 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Ziqiang Cui</a> (Spring 2023), with <a href="https://allenjack.github.io/">Chen Ma</a> 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Shuyan Zhai</a> (Fall 2023) 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Qiucheng Yu</a> (Spring 2024), with <a href="https://bruceqczhao.github.io/">Qingchuan Zhao</a>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Jiaqi He</a> (Fall 2024)
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Jian Zou</a> (Fall 2025)
+                    </li>
+                     <li style="list-style:none">
+                        <a href="" name='stuName'>Tianhe Wu</a> (Fall 2025)
+                    </li>
+                </ul> 
+                <li style="list-style:none">
+                    <b>Master Students</b> 
+                </li>
+                <ul> 
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Zhengpeng Xing</a> (Spring 2026)
+                        <br>
+                    </li> 
+                </ul>       
+                <li style="list-style:none">
+                    <b>Alumni</b> 
+                </li>
+                <ul>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Wei Shang</a> (Ph.D., 11/25, with <a href="https://csdwren.github.io/">Dongwei Ren</a> at TJU)
+                        <br>
+                        <i>Event-Driven Spatiotemporal Enhancement of Natural Videos</i>
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Youneng Bao</a> (Postdoc, 04/25-12/25) 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Wen Wen</a> (Ph.D., 08/25)
+                        <br>
+                        <i>Modular and Multimodal Approaches to Blind Video Quality Assessment in Real-world Scenarios</i>
+                    </li>
+
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Yunqiao Yang</a> (Ph.D, 08/25, with <a href="https://wei-ying.net/">Ying Wei</a>)
+                        <br>
+                        <i>Editing Pre-trained Vision Models for Multi-granularity Adaptation</i>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Mian Zou</a> (Ph.D., 08/25)
+                        <br>
+                        <i>Toward Generalizable Face Manipulation and Generation Detection</i>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Haoyu Chen</a> (Ph.D., 08/25)
+                        <br>
+                        <i>Hiding Data in Generative Models</i>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Yichen Wu</a> (Ph.D., 07/25, with <a href="https://wei-ying.net/">Ying Wei</a>)
+                        <br>
+                        <i>Advancing Continual Learning from Classic Models to Foundation Models</i>
+                    </li>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Chenping Fu</a> (Postdoc, 03/24-04/25) 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Xiangyang Zhu</a> (Ph.D., 08/24)
+                        <br>
+                        <i>Zero-shot and Few-shot Analysis of 3D Point Clouds</i>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Peibei Cao</a> (Ph.D., 07/24) 
+                        <br>
+                        <i>Perceptual Assessment and Optimization of High Dynamic Range Image Processing</i>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Zhihua Wang</a> (Ph.D., 03/22; Postdoc, 03/22-08/23, 08/24-12/25) 
+                        <br>
+                        <i>Towards Generalizable Blind Image Quality Assessment</i>
+                    </li>
+                </ul>    
+            </div>
+            
+        </div>  
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body">
+                    <h2><b>Notes to Prospective Students</b></h2>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body" style="border-bottom-style: none;">
+                    <ul>
+                        <li>                          
+                            We are always seeking for "top-performing" students to join our research team. Please send me an email if you are interested, with your CV, transcript and a brief research statement. The "performance" is qualitatively measured by 1) background in mathematics, 2) skill in computer programming, and 3) intuition in working on research projects.
+                        </li>
+                        <li >
+                            We welcome highly self-motivated undergraduates at CityU to conduct research with us. Self-funded visiting scholars are also welcome to apply.
+                        </li>
+                    </ul>          
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42280108-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-42280108-2');
+</script>

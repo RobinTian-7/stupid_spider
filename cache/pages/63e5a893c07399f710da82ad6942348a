@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-159079655-1"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "UA-159079655-1");
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>AI Security (UIUC)</title>
+
+    <meta name="author" content="Bo Li"/>
+
+    <meta
+            name="description"
+            content="Neubauer Associate Professor, University of Chicago"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great%7CAllura%7CAmatic+SC%7CArizonia%7CAveria+Sans+Libre%7CCabin+Sketch%7CFrancois+One%7CJacques+Francois+Shadow%7CJosefin+Slab%7CKaushan+Script%7CLove+Ya+Like+A+Sister%7CMerriweather%7COffside%7COpen+Sans%7COpen+Sans+Condensed%7COswald%7COver+the+Rainbow%7CPacifico%7CRomanesco%7CSacramento%7CSeaweed+Script%7CSpecial+Elite"> -->
+    <link rel="icon" href="files/logo.jpg"/>
+
+    <link rel="alternate" type="application/rss+xml" title="" href=""/>
+
+    <link rel="stylesheet" href="./files/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="./files/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="./files/bootstrap-social.css"/>
+
+    <link rel="stylesheet" href="./files/main.css"/>
+
+    <link rel="stylesheet" href="./files/css"/>
+
+    <link rel="stylesheet" href="./files/css(1)"/>
+
+    <link rel="stylesheet" href="./files/css(2)"/>
+
+    <!-- Facebook OpenGraph tags -->
+
+    <meta property="og:title" content="Bo Li"/>
+
+    <meta
+            property="og:description"
+            content="Neubauer Associate Professor, University of Chicago"
+    />
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:url" content="https://aisecure.github.io/"/>
+    <link rel="canonical" href="https://aisecure.github.io/"/>
+
+    <!-- Twitter summary cards -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@boli"/>
+    <meta name="twitter:creator" content="@boli"/>
+
+    <meta name="twitter:title" content="Bo Li"/>
+
+    <meta
+            name="twitter:description"
+            content="Neubauer Associate Professor, University of Chicago"
+    />
+
+    <script type="text/x-mathjax-config;executed=true">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$', '$'], ["$$", "$$"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        "HTML-CSS": {
+          linebreaks: {
+            automatic: true
+          },
+          scale: 90,
+          fonts: ["TeX"],
+          mtextFontInherit: false,
+          matchFontHeight: true
+        },
+        "TeX": {
+          extensions: ["AMSmath.js", "AMSsymbols.js", "mediawiki-texvc.js"],
+        }
+        //,
+        //displayAlign: "left",
+        //displayIndent: "2em"
+      });
+
+    </script>
+    <script src="./files/MathJax.js" id=""></script>
+
+    <!--
+   <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+     });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888;
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #e6e6e6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .MathJax_Error {
+            color: #cc0000;
+            font-style: italic;
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #dddddd;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none;
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 5px 0px;
+            border: 1px solid #cccccc;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+        .MathJax_MenuItem {
+            padding: 1px 2em;
+            background: transparent;
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: 0.5em;
+            padding-top: 0.25em;
+            color: #666666;
+            font-size: 0.75em;
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white;
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: 0.5em;
+            right: auto;
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: 0.7em;
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: 0.7em;
+            left: auto;
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 0.7em;
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: 0.7em;
+            left: auto;
+        }
+
+        .MathJax_MenuLabel {
+            padding: 1px 2em 3px 1.33em;
+            font-style: italic;
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #dddddd;
+            margin: 4px 3px;
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText;
+        }
+
+        .MathJax_MenuActive {
+            background-color: #606872;
+            color: white;
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #e8e8e8;
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none;
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none;
+        }
+
+        #MathJax_AboutClose {
+            top: 0.2em;
+            right: 0.2em;
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px;
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #aaa;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: "Courier New", Courier;
+            font-size: 24px;
+            color: #f0f0f0;
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #aaa;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px;
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #ccc !important;
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #ccc !important;
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none;
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #f0f0f0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: 0.5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #aaaaaa;
+            -webkit-box-shadow: 5px 5px 15px #aaaaaa;
+            -moz-box-shadow: 5px 5px 15px #aaaaaa;
+            -khtml-box-shadow: 5px 5px 15px #aaaaaa;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav li a {
+            color: white;
+        }
+
+        .intro-header .page-heading .page-subheading,
+        .intro-header .post-heading .post-subheading {
+            color: #a0a0a0;
+            font-size: 16px;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #a0a0a0;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #a0a0a0;}
+
+    </style>
+</head>
+<body>
+<div id="MathJax_Message" style="display: none"></div>
+
+<nav
+        class="navbar navbar-default navbar-fixed-top navbar-custom top-nav-short"
+        style="background: #8cb6e1"
+>
+    <div class="container">
+        <div class="navbar-header">
+            <button
+                    type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#main-navbar"
+            >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="https://aisecure.github.io/"
+            >Secure Learning Lab</a
+            >
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown right">
+                    <a href="PUBLICATIONS/index.html">PUBLICATIONS</a>
+                </li>
+
+                <li>
+                    <a href="PROJECTS/index.html">Research</a>
+                </li>
+
+                <li>
+                    <a href="GROUP/index.html">People</a>
+                </li>
+
+                <li class="dropdown right">
+                  <a href="javascript:void(0)" class="dropbtn">TEACHING</a>
+                  <div class="dropdown-content">
+                    <a href="TEACHING/CS562/CS562.html">CS562</a>
+                    <a href="TEACHING/CS598/CS562.html">CS598</a>
+                    <a href="TEACHING/CS442/CS442.html">CS442</a>
+                    <a href="TEACHING/CS307/CS307.html">CS307</a>
+                  </div>
+                </li>
+
+                <li>
+                    <a href="BLOG/index.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/AI-secure">GitHub</a>
+                </li>
+
+                <li>
+                    <a href="BIO/index.html">Bio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- TODO this file has become a mess, refactor it -->
+
+<header class="header-section">
+    <div class="intro-header no-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <p>
+                            <img class="img-circle img-200" src="./files/bo_li_headshot.jpg"/>
+                        </p>
+
+                        <h1>Bo Li</h1>
+
+                        <hr class="small"/>
+<!--                         <span class="page-subheading"> Neubauer Associate Professor </span> -->
+
+                        <!-- <hr class="small"> -->
+<!--                         <span class="page-subheading"
+                        >UIUC</span
+                        > -->
+<!--                         <span class="page-subheading"
+                        >(I am currently on leave from UIUC) </span
+                        >
+                        <span class="page-subheading"> -->
+<!--                   <strong style="font-family: seaweed script">Email </strong>:
+                  lbo at illinois dot edu or lxbosky at gmail dot com</span
+                        >
+                        <span class="page-subheading"> -->
+            <a href="https://twitter.com/uiuc_aisecure?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @uiuc_aisecure</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </span
+                        >
+                        <span class="page-subheading">
+                            <a href="https://scholar.google.com/citations?user=K8vJkTcAAAAJ&hl=en" >[Google Scholar]</a>
+                        </span
+                        >
+                        <span class="page-subheading">
+                            <a href="https://www.virtueai.com/" > Virtue AI </a>
+                        </span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <p align="justify">
+                I am an Abbasi Associate Professor in the
+                <a href="">Computer Science Department</a>
+                at the
+                <a href=""
+                >University of Illinois at Urbana-Champaign</a
+                >. 
+                I am on the advisory board of the <a href="https://ai.ncsa.illinois.edu/"
+                >Center for Artificial Intelligence Innovation</a
+                > (CAII) at Illinois, and I am a member of the <a href="https://iti.illinois.edu/"
+                >Information Trust Institute</a
+                > (ITI). I am also affiliated with several research centers aiming to broaden the research collaboration and bridge different communities, such as the <a href="https://adsc.illinois.edu/"
+                >Advanced Digital Science Center</a
+                > (ADSC), the <a href="https://www.c3sr.com/"
+                >Center for Cognitive Computing Systems Research</a
+                >  (C3SR), and the <a href="https://iquist.illinois.edu/"
+                >Quantum Information Science and Technology Center</a
+                >  (IQUIST). I also serve in the <a href="https://isur.engineering.illinois.edu/alert-program/"
+                >Accelerated Learning and Engineering Research Training</a
+                > (ALERT) program.
+               
+            </p>
+
+            <p>
+                 My research focuses on trustworthy machine learning, with an emphasis on robustness, privacy, generalization, and their interconnections. We believe that closing today's trustworthiness gap in ML requires us to tackle these grappled problems in a holistic framework, driven by fundamental research focusing on not only each problem but also their underlying interactions.
+              </p>
+            <p>
+                The long-term goal for our group, Secure learning lab
+                (SL<sup>2</sup>), is to make machine learning systems robust, private, and generalizable with guarantees for different real-world applications. We have worked on exploring different types of adversarial attacks, including evasion and poisoning attacks in digital and physical worlds, under various constraints. We have developed and will continue to explore robust learning systems based on game-theoretic analysis, knowledge-enabled logical reasoning, and properties of learning tasks. Our work directly benefits applications such as computer vision, natural language processing, safe autonomous driving, and trustworthy federated learning systems.
+
+            </p>
+
+            <p>
+                <strong>For Prospective Students:</strong>
+                <i>
+                    Prospective PhDs and postdocs who are interested and experienced in
+                    machine learning, security, and optimization, please <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdWL13KVc-vciu2m2prE6ccdAKqgl-vQJQErgwWtMeKMj-NgA/viewform">  fill out the form</a>.
+                </i>
+            </p>
+            <!-- <p>As intelligent systems become pervasive, safeguarding their security and privacy is critical. However, recent research have demonstrated that machine learning systems, including state-of-the-art deep neural networks, can be easily fooled by an adversary. For example, it is easy to generate adversarial examples, which are close to the benign inputs but are misidentified by the machine learning models. Moreover, in our recent work, we have shown that such attacks can be successful even without access to the model internals, i.e., in a black-box setting. These attacks may cause severe outcomes: for example, the adversary can mislead the perceptual systems of autonomous vehicles to wrongly identify road signs, which can result in catastrophic traffic accidents. Therefore, such security issues hinder the application of machine learning to security-critical systems.</p> -->
+
+            <h3 id="recent-news" style="font-family: averia sans libre">
+                Recent News
+            </h3>
+            <ul>
+            <li>
+                    <span style="font-family: 'averia sans libre';">
+                      <span style="font-size: 18px;">
+                        [01/25] <a href="https://alphapav.github.io/">Chulin Xie</a> got the 
+                        <a href="https://research.ibm.com/university/awards/fellowships-awardees.html">
+                          "IBM PhD Fellowship"
+                        </a>.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+
+                  <li>
+                    <span style="font-family: 'averia sans libre';">
+                      <span style="font-size: 18px;">
+                        [12/24] Our paper <a href="https://decodingtrust.github.io/">DecodingTrust</a>
+                        got the 
+                        <a
+                          href="https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3990748/nsa-awards-authors-of-assessment-of-trustworthiness-in-gpt-models/">
+                          2024 Best Scientific Cybersecurity Paper
+                        </a>
+                        from NSA!
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+
+                  <li>
+                    <span style="font-family: 'averia sans libre';">
+                      <span style="font-size: 18px;">
+                        [11/24] <a href="https://alphapav.github.io/">Chulin Xie</a> was recognized by the 
+                        <a href="https://ml.umd.edu/rising-stars-workshop-2024">
+                          "Rising Stars in Machine Learning"
+                        </a>.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+
+                  <li>
+                    <span style="font-family: 'averia sans libre';">
+                      <span style="font-size: 18px;">
+                        [08/23] Our paper <a href="https://decodingtrust.github.io/">DecodingTrust</a>
+                        got the Outstanding Paper Award at NeurIPS 2023!
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                
+             <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[08/23] We got the
+                  <a
+                          href="https://iti.illinois.edu/people/profile/lbo"
+                  >
+                    "Teachers Ranked as Excellent Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                
+                  <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[12/22]  <a
+                          href="http://linyil.com/"
+                  >   
+                                                         Linyi Li
+                </a
+                  >
+                  was recognized by the   <a
+                          href="https://datascience.uchicago.edu/rising-stars/#rising-stars-profiles-2"
+                  >   
+                                                         "Rising Stars in Data Science" 
+                </a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                
+               <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[12/22]  We have gotten the first prize in the <a href="https://sites.google.com/view/vnn2022">
+                 
+                                                              VNN-COMP'22
+                   </a>.
+                </span
+              ><br
+              /></span>
+                </li>
+                  <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[06/22] We got the
+                  <a
+                          href="https://www.computer.org/publications/tech-news/insider/2022-ais-top-10-to-watch."
+                  >
+                    "IEEE AI's 10 to Watch Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                 <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[06/22] We got the
+                  <a
+                          href="https://www.ijcai.org/awards#:~:text=The%20winner%20of%20the%202022%20IJCAI%20Computers%20and%20Thought%20Award,of%20Illinois%20at%20Urbana%2DChampaign."
+                  >
+                    "IJCAI-22 Computers and Thought Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+              <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[02/22] We got the <a href="https://cs.illinois.edu/news/bo-li-named-2022-sloan-research-fellow">"Alfred P. Sloan Fellowship in Computer Science"</a>. </span
+              ><br
+              /></span>
+                </li>
+                
+                
+                  <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[02/22] We got the
+                  <a
+                          href="https://grainger.illinois.edu/research/faculty-awards"
+                  >
+                    "Dean's Award for Excellence in Research"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                
+                 <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[01/22] We got the
+                  <a
+                          href="https://cs.illinois.edu/about/awards/faculty-awards/university-illinois-awards#:~:text=C.W.%20Gear%20Outstanding%20Junior%20Faculty,pioneer%20in%20automatic%20numerical%20methods."
+                  >
+                    "C.W. Gear Outstanding Junior Faculty Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+             <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[01/22] We got the
+                  <a
+                          href="https://iti.illinois.edu/people/profile/lbo"
+                  >
+                    "Teachers Ranked as Excellent Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>       
+         
+         <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[12/21]  <a
+                          href="http://linyil.com/"
+                  >   
+                                                         Linyi Li
+                </a
+                  >
+                  was recognized by the   <a
+                          href="https://sites.google.com/view/advml/advml-rising-star-award?authuser=0&pli=1"
+                  >   
+                                                         "AdvML Rising Star Award" 
+                </a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[08/21] We got the
+                  <a
+                          href="https://research.fb.com/programs/research-awards/proposals/2021-statistics-for-improving-insights-models-and-decisions-request-for-proposals/"
+                  >
+                    "2021 Facebook Research Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+
+                </li>
+               <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[06/21]  Mantas Mazeika
+                  got the  <a
+                          href="https://www.openphilanthropy.org/grants/early-career-funding-for-improving-the-long-term-future-scholarship-support-2022/"
+                  >   
+                                                         "Open Philanthropy Fellowship" 
+                </a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[04/21] We got the
+                  <a
+                          href="https://www.amazon.science/research-awards/program-updates/2020-amazon-research-awards-recipients-announced"
+                  >
+                    "2020 recipients of AWS Amazon Research Award"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+               <li>
+              <span style="font-family: averia sans libre"><span style="font-size: 18px">[09/21] We got the
+                  <a
+                          href="https://research.google/outreach/research-scholar-program/recipients/">
+                    "Google Research Scholar Award"</a>. </span><br
+              /></span>
+                </li>
+
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[03/21]  <a href="https://wbx.life">Boxin Wang</a>
+                  got the  <a href="https://cs.illinois.edu/about/awards/graduate-fellowships-awards/yunni-and-maxine-pao-memorial-fellowship">
+                                                         "Yunni & Maxine Pao Memorial Fellowship"
+                </a>. </span
+              ><br
+              /></span>
+                </li>
+
+                <li>
+              <span style="font-family: averia sans libre"><span style="font-size: 18px">[10/20] We got the
+                  <a
+                          href="https://www.intel.com/content/www/us/en/research/blogs/intel-rising-stars-awards-2020.html">
+                    "Intel’s 2020 Rising Star Faculty Award Recognizing 10 Leading Researchers"</a>. </span><br
+              /></span>
+                </li>
+            
+            
+                <li>
+              <span style="font-family: averia sans libre"><span style="font-size: 18px">[10/20] We got the
+                  <a
+                          href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2046726&HistoricalAwards=false">
+                    "NSF CAREER Award" </a>. </span><br
+              /></span>
+                </li>
+
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[07/20] We got the
+                  <a
+                          href="https://aws.amazon.com/blogs/machine-learning/2019-q4-recipients-of-aws-machine-learning-research-awards/"
+                  >
+                    "2019 Q4 recipients of AWS Machine Learning Research Awards"</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[06/20] We were selected as one of the
+                  <a href="https://www.technologyreview.com/innovator/bo-li/">
+                    MIT Technology Review list of 35 Innovators Under 35,
+                    2020</a
+                  >. </span
+              ><br
+              /></span>
+                </li>
+              
+               
+                <li>
+              <span style="font-family: averia sans libre"
+              ><span style="font-size: 18px"
+              >[08/19] Our generated physical adversarial stop sign is
+                  <a
+                          href="https://twitter.com/EarlenceF/status/1158768185262432257"
+                  >on display at Science Museum in London</a
+                  >, and has become one of the permanent collections. </span
+              ><br
+              /></span>
+                </li>
+              
+            </ul>
+
+            <div
+                    class="no-return collapse"
+                    id="oldnews"
+                    aria-expanded="false"
+                    style="height: 0px"
+            >
+                <ul>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >[06/19] Our paper:
+                    <a href="https://arxiv.org/abs/1907.05418">
+                      "Adversarial Objects Against LiDAR-Based Autonomous
+                      Driving Systems"
+                    </a>
+                    is reported by
+                    <a href="https://www.jiqizhixin.com/articles/2019-07-13-4"
+                    >JiQiZhiXin
+                    </a>
+                    <a href="https://www.qbitai.com/2019/07/5064.html"
+                    >QbitAI</a
+                    >
+                    and is discussed at
+                    <a
+                            href="https://www.reddit.com/r/SelfDrivingCars/comments/cc7khu/adversarial_objects_against_lidarbased_autonomous/"
+                    >Reddit [1]</a
+                    >,
+                    <a
+                            href="https://www.reddit.com/r/MachineLearning/comments/ccc7p4/r_we_also_3dprint_our_adversarial_objects_and/"
+                    >[2]</a
+                    >. </span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >[06/19] Our paper:
+                    <a href="https://arxiv.org/abs/1906.07927">
+                      "SemanticAdv: Generating Adversarial Examples via
+                      Attribute-conditional Image Editing"
+                    </a>
+                    is reported by
+                    <a href="https://www.jiqizhixin.com/articles/2019-07-12-2"
+                    >JiQiZhiXin
+                    </a>
+                    .</span
+                ><br
+                /></span>
+                    </li>
+
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >[05/19] Workshop "Security and Privacy of Machine Learning"
+                    in ICML 2019. Please submit your papers
+                    <a href="https://icml2019workshop.github.io/" target=""
+                    >here</a
+                    >
+                    and win the best paper award!</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >&#8203;[05/19] Workshop "Adversarial Machine Learning in
+                    Real-World Computer Vision Systems" in CVPR 2019. Please
+                    submit your papers
+                    <a href="https://amlcvpr2019.github.io/" target="">here</a
+                    >!</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >&#8203;[05/19] Our paper "<a
+                        href="https://arxiv.org/abs/1810.05206"
+                        target=""
+                >Realistic Adversarial Examples in 3D Meshes</a
+                >" is accepted in CVPR 2019 as oral presentation!
+                    Congratulations to Chaowei and Dawei!</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >[05/19] Our paper "<a
+                        href="https://arxiv.org/abs/1809.07016"
+                        target=""
+                >Generating 3D Adversarial Point Clouds</a
+                >" is accepted in CVPR 2019!&nbsp;</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >&#8203;[02/19] Our paper "How You Act Tells a Lot:
+                    Privacy-Leakage&nbsp;Attack on Deep Reinforcement Learning"
+                    got accepted in AAMAS 2019 as oral presentation!</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >&#8203;[01/19] Our paper "Towards Efficient Data Valuation
+                    Based on the Shapley Value" got accepted in AISTATS 2019!
+                    Check it out if you want to know which data contribute more
+                    to your model!</span
+                ><br
+                /></span>
+                    </li>
+                    <li>
+                <span style="font-family: averia sans libre"
+                ><span style="font-size: 18px"
+                >[04/19] Our paper "Characterizing Audio Adversarial
+                    Examples Using Temporal Dependency" got accepted in ICLR
+                    2019.</span
+                ></span
+                ><br/>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                <a
+                        href="#oldnews"
+                        data-toggle="collapse"
+                        class="collapsed"
+                        aria-expanded="false"
+                >Older news</a
+                >
+            </p>
+            <!-- <div class="collapse no-return" id="oldnews">
+    <ul>
+    </ul>
+  </div>
+  <p><a href="" data-toggle="collapse">Older news</a></p>
+   -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h4>Contact</h4>
+                <div class="text-muted">
+                    Bo Li
+                    <!-- <a href="lbo@illinois.edu">lbo@illinois.edu</a>
+                &nbsp;&nbsp;•&nbsp;&nbsp;
+                <a href="http://www.twitter.com/">@boli</a -->
+                    <br/>
+                    Computer Science Department <br/>
+                    University of Illinois at Urbana-Champaign <br/>
+                    4310 Siebel Center 201 N. Goodwin Ave. Urbana, IL 61801, USA
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    if (typeof jQuery == "undefined") {
+        document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + "ipt>");
+    }
+</script>
+<script src="./files/jquery-1.11.2.min.js"></script>
+
+<!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+
+<script src="./files/bootstrap.min.js"></script>
+
+<!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+
+<script src="./files/main.js"></script>
+</body>
+</html>
